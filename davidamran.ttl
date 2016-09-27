@@ -1,0 +1,9 @@
+@base <http://www.oeg-upm.net/ontologies/class/>
+@prefix desc: <http://www.oeg-upm.net/ontologies/class#>
+:Clase01 			desc: includes: Sensor029;
+					desc: includes: Computer101.
+:Sensor029 			desc: hasMeasurement: Measurement8401.
+:Measurement8401 	desc: hasTemperature: "29"^^xsd:int;
+					desc: atTime: "2010-06-12T12:00:12"^^xsd:dateTime".
+:Computer101:		desc: hasOwner: User10A.
+:User10A			desc: hasName: "Pedro".
