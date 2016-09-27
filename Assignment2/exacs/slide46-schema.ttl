@@ -19,6 +19,10 @@
            rdfs:domain :Ubicacion;
            rdfs:range :Localidad.
 
+:habitantes a rdfs:Property;
+            rdfs:domain :Localidad;
+            rdfs:range rdfs:Literal.
+
 :provinciaDe a rdfs:Property;
              rdfs:domain :Provincia;
              rdfs:range :Localidad.
