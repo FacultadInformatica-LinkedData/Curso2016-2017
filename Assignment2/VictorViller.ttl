@@ -1,0 +1,59 @@
+@base <http://www.oeg-upm.net/ontologies/place/ >
+@prefix vocab: <http://www.ontologies.org/ontologies/place#>
+@prefix vocab2: <http://www.ontologies.org/ontologies/place/site#>
+
+:numeroHabitantes a rdfs:Property .
+	rdfs:domain :Lugar ;
+	rdfs:range :Lugar .
+:provincia a rdfs:Property .
+	rdfs:domain :Localidad .
+:cp a rdfs:Property .
+	rdfs:domain :Lugar .
+:calle a rdfs:Property .
+	rdfs:domain :Lugar .
+
+:Localidad a rdfs:Class .
+
+:Lugar a rdfs:Class ;
+	rdfs:subClassOf :Localidad .
+
+:Ciudad a rdfs:Class ;
+	rdfs:subClassOf :Lugar;
+:Pueblo a rdfs:Class ;
+	rdfs:subClassOf :Lugar;	
+:CiudadCentro a rdfs:Class ;
+	rdfs:subClassOf :Lugar;
+	
+:Turistico a rdfs:Class ;
+	rdfs:subClassOf :Pueblo ;
+:Establecimiento a rdfs:Class ;
+	rdfs:subClassOf :Pueblo ;
+
+:Restaurante a rdfs:Class ;
+	rdfs:subClassOf :Establecimiento .
+:Hotel a rdfs:Class ;
+	rdfs:subClassOf :Establecimiento .
+:Hostal a rdfs:Class ;
+	rdfs:subClassOf :Establecimiento .
+:ViviendaAlquiler a rdfs:Class ;
+	rdfs:subClassOf :Establecimiento .
+
+:Iglesia a rdfs:Class ;
+	rdfs:subClassOf :Turistico .
+:Palacio a rdfs:Class ;
+	rdfs:subClassOf :Turistico .
+:Capilla a rdfs:Class ;
+	rdfs:subClassOf :Turistico .
+:Catedral a rdfs:Class ;
+	rdfs:subClassOf :Turistico .
+
+:Covarrubias a :Pueblo ;
+	vocab:numeroHabitantes "634" ;
+	vocab:provincia "Burgos" ;
+:ElGalo a :Restaurante ;
+	vocab2:cp "12345" ;
+	vocab2:calle "Calle Mayor 5" .
+:Iglesia1 a :Catedral ;
+	vocab2: cp "12345" ;
+	vocab2:calle "Santo Tomás" .
+
