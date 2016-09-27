@@ -1,0 +1,62 @@
+@base <http://www.oeg-upm.net/linked-data-2016-2017/assignment2/saito>.
+@prefix : <http://www.oeg-upm.net/linked-data-2016-2017/assignment2/saito#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+:direccion a rdfs:Property;
+           rdfs:domain :LugarDeInteres;
+           rdfs:range :Direccion.
+
+:calle a rdfs:Property;
+       rdfs:domain :Direccion;
+       rdfs:range rdfs:Literal.
+
+:numero a rdfs:Property;
+        rdfs:domain :Direccion;
+        rdfs:range rdfs:Literal.
+
+
+:ubicadoEn a rdfs:Property;
+           rdfs:domain :Ubicacion;
+           rdfs:range :Localidad.
+
+:provinciaDe a rdfs:Property;
+             rdfs:domain :Provincia;
+             rdfs:range :Localidad.
+
+
+:Provincia a rdfs:Class.
+
+:Localidad a rdfs:Class.
+:Ciudad a rdfs:Class;
+        rdfs:subClassOf :Localidad.
+:Pueblo a rdfs:Class;
+        rdfs:subClassOf :Localidad.
+:CiudadCentrica a rdfs:Class;
+                rdfs:subClassOf :Localidad.
+
+
+:Ubicacion a rdfs:Class.
+:LugarDeInteres a rdfs:Class;
+                rdfs:subClassOf :Ubicacion.
+:LugarTuristico a rdfs:Class;
+                rdfs:subClassOf :LugarDeInteres.
+
+:Catedral a rdfs:Class;
+          rdfs:subClassOf :LugarTuristico.
+:Palacio a rdfs:Class;
+         rdfs:subClassOf :LugarTuristico.
+:Iglesia a rdfs:Class;
+         rdfs:subClassOf :LugarTuristico.
+:Capilla a rdfs:Class;
+         rdfs:subClassOf :LugarTuristico.
+
+:Establecimiento a rdfs:Class;
+                 rdfs:subClassOf :LugarDeInteres.
+
+:Hotel a rdfs:Class;
+       rdfs:subClassOf :Establecimiento.
+:Hostal a rdfs:Class;
+        rdfs:subClassOf :Establecimiento.
+:ViviendaEnAlquiler a rdfs:Class;
+                    rdfs:subClassOf :Establecimiento.
+
