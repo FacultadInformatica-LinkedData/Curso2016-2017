@@ -2,6 +2,8 @@
 @prefix : <http://www.oeg-upm.net/linked-data-2016-2017/assignment2/saito#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 
+
+# Properties
 :direccion a rdfs:Property;
            rdfs:domain :LugarDeInteres;
            rdfs:range :Direccion.
@@ -27,7 +29,7 @@
              rdfs:domain :Provincia;
              rdfs:range :Localidad.
 
-
+# Classes
 :Provincia a rdfs:Class.
 
 :Localidad a rdfs:Class.
@@ -64,3 +66,25 @@
 :ViviendaEnAlquiler a rdfs:Class;
                     rdfs:subClassOf :Establecimiento.
 
+:Direccion a rdfs:Class.
+
+
+# Data
+:Covarrubias a :Localidad.
+:Burgos a :Provincia;
+        :provinciaDe :Covarrubias.
+
+:ElGalo a :Establecimiento;
+        :ubicadoEn :Covarrubias;
+        :direccion :Mayor5.
+
+:Mayor5 a :Direccion;
+        :calle "Mayor";
+        :numero "5".
+
+:_iglesia a :Iglesia;
+          :ubicadoEn :Covarrubias;
+          :direccion :CalleSantoTomas.
+
+:CalleSantoTomas a :Direccion;
+                 :calle "Santo Tomás".
