@@ -1,0 +1,11 @@
+@prefix : <http://www.oeg-upm.net/ej2#>.
+
+:class01 includes :Computer101;
+	hasOwner :User10A;
+	hasName "Pedro".
+:class01 includes :Sensor029;
+	hasMeasurement :Measurement8401;
+	atTime 2010-06-12T12:00:12;
+	hasTemperature 29.
+	
+	
