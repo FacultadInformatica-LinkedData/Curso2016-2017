@@ -36,3 +36,5 @@ For example, I (my Github username is 'nandana') will upload three files :
 * nandna.png (the image, Exercise 1.a) 
 * nandana.rdf (Exercise 1.b in RDF/XML), and 
 * nandana.ttl (Exercise 1.b in Turtle).
+
+**Assignment 3 - Exercise on Jena API**. Upload the java files Task06.java and Task07.java after completing the tasks 6.x and 7.x mentioned in those files. Before uploading the files create a folder with your **<YourGitHubID>-<StudentID>** (e.g., Assignment3/nandana-u120106/).
