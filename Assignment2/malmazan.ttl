@@ -1,0 +1,9 @@
+@base <>
+@prefix vocab: <>
+ :Class01 vocab: includes: Sensor029;
+        vocab: includes: Computer101.
+ :Sensor029 vocab: hasMeasurement: Measurement8401.
+ :Measurement8401 vocab: hasTemperature: 29;
+                  vocab: atTime: 2016-06-12T12:00:12.
+ :Computer101 vocab: hasOwner: User10A.
+ :User10A vocab: hasName: Pedro
