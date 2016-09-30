@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF 
+  xmlns:rdf="https://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns="http://www.oeg-upm.net/ontologies/Assignment2#">
+
+<rdf:Property rdf:about="http://www.oeg-upm.net/ontologies/Assignment2#includes"/>
+<rdf:Property rdf:about="http://www.oeg-upm.net/ontologies/Assignment2#hasMeasurement"/>
+<rdf:Property rdf:about="http://www.oeg-upm.net/ontologies/Assignment2#hasOwner"/>
+<rdf:Property rdf:about="http://www.oeg-upm.net/ontologies/Assignment2#hasTemperature"/>
+<rdf:Property rdf:about="http://www.oeg-upm.net/ontologies/Assignment2#atTime"/>
+<rdf:Property rdf:about="http://www.oeg-upm.net/ontologies/Assignment2#hasName"/>
+
+<rdf:Description rdf:about="Class01"/>
+  <includes rdf:resource="Sensor029"/>
+  <includes rdf:resource="Computer101"/>
+<rdf:Description rdf:about="Sensor029"/>
+  <hasMeasurement rdf:resource="Measurement8401"/>
+<rdf:Description rdf:about="Computer101"/>
+  <hasOwner rdf:about="User10A"/>
+<rdf:Description rdf:about="Measurement8401"/>
+  <hasTemperature rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</hasTemperature>
+  <atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-06-12T12:00:12</atTime>
+<rdf:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</rdf:Description>
+<rdf:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-06-12T12:00:12</rdf:Description>
+<rdf:Description rdf:about="User10A"/>
+  <hasName rdf:resource="Pedro"/>
+</rdf:RDF>
