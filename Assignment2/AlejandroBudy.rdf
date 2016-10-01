@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns="http://www.oeg-upm.net/assigment2#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xml:base="http://www.ontologies.org/ontologies/assigment2"
+	xmlns:propiedad="http://www.ontologies.org/ontologies/assigment2#" >
+
+	<!-- Defining properties -->
+	<rdf:Property rdf:about="http://www.ontologies.org/ontologies/assigment2#includes"/>
+	<rdf:Property rdf:about="http://www.ontologies.org/ontologies/assigment2#hasMeasurement"/>
+	<rdf:Property rdf:about="http://www.ontologies.org/ontologies/assigment2#hasTemperature"/>
+	<rdf:Property rdf:about="http://www.ontologies.org/ontologies/assigment2#atTime"/>
+	<rdf:Property rdf:about="http://www.ontologies.org/ontologies/assigment2#hasOwner"/>
+	<rdf:Property rdf:about="http://www.ontologies.org/ontologies/assigment2#hasName"/>
+
+	<!-- Class 01-->
+	<rdf:Description rdf:about="#class01">
+		<propiedad:includes rdf:source="#sensor029"/>
+		<propiedad:includes rdf:source="#computer101"/>
+	</rdf:Description>
+
+	<!-- Sensor 029-->
+	<rdf:Description rdf:about="#sensor029">
+		<propiedad:hasMeasurement source="#measurement8401"/>
+	</rdf:Description>
+
+	<!-- Computer 101 -->
+	<rdf:Description rdf:about="#computer101">
+		<propiedad:hasOwner source="#user10A"/>
+	</rdf:Description>
+
+	<!-- Measurement 8401 -->
+	<rdf:Description rdf:about="#measurement8401">
+		<propiedad:hasTemperature xsd:integer="29"/>
+		<propiedad:atTime xsd:dateTimeStamp="2010-06-12 12T12:00:12" />
+	</rdf:Description>
+
+	<!-- user 10A -->
+	<rdf:Description rdf:about="#user10A">
+		<propiedad:hasName xsd:String="Pedro" />
+	</rdf:Description>
+</rdf:RDF>
