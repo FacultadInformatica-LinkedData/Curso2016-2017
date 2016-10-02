@@ -16,7 +16,7 @@ import org.apache.jena.util.iterator.ExtendedIterator;
  * Task 07: Querying ontologies (RDFs)
  * @author elozano
  * @author isantana
- *
+ * @author Jorge Amoros
  */
 public class Task07
 {
