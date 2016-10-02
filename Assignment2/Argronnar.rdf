@@ -1,0 +1,25 @@
+<rdf:RDF xml:base="http://www.ontogrid.net/StickyNote#">
+
+	<rdf:Description rdf:about=":Class01">
+        <includes rdf:resource="Sensor029"/>
+        <includes rdf:resource="Computer101"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="Sensor029">
+        <hasMeasurement rdf:resource="Measurement8401"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="Measurement8401">
+        <hasTemperature rdf:resource="29"/>
+        <atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#Date">2010-06-12T12:00:12</atTime>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="Computer101">
+		<hasOwner rdf:resource="User10A">
+	</rdf:Description>
+
+	<rdf:Description rdf:about="User10A">
+		<hasName rdf:resource="Pedro">
+	</rdf:Description>
+
+</rdf:RDF>
