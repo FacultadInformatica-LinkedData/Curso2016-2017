@@ -1,0 +1,20 @@
+@prefix class: <http://ontologies.org/u120032/class#> .
+@prefix property: <http://ontologies.org/u120032/property#> .
+
+class:Class01
+       properties:includes class:Sensor029 ;
+	   properties:includes class:Computer101 ;
+.
+
+class:Sensor029 properties:hasMeasurement class:Measurement8401.
+.
+	   
+class:Measurement8401  properties:atTime "2010-06-12T12:00:12"^^<xsd:date> ;
+                       properties:hasTemperature "29"^^<xsd:integer> ;
+.					   
+                     
+class:Computer101 properties:hasOwner class:User10A ;
+.
+
+class: User10A properties:hasName "Pedro" ;
+.
