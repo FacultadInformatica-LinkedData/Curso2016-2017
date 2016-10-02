@@ -38,3 +38,5 @@ For example, I (my Github username is 'nandana') will upload three files :
 * nandana.ttl (Exercise 1.b in Turtle).
 
 **Assignment 3 - Exercise on Jena API**. Upload the java files Task06.java and Task07.java after completing the tasks 6.x and 7.x mentioned in those files. Before uploading the files create a folder with your **YourGitHubID-StudentID** (e.g., Assignment3/nandana-u120106/).
+
+**Assignment 4 - SPARQL**. Upload the SPARQL queries and their results after completing the completing the tasks mentioned in the slides. Before uploading the files create a folder with your **YourGitHubID-StudentID** (e.g., Assignment3/nandana-u120106/).
