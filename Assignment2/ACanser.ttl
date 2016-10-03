@@ -1,0 +1,14 @@
+@base <http://assignment2.com/> .
+@prefix vocab <http://assignment2.com/> 
+
+:Class01	vocab:Includes :Sensor029
+			vocab:Includes :Computer101
+			
+:Sensor029	vocab:hasMeasurement :Measurement8401
+
+:Measurement8401	vocab:HasMeasurement :29
+				vocab:atTime :2010-06-12T12:00:12
+
+:Computer101	vocab:hasOwner :User10A
+
+:User10A vocab:hasName :Pedro
