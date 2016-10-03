@@ -1,0 +1,20 @@
+
+@base <http://www.oeg-upm.net/alumnos/asignment2> .
+@prefix vocab: <http://www.oeg-upm.net/alumnos/asignment2#> .
+@prefix sensor: <http://www.oeg-upm.net/alumnos/asignment2#Sensor> .
+@prefix computer: <http://www.oeg-upm.net/alumnos/asignment2#Computer> .
+@prefix measurement: <http://www.oeg-upm.net/alumnos/asignment2#Measurement> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix user: <http://www.oeg-upm.net/alumnos/asignment2#User> .
+
+:Class01 vocab:includes sensor:Sensor029 ;
+		 vocab:includes computer:Computer101 .
+
+sensor:Sensor029 vocab:hasMeasurement measurement:Measurement8401 .
+
+measurement:Measurement8401 vocab:hasTemperature "29"^^xsd:integer ;
+                            vocab:atTime "2010-06-12T12:00:12"^^xsd:dateTime .
+
+computer:Computer101 vocab:hasOwner user:User10A .
+
+user:User10A vocab:hasName "Pedro"^^xsd:string .

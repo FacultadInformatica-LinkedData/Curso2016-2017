@@ -1,0 +1,27 @@
+@prefix : <http://www.oeg-upm.net/Assignment2#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#User10A> :hasName <Pedro> .
+
+<Class01> :includes <Computer101>,
+     <Sensor029> .
+
+:atTime a rdf:Property .
+
+:hasMeasurement a rdf:Property .
+
+:hasOwner a rdf:Property .
+
+:hasTemperature a rdf:Property .
+
+:includes a rdf:Property .
+
+:personhasName a rdf:Property .
+
+<Computer101> :hasOwner <User10A> .
+
+<Measurement8401> :atTime "2010-06-12T12:00:12"^^xsd:date;
+   :hasTemperature 29 .
+
+<Sensor029> :hasMeasurement <Measurement8401> .
