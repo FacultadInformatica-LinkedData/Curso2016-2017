@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns="http://github.com/FacultadInformatica-LinkedData/Curso2016-2017/tree/master/Assignment2#">
+
+<rdf:Property rdf:about="http://github.com/FacultadInformatica-LinkedData/Curso2016-2017/tree/master/Assignment2#includes"/>
+<rdf:Property rdf:about="http://github.com/FacultadInformatica-LinkedData/Curso2016-2017/tree/master/Assignment2#hasMeasurement"/>
+<rdf:Property rdf:about="http://github.com/FacultadInformatica-LinkedData/Curso2016-2017/tree/master/Assignment2#hasTemperature"/>
+<rdf:Property rdf:about="http://github.com/FacultadInformatica-LinkedData/Curso2016-2017/tree/master/Assignment2#atTime"/>
+<rdf:Property rdf:about="http://github.com/FacultadInformatica-LinkedData/Curso2016-2017/tree/master/Assignment2#hasOwner"/>
+<rdf:Property rdf:about="http://github.com/FacultadInformatica-LinkedData/Curso2016-2017/tree/master/Assignment2#personhasName"/>
+
+<rdf:Description rdf:about="Class01">
+	<includes rdf:resource="#Sensor029"/>
+	<includes rdf:resource="#Computer101"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="Sensor029">
+	<hasMeasurement rdf:resource="#Measurement8401"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="Computer101">
+	<hasOwner rdf:resource="#User10A"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="Measurement8401">
+    <hasTemperature rdf:resource="29"/>
+    <atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#Date">2010-06-12T12:00:12</atTime>
+</rdf:Description>
+
+<rdf:Description rdf:about="computer:Computer101">
+    <hasOwner rdf:resource="User10A"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="User10A">
+    <vocab:hasName rdf:resource="Pedro"/>
+</rdf:Description>
+
+</rdf:RDF>
