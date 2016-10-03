@@ -1,0 +1,15 @@
+@prefix : <http://www.oeg-upm.net/ontologies/Assignment2#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Class01 :includes :Sensor029;
+	:includes :Computer101 .
+
+:Sensor029 :hasMeasurement :Measurement8401;
+
+:Computer101 :hasOwner :User10A;
+
+:Measurement8401 :hasTemperature "29"^^xsd:integer;
+	:atTime :"2010-06-12T12:00:12"^^xsd:date .
