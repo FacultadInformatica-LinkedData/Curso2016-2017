@@ -1,0 +1,27 @@
+@prefix : <http://www.oeg-upm.net/assigment2#> .
+@prefix propiedad: <http://www.ontologies.org/ontologies/assigment2#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+propiedad:atTime a rdf:Property .
+
+propiedad:class01 :includes [ rdf:source "#computer101"],  [ rdf:source "#sensor029"] .
+
+propiedad:computer101 :hasOwner "" .
+
+propiedad:hasMeasurement a rdf:Property .
+
+propiedad:hasName a rdf:Property .
+
+propiedad:hasOwner a rdf:Property .
+
+propiedad:hasTemperature a rdf:Property .
+
+propiedad:includes a rdf:Property .
+
+propiedad:measurement8401 :atTime [ xsd:dateTimeStamp "2010-06-12 12T12:00:12"];
+   :hasTemperature [ xsd:integer "29"] .
+
+propiedad:sensor029 :hasMeasurement "" .
+
+propiedad:user10A :hasName [ xsd:String "Pedro"] .
