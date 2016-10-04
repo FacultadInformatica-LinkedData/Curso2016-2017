@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+	<rdf:RDF
+		xmlns:rdf="http://www.ontologies.org/ontologies/user#"
+		xmlns:rdf="http://www.ontolgies.org/ontolgies/sensor#"
+		xmlns:rdf="http://www.ontologies.org/ontologies/computer#"
+		xmlns:rdf="http://www.ontologies.org/ontologies/measures#"
+		xml:base="http://www.oeg-upm.net/ontologies/class">
+
+	<rdf:Property rdf:about="http://www.ontologies.org/ontologies/class#includes"/>
+	<rdf:Property rdf:about="http://www.ontologies.org/ontologies/computer#hasOwner"/>
+	<rdf:Property rdfa:bout="http://www.ontologies.org/ontologies/people#hasName"/>
+	<rdf:Property rdf:about="http://www.ontologies.org/ontologies/sensor#hasMeasurement"/>
+	<rdf:Property rdf:about="http://www.ontologies.org/ontologies/measurement#hasTemperature"/>
+	<rdf:Property rdf:about="http://www.ontologies.org/ontologies/measurement#atTime"/>
+
+	<rdf:Description rdf:about="#Class01"/>
+		<class:includes rdf:resource="#Sensor029">
+		<class:includes rdf:resource="#Computer101">
+	</rdf:Description>
+	<rdf:Description rdf:about="#Sensor029"/>
+		<sensor:hasMeasurement rdf:resource="#Measurement8401">
+	</rdf:Description>
+	<rdf:Description rdf:about="#Measurement8401">
+		<measurement:hasTemperature rdf:number="29"/>
+		<measurement:atTime rdf:date="2010-06-12T12:00:12"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="#Computer101">
+		<computer:hasOwner rdf:resource="#User10A"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="#User10A">
+		<peoble:hasName rdf:name="Pedro"/>
+	</rdf:Description>
+	<rdf:Description rdf:number="#29"/>
+	<rdf:Description rdf:date="#2010-06-12T12:00:12"/>
+	<rdf:Description rdf:name="#Pedro"/>
+</rdf:RDF>

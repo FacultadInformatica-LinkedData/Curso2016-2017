@@ -1,0 +1,17 @@
+@base <http://www.oeg-upm.net/u120064/assignment2/>
+
+@prefix n: <http://www.ontologies.org/u120064/assignment2#>
+
+:Class01		n:includes		:Sensor029 ,
+
+						:Computer101 .
+
+:Sensor029		n:hasMeasurement	:Measurement8401 .
+
+:Measurement8401	n:hasTemperature	"29"^^xsd:integer ;
+
+n:atTime		"2010-06-12T12:00:12"^^xsd:dateTime .
+
+:Computer101		n:hasOwner		:User10A .
+
+:User10A		n:hasName		"Pedro"^^xsd:string .
