@@ -1,0 +1,19 @@
+@base <loremipsum/>
+@prefix measurement: <loremipsum/measurement#>
+@prefix sensor: <loremipsum/sensor#>
+@prefix class: <loremipsum/class#>
+@prefix computer: <loremipsum/computer#>
+@prefix user: <loremipsum/user#>
+
+:Class01          class:includes :Sensor029;
+                  class:includes :Computer101.
+				  
+:Sensor029        sensor:hasMeasurement :Measurement8401.
+
+:Measurement8401  measurement:hasTemperature "29";
+                  eventDate "2010-06-12T 12:00:12".
+				  
+:Computer101      computer:hasOwner :User10A.
+				  
+:User10A          user:hasName "Pedro".
+
