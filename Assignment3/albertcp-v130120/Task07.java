@@ -58,24 +58,7 @@ public class Task07
 		// ** TASK 7.3: Make the necessary changes to get as well indirect instances
 		//and subclasses. TIP: you need some inference... **
 		
-	    //TODO:: fix this.
-		
-		/*OntClass elementOfIterator;
-		ExtendedIterator<? extends OntResource> indirectIndividuals;
-		ExtendedIterator<OntClass> indirectSubclasses;
-		while(iteratorSubclasses.hasNext()){
-			elementOfIterator = iteratorSubclasses.next();
-			indirectIndividuals = elementOfIterator.listInstances();
-			while(indirectIndividuals.hasNext()){
-				System.out.println(indirectIndividuals.next().getURI());
-			}
-			indirectSubclasses = elementOfIterator.listSubClasses();
-			while(indirectSubclasses.hasNext()){
-				System.out.println(indirectSubclasses.next().getURI());
-			}
-			
-		}*/
-		
+	    //TODO:: finish this.
 	
 	}
 }
