@@ -1,0 +1,21 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+		xml:base="http://www.oeg-upm.net/alumnos/asignment2#"
+		xmlns="http://www.oeg-upm.net/alumnos/asignment2#" >
+	<rdf:Description rdf:about="#class1">
+		<includes rdf:resource="#sensor029"/>
+		<includes rdf:resource="#computer101"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="#sensor029">
+		<hasMeasurement rdf:resource="#measurement8401"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="#computer101">
+		<hasOwner rdf:resource="#user10A"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="#measurement8401">
+		<hasTemperature rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</hasTemperature>
+		<atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-06-12T12:00:12</atTime>
+	</rdf:Description>
+	<rdf:Description rdf:about="#user10A">
+		<hasName>Pedro</hasName>
+	</rdf:Description>
+</rdf:RDF>
