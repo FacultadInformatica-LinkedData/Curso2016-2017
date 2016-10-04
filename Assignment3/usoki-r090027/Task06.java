@@ -64,21 +64,16 @@ public class Task06
 
 		// ** TASK 6.5: Add to the individual JaneSmith the fullName, given and family names **
 
-		janeSmith.addProperty( VCARD.FN, "Jane Smith" 	);
-		janeSmith.addProperty( VCARD.Given, "Jane"	 		);
-
-		janeSmith.addProperty( VCARD.Family, "Smith" 		);
+		janeSmith.addProperty( VCARD.FN, "Jane Smith");
+		janeSmith.addProperty( VCARD.Given, "Jane");
+		janeSmith.addProperty( VCARD.Family, "Smith");
 
 		// ** TASK 6.6: Add UPM as the university where John Smith works **
-
-
 
 		Individual upm;
 		upm = university.createIndividual( ns + "UPM" );
 		Individual johnSmith = researcher.createIndividual( ns + "John Smith" );
 		johnSmith.addProperty( worksIn, upm );
-
-
 
 
 		model.write(System.out, "RDF/XML-ABBREV");

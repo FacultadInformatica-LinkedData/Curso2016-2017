@@ -35,7 +35,7 @@ public class Task07
 
 		// Read the RDF/XML file
 		model.read(in, null);
-	
+
 
 		Individual i;
 		ExtendedIterator extendedIterator = model.getOntClass(ns+"Person").listInstances();
@@ -53,8 +53,6 @@ public class Task07
 			sc = (OntClass) extendedIterator.hasNext();
 			System.out.println("Person: " + sc.getURI());
 		}
-
-
 
 		// ** TASK 7.3: Make the necessary changes to get as well indirect instances and subclasses. TIP: you need some inference... **
 
