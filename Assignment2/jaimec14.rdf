@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<rdf:RDF xml:base='http://ontologies.org/alumnos/u120032/property#'
+  <http://www class='w3 org' http://www.w3.org/1999/02/22-rdf-syntax-ns#about='http://ontologies.org/alumnos/u120032/class#Class01' id='Description'>
+      <http://www class='w3 org' http://www.w3.org/1999/02/22-rdf-syntax-ns#about='http://ontologies.org/alumnos/u120032/class#Sensor029' id='Description'>
+        <hasMeasurement rdf:resource='http://ontologies.org/alumnos/u120032/class#Measurement8401' />
+    </includes>
+     <includes>
+      <http://www class='w3 org' http://www.w3.org/1999/02/22-rdf-syntax-ns#about='http://ontologies.org/alumnos/u120032/class#Computer101' id='Description'>
+        <hasOwner>
+          <http://www class='w3 org' http://www.w3.org/1999/02/22-rdf-syntax-ns#about='http://http://ontologies.org/alumnos/u120032/class#User10A' id='Description'>
+            <hasName>Pedro</ns5:hasName>
+          </http://www>
+        </hasOwner>
+    </includes>
+  <http://www class='w3 org' http://www.w3.org/1999/02/22-rdf-syntax-ns#about='http://ontologies.org/alumnos/u120032/class#Measurment8401' id='Description'>
+    <atTime>2010-06-12T12:00:12</ns2:atTime>
+    <hasTemperature>29</ns3:hasTemperature>
+</rdf:RDF>

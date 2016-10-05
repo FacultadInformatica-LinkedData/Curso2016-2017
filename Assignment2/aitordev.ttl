@@ -1,0 +1,14 @@
+@prefix : <http://github.com/FacultadInformatica-LinkedData/Curso2016-2017/tree/master/Assignment2#>.
+
+:class01 includes :Computer101.
+:class01 includes :Sensor029.
+
+:Computer101 hasOwner :User10A.
+
+:User10A hasName "Pedro".
+
+:Sensor029 hasMeasurement :Measurement8401.
+
+:Measurement8401 atTime 2010-06-12T12:00:12;
+:Measurement8401 hasTemperature 29.
+	

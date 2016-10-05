@@ -1,0 +1,44 @@
+
+
+Exercise 1.a.
+
+<rdf:RDF xmlns="http://www.ontogrid.net/StickyNote#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="http://www.ontogrid.net/StickyNote#">
+	
+	<rdf:Description rdf:about="#event1"></rdf:Description>
+	
+	<rdf:Description rdf:about="#event2"></rdf:Description>
+	
+	<rdf:Description rdf:about="#event3">
+		<involves rdf:resource="#PinarAlper"/>
+		<involves rdf:resource="#CaroleGoble"/>
+		<eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-05-15</eventDate>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#event4">
+		<involves rdf:resource="#OscarCorcho"/>
+		<eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-05-16</eventDate>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#event5">
+		<involves rdf:resource="#CaroleGoble"/>
+		<eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-05-15</eventDate>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#OscarCorcho"></rdf:Description>
+	<rdf:Description rdf:about="#PinarAlper"></rdf:Description>
+	<rdf:Description rdf:about="#CaroleGoble"></rdf:Description>
+	
+</rdf:RDF>
+
+
+
+	StickyNote:event1					StickyNote:event2				        StickyNote:event3		   StickyNote:event4					 
+    															|	|	|		   |		|									
+    															|	|	|		   |		|								
+    															|	|	| eventdate	   |		| eventdate								
+    															|	|	|		   |		|						
+														PinarAlper CaroleGoble	2006-05-15     OscarCorcho   2006-05-16
+															        |	|
+																|	|
+																|	|
+															    StickyNote:event5 						
