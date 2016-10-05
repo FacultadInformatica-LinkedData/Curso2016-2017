@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY vocab "http://www.oeg-upm.net/alumnos/asignment2#" >
+]>
+
+<rdf:RDF xmlns="http://www.oeg-upm.net/alumnos/asignment2#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:vocab="http://www.oeg-upm.net/alumnos/asignment2#vocab"
+         xmlns:sensor="http://www.oeg-upm.net/alumnos/asignment2#sensor"
+         xmlns:computer="http://www.oeg-upm.net/alumnos/asignment2#computer"
+         xmlns:measurement="http://www.oeg-upm.net/alumnos/asignment2#measurement"
+         xmlns:user="http://www.oeg-upm.net/alumnos/asignment2#user">
+
+    <rdf:Property rdf:about="http://www.oeg-upm.net/alumnos/asignment2#includes"/>
+    <rdf:Property rdf:about="http://www.oeg-upm.net/alumnos/asignment2#hasMeasurement"/>
+    <rdf:Property rdf:about="http://www.oeg-upm.net/alumnos/asignment2#hasTemperature"/>
+    <rdf:Property rdf:about="http://www.oeg-upm.net/alumnos/asignment2#atTime"/>
+    <rdf:Property rdf:about="http://www.oeg-upm.net/alumnos/asignment2#hasOwner"/>
+    <rdf:Property rdf:about="http://www.oeg-upm.net/alumnos/asignment2#hasName"/>
+
+
+    <rdf:Description rdf:about=":Class01">
+        <vocab:includes rdf:resource="sensor:Sensor029"/>
+        <vocab:includes rdf:resource="computer:Computer101"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="sensor:Sensor029">
+        <vocab:hasMeasurement rdf:resource="measurement:Measurement8401"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="measurement:Measurement8401">
+        <vocab:hasTemperature xsd:integer="29"/>
+        <vocab:atTime xsd:dateTime="2010-06-12T12:00:12"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="computer:Computer101">
+        <vocab:hasOwner rdf:resource="user:User10A"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="user:User10A">
+        <vocab:hasName xsd:string="Pedro"/>
+    </rdf:Description>
+
+</rdf:RDF>

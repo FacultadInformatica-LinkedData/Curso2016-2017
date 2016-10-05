@@ -1,0 +1,22 @@
+
+@base <http://www.oeg-upm.net/alumnos/asignment2> .
+@prefix propiedad: <http://www.oeg-upm.net/alumnos/asignment2#> .
+@prefix sensor: <http://www.oeg-upm.net/alumnos/asignment2#Sensor> .
+@prefix computer: <http://www.oeg-upm.net/alumnos/asignment2#Computer> .
+@prefix measurement: <http://www.oeg-upm.net/alumnos/asignment2#Measurement> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix user: <http://www.oeg-upm.net/alumnos/asignment2#User> .
+
+:Class01 propiedad:includes sensor:Sensor029 ;
+		 propiedad:includes computer:Computer101 .
+
+sensor:Sensor029 propiedad:hasMeasurement measurement:Measurement8401 .
+
+computer:Computer101 propiedad:hasOwner user:User10A .
+
+measurement:Measurement8401 propiedad:hasTemperature "29"^^xsd:integer ;
+                            propiedad:atTime "2010-06-12T12:00:12"^^xsd:dateTime .
+
+
+
+user:User10A propiedad:hasName "Pedro"^^xsd:string .

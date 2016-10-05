@@ -1,0 +1,19 @@
+@base <http://www.oeg-upm.net/ontologies/class/>
+@prefix class: <http://www.ontologies.org/ontologies/class#>.
+@prefix sensor: <http://www.ontologies.org/ontologies/sensor#>.
+@prefix computer: <http://www.ontologies.org/ontologies/computer#>.
+@prefix measurement: <http://www.ontologies.org/ontologies/measurement#>.
+@prefix user: <http://www.ontologies.org/ontologies/user#>.
+
+
+:Class01	includes:Computer101;
+			includes:Sensor029.
+			
+:Sensor029	hasMeasurement:Measurement8401.
+
+:Measurement8401	hasTemperature:"29"^^xsd:integer;
+					atTime:"2010-06-12T12:00:12"^^xsd:date.
+
+:Computer101	hasOwner:User10A.
+
+:User10A		hasName:"Pedro".
