@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xml:base="loremipsum"
+	xmlns="loremipsum"
+    xmlns:rdf="loremipsum">
+	
+	<rdf:Property rdf:about="loremipsum/measurement#hasTemperature"/>
+	<rdf:Property rdf:about="loremipsum/sensor#hasMeasurement"/>
+	<rdf:Property rdf:about="loremipsum/class#includes"/>
+	<rdf:Property rdf:about="loremipsum/computer#hasOwner"/>
+	<rdf:Property rdf:about="loremipsum/user#hasName"/>
+	
+    <rdf:Description rdf:about="#class01">
+		<class:includes rdf:resource="#Sensor029"/>
+		<class:includes rdf:resource="#Computer101"/>
+    </rdf:Description>
+	
+    <rdf:Description rdf:about="#Sensor029">
+		<sensor:hasMeasurement rdf:resource="#Measurement8401"/>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="#Measurement8401">
+		<measurement:hasTemperature>29</measurement:hasTemperature>
+		<eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-06-12T 12:00:12</eventDate>
+    </rdf:Description>
+	
+    <rdf:Description rdf:about="#Computer101">
+		<computer:hasOwner rdf:resource="#user10A"/>
+    </rdf:Description>
+	
+    <rdf:Description rdf:about="#User10A">
+		<user:hasName>Pedro</user:hasName>
+    </rdf:Description>
+		
+</rdf:RDF>
