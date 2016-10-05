@@ -1,0 +1,19 @@
+@prefix system: <http://ia2.wsld/system#> .
+@prefix : <http://ia2.wsld/#> .
+
+:Class01    system:includes :Sensor029;
+            system:includes :Computer101;
+.
+
+:Sensor029  system:hasMeasurement :Measurement8401;
+.
+
+:Measurement8401    system:hasATemperature "29";
+                    system:atTime "2010-06-12T12:00:12";
+.
+
+:Computer101    system:hasOwner :User10A;
+.
+
+:User10A    system:hasName "Pedro";
+.

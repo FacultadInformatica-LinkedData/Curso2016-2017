@@ -1,0 +1,16 @@
+	
+	
+ @base <http://www.oeg-upm.net/ontologies/class/>
+ @prefix x: <http://www.oeg-upm.net/ontologies/class#>
+ 
+ :Class01 			x:includes:Sensor029;
+ 					x:includes:Computer101.
+					
+ :Computer101:		x:hasOwner:User10A.
+ 
+ :User10A			x:hasName:"Pedro". 
+					
+ :Sensor029 		x:hasMeasurement:Measurement8401.
+ 
+ :Measurement8401 	x:hasTemperature:"29";
+ 					x:atTime:"2010-06-12T12:00:12".

@@ -1,0 +1,10 @@
+@base <http://www.oeg-upm.net/alumnos/u120088/assignment2/>
+@prefix : <http://www.ontologies.org/alumnos/u120032/assignment2#>
+
+: Class01 vocab:includes:Sensor029;
+		  vocab:includes:Computer101.
+:Sensor029 vocab: hasMeasurement: Measurement8401.
+:Computer101 vocab:hasOwner: User10A.
+:Measurement8401 vocab: hasTemperature:"29"^^xsd:integer;
+				vocab: atTime: "2010-06-12T12:00:12"^^xsd date. 
+:User10A vocab:hasName: Pedro .
