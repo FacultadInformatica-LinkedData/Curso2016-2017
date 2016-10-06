@@ -66,6 +66,7 @@ public class Task07
 		
 		System.out.println(" ");
 		OntModel model2 = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM_RDFS_INF, model);
+
 		ExtendedIterator<OntClass> rIter3 =  model2.getOntClass(ns + "Person").listSubClasses();
 		while (rIter3.hasNext()) {
 		  System.out.println(rIter3.next());
