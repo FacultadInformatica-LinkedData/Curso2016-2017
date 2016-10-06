@@ -1,0 +1,93 @@
+SPARQL Questionnaire (Advanced) - Bernard Casado
+
+******* 1. Dame todas las propiedades aplicables a las instancias de la clase Politician *******
+
+++Solucion:
+
+SELECT DISTINCT ?Properties
+
+WHERE {
+
+       ?Instances a <http://dbpedia.org/ontology/Politician> .
+       ?Instances ?Properties []
+
+      }
+
+++Resultado: Lista demasiado Larga
+
+******* 2. Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician *******
+
+++Solucion:
+
+SELECT DISTINCT ?Properties
+
+WHERE {
+
+       ?Instances a <http://dbpedia.org/ontology/Politician> .
+       ?Instances ?Properties [] .
+       FILTER (?Properties != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>)
+
+      }
+
+++Resultado: Lista demasiado Larga
+
+******* 2. ¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician ? *******
+
+++Solucion:
+
+SELECT DISTINCT (count(?Properties) as ?Numero_de_Propiedades_distintas_de_instancias_de_Politician)
+
+WHERE {
+
+       ?Instances a <http://dbpedia.org/ontology/Politician> .
+       ?Instances ?Properties [] .
+       FILTER (?Properties != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>)
+
+      }
+
+++Resultado:
+-------------------------------------------------------------
+|Numero_de_Propiedades_distintas_de_instancias_de_Politician|
+------------------------------------------------------------- 
+ ---------
+| 2345647 |
+ ---------
+
+******* 4. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime cuántos valores distintos toman en dichas instancias ******* 
+
+++Solucion:
+
+SELECT DISTINCT ?Properties (count(?Valor) as ?Numero_de_valores_distintos_de_la_Property_para_las_instancias_de_Politician)
+
+WHERE {
+
+       ?Instances a <http://dbpedia.org/ontology/Politician> .
+       ?Instances ?Properties ?Valor .
+       FILTER (?Properties != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>)
+
+      }
+
+++Resultado: Lista demasiado larga
+
+******* 5. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime la media de valores distintos que toman en dichas instancias. ******* 
+
+
+--
+
+******* 6. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor ******* 
+
+++Solucion:
+
+SELECT DISTINCT ?Properties (count(?Valor) as ?Numero_de_valores_maximos_distintos_de_la_Property_para_las_instancias_de_Politician)
+
+WHERE {
+
+       ?Instances a <http://dbpedia.org/ontology/Politician> .
+       ?Instances ?Properties ?Valor .
+       FILTER (?Properties != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>)
+
+      }
+ORDER BY DESC (?Numero_de_valores_maximos_distintos_de_la_Property_para_las_instancias_de_Politician)
+
+
+
