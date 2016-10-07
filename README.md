@@ -30,3 +30,13 @@ This is the normal process that you will have to follow:
 
 **Assignment 1**. Please fill in a line with a dataset description at folder [Assignment 1](./Assignment1/DatasetDescriptions.csv), as discussed in the course moodle site, and make a pull request
 
+**Assignment 2 - Exercise on RDF and RDFS**. Upload the RDF and RDFS files corresponding to the exercise in the GitHub repository, and comment on those from your colleagues, creating issues in the GitHub repository. This can be done in the [Assignment2](./Assignment2/) folder, **using your GitHub username** + (.png/.svg) and (.rdf/.ttl), or any other similar file extension.
+
+For example, I (my Github username is 'nandana') will upload three files :
+* nandna.png (the image, Exercise 1.a) 
+* nandana.rdf (Exercise 1.b in RDF/XML), and 
+* nandana.ttl (Exercise 1.b in Turtle).
+
+**Assignment 3 - Exercise on Jena API**. Upload the java files Task06.java and Task07.java after completing the tasks 6.x and 7.x mentioned in those files. Before uploading the files create a folder with your **YourGitHubID-StudentID** (e.g., Assignment3/nandana-u120106/) in [Assignment3](./Assignment3/) folder.
+
+**Assignment 4 - SPARQL**. Upload the SPARQL queries and their results after completing the completing the tasks mentioned in the slides. Before uploading the files create a folder with your **YourGitHubID-StudentID** (e.g., Assignment3/nandana-u120106/) in [Assignment4](./Assignment4/) folder.

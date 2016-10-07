@@ -1,0 +1,9 @@
+@base http://www.oeg-upm.net/ontologies/u120106/assignment2/
+@prefix as2: http://www.ontologies.org/ontologies/u120106/assignment2#
+:Class01		as2:includes		:Sensor029 ,
+asg2:includes		:Computer101 .
+:Computer101		as2:hasOwner		:User10A .
+:User10A		as2:hasName		”Pedro” . 
+:Sensor029		as2:hasMeasurement	:Measurement8401 .
+:Measurement8401	as2:hasTemperature	"29"^^xsd:integer ;
+			as2:atTime		"2010-06-12T12:00:12"^^xsd:dateTime .

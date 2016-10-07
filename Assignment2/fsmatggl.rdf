@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:system="http://ia2.wsld/system#"
+    xmlns="http://ia2.wsld/base/system#"
+    xml:base="http://ia2.wsld/base/system/">
+
+<rdf:Property rdf:about="http://ia2.wsld/system#includes"/>
+<rdf:Property rdf:about="http://ia2.wsld/system#hasMeasurement"/>
+<rdf:Property rdf:about="http://ia2.wsld/system#hasTemperature"/>
+<rdf:Property rdf:about="http://ia2.wsld/system#atTime"/>
+<rdf:Property rdf:about="http://ia2.wsld/system#hasOwner"/>
+<rdf:Property rdf:about="http://ia2.wsld/system#hasName"/>
+
+
+<rdf:Description rdf:about="#Class01">
+    <system:includes rdf:resource="#Sensor029"/>
+    <system:includes rdf:resource="#Computer101"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#Sensor029">
+    <system:hasMeasurement rdf:resource="#Measurement8401"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#Measurement8401">
+    <system:hasTemperature>29</system:hasTemperature>
+    <system:atTime>2010-06-12T12:00:12</system:atTime>
+</rdf:Description>
+
+<rdf:Description rdf:about="#Computer101">
+    <system:hasOwner rdf:resource="#User10A"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="#User10A">
+    <system:hasName>Pedro</system:hasName>
+</rdf:Description>
+
+</rdf:RDF>

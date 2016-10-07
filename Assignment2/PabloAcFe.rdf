@@ -1,0 +1,42 @@
+Ejercicios de la Diapostiva 26
+
+Exercise 1a painted in the photo.
+
+Exercise 1b:
+
+-Graph to RDF/XML:
+
+<xml version="1.0">
+  <rdf: RDF>
+    <rdf: Description rdf:about="#Pedro"/>
+    <rdf: Description rdf:about="#29"/>
+    <rdf: Description rdf:about="#2016-06-12T12:00:12"/>
+    <rdf: Description rdf:about="#User10A"/>
+      < hasName rdf:resource="#Pedro"/>
+    </rdf Decription>
+    <rdf Description rdf:about:"#Computer101">
+      < has_Owner rdf:resource="#User10A"/>
+    </rdf Decription>
+    <rdf Decription rdf:about="#Measurement8401">
+      < hasTemperature rdf:resource="#29"/>
+      < atTime rdf:resource="#2016-06-12T12:00:12"/>
+    </rdf Decription>
+    <rdf Decription rdf:about="#Sensor029">
+      < hasMeasurement rdf:resource="#Measurement8401"/>
+    </rdf Decription>
+    <rdf Decription rdf:about="#Class01">
+      < includes rdf:resource="#Sensor029"/>
+      < includes rdf:resource="#Computer101"/>
+    </rdf Decription>
+  </rdf: RDF>
+
+
+-Graph to Turtle:
+
+:Class01 vocab: includes: Sensor029;
+         vocab: includes: Computer01.
+:Sensor029 vocab: hasMeasurement: Measurement8401.
+:Measurement8401 vocab: hasTemperature: 29;
+                 vocab: atTime: 2016-06-12T12:00:12.
+:Computer101 vocab: hasOwner: User10A.
+:User10A vocab: hasName: Pedro.
