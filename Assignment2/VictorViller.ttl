@@ -1,0 +1,10 @@
+@prefix vocab: <http://www.oeg-upm.net/ontologies/Properties#> .
+
+<http://www.ontologies.org/ontologies/Properties#Class01> vocab:includes vocab:Sensor029, vocab:Computer101 .
+vocab:Sensor029 vocab:hasMeasurement vocab:Measurement8401 .
+vocab:Computer101 vocab:hasOwner vocab:User10A .
+vocab:Measurement8401
+  vocab:hasTemperature vocab:29 ;
+  vocab:atTime vocab:2010-06-12T 12:00:12 .
+
+vocab:User10A vocab:hasName vocab:Pedro .

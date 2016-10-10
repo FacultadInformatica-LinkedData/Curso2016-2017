@@ -1,0 +1,15 @@
+@prefix : <http://www.example.org/>. 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix property: <http://www.example.org/property#>.
+
+:Class01 property:includes :Sensor029;
+                property:includes :Computer101.
+
+:Sensor029 property:hasMeasurement :Measurement8401.
+
+:Computer101 property:hasOwner :User10A.
+
+:Measurement8401 property:hasTemperature "29"^^<xsd:integer>;
+                property:atTime :"2010-06-12T12:00:12"^^<xsd:dateTime>.
+
+:User10A property:hasName :"Pedro"^^<xsd:string>.
