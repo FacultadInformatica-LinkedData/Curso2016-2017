@@ -1,0 +1,77 @@
+﻿Provide the SPARQL query and the result for the following queries expressed in natural language. The endpoint that you can use for this exercise is: http://es.dbpedia.org/sparql
+
+#1-Dame todas las propiedades aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+SELECT DISTINCT ?Propiedades
+WHERE
+{
+?T ?relacion <http://dbpedia.org/ontology/Politician> .
+?T ?Propiedades ?X
+}
+
+///////////////////////////////////////////////////////////////
+
+#2-Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+SELECT DISTINCT ?Propiedades
+WHERE
+{
+?T ?relacion <http://dbpedia.org/ontology/Politician> .
+?T ?Propiedades ?X
+FILTER (?Propiedades != rdf:type)
+}
+
+///////////////////////////////////////////////////////////////
+
+#3-¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)?
+SELECT COUNT (DISTINCT ?dato) 
+WHERE
+{
+?instancia ?aux <http://dbpedia.org/ontology/Politician>.
+?instancia ?relacion ?dato.
+FILTER (?relacion!= rdf:type)
+}
+
+///////////////////////////////////////////////////////////////
+
+#4-Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime cuántos valores distintos toman en dichas instancias
+SELECT ?relacion COUNT (DISTINCT ?dato) 
+WHERE
+{
+?instancia ?aux <http://dbpedia.org/ontology/Politician>.
+?instancia ?relacion ?dato.
+FILTER (?relacion!= rdf:type)
+}
+
+///////////////////////////////////////////////////////////////
+
+#5-Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime la media de valores distintos que toman en dichas instancias.
+SELECT AVG(?valores) as ?media
+WHERE
+{
+{
+SELECT ?relacion count (DISTINCT ?valor) as ?valores
+WHERE
+{
+?instancia ?q <http://dbpedia.org/ontology/Politician> .
+?instancia ?relacion ?valor
+FILTER (?relacion != rdf:type)
+}
+}
+}
+
+///////////////////////////////////////////////////////////////
+
+#6-Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor
+SELECT ?relacion MAX(?valores) as ?valores_distintos
+WHERE
+{
+{
+SELECT ?relacion COUNT(DISTINCT ?valor) as ?valores
+WHERE
+{
+?instancia ?q <http://dbpedia.org/ontology/Politician> .
+?instancia ?relacion ?valor
+FILTER (?relacion!= rdf:type)
+}
+}
+}
+ORDER BY DESC(?valores_distintos)
