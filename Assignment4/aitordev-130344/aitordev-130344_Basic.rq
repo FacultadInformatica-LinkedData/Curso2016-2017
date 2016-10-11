@@ -32,13 +32,13 @@ SELECT ?street ?number ?locality ?province WHERE { pr:Pazo_Breogan pr:hasAddress
 SELECT ?scl WHERE { ?scl rdfs:subClassOf pr:Location. }
 
 #   11. Get all instances of class Locality
-
+SELECT ?loc WHERE { ?sub rdfs:subClassOf pr:Locality. ?loc a ?sub.}
 
 #   12. Describe the resource with rdfs:label "Madrid”
-
+DESCRIBE ?lab WHERE { ?lab rdfs:label "Madrid". }
 
 #   13. Construct a pr that relates directly all touristic places with their provinces, using a new property called ”isIn”
-
+CONSTRUCT { ?x pr:isIn ?y } WHERE { ?tou rdfs:subClassOf pr:TouristicLocation. ?x a ?tou. ?x pr:isPlacedIn ?i. ?i pr:inProvince ?y. }
 
 #   14. Check whether there is any instance of Town
-
+ASK  { ?x a pr:Town. }
