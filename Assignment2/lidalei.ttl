@@ -1,0 +1,16 @@
+@base <http://www.somewhere.com/classroom/>
+@prefix vocab:<http://www.somewhere.com/classroom#>
+
+:Class01 vocab:includes :Sensor029;
+         vocab:includes :Computer101.
+
+
+:Sensor029 vocab:hasMeasurement :Measurement8401.
+
+
+:Computer101 vocab:hasOwner :User10A.
+
+:Measurement8401 vocab:hasTemperature 29;
+                 vocab:atTime 2010-06-12T12:00:12.
+
+:User10A vocab:hasName Pedro.

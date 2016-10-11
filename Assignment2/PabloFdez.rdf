@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+<rdf:RDF\
+\
+    <rdf:RDF xmlns="http://www.ontogrid.net/StickyNote#">\
+    <xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">\
+    <xml:base="http://www.ontogrid.net/StickyNote#"> \
+ \
+        \
+    <rdf:Property rdf:about="http://www.ontologies.org/ontologies/class#includes"/>\
+    <rdf:Property rdf:about="http://www.ontologies.org/ontologies/sensor#hasMeasurement"/>\
+    <rdf:Property rdf:about="http://www.ontologies.org/ontologies/computer#hasOwner"/>\
+    <rdf:Property rdf:about="http://www.ontologies.org/ontologies/measurement#atTime"/>\
+    <rdf:Property rdf:about="http://www.ontologies.org/ontologies/measurement#hasTemperature"/>\
+    <rdf:Property rdf:about="http://www.ontologies.org/ontologies/user#hasName"/>\
+        \
+		<rdf:Description rdf:about="#Class01">\
+            <class:includes rdf:resource="#Sensor029"/>\
+            <class:includes rdf:resource="#Computer101"/>\
+        </rdf:Description>\
+		\
+		  <rdf:Description rdf:about="#Sensor029">\
+            <sensor:hasMeasurement rdf:resource="#Measurement8401"/>\
+        </rdf:Description>\
+\
+        <rdf:Description rdf:about="#Measurement8401">\
+            <measurement:hasTemperature>29</measurement:hasTemperature>\
+            <measurement:atTime>2010-06-12T 12:00:12</measurement:atTime>\
+        </rdf:Description>\
+		\
+		  <rdf:Description rdf:about="#Computer101">\
+            <computer:hasOwner rdf:resource="#User10A"/>\
+        </rdf:Description>\
+\
+        <rdf:Description rdf:about="#User10A">\
+            <user:hasName>Pedro</user:hasName>\
+        </rdf:Description>\
+				\
+    \
+</rdf:RDF>}
