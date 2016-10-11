@@ -1,0 +1,23 @@
+@base <"http://www.ontogrid.net/StickyNote#"> .
+@prefix class: <"http://www.example/class.com">
+@prefix computer: <"http://www.example/computer.com">
+@prefix user: <"http://www.example/user.com">
+@prefix sensor: <"http://www.example/sensor.com">
+@prefix measurement: <"http://www.example/measurement.com">
+
+class : Class01
+	property: includes Sensor029;
+	property: includes Computer101.
+
+computer : Computer101
+	property: hasOwner User10A.
+	
+user : User10A
+	property: hasName "Pedro"^^<xsd:string>.
+
+sensor : Sensor029
+	property: hasMeasurement Measurement8401.
+
+measurement : Measurement8401
+	hasTemperature "29"^^<xsd:int>;
+atTime "2010-06-12T12:00:12"<xsd:dateTime>.
