@@ -1,0 +1,139 @@
+1. Dame todas las propiedades aplicables a las instancias de la clase Politician
+
+select distinct ?Properties
+where{
+?Instances ?q <http://dbpedia.org/ontology/Politician> .
+?Instances ?Properties ?Valor
+}
+
+Properties
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://purl.org/dc/terms/subject
+http://xmlns.com/foaf/0.1/depiction
+http://dbpedia.org/ontology/thumbnail
+http://dbpedia.org/property/designado
+http://xmlns.com/foaf/0.1/homepage
+http://dbpedia.org/property/enelcargo
+...
+
+
+2. Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase 
+
+select distinct?Properties
+where{
+?Instances ?q <http://dbpedia.org/ontology/Politician> .
+?Instances ?Properties ?Valor
+FILTER (?Properties != rdf:type)
+}
+
+Properties
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://purl.org/dc/terms/subject
+http://xmlns.com/foaf/0.1/depiction
+http://dbpedia.org/ontology/thumbnail
+http://dbpedia.org/property/designado
+http://xmlns.com/foaf/0.1/homepage
+http://dbpedia.org/property/enelcargo
+http://dbpedia.org/property/oponentes
+http://dbpedia.org/property/religion
+http://dbpedia.org/ontology/wikiPageExternalLink
+http://dbpedia.org/property/alineaciónTexto
+http://dbpedia.org/property/almamáter
+http://dbpedia.org/property/ancho
+...
+
+
+3. ¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)?
+
+select count (distinct ?Valor) as ?Valores
+where{
+?Instances ?q <http://dbpedia.org/ontology/Politician> .
+?Instances ?Properties ?Valor
+FILTER (?Properties != rdf:type)
+}
+
+Valores
+563876
+
+
+4. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime cuántos valores distintos toman en dichas instancias
+
+select ?Properties count (distinct ?Valor) as ?Valores
+where{
+?Instances ?q <http://dbpedia.org/ontology/Politician> .
+?Instances ?Properties ?Valor
+FILTER (?Properties != rdf:type)
+}
+
+Properties	Valores
+http://es.dbpedia.org/property/nombreBatalla		1
+http://es.dbpedia.org/property/mandos				57
+http://dbpedia.org/property/blog					2
+http://es.dbpedia.org/property/genero				1
+http://es.dbpedia.org/property/transcripciónurl		3
+http://dbpedia.org/property/colorBarras				3
+http://es.dbpedia.org/property/colorTexto			2
+http://es.dbpedia.org/property/constituencyMp		1
+http://es.dbpedia.org/property/consecration			1
+http://es.dbpedia.org/property/pp					1
+http://es.dbpedia.org/property/proffueión			1
+http://dbpedia.org/property/cognome					1
+http://es.dbpedia.org/property/primeraCarrera		1
+http://es.dbpedia.org/property/lugarDeResidencia	1
+http://es.dbpedia.org/property/ubicación			208
+...
+
+
+5. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime la media de valores distintos que toman en dichas instancias.
+
+select avg(?Valores) as ?media
+where{
+{
+select ?Properties count (distinct ?Valor) as ?Valores
+where{
+?Instances ?q <http://dbpedia.org/ontology/Politician> .
+?Instances ?Properties ?Valor
+FILTER (?Properties != rdf:type)
+}
+}
+}
+
+media
+548.769123783031989
+
+
+6. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor
+
+select ?Properties max(?Valores) as ?Max
+where{
+{
+select ?Properties count (distinct ?Valor) as ?Valores
+where{
+?Instances ?q <http://dbpedia.org/ontology/Politician> .
+?Instances ?Properties ?Valor
+FILTER (?Properties != rdf:type)
+}
+}
+}
+ORDER BY DESC(?Max)
+
+Properties												Max
+http://dbpedia.org/ontology/wikiPageWikiLink			206324
+http://www.w3.org/2002/07/owl#sameAs					152677
+http://es.dbpedia.org/property/predecesor				20120
+http://dbpedia.org/ontology/wikiPageExternalLink		19679
+http://dbpedia.org/ontology/successor					19183
+http://es.dbpedia.org/property/sucesor					18968
+http://purl.org/dc/terms/subject						17932
+http://xmlns.com/foaf/0.1/name							16972
+http://www.w3.org/2000/01/rdf-schema#label				15400
+http://www.w3.org/ns/prov#wasDerivedFrom				15400
+http://dbpedia.org/ontology/wikiPageRevisionID			15400
+http://dbpedia.org/ontology/wikiPageID					15400
+http://xmlns.com/foaf/0.1/isPrimaryTopicOf				15400
+http://dbpedia.org/ontology/abstract					15379
+...
+
