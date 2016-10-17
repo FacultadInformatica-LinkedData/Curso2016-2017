@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xml:base="http://www.somewhere.com/classroom"
+    xmlns="http://www.somewhere.com/classroom#"
+    xmlns:classroom = "http://www.somewhere.com/classroom#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Property rdf:about="#includes"/>
+    <rdf:Property rdf:about="#hasMeasurement"/>
+    <rdf:Property rdf:about="#hasTemperature"/>
+    <rdf:Property rdf:about="#atTime"/>
+    <rdf:Property rdf:about="#hasName"/>
+    <rdf:Property rdf:about="#hasOwner"/>
+    <rdf:Description rdf:about="#Class01">
+      <classroom:includes rdf:resource="#Sensor029"/>
+      <classroom:includes rdf:resource="#Computer101"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Sensor029">
+      <classroom:hasMeasurement rdf:resource="#Measurement8401"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Computer101">
+      <classroom:hasOwner rdf:resource="#User10A"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="#Measurement8401">
+      <classroom:atTime>2010-06-12T12:00:12</classroom:atTime>
+      <classroom:hasTemperature>29</classroom:hasTemperature>
+    </rdf:Description>
+    <rdf:Description rdf:about="#User10A">
+      <classroom:hasName>Pedro</classroom:hasName>
+    </rdf:Description>
+</rdf:RDF>
