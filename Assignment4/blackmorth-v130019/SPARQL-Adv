@@ -1,0 +1,486 @@
+1. Dame todas las propiedades aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+select distinct ?properties
+where
+{
+	?instan a <http://dbpedia.org/ontology/Politician> .
+	?instan ?properties ?num
+} 
+limit 100
+
+properties
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://purl.org/dc/terms/subject
+http://xmlns.com/foaf/0.1/depiction
+http://dbpedia.org/ontology/thumbnail
+http://dbpedia.org/property/designado
+http://xmlns.com/foaf/0.1/homepage
+http://dbpedia.org/property/enelcargo
+http://dbpedia.org/property/oponentes
+http://dbpedia.org/property/religion
+http://dbpedia.org/ontology/wikiPageExternalLink
+http://dbpedia.org/property/alineaciónTexto
+http://dbpedia.org/property/almamáter
+http://dbpedia.org/property/ancho
+http://dbpedia.org/property/apellido
+http://dbpedia.org/property/apellidos
+http://dbpedia.org/property/apodo
+http://dbpedia.org/property/autor
+http://dbpedia.org/property/año
+http://dbpedia.org/property/añosDeServicio
+http://dbpedia.org/property/capítulo
+http://dbpedia.org/property/cargo
+http://dbpedia.org/property/condecoraciones
+http://dbpedia.org/property/cónyuge
+http://dbpedia.org/property/descendencia
+http://dbpedia.org/property/dirección
+http://dbpedia.org/property/distrito
+http://dbpedia.org/property/edición
+http://dbpedia.org/property/editor
+http://dbpedia.org/property/embajadorde
+http://dbpedia.org/property/enlaceautor
+http://dbpedia.org/property/escudo
+http://dbpedia.org/property/fechaacceso
+http://dbpedia.org/property/fechamuerte
+http://dbpedia.org/property/fechanac
+http://dbpedia.org/property/final
+http://dbpedia.org/property/firma
+http://dbpedia.org/property/formato
+http://dbpedia.org/property/foto
+http://dbpedia.org/property/fórmula
+http://dbpedia.org/property/gabinete
+http://dbpedia.org/property/hijos
+http://dbpedia.org/property/id
+http://dbpedia.org/property/idioma
+http://dbpedia.org/property/imagen
+http://dbpedia.org/property/inicio
+http://dbpedia.org/property/isbn
+http://dbpedia.org/property/issn
+http://dbpedia.org/property/lealtad
+http://dbpedia.org/property/lugarmuerte
+http://dbpedia.org/property/lugarnac
+http://dbpedia.org/property/mandos
+http://dbpedia.org/property/monarca
+http://dbpedia.org/property/máscaraautor
+http://dbpedia.org/property/nombre
+http://dbpedia.org/property/número
+http://dbpedia.org/property/obra
+http://dbpedia.org/property/ocupación
+http://dbpedia.org/property/padres
+http://dbpedia.org/property/partido
+http://dbpedia.org/property/país
+http://dbpedia.org/property/período
+http://dbpedia.org/property/pieescudo
+http://dbpedia.org/property/pieimagen
+http://dbpedia.org/property/posiciónTabla
+http://dbpedia.org/property/predecesor
+http://dbpedia.org/property/presidente
+http://dbpedia.org/property/primerministro
+http://dbpedia.org/property/profesión
+http://dbpedia.org/property/publicación
+http://dbpedia.org/property/publisher
+http://dbpedia.org/property/páginas
+http://dbpedia.org/property/rama
+http://dbpedia.org/property/rango
+http://dbpedia.org/property/religión
+http://dbpedia.org/property/residencia
+http://dbpedia.org/property/subtítulo
+http://dbpedia.org/property/sucesor
+http://dbpedia.org/property/tamaño
+http://dbpedia.org/property/texto
+http://dbpedia.org/property/tratamiento
+http://dbpedia.org/property/ubicación
+http://dbpedia.org/property/vicepresidente
+http://dbpedia.org/property/viceprimerministro
+http://dbpedia.org/property/editorial
+http://dbpedia.org/property/fecha
+http://dbpedia.org/property/título
+http://dbpedia.org/property/url
+http://dbpedia.org/ontology/wikiPageWikiLink
+http://dbpedia.org/ontology/child
+http://dbpedia.org/ontology/country
+http://dbpedia.org/ontology/occupation
+http://dbpedia.org/ontology/party
+http://dbpedia.org/ontology/profession
+http://dbpedia.org/ontology/religion
+http://dbpedia.org/ontology/successor
+http://xmlns.com/foaf/0.1/name
+http://dbpedia.org/ontology/abstract
+http://dbpedia.org/property/1data
+
+2. Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+select distinct ?properties
+where
+{
+	?instan a <http://dbpedia.org/ontology/Politician> .
+	?instan ?properties ?num .
+	filter (?properties != rdf:type)
+}
+limit 100
+
+properties
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://purl.org/dc/terms/subject
+http://xmlns.com/foaf/0.1/depiction
+http://dbpedia.org/ontology/thumbnail
+http://dbpedia.org/property/designado
+http://xmlns.com/foaf/0.1/homepage
+http://dbpedia.org/property/enelcargo
+http://dbpedia.org/property/oponentes
+http://dbpedia.org/property/religion
+http://dbpedia.org/ontology/wikiPageExternalLink
+http://dbpedia.org/property/alineaciónTexto
+http://dbpedia.org/property/almamáter
+http://dbpedia.org/property/ancho
+http://dbpedia.org/property/apellido
+http://dbpedia.org/property/apellidos
+http://dbpedia.org/property/apodo
+http://dbpedia.org/property/autor
+http://dbpedia.org/property/año
+http://dbpedia.org/property/añosDeServicio
+http://dbpedia.org/property/capítulo
+http://dbpedia.org/property/cargo
+http://dbpedia.org/property/condecoraciones
+http://dbpedia.org/property/cónyuge
+http://dbpedia.org/property/descendencia
+http://dbpedia.org/property/dirección
+http://dbpedia.org/property/distrito
+http://dbpedia.org/property/edición
+http://dbpedia.org/property/editor
+http://dbpedia.org/property/embajadorde
+http://dbpedia.org/property/enlaceautor
+http://dbpedia.org/property/escudo
+http://dbpedia.org/property/fechaacceso
+http://dbpedia.org/property/fechamuerte
+http://dbpedia.org/property/fechanac
+http://dbpedia.org/property/final
+http://dbpedia.org/property/firma
+http://dbpedia.org/property/formato
+http://dbpedia.org/property/foto
+http://dbpedia.org/property/fórmula
+http://dbpedia.org/property/gabinete
+http://dbpedia.org/property/hijos
+http://dbpedia.org/property/id
+http://dbpedia.org/property/idioma
+http://dbpedia.org/property/imagen
+http://dbpedia.org/property/inicio
+http://dbpedia.org/property/isbn
+http://dbpedia.org/property/issn
+http://dbpedia.org/property/lealtad
+http://dbpedia.org/property/lugarmuerte
+http://dbpedia.org/property/lugarnac
+http://dbpedia.org/property/mandos
+http://dbpedia.org/property/monarca
+http://dbpedia.org/property/máscaraautor
+http://dbpedia.org/property/nombre
+http://dbpedia.org/property/número
+http://dbpedia.org/property/obra
+http://dbpedia.org/property/ocupación
+http://dbpedia.org/property/padres
+http://dbpedia.org/property/partido
+http://dbpedia.org/property/país
+http://dbpedia.org/property/período
+http://dbpedia.org/property/pieescudo
+http://dbpedia.org/property/pieimagen
+http://dbpedia.org/property/posiciónTabla
+http://dbpedia.org/property/predecesor
+http://dbpedia.org/property/presidente
+http://dbpedia.org/property/primerministro
+http://dbpedia.org/property/profesión
+http://dbpedia.org/property/publicación
+http://dbpedia.org/property/publisher
+http://dbpedia.org/property/páginas
+http://dbpedia.org/property/rama
+http://dbpedia.org/property/rango
+http://dbpedia.org/property/religión
+http://dbpedia.org/property/residencia
+http://dbpedia.org/property/subtítulo
+http://dbpedia.org/property/sucesor
+http://dbpedia.org/property/tamaño
+http://dbpedia.org/property/texto
+http://dbpedia.org/property/tratamiento
+http://dbpedia.org/property/ubicación
+http://dbpedia.org/property/vicepresidente
+http://dbpedia.org/property/viceprimerministro
+http://dbpedia.org/property/editorial
+http://dbpedia.org/property/fecha
+http://dbpedia.org/property/título
+http://dbpedia.org/property/url
+http://dbpedia.org/ontology/wikiPageWikiLink
+http://dbpedia.org/ontology/child
+http://dbpedia.org/ontology/country
+http://dbpedia.org/ontology/occupation
+http://dbpedia.org/ontology/party
+http://dbpedia.org/ontology/profession
+http://dbpedia.org/ontology/religion
+http://dbpedia.org/ontology/successor
+http://xmlns.com/foaf/0.1/name
+http://dbpedia.org/ontology/abstract
+http://dbpedia.org/property/1data
+http://dbpedia.org/property/dead
+
+3. ¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)?
+
+select count(distinct ?num)
+where
+{
+	?instan a <http://dbpedia.org/ontology/Politician> .
+	?instan ?properties ?num .
+	filter (?properties != rdf:type)
+}
+limit 100
+
+callret-0
+563876
+
+4. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime cuántos valores distintos toman en dichas instancias
+
+select ?properties count(distinct ?num)
+where
+{
+	?instan a <http://dbpedia.org/ontology/Politician> .
+	?instan ?properties ?num .
+	filter (?properties != rdf:type)
+}
+limit 100
+
+properties 	callret-1
+http://es.dbpedia.org/property/nombreBatalla 	1
+http://es.dbpedia.org/property/mandos 	57
+http://dbpedia.org/property/blog 	2
+http://es.dbpedia.org/property/genero 	1
+http://es.dbpedia.org/property/transcripciónurl 	3
+http://dbpedia.org/property/colorBarras 	3
+http://es.dbpedia.org/property/colorTexto 	2
+http://es.dbpedia.org/property/constituencyMp 	1
+http://es.dbpedia.org/property/consecration 	1
+http://es.dbpedia.org/property/pp 	1
+http://es.dbpedia.org/property/proffueión 	1
+http://dbpedia.org/property/cognome 	1
+http://es.dbpedia.org/property/primeraCarrera 	1
+http://es.dbpedia.org/property/lugarDeResidencia 	1
+http://es.dbpedia.org/property/ubicación 	208
+http://dbpedia.org/property/years 	2
+http://es.dbpedia.org/property/successor 	6
+http://dbpedia.org/property/tiempo 	6
+http://es.dbpedia.org/property/sangre 	2
+http://es.dbpedia.org/property/isban 	1
+http://dbpedia.org/property/last 	49
+http://es.dbpedia.org/property/placeOfBirth 	4
+http://dbpedia.org/property/tamaño 	54
+http://dbpedia.org/property/sufijo 	1
+http://es.dbpedia.org/property/6data 	2
+http://es.dbpedia.org/property/dinastía 	1
+http://dbpedia.org/property/agencia 	1
+http://dbpedia.org/property/persona 	1
+http://dbpedia.org/property/descendencia 	2
+http://dbpedia.org/property/final 	844
+http://dbpedia.org/property/conocidaPor 	1
+http://dbpedia.org/property/exResidencia 	3
+http://dbpedia.org/property/page 	2
+http://es.dbpedia.org/property/conyugue 	2
+http://dbpedia.org/property/estadoCivil 	3
+http://es.dbpedia.org/property/secretarioGeneral 	1
+http://dbpedia.org/property/enlaceautor 	202
+http://dbpedia.org/property/máscaraautor 	3
+http://dbpedia.org/property/website 	2
+http://es.dbpedia.org/property/poj 	3
+http://es.dbpedia.org/property/twitter 	433
+http://es.dbpedia.org/property/lugarPublicación 	4
+http://es.dbpedia.org/property/directorSupremoTitular 	2
+http://dbpedia.org/property/tanaño 	1
+http://dbpedia.org/ontology/president 	2
+http://es.dbpedia.org/property/hija 	1
+http://es.dbpedia.org/property/datos 	4
+http://dbpedia.org/property/rank 	1
+http://dbpedia.org/property/diputadoFederalPorElPan 	1
+http://es.dbpedia.org/property/booktitle 	1
+http://es.dbpedia.org/property/almaMater 	34
+http://es.dbpedia.org/property/cp 	1
+http://dbpedia.org/property/canal 	1
+http://es.dbpedia.org/property/opcAdm 	2
+http://es.dbpedia.org/property/caption 	3
+http://es.dbpedia.org/property/imagesize 	7
+http://es.dbpedia.org/property/luarmuerte 	1
+http://es.dbpedia.org/property/procedencia 	3
+http://es.dbpedia.org/property/ño 	1
+http://es.dbpedia.org/property/publicación 	132
+http://dbpedia.org/property/series 	3
+http://es.dbpedia.org/property/lucarnac 	4
+http://dbpedia.org/property/predecesor 	6713
+http://es.dbpedia.org/property/ref 	13
+http://es.dbpedia.org/property/pieDeFoto 	7
+http://es.dbpedia.org/property/nieto 	1
+http://dbpedia.org/property/sitiowebNoOficial 	1
+http://dbpedia.org/property/edition 	2
+http://es.dbpedia.org/property/audio 	1
+http://es.dbpedia.org/property/preposición 	2
+http://dbpedia.org/property/empleos 	24
+http://es.dbpedia.org/property/authorLink 	1
+http://es.dbpedia.org/property/comuna 	1
+http://dbpedia.org/property/parttido 	1
+http://es.dbpedia.org/property/gobierno 	2
+http://es.dbpedia.org/property/obra 	103
+http://es.dbpedia.org/property/vicepresidentePrimero 	1
+http://dbpedia.org/property/portal 	2
+http://es.dbpedia.org/property/religon 	2
+http://dbpedia.org/property/primerAño 	2
+http://es.dbpedia.org/property/nacionalidad 	97
+http://es.dbpedia.org/property/estado 	5
+http://dbpedia.org/property/majority 	1
+http://dbpedia.org/property/office 	9
+http://es.dbpedia.org/property/objeto 	2
+http://es.dbpedia.org/property/editor2Nombre 	1
+http://dbpedia.org/property/smallimage 	1
+http://es.dbpedia.org/property/conflicto 	2
+http://dbpedia.org/property/pages 	12
+http://es.dbpedia.org/property/sufijo 	1
+http://es.dbpedia.org/property/fechanacimiento 	5
+http://es.dbpedia.org/property/sufijohonorífico 	1
+http://dbpedia.org/property/accessdate 	16
+http://dbpedia.org/property/nombreNacimiento 	4
+http://es.dbpedia.org/property/comentario 	1
+http://dbpedia.org/property/tamañoImagen 	2
+http://dbpedia.org/property/novia 	1
+http://dbpedia.org/property/fallecimiento 	1
+http://es.dbpedia.org/property/tamañoimagen 	5
+http://dbpedia.org/property/superficie 	1
+
+5. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime la media de valores distintos que toman en dichas instancias.
+
+select avg (distinct ?num) as ?aver
+where
+{
+	select ?properties count (distinct ?num2) as ?num
+	where
+	{
+	?instan a <http://dbpedia.org/ontology/Politician> .
+	?instan ?properties ?num2 .
+	filter (?properties != rdf:type)
+	} 
+}
+
+avg
+3506.512315270935961
+
+6. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor
+
+select ?properties max(?num) as ?maxi
+where
+{
+	select ?properties count(distinct ?num2) as ?num
+	where
+	{
+	?instan a <http://dbpedia.org/ontology/Politician> .
+	?instan ?properties ?num2 .
+	filter (?properties != rdf:type)
+	}
+}
+order by desc(?maxi)
+limit 100
+
+properties 	maxi
+http://dbpedia.org/ontology/wikiPageWikiLink 	206324
+http://www.w3.org/2002/07/owl#sameAs 	152677
+http://es.dbpedia.org/property/predecesor 	20120
+http://dbpedia.org/ontology/wikiPageExternalLink 	19679
+http://dbpedia.org/ontology/successor 	19183
+http://es.dbpedia.org/property/sucesor 	18968
+http://purl.org/dc/terms/subject 	17932
+http://xmlns.com/foaf/0.1/name 	16972
+http://www.w3.org/2000/01/rdf-schema#label 	15400
+http://www.w3.org/ns/prov#wasDerivedFrom 	15400
+http://dbpedia.org/ontology/wikiPageRevisionID 	15400
+http://dbpedia.org/ontology/wikiPageID 	15400
+http://xmlns.com/foaf/0.1/isPrimaryTopicOf 	15400
+http://dbpedia.org/ontology/abstract 	15379
+http://www.w3.org/2000/01/rdf-schema#comment 	15374
+http://es.dbpedia.org/property/nombre 	13425
+http://es.dbpedia.org/property/cargo 	9091
+http://dbpedia.org/ontology/wikiPageLength 	8821
+http://xmlns.com/foaf/0.1/depiction 	8601
+http://dbpedia.org/ontology/thumbnail 	8601
+http://es.dbpedia.org/property/lugarnac 	8217
+http://es.dbpedia.org/property/imagen 	7747
+http://es.dbpedia.org/property/título 	7336
+http://dbpedia.org/property/nombre 	7077
+http://dbpedia.org/property/predecesor 	6713
+http://dbpedia.org/property/sucesor 	6513
+http://es.dbpedia.org/property/cónyuge 	6276
+http://dbpedia.org/property/imagen 	5252
+http://dbpedia.org/property/lugarnac 	4921
+http://dbpedia.org/property/título 	4214
+http://dbpedia.org/property/cargo 	4169
+http://dbpedia.org/property/cónyuge 	3185
+http://es.dbpedia.org/property/partido 	3144
+http://dbpedia.org/ontology/party 	3078
+http://es.dbpedia.org/property/hijos 	2721
+http://es.dbpedia.org/property/lugarmuerte 	2664
+http://es.dbpedia.org/property/pieimagen 	2649
+http://es.dbpedia.org/property/profesión 	2549
+http://es.dbpedia.org/property/padres 	2250
+http://es.dbpedia.org/property/escudo 	2175
+http://dbpedia.org/property/pieimagen 	1773
+http://es.dbpedia.org/property/distrito 	1759
+http://dbpedia.org/property/lugarmuerte 	1722
+http://dbpedia.org/property/partido 	1637
+http://es.dbpedia.org/property/almamáter 	1616
+http://es.dbpedia.org/property/editorial 	1545
+http://dbpedia.org/property/escudo 	1506
+http://dbpedia.org/property/hijos 	1441
+http://es.dbpedia.org/property/presidente 	1374
+http://es.dbpedia.org/property/final 	1298
+http://es.dbpedia.org/property/inicio 	1292
+http://xmlns.com/foaf/0.1/homepage 	1270
+http://es.dbpedia.org/property/url 	1238
+http://dbpedia.org/ontology/profession 	1237
+http://dbpedia.org/property/profesión 	1189
+http://dbpedia.org/property/editorial 	1188
+http://es.dbpedia.org/property/sitioweb 	1149
+http://es.dbpedia.org/property/ocupación 	1137
+http://dbpedia.org/ontology/child 	998
+http://dbpedia.org/ontology/residence 	981
+http://es.dbpedia.org/property/fechanac 	944
+http://dbpedia.org/property/padres 	907
+http://dbpedia.org/property/presidente 	876
+http://dbpedia.org/property/inicio 	860
+http://dbpedia.org/property/final 	844
+http://es.dbpedia.org/property/período 	842
+http://dbpedia.org/property/almamáter 	815
+http://dbpedia.org/property/url 	810
+http://dbpedia.org/property/distrito 	795
+http://es.dbpedia.org/property/residencia 	794
+http://es.dbpedia.org/property/fechamuerte 	774
+http://dbpedia.org/ontology/occupation 	763
+http://es.dbpedia.org/property/apellido 	757
+http://es.dbpedia.org/property/vicepresidente 	745
+http://es.dbpedia.org/property/primerministro 	733
+http://es.dbpedia.org/property/firma 	729
+http://dbpedia.org/property/fechanac 	721
+http://es.dbpedia.org/property/autor 	711
+http://dbpedia.org/property/firma 	682
+http://dbpedia.org/property/período 	638
+http://dbpedia.org/property/apellido 	614
+http://dbpedia.org/property/sitioweb 	607
+http://es.dbpedia.org/property/apellidos 	585
+http://dbpedia.org/property/autor 	555
+http://dbpedia.org/property/primerministro 	532
+http://es.dbpedia.org/property/wikiPageUsesTemplate 	516
+http://dbpedia.org/property/vicepresidente 	505
+http://dbpedia.org/property/ocupación 	495
+http://es.dbpedia.org/property/isbn 	475
+http://dbpedia.org/property/apellidos 	467
+http://dbpedia.org/property/fechamuerte 	466
+http://dbpedia.org/ontology/wikiPageOutDegree 	440
+http://es.dbpedia.org/property/twitter 	433
+http://dbpedia.org/property/isbn 	411
+http://dbpedia.org/property/residencia 	395
+http://es.dbpedia.org/property/id 	366
+http://es.dbpedia.org/property/páginas 	345
+http://es.dbpedia.org/property/afiliaciones 	328
+http://dbpedia.org/ontology/religion 	327
+http://es.dbpedia.org/property/religión 	315
