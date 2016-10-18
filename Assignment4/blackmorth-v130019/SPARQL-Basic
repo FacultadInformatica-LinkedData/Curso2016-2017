@@ -1,0 +1,206 @@
+1. Get all the classes
+
+select distinct ?class
+where
+{?class a rdfs:Class}
+limit 100
+
+class
+http://GP-onto.fi.upm.es/exercise2#OnFoot
+http://GP-onto.fi.upm.es/exercise2#TransportMedium
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#Establishment
+http://GP-onto.fi.upm.es/exercise2#PhysicalPoint
+http://GP-onto.fi.upm.es/exercise2#Stage
+http://GP-onto.fi.upm.es/exercise2#TransportInfrastructure
+http://GP-onto.fi.upm.es/exercise2#Bus
+http://GP-onto.fi.upm.es/exercise2#Car
+http://GP-onto.fi.upm.es/exercise2#BankService
+http://GP-onto.fi.upm.es/exercise2#Service
+http://GP-onto.fi.upm.es/exercise2#Bicycle
+http://GP-onto.fi.upm.es/exercise2#PostalAddress
+http://GP-onto.fi.upm.es/exercise2#Path
+http://GP-onto.fi.upm.es/exercise2#Road
+http://GP-onto.fi.upm.es/exercise2#Cathedral
+http://GP-onto.fi.upm.es/exercise2#TouristicLocation
+http://GP-onto.fi.upm.es/exercise2#City
+http://GP-onto.fi.upm.es/exercise2#Locality
+http://GP-onto.fi.upm.es/exercise2#Route
+http://GP-onto.fi.upm.es/exercise2#SpacialThing
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest
+http://GP-onto.fi.upm.es/exercise2#Stretch
+http://GP-onto.fi.upm.es/exercise2#Chapel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+http://GP-onto.fi.upm.es/exercise2#Church
+http://GP-onto.fi.upm.es/exercise2#Location
+http://GP-onto.fi.upm.es/exercise2#Palace
+http://GP-onto.fi.upm.es/exercise2#PostalService
+http://GP-onto.fi.upm.es/exercise2#Town
+http://GP-onto.fi.upm.es/exercise2#RestaurationService
+http://GP-onto.fi.upm.es/exercise2#HealthService
+http://GP-onto.fi.upm.es/exercise2#SecurityService
+http://GP-onto.fi.upm.es/exercise2#Track
+http://GP-onto.fi.upm.es/exercise2#Train
+http://GP-onto.fi.upm.es/exercise2#Railway
+http://GP-onto.fi.upm.es/exercise2#Village
+
+2. Get all the subclasses of the class Establishment
+
+prefix est:<http://GP-onto.fi.upm.es/exercise2#> 
+select distinct ?subclass
+where
+{?subclass rdfs:subClassOf est:Establishment}
+
+subClass
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+
+3. Get all instances of the class City
+
+prefix est: <http://GP-onto.fi.upm.es/exercise2#> 
+select ?instan
+where
+{?instan a est:City}
+limit 100
+
+instan
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+http://GP-onto.fi.upm.es/exercise2#Madrid
+
+4. Get the number of inhabitants of Santiago de Compostela
+
+prefix est: <http://GP-onto.fi.upm.es/exercise2#> 
+select distinct ?inhab
+where
+{est:Santiago_de_Compostela est:hasInhabitantNumber ?inhab}
+limit 100 
+
+inhab
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+
+5. Get the number of inhabitants of Santiago de Compostela and Arzua
+
+prefix est: <http://GP-onto.fi.upm.es/exercise2#> 
+select distinct ?santiago ?arzua
+where
+{est:Santiago_de_Compostela est:hasInhabitantNumber ?santiago. est:Arzua est:hasInhabitantNumber ?arzua}
+limit 100 
+
+santiago 	arzua
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer> 	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+6. Get all places, together with the number of inhabitants, ordered by the place name (ascending)
+
+prefix est: <http://GP-onto.fi.upm.es/exercise2#> 
+select distinct ?place ?inhab
+where
+{?place est:hasInhabitantNumber ?inhab}
+order by asc(?place)
+
+place 	inhab
+http://GP-onto.fi.upm.es/exercise2#Arzua 	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela 	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+7. Get all instances of Locality together with their number of inhabitants (if this information exists)
+
+prefix est: <http://GP-onto.fi.upm.es/exercise2#> 
+select ?instan ?inhab
+where
+{?instan a ?x .
+?x rdfs:subClassOf est:Locality .
+OPTIONAL{?instan est:hasInhabitantNumber ?inhab}
+}
+limit 100
+
+instan 	inhab
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a 	
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela 	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Madrid 	
+http://GP-onto.fi.upm.es/exercise2#Arzua 	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+8. Get all places with more than 200.000 inhabitants
+select ?lugares where 
+
+prefix est: <http://GP-onto.fi.upm.es/exercise2#> 
+select distinct ?place
+where
+{?place est:hasInhabitantNumber ?x .
+filter (xsd:Integer(?x) > 200000)}
+
+place
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+
+9. Get postal address data for Pazo_Breogan (street, number, locality, province)
+
+prefix est: <http://GP-onto.fi.upm.es/exercise2#> 
+select distinct ?street ?number ?locality ?province
+where
+{
+	est:Pazo_Breogan est:hasAddress ?dir .
+	est:Pazo_Breogan est:isPlacedIn ?locality .
+	?dir est:hasStreet ?street .
+    ?dir est:hasNumber ?number .
+	?locality est:inProvince ?province .
+}
+limit 100
+
+street 	number 	locality 	province
+C/Mayor 	5 	http://GP-onto.fi.upm.es/exercise2#Arzua 	Pontevedra
+
+10. Get all subclasses of class Location
+
+prefix est: <http://GP-onto.fi.upm.es/exercise2#> 
+select distinct ?subclass 
+where
+{
+	?subclass rdfs:subClassOf est:Location
+} 
+limit 100
+
+subclass
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest
+
+11. Get all instances of class Locality
+
+prefix est: <http://GP-onto.fi.upm.es/exercise2#> 
+select ?instan
+where
+{
+	?instan a est:Locality
+}
+limit 100
+
+instan
+
+12. Describe the resource with rdfs:label "Madrid”
+
+describe ?resource
+where
+{
+	?resource rdfs:label "Madrid"
+}
+
+13. Construct a graph that relates directly all touristic places with their provinces, using a new property called ”isIn”
+
+prefix est: <http://GP-onto.fi.upm.es/exercise2#> 
+construct {?place est:isIn ?province}
+where
+{
+	?place est:isPlacedIn ?data .
+	?data est:inProvince ?province
+}
+
+14. Check whether there is any instance of Town
+
+prefix est: <http://GP-onto.fi.upm.es/exercise2#> 
+ask
+where
+{
+	?x a est:Town
+}
+
+true
