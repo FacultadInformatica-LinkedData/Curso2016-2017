@@ -1,0 +1,15 @@
+@base <"http://www.ontogrid.net/StickyNote#"> .
+@prefix class: <"http://www.ontogrid.net/assigment2/class#">
+@prefix property: <"http://www.ontogrid.net/assigment2/property#">
+
+class : Class01 property:includes Sensor029 ;
+		 property:includes cComputer101 .
+
+class : Sensor029 property:hasMeasurement class:Measurement8401 .
+
+class : Measurement8401 property:hasTemperature "29"^^xsd:integer ;
+                            property:atTime "2010-06-12T12:00:12"^^xsd:dateTime .
+
+class : Computer101 property:hasOwner class:User10A .
+
+class : User10A property:hasName "Pedro"^^xsd:string .

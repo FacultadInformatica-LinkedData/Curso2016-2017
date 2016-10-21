@@ -1,0 +1,21 @@
+<rdf:Description rdf about="Class01"></rdf:Description>
+<includes rdf:resource="#Sensor029"/>
+<includes rdf:resource="#Computer101"/>
+</rdf:Description>
+
+<rdf:Description rdf about="Sensor029"></rdf:Description>
+ <hasMeasurement rdf:resource="@Measurement8401"/>
+ </rdf:Description>
+ 
+ <rdf:Description rdf about="Measurement8401"></rdf:Description>
+<hasTemperature rdf:resource="#29"/>
+<atTime rdf:resource="#2010-06-12T 12:00:12"/>
+</rdf:Description>
+
+<rdf:Description rdf about="Computer101"></rdf:Description>
+<hasOwner rdf:resource="#User10A"/>
+</rdf:Description>
+
+<rdf:Description rdf about="User10A"></rdf:Description>
+<hasName rdf:resource="#Pedro"/>
+</rdf:Description>

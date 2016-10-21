@@ -1,0 +1,25 @@
+<rdf:RDF xml:base="https://moodle.upm.es/titulaciones/oficiales/pluginfile.php/761817/mod_folder/content/0/01a.RDF%28S%29.pdf?forcedownload=1">
+	
+	<rdf:Description rdf:about="#Class01">
+			<includes rdf:resource="#Sensor029"/>
+			<includes rdf:resource="#Computer101"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="Computer101">
+			<hasOwner rdf:resource="#User10A"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#User10A">
+			<hasName>Pedro</user:hasName>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="#Sensor029">
+			<hasMeasurement rdf:Resource="#Measurement8401"/>
+	</rdf:Description>
+    
+	<rdf:Description rdf:about="Measurement8401">
+			<hasTemperature rdf:datatype='xsd:float'>29</measurement:hasTemperature>
+			<atTime rdf:datatype='xsd:dateTime'>2010-06-12T12:00:12</measurement:atTime>
+	</rdf:Description>
+
+rdf:RDF>

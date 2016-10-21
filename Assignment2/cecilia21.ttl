@@ -1,0 +1,14 @@
+@prefix : <http://www.oeg-upm.net/alumnos/asignment2#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:class1 :includes :computer101,
+     :sensor029 .
+
+:computer101 :hasOwner :user10A .
+
+:measurement8401 :atTime "2010-06-12T12:00:12"^^xsd:dateTime;
+   :hasTemperature 29 .
+
+:sensor029 :hasMeasurement :measurement8401 .
+
+:user10A :hasName "Pedro" .
