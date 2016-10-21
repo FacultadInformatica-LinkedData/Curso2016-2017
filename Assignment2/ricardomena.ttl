@@ -1,0 +1,23 @@
+@base <http://www.oeg-upm.net/ontologies/people/ >
+@prefix class : <http://www.oeg-upm.net/ontologies/Class#>
+@prefix sensor : <http://www.oeg-upm.net/ontologies/Sensor#>
+@prefix measurement : <http://www.oeg-upm.net/ontologies/Measurement#>
+@prefix computer : <http://www.oeg-upm.net/ontologies/Computer#>
+@prefix user : <http://www.oeg-upm.net/ontologies/User10A#>
+
+class : Class01
+    property: includes Sensor029;
+    property: includes Computer101.
+
+sensor : Sensor029
+    property: hasMeasurment Measurement8401.
+    
+measurement : Measurement8401
+    hasTemperature "29"^^<xsd:integer>;
+    atTime "2010-06-12T12:00:12"^^<xsd:dateTime>.
+    
+computer : Computer101
+    property: hasOwner User10A.
+    
+user : User10A
+    property: hasName Pedro.
