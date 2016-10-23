@@ -11,7 +11,7 @@ SELECT ?scl WHERE { ?scl rdfs:subClassOf pr:Establishment. }
 
 #   3. Get all instances of the class City
 
-SELECT ?ins WHERE { ?ins rdf:type pr:City. } 
+SELECT ?ins WHERE { ?ins rdfs:type pr:City. } 
 
 #   4. Get the number of inhabitants of Santiago de Compostela
 
