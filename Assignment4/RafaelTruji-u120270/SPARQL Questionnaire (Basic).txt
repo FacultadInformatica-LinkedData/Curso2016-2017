@@ -1,0 +1,171 @@
+/***** Rafael Trujillo *****/
+
+/***** 1. Get all the classes *****/
+
+SELECT DISTINCT ?Class
+WHERE
+{
+ ?Class a rdfs:Class.
+}
+
+
+/***** 2. Get all the subclasses of the class Establishment *****/
+
+PREFIX obj: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?SubClass
+WHERE
+{
+ ?SubClass rdfs:subClassOf obj:Establishment.
+}
+
+
+
+/***** 3. Get all instances of the class City *****/
+
+PREFIX obj: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?city
+WHERE
+{
+ ?city a  obj:City.
+}
+
+
+
+/***** 4. Get the number of inhabitants of Santiago de Compostela *****/
+
+PREFIX obj: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?number
+WHERE
+{
+ obj:Santiago_de_Compostela obj:hasInhabitantNumber ?number.
+}
+
+
+
+/***** 5. Get the number of inhabitants of Santiago de Compostela and Arzua *****/
+
+PREFIX obj: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?numberSantiago ?numberArzua
+WHERE
+{
+ obj:Santiago_de_Compostela obj:hasInhabitantNumber ?numberSantiago.
+ obj:Arzua obj:hasInhabitantNumber ?numberArzua.
+}
+
+
+
+/***** 6. Get all places, together with the number of inhabitants, ordered by the place name (ascending) *****/
+
+PREFIX obj: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?place ?number
+WHERE
+{
+ ?place obj:hasInhabitantNumber ?number.
+}
+ ORDER BY ASC (?place)
+
+
+
+/***** 7. Get all instances of Locality together with their number of inhabitants (if this information exists)  *****/
+
+PREFIX obj: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?locality ?number
+WHERE
+{
+ ?locality a ?instance.
+ ?instance rdfs:subClassOf obj:Locality
+ OPTIONAL{?locality obj:hasInhabitantNumber ?number}
+}
+
+
+
+/***** 8. Get all places with more than 200.000 inhabitants  *****/
+
+PREFIX obj: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?locality ?number
+WHERE
+{
+ ?locality obj:hasInhabitantNumber ?number
+ FILTER(xsd:integer(?number)>200000)
+}
+
+
+
+/***** 9. Get postal address data for Pazo_Breogan (street, number, locality, province)  *****/
+
+PREFIX obj: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?street ?number ?locality ?province
+WHERE
+{
+ obj:Pazo_Breogan obj:isPlacedIn ?locality.
+ ?locality obj:inProvince ?province.
+ obj:Pazo_Breogan obj:hasAddress ?address.
+ ?address obj:hasStreet ?street.
+ ?address obj:hasNumber ?number.
+}
+
+
+
+/***** 10. Get all subclasses of class Location  *****/
+
+PREFIX obj: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?subclass
+WHERE
+{
+ ?subclass rdfs:subClassOf obj:Location.
+}
+
+
+
+/***** 11. Get all instances of class Locality  *****/
+
+PREFIX obj: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?instance
+WHERE
+{
+ ?local rdfs:subClassOf obj:Locality.
+ ?instance a ?local.
+}
+
+
+
+/***** 12. Describe the resource with rdfs:label "Madrid” *****/
+
+PREFIX obj: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?resource
+WHERE
+{
+ ?resource rdfs:label "Madrid".
+}
+
+
+
+/***** 13. Construct a graph that relates directly all touristic places with their provinces, using a new property called ”isIn”  *****/
+
+PREFIX obj: <http://GP-onto.fi.upm.es/exercise2#>
+
+CONSTRUCT {?place obj:isIn ?province}
+WHERE
+{
+ ?place obj:isPlacedIn ?locality.
+ ?locality obj:inProvince ?province.
+}
+
+
+
+/***** 14. Check whether there is any instance of Town  *****/
+
+PREFIX obj: <http://GP-onto.fi.upm.es/exercise2#>
+
+ASK {?instanceofTown a obj:Town}
