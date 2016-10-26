@@ -1,0 +1,215 @@
+SPARQL Questionnaire (Basic) Provide the SPARQL query and the result for the following queries expressed in natural language.
+
+Endpoint: http://sandbox.linkeddata.es/sparql
+Graph: http://sandbox.linkeddata.es/Grado_20122013
+
+1. Get all the classes
+
+SELECT ?Clase
+WHERE
+{
+?Clase a rdfs:Class
+}
+
+Clase
+http://GP-onto.fi.upm.es/exercise2#OnFoot
+http://GP-onto.fi.upm.es/exercise2#TransportMedium
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#Establishment
+http://GP-onto.fi.upm.es/exercise2#PhysicalPoint
+http://GP-onto.fi.upm.es/exercise2#Stage
+http://GP-onto.fi.upm.es/exercise2#TransportInfrastructure
+http://GP-onto.fi.upm.es/exercise2#Bus
+http://GP-onto.fi.upm.es/exercise2#Car
+http://GP-onto.fi.upm.es/exercise2#BankService
+http://GP-onto.fi.upm.es/exercise2#Service
+http://GP-onto.fi.upm.es/exercise2#Bicycle
+http://GP-onto.fi.upm.es/exercise2#PostalAddress
+http://GP-onto.fi.upm.es/exercise2#Path
+http://GP-onto.fi.upm.es/exercise2#Road
+http://GP-onto.fi.upm.es/exercise2#Cathedral
+http://GP-onto.fi.upm.es/exercise2#TouristicLocation
+http://GP-onto.fi.upm.es/exercise2#City
+http://GP-onto.fi.upm.es/exercise2#Locality
+http://GP-onto.fi.upm.es/exercise2#Route
+http://GP-onto.fi.upm.es/exercise2#SpacialThing
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest
+http://GP-onto.fi.upm.es/exercise2#Stretch
+http://GP-onto.fi.upm.es/exercise2#Chapel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+http://GP-onto.fi.upm.es/exercise2#Church
+http://GP-onto.fi.upm.es/exercise2#Location
+http://GP-onto.fi.upm.es/exercise2#Palace
+http://GP-onto.fi.upm.es/exercise2#PostalService
+http://GP-onto.fi.upm.es/exercise2#Town
+http://GP-onto.fi.upm.es/exercise2#RestaurationService
+http://GP-onto.fi.upm.es/exercise2#HealthService
+http://GP-onto.fi.upm.es/exercise2#SecurityService
+http://GP-onto.fi.upm.es/exercise2#Track
+http://GP-onto.fi.upm.es/exercise2#Train
+http://GP-onto.fi.upm.es/exercise2#Railway
+http://GP-onto.fi.upm.es/exercise2#Village
+
+2. Get all the subclasses of the class Establishment
+
+SELECT ?sClase
+WHERE
+{
+?sClase rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Establishment>
+}
+
+sClase
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+
+3. Get all instances of the class City
+
+SELECT ?Inst
+WHERE
+{
+?Inst a <http://GP-onto.fi.upm.es/exercise2#City>
+}
+
+Inst
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+http://GP-onto.fi.upm.es/exercise2#Madrid
+
+4. Get the number of inhabitants of Santiago de Compostela
+
+SELECT ?Hab
+WHERE
+{
+<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?Hab
+}
+
+Hab
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+5. Get the number of inhabitants of Santiago de Compostela and Arzua
+
+SELECT ?HabC ?HabA
+WHERE
+{
+<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?HabC.
+<http://GP-onto.fi.upm.es/exercise2#Arzua> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?HabA
+}
+
+HabC	HabA
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+6. Get all places, together with the number of inhabitants, ordered by the place name (ascending)
+
+SELECT ?Nombre ?Hab
+WHERE
+{
+?Nombre <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?Hab
+}ORDER BY ASC(?Nombre) 
+
+Nombre	Hab
+http://GP-onto.fi.upm.es/exercise2#Arzua	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+7. Get all instances of Locality together with their number of inhabitants (if this information exists)
+
+SELECT ?Inst ?Hab
+WHERE
+{
+?Inst a ?Localidad.
+?Localidad rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Locality>.
+OPTIONAL{?Inst <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?Hab}
+}
+
+Inst	Hab
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a	
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Madrid	
+http://GP-onto.fi.upm.es/exercise2#Arzua	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+8. Get all places with more than 200.000 inhabitants
+
+SELECT ?Lugar
+WHERE
+{
+?Lugar <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?Hab.
+FILTER(xsd:integer(?Hab) > 200000 )
+}
+
+Lugar
+http://GP-onto.fi.upm.es/exercise2#Arzua
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+
+9. Get postal address data for Pazo_Breogan (street, number, locality, province)
+
+SELECT ?Calle ?N ?Localidad ?Provincia
+WHERE
+{
+<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan> <http://GP-onto.fi.upm.es/exercise2#hasAddress> ?DirP.
+?DirP <http://GP-onto.fi.upm.es/exercise2#hasStreet> ?Calle.
+?DirP <http://GP-onto.fi.upm.es/exercise2#hasNumber> ?N.
+<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan> <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> ?Localidad.
+?Localidad <http://GP-onto.fi.upm.es/exercise2#inProvince> ?Provincia
+}
+
+Calle	N	Localidad	Provincia
+C/Mayor	5	http://GP-onto.fi.upm.es/exercise2#Arzua	Pontevedra
+
+10. Get all subclasses of class Location
+
+SELECT ?Loc
+WHERE
+{
+
+?Loc rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Location> 
+
+}
+
+Loc
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest
+
+11. Get all instances of class Locality
+
+SELECT distinct   ?Loc  
+WHERE{?aux <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://GP-onto.fi.upm.es/exercise2#Locality>.
+?Loc a ?aux.
+}
+
+Loc
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+http://GP-onto.fi.upm.es/exercise2#Madrid
+http://GP-onto.fi.upm.es/exercise2#Arzua
+
+12. Describe the resource with rdfs:label "Madrid”
+
+SELECT ?Recurso
+WHERE {
+       ?Recurso rdfs:label "Madrid"
+          
+      }
+
+Recurso
+http://GP-onto.fi.upm.es/exercise2#Madrid
+
+13. Construct a graph that relates directly all touristic places with their provinces, using a new property called ”isIn”
+
+CONSTRUCT {?LT <http://GP-onto.fi.upm.es/exercise2#isIn> ?Provincia}
+WHERE {
+       ?LT <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> ?Ciudad .
+       ?Ciudad <http://GP-onto.fi.upm.es/exercise2#inProvince> ?Provincia
+          
+      }
+
+@prefix ns0:	<http://GP-onto.fi.upm.es/exercise2#> .
+ns0:Fuente_Talaverana	ns0:isIn	"Pontevedra" .
+ns0:Monte_Do_Gozo	ns0:isIn	"Pontevedra" .
+ns0:Cathedral_Santiago_Compostela	ns0:isIn	"Pontevedra" .
+ns0:Pazo_Breogan	ns0:isIn	"Pontevedra" .
+
+14. Check whether there is any instance of Town
+
+ASK {?Inst a <http://GP-onto.fi.upm.es/exercise2#Town>}
+
+true
