@@ -1,0 +1,91 @@
+# 1) Get all the classes
+SELECT DISTINCT ?class
+WHERE {
+?class rdf:type rdfs:Class
+}
+
+# 2) Get all the subclasses of the class Establishment
+SELECT DISTINCT ?class
+WHERE {
+?class rdf:type rdfs:Class .
+?class rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Establishment>
+}
+
+# 3) Get all instances of the class City
+SELECT DISTINCT ?instance
+WHERE {
+?instance a <http://GP-onto.fi.upm.es/exercise2#City>
+}
+
+# 4) Get the number of inhabitants of Santiago de Compostela
+SELECT DISTINCT ?inhabitants
+WHERE {
+<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?inhabitants
+}
+
+# 5) Get the number of inhabitants of Santiago de Compostela and Arzua
+
+
+# 6) Get all places, together with the number of inhabitants, ordered by the place name (ascending)
+SELECT DISTINCT ?city ?inhabitants
+WHERE {
+?city <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?inhabitants
+}
+ORDER BY ?city
+
+# 7) Get all instances of Locality together with their number of inhabitants (if this information exists)
+SELECT DISTINCT ?instance ?inhabitants
+WHERE {
+?place <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://GP-onto.fi.upm.es/exercise2#Locality> .
+?instance a ?place .
+?instance <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?inhabitants
+}
+ORDER BY ?instance
+
+# 8) Get all places with more than 200.000 inhabitants
+SELECT DISTINCT ?instance ?inhabitants
+WHERE {
+?place <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://GP-onto.fi.upm.es/exercise2#Locality> .
+?instance a ?place .
+?instance <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?inhabitants .
+FILTER (?inhabitants < 20000)
+}
+ORDER BY ?instance
+
+# 9) Get postal address data for Pazo_Breogan (street, number, locality, province)
+SELECT DISTINCT ?street
+WHERE {
+<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan> <http://GP-onto.fi.upm.es/exercise2#hasAddress> ?street
+}
+
+# 10) Get all subclasses of class Location
+SELECT DISTINCT ?subclasses
+WHERE {
+?subclasses <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://GP-onto.fi.upm.es/exercise2#Location>
+}
+
+# 11) Get all instances of class Locality
+SELECT DISTINCT ?subclasses
+WHERE {
+?subclasses <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://GP-onto.fi.upm.es/exercise2#Locality>
+}
+
+# 12) Describe the resource with rdfs:label "Madrid”
+DESCRIBE ?x
+WHERE {
+?x rdfs:label 'Madrid'
+}
+
+# 13) Construct a graph that relates directly all touristic places with their provinces, using a new property called ”isIn”
+CONSTRUCT {
+?place <http://www.w3.org/2000/01/rdf-schema#isIn> ?province
+}
+WHERE {
+?place <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> ?x .
+?x <http://GP-onto.fi.upm.es/exercise2#inProvince> ?province
+}
+
+# 14) Check whether there is any instance of Town
+ask {
+?x rdf:type <http://GP-onto.fi.upm.es/exercise2#Town>
+}
