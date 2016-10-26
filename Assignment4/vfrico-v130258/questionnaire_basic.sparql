@@ -1,0 +1,147 @@
+# The graph used for the queries is:
+#    http://sandbox.linkeddata.es/Grado_20122013
+#
+# The Virtuoso SPARQL endpoint is:
+#    http://sandbox.linkeddata.es/sparql
+
+
+#1: Get all the classes
+
+SELECT DISTINCT ?classes
+WHERE {
+  ?any a ?classes
+}
+
+#2: Get all the subclasses of the class Establishment
+
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?subclasses
+WHERE {
+    ?subclasses rdfs:subClassOf as4:Establishment
+}
+
+#3: Get all instances of the class City
+
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?cities
+WHERE {
+    ?cities a as4:City
+}
+
+#4: Get the number of inhabitants of Santiago de Compostela
+
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?inhabitants
+WHERE {
+    as4:Santiago_de_Compostela as4:hasInhabitantNumber ?inhabitants
+}
+
+#5: Get the number of inhabitants of Santiago de Compostela and Arzua
+
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT  ?santiago_inhabitants ?arzua_inhabitants
+WHERE {
+    as4:Santiago_de_Compostela as4:hasInhabitantNumber ?santiago_inhabitants .
+    as4:Arzua as4:hasInhabitantNumber ?arzua_inhabitants
+}
+
+#6: Get all places, together with the number of inhabitants,
+#   ordered by the place name (ascending)
+
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT  ?locality_label ?inhabitants
+WHERE {
+    ?locality as4:hasInhabitantNumber ?inhabitants .
+    ?locality rdfs:label ?locality_label
+}
+ORDER BY ASC(?locality_label)
+
+#7: Get all instances of Locality together with their number of inhabitants
+#   (if this information exists)
+
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT  ?locality_label ?inhabitants
+WHERE {
+    ?locality as4:hasInhabitantNumber ?inhabitants .
+    ?locality rdfs:label ?locality_label
+}
+
+#8: Get all places with more than 200.000 inhabitants
+
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT  ?locality ?inhabitants
+WHERE {
+    ?locality as4:hasInhabitantNumber ?inhabitants .
+    FILTER (xsd:integer(?inhabitants) > 200000)
+}
+
+#9: Get postal address data for Pazo_Breogan
+#   (street, number, locality, province)
+
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT  ?street ?number ?locality ?province
+WHERE {
+    as4:Pazo_Breogan as4:hasAddress ?address ;
+                    as4:isPlacedIn ?locality .
+    ?address as4:hasStreet ?street .
+    ?address as4:hasNumber ?number .
+    ?locality as4:inProvince ?province.
+
+}
+
+#10: Get all subclasses of class Location
+
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT  ?subclasses
+WHERE {
+     ?subclasses rdfs:subClassOf as4:Location
+}
+
+
+#11: Get all instances of class Locality
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?localities
+WHERE {
+    ?localities a ?type .
+    ?type rdfs:subClassOf as4:Locality
+}
+
+#12: Describe the resource with rdfs:label "Madrid"
+
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+DESCRIBE ?madrid
+WHERE {
+    ?madrid rdfs:label "Madrid"
+}
+
+#13: Construct a graph that relates directly all touristic places
+#    with their provinces, using a new property called ”isIn”
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+CONSTRUCT { ?turisticPlace as4:isIn ?province }
+WHERE {
+    ?turisticPlace rdf:type as4:Location .
+    ?turisticPlace as4:isPlacedIn ?locality.
+    ?locality as4:inProvince ?province .
+}
+
+#14: Check whether there is any instance of Town
+
+PREFIX as4:<http://GP-onto.fi.upm.es/exercise2#>
+
+ASK {
+    ?town rdf:type as4:Town
+}

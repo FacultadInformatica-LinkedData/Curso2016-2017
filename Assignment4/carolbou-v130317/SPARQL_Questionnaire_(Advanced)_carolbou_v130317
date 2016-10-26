@@ -1,0 +1,54 @@
+A1.
+SELECT distinct ?Properties
+WHERE
+{ ?Instances ?q <http://dbpedia.org/ontology/Politician> .
+  ?Instances ?Properties ?Value
+}
+
+A2.
+SELECT distinct ?Properties
+WHERE
+{ ?Instances ?q <http://dbpedia.org/ontology/Politician> .
+  ?Instances ?Properties ?Value
+  FILTER (?Properties != rdf:type)
+}
+
+A3.
+SELECT (count distinct ?Value) as ?Values
+WHERE
+{ ?Instances ?q <http://dbpedia.org/ontology/Politician> .
+  ?Instances ?Properties ?Value
+  FILTER (?Properties != rdf:type)
+}
+
+A4.
+SELECT ?Properties count (distinct ?Value) as ?Values
+WHERE
+{ ?Instances ?q <http://dbpedia.org/ontology/Politician> .
+  ?Instances ?Properties ?Value
+  FILTER (?Properties != rdf:type)
+}
+
+A5.
+SELECT avg(distinct ?Values) as ?Mean_Values
+WHERE
+{  SELECT ?Properties count (distinct ?Value) as ?Values
+   WHERE
+   { ?Instances ?q <http://dbpedia.org/ontology/Politician> .
+     ?Instances ?Properties ?Value
+     FILTER (?Properties != rdf:type)
+   }
+}
+
+A6.
+SELECT ?Properties max(?Values) as ?All_Values
+where
+{  SELECT ?Properties count (distinct ?Value) as ?Values
+   WHERE
+   { ?Instances ?q <http://dbpedia.org/ontology/Politician> .
+     ?Instances ?Properties ?Value
+     FILTER (?Properties != rdf:type)
+   }
+}
+ORDER BY DESC(?All_Values)
+

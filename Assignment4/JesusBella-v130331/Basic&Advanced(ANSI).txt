@@ -1,0 +1,2080 @@
+BASIC
+1
+
+SELECT distinct ?Class
+WHERE
+{
+?Class a rdfs:Class
+}LIMIT 100
+
+Class
+http://www.w3.org/2002/07/owl#Class
+http://www.w3.org/2002/07/owl#Ontology
+http://www.w3.org/2002/07/owl#OntologyProperty
+http://www.w3.org/2002/07/owl#AnnotationProperty
+http://www.w3.org/2002/07/owl#AllDifferent
+http://www.w3.org/2002/07/owl#Restriction
+http://www.w3.org/2002/07/owl#ObjectProperty
+http://www.w3.org/2002/07/owl#DatatypeProperty
+http://www.w3.org/2002/07/owl#TransitiveProperty
+http://www.w3.org/2002/07/owl#SymmetricProperty
+http://www.w3.org/2002/07/owl#FunctionalProperty
+http://www.w3.org/2002/07/owl#InverseFunctionalProperty
+http://www.w3.org/2002/07/owl#DeprecatedClass
+http://www.w3.org/2002/07/owl#DeprecatedProperty
+http://www.w3.org/2002/07/owl#DataRange
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+http://www.w3.org/2000/01/rdf-schema#Class
+http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+http://energy.linkeddata.es/PQube.owl#PropertySummaryValue
+http://energy.linkeddata.es/PQube.owl#ObservationValue
+http://energy.linkeddata.es/PQube.owl#PQubePropertySummary
+http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval
+http://energy.linkeddata.es/PQube.owl#PQubeProperty
+http://www.w3.org/2000/01/rdf-schema#Resource
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
+http://energy.linkeddata.es/PQube.owl#DailyObservationCollection
+http://energy.linkeddata.es/PQube.owl#PQubeDevice
+http://www.w3.org/2000/01/rdf-schema#Container
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag
+http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty
+http://energy.linkeddata.es/PQube.owl#Building
+http://www.w3.org/2000/01/rdf-schema#Datatype
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt
+http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral
+http://energy.linkeddata.es/PQube.owl#PQubeConfiguration
+http://www.w3.org/2000/01/rdf-schema#Literal
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq
+http://datos.localidata.com/def/CityStats/code#Nacionalidad
+http://GP-onto.fi.upm.es/exercise2#OnFoot
+http://GP-onto.fi.upm.es/exercise2#TransportMedium
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#Establishment
+http://GP-onto.fi.upm.es/exercise2#PhysicalPoint
+http://GP-onto.fi.upm.es/exercise2#Stage
+http://GP-onto.fi.upm.es/exercise2#TransportInfrastructure
+http://GP-onto.fi.upm.es/exercise2#Bus
+http://GP-onto.fi.upm.es/exercise2#Car
+http://GP-onto.fi.upm.es/exercise2#BankService
+http://GP-onto.fi.upm.es/exercise2#Service
+http://GP-onto.fi.upm.es/exercise2#Bicycle
+http://GP-onto.fi.upm.es/exercise2#PostalAddress
+http://GP-onto.fi.upm.es/exercise2#Path
+http://GP-onto.fi.upm.es/exercise2#Road
+http://GP-onto.fi.upm.es/exercise2#Cathedral
+http://GP-onto.fi.upm.es/exercise2#TouristicLocation
+http://GP-onto.fi.upm.es/exercise2#City
+http://GP-onto.fi.upm.es/exercise2#Locality
+http://GP-onto.fi.upm.es/exercise2#Route
+http://GP-onto.fi.upm.es/exercise2#SpacialThing
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest
+http://GP-onto.fi.upm.es/exercise2#Stretch
+http://GP-onto.fi.upm.es/exercise2#Chapel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+http://GP-onto.fi.upm.es/exercise2#Church
+http://GP-onto.fi.upm.es/exercise2#Location
+http://GP-onto.fi.upm.es/exercise2#Palace
+http://GP-onto.fi.upm.es/exercise2#PostalService
+http://GP-onto.fi.upm.es/exercise2#Town
+http://GP-onto.fi.upm.es/exercise2#RestaurationService
+http://GP-onto.fi.upm.es/exercise2#HealthService
+http://GP-onto.fi.upm.es/exercise2#SecurityService
+http://GP-onto.fi.upm.es/exercise2#Track
+http://GP-onto.fi.upm.es/exercise2#Train
+http://GP-onto.fi.upm.es/exercise2#Railway
+http://GP-onto.fi.upm.es/exercise2#Village
+http://www.opengis.net/ont/sf#MultiPolygon
+http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#AmplitudTermicaAbsoluta
+
+2
+
+PREFIX est:<http://GP-onto.fi.upm.es/exercise2#> 
+SELECT distinct ?subClass
+WHERE
+{
+?subClass rdfs:subClassOf est:Establishment 
+}LIMIT 100
+
+subClass
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+
+3
+
+SELECT distinct ?inst
+WHERE
+{
+?inst a <http://GP-onto.fi.upm.es/exercise2#City> 
+}LIMIT 100 
+
+inst
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+http://GP-onto.fi.upm.es/exercise2#Madrid
+
+4
+
+SELECT distinct ?inhabitants
+WHERE
+{
+<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?inhabitants
+}LIMIT 100 
+
+inhabitants
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+5
+
+SELECT distinct ?sComp ?arzua
+WHERE
+{
+<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?sComp.
+<http://GP-onto.fi.upm.es/exercise2#Arzua> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?arzua
+}LIMIT 100 
+
+sComp	arzua
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+6
+
+SELECT distinct ?place ?inhab
+WHERE
+{
+?place <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?inhab
+} ORDER BY ASC(?place)
+
+place	inhab
+http://GP-onto.fi.upm.es/exercise2#Arzua	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+7
+
+SELECT distinct ?inst ?inhabs
+WHERE
+{
+?inst a ?local.
+?local rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Locality>.
+OPTIONAL{?inst <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?inhabs}
+}LIMIT 100
+
+inst	inhabs
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a	
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Madrid	
+http://GP-onto.fi.upm.es/exercise2#Arzua	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+8
+
+
+SELECT distinct ?place
+WHERE
+{
+?place <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?inhabs.
+FILTER(xsd:integer(?inhabs)>200000)
+}LIMIT 100
+
+place
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+
+9
+
+SELECT distinct ?street ?numb ?local ?prov
+WHERE
+{
+<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan> <http://GP-onto.fi.upm.es/exercise2#hasAddress> ?addr.
+?addr <http://GP-onto.fi.upm.es/exercise2#hasStreet> ?street.
+?adddr <http://GP-onto.fi.upm.es/exercise2#hasNumber> ?numb.
+<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan> <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> ?local.
+?local <http://GP-onto.fi.upm.es/exercise2#inProvince> ?prov
+}LIMIT 100
+
+street	numb	local	prov
+C/Mayor	1	http://GP-onto.fi.upm.es/exercise2#Arzua	Pontevedra
+C/Mayor	5	http://GP-onto.fi.upm.es/exercise2#Arzua	Pontevedra
+
+10
+
+SELECT distinct ?subClass
+WHERE
+{
+?subClass rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Location>
+}LIMIT 100
+
+subClass
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest
+
+11
+
+SELECT distinct ?inst
+WHERE
+{
+?inst a <http://GP-onto.fi.upm.es/exercise2#Location>
+}LIMIT 100
+
+inst
+http://GP-onto.fi.upm.es/exercise2#Fuente_Talaverana
+http://GP-onto.fi.upm.es/exercise2#Monte_Do_Gozo
+
+12
+
+DESCRIBE ?res
+WHERE
+{
+?res rdfs:label "Madrid"
+}LIMIT 100
+
+@prefix ns0:	<http://GP-onto.fi.upm.es/exercise2#> .
+ns0:GP_Santiago_Instance_72	ns0:hasEnd	ns0:Madrid .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ns0:Madrid	rdf:type	ns0:City .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+ns0:Madrid	rdfs:label	"Madrid" ;
+	ns0:isLocatedAtPoint	ns0:GP_Santiago_Instance_74 ;
+	ns0:inProvince	"Madrid" .
+
+13
+
+(No va el link del grafo)
+
+CONSTRUCT {?tour <http://GP-onto.fi.upm.es/exercise2#isIn> ?prov}
+WHERE
+{
+?tour <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> ?place.
+?place <http://GP-onto.fi.upm.es/exercise2#inProvince> ?prov
+}LIMIT 100
+
+
+@prefix ns0:	<http://GP-onto.fi.upm.es/exercise2#> .
+ns0:Fuente_Talaverana	ns0:isIn	"Pontevedra" .
+ns0:Monte_Do_Gozo	ns0:isIn	"Pontevedra" .
+ns0:Cathedral_Santiago_Compostela	ns0:isIn	"Pontevedra" .
+ns0:Pazo_Breogan	ns0:isIn	"Pontevedra" .
+
+14
+
+ASK{
+?town a <http://GP-onto.fi.upm.es/exercise2#Town>
+}
+
+true
+
+ADVANCED
+A1
+
+SELECT distinct ?prop
+WHERE
+{
+?inst a <http://dbpedia.org/ontology/Politician>.
+?inst ?prop ?value
+}LIMIT 100
+
+prop
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://purl.org/dc/terms/subject
+http://xmlns.com/foaf/0.1/depiction
+http://dbpedia.org/ontology/thumbnail
+http://dbpedia.org/property/designado
+http://xmlns.com/foaf/0.1/homepage
+http://dbpedia.org/property/enelcargo
+http://dbpedia.org/property/oponentes
+http://dbpedia.org/property/religion
+http://dbpedia.org/ontology/wikiPageExternalLink
+http://dbpedia.org/property/alineaci車nTexto
+http://dbpedia.org/property/almam芍ter
+http://dbpedia.org/property/ancho
+http://dbpedia.org/property/apellido
+http://dbpedia.org/property/apellidos
+http://dbpedia.org/property/apodo
+http://dbpedia.org/property/autor
+http://dbpedia.org/property/a?o
+http://dbpedia.org/property/a?osDeServicio
+http://dbpedia.org/property/cap赤tulo
+http://dbpedia.org/property/cargo
+http://dbpedia.org/property/condecoraciones
+http://dbpedia.org/property/c車nyuge
+http://dbpedia.org/property/descendencia
+http://dbpedia.org/property/direcci車n
+http://dbpedia.org/property/distrito
+http://dbpedia.org/property/edici車n
+http://dbpedia.org/property/editor
+http://dbpedia.org/property/embajadorde
+http://dbpedia.org/property/enlaceautor
+http://dbpedia.org/property/escudo
+http://dbpedia.org/property/fechaacceso
+http://dbpedia.org/property/fechamuerte
+http://dbpedia.org/property/fechanac
+http://dbpedia.org/property/final
+http://dbpedia.org/property/firma
+http://dbpedia.org/property/formato
+http://dbpedia.org/property/foto
+http://dbpedia.org/property/f車rmula
+http://dbpedia.org/property/gabinete
+http://dbpedia.org/property/hijos
+http://dbpedia.org/property/id
+http://dbpedia.org/property/idioma
+http://dbpedia.org/property/imagen
+http://dbpedia.org/property/inicio
+http://dbpedia.org/property/isbn
+http://dbpedia.org/property/issn
+http://dbpedia.org/property/lealtad
+http://dbpedia.org/property/lugarmuerte
+http://dbpedia.org/property/lugarnac
+http://dbpedia.org/property/mandos
+http://dbpedia.org/property/monarca
+http://dbpedia.org/property/m芍scaraautor
+http://dbpedia.org/property/nombre
+http://dbpedia.org/property/n迆mero
+http://dbpedia.org/property/obra
+http://dbpedia.org/property/ocupaci車n
+http://dbpedia.org/property/padres
+http://dbpedia.org/property/partido
+http://dbpedia.org/property/pa赤s
+http://dbpedia.org/property/per赤odo
+http://dbpedia.org/property/pieescudo
+http://dbpedia.org/property/pieimagen
+http://dbpedia.org/property/posici車nTabla
+http://dbpedia.org/property/predecesor
+http://dbpedia.org/property/presidente
+http://dbpedia.org/property/primerministro
+http://dbpedia.org/property/profesi車n
+http://dbpedia.org/property/publicaci車n
+http://dbpedia.org/property/publisher
+http://dbpedia.org/property/p芍ginas
+http://dbpedia.org/property/rama
+http://dbpedia.org/property/rango
+http://dbpedia.org/property/religi車n
+http://dbpedia.org/property/residencia
+http://dbpedia.org/property/subt赤tulo
+http://dbpedia.org/property/sucesor
+http://dbpedia.org/property/tama?o
+http://dbpedia.org/property/texto
+http://dbpedia.org/property/tratamiento
+http://dbpedia.org/property/ubicaci車n
+http://dbpedia.org/property/vicepresidente
+http://dbpedia.org/property/viceprimerministro
+http://dbpedia.org/property/editorial
+http://dbpedia.org/property/fecha
+http://dbpedia.org/property/t赤tulo
+http://dbpedia.org/property/url
+http://dbpedia.org/ontology/wikiPageWikiLink
+http://dbpedia.org/ontology/child
+http://dbpedia.org/ontology/country
+http://dbpedia.org/ontology/occupation
+http://dbpedia.org/ontology/party
+http://dbpedia.org/ontology/profession
+http://dbpedia.org/ontology/religion
+http://dbpedia.org/ontology/successor
+http://xmlns.com/foaf/0.1/name
+http://dbpedia.org/ontology/abstract
+http://dbpedia.org/property/1data
+
+A2
+
+SELECT distinct ?prop
+WHERE
+{
+?inst a <http://dbpedia.org/ontology/Politician>.
+?inst ?prop ?value.
+FILTER(?prop != rdf:type)
+}LIMIT 100
+
+prop
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://purl.org/dc/terms/subject
+http://xmlns.com/foaf/0.1/depiction
+http://dbpedia.org/ontology/thumbnail
+http://dbpedia.org/property/designado
+http://xmlns.com/foaf/0.1/homepage
+http://dbpedia.org/property/enelcargo
+http://dbpedia.org/property/oponentes
+http://dbpedia.org/property/religion
+http://dbpedia.org/ontology/wikiPageExternalLink
+http://dbpedia.org/property/alineaci車nTexto
+http://dbpedia.org/property/almam芍ter
+http://dbpedia.org/property/ancho
+http://dbpedia.org/property/apellido
+http://dbpedia.org/property/apellidos
+http://dbpedia.org/property/apodo
+http://dbpedia.org/property/autor
+http://dbpedia.org/property/a?o
+http://dbpedia.org/property/a?osDeServicio
+http://dbpedia.org/property/cap赤tulo
+http://dbpedia.org/property/cargo
+http://dbpedia.org/property/condecoraciones
+http://dbpedia.org/property/c車nyuge
+http://dbpedia.org/property/descendencia
+http://dbpedia.org/property/direcci車n
+http://dbpedia.org/property/distrito
+http://dbpedia.org/property/edici車n
+http://dbpedia.org/property/editor
+http://dbpedia.org/property/embajadorde
+http://dbpedia.org/property/enlaceautor
+http://dbpedia.org/property/escudo
+http://dbpedia.org/property/fechaacceso
+http://dbpedia.org/property/fechamuerte
+http://dbpedia.org/property/fechanac
+http://dbpedia.org/property/final
+http://dbpedia.org/property/firma
+http://dbpedia.org/property/formato
+http://dbpedia.org/property/foto
+http://dbpedia.org/property/f車rmula
+http://dbpedia.org/property/gabinete
+http://dbpedia.org/property/hijos
+http://dbpedia.org/property/id
+http://dbpedia.org/property/idioma
+http://dbpedia.org/property/imagen
+http://dbpedia.org/property/inicio
+http://dbpedia.org/property/isbn
+http://dbpedia.org/property/issn
+http://dbpedia.org/property/lealtad
+http://dbpedia.org/property/lugarmuerte
+http://dbpedia.org/property/lugarnac
+http://dbpedia.org/property/mandos
+http://dbpedia.org/property/monarca
+http://dbpedia.org/property/m芍scaraautor
+http://dbpedia.org/property/nombre
+http://dbpedia.org/property/n迆mero
+http://dbpedia.org/property/obra
+http://dbpedia.org/property/ocupaci車n
+http://dbpedia.org/property/padres
+http://dbpedia.org/property/partido
+http://dbpedia.org/property/pa赤s
+http://dbpedia.org/property/per赤odo
+http://dbpedia.org/property/pieescudo
+http://dbpedia.org/property/pieimagen
+http://dbpedia.org/property/posici車nTabla
+http://dbpedia.org/property/predecesor
+http://dbpedia.org/property/presidente
+http://dbpedia.org/property/primerministro
+http://dbpedia.org/property/profesi車n
+http://dbpedia.org/property/publicaci車n
+http://dbpedia.org/property/publisher
+http://dbpedia.org/property/p芍ginas
+http://dbpedia.org/property/rama
+http://dbpedia.org/property/rango
+http://dbpedia.org/property/religi車n
+http://dbpedia.org/property/residencia
+http://dbpedia.org/property/subt赤tulo
+http://dbpedia.org/property/sucesor
+http://dbpedia.org/property/tama?o
+http://dbpedia.org/property/texto
+http://dbpedia.org/property/tratamiento
+http://dbpedia.org/property/ubicaci車n
+http://dbpedia.org/property/vicepresidente
+http://dbpedia.org/property/viceprimerministro
+http://dbpedia.org/property/editorial
+http://dbpedia.org/property/fecha
+http://dbpedia.org/property/t赤tulo
+http://dbpedia.org/property/url
+http://dbpedia.org/ontology/wikiPageWikiLink
+http://dbpedia.org/ontology/child
+http://dbpedia.org/ontology/country
+http://dbpedia.org/ontology/occupation
+http://dbpedia.org/ontology/party
+http://dbpedia.org/ontology/profession
+http://dbpedia.org/ontology/religion
+http://dbpedia.org/ontology/successor
+http://xmlns.com/foaf/0.1/name
+http://dbpedia.org/ontology/abstract
+http://dbpedia.org/property/1data
+http://dbpedia.org/property/dead
+
+A3
+
+SELECT count(distinct ?value)
+WHERE
+{
+?inst a <http://dbpedia.org/ontology/Politician>.
+?inst ?prop ?value.
+FILTER(?prop != rdf:type)
+}LIMIT 100
+
+callret-0
+563876
+
+A4
+
+SELECT ?prop count(distinct ?value)
+WHERE
+{
+?inst a <http://dbpedia.org/ontology/Politician>.
+?inst ?prop ?value.
+FILTER(?prop != rdf:type)
+}LIMIT 100
+
+prop	callret-1
+http://es.dbpedia.org/property/nombreBatalla	1
+http://es.dbpedia.org/property/mandos	57
+http://dbpedia.org/property/blog	2
+http://es.dbpedia.org/property/genero	1
+http://es.dbpedia.org/property/transcripci車nurl	3
+http://dbpedia.org/property/colorBarras	3
+http://es.dbpedia.org/property/colorTexto	2
+http://es.dbpedia.org/property/constituencyMp	1
+http://es.dbpedia.org/property/consecration	1
+http://es.dbpedia.org/property/pp	1
+http://es.dbpedia.org/property/proffuei車n	1
+http://dbpedia.org/property/cognome	1
+http://es.dbpedia.org/property/primeraCarrera	1
+http://es.dbpedia.org/property/lugarDeResidencia	1
+http://es.dbpedia.org/property/ubicaci車n	208
+http://dbpedia.org/property/years	2
+http://es.dbpedia.org/property/successor	6
+http://dbpedia.org/property/tiempo	6
+http://es.dbpedia.org/property/sangre	2
+http://es.dbpedia.org/property/isban	1
+http://dbpedia.org/property/last	49
+http://es.dbpedia.org/property/placeOfBirth	4
+http://dbpedia.org/property/tama?o	54
+http://dbpedia.org/property/sufijo	1
+http://es.dbpedia.org/property/6data	2
+http://es.dbpedia.org/property/dinast赤a	1
+http://dbpedia.org/property/agencia	1
+http://dbpedia.org/property/persona	1
+http://dbpedia.org/property/descendencia	2
+http://dbpedia.org/property/final	844
+http://dbpedia.org/property/conocidaPor	1
+http://dbpedia.org/property/exResidencia	3
+http://dbpedia.org/property/page	2
+http://es.dbpedia.org/property/conyugue	2
+http://dbpedia.org/property/estadoCivil	3
+http://es.dbpedia.org/property/secretarioGeneral	1
+http://dbpedia.org/property/enlaceautor	202
+http://dbpedia.org/property/m芍scaraautor	3
+http://dbpedia.org/property/website	2
+http://es.dbpedia.org/property/poj	3
+http://es.dbpedia.org/property/twitter	433
+http://es.dbpedia.org/property/lugarPublicaci車n	4
+http://es.dbpedia.org/property/directorSupremoTitular	2
+http://dbpedia.org/property/tana?o	1
+http://dbpedia.org/ontology/president	2
+http://es.dbpedia.org/property/hija	1
+http://es.dbpedia.org/property/datos	4
+http://dbpedia.org/property/rank	1
+http://dbpedia.org/property/diputadoFederalPorElPan	1
+http://es.dbpedia.org/property/booktitle	1
+http://es.dbpedia.org/property/almaMater	34
+http://es.dbpedia.org/property/cp	1
+http://dbpedia.org/property/canal	1
+http://es.dbpedia.org/property/opcAdm	2
+http://es.dbpedia.org/property/caption	3
+http://es.dbpedia.org/property/imagesize	7
+http://es.dbpedia.org/property/luarmuerte	1
+http://es.dbpedia.org/property/procedencia	3
+http://es.dbpedia.org/property/?o	1
+http://es.dbpedia.org/property/publicaci車n	132
+http://dbpedia.org/property/series	3
+http://es.dbpedia.org/property/lucarnac	4
+http://dbpedia.org/property/predecesor	6713
+http://es.dbpedia.org/property/ref	13
+http://es.dbpedia.org/property/pieDeFoto	7
+http://es.dbpedia.org/property/nieto	1
+http://dbpedia.org/property/sitiowebNoOficial	1
+http://dbpedia.org/property/edition	2
+http://es.dbpedia.org/property/audio	1
+http://es.dbpedia.org/property/preposici車n	2
+http://dbpedia.org/property/empleos	24
+http://es.dbpedia.org/property/authorLink	1
+http://es.dbpedia.org/property/comuna	1
+http://dbpedia.org/property/parttido	1
+http://es.dbpedia.org/property/gobierno	2
+http://es.dbpedia.org/property/obra	103
+http://es.dbpedia.org/property/vicepresidentePrimero	1
+http://dbpedia.org/property/portal	2
+http://es.dbpedia.org/property/religon	2
+http://dbpedia.org/property/primerA?o	2
+http://es.dbpedia.org/property/nacionalidad	97
+http://es.dbpedia.org/property/estado	5
+http://dbpedia.org/property/majority	1
+http://dbpedia.org/property/office	9
+http://es.dbpedia.org/property/objeto	2
+http://es.dbpedia.org/property/editor2Nombre	1
+http://dbpedia.org/property/smallimage	1
+http://es.dbpedia.org/property/conflicto	2
+http://dbpedia.org/property/pages	12
+http://es.dbpedia.org/property/sufijo	1
+http://es.dbpedia.org/property/fechanacimiento	5
+http://es.dbpedia.org/property/sufijohonor赤fico	1
+http://dbpedia.org/property/accessdate	16
+http://dbpedia.org/property/nombreNacimiento	4
+http://es.dbpedia.org/property/comentario	1
+http://dbpedia.org/property/tama?oImagen	2
+http://dbpedia.org/property/novia	1
+http://dbpedia.org/property/fallecimiento	1
+http://es.dbpedia.org/property/tama?oimagen	5
+http://dbpedia.org/property/superficie	1
+
+A5
+
+SELECT avg(distinct ?value) as ?mean
+WHERE
+{
+SELECT ?prop count(distinct ?val) as ?value
+WHERE{
+?inst a <http://dbpedia.org/ontology/Politician>.
+?inst ?prop ?val.
+FILTER(?prop != rdf:type)
+}
+}
+
+mean
+3506.512315270935961
+
+A6
+
+SELECT ?prop max(?value) as ?max
+WHERE
+{
+SELECT ?prop count(distinct ?val) as ?value
+WHERE{
+?inst a <http://dbpedia.org/ontology/Politician>.
+?inst ?prop ?val.
+FILTER(?prop != rdf:type)
+}
+}ORDER BY DESC(?max)
+
+prop	max
+http://dbpedia.org/ontology/wikiPageWikiLink	206324
+http://www.w3.org/2002/07/owl#sameAs	152677
+http://es.dbpedia.org/property/predecesor	20120
+http://dbpedia.org/ontology/wikiPageExternalLink	19679
+http://dbpedia.org/ontology/successor	19183
+http://es.dbpedia.org/property/sucesor	18968
+http://purl.org/dc/terms/subject	17932
+http://xmlns.com/foaf/0.1/name	16972
+http://www.w3.org/2000/01/rdf-schema#label	15400
+http://www.w3.org/ns/prov#wasDerivedFrom	15400
+http://dbpedia.org/ontology/wikiPageRevisionID	15400
+http://dbpedia.org/ontology/wikiPageID	15400
+http://xmlns.com/foaf/0.1/isPrimaryTopicOf	15400
+http://dbpedia.org/ontology/abstract	15379
+http://www.w3.org/2000/01/rdf-schema#comment	15374
+http://es.dbpedia.org/property/nombre	13425
+http://es.dbpedia.org/property/cargo	9091
+http://dbpedia.org/ontology/wikiPageLength	8821
+http://xmlns.com/foaf/0.1/depiction	8601
+http://dbpedia.org/ontology/thumbnail	8601
+http://es.dbpedia.org/property/lugarnac	8217
+http://es.dbpedia.org/property/imagen	7747
+http://es.dbpedia.org/property/t赤tulo	7336
+http://dbpedia.org/property/nombre	7077
+http://dbpedia.org/property/predecesor	6713
+http://dbpedia.org/property/sucesor	6513
+http://es.dbpedia.org/property/c車nyuge	6276
+http://dbpedia.org/property/imagen	5252
+http://dbpedia.org/property/lugarnac	4921
+http://dbpedia.org/property/t赤tulo	4214
+http://dbpedia.org/property/cargo	4169
+http://dbpedia.org/property/c車nyuge	3185
+http://es.dbpedia.org/property/partido	3144
+http://dbpedia.org/ontology/party	3078
+http://es.dbpedia.org/property/hijos	2721
+http://es.dbpedia.org/property/lugarmuerte	2664
+http://es.dbpedia.org/property/pieimagen	2649
+http://es.dbpedia.org/property/profesi車n	2549
+http://es.dbpedia.org/property/padres	2250
+http://es.dbpedia.org/property/escudo	2175
+http://dbpedia.org/property/pieimagen	1773
+http://es.dbpedia.org/property/distrito	1759
+http://dbpedia.org/property/lugarmuerte	1722
+http://dbpedia.org/property/partido	1637
+http://es.dbpedia.org/property/almam芍ter	1616
+http://es.dbpedia.org/property/editorial	1545
+http://dbpedia.org/property/escudo	1506
+http://dbpedia.org/property/hijos	1441
+http://es.dbpedia.org/property/presidente	1374
+http://es.dbpedia.org/property/final	1298
+http://es.dbpedia.org/property/inicio	1292
+http://xmlns.com/foaf/0.1/homepage	1270
+http://es.dbpedia.org/property/url	1238
+http://dbpedia.org/ontology/profession	1237
+http://dbpedia.org/property/profesi車n	1189
+http://dbpedia.org/property/editorial	1188
+http://es.dbpedia.org/property/sitioweb	1149
+http://es.dbpedia.org/property/ocupaci車n	1137
+http://dbpedia.org/ontology/child	998
+http://dbpedia.org/ontology/residence	981
+http://es.dbpedia.org/property/fechanac	944
+http://dbpedia.org/property/padres	907
+http://dbpedia.org/property/presidente	876
+http://dbpedia.org/property/inicio	860
+http://dbpedia.org/property/final	844
+http://es.dbpedia.org/property/per赤odo	842
+http://dbpedia.org/property/almam芍ter	815
+http://dbpedia.org/property/url	810
+http://dbpedia.org/property/distrito	795
+http://es.dbpedia.org/property/residencia	794
+http://es.dbpedia.org/property/fechamuerte	774
+http://dbpedia.org/ontology/occupation	763
+http://es.dbpedia.org/property/apellido	757
+http://es.dbpedia.org/property/vicepresidente	745
+http://es.dbpedia.org/property/primerministro	733
+http://es.dbpedia.org/property/firma	729
+http://dbpedia.org/property/fechanac	721
+http://es.dbpedia.org/property/autor	711
+http://dbpedia.org/property/firma	682
+http://dbpedia.org/property/per赤odo	638
+http://dbpedia.org/property/apellido	614
+http://dbpedia.org/property/sitioweb	607
+http://es.dbpedia.org/property/apellidos	585
+http://dbpedia.org/property/autor	555
+http://dbpedia.org/property/primerministro	532
+http://es.dbpedia.org/property/wikiPageUsesTemplate	516
+http://dbpedia.org/property/vicepresidente	505
+http://dbpedia.org/property/ocupaci車n	495
+http://es.dbpedia.org/property/isbn	475
+http://dbpedia.org/property/apellidos	467
+http://dbpedia.org/property/fechamuerte	466
+http://dbpedia.org/ontology/wikiPageOutDegree	440
+http://es.dbpedia.org/property/twitter	433
+http://dbpedia.org/property/isbn	411
+http://dbpedia.org/property/residencia	395
+http://es.dbpedia.org/property/id	366
+http://es.dbpedia.org/property/p芍ginas	345
+http://es.dbpedia.org/property/afiliaciones	328
+http://dbpedia.org/ontology/religion	327
+http://es.dbpedia.org/property/religi車n	315
+http://dbpedia.org/property/id	313
+http://dbpedia.org/property/p芍ginas	302
+http://es.dbpedia.org/property/vicegobernador	268
+http://es.dbpedia.org/property/juntoa	264
+http://es.dbpedia.org/property/enlaceautor	257
+http://es.dbpedia.org/property/posgrado	211
+http://es.dbpedia.org/property/ubicaci車n	208
+http://es.dbpedia.org/property/tratamiento	205
+http://dbpedia.org/property/enlaceautor	202
+http://es.dbpedia.org/property/a?o	198
+http://dbpedia.org/property/twitter	193
+http://es.dbpedia.org/property/batallas	185
+http://dbpedia.org/property/a?o	180
+http://dbpedia.org/property/ubicaci車n	173
+http://es.dbpedia.org/property/monarca	172
+http://es.dbpedia.org/property/apodo	170
+http://dbpedia.org/property/religi車n	169
+http://es.dbpedia.org/property/gobernador	154
+http://dbpedia.org/property/juntoa	152
+http://es.dbpedia.org/property/1data	140
+http://es.dbpedia.org/property/publicaci車n	132
+http://dbpedia.org/property/tratamiento	124
+http://dbpedia.org/property/monarca	122
+http://dbpedia.org/property/afiliaciones	116
+http://es.dbpedia.org/property/fecha	115
+http://es.dbpedia.org/property/title	114
+http://es.dbpedia.org/property/fechaacceso	112
+http://es.dbpedia.org/property/volumen	111
+http://es.dbpedia.org/property/lealtad	110
+http://es.dbpedia.org/property/editor	110
+http://es.dbpedia.org/property/nombreCompleto	107
+http://dbpedia.org/property/apodo	103
+http://es.dbpedia.org/property/obra	103
+http://dbpedia.org/property/1data	99
+http://es.dbpedia.org/property/cap赤tulo	99
+http://dbpedia.org/property/title	98
+http://es.dbpedia.org/property/nacionalidad	97
+http://es.dbpedia.org/property/canciller	97
+http://dbpedia.org/ontology/wikiPageInterLanguageLink	96
+http://dbpedia.org/property/fecha	93
+http://es.dbpedia.org/property/viceprimerministro	93
+http://es.dbpedia.org/property/subt赤tulo	92
+http://dbpedia.org/property/volumen	92
+http://es.dbpedia.org/property/publisher	91
+http://dbpedia.org/property/publicaci車n	90
+http://dbpedia.org/property/fechaacceso	88
+http://dbpedia.org/ontology/nationality	88
+http://dbpedia.org/property/batallas	87
+http://es.dbpedia.org/property/a?osDeServicio	84
+http://es.dbpedia.org/property/rango	75
+http://dbpedia.org/property/lealtad	73
+http://es.dbpedia.org/property/n迆mero	73
+http://es.dbpedia.org/property/oclc	72
+http://dbpedia.org/property/publisher	72
+http://dbpedia.org/ontology/birthPlace	72
+http://dbpedia.org/property/editor	71
+http://es.dbpedia.org/property/tama?o	71
+http://dbpedia.org/property/cap赤tulo	71
+http://dbpedia.org/property/obra	69
+http://es.dbpedia.org/property/facebook	68
+http://es.dbpedia.org/property/designado	67
+http://dbpedia.org/property/oclc	67
+http://es.dbpedia.org/property/2data	67
+http://es.dbpedia.org/property/jefe	67
+http://es.dbpedia.org/property/notas	66
+http://dbpedia.org/property/a?osDeServicio	65
+http://es.dbpedia.org/property/teniente	63
+http://es.dbpedia.org/property/sucesora	63
+http://dbpedia.org/property/gobernador	62
+http://dbpedia.org/property/viceprimerministro	62
+http://es.dbpedia.org/property/lugarDeNacimiento	62
+http://dbpedia.org/property/posgrado	61
+http://dbpedia.org/property/canciller	61
+http://es.dbpedia.org/property/pa赤s	61
+http://es.dbpedia.org/property/conflictos	59
+http://es.dbpedia.org/property/lugar	58
+http://dbpedia.org/property/n迆mero	58
+http://dbpedia.org/property/vicegobernador	57
+http://es.dbpedia.org/property/revista	57
+http://es.dbpedia.org/property/mandos	57
+http://es.dbpedia.org/property/last	56
+http://es.dbpedia.org/property/oponentes	56
+http://dbpedia.org/property/revista	56
+http://dbpedia.org/property/tama?o	54
+http://dbpedia.org/property/subt赤tulo	54
+http://es.dbpedia.org/property/edici車n	54
+http://es.dbpedia.org/property/predecesora	53
+http://es.dbpedia.org/property/first	52
+http://dbpedia.org/property/nacionalidad	52
+http://es.dbpedia.org/property/unidad	51
+http://dbpedia.org/property/last	49
+http://es.dbpedia.org/property/year	49
+http://dbpedia.org/ontology/deathPlace	47
+http://dbpedia.org/property/year	47
+http://es.dbpedia.org/property/almaM芍ter	47
+http://es.dbpedia.org/property/issn	46
+http://dbpedia.org/property/designado	46
+http://dbpedia.org/property/first	45
+http://dbpedia.org/property/2data	45
+http://dbpedia.org/property/lugar	44
+http://dbpedia.org/property/notas	44
+http://dbpedia.org/property/jefe	44
+http://dbpedia.org/property/rango	43
+http://dbpedia.org/property/issn	42
+http://dbpedia.org/ontology/country	42
+http://dbpedia.org/property/sucesora	42
+http://es.dbpedia.org/property/3data	41
+http://es.dbpedia.org/property/otros	41
+http://dbpedia.org/property/nombreCompleto	40
+http://es.dbpedia.org/property/condecoraciones	39
+http://dbpedia.org/property/pa赤s	38
+http://es.dbpedia.org/property/fechaDeNacimiento	38
+http://es.dbpedia.org/property/location	38
+http://es.dbpedia.org/property/fortuna	38
+http://dbpedia.org/property/edici車n	38
+http://es.dbpedia.org/property/partidoPol赤tico	36
+http://es.dbpedia.org/property/lugarDeFallecimiento	36
+http://dbpedia.org/ontology/orderInOffice	36
+http://es.dbpedia.org/property/name	36
+http://dbpedia.org/property/facebook	36
+http://dbpedia.org/property/otros	35
+http://dbpedia.org/property/predecesora	35
+http://es.dbpedia.org/property/serie	35
+http://dbpedia.org/property/nombrename	34
+http://es.dbpedia.org/property/almaMater	34
+http://es.dbpedia.org/property/nombreEditor	34
+http://es.dbpedia.org/property/nombrename	34
+http://es.dbpedia.org/property/empleos	33
+http://dbpedia.org/property/oponentes	33
+http://es.dbpedia.org/property/t赤tulos	33
+http://es.dbpedia.org/property/p芍gina	33
+http://dbpedia.org/property/t赤tuloTrad	32
+http://es.dbpedia.org/property/t赤tuloTrad	32
+http://dbpedia.org/property/unidad	32
+http://dbpedia.org/property/nombreEditor	32
+http://es.dbpedia.org/property/rama	31
+http://es.dbpedia.org/property/coautores	31
+http://dbpedia.org/property/location	31
+http://es.dbpedia.org/property/web	29
+http://es.dbpedia.org/property/postgrados	29
+http://es.dbpedia.org/property/foto	29
+http://es.dbpedia.org/property/texto	28
+http://es.dbpedia.org/property/fechaDeFallecimiento	28
+http://dbpedia.org/property/foto	28
+http://es.dbpedia.org/property/finMandato	27
+http://dbpedia.org/property/condecoraciones	27
+http://dbpedia.org/property/fortuna	27
+http://dbpedia.org/property/mandos	27
+http://es.dbpedia.org/property/idioma	27
+http://dbpedia.org/property/conflictos	26
+http://es.dbpedia.org/property/inicioMandato	25
+http://es.dbpedia.org/property/descripci車n	25
+http://es.dbpedia.org/property/nominado	25
+http://es.dbpedia.org/property/apellidoEditor	25
+http://dbpedia.org/property/3data	25
+http://dbpedia.org/property/apellidoEditor	25
+http://dbpedia.org/property/empleos	24
+http://es.dbpedia.org/property/enelcargo	24
+http://dbpedia.org/property/teniente	24
+http://dbpedia.org/property/texto	24
+http://dbpedia.org/property/coautores	24
+http://dbpedia.org/property/p芍gina	23
+http://es.dbpedia.org/property/lugarNacimiento	23
+http://dbpedia.org/property/name	23
+http://es.dbpedia.org/property/date	22
+http://dbpedia.org/property/idioma	22
+http://es.dbpedia.org/property/p	22
+http://dbpedia.org/property/p	22
+http://es.dbpedia.org/property/sitioWeb	22
+http://dbpedia.org/property/serie	21
+http://es.dbpedia.org/property/mes	21
+http://dbpedia.org/property/t	20
+http://dbpedia.org/property/almaMater	20
+http://dbpedia.org/property/nominado	20
+http://es.dbpedia.org/property/t	20
+http://es.dbpedia.org/property/f車rmula	20
+http://es.dbpedia.org/property/office	20
+http://es.dbpedia.org/property/nombreDeNacimiento	19
+http://dbpedia.org/property/rama	19
+http://dbpedia.org/property/almaM芍ter	19
+http://es.dbpedia.org/property/gabinete	19
+http://es.dbpedia.org/property/accessdate	19
+http://es.dbpedia.org/property/cita	18
+http://es.dbpedia.org/property/vicecanciller	17
+http://dbpedia.org/property/inicioMandato	17
+http://es.dbpedia.org/property/embajadorde	17
+http://es.dbpedia.org/property/ancho	17
+http://dbpedia.org/property/ancho	17
+http://es.dbpedia.org/property/religion	17
+http://es.dbpedia.org/property/esposa	16
+http://dbpedia.org/property/mes	16
+http://dbpedia.org/property/accessdate	16
+http://es.dbpedia.org/property/4data	16
+http://es.dbpedia.org/property/medioDeComunicaci車n	16
+http://dbpedia.org/property/nombreDeNacimiento	16
+http://es.dbpedia.org/property/titulo	16
+http://dbpedia.org/property/finMandato	16
+http://dbpedia.org/property/lugarDeNacimiento	16
+http://dbpedia.org/property/date	16
+http://es.dbpedia.org/property/list	16
+http://dbpedia.org/property/web	16
+http://dbpedia.org/property/s	15
+http://es.dbpedia.org/property/hangul	15
+http://es.dbpedia.org/property/s	15
+http://dbpedia.org/property/authorlink	14
+http://es.dbpedia.org/property/rr	14
+http://es.dbpedia.org/property/firmaTama?o	14
+http://es.dbpedia.org/property/almamater	14
+http://dbpedia.org/property/hangul	14
+http://es.dbpedia.org/property/5data	14
+http://es.dbpedia.org/property/authorlink	14
+http://es.dbpedia.org/property/fechaNacimiento	14
+http://dbpedia.org/property/vicecanciller	13
+http://dbpedia.org/property/enelcargo	13
+http://dbpedia.org/property/rr	13
+http://dbpedia.org/property/descripci車n	13
+http://es.dbpedia.org/property/formato	13
+http://es.dbpedia.org/property/nombrecompleto	13
+http://dbpedia.org/property/almamater	13
+http://es.dbpedia.org/property/ref	13
+http://dbpedia.org/property/4data	13
+http://dbpedia.org/property/sitioWeb	12
+http://es.dbpedia.org/property/sucesores	12
+http://dbpedia.org/property/pages	12
+http://es.dbpedia.org/property/a?oacceso	12
+http://dbpedia.org/property/embajadorde	12
+http://dbpedia.org/property/postgrados	12
+http://dbpedia.org/property/fechaDeNacimiento	12
+http://es.dbpedia.org/property/hanja	12
+http://es.dbpedia.org/property/educaci車n	12
+http://es.dbpedia.org/property/pareja	12
+http://dbpedia.org/property/firmaTama?o	12
+http://es.dbpedia.org/property/archivo	12
+http://es.dbpedia.org/property/pages	12
+http://dbpedia.org/ontology/award	12
+http://dbpedia.org/property/partidoPol赤tico	12
+http://dbpedia.org/property/hanja	12
+http://es.dbpedia.org/property/mr	12
+http://dbpedia.org/property/formato	11
+http://es.dbpedia.org/property/work	11
+http://dbpedia.org/property/a?oacceso	11
+http://es.dbpedia.org/property/enciclopedia	11
+http://es.dbpedia.org/property/apellidosEditor	11
+http://es.dbpedia.org/property/familiares	11
+http://es.dbpedia.org/property/predecesores	11
+http://dbpedia.org/property/mr	11
+http://es.dbpedia.org/property/pieescudo	11
+http://es.dbpedia.org/property/group	10
+http://es.dbpedia.org/property/familia	10
+http://es.dbpedia.org/property/a?oOriginal	10
+http://dbpedia.org/property/esposa	10
+http://es.dbpedia.org/property/author	10
+http://dbpedia.org/property/archivo	10
+http://dbpedia.org/property/apellidosEditor	10
+http://dbpedia.org/ontology/primeMinister	10
+http://dbpedia.org/property/ref	10
+http://es.dbpedia.org/property/etiqueta	10
+http://dbpedia.org/ontology/office	10
+http://dbpedia.org/property/f車rmula	10
+http://es.dbpedia.org/property/conyuge	10
+http://dbpedia.org/property/religion	10
+http://dbpedia.org/property/lugarDeFallecimiento	9
+http://es.dbpedia.org/property/vicejefe	9
+http://dbpedia.org/property/t赤tulos	9
+http://dbpedia.org/property/a?oOriginal	9
+http://es.dbpedia.org/property/estadoCivil	9
+http://es.dbpedia.org/property/primerMinistro	9
+http://dbpedia.org/property/doi	9
+http://es.dbpedia.org/property/lugarMuerte	9
+http://es.dbpedia.org/property/fechaarchivo	9
+http://es.dbpedia.org/property/doi	9
+http://es.dbpedia.org/property/succesor	9
+http://dbpedia.org/property/office	9
+http://es.dbpedia.org/property/journal	9
+http://es.dbpedia.org/property/urlarchivo	9
+http://es.dbpedia.org/property/premios	9
+http://dbpedia.org/property/author	8
+http://dbpedia.org/property/predecesores	8
+http://es.dbpedia.org/property/residence	8
+http://dbpedia.org/property/w	8
+http://es.dbpedia.org/property/fechaaceso	8
+http://es.dbpedia.org/property/posici車n	8
+http://dbpedia.org/property/familia	8
+http://dbpedia.org/property/pareja	8
+http://es.dbpedia.org/property/w	8
+http://es.dbpedia.org/property/nombreNacimiento	8
+http://dbpedia.org/property/premios	8
+http://es.dbpedia.org/property/profesion	8
+http://dbpedia.org/property/pieescudo	8
+http://es.dbpedia.org/property/alcalde	8
+http://dbpedia.org/property/volume	8
+http://es.dbpedia.org/property/volume	8
+http://dbpedia.org/property/fechaaceso	8
+http://es.dbpedia.org/property/nombres	7
+http://dbpedia.org/property/nombrecompleto	7
+http://es.dbpedia.org/property/portal	7
+http://es.dbpedia.org/property/clubdebut	7
+http://dbpedia.org/property/list	7
+http://es.dbpedia.org/property/primeminister	7
+http://dbpedia.org/property/etiqueta	7
+http://dbpedia.org/property/sucesores	7
+http://es.dbpedia.org/property/imagesize	7
+http://es.dbpedia.org/property/pieDeFoto	7
+http://dbpedia.org/property/lugarNacimiento	7
+http://es.dbpedia.org/property/fechaMuerte	7
+http://es.dbpedia.org/property/dead	7
+http://dbpedia.org/property/5data	7
+http://es.dbpedia.org/property/especialidad	7
+http://es.dbpedia.org/property/ciudadania	6
+http://es.dbpedia.org/property/periodo	6
+http://es.dbpedia.org/property/successor	6
+http://dbpedia.org/property/lccn	6
+http://dbpedia.org/property/cita	6
+http://dbpedia.org/property/educaci車n	6
+http://dbpedia.org/property/imagesize	6
+http://es.dbpedia.org/property/nationality	6
+http://es.dbpedia.org/property/acusaciones	6
+http://dbpedia.org/property/group	6
+http://dbpedia.org/ontology/relative	6
+http://dbpedia.org/property/dead	6
+http://dbpedia.org/property/work	6
+http://es.dbpedia.org/property/altura	6
+http://es.dbpedia.org/property/rangoMilitar	6
+http://es.dbpedia.org/property/tipo	6
+http://es.dbpedia.org/property/c車nyuges	6
+http://es.dbpedia.org/property/color	6
+http://es.dbpedia.org/property/estatus	6
+http://dbpedia.org/property/vicejefe	6
+http://dbpedia.org/property/estatus	6
+http://es.dbpedia.org/property/迆ltimo	6
+http://dbpedia.org/property/imdb	6
+http://dbpedia.org/property/fechaDeFallecimiento	6
+http://dbpedia.org/property/primerMinistro	6
+http://es.dbpedia.org/property/primeraDama	6
+http://dbpedia.org/property/rangoMilitar	6
+http://dbpedia.org/property/tiempo	6
+http://dbpedia.org/property/condena	6
+http://dbpedia.org/property/conyuge	6
+http://es.dbpedia.org/property/birthPlace	6
+http://es.dbpedia.org/property/padre	6
+http://es.dbpedia.org/property/tiempo	6
+http://es.dbpedia.org/property/lccn	6
+http://es.dbpedia.org/property/diputado	6
+http://es.dbpedia.org/property/imdb	6
+http://dbpedia.org/property/titulo	6
+http://es.dbpedia.org/property/condena	6
+http://es.dbpedia.org/property/textoimagen	5
+http://es.dbpedia.org/property/pieImagen	5
+http://dbpedia.org/property/termStart	5
+http://es.dbpedia.org/property/a?odebut	5
+http://dbpedia.org/property/a?odebut	5
+http://es.dbpedia.org/property/fechanacimiento	5
+http://es.dbpedia.org/property/copr赤ncipes	5
+http://es.dbpedia.org/property/8data	5
+http://dbpedia.org/property/termEnd	5
+http://dbpedia.org/property/posici車n	5
+http://es.dbpedia.org/property/urlcap赤tulo	5
+http://es.dbpedia.org/property/primero	5
+http://dbpedia.org/property/enciclopedia	5
+http://es.dbpedia.org/property/vicealcalde	5
+http://es.dbpedia.org/property/tama?oimagen	5
+http://dbpedia.org/property/journal	5
+http://dbpedia.org/property/succesor	5
+http://es.dbpedia.org/property/clubretiro	5
+http://es.dbpedia.org/property/relations	5
+http://es.dbpedia.org/property/languagesSpoken	5
+http://dbpedia.org/property/issue	5
+http://es.dbpedia.org/property/issue	5
+http://es.dbpedia.org/property/otrosnombres	5
+http://es.dbpedia.org/property/estado	5
+http://es.dbpedia.org/property/termStart	5
+http://es.dbpedia.org/property/termEnd	5
+http://es.dbpedia.org/property/2cargo	5
+http://es.dbpedia.org/property/ciudaddenacimiento	5
+http://es.dbpedia.org/property/campos	5
+http://es.dbpedia.org/property/fechaFallecimiento	5
+http://es.dbpedia.org/property/nacimiento	5
+http://dbpedia.org/property/relations	5
+http://es.dbpedia.org/property/estudiantesDoctorales	4
+http://es.dbpedia.org/property/circunscripci車n	4
+http://dbpedia.org/property/clubdebut	4
+http://dbpedia.org/property/jstor	4
+http://es.dbpedia.org/property/abreviaturaBot	4
+http://dbpedia.org/property/urlcap赤tulo	4
+http://dbpedia.org/property/nationality	4
+http://dbpedia.org/property/acusaciones	4
+http://es.dbpedia.org/property/coautor	4
+http://es.dbpedia.org/property/placeOfBirth	4
+http://es.dbpedia.org/property/lugarPublicaci車n	4
+http://es.dbpedia.org/property/lucarnac	4
+http://es.dbpedia.org/property/predecessor	4
+http://es.dbpedia.org/property/jstor	4
+http://dbpedia.org/property/ep赤grafe	4
+http://dbpedia.org/property/profesion	4
+http://dbpedia.org/property/abreviaturaBot	4
+http://es.dbpedia.org/property/fallecimiento	4
+http://es.dbpedia.org/property/idiomas	4
+http://es.dbpedia.org/property/deathPlace	4
+http://dbpedia.org/property/altura	4
+http://dbpedia.org/property/nombres	4
+http://dbpedia.org/property/vicealcalde	4
+http://dbpedia.org/property/order	4
+http://dbpedia.org/property/copr赤ncipes	4
+http://dbpedia.org/property/8data	4
+http://dbpedia.org/property/nombreNacimiento	4
+http://dbpedia.org/property/birthPlace	4
+http://es.dbpedia.org/property/hijo	4
+http://dbpedia.org/property/editorNombre	4
+http://dbpedia.org/property/editorApellidos	4
+http://es.dbpedia.org/property/antecesor	4
+http://es.dbpedia.org/property/otrosNombres	4
+http://es.dbpedia.org/property/website	4
+http://dbpedia.org/property/coautor	4
+http://dbpedia.org/property/residence	4
+http://es.dbpedia.org/property/seiyu	4
+http://es.dbpedia.org/property/exResidencia	4
+http://es.dbpedia.org/property/ocupacion	4
+http://es.dbpedia.org/property/hijas	4
+http://es.dbpedia.org/property/editorNombre	4
+http://es.dbpedia.org/property/datos	4
+http://es.dbpedia.org/property/lugardef	4
+http://es.dbpedia.org/property/edad	4
+http://dbpedia.org/ontology/spouse	4
+http://es.dbpedia.org/property/ep赤grafe	4
+http://es.dbpedia.org/property/ocupacii車n	4
+http://es.dbpedia.org/property/organizaci車n	4
+http://es.dbpedia.org/property/editorApellidos	4
+http://es.dbpedia.org/property/order	4
+http://es.dbpedia.org/property/postgrado	4
+http://dbpedia.org/property/estatura	4
+http://es.dbpedia.org/property/estatura	4
+http://dbpedia.org/property/ciudaddenacimiento	4
+http://es.dbpedia.org/property/frentesElectorales	4
+http://es.dbpedia.org/property/imagenTama?o	4
+http://dbpedia.org/property/c車ugarnac	3
+http://es.dbpedia.org/property/width	3
+http://dbpedia.org/property/languagesSpoken	3
+http://dbpedia.org/ontology/activeYearsStartDate	3
+http://es.dbpedia.org/property/nietos	3
+http://www.georss.org/georss/point	3
+http://es.dbpedia.org/property/c車ugarnac	3
+http://dbpedia.org/property/format	3
+http://dbpedia.org/property/poj	3
+http://dbpedia.org/property/editorLast	3
+http://dbpedia.org/property/otrosnombres	3
+http://dbpedia.org/property/diputado	3
+http://es.dbpedia.org/property/fin	3
+http://es.dbpedia.org/property/canal	3
+http://es.dbpedia.org/property/insignia	3
+http://dbpedia.org/property/periodical	3
+http://es.dbpedia.org/property/a?osActivo	3
+http://dbpedia.org/property/circunscripci車n	3
+http://dbpedia.org/property/campos	3
+http://es.dbpedia.org/property/editor2Last	3
+http://es.dbpedia.org/property/descendencia	3
+http://es.dbpedia.org/property/firstminister	3
+http://es.dbpedia.org/property/transcripci車nurl	3
+http://dbpedia.org/property/colorBarras	3
+http://dbpedia.org/property/estadoCivil	3
+http://es.dbpedia.org/property/caption	3
+http://es.dbpedia.org/property/procedencia	3
+http://dbpedia.org/property/cementerio	3
+http://es.dbpedia.org/property/nombreEs	3
+http://es.dbpedia.org/property/transTitle	3
+http://es.dbpedia.org/property/p芍ginaWeb	3
+http://dbpedia.org/property/padre	3
+http://es.dbpedia.org/property/tama?oFirma	3
+http://dbpedia.org/property/posici車nTabla	3
+http://dbpedia.org/property/pieDeFoto	3
+http://es.dbpedia.org/property/tama?oImagen	3
+http://dbpedia.org/property/c	3
+http://dbpedia.org/property/fechaNacimiento	3
+http://es.dbpedia.org/property/editorFirst	3
+http://dbpedia.org/property/imageSize	3
+http://dbpedia.org/property/ocupacii車n	3
+http://dbpedia.org/property/tama?oimagen	3
+http://dbpedia.org/ontology/militaryRank	3
+http://dbpedia.org/property/caption	3
+http://es.dbpedia.org/property/honorificSuffix	3
+http://es.dbpedia.org/property/series	3
+http://es.dbpedia.org/property/colorBarras	3
+http://dbpedia.org/property/equipo	3
+http://es.dbpedia.org/property/blog	3
+http://es.dbpedia.org/property/editorLast	3
+http://es.dbpedia.org/property/doblador	3
+http://es.dbpedia.org/property/lugarFallecimiento	3
+http://es.dbpedia.org/property/mandato	3
+http://es.dbpedia.org/property/equipo	3
+http://dbpedia.org/property/exResidencia	3
+http://dbpedia.org/property/series	3
+http://es.dbpedia.org/property/t赤tulotrad	3
+http://es.dbpedia.org/property/piedeimagen	3
+http://es.dbpedia.org/property/imageSize	3
+http://dbpedia.org/property/lucarnac	3
+http://es.dbpedia.org/property/minutos	3
+http://dbpedia.org/property/fechaarchivo	3
+http://dbpedia.org/property/primeminister	3
+http://es.dbpedia.org/property/c	3
+http://es.dbpedia.org/property/a?oretiro	3
+http://es.dbpedia.org/property/m芍scaraautor	3
+http://dbpedia.org/property/lugarPublicaci車n	3
+http://es.dbpedia.org/property/cementerio	3
+http://dbpedia.org/property/antecesor	3
+http://dbpedia.org/property/piedeimagen	3
+http://dbpedia.org/property/separadorAutores	3
+http://dbpedia.org/property/editorFirst	3
+http://es.dbpedia.org/property/pie	3
+http://es.dbpedia.org/property/tama?oDeImagen	3
+http://es.dbpedia.org/property/listatecnicas	3
+http://dbpedia.org/property/hijas	3
+http://es.dbpedia.org/property/causaMuerte	3
+http://es.dbpedia.org/property/porcentajeBarras	3
+http://es.dbpedia.org/property/origyear	3
+http://dbpedia.org/property/situaci車nActual	3
+http://dbpedia.org/property/m芍scaraautor	3
+http://es.dbpedia.org/property/poj	3
+http://dbpedia.org/property/estudiantesDoctorales	3
+http://dbpedia.org/ontology/activeYearsEndDate	3
+http://es.dbpedia.org/property/situaci車nActual	3
+http://es.dbpedia.org/property/lugranac	3
+http://dbpedia.org/property/porcentajeBarras	3
+http://dbpedia.org/property/a?oretiro	3
+http://dbpedia.org/property/ciudadania	3
+http://es.dbpedia.org/property/tesisT赤tulo	3
+http://dbpedia.org/property/placeOfBirth	3
+http://dbpedia.org/property/periodo	3
+http://www.w3.org/2003/01/geo/wgs84_pos#long	3
+http://dbpedia.org/property/barras	3
+http://dbpedia.org/property/urlarchivo	3
+http://dbpedia.org/property/t赤tulotrad	3
+http://es.dbpedia.org/property/periodical	3
+http://es.dbpedia.org/property/editor2First	3
+http://es.dbpedia.org/property/patrimonio	3
+http://es.dbpedia.org/property/posici車nTabla	3
+http://dbpedia.org/ontology/citizenship	3
+http://es.dbpedia.org/property/adm	3
+http://es.dbpedia.org/property/cupaci車n	3
+http://es.dbpedia.org/property/alias	3
+http://www.w3.org/2003/01/geo/wgs84_pos#lat	3
+http://es.dbpedia.org/property/sexo	3
+http://es.dbpedia.org/property/alongside	3
+http://dbpedia.org/property/tipo	3
+http://dbpedia.org/property/primeraDama	3
+http://es.dbpedia.org/property/separadorAutores	3
+http://dbpedia.org/property/origyear	3
+http://es.dbpedia.org/property/format	3
+http://dbpedia.org/property/transTitle	3
+http://es.dbpedia.org/property/muerte	3
+http://dbpedia.org/property/width	3
+http://es.dbpedia.org/property/barras	3
+http://es.dbpedia.org/property/primeraaparicion	3
+http://es.dbpedia.org/property/nota	2
+http://dbpedia.org/property/tama?oFirma	2
+http://dbpedia.org/property/v	2
+http://dbpedia.org/property/fechaFallecimiento	2
+http://es.dbpedia.org/property/tama?oEscudo	2
+http://dbpedia.org/property/alias	2
+http://dbpedia.org/property/encabezado	2
+http://dbpedia.org/property/programa	2
+http://es.dbpedia.org/property/ascendencia	2
+http://es.dbpedia.org/property/misiones	2
+http://es.dbpedia.org/property/edition	2
+http://dbpedia.org/property/nombreReal	2
+http://es.dbpedia.org/property/pa?inas	2
+http://es.dbpedia.org/property/almaMaster	2
+http://dbpedia.org/property/cir	2
+http://es.dbpedia.org/property/years	2
+http://es.dbpedia.org/property/tama?oDeEscudo	2
+http://es.dbpedia.org/property/commons	2
+http://es.dbpedia.org/property/lugarnacimiento	2
+http://dbpedia.org/property/nota	2
+http://dbpedia.org/property/objeto	2
+http://es.dbpedia.org/property/chapter	2
+http://es.dbpedia.org/property/equipos	2
+http://es.dbpedia.org/property/paisdenacimiento	2
+http://es.dbpedia.org/property/instrumento	2
+http://dbpedia.org/property/fechanacimiento	2
+http://es.dbpedia.org/property/lugarmuertec	2
+http://dbpedia.org/property/article	2
+http://es.dbpedia.org/property/editor1Last	2
+http://es.dbpedia.org/property/primeraAparici車n	2
+http://es.dbpedia.org/property/colorTexto	2
+http://dbpedia.org/property/years	2
+http://es.dbpedia.org/property/6data	2
+http://dbpedia.org/property/page	2
+http://es.dbpedia.org/property/opcAdm	2
+http://dbpedia.org/property/edition	2
+http://es.dbpedia.org/property/religon	2
+http://dbpedia.org/property/primerA?o	2
+http://es.dbpedia.org/property/conflicto	2
+http://dbpedia.org/property/tama?oImagen	2
+http://dbpedia.org/property/preposici車n	2
+http://es.dbpedia.org/property/primerA?o	2
+http://dbpedia.org/property/pa?inas	2
+http://es.dbpedia.org/property/campeonato	2
+http://dbpedia.org/property/tipoAdm	2
+http://es.dbpedia.org/property/especie	2
+http://dbpedia.org/property/publicationPlace	2
+http://es.dbpedia.org/property/vol迆men	2
+http://es.dbpedia.org/property/pelo	2
+http://es.dbpedia.org/property/presidencia	2
+http://es.dbpedia.org/property/tipotecnicas	2
+http://es.dbpedia.org/property/tama?oDeFoto	2
+http://es.dbpedia.org/property/nombreReal	2
+http://dbpedia.org/ontology/almaMater	2
+http://dbpedia.org/property/partidosinternacionales	2
+http://es.dbpedia.org/property/publicationPlace	2
+http://dbpedia.org/property/pie	2
+http://es.dbpedia.org/property/wikinoticias	2
+http://dbpedia.org/property/lugarFallecimiento	2
+http://dbpedia.org/property/opcAdm	2
+http://es.dbpedia.org/property/cir	2
+http://es.dbpedia.org/property/deathDate	2
+http://es.dbpedia.org/property/raza	2
+http://es.dbpedia.org/property/party	2
+http://dbpedia.org/property/fin	2
+http://dbpedia.org/property/campeonato	2
+http://dbpedia.org/property/firstminister	2
+http://dbpedia.org/property/victorias	2
+http://es.dbpedia.org/property/v	2
+http://es.dbpedia.org/property/height	2
+http://es.dbpedia.org/property/premiosGloboDeOro	2
+http://es.dbpedia.org/property/sucessor	2
+http://es.dbpedia.org/property/oficina	2
+http://es.dbpedia.org/property/padrse	2
+http://es.dbpedia.org/property/editor1First	2
+http://es.dbpedia.org/property/esposo	2
+http://es.dbpedia.org/property/campeonatos	2
+http://dbpedia.org/property/language	2
+http://es.dbpedia.org/property/fechaPublicaci車n	2
+http://dbpedia.org/property/g谷nero	2
+http://es.dbpedia.org/property/rank	2
+http://es.dbpedia.org/property/president	2
+http://dbpedia.org/property/imagenBandera	2
+http://es.dbpedia.org/property/nationalidad	2
+http://dbpedia.org/property/contribution	2
+http://dbpedia.org/property/a?osActivo	2
+http://es.dbpedia.org/property/nombreJaLatino	2
+http://dbpedia.org/property/blog	2
+http://dbpedia.org/property/website	2
+http://es.dbpedia.org/property/directorSupremoTitular	2
+http://dbpedia.org/ontology/president	2
+http://es.dbpedia.org/property/gobierno	2
+http://dbpedia.org/property/portal	2
+http://dbpedia.org/property/podios	2
+http://es.dbpedia.org/property/ideolog赤aPol赤tica	2
+http://dbpedia.org/property/mandato	2
+http://es.dbpedia.org/property/hermano	2
+http://es.dbpedia.org/property/victorias	2
+http://es.dbpedia.org/property/link	2
+http://es.dbpedia.org/property/tesisA?o	2
+http://dbpedia.org/property/color	2
+http://es.dbpedia.org/property/after	2
+http://dbpedia.org/property/lugarmuertec	2
+http://dbpedia.org/property/ano	2
+http://es.dbpedia.org/property/language	2
+http://es.dbpedia.org/property/nombramiento	2
+http://dbpedia.org/property/deathPlace	2
+http://dbpedia.org/property/otrosNombres	2
+http://dbpedia.org/property/gabinete	2
+http://es.dbpedia.org/property/maestr赤a	2
+http://dbpedia.org/property/equipos	2
+http://dbpedia.org/property/nietos	2
+http://dbpedia.org/property/cupaci車n	2
+http://es.dbpedia.org/property/contribution	2
+http://es.dbpedia.org/property/espectroPol赤tico	2
+http://es.dbpedia.org/property/partidos	2
+http://es.dbpedia.org/property/creencias	2
+http://dbpedia.org/property/direcci車n	2
+http://dbpedia.org/property/seiyu	2
+http://es.dbpedia.org/property/direcci車n	2
+http://dbpedia.org/property/estado	2
+http://es.dbpedia.org/property/podios	2
+http://es.dbpedia.org/property/posicion	2
+http://es.dbpedia.org/property/hermanos	2
+http://es.dbpedia.org/property/diputados	2
+http://dbpedia.org/property/adm	2
+http://es.dbpedia.org/property/g谷nero	2
+http://dbpedia.org/property/gobernadorGeneral	2
+http://es.dbpedia.org/property/imagenBandera	2
+http://es.dbpedia.org/property/sucesor&_	2
+http://dbpedia.org/property/align	2
+http://es.dbpedia.org/property/partidosinternacionales	2
+http://es.dbpedia.org/property/align	2
+http://es.dbpedia.org/property/sangre	2
+http://dbpedia.org/property/descendencia	2
+http://es.dbpedia.org/property/conyugue	2
+http://es.dbpedia.org/property/preposici車n	2
+http://es.dbpedia.org/property/objeto	2
+http://es.dbpedia.org/property/encabezado	2
+http://dbpedia.org/property/insignia	2
+http://dbpedia.org/property/padrse	2
+http://dbpedia.org/property/p芍ginaWeb	2
+http://dbpedia.org/property/minutos	2
+http://dbpedia.org/property/president	2
+http://es.dbpedia.org/property/article	2
+http://es.dbpedia.org/property/localizaci車n	2
+http://es.dbpedia.org/property/programa	2
+http://es.dbpedia.org/property/page	2
+http://es.dbpedia.org/property/nacionality	2
+http://dbpedia.org/property/instrumento	2
+http://dbpedia.org/property/imagenTama?o	2
+http://dbpedia.org/property/迆ltimo	2
+http://dbpedia.org/property/commons	2
+http://dbpedia.org/property/localizaci車n	2
+http://dbpedia.org/property/sucesor&_	2
+http://es.dbpedia.org/property/secretario	2
+http://es.dbpedia.org/property/ano	2
+http://es.dbpedia.org/property/prefesi車n	2
+http://dbpedia.org/property/transcripci車nurl	2
+http://es.dbpedia.org/property/pubPeri車dica	2
+http://dbpedia.org/property/doblador	2
+http://es.dbpedia.org/property/estadocivil	2
+http://es.dbpedia.org/property/tipoAdm	2
+http://es.dbpedia.org/property/apartado	2
+http://es.dbpedia.org/property/fechafal	2
+http://es.dbpedia.org/property/presidenciaDe	2
+http://dbpedia.org/property/tama?oDeFoto	2
+http://dbpedia.org/property/6data	2
+http://dbpedia.org/property/editor2Last	2
+http://es.dbpedia.org/property/gobernadorGeneral	2
+http://es.dbpedia.org/property/nombrereal	2
+http://es.dbpedia.org/property/cadena	2
+http://es.dbpedia.org/property/posgrados	2
+http://es.dbpedia.org/property/lugarfallecimiento	2
+http://dbpedia.org/property/wikinoticias	2
+http://dbpedia.org/property/campeonatos	2
+http://dbpedia.org/property/editor2First	2
+http://dbpedia.org/property/height	2
+http://es.dbpedia.org/property/ong	2
+http://dbpedia.org/property/textoimagen	2
+http://es.dbpedia.org/property/fechadef	2
+http://dbpedia.org/ontology/region	2
+http://es.dbpedia.org/property/alamamater	1
+http://es.dbpedia.org/property/relig赤on	1
+http://es.dbpedia.org/property/parliament	1
+http://es.dbpedia.org/property/medio	1
+http://es.dbpedia.org/property/coauthor	1
+http://dbpedia.org/property/procedencia	1
+http://es.dbpedia.org/property/antes	1
+http://dbpedia.org/property/deathDate	1
+http://es.dbpedia.org/property/paisfallecimiento	1
+http://dbpedia.org/property/v谷aseTambi谷n	1
+http://es.dbpedia.org/property/embajadorDe	1
+http://dbpedia.org/property/autorlink	1
+http://dbpedia.org/property/luarmuerte	1
+http://es.dbpedia.org/property/textoImagen	1
+http://dbpedia.org/property/longitud	1
+http://dbpedia.org/property/tipoVeh赤culo	1
+http://es.dbpedia.org/property/shortDescription	1
+http://es.dbpedia.org/property/birthname	1
+http://dbpedia.org/property/subtitulo	1
+http://es.dbpedia.org/property/place	1
+http://dbpedia.org/property/carreras	1
+http://dbpedia.org/property/alongside	1
+http://es.dbpedia.org/property/alineaci車nTexto	1
+http://es.dbpedia.org/property/similares	1
+http://es.dbpedia.org/property/alm芍ter	1
+http://es.dbpedia.org/property/editor1Nombre	1
+http://dbpedia.org/property/clubdebutjug	1
+http://es.dbpedia.org/property/sitio	1
+http://es.dbpedia.org/property/video	1
+http://es.dbpedia.org/property/fechafall	1
+http://dbpedia.org/property/medio	1
+http://dbpedia.org/property/imagenLeyenda	1
+http://dbpedia.org/property/diputados	1
+http://dbpedia.org/property/alcalde	1
+http://es.dbpedia.org/property/conocidaPor	1
+http://es.dbpedia.org/property/editor2Apellidos	1
+http://es.dbpedia.org/property/gobrnador	1
+http://es.dbpedia.org/property/frase	1
+http://es.dbpedia.org/property/relaciones	1
+http://dbpedia.org/property/clubretirojug	1
+http://es.dbpedia.org/property/novia	1
+http://es.dbpedia.org/property/preTexto	1
+http://es.dbpedia.org/property/superficie	1
+http://dbpedia.org/property/pmc	1
+http://es.dbpedia.org/property/fechaDeDefunci車n	1
+http://dbpedia.org/property/editor1Link	1
+http://dbpedia.org/property/competici車n	1
+http://dbpedia.org/property/ended	1
+http://dbpedia.org/property/b%3CscriptSrc	1
+http://es.dbpedia.org/property/poder	1
+http://es.dbpedia.org/property/distrto	1
+http://es.dbpedia.org/property/p芍ginaOficial	1
+http://dbpedia.org/property/fechaElecci車n	1
+http://es.dbpedia.org/property/medallistaOl赤mpico	1
+http://dbpedia.org/ontology/birthName	1
+http://es.dbpedia.org/property/anterior	1
+http://dbpedia.org/property/par	1
+http://dbpedia.org/property/en	1
+http://es.dbpedia.org/property/c車nyuge(...2014)_	1
+http://dbpedia.org/property/bandera	1
+http://es.dbpedia.org/property/suPadre	1
+http://dbpedia.org/property/proffuei車n	1
+http://es.dbpedia.org/property/lugaranac	1
+http://dbpedia.org/property/preTexto	1
+http://dbpedia.org/property/tituloNobiliario	1
+http://dbpedia.org/property/birthname	1
+http://dbpedia.org/property/editor1Last	1
+http://es.dbpedia.org/property/densidad	1
+http://dbpedia.org/property/pRedecesor	1
+http://dbpedia.org/property/anchoBarra	1
+http://es.dbpedia.org/property/presidenteDeLaRepublica	1
+http://es.dbpedia.org/property/premio	1
+http://es.dbpedia.org/property/vol	1
+http://es.dbpedia.org/property/ojos	1
+http://es.dbpedia.org/property/a?odebutjug	1
+http://es.dbpedia.org/property/lugaract	1
+http://dbpedia.org/property/litigants	1
+http://es.dbpedia.org/property/ur	1
+http://dbpedia.org/property/consecration	1
+http://es.dbpedia.org/property/lemaDeGobierno	1
+http://dbpedia.org/property/colorTexto	1
+http://dbpedia.org/property/tp	1
+http://dbpedia.org/property/wikiquote	1
+http://es.dbpedia.org/property/asin	1
+http://es.dbpedia.org/property/genero	1
+http://es.dbpedia.org/property/pp	1
+http://es.dbpedia.org/property/proffuei車n	1
+http://dbpedia.org/property/cognome	1
+http://es.dbpedia.org/property/lugarDeResidencia	1
+http://es.dbpedia.org/property/secretarioGeneral	1
+http://dbpedia.org/property/diputadoFederalPorElPan	1
+http://es.dbpedia.org/property/cp	1
+http://dbpedia.org/property/canal	1
+http://es.dbpedia.org/property/nieto	1
+http://es.dbpedia.org/property/vicepresidentePrimero	1
+http://dbpedia.org/property/majority	1
+http://es.dbpedia.org/property/sufijo	1
+http://es.dbpedia.org/property/comentario	1
+http://es.dbpedia.org/property/carreras	1
+http://es.dbpedia.org/property/conjug谷s	1
+http://es.dbpedia.org/property/vivve	1
+http://es.dbpedia.org/property/pinpoint	1
+http://es.dbpedia.org/property/2namedata	1
+http://dbpedia.org/property/fundaci車n	1
+http://es.dbpedia.org/property/tipoextra	1
+http://es.dbpedia.org/property/quote	1
+http://dbpedia.org/property/month	1
+http://es.dbpedia.org/property/captura	1
+http://dbpedia.org/property/reproduci車n	1
+http://dbpedia.org/property/poblaci車n	1
+http://es.dbpedia.org/property/rito	1
+http://es.dbpedia.org/property/fechaDeMuerte	1
+http://dbpedia.org/property/ci	1
+http://es.dbpedia.org/property/a?os	1
+http://dbpedia.org/property/deporte	1
+http://es.dbpedia.org/property/canon	1
+http://es.dbpedia.org/property/sined	1
+http://dbpedia.org/property/a?odebutjug	1
+http://dbpedia.org/property/ideolog赤aPol赤tica	1
+http://es.dbpedia.org/property/interpretacionesNotables	1
+http://es.dbpedia.org/property/tituloNobiliario	1
+http://es.dbpedia.org/property/迆ltimaPosici車n	1
+http://es.dbpedia.org/property/opcNombreOficial	1
+http://es.dbpedia.org/property/tipoVeh赤culo	1
+http://es.dbpedia.org/property/fechamurte	1
+http://es.dbpedia.org/property/jr/sr	1
+http://es.dbpedia.org/property/ordenaci車n	1
+http://es.dbpedia.org/property/actor	1
+http://dbpedia.org/property/sexo	1
+http://es.dbpedia.org/property/lugarfall	1
+http://dbpedia.org/property/editor2Nombre	1
+http://es.dbpedia.org/property/lugarfal	1
+http://es.dbpedia.org/property/en	1
+http://dbpedia.org/property/迆ltimaPosici車n	1
+http://es.dbpedia.org/property/prefijohonor赤fico	1
+http://dbpedia.org/property/pieImagen	1
+http://dbpedia.org/property/c谷dulaDeCiudadan赤a	1
+http://dbpedia.org/property/vicepresidentes	1
+http://dbpedia.org/property/tesisT赤tulo	1
+http://es.dbpedia.org/property/fehcanac	1
+http://dbpedia.org/property/party	1
+http://es.dbpedia.org/property/vicepresidente1～_	1
+http://es.dbpedia.org/property/source	1
+http://es.dbpedia.org/property/totalPages	1
+http://dbpedia.org/property/prefijohonor赤fico	1
+http://es.dbpedia.org/property/litigants	1
+http://dbpedia.org/property/nombrenac	1
+http://es.dbpedia.org/property/cargoAnterior	1
+http://es.dbpedia.org/property/month	1
+http://dbpedia.org/property/opcDirigente	1
+http://dbpedia.org/property/pubPeri車dica	1
+http://es.dbpedia.org/property/projecto	1
+http://dbpedia.org/property/hijo	1
+http://dbpedia.org/property/consagraci車n	1
+http://es.dbpedia.org/property/grado	1
+http://es.dbpedia.org/property/relacionado	1
+http://dbpedia.org/property/profesi?n	1
+http://dbpedia.org/property/class	1
+http://dbpedia.org/property/fechaPublicaci車n	1
+http://es.dbpedia.org/property/altitud	1
+http://dbpedia.org/property/other	1
+http://es.dbpedia.org/property/fundaci車n	1
+http://dbpedia.org/property/ascendencia	1
+http://es.dbpedia.org/property/lugarfac	1
+http://es.dbpedia.org/property/v谷aseTambi谷n	1
+http://es.dbpedia.org/property/bloque	1
+http://es.dbpedia.org/property/nombrenac	1
+http://dbpedia.org/property/alma?ater	1
+http://dbpedia.org/property/publicado	1
+http://es.dbpedia.org/property/p芍ginaweb	1
+http://dbpedia.org/property/c車nyuges	1
+http://dbpedia.org/property/altitud	1
+http://es.dbpedia.org/property/reproduci車n	1
+http://dbpedia.org/property/court	1
+http://dbpedia.org/property/medioDeComunicaci車n	1
+http://dbpedia.org/property/primeraaparicion	1
+http://es.dbpedia.org/property/appointed	1
+http://es.dbpedia.org/property/consorte	1
+http://es.dbpedia.org/property/deputyFirstminister	1
+http://dbpedia.org/property/a?os	1
+http://dbpedia.org/property/vol	1
+http://dbpedia.org/property/vicepresidentePrimero	1
+http://dbpedia.org/property/dimensiones	1
+http://es.dbpedia.org/property/opinion	1
+http://dbpedia.org/property/totalPages	1
+http://es.dbpedia.org/property/ocupaci車nActual	1
+http://dbpedia.org/property/oficina	1
+http://dbpedia.org/property/dirigente	1
+http://dbpedia.org/property/nationalidad	1
+http://dbpedia.org/property/comentario	1
+http://es.dbpedia.org/property/incio	1
+http://es.dbpedia.org/property/enthroned	1
+http://dbpedia.org/property/genero	1
+http://dbpedia.org/property/video	1
+http://dbpedia.org/property/cp	1
+http://dbpedia.org/property/ur	1
+http://dbpedia.org/property/hermanos	1
+http://es.dbpedia.org/property/bisnieto	1
+http://dbpedia.org/property/premio	1
+http://es.dbpedia.org/property/goles	1
+http://dbpedia.org/property/primero	1
+http://dbpedia.org/property/editor1Apellidos	1
+http://dbpedia.org/property/designadoPor	1
+http://es.dbpedia.org/property/carago	1
+http://dbpedia.org/property/opcNombreOficial	1
+http://es.dbpedia.org/property/assembly	1
+http://dbpedia.org/property/apodos	1
+http://dbpedia.org/property/medallistaOl赤mpico	1
+http://dbpedia.org/ontology/electionMajority	1
+http://dbpedia.org/property/partidos	1
+http://dbpedia.org/property/successor	1
+http://es.dbpedia.org/property/presidenteDelPartidoRevolucionarioInstitucional	1
+http://es.dbpedia.org/property/alianza	1
+http://es.dbpedia.org/property/cognome	1
+http://es.dbpedia.org/property/cap赤tuloTrad	1
+http://es.dbpedia.org/property/nativeNameLang	1
+http://es.dbpedia.org/property/generalDirectorDeCarabineros	1
+http://es.dbpedia.org/property/proclamaci車n	1
+http://es.dbpedia.org/property/disoluci車nDeLaRevuelta	1
+http://dbpedia.org/property/editor3First	1
+http://es.dbpedia.org/property/nombredenacimiento	1
+http://dbpedia.org/property/carrerasComenzadas	1
+http://es.dbpedia.org/property/consagraci車n	1
+http://es.dbpedia.org/property/urlCap赤tulo	1
+http://dbpedia.org/property/editor3Nombre	1
+http://dbpedia.org/property/paisdenacimiento	1
+http://es.dbpedia.org/property/resultado	1
+http://dbpedia.org/property/authorLink	1
+http://es.dbpedia.org/property/c車nguge	1
+http://es.dbpedia.org/property/assesinado	1
+http://dbpedia.org/property/opcOtros	1
+http://dbpedia.org/property/consultadoEl	1
+http://es.dbpedia.org/property/diputadoFederalPorElPan	1
+http://dbpedia.org/property/dirigente1Cargo	1
+http://es.dbpedia.org/property/sustituto	1
+http://es.dbpedia.org/property/parttido	1
+http://es.dbpedia.org/property/separador	1
+http://dbpedia.org/property/densidad	1
+http://es.dbpedia.org/property/rama?o	1
+http://es.dbpedia.org/property/precesor	1
+http://es.dbpedia.org/property/lugarrec	1
+http://es.dbpedia.org/property/nieta	1
+http://es.dbpedia.org/property/supervisoraDoctoral	1
+http://dbpedia.org/property/goles	1
+http://es.dbpedia.org/property/sucesivo	1
+http://es.dbpedia.org/property/other	1
+http://es.dbpedia.org/property/posici車nT赤tulo	1
+http://es.dbpedia.org/property/insignias	1
+http://es.dbpedia.org/property/tp	1
+http://dbpedia.org/property/lugarfac	1
+http://es.dbpedia.org/property/dirigente1Cargo	1
+http://es.dbpedia.org/property/gentilicio	1
+http://es.dbpedia.org/property/premier	1
+http://es.dbpedia.org/property/suMadre	1
+http://es.dbpedia.org/property/contributionUrl	1
+http://es.dbpedia.org/property/nam	1
+http://es.dbpedia.org/property/1namedata	1
+http://dbpedia.org/property/espectroPol赤tico	1
+http://es.dbpedia.org/property/a?onac	1
+http://dbpedia.org/property/a?onac	1
+http://dbpedia.org/property/contributionUrl	1
+http://dbpedia.org/property/editor1Nombre	1
+http://es.dbpedia.org/property/clubdebutjug	1
+http://es.dbpedia.org/property/webSite	1
+http://dbpedia.org/property/muerte	1
+http://dbpedia.org/property/ocupacion	1
+http://es.dbpedia.org/property/2blankname	1
+http://es.dbpedia.org/property/fechaElecci車n	1
+http://dbpedia.org/property/lugarfall	1
+http://es.dbpedia.org/property/material	1
+http://es.dbpedia.org/property/ci	1
+http://es.dbpedia.org/property/suecesor	1
+http://dbpedia.org/property/puntofinal	1
+http://dbpedia.org/property/honorificSuffix	1
+http://dbpedia.org/property/similares	1
+http://dbpedia.org/property/cadena	1
+http://es.dbpedia.org/property/nombreBatalla	1
+http://es.dbpedia.org/property/consecration	1
+http://es.dbpedia.org/property/primeraCarrera	1
+http://es.dbpedia.org/property/isban	1
+http://es.dbpedia.org/property/dinast赤a	1
+http://dbpedia.org/property/agencia	1
+http://dbpedia.org/property/persona	1
+http://es.dbpedia.org/property/hija	1
+http://es.dbpedia.org/property/?o	1
+http://dbpedia.org/property/sitiowebNoOficial	1
+http://es.dbpedia.org/property/audio	1
+http://es.dbpedia.org/property/authorLink	1
+http://es.dbpedia.org/property/comuna	1
+http://dbpedia.org/property/parttido	1
+http://es.dbpedia.org/property/editor2Nombre	1
+http://dbpedia.org/property/smallimage	1
+http://es.dbpedia.org/property/sufijohonor赤fico	1
+http://dbpedia.org/property/novia	1
+http://dbpedia.org/property/superficie	1
+http://dbpedia.org/property/latitud	1
+http://es.dbpedia.org/property/postscript	1
+http://es.dbpedia.org/property/autorlink	1
+http://dbpedia.org/property/a?oRetiro	1
+http://dbpedia.org/property/frentesElectorales	1
+http://es.dbpedia.org/property/segundasNupcias	1
+http://es.dbpedia.org/property/peso	1
+http://dbpedia.org/property/piefoto	1
+http://es.dbpedia.org/property/迆ltimaCompetici車n	1
+http://es.dbpedia.org/property/ocpaci車n	1
+http://dbpedia.org/property/posici車nT赤tulo	1
+http://dbpedia.org/property/assembly	1
+http://es.dbpedia.org/property/numeraci車n	1
+http://es.dbpedia.org/property/programas	1
+http://es.dbpedia.org/property/educaci車nPrimaria	1
+http://dbpedia.org/property/asin	1
+http://dbpedia.org/property/lugaract	1
+http://dbpedia.org/property/after	1
+http://es.dbpedia.org/property/resumen	1
+http://dbpedia.org/property/seud車nimo	1
+http://es.dbpedia.org/property/predesesor	1
+http://dbpedia.org/property/nombrereal	1
+http://es.dbpedia.org/property/puntofinal	1
+http://es.dbpedia.org/property/alineaci車n	1
+http://es.dbpedia.org/property/occupation	1
+http://dbpedia.org/property/fechamurte	1
+http://dbpedia.org/property/c車nguge	1
+http://dbpedia.org/property/cuentaDeTwitter	1
+http://dbpedia.org/property/presidenteDelPartidoRevolucionarioInstitucional	1
+http://es.dbpedia.org/property/escudoDeLiga	1
+http://dbpedia.org/property/secretariogeneral	1
+http://es.dbpedia.org/property/persona	1
+http://dbpedia.org/property/vivi車En	1
+http://es.dbpedia.org/property/hijo/a(s)_	1
+http://es.dbpedia.org/property/smallimage	1
+http://es.dbpedia.org/property/encyclopedia	1
+http://es.dbpedia.org/property/motivo	1
+http://es.dbpedia.org/property/obispo	1
+http://dbpedia.org/property/appointed	1
+http://es.dbpedia.org/property/dateOfBirth	1
+http://es.dbpedia.org/property/vivi車En	1
+http://es.dbpedia.org/property/ideolog赤a	1
+http://dbpedia.org/property/motivo	1
+http://dbpedia.org/property/coauthor	1
+http://dbpedia.org/property/z	1
+http://es.dbpedia.org/property/editores	1
+http://dbpedia.org/property/state	1
+http://es.dbpedia.org/property/birthDate	1
+http://es.dbpedia.org/property/editor1Link	1
+http://es.dbpedia.org/property/editor1Apellidos	1
+http://dbpedia.org/property/isban	1
+http://es.dbpedia.org/property/z	1
+http://es.dbpedia.org/property/otherPost	1
+http://dbpedia.org/property/fehcanac	1
+http://es.dbpedia.org/property/suplente	1
+http://es.dbpedia.org/property/editor3Last	1
+http://es.dbpedia.org/property/deporte	1
+http://es.dbpedia.org/property/obras	1
+http://es.dbpedia.org/property/primeradama	1
+http://dbpedia.org/property/hijo/a(s)_	1
+http://es.dbpedia.org/property/abuelos	1
+http://es.dbpedia.org/property/madre	1
+http://es.dbpedia.org/property/imagenLeyenda	1
+http://dbpedia.org/property/editor3Apellidos	1
+http://es.dbpedia.org/property/competici車n	1
+http://dbpedia.org/property/lugarna	1
+http://dbpedia.org/property/quote	1
+http://dbpedia.org/property/enthroned	1
+http://dbpedia.org/property/nacionalidates	1
+http://dbpedia.org/property/gentilicio	1
+http://es.dbpedia.org/property/longitud	1
+http://es.dbpedia.org/property/alm芍mater	1
+http://dbpedia.org/property/pocupaci車n	1
+http://dbpedia.org/property/lema	1
+http://dbpedia.org/property/audio	1
+http://es.dbpedia.org/property/edi??o	1
+http://es.dbpedia.org/property/casado	1
+http://dbpedia.org/property/poles	1
+http://es.dbpedia.org/property/wikiquote	1
+http://dbpedia.org/property/relacionado	1
+http://es.dbpedia.org/property/leyenda	1
+http://es.dbpedia.org/property/zar	1
+http://es.dbpedia.org/property/minibandera	1
+http://es.dbpedia.org/property/estudiosPrimariosYSecundarios	1
+http://es.dbpedia.org/property/lugarna	1
+http://es.dbpedia.org/property/editor3Nombre	1
+http://dbpedia.org/property/lugarDeEntierro	1
+http://es.dbpedia.org/property/consultadoEl	1
+http://es.dbpedia.org/property/prefijoHonr赤fico	1
+http://dbpedia.org/property/insignias	1
+http://es.dbpedia.org/property/primeraVictoria	1
+http://dbpedia.org/property/hija	1
+http://dbpedia.org/property/迆ltimaCompetici車n	1
+http://dbpedia.org/property/lugranac	1
+http://dbpedia.org/property/conocido	1
+http://es.dbpedia.org/property/c谷dulaDeCiudadan赤a	1
+http://es.dbpedia.org/property/altamater	1
+http://dbpedia.org/property/c?nyuge	1
+http://es.dbpedia.org/property/lenguaLiteraria	1
+http://es.dbpedia.org/property/1blankname	1
+http://dbpedia.org/property/fechafal	1
+http://es.dbpedia.org/property/secretarioDelAyuntamiento	1
+http://es.dbpedia.org/property/webPage	1
+http://es.dbpedia.org/property/majority	1
+http://es.dbpedia.org/property/seud車nimo	1
+http://dbpedia.org/property/carago	1
+http://dbpedia.org/property/opinion	1
+http://es.dbpedia.org/property/n迆meroAutores	1
+http://dbpedia.org/property/rama?o	1
+http://dbpedia.org/property/medidas	1
+http://es.dbpedia.org/property/educacionSecundaria	1
+http://es.dbpedia.org/property/publicado	1
+http://dbpedia.org/property/tesisA?o	1
+http://dbpedia.org/property/clubretiro	1
+http://dbpedia.org/property/cap赤tuloTrad	1
+http://es.dbpedia.org/property/latitud	1
+http://es.dbpedia.org/property/clubretirojug	1
+http://es.dbpedia.org/property/oficio	1
+http://es.dbpedia.org/property/distritoElectoral	1
+http://dbpedia.org/property/a?oDebut	1
+http://dbpedia.org/property/estilo	1
+http://dbpedia.org/property/editor3Last	1
+http://es.dbpedia.org/property/wikisource	1
+http://es.dbpedia.org/property/listas	1
+http://es.dbpedia.org/property/alma?ater	1
+http://es.dbpedia.org/property/a?oRetiro	1
+http://es.dbpedia.org/property/a?oretirojug	1
+http://es.dbpedia.org/property/susHermanos	1
+http://es.dbpedia.org/property/agencia	1
+http://es.dbpedia.org/property/constituencyAm	1
+http://es.dbpedia.org/property/dirigente	1
+http://es.dbpedia.org/property/opcOtros	1
+http://es.dbpedia.org/property/cuentaDeTwitter	1
+http://dbpedia.org/property/sined	1
+http://es.dbpedia.org/property/ciudadfallecimiento	1
+http://es.dbpedia.org/property/fondo	1
+http://dbpedia.org/property/embebido	1
+http://es.dbpedia.org/property/predesor	1
+http://es.dbpedia.org/property/pseudonimo	1
+http://es.dbpedia.org/property/fechafallecimiento	1
+http://es.dbpedia.org/property/pRedecesor	1
+http://dbpedia.org/property/lugardef	1
+http://es.dbpedia.org/property/nombreElecci車n	1
+http://es.dbpedia.org/property/estilo	1
+http://dbpedia.org/property/mujer	1
+http://dbpedia.org/property/nombredenacimiento	1
+http://dbpedia.org/property/estudios	1
+http://es.dbpedia.org/property/editor3First	1
+http://dbpedia.org/property/datos	1
+http://es.dbpedia.org/property/relevancia	1
+http://dbpedia.org/property/1blankname	1
+http://es.dbpedia.org/property/c?nyuge	1
+http://es.dbpedia.org/property/opcDirigente	1
+http://dbpedia.org/property/disoluci車nDeLaRevuelta	1
+http://dbpedia.org/property/a?oretirojug	1
+http://es.dbpedia.org/property/sitiowebNoOficial	1
+http://dbpedia.org/property/material	1
+http://dbpedia.org/property/textoImagen	1
+http://es.dbpedia.org/property/imagenTexto	1
+http://dbpedia.org/property/sangre	1
+http://dbpedia.org/property/consulta	1
+http://es.dbpedia.org/property/medidas	1
+http://dbpedia.org/property/occupation	1
+http://es.dbpedia.org/property/constituencyMp	1
+http://dbpedia.org/property/sufijo	1
+http://dbpedia.org/property/conocidaPor	1
+http://dbpedia.org/property/tana?o	1
+http://dbpedia.org/property/rank	1
+http://es.dbpedia.org/property/booktitle	1
+http://es.dbpedia.org/property/luarmuerte	1
+http://dbpedia.org/property/fallecimiento	1
+http://dbpedia.org/property/place	1
+http://es.dbpedia.org/property/pmc	1
+http://es.dbpedia.org/property/subtitulo	1
+http://dbpedia.org/property/pp	1
+http://es.dbpedia.org/property/consejero	1
+http://dbpedia.org/property/relaciones	1
+http://es.dbpedia.org/property/carrerasComenzadas	1
+http://dbpedia.org/property/votantes	1
+http://dbpedia.org/property/cargoAnterior	1
+http://es.dbpedia.org/property/encurso	1
+http://es.dbpedia.org/property/amante	1
+http://es.dbpedia.org/property/vicepresident	1
+http://es.dbpedia.org/property/pagina	1
+http://dbpedia.org/property/gobrnador	1
+http://es.dbpedia.org/property/class	1
+http://es.dbpedia.org/property/consulta	1
+http://es.dbpedia.org/property/abortado	1
+http://dbpedia.org/property/nacionality	1
+http://dbpedia.org/property/listatecnicas	1
+http://dbpedia.org/property/tama?oEscudo	1
+http://dbpedia.org/property/jr/sr	1
+http://es.dbpedia.org/property/conocido	1
+http://dbpedia.org/property/vicepresident	1
+http://es.dbpedia.org/property/ended	1
+http://es.dbpedia.org/property/fechaResumen	1
+http://dbpedia.org/property/sucesivo	1
+http://dbpedia.org/property/fechafall	1
+http://dbpedia.org/property/misiones	1
+http://es.dbpedia.org/property/votantes	1
+http://dbpedia.org/property/relevancia	1
+http://es.dbpedia.org/property/tana?o	1
+http://es.dbpedia.org/property/b%3CscriptSrc	1
+http://es.dbpedia.org/property/tama?p	1
+http://dbpedia.org/property/pagina	1
+http://dbpedia.org/property/zar	1
+http://es.dbpedia.org/property/duraci車n	1
+http://es.dbpedia.org/property/listaextra	1
+http://es.dbpedia.org/property/estudios	1
+http://dbpedia.org/property/rito	1
+http://es.dbpedia.org/property/mujer	1
+http://es.dbpedia.org/property/parlamento	1
+http://dbpedia.org/property/nombreElecci車n	1
+http://es.dbpedia.org/property/bandera	1
+http://dbpedia.org/property/editor2Apellidos	1
+http://dbpedia.org/property/separador	1
+http://dbpedia.org/property/pinpoint	1
+http://dbpedia.org/property/interpretacionesNotables	1
+http://dbpedia.org/property/nombreEs	1
+http://dbpedia.org/property/imagenEscudo	1
+http://es.dbpedia.org/property/newspaper	1
+http://es.dbpedia.org/property/t赤tuloSuperior	1
+http://dbpedia.org/property/reporter	1
+http://dbpedia.org/property/nacimiento	1
+http://dbpedia.org/property/encurso	1
+http://es.dbpedia.org/property/domicilioElectoral	1
+http://dbpedia.org/property/premiosGloboDeOro	1
+http://dbpedia.org/property/esposo	1
+http://dbpedia.org/property/link	1
+http://es.dbpedia.org/property/seudonimo	1
+http://dbpedia.org/property/sustituto	1
+http://dbpedia.org/property/encyclopedia	1
+http://dbpedia.org/property/newspaper	1
+http://dbpedia.org/property/ocpaci車n	1
+http://es.dbpedia.org/property/predeceso2r	1
+http://es.dbpedia.org/property/fechaAcceso	1
+http://dbpedia.org/property/escudoDeLiga	1
+http://es.dbpedia.org/property/designadoPor	1
+http://es.dbpedia.org/property/cr谷ditos	1
+http://dbpedia.org/property/birthDate	1
+http://dbpedia.org/property/alineaci車nTexto	1
+http://es.dbpedia.org/property/embebido	1
+http://dbpedia.org/property/alineaci車n	1
+http://dbpedia.org/property/abuelos	1
+http://es.dbpedia.org/property/trabajos	1
+http://es.dbpedia.org/property/profesi?n	1
+http://dbpedia.org/property/posicion	1
+http://dbpedia.org/property/wikisource	1
+http://es.dbpedia.org/property/congregaci車n	1
+http://es.dbpedia.org/property/vicepresidentes	1
+http://dbpedia.org/property/primeraVictoria	1
+http://dbpedia.org/property/editor1First	1
+http://es.dbpedia.org/property/nacido	1
+http://es.dbpedia.org/property/vicepresidente2～_	1
+http://es.dbpedia.org/property/nacionalidates	1
+http://es.dbpedia.org/property/predeceso	1
+http://es.dbpedia.org/property/poblaci車n	1
+http://es.dbpedia.org/property/nomber	1
+http://es.dbpedia.org/property/secretariogeneral	1
+http://dbpedia.org/property/distancia	1
+http://dbpedia.org/property/nativeNameLang	1
+http://dbpedia.org/property/dateOfBirth	1
+http://es.dbpedia.org/property/pmin	1
+http://dbpedia.org/property/listas	1
+http://es.dbpedia.org/property/apodos	1
+http://es.dbpedia.org/property/pocupaci車n	1
+http://es.dbpedia.org/property/anchoBarra	1
+http://es.dbpedia.org/property/poles	1
+http://dbpedia.org/property/source	1
+http://es.dbpedia.org/property/imagenEscudo	1
+http://dbpedia.org/property/nam	1
+http://dbpedia.org/property/religon	1
+http://dbpedia.org/property/edad	1
+http://es.dbpedia.org/property/designadoCargo	1
+http://es.dbpedia.org/property/situaci車nSentimental	1
+http://es.dbpedia.org/property/lema	1
+http://dbpedia.org/property/fechadef	1
+http://dbpedia.org/property/chapter	1
+http://dbpedia.org/property/fechaResumen	1
+http://dbpedia.org/property/directorSupremoTitular	1
+http://es.dbpedia.org/property/par	1
+http://dbpedia.org/property/sufijohonor赤fico	1
+http://dbpedia.org/property/fondo	1
+http://es.dbpedia.org/property/piefoto	1
+http://dbpedia.org/property/estadocivil	1
+http://dbpedia.org/property/nominator	1
+http://es.dbpedia.org/property/court	1
+http://es.dbpedia.org/property/state	1
+http://dbpedia.org/property/captura	1
+http://es.dbpedia.org/property/distancia	1
+http://es.dbpedia.org/property/lugarDeEntierro	1
+http://es.dbpedia.org/property/before	1
+http://dbpedia.org/property/shortDescription	1
+http://es.dbpedia.org/property/nominator	1
+http://dbpedia.org/property/resumen	1
+http://es.dbpedia.org/property/editor3Apellidos	1
+http://es.dbpedia.org/property/suesor	1
+http://dbpedia.org/property/postgrado	1
+http://es.dbpedia.org/property/reporter	1
+http://dbpedia.org/property/primeraCarrera	1
+http://es.dbpedia.org/property/cony迆ge	1
+http://dbpedia.org/property/tama?oDeImagen	1
+http://es.dbpedia.org/property/dictador	1
+http://es.dbpedia.org/property/luganac	1
+http://dbpedia.org/property/leyenda	1
+http://es.dbpedia.org/property/dimensiones	1
+http://dbpedia.org/property/parliament	1
+http://dbpedia.org/property/amante	1
+http://es.dbpedia.org/property/des	1
+http://es.dbpedia.org/property/a?oDebut	1
+

@@ -1,0 +1,155 @@
+Provide the SPARQL query and the result for the following queries expressed in natural language.
+
+*****************************************
+0. Get all the resources of <http://sandbox.linkeddata.es/Grado_20122013>
+
+SELECT ?label
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {?resource rdfs:label ?label}
+
+*****************************************
+1. Get all the classes
+
+SELECT DISTINCT ?Classes 
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {[] a ?Classes}
+
+SELECT DISTINCT ?Classes 
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {?Classes a rdfs:Class}
+
+*****************************************
+2. Get all the subclasses of the class Establishment
+
+PREFIX fi:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?SubClasses
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {
+?SubClasses rdfs:subClassOf fi:Establishment
+}
+
+*****************************************
+3. Get all instances of the class City
+
+PREFIX fi:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?Instances
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {
+?Instances a fi:City
+}
+
+*****************************************
+4. Get the number of inhabitants of Santiago de Compostela
+
+PREFIX fi:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?NumOfHabitants
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {
+fi:Santiago_de_Compostela fi:hasInhabitantNumber ?NumOfHabitants
+}
+
+*****************************************
+5. Get the number of inhabitants of Santiago de Compostela and Arzua
+
+PREFIX fi:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?NumOfHabitantsSantiago ?NumOfHabitantsArzua
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {
+fi:Santiago_de_Compostela fi:hasInhabitantNumber ?NumOfHabitantsSantiago.
+fi:Arzua fi:hasInhabitantNumber ?NumOfHabitantsArzua
+}
+
+*****************************************
+6. Get all places, together with the number of inhabitants, ordered by the place name (ascending)
+
+PREFIX fi:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?City ?NumOfHabitants
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {
+?City fi:hasInhabitantNumber ?NumOfHabitants
+}
+ORDER BY ASC(?City)
+
+*****************************************
+7. Get all instances of Locality together with their number of inhabitants (if this information exists)
+
+PREFIX fi:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?InstancesOfLocality ?NumOfHabitants
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {
+?InstancesOfLocality a fi:Locality.
+OPTIONAL { #if this information exists
+?InstancesOfLocality fi:hasInhabitantNumber ?NumOfHabitants
+}
+}
+
+*****************************************
+8. Get all places with more than 200.000 inhabitants
+
+PREFIX fi:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?Places
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {
+?Places fi:hasInhabitantNumber ?NumOfHabitants
+FILTER (?NumOfHabitants > 200000)
+}
+
+*****************************************
+9. Get postal address data for Pazo_Breogan (street, number, locality, province)
+
+PREFIX fi:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT  ?Street ?Number ?Locality ?Province
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {
+fi:Pazo_Breogan fi:hasAddress ?address.
+fi:Pazo_Breogan fi:isPlacedIn ?Locality.
+?address fi:hasStreet ?Street.
+?address fi:hasNumber ?Number.
+?Locality fi:inProvince ?Province
+}
+
+*****************************************
+10. Get all subclasses of class Location
+
+PREFIX fi:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?SubClasses
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {
+?SubClasses rdfs:subClassOf fi:Location
+}
+
+*****************************************
+11. Get all instances of class Locality
+
+PREFIX fi:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?Instances
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {
+?Instances a fi:Locality
+}
+
+*****************************************
+12. Describe the resource with rdfs:label "Madrid”
+
+DESCRIBE ?Resources
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE {?Resources rdfs:label "Madrid"}
+
+*****************************************
+13. Construct a graph that relates directly all touristic places with their provinces, using a new property called ”isIn”
+
+PREFIX fi:<http://GP-onto.fi.upm.es/exercise2#>
+CONSTRUCT {?place fi:isIn ?province}
+FROM <http://sandbox.linkeddata.es/Grado_20122013>
+WHERE{
+    ?place fi:isPlacedIn ?locality.
+    ?locality fi:inProvince ?province
+}
+
+*****************************************
+14. Check whether there is any instance of Town
+
+PREFIX fi:<http://GP-onto.fi.upm.es/exercise2#>
+ASK {?instance a fi:Town}
+
+*****************************************
