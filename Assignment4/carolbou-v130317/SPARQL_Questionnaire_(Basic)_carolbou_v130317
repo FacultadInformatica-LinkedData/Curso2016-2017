@@ -1,0 +1,127 @@
+1.
+SELECT distinct ?Classes
+WHERE
+{ 
+  ?x a ?Classes
+} LIMIT 100
+
+2.
+PREFIX exercise2: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT distinct ?Subclasses 
+WHERE
+{
+  ?Subclasses rdfs:subClassOf exercise2:Establishment
+} LIMIT 100
+
+3.
+PREFIX exercise2: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT distinct ?Instances
+WHERE
+{
+  ?Instances rdf:type exercise2:City
+} LIMIT 100
+
+4.
+PREFIX exercise2: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT distinct ?Inhabitants
+WHERE 
+{
+  exercise2:Santiago_de_Compostela exercise2:hasInhabitantNumber ?Inhabitants
+} LIMIT 100
+
+5.
+PREFIX exercise2: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT distinct ?Inhabitants_Santiago ?Inhabitants_Arzua
+WHERE 
+{
+  exercise2:Santiago_de_Compostela exercise2:hasInhabitantNumber ?Inhabitants_Santiago.
+  exercise2:Arzua exercise2:hasInhabitantNumber ?Inhabitants_Arzua
+} LIMIT 100
+
+6.
+PREFIX exercise2: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT distinct ?Places ?Inhabitants
+WHERE 
+{
+  ?Places exercise2:hasInhabitantNumber ?Inhabitants
+} ORDER BY ASC(?Places)
+
+7.
+PREFIX exercise2: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT distinct ?Instances ?Inhabitants
+WHERE 
+{
+  ?Places rdfs:subClassOf exercise2:Locality.
+  ?Instances rdf:type ?Places
+  OPTIONAL 
+  {
+    ?Instances exercise2:hasInhabitantNumber ?Inhabitants
+  }
+} LIMIT 100
+
+8.
+PREFIX exercise2: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT distinct ?Places ?Inhabitants
+WHERE 
+{
+  ?Places exercise2:hasInhabitantNumber ?Inhabitants
+  FILTER (xsd:integer(?Inhabitants) > xsd:integer("200000"))
+} LIMIT 100
+
+9.
+PREFIX exercise2: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT ?Street ?Number ?Locality ?Province
+WHERE 
+{ 
+  exercise2:Pazo_Breogan exercise2:hasAddress ?Address; 
+  exercise2:isPlacedIn ?Locality. 
+  ?Locality exercise2:inProvince ?Province. 
+  ?Address exercise2:hasStreet ?Street; 
+  exercise2:hasNumber ?Number.
+}
+
+10.
+PREFIX exercise2: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT distinct ?Subclasses 
+WHERE
+{
+  ?Subclasses rdfs:subClassOf exercise2:Location
+} LIMIT 100
+
+11.
+PREFIX exercise2: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT distinct ?Instances 
+WHERE
+{
+  ?Subclasses rdfs:subClassOf exercise2:Locality.
+  ?Instances rdf:type ?Subclasses
+} LIMIT 100
+
+12.
+PREFIX exercise2: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT distinct ?Resource 
+WHERE
+{
+  ?Resource rdfs:label "Madrid"
+} LIMIT 100
+
+13.
+PREFIX exercise2: <http://GP-onto.fi.upm.es/exercise2#>
+CONSTRUCT 
+{ 
+  ?Touristic_Places exercise2:isIN ?Province 
+} 
+WHERE
+{
+  ?Touristic_Places exercise2:isPlacedIn ?Locality.
+  ?Locality exercise2:inProvince ?Province
+} LIMIT 100
+
+14.
+PREFIX exercise2: <http://GP-onto.fi.upm.es/exercise2#>
+ASK WHERE
+{
+  ?Instance a exercise2:Town
+}
+
+
