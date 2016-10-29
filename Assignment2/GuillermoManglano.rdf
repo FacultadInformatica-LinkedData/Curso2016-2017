@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:uri="http://www.oeg-upm.net/exercise1b#"
+ xmlns="http://www.oeg-upm.net/exercise1b#"
+ xml:base="http://www.oeg-upm.net/exercise1b#">
+
+ <rdf:Description rdf:about="#Class01"/>
+    <includes rdf:resource="#Sensor029"/>
+    <includes rdf:resource="#Computer101"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="#Sensor029">
+    <hasMeasurement rdf:resource="#Measurement8401"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="#Computer101"/>
+     <hasOwner rdf:resource="#User10A"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="#Measurement8401">
+    <hasTemperature xsd:integer=>29</hasTemperature>
+    <eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-06-12T12:00:12</eventDate>
+ </rdf:Description>
+ <rdf:Description rdf:about="#User10A">
+     <hasName rdf:string="Pedro"/>
+ </rdf:Description>
+
+</rdf:RDF>

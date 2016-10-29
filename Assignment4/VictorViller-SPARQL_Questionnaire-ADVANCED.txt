@@ -1,0 +1,97 @@
+1. Dame todas las propiedades aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+LAS PROPIEDADES SON LAS MOSTRADAS POR ?p
+
+SELECT DISTINCT ?x ?p ?y
+
+WHERE
+
+{
+
+   ?x a <http://dbpedia.org/ontology/Politician> .
+
+   ?x ?p ?y
+
+}
+
+
+2. Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+SELECT DISTINCT ?x ?p ?y
+
+WHERE
+
+{
+
+   ?x a <http://dbpedia.org/ontology/Politician> .
+
+   ?x ?p ?y
+
+   FILTER(?p != rdf:type)
+
+}
+
+3. ¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)?
+ 
+
+SELECT COUNT (DISTINCT ?p)
+
+WHERE
+
+{
+
+   ?x a <http://dbpedia.org/ontology/Politician> .
+
+   ?x ?p ?y
+
+   FILTER(?p != rdf:type)
+
+}
+
+4. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime cuántos valores distintos toman en dichas instancias.
+
+SELECT ?p COUNT (DISTINCT ?y)
+
+WHERE
+
+{
+
+   ?x a <http://dbpedia.org/ontology/Politician> .
+
+   ?x ?p ?y
+
+   FILTER(?p != rdf:type)
+
+}
+
+5. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime la media de valores distintos que toman en dichas instancias.
+
+SELECT avg(?p) COUNT (DISTINCT ?y)
+
+WHERE
+
+{
+
+   ?x a <http://dbpedia.org/ontology/Politician> .
+
+   ?x ?p ?y
+
+   FILTER(?p != rdf:type)
+
+}
+
+6. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor <<Dicho de otro modo, dime qué propiedades son las más comunes entre las instancias de la clase Politician>>
+
+SELECT max(?p) COUNT (DISTINCT ?y)
+
+WHERE
+
+{
+
+   ?x a <http://dbpedia.org/ontology/Politician> .
+
+   ?x ?p ?y
+
+   FILTER(?p != rdf:type)
+
+}
