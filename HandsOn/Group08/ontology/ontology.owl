@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.linked-data-deportemadrid.org/group08/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.linked-data-deportemadrid.org/group08/ontology">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="#hasPrecio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWeb"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inProvincia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNombreInstalacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWebInstalacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasClaseVia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFechaFin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNombreVia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCoordenadasX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actividad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNumero"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEquipamiento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTipo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inLocalidad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inDistrito"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHora"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescripcion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCoordenadasY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instalacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inBarrio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFechaInicio"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:time"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasClaseVia"/>
+        <Class IRI="#Instalacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCoordenadasX"/>
+        <Class IRI="#Actividad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCoordenadasX"/>
+        <Class IRI="#Instalacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCoordenadasY"/>
+        <Class IRI="#Actividad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCoordenadasY"/>
+        <Class IRI="#Instalacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescripcion"/>
+        <Class IRI="#Actividad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescripcion"/>
+        <Class IRI="#Instalacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEquipamiento"/>
+        <Class IRI="#Instalacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFechaFin"/>
+        <Class IRI="#Actividad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFechaInicio"/>
+        <Class IRI="#Actividad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHora"/>
+        <Class IRI="#Actividad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNombre"/>
+        <Class IRI="#Actividad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNombreInstalacion"/>
+        <Class IRI="#Actividad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNombreInstalacion"/>
+        <Class IRI="#Instalacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNombreVia"/>
+        <Class IRI="#Instalacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNumero"/>
+        <Class IRI="#Instalacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPrecio"/>
+        <Class IRI="#Actividad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTipo"/>
+        <Class IRI="#Actividad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWeb"/>
+        <Class IRI="#Actividad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWebInstalacion"/>
+        <Class IRI="#Actividad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWebInstalacion"/>
+        <Class IRI="#Instalacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inBarrio"/>
+        <Class IRI="#Instalacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inDistrito"/>
+        <Class IRI="#Actividad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inDistrito"/>
+        <Class IRI="#Instalacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inLocalidad"/>
+        <Class IRI="#Instalacion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#inProvincia"/>
+        <Class IRI="#Instalacion"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasClaseVia"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCoordenadasX"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCoordenadasY"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDescripcion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEquipamiento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFechaFin"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFechaInicio"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHora"/>
+        <Datatype abbreviatedIRI="xsd:time"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNombreInstalacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNombreVia"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNumero"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrecio"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTipo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWeb"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWebInstalacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#inBarrio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#inDistrito"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#inLocalidad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#inProvincia"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
