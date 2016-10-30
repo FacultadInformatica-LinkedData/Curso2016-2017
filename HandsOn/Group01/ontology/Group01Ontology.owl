@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/group01"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/group01">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="#Distrito"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Causa_incidencia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Foto"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Plazas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaAparcadaEn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aparcamientos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Capacidad"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esIncidenciaDe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incidencias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aparcamiento_privado"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aparcamiento1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Centro"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Calle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Barrio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bici_Mad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bici1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Direccion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aparcamiento_BiciMad"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Aparcamiento_BiciMad"/>
+        <Class IRI="#Aparcamientos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aparcamiento_privado"/>
+        <Class IRI="#Aparcamientos"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Aparcamientos"/>
+        <NamedIndividual IRI="#Aparcamiento1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bici_Mad"/>
+        <NamedIndividual IRI="#Bici1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaAparcadaEn"/>
+        <NamedIndividual IRI="#Bici1"/>
+        <NamedIndividual IRI="#Aparcamiento1"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#estaAparcadaEn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esIncidenciaDe"/>
+        <Class IRI="#Incidencias"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estaAparcadaEn"/>
+        <Class IRI="#Bici_Mad"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esIncidenciaDe"/>
+        <Class IRI="#Bici_Mad"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaAparcadaEn"/>
+        <Class IRI="#Aparcamientos"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Barrio"/>
+        <Class IRI="#Aparcamiento_BiciMad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Calle"/>
+        <Class IRI="#Aparcamiento_BiciMad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Capacidad"/>
+        <Class IRI="#Aparcamiento_privado"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Causa_incidencia"/>
+        <Class IRI="#Incidencias"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Centro"/>
+        <Class IRI="#Aparcamiento_privado"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Direccion"/>
+        <Class IRI="#Aparcamiento_privado"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Distrito"/>
+        <Class IRI="#Aparcamiento_BiciMad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Foto"/>
+        <Class IRI="#Aparcamiento_privado"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Plazas"/>
+        <Class IRI="#Aparcamiento_BiciMad"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Barrio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Calle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Capacidad"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:int"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">140</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Causa_incidencia"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Centro"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Direccion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Distrito"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Plazas"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:int"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">18</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">36</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bici_Mad</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class will represent the rental bicicles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Causa_incidencia</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">We are going to considerate only 4 types of incidence causes:
+-Bicicleta pública
+-Señalización
+-SER
+-Total(otras)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Foto</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This will be a .png type, a photo of the location where the parking is.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Incidencias</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
