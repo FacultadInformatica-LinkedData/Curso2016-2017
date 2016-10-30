@@ -1,0 +1,79 @@
+# A1: Dame todas las propiedades aplicables a las instancias de la clase
+# Politician (<http://dbpedia.org/ontology/Politician>)
+
+SELECT DISTINCT ?props
+
+WHERE {
+  ?polit a <http://dbpedia.org/ontology/Politician> .
+  ?polit ?props ?z .
+  ?props rdf:type rdf:Property .
+}
+
+
+# A2:Dame todas las propiedades, exceptuando rdf:type, aplicables a las
+# instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+SELECT DISTINCT ?props
+
+WHERE {
+  ?polit a <http://dbpedia.org/ontology/Politician> .
+  ?polit ?props ?z .
+  MINUS {?polit rdf:type ?z} .
+  ?props rdf:type rdf:Property .
+}
+
+# A3: ¿Cuántos valores distintos se pueden encontrar para las propiedades,
+# exceptuando rdf:type, de las instancias de la clase Politician
+# (<http://dbpedia.org/ontology/Politician>)?
+
+SELECT COUNT(DISTINCT ?props)
+
+WHERE {
+  ?polit a <http://dbpedia.org/ontology/Politician> .
+  ?polit ?props ?z .
+  MINUS {?polit rdf:type ?z} .
+  ?props rdf:type rdf:Property .
+}
+
+# A4: Para cada una de las propiedades, exceptuando rdf:type, aplicables a las
+# instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>),
+# dime cuántos valores distintos toman en dichas instancias.
+
+SELECT DISTINCT ?props COUNT(?props)
+WHERE {
+  ?polit a <http://dbpedia.org/ontology/Politician> .
+  ?polit ?props ?z .
+  MINUS {?polit rdf:type ?z} .
+  ?props rdf:type rdf:Property .
+}
+
+
+# A5: Para cada una de las propiedades, exceptuando rdf:type, aplicables a las
+# instancias de la clase Politician (http://dbpedia.org/ontology/Politician),
+# dime la media de valores distintos que toman en dichas instancias.
+
+SELECT (AVG(?c) AS ?media)
+WHERE {
+    SELECT DISTINCT ?props (COUNT(?props) AS ?c)
+    WHERE {
+      ?polit a <http://dbpedia.org/ontology/Politician> .
+      ?polit ?props ?z .
+      MINUS {?polit rdf:type ?z} .
+      ?props rdf:type rdf:Property .
+    }
+}
+
+
+# A6: Para cada una de las propiedades, exceptuando rdf:type, aplicables a las
+# instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>),
+# dime el máximo número de valores distintos que toman entre todas sus
+# instancias, ordenado de mayor a menor
+
+
+SELECT DISTINCT ?props (COUNT(?props) AS ?c)
+WHERE {
+    ?polit a <http://dbpedia.org/ontology/Politician> .
+    ?polit ?props ?z .
+    MINUS {?polit rdf:type ?z} .
+    ?props rdf:type rdf:Property .
+} ORDER BY DESC (?c)
