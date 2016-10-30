@@ -120,20 +120,233 @@
         <ObjectProperty IRI="#en-provincia"/>
     </Declaration>
     <DataPropertyDomain>
+        <DataProperty IRI="#fecha-publicacion"/>
+        <Class IRI="http://www.semanticweb.org/Organismo_Gestor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#informacion-adicional"/>
+        <Class IRI="http://www.semanticweb.org/Empleo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#titulo"/>
+        <Class IRI="http://www.semanticweb.org/Organismo_Gestor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#enlace-contenido"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha-inicio"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ingreso-libre"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gestionado-por"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#en-provincia-alternativa"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#promocion-interna"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#requisitos"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#documentos-asociados"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#en-municipio"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tasas"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#plazo-presentacion"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripcion"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tematica"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#numero-plazas"/>
-        <Class IRI="#Empleo"/>
+        <Class IRI="http://www.semanticweb.org/Municipio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fecha-finalizacion"/>
+        <Class IRI="http://www.semanticweb.org/Localidad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minusvalia"/>
+        <Class IRI="http://www.semanticweb.org/Provincia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#deriva-bolsa"/>
+        <Class IRI="http://www.semanticweb.org/Provincia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ultima-actualizacion"/>
+        <Class IRI="http://www.semanticweb.org/Provincia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numero-cuenta-corriente"/>
+        <Class IRI="http://www.semanticweb.org/Provincia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#devolucion-exencion-de-tasas"/>
+        <Class IRI="http://www.semanticweb.org/Provincia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipo"/>
+        <Class IRI="http://www.semanticweb.org/Provincia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#solicitud"/>
+        <Class IRI="http://www.semanticweb.org/Provincia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#en-localidad"/>
+        <Class IRI="http://www.semanticweb.org/Provincia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lugar-de-presentacion"/>
+        <Class IRI="http://www.semanticweb.org/Provincia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fuente-contenido"/>
+        <Class IRI="http://www.semanticweb.org/Provincia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#identificador"/>
+        <Class IRI="http://www.semanticweb.org/Provincia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#provincia"/>
+        <Class IRI="http://www.semanticweb.org/Provincia"/>
     </DataPropertyDomain>
     <DataPropertyRange>
+        <DataProperty IRI="#informacion-adicional"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#enlace-contenido"/>   ------------------------------------
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha-inicio"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ingreso-libre"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gestionado-por"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#en-provincia-alternativa"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#promocion-interna"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#requisitos"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#documentos-asociados"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#en-municipio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tasas"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#plazo-presentacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tematica"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#numero-plazas"/>
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
-</Ontology>
-
-
+    <DataPropertyRange>
+        <DataProperty IRI="#fecha-finalizacion"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minusvalia"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#deriva-bolsa"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ultima-actualizacion"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#devolucion-exencion-de-tasas"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numero-cuenta-corriente"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#solicitud"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#en-localidad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lugar-de-presentacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fuente-contenido"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#identificador"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#en-provincia"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
 
 <!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
