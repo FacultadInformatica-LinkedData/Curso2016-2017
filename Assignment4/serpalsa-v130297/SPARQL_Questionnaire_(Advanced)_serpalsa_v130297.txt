@@ -1,0 +1,17 @@
+1.
+SELECT DISTINCT ?x where { ?y ?q <http://dbpedia.org/ontology/Politician> . ?y ?x ?z }
+
+2.
+SELECT DISTINCT ?x WHERE { ?y ?q <http://dbpedia.org/ontology/Politician> . ?y ?x ?z FILTER (?x != rdf:type) }
+
+3.
+SELECT COUNT (distinct ?z) as ?a where { ?y ?q <http://dbpedia.org/ontology/Politician> . ?y ?x ?z FILTER (?x != rdf:type) }
+
+4.
+SELECT ?x count (distinct ?z) as ?a where { ?y ?q <http://dbpedia.org/ontology/Politician> . ?y ?x ?z FILTER (?x != rdf:type) }
+
+5.
+SELECT avg(?a) as ?b where { { select ?x count (distinct ?z) as ?a where { ?y ?q <http://dbpedia.org/ontology/Politician> . ?y ?x ?z FILTER (?x != rdf:type) } } }
+
+6.
+SELECT ?x max(?a) as ?c where { { select ?x count (distinct ?z) as ?a where { ?y ?q <http://dbpedia.org/ontology/Politician> . ?y ?x ?z FILTER (?x != rdf:type) } } } ORDER BY DESC(?c)
