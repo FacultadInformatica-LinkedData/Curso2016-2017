@@ -1,0 +1,151 @@
+ <!DOCTYPE html> 
+ <html> 
+ <head>
+<title>Group01 deliverable 2 -Web Semantic & Linked Data </title>
+</head> 
+<body bgcolor="#f4cb42"> 
+
+ 
+	<!--ANALISIS DE LOS DATOS --> 
+	<h1>Analyse Data Set</h1> 
+	<p> <h3>BICIMAD Public Bike Rental in Madrid</h3> 
+	<table border="1"> 		<tr> 
+		<th>Columna</th> 
+		<th>Tipo</th> 
+		<th>Rango</th> 
+		<th>Comentarios</th> 
+			<th>Problemas</th> 
+ 		</tr> 
+		 <tr>
+    <th colspan="5">aparcabicis (private bikes)</th>
+     </tr>
+	    <tr> 
+			<td>Centro</td> 
+			<td>String</td> 
+			<td>[a-z], caracteres</td> 
+			<td>not unique</td> 
+			<td>148 repeated</td> 
+		
+		</tr> 
+ 		<tr> 
+		<td>Direccion</td> 
+			<td>String</td> 
+			<td>[a-z], caracteres</td> 
+			<td>not unique</td> 
+			<td>128 repeated</td> 
+			</tr> 
+ 		<tr> 
+		<td>Capacidad</td> 
+			<td>Integer</td> 
+			<td>0-140</td> 
+			<td></td> 
+			<td> 0?</td> 
+			</tr> 
+ 		<tr> 
+		<td>Foto</td> 
+			<td>Image</td> 
+			<td>NA</td> 
+			<td></td> 
+			<td></td> 
+			</tr> 
+ 		<tr> 
+		<td>Direccion</td> 
+			<td>String</td> 
+			<td>[a-z], caracteres</td> 
+			<td>not unique</td> 
+			<td>128 repeated</td> 
+		</tr>	
+			
+			 <tr>
+    <th colspan="5">bases BICIMAD</th>
+  </tr>
+  
+  <tr> 
+		<td>distrito</td> 
+			<td>String</td> 
+			<td>[a-z], caracteres</td> 
+			<td>not unique</td> 
+			<td>all repeated</td> 
+		</tr>	
+		
+		<tr> 
+		<td>barrio</td> 
+			<td>String</td> 
+			<td>[a-z], caracteres</td> 
+			<td>not unique</td> 
+			<td>29 repeated</td> 
+		</tr>	
+		
+		<tr> 
+		<td>calle</td> 
+			<td>String</td> 
+			<td>[a-z], caracteres</td> 
+			<td>not unique</td> 
+			<td>26 repeated</td> 
+		</tr>	
+		
+		<tr> 
+		<td>plazas</td> 
+			<td>Integer</td> 
+			<td>18-36</td> 
+			<td></td> 
+			<td></td> 
+		</tr>	
+		
+		 <tr>
+    <th colspan="5">bici INCIDENCIAS</th>
+  </tr>
+  <tr> 
+		<td>causa</td> 
+			<td>String</td> 
+			<td>[a-z], caracteres</td> 
+			<td>Not unique</td> 
+			<td>4 repeated</td> 
+		</tr>	
+		
+  
+ 	</table> 
+
+ 
+ 	<!--ANALISIS DE LA LICENCIA DE LOS DATOS OBTENIDOS Y CREACIÓN DE LICENCIA--> 
+ 	<h1 style="color:red">Analyse Licensing of the Data Source</h1> 
+ 	<p>
+	<b>All the Datasets have the same open data license (we can see it in the section Data Publication > License):
+
+   Condiciones de uso:
+      Las condiciones generales permiten la reutilización de los documentos para fines comerciales y no comerciales.
+      Se entiende por reutilización el uso de documentos que obran en poder del Ayuntamiento de Madrid,
+      siempre que dicho uso no constituya una actividad administrativa pública.
+	    <br>
+     <a  href="http://datos.madrid.es/egob/catalogo/aviso-legal"> http://datos.madrid.es/egob/catalogo/aviso-legal</a> 
+		<br>
+   Condiciones generales para la modalidad general de puesta a disposición de los documentos reutilizables del Ayuntamiento de Madrid:
+     <br>
+     <a href="http://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">  
+http://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=108804d4aab90410VgnVCM100000171f5a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default</a> 
+     <br>
+   Condiciones reutilización información Madrid Destino:
+     <br>
+     <a href="http://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=748eb054f9edb410VgnVCM1000000b205a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">  
+http://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=748eb054f9edb410VgnVCM1000000b205a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default</a> 
+    <br>
+Therefore, we have chosen to use an open data license for our project.</b></p>
+		<!-- DEFINICIÓN DEL ESPACIO DE NOMBRES PARA NUESTROS DATOS --> 
+		<h1>Define Resource Naming Strategy</h1> 
+
+<p>Hash URIs for ontological terms, slash URIs for individuals</p>
+  <li>	Domain: http://datos.madrid.es/
+	
+  	Ontological terms path: 
+    http://www.semanticweb.org/group01#</li>
+	
+  <li>	Individuals path: 
+  	http://www.semanticweb.org/group01/individuals</li>
+	
+  	<li>Ontological terms pattern: 
+  	http://www.semanticweb.org/group01#&ltterm_name></li>
+  	
+	<li>Individuals pattern:
+  	http://www.semanticweb.org/group01/resource/&ltresource_type>/&ltresource_name></li>
+ </body> 
+ </html>
