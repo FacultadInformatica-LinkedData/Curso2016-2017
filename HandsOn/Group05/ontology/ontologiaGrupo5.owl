@@ -1,0 +1,568 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://madridOcio.linkeddata.com/ontologyGroup5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://madridOcio.linkeddata.com/ontologyGroup5">
+    <Prefix name="" IRI="http://linkeddata.firebaseapp.com/ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="#fax"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombreCalle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#equipamiento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#distrito"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#horario"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longitud"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CentrosCulturales"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#provincia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#barrio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipoCalle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descripcion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#codigoPostal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#telefono"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#accesoDiscapacitados"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#transportePublico"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#latitud"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#localidad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#url"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numeroCalle"/>
+    </Declaration>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#accesoDiscapacitados"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#barrio"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#codigoPostal"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#descripcion"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#distrito"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#email"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#equipamiento"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fax"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#horario"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#latitud"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#localidad"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#longitud"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nombre"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nombreCalle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#numeroCalle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#provincia"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#telefono"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tipoCalle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#transportePublico"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#url"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#accesoDiscapacitados"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#accesoDiscapacitados"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#accesoDiscapacitados"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#accesoDiscapacitados"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#barrio"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#barrio"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#barrio"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#barrio"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codigoPostal"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codigoPostal"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codigoPostal"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#codigoPostal"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripcion"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripcion"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripcion"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripcion"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#distrito"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#distrito"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#distrito"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#distrito"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#equipamiento"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#equipamiento"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#equipamiento"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#equipamiento"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fax"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fax"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fax"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fax"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#horario"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#horario"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#horario"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#horario"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#latitud"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#latitud"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#latitud"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#latitud"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#localidad"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#localidad"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#localidad"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#localidad"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#longitud"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#longitud"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#longitud"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#longitud"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombreCalle"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombreCalle"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombreCalle"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombreCalle"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numeroCalle"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numeroCalle"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numeroCalle"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numeroCalle"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#provincia"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#provincia"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#provincia"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#provincia"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefono"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefono"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefono"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefono"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipoCalle"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipoCalle"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipoCalle"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipoCalle"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#transportePublico"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#transportePublico"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#transportePublico"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#transportePublico"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#url"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Bibliotecas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#url"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Museos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#url"/>
+        <Class IRI="http://madridOcio.linkeddata.com/Polideportivos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#url"/>
+        <Class IRI="#CentrosCulturales"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#accesoDiscapacitados"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#barrio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#codigoPostal"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descripcion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#distrito"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#equipamiento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#horario"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#latitud"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#localidad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#longitud"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombreCalle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numeroCalle"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#provincia"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#telefono"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipoCalle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#transportePublico"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#url"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
