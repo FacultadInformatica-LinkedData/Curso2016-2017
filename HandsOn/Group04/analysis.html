@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>Analysis</title>
+	</head>
+	<body>
+		<h1><u>Analysis</u></h1>
+		<table border="1px">
+		        <tr>
+		                <td bgcolor="lightblue"><b>Column</b></td>
+		                <td bgcolor="lightblue"><b>Type</b></td>
+		                <td bgcolor="lightblue"><b>Comments/Range(rounded)</b></td>
+		                <td bgcolor="lightblue"><b>Problems</b></td>
+		        </tr>
+		        <tr>
+		                <td>Localidad</td>
+		                <td>String</td>
+		                <td>Not unique, not empty values</td>
+		                <td></td>
+		        </tr>
+		        <tr>
+		                <td>Barrio</td>
+		                <td>String</td>
+		                <td>Not unique, empty values</td>
+		                <td></td>
+		        </tr>
+		        <tr>
+		                <td>Fecha</td>
+		                <td>Date</td>
+		                <td>Not unique, not empty values.<br />1/10/2016-31/10/2016</td>
+		                <td>Incorrect format.</td>
+		        </tr>
+		        <tr>
+		                <td>Farmacia</td>
+		                <td>int</td>
+		                <td>ID Unique, not empty values.<br />0~32000.</td>
+		                <td>ID repeat. Negativa values.</td>
+		        </tr>
+		        <tr>
+		                <td>Dirección</td>
+		                <td>String</td>
+		                <td>Not unique, not empty values</td>
+		                <td></td>
+		        </tr>
+		        <tr>
+		                <td>Duración</td>
+		                <td>String</td>
+		                <td>Not unique, not empty values</td>
+		                <td></td>
+		        </tr>
+		        <tr>
+		                <td>Teléfono</td>
+		                <td>String</td>
+		                <td>Unique, not empty value</td>
+		                <td>Not '91' prefix. Don't char value.</td>
+		        </tr>
+		</table>
+		<h1><u>Origen y concesión de licencias de la fuente de datos.</u></h1>
+		Las condiciones generales permiten la reutilización de los documentos para fines comerciales y no comerciales. Se entiende por reutilización el uso de documentos que obran en poder del Ayuntamiento de Madrid, siempre que dicho uso no constituya una actividad administrativa pública.
+		<br /><br />
+		La licendia de los datasets de Madrid se puede ver en la siguiente página: <br /><br />http://datos.madrid.es/portal/site/egob/menuitem.400a817358ce98c34e937436a8a409a0/?vgnextoid=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD
+		
+		<br />
+		<h1><u>"Resource naming strategy defined"</u></h1>
+		Raíz del proyecto: http://semanticweb.es/group04/
+		<br />
+		Requirements: http://semanticweb.es/group04/requirements
+		<br />
+		CSV: http://semanticweb.es/group04/csv
+		<br />
+		Ontology: http://semanticweb.es/group04/ontology/Pharmacies/
+	</body>
+</html>
