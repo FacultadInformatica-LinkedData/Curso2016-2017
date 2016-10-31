@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://smartsevilla.es/ontology/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://smartsevilla.es/ontology/">
+    <Prefix name="" IRI="http://smartsevilla.es/ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="stop_long"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="service_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="stop_name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Parada"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="trip_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="end_date"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="paraEn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="pasaPorCalle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Linea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="route_long_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="arrival_time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Bus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="estaEnCalle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="route_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Calle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="perteneceALinea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="stop_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="stop_lat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Ruta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Servicio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="start_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="exception_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="stop_sequence"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="route_short_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="route_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="departure_time"/>
+    </Declaration>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="estaEnCalle"/>
+        <Class IRI="Parada"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="paraEn"/>
+        <Class IRI="Bus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="pasaPorCalle"/>
+        <Class IRI="Bus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="pasaPorCalle"/>
+        <Class IRI="Linea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="perteneceALinea"/>
+        <Class IRI="Parada"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="estaEnCalle"/>
+        <Class IRI="Calle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="paraEn"/>
+        <Class IRI="Parada"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="pasaPorCalle"/>
+        <Class IRI="Calle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="perteneceALinea"/>
+        <Class IRI="Linea"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="arrival_time"/>
+        <Class IRI="Parada"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="departure_time"/>
+        <Class IRI="Parada"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="end_date"/>
+        <Class IRI="Servicio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="exception_type"/>
+        <Class IRI="Servicio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="route_id"/>
+        <Class IRI="Ruta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="route_long_name"/>
+        <Class IRI="Ruta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="route_short_name"/>
+        <Class IRI="Ruta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="route_type"/>
+        <Class IRI="Ruta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="service_id"/>
+        <Class IRI="Servicio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="start_date"/>
+        <Class IRI="Servicio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="stop_id"/>
+        <Class IRI="Parada"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="stop_lat"/>
+        <Class IRI="Parada"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="stop_long"/>
+        <Class IRI="Parada"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="stop_name"/>
+        <Class IRI="Parada"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="stop_sequence"/>
+        <Class IRI="Parada"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="trip_id"/>
+        <Class IRI="Ruta"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="arrival_time"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="departure_time"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="end_date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="exception_type"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="route_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="route_long_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="route_short_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="route_type"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="service_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="start_date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="stop_id"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="stop_lat"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="stop_long"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="stop_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="stop_sequence"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="trip_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
