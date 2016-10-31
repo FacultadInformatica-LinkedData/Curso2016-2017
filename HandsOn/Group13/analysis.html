@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Hands-on_Assignment2</title>
+  </head>
+    <body>
+    	<h1>Datasets Analysis</h1>
+
+	<h3>Educational Denters Directory</h3>
+	<ul>
+	<li><b>CSV Name:</b> Education_Directory.csv</li>
+	<li><b>Description:</b> It contains all educational centers of New York categorised by school district and organization type. Also it specifies the location by latitude and longitude.</li>
+	<li><b>Origin of the data: <a href="https://nycopendata.socrata.com/">NYC Open Data</a></b>
+	</ul>
+	<table border="10" style="width:100%">
+            <tr>
+                <th>Column</th>
+                <th>Type</th>
+		<th>Range</th>
+                <th>Comments</th>
+                <th>Problems</th>
+            </tr>
+	    <tr>
+                <td>District Name</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Nombre del distrito escolar donde se encuentra el dicho colegio</td>
+                <td>--</td>
+            </tr>
+	    <tr>
+                <td>School Name</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Nombre de la escuela</td>
+                <td>Posible dificultad para enlazarlo con dbpedia debido a que algunos no están indexados en ella</td>
+            </tr>
+	    <tr>
+                <td>Organization Type</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Carácter de la escuela (Pública, Academia, Perteneciente a un distrito escolar,etc)</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td>Organization Code</td>
+                <td>xsd:decimal</td>
+		<td>1-9036122</td>
+                <td>Código que identifica a la organización</td>
+                <td>No demasiado útil, ni enlazable con dbpedia</td>
+            </tr>
+	    <tr>
+                <td>Location 1</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Nombre de la calle donde se sitúa la escuela</td>
+                <td>No enlazable con dbpedia --> No sirve como referencia de situación. Para ello se utilizará las latitudes y longitudes</td>
+            </tr>
+	    <tr>
+                <td>Latitude</td>
+                <td>xsd:float</td>
+		<td>--</td>
+                <td>Nos servirá para encontrarlo dentro de los lugares cercanos de una posición determinada por el cliente</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+	    <tr>
+                <td>Longitude</td>
+                <td>xsd:float</td>
+		<td>--</td>
+                <td>Nos servirá para encontrarlo dentro de los lugares cercanos de una posición determinada por el cliente</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+	    <tr>
+                <td>ZipCode</td>
+                <td>xsd:float</td>
+		<td>6001-3490015</td>
+                <td>Nos servirá para encontrarlo dentro de los lugares cercanos de una posición determinada por el cliente. Así como enlazarlo a dbpedia con el borough o neighbourhood correspondiente</td>
+                <td>--</td>
+            </tr>
+	    <tr>
+                <td>Phone</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Numero de teléfono de la entidad</td>
+                <td>--</td>
+            </tr>
+        </table> 
+
+	<h3>NYC Health and Hospitals Corporation Facilities</h3>
+	<ul>
+	<li><b>CSV Name:</b> NYC_Health_and_Hospitals_Corporation_Facilities.csv</li>
+	<li><b>Description:</b> It contains the New York City health and hospitals corporation facilities categorised by speciality and borough. Also it contains their locations by latitude and longitude</li>
+	<li><b>Origin of the data: <a href="https://nycopendata.socrata.com/">NYC Open Data</a></b>
+	</ul>
+
+	<table border="10" style="width:100%">
+
+            <tr>
+                <th>Column</th>
+                <th>Type</th>
+		<th>Range</th>
+                <th>Comments</th>
+                <th>Problems</th>
+            </tr>
+	   <tr>
+		<td>Facility Type</td>
+                <td>xsd:string</td>
+		<td>--</td>                
+		<td>Determina los distintos tipos de Facility. Además nos servirá como filtro para las preferencias del cliente </td>
+                <td>--</td>
+            </tr>
+	   <tr>
+		<td>Borough</td>
+                <td>xsd:string</td>
+		<td>--</td>                
+		<td>Identifica el municipio al que pertenece cada facility. Lincable con dbpedia. Útil para realizar filtros con respecto a las preferencias del cliente</td>
+                <td>--</td>
+            </tr>
+            <tr>
+		<td>Facility Name</td>
+                <td>xsd:string</td>
+		<td>--</td>                
+		<td>Nombre del establecimiento clínico u hospitalario</td>
+                <td>No siempre lincable con dbpedia</td>
+            </tr>
+            <tr>
+		<td>Phone</td>
+                <td>xsd:string</td>
+		<td>--</td>                
+		<td>Numero de teléfono del establecimiento clínico u hospitalario</td>
+                <td>No demasiado útil dbpedia</td>
+            </tr>
+            <tr>
+		<td>Location 1</td>
+                <td>xsd:string</td>
+		<td>--</td>                
+		<td>Calle donde del establecimiento clínico u hospitalario</td>
+                <td>No lincable con dbpedia</td>
+            </tr>
+	    <tr>
+                <td>Latitude</td>
+                <td>xsd:float</td>
+		<td>--</td>
+                <td>Nos servirá para encontrarlo dentro de los lugares cercanos de una posición determinada por el cliente</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+	    <tr>
+                <td>Longitude</td>
+                <td>xsd:float</td>
+		<td>--</td>
+                <td>Nos servirá para encontrarlo dentro de los lugares cercanos de una posición determinada por el cliente</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+
+
+
+        </table> 
+
+	<h3>New York City Subway Entrances</h3>
+	<ul>
+	<li><b>CSV Name:</b> DOITT_SUBWAY_ENTRANCE_01_13SEPT2010.csv</li>
+	<li><b>Description:</b> It contains the all the New York City subway entrances categorised by line. Also it contains the latitude and longitude coordinates</li>
+	<li><b>Origin of the data: <a href="https://nycopendata.socrata.com/">NYC Open Data</a></b>
+	</ul>
+
+	<table border="10" style="width:100%">
+	    <tr>
+                <th>Column</th>
+                <th>Type</th>
+		<th>Range</th>
+                <th>Comments</th>
+                <th>Problems</th>
+
+	    </tr>
+	    <tr>
+                <td>Name</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Nombre de las entradas de metro</td>
+                <td>Algunas entradas de metro no están enlazadas con dbpedia</td>
+            </tr>
+            <tr>
+                <td>Longitude</td>
+                <td>xsd:float</td>
+		<td>--</td>
+                <td>Nos servirá para encontrarlo dentro de los lugares cercanos de una posición determinada por el cliente</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+	    <tr>
+                <td>Latitude</td>
+                <td>xsd:float</td>
+		<td>--</td>
+                <td>Nos servirá para encontrarlo dentro de los lugares cercanos de una posición determinada por el cliente</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+	    <tr>
+                <td>URL</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Hace referencia a webs oficiales del metro de la ciudad de Nueva York</td>
+                <td>Algunas URL no están disponibles</td>
+            </tr>
+	    <tr>
+                <td>Line</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Representa la linea o lineas a la que la entrada de metro y por tanto la parada asociada pertenecen</td>
+                <td>Hay algunas estaciones que están cerradas y no conectan con ninguna línea</td>
+            </tr>
+
+
+        </table>
+	<h3>New York City Libraries</h3>
+	<ul>
+	<li><b>CSV Name:</b> Library.csv</li>
+	<li><b>Description:</b> It contains the all the New York City libraries with their locations in latitude and longitude coordinates</li>
+	<li><b>Origin of the data: <a href="https://nycopendata.socrata.com/">NYC Open Data</a></b>
+	</ul>
+
+	<table border="10" style="width:100%">
+	    <tr>
+                <th>Column</th>
+                <th>Type</th>
+		<th>Range</th>
+                <th>Comments</th>
+                <th>Problems</th>
+
+	    </tr>
+            <tr>
+                <td>Name</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Atributo que proporciona el nombre de la biblioteca</td>
+                <td>--</td>
+            </tr>
+		 <tr>
+                <td>Latitude</td>
+                <td>xsd:float</td>
+		<td>--</td>
+                <td>Nos servirá para encontrar la biblioteca dentro de los lugares cercanos de una posición determinada por el cliente</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+                <tr>
+                <td>Longitude</td>
+                <td>xsd:float</td>
+		<td>Range</td>
+                <td>Nos servirá para encontrar la biblioteca dentro de los lugares cercanos de una posición determinada por el cliente</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+		<tr>
+                <td>Housenum</td>
+                <td>xsd:decimal</td>
+		<td>--</td>
+                <td>Representa el número asociado al edificio en el que la biblioteca se encuentra</td>
+                <td>Algunas bibliotecas ocupan mas de un numero (edificio) o están en centro comerciales</td>
+            </tr>
+			
+		<tr>
+                <td>City</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Nos sirve para localizar la ciudad en la que se encuentra la biblioteca. Nos servirá para enlazarla con dbpedia a traves de la ciudad</td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>ZIP</td>
+                <td>xsd:decimal</td>
+		<td>10002-11694</td>
+                <td>Codigo ZIP</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+		<tr>
+                <td>URL</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Nos enlaza con una web con información varia de la biblioteca como horarios o servicios</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+
+        </table>
+
+	<h3>New York City State Park Facilities</h3>
+	<ul>
+	<li><b>CSV Name:</b> State_Park_Facility.csv</li>
+	<li><b>Description:</b> It contains the all the New York City parks including beaches, golf course, nature parks, playgrounds,etc. with their locations in latitude and longitude coordinates</li>
+	<li><b>Origin of the data: <a href="https://nycopendata.socrata.com/">NYC Open Data</a></b>
+	</ul>
+	<table border="10" style="width:100%">
+
+	    <tr>
+                <th>Column</th>
+                <th>Type</th>
+		<th>Range</th>
+                <th>Comments</th>
+                <th>Problems</th>
+
+	    </tr>
+	    <tr>
+                <td>Name</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Atributo que proporciona el nombre del lugar natural</td>
+                <td>Dificultad al encontrarlos todos en dbpedia. ¿Podría mirarse en datasets de otro carácter para posible union mediante nombre? </td>
+            </tr>
+	    <tr>
+                <td>Category</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Representa el tipo de lugar natural </td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Región</td>
+                <td>xsd:float</td>
+		<td>0-12</td>
+                <td>Representa el nombre de la región en la que se ubica</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+		<tr>
+                <td>County</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Representa el nombre del condado en la que se ubica</td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Golf</td>
+                <td>xsd:string</td>
+		<td>[Y,N]</td>
+                <td>Indica si ese lugar natural tiene campo de golf o no</td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Camp</td>
+                <td>xsd:string</td>
+		<td>[Y,N]</td>
+                <td>Indica si en ese lugar natural se puede acampar </td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Playground</td>
+                <td>xsd:string</td>
+		<td>[Y,N]</td>
+                <td>Indica si en ese lugar natural hay zona de juegos </td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Playground</td>
+                <td>xsd:string</td>
+		<td>[Y,N]</td>
+                <td>Indica si en ese lugar natural hay zona de juegos </td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Nature Center</td>
+                <td>xsd:string</td>
+		<td>[Y,N]</td>
+                <td>Indica si es una reserva natural </td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Nature Center</td>
+                <td>xsd:string</td>
+		<td>[Y,N]</td>
+                <td>Indica si tiene playa o no </td>
+                <td>--</td>
+            </tr>
+		 <td>Facility URL</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Representa la direccion de la pagina web que contiene información acerca del lugar</td>
+                <td>--</td>
+            </tr>
+		<td>URL GOLF</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Representa la direccion de la pagina web que contiene información acerca del campo del golf ubicado dentro del lugar</td>
+                <td>--</td>
+            </tr>
+		<td>Nature Center URL</td>
+                <td>xsd:string</td>
+		<td>--</td>
+                <td>Representa la direccion de la pagina web que contiene información acerca de la reserva natural ubicada en dicho lugar</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td>Longitude</td>
+                <td>xsd:float</td>
+		<td>--</td>
+                <td>Nos servirá para encontrar la biblioteca dentro de los lugares cercanos de una posición determinada por el cliente</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+	    <tr>
+                <td>Latitude</td>
+                <td>xsd:float</td>
+		<td>--</td>
+                <td>Nos servirá para encontrar la biblioteca dentro de los lugares cercanos de una posición determinada por el cliente</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+         </table>
+
+
+
+        <h1>Analysis of the Licensing of the Data</h1>
+
+	La información almacenada en los dataset que provienen de <a href="https://nycopendata.socrata.com/">NYC Open Data</a> no tienen asociada explícitamente ninguna licencia de datos abiertos ni tampoco una que restringa su uso. En la sección about (<a href="http://www.nyc.gov/html/data/about.html">About NYC OpenData.</a>) de la página oficial gubernamental de la ciudad de Nueva York, se deja constancia de manera escrita que los datos son abiertos y de uso publico bien para investigaciones o aplicaciones o cualquier otro uso que contribuya a mejorar la ciudad de Nueva York. Es dicho también que ciertos dataset pueden tener licencias restrictivas de copyright, como la DMCA, pero que en tal caso debe ser indicado en la descripción así como en la ficha del dataset.
+	<br>
+	<br>
+	Debido a que los dataset que se utilizarán en el desarrollo de la aplicación no especifican licencia restrictiva alguna, se entiende que su carácter es abierto y de uso público. Es por ello que se utilizará la licencia <a href="https://creativecommons.org/licenses/by/4.0/legalcode"> Creative Commons Attribution 4.0 International License</a> (<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />) de manera que tambien los datos derivados de los originales así como nuesta aplicación y todo el material creado pueda ser distribuido, copiado, adaptado, exhibido y/o usado comercialmente por terceros siempre y cuando se muestre en los créditos los autores originales, que en este caso seríamos nosotros.
+        
+        <h1>Definition of the Resource Naming Strategy</h1>
+	Se muestra a continuación el patrón que se seguirá para la construcción de las URIs tanto de los recursos como de las properties asociadas:
+	
+	<ul>
+	<li><b>Dominio</b>: http://www.linkedData_2016_2017_Group13/</li>
+	<li><b>Entidades</b>: http://www.linkedData_2016_2017_Group13/resource/&lt;nameOfEntity&gt;</li>
+	<li><b>Data properties</b>: http://www.linkedData_2016_2017_Group13/ontology#&lt;dataProperty&gt;</li>
+	<li><b>Object properties</b>: http://www.linkedData_2016_2017_Group13/ontology#&lt;objectProperty&gt;</li>
+	</ul>
+	Así mismo se han definido dos <b>Datatypes</b> necesarios para la definición de los recursos de nuestra ontología debido al carácter de de los atributos latitud y longitud que se utilizan para definir la localización de ciertos recursos. Estos tipos de datos hacen referencia a los ya definidos por el vocabulario <a href="https://www.w3.org/2003/01/geo/">"geo"</a>, por tanto han sido introducidos como geo:lat y geo:long con sus correspondientes URIs oficiales <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">http://www.w3.org/2003/01/geo/wgs84_pos#lat</a> y <a href="http://www.w3.org/2003/01/geo/wgs84_pos#long">http://www.w3.org/2003/01/geo/wgs84_pos#long</a>
+	
+    </body>
+</html>
