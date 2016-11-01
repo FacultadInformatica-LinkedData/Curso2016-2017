@@ -115,7 +115,7 @@
       <td>DISTRITO</td>
       <td>String</td>
       <td>not unique</td>
-      <td>Exixting district wiht - </td>
+      <td>Exixting district with - </td>
     </tr>
 	<tr>
       <td>BARRIO_ID</td>
@@ -168,10 +168,10 @@
   <h3>Campos que no son preguntas</h3>
   <table>
     <tr>
-      <td>Column</td>
-      <td>Type</td>
-      <td>Comments</td>
-      <td>Problems</td>
+      <th>Column</th>
+      <th>Type</th>
+      <th>Comments</th>
+      <th>Problems</th>
     </tr>
     <tr>
       <td>NUNCUESTI</td>
@@ -189,12 +189,12 @@
       <td>BARRIO</td>
       <td>String</td>
       <td>Not unique</td>
-      <td>Encoding problems witd some characters</td>
+      <td>Encoding problems with some characters</td>
     </tr>
     <tr>
       <td>CODBARRIO</td>
       <td>Integer</td>
-      <td>Not unique. Constrain: fields witd tde same CODBARRIO value must have tde same BARRIO value</td>
+      <td>Not unique. Constrain: fields with tde same CODBARRIO value must have the same BARRIO value</td>
       <td>Constrain not checked</td>
     </tr>
     <tr>
@@ -207,25 +207,25 @@
       <td>SER</td>
       <td>Integer</td>
       <td>Not unique</td>
-      <td>Not sure what tdis mean. Probably related to "Servicio de Estacionamiento Regulado" but not sure</td>
+      <td>Not sure what this mean. Probably related to "Servicio de Estacionamiento Regulado" but not sure</td>
     </tr>
     <tr>
       <td>ENCUESTADOR</td>
       <td>Integer</td>
       <td>Not unique</td>
-      <td>Not sure what tdis field means. Probably is tde ID of tde person who do tde questionnaire</td>
+      <td>Not sure what this field means. Probably is the ID of tde person who do tde questionnaire</td>
     </tr>
     <tr>
       <td>RUTA</td>
       <td>Integer</td>
       <td>Not unique</td>
-      <td>Not sure what tdis field means.</td>
+      <td>Not sure what this field means.</td>
     </tr>
     <tr>
       <td>PESO</td>
       <td>Decimal</td>
       <td>Not unique. Decimal point is a comma, not a point</td>
-      <td>Not sure what tdis field means.</td>
+      <td>Not sure what this field means.</td>
     </tr>
   </table>
 
@@ -233,15 +233,15 @@
   <h3>Campos que son preguntas</h3>
   <table>
     <tr>
-      <td>Column</td>
-      <td>Type</td>
-      <td>Comments</td>
-      <td>Problems</td>
+      <th>Column</th>
+      <th>Type</th>
+      <th>Comments</th>
+      <th>Problems</th>
     </tr>
     <tr>
       <td>P1X ~ P5X (where X is a letter)</td>
       <td>Number</td>
-      <td>Not unique. Values 1, 2, 3, 4, 5, 8 or 9. Each column matches witd each sub-question of tde questionnaire</td>
+      <td>Not unique. Values 1, 2, 3, 4, 5, 8 or 9. Each column matches with each sub-question of the questionnaire</td>
       <td></td>
     </tr>
     <tr>
@@ -290,7 +290,7 @@
     <tr>
       <td>P11X ~ P18X (where X is otder number)</td>
       <td>Integer.</td>
-      <td>Not unique. Answers to sub-question X of tde question. Values specified in tde questionnaire.</td>
+      <td>Not unique. Answers to sub-question X of tde question. Values specified in the questionnaire.</td>
       <td></td>
     </tr>
 
@@ -302,7 +302,7 @@
     </tr>
 
     <tr>
-      <td>P20X ~ P20X (where X is otder number)</td>
+      <td>P20X ~ P20X (where X is other number)</td>
       <td>Integer.</td>
       <td>Values can be 1, 2 or 9.</td>
       <td></td>
@@ -311,7 +311,7 @@
     <tr>
       <td>P21X ~ P29X (where X is otder number)</td>
       <td>Integer.</td>
-      <td>Not unique. Answers to sub-question X of tde question. Values specified in tde questionnaire.</td>
+      <td>Not unique. Answers to sub-question X of the question. Values specified in the questionnaire.</td>
       <td></td>
     </tr>
   </table>
