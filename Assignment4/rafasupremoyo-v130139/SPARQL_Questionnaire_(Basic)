@@ -129,24 +129,35 @@ http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
 http://GP-onto.fi.upm.es/exercise2#Madrid
 http://GP-onto.fi.upm.es/exercise2#Arzua
 12_
-select distinct   ?Concept ?p ?Concept2 ?Concept3 ?Concept4 ?u  where {?Concept rdfs:label "Madrid".
-?Concept ?p ?Concept2.
-?Concept <http://GP-onto.fi.upm.es/exercise2#isLocatedAtPoint> ?Concept3.
-?Concept3 ?u ?Concept4
-}  LIMIT 100
-Concept 	p 	Concept2 	Concept3 	Concept4 	u
-http://GP-onto.fi.upm.es/exercise2#Madrid 	http://www.w3.org/1999/02/22-rdf-syntax-ns#type 	http://GP-onto.fi.upm.es/exercise2#City 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	http://GP-onto.fi.upm.es/exercise2#PhysicalPoint 	http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-http://GP-onto.fi.upm.es/exercise2#Madrid 	http://www.w3.org/2000/01/rdf-schema#label 	Madrid 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	http://GP-onto.fi.upm.es/exercise2#PhysicalPoint 	http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-http://GP-onto.fi.upm.es/exercise2#Madrid 	http://GP-onto.fi.upm.es/exercise2#isLocatedAtPoint 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	http://GP-onto.fi.upm.es/exercise2#PhysicalPoint 	http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-http://GP-onto.fi.upm.es/exercise2#Madrid 	http://GP-onto.fi.upm.es/exercise2#inProvince 	Madrid 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	http://GP-onto.fi.upm.es/exercise2#PhysicalPoint 	http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-http://GP-onto.fi.upm.es/exercise2#Madrid 	http://www.w3.org/1999/02/22-rdf-syntax-ns#type 	http://GP-onto.fi.upm.es/exercise2#City 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	GP_Santiago_Instance_74 	http://www.w3.org/2000/01/rdf-schema#label
-http://GP-onto.fi.upm.es/exercise2#Madrid 	http://www.w3.org/2000/01/rdf-schema#label 	Madrid 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	GP_Santiago_Instance_74 	http://www.w3.org/2000/01/rdf-schema#label
-http://GP-onto.fi.upm.es/exercise2#Madrid 	http://GP-onto.fi.upm.es/exercise2#isLocatedAtPoint 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	GP_Santiago_Instance_74 	http://www.w3.org/2000/01/rdf-schema#label
-http://GP-onto.fi.upm.es/exercise2#Madrid 	http://GP-onto.fi.upm.es/exercise2#inProvince 	Madrid 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	GP_Santiago_Instance_74 	http://www.w3.org/2000/01/rdf-schema#label
-http://GP-onto.fi.upm.es/exercise2#Madrid 	http://www.w3.org/1999/02/22-rdf-syntax-ns#type 	http://GP-onto.fi.upm.es/exercise2#City 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	555.0 	http://GP-onto.fi.upm.es/exercise2#hasAltitude
-http://GP-onto.fi.upm.es/exercise2#Madrid 	http://www.w3.org/2000/01/rdf-schema#label 	Madrid 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	555.0 	http://GP-onto.fi.upm.es/exercise2#hasAltitude
-http://GP-onto.fi.upm.es/exercise2#Madrid 	http://GP-onto.fi.upm.es/exercise2#isLocatedAtPoint 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	555.0 	http://GP-onto.fi.upm.es/exercise2#hasAltitude
-http://GP-onto.fi.upm.es/exercise2#Madrid 	http://GP-onto.fi.upm.es/exercise2#inProvince 	Madrid 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_74 	555.0 	http://GP-onto.fi.upm.es/exercise2#hasAltitude
+describe    ?Concept   where {?Concept rdfs:label "Madrid"
+}  LIMIT 100 
+Aitor Upm:
+This document contains 5 facts in HTML Microdata format.
+
+A generic web browser may not display them properly but the document can be saved on disk and used by some appropriate program or sent to a third party. Use "Save As" or "Send To" menu item of the browser; choose "HTML" file type, not "text file" or "web archive".
+
+The rest of the document may look like garbage for humans or not displayed by the browser.
+Prefix  Namespace IRI
+xsdh  http://www.w3.org/2001/XMLSchema#
+n3  http://www.w3.org/2000/01/rdf-schema#
+n2  http://GP-onto.fi.upm.es/exercise2#
+rdf  http://www.w3.org/1999/02/22-rdf-syntax-ns#
+
+Subject Item
+    n2:GP_Santiago_Instance_72
+n2:hasEnd
+    n2:Madrid 
+
+Subject Item
+    n2:Madrid
+rdf:type
+    n2:City 
+n3:label
+    Madrid 
+n2:isLocatedAtPoint
+    n2:GP_Santiago_Instance_74 
+n2:inProvince
+    Madrid
 13_
 CONSTRUCT
 {
