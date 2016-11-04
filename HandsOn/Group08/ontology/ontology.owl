@@ -1,0 +1,158 @@
+@prefix : <http://www.linked-data-deportemadrid.org/group08/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.linked-data-deportemadrid.org/group08/ontology/> .
+
+<http://www.linked-data-deportemadrid.org/group08/ontology/> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#time
+xsd:time rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/celebratesIn
+<http://www.linked-data-deportemadrid.org/group08/resource/celebratesIn> rdf:type owl:ObjectProperty ;
+                                                                         rdfs:domain :Actividad ;
+                                                                         rdfs:range :Instalacion .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/isInBarrio
+<http://www.linked-data-deportemadrid.org/group08/resource/isInBarrio> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:domain :Distrito ;
+                                                                       rdfs:range :Barrio .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/isInCalle
+<http://www.linked-data-deportemadrid.org/group08/resource/isInCalle> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain :Instalacion ;
+                                                                      rdfs:range :Calle .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/isInDistrito
+<http://www.linked-data-deportemadrid.org/group08/resource/isInDistrito> rdf:type owl:ObjectProperty ;
+                                                                         rdfs:domain :Calle ;
+                                                                         rdfs:range :Distrito .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/isInLocalidad
+<http://www.linked-data-deportemadrid.org/group08/resource/isInLocalidad> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:domain :Barrio ;
+                                                                          rdfs:range :Localidad .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/isInProvincia
+<http://www.linked-data-deportemadrid.org/group08/resource/isInProvincia> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:domain :Localidad ;
+                                                                          rdfs:range :Provincia .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/coordenadaX
+<http://www.linked-data-deportemadrid.org/group08/resource/coordenadaX> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain :Instalacion ;
+                                                                        rdfs:range xsd:string .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/coordenadaY
+<http://www.linked-data-deportemadrid.org/group08/resource/coordenadaY> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain :Instalacion ;
+                                                                        rdfs:range xsd:string .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/descripcion
+<http://www.linked-data-deportemadrid.org/group08/resource/descripcion> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain :Actividad ,
+                                                                                    :Instalacion ;
+                                                                        rdfs:range xsd:string .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/fechaFin
+<http://www.linked-data-deportemadrid.org/group08/resource/fechaFin> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:domain :Actividad ;
+                                                                     rdfs:range xsd:dateTime .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/fechaInicio
+<http://www.linked-data-deportemadrid.org/group08/resource/fechaInicio> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain :Actividad ;
+                                                                        rdfs:range xsd:dateTime .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/hora
+<http://www.linked-data-deportemadrid.org/group08/resource/hora> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain :Actividad ;
+                                                                 rdfs:range xsd:time .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/nombre
+<http://www.linked-data-deportemadrid.org/group08/resource/nombre> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain :Actividad ,
+                                                                               :Instalacion ;
+                                                                   rdfs:range xsd:string .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/precio
+<http://www.linked-data-deportemadrid.org/group08/resource/precio> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain :Actividad ;
+                                                                   rdfs:range xsd:decimal .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/tipo
+<http://www.linked-data-deportemadrid.org/group08/resource/tipo> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain :Actividad ;
+                                                                 rdfs:range xsd:string .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/resource/web
+<http://www.linked-data-deportemadrid.org/group08/resource/web> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain :Actividad ,
+                                                                            :Instalacion ;
+                                                                rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.linked-data-deportemadrid.org/group08/ontology/Actividad
+:Actividad rdf:type owl:Class .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/ontology/Barrio
+:Barrio rdf:type owl:Class .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/ontology/Calle
+:Calle rdf:type owl:Class .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/ontology/Distrito
+:Distrito rdf:type owl:Class .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/ontology/Instalacion
+:Instalacion rdf:type owl:Class .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/ontology/Localidad
+:Localidad rdf:type owl:Class .
+
+
+###  http://www.linked-data-deportemadrid.org/group08/ontology/Provincia
+:Provincia rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
