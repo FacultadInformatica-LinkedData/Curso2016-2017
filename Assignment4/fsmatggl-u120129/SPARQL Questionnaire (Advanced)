@@ -1,0 +1,60 @@
+1. Dame todas las propiedades aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+select distinct ?p
+where {
+?s a <http://dbpedia.org/ontology/Politician>.
+?s ?p ?o.
+}
+
+2. Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+select distinct ?p
+where {
+?s a <http://dbpedia.org/ontology/Politician>.
+?s ?p ?o.
+filter (?p != rdf:type)
+}
+
+3. ¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician
+
+select count (distinct ?o) as ?count
+where {
+?s a <http://dbpedia.org/ontology/Politician>.
+?s ?p ?o.
+filter (?p != rdf:type)
+}
+
+4. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime cuántos valores distintos toman en dichas instancias.
+
+select ?p count (distinct ?o) as ?count
+where {
+?s a <http://dbpedia.org/ontology/Politician>.
+?s ?p ?o.
+filter (?p != rdf:type)
+}
+
+5. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime la media de valores distintos que toman en dichas instancias.
+
+select avg(?os) as ?avg
+where 
+{
+select ?p count (distinct ?o) as ?os
+where{
+?s a <http://dbpedia.org/ontology/Politician>.
+?s ?p ?o.
+filter (?p != rdf:type)
+}
+}
+
+6. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor
+
+select ?p max(?os) as ?max
+where{
+select ?p count (distinct ?o) as ?os
+where{
+?s a <http://dbpedia.org/ontology/Politician> .
+?s ?p ?o
+filter (?p != rdf:type)
+}
+}
+ORDER BY DESC(?max)

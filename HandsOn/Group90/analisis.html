@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Grupo90"/>
+		<title> Web Semantica and Linked Data: Análisis del Data Set </title>
+	</head>
+	<body>
+		<h2>Análisis de la fuente y licencia de los datos:</h2>
+		
+			<li> El data set recoge información sobre los diferentes museos, exposiciones, eventos, etc que se producen en Leeds.</li>
+			<li> Las columnas se organizan en: Extract date, Organisation URI, Organisation label, Service type URI, Service type label, Programme , Event title , Event description , Event type, Site name, Month,Date and time, Audience / Type, Ticket price y Booking information.</li>
+			<li> En total hay 437 entradas en el Data Set. </li>	
+			<br>
+			
+
+				 <table>
+				 <TABLE BORDER="3" CELLSPACING="3" WIDTH="70%"> 
+ 					<tr><TH BGCOLOR="#CEE3F6">Nombre</th><TH BGCOLOR="#CEE3F6">Tipo</th><TH BGCOLOR="#CEE3F6">Información</th>
+ 					</tr>
+ 					<tr> <td>Organisation URI</td><td>String</td><td>URI de la organizadora del evento</td></tr>
+ 					<tr> <td>Organisation Label</td><td>String</td><td>Nombre de la localidad</td></tr>
+ 					<tr> <td>Service type URI</td><td>String</td><td>URI del tipo de servicio</td></tr>
+ 					<tr> <td>Service type label</td><td>String</td><td>Nombre del tipo de servicio</td></tr>
+ 					<tr> <td>Programme</td><td>String</td><td>Tipo del programa</td></tr>
+ 					<tr> <td>Event title</td><td>String</td><td>Titulo del evento</td></tr>
+ 					<tr> <td>Event description</td><td>String</td><td>Descripción del evento</td></tr>
+ 					<tr> <td>Event type</td><td>String</td><td>Tipo del evento</td></tr>
+ 					<tr> <td>Site name</td><td>String</td><td>Lugar del evento</td></tr>
+ 					<tr> <td>Month</td><td>String</td><td>Mes del evento</td></tr>
+ 					<tr> <td>Date and time</td><td>String</td><td>Comentario sobre la hora de inicio y la duración del evento</td></tr>
+ 					<tr> <td>Audience/Type</td><td>String</td><td>Tipo de público</td></tr>
+ 					<tr> <td>Ticket price</td><td>String</td><td>Precio del evento</td></tr>
+ 					<tr> <td>Booking information</td><td>String</td><td>Teléfono y mail de reserva</td></tr>
+ 					
+ 				</table>
+
+ 		<h2>Análisis de la licencia sobre los datos:</h2>
+
+ 	 	<body>
+ 	 		El data set está bajo la licencia Open Goverment License for public sector information.<br> 
+
+ 	 		Esta licencia nos permite:<br> 
+ 	 		
+ 	 		<li>Copiar, publicar, distribuir y transmitir la informacion.</li> 
+ 	 		<li>Adaptar la información.</li> 
+ 	 		<li>Aprovechar comercialmente o no la información.</li> 
+ 	 		
+ 	 		Se debe:<br> 
+
+ 	 		<li>Indicar la fuente de la información.</li> 
+ 	 
+ 	
+ 	 		</body>
+		<h2>Análisis de la estrategia de nombrado:</h2>
+		
+		<body>
+			El nivel superior en nuestra estretegia de nombrado de recursos es: www.websemG90.es<BR> <br>
+
+<table>
+ <TABLE BORDER="3" CELLSPACING="3" WIDTH="70%"> 
+<tr> <TH BGCOLOR="#CEE3F6">Entidad</th><TH BGCOLOR="#CEE3F6">URI</th></tr>
+<tr> <th>Evento</th><th>www.websemG90.es/resource/Evento/"eventoId"</th></tr>
+<tr> <th>Servicio</th><th>www.websemG90.es/resource/Servicio/"servicioId"</th></tr>
+<tr> <th>Organizador</th><th>www.websemG90.es/resource/Organizador/"organizadorId"</th></tr>
+</table>
+<br>
+<br>
+<table>
+ <TABLE BORDER="3" CELLSPACING="3" WIDTH="70%"> 
+<tr> <TH BGCOLOR="#CEE3F6">Data Properties</th><TH BGCOLOR="#CEE3F6">URI</th></tr>
+<tr> <th>Tipo Evento</th><th>www.websemG90.es/ontology#tipoEvento</th></tr>
+<tr> <th>Descripcion</th><th>www.websemG90.es/ontology#descripcion</th></tr>
+<tr> <th>Programa</th><th>www.websemG90.es/ontology#programa</th></tr>
+<tr> <th>Nombre del evento</th><th>www.websemG90.es/ontology#nomEvento</th></tr>
+<tr> <th>Mes</th><th>www.websemG90.es/ontology#mesEvento</th></tr>
+<tr> <th>Date Evento</th><th>www.websemG90.es/ontology#dateEvento</th></tr>
+<tr> <th>Lugar Evento</th><th>www.websemG90.es/ontology#lugarEvento</th></tr>
+<tr> <th>Publico</th><th>www.websemG90.es/ontology#publicoEvento</th></tr>
+<tr> <th>Info de reserva</th><th>www.websemG90.es/ontology#infoReserva</th></tr>
+<tr> <th>Nombre Servicio</th><th>www.websemG90.es/ontology#nomServicio</th></tr>
+<tr> <th>Nombre Organizador</th><th>www.websemG90.es/ontology#nomOrg</th></tr>
+</table>
+		</body>
+
+	</body>
+</HTML>

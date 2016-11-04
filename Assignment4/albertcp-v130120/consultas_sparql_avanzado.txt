@@ -1,0 +1,28 @@
+;;Author: Alberto Camporredondo
+
+#Avanzado 1
+select distinct ?PropertiesOfPolitician
+where{
+  ?Instances a <http://dbpedia.org/ontology/Politician> .
+  ?Instances ?PropertiesOfPolitician []
+}
+
+#Avanzado 2
+select distinct ?PropertiesOfPolitician
+where{
+  ?Instances a <http://dbpedia.org/ontology/Politician> .
+   ?Instances ?PropertiesOfPolitician [] .
+   FILTER (?PropertiesOfPolitician != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>)
+}
+
+#Avanzado 3
+select distinct (count(?PropertiesOfPolitician) as ?TotalNumber)
+where{
+  ?Instances a <http://dbpedia.org/ontology/Politician> .
+  ?Instances ?PropertiesOfPolitician [] .
+  FILTER (?PropertiesOfPolitician != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>)
+}
+
+#Avanzado 4
+#Avanzado 5
+#Avanzado 6
