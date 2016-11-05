@@ -1,0 +1,249 @@
+Prefix(:=<http://www.linkedData_2016_2017_Group13/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.linkedData_2016_2017_Group13/>
+Annotation(rdfs:comment "Ontología que representa las entidades/recursos deducidas de los datos obtenidos y analizados de los dataset, así como las object properties y data properties a las que éstos astán asociadas.")
+
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/URL>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/borough>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/county>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/golfCourseURL>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/healthFacility>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/library>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/libraryURL>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/natureCenterURL>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/neighbourhood>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/nycSubwayURL>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/parkFacilityURL>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/region>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/school>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/schoolDistrict>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/subwayEntrance>))
+Declaration(Class(<http://www.linkedData_2016_2017_Group13/resource/subwayLine>))
+Declaration(ObjectProperty(:pertainTo_borough))
+Declaration(ObjectProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_borough>))
+Declaration(ObjectProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_url>))
+Declaration(ObjectProperty(<http://www.linkedData_2016_2017_Group13/ontology#pertainTo_county>))
+Declaration(ObjectProperty(<http://www.linkedData_2016_2017_Group13/ontology#pertainTo_region>))
+Declaration(ObjectProperty(<http://www.linkedData_2016_2017_Group13/ontology#pertainTo_schoolDistrict>))
+Declaration(ObjectProperty(<http://www.linkedData_2016_2017_Group13/ontology#pertainTo_subwayLine>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_address>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_beach>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_campZone>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_golfCourse>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_healthFacilityType>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_houseNumber>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_latitude>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_longitude>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_name>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_numberRegion>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_organizationType>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_organizationalCode>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_parkFacilityType>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_phone>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_playGround>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#has_zipCode>))
+Declaration(DataProperty(<http://www.linkedData_2016_2017_Group13/ontology#is_natureCenter>))
+Declaration(Datatype(<http://www.w3.org/2003/01/geo/wgs84_pos#lat>))
+Declaration(Datatype(<http://www.w3.org/2003/01/geo/wgs84_pos#long>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :pertainTo_borough (:pertainTo_borough)
+
+SubObjectPropertyOf(:pertainTo_borough owl:topObjectProperty)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_address> (<http://www.linkedData_2016_2017_Group13/ontology#has_address>)
+
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_address> xsd:string)
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_beach> (<http://www.linkedData_2016_2017_Group13/ontology#has_beach>)
+
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_beach> DataOneOf("N" "Y"))
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_campZone> (<http://www.linkedData_2016_2017_Group13/ontology#has_campZone>)
+
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_campZone> DataOneOf("N" "Y"))
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_golfCourse> (<http://www.linkedData_2016_2017_Group13/ontology#has_golfCourse>)
+
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_golfCourse> DataOneOf("N" "Y"))
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_healthFacilityType> (<http://www.linkedData_2016_2017_Group13/ontology#has_healthFacilityType>)
+
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_healthFacilityType> DataOneOf("Acute Care Hospital" "Child Health Center" "Diagnostic & Treatment Center" "Nursing Home"))
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_houseNumber> (<http://www.linkedData_2016_2017_Group13/ontology#has_houseNumber>)
+
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_houseNumber> xsd:decimal)
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_houseNumber> DataOneOf("[0-9]*-[0-9]*"))
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_name> (<http://www.linkedData_2016_2017_Group13/ontology#has_name>)
+
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_name> xsd:string)
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_numberRegion> (<http://www.linkedData_2016_2017_Group13/ontology#has_numberRegion>)
+
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_numberRegion> DataOneOf("1" "10" "11" "12" "2" "3" "4" "5" "6" "7" "8" "9"))
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_organizationType> (<http://www.linkedData_2016_2017_Group13/ontology#has_organizationType>)
+
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_organizationType> DataOneOf("Academy" "HighSchool" "PublicSchool" "RegionalSchool" "StateAgency"))
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_organizationalCode> (<http://www.linkedData_2016_2017_Group13/ontology#has_organizationalCode>)
+
+SubDataPropertyOf(<http://www.linkedData_2016_2017_Group13/ontology#has_organizationalCode> owl:topDataProperty)
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_organizationalCode> xsd:decimal)
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_parkFacilityType> (<http://www.linkedData_2016_2017_Group13/ontology#has_parkFacilityType>)
+
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_parkFacilityType> DataOneOf("Marine Facility" "Other" "State Historic Park" "State Historic Site" "State Park" "State Park Preserve"))
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_phone> (<http://www.linkedData_2016_2017_Group13/ontology#has_phone>)
+
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_phone> DataOneOf("[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"))
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_playGround> (<http://www.linkedData_2016_2017_Group13/ontology#has_playGround>)
+
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_playGround> DataOneOf("N" "Y"))
+
+# Data Property: <http://www.linkedData_2016_2017_Group13/ontology#has_zipCode> (<http://www.linkedData_2016_2017_Group13/ontology#has_zipCode>)
+
+DataPropertyRange(<http://www.linkedData_2016_2017_Group13/ontology#has_zipCode> xsd:decimal)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/URL> (<http://www.linkedData_2016_2017_Group13/resource/URL>)
+
+AnnotationAssertion(rdfs:comment <http://www.linkedData_2016_2017_Group13/resource/URL> "The Uniform Resource Locator of an entity")
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/borough> (<http://www.linkedData_2016_2017_Group13/resource/borough>)
+
+AnnotationAssertion(rdfs:comment <http://www.linkedData_2016_2017_Group13/resource/borough> "Recurso que define e identifica a los municipios de la ciudad de Nueva York"@es)
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/borough> ObjectExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#pertainTo_county> <http://www.linkedData_2016_2017_Group13/resource/county>))
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/county> (<http://www.linkedData_2016_2017_Group13/resource/county>)
+
+AnnotationAssertion(rdfs:comment <http://www.linkedData_2016_2017_Group13/resource/county> "Recurso que define e identifica los condados del estado de Nueva York"@es)
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/county> ObjectExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#pertainTo_region> <http://www.linkedData_2016_2017_Group13/resource/region>))
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/golfCourseURL> (<http://www.linkedData_2016_2017_Group13/resource/golfCourseURL>)
+
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/golfCourseURL> <http://www.linkedData_2016_2017_Group13/resource/URL>)
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/healthFacility> (<http://www.linkedData_2016_2017_Group13/resource/healthFacility>)
+
+AnnotationAssertion(rdfs:comment <http://www.linkedData_2016_2017_Group13/resource/healthFacility> "Recurso que define e identifica a las instalaciones de sanidad \"pública\""@es)
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/healthFacility> ObjectExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_borough> <http://www.linkedData_2016_2017_Group13/resource/borough>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/healthFacility> DataSomeValuesFrom(<http://www.linkedData_2016_2017_Group13/ontology#has_phone> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/healthFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_address> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/healthFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_healthFacilityType> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/healthFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_latitude> <http://www.w3.org/2003/01/geo/wgs84_pos#lat>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/healthFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_longitude> <http://www.w3.org/2003/01/geo/wgs84_pos#long>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/healthFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_name> xsd:string))
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/library> (<http://www.linkedData_2016_2017_Group13/resource/library>)
+
+AnnotationAssertion(rdfs:comment <http://www.linkedData_2016_2017_Group13/resource/library> "Recurso que identifica las librerías de Nueva York"@es)
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/library> ObjectSomeValuesFrom(<http://www.linkedData_2016_2017_Group13/ontology#has_url> <http://www.linkedData_2016_2017_Group13/resource/libraryURL>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/library> ObjectExactCardinality(1 :pertainTo_borough <http://www.linkedData_2016_2017_Group13/resource/borough>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/library> ObjectExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_borough> <http://www.linkedData_2016_2017_Group13/resource/borough>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/library> DataSomeValuesFrom(<http://www.linkedData_2016_2017_Group13/ontology#has_houseNumber> xsd:decimal))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/library> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_address> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/library> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_latitude> <http://www.w3.org/2003/01/geo/wgs84_pos#lat>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/library> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_longitude> <http://www.w3.org/2003/01/geo/wgs84_pos#long>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/library> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_name> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/library> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_zipCode> xsd:decimal))
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/libraryURL> (<http://www.linkedData_2016_2017_Group13/resource/libraryURL>)
+
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/libraryURL> <http://www.linkedData_2016_2017_Group13/resource/URL>)
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/natureCenterURL> (<http://www.linkedData_2016_2017_Group13/resource/natureCenterURL>)
+
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/natureCenterURL> <http://www.linkedData_2016_2017_Group13/resource/URL>)
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/neighbourhood> (<http://www.linkedData_2016_2017_Group13/resource/neighbourhood>)
+
+AnnotationAssertion(rdfs:comment <http://www.linkedData_2016_2017_Group13/resource/neighbourhood> "Recurso que define e identifica a un barrio, en este caso de Nueva York"@es)
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/neighbourhood> ObjectExactCardinality(1 :pertainTo_borough <http://www.linkedData_2016_2017_Group13/resource/borough>))
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/nycSubwayURL> (<http://www.linkedData_2016_2017_Group13/resource/nycSubwayURL>)
+
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/nycSubwayURL> <http://www.linkedData_2016_2017_Group13/resource/URL>)
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/parkFacilityURL> (<http://www.linkedData_2016_2017_Group13/resource/parkFacilityURL>)
+
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/parkFacilityURL> <http://www.linkedData_2016_2017_Group13/resource/URL>)
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/region> (<http://www.linkedData_2016_2017_Group13/resource/region>)
+
+AnnotationAssertion(rdfs:comment <http://www.linkedData_2016_2017_Group13/resource/region> "Recurso que define e identifica a una region, en este caso del estado de Nueva York"@es)
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/school> (<http://www.linkedData_2016_2017_Group13/resource/school>)
+
+AnnotationAssertion(rdfs:comment <http://www.linkedData_2016_2017_Group13/resource/school> "Recurso que define e identifica a las escuelas de Nueva York"@es)
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/school> ObjectExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#pertainTo_schoolDistrict> <http://www.linkedData_2016_2017_Group13/resource/schoolDistrict>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/school> DataSomeValuesFrom(<http://www.linkedData_2016_2017_Group13/ontology#has_phone> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/school> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_address> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/school> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_latitude> <http://www.w3.org/2003/01/geo/wgs84_pos#lat>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/school> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_longitude> <http://www.w3.org/2003/01/geo/wgs84_pos#long>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/school> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_name> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/school> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_organizationType> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/school> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_organizationalCode> xsd:decimal))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/school> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_zipCode> xsd:decimal))
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/schoolDistrict> (<http://www.linkedData_2016_2017_Group13/resource/schoolDistrict>)
+
+AnnotationAssertion(rdfs:comment <http://www.linkedData_2016_2017_Group13/resource/schoolDistrict> "Recurso que define e identifica los distritos escolares de Nueva York"@es)
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/schoolDistrict> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_name> xsd:string))
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> (<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility>)
+
+AnnotationAssertion(rdfs:comment <http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> "Recurso que define e identifica a los State Parks de Nueva York. Donde State Park hace referencia a instalaciones de diversa indole como parques, reservas naturales, playas, etc. propiedad del estado y mantenidas por el."@es)
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> ObjectSomeValuesFrom(<http://www.linkedData_2016_2017_Group13/ontology#has_url> <http://www.linkedData_2016_2017_Group13/resource/golfCourseURL>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> ObjectSomeValuesFrom(<http://www.linkedData_2016_2017_Group13/ontology#has_url> <http://www.linkedData_2016_2017_Group13/resource/natureCenterURL>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> ObjectSomeValuesFrom(<http://www.linkedData_2016_2017_Group13/ontology#has_url> <http://www.linkedData_2016_2017_Group13/resource/nycSubwayURL>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> ObjectSomeValuesFrom(<http://www.linkedData_2016_2017_Group13/ontology#has_url> <http://www.linkedData_2016_2017_Group13/resource/parkFacilityURL>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> ObjectExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#pertainTo_county> <http://www.linkedData_2016_2017_Group13/resource/county>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_beach> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_campZone> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_golfCourse> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_latitude> <http://www.w3.org/2003/01/geo/wgs84_pos#lat>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_longitude> <http://www.w3.org/2003/01/geo/wgs84_pos#long>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_name> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_parkFacilityType> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_playGround> xsd:string))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/stateParkFacility> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#is_natureCenter> xsd:string))
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/subwayEntrance> (<http://www.linkedData_2016_2017_Group13/resource/subwayEntrance>)
+
+AnnotationAssertion(rdfs:comment <http://www.linkedData_2016_2017_Group13/resource/subwayEntrance> "Recurso que define e identifica las bocas de metro de la ciudad de Nueva York"@es)
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/subwayEntrance> ObjectSomeValuesFrom(<http://www.linkedData_2016_2017_Group13/ontology#has_url> <http://www.linkedData_2016_2017_Group13/resource/URL>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/subwayEntrance> ObjectSomeValuesFrom(<http://www.linkedData_2016_2017_Group13/ontology#pertainTo_subwayLine> <http://www.linkedData_2016_2017_Group13/resource/subwayLine>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/subwayEntrance> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_latitude> <http://www.w3.org/2003/01/geo/wgs84_pos#lat>))
+SubClassOf(<http://www.linkedData_2016_2017_Group13/resource/subwayEntrance> DataExactCardinality(1 <http://www.linkedData_2016_2017_Group13/ontology#has_longitude> <http://www.w3.org/2003/01/geo/wgs84_pos#long>))
+
+# Class: <http://www.linkedData_2016_2017_Group13/resource/subwayLine> (<http://www.linkedData_2016_2017_Group13/resource/subwayLine>)
+
+AnnotationAssertion(rdfs:comment <http://www.linkedData_2016_2017_Group13/resource/subwayLine> "Recurso que define e identifica las lineas de metro de Nueva York"@es)
+
+
+)
