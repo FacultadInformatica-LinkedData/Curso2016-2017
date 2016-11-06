@@ -1,0 +1,78 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column NumeroCuentaCorriente",
+    "columnName": "NumeroCuentaCorriente"
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Municipio",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Burgos, LeÃ³n, Salamanca, Valladolid"
+        ],
+        "to": "Burgos"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Municipio",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Municipio",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Valladolid, Salamanca"
+        ],
+        "to": "Valladolid"
+      }
+    ]
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Municipio to Provincia",
+    "oldColumnName": "Municipio",
+    "newColumnName": "Provincia"
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DerivaBolsa",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DerivaBolsa",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Si"
+        ],
+        "to": "True"
+      }
+    ]
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DerivaBolsa",
+    "columnName": "DerivaBolsa"
+  }
+]
