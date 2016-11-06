@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Analysis</title>
+</head>
+
+<body>
+	<h1>Análisis</h1>
+
+	<h2>Análisis realizado sobre los datasets</h2>
+	<p>A continuación, proporcionamos una descripción de los campos que definen los tres conjuntos de datos seleccionados.</p>
+
+	<h3>agenda-actividades-deportes.csv</h3>
+	<ol>
+		<li>ID-EVENTO: es un campo clave, dentro de la web municipal, para uso interno.</li>
+		<li>TITULO: denominación del evento al que se refiere.</li>
+		<li>PRECIO: coste del evento/actividad. En muchos casos se trata de actividades gratuitas, como por ejemplo todas las realizadas
+			y organizadas en Bibliotecas Municipales, por lo que el campo aparecerá vacío en muchas ocasiones.</li>
+		<li>GRATUITO: campo booleano, en el que figurará un “0” cuando no se ha marcado o un “1” cuando se marque el evento como gratuito.</li>
+		<li>LARGA-DURACION: campo booleano en el que figurará un “0” cuando no se ha marcado o un “1” si se trata de un evento que
+			se desarrolla a lo largo del tiempo, como por ejemplo, Talleres, exposiciones, etc.</li>
+		<li>DIAS-SEMANA: son las iniciales de cada día de la semana en los que se desarrolla el evento. L,M,X,J,V,S,D. Esta codificación
+			solo es válida para eventos de larga duración (“larga-duracion=1”)</li>
+		<li>DIAS-EXCLUIDOS: en eventos de larga duración, son los días concretos que no se celebra la misma. Es una fecha con el formato
+			D/M/AAAA. Si existiesen varios días que no se celebran, se mostrarían las fechas separadas por el carácter “punto y coma“</li>
+		<li>FECHA: campo fecha de inicio del evento, con estructura (aaaa-mm-dd hh:mm:ss.0). Ej.: 2014-05-29 00:00:00.0</li>
+		<li>FECHA-FIN: campo fecha de fin del evento, con estructura (aaaa-mm-dd hh:mm:ss.0). Ej.: 2014-05-29 00:00:00.0</li>
+		<li>HORA: campo en el que se indica la hora de incio del evento, con la estructura (hh:mm) Ej.:18:00 </li>
+		<li>DESCRIPCION: campo con la descripción del evento.</li>
+		<li>CONTENT-URL: nombre del recurso en Internet del evento concreto,en la web municipal www.madrid.es, para su localización.</li>
+		<li>TITULO-ACTIVIDAD: denominación del evento o la actividad a la que éste está asociado.</li>
+		<li>URL-ACTIVIDAD: nombre del recurso en Internet, en la web municipal www.madrid.es, de la actividad en la que se inscribe
+			el evento. Se accede a la ficha de dicha actividad existente en dicha web.</li>
+		<li>URL-INSTALACION: nombre del recurso en Internet, en la web municipal www.madrid.es, para su localización., de la instalación
+			donde se desarrolla el evento .Se accede a la ficha de la instalación existente en dicha web.</li>
+		<li>NOMBRE-INSTALACION: denominación de la instalación donde se desarrolla el evento.</li>
+		<li>COORDENADA-X: coordenada de 6 caracteres sobre plano de la ciudad</li>
+		<li>COORDENADA-Y: coordenada de 7 caracteres sobre plano de la ciudad</li>
+		<li>COORDENADA-LATITUD: coordenada latitud en el sistema de referencia WGS84</li>
+		<li>COORDENADA-LONGITUD: coordenada longitud en el sistema de referencia WGS84</li>
+		<li>DISTRITO: nombre del distrito donde se desarrolla la actividad.</li>
+		<li>TIPO: descripción de la tipología de la actividad. Se encuentra al final de la cadena de texto.</li>
+	</ol>
+
+	<h3>instalaciones-deportivas.csv y polideportivos.csv</h3>
+	<p>
+		Estos conjuntos de datos son publicados independientemente uno del otro. Sin embargo, comparten los mismos campos por la
+		gran similitud entre los elementos que describen. Por lo tanto, se proporcionará la misma descripción para sus campos.
+	</p>
+	<ol>
+		<li>PK: es un campo clave, dentro de la web municipal, para uso interno.</li>
+		<li>NOMBRE: denominación del equipamiento/instalación/organismo/… o entidad a la que se refiera el conjunto de datos.</li>
+		<li>DESCRIPCION-ENTIDAD: no posee contenido alguno en el conjunto de datos. Este campo se omitirá en el desarrollo de la ontología.</li>
+		<li>HORARIO: de apertura, de actividades, de secretaria, etc. Días y horario de actividad regular. Horarios de periodos excepcionales.
+			Fechas de cierre.</li>
+		<li>EQUIPAMIENTO: detalle de espacios internos especializados .Por ej. en Centros Culturales, se relacionan Salas de exposiciones,
+			aulas, auditorios, etc.</li>
+		<li>TRANSPORTE: estaciones de metro e indicación de línea; líneas de bus; estaciones de Renfe.</li>
+		<li>DESCRIPCIÓN: información adicional; por ej.: otros equipamientos con los que se comparte la sede física; información de
+			venta de entradas, etc.</li>
+		<li>ACCESIBILIDAD: 1 = accesible para personas con minusvalías; 0 = no accesible para personas con minusvalías.</li>
+		<li>CONTENT-URL: nombre del recurso en Internet, normalmente en la web municipal www.madrid.es para su localización.</li>
+		<li>NOMBRE-VIA: denominación del vial.</li>
+		<li>CLASE-VIAL: tipo de vial: calle, avenida, paseo, etc.</li>
+		<li>TIPO-NUM: V, S/N, KM.</li>
+		<li>NUM: número del equipamiento en el vial. Pueden incluir descriptivos.</li>
+		<li>PLANTA: nivel que ocupa en el inmueble.</li>
+		<li>PUERTA: puerta que ocupa en el inmueble.</li>
+		<li>ESCALERAS: escalera de acceso.</li>
+		<li>ORIENTACION: Detalles descriptivos de la dirección, si los hubiese. Por ej., “frente a”; “con vuelta a”, “acceso por”,
+			etc.
+		</li>
+		<li>LOCALIDAD: Madrid.</li>
+		<li>PROVINCIA: Madrid.</li>
+		<li>CODIGO-POSTAL: identificador postal de la instalación.</li>
+		<li>BARRIO: denominación del barrio.</li>
+		<li>DISTRITO: denominación del distrito.</li>
+		<li>COORDENADA-X: coordenada de 6 caracteres sobre plano de la ciudad</li>
+		<li>COORDENADA-Y: coordenada de 7 caracteres sobre plano de la ciudad</li>
+		<li>COORDENADA-LATITUD: coordenada latitud en el sistema de referencia WGS84</li>
+		<li>COORDENADA-LONGITUD: coordenada longitud en el sistema de referencia WGS84</li>
+		<li>TELEFONO: teléfonos de contacto</li>
+		<li>FAX: número de fax</li>
+		<li>EMAIL: dirección de correo electrónico, si la tuviese.</li>
+		<li>TIPO: descripción de la tipología de la instalación. Se encuentra al final de la cadena de texto.</li>
+	</ol>
+
+	<h2>Análisis de la licencia de los datos</h2>
+	<p>
+		Los conjuntos de datos que estamos utilizando los proporciona el <strong>portal de datos abiertos de Madrid</strong>. Según
+		su apartado de condiciones de uso: "Las condiciones generales permiten la reutilización de los documentos para fines comerciales
+		y no comerciales." El único matiz resaltado es: "Se entiende por reutilización el uso de documentos que obran en poder
+		del Ayuntamiento de Madrid, siempre que dicho uso no constituya una actividad administrativa pública." Lo que quiere decir
+		que, mientras que el uso que le demos no constituya una activdidad administrativa pública, se considerará reutilización
+		de datos y podremos hacer uso libre de ellos tanto para fines comerciales como no comerciales.
+	</p>
+	<p>
+		Para la información que nosotros generemos utilizaremos la licencia estandar de Creative Commons "CC BY". De esta manera
+		permitimos cualquier tipo de uso mientras que se reconozca la autoría del trabajo.
+	</p>
+
+	<h2>Estrategia de nombrado de los recursos</h2>
+	<p>Reglas para el nombrado de recursos</p>
+	<ol>
+		<li>Las entidades de la ontología se definirán en el espacio de nombres <strong>http://www.linked-data-deportemadrid.org/group08/ontology/</strong></li>
+		<li>Los recursos relacionados con la ontología se definirán en el espacio de nombres <strong>http://www.linked-data-deportemadrid.org/group08/resource/</strong></li>
+		<li>Los nombres de las clases de datos empezarán por mayúscula. Cada palabra adicional que se haya de concatenar se escribirá
+			inmediatamente a continuación de la anterior y con su primera letra mayúscula.</li>
+		<li>Los nombres de las propiedades estarán formados por un verbo y un objeto. El verbo identificará la relación entre el individuo
+			y el objeto, estará escrito en inglés y en minúscula. El nombre del objeto con el que relaciona la propiedad se escribirá
+			inmediatamente a continuación del verbo y con la primera letra en mayúscula. Cada palabra adicional que se haya de concatenar
+			se escribirá inmediatamente a continuación de la anterior y con su primera letra mayúscula.</li>
+	</ol>
+
+</body>
+
+</html>
