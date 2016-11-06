@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Group 05 Hands-on Assignment 2</title>
+</head>
+<body>
+	<div>
+	<!--ANALISIS DE LOS DATOS -->
+		<h1>Analyse Data Set</h1>
+		<p>
+			Debido a que todos los dataset elegidos siguen el mismo patrón y tienen las mismas entidades, se procederá al análisis de uno genérico.<br>
+			El que vamos a analizar será: <i> 200186-0-polideportivos.csv</i>
+				
+					<h3>Rangos y valores encontrados:</h3>
+						<ul>
+							<li>PK: es un campo clave, dentro de la web municipal, para uso interno.</li>
+							<li>NOMBRE: denominación del equipamiento/instalación/organismo/... o entidad a la que se refiera el conjunto de
+							datos. Valor textual (59 valores diferentes).</li>
+							<li>HORARIO: de apertura, de actividades, de secretaria, etc. Días y horario de actividad regular. Horarios de
+							periodos excepcionales .Valor textual (29 valores diferentes).</li>
+							<li>EQUIPAMIENTO: detalle de espacios internos especializados .Valor textual (46 valores diferentes -incluyendo cadena vacía-).</li>
+							<li>TRANSPORTE: estaciones de metro e indicación de línea; líneas de bus; estaciones de Renfe. Valor textual (52 valores diferentes -incluyendo cadena vacía-).</li>
+							<li>DESCRIPCION: información adicional. Valor textual (49 valores diferentes -incluyendo cadena vacía-).</li>
+							<li>ACCESIBILIDAD: valor numérico (0 -sin acceso para minusválidos- o 1 -acceso para minusválidos-)</li>
+							<li>CONTENT-URL: nombre del recurso en Internet, normalmente en la web municipal www.madrid.es .Valor textual (59 valores diferentes).</li>
+							<li>NOMBRE-VIA: denominación del vial. Valor textual (49 valores diferentes -incluyendo cadena vacía-).</li>
+							<li>CLASE-VIAL: tipo de via. Valor textual (7 valores diferentes).</li>
+							<li>TIPO-NUM: V, S/N, KM.</li>
+							<li>NUM: número del equipamiento en el vial. Valor numérico 0-260.</li>
+							<li>LOCALIDAD: un valor, MADRID.</li>
+							<li>PROVINCIA: un valor, MADRID.</li>
+							<li>CODIGO-POSTAL: valor numérico 28002-28054.</li>
+							<li>BARRIO: denominación del barrio. Valor textual (44 valores diferentes -incluyendo cadena vacía-).</li>
+							<li>DISTRITO: denominación del distrito. Valor textual (22 valores diferentes -incluyendo cadena vacía-).</li>
+							<li>COORDENADA-X: coordenada de 6 caracteres sobre plano de la ciudad. Valor numérico 0-450000.</li>
+							<li>COORDENADA-Y: coordenada de 7 caracteres sobre plano de la ciudad. Valor numérico 0-4500000.</li>
+							<li>LATITUD: coordenada latitud en el sistema de referencia WGS84. Valor numérico 40.34-40.49.</li>
+							<li>LONGITUD: coordenada longitud en el sistema de referencia WGS84. Valor numérico (-3.37)-(-3.59).</li>
+							<li>TELEFONO: teléfonos de contacto. Valor textual (59 valores diferentes).</li>
+							<li>FAX: número de fax. Valor textual (17 valores diferentes -incluyendo cadena vacía-).</li>
+							<li>EMAIL: dirección de correo electrónico, si la tuviese. Valor textual (52 valores diferentes -incluyendo cadena vacía-).</li>
+							<li>TIPO: descripción de la tipología de la instalación. Valor textual (3 valores diferentes -filtrado a 2-).</li>
+						</ul>
+		</p>
+
+	</div>
+	<div>
+	<!--ANALISIS DE LA LICENCIA -->
+		<h1>Analyse Licensing of the Data Source</h1>
+		<p>Tal y como se explica en la siguiente URL:<a href="http://datos.madrid.es/portal/site/egob/menuitem.3efdb29b813ad8241e830cc2a8a409a0/?vgnextoid=748eb054f9edb410VgnVCM1000000b205a0aRCRD&vgnextchannel=b4c412b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">http://datos.madrid.es/portal/... </a> se permite la reutilización de los documentos textuales y datos sometidos a ellas para fines comerciales y no comerciales.
+		Se deben cumplir las siguientes pautas
+		<ul>
+			<li>Citar el origen de los datos.</li>
+			<li>Usar los datos en el contexto al que corresponden.</li>
+			<li>Citar fecha de la última actualización de los datos.</li>
+			<li>Mantener al Ayuntamiento de Madrid al margen del uso realizado.</li>
+			<li>Conservar los metadatos originales.</li>
+			<li>Mantener el anonimato debido a protección de datos personales u otros motivos.</li>
+		</ul></p>
+	</div>
+	<div>
+	<!-- DEFINICION DE NOMBRES DE LOS RECURSOS -->
+		<h1>Define Resource Naming Strategy</h1>
+	
+		<h3>Clases y propiedades</h3>
+		<ul>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#nombre</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#horario</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#equipamiento</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#transportePublico</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#descripcion</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#accesoDiscapacitados</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#URL</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#tipoCalle</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#nombreCalle</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#numeroCalle</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#localidad</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#provincia</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#codigoPostal</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#barrio</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#distrito</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#latitud</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#longitud</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#telefono</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#fax</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Polideportivos#email</li>
+			</ul><br><ul>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#nombre</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#horario</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#equipamiento</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#transportePublico</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#descripcion</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#accesoDiscapacitados</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#URL</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#tipoCalle</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#nombreCalle</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#numeroCalle</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#localidad</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#provincia</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#codigoPostal</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#barrio</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#distrito</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#latitud</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#longitud</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#telefono</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#fax</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Museos#email</li>
+			</ul><br><ul>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#nombre</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#horario</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#equipamiento</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#transportePublico</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#descripcion</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#accesoDiscapacitados</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#URL</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#tipoCalle</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#nombreCalle</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#numeroCalle</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#localidad</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#provincia</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#codigoPostal</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#barrio</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#distrito</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#latitud</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#longitud</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#telefono</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#fax</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales#email</li>
+			</ul><br><ul>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#nombre</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#horario</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#equipamiento</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#transportePublico</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#descripcion</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#accesoDiscapacitados</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#URL</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#tipoCalle</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#nombreCalle</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#numeroCalle</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#localidad</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#provincia</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#codigoPostal</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#barrio</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#distrito</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#latitud</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#longitud</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#telefono</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#fax</li>
+			<li>madridOcio.linkeddata.com/ontologyGroup5/Bibliotecas#email</li>
+		</ul>	
+	<h3>Clave</h3>
+		<ul>
+			<li>madridOcio.linkeddata.com/resource/Polideportivos/[PK]</li>
+			<li>madridOcio.linkeddata.com/resource/Museos/[PK]</li>
+			<li>madridOcio.linkeddata.com/resource/CentrosCulturales/[PK]</li>	
+			<li>madridOcio.linkeddata.com/resource/Bibliotecas/[PK]</li>	
+		</ul>
+
+</div>
+</body>
+</html>
+
+

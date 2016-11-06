@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="es">
+  <head>
+    <title>Análisis</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="title" content=""/>
+    <meta name="author" content="Grupo7"/>
+    <meta name="description" content=""/>
+    <style type="text/css">
+	body{
+		padding: 0 15px;
+	}
+	li{
+		padding-top:10px;
+		margin-left:40px;
+		
+	}
+    </style>
+  </head>
+  <body>
+      <div id="content">
+        <h1 class="title">Group 7</h1>
+        <div id="table-of-contents">
+          <h2>Índice</h2>
+          <div id="">
+            <ul>
+              <li><a href="#sec-1">1 Análisis</a></li>
+              <li><a href="#sec-2">2 Licencia</a></li>
+              <li><a href="#sec-3">3 Estrategia</a></li>
+            </ul>
+          </div>
+        </div>
+    <div id="sec-1">
+     <h2>1. Análisis</h2>	
+	 Para nuestro trabajo consideramos usar dos datasets, los cuales tienen estructuras distintas, pero tienen algunos campos en común.<br />
+	 Para el dataset de empleo público, tenemos los siguientes campos <br />
+	 Título,Clasificador,Tipo,Tematica,Organismo gestor,NumeroPlazas,Ingreso libre (acceso general),Minusvalía,Promoción interna (acceso general),Tasas,NumeroCuentaCorriente,Devolución/Exención Tasas,Solicitud,LugarDePresentacion,Municipio,Plazo de presentación,Fecha de inicio,FechaFinalizacion,Requisitos necesarios,PROCEDIMIENTO DE SELECCIÓN,DerivaBolsa,Información adicional,Identificador,ultimaActualizacion,Enlace al contenido<br />
+	 Y para el dataset de ofertas de empleo tenemos los siguientes: <br />
+	 Título,Tematica,Provincia,Fecha de publicación,Descripción,ProvinciaAlternativa,FuenteContenido,LocalidadAsset,DocumentosAsociados,Identificador,ultimaActualizacion,Enlace al contenido<br />
+	 A continuación se procede a analizar los tipos de datos y sus posibles valores<br />
+	 <table>
+		<tr> <th>Nombre</th><th>Tipo</th><th>Comentarios </th><th>Problemas</th>
+		</tr>
+		<tr> <td>Titulo</td><td>String</td><td>...</td></tr>
+		<tr> <td>Clasificador</td><td>String</td><td>..</td></tr>
+		<tr> <td>Tipo</td><td>String</td><td>[Bolsa de empleo, convocatoria]</td></tr>
+		<tr> <td>Temática</td><td>String</td><td>[Bolsa de empleo, empleado público, empleo]</td><td>En el csv de ofertas de empleo, se repite el valor "empleo" para todas las entradas</tr>
+		<tr> <td>Organismo gestor</td><td>String</td><td>..</td></tr>
+		<tr> <td>NumeroPlazas</td><td>Numeric</td><td>[1,242]</td></tr>
+		<tr> <td>Ingreso libre(acceso general)</td><td>Numeric</td><td>[1,218]</td></tr>
+		<tr> <td>Minusvalía</td><td>Numeric</td><td>[1,15]</td><td>Mezcla texto con números </td></tr>
+		<tr> <td>Promoción interna(acceso general)</td><td>Numeric</td><td>[2,36]</td></tr>
+		<tr> <td>Tasas</td><td>String</td><td>..</td></tr>
+		<tr> <td>NumeroCuentaCorriente</td><td>String</td><td>..</td></tr>
+		<tr> <td>Devolución/Exención de tasas</td><td>String</td><td>..</td></tr>
+		<tr> <td>Solicitud</td><td>String</td><td>..</td></tr>
+		<tr> <td>LugarDePresentacion</td><td>String</td><td>..</td></tr>
+		<tr> <td>Municipio</td><td>String</td><td>..</td></tr>
+		<tr> <td>Plazo de presentación</td><td>String</td><td>..</td></tr>
+		<tr> <td>Fecha de inicio</td><td>Date</td><td>[04/09/2006,14/10/2016]</td></tr>
+		<tr> <td>FechaFinalizacion</td><td>Date</td><td>[24/09/2006,28/10/2016]</td></tr>
+		<tr> <td>Requisitos necesarios</td><td>String</td><td>..</td></tr>
+		<tr> <td>PROCEDIMIENTO</td><td>String</td><td>..</td></tr>
+		<tr> <td>DerivaBolsa</td><td>String</td><td>[si]</td><td>En vez de poner no, dejan el valor en blanco</td></tr>
+		<tr> <td>Información adicional</td><td>String</td><td>..</td></tr>
+		<tr> <td>Identificador</td><td>String</td><td>..</td></tr>
+		<tr> <td>ultimaActualizacion</td><td>Date</td><td>[24/05/2011,20/10/2016]</td></tr>
+		<tr> <td>Enlace al contenido</td><td>String</td><td>..</td></tr>
+		<tr> <td>Provincia</td><td>String</td><td>..</td></tr>
+		<tr> <td>Fecha de publicación</td><td>Date</td><td>[10/03/2015,20/10/2016]</td></tr>
+		<tr> <td>Descripción</td><td>String</td><td>..</td></tr>
+		<tr> <td>ProvinciaAlternativa</td><td>String</td><td>..</td></tr>
+		<tr> <td>FuenteContenido</td><td>String</td><td>[ECYL, Internet/Prensa, Organismo oficial, Red EURES]</td></tr>
+		<tr> <td>LocalidadAsset</td><td>String</td><td>..</td><td>No hay diferencia respecto a provincia</td></tr>
+		<tr> <td>DocumentosAsociados</td><td>String</td><td>..</td></tr>
+						
+	 </table>
+
+ </div>
+ 	<div id="sec-2">
+  	<h2>2. Licencia</h2>
+	
+	Las condiciones generales nos permiten:
+	
+	<ul>Ser libres de :
+	<li>-Compartir — copiar y redistribuir el material en cualquier medio o formato.</li>
+	<li>-Adaptar — remezclar, transformar y crear a partir del material para cualquier finalidad, incluso comercial.</li>
+	</ul>
+	<ul>Bajo condiciones:
+
+	<li>-Reconocimiento — Debe reconocer adecuadamente la autoría, proporcionar un enlace a la licencia e indicar si se han realizado cambios.</li>
+	</ul>
+	</div>
+	<div id="sec-3">
+	<h2>3. Estrategia </h2>
+
+		<ul>
+ 			<li>http://www.semanticweb.org/group07/untitled-ontology-2/Organismo_Gestor</li>
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Organismo_Gestor#titulo</li>
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Organismo_Gestor#fecha-publicacion</li>
+            </ul><br><ul>
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Empleo</li>
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Empleo#informacion-adicional</li>
+            </ul><br><ul>
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#enlace-contenido</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#fecha-inicio</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#ingreso-libre</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#gestionado-por</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#en-provincia-alternativa</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#promocion-interna</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#requisitos</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#documentos-asociados</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#en-municipio</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#tasas</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#plazo-presentacion</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#descripcion</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#tematica</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Municipio#numero-plazas</li>
+            </ul><br><ul>
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Localidad#fecha-finalizacion</li>  
+            </ul><br><ul>
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Provincia#minusvalia</li>  
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Provincia#deriva-bolsa</li> 
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Provincia#ultima-actualizacion</li> 
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Provincia#numero-cuenta-corriente</li> 
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Provincia#devolucion-exencion-de-tasas</li> 
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Provincia#tipo</li> 
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Provincia#solicitud</li> 
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Provincia#en-localidad</li> 
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Provincia#lugar-de-presentacion</li> 
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Provincia#fuente-contenido</li> 
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Provincia#identificador</li> 
+            <li>http://www.semanticweb.org/group07/untitled-ontology-2/Provincia#en-provincia</li> 
+        </ul>
+ 
+        <li> El nombre de todas las clases empezara por mayuscula seguido de 
+             letras minusculas. De estar formado por mas de una palabra estas 
+             seran separadas por un underscore "_" y todas las palabras 
+             empezaran por mayusculas seguido por el resto de sus letras en 
+             minusculas.</li>
+        <li> Las propiedades seran escritas todas en minusculas y de estar 
+             formadas por mas de una palabra seran separadas por un guion "-".
+             Al existir gran variedad en las caracteristicas representadas por
+             las propiedades no existe una estructura unica para el nombre de las
+             propiedades, es por esto que algunas propiedades son solo un 
+             sustantivo y otras seran combinaciones de sustantivos con verbos.
