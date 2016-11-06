@@ -23,3 +23,5 @@ This is the directory where students have to upload their materials related to t
 * /requirements/applicationRequirements.html - An HTML document that specifies the requirements of the application that will be built, with user interface mock-ups
 * /analysis.html - An HTML document that includes the analyses performed over the data source and the licensing of the data source, as well as the resource naming strategy defined.
 * /ontology/*.owl - An OWL file with the ontology developed, according to the resource naming strategy defined.
+* /lodrefine/*.json - A JSON file with the operations performed over the data for fixing and transforming them.
+* /rdf/*.rdf - An RDF file in the Turtle syntax with the data transformed into RDF.
