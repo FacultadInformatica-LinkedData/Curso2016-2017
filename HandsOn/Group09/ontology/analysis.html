@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Data sets Analysis</title>
+<!-- 2016-10-30 do. 19:03 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Group09" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Data sets Analysis</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Data sets analysis</a>
+<ul>
+<li><a href="#sec-1-1">1.1. alojamiento.csv</a>
+<ul>
+<li><a href="#sec-1-1-1">1.1.1. Headers, columns or filds definition</a></li>
+<li><a href="#sec-1-1-2">1.1.2. Data schema</a></li>
+<li><a href="#sec-1-1-3">1.1.3. Analyse Licensing of the Data Source</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-2">1.2. restaurante.csv</a>
+<ul>
+<li><a href="#sec-1-2-1">1.2.1. Headers, columns or filds definition</a></li>
+<li><a href="#sec-1-2-2">1.2.2. Data schema</a></li>
+<li><a href="#sec-1-2-3">1.2.3. Analyse Licensing of the Data Source</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-3">1.3. monumento.csv</a>
+<ul>
+<li><a href="#sec-1-3-1">1.3.1. Headers, columns or filds definition</a></li>
+<li><a href="#sec-1-3-2">1.3.2. Data schema</a></li>
+<li><a href="#sec-1-3-3">1.3.3. Analyse Licensing of the Data Source</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-4">1.4. estacion-bicicletas.csv</a>
+<ul>
+<li><a href="#sec-1-4-1">1.4.1. Headers, columns or filds definition</a></li>
+<li><a href="#sec-1-4-2">1.4.2. Data schema</a></li>
+<li><a href="#sec-1-4-3">1.4.3. Analyse Licensing of the Data Source</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-5">1.5. poste.csv (Bus stops)</a>
+<ul>
+<li><a href="#sec-1-5-1">1.5.1. Headers, columns or filds definition</a></li>
+<li><a href="#sec-1-5-2">1.5.2. Data schema</a></li>
+<li><a href="#sec-1-5-3">1.5.3. Analyse Licensing of the Data Source</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+&gt;
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Data sets analysis</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> alojamiento.csv</h3>
+<div class="outline-text-3" id="text-1-1">
+</div><div id="outline-container-sec-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> Headers, columns or filds definition</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+In this CSV file we have the next headers (or columns), each header will be defined:
+</p>
+<ul class="org-ul">
+<li>id : String -&gt; The id of the "alojamiento", actually is an URL
+that points to the web site info.
+</li>
+<li>title : String -&gt; The name of the "Alojamiento"
+</li>
+<li>description : String -&gt; A brief description of the "alojamiento",
+some entries use it as contact field
+</li>
+<li>streetAddress : String -&gt; The address of the "alojamiento"
+</li>
+<li>postalCode : Int -&gt; zip code
+</li>
+<li>addressLocality : String -&gt; City Name
+</li>
+<li>Telefonos : Int -&gt; Telephone number
+</li>
+<li>Fax : String -&gt; Fax number
+</li>
+<li>email : String -&gt; Contact email
+</li>
+<li>url : String -&gt; Alojaiento's website
+</li>
+<li>image : String -&gt; A path to the site's image (It's usual to find it
+empty)
+</li>
+<li>logo : String -&gt; A path to the site's logo (It's usual to find it
+empty)
+</li>
+<li>socioHoreca : String (True or False isomorphism) -&gt; denotes if this
+site is member of the club Horeca
+</li>
+<li>accesibilidad : String -&gt; Additional information about movility in
+the place, usually a HTML div.
+</li>
+<li>commet : String -&gt; uncategorized information comment
+</li>
+<li>categtoria : String -&gt; Place's category
+</li>
+<li>habitaciones : Int -&gt; Number of bedrooms
+</li>
+<li>camas : Int -&gt; Number of beds
+</li>
+<li>geometry : duple(Int) -&gt; Coordinates in the map
+</li>
+<li>lastUpdated : String -&gt; A last information update date
+</li>
+<li>link : String -&gt; The URI or path of the Alojamiento inside the
+<i>www.zaragoza.es</i> website
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-1-2" class="outline-4">
+<h4 id="sec-1-1-2"><span class="section-number-4">1.1.2</span> Data schema</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+A completely valid data schema (accordig to: <a href="http://digital-preservation.github.io/csv-schema/csv-schema-1.0.html">http://digital-preservation.github.io/csv-schema/csv-schema-1.0.html</a>) could be:
+</p>
+
+<pre class="example">
+version 1.0
+@totalColumns 21
+id: notEmpty and String
+title: notEmpty and String
+description: String or ""
+streetAddress: notEmpty and String
+postalCode: notEmpty and Int
+addressLocality: notEmpty and String
+Telefonos: notEmpty and String 
+Fax: String or ""
+email: String or ""
+url: notEmpty and String
+image: String or ""
+logo: String or ""
+socioHoreca: notEmpty and is(True) or is(False)
+accesibilidad: String or ""
+commet: String or ""
+categtoria: notEmpty and String
+habitaciones: notEmpty and Int
+camas: notEmpty and Int
+geometry: duple(Float) or ""
+lastUpdated: notEmpty and String
+link : notEmpty and String
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-1-1-3" class="outline-4">
+<h4 id="sec-1-1-3"><span class="section-number-4">1.1.3</span> Analyse Licensing of the Data Source</h4>
+<div class="outline-text-4" id="text-1-1-3">
+<ul class="org-ul">
+<li>Publisher: Ayuntamiento de Zaragoza, unidad de gestion de la web municipal.
+</li>
+<li>License (Literal Quote):
+</li>
+</ul>
+<pre class="example">
+Las presentes condiciones generales permiten la reutilización de los
+documentos sometidos a ellas para fines comerciales y no
+comerciales. Se entiende por reutilización el uso de documentos que
+obran en poder del Ayuntamiento de Zaragoza y de los demás organismos
+y entidades incluidos en el ámbito subjetivo de la Ordenanza de
+Administración Electrónica por su artículo 2, por personas físicas o
+jurídicas, con fines comerciales o no comerciales, siempre que dicho
+uso no constituya una actividad administrativa pública. Por ejemplo,
+la reutilización autorizada incluye actividades como la copia,
+difusión, modificación, adaptación, extracción, reordenación y
+combinación de la información.
+
+Se entiende por documento electrónico, según el artículo 50 de la
+mencionada Ordenanza, cualquier representación de texto, imagen,
+sonido o video, o las combinaciones de todos o alguno de estos
+elementos, que haya sido codificada mediante el empleo de un programa
+de tratamiento de la información y resulte legible gracias al mismo
+programa usado para su generación u otro equivalente, siendo
+susceptible de tratamiento individualizado. Además, a los efectos de
+estas condiciones generales se incluyen expresamente las bases y
+colecciones de datos.
+
+La reutilización conlleva la cesión gratuita y no exclusiva de los
+derechos de propiedad intelectual, en su caso, correspondientes a
+tales documentos, autorizándose la realización de actividades de
+reproducción, distribución, comunicación pública o transformación, que
+sean necesarias para desarrollar la actividad de reutilización
+autorizada, en cualquier modalidad y bajo cualquier formato, para todo
+el mundo y por el plazo máximo permitido por la Ley.
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> restaurante.csv</h3>
+<div class="outline-text-3" id="text-1-2">
+</div><div id="outline-container-sec-1-2-1" class="outline-4">
+<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> Headers, columns or filds definition</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<p>
+In this CSV file we have the next headers (or columns), each header will be defined:
+</p>
+<ul class="org-ul">
+<li>id : Stirng -&gt; The id of the restaurant, actually is an URL
+</li>
+<li>title: String -&gt; The name of the restaurant
+</li>
+<li>streetAddress : String -&gt; The address of the restaurant
+</li>
+<li>postalCode : Int -&gt; zip code
+</li>
+<li>addressLocality : String -&gt; City Name
+</li>
+<li>tel : Int -&gt; Telephone number
+</li>
+<li>email : String -&gt; Contact email
+</li>
+<li>url : String -&gt; restaurants's website
+</li>
+<li>image : String -&gt; A path to the site's image (It's usual to find it
+empty)
+</li>
+<li>logo : String -&gt; A path to the site's logo (It's usual to find it
+empty)
+</li>
+<li>restauranteEnHotel : String (True or False isomorphism) -&gt; defines
+if the restaurant is inside of an Hotel
+</li>
+<li>socioHoreca : String (True or False isomorphism) -&gt; denotes if this
+site is member of the club Horeca
+</li>
+<li>sinGluten : String (True or False isomorphism) -&gt; Denotes if the
+restaurant serves food gluten free 
+</li>
+<li>fincaCatering : String (True or False isomorphism) -&gt; Information
+about Finca Catering
+</li>
+<li>servesCuisine : String -&gt; Information about Serves Cuisine
+</li>
+<li>accesibilidad : String -&gt; Additional information about movility in
+the restaurant
+</li>
+<li>comment : String -&gt; uncategorized information comment
+</li>
+<li>tenedores : Int -&gt; The category of the restaurant in "Tenedores"
+</li>
+<li>capacidad : Int -&gt; Capacity of the restaurant
+</li>
+<li>geometry : duple(Float) -&gt; Coordinates in the map
+</li>
+<li>lastUpdated : String -&gt; A last information update date
+</li>
+<li>description : String -&gt; A brief description of the restaurant
+</li>
+<li>link : String -&gt; The URI or path of the restaurant inside the
+<i>www.zaragoza.es</i> website
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2-2" class="outline-4">
+<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> Data schema</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<p>
+Again, accordig to: <a href="http://digital-preservation.github.io/csv-schema/csv-schema-1.0.html">http://digital-preservation.github.io/csv-schema/csv-schema-1.0.html</a>, the schema could be: 
+</p>
+
+<pre class="example">
+version 1.0
+@totalColumns 22
+id: notEmpty and String
+title: notEmpty and String
+streetAddress: notEmpty and String
+postalCode: notEmpty and Int
+addressLocality: notEmpty and String
+tel: Int or ""
+email: String or ""
+url: String or ""
+image: String or ""
+logo: String or ""
+restauranteEnHotel: notEmpty and is(True) or is(False)
+socioHoreca: notEmpty and is(True) or is(False)
+sinGluten: empty
+fincaCatering: String or ""
+servesCuisine: is("Sin Gluten") or ""
+accesibilidad: String or ""
+comment: String or ""
+tenedores: Int or ""
+capacidad: Int or ""
+geometry: duple(Float)
+lastUpdated: notEmpty and String
+description: notEmpty and String
+link: notEmpty and String
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2-3" class="outline-4">
+<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> Analyse Licensing of the Data Source</h4>
+<div class="outline-text-4" id="text-1-2-3">
+<ul class="org-ul">
+<li>Publisher: Ayuntamiento de Zaragoza, unidad de gestion de la web municipal.
+</li>
+<li>License (Literal Quote):
+</li>
+</ul>
+<pre class="example">
+Las presentes condiciones generales permiten la reutilización de los
+documentos sometidos a ellas para fines comerciales y no
+comerciales. Se entiende por reutilización el uso de documentos que
+obran en poder del Ayuntamiento de Zaragoza y de los demás organismos
+y entidades incluidos en el ámbito subjetivo de la Ordenanza de
+Administración Electrónica por su artículo 2, por personas físicas o
+jurídicas, con fines comerciales o no comerciales, siempre que dicho
+uso no constituya una actividad administrativa pública. Por ejemplo,
+la reutilización autorizada incluye actividades como la copia,
+difusión, modificación, adaptación, extracción, reordenación y
+combinación de la información.
+
+Se entiende por documento electrónico, según el artículo 50 de la
+mencionada Ordenanza, cualquier representación de texto, imagen,
+sonido o video, o las combinaciones de todos o alguno de estos
+elementos, que haya sido codificada mediante el empleo de un programa
+de tratamiento de la información y resulte legible gracias al mismo
+programa usado para su generación u otro equivalente, siendo
+susceptible de tratamiento individualizado. Además, a los efectos de
+estas condiciones generales se incluyen expresamente las bases y
+colecciones de datos.
+
+La reutilización conlleva la cesión gratuita y no exclusiva de los
+derechos de propiedad intelectual, en su caso, correspondientes a
+tales documentos, autorizándose la realización de actividades de
+reproducción, distribución, comunicación pública o transformación, que
+sean necesarias para desarrollar la actividad de reutilización
+autorizada, en cualquier modalidad y bajo cualquier formato, para todo
+el mundo y por el plazo máximo permitido por la Ley.
+</pre>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> monumento.csv</h3>
+<div class="outline-text-3" id="text-1-3">
+</div><div id="outline-container-sec-1-3-1" class="outline-4">
+<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> Headers, columns or filds definition</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+In this CSV file we have the next headers (or columns), each header will be defined:
+</p>
+<ul class="org-ul">
+<li>id: String -&gt; The id of the monument, actually is an URL
+</li>
+<li>title: String -&gt; The name of the monument
+</li>
+<li>description: String -&gt; A brief description of the monument
+</li>
+<li>estilo: String -&gt; The architecture style of the monument
+</li>
+<li>address: String -&gt; The address of the monument
+</li>
+<li>horario: String -&gt; The timetable of the monument
+</li>
+<li>phone: Int -&gt; Contact number phone of the monument
+</li>
+<li>fax: Int -&gt; Contact number fax of the monument
+</li>
+<li>datacion: String -&gt; Age of the monument
+</li>
+<li>uso: String -&gt; Description of the monument usage
+</li>
+<li>pois: String -&gt; Points of interest of the monument
+</li>
+<li>datos: String -&gt; Uncategorized information of the monument
+</li>
+<li>price: String -&gt; Taxes of the monument
+</li>
+<li>visita: String -&gt; Kind of visit 
+</li>
+<li>image: String -&gt; A picture of the monument
+</li>
+<li>top: String (True of False isomorphism) -&gt; Undefined
+</li>
+<li>foursquare: String -&gt; foursuare profile
+</li>
+<li>lastUpdated: String -&gt; A last information update date
+</li>
+<li>geometry: duple(Float) -&gt; Coordinates in the map
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3-2" class="outline-4">
+<h4 id="sec-1-3-2"><span class="section-number-4">1.3.2</span> Data schema</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<p>
+The Data description is:
+</p>
+
+<pre class="example">
+version 1.0
+@totalColumns 19
+id: notEmpty and String
+title: notEmpty and String
+description: notEmpty and String
+estilo: notEmpty and String
+address: notEmpty and String
+horario: String or ""
+phone: Int or ""
+fax: Int or ""
+datacion: String or ""
+uso: String or ""
+pois: String or ""
+datos: String or ""
+price: String or ""
+visita: String or ""
+image: String or ""
+top: String or ""
+foursquare: String or ""
+lastUpdated: notEmpty and String 
+geometry: duple(Float)
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3-3" class="outline-4">
+<h4 id="sec-1-3-3"><span class="section-number-4">1.3.3</span> Analyse Licensing of the Data Source</h4>
+<div class="outline-text-4" id="text-1-3-3">
+<ul class="org-ul">
+<li>Publisher: Ayuntamiento de Zaragoza, unidad de gestion de la web municipal.
+</li>
+<li>License (Literal Quote):
+</li>
+</ul>
+<pre class="example">
+Las presentes condiciones generales permiten la reutilización de los
+documentos sometidos a ellas para fines comerciales y no
+comerciales. Se entiende por reutilización el uso de documentos que
+obran en poder del Ayuntamiento de Zaragoza y de los demás organismos
+y entidades incluidos en el ámbito subjetivo de la Ordenanza de
+Administración Electrónica por su artículo 2, por personas físicas o
+jurídicas, con fines comerciales o no comerciales, siempre que dicho
+uso no constituya una actividad administrativa pública. Por ejemplo,
+la reutilización autorizada incluye actividades como la copia,
+difusión, modificación, adaptación, extracción, reordenación y
+combinación de la información.
+
+Se entiende por documento electrónico, según el artículo 50 de la
+mencionada Ordenanza, cualquier representación de texto, imagen,
+sonido o video, o las combinaciones de todos o alguno de estos
+elementos, que haya sido codificada mediante el empleo de un programa
+de tratamiento de la información y resulte legible gracias al mismo
+programa usado para su generación u otro equivalente, siendo
+susceptible de tratamiento individualizado. Además, a los efectos de
+estas condiciones generales se incluyen expresamente las bases y
+colecciones de datos.
+
+La reutilización conlleva la cesión gratuita y no exclusiva de los
+derechos de propiedad intelectual, en su caso, correspondientes a
+tales documentos, autorizándose la realización de actividades de
+reproducción, distribución, comunicación pública o transformación, que
+sean necesarias para desarrollar la actividad de reutilización
+autorizada, en cualquier modalidad y bajo cualquier formato, para todo
+el mundo y por el plazo máximo permitido por la Ley.
+</pre>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> estacion-bicicletas.csv</h3>
+<div class="outline-text-3" id="text-1-4">
+</div><div id="outline-container-sec-1-4-1" class="outline-4">
+<h4 id="sec-1-4-1"><span class="section-number-4">1.4.1</span> Headers, columns or filds definition</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<p>
+In this CSV file we have the next headers (or columns), each header will be defined:
+</p>
+<ul class="org-ul">
+<li>id: Sting -&gt; The id of the station, actually is an URL
+</li>
+<li>uri: String -&gt; Resource direction 
+</li>
+<li>title: String -&gt; Name or address of the station
+</li>
+<li>estado: String (True or False isomorphism) -&gt; State of the station
+</li>
+<li>bicisDisponibles: Int -&gt; Number of bike
+</li>
+<li>anclajesDisponibles: Int -&gt; Number of docks
+</li>
+<li>geometry: duple(Float) -&gt; Coordinates in the map
+</li>
+<li>lastUpdated: String -&gt; A last information update date
+</li>
+<li>description: String -&gt; A brief description of the station
+</li>
+<li>icon: String -&gt; Icon of the station
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-4-2" class="outline-4">
+<h4 id="sec-1-4-2"><span class="section-number-4">1.4.2</span> Data schema</h4>
+<div class="outline-text-4" id="text-1-4-2">
+<p>
+The Data description is:
+</p>
+
+<pre class="example">
+version 1.0
+@totalColumns 10
+id: notEmpty and String
+uri: notEmpty and String
+title: notEmpty and String
+estado: notEmpty and String
+bicisDisponibles: notEmpty and Int
+anclajesDisponibles: notEmpty and Int
+geometry: notEmpty and duple(Float)
+lastUpdated: notEmpty and String
+description: notEmpty and String
+icon: notEmpty and String
+</pre>
+</div>
+</div>
+<div id="outline-container-sec-1-4-3" class="outline-4">
+<h4 id="sec-1-4-3"><span class="section-number-4">1.4.3</span> Analyse Licensing of the Data Source</h4>
+<div class="outline-text-4" id="text-1-4-3">
+<ul class="org-ul">
+<li>Publisher: Ayuntamiento de Zaragoza, unidad de gestion de la web municipal.
+</li>
+<li>License (Literal Quote):
+</li>
+</ul>
+<pre class="example">
+Las presentes condiciones generales permiten la reutilización de los
+documentos sometidos a ellas para fines comerciales y no
+comerciales. Se entiende por reutilización el uso de documentos que
+obran en poder del Ayuntamiento de Zaragoza y de los demás organismos
+y entidades incluidos en el ámbito subjetivo de la Ordenanza de
+Administración Electrónica por su artículo 2, por personas físicas o
+jurídicas, con fines comerciales o no comerciales, siempre que dicho
+uso no constituya una actividad administrativa pública. Por ejemplo,
+la reutilización autorizada incluye actividades como la copia,
+difusión, modificación, adaptación, extracción, reordenación y
+combinación de la información.
+
+Se entiende por documento electrónico, según el artículo 50 de la
+mencionada Ordenanza, cualquier representación de texto, imagen,
+sonido o video, o las combinaciones de todos o alguno de estos
+elementos, que haya sido codificada mediante el empleo de un programa
+de tratamiento de la información y resulte legible gracias al mismo
+programa usado para su generación u otro equivalente, siendo
+susceptible de tratamiento individualizado. Además, a los efectos de
+estas condiciones generales se incluyen expresamente las bases y
+colecciones de datos.
+
+La reutilización conlleva la cesión gratuita y no exclusiva de los
+derechos de propiedad intelectual, en su caso, correspondientes a
+tales documentos, autorizándose la realización de actividades de
+reproducción, distribución, comunicación pública o transformación, que
+sean necesarias para desarrollar la actividad de reutilización
+autorizada, en cualquier modalidad y bajo cualquier formato, para todo
+el mundo y por el plazo máximo permitido por la Ley.
+</pre>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> poste.csv (Bus stops)</h3>
+<div class="outline-text-3" id="text-1-5">
+</div><div id="outline-container-sec-1-5-1" class="outline-4">
+<h4 id="sec-1-5-1"><span class="section-number-4">1.5.1</span> Headers, columns or filds definition</h4>
+<div class="outline-text-4" id="text-1-5-1">
+<p>
+In this CSV file we have the next headers (or columns), each header will be defined:
+</p>
+
+<ul class="org-ul">
+<li>id: String -&gt; The id of the bus stop, actually is an URL
+</li>
+<li>title: String -&gt; Name or address of the station and conected lines
+</li>
+<li>lastUpdated: Empty field
+</li>
+<li>geometry: duple(Float) -&gt; Coordinates in the map
+</li>
+<li>link: String -&gt; The URL of the bus station in <a href="http://www.urbanosdezaragoza.es">http://www.urbanosdezaragoza.es</a>
+</li>
+<li>icon: String -&gt; URL to the icon bus stop (constant)
+</li>
+<li>destinos: Empty field
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-5-2" class="outline-4">
+<h4 id="sec-1-5-2"><span class="section-number-4">1.5.2</span> Data schema</h4>
+<div class="outline-text-4" id="text-1-5-2">
+<p>
+The Data description is:
+</p>
+
+<pre class="example">
+version 1.0
+@totalColumns 7
+id: notEmpty and String
+title: notEmpty and String
+lastUpdated: Empty
+geometry: duple(Float)
+link: String or ""
+icon: is("http://www.zaragoza.es/contenidos/iconos/bus.png")
+destinos: Empty
+</pre>
+</div>
+</div>
+<div id="outline-container-sec-1-5-3" class="outline-4">
+<h4 id="sec-1-5-3"><span class="section-number-4">1.5.3</span> Analyse Licensing of the Data Source</h4>
+<div class="outline-text-4" id="text-1-5-3">
+<ul class="org-ul">
+<li>Publisher: Ayuntamiento de Zaragoza, unidad de gestion de la web municipal.
+</li>
+<li>License (Literal Quote):
+</li>
+</ul>
+<pre class="example">
+Las presentes condiciones generales permiten la reutilización de los
+documentos sometidos a ellas para fines comerciales y no
+comerciales. Se entiende por reutilización el uso de documentos que
+obran en poder del Ayuntamiento de Zaragoza y de los demás organismos
+y entidades incluidos en el ámbito subjetivo de la Ordenanza de
+Administración Electrónica por su artículo 2, por personas físicas o
+jurídicas, con fines comerciales o no comerciales, siempre que dicho
+uso no constituya una actividad administrativa pública. Por ejemplo,
+la reutilización autorizada incluye actividades como la copia,
+difusión, modificación, adaptación, extracción, reordenación y
+combinación de la información.
+
+Se entiende por documento electrónico, según el artículo 50 de la
+mencionada Ordenanza, cualquier representación de texto, imagen,
+sonido o video, o las combinaciones de todos o alguno de estos
+elementos, que haya sido codificada mediante el empleo de un programa
+de tratamiento de la información y resulte legible gracias al mismo
+programa usado para su generación u otro equivalente, siendo
+susceptible de tratamiento individualizado. Además, a los efectos de
+estas condiciones generales se incluyen expresamente las bases y
+colecciones de datos.
+
+La reutilización conlleva la cesión gratuita y no exclusiva de los
+derechos de propiedad intelectual, en su caso, correspondientes a
+tales documentos, autorizándose la realización de actividades de
+reproducción, distribución, comunicación pública o transformación, que
+sean necesarias para desarrollar la actividad de reutilización
+autorizada, en cualquier modalidad y bajo cualquier formato, para todo
+el mundo y por el plazo máximo permitido por la Ley.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 29/10/2016</p>
+<p class="author">Author: Group09</p>
+<p class="date">Created: 2016-10-30 do. 19:03</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
