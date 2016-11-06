@@ -1,0 +1,255 @@
+[
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column town",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "town",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BUKIT BATOK",
+          "Bukit Batok"
+        ],
+        "to": "Bukit Batok"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "KALLANG/WHAMPOA",
+          "Kallang/Whampoa"
+        ],
+        "to": "Kallang/Whampoa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TAMPINES",
+          "Tampines"
+        ],
+        "to": "Tampines"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "QUEENSTOWN",
+          "Queenstown"
+        ],
+        "to": "Queenstown"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BEDOK",
+          "Bedok"
+        ],
+        "to": "Bedok"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "YISHUN",
+          "Yishun"
+        ],
+        "to": "Yishun"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SERANGOON",
+          "Serangoon"
+        ],
+        "to": "Serangoon"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CLEMENTI",
+          "Clementi"
+        ],
+        "to": "Clementi"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WOODLANDS",
+          "Woodlands"
+        ],
+        "to": "Woodlands"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CHOA CHU KANG",
+          "Choa Chu Kang"
+        ],
+        "to": "Choa Chu Kang"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SENGKANG",
+          "Sengkang"
+        ],
+        "to": "Sengkang"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bukit Timah",
+          "BUKIT TIMAH"
+        ],
+        "to": "BUKIT TIMAH"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PUNGGOL",
+          "Punggol"
+        ],
+        "to": "Punggol"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GEYLANG",
+          "Geylang"
+        ],
+        "to": "Geylang"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BUKIT PANJANG",
+          "Bukit Panjang"
+        ],
+        "to": "Bukit Panjang"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "JURONG EAST",
+          "Jurong East"
+        ],
+        "to": "Jurong East"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "JURONG WEST",
+          "Jurong West"
+        ],
+        "to": "Jurong West"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TOA PAYOH",
+          "Toa Payoh"
+        ],
+        "to": "Toa Payoh"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BISHAN",
+          "Bishan"
+        ],
+        "to": "Bishan"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HOUGANG",
+          "Hougang"
+        ],
+        "to": "Hougang"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BUKIT MERAH",
+          "Bukit Merah"
+        ],
+        "to": "Bukit Merah"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASIR RIS",
+          "Pasir Ris"
+        ],
+        "to": "Pasir Ris"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SEMBAWANG",
+          "Sembawang"
+        ],
+        "to": "Sembawang"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ANG MO KIO",
+          "Ang Mo Kio"
+        ],
+        "to": "Ang Mo Kio"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MARINE PARADE",
+          "Marine Parade"
+        ],
+        "to": "Marine Parade"
+      }
+    ]
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column financial_year to year2",
+    "oldColumnName": "financial_year",
+    "newColumnName": "year2"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column min_selling_price_less_ahg_shg",
+    "columnName": "min_selling_price_less_ahg_shg"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column max_selling_price_less_ahg_shg",
+    "columnName": "max_selling_price_less_ahg_shg"
+  }
+]

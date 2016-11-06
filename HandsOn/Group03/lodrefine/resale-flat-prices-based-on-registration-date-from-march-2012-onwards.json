@@ -402,45 +402,6 @@
     "columnName": "block"
   },
   {
-    "op": "core/column-split",
-    "description": "Split column quarter by separator",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "columnName": "quarter",
-    "guessCellType": true,
-    "removeOriginalColumn": true,
-    "mode": "separator",
-    "separator": "-",
-    "regex": false,
-    "maxColumns": 0
-  },
-  {
-    "op": "core/column-rename",
-    "description": "Rename column quarter 1 to Year",
-    "oldColumnName": "quarter 1",
-    "newColumnName": "Year"
-  },
-  {
-    "op": "core/column-rename",
-    "description": "Rename column Year to year",
-    "oldColumnName": "Year",
-    "newColumnName": "year"
-  },
-  {
-    "op": "core/column-rename",
-    "description": "Rename column quarter 2 to quarter",
-    "oldColumnName": "quarter 2",
-    "newColumnName": "quarter"
-  },
-  {
-    "op": "core/column-rename",
-    "description": "Rename column financial_year to year2",
-    "oldColumnName": "financial_year",
-    "newColumnName": "year2"
-  },
-  {
     "op": "core/column-rename",
     "description": "Rename column flat_type to room_type1",
     "oldColumnName": "flat_type",
@@ -480,24 +441,60 @@
   },
   {
     "op": "core/column-rename",
-    "description": "Rename column price to price1",
-    "oldColumnName": "price",
-    "newColumnName": "price1"
-  },
-  {
-    "op": "core/column-rename",
     "description": "Rename column resale_price to price2",
     "oldColumnName": "resale_price",
     "newColumnName": "price2"
   },
   {
-    "op": "core/column-removal",
-    "description": "Remove column min_selling_price_less_ahg_shg",
-    "columnName": "min_selling_price_less_ahg_shg"
+    "op": "core/column-rename",
+    "description": "Rename column year3 to year",
+    "oldColumnName": "year3",
+    "newColumnName": "year"
   },
   {
-    "op": "core/column-removal",
-    "description": "Remove column max_selling_price_less_ahg_shg",
-    "columnName": "max_selling_price_less_ahg_shg"
+    "op": "core/column-rename",
+    "description": "Rename column room_type1 to room_type",
+    "oldColumnName": "room_type1",
+    "newColumnName": "room_type"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column price2 to price",
+    "oldColumnName": "price2",
+    "newColumnName": "price"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://localhost:3333/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
   }
 ]
