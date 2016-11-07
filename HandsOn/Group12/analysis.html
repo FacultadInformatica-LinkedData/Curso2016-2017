@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Análisis de datasets</title>
+</head>
+<body>
+  <h1>Análisis de datasets</h1>
+  <h2>Listado de incidencias (avisa-2016.csv)</h2>
+  <h3>Análisis de datos y esquema</h3>
+  <table>
+    <tr>
+      <th>Columna</th>
+      <th>Tipo</th>
+      <th>Comentarios</th>
+      <th>Problemas</th>
+    </tr>
+    <tr>
+      <td>TIPO_INCIDENCIA_ID</td>
+      <td>Integer</td>
+      <td>Not unique. Values: 0, 1, 2, code of "TIPO_INCIDENCIA"</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TIPO_INCIDENCIA</td>
+      <td>String</td>
+      <td>values: "AVISO, No conforme con resolucion</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CANAL_DE_ENTRADA_ID</td>
+      <td>Integer</td>
+      <td>Not unique, values: Nothin, 2, 3 Code of "CANAL_DE_ENTRADA"</td>
+      <td>No value</td>
+    </tr>
+    <tr>
+      <td>CANAL_DE_ENTRADA</td>
+      <td>String</td>
+      <td>values: PRESENCIAL, INTERNET, MOVIL</td>
+      <td>No se si pueden aparecer otros valores</td>
+    </tr>
+    <tr>
+      <td>FECHA_DE_RECEPCION</td>
+      <td>Date</td>
+      <td>Only two dates 29 &amp; 30  </td>
+      <td>Problemas</td>
+    </tr>
+    <tr>
+      <td>HORA_DE_RECEPCION</td>
+      <td>Date</td>
+      <td>Hour, minute and seconds</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SECCION_ID</td>
+      <td>Integer</td>
+      <td>Not Unique, Code of "SECCION"</td>
+      <td>repeated values</td>
+    </tr>
+    <tr>
+      <td>SECCION</td>
+      <td>String</td>
+      <td>Not Unique, i don´t undestand want the mean</td>
+      <td>repeated values</td>
+    </tr>
+    <tr>
+      <td>ANOMALIA_ID</td>
+      <td>Integer</td>
+      <td>Not Unique, code of "ANOMALIA"</td>
+      <td>Problemas</td>
+    </tr>
+    <tr>
+      <td>ANOMALIA</td>
+      <td>String</td>
+      <td>Not Unique</td>
+      <td>repeated values</td>
+    </tr>
+    <tr>
+      <td>TIPO_DE_VIAL_ID</td>
+      <td>Integer</td>
+      <td>Not Unique, Code of "TIPO_DE_VIAL"</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TIPO_DE_VIAL</td>
+      <td>String</td>
+      <td>Can be "calle, paseo, plaza, etc"</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NOMBRE_DE_VIAL</td>
+      <td>String</td>
+      <td>Not unique, i imagine this number is a street number</td>
+      <td>repated values</td>
+    </tr>
+    <tr>
+      <td>NUMERO</td>
+      <td>Integer</td>
+      <td>Comentarios</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CAlIFICADOR</td>
+      <td>String</td>
+      <td>Not Unique values: "-- or a one leter"</td>
+      <td>Value --, repetead values</td>
+    </tr>
+    <tr>
+      <td>DISTRITO_ID</td>
+      <td>Integer</td>
+      <td>Not Unique, Code of DISTRITO</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DISTRITO</td>
+      <td>String</td>
+      <td>not unique</td>
+      <td>Exixting district with - </td>
+    </tr>
+    <tr>
+      <td>BARRIO_ID</td>
+      <td>Integer</td>
+      <td>Not Unique, Code of "BARRIO"</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BARRIO</td>
+      <td>String</td>
+      <td>Not Unique</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CODIGO_POSTAL</td>
+      <td>Integer</td>
+      <td>Not Unique, Code of Barrio values since -1</td>
+      <td>appear negative numbers</td>
+    </tr>
+    <tr>
+      <td>COODENADA_OFICIAL_X</td>
+      <td>Integer</td>
+      <td>i do not undestand what it means</td>
+      <td>appear negative numbers</td>
+    </tr>
+    <tr>
+      <td>COORDENADA_OFICIAL_Y</td>
+      <td>Integer</td>
+      <td>i do not undestand what it means</td>
+      <td>appear negative numbers</td>
+    </tr>
+    <tr>
+      <td>COORDENADA_REAL_X</td>
+      <td>Integer</td>
+      <td>i do not undestand what it means</td>
+      <td>appear negative numbers</td>
+    </tr>
+    <tr>
+      <td>COORDENADA_REAL_Y</td>
+      <td>Integer</td>
+      <td>i do not undestand what it means</td>
+      <td>appear negative numbers</td>
+    </tr>
+    
+  </table>
+
+  <h2>Encuestas de calidad de vida (encuestas2014.csv)</h2>
+  <p>Resultados de las 2500 encuestas de calidad de vida realizadas por el Ayuntamiento de Madrid. El Ayuntamiento no ofrece la explicación de cada columna pero sí <a href="http://datos.madrid.es/FWProjects/egob/contenidos/datasets/ficheros/SectorPublico_Encuestas/CuestionarioECV2014.pdf">el cuestionario realizado tal cual</a>. A partir de dicho cuestionario, se ha deducido qué podría ser cada campo.</p>
+
+  <h3>Campos que no son preguntas</h3>
+  <table>
+    <tr>
+      <th>Column</th>
+      <th>Type</th>
+      <th>Comments</th>
+      <th>Problems</th>
+    </tr>
+    <tr>
+      <td>NUNCUESTI</td>
+      <td>Integer</td>
+      <td>Unique</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SECCION</td>
+      <td>Integer</td>
+      <td>Not unique. Code of "sección censal"</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BARRIO</td>
+      <td>String</td>
+      <td>Not unique</td>
+      <td>Encoding problems with some characters</td>
+    </tr>
+    <tr>
+      <td>CODBARRIO</td>
+      <td>Integer</td>
+      <td>Not unique. Constrain: fields with the same CODBARRIO value must have the same BARRIO value</td>
+      <td>Constrain not checked</td>
+    </tr>
+    <tr>
+      <td>DISTRITO</td>
+      <td>Integer</td>
+      <td>Not unique</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SER</td>
+      <td>Integer</td>
+      <td>Not unique</td>
+      <td>Not sure what this mean. Probably related to "Servicio de Estacionamiento Regulado" but not sure</td>
+    </tr>
+    <tr>
+      <td>ENCUESTADOR</td>
+      <td>Integer</td>
+      <td>Not unique</td>
+      <td>Not sure what this field means. Probably is the ID of the person who do the questionnaire</td>
+    </tr>
+    <tr>
+      <td>RUTA</td>
+      <td>Integer</td>
+      <td>Not unique</td>
+      <td>Not sure what this field means.</td>
+    </tr>
+    <tr>
+      <td>PESO</td>
+      <td>Decimal</td>
+      <td>Not unique. Decimal point is a comma, not a point</td>
+      <td>Not sure what this field means.</td>
+    </tr>
+  </table>
+
+
+  <h3>Campos que son preguntas</h3>
+  <table>
+    <tr>
+      <th>Column</th>
+      <th>Type</th>
+      <th>Comments</th>
+      <th>Problems</th>
+    </tr>
+    <tr>
+      <td>P1X ~ P5X (where X is a letter)</td>
+      <td>Number</td>
+      <td>Not unique. Values 1, 2, 3, 4, 5, 8 or 9. Each column matches with each sub-question of the questionnaire</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P6XLIT ~ P7XLIT (where X is a letter)</td>
+      <td>String</td>
+      <td>Not unique</td>
+      <td>Can have spelling errors</td>
+    </tr>
+    <tr>
+      <td>P6X ~ P7X (where X is a letter)</td>
+      <td>Number.</td>
+      <td>Can be NULL. Not unique. It is like a "serialized" version of P6XLIT and P7XLIT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P8X ~ P8X (where X is a number from 1 to 20)</td>
+      <td>Number.</td>
+      <td>Not unique. Answers to each sub-question of question 8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P9X1 ~ P9X1 (where X is a number from 1 to 25)</td>
+      <td>Number.</td>
+      <td>Values from 0 to 12. Not unique. Answers to each "Satisfacción" sub-question of question 9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P9X2 ~ P9X2 (where X is a number from 1 to 25)</td>
+      <td>Number.</td>
+      <td>Values 1, 2, 8 or 9. Not unique. Answers to each "¿Lo ha utilizado...?" sub-question of question 9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P9X3 ~ P9X3 (where X is a number from 1 to 25)</td>
+      <td>Number.</td>
+      <td>Values 1, 2, 3, 8 or 9. Not unique. Answers to each "¿Su número le parece excesivo...?" sub-question of question 9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P10X ~ P10X (where X is a number from 1 to 13)</td>
+      <td>Number.</td>
+      <td>Can be NULL. Not unique. Relevant value is boolean-like: NULL (false) or NOT NULL (true)</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>P11X ~ P18X (where X is other number)</td>
+      <td>Integer.</td>
+      <td>Not unique. Answers to sub-question X of the question. Values specified in the questionnaire.</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>P19X ~ P19X (where X is a number from 1 to 12)</td>
+      <td>Number.</td>
+      <td>Can be NULL. Not unique. Relevant value is boolean-like: NULL (false) or NOT NULL (true)</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>P20X ~ P20X (where X is other number)</td>
+      <td>Integer.</td>
+      <td>Values can be 1, 2 or 9.</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>P21X ~ P29X (where X is other number)</td>
+      <td>Integer.</td>
+      <td>Not unique. Answers to sub-question X of the question. Values specified in the questionnaire.</td>
+      <td></td>
+    </tr>
+  </table>
+
+</body>
+</html>
