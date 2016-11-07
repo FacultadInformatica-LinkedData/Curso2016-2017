@@ -14,17 +14,20 @@
                 <td>Nombre</td>
                 <td>Tipo de valor</td>
                 <td>Descripción</td>
+		<td>Rango de valores</td>
             </tr>
             <tr>
                 <td>PK</td>
                 <td>Entero</td>
                 <td>campo clave, dentro de la web municipal, para uso interno</td>
+		<td>[0-9]</td>
             </tr>
             <tr>
                 <td>Nombre</td>
                 <td>Cadena</td>
                 <td>Denominación de la instalación</td>
-            </tr>
+            	<td>[a-Z][0-9]</td>
+	    </tr>
             <tr>
                 <td>Descripción-entidad</td>
                 <td>Cadena</td>
@@ -34,131 +37,157 @@
                 <td>Equipamiento</td>
                 <td>Cadena</td>
                 <td>Detalle de espacios internos especializados</td>
+		<td>[a-z][A-Z]</td>
             </tr>
             <tr>
                 <td>Transporte</td>
                 <td>Cadena</td>
                 <td>estaciones de metro e indicación de línea; líneas de bus; estaciones de Renfe.</td>
+		<td>[a-z][A-Z][0-9]</td>
             </tr>
             <tr>
                 <td>Descripción</td>
                 <td>Cadena</td>
                 <td>Información adicional; por ej.: otros equipamientos con los que se comparte la sede física; información de venta de entradas</td>
-            </tr>
+            	<td>[a-z][A-Z][0-9]</td>
+	    </tr>
             <tr>
                 <td>Accesibilidad</td>
                 <td>Booleano</td>
                 <td>Si es accesible o no para personas con minusvalías</td>
+		<td>[a-z][A-Z][0-9]</td>
             </tr>
             <tr>
                 <td>Content-URL</td>
                 <td>Cadena</td>
                 <td>Nombre del recurso en internet</td>
+		<td>[a-z][A-Z][0-9]</td>
             </tr>
             <tr>
                 <td>Nombre vía</td>
                 <td>Cadena</td>
                 <td></td>
+		<td>[a-z][A-Z]</td>
             </tr>
             <tr>
                 <td>Clase vía</td>
                 <td>Cadena</td>
                 <td>Tipo de vía: calle, avenida, etc</td>
+		<td>[a-z][A-Z]</td>
             </tr>
             <tr>
                 <td>Tipo num</td>
                 <td>Cadena</td>
                 <td>V, S/N, KM</td>
+		<td><td>[A-Z]</td>
             </tr>
             <tr>
                 <td>Núm</td>
                 <td>Entero</td>
                 <td>número del equipamiento en el vial</td>
+		<td>[0-9]</td>
             </tr>
             <tr>
                 <td>Planta</td>
                 <td>Entero</td>
                 <td>Nivel que ocupa el inmueble</td>
+		<td>[0-9]</td>
             </tr>
             <tr>
                 <td>Puerta</td>
                 <td>Entero</td>
                 <td>Puerta que ocupa en el inmueble</td>
+		<td>[0-9]</td>
             </tr>
             <tr>
                 <td>Escalera</td>
                 <td>Entero</td>
                 <td>Escalera de acceso</td>
+		<td>[0-9]</td>
             </tr>
             <tr>
                 <td>Orientación</td>
                 <td>Cadena</td>
                 <td>Detalles descriptivos de la dirección</td>
+		<td>[a-z][A-Z]</td>
             </tr>
             <tr>
                 <td>Localidad</td>
                 <td>Cadena</td>
                 <td>Municipio del lugar</td>
+		<td>[a-z][A-Z]</td>
             </tr>
             <tr>
                 <td>Provincia</td>
-                <td>Entero</td>
+                <td>Cadena</td>
                 <td>Provincia a la que pertenece la localidad</td>
+		<td>[a-z][A-Z]</td>
             </tr>
             <tr>
                 <td>Código postal</td>
                 <td>Entero</td>
                 <td>Código postal del centro cultural</td>
+		<td>[0-9]</td>
             </tr>
             <tr>
                 <td>Barrio</td>
                 <td>Cadena</td>
                 <td>Barrio donde esta el centro cultural</td>
+		<td>[a-z][A-Z]</td>
             </tr>
             <tr>
                 <td>Distrito</td>
                 <td>Cadena</td>
                 <td>Distrito donde esta el centro cultural</td>
+		<td>[a-z][A-Z]</td>
             </tr>
             <tr>
                 <td>Coordenada X</td>
                 <td>Entero</td>
                 <td>coordenada de 6 caracteres sobre plano de la ciudad</td>
+		<td>[0-9]</td>
             </tr>
             <tr>
                 <td>Cordenada Y</td>
                 <td>Entero</td>
                 <td>coordenada de 7 caracteres sobre plano de la ciudad</td>
+		<td>[0-9]</td>
             </tr>
             <tr>
                 <td>Latitud</td>
                 <td>Decimal</td>
                 <td>coordenada latitud en el sistema de referencia WGS84</td>
+		<td>[0-9].[0-9]</td>
             </tr>
             <tr>
                 <td>Longitud</td>
                 <td>Decimal</td>
                 <td>coordenada longitud en el sistema de referencia WGS84</td>
+		<td>[0-9].[0-9]</td>
             </tr>
             <tr>
                 <td>Teléfono</td>
                 <td>Entero</td>
                 <td>Teléfono del centro cultural</td>
+		<td>[0-9]</td>
             </tr>
             <tr>
                 <td>Fax</td>
                 <td>Entero</td>
                 <td>Fax del centro cultural</td>
+		<td>[0-9]</td>
             </tr>
             <tr>
                 <td>Email</td>
                 <td>Cadena</td>
                 <td>Correo electrónico del centro cultural</td>
+		<td>[a-z][A-Z][0-9]</td>
             </tr>
             <tr>
                 <td>Tipo</td>
                 <td>Cadena</td>
                 <td>Descripción de la tipología de la instalación</td>
+		<td>[a-z][A-Z][0-9]</td>
             </tr>
         </table>
 
