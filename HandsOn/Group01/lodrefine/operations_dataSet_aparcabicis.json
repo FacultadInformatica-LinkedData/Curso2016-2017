@@ -1,0 +1,103 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DISTRITO",
+    "columnName": "DISTRITO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TX_DISTRIT",
+    "columnName": "TX_DISTRIT"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ARCOS",
+    "columnName": "ARCOS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TITULAR",
+    "columnName": "TITULAR"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ESTADO",
+    "columnName": "ESTADO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FECHA_FOTO",
+    "columnName": "FECHA_FOTO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FUENTE_FOT",
+    "columnName": "FUENTE_FOT"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FUENTE",
+    "columnName": "FUENTE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ID_OBRAS",
+    "columnName": "ID_OBRAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ID_INFORMO",
+    "columnName": "ID_INFORMO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column CODIGO_GEN",
+    "columnName": "CODIGO_GEN"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ELIMINADO",
+    "columnName": "ELIMINADO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column enplanos",
+    "columnName": "enplanos"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column OBSERVACIO",
+    "columnName": "OBSERVACIO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column MODELO",
+    "columnName": "MODELO"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column CAPACIDAD using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CAPACIDAD",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column OBJECTID using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "OBJECTID",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  }
+]
