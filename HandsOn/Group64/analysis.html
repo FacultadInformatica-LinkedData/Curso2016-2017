@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Members</title>
+</head>
+<body>
+  <h1>Film Locations in San Francisco</h1>
+  <table style="width:75%">
+  <tr>
+    <th>Column</th>
+    <th>Type</th>
+    <th>Comments / Range(rounded)</th>
+    <th>Problems</th>
+  </tr>
+  <tr>
+    <td>Title</td>
+    <td>String</td>
+    <td>Film title, unique, not empty values</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Release Year</td>
+    <td>int</td>
+    <td>1895-2017</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Locations</td>
+    <td>String</td>
+    <td>Unique, not empty values</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Fun Facts</td>
+    <td>String</td>
+    <td>Empty values</td>
+    <td>Little description of the places</td>
+  </tr>
+  <tr>
+    <td>Production Company</td>
+    <td>String</td>
+    <td>Not empty values</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Distributor</td>
+    <td>String</td>
+    <td>Unique, empty values</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Director</td>
+    <td>String</td>
+    <td>Empty values</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Writer</td>
+    <td>String</td>
+    <td>Not unique, empty values</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Actor 1</td>
+    <td>String</td>
+    <td>Not unique, empty values</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Actor 2</td>
+    <td>String</td>
+    <td>Not unique, empty values</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Actor 3</td>
+    <td>Not unique, empty values</td>
+    <td></td>
+  </tr>
+</table>
+<h1>Recreation Park Department Park Info Dataset</h1>
+<table style="width:75%">
+<tr>
+  <th>Column</th>
+  <th>Type</th>
+  <th>Comments / Range(rounded)</th>
+  <th>Problems</th>
+</tr>
+<tr>
+  <td>ParkName</td>
+  <td>String</td>
+  <td>Unique, not empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>ParkType</td>
+  <td>String</td>
+  <td>Not unique, not empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>ParkServiceArea</td>
+  <td>String</td>
+  <td>Not unique, not empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>PSAManager</td>
+  <td>String</td>
+  <td>Not unique, not empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>email</td>
+  <td>String</td>
+  <td>Not unique, not empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Number</td>
+  <td>String</td>
+  <td>Not unique, not empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Zipcode</td>
+  <td>int</td>
+  <td>94000-96000</td>
+  <td>They are same dates emptys, only positives values </td>
+</tr>
+<tr>
+  <td>Acreage</td>
+  <td>Decimal</td>
+  <td>0 - ∞</td>
+  <td>Only positives values</td>
+</tr>
+<tr>
+  <td>SupDist</td>
+  <td>int</td>
+  <td>0 - 11</td>
+  <td></td>
+</tr>
+<tr>
+  <td>ParkID</td>
+  <td>int</td>
+  <td>0 - ∞ </td>
+  <td>Unique</td>
+</tr>
+<tr>
+  <td>Location 1</td>
+  <td>String</td>
+  <td>Unique empty values</td>
+  <td></td>
+</tr>
+</table>
+<h1>SF Civic Art Collection</h1>
+<table style="width:75%">
+<tr>
+  <th>Column</th>
+  <th>Type</th>
+  <th>Comments / Range(rounded)</th>
+  <th>Problems</th>
+</tr>
+<tr>
+  <td>_id_</td>
+  <td>String</td>
+  <td>Unique, not empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>_rev</td>
+  <td>String</td>
+  <td>Unique, not empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>accession_id</td>
+  <td>String</td>
+  <td>Unique, not empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>artist</td>
+  <td>String</td>
+  <td>Not unique, not empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>created_at</td>
+  <td>Date</td>
+  <td>Not unique,empty values</td>
+  <td>Different format date</td>
+</tr>
+<tr>
+  <td>credit_line</td>
+  <td>String</td>
+  <td>Not unique, empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>display_dimensions</td>
+  <td>String</td>
+  <td>Not unique, empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>geometry</td>
+  <td>String</td>
+  <td>Not unique, not empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>location_description</td>
+  <td>String</td>
+  <td>Not unique, not empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>medium</td>
+  <td>String</td>
+  <td>Empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>source</td>
+  <td>String</td>
+  <td>Not empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>title</td>
+  <td>String</td>
+  <td>Unique, empty values</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Location 1</td>
+  <td>String</td>
+  <td>Empty values</td>
+  <td></td>
+</tr>
+</table>
+</body>
+<html>
