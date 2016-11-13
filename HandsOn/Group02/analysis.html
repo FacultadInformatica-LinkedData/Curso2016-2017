@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+<meta charset="utf-8">
+<title>Group 02  Hands-on</title>
+</head>
+<body>
+
+<h1>Analyse data source</h1>
+<h2>-London Underground Stations</h2>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><!--This file was converted to xhtml by LibreOffice - see http://cgit.freedesktop.org/libreoffice/core/tree/filter/source/xslt for the code.--><head profile="http://dublincore.org/documents/dcmi-terms/"><meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/><title xml:lang="en-US">- no title specified</title><meta name="DCTERMS.title" content="" xml:lang="en-US"/><meta name="DCTERMS.language" content="en-US" scheme="DCTERMS.RFC4646"/><meta name="DCTERMS.source" content="http://xml.openoffice.org/odf2xhtml"/><meta name="DCTERMS.issued" content="2016-10-28T10:15:35.089000000" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.modified" content="2016-10-28T10:16:39.669000000" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.provenance" content="" xml:lang="en-US"/><meta name="DCTERMS.subject" content="," xml:lang="en-US"/><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" hreflang="en"/><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" hreflang="en"/><link rel="schema.DCTYPE" href="http://purl.org/dc/dcmitype/" hreflang="en"/><link rel="schema.DCAM" href="http://purl.org/dc/dcam/" hreflang="en"/><style type="text/css">
+	@page {  }
+	table { border-collapse:collapse; border-spacing:0; empty-cells:show }
+	td, th { vertical-align:top; font-size:10pt;}
+	h1, h2, h3, h4, h5, h6 { clear:both }
+	ol, ul { margin:0; padding:0;}
+	li { list-style: none; margin:0; padding:0;}
+	<!-- "li span.odfLiEnd" - IE 7 issue-->
+	li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
+	span.footnodeNumber { padding-right:1em; }
+	span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
+	* { margin:0;}
+	.ta1 { writing-mode:lr-tb; }
+	.ce1 { font-family:Liberation Sans; background-color:#66ccff; border-width:0.0133cm; border-style:solid; border-color:#000000; text-align:center ! important; margin-left:0mm; font-style:italic; font-weight:bold; }
+	.ce2 { font-family:Liberation Sans; border-width:0.0133cm; border-style:solid; border-color:#000000; text-align:center ! important; margin-left:0mm; }
+	.ce3 { font-family:Liberation Serif; text-align:center ! important; margin-left:0mm; font-size:10pt; font-style:normal; text-shadow:none; text-decoration:none ! important; font-weight:normal; }
+	.co1 { width:22.58mm; }
+	.co2 { width:44.64mm; }
+	.co3 { width:37.87mm; }
+	.ro1 { height:4.52mm; }
+	.ro2 { height:8.48mm; }
+	<!-- ODF styles with no properties representable as CSS -->
+	 { }
+	</style></head><body dir="ltr"><table border="0" cellspacing="0" cellpadding="0" class="ta1"><colgroup><col width="99"/><col width="99"/><col width="195"/><col width="165"/></colgroup><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce1"><p>Column</p></td><td style="text-align:left;width:22.58mm; " class="ce1"><p>Type</p></td><td style="text-align:left;width:44.64mm; " class="ce1"><p>Comments/Range</p></td><td style="text-align:left;width:37.87mm; " class="ce1"><p>Problems</p></td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>Station</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>String</p></td><td style="text-align:left;width:44.64mm; " class="ce2"><p>not unique, not empty</p></td><td style="text-align:left;width:37.87mm; " class="ce2"> </td></tr><tr class="ro2"><td style="text-align:left;width:22.58mm; " class="ce2"><p>OS X</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>int</p></td><td style="text-align:left;width:44.64mm; " class="ce3"><p>496,000,00—562,000,00</p></td><td style="text-align:left;width:37.87mm; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>OS Y</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>int</p></td><td style="text-align:left;width:44.64mm; " class="ce2"><p>155,000,00—208,000,00</p></td><td style="text-align:left;width:37.87mm; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>Latitude</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>double</p></td><td style="text-align:left;width:44.64mm; " class="ce2"><p>51,28—51,75</p></td><td style="text-align:left;width:37.87mm; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>Longitude</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>double</p></td><td style="text-align:left;width:44.64mm; " class="ce2"><p>-0,61—0,33</p></td><td style="text-align:left;width:37.87mm; " class="ce2"><p>Negative values</p></td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>Zone</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>int</p></td><td style="text-align:left;width:44.64mm; " class="ce3"><p>1— 9</p></td><td style="text-align:left;width:37.87mm; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>Postcode</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>String</p></td><td style="text-align:left;width:44.64mm; " class="ce2"><p>not unique, not empty</p></td><td style="text-align:left;width:37.87mm; " class="ce2"> </td></tr></table></body></html>
+
+<h2>-London Underground Lines</h2>	
+	
+	<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><!--This file was converted to xhtml by LibreOffice - see http://cgit.freedesktop.org/libreoffice/core/tree/filter/source/xslt for the code.--><head profile="http://dublincore.org/documents/dcmi-terms/"><meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/><title xml:lang="en-US">- no title specified</title><meta name="DCTERMS.title" content="" xml:lang="en-US"/><meta name="DCTERMS.language" content="en-US" scheme="DCTERMS.RFC4646"/><meta name="DCTERMS.source" content="http://xml.openoffice.org/odf2xhtml"/><meta name="DCTERMS.issued" content="2016-10-28T10:18:47.351000000" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.modified" content="2016-10-28T10:25:10.506000000" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.provenance" content="" xml:lang="en-US"/><meta name="DCTERMS.subject" content="," xml:lang="en-US"/><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" hreflang="en"/><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" hreflang="en"/><link rel="schema.DCTYPE" href="http://purl.org/dc/dcmitype/" hreflang="en"/><link rel="schema.DCAM" href="http://purl.org/dc/dcam/" hreflang="en"/><style type="text/css">
+	@page {  }
+	table { border-collapse:collapse; border-spacing:0; empty-cells:show }
+	td, th { vertical-align:top; font-size:10pt;}
+	h1, h2, h3, h4, h5, h6 { clear:both }
+	ol, ul { margin:0; padding:0;}
+	li { list-style: none; margin:0; padding:0;}
+	<!-- "li span.odfLiEnd" - IE 7 issue-->
+	li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
+	span.footnodeNumber { padding-right:1em; }
+	span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
+	* { margin:0;}
+	.ta1 { writing-mode:lr-tb; }
+	.ce1 { font-family:Liberation Sans; background-color:#66ccff; border-width:0.0133cm; border-style:solid; border-color:#000000; text-align:center ! important; margin-left:0mm; font-style:italic; text-decoration:none ! important; font-weight:bold; }
+	.ce2 { font-family:Liberation Sans; border-width:0.0133cm; border-style:solid; border-color:#000000; text-align:center ! important; margin-left:0mm; }
+	.co1 { width:22.58mm; }
+	.co2 { width:40.5mm; }
+	.co3 { width:28.66mm; }
+	.ro1 { height:4.52mm; }
+	<!-- ODF styles with no properties representable as CSS -->
+	 { }
+	</style></head><body dir="ltr"><table border="0" cellspacing="0" cellpadding="0" class="ta1"><colgroup><col width="99"/><col width="99"/><col width="177"/><col width="125"/></colgroup><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce1"><p>Column</p></td><td style="text-align:left;width:22.58mm; " class="ce1"><p>Type</p></td><td style="text-align:left;width:40.5mm; " class="ce1"><p>Comments/Range</p></td><td style="text-align:left;width:28.66mm; " class="ce1"><p>Problems</p></td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>Tube Line</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>String</p></td><td style="text-align:left;width:40.5mm; " class="ce2"><p>not unique, not empty</p></td><td style="text-align:left;width:28.66mm; " class="ce2"><p>Names repeated</p></td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>From Station</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>String</p></td><td style="text-align:left;width:40.5mm; " class="ce2"><p>not unique, not empty</p></td><td style="text-align:left;width:28.66mm; " class="ce2"><p>Names repeated</p></td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>To Station</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>String</p></td><td style="text-align:left;width:40.5mm; " class="ce2"><p>not unique, not empty</p></td><td style="text-align:left;width:28.66mm; " class="ce2"><p>Names repeated</p></td></tr></table></body></html>
+
+<h2>-London Bus Stops</h2>	
+	
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><!--This file was converted to xhtml by LibreOffice - see http://cgit.freedesktop.org/libreoffice/core/tree/filter/source/xslt for the code.--><head profile="http://dublincore.org/documents/dcmi-terms/"><meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/><title xml:lang="en-US">- no title specified</title><meta name="DCTERMS.title" content="" xml:lang="en-US"/><meta name="DCTERMS.language" content="en-US" scheme="DCTERMS.RFC4646"/><meta name="DCTERMS.source" content="http://xml.openoffice.org/odf2xhtml"/><meta name="DCTERMS.issued" content="2016-10-28T10:18:47" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.modified" content="2016-10-28T12:02:48.21" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.provenance" content="" xml:lang="en-US"/><meta name="DCTERMS.subject" content="," xml:lang="en-US"/><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" hreflang="en"/><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" hreflang="en"/><link rel="schema.DCTYPE" href="http://purl.org/dc/dcmitype/" hreflang="en"/><link rel="schema.DCAM" href="http://purl.org/dc/dcam/" hreflang="en"/><style type="text/css">
+	@page {  }
+	table { border-collapse:collapse; border-spacing:0; empty-cells:show }
+	td, th { vertical-align:top; font-size:10pt;}
+	h1, h2, h3, h4, h5, h6 { clear:both }
+	ol, ul { margin:0; padding:0;}
+	li { list-style: none; margin:0; padding:0;}
+	<!-- "li span.odfLiEnd" - IE 7 issue-->
+	li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
+	span.footnodeNumber { padding-right:1em; }
+	span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
+	* { margin:0;}
+	.ta1 { writing-mode:lr-tb; }
+	.ce4 { font-family:Arial; background-color:#66ccff; border-width:0.0133cm; border-style:solid; border-color:#000000; vertical-align:top; text-align:center ! important; margin-left:0mm; writing-mode:page; font-size:10pt; font-style:italic; text-shadow:none; text-decoration:none ! important; font-weight:bold; }
+	.ce5 { font-family:Arial; border-width:0.0133cm; border-style:solid; border-color:#000000; vertical-align:top; text-align:center ! important; margin-left:0mm; writing-mode:page; font-size:10pt; font-style:normal; text-shadow:none; text-decoration:none ! important; font-weight:normal; }
+	.ce6 { font-family:Times New Roman; border-width:0.0133cm; border-style:solid; border-color:#000000; vertical-align:top; text-align:center ! important; margin-left:0mm; writing-mode:page; font-size:10pt; font-style:normal; text-shadow:none; text-decoration:none ! important; font-weight:normal; }
+	.co1 { width:29.99mm; }
+	.co2 { width:22.58mm; }
+	.co3 { width:164.82mm; }
+	.co4 { width:90.73mm; }
+	.ro1 { height:4.53mm; }
+	.ro2 { height:8.41mm; }
+	.ro3 { height:4.73mm; }
+	.T1 { font-family:Times New Roman; font-size:12pt; font-style:normal; text-shadow:none; text-decoration:none ! important; font-weight:normal; }
+	<!-- ODF styles with no properties representable as CSS -->
+	 { }
+	</style></head><body dir="ltr" style="margin-top:20mm; margin-bottom:20mm; margin-left:20mm; margin-right:20mm; "><table border="0" cellspacing="0" cellpadding="0" class="ta1"><colgroup><col width="131"/><col width="99"/><col width="720"/><col width="396"/></colgroup><tr class="ro1"><td style="text-align:left;width:29.99mm; " class="ce4"><p>Column</p></td><td style="text-align:left;width:22.58mm; " class="ce4"><p>Type</p></td><td style="text-align:left;width:164.82mm; " class="ce4"><p>Comments/Range</p></td><td style="text-align:left;width:90.73mm; " class="ce4"><p>Problems</p></td></tr><tr class="ro2"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Stop Code LBSL</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>String</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>not empty/First and/or second characters are letters (optional) and the rest of them are numbers (variable size) </p></td><td style="text-align:left;width:90.73mm; " class="ce5"><p>There is no standard format to identify Bus Stops.</p></td></tr><tr class="ro2"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Bus Stop Code</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>Each stop has a 5 numbers code/47,000.00—99,000.00 </p></td><td style="text-align:left;width:90.73mm; " class="ce5"><p>0.18% stops don't have Bus Stop Code</p></td></tr><tr class="ro3"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Naptan Atco</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>String</p></td><td style="text-align:left;width:164.82mm; " class="ce5"><p>not unique, not empty. This code allows to identify any transportation point inside UK</p></td><td style="text-align:left;width:90.73mm; " class="ce5"><p>7% stops don't follow the standard format</p></td></tr><tr class="ro1"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Stop Name</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>String</p></td><td style="text-align:left;width:164.82mm; " class="ce5"><p>not unique, not empty</p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr><tr class="ro3"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Location Easting</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>standard format (6 numbers)/497,000.00—562,000.00</p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr><tr class="ro3"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Location Northing</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>standard format (6 numbers)/148,000.00—203,000.00 </p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr><tr class="ro1"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Heading</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>0.00—360.00 </p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr><tr class="ro3"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Stop Area</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>String</p></td><td style="text-align:left;width:164.82mm; " class="ce5"><p>not unique, not empty. Some of them have letters and numbers and others only have numbers</p></td><td style="text-align:left;width:90.73mm; " class="ce5"><p>There is no standard format to identify Stop Areas</p></td></tr><tr class="ro1"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Virtual Bus Stop</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>0—1 </p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr></table></body></html>
+	
+<h1>Analyse Licensing of the Data Source</h1>
+<h2>-Publisher & Rightholder</h2>
+
+	<p>The publisher for the bus stop CSV is Transport for London (TfL).<br>
+
+	The publisher & the rightsholder for the Underground CSV is Chris Bell(The data is published in his/her personal website). </p>
+<h2>-License</h2>
+
+<p>The license for the bus stop CSV is UK Open Government Licence (OGL v2).<br>
+Please see link to TfL website for <a href="https://www.tfl.gov.uk/corporate/terms-and-conditions/transport-data-service">Terms & Conditions</a> related to this dataset. <br>
+Direct <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">LINK</a> to the Terms & Conditions.</p>
+
+<p>The license for the underground CSV is the specified by Chris Bell in the <a href="https://www.doogal.co.uk/">website</a>.<br>
+As it's said in the licensing, we can use this CSV under a public domain license because there isn't any other comment or copyright notice saying that the CSV comes from another source.</p>
+
+<h2>-License to be used for the generated Dataset</h2>
+
+<p> Contains public sector information licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">Open Government Licence v2.0</a>.<br>
+We plain to use OGL2 because it's the most restrictive license in the datasets we use in our application.</p>
+
+<h1>Define Resource Naming Strategy</h1>
+
+</body>
+
+
+</html>
