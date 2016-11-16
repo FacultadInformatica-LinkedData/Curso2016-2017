@@ -44,7 +44,8 @@ For example, I (my Github username is 'nandana') will upload three files :
 External Links
 ==============
 
-** RDF Generation from relational databases (External Links)**
+**RDF Generation from relational databases (External Links)**
+
 * [Mappingpedia](http://demo.mappingpedia.linkeddata.es/rules/upload/)
 * [Mappings](https://github.com/nandana/wsyld16-morph)
 
