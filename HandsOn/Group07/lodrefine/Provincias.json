@@ -1,0 +1,18 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column CA",
+    "columnName": "CA"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column AutonomÃ­a",
+    "columnName": "AutonomÃ­a"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column PROVINCIA to Nombre",
+    "oldColumnName": "PROVINCIA",
+    "newColumnName": "Nombre"
+  }
+]

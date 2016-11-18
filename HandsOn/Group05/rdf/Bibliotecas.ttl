@@ -1,0 +1,830 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix group5: <http://madridOcio.linkeddata.com/ontologyGroup5#> .
+
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6430067> group5:name "Bibliobús número 10. Recorrido semanal" ;
+	group5:localidad "MADRID" ;
+	group5:telefono "917 951 761 / Móvil: 639 624 276" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6431159> group5:name "Bibliobús número 11. Recorrido semanal" ;
+	group5:localidad "MADRID" ;
+	group5:telefono "917 951 761 / Móvil: 619 247 322" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6432104> group5:name "Bibliobús número 12. Recorrido semanal" ;
+	group5:localidad "MADRID" ;
+	group5:telefono "917 951 761 / Móvil: 639 624 280" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6435986> group5:name "Bibliobús número 13. Recorrido semanal" ;
+	group5:localidad "MADRID" ;
+	group5:telefono "917 951 761 / Móvil: 619 252 842" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/7110421> group5:name "Bibliobús número 2. Recorrido quincenal" ;
+	group5:localidad "MADRID" ;
+	group5:telefono "917 951 761 / 639 623 967" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6427915> group5:name "Bibliobús número 6. Recorrido semanal" ;
+	group5:localidad "MADRID" ;
+	group5:telefono "917 951 761 / 639 623 978" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6429143> group5:name "Bibliobús número 9. Recorrido semanal" ;
+	group5:localidad "MADRID" ;
+	group5:telefono "917 951 761 / Móvil: 639 623 973" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/7902770> group5:name "Bibliometro" ;
+	group5:nombreCalle "PRINCIPE DE VERGARA" ;
+	group5:numeroCalle "140" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CIUDAD JARDIN" ;
+	group5:codigoPostal "28002" ;
+	group5:telefono """                                    
+91 588 57 24       
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/8053214> group5:name "Bibliored" ;
+	group5:nombreCalle "PRINCIPE DE VERGARA" ;
+	group5:numeroCalle "140" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CIUDAD JARDIN" ;
+	group5:codigoPostal "28002" ;
+	group5:telefono """                                               
+91 588 57 24                  
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1881> group5:name "Biblioteca Histórica Municipal" ;
+	group5:descripcion """   Directorio:  
+ 
+  Dirección  Ilda María del Rosario Pérez García Teléfono: 91 588 57 44 Correo electrónico  bibliotecah@madrid.es  
+  Negociado Administrativo / Secretaría   Teléfono: 91 5885723; 91 5885737 
+  Sección de Información y Referencia  Teléfono: 91 4800557 Correo electrónico  bibliotecah@madrid.es  
+  Sección de Colecciones Especiales  Correo electrónico:  bibliotecah@madrid.es  
+  Sección de Fondos Generales  Correo electrónico  bibliotecah@madrid.es  
+ """ ;
+	group5:nombreCalle "CONDE DUQUE" ;
+	group5:numeroCalle "9" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "UNIVERSIDAD" ;
+	group5:codigoPostal "28015" ;
+	group5:email "bibliotecah@madrid.es" ;
+	group5:telefono "Secretaría: 915885737. Información y Referencia: 915885756, 914800557 y 915885744 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6779450> group5:name "Biblioteca Musical Víctor Espinós" ;
+	group5:descripcion """   Directorio:     
+ 
+  Dirección:   Inmaculada Seldas Fernández Tfno: 91 513 36 81 
+  Adjunto:  
+ María José Paredes Fernández Teléfono: 91 480 14 17   
+  Préstamo de Instrumentos  Teléfono: 91 588 57 55  
+  Información bibliográfica  Teléfono: 91 588 57 51  
+  Gestión económica y administrativa  Teléfono: 91 588 57 53 Teléfono: 91 480 13 44 
+  Mostrador de préstamo / Cabinas de ensayo  Teléfonos: 91 588 57 60 / 91 588 57 39   
+ """ ;
+	group5:nombreCalle "CONDE DUQUE" ;
+	group5:numeroCalle "9" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "UNIVERSIDAD" ;
+	group5:codigoPostal "28015" ;
+	group5:email "bibliomusical@madrid.es" ;
+	group5:telefono """91 588 57 53 / 91 588 57 39 / 91 588 57 55                                                         
+91 588 57 60""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1771> group5:name "Biblioteca Pública Acuña" ;
+	group5:descripcion """  Préstamo domiciliario:  carné gratuito presentando el  DNI,  u otro documento que acredite legalmente la identidad personal y para los menores de 14 años, con autorización del padre, la madre o tutor legal 
+  Días de cierre de la Biblioteca 2016:   
+ 
+ Sábados: 26 de marzo; sábados de julio y agosto; 3 y 10 de septiembre 
+ Domingos: todos 
+ Festivos: 1 y 6 de enero; 24 y 25 de marzo; 2 y 16  de mayo; 25 de julio; 15 de agosto; 12 de octubre; 1 y 9 de noviembre; 6, 8 y 26 de diciembre. 
+ Otros: 24 y 31 de diciembre 
+ """ ;
+	group5:nombreCalle "QUINTANA" ;
+	group5:numeroCalle "9" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ARGUELLES" ;
+	group5:codigoPostal "28008" ;
+	group5:email "bib.acuna@madrid.org" ;
+	group5:telefono """915 413 619                                                                       
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1767> group5:name "Biblioteca Pública Canillejas" ;
+	group5:descripcion "  Préstamo domiciliario: c arné gratuito presentando el  DNI  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal " ;
+	group5:nombreCalle "MUSAS" ;
+	group5:numeroCalle "11" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CANILLEJAS" ;
+	group5:codigoPostal "28022" ;
+	group5:email "bib.canillejas@madrid.org" ;
+	group5:telefono "917 424 499" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/5765642> group5:name "Biblioteca Pública Carabanchel Luis Rosales" ;
+	group5:descripcion """  Préstamo domiciliario:  Carné gratuito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores 14 años de edad, con autorización del padre, la madre o tutor legal. 
+  Información adicional sobre horarios:  los fines de semana y festivos de 14:30 a 15:30 horas no se asignarán préstamos de libros ni acceso a Internet pero sí continuará abierta la sala de lectura. Todos los días los servicios de préstamo y acceso a Internet finalizarán 15 minutos antes del cierre. """ ;
+	group5:nombreCalle "ANTONIA RODRIGUEZ SACRISTAN" ;
+	group5:numeroCalle "7" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PUERTA BONITA" ;
+	group5:codigoPostal "28044" ;
+	group5:email "bib.carabanchel@madrid.org" ;
+	group5:telefono """912 760 233                                                                                                          
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1764> group5:name "Biblioteca Pública Central" ;
+	group5:descripcion """  Días de cierre en 2016  :  
+ 
+  Sábados : 26 marzo; sábados de julio y agosto; 3 y 10 septiembre; 24 y 31 diciembre. 
+  Domingos  
+  Festivos : 1 y 6 enero; 24 y 25 marzo; 2 y 16 mayo; 25 julio; 15 agosto; 12 octubre; 1 y 9 noviembre; 6, 8 y 26 diciembre 
+ """ ;
+	group5:nombreCalle "FELIPE EL HERMOSO" ;
+	group5:numeroCalle "4" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "TRAFALGAR" ;
+	group5:codigoPostal "28010" ;
+	group5:email "bib.central@madrid.org" ;
+	group5:telefono "914 459 782" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1798> group5:name "Biblioteca Pública Centro Pedro Salinas" ;
+	group5:descripcion "  Préstamo domiciliario:  Carné gratuito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores 14 años de edad, con autorización del padre, la madre o tutor legal. " ;
+	group5:nombreCalle "PUERTA DE TOLEDO" ;
+	group5:numeroCalle "1" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "EMBAJADORES" ;
+	group5:codigoPostal "28005" ;
+	group5:email "bib.centro@madrid.org" ;
+	group5:telefono "913 665 407" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/66904> group5:name "Biblioteca Pública Fuencarral - El Pardo. Rafael Alberti" ;
+	group5:descripcion """  Préstamo domiciliario:  carné gratuito presentando el  DNI  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización de padre, la madre o tutor legal. 
+  Días cierre biblioteca año 2016:   
+ 
+  Sábados:  2 de enero; 26 de marzo; sábados de julio y agosto; 3 y 10 de septiembre; 24 y 31 de diciembre. 
+  Domingos : Todos 
+  Festivos:  1 y 6 de enero; 24 y 25 de marzo; 2 y 16 de mayo; 25 de julio; 15 de agosto; 12 de octubre; 1 y 9 de noviembre; 6, 8 y 26 de diciembre. 
+ 
+     """ ;
+	group5:nombreCalle "SANGENJO" ;
+	group5:numeroCalle "38" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "LA PAZ" ;
+	group5:codigoPostal "28034" ;
+	group5:email "bib.fuencarral@madrid.org" ;
+	group5:telefono "917 319 552 / 917 319 553" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1770> group5:name "Biblioteca Pública Hortaleza" ;
+	group5:descripcion """  Préstamo domiciliario:  carné gratuito presentando el  DNI  u otro documento que acredite legalmente la identidad personal y, para los menores de edad, con autorización del padre, la madre o tutor legal 
+  Días de cierre de la bibliioteca (2016 ): Fines de semana y festivos; del 1 al 7 de enero; 8 de febrero; del 18 al 29 de marzo; 2 y 16 de mayo; 10 de junio; los meses de julio y agosto; 12 de octubre; 1 y 9 de noviembre; 6 y 8 de diciembre; del 23 al 31 de diciembre; además, los días no lectivos regidos por el  calendario escolar 2016-2017   """ ;
+	group5:nombreCalle "ABERTURA" ;
+	group5:numeroCalle "2" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PINAR DEL REY" ;
+	group5:codigoPostal "28033" ;
+	group5:email "bib.hortaleza@madrid.org" ;
+	group5:telefono "917 633 284" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/25526> group5:name "Biblioteca Pública Latina - Antonio Mingote" ;
+	group5:descripcion """  Préstamos domiciliarios:  carné gratuito para todas las edades rellenando ficha de inscripción y presentando  DNI , pasaporte o autorización de padres o tutor para menores de 14 años. 
+  Días de cierre de la Biblioteca 2016:  
+ 
+ Sábados: 26 de marzo; sábados de julio y agosto; 3 y 10 de septiembre 
+ Domingos: todos 
+ Festivos: 1 y 6 de enero; 24 y 25 de marzo; 2 y 16  de mayo; 25 de julio; 15 de agosto; 12 de octubre; 1 y 9 de noviembre; 6, 8 y 26 de diciembre. 
+ Otros: 24 y 31 de diciembre 
+ """ ;
+	group5:nombreCalle "RAFAEL FINAT" ;
+	group5:numeroCalle "51" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "LAS AGUILAS" ;
+	group5:codigoPostal "28044" ;
+	group5:email "bib.latina@madrid.org" ;
+	group5:telefono "915 093 625" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1773> group5:name "Biblioteca Pública Moratalaz" ;
+	group5:descripcion """  Préstamo domiciliario:  carné gratutito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal. 
+  Días de cierre de la Biblioteca 2016:  
+ 
+ Sábados: 26 de marzo; sábados de julio y agosto; 3 y 10 de septiembre 
+ Domingos: todos 
+ Festivos: 1 y 6 de enero; 24 y 25 de marzo; 2 y 16  de mayo; 25 de julio; 15 de agosto; 12 de octubre; 1 y 9 de noviembre; 6, 8 y 26 de diciembre. 
+ Otros: 24 y 31 de diciembre 
+ 
+     """ ;
+	group5:nombreCalle "CORREGIDOR ALONSO DE TOBAR" ;
+	group5:numeroCalle "5" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "FONTARRON" ;
+	group5:codigoPostal "28030" ;
+	group5:email "bib.moratalaz@madrid.org" ;
+	group5:telefono "914 394 688" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1757> group5:name "Biblioteca Pública Municipal Aluche (Latina)" ;
+	group5:descripcion """ 
+  Superficie:  712 metros cuadrados 
+  Puestos de lectura:  130 
+  Puestos de Internet:  18 
+ """ ;
+	group5:nombreCalle "CAMARENA" ;
+	group5:numeroCalle "10" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ALUCHE" ;
+	group5:codigoPostal "28047" ;
+	group5:email "bpaluche@madrid.es" ;
+	group5:telefono "91 719 89 96" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1755> group5:name "Biblioteca Pública Municipal Ana María Matute (Carabanchel)" ;
+	group5:descripcion """ 
+  Superficie:  3.369 metros cuadrados 
+  Puestos de lectura:  244 
+  Puestos de Internet:  44 
+  Sala polivalente:  74 
+  Salas de trabajo en grupo:  3 (20 personas en total) 
+ """ ;
+	group5:nombreCalle "DE LOS COMUNEROS DE CASTILLA" ;
+	group5:numeroCalle "30" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "SAN ISIDRO" ;
+	group5:codigoPostal "28019" ;
+	group5:email "bpanammatute@madrid.es" ;
+	group5:telefono """91 588 08 30                                                                                                                                                      
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1762> group5:name "Biblioteca Pública Municipal Buenavista (Salamanca)" ;
+	group5:descripcion """ 
+  Superficie:  371 metros cuadrados 
+  Puestos de lectura:  76 
+  Puestos de Internet:  15 
+ """ ;
+	group5:nombreCalle "TOREROS" ;
+	group5:numeroCalle "5" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "GUINDALERA" ;
+	group5:codigoPostal "28028" ;
+	group5:email "bpbuenavista@madrid.es" ;
+	group5:telefono "91 724 08 04" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1745> group5:name "Biblioteca Pública Municipal Canillejas (San Blas-Canillejas)" ;
+	group5:descripcion """ 
+  Superficie:  466 metros cuadrados 
+  Puestos de lectura:  98 
+  Puestos de Internet:  6 
+ """ ;
+	group5:nombreCalle "BOLTAÑA" ;
+	group5:numeroCalle "23" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CANILLEJAS" ;
+	group5:codigoPostal "28022" ;
+	group5:email "bpcanillejas@madrid.es" ;
+	group5:telefono "91 741 11 34" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1794> group5:name "Biblioteca Pública Municipal Ciudad Lineal (Ciudad Lineal)" ;
+	group5:descripcion """ 
+  Superficie:  483 metros cuadrados 
+  Puestos de lectura:  114 
+  Puestos de Internet:  10 
+ """ ;
+	group5:nombreCalle "HERMANOS GARCIA NOBLEJAS" ;
+	group5:numeroCalle "14" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PUEBLO NUEVO" ;
+	group5:codigoPostal "28037" ;
+	group5:email "bpciudadlineal@madrid.es" ;
+	group5:telefono "915 887 566" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1882> group5:name "Biblioteca Pública Municipal Conde Duque (Centro)" ;
+	group5:descripcion """ 
+  Superficie:  5.870 metros cuadrados 
+  Puestos de lectura:  227 
+  Puestos de Internet:  26 
+   Página en Facebook   
+ """ ;
+	group5:nombreCalle "CONDE DUQUE" ;
+	group5:numeroCalle "9" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "UNIVERSIDAD" ;
+	group5:codigoPostal "28015" ;
+	group5:email "bpcondeduque@madrid.es" ;
+	group5:telefono "91 588 59 10" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/51188> group5:name "Biblioteca Pública Municipal Dámaso Alonso (Chamartín)" ;
+	group5:descripcion """ 
+  Superficie:  808 metros cuadrados 
+  Puestos de lectura:  129 
+  Puestos de Internet:  8 
+ """ ;
+	group5:nombreCalle "MANUEL FERRERO" ;
+	group5:numeroCalle "1" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CASTILLA" ;
+	group5:codigoPostal "28036" ;
+	group5:email "bpdamasoalonso@madrid.es" ;
+	group5:telefono "91 350 31 50" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6893633> group5:name "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro" ;
+	group5:descripcion """ 
+  Superficie:  3.794 metros cuadrados 
+  Puestos de lectura:  185 
+  Puestos de Internet:  39 
+  Sala polivalente:  90 
+  Salas de trabajo en grupo:  3 (6-8 personas en cada una) 
+ """ ;
+	group5:nombreCalle "FERNAN NUÑEZ" ;
+	group5:numeroCalle "24" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "LOS JERONIMOS" ;
+	group5:codigoPostal "28009" ;
+	group5:email "bpeugeniotrias@madrid.es" ;
+	group5:telefono "91 480 48 38" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/167128> group5:name "Biblioteca Pública Municipal Francisco Ayala (Vicálvaro)" ;
+	group5:descripcion """ 
+  Superficie:  1.600 metros cuadrados 
+  Puestos de lectura:  205 
+  Puestos de Internet:  11 
+  Sala polivalente:  55 
+ """ ;
+	group5:nombreCalle "INDALECIO PRIETO" ;
+	group5:numeroCalle "21" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "VALDEBERNARDO" ;
+	group5:codigoPostal "28032" ;
+	group5:email "bpfranciscoayala@madrid.es" ;
+	group5:telefono "91 301 64 66" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1760> group5:name "Biblioteca Pública Municipal Francisco Ibáñez (Chamartín)" ;
+	group5:descripcion """ 
+  Superficie:  543 metros cuadrados 
+  Puestos de lectura:  94 
+  Puestos de Internet:  24 
+ """ ;
+	group5:nombreCalle "MANTUANO" ;
+	group5:numeroCalle "51" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CIUDAD JARDIN" ;
+	group5:codigoPostal "28002" ;
+	group5:email "bpfranciscoibanez@madrid.es" ;
+	group5:telefono "91 510 37 56" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1754> group5:name "Biblioteca Pública Municipal Gabriel García Márquez (Usera)" ;
+	group5:descripcion """ 
+  Superficie:  1395 metros cuadrados 
+  Puestos de lectura:  142 
+  Puestos de Internet:  27 
+  Sala polivalente:  55 
+  Salas de trabajo en grupo:  2 (6 y 10 plazas) 
+ """ ;
+	group5:nombreCalle "PUEBLO" ;
+	group5:numeroCalle "2" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ORCASUR" ;
+	group5:codigoPostal "28041" ;
+	group5:email "bpgarciamarquez@madrid.es" ;
+	group5:telefono """91 318 86 91                                                  
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1748> group5:name "Biblioteca Pública Municipal Gerardo Diego (Villa de Vallecas)" ;
+	group5:descripcion """ 
+  Superficie:  1.601 metros cuadrados 
+  Puestos de lectura:  196 
+  Puestos de Internet:  16 
+  Sala polivalente : 59 
+   Página en Facebook    
+ """ ;
+	group5:nombreCalle "MONTE AYA" ;
+	group5:numeroCalle "12" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CASCO HISTORICO VALLECAS" ;
+	group5:codigoPostal "28031" ;
+	group5:email "bpgerardodiego@madrid.es" ;
+	group5:telefono "91 380 66 33" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/79941> group5:name "Biblioteca Pública Municipal Gloria Fuertes (Barajas)" ;
+	group5:descripcion """ 
+  Superficie:  672 metros cuadrados 
+  Puestos de lectura:  119 
+  Puestos de Internet:  9 
+  Sala polivalente:  30 
+ """ ;
+	group5:nombreCalle "LOGROÑO" ;
+	group5:numeroCalle "179" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CORRALEJOS" ;
+	group5:codigoPostal "28042" ;
+	group5:email "bpgloriafuertes@madrid.es" ;
+	group5:telefono "91 312 02 58" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1750> group5:name "Biblioteca Pública Municipal Huerta de la Salud (Hortaleza)" ;
+	group5:descripcion """ 
+  Superficie : 450 metros cuadrados 
+  Puestos de lectura : 77 
+  Puestos de Internet:  7 
+ """ ;
+	group5:nombreCalle "MAR DE LAS ANTILLAS" ;
+	group5:numeroCalle "10" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PINAR DEL REY" ;
+	group5:codigoPostal "28033" ;
+	group5:email "bphuertasalud@madrid.es" ;
+	group5:telefono "91 764 52 43" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/51849> group5:name "Biblioteca Pública Municipal Islas Filipinas (Ciudad Lineal)" ;
+	group5:descripcion """ 
+  Superficie:  880 metros cuadrados 
+  Puestos de lectura:  102 
+  Puestos de Internet:  10 
+ """ ;
+	group5:nombreCalle "NUESTRA SEÑORA DEL VILLAR" ;
+	group5:numeroCalle "6" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "VENTAS" ;
+	group5:codigoPostal "28017" ;
+	group5:email "bpislasfilipinas@madrid.es" ;
+	group5:telefono "91 403 63 22" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/5975465> group5:name "Biblioteca Pública Municipal Iván de Vargas (Centro)" ;
+	group5:descripcion """ 
+  Superficie:    2.884 metros cuadrados 
+  Puestos de lectura:    164 
+  Puestos de Internet:    18 
+  Puestos de la sala polivalente:  45 
+  Puestos de la sala de trabajo en grupo:   
+   Página en Facebook   
+ """ ;
+	group5:nombreCalle "SAN JUSTO" ;
+	group5:numeroCalle "5" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PALACIO" ;
+	group5:codigoPostal "28005" ;
+	group5:email "bpivandevargas@madrid.es" ;
+	group5:telefono "917 586 211" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/115056> group5:name "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)" ;
+	group5:descripcion """ 
+  Superficie:  1.866 metros cuadrados 
+  Puestos de lectura:  227 
+  Puestos de Internet:  13 
+  Sala polivalente:  50 
+   Página en Facebook   
+ """ ;
+	group5:nombreCalle "MARIA SEVILLA DIAGO" ;
+	group5:numeroCalle "15" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ROSAS" ;
+	group5:codigoPostal "28022" ;
+	group5:email "bpjosehierro@madrid.es" ;
+	group5:telefono "91 313 55 28" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1790> group5:name "Biblioteca Pública Municipal José Saramago (Fuencarral-El Pardo)" ;
+	group5:descripcion """ 
+  Superficie:  1.276 metros cuadrados 
+  Puestos de lectura:  204 
+  Puestos de Internet:  17 
+  Sala polivalente : 30 
+   Página en Facebook    
+ """ ;
+	group5:nombreCalle "MONFORTE DE LEMOS" ;
+	group5:numeroCalle "38" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "EL PILAR" ;
+	group5:codigoPostal "28029" ;
+	group5:email "bpjosesaramago@madrid.es" ;
+	group5:telefono "91 588 68 91" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1756> group5:name "Biblioteca Pública Municipal La Chata (Carabanchel)" ;
+	group5:descripcion """ 
+  Superficie:  1.600 metros cuadrados 
+  Puestos de lectura:  223 
+  Puestos de Internet:  17 
+ """ ;
+	group5:nombreCalle "GENERAL RICARDOS" ;
+	group5:numeroCalle "252" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "VISTA ALEGRE" ;
+	group5:codigoPostal "28025" ;
+	group5:email "bplachata@madrid.es" ;
+	group5:telefono "91 422 05 33" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/185595> group5:name "Biblioteca Pública Municipal Manuel Vázquez Montalbán (Tetuán)" ;
+	group5:descripcion """ 
+  Superficie:  1.372 metros cuadrados 
+  Puestos de lectura:  151 
+  Puestos de Internet:  11 
+  Sala polivalente:  40 
+ """ ;
+	group5:nombreCalle "FRANCOS RODRIGUEZ" ;
+	group5:numeroCalle "67" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "BELLAS VISTAS" ;
+	group5:codigoPostal "28039" ;
+	group5:email "bpvazquezmontalban@madrid.es" ;
+	group5:telefono """91 398 07 23                                                                                                                                     
+91 398 07 26""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/7697128> group5:name "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)" ;
+	group5:descripcion """ 
+  Superficie:  1.860,70 metros cuadrados 
+  Puestos de lectura:  122 
+  Puestos de Internet:  41 
+  Sala polivalente:  16 
+  Sala de trabajo en grupo : 16 
+ """ ;
+	group5:nombreCalle "BARCELO" ;
+	group5:numeroCalle "2" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "JUSTICIA" ;
+	group5:codigoPostal "28004" ;
+	group5:email "bpvargasllosa@madrid.es" ;
+	group5:telefono """914 802 433                                                                                                                                                   
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1759> group5:name "Biblioteca Pública Municipal María Zambrano (Tetuán)" ;
+	group5:descripcion """ 
+  Superficie:  1.551 metros cuadrados 
+  Puestos de lectura:  123 
+  Puestos de Internet:  21 
+   Página en Facebook   
+ """ ;
+	group5:nombreCalle "DONOSO" ;
+	group5:numeroCalle "5" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ALMENARA" ;
+	group5:codigoPostal "28029" ;
+	group5:email "bpmariazambrano@madrid.es" ;
+	group5:telefono "91 733 90 43" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1752> group5:name "Biblioteca Pública Municipal Miguel Delibes (Moratalaz)" ;
+	group5:descripcion """ 
+  Superficie:  2.012 metros cuadrados 
+  Puestos de lectura:  258 
+  Puestos de Internet:  14 
+ """ ;
+	group5:nombreCalle "ARROYO BELINCOSO" ;
+	group5:numeroCalle "11" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "MEDIA LEGUA" ;
+	group5:codigoPostal "28030" ;
+	group5:email "bpmigueldelibes@madrid.es" ;
+	group5:telefono "91 328 73 00" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/186714> group5:name "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)" ;
+	group5:descripcion """ 
+  Superficie:  1.500 metros cuadrados 
+  Puestos de lectura:  192 
+  Puestos de Internet:  14 
+  Sala polivalente:  30 
+   Página en Facebook   
+ """ ;
+	group5:nombreCalle "ASCAO" ;
+	group5:numeroCalle "4" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PUEBLO NUEVO" ;
+	group5:codigoPostal "28017" ;
+	group5:email "bppabloneruda@madrid.es" ;
+	group5:telefono "91 406 14 72" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1753> group5:name "Biblioteca Pública Municipal Portazgo (Puente de Vallecas)" ;
+	group5:descripcion """ 
+  Superficie:  550 metros cuadrados 
+  Puestos de lectura:  116 
+  Puestos de Internet:   
+ """ ;
+	group5:nombreCalle "CANTALAPIEDRA" ;
+	group5:numeroCalle "11" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "NUMANCIA" ;
+	group5:codigoPostal "28038" ;
+	group5:email "bpportazgo@madrid.es" ;
+	group5:telefono "91 757 03 23" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1792> group5:name "Biblioteca Pública Municipal Pozo del Tío Raimundo (Puente de Vallecas)" ;
+	group5:descripcion """ 
+  Superficie:  269 metros cuadrados 
+  Puestos de lectura:  146 
+  Puestos de Internet:  7 
+   Página en Facebook   
+ """ ;
+	group5:nombreCalle "GLORIETAS" ;
+	group5:numeroCalle "19" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ENTREVIAS" ;
+	group5:codigoPostal "28053" ;
+	group5:email "bppozotr@madrid.es" ;
+	group5:telefono "91 507 07 34" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1763> group5:name "Biblioteca Pública Municipal Pío Baroja (Arganzuela)" ;
+	group5:descripcion """ 
+  Superficie:  1.454 metros cuadrados 
+  Puestos de lectura:  162 
+  Puestos de Internet:  10 
+ """ ;
+	group5:nombreCalle "ARGANDA" ;
+	group5:numeroCalle "12" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ACACIAS" ;
+	group5:codigoPostal "28005" ;
+	group5:email "bppiobaroja@madrid.es" ;
+	group5:telefono "91 474 16 03" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1746> group5:name "Biblioteca Pública Municipal San Blas (San Blas-Canillejas)" ;
+	group5:descripcion """ 
+  Superficie:  312 metros cuadrados 
+  Puestos de lectura:  125 
+  Puestos de Internet:  8 
+ """ ;
+	group5:nombreCalle "SAN ROMAN DEL VALLE" ;
+	group5:numeroCalle "8" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ARCOS" ;
+	group5:codigoPostal "28037" ;
+	group5:email "bpsanblas@madrid.es" ;
+	group5:telefono "91 313 52 97" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1761> group5:name "Biblioteca Pública Municipal Vallecas (Puente de Vallecas)" ;
+	group5:descripcion """ 
+  Superficie:  367 metros cuadrados 
+  Puestos de lectura:  133 
+  Puestos de Internet:  6 
+ """ ;
+	group5:nombreCalle "PUERTO DEL MONASTERIO" ;
+	group5:numeroCalle "1" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "SAN DIEGO" ;
+	group5:codigoPostal "28053" ;
+	group5:email "bpvallecas@madrid.es" ;
+	group5:telefono "91 588 60 51" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1747> group5:name "Biblioteca Pública Municipal Vicálvaro" ;
+	group5:descripcion """ 
+  Superficie:  547 metros cuadrados 
+  Puestos de lectura:  94 
+  Puestos de Internet:  10 
+ """ ;
+	group5:nombreCalle "VILLARDONDIEGO" ;
+	group5:numeroCalle "36" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CASCO HISTORICO VICALVARO" ;
+	group5:codigoPostal "28032" ;
+	group5:email "bpvicalvaro@madrid.es" ;
+	group5:telefono "91 775 31 43" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/5768564> group5:name "Biblioteca Pública Municipal Ángel González (Latina)" ;
+	group5:descripcion """ 
+  Superficie:  2.811 metros cuadrados 
+  Puestos de lectura:  309 
+  Puestos de Internet:  34 
+  Puestos de la sala polivalente:  60 
+  Puestos de la sala de actividades:  18 
+  Puestos de la sala de trabajo en grupo:  24 
+   Página en Facebook   
+ """ ;
+	group5:nombreCalle "GRANJA DE TORREHERMOSA" ;
+	group5:numeroCalle "1" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ALUCHE" ;
+	group5:codigoPostal "28024" ;
+	group5:email "bpangelgonzalez@madrid.es" ;
+	group5:telefono "91 512 35 42" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1774> group5:name "Biblioteca Pública Retiro" ;
+	group5:nombreCalle "DOCTOR ESQUERDO" ;
+	group5:numeroCalle "189" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ADELFAS" ;
+	group5:codigoPostal "28007" ;
+	group5:email "bib.retiro@madrid.org" ;
+	group5:telefono "915 019 146 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1777> group5:name "Biblioteca Pública Ruiz Egea" ;
+	group5:descripcion "  Préstamo domiciliario:  carné gratuito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal " ;
+	group5:nombreCalle "RAIMUNDO FERNANDEZ VILLAVERDE" ;
+	group5:numeroCalle "6" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "RIOS ROSAS" ;
+	group5:codigoPostal "28003" ;
+	group5:email "bib.ruizegea@madrid.org" ;
+	group5:telefono "915 349 029" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1765> group5:name "Biblioteca Pública Salamanca - Manuel Alvar" ;
+	group5:descripcion "  Préstamo domiciliario:  carné gratuito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal " ;
+	group5:nombreCalle "AZCONA" ;
+	group5:numeroCalle "42" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "GUINDALERA" ;
+	group5:codigoPostal "28028" ;
+	group5:email "bib.salamanca@madrid.org" ;
+	group5:telefono "917 263 701 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/123303> group5:name "Biblioteca Pública Usera - José Hierro" ;
+	group5:descripcion "  Préstamo domiciliario:  carné gratuito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal " ;
+	group5:nombreCalle "RAFAELA YBARRA" ;
+	group5:numeroCalle "43" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PRADOLONGO" ;
+	group5:codigoPostal "28026" ;
+	group5:email "bib.usera@madrid.org" ;
+	group5:telefono "914 229 501" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1800> group5:name "Biblioteca Pública Vallecas" ;
+	group5:descripcion """  Préstamo domiciliario:  Carné gratuito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal 
+  Días de cierre de la Biblioteca 2016:   
+ 
+ Sábados: 26 marzo; 2, 9, 16, 23 y 30 julio; 6, 13, 20 y 27 agosto; 3 y 10 septiembre; 24 y 31 diciembre 
+ Domingos: todos 
+ Festivos: 1 y 6 enero; 24 y 25 marzo; 2 y 16 mayo; 25 julio; 15 agosto; 12 octubre; 1 y 9 noviembre; 6, 8 y 26 diciembre.  
+ """ ;
+	group5:nombreCalle "RAFAEL ALBERTI" ;
+	group5:numeroCalle "36" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PALOMERAS SURESTE" ;
+	group5:codigoPostal "28018" ;
+	group5:email "bib.vallecas@madrid.org" ;
+	group5:telefono """913 033 195                                       
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/181101> group5:name "Biblioteca Pública Villa de Vallecas - Luis Martín Santos" ;
+	group5:descripcion "  Préstamo domiciliario:  carné gratuito presentando el  D.N.I   u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal " ;
+	group5:nombreCalle "ANTONIO MARIA SEGOVIA" ;
+	group5:numeroCalle "2" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "SANTA EUGENIA" ;
+	group5:codigoPostal "28031" ;
+	group5:email "bib.villavallecas@madrid.org" ;
+	group5:telefono "912 760 231" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/86719> group5:name "Biblioteca Pública Villaverde - María Moliner" ;
+	group5:descripcion """  Préstamo domiciliario:  carné gratuito presentando el  D.N.I  y otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal 
+  Días de cierre de la Biblioteca en 2016:   
+ 
+  Sábados:  2 de enero; 26 de marzo; sábados de julio y agosto; 3 y 10 de septiembre; 24 y 31 de diciembre 
+  Domingos:  todos 
+  Festivos:  1 y 6 de enero; 24 y 25 de marzo; 2 y 16 de mayo; 25 de julio; 15 de agosto; 12 de octubre; 1 y 9 de noviembre; 6, 8 y 26 de diciembre 
+ 
+     """ ;
+	group5:nombreCalle "VILLALONSO" ;
+	group5:numeroCalle "16" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "SAN ANDRES" ;
+	group5:codigoPostal "28021" ;
+	group5:email "bib.villaverde@madrid.org" ;
+	group5:telefono "917 230 194  " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/108154> group5:name "Biblioteca Regional de Madrid Joaquín Leguina" ;
+	group5:descripcion " Unicamente préstamo en sala " ;
+	group5:nombreCalle "RAMIREZ DE PRADO" ;
+	group5:numeroCalle "3" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "DELICIAS" ;
+	group5:codigoPostal "28045" ;
+	group5:email "biblio.regional@madrid.org" ;
+	group5:telefono "917 208 850 / 917 208 860 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1788> group5:name "Casa San Cristobal" ;
+	group5:descripcion "  Requisitos de acceso    Carné del centro. Es gratuito y se obtiene de manera instantánea presentado  DNI  o equivalente  Los menores de 8 años acompañados deben ir acompañados.  Los menores de más de 8 años requieren autorización del padre / madre o tutor para obtener el carné del centro    Puestos de lectura    160 para adultos  40 infantiles  " ;
+	group5:nombreCalle "ROCAFORT" ;
+	group5:numeroCalle "101" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "SAN CRISTOBAL" ;
+	group5:codigoPostal "28021" ;
+	group5:email "bsancristobal@montemadrid.es" ;
+	group5:telefono "917 966 048" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/103331> group5:name "Centro Social y Cultural la Casa Encendida" ;
+	group5:nombreCalle "VALENCIA" ;
+	group5:numeroCalle "2" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "EMBAJADORES" ;
+	group5:codigoPostal "28012" ;
+	group5:email "lacasaencendida@montemadrid.es" ;
+	group5:telefono """902 430 322                                                                 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/2047> group5:name "Hemeroteca Municipal" ;
+	group5:descripcion """  Directorio:   
+ 
+  Dirección  Inmaculada Zaragoza García Teléfono: 91 588 57 74 Correo:  zaragozagi@madrid.es  
+  Secretaría  Teléfono: 91 588 57 77 o 91 588 57 74 Correo:  hemeroteca@madrid.es  
+  Gestión económica y administrativa  Teléfono: 91 588 57 76 Correo:  gonzalezbj@madrid.es  
+  Sección Contemporánea (Publicaciones en curso)  Teléfono: 91 588 57 56 y 91 513 33 65  Correo:  contemporanea@madrid.es     
+  Sección Histórica  Teléfono: 91 480 06 52 y 91 480 06 05 Correo:  antonbmc@madrid.es  
+  Sección Información  Teléfono: 91 588 57 72, 91 588 57 75 y  91 513 31 64 Correo:  infohemeroteca@madrid.es  
+  Difusión  Teléfono: 91 480 05 79 Correo:  concejoml@madrid.es  
+  Negociado de Microfilm  Teléfono: 91 588 57 73 Correo: nmicrofilm@madrid.es  
+ 
+  Recepción  Teléfono: 91 588 57 71 y 91 588 57 64 
+ 
+ """ ;
+	group5:nombreCalle "CONDE DUQUE" ;
+	group5:numeroCalle "11" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "UNIVERSIDAD" ;
+	group5:codigoPostal "28015" ;
+	group5:email "hemeroteca@madrid.es" ;
+	group5:telefono """91 588 57 71, 91 513 31 64 (Información general)                                                                  
+91 588 57 73 (Reprografía)""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/10091056> group5:name "Salas de estudio" ;
+	group5:nombreCalle "PRINCIPE DE VERGARA" ;
+	group5:numeroCalle "140" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CIUDAD JARDIN" ;
+	group5:codigoPostal "28002" .
