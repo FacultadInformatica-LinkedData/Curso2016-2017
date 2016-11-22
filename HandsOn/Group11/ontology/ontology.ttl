@@ -1,0 +1,126 @@
+@prefix : <http://www.madridcultural.es/ontology.owl> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.madridcultural.es/ontology.owl> .
+
+<http://www.madridcultural.es/ontology.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.madridcultural.es/ontology.owl#tieneBarrio
+:tieneBarrio rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :tieneDistrito .
+
+
+###  http://www.madridcultural.es/ontology.owl#tieneCalle
+:tieneCalle rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :tieneDireccion .
+
+
+###  http://www.madridcultural.es/ontology.owl#tieneCodigoPostal
+:tieneCodigoPostal rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :tieneDistrito .
+
+
+###  http://www.madridcultural.es/ontology.owl#tieneDireccion
+:tieneDireccion rdf:type owl:ObjectProperty .
+
+
+###  http://www.madridcultural.es/ontology.owl#tieneDistrito
+:tieneDistrito rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.madridcultural.es/ontology.owl#tieneEmail
+:tieneEmail rdf:type owl:ObjectProperty .
+
+
+###  http://www.madridcultural.es/ontology.owl#tieneNumero
+:tieneNumero rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :tieneDireccion .
+
+
+###  http://www.madridcultural.es/ontology.owl#tieneTelefono
+:tieneTelefono rdf:type owl:ObjectProperty .
+
+
+###  http://www.madridcultural.es/ontology.owl#tieneTipo
+:tieneTipo rdf:type owl:ObjectProperty .
+
+
+###  http://www.madridcultural.es/ontology.owl#tieneTransporte
+:tieneTransporte rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#es_realizado
+<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#es_realizado> rdf:type owl:ObjectProperty ;
+                                                                                          rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                          rdfs:domain <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Lugar> ;
+                                                                                          rdfs:range <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento> .
+
+
+###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#pertenece_a
+<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#pertenece_a> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Tipo> ;
+                                                                                         rdfs:range <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento> .
+
+
+###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#se_realiza_en
+<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#se_realiza_en> rdf:type owl:ObjectProperty ;
+                                                                                           rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                           rdfs:domain <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento> ;
+                                                                                           rdfs:range <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Lugar> .
+
+
+###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#tiene_un
+<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#tiene_un> rdf:type owl:ObjectProperty ;
+                                                                                      rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento> ;
+                                                                                      rdfs:range <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Tipo> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.madridcultural.es/ontology.owl#Barrios
+:Barrios rdf:type owl:Class ;
+         rdfs:subClassOf :Distritos .
+
+
+###  http://www.madridcultural.es/ontology.owl#Centros
+:Centros rdf:type owl:Class .
+
+
+###  http://www.madridcultural.es/ontology.owl#Direccion
+:Direccion rdf:type owl:Class .
+
+
+###  http://www.madridcultural.es/ontology.owl#Distritos
+:Distritos rdf:type owl:Class .
+
+
+###  http://www.madridcultural.es/ontology.owl#TiposCentros
+:TiposCentros rdf:type owl:Class ;
+              rdfs:subClassOf :Centros .
+
+
+###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento
+<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Lugar
+<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Lugar> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Tipo
+<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Tipo> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
