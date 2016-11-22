@@ -19,7 +19,7 @@
         },
         {
           "name": "phar",
-          "uri": "http://semanticweb.es/group04/ontology/Pharmacies"
+          "uri": "http://semanticweb.es/group04/ontology/pharmacies"
         }
       ],
       "rootNodes": [
@@ -30,73 +30,73 @@
           "rdfTypes": [],
           "links": [
             {
-              "uri": "http://semanticweb.es/group04/ontology/PharmaciesperteneceA",
-              "curie": "phar:PharmaciesperteneceA",
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesperteneceA",
+              "curie": "phar:pharmaciesperteneceA",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Localidad"
+                "columnName": "localidad"
               }
             },
             {
-              "uri": "http://semanticweb.es/group04/ontology/PharmaciesperteneceA",
-              "curie": "phar:PharmaciesperteneceA",
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesperteneceA",
+              "curie": "phar:pharmaciesperteneceA",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Barrio"
+                "columnName": "barrio"
               }
             },
             {
-              "uri": "http://semanticweb.es/group04/ontology/Pharmaciesd�aDelMes",
-              "curie": "phar:Pharmaciesd�aDelMes",
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesd�aDelMes",
+              "curie": "phar:pharmaciesd�aDelMes",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Fecha"
+                "columnName": "fecha"
               }
             },
             {
-              "uri": "http://semanticweb.es/group04/ontology/Pharmaciesest�En",
-              "curie": "phar:Pharmaciesest�En",
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesest�En",
+              "curie": "phar:pharmaciesest�En",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Farmacia"
+                "columnName": "farmacia"
               }
             },
             {
-              "uri": "http://semanticweb.es/group04/ontology/PharmaciesestaEnBarrio",
-              "curie": "phar:PharmaciesestaEnBarrio",
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesestaEnBarrio",
+              "curie": "phar:pharmaciesestaEnBarrio",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Direccion"
+                "columnName": "direccion"
               }
             },
             {
-              "uri": "http://semanticweb.es/group04/ontology/Pharmacieshorario",
-              "curie": "phar:Pharmacieshorario",
+              "uri": "http://semanticweb.es/group04/ontology/pharmacieshorario",
+              "curie": "phar:pharmacieshorario",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Duraci�n"
+                "columnName": "duraci�n"
               }
             },
             {
-              "uri": "http://semanticweb.es/group04/ontology/PharmaciestieneTel�fono",
-              "curie": "phar:PharmaciestieneTel�fono",
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciestieneTel�fono",
+              "curie": "phar:pharmaciestieneTel�fono",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Tel�fono"
+                "columnName": "tel�fono"
               }
             }
           ]
