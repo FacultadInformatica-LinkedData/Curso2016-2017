@@ -1,0 +1,3667 @@
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix livingPlaces: <http://www.linkedData_Group13.com/ontology/livingPlaces#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://www.linkedData_Group13.com/resource/Amherst> a livingPlaces:StateParkFacility ;
+	rdfs:label "Amherst" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Erie"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-78.7480881839"^^geo:long ;
+	livingPlaces:hasLatitude "42.971000873"^^geo:lat ;
+	livingPlaces:hasName "0"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Beaver+Island> a livingPlaces:StateParkFacility ;
+	rdfs:label "Beaver Island" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Erie"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/56/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/4/details.aspx"^^xsd:anyURI , "http://www.nysparks.com/environment/nature-centers/11/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.9531063633"^^geo:long ;
+	livingPlaces:hasLatitude "42.9657659397"^^geo:lat ;
+	livingPlaces:hasName "1"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Big+Six+Mile+Creek+Marina> a livingPlaces:StateParkFacility ;
+	rdfs:label "Big Six Mile Creek Marina" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Erie"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/50/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.0109877003"^^geo:long ;
+	livingPlaces:hasLatitude "43.0231951575"^^geo:lat ;
+	livingPlaces:hasName "2"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Buckhorn+Island> a livingPlaces:StateParkFacility ;
+	rdfs:label "Buckhorn Island" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Erie"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/174/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.9807473248"^^geo:long ;
+	livingPlaces:hasLatitude "43.0585164791"^^geo:lat ;
+	livingPlaces:hasName "3"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Darwin+Martin+House> a livingPlaces:StateParkFacility ;
+	rdfs:label "Darwin Martin House" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Erie"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/35/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.8480452045"^^geo:long ;
+	livingPlaces:hasLatitude "42.9360920889"^^geo:lat ;
+	livingPlaces:hasName "4"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/DeVeaux+Woods> a livingPlaces:StateParkFacility ;
+	rdfs:label "DeVeaux Woods" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Erie"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/11/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.0587431765"^^geo:long ;
+	livingPlaces:hasLatitude "43.1194167987"^^geo:lat ;
+	livingPlaces:hasName "5"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Devil%27s+Hole> a livingPlaces:StateParkFacility ;
+	rdfs:label "Devil's Hole" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Niagara"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/42/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.0459607011"^^geo:long ;
+	livingPlaces:hasLatitude "43.1346318545"^^geo:lat ;
+	livingPlaces:hasName "6"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Earl+W.+Brydges+Artpark> a livingPlaces:StateParkFacility ;
+	rdfs:label "Earl W. Brydges Artpark" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Niagara"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/113/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.0419282069"^^geo:long ;
+	livingPlaces:hasLatitude "43.1656182246"^^geo:lat ;
+	livingPlaces:hasName "7"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Evangola> a livingPlaces:StateParkFacility ;
+	rdfs:label "Evangola" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Erie"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/91/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.1018592578"^^geo:long ;
+	livingPlaces:hasLatitude "42.6057993585"^^geo:lat ;
+	livingPlaces:hasName "8"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Fort+Niagara> a livingPlaces:StateParkFacility ;
+	rdfs:label "Fort Niagara" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Niagara"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/175/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.0525858506"^^geo:long ;
+	livingPlaces:hasLatitude "43.2616349374"^^geo:lat ;
+	livingPlaces:hasName "9"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Four+Mile+Creek> a livingPlaces:StateParkFacility ;
+	rdfs:label "Four Mile Creek" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Niagara"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/6/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.9974685115"^^geo:long ;
+	livingPlaces:hasLatitude "43.2743764485"^^geo:lat ;
+	livingPlaces:hasName "10"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Golden+Hill> a livingPlaces:StateParkFacility ;
+	rdfs:label "Golden Hill" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Niagara"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/143/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.4801588564"^^geo:long ;
+	livingPlaces:hasLatitude "43.3694616791"^^geo:lat ;
+	livingPlaces:hasName "11"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Joseph+Davis> a livingPlaces:StateParkFacility ;
+	rdfs:label "Joseph Davis" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Niagara"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/45/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.0399244577"^^geo:long ;
+	livingPlaces:hasLatitude "43.214121149"^^geo:lat ;
+	livingPlaces:hasName "12"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Knox+Farm> a livingPlaces:StateParkFacility ;
+	rdfs:label "Knox Farm" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Erie"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/163/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.6477499359"^^geo:long ;
+	livingPlaces:hasLatitude "42.7738672657"^^geo:lat ;
+	livingPlaces:hasName "13"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Niagara+Falls> a livingPlaces:StateParkFacility ;
+	rdfs:label "Niagara Falls" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Niagara"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/46/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.0670195347"^^geo:long ;
+	livingPlaces:hasLatitude "43.0867482021"^^geo:lat ;
+	livingPlaces:hasName "14"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Old+Fort+Niagara> a livingPlaces:StateParkFacility ;
+	rdfs:label "Old Fort Niagara" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Niagara"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/31/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.0631143489"^^geo:long ;
+	livingPlaces:hasLatitude "43.2625939108"^^geo:lat ;
+	livingPlaces:hasName "15"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Reservoir> a livingPlaces:StateParkFacility ;
+	rdfs:label "Reservoir" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Niagara"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/75/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.0150381473"^^geo:long ;
+	livingPlaces:hasLatitude "43.1340115441"^^geo:lat ;
+	livingPlaces:hasName "16"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Strawberry+Island> a livingPlaces:StateParkFacility ;
+	rdfs:label "Strawberry Island" ;
+	livingPlaces:hasParkFacilityType "Other"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Erie"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-78.9224974212"^^geo:long ;
+	livingPlaces:hasLatitude "42.9539490596"^^geo:lat ;
+	livingPlaces:hasName "17"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Whirlpool> a livingPlaces:StateParkFacility ;
+	rdfs:label "Whirlpool" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Niagara"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/105/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.0634179678"^^geo:long ;
+	livingPlaces:hasLatitude "43.1204004767"^^geo:lat ;
+	livingPlaces:hasName "18"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Wilson-Tuscarora> a livingPlaces:StateParkFacility ;
+	rdfs:label "Wilson-Tuscarora" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Niagara"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/69/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.8556088836"^^geo:long ;
+	livingPlaces:hasLatitude "43.3037772926"^^geo:lat ;
+	livingPlaces:hasName "19"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Woodlawn+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Woodlawn Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Erie"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/47/details.aspx"^^xsd:anyURI , "http://www.nysparks.com/environment/nature-centers/10/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.8522078489"^^geo:long ;
+	livingPlaces:hasLatitude "42.7938189008"^^geo:lat ;
+	livingPlaces:hasName "20"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Allegany> a livingPlaces:StateParkFacility ;
+	rdfs:label "Allegany" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "2"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Cattaraugus"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/136/details.aspx"^^xsd:anyURI , "http://www.nysparks.com/environment/nature-centers/12/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.7685586473"^^geo:long ;
+	livingPlaces:hasLatitude "42.0547575211"^^geo:lat ;
+	livingPlaces:hasName "21"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Lake+Erie> a livingPlaces:StateParkFacility ;
+	rdfs:label "Lake Erie" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "2"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Chautauqua"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/129/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.431417873"^^geo:long ;
+	livingPlaces:hasLatitude "42.4228907897"^^geo:lat ;
+	livingPlaces:hasName "22"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Long+Point> a livingPlaces:StateParkFacility ;
+	rdfs:label "Long Point" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "2"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Chautauqua"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/109/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.4109114045"^^geo:long ;
+	livingPlaces:hasLatitude "42.1787606524"^^geo:lat ;
+	livingPlaces:hasName "23"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Midway> a livingPlaces:StateParkFacility ;
+	rdfs:label "Midway" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "2"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Chautauqua"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/167/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-79.4224274036"^^geo:long ;
+	livingPlaces:hasLatitude "42.2008724801"^^geo:lat ;
+	livingPlaces:hasName "24"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Braddock+Bay> a livingPlaces:StateParkFacility ;
+	rdfs:label "Braddock Bay" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "3"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Monroe"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-77.7038657164"^^geo:long ;
+	livingPlaces:hasLatitude "43.2941954526"^^geo:lat ;
+	livingPlaces:hasName "25"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Canal+Park+Lock+32> a livingPlaces:StateParkFacility ;
+	rdfs:label "Canal Park Lock 32" ;
+	livingPlaces:hasParkFacilityType "Other"^^xsd:string ;
+	livingPlaces:pertainToRegion "3"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Monroe"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-77.5463410098"^^geo:long ;
+	livingPlaces:hasLatitude "43.0925511521"^^geo:lat ;
+	livingPlaces:hasName "26"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Conesus+Lake+Marine+Park> a livingPlaces:StateParkFacility ;
+	rdfs:label "Conesus Lake Marine Park" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "3"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Livingston"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/71/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-77.7116004968"^^geo:long ;
+	livingPlaces:hasLatitude "42.7758061511"^^geo:lat ;
+	livingPlaces:hasName "27"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Darien+Lakes> a livingPlaces:StateParkFacility ;
+	rdfs:label "Darien Lakes" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "3"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Genesee"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/144/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.4114922979"^^geo:long ;
+	livingPlaces:hasLatitude "42.9118141573"^^geo:lat ;
+	livingPlaces:hasName "28"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Genesee+River> a livingPlaces:StateParkFacility ;
+	rdfs:label "Genesee River" ;
+	livingPlaces:hasParkFacilityType "Other"^^xsd:string ;
+	livingPlaces:pertainToRegion "3"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Monroe"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-77.6143127098"^^geo:long ;
+	livingPlaces:hasLatitude "43.2305847066"^^geo:lat ;
+	livingPlaces:hasName "29"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Hamlin+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Hamlin Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "3"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Monroe"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/20/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-77.9550976705"^^geo:long ;
+	livingPlaces:hasLatitude "43.3600913014"^^geo:lat ;
+	livingPlaces:hasName "30"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Irondequoit+Bay+Marine+Park> a livingPlaces:StateParkFacility ;
+	rdfs:label "Irondequoit Bay Marine Park" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "3"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Monroe"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/100/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-77.5397106881"^^geo:long ;
+	livingPlaces:hasLatitude "43.2318695342"^^geo:lat ;
+	livingPlaces:hasName "31"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Lakeside+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Lakeside Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "3"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Orleans"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/161/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.2437024878"^^geo:long ;
+	livingPlaces:hasLatitude "43.3663835822"^^geo:lat ;
+	livingPlaces:hasName "32"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Letchworth> a livingPlaces:StateParkFacility ;
+	rdfs:label "Letchworth" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "3"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Liv/Wyo"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/79/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-77.9757692236"^^geo:long ;
+	livingPlaces:hasLatitude "42.6459213488"^^geo:lat ;
+	livingPlaces:hasName "33"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Oak+Orchard+Marine+Park> a livingPlaces:StateParkFacility ;
+	rdfs:label "Oak Orchard Marine Park" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "3"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Orleans"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/131/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.2010190588"^^geo:long ;
+	livingPlaces:hasLatitude "43.3681054695"^^geo:lat ;
+	livingPlaces:hasName "34"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Silver+Lake> a livingPlaces:StateParkFacility ;
+	rdfs:label "Silver Lake" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "3"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Wyoming"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/104/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.0565609783"^^geo:long ;
+	livingPlaces:hasLatitude "42.6792542189"^^geo:lat ;
+	livingPlaces:hasName "35"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Allan+H.+Treman> a livingPlaces:StateParkFacility ;
+	rdfs:label "Allan H. Treman" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Tompkins"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/35/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.517568174"^^geo:long ;
+	livingPlaces:hasLatitude "42.4613966817"^^geo:lat ;
+	livingPlaces:hasName "36"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Beechwood> a livingPlaces:StateParkFacility ;
+	rdfs:label "Beechwood" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Wayne"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-77.0337933037"^^geo:long ;
+	livingPlaces:hasLatitude "43.266694455"^^geo:lat ;
+	livingPlaces:hasName "37"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Bonavista> a livingPlaces:StateParkFacility ;
+	rdfs:label "Bonavista" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Seneca"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/160/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/10/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.8677249793"^^geo:long ;
+	livingPlaces:hasLatitude "42.6731942171"^^geo:lat ;
+	livingPlaces:hasName "38"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Buttermilk+Falls> a livingPlaces:StateParkFacility ;
+	rdfs:label "Buttermilk Falls" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Tompkins"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/151/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.5122566369"^^geo:long ;
+	livingPlaces:hasLatitude "42.4040259595"^^geo:lat ;
+	livingPlaces:hasName "39"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Canandaigua+Lake+Marine+Park> a livingPlaces:StateParkFacility ;
+	rdfs:label "Canandaigua Lake Marine Park" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Ontario"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/3/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-77.275682797"^^geo:long ;
+	livingPlaces:hasLatitude "42.8766685939"^^geo:lat ;
+	livingPlaces:hasName "40"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Cayuga+Lake> a livingPlaces:StateParkFacility ;
+	rdfs:label "Cayuga Lake" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Seneca"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/123/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.7553118502"^^geo:long ;
+	livingPlaces:hasLatitude "42.8979519073"^^geo:lat ;
+	livingPlaces:hasName "41"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Chimney+Bluffs> a livingPlaces:StateParkFacility ;
+	rdfs:label "Chimney Bluffs" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Wayne"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/43/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.9170242028"^^geo:long ;
+	livingPlaces:hasLatitude "43.2809455173"^^geo:lat ;
+	livingPlaces:hasName "42"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Deans+Cove+Boat+Launch> a livingPlaces:StateParkFacility ;
+	rdfs:label "Deans Cove Boat Launch" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Seneca"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/63/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.7687292376"^^geo:long ;
+	livingPlaces:hasLatitude "42.7444615076"^^geo:lat ;
+	livingPlaces:hasName "43"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Fair+Haven+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Fair Haven Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Cayuga"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/12/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/9/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.6913106828"^^geo:long ;
+	livingPlaces:hasLatitude "43.3417081221"^^geo:lat ;
+	livingPlaces:hasName "44"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Fillmore+Glen> a livingPlaces:StateParkFacility ;
+	rdfs:label "Fillmore Glen" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Cayuga"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/157/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.388006245"^^geo:long ;
+	livingPlaces:hasLatitude "42.6909689808"^^geo:lat ;
+	livingPlaces:hasName "45"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Ganondagon> a livingPlaces:StateParkFacility ;
+	rdfs:label "Ganondagon" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Ontario"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/26/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-77.4220682423"^^geo:long ;
+	livingPlaces:hasLatitude "42.9648298665"^^geo:lat ;
+	livingPlaces:hasName "46"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Harriet+Hollister+Spencer> a livingPlaces:StateParkFacility ;
+	rdfs:label "Harriet Hollister Spencer" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Ontario"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/164/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-77.5154780869"^^geo:long ;
+	livingPlaces:hasLatitude "42.688112003"^^geo:lat ;
+	livingPlaces:hasName "47"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Honeoye+Marine+Park> a livingPlaces:StateParkFacility ;
+	rdfs:label "Honeoye Marine Park" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Ontario"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/162/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-77.5045781497"^^geo:long ;
+	livingPlaces:hasLatitude "42.7257540199"^^geo:lat ;
+	livingPlaces:hasName "48"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Indian+Hills> a livingPlaces:StateParkFacility ;
+	rdfs:label "Indian Hills" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Steuben"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/golf-courses/19/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-77.1547655357"^^geo:long ;
+	livingPlaces:hasLatitude "42.0930548903"^^geo:lat ;
+	livingPlaces:hasName "49"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Keuka+Lake> a livingPlaces:StateParkFacility ;
+	rdfs:label "Keuka Lake" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Yates"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/67/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-77.1285833589"^^geo:long ;
+	livingPlaces:hasLatitude "42.5821825522"^^geo:lat ;
+	livingPlaces:hasName "50"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Lodi+Point+Marine+Park> a livingPlaces:StateParkFacility ;
+	rdfs:label "Lodi Point Marine Park" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Seneca"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/89/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.8768305442"^^geo:long ;
+	livingPlaces:hasLatitude "42.6182465855"^^geo:lat ;
+	livingPlaces:hasName "51"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Long+Point> livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Cayuga"^^livingPlaces:County ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/170/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.6984092825"^^geo:long ;
+	livingPlaces:hasLatitude "42.7174110413"^^geo:lat ;
+	livingPlaces:hasName "52"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Mark+Twain> a livingPlaces:StateParkFacility ;
+	rdfs:label "Mark Twain" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Chemung"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/138/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/3/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.8356909125"^^geo:long ;
+	livingPlaces:hasLatitude "42.211660694"^^geo:lat ;
+	livingPlaces:hasName "53"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Newtown+Battlefield> a livingPlaces:StateParkFacility ;
+	rdfs:label "Newtown Battlefield" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Chemung"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/107/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.7363172694"^^geo:long ;
+	livingPlaces:hasLatitude "42.0490265183"^^geo:lat ;
+	livingPlaces:hasName "54"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Parrot+Hall> a livingPlaces:StateParkFacility ;
+	rdfs:label "Parrot Hall" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Ontario"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-77.0088142477"^^geo:long ;
+	livingPlaces:hasLatitude "42.8767739578"^^geo:lat ;
+	livingPlaces:hasName "55"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Pinnacle> a livingPlaces:StateParkFacility ;
+	rdfs:label "Pinnacle" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Steuben"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/4/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/16/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-77.2145609228"^^geo:long ;
+	livingPlaces:hasLatitude "42.0973529692"^^geo:lat ;
+	livingPlaces:hasName "56"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Robert+H.+Treman> a livingPlaces:StateParkFacility ;
+	rdfs:label "Robert H. Treman" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Tompkins"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/135/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.5795442076"^^geo:long ;
+	livingPlaces:hasLatitude "42.4005756394"^^geo:lat ;
+	livingPlaces:hasName "57"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Sampson> a livingPlaces:StateParkFacility ;
+	rdfs:label "Sampson" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Seneca"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/154/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.9013257035"^^geo:long ;
+	livingPlaces:hasLatitude "42.7254900187"^^geo:lat ;
+	livingPlaces:hasName "58"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Seneca+Lake> a livingPlaces:StateParkFacility ;
+	rdfs:label "Seneca Lake" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Ont/Sen"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/125/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.9545497708"^^geo:long ;
+	livingPlaces:hasLatitude "42.8739500967"^^geo:lat ;
+	livingPlaces:hasName "59"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Sonnenberg+Gardens+and+Mansion> a livingPlaces:StateParkFacility ;
+	rdfs:label "Sonnenberg Gardens and Mansion" ;
+	livingPlaces:hasParkFacilityType "State Historic Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Ontario"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/36/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-77.2721596007"^^geo:long ;
+	livingPlaces:hasLatitude "42.8981467736"^^geo:lat ;
+	livingPlaces:hasName "60"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Stony+Brook> a livingPlaces:StateParkFacility ;
+	rdfs:label "Stony Brook" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Steuben"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/118/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-77.6929663929"^^geo:long ;
+	livingPlaces:hasLatitude "42.5185595291"^^geo:lat ;
+	livingPlaces:hasName "61"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Taughannock+Falls> a livingPlaces:StateParkFacility ;
+	rdfs:label "Taughannock Falls" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Tompkins"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/62/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.6097670832"^^geo:long ;
+	livingPlaces:hasLatitude "42.5407382384"^^geo:lat ;
+	livingPlaces:hasName "62"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Two+Rivers> a livingPlaces:StateParkFacility ;
+	rdfs:label "Two Rivers" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Tioga"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/179/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.5473199933"^^geo:long ;
+	livingPlaces:hasLatitude "42.0251635453"^^geo:lat ;
+	livingPlaces:hasName "63"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Watkins+Glen> a livingPlaces:StateParkFacility ;
+	rdfs:label "Watkins Glen" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "4"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Schuyler"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/142/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.9001337586"^^geo:long ;
+	livingPlaces:hasLatitude "42.3675397399"^^geo:lat ;
+	livingPlaces:hasName "64"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Battle+Island> a livingPlaces:StateParkFacility ;
+	rdfs:label "Battle Island" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Oswego"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/44/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/5/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.4360441829"^^geo:long ;
+	livingPlaces:hasLatitude "43.3616709338"^^geo:lat ;
+	livingPlaces:hasName "65"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Betty+%26+Wilbur+Davis> a livingPlaces:StateParkFacility ;
+	rdfs:label "Betty & Wilbur Davis" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Otsego"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/85/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.8329098238"^^geo:long ;
+	livingPlaces:hasLatitude "42.6636396942"^^geo:lat ;
+	livingPlaces:hasName "66"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Bowman+Lake> a livingPlaces:StateParkFacility ;
+	rdfs:label "Bowman Lake" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Chenango"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/76/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.6806338029"^^geo:long ;
+	livingPlaces:hasLatitude "42.519984738"^^geo:lat ;
+	livingPlaces:hasName "67"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Canadarago+Boat+Marine+Park> a livingPlaces:StateParkFacility ;
+	rdfs:label "Canadarago Boat Marine Park" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Otsego"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-75.013711762"^^geo:long ;
+	livingPlaces:hasLatitude "42.8186973108"^^geo:lat ;
+	livingPlaces:hasName "68"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Chenango+Valley> a livingPlaces:StateParkFacility ;
+	rdfs:label "Chenango Valley" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Broome"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/41/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/20/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.8362368401"^^geo:long ;
+	livingPlaces:hasLatitude "42.2155402507"^^geo:lat ;
+	livingPlaces:hasName "69"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Chittenango+Falls> a livingPlaces:StateParkFacility ;
+	rdfs:label "Chittenango Falls" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Madison"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/130/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.8466563129"^^geo:long ;
+	livingPlaces:hasLatitude "42.9814847366"^^geo:lat ;
+	livingPlaces:hasName "70"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Clark+Reservation> a livingPlaces:StateParkFacility ;
+	rdfs:label "Clark Reservation" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Onondaga"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/126/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.0930004359"^^geo:long ;
+	livingPlaces:hasLatitude "42.9975225031"^^geo:lat ;
+	livingPlaces:hasName "71"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Delta+Lake> a livingPlaces:StateParkFacility ;
+	rdfs:label "Delta Lake" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Oneida"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/66/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.4218722435"^^geo:long ;
+	livingPlaces:hasLatitude "43.290965581"^^geo:lat ;
+	livingPlaces:hasName "72"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Fort+Ontario> a livingPlaces:StateParkFacility ;
+	rdfs:label "Fort Ontario" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Oswego"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/20/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.5074471503"^^geo:long ;
+	livingPlaces:hasLatitude "43.4661242441"^^geo:lat ;
+	livingPlaces:hasName "73"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Gilbert+Lake> a livingPlaces:StateParkFacility ;
+	rdfs:label "Gilbert Lake" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Otsego"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/19/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.1324631246"^^geo:long ;
+	livingPlaces:hasLatitude "42.586583996"^^geo:lat ;
+	livingPlaces:hasName "74"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Glimmerglass> a livingPlaces:StateParkFacility ;
+	rdfs:label "Glimmerglass" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Otsego"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/28/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.8686839156"^^geo:long ;
+	livingPlaces:hasLatitude "42.7936261732"^^geo:lat ;
+	livingPlaces:hasName "75"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Green+Lakes> a livingPlaces:StateParkFacility ;
+	rdfs:label "Green Lakes" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Onondaga"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/172/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/14/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.9818848047"^^geo:long ;
+	livingPlaces:hasLatitude "43.0469783183"^^geo:lat ;
+	livingPlaces:hasName "76"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Helen+L.+McNitt> a livingPlaces:StateParkFacility ;
+	rdfs:label "Helen L. McNitt" ;
+	livingPlaces:hasParkFacilityType "Other"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Madison"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-75.8741083475"^^geo:long ;
+	livingPlaces:hasLatitude "42.9708517551"^^geo:lat ;
+	livingPlaces:hasName "77"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Herkimer+Home> a livingPlaces:StateParkFacility ;
+	rdfs:label "Herkimer Home" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Herkimer"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/14/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.8158650531"^^geo:long ;
+	livingPlaces:hasLatitude "43.0253285628"^^geo:lat ;
+	livingPlaces:hasName "78"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Hyde+Hall> a livingPlaces:StateParkFacility ;
+	rdfs:label "Hyde Hall" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Otsego"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/11/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.8739966963"^^geo:long ;
+	livingPlaces:hasLatitude "42.7937333296"^^geo:lat ;
+	livingPlaces:hasName "79"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/John+Burroughs+Memorial> a livingPlaces:StateParkFacility ;
+	rdfs:label "John Burroughs Memorial" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Delaware"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/3/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.5859690347"^^geo:long ;
+	livingPlaces:hasLatitude "42.2947419755"^^geo:lat ;
+	livingPlaces:hasName "80"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Lorenzo> a livingPlaces:StateParkFacility ;
+	rdfs:label "Lorenzo" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Madison"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/15/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.8656999617"^^geo:long ;
+	livingPlaces:hasLatitude "42.9229020904"^^geo:lat ;
+	livingPlaces:hasName "81"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Mexico+Point> a livingPlaces:StateParkFacility ;
+	rdfs:label "Mexico Point" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Oswego"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-76.2584640776"^^geo:long ;
+	livingPlaces:hasLatitude "43.5199984003"^^geo:lat ;
+	livingPlaces:hasName "82"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Mexico+Point+Marine+Park> a livingPlaces:StateParkFacility ;
+	rdfs:label "Mexico Point Marine Park" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Oswego"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/183/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.2551432086"^^geo:long ;
+	livingPlaces:hasLatitude "43.5233750364"^^geo:lat ;
+	livingPlaces:hasName "83"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Old+Erie+Canal> a livingPlaces:StateParkFacility ;
+	rdfs:label "Old Erie Canal" ;
+	livingPlaces:hasParkFacilityType "State Historic Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Onon/Mad/Oneida"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/32/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.9217693491"^^geo:long ;
+	livingPlaces:hasLatitude "43.0754747048"^^geo:lat ;
+	livingPlaces:hasName "84"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Oquaga+Creek> a livingPlaces:StateParkFacility ;
+	rdfs:label "Oquaga Creek" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Broome/Delaware"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/27/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.4246793483"^^geo:long ;
+	livingPlaces:hasLatitude "42.1780514491"^^geo:lat ;
+	livingPlaces:hasName "85"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Oriskany+Battlefield> a livingPlaces:StateParkFacility ;
+	rdfs:label "Oriskany Battlefield" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Oneida"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/21/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.3667103924"^^geo:long ;
+	livingPlaces:hasLatitude "43.176774697"^^geo:lat ;
+	livingPlaces:hasName "86"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Pixley+Falls> a livingPlaces:StateParkFacility ;
+	rdfs:label "Pixley Falls" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Oneida"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/32/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.3414755523"^^geo:long ;
+	livingPlaces:hasLatitude "43.4043184536"^^geo:lat ;
+	livingPlaces:hasName "87"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Robert+V.+Riddell> a livingPlaces:StateParkFacility ;
+	rdfs:label "Robert V. Riddell" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Otsego"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/18/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.9371075745"^^geo:long ;
+	livingPlaces:hasLatitude "42.4762545082"^^geo:lat ;
+	livingPlaces:hasName "88"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Sandy+Island+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Sandy Island Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Oswego"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/153/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.1956650041"^^geo:long ;
+	livingPlaces:hasLatitude "43.6309316052"^^geo:lat ;
+	livingPlaces:hasName "89"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Selkirk+Shores> a livingPlaces:StateParkFacility ;
+	rdfs:label "Selkirk Shores" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Oswego"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/84/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.1984400233"^^geo:long ;
+	livingPlaces:hasLatitude "43.5556620105"^^geo:lat ;
+	livingPlaces:hasName "90"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/State+Park+at+the+Fair> a livingPlaces:StateParkFacility ;
+	rdfs:label "State Park at the Fair" ;
+	livingPlaces:hasParkFacilityType "Other"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Onondaga"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/82/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.2169659143"^^geo:long ;
+	livingPlaces:hasLatitude "43.0711046317"^^geo:lat ;
+	livingPlaces:hasName "91"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Steuben+Memorial> a livingPlaces:StateParkFacility ;
+	rdfs:label "Steuben Memorial" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Oneida"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/2/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.2324893011"^^geo:long ;
+	livingPlaces:hasLatitude "43.3381056996"^^geo:lat ;
+	livingPlaces:hasName "92"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Verona+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Verona Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "5"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Oneida"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/102/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.716586586"^^geo:long ;
+	livingPlaces:hasLatitude "43.178008249"^^geo:lat ;
+	livingPlaces:hasName "93"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Clarence+Fahnestock> a livingPlaces:StateParkFacility ;
+	rdfs:label "Clarence Fahnestock" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Putnam"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/133/details.aspx"^^xsd:anyURI , "http://www.nysparks.com/environment/nature-centers/3/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.8476473928"^^geo:long ;
+	livingPlaces:hasLatitude "41.4527563307"^^geo:lat ;
+	livingPlaces:hasName "94"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Clermont> a livingPlaces:StateParkFacility ;
+	rdfs:label "Clermont" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Col/Dutch"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/16/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.911040157"^^geo:long ;
+	livingPlaces:hasLatitude "42.0833097387"^^geo:lat ;
+	livingPlaces:hasName "95"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Clinton+House> a livingPlaces:StateParkFacility ;
+	rdfs:label "Clinton House" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Dutchess"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/1/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9162447123"^^geo:long ;
+	livingPlaces:hasLatitude "41.700364954"^^geo:lat ;
+	livingPlaces:hasName "96"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Donald+J.+Trump> a livingPlaces:StateParkFacility ;
+	rdfs:label "Donald J. Trump" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Putnam/Westchester"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.8083717836"^^geo:long ;
+	livingPlaces:hasLatitude "41.3453986775"^^geo:lat ;
+	livingPlaces:hasName "97"^^xsd:string ;
+	livingPlaces:hasLongitude "-73.8040521147"^^geo:long ;
+	livingPlaces:hasLatitude "41.2626335527"^^geo:lat ;
+	livingPlaces:hasName "98"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Franklin+Delano+Roosevelt> a livingPlaces:StateParkFacility ;
+	rdfs:label "Franklin Delano Roosevelt" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Westchester"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/148/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.8087569052"^^geo:long ;
+	livingPlaces:hasLatitude "41.2823041702"^^geo:lat ;
+	livingPlaces:hasName "99"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Hart%27s+Brook+Nature+Preserve+%26+Arboretum> a livingPlaces:StateParkFacility ;
+	rdfs:label "Hart's Brook Nature Preserve & Arboretum" ;
+	livingPlaces:hasParkFacilityType "Other"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Westchester"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.8080601676"^^geo:long ;
+	livingPlaces:hasLatitude "41.0179614433"^^geo:lat ;
+	livingPlaces:hasName "100"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Hudson+Highlands> a livingPlaces:StateParkFacility ;
+	rdfs:label "Hudson Highlands" ;
+	livingPlaces:hasParkFacilityType "State Park Preserve"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Dutch/Put"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/9/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9621103209"^^geo:long ;
+	livingPlaces:hasLatitude "41.433755673"^^geo:lat ;
+	livingPlaces:hasName "101"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/James+Baird> a livingPlaces:StateParkFacility ;
+	rdfs:label "James Baird" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Dutchess"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/101/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/1/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.7954318134"^^geo:long ;
+	livingPlaces:hasLatitude "41.6880050951"^^geo:lat ;
+	livingPlaces:hasName "102"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/John+Jay+Homestead> a livingPlaces:StateParkFacility ;
+	rdfs:label "John Jay Homestead" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Westchester"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/4/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.6588064087"^^geo:long ;
+	livingPlaces:hasLatitude "41.2503409573"^^geo:lat ;
+	livingPlaces:hasName "103"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Lake+Taghkanic> a livingPlaces:StateParkFacility ;
+	rdfs:label "Lake Taghkanic" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Columbia"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/38/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.7058878188"^^geo:long ;
+	livingPlaces:hasLatitude "42.092881818"^^geo:lat ;
+	livingPlaces:hasName "104"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Margaret+Lewis+Norrie> a livingPlaces:StateParkFacility ;
+	rdfs:label "Margaret Lewis Norrie" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Dutchess"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/171/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9389551372"^^geo:long ;
+	livingPlaces:hasLatitude "41.8415365481"^^geo:lat ;
+	livingPlaces:hasName "105"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Ogden+%26+Ruth+Livingston+Mills> a livingPlaces:StateParkFacility ;
+	rdfs:label "Ogden & Ruth Livingston Mills" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Dutchess"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/33/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/21/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9348059546"^^geo:long ;
+	livingPlaces:hasLatitude "41.8530053952"^^geo:lat ;
+	livingPlaces:hasName "106"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Olana> a livingPlaces:StateParkFacility ;
+	rdfs:label "Olana" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Columbia"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/23/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.8287595658"^^geo:long ;
+	livingPlaces:hasLatitude "42.2145951381"^^geo:lat ;
+	livingPlaces:hasName "107"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Old+Croton+Aqueduct> a livingPlaces:StateParkFacility ;
+	rdfs:label "Old Croton Aqueduct" ;
+	livingPlaces:hasParkFacilityType "State Historic Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Westchester"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/96/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.8631712826"^^geo:long ;
+	livingPlaces:hasLatitude "41.1656638717"^^geo:lat ;
+	livingPlaces:hasName "108"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Peter+Jay> a livingPlaces:StateParkFacility ;
+	rdfs:label "Peter Jay" ;
+	livingPlaces:hasParkFacilityType "Other"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Westchester"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/39/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.7058775486"^^geo:long ;
+	livingPlaces:hasLatitude "40.9569460139"^^geo:lat ;
+	livingPlaces:hasName "109"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Philipse+Manor+Hall> a livingPlaces:StateParkFacility ;
+	rdfs:label "Philipse Manor Hall" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Westchester"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/37/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.8993128614"^^geo:long ;
+	livingPlaces:hasLatitude "40.9355500517"^^geo:lat ;
+	livingPlaces:hasName "110"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Quiet+Cove+Riverfront+Park> a livingPlaces:StateParkFacility ;
+	rdfs:label "Quiet Cove Riverfront Park" ;
+	livingPlaces:hasParkFacilityType "Other"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Dutchess"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.93449945"^^geo:long ;
+	livingPlaces:hasLatitude "41.7332253868"^^geo:lat ;
+	livingPlaces:hasName "111"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Rockefeller+Park+Preserve> a livingPlaces:StateParkFacility ;
+	rdfs:label "Rockefeller Park Preserve" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Westchester"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/59/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.8325399895"^^geo:long ;
+	livingPlaces:hasLatitude "41.1096930853"^^geo:lat ;
+	livingPlaces:hasName "112"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Staatsburgh> a livingPlaces:StateParkFacility ;
+	rdfs:label "Staatsburgh" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Dutchess"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/25/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9299489021"^^geo:long ;
+	livingPlaces:hasLatitude "41.8566275388"^^geo:lat ;
+	livingPlaces:hasName "113"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Taconic> a livingPlaces:StateParkFacility ;
+	rdfs:label "Taconic" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Dutchess"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/83/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.5174392806"^^geo:long ;
+	livingPlaces:hasLatitude "42.0778638556"^^geo:lat ;
+	livingPlaces:hasName "114"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Taxter+Ridge> a livingPlaces:StateParkFacility ;
+	rdfs:label "Taxter Ridge" ;
+	livingPlaces:hasParkFacilityType "Other"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Westchester"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.8387767742"^^geo:long ;
+	livingPlaces:hasLatitude "41.0551193933"^^geo:lat ;
+	livingPlaces:hasName "115"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Walkway+over+the+Hudson> a livingPlaces:StateParkFacility ;
+	rdfs:label "Walkway over the Hudson" ;
+	livingPlaces:hasParkFacilityType "State Historic Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Dutchess"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/178/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9449508899"^^geo:long ;
+	livingPlaces:hasLatitude "41.7105870004"^^geo:lat ;
+	livingPlaces:hasName "116"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Wonder+Lake> a livingPlaces:StateParkFacility ;
+	rdfs:label "Wonder Lake" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "7"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Putnam"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.6465863149"^^geo:long ;
+	livingPlaces:hasLatitude "41.4919031611"^^geo:lat ;
+	livingPlaces:hasName "117"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Bear+Mountain> a livingPlaces:StateParkFacility ;
+	rdfs:label "Bear Mountain" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rockland/Orange"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/145/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9924016123"^^geo:long ;
+	livingPlaces:hasLatitude "41.2990042301"^^geo:lat ;
+	livingPlaces:hasName "118"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Blauvelt> a livingPlaces:StateParkFacility ;
+	rdfs:label "Blauvelt" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rockland"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/49/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9373730834"^^geo:long ;
+	livingPlaces:hasLatitude "41.074241369"^^geo:lat ;
+	livingPlaces:hasName "119"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Bristol+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Bristol Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rockland"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.9325310791"^^geo:long ;
+	livingPlaces:hasLatitude "42.1083717833"^^geo:lat ;
+	livingPlaces:hasName "120"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Fort+Montgomery> a livingPlaces:StateParkFacility ;
+	rdfs:label "Fort Montgomery" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Orange"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/28/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9895724569"^^geo:long ;
+	livingPlaces:hasLatitude "41.3243022048"^^geo:lat ;
+	livingPlaces:hasName "121"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Franny+Reese+Preserve> a livingPlaces:StateParkFacility ;
+	rdfs:label "Franny Reese Preserve" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Ulster"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.9559643746"^^geo:long ;
+	livingPlaces:hasLatitude "41.7014644466"^^geo:lat ;
+	livingPlaces:hasName "122"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Goosepond+Mountain> a livingPlaces:StateParkFacility ;
+	rdfs:label "Goosepond Mountain" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Orange"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/55/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.2466476409"^^geo:long ;
+	livingPlaces:hasLatitude "41.3375248269"^^geo:lat ;
+	livingPlaces:hasName "123"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Harriman> a livingPlaces:StateParkFacility ;
+	rdfs:label "Harriman" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rock/Orange"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/145/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.1016999643"^^geo:long ;
+	livingPlaces:hasLatitude "41.2373304835"^^geo:lat ;
+	livingPlaces:hasName "124"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Haverstraw+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Haverstraw Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rockland"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.9431704761"^^geo:long ;
+	livingPlaces:hasLatitude "41.1779918118"^^geo:lat ;
+	livingPlaces:hasName "125"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/High+Tor> a livingPlaces:StateParkFacility ;
+	rdfs:label "High Tor" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rockland"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/78/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9840129896"^^geo:long ;
+	livingPlaces:hasLatitude "41.1906178735"^^geo:lat ;
+	livingPlaces:hasName "126"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Highland+Lakes> a livingPlaces:StateParkFacility ;
+	rdfs:label "Highland Lakes" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Orange"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/5/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.3285754476"^^geo:long ;
+	livingPlaces:hasLatitude "41.4913005789"^^geo:lat ;
+	livingPlaces:hasName "127"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Hook+Mountain> a livingPlaces:StateParkFacility ;
+	rdfs:label "Hook Mountain" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rockland"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.915881718"^^geo:long ;
+	livingPlaces:hasLatitude "41.1517064047"^^geo:lat ;
+	livingPlaces:hasName "128"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Iona+Island> a livingPlaces:StateParkFacility ;
+	rdfs:label "Iona Island" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rockland"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.9760036984"^^geo:long ;
+	livingPlaces:hasLatitude "41.304270602"^^geo:lat ;
+	livingPlaces:hasName "129"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Knox+Headquarters> a livingPlaces:StateParkFacility ;
+	rdfs:label "Knox Headquarters" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Orange"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/5/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.0478219441"^^geo:long ;
+	livingPlaces:hasLatitude "41.4534352252"^^geo:lat ;
+	livingPlaces:hasName "130"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Lake+Superior> a livingPlaces:StateParkFacility ;
+	rdfs:label "Lake Superior" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Sullivan"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/87/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.8794264796"^^geo:long ;
+	livingPlaces:hasLatitude "41.6679305297"^^geo:lat ;
+	livingPlaces:hasName "131"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Minnewaska> a livingPlaces:StateParkFacility ;
+	rdfs:label "Minnewaska" ;
+	livingPlaces:hasParkFacilityType "State Park Preserve"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Ulster"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/127/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.2932352939"^^geo:long ;
+	livingPlaces:hasLatitude "41.7158154916"^^geo:lat ;
+	livingPlaces:hasName "132"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/New+Windsor+Cantonement> a livingPlaces:StateParkFacility ;
+	rdfs:label "New Windsor Cantonement" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Orange"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/22/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.0594572677"^^geo:long ;
+	livingPlaces:hasLatitude "41.4733927813"^^geo:lat ;
+	livingPlaces:hasName "133"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Nyack+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Nyack Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rockland"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/156/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9086544942"^^geo:long ;
+	livingPlaces:hasLatitude "41.1271276953"^^geo:lat ;
+	livingPlaces:hasName "134"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Palisades> a livingPlaces:StateParkFacility ;
+	rdfs:label "Palisades" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rockland"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.9035443708"^^geo:long ;
+	livingPlaces:hasLatitude "41.0000423858"^^geo:lat ;
+	livingPlaces:hasName "135"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Rockland+Lake> a livingPlaces:StateParkFacility ;
+	rdfs:label "Rockland Lake" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rockland"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/81/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/6/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9219192445"^^geo:long ;
+	livingPlaces:hasLatitude "41.1362106822"^^geo:lat ;
+	livingPlaces:hasName "136"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Schunnemunk+Mountain> a livingPlaces:StateParkFacility ;
+	rdfs:label "Schunnemunk Mountain" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Orange"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/184/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.1027172519"^^geo:long ;
+	livingPlaces:hasLatitude "41.4021107609"^^geo:lat ;
+	livingPlaces:hasName "137"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Senate+House> a livingPlaces:StateParkFacility ;
+	rdfs:label "Senate House" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Orange"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/18/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.0188842412"^^geo:long ;
+	livingPlaces:hasLatitude "41.9349364666"^^geo:lat ;
+	livingPlaces:hasName "138"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Sterling+Forest> a livingPlaces:StateParkFacility ;
+	rdfs:label "Sterling Forest" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Orange"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/74/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.2467658789"^^geo:long ;
+	livingPlaces:hasLatitude "41.2119192066"^^geo:lat ;
+	livingPlaces:hasName "139"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Stony+Point+Battlefield> a livingPlaces:StateParkFacility ;
+	rdfs:label "Stony Point Battlefield" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rockland"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/8/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9763734973"^^geo:long ;
+	livingPlaces:hasLatitude "41.2410903919"^^geo:lat ;
+	livingPlaces:hasName "140"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Storm+King> a livingPlaces:StateParkFacility ;
+	rdfs:label "Storm King" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Orange"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/152/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.991346402"^^geo:long ;
+	livingPlaces:hasLatitude "41.425644491"^^geo:lat ;
+	livingPlaces:hasName "141"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Tallman+Mountain> a livingPlaces:StateParkFacility ;
+	rdfs:label "Tallman Mountain" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rockland"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/119/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9103313153"^^geo:long ;
+	livingPlaces:hasLatitude "41.026422676"^^geo:lat ;
+	livingPlaces:hasName "142"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Washington%27s+Headquarters> a livingPlaces:StateParkFacility ;
+	rdfs:label "Washington's Headquarters" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "8"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Orange"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/17/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.0096075788"^^geo:long ;
+	livingPlaces:hasLatitude "41.4977050471"^^geo:lat ;
+	livingPlaces:hasName "143"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Alfred+E.+Smith%2FSunken+Meadow> a livingPlaces:StateParkFacility ;
+	rdfs:label "Alfred E. Smith/Sunken Meadow" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/37/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/13/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.2632063245"^^geo:long ;
+	livingPlaces:hasLatitude "40.9099922695"^^geo:lat ;
+	livingPlaces:hasName "144"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Amsterdam+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Amsterdam Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-71.900265311"^^geo:long ;
+	livingPlaces:hasLatitude "41.0477711309"^^geo:lat ;
+	livingPlaces:hasName "145"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Bayard+Cutting+Arboretum> a livingPlaces:StateParkFacility ;
+	rdfs:label "Bayard Cutting Arboretum" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/95/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.1577583532"^^geo:long ;
+	livingPlaces:hasLatitude "40.7472405356"^^geo:lat ;
+	livingPlaces:hasName "146"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Belmont+Lake> a livingPlaces:StateParkFacility ;
+	rdfs:label "Belmont Lake" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/88/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.3367949963"^^geo:long ;
+	livingPlaces:hasLatitude "40.7262324019"^^geo:lat ;
+	livingPlaces:hasName "147"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Bethpage> a livingPlaces:StateParkFacility ;
+	rdfs:label "Bethpage" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Nassau"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/108/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/11/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.4568035403"^^geo:long ;
+	livingPlaces:hasLatitude "40.7475174105"^^geo:lat ;
+	livingPlaces:hasName "148"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Brentwood> a livingPlaces:StateParkFacility ;
+	rdfs:label "Brentwood" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.2711299925"^^geo:long ;
+	livingPlaces:hasLatitude "40.7915533842"^^geo:lat ;
+	livingPlaces:hasName "149"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Brookhaven> a livingPlaces:StateParkFacility ;
+	rdfs:label "Brookhaven" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/180/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-72.8648165733"^^geo:long ;
+	livingPlaces:hasLatitude "40.9209500377"^^geo:lat ;
+	livingPlaces:hasName "150"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Caleb+Smith+Park+Preserve> a livingPlaces:StateParkFacility ;
+	rdfs:label "Caleb Smith Park Preserve" ;
+	livingPlaces:hasParkFacilityType "State Park Preserve"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/124/details.aspx"^^xsd:anyURI , "http://www.nysparks.com/environment/nature-centers/9/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.2260164473"^^geo:long ;
+	livingPlaces:hasLatitude "40.8530379808"^^geo:lat ;
+	livingPlaces:hasName "151"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Camp+Hero> a livingPlaces:StateParkFacility ;
+	rdfs:label "Camp Hero" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/97/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-71.8777872995"^^geo:long ;
+	livingPlaces:hasLatitude "41.0617719475"^^geo:lat ;
+	livingPlaces:hasName "152"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Captree> a livingPlaces:StateParkFacility ;
+	rdfs:label "Captree" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/65/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.2612735859"^^geo:long ;
+	livingPlaces:hasLatitude "40.6388521833"^^geo:lat ;
+	livingPlaces:hasName "153"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Caumsett> a livingPlaces:StateParkFacility ;
+	rdfs:label "Caumsett" ;
+	livingPlaces:hasParkFacilityType "State Historic Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/23/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.4686773494"^^geo:long ;
+	livingPlaces:hasLatitude "40.9281246175"^^geo:lat ;
+	livingPlaces:hasName "154"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Cold+Spring+Harbor> a livingPlaces:StateParkFacility ;
+	rdfs:label "Cold Spring Harbor" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/115/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.4602230086"^^geo:long ;
+	livingPlaces:hasLatitude "40.8628393914"^^geo:lat ;
+	livingPlaces:hasName "155"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Connetquot+River> a livingPlaces:StateParkFacility ;
+	rdfs:label "Connetquot River" ;
+	livingPlaces:hasParkFacilityType "State Park Preserve"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/8/details.aspx"^^xsd:anyURI , "http://www.nysparks.com/environment/nature-centers/6/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.1492496889"^^geo:long ;
+	livingPlaces:hasLatitude "40.7694292476"^^geo:lat ;
+	livingPlaces:hasName "156"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Gilgo> a livingPlaces:StateParkFacility ;
+	rdfs:label "Gilgo" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/15/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.3429302908"^^geo:long ;
+	livingPlaces:hasLatitude "40.6342880994"^^geo:lat ;
+	livingPlaces:hasName "157"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Hallock> a livingPlaces:StateParkFacility ;
+	rdfs:label "Hallock" ;
+	livingPlaces:hasParkFacilityType "State Park Preserve"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/181/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-72.5974738093"^^geo:long ;
+	livingPlaces:hasLatitude "40.9907206945"^^geo:lat ;
+	livingPlaces:hasName "158"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Heckscher> a livingPlaces:StateParkFacility ;
+	rdfs:label "Heckscher" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/136/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.1649223786"^^geo:long ;
+	livingPlaces:hasLatitude "40.7086615084"^^geo:lat ;
+	livingPlaces:hasName "159"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Hempstead+Lake> a livingPlaces:StateParkFacility ;
+	rdfs:label "Hempstead Lake" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Nassau"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/31/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.6424215072"^^geo:long ;
+	livingPlaces:hasLatitude "40.6823140013"^^geo:lat ;
+	livingPlaces:hasName "160"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Hither+Hills> a livingPlaces:StateParkFacility ;
+	rdfs:label "Hither Hills" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/122/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-72.021313036"^^geo:long ;
+	livingPlaces:hasLatitude "41.01605601"^^geo:lat ;
+	livingPlaces:hasName "161"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Hither+Woods> a livingPlaces:StateParkFacility ;
+	rdfs:label "Hither Woods" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-71.9893331346"^^geo:long ;
+	livingPlaces:hasLatitude "41.0313237016"^^geo:lat ;
+	livingPlaces:hasName "162"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Jones+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Jones Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Nassau"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/10/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/18/details.aspx"^^xsd:anyURI , "http://www.nysparks.com/environment/nature-centers/4/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.5164273182"^^geo:long ;
+	livingPlaces:hasLatitude "40.596010848"^^geo:lat ;
+	livingPlaces:hasName "163"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Montauk+Downs> a livingPlaces:StateParkFacility ;
+	rdfs:label "Montauk Downs" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/29/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/8/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-71.9385278002"^^geo:long ;
+	livingPlaces:hasLatitude "41.0492876822"^^geo:lat ;
+	livingPlaces:hasName "164"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Montauk+Point> a livingPlaces:StateParkFacility ;
+	rdfs:label "Montauk Point" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/61/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-71.8813883492"^^geo:long ;
+	livingPlaces:hasLatitude "41.0714502774"^^geo:lat ;
+	livingPlaces:hasName "165"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Napeague> a livingPlaces:StateParkFacility ;
+	rdfs:label "Napeague" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-72.0758973835"^^geo:long ;
+	livingPlaces:hasLatitude "40.9932649957"^^geo:lat ;
+	livingPlaces:hasName "166"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Nissequogue+River> a livingPlaces:StateParkFacility ;
+	rdfs:label "Nissequogue River" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/110/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.2316962038"^^geo:long ;
+	livingPlaces:hasLatitude "40.8986704423"^^geo:lat ;
+	livingPlaces:hasName "167"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Orient+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Orient Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/106/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-72.271525252"^^geo:long ;
+	livingPlaces:hasLatitude "41.1285513249"^^geo:lat ;
+	livingPlaces:hasName "168"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Planting+Fields+Arboretum> a livingPlaces:StateParkFacility ;
+	rdfs:label "Planting Fields Arboretum" ;
+	livingPlaces:hasParkFacilityType "State Historic Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Nassau"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/24/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.5572253299"^^geo:long ;
+	livingPlaces:hasLatitude "40.8621752807"^^geo:lat ;
+	livingPlaces:hasName "169"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Robert+Moses> a livingPlaces:StateParkFacility ;
+	rdfs:label "Robert Moses" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/7/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/12/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.2651424363"^^geo:long ;
+	livingPlaces:hasLatitude "40.6235177464"^^geo:lat ;
+	livingPlaces:hasName "170"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Sag+Harbor> a livingPlaces:StateParkFacility ;
+	rdfs:label "Sag Harbor" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/golf-courses/17/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-72.2605666428"^^geo:long ;
+	livingPlaces:hasLatitude "40.9970245166"^^geo:lat ;
+	livingPlaces:hasName "171"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Shadmoor> a livingPlaces:StateParkFacility ;
+	rdfs:label "Shadmoor" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/16/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-71.9277281182"^^geo:long ;
+	livingPlaces:hasLatitude "41.0386809843"^^geo:lat ;
+	livingPlaces:hasName "172"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Trail+View> a livingPlaces:StateParkFacility ;
+	rdfs:label "Trail View" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Nassau"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/39/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.470168754"^^geo:long ;
+	livingPlaces:hasLatitude "40.8141101008"^^geo:lat ;
+	livingPlaces:hasName "173"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Valley+Stream> a livingPlaces:StateParkFacility ;
+	rdfs:label "Valley Stream" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Nassau"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/159/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.6942502018"^^geo:long ;
+	livingPlaces:hasLatitude "40.678766026"^^geo:lat ;
+	livingPlaces:hasName "174"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Walt+Whitman+Birthplace> a livingPlaces:StateParkFacility ;
+	rdfs:label "Walt Whitman Birthplace" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/19/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.4117645186"^^geo:long ;
+	livingPlaces:hasLatitude "40.8171750838"^^geo:lat ;
+	livingPlaces:hasName "175"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Wildwood> a livingPlaces:StateParkFacility ;
+	rdfs:label "Wildwood" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "9"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Suffolk"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/68/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-72.7945734139"^^geo:long ;
+	livingPlaces:hasLatitude "40.9604999599"^^geo:lat ;
+	livingPlaces:hasName "176"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Black+Lake+Boat+Launch> a livingPlaces:StateParkFacility ;
+	rdfs:label "Black Lake Boat Launch" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "St. Lawrence"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-75.6130388928"^^geo:long ;
+	livingPlaces:hasLatitude "44.5093867729"^^geo:lat ;
+	livingPlaces:hasName "177"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Burnham+Point> a livingPlaces:StateParkFacility ;
+	rdfs:label "Burnham Point" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/57/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.2644442667"^^geo:long ;
+	livingPlaces:hasLatitude "44.1625024865"^^geo:lat ;
+	livingPlaces:hasName "178"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Canoe+Picnic+Point> a livingPlaces:StateParkFacility ;
+	rdfs:label "Canoe Picnic Point" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/64/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.0747121606"^^geo:long ;
+	livingPlaces:hasLatitude "44.304171386"^^geo:lat ;
+	livingPlaces:hasName "179"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Cedar+Island> a livingPlaces:StateParkFacility ;
+	rdfs:label "Cedar Island" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "St. Lawrence"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/25/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.7905288637"^^geo:long ;
+	livingPlaces:hasLatitude "44.449679332"^^geo:lat ;
+	livingPlaces:hasName "180"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Cedar+Point> a livingPlaces:StateParkFacility ;
+	rdfs:label "Cedar Point" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/21/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.19613394"^^geo:long ;
+	livingPlaces:hasLatitude "44.2034891967"^^geo:lat ;
+	livingPlaces:hasName "181"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Chaumont+Boat+Launch> a livingPlaces:StateParkFacility ;
+	rdfs:label "Chaumont Boat Launch" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-76.1498035216"^^geo:long ;
+	livingPlaces:hasLatitude "44.0694089909"^^geo:lat ;
+	livingPlaces:hasName "182"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Coles+Creek> a livingPlaces:StateParkFacility ;
+	rdfs:label "Coles Creek" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "St. Lawrence"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/72/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.1232360855"^^geo:long ;
+	livingPlaces:hasLatitude "44.8847335701"^^geo:lat ;
+	livingPlaces:hasName "183"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Crab+Island> a livingPlaces:StateParkFacility ;
+	rdfs:label "Crab Island" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Clinton"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.4171493852"^^geo:long ;
+	livingPlaces:hasLatitude "44.661757997"^^geo:lat ;
+	livingPlaces:hasName "184"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Croil+Island> a livingPlaces:StateParkFacility ;
+	rdfs:label "Croil Island" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "St. Lawrence"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-74.9794752521"^^geo:long ;
+	livingPlaces:hasLatitude "44.9725681103"^^geo:lat ;
+	livingPlaces:hasName "185"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Cumberland+Bay> a livingPlaces:StateParkFacility ;
+	rdfs:label "Cumberland Bay" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Clinton"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/34/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.4211799632"^^geo:long ;
+	livingPlaces:hasLatitude "44.7333465428"^^geo:lat ;
+	livingPlaces:hasName "186"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Dewolf+Point> a livingPlaces:StateParkFacility ;
+	rdfs:label "Dewolf Point" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/22/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.9901417959"^^geo:long ;
+	livingPlaces:hasLatitude "44.3327407662"^^geo:lat ;
+	livingPlaces:hasName "187"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Eel+Weir> a livingPlaces:StateParkFacility ;
+	rdfs:label "Eel Weir" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "St. Lawrence"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/121/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.4759295772"^^geo:long ;
+	livingPlaces:hasLatitude "44.6299900391"^^geo:lat ;
+	livingPlaces:hasName "188"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Galop+Island> a livingPlaces:StateParkFacility ;
+	rdfs:label "Galop Island" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "St. Lawrence"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-75.3927637822"^^geo:long ;
+	livingPlaces:hasLatitude "44.7684367215"^^geo:lat ;
+	livingPlaces:hasName "189"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Grass+Point> a livingPlaces:StateParkFacility ;
+	rdfs:label "Grass Point" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/139/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.9959300735"^^geo:long ;
+	livingPlaces:hasLatitude "44.2817668143"^^geo:lat ;
+	livingPlaces:hasName "190"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Great+Chazy+Boat+Launch> a livingPlaces:StateParkFacility ;
+	rdfs:label "Great Chazy Boat Launch" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Clinton"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.3872247618"^^geo:long ;
+	livingPlaces:hasLatitude "44.9315944647"^^geo:lat ;
+	livingPlaces:hasName "191"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Higley+Flow> a livingPlaces:StateParkFacility ;
+	rdfs:label "Higley Flow" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "St. Lawrence"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/58/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.9146427262"^^geo:long ;
+	livingPlaces:hasLatitude "44.498298634"^^geo:lat ;
+	livingPlaces:hasName "192"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Jacques+Cartier> a livingPlaces:StateParkFacility ;
+	rdfs:label "Jacques Cartier" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "St. Lawrence"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/114/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.6805191967"^^geo:long ;
+	livingPlaces:hasLatitude "44.5548414638"^^geo:lat ;
+	livingPlaces:hasName "193"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Keewaydin> a livingPlaces:StateParkFacility ;
+	rdfs:label "Keewaydin" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/24/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.929711027"^^geo:long ;
+	livingPlaces:hasLatitude "44.3234302144"^^geo:lat ;
+	livingPlaces:hasName "194"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Kring+Point> a livingPlaces:StateParkFacility ;
+	rdfs:label "Kring Point" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/14/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.8561585397"^^geo:long ;
+	livingPlaces:hasLatitude "44.3771887503"^^geo:lat ;
+	livingPlaces:hasName "195"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Long+Point> livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/54/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.2170574817"^^geo:long ;
+	livingPlaces:hasLatitude "44.0284402226"^^geo:lat ;
+	livingPlaces:hasName "196"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Macomb+Reservation> a livingPlaces:StateParkFacility ;
+	rdfs:label "Macomb Reservation" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Clinton"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/77/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.6124077611"^^geo:long ;
+	livingPlaces:hasLatitude "44.6178649163"^^geo:lat ;
+	livingPlaces:hasName "197"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Mary+Island> a livingPlaces:StateParkFacility ;
+	rdfs:label "Mary Island" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/40/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.9215781208"^^geo:long ;
+	livingPlaces:hasLatitude "44.3655711042"^^geo:lat ;
+	livingPlaces:hasName "198"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Point+Au+Roche> a livingPlaces:StateParkFacility ;
+	rdfs:label "Point Au Roche" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Clinton"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/30/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.3876934712"^^geo:long ;
+	livingPlaces:hasLatitude "44.7784004295"^^geo:lat ;
+	livingPlaces:hasName "199"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Point+Au+Roche+Boat+Launch> a livingPlaces:StateParkFacility ;
+	rdfs:label "Point Au Roche Boat Launch" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Clinton"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.3643906755"^^geo:long ;
+	livingPlaces:hasLatitude "44.8029711522"^^geo:lat ;
+	livingPlaces:hasName "200"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Robert+Moses> livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "St. Lawrence"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/51/details.aspx"^^xsd:anyURI , "http://www.nysparks.com/environment/nature-centers/5/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.8273503481"^^geo:long ;
+	livingPlaces:hasLatitude "45.0006401225"^^geo:lat ;
+	livingPlaces:hasName "201"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Robert+Wehle> a livingPlaces:StateParkFacility ;
+	rdfs:label "Robert Wehle" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/137/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.2755003184"^^geo:long ;
+	livingPlaces:hasLatitude "43.8671690839"^^geo:lat ;
+	livingPlaces:hasName "202"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Rock+Island+Lighthouse> a livingPlaces:StateParkFacility ;
+	rdfs:label "Rock Island Lighthouse" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-76.0167955672"^^geo:long ;
+	livingPlaces:hasLatitude "44.2803113504"^^geo:lat ;
+	livingPlaces:hasName "203"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Sackets+Harbor> a livingPlaces:StateParkFacility ;
+	rdfs:label "Sackets Harbor" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/7/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.129780271"^^geo:long ;
+	livingPlaces:hasLatitude "43.9463098277"^^geo:lat ;
+	livingPlaces:hasName "204"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Southwick+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Southwick Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/36/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.2046003266"^^geo:long ;
+	livingPlaces:hasLatitude "43.7632912666"^^geo:lat ;
+	livingPlaces:hasName "205"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/St.+Lawrence> a livingPlaces:StateParkFacility ;
+	rdfs:label "St. Lawrence" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "St. Lawrence"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/70/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/2/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.5765698357"^^geo:long ;
+	livingPlaces:hasLatitude "44.6298363383"^^geo:lat ;
+	livingPlaces:hasName "206"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Stony+Creek+Boat+Launch> a livingPlaces:StateParkFacility ;
+	rdfs:label "Stony Creek Boat Launch" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-76.229208226"^^geo:long ;
+	livingPlaces:hasLatitude "43.8256113639"^^geo:lat ;
+	livingPlaces:hasName "207"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Waterson+Point> a livingPlaces:StateParkFacility ;
+	rdfs:label "Waterson Point" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/48/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.0100758633"^^geo:long ;
+	livingPlaces:hasLatitude "44.3391781774"^^geo:lat ;
+	livingPlaces:hasName "208"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Wellesley+Island> a livingPlaces:StateParkFacility ;
+	rdfs:label "Wellesley Island" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/52/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/7/details.aspx"^^xsd:anyURI , "http://www.nysparks.com/environment/nature-centers/2/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.0154482065"^^geo:long ;
+	livingPlaces:hasLatitude "44.3292380029"^^geo:lat ;
+	livingPlaces:hasName "209"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Westcott+Beach> a livingPlaces:StateParkFacility ;
+	rdfs:label "Westcott Beach" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Jefferson"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/90/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-76.118017026"^^geo:long ;
+	livingPlaces:hasLatitude "43.8969804832"^^geo:lat ;
+	livingPlaces:hasName "210"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Whetstone+Gulf> a livingPlaces:StateParkFacility ;
+	rdfs:label "Whetstone Gulf" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Lewis"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/92/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-75.4774154637"^^geo:long ;
+	livingPlaces:hasLatitude "43.6985075739"^^geo:lat ;
+	livingPlaces:hasName "211"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Wilson+Hill+Boat+Launch> a livingPlaces:StateParkFacility ;
+	rdfs:label "Wilson Hill Boat Launch" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "10"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "St. Lawrence"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-75.0069996446"^^geo:long ;
+	livingPlaces:hasLatitude "44.9290287191"^^geo:lat ;
+	livingPlaces:hasName "212"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Athens+Boat+Launch> a livingPlaces:StateParkFacility ;
+	rdfs:label "Athens Boat Launch" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Greene"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.802276886"^^geo:long ;
+	livingPlaces:hasLatitude "42.2729538399"^^geo:lat ;
+	livingPlaces:hasName "213"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Bennington+Battlefield> a livingPlaces:StateParkFacility ;
+	rdfs:label "Bennington Battlefield" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rensselaer"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/12/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.3022506021"^^geo:long ;
+	livingPlaces:hasLatitude "42.9395061504"^^geo:lat ;
+	livingPlaces:hasName "214"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Cherry+Plain> a livingPlaces:StateParkFacility ;
+	rdfs:label "Cherry Plain" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rensselaer"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/173/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.412215266"^^geo:long ;
+	livingPlaces:hasLatitude "42.6178677896"^^geo:lat ;
+	livingPlaces:hasName "215"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Coxsackie+Boat+Launch> a livingPlaces:StateParkFacility ;
+	rdfs:label "Coxsackie Boat Launch" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Greene"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.7957752251"^^geo:long ;
+	livingPlaces:hasLatitude "42.3527161128"^^geo:lat ;
+	livingPlaces:hasName "216"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Crailo> a livingPlaces:StateParkFacility ;
+	rdfs:label "Crailo" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rensselaer"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/30/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.749225681"^^geo:long ;
+	livingPlaces:hasLatitude "42.6346290753"^^geo:lat ;
+	livingPlaces:hasName "217"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Crown+Point> a livingPlaces:StateParkFacility ;
+	rdfs:label "Crown Point" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Essex"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/34/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.4316631872"^^geo:long ;
+	livingPlaces:hasLatitude "44.0233248124"^^geo:lat ;
+	livingPlaces:hasName "218"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Grafton+Lakes> a livingPlaces:StateParkFacility ;
+	rdfs:label "Grafton Lakes" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Rensselaer"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/53/details.aspx"^^xsd:anyURI , "http://www.nysparks.com/environment/nature-centers/1/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.4428610841"^^geo:long ;
+	livingPlaces:hasLatitude "42.784189977"^^geo:lat ;
+	livingPlaces:hasName "219"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Grant+Cottage> a livingPlaces:StateParkFacility ;
+	rdfs:label "Grant Cottage" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Saratoga"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/9/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.7454175731"^^geo:long ;
+	livingPlaces:hasLatitude "43.2012117039"^^geo:lat ;
+	livingPlaces:hasName "220"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Guy+Park> a livingPlaces:StateParkFacility ;
+	rdfs:label "Guy Park" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Montgomery"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-74.2095482157"^^geo:long ;
+	livingPlaces:hasLatitude "42.9469520074"^^geo:lat ;
+	livingPlaces:hasName "221"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Hudson+River+Islands> a livingPlaces:StateParkFacility ;
+	rdfs:label "Hudson River Islands" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Columb/Greene"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/98/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.7783764"^^geo:long ;
+	livingPlaces:hasLatitude "42.3288852476"^^geo:lat ;
+	livingPlaces:hasName "222"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/John+Boyd+Thacher> a livingPlaces:StateParkFacility ;
+	rdfs:label "John Boyd Thacher" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Albany"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/128/details.aspx"^^xsd:anyURI , "http://www.nysparks.com/environment/nature-centers/8/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.0147061578"^^geo:long ;
+	livingPlaces:hasLatitude "42.655465525"^^geo:lat ;
+	livingPlaces:hasName "223"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/John+Brown+Farm> a livingPlaces:StateParkFacility ;
+	rdfs:label "John Brown Farm" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Essex"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/29/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9715067492"^^geo:long ;
+	livingPlaces:hasLatitude "44.2495745037"^^geo:lat ;
+	livingPlaces:hasName "224"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Johnson+Hall> a livingPlaces:StateParkFacility ;
+	rdfs:label "Johnson Hall" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Fulton"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/10/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.3818901744"^^geo:long ;
+	livingPlaces:hasLatitude "43.0155118818"^^geo:lat ;
+	livingPlaces:hasName "225"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Lake+Lauderdale> a livingPlaces:StateParkFacility ;
+	rdfs:label "Lake Lauderdale" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Washington"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.3704151279"^^geo:long ;
+	livingPlaces:hasLatitude "43.0850856219"^^geo:lat ;
+	livingPlaces:hasName "226"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Max+V.+Shaul> a livingPlaces:StateParkFacility ;
+	rdfs:label "Max V. Shaul" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Schoharie"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/94/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.4109223135"^^geo:long ;
+	livingPlaces:hasLatitude "42.5479937717"^^geo:lat ;
+	livingPlaces:hasName "227"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Mine+Kill> a livingPlaces:StateParkFacility ;
+	rdfs:label "Mine Kill" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Schoharie"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/165/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.4611210967"^^geo:long ;
+	livingPlaces:hasLatitude "42.4340245355"^^geo:lat ;
+	livingPlaces:hasName "228"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Mohawk+River> a livingPlaces:StateParkFacility ;
+	rdfs:label "Mohawk River" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Schenectady"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.8496398366"^^geo:long ;
+	livingPlaces:hasLatitude "42.8004093799"^^geo:lat ;
+	livingPlaces:hasName "229"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Moreau+Lake> a livingPlaces:StateParkFacility ;
+	rdfs:label "Moreau Lake" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Saratoga"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/150/details.aspx"^^xsd:anyURI , "http://www.nysparks.com/environment/nature-centers/7/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.7337768981"^^geo:long ;
+	livingPlaces:hasLatitude "43.2332136686"^^geo:lat ;
+	livingPlaces:hasName "230"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Peebles+Island> a livingPlaces:StateParkFacility ;
+	rdfs:label "Peebles Island" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Saratoga"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/111/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.6845492304"^^geo:long ;
+	livingPlaces:hasLatitude "42.7823213594"^^geo:lat ;
+	livingPlaces:hasName "231"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Rexford+Aqueduct> a livingPlaces:StateParkFacility ;
+	rdfs:label "Rexford Aqueduct" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Sara/Schen"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.8876764506"^^geo:long ;
+	livingPlaces:hasLatitude "42.8492649622"^^geo:lat ;
+	livingPlaces:hasName "232"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Saratoga+Lake+Marine+Park> a livingPlaces:StateParkFacility ;
+	rdfs:label "Saratoga Lake Marine Park" ;
+	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Saratoga"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/120/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.7204315347"^^geo:long ;
+	livingPlaces:hasLatitude "43.0535053108"^^geo:lat ;
+	livingPlaces:hasName "233"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Saratoga+Spa> a livingPlaces:StateParkFacility ;
+	rdfs:label "Saratoga Spa" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Saratoga"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "Y"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/112/details.aspx"^^xsd:anyURI , "http://nysparks.com/golf-courses/15/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.8039355929"^^geo:long ;
+	livingPlaces:hasLatitude "43.0508914472"^^geo:lat ;
+	livingPlaces:hasName "234"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Schodack+Island> a livingPlaces:StateParkFacility ;
+	rdfs:label "Schodack Island" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Alb/Rens"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/146/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.7765204362"^^geo:long ;
+	livingPlaces:hasLatitude "42.4905990224"^^geo:lat ;
+	livingPlaces:hasName "235"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Schoharie+Crossing> a livingPlaces:StateParkFacility ;
+	rdfs:label "Schoharie Crossing" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Montgomery"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/27/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.2675702789"^^geo:long ;
+	livingPlaces:hasLatitude "42.9493448538"^^geo:lat ;
+	livingPlaces:hasName "236"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Schuyler+Mansion> a livingPlaces:StateParkFacility ;
+	rdfs:label "Schuyler Mansion" ;
+	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Albany"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/historic-sites/33/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.7592869931"^^geo:long ;
+	livingPlaces:hasLatitude "42.6413229736"^^geo:lat ;
+	livingPlaces:hasName "237"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Susan+B+Anthony> a livingPlaces:StateParkFacility ;
+	rdfs:label "Susan B Anthony" ;
+	livingPlaces:hasParkFacilityType "Other"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Washington"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-73.423119782"^^geo:long ;
+	livingPlaces:hasLatitude "43.1105299662"^^geo:lat ;
+	livingPlaces:hasName "238"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Thompson%27s+Lake> a livingPlaces:StateParkFacility ;
+	rdfs:label "Thompson's Lake" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "11"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Albany"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "Y"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "Y"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/99/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.046979934"^^geo:long ;
+	livingPlaces:hasLatitude "42.6557310802"^^geo:lat ;
+	livingPlaces:hasName "239"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Bayswater> a livingPlaces:StateParkFacility ;
+	rdfs:label "Bayswater" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "12"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Queens"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/86/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.7725529333"^^geo:long ;
+	livingPlaces:hasLatitude "40.6128179007"^^geo:lat ;
+	livingPlaces:hasName "240"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Clay+Pit+Ponds> a livingPlaces:StateParkFacility ;
+	rdfs:label "Clay Pit Ponds" ;
+	livingPlaces:hasParkFacilityType "State Park Preserve"^^xsd:string ;
+	livingPlaces:pertainToRegion "12"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Richmond"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "Y"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/166/details.aspx"^^xsd:anyURI , "http://www.nysparks.com/environment/nature-centers/14/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-74.2290460884"^^geo:long ;
+	livingPlaces:hasLatitude "40.5405635456"^^geo:lat ;
+	livingPlaces:hasName "241"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/East+River> a livingPlaces:StateParkFacility ;
+	rdfs:label "East River" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "12"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Kings"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/155/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.962057535"^^geo:long ;
+	livingPlaces:hasLatitude "40.7214246134"^^geo:lat ;
+	livingPlaces:hasName "242"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Franklin+D.+Roosevelt+Four+Freedoms> a livingPlaces:StateParkFacility ;
+	rdfs:label "Franklin D. Roosevelt Four Freedoms" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "12"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Manhattan"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/186/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9603793708"^^geo:long ;
+	livingPlaces:hasLatitude "40.7506765522"^^geo:lat ;
+	livingPlaces:hasName "243"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Gantry+Plaza> a livingPlaces:StateParkFacility ;
+	rdfs:label "Gantry Plaza" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "12"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Queens"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/149/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.959045245"^^geo:long ;
+	livingPlaces:hasLatitude "40.7443521446"^^geo:lat ;
+	livingPlaces:hasName "244"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Hudson+River+Park> a livingPlaces:StateParkFacility ;
+	rdfs:label "Hudson River Park" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "12"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Manhattan"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasLongitude "-74.0117431827"^^geo:long ;
+	livingPlaces:hasLatitude "40.7354989295"^^geo:lat ;
+	livingPlaces:hasName "245"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Riverbank> a livingPlaces:StateParkFacility ;
+	rdfs:label "Riverbank" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "12"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Manhattan"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/93/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9568541697"^^geo:long ;
+	livingPlaces:hasLatitude "40.8255348249"^^geo:lat ;
+	livingPlaces:hasName "246"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Roberto+Clemente> a livingPlaces:StateParkFacility ;
+	rdfs:label "Roberto Clemente" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "12"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Bronx"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/140/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-73.9200427364"^^geo:long ;
+	livingPlaces:hasLatitude "40.8553636655"^^geo:lat ;
+	livingPlaces:hasName "247"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Buffalo+Harbor> a livingPlaces:StateParkFacility ;
+	rdfs:label "Buffalo Harbor" ;
+	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
+	livingPlaces:pertainToRegion "1"^^livingPlaces:Region ;
+	livingPlaces:pertainToCounty "Erie"^^livingPlaces:County ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	livingPlaces:hasUrl "http://nysparks.com/parks/191/details.aspx"^^xsd:anyURI ;
+	livingPlaces:hasLongitude "-78.8646829903"^^geo:long ;
+	livingPlaces:hasLatitude "42.8463872552"^^geo:lat ;
+	livingPlaces:hasName "248"^^xsd:string .

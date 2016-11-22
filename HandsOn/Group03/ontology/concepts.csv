@@ -1,0 +1,43 @@
+Column,Type,Comments/range,Problems
+year,?,Según el dataset cambia el tipo,
+type_of_property,String,,
+availability,String,,
+no_of_private_residential_properties,Integer,,
+quarter,String,almacena año y cuatrimestre,
+private_residential_property_price_index,float,,
+sector,String,,
+type_of_space,String,,
+amount_of_space,Integer,,
+start_year,Integer,Coincide con year,
+end_year,Integer,Coincide con year,
+flat_type,String,,
+demand_for_flats,Integer,,
+index,float,,
+financial_year,integer,Coincide con year,
+town,String,,
+room_type,String,,
+min_selling_price,Integer,,"Puede responder con ""na"""
+max_selling_price,Integer,,"Puede responder con ""na"""
+min_selling_price_less_ahg_shg,Integer,,"Puede responder con ""na"""
+max_selling_price_less_ahg_shg,Integer,,"Puede responder con ""na"""
+price,Integer,,"Puede responder con ""-"""
+no_of_resale_applications,Integer,,
+no_of_units,Integer,,
+type,String,,
+applications_registered,Integer,,
+product_segment,String,,
+occupancy_rate,Float,,
+type_of_booking,String,,
+number_of_bookings,Integer,,
+market_segment,String,,
+price_index,float,,
+month,String,,Mes que viene con year
+block,String,,
+street_name,Integer,,
+storey_range,String,,
+floor_area_sqm,String,,
+flat_model,String,,
+lease_commence_date,Integer,,
+resale_price,Integer,,
+mode,String,,
+number_of_state_properties_launched,Integer,,
