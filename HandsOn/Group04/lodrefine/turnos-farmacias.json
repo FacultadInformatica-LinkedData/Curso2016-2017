@@ -16,6 +16,10 @@
         {
           "name": "rdfs",
           "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "phar",
+          "uri": "http://semanticweb.es/group04/ontology/pharmacies"
         }
       ],
       "rootNodes": [
@@ -26,73 +30,73 @@
           "rdfTypes": [],
           "links": [
             {
-              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#location",
-              "curie": "rdf:location",
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesperteneceA",
+              "curie": "phar:pharmaciesperteneceA",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Localidad"
+                "columnName": "localidad"
               }
             },
             {
-              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#neighborhood",
-              "curie": "rdf:neighborhood",
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesperteneceA",
+              "curie": "phar:pharmaciesperteneceA",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Barrio"
+                "columnName": "barrio"
               }
             },
             {
-              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#date",
-              "curie": "rdf:date",
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesd�aDelMes",
+              "curie": "phar:pharmaciesd�aDelMes",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Fecha"
+                "columnName": "fecha"
               }
             },
             {
-              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
-              "curie": "rdf:value",
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesest�En",
+              "curie": "phar:pharmaciesest�En",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Farmacia"
+                "columnName": "farmacia"
               }
             },
             {
-              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#address",
-              "curie": "rdf:address",
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesestaEnBarrio",
+              "curie": "phar:pharmaciesestaEnBarrio",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Direccion"
+                "columnName": "direccion"
               }
             },
             {
-              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#hours",
-              "curie": "rdf:hours",
+              "uri": "http://semanticweb.es/group04/ontology/pharmacieshorario",
+              "curie": "phar:pharmacieshorario",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Duraci�n"
+                "columnName": "duraci�n"
               }
             },
             {
-              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#phonenumber",
-              "curie": "rdf:phonenumber",
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciestieneTel�fono",
+              "curie": "phar:pharmaciestieneTel�fono",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "Tel�fono"
+                "columnName": "tel�fono"
               }
             }
           ]

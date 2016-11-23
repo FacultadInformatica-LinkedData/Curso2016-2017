@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/pfd/ontologies/2016/10/untitled-ontology-11">
+    <Prefix name="" IRI="http://www.semanticweb.org/pfd/ontologies/2016/10/untitled-ontology-11#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -21,10 +22,13 @@
         <DataProperty IRI="#Programa"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#TipoEvento"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#NombreServicio"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#TipoEvento"/>
+        <ObjectProperty IRI="#familiar"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Servicio"/>
@@ -36,16 +40,22 @@
         <Class IRI="#Evento"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#entradaGratuita"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#DateEvento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Precio"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#NombreOrganizador"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Mes"/>
+        <DataProperty IRI="#Descripcion"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Descripcion"/>
+        <DataProperty IRI="#Mes"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#InfoReserva"/>
@@ -53,6 +63,28 @@
     <Declaration>
         <DataProperty IRI="#LugarEvento"/>
     </Declaration>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#entradaGratuita"/>
+        <Class IRI="#Evento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#familiar"/>
+        <Class IRI="#Evento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#entradaGratuita"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Precio"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#familiar"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Publico"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#DateEvento"/>
         <Class IRI="#Evento"/>
@@ -97,6 +129,60 @@
         <DataProperty IRI="#TipoEvento"/>
         <Class IRI="#Evento"/>
     </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#DateEvento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Descripcion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#InfoReserva"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LugarEvento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Mes"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NombreEvento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NombreOrganizador"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NombreServicio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Precio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Programa"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Publico"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TipoEvento"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#familiar</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indica el tipo de público que puede acudir al evento. 
+Si está pensado para todos los públicos, será familiar.</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
