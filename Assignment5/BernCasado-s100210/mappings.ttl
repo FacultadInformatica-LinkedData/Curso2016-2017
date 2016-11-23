@@ -1,0 +1,196 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix myWorld: <http://www.linkedData_Assigment5.com/ontology/myWorld#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://www.linkedData_Assigment5.com/resource/> .
+
+<TriplesMapCity> a rr:TriplesMap;
+
+rr:logicalTable [ rr:tableName "city" ];
+
+rr:subjectMap [ 
+ rr:termType rr:IRI;
+ rr:template "http://www.linkedData_Assigment5.com/resource/City/{Name}" #Deberia ser /City/{ID}?¿?
+ ];
+
+## A partir de aqui se definen todas las relaciones del subject asi como sus relacionados
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant rdf:type ];
+ rr:objectMap [ rr:constant myWorld:City ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:pertainTo ];
+ rr:objectMap [ rr:column "CountryCode"; rr:datatype xsd:string ]
+] ;
+
+##¿DUDA?--> De la relacionde la foreign key countrycode, se deduce una relacion de pertnencia es decir
+## City pertainTo Country. Por tanto, yo he declarado esa relaicon y ademas tmb he declarado otra que es hasCountryCode
+## porque tener un codigo de pais puede pensarse como algo a parte de la relacion pertenecer a
+
+##Lo mismo pasa con el country language
+
+##Es decir al final lo que quiero es que si tengo una relacion entre entidades las instancias hereden dicha relacion 
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasCountryCode ];
+ rr:objectMap [ rr:column "CountryCode"; rr:datatype xsd:string ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasDistrict ];
+ rr:objectMap [ rr:column "District"; rr:datatype xsd:string ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasPopulationSize ];
+ rr:objectMap [ rr:column "Population"; rr:datatype xsd:int ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasID ];
+ rr:objectMap [ rr:column "ID"; rr:datatype xsd:int ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasName ];
+ rr:objectMap [ rr:column "Name"; rr:datatype xsd:string ]
+] .
+
+<TriplesMapCountryLanguage> a rr:TriplesMap;
+
+rr:logicalTable [ rr:tableName "countrylanguage" ];
+
+rr:subjectMap [ 
+ rr:termType rr:IRI;
+ rr:template "http://www.linkedData_Assigment5.com/resource/CountryLanguage/{Language}"
+ ];
+
+## A partir de aqui se definen todas las relaciones del subject asi como sus relacionados
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant rdf:type ];
+ rr:objectMap [ rr:constant myWorld:CountryLanguage ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:esHabladoEn ];
+ rr:objectMap [ rr:column "CountryCode"; rr:datatype xsd:string ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasCountryCode ];
+ rr:objectMap [ rr:column "CountryCode"; rr:datatype xsd:string ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasLanguageName ];
+ rr:objectMap [ rr:column "Language"; rr:datatype xsd:string ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasPercentageOfUse ];
+ rr:objectMap [ rr:column "Percentage"; rr:datatype xsd:float ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:isOfficial ];
+ rr:objectMap [ rr:column "isOfficial"; rr:datatype xsd:string ] # Como represento que aunque sea un string es un enumerado
+															 #En plan {"T"^^xsd:string}
+] .
+
+<TriplesMapCountry> a rr:TriplesMap;
+
+rr:logicalTable [ rr:tableName "country" ];
+
+rr:subjectMap [ 
+ rr:termType rr:IRI;
+ rr:template "http://www.linkedData_Assigment5.com/resource/Country/{Code}" # O deberia ser name ¿?¿ 
+ ];
+
+## A partir de aqui se definen todas las relaciones del subject asi como sus relacionados
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant rdf:type ];
+ rr:objectMap [ rr:constant myWorld:Country ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasCapital ];
+ rr:objectMap [ rr:column "Capital"; rr:datatype xsd:int ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasCode ];
+ rr:objectMap [ rr:column "Code"; rr:datatype xsd:string ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasCode2 ];
+ rr:objectMap [ rr:column "Code2"; rr:datatype xsd:string ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasGNP ];
+ rr:objectMap [ rr:column "GNP"; rr:datatype xsd:float ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasGNPOld ];
+ rr:objectMap [ rr:column "GNPOld"; rr:datatype xsd:float ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasGovernmentForm ];
+ rr:objectMap [ rr:column "GovernmentForm"; rr:datatype xsd:string ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasHeadOfState ];
+ rr:objectMap [ rr:column "HeadOfState"; rr:datatype xsd:string ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasIndepYear ];
+ rr:objectMap [ rr:column "IndepYear"; rr:datatype xsd:int ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasLifeExpectancy ];
+ rr:objectMap [ rr:column "LifeExpectancy"; rr:datatype xsd:float ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasLocalName ];
+ rr:objectMap [ rr:column "LocalName"; rr:datatype xsd:string ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasName ];
+ rr:objectMap [ rr:column "Name"; rr:datatype xsd:string ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasPopulationSize ];
+ rr:objectMap [ rr:column "Population"; rr:datatype xsd:int ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:hasSurfaceArea ];
+ rr:objectMap [ rr:column "SurfaceArea"; rr:datatype xsd:float ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:pertainToContinent ];
+ rr:objectMap [ rr:column "Continent"; rr:datatype xsd:string ]
+] ;
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant myWorld:pertainToRegion ];
+ rr:objectMap [ rr:column "Region"; rr:datatype xsd:string ]
+] .
+
+
+#Realizado por Bernard Casado Fernández
