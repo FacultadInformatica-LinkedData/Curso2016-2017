@@ -1,0 +1,119 @@
+;; Author: Alberto Camporredondo
+;;
+
+# Exercise 1
+select distinct ?Classes
+where{
+  ?Classes a <http://www.w3.org/2000/01/rdf-schema#Class>
+}
+LIMIT 150
+
+# Exercise 2
+PREFIX graph: <http://GP-onto.fi.upm.es/exercise2#>
+
+select distinct ?SubClasses
+where{
+  ?SubClasses rdfs:subClassOf graph:Establishment
+}
+
+# Exercise 3
+PREFIX graph: <http://GP-onto.fi.upm.es/exercise2#>
+
+select distinct ?InstancesOfCity
+where{
+?InstancesOfCity a graph:City
+}
+
+# Exercise 4
+PREFIX graph: <http://GP-onto.fi.upm.es/exercise2#>
+
+select distinct ?InhabitantsOfSantiago
+where{
+ graph:Santiago_de_Compostela graph:hasInhabitantNumber ?InhabitantsOfSantiago 
+}
+
+#Exercise 5
+PREFIX graph: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT distinct ?InhabitantsOfSantiago ?InhabitantsOfArzua
+WHERE {
+graph:Santiago_de_Compostela graph:hasInhabitantNumber ?InhabitantsOfSantiago .
+graph:Arzua graph:hasInhabitantNumber ?InhabitantsOfArzua
+}
+
+#Exercise 6
+PREFIX graph: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?Cities ?NumberOfInhabitants
+WHERE {
+?Cities graph:hasInhabitantNumber ?NumberOfInhabitants
+}
+ORDER BY ?Cities ASC (?Cities)
+
+#exercise 7
+PREFIX graph: <http://GP-onto.fi.upm.es/exercise2#>
+
+select distinct ?InstancesOfLocality ?NumberOfInhabitants
+where{
+   ?InstancesOfLocality a graph:Location .
+   OPTIONAL{?InstancesOfLocality graph:hasInhabitantNumber ?NumberOfInhabitants}
+}
+
+#exercise 8
+PREFIX graph: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?Cities ?NumberOfInhabitants
+WHERE {
+?Cities graph:hasInhabitantNumber ?NumberOfInhabitants
+FILTER (xsd:integer(?NumberOfInhabitants) > xsd:integer("200000"))
+}
+
+# Exercise 9
+PREFIX graph: <http://GP-onto.fi.upm.es/exercise2#>
+
+select distinct ?streetName ?Number ?Locality ?Province
+where{
+ graph:Pazo_Breogan graph:hasAddress ?instance .
+ ?instance graph:hasStreet ?streetName .
+ ?instance graph:hasNumber ?Number .
+ graph:Pazo_Breogan graph:isPlacedIn ?Locality .
+ ?Locality graph:inProvince ?Province
+}
+
+# Exercise 10
+PREFIX graph: <http://GP-onto.fi.upm.es/exercise2#>
+
+select distinct ?SubClassesOfLocation
+where{
+ ?SubClassesOfLocation rdfs:subClassOf graph:Location
+}
+
+#Exercise 11
+PREFIX graph: <http://GP-onto.fi.upm.es/exercise2#>
+
+select distinct ?InstancesOfLocation
+where{
+ ?InstancesOfLocation a graph:Location
+}
+
+#Exercise 12
+PREFIX graph: <http://GP-onto.fi.upm.es/exercise2#>
+
+select distinct ?Resource
+where{
+ ?Resource rdfs:label "Madrid"
+}
+
+#Exercise 13
+PREFIX graph: <http://GP-onto.fi.upm.es/exercise2#>
+
+CONSTRUCT{?TouristicPlace graph:isIn ?Province}
+where{
+ ?TouristicPlace graph:isPlacedIn ?city .
+ ?city graph:inProvince ?Province
+}
+
+#Exercise 14
+PREFIX graph: <http://GP-onto.fi.upm.es/exercise2#>
+
+ASK{?ExistsInstancesOfTown a graph:Town}

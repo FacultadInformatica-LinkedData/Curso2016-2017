@@ -1,0 +1,117 @@
+A1. Dame todas las propiedades aplicables a las instancias de la clase Politician 
+
+select distinct ?Properties where
+
+{
+
+?instance ?q <http://dbpedia.org/ontology/Politician> .
+
+?instance ?Properties ?Valor
+
+}
+
+A2. Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician)
+
+select distinct ?Properties
+
+where
+
+{
+
+?instance ?q <http://dbpedia.org/ontology/Politician> .
+
+?instance ?Properties ?Valor
+
+FILTER(?Properties != rdf:type)
+
+}
+
+A3. ¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician (http://dbpedia.org/ontology/Politician)?
+
+select count (distinct ?Valor)  as ?numValores
+
+where
+
+{
+
+?instance ?q <http://dbpedia.org/ontology/Politician> .
+
+?instance ?Properties ?Valor
+
+FILTER(?Properties != rdf:type)
+
+}
+
+A4. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime cuántos valores distintos toman en dichas instancias
+
+select count (distinct ?Valor)  as ?numValores
+
+where
+
+{
+
+?instance ?q <http://dbpedia.org/ontology/Politician> .
+
+?instance ?Properties ?Valor
+
+FILTER(?Properties != rdf:type)
+
+}
+
+A5. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime la media de valores distintos que toman en dichas instancias.
+
+select avg(?Valores)  as ?media
+
+where
+
+{ 
+
+{
+
+select ?Properties count (distinct ?Valor) as ?Valores
+
+where 
+
+{
+
+?Instances ?q <http://dbpedia.org/ontology/Politician> .
+
+?Instances ?Properties ?Valor
+
+FILTER (?Properties != rdf:type)
+
+}
+
+}
+
+}
+
+A6. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor
+
+select ?Properties max(?Valores) as ?Fin
+
+where
+
+{
+
+{
+
+select ?Properties count (distinct ?Valor) as ?Valores
+
+where
+
+{
+
+?Instances ?q <http://dbpedia.org/ontology/Politician> .
+
+?Instances ?Properties ?Valor
+
+FILTER (?Properties != rdf:type)
+
+}
+
+}
+
+}
+
+ORDER BY DESC(?Fin)
