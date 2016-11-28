@@ -57,32 +57,32 @@
 :tieneTransporte rdf:type owl:ObjectProperty .
 
 
-###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#es_realizado
-<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#es_realizado> rdf:type owl:ObjectProperty ;
+### http://www.madridcultural.es/ontology.owl#es_realizado
+<http://www.madridcultural.es/ontology.owl#es_realizado> rdf:type owl:ObjectProperty ;
                                                                                           rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                                          rdfs:domain <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Lugar> ;
-                                                                                          rdfs:range <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento> .
+                                                                                          rdfs:domain <http://www.madridcultural.es/ontology.owl#Lugar> ;
+                                                                                          rdfs:range <http://www.madridcultural.es/ontology.owl#Evento> .
 
 
-###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#pertenece_a
-<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#pertenece_a> rdf:type owl:ObjectProperty ;
+### http://www.madridcultural.es/ontology.owl#pertenece_a
+<http://www.madridcultural.es/ontology.owl#pertenece_a> rdf:type owl:ObjectProperty ;
                                                                                          rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                                         rdfs:domain <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Tipo> ;
-                                                                                         rdfs:range <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento> .
+                                                                                         rdfs:domain <http://www.madridcultural.es/ontology.owl#Tipo> ;
+                                                                                         rdfs:range <http://www.madridcultural.es/ontology.owl#Evento> .
 
 
-###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#se_realiza_en
-<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#se_realiza_en> rdf:type owl:ObjectProperty ;
+### http://www.madridcultural.es/ontology.owl#se_realiza_en
+<http://www.madridcultural.es/ontology.owl#se_realiza_en> rdf:type owl:ObjectProperty ;
                                                                                            rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                                           rdfs:domain <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento> ;
-                                                                                           rdfs:range <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Lugar> .
+                                                                                           rdfs:domain <http://www.madridcultural.es/ontology.owl#Evento> ;
+                                                                                           rdfs:range <http://www.madridcultural.es/ontology.owl#Lugar> .
 
 
-###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#tiene_un
-<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#tiene_un> rdf:type owl:ObjectProperty ;
+### http://www.madridcultural.es/ontology.owl#tiene_un
+<http://www.madridcultural.es/ontology.owl#tiene_un> rdf:type owl:ObjectProperty ;
                                                                                       rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                                      rdfs:domain <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento> ;
-                                                                                      rdfs:range <http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Tipo> .
+                                                                                      rdfs:domain <http://www.madridcultural.es/ontology.owl#Evento> ;
+                                                                                      rdfs:range <http://www.madridcultural.es/ontology.owl#Tipo> .
 
 
 #################################################################
@@ -111,16 +111,16 @@
               rdfs:subClassOf :Centros .
 
 
-###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento
-<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento> rdf:type owl:Class .
+### http://www.madridcultural.es/ontology.owl#Evento
+<http://www.madridcultural.es/ontology.owl#Evento> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Lugar
-<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Lugar> rdf:type owl:Class .
+### http://www.madridcultural.es/ontology.owl#Lugar
+<http://www.madridcultural.es/ontology.owl#Lugar> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Tipo
-<http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Tipo> rdf:type owl:Class .
+### http://www.madridcultural.es/ontology.owl#Tipo
+<http://www.madridcultural.es/ontology.owl#Tipo> rdf:type owl:Class .
 
 
 ###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
