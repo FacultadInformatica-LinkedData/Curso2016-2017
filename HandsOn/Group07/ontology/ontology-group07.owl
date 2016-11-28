@@ -1,0 +1,314 @@
+@prefix : <http://www.semanticweb.org/group07/ontology> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/group07/ontology/JobSearch#> .
+
+<http://www.semanticweb.org/group07/ontology/JobSearch#> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##capital
+:capital rdf:type owl:ObjectProperty ;
+         rdfs:domain :Provincia ;
+         rdfs:range :Localidad .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##en-localidad
+:en-localidad rdf:type owl:ObjectProperty ;
+              rdfs:domain :Empleo ,
+                          :Organismo_Gestor ;
+              rdfs:range :Localidad .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##en-provincia
+:en-provincia rdf:type owl:ObjectProperty ;
+              rdfs:domain :Empleo ,
+                          :Localidad ;
+              rdfs:range :Provincia .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##gestionado-por
+:gestionado-por rdf:type owl:ObjectProperty ;
+                rdfs:domain :Empleo ;
+                rdfs:range :Organismo_Gestor .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##calle
+:calle rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Organismo_Gestor ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##cantidad-municipios
+:cantidad-municipios rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Provincia ;
+                     rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##codigo-postal
+:codigo-postal rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Organismo_Gestor ,
+                           :Provincia ;
+               rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##codigo-postal-localidad
+:codigo-postal-localidad rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Localidad ;
+                         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##codigo-postal-provincia
+:codigo-postal-provincia rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Localidad ;
+                         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##datos-personales
+:datos-personales rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Organismo_Gestor ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##descripcion
+:descripcion rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Empleo ,
+                         :Organismo_Gestor ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##devolucion-exencion-de-tasas
+:devolucion-exencion-de-tasas rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :Empleo ;
+                              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##direccion
+:direccion rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Organismo_Gestor ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##directorio-superior
+:directorio-superior rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Organismo_Gestor ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Organismo_Gestor ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##enlace-contenido
+:enlace-contenido rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Empleo ,
+                              :Organismo_Gestor ;
+                  rdfs:range xsd:anyURI .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##fax
+:fax rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Organismo_Gestor ;
+     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##fecha-finalizacion
+:fecha-finalizacion rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Empleo ;
+                    rdfs:range xsd:date .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##fecha-inicio
+:fecha-inicio rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Empleo ;
+              rdfs:range xsd:date .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##fecha-publicacion
+:fecha-publicacion rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Empleo ;
+                   rdfs:range xsd:date .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##fuente-contenido
+:fuente-contenido rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Empleo ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##identificador
+:identificador rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Empleo ,
+                           :Organismo_Gestor ;
+               rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##identificador-dir-superior
+:identificador-dir-superior rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :Organismo_Gestor ;
+                            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##informacion-adicional
+:informacion-adicional rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Empleo ,
+                                   :Organismo_Gestor ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##ingreso-libre
+:ingreso-libre rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Empleo ;
+               rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##lugar-de-presentacion
+:lugar-de-presentacion rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Empleo ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##minusvalia
+:minusvalia rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Empleo ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##nombre
+:nombre rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Localidad ,
+                    :Provincia ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##numero-plazas
+:numero-plazas rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Empleo ;
+               rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##pagina-web
+:pagina-web rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Organismo_Gestor ;
+            rdfs:range xsd:anyURI .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##plazo-presentacion
+:plazo-presentacion rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Empleo ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##posicion
+:posicion rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Organismo_Gestor ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##procedimiento
+:procedimiento rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Empleo ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##promocion-interna
+:promocion-interna rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Empleo ;
+                   rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##requisitos
+:requisitos rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Empleo ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##solicitud
+:solicitud rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Empleo ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##superficie
+:superficie rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Provincia ;
+            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##tasas
+:tasas rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Empleo ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##telefono
+:telefono rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Organismo_Gestor ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##tematica
+:tematica rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Empleo ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##tipo
+:tipo rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Empleo ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##titulo
+:titulo rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Empleo ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##ultima-actualizacion
+:ultima-actualizacion rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Empleo ,
+                                  :Organismo_Gestor ;
+                      rdfs:range xsd:date .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##Empleo
+:Empleo rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##Localidad
+:Localidad rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##Organismo_Gestor
+:Organismo_Gestor rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group07/ontology/JobSearch##Provincia
+:Provincia rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

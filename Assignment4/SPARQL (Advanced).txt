@@ -1,0 +1,55 @@
+SPARQL Questionnaire (Advanced) Provide the SPARQL query and the result for the following queries expressed in natural language. The endpoint that you can use for this exercise is: http://es.dbpedia.org/sparql
+
+/* A1. Dame todas las propiedades aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician) */
+SELECT DISTINCT ?p
+WHERE {
+  ?x a <http://dbpedia.org/ontology/Politician>.
+  ?x ?p ?y
+}
+
+/* A2. Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician) */
+SELECT DISTINCT ?p
+WHERE {
+  ?x a <http://dbpedia.org/ontology/Politician>.
+  ?x ?p ?y
+  FILTER(?p!=rdf:type)
+}
+
+/* A3. ¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician (http://dbpedia.org/ontology/Politician)? */
+SELECT COUNT DISTINCT ?p
+WHERE {
+  ?x a <http://dbpedia.org/ontology/Politician>.
+  ?x ?p ?y
+  FILTER(?p!=rdf:type)
+}
+
+/* A4. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime cuántos valores distintos toman en dichas instancias */
+SELECT ?p COUNT (DISTINCT ?x) AS ?valores 
+WHERE {
+  ?instancias ?y <http://dbpedia.org/ontology/Politician>. 
+  ?instancias ?p ?x 
+  FILTER (?p!=rdf:type)
+}
+
+/* A5. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime la media de valores distintos que toman en dichas instancias. */
+SELECT AVG(?x) AS ?aver 
+WHERE{ 
+  SELECT ?p count (distinct ?v) as ?x 
+  WHERE { 
+    ?instancias ?y <http://dbpedia.org/ontology/Politician>. 
+    ?instancias ?p ?v 
+    FILTER (?p!=rdf:type) 
+ } 
+} 
+
+/* A6. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor */
+SELECT ?p MAX(?v) AS ?maximonum
+WHERE{
+  SELECT ?p COUNT (DISTINCT ?au) AS ?v
+  WHERE{
+    ?s a <http://dbpedia.org/ontology/Politician>.
+    ?s ?p ?au
+    FILTER (?p!=rdf:type)
+  }
+}
+ORDER BY DESC(?maximonum)

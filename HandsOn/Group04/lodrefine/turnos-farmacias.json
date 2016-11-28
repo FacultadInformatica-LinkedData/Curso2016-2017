@@ -1,0 +1,107 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://localhost:3333/farmacias/readable/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "phar",
+          "uri": "http://semanticweb.es/group04/ontology/pharmacies"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesperteneceA",
+              "curie": "phar:pharmaciesperteneceA",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "localidad"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesperteneceA",
+              "curie": "phar:pharmaciesperteneceA",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "barrio"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesd�aDelMes",
+              "curie": "phar:pharmaciesd�aDelMes",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "fecha"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesest�En",
+              "curie": "phar:pharmaciesest�En",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "farmacia"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciesestaEnBarrio",
+              "curie": "phar:pharmaciesestaEnBarrio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "direccion"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacieshorario",
+              "curie": "phar:pharmacieshorario",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "duraci�n"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmaciestieneTel�fono",
+              "curie": "phar:pharmaciestieneTel�fono",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "tel�fono"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

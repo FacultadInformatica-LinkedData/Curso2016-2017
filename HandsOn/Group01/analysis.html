@@ -19,6 +19,14 @@
 		 <tr>
     <th colspan="5">aparcabicis (private bikes)</th>
      </tr>
+		 <tr> 
+			<td>Id</td> 
+			<td>int</td> 
+			<td>natural positive numbers</td> 
+			<td>unique</td> 
+			<td>1 repeated</td> 
+		
+		</tr> 	 
 	    <tr> 
 			<td>Centro</td> 
 			<td>String</td> 
@@ -26,7 +34,7 @@
 			<td>not unique</td> 
 			<td>148 repeated</td> 
 		
-		</tr> 
+		</tr>
  		<tr> 
 		<td>Direccion</td> 
 			<td>String</td> 
@@ -61,7 +69,14 @@
   </tr>
   
   <tr> 
-		<td>distrito</td> 
+		<td>Número</td> 
+			<td>int</td> 
+			<td>natural positive numbers</td> 
+			<td>unique</td> 
+			<td>0 repeated</td> 
+		</tr>	
+		
+		<td>Distrito</td> 
 			<td>String</td> 
 			<td>[a-z], caracteres</td> 
 			<td>not unique</td> 
@@ -69,7 +84,7 @@
 		</tr>	
 		
 		<tr> 
-		<td>barrio</td> 
+		<td>Barrio</td> 
 			<td>String</td> 
 			<td>[a-z], caracteres</td> 
 			<td>not unique</td> 
@@ -77,7 +92,7 @@
 		</tr>	
 		
 		<tr> 
-		<td>calle</td> 
+		<td>Calle</td> 
 			<td>String</td> 
 			<td>[a-z], caracteres</td> 
 			<td>not unique</td> 
@@ -85,7 +100,7 @@
 		</tr>	
 		
 		<tr> 
-		<td>plazas</td> 
+		<td>Número de Plazas</td> 
 			<td>Integer</td> 
 			<td>18-36</td> 
 			<td></td> 
@@ -96,7 +111,7 @@
     <th colspan="5">bici INCIDENCIAS</th>
   </tr>
   <tr> 
-		<td>causa</td> 
+		<td>Sección_anomalía(causa)</td> 
 			<td>String</td> 
 			<td>[a-z], caracteres</td> 
 			<td>Not unique</td> 
@@ -134,18 +149,21 @@ Therefore, we have chosen to use an open data license for our project.</b></p>
 		<h1>Define Resource Naming Strategy</h1> 
 
 <p>Hash URIs for ontological terms, slash URIs for individuals</p>
-  <li>	Domain: http://datos.madrid.es/
+  <li>
+    Domain:  
+	http://www.semanticweb.org/</li>
 	
+  <li>
   	Ontological terms path: 
-    http://www.semanticweb.org/group01#</li>
+    http://www.semanticweb.org/group01/ontology/group01#</li>
 	
   <li>	Individuals path: 
-  	http://www.semanticweb.org/group01/individuals</li>
+  	http://www.semanticweb.org/group01/resource</li>
 	
   	<li>Ontological terms pattern: 
-  	http://www.semanticweb.org/group01#&ltterm_name></li>
+  	http://www.semanticweb.org/group01/ontology/Example#<ltterm_name></li>
   	
 	<li>Individuals pattern:
-  	http://www.semanticweb.org/group01/resource/&ltresource_type>/&ltresource_name></li>
+  	http://www.semanticweb.org/group01/resource/<ltresource_type>/<ltresource_name></li>
  </body> 
- </html>
+</html>

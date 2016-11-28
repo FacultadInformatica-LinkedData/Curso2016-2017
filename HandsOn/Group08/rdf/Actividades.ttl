@@ -1,0 +1,852 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://www.linked-data-deportemadrid.org/group08/resource/+ID-EVENTO> <rdfs:decimal> " ID-EVENTO" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/TITULO> rdfs:label "TITULO" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/PRECIO> rdfs:label "PRECIO" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/FECHA> rdfs:label "FECHA" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/FECHA-FIN> rdfs:label "FECHA-FIN" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/HORA> rdfs:label "HORA" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CONTENT-URL> rdfs:label "CONTENT-URL" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/TITULO-ACTIVIDAD> rdfs:label "TITULO-ACTIVIDAD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/URL-ACTIVIDAD> rdfs:label "URL-ACTIVIDAD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/URL-INSTALACION> rdfs:label "URL-INSTALACION" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/NOMBRE-INSTALACION> rdfs:label "NOMBRE-INSTALACION" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/COORDENADA-X> rdfs:decimal "COORDENADA-X" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/COORDENADA-Y> rdfs:decimal "COORDENADA-Y" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/LATITUD> rdfs:decimal "LATITUD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/LONGITUD> rdfs:decimal "LONGITUD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/DISTRITO> rdfs:label "DISTRITO" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/TIPO> rdfs:label "TIPO" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10165359> <rdfs:decimal> "10165359" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/5%C2%AA+Carrera+y+Caminata+por+la+Diabetes> rdfs:label "5ª Carrera y Caminata por la Diabetes" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10+Km+%3A+con+chip+propio+17%2C+con+chip+alquilado+25%0A> rdfs:label """10 Km : con chip propio 17, con chip alquilado 25
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-20+00%3A00%3A00.0> rdfs:label "2016-11-20 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-20+23%3A59%3A00.0> rdfs:label "2016-11-20 23:59:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/09%3A30> rdfs:label "09:30" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6f7fc0d9277d7510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6f7fc0d9277d7510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/5%C2%AA+Carrera+y+Caminata+Popular+por+la+Diabetes> rdfs:label "5ª Carrera y Caminata Popular por la Diabetes" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ccf080aab37d7510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ccf080aab37d7510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=8d9a78a0dea9e210VgnVCM1000000b205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=8d9a78a0dea9e210VgnVCM1000000b205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Parque+Juan+Carlos+I> rdfs:label "Parque Juan Carlos I" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/447977> rdfs:decimal "447977" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/4479204> rdfs:decimal "4479204" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/40.45999848510341> rdfs:decimal "40.45999848510341" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/-3.6148888706303586> rdfs:decimal "-3.6148888706303586" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/BARAJAS> rdfs:label "BARAJAS" .
+
+<http://www.linked-data-deportemadrid.org/contenido/actividades/ActividadesDeportivas/CarrerasMaratones> rdfs:label "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10133172> <rdfs:decimal> "10133172" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%A9tico+de+Madrid+-+FC+Rostov> rdfs:label "Atlético de Madrid - FC Rostov" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Socios%3A+20+a+50+euros%0AGeneral%3A+40+a+100+euros%0AVIP+Socios%3A+40+a+400+euros%0AVIP+General%3A+40+a+400+euros> rdfs:label """Socios: 20 a 50 euros
+General: 40 a 100 euros
+VIP Socios: 40 a 400 euros
+VIP General: 40 a 400 euros""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-01+00%3A00%3A00.0> rdfs:label "2016-11-01 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-01+23%3A59%3A00.0> rdfs:label "2016-11-01 23:59:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/20%3A45> rdfs:label "20:45" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=674608739fc17510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=674608739fc17510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Champions+League.+Temporada+2016+-+2017.+Partidos+Atl%C3%A9tico+de+Madrid> rdfs:label "Champions League. Temporada 2016 - 2017. Partidos Atlético de Madrid" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=23a87bbeaf8f6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=23a87bbeaf8f6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6372a4ea6871c010VgnVCM1000000b205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6372a4ea6871c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Vicente+Calder%C3%B3n> rdfs:label "Estadio Vicente Calderón" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/438909> rdfs:decimal "438909" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/4472774> rdfs:decimal "4472774" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/40.401455987482606> rdfs:decimal "40.401455987482606" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/-3.721215933848041> rdfs:decimal "-3.721215933848041" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/ARGANZUELA> rdfs:label "ARGANZUELA" .
+
+<http://www.linked-data-deportemadrid.org/contenido/actividades/ActividadesDeportivas/Futbol> rdfs:label "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112688> <rdfs:decimal> "10112688" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%A9tico+de+Madrid+-+M%C3%A1laga+CF> rdfs:label "Atlético de Madrid - Málaga CF" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Socios+30+a+80+euros%3B+General+40+a+100+euros.+%0AVIP+Socios+40+a+400+euros%3B+VIP+General+40+a+400+euros.%0A> rdfs:label """Socios 30 a 80 euros; General 40 a 100 euros. 
+VIP Socios 40 a 400 euros; VIP General 40 a 400 euros.
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-10-29+00%3A00%3A00.0> rdfs:label "2016-10-29 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-10-29+23%3A59%3A00.0> rdfs:label "2016-10-29 23:59:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/18%3A30> rdfs:label "18:30" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a2dc796f4e706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a2dc796f4e706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Liga+de+f%C3%BAtbol.+Temporada+2016+-+2017.+Partidos+Atl%C3%A9tico+de+Madrid> rdfs:label "Liga de fútbol. Temporada 2016 - 2017. Partidos Atlético de Madrid" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e83a0c7326706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e83a0c7326706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10133174> <rdfs:decimal> "10133174" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%A9tico+de+Madrid+-+PSV+Eindhoven> rdfs:label "Atlético de Madrid - PSV Eindhoven" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Socios%3A+35+a+125+euros%0AGeneral%3A+50+a+180+euros%0AVIP+Socios%3A+60+a+450+euros%0AVIP+General%3A+60+a+450+euros> rdfs:label """Socios: 35 a 125 euros
+General: 50 a 180 euros
+VIP Socios: 60 a 450 euros
+VIP General: 60 a 450 euros""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-23+00%3A00%3A00.0> rdfs:label "2016-11-23 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-23+23%3A59%3A00.0> rdfs:label "2016-11-23 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=23b608739fc17510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=23b608739fc17510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112692> <rdfs:decimal> "10112692" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%A9tico+de+Madrid+-+RCD+Espanyol> rdfs:label "Atlético de Madrid - RCD Espanyol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Socios+30+a+80+euros%3B+General+40+a+100+euros.+VIP+Socios+40+a+400+euros%3B+VIP+General+40+a+400+euros.%0A> rdfs:label """Socios 30 a 80 euros; General 40 a 100 euros. VIP Socios 40 a 400 euros; VIP General 40 a 400 euros.
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-12-04+00%3A00%3A00.0> rdfs:label "2016-12-04 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-12-04+23%3A59%3A00.0> rdfs:label "2016-12-04 23:59:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/00%3A00> rdfs:label "00:00" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=effc796f4e706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=effc796f4e706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112696> <rdfs:decimal> "10112696" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%A9tico+de+Madrid+-+Real+Betis> rdfs:label "Atlético de Madrid - Real Betis" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/precio+29%2C50.+10+Km+19.50.%0A> rdfs:label """precio 29,50. 10 Km 19.50.
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2017-01-15+00%3A00%3A00.0> rdfs:label "2017-01-15 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2017-01-15+23%3A59%3A00.0> rdfs:label "2017-01-15 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=907e796f4e706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=907e796f4e706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112691> <rdfs:decimal> "10112691" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%A9tico+de+Madrid+-+Real+Madrid> rdfs:label "Atlético de Madrid - Real Madrid" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Socios%3A+70+a+210+euros.+General%3A+de+90+a+260+euros.+VIP+Socios%3A+de++300+a+700+euros.+VIP+General%3A+de+300+a+700+euros.%0A> rdfs:label """Socios: 70 a 210 euros. General: de 90 a 260 euros. VIP Socios: de  300 a 700 euros. VIP General: de 300 a 700 euros.
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-19+00%3A00%3A00.0> rdfs:label "2016-11-19 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-19+23%3A59%3A00.0> rdfs:label "2016-11-19 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=0ffc796f4e706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=0ffc796f4e706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112695> <rdfs:decimal> "10112695" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%A9tico+de+Madrid+-+UD+Las+Palmas> rdfs:label "Atlético de Madrid - UD Las Palmas" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-12-18+00%3A00%3A00.0> rdfs:label "2016-12-18 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-12-18+23%3A59%3A00.0> rdfs:label "2016-12-18 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4b1d796f4e706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4b1d796f4e706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10129573> <rdfs:decimal> "10129573" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletismo.+I+Medio+Marat%C3%B3n+de+la+Mujer+de+Madrid> rdfs:label "Atletismo. I Medio Maratón de la Mujer de Madrid" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-10-23+00%3A00%3A00.0> rdfs:label "2016-10-23 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-10-23+23%3A59%3A00.0> rdfs:label "2016-10-23 23:59:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/08%3A30> rdfs:label "08:30" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=57e8158d52ff6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=57e8158d52ff6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/I+Medio+Marat%C3%B3n+de+la+Mujer+de+Madrid+2016> rdfs:label "I Medio Maratón de la Mujer de Madrid 2016" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4654fa765cef6510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4654fa765cef6510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10154328> <rdfs:decimal> "10154328" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletismo.+XXX+100+kil%C3%B3metros+pedestres+Villa+de+Madrid> rdfs:label "Atletismo. XXX 100 kilómetros pedestres Villa de Madrid" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/40+%C3%A2%E2%80%9A%C2%AC+prueba+100+km+%2F+10+%C3%A2%E2%80%9A%C2%AC+prueba+10+km%0A> rdfs:label """40 â‚¬ prueba 100 km / 10 â‚¬ prueba 10 km
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-10-30+00%3A00%3A00.0> rdfs:label "2016-10-30 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-10-30+23%3A59%3A00.0> rdfs:label "2016-10-30 23:59:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/07%3A30> rdfs:label "07:30" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3ae9c02b0c987510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3ae9c02b0c987510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c741de9875944410VgnVCM1000000b205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c741de9875944410VgnVCM1000000b205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10133787> <rdfs:decimal> "10133787" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Caminar+por+Madrid+2016-2017> rdfs:label "Caminar por Madrid 2016-2017" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/0+Euros%0A> rdfs:label """0 Euros
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-09-12+00%3A00%3A00.0> rdfs:label "2016-09-12 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2017-06-30+23%3A59%3A00.0> rdfs:label "2017-06-30 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1472ae7460e17510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1472ae7460e17510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=265829cc0b9f8410VgnVCM1000000b205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=265829cc0b9f8410VgnVCM1000000b205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/contenido/actividades/ActividadesDeportivas> rdfs:label "/contenido/actividades/ActividadesDeportivas" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10154479> <rdfs:decimal> "10154479" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Correr+por+Madrid+2016-2017> rdfs:label "Correr por Madrid 2016-2017" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/11+euros+al+adquirir+la+Tarjeta+Deporte+Madrid%0A> rdfs:label """11 euros al adquirir la Tarjeta Deporte Madrid
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-02+00%3A00%3A00.0> rdfs:label "2016-11-02 00:00:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=fca2c02b0c987510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=fca2c02b0c987510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=9def21a074077510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=9def21a074077510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10160662> <rdfs:decimal> "10160662" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid+%3F+Baskonia> rdfs:label "Euroleague. Partido de Baloncesto. Real Madrid ? Baskonia" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Desde+15+hasta+60.+Entradas+VIP+desde+100.%0A> rdfs:label """Desde 15 hasta 60. Entradas VIP desde 100.
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-10-25+00%3A00%3A00.0> rdfs:label "2016-10-25 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-10-25+23%3A59%3A00.0> rdfs:label "2016-10-25 23:59:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/21%3A00> rdfs:label "21:00" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=b4c588d2fe2b7510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=b4c588d2fe2b7510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=383588d2fe2b7510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=383588d2fe2b7510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=322a8f90a581c010VgnVCM1000000b205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=322a8f90a581c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> rdfs:label "Barclaycard Center (antiguo Palacio de Deportes de la Comunidad de Madrid)" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/443095> rdfs:decimal "443095" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/4475164> rdfs:decimal "4475164" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/40.42328354496374> rdfs:decimal "40.42328354496374" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/-3.672104027231158> rdfs:decimal "-3.672104027231158" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/SALAMANCA> rdfs:label "SALAMANCA" .
+
+<http://www.linked-data-deportemadrid.org/contenido/actividades/ActividadesDeportivas/Baloncesto> rdfs:label "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10167521> <rdfs:decimal> "10167521" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid+%3F+Galatasaray> rdfs:label "Euroleague. Partido de Baloncesto. Real Madrid ? Galatasaray" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Desde+20+hasta+70.+Entradas+VIP+desde+120.%0A> rdfs:label """Desde 20 hasta 70. Entradas VIP desde 120.
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-03+00%3A00%3A00.0> rdfs:label "2016-11-03 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-03+23%3A59%3A00.0> rdfs:label "2016-11-03 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=d68ece726d0e7510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=d68ece726d0e7510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=7b0ece726d0e7510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=7b0ece726d0e7510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10167547> <rdfs:decimal> "10167547" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid-+Panathinaikos> rdfs:label "Euroleague. Partido de Baloncesto. Real Madrid- Panathinaikos" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-16+00%3A00%3A00.0> rdfs:label "2016-11-16 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-16+23%3A59%3A00.0> rdfs:label "2016-11-16 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c460ce726d0e7510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c460ce726d0e7510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=fe6fce726d0e7510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=fe6fce726d0e7510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10167657> <rdfs:decimal> "10167657" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid-+Unics+Kazan> rdfs:label "Euroleague. Partido de Baloncesto. Real Madrid- Unics Kazan" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-24+00%3A00%3A00.0> rdfs:label "2016-11-24 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-24+23%3A59%3A00.0> rdfs:label "2016-11-24 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c48c19ad241e7510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c48c19ad241e7510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=28fb19ad241e7510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=28fb19ad241e7510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10130446> <rdfs:decimal> "10130446" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Gimnasia+de+mantenimiento.+Parque+Juan+Carlos+I> rdfs:label "Gimnasia de mantenimiento. Parque Juan Carlos I" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/0+euros.> rdfs:label "0 euros." .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-10-03+00%3A00%3A00.0> rdfs:label "2016-10-03 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-12-30+23%3A59%3A00.0> rdfs:label "2016-12-30 23:59:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/13%3A00> rdfs:label "13:00" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ade9a5f8ce307510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ade9a5f8ce307510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/H%C3%A1bitat+Madrid+oto%C3%B1o.+Gimnasia+de+mantenimiento.+Parque+Juan+Carlos+I> rdfs:label "Hábitat Madrid otoño. Gimnasia de mantenimiento. Parque Juan Carlos I" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=cc9f71ad3d2f0410VgnVCM2000000c205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=cc9f71ad3d2f0410VgnVCM2000000c205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/contenido/actividades/ItinerariosOtrasActividadesAmbientales> rdfs:label "/contenido/actividades/ItinerariosOtrasActividadesAmbientales" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10160696> <rdfs:decimal> "10160696" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/I+Carrera+Go+Fit+Madrid+2016> rdfs:label "I Carrera Go Fit Madrid 2016" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/5+euros+%28campeonato+de+Madrid+10km+veteranos%29%2C+10+euros+%28abonados+Go+fit+8+euros%29%0A> rdfs:label """5 euros (campeonato de Madrid 10km veteranos), 10 euros (abonados Go fit 8 euros)
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-09+00%3A00%3A00.0> rdfs:label "2016-11-09 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-09+23%3A59%3A00.0> rdfs:label "2016-11-09 23:59:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/09%3A00> rdfs:label "09:00" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=05c788d2fe2b7510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=05c788d2fe2b7510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=97b488d2fe2b7510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=97b488d2fe2b7510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10158177> <rdfs:decimal> "10158177" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/I+Carrera+Popular+%27Corre+con+las+Personas+Mayores%27> rdfs:label "I Carrera Popular 'Corre con las Personas Mayores'" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Precio+de+entrada+10+euros.%0A> rdfs:label """Precio de entrada 10 euros.
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-06+00%3A00%3A00.0> rdfs:label "2016-11-06 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-06+23%3A59%3A00.0> rdfs:label "2016-11-06 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=501e35f6dc997510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=501e35f6dc997510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=57bbf47a7e397510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=57bbf47a7e397510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10169568> <rdfs:decimal> "10169568" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/I+Trail+C4+Caser+Club+de+Campo+Villa+de+Madrid> rdfs:label "I Trail C4 Caser Club de Campo Villa de Madrid" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Desde+8%C3%A2%E2%80%9A%C2%AC+se+puede+participar+en+esta+prueba+pionera%0A> rdfs:label """Desde 8â‚¬ se puede participar en esta prueba pionera
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-27+00%3A00%3A00.0> rdfs:label "2016-11-27 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-27+23%3A59%3A00.0> rdfs:label "2016-11-27 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1b4ad259e17e7510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1b4ad259e17e7510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e1a7557585077510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e1a7557585077510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ef93827a9e41c010VgnVCM2000000c205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ef93827a9e41c010VgnVCM2000000c205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Club+de+Campo+Villa+de+Madrid> rdfs:label "Club de Campo Villa de Madrid" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/437129> rdfs:decimal "437129" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/4476939> rdfs:decimal "4476939" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/40.43885228050035> rdfs:decimal "40.43885228050035" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/-3.7425912541514252> rdfs:decimal "-3.7425912541514252" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/MONCLOA-ARAVACA> rdfs:label "MONCLOA-ARAVACA" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10169365> <rdfs:decimal> "10169365" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/III+Trail+Madrid+City+%3F+Ecotrail> rdfs:label "III Trail Madrid City ? Ecotrail" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Desde+19+euros%0A> rdfs:label """Desde 19 euros
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-12+00%3A00%3A00.0> rdfs:label "2016-11-12 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-12+23%3A59%3A00.0> rdfs:label "2016-11-12 23:59:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/08%3A00> rdfs:label "08:00" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ef5d1a797b6e7510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ef5d1a797b6e7510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e869100db93b7510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e869100db93b7510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10164272> <rdfs:decimal> "10164272" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/IV+Sanitas+Marca+Running+Series.+Derbi+de+las+aficiones+Madrid+2016> rdfs:label "IV Sanitas Marca Running Series. Derbi de las aficiones Madrid 2016" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Desde+12+euros+Carreras+infantiles+2+euros%0A> rdfs:label """Desde 12 euros Carreras infantiles 2 euros
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-13+00%3A00%3A00.0> rdfs:label "2016-11-13 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-11-13+23%3A59%3A00.0> rdfs:label "2016-11-13 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=81116be8d62d7510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=81116be8d62d7510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4408681327b40510VgnVCM2000000c205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4408681327b40510VgnVCM2000000c205a0aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=96fb79262ef5d010VgnVCM1000000b205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=96fb79262ef5d010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Santiago+Bernab%C3%A9u> rdfs:label "Estadio Santiago Bernabéu" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/441727> rdfs:decimal "441727" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/4478378> rdfs:decimal "4478378" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/40.45214189379938> rdfs:decimal "40.45214189379938" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/-3.68852449488213> rdfs:decimal "-3.68852449488213" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CHAMARTIN> rdfs:label "CHAMARTIN" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10156959> <rdfs:decimal> "10156959" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Madrid+Horse+Week> rdfs:label "Madrid Horse Week" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Entre+5+euros+la+entrada+al+Sal%C3%83%C2%B3n+del+Caballo+y+80+euros+el+abono+de+grada+para+los+4+d%C3%83%C2%ADas+del+evento%0A> rdfs:label """Entre 5 euros la entrada al SalÃ³n del Caballo y 80 euros el abono de grada para los 4 dÃ­as del evento
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=57c603b3a4497510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=57c603b3a4497510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6bd403b3a4497510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6bd403b3a4497510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6ebc7f0d23c5f010VgnVCM1000000b205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6ebc7f0d23c5f010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Consorcio+Instituci%C3%B3n+Ferial+de+Madrid+%28IFEMA%29> rdfs:label "Consorcio Institución Ferial de Madrid (IFEMA)" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/447852> rdfs:decimal "447852" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/4479681> rdfs:decimal "4479681" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/40.46428771594393> rdfs:decimal "40.46428771594393" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/-3.6164023947650836> rdfs:decimal "-3.6164023947650836" .
+
+<http://www.linked-data-deportemadrid.org/contenido/actividades/ActividadesDeportivas/Hipica> rdfs:label "/contenido/actividades/ActividadesDeportivas/Hipica" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125418> <rdfs:decimal> "10125418" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+CAI+Zaragoza> rdfs:label "Movistar Estudiantes - CAI Zaragoza" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Desde+10%C3%A2%E2%80%9A%C2%AC+grada+alta%2C+hasta+50%C3%A2%E2%80%9A%C2%AC.%0A> rdfs:label """Desde 10â‚¬ grada alta, hasta 50â‚¬.
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2017-01-08+00%3A00%3A00.0> rdfs:label "2017-01-08 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2017-01-08+23%3A59%3A00.0> rdfs:label "2017-01-08 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=0ecd7e2bb8ad6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=0ecd7e2bb8ad6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Liga+Endesa+ACB+de+Baloncesto.+Temporada+2016+-+2017.+Partidos+Movistar+Estudiantes> rdfs:label "Liga Endesa ACB de Baloncesto. Temporada 2016 - 2017. Partidos Movistar Estudiantes" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=eacc7e2bb8ad6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=eacc7e2bb8ad6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125412> <rdfs:decimal> "10125412" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Divina+Seguros+Joventut> rdfs:label "Movistar Estudiantes - Divina Seguros Joventut" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c07d7e2bb8ad6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c07d7e2bb8ad6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125419> <rdfs:decimal> "10125419" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Dominion+Bilbao+Basket> rdfs:label "Movistar Estudiantes - Dominion Bilbao Basket" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2017-01-22+00%3A00%3A00.0> rdfs:label "2017-01-22 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2017-01-22+23%3A59%3A00.0> rdfs:label "2017-01-22 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=30dd7e2bb8ad6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=30dd7e2bb8ad6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125415> <rdfs:decimal> "10125415" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Herbalife+Gran+Canaria> rdfs:label "Movistar Estudiantes - Herbalife Gran Canaria" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=007d7e2bb8ad6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=007d7e2bb8ad6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125416> <rdfs:decimal> "10125416" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+MoraBanc+Andorra> rdfs:label "Movistar Estudiantes - MoraBanc Andorra" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=13dd7e2bb8ad6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=13dd7e2bb8ad6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125411> <rdfs:decimal> "10125411" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Real+Madrid> rdfs:label "Movistar Estudiantes - Real Madrid" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Desde+25%C3%A2%E2%80%9A%C2%AC+grada+alta%2C+hasta+80%C3%A2%E2%80%9A%C2%AC.%0A> rdfs:label """Desde 25â‚¬ grada alta, hasta 80â‚¬.
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=647d7e2bb8ad6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=647d7e2bb8ad6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125420> <rdfs:decimal> "10125420" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Rio+Natura+Monbus+Obradoiro> rdfs:label "Movistar Estudiantes - Rio Natura Monbus Obradoiro" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2017-01-29+00%3A00%3A00.0> rdfs:label "2017-01-29 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2017-01-29+23%3A59%3A00.0> rdfs:label "2017-01-29 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6ccd7e2bb8ad6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6ccd7e2bb8ad6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125417> <rdfs:decimal> "10125417" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Unicaja> rdfs:label "Movistar Estudiantes - Unicaja" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Desde+20%C3%A2%E2%80%9A%C2%AC+grada+alta%2C+hasta+70%C3%A2%E2%80%9A%C2%AC.%0A> rdfs:label """Desde 20â‚¬ grada alta, hasta 70â‚¬.
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=77dd7e2bb8ad6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=77dd7e2bb8ad6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10160710> <rdfs:decimal> "10160710" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes-+Real+Madrid+CF.> rdfs:label "Movistar Estudiantes- Real Madrid CF." .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Entre+20+y+60+euros> rdfs:label "Entre 20 y 60 euros" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=21597212653b7510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=21597212653b7510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Liga+Endesa+ACB+de+Baloncesto.+Temporada+2016+-+2017.+Partidos+Real+Madrid> rdfs:label "Liga Endesa ACB de Baloncesto. Temporada 2016 - 2017. Partidos Real Madrid" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1cdfd8d5756d6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1cdfd8d5756d6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112738> <rdfs:decimal> "10112738" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+AD+Alcorc%C3%B3n> rdfs:label "Rayo Vallecano - AD Alcorcón" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Fondo%3A+15+euros.+Tribuna+alta+de+latera+%2FTribuna+alta+lateral+visitante%3A+25+euros.+Tribuna+alta+de+preferencia%3A+20+euros.+Lateral+baja%3A+25+euros.+Grada+de+preferencia%3A+25+euros.+Lateral+cubierta%3A+35+euros.+Tribuna+central%3A+40+euros.%0A> rdfs:label """Fondo: 15 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 25 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 35 euros. Tribuna central: 40 euros.
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ddb86f9580806510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ddb86f9580806510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Liga+de+f%C3%BAtbol.+Temporada+2016+-+2017.+Partidos+Rayo+Vallecano> rdfs:label "Liga de fútbol. Temporada 2016 - 2017. Partidos Rayo Vallecano" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3f9b0c7326706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3f9b0c7326706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=bb32a4ea6871c010VgnVCM1000000b205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=bb32a4ea6871c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Estadio+de+Vallecas> rdfs:label "Estadio de Vallecas" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/444245> rdfs:decimal "444245" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/4471721> rdfs:decimal "4471721" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/40.39234504772624> rdfs:decimal "40.39234504772624" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/-3.6582462080515588> rdfs:decimal "-3.6582462080515588" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/PUENTE+DE+VALLECAS> rdfs:label "PUENTE DE VALLECAS" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112744> <rdfs:decimal> "10112744" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+Elche+CF> rdfs:label "Rayo Vallecano - Elche CF" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Fondo%3A+15+euros.+Tribuna+alta+de+latera+%2FTribuna+alta+lateral+visitante%3A+20+euros.+Tribuna+alta+de+preferencia%3A+20+euros.+Lateral+baja%3A+25+euros.+Grada+de+preferencia%3A+25+euros.+Lateral+cubierta%3A+30+euros.+Tribuna+central%3A+35+euros.%0A> rdfs:label """Fondo: 15 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 20 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 30 euros. Tribuna central: 35 euros.
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=49696f9580806510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=49696f9580806510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112733> <rdfs:decimal> "10112733" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+Girona+FC> rdfs:label "Rayo Vallecano - Girona FC" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Fondo%3A+15+euros.+Tribuna+alta+de+latera+%2FTribuna+alta+lateral+visitante%3A+20+euros.+Tribuna+alta+de+preferencia%3A+20+euros.+Lateral+baja%3A+25+euros.+Grada+de+preferencia%3A+25+euros.+Lateral+cubierta%3A+30+euros.+Tribuna+central%3A+35+euros.+> rdfs:label "Fondo: 15 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 20 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 30 euros. Tribuna central: 35 euros. " .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-10-22+00%3A00%3A00.0> rdfs:label "2016-10-22 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-10-22+23%3A59%3A00.0> rdfs:label "2016-10-22 23:59:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/20%3A00> rdfs:label "20:00" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=10486f9580806510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=10486f9580806510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112740> <rdfs:decimal> "10112740" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+R.+Zaragoza> rdfs:label "Rayo Vallecano - R. Zaragoza" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=83696f9580806510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=83696f9580806510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112736> <rdfs:decimal> "10112736" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+SD+Huesca> rdfs:label "Rayo Vallecano - SD Huesca" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Fondo%3A+20+euros.+Tribuna+alta+de+latera+%2FTribuna+alta+lateral+visitante%3A+25+euros.+Tribuna+alta+de+preferencia%3A+20+euros.+Lateral+baja%3A+25+euros.+Grada+de+preferencia%3A+25+euros.+Lateral+cubierta%3A+30+euros.+Tribuna+central%3A+35+euros.%0A> rdfs:label """Fondo: 20 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 25 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 30 euros. Tribuna central: 35 euros.
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=5eb86f9580806510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=5eb86f9580806510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112743> <rdfs:decimal> "10112743" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+Sevilla+Atl%C3%A9tico> rdfs:label "Rayo Vallecano - Sevilla Atlético" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Fondo%3A+20+euros.+Tribuna+alta+de+latera+%2FTribuna+alta+lateral+visitante%3A+25+euros.+Tribuna+alta+de+preferencia%3A+25+euros.+Lateral+baja%3A+30+euros.+Grada+de+preferencia%3A+30+euros.+Lateral+cubierta%3A+35+euros.+Tribuna+central%3A+40+euros.%0A> rdfs:label """Fondo: 20 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 25 euros. Tribuna alta de preferencia: 25 euros. Lateral baja: 30 euros. Grada de preferencia: 30 euros. Lateral cubierta: 35 euros. Tribuna central: 40 euros.
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a2696f9580806510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a2696f9580806510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112735> <rdfs:decimal> "10112735" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+UCAM+Murcia+CF> rdfs:label "Rayo Vallecano - UCAM Murcia CF" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4fb86f9580806510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4fb86f9580806510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112633> <rdfs:decimal> "10112633" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Athletic+Club> rdfs:label "Real Madrid - Athletic Club" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/P%C3%BAblico+35+a+140+euros.+%0ASocios+28+a+112+euros.%0AVIP+250+a+425+euros.> rdfs:label """Público 35 a 140 euros. 
+Socios 28 a 112 euros.
+VIP 250 a 425 euros.""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=bd840c7326706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=bd840c7326706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Liga+de+f%C3%BAtbol.+Temporada+2016+-+2017.+Partidos+Real+Madrid> rdfs:label "Liga de fútbol. Temporada 2016 - 2017. Partidos Real Madrid" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2cd674408f206510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2cd674408f206510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112635> <rdfs:decimal> "10112635" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+CD+Legan%C3%A9s> rdfs:label "Real Madrid - CD Leganés" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Entrega+general%3A+35+a+140+euros.+Entradas+de+socios%3A+de+28+a+112+euros.+Entradas+VIP%3A+de+250+a+425+euros.+%0A%0A> rdfs:label """Entrega general: 35 a 140 euros. Entradas de socios: de 28 a 112 euros. Entradas VIP: de 250 a 425 euros. 
+
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/12%3A00> rdfs:label "12:00" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=71a40c7326706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=71a40c7326706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112638> <rdfs:decimal> "10112638" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Granada+CF> rdfs:label "Real Madrid - Granada CF" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Desde+35+grada+alta%2C+desde+80+lateral.+VIP+desde+200%C3%A2%E2%80%9A%C2%AC.%0A> rdfs:label """Desde 35 grada alta, desde 80 lateral. VIP desde 200â‚¬.
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e5d40c7326706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e5d40c7326706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125296> <rdfs:decimal> "10125296" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Iberostar+Tenerife> rdfs:label "Real Madrid - Iberostar Tenerife" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/P%C3%BAblico+en+General%3A+10+a+50+euros.+Tarjeta+Club+Madridista%3A+9+a+43+euros.+Socios%3A+7+a+35+euros.+Entradas+VIP%3A+100+euros.+%0A> rdfs:label """Público en General: 10 a 50 euros. Tarjeta Club Madridista: 9 a 43 euros. Socios: 7 a 35 euros. Entradas VIP: 100 euros. 
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/12%3A30> rdfs:label "12:30" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f4b1d8d5756d6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f4b1d8d5756d6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125297> <rdfs:decimal> "10125297" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+ICL+Manresa> rdfs:label "Real Madrid - ICL Manresa" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/P%C3%BAblico+en+General%3A+10+a+50+euros.+Tarjeta+Club+Madridista%3A+9+a+43+euros.+Socios%3A+7+a+35+euros.+Entradas+VIP%3A+100+euros.++%0A> rdfs:label """Público en General: 10 a 50 euros. Tarjeta Club Madridista: 9 a 43 euros. Socios: 7 a 35 euros. Entradas VIP: 100 euros.  
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=7dc1d8d5756d6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=7dc1d8d5756d6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112640> <rdfs:decimal> "10112640" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+M%C3%A1laga+CF> rdfs:label "Real Madrid - Málaga CF" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Desde+30+grada+alta%2C+desde+70+lateral.+VIP+desde+200%C3%A2%E2%80%9A%C2%AC.%0A> rdfs:label """Desde 30 grada alta, desde 70 lateral. VIP desde 200â‚¬.
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6be40c7326706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6be40c7326706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125300> <rdfs:decimal> "10125300" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+MoraBanc+Andorra> rdfs:label "Real Madrid - MoraBanc Andorra" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/P%C3%83%C2%BAblico+en+General%3A+10+a+50+euros.+Tarjeta+Club+Madridista%3A+9+a+43+euros.+Socios%3A+7+a+35+euros.+Entradas+VIP%3A+100+euros.%0A> rdfs:label """PÃºblico en General: 10 a 50 euros. Tarjeta Club Madridista: 9 a 43 euros. Socios: 7 a 35 euros. Entradas VIP: 100 euros.
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=61f1d8d5756d6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=61f1d8d5756d6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112637> <rdfs:decimal> "10112637" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+RC+Deportivo> rdfs:label "Real Madrid - RC Deportivo" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-12-11+00%3A00%3A00.0> rdfs:label "2016-12-11 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-12-11+23%3A59%3A00.0> rdfs:label "2016-12-11 23:59:00.0" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=35c40c7326706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=35c40c7326706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112642> <rdfs:decimal> "10112642" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Real+Sociedad> rdfs:label "Real Madrid - Real Sociedad" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Desde+35+grada+alta%2C+desde+75+lateral.+VIP+desde+200%C3%A2%E2%80%9A%C2%AC.%0A> rdfs:label """Desde 35 grada alta, desde 75 lateral. VIP desde 200â‚¬.
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=33050c7326706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=33050c7326706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125299> <rdfs:decimal> "10125299" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+R%C3%ADo+Natura+Monbus+Obradoiro> rdfs:label "Real Madrid - Río Natura Monbus Obradoiro" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Entradas%3A+-+P%C3%83%C2%BAblico+en+General%3A+15+a+50+euros.+-+Tarjeta+Club+Madridista%3A+13+a+43+euros.+-+Socios%3A+11+a+35+euros+-+ENTRADAS+VIP%3A+100+euros.%0A> rdfs:label """Entradas: - PÃºblico en General: 15 a 50 euros. - Tarjeta Club Madridista: 13 a 43 euros. - Socios: 11 a 35 euros - ENTRADAS VIP: 100 euros.
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=03f1d8d5756d6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=03f1d8d5756d6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10112636> <rdfs:decimal> "10112636" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+R.+Sporting> rdfs:label "Real Madrid - R. Sporting" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=b2b40c7326706510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=b2b40c7326706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125295> <rdfs:decimal> "10125295" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+%3F+Tecnyconta+Zaragoza.> rdfs:label "Real Madrid ? Tecnyconta Zaragoza." .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Entradas%3A%0A+-+P%C3%BAblico+en+General%3A+15+a+50+euros.%0A+-+Tarjeta+Club+Madridista%3A+13+a+43+euros.+%0A+-+Socios%3A+11+a+35+euros%0A+-+ENTRADAS+VIP%3A+100+euros.+%0A> rdfs:label """Entradas:
+ - Público en General: 15 a 50 euros.
+ - Tarjeta Club Madridista: 13 a 43 euros. 
+ - Socios: 11 a 35 euros
+ - ENTRADAS VIP: 100 euros. 
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=63a1d8d5756d6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=63a1d8d5756d6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10125301> <rdfs:decimal> "10125301" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid.+Valencia+Basket+Club> rdfs:label "Real Madrid. Valencia Basket Club" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=bd22d8d5756d6510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=bd22d8d5756d6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/6671261> <rdfs:decimal> "6671261" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Ruta+en+bici+%27Bici-ate+conectando+verde%27%3A+Dehesa+de+la+Villa-El+Pardo> rdfs:label "Ruta en bici 'Bici-ate conectando verde': Dehesa de la Villa-El Pardo" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/0+euros> rdfs:label "0 euros" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10%3A30> rdfs:label "10:30" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=332cd38ae266b310VgnVCM1000000b205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=332cd38ae266b310VgnVCM1000000b205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/H%C3%A1bitat+Madrid+oto%C3%B1o.+Rutas+guiadas+en+bicicleta+%27Bici-ate+conectando+verde%27.+Dehesa+de+la+Villa> rdfs:label "Hábitat Madrid otoño. Rutas guiadas en bicicleta 'Bici-ate conectando verde'. Dehesa de la Villa" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=35904e7ec15c9310VgnVCM2000000c205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=35904e7ec15c9310VgnVCM2000000c205a0aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a956fc79622ef010VgnVCM2000000c205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a956fc79622ef010VgnVCM2000000c205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+de+Educaci%C3%B3n+Ambiental+de+Dehesa+de+la+Villa> rdfs:label "Centro de Educación Ambiental de Dehesa de la Villa" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/439212> rdfs:decimal "439212" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/4479175> rdfs:decimal "4479175" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/40.45914104116349> rdfs:decimal "40.45914104116349" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/-3.718270563679269> rdfs:decimal "-3.718270563679269" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10139295> <rdfs:decimal> "10139295" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/San+Silvestre+Vallecana+2016> rdfs:label "San Silvestre Vallecana 2016" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/El+precio+de+la+inscripci%C3%83%C2%B3n+ser%C3%83%C2%A1+de+23+euros+con+chip+propio+y+21+euros+con+chip+de+la+organizaci%C3%83%C2%B3n.%0A> rdfs:label """El precio de la inscripciÃ³n serÃ¡ de 23 euros con chip propio y 21 euros con chip de la organizaciÃ³n.
+""" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-12-31+00%3A00%3A00.0> rdfs:label "2016-12-31 00:00:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/2016-12-31+23%3A59%3A00.0> rdfs:label "2016-12-31 23:59:00.0" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/17%3A30> rdfs:label "17:30" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=773572dbfe247510VgnVCM1000001d4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=773572dbfe247510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a343cebc33383310VgnVCM2000000c205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a343cebc33383310VgnVCM2000000c205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10160049> <rdfs:decimal> "10160049" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/VI+Carrera+Popular+%27Corre+por+el+Ni%C3%B1o%27> rdfs:label "VI Carrera Popular 'Corre por el Niño'" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Desde+10+euros%0A> rdfs:label """Desde 10 euros
+""" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=af74844245ea7510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=af74844245ea7510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2dffc3f4d5d91410VgnVCM1000000b205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2dffc3f4d5d91410VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=499561945d9ec210VgnVCM2000000c205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=499561945d9ec210VgnVCM2000000c205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Jardines+de+El+Buen+Retiro> rdfs:label "Jardines de El Buen Retiro" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/441749> rdfs:decimal "441749" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/4474770> rdfs:decimal "4474770" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/40.41964087412762> rdfs:decimal "40.41964087412762" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/-3.68793370943788> rdfs:decimal "-3.68793370943788" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/RETIRO> rdfs:label "RETIRO" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10163962> <rdfs:decimal> "10163962" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/VIII+Carrera+Ponle+Freno+Madrid+2016> rdfs:label "VIII Carrera Ponle Freno Madrid 2016" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/10+euros> rdfs:label "10 euros" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=df993d10712d7510VgnVCM2000001f4a900aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=df993d10712d7510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=452915e9099f8410VgnVCM1000000b205a0aRCRD> rdfs:label "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=452915e9099f8410VgnVCM1000000b205a0aRCRD" .
