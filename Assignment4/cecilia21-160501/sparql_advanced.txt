@@ -1,0 +1,115 @@
+PREGUNTA A1.
+
+select distinct ?propiedades
+where {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x ?propiedades ?y
+} LIMIT 10
+
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://purl.org/dc/terms/subject
+http://xmlns.com/foaf/0.1/depiction
+http://dbpedia.org/ontology/thumbnail
+http://dbpedia.org/property/designado
+http://xmlns.com/foaf/0.1/homepage
+http://dbpedia.org/property/enelcargo
+http://dbpedia.org/property/oponentes
+
+PREGUNTA A2.
+
+select distinct ?propiedades
+where {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x ?propiedades ?y .
+	FILTER (?propiedades != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) .
+} LIMIT 10
+
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://purl.org/dc/terms/subject
+http://xmlns.com/foaf/0.1/depiction
+http://dbpedia.org/ontology/thumbnail
+http://dbpedia.org/property/designado
+http://xmlns.com/foaf/0.1/homepage
+http://dbpedia.org/property/enelcargo
+http://dbpedia.org/property/oponentes
+http://dbpedia.org/property/religion
+
+PREGUNTA A3.
+
+select count(distinct ?valores)
+where {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x ?propiedades ?valores .
+	FILTER (?propiedades != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) .
+} 
+
+
+563876
+
+PREGUNTA A4.
+
+select ?propiedad count(distinct ?valores)
+where {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x ?propiedad ?valores
+	FILTER (?propiedad != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) .
+}LIMIT 10
+
+propiedad	callret-1
+http://es.dbpedia.org/property/nombreBatalla	1
+http://es.dbpedia.org/property/mandos	57
+http://dbpedia.org/property/blog	2
+http://es.dbpedia.org/property/genero	1
+http://es.dbpedia.org/property/transcripciónurl	3
+http://dbpedia.org/property/colorBarras	3
+http://es.dbpedia.org/property/colorTexto	2
+http://es.dbpedia.org/property/constituencyMp	1
+http://es.dbpedia.org/property/consecration	1
+http://es.dbpedia.org/property/pp	1
+
+PREGUNTA A5. 
+
+select ?propiedad avg(distinct ?valores)
+where {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x ?propiedad ?valores
+	FILTER (?propiedad != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) .
+	FILTER (datatype(?valores) = xsd:integer || datatype(?valores) = xsd:float) .
+}LIMIT 10
+
+propiedad	callret-1
+http://es.dbpedia.org/property/order	18.666666666666667
+http://es.dbpedia.org/property/issn	577806.391304347826087
+http://dbpedia.org/property/premiosGloboDeOro	1977
+http://es.dbpedia.org/property/subtítulo	7.333333333333333
+http://dbpedia.org/property/4data	1
+http://dbpedia.org/property/hijas	2
+http://es.dbpedia.org/property/insignias	40
+http://es.dbpedia.org/property/dead	965.5
+http://dbpedia.org/property/issn	632754.30952380952381
+http://es.dbpedia.org/property/cónyuge	2
+
+PREGUNTA A6.
+
+select ?propiedad max(distinct ?valores) as ?maximos
+where {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x ?propiedad ?valores
+	FILTER (?propiedad != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) .
+	FILTER (datatype(?valores) = xsd:integer || datatype(?valores) = xsd:float) .
+}ORDER BY DESC (?maximos) LIMIT 10
+
+propiedad	maximos
+http://es.dbpedia.org/property/lccn	2006049761
+http://dbpedia.org/property/lccn	2006049761
+http://es.dbpedia.org/property/isbn	1881508692
+http://dbpedia.org/property/isbn	1881508692
+http://es.dbpedia.org/property/oclc	806373779
+http://dbpedia.org/property/oclc	758284479
+http://es.dbpedia.org/property/población	410002011
+http://dbpedia.org/property/población	410002011
+http://es.dbpedia.org/property/id	292711743
+http://dbpedia.org/property/id	292711743

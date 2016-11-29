@@ -1,0 +1,228 @@
+
+*******************************************************************************
+									*** Basic ***
+*******************************************************************************
+Get all the classes
+
+SELECT DISTINCT ?classes 
+WHERE{ ?classes a rdfs:Class }
+
+**********************
+
+Get all the subclasses of the class Establishment
+
+PREFIX pref: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT DISTINCT ?subclasses
+WHERE{ ?subclasses rdfs:subClassOf pref:Establishment.}
+
+**********************
+
+Get all instances of the class City
+
+PREFIX pref: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT DISTINCT ?instances 
+WHERE{ ?instances a pref:City. }
+
+**********************
+
+Get the number of inhabitants of Santiago de Compostela
+
+PREFIX pref: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT ?inhabitants 
+WHERE {  pref:Santiago_de_Compostela pref:hasInhabitantNumber ?inhabitants. }
+
+
+**********************
+
+Get the number of inhabitants of Santiago de Compostela and Arzua
+
+PREFIX pref: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT ?inhabitantsCompostela ?inhabitantsArzua 
+WHERE { pref:Santiago_de_Compostela pref:hasInhabitantNumber ?inhabitantsCompostela.
+		pref:Arzua pref:hasInhabitantNumber ?inhabitantsArzua.}
+
+**********************
+
+Get all places, together with the number of inhabitants, ordered by the place name (ascending)
+
+
+PREFIX pref: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT ?places ?numberhab
+WHERE { ?places pref:hasInhabitantNumber ?numberhab.} ORDER BY ASC(?places)
+
+**********************
+
+Get all instances of  Locality together with their number of inhabitants (if this information exists)
+
+PREFIX pref: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT ?locality ?numberhab 
+OPTIONAL { ?locality a pref:Locality; pref:hasInhabitantNumber ?numberhab.}
+
+**********************
+
+Get all places with more than 200.000 inhabitants
+
+PREFIX pref: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT ?places ?numberhab 
+WHERE { ?places pref:hasInhabitantNumber ?numberhab FILTER(?numberhab > 200000) }
+
+**********************
+
+Get postal address data for Pazo_Breogan (street, number, locality, province)
+
+
+
+**********************
+
+Get all subclasses of class Location
+
+PREFIX pref: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT ?subclasses 
+WHERE {  ?subclasses rdfs:subClassOf pref:Location. }
+
+**********************
+
+Get all instances of class Locality
+
+PREFIX pref: <http://GP-onto.fi.upm.es/exercise2#> 
+SELECT ?instances 
+WHERE {  ?instances rdfs:subClassOf pref:Location. }
+
+**********************
+
+Describe the resource with rdfs:label "Madrid”
+
+DESCRIBE ?resource 
+WHERE{?resource rdfs:label "Madrid"}
+
+**********************
+
+Construct a graph that relates directly all touristic places with their provinces, using a new property called ”isIn”
+
+
+
+**********************
+
+Check whether there is any instance of Town
+
+PREFIX pref: <http://GP-onto.fi.upm.es/exercise2#> 
+ASK 
+WHERE {?instance a pref:Town}
+
+
+
+
+
+
+*******************************************************************************
+									*** Advanced ***
+*******************************************************************************
+
+
+*****************************
+1.
+*****************************
+select distinct ?propiedades
+
+where { 
+
+ ?instancias ?y <http://dbpedia.org/ontology/Politician> . 
+
+ ?instancias ?propiedades ?val 
+
+ } 
+ 
+ *****************************
+ 2.
+ *****************************
+  select distinct?propiedadesExcep
+
+ where { 
+
+ ?instancias ?y <http://dbpedia.org/ontology/Politician> . 
+
+ ?instancias ?propiedadesExcep ?val 
+
+ FILTER (?propiedadesExcep != rdf:type) 
+
+ } 
+ 
+ *****************************
+ 3.
+ *****************************
+ select count (distinct ?val) as ?valores 
+
+ where { 
+
+ ?instancias ?y <http://dbpedia.org/ontology/Politician> . 
+
+ ?instancias ?propiedadesExcep ?val
+
+ FILTER (?propiedadesExcep!= rdf:type) 
+
+ } 
+ 
+ *****************************
+ 4.
+ *****************************
+  select ?propiedadesExcep count (distinct ?val) as ?valores 
+
+ where { 
+
+ ?instancias ?y <http://dbpedia.org/ontology/Politician> . 
+
+ ?instancias ?propiedadesExcep ?val 
+
+ FILTER (?propiedadesExcep != rdf:type) 
+
+ } 
+ 
+ *****************************
+ 5.
+ *****************************
+  select avg(?valores) as ?Media 
+
+ where { 
+
+ { 
+
+ select ?propiedadesExcep count (distinct ?val) as ?valores 
+
+ where { 
+
+ ?instancias ?y <http://dbpedia.org/ontology/Politician> . 
+
+ ?instancias ?propiedadesExcep ?val 
+
+ FILTER (?propiedadesExcep != rdf:type) 
+
+ } 
+
+ } 
+
+ } 
+ 
+ *****************************
+ 6.
+ *****************************
+ select ?propiedadesExcep max(?valores) as ?Fin 
+
+ where { 
+
+ { 
+
+ select ?propiedadesExcep count (distinct ?val) as ?valores 
+
+ where { 
+
+ ?instancias ?y <http://dbpedia.org/ontology/Politician> . 
+
+ ?instancias ?propiedadesExcep ?val 
+
+ FILTER (?propiedadesExcep!= rdf:type) 
+
+ } 
+
+ } 
+
+ } 
