@@ -1,0 +1,54 @@
+# Prefixes for all queries
+PREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX mv: <http://example.org/myVocabulary#>
+
+# How many accidents were there in Madrid in 2013?
+SELECT (SUM(?x) AS ?total) WHERE {
+
+    ?obs a qb:Observation ;
+         mv:numberOfAccidents ?x.
+
+}
+
+# Give me the number of accidents in Usera for each type of accident
+SELECT ?number ?type WHERE {
+
+    ?obs a qb:Observation ;
+         mv:numberOfAccidents ?number;
+         mv:relatedDistrict "USERA";
+         mv:hasAccidentType ?type.
+}
+# Give me the number of multiple collisions for each district
+SELECT ?number ?district
+WHERE {
+
+    ?obs a qb:Observation ;
+         mv:numberOfAccidents ?number;
+         mv:relatedDistrict ?district;
+         mv:hasAccidentType mv:MultipleCollision.
+}
+
+# Which is the district were the number of bicycle falls was higher in 2013?
+SELECT ?max ?district WHERE {
+
+    ?obs a qb:Observation ;
+         mv:numberOfAccidents ?max ;
+         mv:relatedDistrict ?district ;
+         mv:hasAccidentType mv:BicycleFall .
+
+   { SELECT (MAX(?number) as ?max) WHERE {
+            ?obs a qb:Observation;
+                 mv:numberOfAccidents ?number ;
+                 mv:hasAccidentType mv:BicycleFall .
+    }
+    }
+}
+
+# Give me the districts with more than 500 accidents in 2013
+SELECT (SUM(xsd:double(?number)) as ?total) ?district
+WHERE {
+    ?obs a qb:Observation ;
+         mv:numberOfAccidents ?number;
+         mv:relatedDistrict ?district.
+}
