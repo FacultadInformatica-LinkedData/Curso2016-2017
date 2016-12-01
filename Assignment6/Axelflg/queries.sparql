@@ -1,0 +1,24 @@
+Flores Guarneros Axel 
+
+- How many accidents were there in Madrid in 2013?
+
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+select (SUM(?accidents) AS ?NumberOfAccidents)
+where {
+    ?obs a qb:Observation ;
+    mv:numberOfAccidents ?accidents. 
+}
+
+-Give me the number of accidents in Usera for each type of
+accident
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+SELECT ?x (xsd:integer(?y) AS ?nAccidents) WHERE {
+?obs a qb:Observation;
+		mv:relatedDistrict "USERA";
+		mv:hasAccidentType ?x;
+		mv:numberOfAccidents ?y.
+}
