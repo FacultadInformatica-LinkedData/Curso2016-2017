@@ -1,0 +1,143 @@
+SPARQL Questionnaire (ADVANCED) Provide the SPARQL query and the result for the following queries expressed in natural language.
+
+Marta Villar Martin u120320
+
+1.Dame todas las propiedades aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+SELECT DISTINCT ?Propiedades WHERE { ?Instancia ?p <http://dbpedia.org/ontology/Politician> .
+?Instancia ?Propiedades ?Valor
+} LIMIT 100
+
+-------------Solution
+
+Propiedades
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://purl.org/dc/terms/subject
+http://xmlns.com/foaf/0.1/depiction
+http://dbpedia.org/ontology/thumbnail
+http://dbpedia.org/property/designado
+http://xmlns.com/foaf/0.1/homepage
+http://dbpedia.org/property/enelcargo
+http://dbpedia.org/property/oponentes
+http://dbpedia.org/property/religion
+http://dbpedia.org/ontology/wikiPageExternalLink
+http://dbpedia.org/property/alineaciónTexto
+http://dbpedia.org/property/almamáter
+http://dbpedia.org/property/ancho
+http://dbpedia.org/property/apellido
+http://dbpedia.org/property/apellidos
+http://dbpedia.org/property/apodo
+http://dbpedia.org/property/autor
+http://dbpedia.org/property/año
+http://dbpedia.org/property/añosDeServicio
+http://dbpedia.org/property/capítulo
+http://dbpedia.org/property/cargo
+http://dbpedia.org/property/condecoraciones
+http://dbpedia.org/property/cónyuge
+http://dbpedia.org/property/descendencia
+http://dbpedia.org/property/dirección
+http://dbpedia.org/property/distrito
+http://dbpedia.org/property/edición
+http://dbpedia.org/property/editor
+http://dbpedia.org/property/embajadorde
+http://dbpedia.org/property/enlaceautor
+http://dbpedia.org/property/escudo
+http://dbpedia.org/property/fechaacceso
+http://dbpedia.org/property/fechamuerte
+http://dbpedia.org/property/fechanac
+http://dbpedia.org/property/final
+http://dbpedia.org/property/firma
+http://dbpedia.org/property/formato
+http://dbpedia.org/property/foto
+http://dbpedia.org/property/fórmula
+http://dbpedia.org/property/gabinete
+http://dbpedia.org/property/hijos
+http://dbpedia.org/property/id
+http://dbpedia.org/property/idioma
+http://dbpedia.org/property/imagen
+http://dbpedia.org/property/inicio
+http://dbpedia.org/property/isbn
+http://dbpedia.org/property/issn
+http://dbpedia.org/property/lealtad
+http://dbpedia.org/property/lugarmuerte
+http://dbpedia.org/property/lugarnac
+http://dbpedia.org/property/mandos
+http://dbpedia.org/property/monarca
+http://dbpedia.org/property/máscaraautor
+http://dbpedia.org/property/nombre
+http://dbpedia.org/property/número
+http://dbpedia.org/property/obra
+http://dbpedia.org/property/ocupación
+http://dbpedia.org/property/padres
+http://dbpedia.org/property/partido
+http://dbpedia.org/property/país
+http://dbpedia.org/property/período
+http://dbpedia.org/property/pieescudo
+http://dbpedia.org/property/pieimagen
+http://dbpedia.org/property/posiciónTabla
+http://dbpedia.org/property/predecesor
+http://dbpedia.org/property/presidente
+http://dbpedia.org/property/primerministro
+http://dbpedia.org/property/profesión
+http://dbpedia.org/property/publicación
+http://dbpedia.org/property/publisher
+http://dbpedia.org/property/páginas
+http://dbpedia.org/property/rama
+http://dbpedia.org/property/rango
+http://dbpedia.org/property/religión
+http://dbpedia.org/property/residencia
+http://dbpedia.org/property/subtítulo
+http://dbpedia.org/property/sucesor
+http://dbpedia.org/property/tamaño
+http://dbpedia.org/property/texto
+http://dbpedia.org/property/tratamiento
+http://dbpedia.org/property/ubicación
+http://dbpedia.org/property/vicepresidente
+http://dbpedia.org/property/viceprimerministro
+http://dbpedia.org/property/editorial
+http://dbpedia.org/property/fecha
+http://dbpedia.org/property/título
+http://dbpedia.org/property/url
+http://dbpedia.org/ontology/wikiPageWikiLink
+http://dbpedia.org/ontology/child
+http://dbpedia.org/ontology/country
+http://dbpedia.org/ontology/occupation
+http://dbpedia.org/ontology/party
+http://dbpedia.org/ontology/profession
+http://dbpedia.org/ontology/religion
+http://dbpedia.org/ontology/successor
+http://xmlns.com/foaf/0.1/name
+http://dbpedia.org/ontology/abstract
+http://dbpedia.org/property/1data
+
+
+2.Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+-------------Solution
+
+
+
+
+
+3.¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician 
+(<http://dbpedia.org/ontology/Politician>)?
+
+-------------Solution
+
+4.Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), 
+dime cuántos valores distintos toman en dichas instancias
+
+-------------Solution
+
+5.Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), 
+dime la media de valores distintos que toman en dichas instancias.
+
+-------------Solution
+
+6.Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), 
+dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor
+
+-------------Solution
+
