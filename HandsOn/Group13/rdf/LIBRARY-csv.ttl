@@ -1,0 +1,2383 @@
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix livingPlaces: <http://www.linkedData_Group13.com/ontology/livingPlaces#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://www.linkedData_Group13.com/resource/115th+Street+Library> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.95353074430393"^^geo:long ;
+	livingPlaces:hasLatitude "40.80297988196676"^^geo:lat ;
+	livingPlaces:hasName "115th Street Library"^^xsd:string ;
+	livingPlaces:hasAddress "West 115th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "203"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10026"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/115th-street"^^xsd:anyURI ;
+	rdfs:label "115th Street Library" .
+
+<http://www.linkedData_Group13.com/resource/125th+Street+Library> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9348475633247"^^geo:long ;
+	livingPlaces:hasLatitude "40.80301816141575"^^geo:lat ;
+	livingPlaces:hasName "125th Street Library"^^xsd:string ;
+	livingPlaces:hasAddress "East 125th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "224"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10035"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/125th-street"^^xsd:anyURI ;
+	rdfs:label "125th Street Library" .
+
+<http://www.linkedData_Group13.com/resource/53rd+Street+Library> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.97736329270697"^^geo:long ;
+	livingPlaces:hasLatitude "40.76080689474172"^^geo:lat ;
+	livingPlaces:hasName "53rd Street Library"^^xsd:string ;
+	livingPlaces:hasAddress "West 53rd Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "18"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10019"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/53rd-street"^^xsd:anyURI ;
+	rdfs:label "53rd Street Library" .
+
+<http://www.linkedData_Group13.com/resource/58th+Street+Library> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9693817046576"^^geo:long ;
+	livingPlaces:hasLatitude "40.7621860177235"^^geo:lat ;
+	livingPlaces:hasName "58th Street Library"^^xsd:string ;
+	livingPlaces:hasAddress "East 58th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "127"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10022"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/58th-street"^^xsd:anyURI ;
+	rdfs:label "58th Street Library" .
+
+<http://www.linkedData_Group13.com/resource/67th+Street+Library> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.95954994584243"^^geo:long ;
+	livingPlaces:hasLatitude "40.764915006253425"^^geo:lat ;
+	livingPlaces:hasName "67th Street Library"^^xsd:string ;
+	livingPlaces:hasAddress "East 67th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "328"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10065"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/67th-street"^^xsd:anyURI ;
+	rdfs:label "67th Street Library" .
+
+<http://www.linkedData_Group13.com/resource/96th+Street+Library> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9518056716208"^^geo:long ;
+	livingPlaces:hasLatitude "40.785959798621555"^^geo:lat ;
+	livingPlaces:hasName "96th Street Library"^^xsd:string ;
+	livingPlaces:hasAddress "East 96th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "112"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10128"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/96th-street"^^xsd:anyURI ;
+	rdfs:label "96th Street Library" .
+
+<http://www.linkedData_Group13.com/resource/Aguilar> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.94345827853815"^^geo:long ;
+	livingPlaces:hasLatitude "40.79421476546373"^^geo:lat ;
+	livingPlaces:hasName "Aguilar"^^xsd:string ;
+	livingPlaces:hasAddress "East 110th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "174"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10029"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/aguilar"^^xsd:anyURI ;
+	rdfs:label "Aguilar" .
+
+<http://www.linkedData_Group13.com/resource/Allerton> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.86322248483968"^^geo:long ;
+	livingPlaces:hasLatitude "40.866804429026935"^^geo:lat ;
+	livingPlaces:hasName "Allerton"^^xsd:string ;
+	livingPlaces:hasAddress "Barnes Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2740"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10467"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/allerton"^^xsd:anyURI ;
+	rdfs:label "Allerton" .
+
+<http://www.linkedData_Group13.com/resource/Andrew+Heiskell+Braille+and+Talking+Book> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.99335691118674"^^geo:long ;
+	livingPlaces:hasLatitude "40.74046545561088"^^geo:lat ;
+	livingPlaces:hasName "Andrew Heiskell Braille and Talking Book"^^xsd:string ;
+	livingPlaces:hasAddress "West 20th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "40"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10011"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/heiskell"^^xsd:anyURI ;
+	rdfs:label "Andrew Heiskell Braille and Talking Book" .
+
+<http://www.linkedData_Group13.com/resource/Battery+Park+City+Library> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.0157487123272"^^geo:long ;
+	livingPlaces:hasLatitude "40.715690873439094"^^geo:lat ;
+	livingPlaces:hasName "Battery Park City Library"^^xsd:string ;
+	livingPlaces:hasAddress "North End Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "175"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10282"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/battery-park-city"^^xsd:anyURI ;
+	rdfs:label "Battery Park City Library" .
+
+<http://www.linkedData_Group13.com/resource/Baychester> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.82931594567218"^^geo:long ;
+	livingPlaces:hasLatitude "40.87075330808789"^^geo:lat ;
+	livingPlaces:hasName "Baychester"^^xsd:string ;
+	livingPlaces:hasAddress "Asch Loop North"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2049"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10475"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/baychester"^^xsd:anyURI ;
+	rdfs:label "Baychester" .
+
+<http://www.linkedData_Group13.com/resource/Belmont+Library+and+Enrico+Fermi+Cultural+Center> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.88788268526544"^^geo:long ;
+	livingPlaces:hasLatitude "40.85434421451861"^^geo:lat ;
+	livingPlaces:hasName "Belmont Library and Enrico Fermi Cultural Center"^^xsd:string ;
+	livingPlaces:hasAddress "East 186th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "610"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10458"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/belmont"^^xsd:anyURI ;
+	rdfs:label "Belmont Library and Enrico Fermi Cultural Center" .
+
+<http://www.linkedData_Group13.com/resource/Bloomingdale> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.96760677135273"^^geo:long ;
+	livingPlaces:hasLatitude "40.79587354648015"^^geo:lat ;
+	livingPlaces:hasName "Bloomingdale"^^xsd:string ;
+	livingPlaces:hasAddress "West 100th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "150"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10025"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/bloomingdale"^^xsd:anyURI ;
+	rdfs:label "Bloomingdale" .
+
+<http://www.linkedData_Group13.com/resource/Bronx+Library+Center> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.89450288645044"^^geo:long ;
+	livingPlaces:hasLatitude "40.86298060519321"^^geo:lat ;
+	livingPlaces:hasName "Bronx Library Center"^^xsd:string ;
+	livingPlaces:hasAddress "East Kingsbridge Road"^^xsd:string ;
+	livingPlaces:hasHouseNumber "310"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10458"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/bronx-library-center"^^xsd:anyURI ;
+	rdfs:label "Bronx Library Center" .
+
+<http://www.linkedData_Group13.com/resource/Castle+Hill> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.85017019717382"^^geo:long ;
+	livingPlaces:hasLatitude "40.82662920810023"^^geo:lat ;
+	livingPlaces:hasName "Castle Hill"^^xsd:string ;
+	livingPlaces:hasAddress "Castle Hill Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "947"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10473"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/castle-hill"^^xsd:anyURI ;
+	rdfs:label "Castle Hill" .
+
+<http://www.linkedData_Group13.com/resource/Chatham+Square> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.99648986636721"^^geo:long ;
+	livingPlaces:hasLatitude "40.71333307050747"^^geo:lat ;
+	livingPlaces:hasName "Chatham Square"^^xsd:string ;
+	livingPlaces:hasAddress "East Broadway"^^xsd:string ;
+	livingPlaces:hasHouseNumber "33"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10002"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/chatham-square"^^xsd:anyURI ;
+	rdfs:label "Chatham Square" .
+
+<http://www.linkedData_Group13.com/resource/City+Island> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.78636658900808"^^geo:long ;
+	livingPlaces:hasLatitude "40.8476919036199"^^geo:lat ;
+	livingPlaces:hasName "City Island"^^xsd:string ;
+	livingPlaces:hasAddress "City Island Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "320"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10464"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/city-island"^^xsd:anyURI ;
+	rdfs:label "City Island" .
+
+<http://www.linkedData_Group13.com/resource/Clason%27s+Point> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.87502060024048"^^geo:long ;
+	livingPlaces:hasLatitude "40.82999287527917"^^geo:lat ;
+	livingPlaces:hasName "Clason's Point"^^xsd:string ;
+	livingPlaces:hasAddress "Morrison Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1215"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10472"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/clasons-point"^^xsd:anyURI ;
+	rdfs:label "Clason's Point" .
+
+<http://www.linkedData_Group13.com/resource/Columbus> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.99122081783712"^^geo:long ;
+	livingPlaces:hasLatitude "40.764934618394804"^^geo:lat ;
+	livingPlaces:hasName "Columbus"^^xsd:string ;
+	livingPlaces:hasAddress "10th Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "742"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10019"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/columbus"^^xsd:anyURI ;
+	rdfs:label "Columbus" .
+
+<http://www.linkedData_Group13.com/resource/Countee+Cullen> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.94116092350963"^^geo:long ;
+	livingPlaces:hasLatitude "40.81483582138157"^^geo:lat ;
+	livingPlaces:hasName "Countee Cullen"^^xsd:string ;
+	livingPlaces:hasAddress "West 136th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "104"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10030"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/countee-cullen"^^xsd:anyURI ;
+	rdfs:label "Countee Cullen" .
+
+<http://www.linkedData_Group13.com/resource/Dongan+Hills> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.1011372893581"^^geo:long ;
+	livingPlaces:hasLatitude "40.59039133599787"^^geo:lat ;
+	livingPlaces:hasName "Dongan Hills"^^xsd:string ;
+	livingPlaces:hasAddress "Richmond Road"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1617"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Staten Island"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10304"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/dongan-hills"^^xsd:anyURI ;
+	rdfs:label "Dongan Hills" .
+
+<http://www.linkedData_Group13.com/resource/Eastchester> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.84506427532864"^^geo:long ;
+	livingPlaces:hasLatitude "40.87013970297055"^^geo:lat ;
+	livingPlaces:hasName "Eastchester"^^xsd:string ;
+	livingPlaces:hasAddress "East Gun Hill Road"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1385"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10469"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/eastchester"^^xsd:anyURI ;
+	rdfs:label "Eastchester" .
+
+<http://www.linkedData_Group13.com/resource/Edenwald> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.84083712785493"^^geo:long ;
+	livingPlaces:hasLatitude "40.88889489584642"^^geo:lat ;
+	livingPlaces:hasName "Edenwald"^^xsd:string ;
+	livingPlaces:hasAddress "East 233rd Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1255"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10466"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/edenwald"^^xsd:anyURI ;
+	rdfs:label "Edenwald" .
+
+<http://www.linkedData_Group13.com/resource/Epiphany> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.98204888964264"^^geo:long ;
+	livingPlaces:hasLatitude "40.738087120390595"^^geo:lat ;
+	livingPlaces:hasName "Epiphany"^^xsd:string ;
+	livingPlaces:hasAddress "East 23rd Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "228"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10010"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/epiphany"^^xsd:anyURI ;
+	rdfs:label "Epiphany" .
+
+<http://www.linkedData_Group13.com/resource/Fort+Washington> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.93386591312449"^^geo:long ;
+	livingPlaces:hasLatitude "40.847870041168214"^^geo:lat ;
+	livingPlaces:hasName "Fort Washington"^^xsd:string ;
+	livingPlaces:hasAddress "West 179th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "535"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10033"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/fort-washington"^^xsd:anyURI ;
+	rdfs:label "Fort Washington" .
+
+<http://www.linkedData_Group13.com/resource/Francis+Martin> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.90931635032427"^^geo:long ;
+	livingPlaces:hasLatitude "40.85742189422779"^^geo:lat ;
+	livingPlaces:hasName "Francis Martin"^^xsd:string ;
+	livingPlaces:hasAddress "University Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2150"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10453"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/francis-martin"^^xsd:anyURI ;
+	rdfs:label "Francis Martin" .
+
+<http://www.linkedData_Group13.com/resource/George+Bruce> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.95705320654999"^^geo:long ;
+	livingPlaces:hasLatitude "40.813768964572695"^^geo:lat ;
+	livingPlaces:hasName "George Bruce"^^xsd:string ;
+	livingPlaces:hasAddress "West 125th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "518"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10027"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/george-bruce"^^xsd:anyURI ;
+	rdfs:label "George Bruce" .
+
+<http://www.linkedData_Group13.com/resource/Grand+Central> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.97356771683344"^^geo:long ;
+	livingPlaces:hasLatitude "40.754067875550625"^^geo:lat ;
+	livingPlaces:hasName "Grand Central"^^xsd:string ;
+	livingPlaces:hasAddress "East 46th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "135"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10017"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/grand-central"^^xsd:anyURI ;
+	rdfs:label "Grand Central" .
+
+<http://www.linkedData_Group13.com/resource/Grand+Concourse> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.91008714449384"^^geo:long ;
+	livingPlaces:hasLatitude "40.844001911750446"^^geo:lat ;
+	livingPlaces:hasName "Grand Concourse"^^xsd:string ;
+	livingPlaces:hasAddress "East 173rd Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "155"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10457"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/grand-concourse"^^xsd:anyURI ;
+	rdfs:label "Grand Concourse" .
+
+<http://www.linkedData_Group13.com/resource/Great+Kills> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.15111164313684"^^geo:long ;
+	livingPlaces:hasLatitude "40.55242326280796"^^geo:lat ;
+	livingPlaces:hasName "Great Kills"^^xsd:string ;
+	livingPlaces:hasAddress "Giffords Lane"^^xsd:string ;
+	livingPlaces:hasHouseNumber "56"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Staten Island"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10308"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/great-kills"^^xsd:anyURI ;
+	rdfs:label "Great Kills" .
+
+<http://www.linkedData_Group13.com/resource/Hamilton+Fish+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.97942314417445"^^geo:long ;
+	livingPlaces:hasLatitude "40.71978015438276"^^geo:lat ;
+	livingPlaces:hasName "Hamilton Fish Park"^^xsd:string ;
+	livingPlaces:hasAddress "East Houston Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "415"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10002"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/hamilton-fish-park"^^xsd:anyURI ;
+	rdfs:label "Hamilton Fish Park" .
+
+<http://www.linkedData_Group13.com/resource/Hamilton+Grange> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.94803241890192"^^geo:long ;
+	livingPlaces:hasLatitude "40.82567237379984"^^geo:lat ;
+	livingPlaces:hasName "Hamilton Grange"^^xsd:string ;
+	livingPlaces:hasAddress "West 145th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "503"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10031"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/hamilton-grange"^^xsd:anyURI ;
+	rdfs:label "Hamilton Grange" .
+
+<http://www.linkedData_Group13.com/resource/Harlem> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.94331559838257"^^geo:long ;
+	livingPlaces:hasLatitude "40.80616044207548"^^geo:lat ;
+	livingPlaces:hasName "Harlem"^^xsd:string ;
+	livingPlaces:hasAddress "West 124th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "9"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10027"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/harlem"^^xsd:anyURI ;
+	rdfs:label "Harlem" .
+
+<http://www.linkedData_Group13.com/resource/High+Bridge> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.92355090156951"^^geo:long ;
+	livingPlaces:hasLatitude "40.837960016855035"^^geo:lat ;
+	livingPlaces:hasName "High Bridge"^^xsd:string ;
+	livingPlaces:hasAddress "West 168th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "78"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10452"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/high-bridge"^^xsd:anyURI ;
+	rdfs:label "High Bridge" .
+
+<http://www.linkedData_Group13.com/resource/Hudson+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.00533101445356"^^geo:long ;
+	livingPlaces:hasLatitude "40.72998291458653"^^geo:lat ;
+	livingPlaces:hasName "Hudson Park"^^xsd:string ;
+	livingPlaces:hasAddress "Leroy Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "66"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10014"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/hudson-park"^^xsd:anyURI ;
+	rdfs:label "Hudson Park" .
+
+<http://www.linkedData_Group13.com/resource/Huguenot+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.19322900650182"^^geo:long ;
+	livingPlaces:hasLatitude "40.534078493080344"^^geo:lat ;
+	livingPlaces:hasName "Huguenot Park"^^xsd:string ;
+	livingPlaces:hasAddress "Huguenot Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "830"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Staten Island"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10312"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/huguenot-park"^^xsd:anyURI ;
+	rdfs:label "Huguenot Park" .
+
+<http://www.linkedData_Group13.com/resource/Hunts+Point> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.89413216580388"^^geo:long ;
+	livingPlaces:hasLatitude "40.818670087188615"^^geo:lat ;
+	livingPlaces:hasName "Hunts Point"^^xsd:string ;
+	livingPlaces:hasAddress "Southern Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "877"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10459"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/hunts-point"^^xsd:anyURI ;
+	rdfs:label "Hunts Point" .
+
+<http://www.linkedData_Group13.com/resource/Inwood> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.92586290917251"^^geo:long ;
+	livingPlaces:hasLatitude "40.865748720737024"^^geo:lat ;
+	livingPlaces:hasName "Inwood"^^xsd:string ;
+	livingPlaces:hasAddress "Broadway"^^xsd:string ;
+	livingPlaces:hasHouseNumber "4790"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10034"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/inwood"^^xsd:anyURI ;
+	rdfs:label "Inwood" .
+
+<http://www.linkedData_Group13.com/resource/Jefferson+Market> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.99916928513315"^^geo:long ;
+	livingPlaces:hasLatitude "40.73463470830847"^^geo:lat ;
+	livingPlaces:hasName "Jefferson Market"^^xsd:string ;
+	livingPlaces:hasAddress "Avenue of the Americas"^^xsd:string ;
+	livingPlaces:hasHouseNumber "425"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10011"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/jefferson-market"^^xsd:anyURI ;
+	rdfs:label "Jefferson Market" .
+
+<http://www.linkedData_Group13.com/resource/Jerome+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.90119235962918"^^geo:long ;
+	livingPlaces:hasLatitude "40.86906986689302"^^geo:lat ;
+	livingPlaces:hasName "Jerome Park"^^xsd:string ;
+	livingPlaces:hasAddress "Eames Place"^^xsd:string ;
+	livingPlaces:hasHouseNumber "118"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10468"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/jerome-park"^^xsd:anyURI ;
+	rdfs:label "Jerome Park" .
+
+<http://www.linkedData_Group13.com/resource/Kingsbridge> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.90770595199646"^^geo:long ;
+	livingPlaces:hasLatitude "40.88069989038004"^^geo:lat ;
+	livingPlaces:hasName "Kingsbridge"^^xsd:string ;
+	livingPlaces:hasAddress "West 231st Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "291"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10463"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/kingsbridge"^^xsd:anyURI ;
+	rdfs:label "Kingsbridge" .
+
+<http://www.linkedData_Group13.com/resource/Kips+Bay> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.97990195853163"^^geo:long ;
+	livingPlaces:hasLatitude "40.74380962013242"^^geo:lat ;
+	livingPlaces:hasName "Kips Bay"^^xsd:string ;
+	livingPlaces:hasAddress "Third Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "446"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10016"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/kips-bay"^^xsd:anyURI ;
+	rdfs:label "Kips Bay" .
+
+<http://www.linkedData_Group13.com/resource/Macomb%27s+Bridge> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.93586246250698"^^geo:long ;
+	livingPlaces:hasLatitude "40.82653201339423"^^geo:lat ;
+	livingPlaces:hasName "Macomb's Bridge"^^xsd:string ;
+	livingPlaces:hasAddress "Adam Clayton Powell Jr. Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2650"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10039"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/macombs-bridge"^^xsd:anyURI ;
+	rdfs:label "Macomb's Bridge" .
+
+<http://www.linkedData_Group13.com/resource/Mariners+Harbor> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.16658190502365"^^geo:long ;
+	livingPlaces:hasLatitude "40.63469343184469"^^geo:lat ;
+	livingPlaces:hasName "Mariners Harbor"^^xsd:string ;
+	livingPlaces:hasAddress "South Ave"^^xsd:string ;
+	livingPlaces:hasHouseNumber "206"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Staten Island"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10303"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/mariners-harbor"^^xsd:anyURI ;
+	rdfs:label "Mariners Harbor" .
+
+<http://www.linkedData_Group13.com/resource/Melrose> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.91758393603561"^^geo:long ;
+	livingPlaces:hasLatitude "40.826584558970666"^^geo:lat ;
+	livingPlaces:hasName "Melrose"^^xsd:string ;
+	livingPlaces:hasAddress "Morris Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "910"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10451"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/melrose"^^xsd:anyURI ;
+	rdfs:label "Melrose" .
+
+<http://www.linkedData_Group13.com/resource/Mid-Manhattan> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.98169851078917"^^geo:long ;
+	livingPlaces:hasLatitude "40.75189156171031"^^geo:lat ;
+	livingPlaces:hasName "Mid-Manhattan"^^xsd:string ;
+	livingPlaces:hasAddress "Fifth Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "455"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10016"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/mid-manhattan-library"^^xsd:anyURI ;
+	rdfs:label "Mid-Manhattan" .
+
+<http://www.linkedData_Group13.com/resource/Morningside+Heights> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.96477561597041"^^geo:long ;
+	livingPlaces:hasLatitude "40.80613025800837"^^geo:lat ;
+	livingPlaces:hasName "Morningside Heights"^^xsd:string ;
+	livingPlaces:hasAddress "Broadway"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2900"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10025"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/morningside-heights"^^xsd:anyURI ;
+	rdfs:label "Morningside Heights" .
+
+<http://www.linkedData_Group13.com/resource/Morris+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.85695785375374"^^geo:long ;
+	livingPlaces:hasLatitude "40.84802911005552"^^geo:lat ;
+	livingPlaces:hasName "Morris Park"^^xsd:string ;
+	livingPlaces:hasAddress "Morris Park Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "985"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10462"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/morris-park"^^xsd:anyURI ;
+	rdfs:label "Morris Park" .
+
+<http://www.linkedData_Group13.com/resource/Morrisania> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.90179407206183"^^geo:long ;
+	livingPlaces:hasLatitude "40.83126291201479"^^geo:lat ;
+	livingPlaces:hasName "Morrisania"^^xsd:string ;
+	livingPlaces:hasAddress "East 169th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "610"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10456"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/morrisania"^^xsd:anyURI ;
+	rdfs:label "Morrisania" .
+
+<http://www.linkedData_Group13.com/resource/Mosholu> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.87838435032448"^^geo:long ;
+	livingPlaces:hasLatitude "40.87437981398938"^^geo:lat ;
+	livingPlaces:hasName "Mosholu"^^xsd:string ;
+	livingPlaces:hasAddress "East 205th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "285"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10467"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/mosholu"^^xsd:anyURI ;
+	rdfs:label "Mosholu" .
+
+<http://www.linkedData_Group13.com/resource/Mott+Haven> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.92438195200242"^^geo:long ;
+	livingPlaces:hasLatitude "40.81158963775246"^^geo:lat ;
+	livingPlaces:hasName "Mott Haven"^^xsd:string ;
+	livingPlaces:hasAddress "East 140th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "321"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10454"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/mott-haven"^^xsd:anyURI ;
+	rdfs:label "Mott Haven" .
+
+<http://www.linkedData_Group13.com/resource/Muhlenberg> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9959685690698"^^geo:long ;
+	livingPlaces:hasLatitude "40.74448733065495"^^geo:lat ;
+	livingPlaces:hasName "Muhlenberg"^^xsd:string ;
+	livingPlaces:hasAddress "West 23rd Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "209"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10011"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/muhlenberg"^^xsd:anyURI ;
+	rdfs:label "Muhlenberg" .
+
+<http://www.linkedData_Group13.com/resource/Mulberry+Street+Library> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.99568416859454"^^geo:long ;
+	livingPlaces:hasLatitude "40.72413926605543"^^geo:lat ;
+	livingPlaces:hasName "Mulberry Street Library"^^xsd:string ;
+	livingPlaces:hasAddress "Jersey Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "10"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10012"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/mulberry-street"^^xsd:anyURI ;
+	rdfs:label "Mulberry Street Library" .
+
+<http://www.linkedData_Group13.com/resource/New+Amsterdam> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.00786921340098"^^geo:long ;
+	livingPlaces:hasLatitude "40.71357685109021"^^geo:lat ;
+	livingPlaces:hasName "New Amsterdam"^^xsd:string ;
+	livingPlaces:hasAddress "Murray Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "9"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10007"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/new-amsterdam"^^xsd:anyURI ;
+	rdfs:label "New Amsterdam" .
+
+<http://www.linkedData_Group13.com/resource/New+Dorp> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.11195814748115"^^geo:long ;
+	livingPlaces:hasLatitude "40.57193184836513"^^geo:lat ;
+	livingPlaces:hasName "New Dorp"^^xsd:string ;
+	livingPlaces:hasAddress "New Dorp Lane"^^xsd:string ;
+	livingPlaces:hasHouseNumber "309"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Staten Island"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10306"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/new-dorp"^^xsd:anyURI ;
+	rdfs:label "New Dorp" .
+
+<http://www.linkedData_Group13.com/resource/Library+for+the+Performing+Arts%2C+Dorothy+and+Lewis+B.+Cullman+Center> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.98454684522841"^^geo:long ;
+	livingPlaces:hasLatitude "40.7735069911927"^^geo:lat ;
+	livingPlaces:hasName "Library for the Performing Arts, Dorothy and Lewis B. Cullman Center"^^xsd:string ;
+	livingPlaces:hasAddress "Lincoln Center Plaza"^^xsd:string ;
+	livingPlaces:hasHouseNumber "40"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10023"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/lpa"^^xsd:anyURI ;
+	rdfs:label "Library for the Performing Arts, Dorothy and Lewis B. Cullman Center" .
+
+<http://www.linkedData_Group13.com/resource/Ottendorfer> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.98774284104663"^^geo:long ;
+	livingPlaces:hasLatitude "40.72890664078863"^^geo:lat ;
+	livingPlaces:hasName "Ottendorfer"^^xsd:string ;
+	livingPlaces:hasAddress "Second Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "135"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10003"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/ottendorfer"^^xsd:anyURI ;
+	rdfs:label "Ottendorfer" .
+
+<http://www.linkedData_Group13.com/resource/Parkchester> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.85835004816082"^^geo:long ;
+	livingPlaces:hasLatitude "40.83378098529545"^^geo:lat ;
+	livingPlaces:hasName "Parkchester"^^xsd:string ;
+	livingPlaces:hasAddress "Westchester Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1985"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10462"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/parkchester"^^xsd:anyURI ;
+	rdfs:label "Parkchester" .
+
+<http://www.linkedData_Group13.com/resource/Pelham+Bay> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.82790017237492"^^geo:long ;
+	livingPlaces:hasLatitude "40.844317529931516"^^geo:lat ;
+	livingPlaces:hasName "Pelham Bay"^^xsd:string ;
+	livingPlaces:hasAddress "Middletown Road"^^xsd:string ;
+	livingPlaces:hasHouseNumber "3060"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10461"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/pelham-bay"^^xsd:anyURI ;
+	rdfs:label "Pelham Bay" .
+
+<http://www.linkedData_Group13.com/resource/Pelham+Parkway-Van+Nest> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.8641466616336"^^geo:long ;
+	livingPlaces:hasLatitude "40.85487588027384"^^geo:lat ;
+	livingPlaces:hasName "Pelham Parkway-Van Nest"^^xsd:string ;
+	livingPlaces:hasAddress "Barnes Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2147"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10462"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/pelham-parkway-van-nest"^^xsd:anyURI ;
+	rdfs:label "Pelham Parkway-Van Nest" .
+
+<http://www.linkedData_Group13.com/resource/Port+Richmond> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.13110461508398"^^geo:long ;
+	livingPlaces:hasLatitude "40.63758561600359"^^geo:lat ;
+	livingPlaces:hasName "Port Richmond"^^xsd:string ;
+	livingPlaces:hasAddress "Bennett Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "75"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Staten Island"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10302"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/port-richmond"^^xsd:anyURI ;
+	rdfs:label "Port Richmond" .
+
+<http://www.linkedData_Group13.com/resource/Richmondtown> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.13853387646311"^^geo:long ;
+	livingPlaces:hasLatitude "40.566530146210184"^^geo:lat ;
+	livingPlaces:hasName "Richmondtown"^^xsd:string ;
+	livingPlaces:hasAddress "Clarke Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "200"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Staten Island"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10306"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/richmondtown"^^xsd:anyURI ;
+	rdfs:label "Richmondtown" .
+
+<http://www.linkedData_Group13.com/resource/Riverdale> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.90277254280693"^^geo:long ;
+	livingPlaces:hasLatitude "40.90372277707978"^^geo:lat ;
+	livingPlaces:hasName "Riverdale"^^xsd:string ;
+	livingPlaces:hasAddress "Mosholu Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "5540"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10471"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/riverdale"^^xsd:anyURI ;
+	rdfs:label "Riverdale" .
+
+<http://www.linkedData_Group13.com/resource/Riverside> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.98451216196563"^^geo:long ;
+	livingPlaces:hasLatitude "40.77423207861022"^^geo:lat ;
+	livingPlaces:hasName "Riverside"^^xsd:string ;
+	livingPlaces:hasAddress "Amsterdam Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "127"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10023"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/riverside"^^xsd:anyURI ;
+	rdfs:label "Riverside" .
+
+<http://www.linkedData_Group13.com/resource/Roosevelt+Island> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.95020567413508"^^geo:long ;
+	livingPlaces:hasLatitude "40.76123275727826"^^geo:lat ;
+	livingPlaces:hasName "Roosevelt Island"^^xsd:string ;
+	livingPlaces:hasAddress "Main Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "524"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10044"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/roosevelt-island"^^xsd:anyURI ;
+	rdfs:label "Roosevelt Island" .
+
+<http://www.linkedData_Group13.com/resource/Schomburg+Center+for+Research+in+Black+Culture> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.94094393837611"^^geo:long ;
+	livingPlaces:hasLatitude "40.81464862404033"^^geo:lat ;
+	livingPlaces:hasName "Schomburg Center for Research in Black Culture"^^xsd:string ;
+	livingPlaces:hasAddress "Malcolm X Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "515"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10037"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/schomburg"^^xsd:anyURI ;
+	rdfs:label "Schomburg Center for Research in Black Culture" .
+
+<http://www.linkedData_Group13.com/resource/Science%2C+Industry+and+Business+Library+%28SIBL%29> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.98300921762814"^^geo:long ;
+	livingPlaces:hasLatitude "40.74811515837409"^^geo:lat ;
+	livingPlaces:hasName "Science, Industry and Business Library (SIBL)"^^xsd:string ;
+	livingPlaces:hasAddress "Madison Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "188"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10016"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/sibl"^^xsd:anyURI ;
+	rdfs:label "Science, Industry and Business Library (SIBL)" .
+
+<http://www.linkedData_Group13.com/resource/Sedgwick> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9174950173068"^^geo:long ;
+	livingPlaces:hasLatitude "40.849444506294475"^^geo:lat ;
+	livingPlaces:hasName "Sedgwick"^^xsd:string ;
+	livingPlaces:hasAddress "Martin Luther King Jr. Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1701"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10453"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/sedgwick"^^xsd:anyURI ;
+	rdfs:label "Sedgwick" .
+
+<http://www.linkedData_Group13.com/resource/Seward+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.98850101814436"^^geo:long ;
+	livingPlaces:hasLatitude "40.71440955033492"^^geo:lat ;
+	livingPlaces:hasName "Seward Park"^^xsd:string ;
+	livingPlaces:hasAddress "East Broadway"^^xsd:string ;
+	livingPlaces:hasHouseNumber "192"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10002"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/seward-park"^^xsd:anyURI ;
+	rdfs:label "Seward Park" .
+
+<http://www.linkedData_Group13.com/resource/Soundview> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.86288995608042"^^geo:long ;
+	livingPlaces:hasLatitude "40.818709352248625"^^geo:lat ;
+	livingPlaces:hasName "Soundview"^^xsd:string ;
+	livingPlaces:hasAddress "Soundview Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "660"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10473"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/soundview"^^xsd:anyURI ;
+	rdfs:label "Soundview" .
+
+<http://www.linkedData_Group13.com/resource/South+Beach> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.06298045409709"^^geo:long ;
+	livingPlaces:hasLatitude "40.59580257046463"^^geo:lat ;
+	livingPlaces:hasName "South Beach"^^xsd:string ;
+	livingPlaces:hasAddress "Robin Road"^^xsd:string ;
+	livingPlaces:hasHouseNumber "21-25"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Staten Island"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10305"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/south-beach"^^xsd:anyURI ;
+	rdfs:label "South Beach" .
+
+<http://www.linkedData_Group13.com/resource/Spuyten+Duyvil> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9146501854584"^^geo:long ;
+	livingPlaces:hasLatitude "40.88628523559925"^^geo:lat ;
+	livingPlaces:hasName "Spuyten Duyvil"^^xsd:string ;
+	livingPlaces:hasAddress "West 235th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "650"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10463"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/spuyten-duyvil"^^xsd:anyURI ;
+	rdfs:label "Spuyten Duyvil" .
+
+<http://www.linkedData_Group13.com/resource/St.+Agnes> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.97745211592564"^^geo:long ;
+	livingPlaces:hasLatitude "40.784834636708375"^^geo:lat ;
+	livingPlaces:hasName "St. Agnes"^^xsd:string ;
+	livingPlaces:hasAddress "Amsterdam Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "444"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10024"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/st-agnes"^^xsd:anyURI ;
+	rdfs:label "St. Agnes" .
+
+<http://www.linkedData_Group13.com/resource/St.+George+Library+Center> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.07667836343802"^^geo:long ;
+	livingPlaces:hasLatitude "40.64179934831384"^^geo:lat ;
+	livingPlaces:hasName "St. George Library Center"^^xsd:string ;
+	livingPlaces:hasAddress "Central Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "5"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Staten Island"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10301"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/st-george-library-center"^^xsd:anyURI ;
+	rdfs:label "St. George Library Center" .
+
+<http://www.linkedData_Group13.com/resource/Stapleton> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.07786385638836"^^geo:long ;
+	livingPlaces:hasLatitude "40.626256522293644"^^geo:lat ;
+	livingPlaces:hasName "Stapleton"^^xsd:string ;
+	livingPlaces:hasAddress "Canal Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "132"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Staten Island"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10304"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/stapleton"^^xsd:anyURI ;
+	rdfs:label "Stapleton" .
+
+<http://www.linkedData_Group13.com/resource/Stephen+A.+Schwarzman+Building> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.98223080385785"^^geo:long ;
+	livingPlaces:hasLatitude "40.75320442290988"^^geo:lat ;
+	livingPlaces:hasName "Stephen A. Schwarzman Building"^^xsd:string ;
+	livingPlaces:hasAddress "Fifth Avenue at 42nd Street"^^xsd:string ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10018"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/schwarzman"^^xsd:anyURI ;
+	rdfs:label "Stephen A. Schwarzman Building" .
+
+<http://www.linkedData_Group13.com/resource/Terence+Cardinal+Cooke-Cathedral> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.97254082689402"^^geo:long ;
+	livingPlaces:hasLatitude "40.75680235018433"^^geo:lat ;
+	livingPlaces:hasName "Terence Cardinal Cooke-Cathedral"^^xsd:string ;
+	livingPlaces:hasAddress "Lexington Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "560"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10022"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/cathedral"^^xsd:anyURI ;
+	rdfs:label "Terence Cardinal Cooke-Cathedral" .
+
+<http://www.linkedData_Group13.com/resource/Throg%27s+Neck> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.8190949368255"^^geo:long ;
+	livingPlaces:hasLatitude "40.82287218481685"^^geo:lat ;
+	livingPlaces:hasName "Throg's Neck"^^xsd:string ;
+	livingPlaces:hasAddress "Cross Bronx Expressway Extension"^^xsd:string ;
+	livingPlaces:hasHouseNumber "3025"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10465"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/throgs-neck"^^xsd:anyURI ;
+	rdfs:label "Throg's Neck" .
+
+<http://www.linkedData_Group13.com/resource/Todt+Hill-Westerleigh> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.14852127833858"^^geo:long ;
+	livingPlaces:hasLatitude "40.60960200172146"^^geo:lat ;
+	livingPlaces:hasName "Todt Hill-Westerleigh"^^xsd:string ;
+	livingPlaces:hasAddress "Victory Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2550"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Staten Island"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10314"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/todt-hill-westerleigh"^^xsd:anyURI ;
+	rdfs:label "Todt Hill-Westerleigh" .
+
+<http://www.linkedData_Group13.com/resource/Tompkins+Square> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.98042071146763"^^geo:long ;
+	livingPlaces:hasLatitude "40.72728802667872"^^geo:lat ;
+	livingPlaces:hasName "Tompkins Square"^^xsd:string ;
+	livingPlaces:hasAddress "East 10th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "331"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10009"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/tompkins-square"^^xsd:anyURI ;
+	rdfs:label "Tompkins Square" .
+
+<http://www.linkedData_Group13.com/resource/Tottenville> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.24410670826178"^^geo:long ;
+	livingPlaces:hasLatitude "40.509531123859375"^^geo:lat ;
+	livingPlaces:hasName "Tottenville"^^xsd:string ;
+	livingPlaces:hasAddress "Amboy Road"^^xsd:string ;
+	livingPlaces:hasHouseNumber "7430"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Staten Island"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10307"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/tottenville"^^xsd:anyURI ;
+	rdfs:label "Tottenville" .
+
+<http://www.linkedData_Group13.com/resource/Tremont> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.89834943816875"^^geo:long ;
+	livingPlaces:hasLatitude "40.84604568736388"^^geo:lat ;
+	livingPlaces:hasName "Tremont"^^xsd:string ;
+	livingPlaces:hasAddress "Washington Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1866"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10457"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/tremont"^^xsd:anyURI ;
+	rdfs:label "Tremont" .
+
+<http://www.linkedData_Group13.com/resource/Van+Cortlandt> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.8939211860628"^^geo:long ;
+	livingPlaces:hasLatitude "40.88277969546436"^^geo:lat ;
+	livingPlaces:hasName "Van Cortlandt"^^xsd:string ;
+	livingPlaces:hasAddress "Sedgwick Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "3874"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10463"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/van-cortlandt"^^xsd:anyURI ;
+	rdfs:label "Van Cortlandt" .
+
+<http://www.linkedData_Group13.com/resource/Wakefield> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.85958124409599"^^geo:long ;
+	livingPlaces:hasLatitude "40.891085065406706"^^geo:lat ;
+	livingPlaces:hasName "Wakefield"^^xsd:string ;
+	livingPlaces:hasAddress "Lowerre Place"^^xsd:string ;
+	livingPlaces:hasHouseNumber "4100"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10466"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/wakefield"^^xsd:anyURI ;
+	rdfs:label "Wakefield" .
+
+<http://www.linkedData_Group13.com/resource/Washington+Heights> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.93971034945567"^^geo:long ;
+	livingPlaces:hasLatitude "40.834548887305765"^^geo:lat ;
+	livingPlaces:hasName "Washington Heights"^^xsd:string ;
+	livingPlaces:hasAddress "St. Nicholas Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1000"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10032"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/washington-heights"^^xsd:anyURI ;
+	rdfs:label "Washington Heights" .
+
+<http://www.linkedData_Group13.com/resource/Webster> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.95134169404905"^^geo:long ;
+	livingPlaces:hasLatitude "40.770652543462646"^^geo:lat ;
+	livingPlaces:hasName "Webster"^^xsd:string ;
+	livingPlaces:hasAddress "York Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1465"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10021"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/webster"^^xsd:anyURI ;
+	rdfs:label "Webster" .
+
+<http://www.linkedData_Group13.com/resource/West+Farms> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.88301210482436"^^geo:long ;
+	livingPlaces:hasLatitude "40.844644453005635"^^geo:lat ;
+	livingPlaces:hasName "West Farms"^^xsd:string ;
+	livingPlaces:hasAddress "Honeywell Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2085"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10460"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/west-farms"^^xsd:anyURI ;
+	rdfs:label "West Farms" .
+
+<http://www.linkedData_Group13.com/resource/West+New+Brighton> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.11482187344863"^^geo:long ;
+	livingPlaces:hasLatitude "40.63450894226954"^^geo:lat ;
+	livingPlaces:hasName "West New Brighton"^^xsd:string ;
+	livingPlaces:hasAddress "Castleton Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "976"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Staten Island"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10310"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/west-new-brighton"^^xsd:anyURI ;
+	rdfs:label "West New Brighton" .
+
+<http://www.linkedData_Group13.com/resource/Westchester+Square> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.84673061822738"^^geo:long ;
+	livingPlaces:hasLatitude "40.84086754432402"^^geo:lat ;
+	livingPlaces:hasName "Westchester Square"^^xsd:string ;
+	livingPlaces:hasAddress "Glebe Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2521"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10461"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/westchester-square"^^xsd:anyURI ;
+	rdfs:label "Westchester Square" .
+
+<http://www.linkedData_Group13.com/resource/Woodlawn+Heights> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.86794200000536"^^geo:long ;
+	livingPlaces:hasLatitude "40.90043990975718"^^geo:lat ;
+	livingPlaces:hasName "Woodlawn Heights"^^xsd:string ;
+	livingPlaces:hasAddress "Katonah Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "4355"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10470"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/woodlawn-heights"^^xsd:anyURI ;
+	rdfs:label "Woodlawn Heights" .
+
+<http://www.linkedData_Group13.com/resource/Woodstock> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.90464799347694"^^geo:long ;
+	livingPlaces:hasLatitude "40.82061890603643"^^geo:lat ;
+	livingPlaces:hasName "Woodstock"^^xsd:string ;
+	livingPlaces:hasAddress "East 160th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "761"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bronx"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10456"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/woodstock"^^xsd:anyURI ;
+	rdfs:label "Woodstock" .
+
+<http://www.linkedData_Group13.com/resource/Yorkville> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.95637252319334"^^geo:long ;
+	livingPlaces:hasLatitude "40.77365564161395"^^geo:lat ;
+	livingPlaces:hasName "Yorkville"^^xsd:string ;
+	livingPlaces:hasAddress "East 79th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "222"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Manhattan"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "10021"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.nypl.org/locations/yorkville"^^xsd:anyURI ;
+	rdfs:label "Yorkville" .
+
+<http://www.linkedData_Group13.com/resource/Arlington> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.88723723774561"^^geo:long ;
+	livingPlaces:hasLatitude "40.68068925695902"^^geo:lat ;
+	livingPlaces:hasName "Arlington"^^xsd:string ;
+	livingPlaces:hasAddress "Arlington Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "203"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11207"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/arlington"^^xsd:anyURI ;
+	rdfs:label "Arlington" .
+
+<http://www.linkedData_Group13.com/resource/Bay+Ridge> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.02953835191357"^^geo:long ;
+	livingPlaces:hasLatitude "40.633625713382486"^^geo:lat ;
+	livingPlaces:hasName "Bay Ridge"^^xsd:string ;
+	livingPlaces:hasAddress "Ridge Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "7223"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11209"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/bay-ridge"^^xsd:anyURI ;
+	rdfs:label "Bay Ridge" .
+
+<http://www.linkedData_Group13.com/resource/Bedford> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.95616471363496"^^geo:long ;
+	livingPlaces:hasLatitude "40.68181211172472"^^geo:lat ;
+	livingPlaces:hasName "Bedford"^^xsd:string ;
+	livingPlaces:hasAddress "Franklin Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "496"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11238"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/bedford"^^xsd:anyURI ;
+	rdfs:label "Bedford" .
+
+<http://www.linkedData_Group13.com/resource/Borough+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.98900318822345"^^geo:long ;
+	livingPlaces:hasLatitude "40.638888838712376"^^geo:lat ;
+	livingPlaces:hasName "Borough Park"^^xsd:string ;
+	livingPlaces:hasAddress "43rd Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1265"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11219"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/borough-park"^^xsd:anyURI ;
+	rdfs:label "Borough Park" .
+
+<http://www.linkedData_Group13.com/resource/Brighton+Beach+> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9667748761715"^^geo:long ;
+	livingPlaces:hasLatitude "40.57610774698186"^^geo:lat ;
+	livingPlaces:hasName "Brighton Beach "^^xsd:string ;
+	livingPlaces:hasAddress "Brighton First Road"^^xsd:string ;
+	livingPlaces:hasHouseNumber "16"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11235"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/brighton-beach"^^xsd:anyURI ;
+	rdfs:label "Brighton Beach " .
+
+<http://www.linkedData_Group13.com/resource/Brooklyn+Heights> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.99134798814833"^^geo:long ;
+	livingPlaces:hasLatitude "40.69568255523745"^^geo:lat ;
+	livingPlaces:hasName "Brooklyn Heights"^^xsd:string ;
+	livingPlaces:hasAddress "Cadman Plaza West"^^xsd:string ;
+	livingPlaces:hasHouseNumber "280"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11201"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/brooklyn-heights"^^xsd:anyURI ;
+	rdfs:label "Brooklyn Heights" .
+
+<http://www.linkedData_Group13.com/resource/Brower+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.94856613670774"^^geo:long ;
+	livingPlaces:hasLatitude "40.675370851852314"^^geo:lat ;
+	livingPlaces:hasName "Brower Park"^^xsd:string ;
+	livingPlaces:hasAddress "St. Marks Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "725"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11216"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/brower-park"^^xsd:anyURI ;
+	rdfs:label "Brower Park" .
+
+<http://www.linkedData_Group13.com/resource/Brownsville> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.90860343294449"^^geo:long ;
+	livingPlaces:hasLatitude "40.671526655858436"^^geo:lat ;
+	livingPlaces:hasName "Brownsville"^^xsd:string ;
+	livingPlaces:hasAddress "Glenmore Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "61"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11212"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/brownsville"^^xsd:anyURI ;
+	rdfs:label "Brownsville" .
+
+<http://www.linkedData_Group13.com/resource/Bushwick> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.93961842135727"^^geo:long ;
+	livingPlaces:hasLatitude "40.704559063938675"^^geo:lat ;
+	livingPlaces:hasName "Bushwick"^^xsd:string ;
+	livingPlaces:hasAddress "Bushwick Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "340"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11206"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/bushwick"^^xsd:anyURI ;
+	rdfs:label "Bushwick" .
+
+<http://www.linkedData_Group13.com/resource/Canarsie> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.89952442124468"^^geo:long ;
+	livingPlaces:hasLatitude "40.64220845315574"^^geo:lat ;
+	livingPlaces:hasName "Canarsie"^^xsd:string ;
+	livingPlaces:hasAddress "Rockaway Parkway"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1580"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11236"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/canarsie"^^xsd:anyURI ;
+	rdfs:label "Canarsie" .
+
+<http://www.linkedData_Group13.com/resource/Carroll+Gardens> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.99801906031493"^^geo:long ;
+	livingPlaces:hasLatitude "40.683213515337584"^^geo:lat ;
+	livingPlaces:hasName "Carroll Gardens"^^xsd:string ;
+	livingPlaces:hasAddress "Clinton Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "396"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11231"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/carroll-gardens"^^xsd:anyURI ;
+	rdfs:label "Carroll Gardens" .
+
+<http://www.linkedData_Group13.com/resource/Brooklyn+Central+Library> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9682243828713"^^geo:long ;
+	livingPlaces:hasLatitude "40.672343526336505"^^geo:lat ;
+	livingPlaces:hasName "Brooklyn Central Library"^^xsd:string ;
+	livingPlaces:hasAddress "Grand Army Plaza"^^xsd:string ;
+	livingPlaces:hasHouseNumber "10"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11238"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/central"^^xsd:anyURI ;
+	rdfs:label "Brooklyn Central Library" .
+
+<http://www.linkedData_Group13.com/resource/Clarendon> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.94763429707129"^^geo:long ;
+	livingPlaces:hasLatitude "40.63574014928098"^^geo:lat ;
+	livingPlaces:hasName "Clarendon"^^xsd:string ;
+	livingPlaces:hasAddress "Nostrand Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2035"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11210"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/clarendon"^^xsd:anyURI ;
+	rdfs:label "Clarendon" .
+
+<http://www.linkedData_Group13.com/resource/Clinton+Hill> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.96603066603613"^^geo:long ;
+	livingPlaces:hasLatitude "40.68737909411427"^^geo:lat ;
+	livingPlaces:hasName "Clinton Hill"^^xsd:string ;
+	livingPlaces:hasAddress "Washington Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "380"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11238"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/clinton-hill"^^xsd:anyURI ;
+	rdfs:label "Clinton Hill" .
+
+<http://www.linkedData_Group13.com/resource/Coney+Island> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9860619926265"^^geo:long ;
+	livingPlaces:hasLatitude "40.57663777607667"^^geo:lat ;
+	livingPlaces:hasName "Coney Island"^^xsd:string ;
+	livingPlaces:hasAddress "Mermaid Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1901"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11224"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/coney-island"^^xsd:anyURI ;
+	rdfs:label "Coney Island" .
+
+<http://www.linkedData_Group13.com/resource/Cortelyou> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.96596507806375"^^geo:long ;
+	livingPlaces:hasLatitude "40.640803547205046"^^geo:lat ;
+	livingPlaces:hasName "Cortelyou"^^xsd:string ;
+	livingPlaces:hasAddress "Cortelyou Road"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1305"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11226"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/cortelyou"^^xsd:anyURI ;
+	rdfs:label "Cortelyou" .
+
+<http://www.linkedData_Group13.com/resource/Crown+Heights> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9481022990789"^^geo:long ;
+	livingPlaces:hasLatitude "40.661189307734446"^^geo:lat ;
+	livingPlaces:hasName "Crown Heights"^^xsd:string ;
+	livingPlaces:hasAddress "New York Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "560"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11225"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/crown-heights"^^xsd:anyURI ;
+	rdfs:label "Crown Heights" .
+
+<http://www.linkedData_Group13.com/resource/Cypress+Hills> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.8740348780572"^^geo:long ;
+	livingPlaces:hasLatitude "40.67270747286009"^^geo:lat ;
+	livingPlaces:hasName "Cypress Hills"^^xsd:string ;
+	livingPlaces:hasAddress "Sutter Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1197"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11208"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/cypress-hills"^^xsd:anyURI ;
+	rdfs:label "Cypress Hills" .
+
+<http://www.linkedData_Group13.com/resource/DeKalb> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.92839866742115"^^geo:long ;
+	livingPlaces:hasLatitude "40.694816700021924"^^geo:lat ;
+	livingPlaces:hasName "DeKalb"^^xsd:string ;
+	livingPlaces:hasAddress "Bushwick Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "790"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11221"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/dekalb"^^xsd:anyURI ;
+	rdfs:label "DeKalb" .
+
+<http://www.linkedData_Group13.com/resource/Dyker> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.0119885202191"^^geo:long ;
+	livingPlaces:hasLatitude "40.616308136970446"^^geo:lat ;
+	livingPlaces:hasName "Dyker"^^xsd:string ;
+	livingPlaces:hasAddress "13th Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "8202"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11228"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/dyker"^^xsd:anyURI ;
+	rdfs:label "Dyker" .
+
+<http://www.linkedData_Group13.com/resource/East+Flatbush> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.91494061956683"^^geo:long ;
+	livingPlaces:hasLatitude "40.655710884739364"^^geo:lat ;
+	livingPlaces:hasName "East Flatbush"^^xsd:string ;
+	livingPlaces:hasAddress "Church Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "9612"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11212"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/east-flatbush"^^xsd:anyURI ;
+	rdfs:label "East Flatbush" .
+
+<http://www.linkedData_Group13.com/resource/Eastern+Parkway> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.93365084956477"^^geo:long ;
+	livingPlaces:hasLatitude "40.66848651013449"^^geo:lat ;
+	livingPlaces:hasName "Eastern Parkway"^^xsd:string ;
+	livingPlaces:hasAddress "Eastern Parkway"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1044"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11213"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/eastern-parkway"^^xsd:anyURI ;
+	rdfs:label "Eastern Parkway" .
+
+<http://www.linkedData_Group13.com/resource/Flatbush> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.95824218248399"^^geo:long ;
+	livingPlaces:hasLatitude "40.651925081044595"^^geo:lat ;
+	livingPlaces:hasName "Flatbush"^^xsd:string ;
+	livingPlaces:hasAddress "Linden Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "22"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11226"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/flatbush"^^xsd:anyURI ;
+	rdfs:label "Flatbush" .
+
+<http://www.linkedData_Group13.com/resource/Flatlands> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.93321325624171"^^geo:long ;
+	livingPlaces:hasLatitude "40.61976819625962"^^geo:lat ;
+	livingPlaces:hasName "Flatlands"^^xsd:string ;
+	livingPlaces:hasAddress "Flatbush Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2065"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11234"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/flatlands"^^xsd:anyURI ;
+	rdfs:label "Flatlands" .
+
+<http://www.linkedData_Group13.com/resource/Fort+Hamilton> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.0313694054087"^^geo:long ;
+	livingPlaces:hasLatitude "40.61637311059178"^^geo:lat ;
+	livingPlaces:hasName "Fort Hamilton"^^xsd:string ;
+	livingPlaces:hasAddress "Fourth Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "9424"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11209"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/fort-hamilton"^^xsd:anyURI ;
+	rdfs:label "Fort Hamilton" .
+
+<http://www.linkedData_Group13.com/resource/Gerritsen+Beach> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9239376273276"^^geo:long ;
+	livingPlaces:hasLatitude "40.59137103427607"^^geo:lat ;
+	livingPlaces:hasName "Gerritsen Beach"^^xsd:string ;
+	livingPlaces:hasAddress "Gerritsen Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2808"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11229"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/gerritsen-beach"^^xsd:anyURI ;
+	rdfs:label "Gerritsen Beach" .
+
+<http://www.linkedData_Group13.com/resource/Gravesend> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9718084463328"^^geo:long ;
+	livingPlaces:hasLatitude "40.590544390004084"^^geo:lat ;
+	livingPlaces:hasName "Gravesend"^^xsd:string ;
+	livingPlaces:hasAddress "Avenue X"^^xsd:string ;
+	livingPlaces:hasHouseNumber "303"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11223"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/gravesend"^^xsd:anyURI ;
+	rdfs:label "Gravesend" .
+
+<http://www.linkedData_Group13.com/resource/Greenpoint> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.95069497514092"^^geo:long ;
+	livingPlaces:hasLatitude "40.72602806688718"^^geo:lat ;
+	livingPlaces:hasName "Greenpoint"^^xsd:string ;
+	livingPlaces:hasAddress "Norman Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "107"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11222"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/greenpoint"^^xsd:anyURI ;
+	rdfs:label "Greenpoint" .
+
+<http://www.linkedData_Group13.com/resource/Highlawn> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.98624641554409"^^geo:long ;
+	livingPlaces:hasLatitude "40.605693037370436"^^geo:lat ;
+	livingPlaces:hasName "Highlawn"^^xsd:string ;
+	livingPlaces:hasAddress "West 13th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1664"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11223"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/highlawn"^^xsd:anyURI ;
+	rdfs:label "Highlawn" .
+
+<http://www.linkedData_Group13.com/resource/Homecrest> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.96059936964683"^^geo:long ;
+	livingPlaces:hasLatitude "40.5952368631223"^^geo:lat ;
+	livingPlaces:hasName "Homecrest"^^xsd:string ;
+	livingPlaces:hasAddress "Coney Island Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2525"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11223"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/homecrest"^^xsd:anyURI ;
+	rdfs:label "Homecrest" .
+
+<http://www.linkedData_Group13.com/resource/Jamaica+Bay> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.88924363004107"^^geo:long ;
+	livingPlaces:hasLatitude "40.63446013901777"^^geo:lat ;
+	livingPlaces:hasName "Jamaica Bay"^^xsd:string ;
+	livingPlaces:hasAddress "Seaview Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "9727"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11236"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/jamaica-bay"^^xsd:anyURI ;
+	rdfs:label "Jamaica Bay" .
+
+<http://www.linkedData_Group13.com/resource/Kensington> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.97543590517284"^^geo:long ;
+	livingPlaces:hasLatitude "40.63129183260273"^^geo:lat ;
+	livingPlaces:hasName "Kensington"^^xsd:string ;
+	livingPlaces:hasAddress "18th Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "4207"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11218"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/kensington"^^xsd:anyURI ;
+	rdfs:label "Kensington" .
+
+<http://www.linkedData_Group13.com/resource/Kings+Bay> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.94112492296973"^^geo:long ;
+	livingPlaces:hasLatitude "40.594861515121615"^^geo:lat ;
+	livingPlaces:hasName "Kings Bay"^^xsd:string ;
+	livingPlaces:hasAddress "Nostrand Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "3650"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11229"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/kings-bay"^^xsd:anyURI ;
+	rdfs:label "Kings Bay" .
+
+<http://www.linkedData_Group13.com/resource/Kings+Highway> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.95310584865699"^^geo:long ;
+	livingPlaces:hasLatitude "40.610256667276076"^^geo:lat ;
+	livingPlaces:hasName "Kings Highway"^^xsd:string ;
+	livingPlaces:hasAddress "Ocean Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2115"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11229"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/kings-highway"^^xsd:anyURI ;
+	rdfs:label "Kings Highway" .
+
+<http://www.linkedData_Group13.com/resource/Leonard> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.94793571283621"^^geo:long ;
+	livingPlaces:hasLatitude "40.71364488802169"^^geo:lat ;
+	livingPlaces:hasName "Leonard"^^xsd:string ;
+	livingPlaces:hasAddress "Devoe Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "81"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11211"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/leonard"^^xsd:anyURI ;
+	rdfs:label "Leonard" .
+
+<http://www.linkedData_Group13.com/resource/Macon> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.93480547027619"^^geo:long ;
+	livingPlaces:hasLatitude "40.68300490204431"^^geo:lat ;
+	livingPlaces:hasName "Macon"^^xsd:string ;
+	livingPlaces:hasAddress "Lewis Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "361"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11233"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/macon"^^xsd:anyURI ;
+	rdfs:label "Macon" .
+
+<http://www.linkedData_Group13.com/resource/Mapleton> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.989440154021"^^geo:long ;
+	livingPlaces:hasLatitude "40.62309139633207"^^geo:lat ;
+	livingPlaces:hasName "Mapleton"^^xsd:string ;
+	livingPlaces:hasAddress "60th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1702"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11204"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/mapleton"^^xsd:anyURI ;
+	rdfs:label "Mapleton" .
+
+<http://www.linkedData_Group13.com/resource/Marcy> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.95128349802154"^^geo:long ;
+	livingPlaces:hasLatitude "40.69162308733465"^^geo:lat ;
+	livingPlaces:hasName "Marcy"^^xsd:string ;
+	livingPlaces:hasAddress "DeKalb Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "617"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11216"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/marcy"^^xsd:anyURI ;
+	rdfs:label "Marcy" .
+
+<http://www.linkedData_Group13.com/resource/McKinley+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.01183730763366"^^geo:long ;
+	livingPlaces:hasLatitude "40.62918753393924"^^geo:lat ;
+	livingPlaces:hasName "McKinley Park"^^xsd:string ;
+	livingPlaces:hasAddress "Fort Hamilton Parkway"^^xsd:string ;
+	livingPlaces:hasHouseNumber "6802"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11219"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/mckinley-park"^^xsd:anyURI ;
+	rdfs:label "McKinley Park" .
+
+<http://www.linkedData_Group13.com/resource/Midwood> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.96031449280875"^^geo:long ;
+	livingPlaces:hasLatitude "40.62589330718781"^^geo:lat ;
+	livingPlaces:hasName "Midwood"^^xsd:string ;
+	livingPlaces:hasAddress "East 16th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "975"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11230"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/midwood"^^xsd:anyURI ;
+	rdfs:label "Midwood" .
+
+<http://www.linkedData_Group13.com/resource/Mill+Basin> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.91702120710569"^^geo:long ;
+	livingPlaces:hasLatitude "40.61986842104019"^^geo:lat ;
+	livingPlaces:hasName "Mill Basin"^^xsd:string ;
+	livingPlaces:hasAddress "Ralph Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2385"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11234"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/mill-basin"^^xsd:anyURI ;
+	rdfs:label "Mill Basin" .
+
+<http://www.linkedData_Group13.com/resource/New+Lots> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.88607053682676"^^geo:long ;
+	livingPlaces:hasLatitude "40.665159369730134"^^geo:lat ;
+	livingPlaces:hasName "New Lots"^^xsd:string ;
+	livingPlaces:hasAddress "New Lots Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "665"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11207"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/new-lots"^^xsd:anyURI ;
+	rdfs:label "New Lots" .
+
+<http://www.linkedData_Group13.com/resource/New+Utrecht+> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.00337654508532"^^geo:long ;
+	livingPlaces:hasLatitude "40.608009349952326"^^geo:lat ;
+	livingPlaces:hasName "New Utrecht "^^xsd:string ;
+	livingPlaces:hasAddress "86th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1743"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11214"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/new-utrecht"^^xsd:anyURI ;
+	rdfs:label "New Utrecht " .
+
+<http://www.linkedData_Group13.com/resource/Pacific> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.97858353651877"^^geo:long ;
+	livingPlaces:hasLatitude "40.68346662977525"^^geo:lat ;
+	livingPlaces:hasName "Pacific"^^xsd:string ;
+	livingPlaces:hasAddress "Fourth Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "25"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11217"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/pacific"^^xsd:anyURI ;
+	rdfs:label "Pacific" .
+
+<http://www.linkedData_Group13.com/resource/Paerdegat> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.91998488083019"^^geo:long ;
+	livingPlaces:hasLatitude "40.63263699303789"^^geo:lat ;
+	livingPlaces:hasName "Paerdegat"^^xsd:string ;
+	livingPlaces:hasAddress "East 59th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "850"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11234"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/paerdegat"^^xsd:anyURI ;
+	rdfs:label "Paerdegat" .
+
+<http://www.linkedData_Group13.com/resource/Park+Slope> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.98345536969875"^^geo:long ;
+	livingPlaces:hasLatitude "40.66823507229803"^^geo:lat ;
+	livingPlaces:hasName "Park Slope"^^xsd:string ;
+	livingPlaces:hasAddress "6th Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "431"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11215"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/park-slope"^^xsd:anyURI ;
+	rdfs:label "Park Slope" .
+
+<http://www.linkedData_Group13.com/resource/Red+Hook> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.0103430690854"^^geo:long ;
+	livingPlaces:hasLatitude "40.6752407736475"^^geo:lat ;
+	livingPlaces:hasName "Red Hook"^^xsd:string ;
+	livingPlaces:hasAddress "Wolcott Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "7"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11231"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/red-hook"^^xsd:anyURI ;
+	rdfs:label "Red Hook" .
+
+<http://www.linkedData_Group13.com/resource/Rugby> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.93035653080916"^^geo:long ;
+	livingPlaces:hasLatitude "40.64861929304924"^^geo:lat ;
+	livingPlaces:hasName "Rugby"^^xsd:string ;
+	livingPlaces:hasAddress "Utica Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1000"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11203"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/rugby"^^xsd:anyURI ;
+	rdfs:label "Rugby" .
+
+<http://www.linkedData_Group13.com/resource/Ryder> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.97596652755537"^^geo:long ;
+	livingPlaces:hasLatitude "40.61587982519312"^^geo:lat ;
+	livingPlaces:hasName "Ryder"^^xsd:string ;
+	livingPlaces:hasAddress "23rd Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "5902"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11204"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/ryder"^^xsd:anyURI ;
+	rdfs:label "Ryder" .
+
+<http://www.linkedData_Group13.com/resource/Saratoga> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.91513241598248"^^geo:long ;
+	livingPlaces:hasLatitude "40.68481004767251"^^geo:lat ;
+	livingPlaces:hasName "Saratoga"^^xsd:string ;
+	livingPlaces:hasAddress "Thomas S. Boyland Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "8"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11233"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/saratoga"^^xsd:anyURI ;
+	rdfs:label "Saratoga" .
+
+<http://www.linkedData_Group13.com/resource/Sheepshead+Bay> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.95537377987904"^^geo:long ;
+	livingPlaces:hasLatitude "40.58701342922593"^^geo:lat ;
+	livingPlaces:hasName "Sheepshead Bay"^^xsd:string ;
+	livingPlaces:hasAddress "East 14th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2636"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11235"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/sheepshead-bay"^^xsd:anyURI ;
+	rdfs:label "Sheepshead Bay" .
+
+<http://www.linkedData_Group13.com/resource/Spring+Creek> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.88586614058737"^^geo:long ;
+	livingPlaces:hasLatitude "40.653209761333976"^^geo:lat ;
+	livingPlaces:hasName "Spring Creek"^^xsd:string ;
+	livingPlaces:hasAddress "Flatlands Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "12143"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11207"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/spring-creek"^^xsd:anyURI ;
+	rdfs:label "Spring Creek" .
+
+<http://www.linkedData_Group13.com/resource/Stone+Avenue> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.90524945420668"^^geo:long ;
+	livingPlaces:hasLatitude "40.66449962821875"^^geo:lat ;
+	livingPlaces:hasName "Stone Avenue"^^xsd:string ;
+	livingPlaces:hasAddress "Mother Gaston Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "581"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11212"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/stone-avenue"^^xsd:anyURI ;
+	rdfs:label "Stone Avenue" .
+
+<http://www.linkedData_Group13.com/resource/Sunset+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-74.013630001215"^^geo:long ;
+	livingPlaces:hasLatitude "40.64591212398883"^^geo:lat ;
+	livingPlaces:hasName "Sunset Park"^^xsd:string ;
+	livingPlaces:hasAddress "4th Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "5108"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11220"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/sunset-park"^^xsd:anyURI ;
+	rdfs:label "Sunset Park" .
+
+<http://www.linkedData_Group13.com/resource/Ulmer+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.98862740604375"^^geo:long ;
+	livingPlaces:hasLatitude "40.59268511632151"^^geo:lat ;
+	livingPlaces:hasName "Ulmer Park"^^xsd:string ;
+	livingPlaces:hasAddress "Bath Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2602"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11214"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/ulmer-park"^^xsd:anyURI ;
+	rdfs:label "Ulmer Park" .
+
+<http://www.linkedData_Group13.com/resource/Walt+Whitman> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.97773263286963"^^geo:long ;
+	livingPlaces:hasLatitude "40.69448969834957"^^geo:lat ;
+	livingPlaces:hasName "Walt Whitman"^^xsd:string ;
+	livingPlaces:hasAddress "Saint Edwards Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "93"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11205"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/walt-whitman"^^xsd:anyURI ;
+	rdfs:label "Walt Whitman" .
+
+<http://www.linkedData_Group13.com/resource/Washington+Irving> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.91220085369726"^^geo:long ;
+	livingPlaces:hasLatitude "40.697495053029975"^^geo:lat ;
+	livingPlaces:hasName "Washington Irving"^^xsd:string ;
+	livingPlaces:hasAddress "Irving Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "360"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11237"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/washington-irving"^^xsd:anyURI ;
+	rdfs:label "Washington Irving" .
+
+<http://www.linkedData_Group13.com/resource/Williamsburgh> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9575546134494"^^geo:long ;
+	livingPlaces:hasLatitude "40.70693042467486"^^geo:lat ;
+	livingPlaces:hasName "Williamsburgh"^^xsd:string ;
+	livingPlaces:hasAddress "Division Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "240"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11211"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/williamsburgh"^^xsd:anyURI ;
+	rdfs:label "Williamsburgh" .
+
+<http://www.linkedData_Group13.com/resource/Windsor+Terrace> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9767587688368"^^geo:long ;
+	livingPlaces:hasLatitude "40.64875019151304"^^geo:lat ;
+	livingPlaces:hasName "Windsor Terrace"^^xsd:string ;
+	livingPlaces:hasAddress "East 5th Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "160"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Brooklyn"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11218"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.bklynlibrary.org/locations/windsor-terrace"^^xsd:anyURI ;
+	rdfs:label "Windsor Terrace" .
+
+<http://www.linkedData_Group13.com/resource/Arverne> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.78404002857111"^^geo:long ;
+	livingPlaces:hasLatitude "40.59314678303443"^^geo:lat ;
+	livingPlaces:hasName "Arverne"^^xsd:string ;
+	livingPlaces:hasAddress "Beach 54 Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "312"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Arverne"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11692"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Arverne?filters=ev_loc:92300000"^^xsd:anyURI ;
+	rdfs:label "Arverne" .
+
+<http://www.linkedData_Group13.com/resource/Astoria> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.92874209024014"^^geo:long ;
+	livingPlaces:hasLatitude "40.77237538146876"^^geo:lat ;
+	livingPlaces:hasName "Astoria"^^xsd:string ;
+	livingPlaces:hasAddress "Astoria Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "14-01"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Long Island City"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11102"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Astoria?filters=ev_loc:92400000"^^xsd:anyURI ;
+	rdfs:label "Astoria" .
+
+<http://www.linkedData_Group13.com/resource/Auburndale> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.79634178839724"^^geo:long ;
+	livingPlaces:hasLatitude "40.773746255710755"^^geo:lat ;
+	livingPlaces:hasName "Auburndale"^^xsd:string ;
+	livingPlaces:hasAddress "Francis Lewis Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "25-55"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Flushing"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11358"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Auburndale?filters=ev_loc:92500000"^^xsd:anyURI ;
+	rdfs:label "Auburndale" .
+
+<http://www.linkedData_Group13.com/resource/Baisley+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.79167861112357"^^geo:long ;
+	livingPlaces:hasLatitude "40.68031131164878"^^geo:lat ;
+	livingPlaces:hasName "Baisley Park"^^xsd:string ;
+	livingPlaces:hasAddress "Sutphin Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "117-11"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Jamaica"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11436"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Baisley-Park?filters=ev_loc:92600000"^^xsd:anyURI ;
+	rdfs:label "Baisley Park" .
+
+<http://www.linkedData_Group13.com/resource/Bay+Terrace> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.77701089642582"^^geo:long ;
+	livingPlaces:hasLatitude "40.78252384357715"^^geo:lat ;
+	livingPlaces:hasName "Bay Terrace"^^xsd:string ;
+	livingPlaces:hasAddress "Bell Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "18-36"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bayside"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11360"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Bay-Terrace?filters=ev_loc:96600000"^^xsd:anyURI ;
+	rdfs:label "Bay Terrace" .
+
+<http://www.linkedData_Group13.com/resource/Bayside> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.76836198066813"^^geo:long ;
+	livingPlaces:hasLatitude "40.76012558120687"^^geo:lat ;
+	livingPlaces:hasName "Bayside"^^xsd:string ;
+	livingPlaces:hasAddress "Northern Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "214-20"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bayside"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11361"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Bayside?filters=ev_loc:91100000"^^xsd:anyURI ;
+	rdfs:label "Bayside" .
+
+<http://www.linkedData_Group13.com/resource/Bellerose> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.71710447116403"^^geo:long ;
+	livingPlaces:hasLatitude "40.7351605518022"^^geo:lat ;
+	livingPlaces:hasName "Bellerose"^^xsd:string ;
+	livingPlaces:hasAddress "Hillside Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "250-06"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bellerose"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11426"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Bellerose?filters=ev_loc:96400000"^^xsd:anyURI ;
+	rdfs:label "Bellerose" .
+
+<http://www.linkedData_Group13.com/resource/Briarwood> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.81945312008847"^^geo:long ;
+	livingPlaces:hasLatitude "40.71003455781208"^^geo:lat ;
+	livingPlaces:hasName "Briarwood"^^xsd:string ;
+	livingPlaces:hasAddress "Main Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "85-12"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Briarwood"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11435"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Briarwood?filters=ev_loc:92700000"^^xsd:anyURI ;
+	rdfs:label "Briarwood" .
+
+<http://www.linkedData_Group13.com/resource/Broad+Channel> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.82005265821793"^^geo:long ;
+	livingPlaces:hasLatitude "40.600732105185145"^^geo:lat ;
+	livingPlaces:hasName "Broad Channel"^^xsd:string ;
+	livingPlaces:hasAddress "Cross Bay Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "16-26"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Broad Channel"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11693"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Broad-Channel?filters=ev_loc:97200000"^^xsd:anyURI ;
+	rdfs:label "Broad Channel" .
+
+<http://www.linkedData_Group13.com/resource/Broadway> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.91862332039818"^^geo:long ;
+	livingPlaces:hasLatitude "40.75852926696433"^^geo:lat ;
+	livingPlaces:hasName "Broadway"^^xsd:string ;
+	livingPlaces:hasAddress "Broadway"^^xsd:string ;
+	livingPlaces:hasHouseNumber "40-20"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Long Island City"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11103"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Broadway?filters=ev_loc:91200000"^^xsd:anyURI ;
+	rdfs:label "Broadway" .
+
+<http://www.linkedData_Group13.com/resource/Cambria+Heights> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.741163136486"^^geo:long ;
+	livingPlaces:hasLatitude "40.695722605950635"^^geo:lat ;
+	livingPlaces:hasName "Cambria Heights"^^xsd:string ;
+	livingPlaces:hasAddress "Linden Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "218-13"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Cambria Heights"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11411"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Cambria-Heights?filters=ev_loc:92800000"^^xsd:anyURI ;
+	rdfs:label "Cambria Heights" .
+
+<http://www.linkedData_Group13.com/resource/Queens+Central+Library> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.7946780399278"^^geo:long ;
+	livingPlaces:hasLatitude "40.70787313178586"^^geo:lat ;
+	livingPlaces:hasName "Queens Central Library"^^xsd:string ;
+	livingPlaces:hasAddress "Merrick Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "89-11"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Jamaica"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11432"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Central-Library?filters=ev_loc:11000000"^^xsd:anyURI ;
+	rdfs:label "Queens Central Library" .
+
+<http://www.linkedData_Group13.com/resource/Corona> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.86197684397808"^^geo:long ;
+	livingPlaces:hasLatitude "40.7508940803989"^^geo:lat ;
+	livingPlaces:hasName "Corona"^^xsd:string ;
+	livingPlaces:hasAddress "104 Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "38-23"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Corona"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11368"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Corona?filters=ev_loc:92900000"^^xsd:anyURI ;
+	rdfs:label "Corona" .
+
+<http://www.linkedData_Group13.com/resource/Court+Square> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.94442138618983"^^geo:long ;
+	livingPlaces:hasLatitude "40.74689957448345"^^geo:lat ;
+	livingPlaces:hasName "Court Square"^^xsd:string ;
+	livingPlaces:hasAddress "Jackson Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "25-01"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Long Island City"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11101"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Court-Square?filters=ev_loc:97100000"^^xsd:anyURI ;
+	rdfs:label "Court Square" .
+
+<http://www.linkedData_Group13.com/resource/Douglaston%2FLittle+Neck> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.73822944076473"^^geo:long ;
+	livingPlaces:hasLatitude "40.768225432005"^^geo:lat ;
+	livingPlaces:hasName "Douglaston/Little Neck"^^xsd:string ;
+	livingPlaces:hasAddress "Northern Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "249-01"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Little Neck"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11363"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Douglaston/Little-Neck?filters=ev_loc:93000000"^^xsd:anyURI ;
+	rdfs:label "Douglaston/Little Neck" .
+
+<http://www.linkedData_Group13.com/resource/East+Elmhurst> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.87386662995279"^^geo:long ;
+	livingPlaces:hasLatitude "40.76242212968529"^^geo:lat ;
+	livingPlaces:hasName "East Elmhurst"^^xsd:string ;
+	livingPlaces:hasAddress "Astoria Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "95-06"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "East Elmhurst"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11369"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/East-Elmhurst?filters=ev_loc:93100000"^^xsd:anyURI ;
+	rdfs:label "East Elmhurst" .
+
+<http://www.linkedData_Group13.com/resource/East+Flushing> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.78430296366649"^^geo:long ;
+	livingPlaces:hasLatitude "40.757545679612846"^^geo:lat ;
+	livingPlaces:hasName "East Flushing"^^xsd:string ;
+	livingPlaces:hasAddress "Northern Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "196-36"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Flushing"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11358"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/East-Flushing?filters=ev_loc:96200000"^^xsd:anyURI ;
+	rdfs:label "East Flushing" .
+
+<http://www.linkedData_Group13.com/resource/Elmhurst> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.87797365739723"^^geo:long ;
+	livingPlaces:hasLatitude "40.738303240536474"^^geo:lat ;
+	livingPlaces:hasName "Elmhurst"^^xsd:string ;
+	livingPlaces:hasAddress "51 Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "85-08"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Elmhurst"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11373"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Elmhurst?filters=ev_loc:93200000"^^xsd:anyURI ;
+	rdfs:label "Elmhurst" .
+
+<http://www.linkedData_Group13.com/resource/Far+Rockaway> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.75247942402618"^^geo:long ;
+	livingPlaces:hasLatitude "40.60431350914963"^^geo:lat ;
+	livingPlaces:hasName "Far Rockaway"^^xsd:string ;
+	livingPlaces:hasAddress "Central Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "1637"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Far Rockaway"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11691"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Far-Rockaway?filters=ev_loc:91300000"^^xsd:anyURI ;
+	rdfs:label "Far Rockaway" .
+
+<http://www.linkedData_Group13.com/resource/Flushing> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.82888468513289"^^geo:long ;
+	livingPlaces:hasLatitude "40.75777406826378"^^geo:lat ;
+	livingPlaces:hasName "Flushing"^^xsd:string ;
+	livingPlaces:hasAddress "Main Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "41-17"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Flushing"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11355"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Flushing?filters=ev_loc:91400000"^^xsd:anyURI ;
+	rdfs:label "Flushing" .
+
+<http://www.linkedData_Group13.com/resource/Forest+Hills> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.84301499681045"^^geo:long ;
+	livingPlaces:hasLatitude "40.722146953166686"^^geo:lat ;
+	livingPlaces:hasName "Forest Hills"^^xsd:string ;
+	livingPlaces:hasAddress "71 Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "108-19"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Forest Hills"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11375"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Forest-Hills?filters=ev_loc:91500000"^^xsd:anyURI ;
+	rdfs:label "Forest Hills" .
+
+<http://www.linkedData_Group13.com/resource/Fresh+Meadows> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.78228143761608"^^geo:long ;
+	livingPlaces:hasLatitude "40.74158266352509"^^geo:lat ;
+	livingPlaces:hasName "Fresh Meadows"^^xsd:string ;
+	livingPlaces:hasAddress "Horace Harding Expressway"^^xsd:string ;
+	livingPlaces:hasHouseNumber "193-20"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Fresh Meadows"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11365"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Fresh-Meadows?filters=ev_loc:91600000"^^xsd:anyURI ;
+	rdfs:label "Fresh Meadows" .
+
+<http://www.linkedData_Group13.com/resource/Glen+Oaks> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.71484580101803"^^geo:long ;
+	livingPlaces:hasLatitude "40.745172198133105"^^geo:lat ;
+	livingPlaces:hasName "Glen Oaks"^^xsd:string ;
+	livingPlaces:hasAddress "Union Turnpike"^^xsd:string ;
+	livingPlaces:hasHouseNumber "256-04"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Glen Oaks"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11004"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Glen-Oaks?filters=ev_loc:93300000"^^xsd:anyURI ;
+	rdfs:label "Glen Oaks" .
+
+<http://www.linkedData_Group13.com/resource/Glendale> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.87574434777649"^^geo:long ;
+	livingPlaces:hasLatitude "40.702585245598996"^^geo:lat ;
+	livingPlaces:hasName "Glendale"^^xsd:string ;
+	livingPlaces:hasAddress "73 Place"^^xsd:string ;
+	livingPlaces:hasHouseNumber "78-60"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Glendale"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11385"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Glendale?filters=ev_loc:93400000"^^xsd:anyURI ;
+	rdfs:label "Glendale" .
+
+<http://www.linkedData_Group13.com/resource/Hillcrest> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.78191929899681"^^geo:long ;
+	livingPlaces:hasLatitude "40.72925482196691"^^geo:lat ;
+	livingPlaces:hasName "Hillcrest"^^xsd:string ;
+	livingPlaces:hasAddress "Union Turnpike"^^xsd:string ;
+	livingPlaces:hasHouseNumber "187-05"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Flushing"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11366"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Hillcrest?filters=ev_loc:96500000"^^xsd:anyURI ;
+	rdfs:label "Hillcrest" .
+
+<http://www.linkedData_Group13.com/resource/Hollis> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.76232032699329"^^geo:long ;
+	livingPlaces:hasLatitude "40.720166536917226"^^geo:lat ;
+	livingPlaces:hasName "Hollis"^^xsd:string ;
+	livingPlaces:hasAddress "Hillside Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "202-05"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Hollis"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11423"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Hollis?filters=ev_loc:93500000"^^xsd:anyURI ;
+	rdfs:label "Hollis" .
+
+<http://www.linkedData_Group13.com/resource/Howard+Beach> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.84180221655218"^^geo:long ;
+	livingPlaces:hasLatitude "40.66381025649444"^^geo:lat ;
+	livingPlaces:hasName "Howard Beach"^^xsd:string ;
+	livingPlaces:hasAddress "156 Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "92-06"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Howard Beach"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11414"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Howard-Beach?filters=ev_loc:93600000"^^xsd:anyURI ;
+	rdfs:label "Howard Beach" .
+
+<http://www.linkedData_Group13.com/resource/Jackson+Heights> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.88506932468307"^^geo:long ;
+	livingPlaces:hasLatitude "40.75019608559315"^^geo:lat ;
+	livingPlaces:hasName "Jackson Heights"^^xsd:string ;
+	livingPlaces:hasAddress "81 Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "35-51"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Jackson Heights"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11372"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Jackson-Heights?filters=ev_loc:91700000"^^xsd:anyURI ;
+	rdfs:label "Jackson Heights" .
+
+<http://www.linkedData_Group13.com/resource/Kew+Gardens+Hills> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.82226966032037"^^geo:long ;
+	livingPlaces:hasLatitude "40.72693697185495"^^geo:lat ;
+	livingPlaces:hasName "Kew Gardens Hills"^^xsd:string ;
+	livingPlaces:hasAddress "Main Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "71-34"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Flushing"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11367"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Kew-Gardens-Hills?filters=ev_loc:92200000"^^xsd:anyURI ;
+	rdfs:label "Kew Gardens Hills" .
+
+<http://www.linkedData_Group13.com/resource/Langston+Hughes> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.86819939085701"^^geo:long ;
+	livingPlaces:hasLatitude "40.757577301854525"^^geo:lat ;
+	livingPlaces:hasName "Langston Hughes"^^xsd:string ;
+	livingPlaces:hasAddress "Northern Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "100-01"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Corona"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11368"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Langston-Hughes?filters=ev_loc:98200000"^^xsd:anyURI ;
+	rdfs:label "Langston Hughes" .
+
+<http://www.linkedData_Group13.com/resource/Laurelton> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.74567356126445"^^geo:long ;
+	livingPlaces:hasLatitude "40.67695272804687"^^geo:lat ;
+	livingPlaces:hasName "Laurelton"^^xsd:string ;
+	livingPlaces:hasAddress "225 Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "134-26"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Laurelton"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11413"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Laurelton?filters=ev_loc:91800000"^^xsd:anyURI ;
+	rdfs:label "Laurelton" .
+
+<http://www.linkedData_Group13.com/resource/Lefferts> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.82482969850855"^^geo:long ;
+	livingPlaces:hasLatitude "40.68690728824833"^^geo:lat ;
+	livingPlaces:hasName "Lefferts"^^xsd:string ;
+	livingPlaces:hasAddress "Lefferts Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "103-34"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Richmond Hill"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11419"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Lefferts?filters=ev_loc:91000000"^^xsd:anyURI ;
+	rdfs:label "Lefferts" .
+
+<http://www.linkedData_Group13.com/resource/Lefrak+City> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.86165592933878"^^geo:long ;
+	livingPlaces:hasLatitude "40.737434137948505"^^geo:lat ;
+	livingPlaces:hasName "Lefrak City"^^xsd:string ;
+	livingPlaces:hasAddress "57 Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "98-30"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Corona"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11368"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Lefrak-City?filters=ev_loc:93700000"^^xsd:anyURI ;
+	rdfs:label "Lefrak City" .
+
+<http://www.linkedData_Group13.com/resource/Long+Island+City> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.93930930198185"^^geo:long ;
+	livingPlaces:hasLatitude "40.75780342796006"^^geo:lat ;
+	livingPlaces:hasName "Long Island City"^^xsd:string ;
+	livingPlaces:hasAddress "21 Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "37-44"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Long Island City"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11101"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Long-Island-City?filters=ev_loc:97300000"^^xsd:anyURI ;
+	rdfs:label "Long Island City" .
+
+<http://www.linkedData_Group13.com/resource/Maspeth> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.89310456490118"^^geo:long ;
+	livingPlaces:hasLatitude "40.72699537010918"^^geo:lat ;
+	livingPlaces:hasName "Maspeth"^^xsd:string ;
+	livingPlaces:hasAddress "Grand Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "69-70"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Maspeth"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11378"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Maspeth?filters=ev_loc:93900000"^^xsd:anyURI ;
+	rdfs:label "Maspeth" .
+
+<http://www.linkedData_Group13.com/resource/McGoldrick> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.8098334843409"^^geo:long ;
+	livingPlaces:hasLatitude "40.76375031625646"^^geo:lat ;
+	livingPlaces:hasName "McGoldrick"^^xsd:string ;
+	livingPlaces:hasAddress "Roosevelt Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "155-06"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Flushing"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11354"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/McGoldrick?filters=ev_loc:93800000"^^xsd:anyURI ;
+	rdfs:label "McGoldrick" .
+
+<http://www.linkedData_Group13.com/resource/Middle+Village> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.88085934625774"^^geo:long ;
+	livingPlaces:hasLatitude "40.71293387617611"^^geo:lat ;
+	livingPlaces:hasName "Middle Village"^^xsd:string ;
+	livingPlaces:hasAddress "Metropolitan Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "72-31"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Middle Village"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11379"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Middle-Village?filters=ev_loc:94000000"^^xsd:anyURI ;
+	rdfs:label "Middle Village" .
+
+<http://www.linkedData_Group13.com/resource/Mitchell-Linden> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.82694112165963"^^geo:long ;
+	livingPlaces:hasLatitude "40.76914153216748"^^geo:lat ;
+	livingPlaces:hasName "Mitchell-Linden"^^xsd:string ;
+	livingPlaces:hasAddress "Union Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "31-32"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Flushing"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11354"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Mitchell-Linden?filters=ev_loc:94100000"^^xsd:anyURI ;
+	rdfs:label "Mitchell-Linden" .
+
+<http://www.linkedData_Group13.com/resource/North+Forest+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.85367250555949"^^geo:long ;
+	livingPlaces:hasLatitude "40.711156858305394"^^geo:lat ;
+	livingPlaces:hasName "North Forest Park"^^xsd:string ;
+	livingPlaces:hasAddress "Metropolitan Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "98-27"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Forest Hills"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11375"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/North-Forest-Park?filters=ev_loc:96800000"^^xsd:anyURI ;
+	rdfs:label "North Forest Park" .
+
+<http://www.linkedData_Group13.com/resource/North+Hills> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.73183792044951"^^geo:long ;
+	livingPlaces:hasLatitude "40.75925363922453"^^geo:lat ;
+	livingPlaces:hasName "North Hills"^^xsd:string ;
+	livingPlaces:hasAddress "Marathon Parkway"^^xsd:string ;
+	livingPlaces:hasHouseNumber "57-04"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Little Neck"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11362"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/North-Hills?filters=ev_loc:94200000"^^xsd:anyURI ;
+	rdfs:label "North Hills" .
+
+<http://www.linkedData_Group13.com/resource/Ozone+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.84648846296761"^^geo:long ;
+	livingPlaces:hasLatitude "40.680867178856886"^^geo:lat ;
+	livingPlaces:hasName "Ozone Park"^^xsd:string ;
+	livingPlaces:hasAddress "Rockaway Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "92-24"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Ozone Park"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11417"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Ozone-Park?filters=ev_loc:94300000"^^xsd:anyURI ;
+	rdfs:label "Ozone Park" .
+
+<http://www.linkedData_Group13.com/resource/Peninsula> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.81606502823946"^^geo:long ;
+	livingPlaces:hasLatitude "40.58586414713836"^^geo:lat ;
+	livingPlaces:hasName "Peninsula"^^xsd:string ;
+	livingPlaces:hasAddress "Rockaway Beach Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "92-25"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Rockaway Beach"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11693"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Peninsula?filters=ev_loc:94400000"^^xsd:anyURI ;
+	rdfs:label "Peninsula" .
+
+<http://www.linkedData_Group13.com/resource/Pomonok> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.81009488691065"^^geo:long ;
+	livingPlaces:hasLatitude "40.732925077255004"^^geo:lat ;
+	livingPlaces:hasName "Pomonok"^^xsd:string ;
+	livingPlaces:hasAddress "Jewel Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "158-21"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Flushing"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11365"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Pomonok?filters=ev_loc:94500000"^^xsd:anyURI ;
+	rdfs:label "Pomonok" .
+
+<http://www.linkedData_Group13.com/resource/Poppenhusen> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.84601807353184"^^geo:long ;
+	livingPlaces:hasLatitude "40.786213103407846"^^geo:lat ;
+	livingPlaces:hasName "Poppenhusen"^^xsd:string ;
+	livingPlaces:hasAddress "14 Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "121-23"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "College Point"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11356"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Poppenhusen?filters=ev_loc:94600000"^^xsd:anyURI ;
+	rdfs:label "Poppenhusen" .
+
+<http://www.linkedData_Group13.com/resource/Queens+Library+for+Teens> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.75351240691268"^^geo:long ;
+	livingPlaces:hasLatitude "40.60239019036059"^^geo:lat ;
+	livingPlaces:hasName "Queens Library for Teens"^^xsd:string ;
+	livingPlaces:hasAddress "Cornaga Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "2002"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Far Rockaway"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11691"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Queens-Library-for-Teens?filters=ev_loc:91309134"^^xsd:anyURI ;
+	rdfs:label "Queens Library for Teens" .
+
+<http://www.linkedData_Group13.com/resource/Queens+Village> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.73904906070274"^^geo:long ;
+	livingPlaces:hasLatitude "40.7198883271777"^^geo:lat ;
+	livingPlaces:hasName "Queens Village"^^xsd:string ;
+	livingPlaces:hasAddress "217 Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "94-11"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Queens Village"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11428"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Queens-Village?filters=ev_loc:91900000"^^xsd:anyURI ;
+	rdfs:label "Queens Village" .
+
+<http://www.linkedData_Group13.com/resource/Queensboro+Hill> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.82516996389201"^^geo:long ;
+	livingPlaces:hasLatitude "40.74293094649011"^^geo:lat ;
+	livingPlaces:hasName "Queensboro Hill"^^xsd:string ;
+	livingPlaces:hasAddress "Main Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "60-05"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Flushing"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11355"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Queensboro-Hill?filters=ev_loc:96900000"^^xsd:anyURI ;
+	rdfs:label "Queensboro Hill" .
+
+<http://www.linkedData_Group13.com/resource/Queensbridge+%3Cbr%3E+Now+a+Family+Literacy+Center> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.94424078652605"^^geo:long ;
+	livingPlaces:hasLatitude "40.755073718041466"^^geo:lat ;
+	livingPlaces:hasName "Queensbridge <br> Now a Family Literacy Center"^^xsd:string ;
+	livingPlaces:hasAddress "41 Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "10-43"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "LIC"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11101"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Queensbridge?filters=ev_loc:94700000"^^xsd:anyURI ;
+	rdfs:label "Queensbridge <br> Now a Family Literacy Center" .
+
+<http://www.linkedData_Group13.com/resource/Ravenswood+%3Cbr%3E+Now+a+Family+Literacy+Center> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.93640396909242"^^geo:long ;
+	livingPlaces:hasLatitude "40.76067995120377"^^geo:lat ;
+	livingPlaces:hasName "Ravenswood <br> Now a Family Literacy Center"^^xsd:string ;
+	livingPlaces:hasAddress "21 Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "35-32"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "LIC"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11106"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Ravenswood?filters=ev_loc:94800000"^^xsd:anyURI ;
+	rdfs:label "Ravenswood <br> Now a Family Literacy Center" .
+
+<http://www.linkedData_Group13.com/resource/Rego+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.86450282598912"^^geo:long ;
+	livingPlaces:hasLatitude "40.72731656026829"^^geo:lat ;
+	livingPlaces:hasName "Rego Park"^^xsd:string ;
+	livingPlaces:hasAddress "63 Drive"^^xsd:string ;
+	livingPlaces:hasHouseNumber "91-41"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Rego Park"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11374"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Rego-Park?filters=ev_loc:92000000"^^xsd:anyURI ;
+	rdfs:label "Rego Park" .
+
+<http://www.linkedData_Group13.com/resource/Richmond+Hill> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.83164233461157"^^geo:long ;
+	livingPlaces:hasLatitude "40.70079720332697"^^geo:lat ;
+	livingPlaces:hasName "Richmond Hill"^^xsd:string ;
+	livingPlaces:hasAddress "Hillside Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "118-14"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Richmond Hill"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11418"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Richmond-Hill?filters=ev_loc:94900000"^^xsd:anyURI ;
+	rdfs:label "Richmond Hill" .
+
+<http://www.linkedData_Group13.com/resource/Ridgewood> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.90258827579805"^^geo:long ;
+	livingPlaces:hasLatitude "40.70522689472795"^^geo:lat ;
+	livingPlaces:hasName "Ridgewood"^^xsd:string ;
+	livingPlaces:hasAddress "Madison Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "20-12"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Ridgewood"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11385"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Ridgewood?filters=ev_loc:92100000"^^xsd:anyURI ;
+	rdfs:label "Ridgewood" .
+
+<http://www.linkedData_Group13.com/resource/Rochdale+Village> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.7705902160538"^^geo:long ;
+	livingPlaces:hasLatitude "40.67287520439724"^^geo:lat ;
+	livingPlaces:hasName "Rochdale Village"^^xsd:string ;
+	livingPlaces:hasAddress "137 Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "169-09"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Jamaica"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11434"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Rochdale-Village?filters=ev_loc:95000000"^^xsd:anyURI ;
+	rdfs:label "Rochdale Village" .
+
+<http://www.linkedData_Group13.com/resource/Rosedale> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.73991101315558"^^geo:long ;
+	livingPlaces:hasLatitude "40.659963623126"^^geo:lat ;
+	livingPlaces:hasName "Rosedale"^^xsd:string ;
+	livingPlaces:hasAddress "243 Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "144-20"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Rosedale"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11422"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Rosedale?filters=ev_loc:95100000"^^xsd:anyURI ;
+	rdfs:label "Rosedale" .
+
+<http://www.linkedData_Group13.com/resource/Seaside> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.83774700520225"^^geo:long ;
+	livingPlaces:hasLatitude "40.57940488152449"^^geo:lat ;
+	livingPlaces:hasName "Seaside"^^xsd:string ;
+	livingPlaces:hasAddress "Rockaway Beach Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "116-15"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Rockaway Park"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11694"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Seaside?filters=ev_loc:96300000"^^xsd:anyURI ;
+	rdfs:label "Seaside" .
+
+<http://www.linkedData_Group13.com/resource/South+Hollis> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.75379739629261"^^geo:long ;
+	livingPlaces:hasLatitude "40.707003911354256"^^geo:lat ;
+	livingPlaces:hasName "South Hollis"^^xsd:string ;
+	livingPlaces:hasAddress "Hollis Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "204-01"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "South Hollis"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11412"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/South-Hollis?filters=ev_loc:95300000"^^xsd:anyURI ;
+	rdfs:label "South Hollis" .
+
+<http://www.linkedData_Group13.com/resource/South+Jamaica> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.79021187041809"^^geo:long ;
+	livingPlaces:hasLatitude "40.695611117576654"^^geo:lat ;
+	livingPlaces:hasName "South Jamaica"^^xsd:string ;
+	livingPlaces:hasAddress "Guy R. Brewer Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "108-41"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Jamaica"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11433"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/South-Jamaica?filters=ev_loc:95400000"^^xsd:anyURI ;
+	rdfs:label "South Jamaica" .
+
+<http://www.linkedData_Group13.com/resource/South+Ozone+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.80926182925428"^^geo:long ;
+	livingPlaces:hasLatitude "40.674783953734696"^^geo:lat ;
+	livingPlaces:hasName "South Ozone Park"^^xsd:string ;
+	livingPlaces:hasAddress "Rockaway Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "128-16"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "South Ozone Park"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11420"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/South-Ozone-Park?filters=ev_loc:95500000"^^xsd:anyURI ;
+	rdfs:label "South Ozone Park" .
+
+<http://www.linkedData_Group13.com/resource/St.Albans> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.76007289358745"^^geo:long ;
+	livingPlaces:hasLatitude "40.69249997141939"^^geo:lat ;
+	livingPlaces:hasName "St.Albans"^^xsd:string ;
+	livingPlaces:hasAddress "Linden Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "191-05"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "St. Albans"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11412"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/St.Albans?filters=ev_loc:95200000"^^xsd:anyURI ;
+	rdfs:label "St.Albans" .
+
+<http://www.linkedData_Group13.com/resource/Steinway> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.90945659290355"^^geo:long ;
+	livingPlaces:hasLatitude "40.77682707405275"^^geo:lat ;
+	livingPlaces:hasName "Steinway"^^xsd:string ;
+	livingPlaces:hasAddress "31 Street"^^xsd:string ;
+	livingPlaces:hasHouseNumber "21-45"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Long Island City"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11105"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Steinway?filters=ev_loc:95600000"^^xsd:anyURI ;
+	rdfs:label "Steinway" .
+
+<http://www.linkedData_Group13.com/resource/Sunnyside> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9216680312544"^^geo:long ;
+	livingPlaces:hasLatitude "40.7408466968306"^^geo:lat ;
+	livingPlaces:hasName "Sunnyside"^^xsd:string ;
+	livingPlaces:hasAddress "Greenpoint Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "43-06"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Long Island City"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11104"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Sunnyside?filters=ev_loc:95700000"^^xsd:anyURI ;
+	rdfs:label "Sunnyside" .
+
+<http://www.linkedData_Group13.com/resource/Whitestone> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.81070183926587"^^geo:long ;
+	livingPlaces:hasLatitude "40.78854019464647"^^geo:lat ;
+	livingPlaces:hasName "Whitestone"^^xsd:string ;
+	livingPlaces:hasAddress "14 Road"^^xsd:string ;
+	livingPlaces:hasHouseNumber "151-10"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Whitestone"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11357"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Whitestone?filters=ev_loc:95800000"^^xsd:anyURI ;
+	rdfs:label "Whitestone" .
+
+<http://www.linkedData_Group13.com/resource/Windsor+Park> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.7556194209342"^^geo:long ;
+	livingPlaces:hasLatitude "40.73450483347836"^^geo:lat ;
+	livingPlaces:hasName "Windsor Park"^^xsd:string ;
+	livingPlaces:hasAddress "Bell Boulevard"^^xsd:string ;
+	livingPlaces:hasHouseNumber "79-50"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Bayside"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11364"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Windsor-Park?filters=ev_loc:95900000"^^xsd:anyURI ;
+	rdfs:label "Windsor Park" .
+
+<http://www.linkedData_Group13.com/resource/Woodhaven> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.86145741517984"^^geo:long ;
+	livingPlaces:hasLatitude "40.69453115325741"^^geo:lat ;
+	livingPlaces:hasName "Woodhaven"^^xsd:string ;
+	livingPlaces:hasAddress "Forest Parkway"^^xsd:string ;
+	livingPlaces:hasHouseNumber "85-41"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Woodhaven"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11421"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Woodhaven?filters=ev_loc:96000000"^^xsd:anyURI ;
+	rdfs:label "Woodhaven" .
+
+<http://www.linkedData_Group13.com/resource/Woodside> a livingPlaces:Library ;
+	livingPlaces:hasLongitude "-73.9097937387323"^^geo:long ;
+	livingPlaces:hasLatitude "40.745341712986715"^^geo:lat ;
+	livingPlaces:hasName "Woodside"^^xsd:string ;
+	livingPlaces:hasAddress "Skillman Avenue"^^xsd:string ;
+	livingPlaces:hasHouseNumber "54-22"^^xsd:decimal ;
+	livingPlaces:pertainToBorough "Woodside"^^livingPlaces:Borough ;
+	livingPlaces:hasZipCode "11377"^^xsd:decimal ;
+	livingPlaces:hasUrl "http://www.queenslibrary.org/branch/Woodside?filters=ev_loc:96100000"^^xsd:anyURI ;
+	rdfs:label "Woodside" .

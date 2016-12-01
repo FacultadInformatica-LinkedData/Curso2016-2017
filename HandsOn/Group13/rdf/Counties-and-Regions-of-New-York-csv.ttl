@@ -1,0 +1,368 @@
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix livingPlaces: <http://www.linkedData_Group13.com/ontology/livingPlaces#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://www.linkedData_Group13.com/resource/Niagara> a livingPlaces:County ;
+	livingPlaces:hasName "Niagara"^^xsd:string ;
+	livingPlaces:pertainToRegion "Western New York"^^livingPlaces:Region ;
+	rdfs:label "Niagara" .
+
+<http://www.linkedData_Group13.com/resource/Western+New+York> a livingPlaces:Region ;
+	rdfs:label "Western New York" ;
+	livingPlaces:hasName "Western New York"^^xsd:string ;
+	livingPlaces:hasNumberRegion "1"^^xsd:decimal .
+
+<http://www.linkedData_Group13.com/resource/Erie> a livingPlaces:County ;
+	livingPlaces:hasName "Erie"^^xsd:string ;
+	livingPlaces:pertainToRegion "Western New York"^^livingPlaces:Region ;
+	rdfs:label "Erie" .
+
+<http://www.linkedData_Group13.com/resource/Chautauqua> a livingPlaces:County ;
+	livingPlaces:hasName "Chautauqua"^^xsd:string ;
+	livingPlaces:pertainToRegion "Western New York"^^livingPlaces:Region ;
+	rdfs:label "Chautauqua" .
+
+<http://www.linkedData_Group13.com/resource/Cattaraugus> a livingPlaces:County ;
+	livingPlaces:hasName "Cattaraugus"^^xsd:string ;
+	livingPlaces:pertainToRegion "Western New York"^^livingPlaces:Region ;
+	rdfs:label "Cattaraugus" .
+
+<http://www.linkedData_Group13.com/resource/Allegany> a livingPlaces:County ;
+	livingPlaces:hasName "Allegany"^^xsd:string ;
+	livingPlaces:pertainToRegion "Western New York"^^livingPlaces:Region ;
+	rdfs:label "Allegany" .
+
+<http://www.linkedData_Group13.com/resource/Orleans> a livingPlaces:County ;
+	livingPlaces:hasName "Orleans"^^xsd:string ;
+	livingPlaces:pertainToRegion "Finger Lakes"^^livingPlaces:Region ;
+	rdfs:label "Orleans" .
+
+<http://www.linkedData_Group13.com/resource/Finger+Lakes> a livingPlaces:Region ;
+	rdfs:label "Finger Lakes" ;
+	livingPlaces:hasName "Finger Lakes"^^xsd:string ;
+	livingPlaces:hasNumberRegion "2"^^xsd:decimal .
+
+<http://www.linkedData_Group13.com/resource/Genesee> a livingPlaces:County ;
+	livingPlaces:hasName "Genesee"^^xsd:string ;
+	livingPlaces:pertainToRegion "Finger Lakes"^^livingPlaces:Region ;
+	rdfs:label "Genesee" .
+
+<http://www.linkedData_Group13.com/resource/Wyoming> a livingPlaces:County ;
+	livingPlaces:hasName "Wyoming"^^xsd:string ;
+	livingPlaces:pertainToRegion "Finger Lakes"^^livingPlaces:Region ;
+	rdfs:label "Wyoming" .
+
+<http://www.linkedData_Group13.com/resource/Monroe> a livingPlaces:County ;
+	livingPlaces:hasName "Monroe"^^xsd:string ;
+	livingPlaces:pertainToRegion "Finger Lakes"^^livingPlaces:Region ;
+	rdfs:label "Monroe" .
+
+<http://www.linkedData_Group13.com/resource/Livingston> a livingPlaces:County ;
+	livingPlaces:hasName "Livingston"^^xsd:string ;
+	livingPlaces:pertainToRegion "Finger Lakes"^^livingPlaces:Region ;
+	rdfs:label "Livingston" .
+
+<http://www.linkedData_Group13.com/resource/Wayne> a livingPlaces:County ;
+	livingPlaces:hasName "Wayne"^^xsd:string ;
+	livingPlaces:pertainToRegion "Finger Lakes"^^livingPlaces:Region ;
+	rdfs:label "Wayne" .
+
+<http://www.linkedData_Group13.com/resource/Ontario> a livingPlaces:County ;
+	livingPlaces:hasName "Ontario"^^xsd:string ;
+	livingPlaces:pertainToRegion "Finger Lakes"^^livingPlaces:Region ;
+	rdfs:label "Ontario" .
+
+<http://www.linkedData_Group13.com/resource/Yates> a livingPlaces:County ;
+	livingPlaces:hasName "Yates"^^xsd:string ;
+	livingPlaces:pertainToRegion "Finger Lakes"^^livingPlaces:Region ;
+	rdfs:label "Yates" .
+
+<http://www.linkedData_Group13.com/resource/Seneca> a livingPlaces:County ;
+	livingPlaces:hasName "Seneca"^^xsd:string ;
+	livingPlaces:pertainToRegion "Finger Lakes"^^livingPlaces:Region ;
+	rdfs:label "Seneca" .
+
+<http://www.linkedData_Group13.com/resource/Steuben> a livingPlaces:County ;
+	livingPlaces:hasName "Steuben"^^xsd:string ;
+	livingPlaces:pertainToRegion "Southern Tier"^^livingPlaces:Region ;
+	rdfs:label "Steuben" .
+
+<http://www.linkedData_Group13.com/resource/Southern+Tier> a livingPlaces:Region ;
+	rdfs:label "Southern Tier" ;
+	livingPlaces:hasName "Southern Tier"^^xsd:string ;
+	livingPlaces:hasNumberRegion "3"^^xsd:decimal .
+
+<http://www.linkedData_Group13.com/resource/Schuyler> a livingPlaces:County ;
+	livingPlaces:hasName "Schuyler"^^xsd:string ;
+	livingPlaces:pertainToRegion "Southern Tier"^^livingPlaces:Region ;
+	rdfs:label "Schuyler" .
+
+<http://www.linkedData_Group13.com/resource/Chemung> a livingPlaces:County ;
+	livingPlaces:hasName "Chemung"^^xsd:string ;
+	livingPlaces:pertainToRegion "Southern Tier"^^livingPlaces:Region ;
+	rdfs:label "Chemung" .
+
+<http://www.linkedData_Group13.com/resource/Tompkins> a livingPlaces:County ;
+	livingPlaces:hasName "Tompkins"^^xsd:string ;
+	livingPlaces:pertainToRegion "Southern Tier"^^livingPlaces:Region ;
+	rdfs:label "Tompkins" .
+
+<http://www.linkedData_Group13.com/resource/Tioga> a livingPlaces:County ;
+	livingPlaces:hasName "Tioga"^^xsd:string ;
+	livingPlaces:pertainToRegion "Southern Tier"^^livingPlaces:Region ;
+	rdfs:label "Tioga" .
+
+<http://www.linkedData_Group13.com/resource/Chenango> a livingPlaces:County ;
+	livingPlaces:hasName "Chenango"^^xsd:string ;
+	livingPlaces:pertainToRegion "Southern Tier"^^livingPlaces:Region ;
+	rdfs:label "Chenango" .
+
+<http://www.linkedData_Group13.com/resource/Broome> a livingPlaces:County ;
+	livingPlaces:hasName "Broome"^^xsd:string ;
+	livingPlaces:pertainToRegion "Southern Tier"^^livingPlaces:Region ;
+	rdfs:label "Broome" .
+
+<http://www.linkedData_Group13.com/resource/Delaware> a livingPlaces:County ;
+	livingPlaces:hasName "Delaware"^^xsd:string ;
+	livingPlaces:pertainToRegion "Southern Tier"^^livingPlaces:Region ;
+	rdfs:label "Delaware" .
+
+<http://www.linkedData_Group13.com/resource/Cortland> a livingPlaces:County ;
+	livingPlaces:hasName "Cortland"^^xsd:string ;
+	livingPlaces:pertainToRegion "Central New York"^^livingPlaces:Region ;
+	rdfs:label "Cortland" .
+
+<http://www.linkedData_Group13.com/resource/Central+New+York> a livingPlaces:Region ;
+	rdfs:label "Central New York" ;
+	livingPlaces:hasName "Central New York"^^xsd:string ;
+	livingPlaces:hasNumberRegion "4"^^xsd:decimal .
+
+<http://www.linkedData_Group13.com/resource/Cayuga> a livingPlaces:County ;
+	livingPlaces:hasName "Cayuga"^^xsd:string ;
+	livingPlaces:pertainToRegion "Central New York"^^livingPlaces:Region ;
+	rdfs:label "Cayuga" .
+
+<http://www.linkedData_Group13.com/resource/Onondaga> a livingPlaces:County ;
+	livingPlaces:hasName "Onondaga"^^xsd:string ;
+	livingPlaces:pertainToRegion "Central New York"^^livingPlaces:Region ;
+	rdfs:label "Onondaga" .
+
+<http://www.linkedData_Group13.com/resource/Oswego> a livingPlaces:County ;
+	livingPlaces:hasName "Oswego"^^xsd:string ;
+	livingPlaces:pertainToRegion "Central New York"^^livingPlaces:Region ;
+	rdfs:label "Oswego" .
+
+<http://www.linkedData_Group13.com/resource/Madison> a livingPlaces:County ;
+	livingPlaces:hasName "Madison"^^xsd:string ;
+	livingPlaces:pertainToRegion "Central New York"^^livingPlaces:Region ;
+	rdfs:label "Madison" .
+
+<http://www.linkedData_Group13.com/resource/St.+Lawrence> a livingPlaces:County ;
+	livingPlaces:hasName "St. Lawrence"^^xsd:string ;
+	livingPlaces:pertainToRegion "North Country"^^livingPlaces:Region ;
+	rdfs:label "St. Lawrence" .
+
+<http://www.linkedData_Group13.com/resource/North+Country> a livingPlaces:Region ;
+	rdfs:label "North Country" ;
+	livingPlaces:hasName "North Country"^^xsd:string ;
+	livingPlaces:hasNumberRegion "5"^^xsd:decimal .
+
+<http://www.linkedData_Group13.com/resource/Lewis> a livingPlaces:County ;
+	livingPlaces:hasName "Lewis"^^xsd:string ;
+	livingPlaces:pertainToRegion "North Country"^^livingPlaces:Region ;
+	rdfs:label "Lewis" .
+
+<http://www.linkedData_Group13.com/resource/Jefferson> a livingPlaces:County ;
+	livingPlaces:hasName "Jefferson"^^xsd:string ;
+	livingPlaces:pertainToRegion "North Country"^^livingPlaces:Region ;
+	rdfs:label "Jefferson" .
+
+<http://www.linkedData_Group13.com/resource/Hamilton> a livingPlaces:County ;
+	livingPlaces:hasName "Hamilton"^^xsd:string ;
+	livingPlaces:pertainToRegion "North Country"^^livingPlaces:Region ;
+	rdfs:label "Hamilton" .
+
+<http://www.linkedData_Group13.com/resource/Essex> a livingPlaces:County ;
+	livingPlaces:hasName "Essex"^^xsd:string ;
+	livingPlaces:pertainToRegion "North Country"^^livingPlaces:Region ;
+	rdfs:label "Essex" .
+
+<http://www.linkedData_Group13.com/resource/Clinton> a livingPlaces:County ;
+	livingPlaces:hasName "Clinton"^^xsd:string ;
+	livingPlaces:pertainToRegion "North Country"^^livingPlaces:Region ;
+	rdfs:label "Clinton" .
+
+<http://www.linkedData_Group13.com/resource/Franklin> a livingPlaces:County ;
+	livingPlaces:hasName "Franklin"^^xsd:string ;
+	livingPlaces:pertainToRegion "North Country"^^livingPlaces:Region ;
+	rdfs:label "Franklin" .
+
+<http://www.linkedData_Group13.com/resource/Oneida> a livingPlaces:County ;
+	livingPlaces:hasName "Oneida"^^xsd:string ;
+	livingPlaces:pertainToRegion "Mohawk Valley"^^livingPlaces:Region ;
+	rdfs:label "Oneida" .
+
+<http://www.linkedData_Group13.com/resource/Mohawk+Valley> a livingPlaces:Region ;
+	rdfs:label "Mohawk Valley" ;
+	livingPlaces:hasName "Mohawk Valley"^^xsd:string ;
+	livingPlaces:hasNumberRegion "6"^^xsd:decimal .
+
+<http://www.linkedData_Group13.com/resource/Herkimer> a livingPlaces:County ;
+	livingPlaces:hasName "Herkimer"^^xsd:string ;
+	livingPlaces:pertainToRegion "Mohawk Valley"^^livingPlaces:Region ;
+	rdfs:label "Herkimer" .
+
+<http://www.linkedData_Group13.com/resource/Fulton> a livingPlaces:County ;
+	livingPlaces:hasName "Fulton"^^xsd:string ;
+	livingPlaces:pertainToRegion "Mohawk Valley"^^livingPlaces:Region ;
+	rdfs:label "Fulton" .
+
+<http://www.linkedData_Group13.com/resource/Montgomery> a livingPlaces:County ;
+	livingPlaces:hasName "Montgomery"^^xsd:string ;
+	livingPlaces:pertainToRegion "Mohawk Valley"^^livingPlaces:Region ;
+	rdfs:label "Montgomery" .
+
+<http://www.linkedData_Group13.com/resource/Otsego> a livingPlaces:County ;
+	livingPlaces:hasName "Otsego"^^xsd:string ;
+	livingPlaces:pertainToRegion "Mohawk Valley"^^livingPlaces:Region ;
+	rdfs:label "Otsego" .
+
+<http://www.linkedData_Group13.com/resource/Schoharie> a livingPlaces:County ;
+	livingPlaces:hasName "Schoharie"^^xsd:string ;
+	livingPlaces:pertainToRegion "Mohawk Valley"^^livingPlaces:Region ;
+	rdfs:label "Schoharie" .
+
+<http://www.linkedData_Group13.com/resource/Albany> a livingPlaces:County ;
+	livingPlaces:hasName "Albany"^^xsd:string ;
+	livingPlaces:pertainToRegion "Capital District"^^livingPlaces:Region ;
+	rdfs:label "Albany" .
+
+<http://www.linkedData_Group13.com/resource/Capital+District> a livingPlaces:Region ;
+	rdfs:label "Capital District" ;
+	livingPlaces:hasName "Capital District"^^xsd:string ;
+	livingPlaces:hasNumberRegion "7"^^xsd:decimal .
+
+<http://www.linkedData_Group13.com/resource/Columbia> a livingPlaces:County ;
+	livingPlaces:hasName "Columbia"^^xsd:string ;
+	livingPlaces:pertainToRegion "Capital District"^^livingPlaces:Region ;
+	rdfs:label "Columbia" .
+
+<http://www.linkedData_Group13.com/resource/Greene> a livingPlaces:County ;
+	livingPlaces:hasName "Greene"^^xsd:string ;
+	livingPlaces:pertainToRegion "Capital District"^^livingPlaces:Region ;
+	rdfs:label "Greene" .
+
+<http://www.linkedData_Group13.com/resource/Warren> a livingPlaces:County ;
+	livingPlaces:hasName "Warren"^^xsd:string ;
+	livingPlaces:pertainToRegion "Capital District"^^livingPlaces:Region ;
+	rdfs:label "Warren" .
+
+<http://www.linkedData_Group13.com/resource/Washington> a livingPlaces:County ;
+	livingPlaces:hasName "Washington"^^xsd:string ;
+	livingPlaces:pertainToRegion "Capital District"^^livingPlaces:Region ;
+	rdfs:label "Washington" .
+
+<http://www.linkedData_Group13.com/resource/Saratoga> a livingPlaces:County ;
+	livingPlaces:hasName "Saratoga"^^xsd:string ;
+	livingPlaces:pertainToRegion "Capital District"^^livingPlaces:Region ;
+	rdfs:label "Saratoga" .
+
+<http://www.linkedData_Group13.com/resource/Schenectady> a livingPlaces:County ;
+	livingPlaces:hasName "Schenectady"^^xsd:string ;
+	livingPlaces:pertainToRegion "Capital District"^^livingPlaces:Region ;
+	rdfs:label "Schenectady" .
+
+<http://www.linkedData_Group13.com/resource/Rensselaer> a livingPlaces:County ;
+	livingPlaces:hasName "Rensselaer"^^xsd:string ;
+	livingPlaces:pertainToRegion "Capital District"^^livingPlaces:Region ;
+	rdfs:label "Rensselaer" .
+
+<http://www.linkedData_Group13.com/resource/Sullivan> a livingPlaces:County ;
+	livingPlaces:hasName "Sullivan"^^xsd:string ;
+	livingPlaces:pertainToRegion "Hudson Valley"^^livingPlaces:Region ;
+	rdfs:label "Sullivan" .
+
+<http://www.linkedData_Group13.com/resource/Hudson+Valley> a livingPlaces:Region ;
+	rdfs:label "Hudson Valley" ;
+	livingPlaces:hasName "Hudson Valley"^^xsd:string ;
+	livingPlaces:hasNumberRegion "8"^^xsd:decimal .
+
+<http://www.linkedData_Group13.com/resource/Ulster> a livingPlaces:County ;
+	livingPlaces:hasName "Ulster"^^xsd:string ;
+	livingPlaces:pertainToRegion "Hudson Valley"^^livingPlaces:Region ;
+	rdfs:label "Ulster" .
+
+<http://www.linkedData_Group13.com/resource/Dutchess> a livingPlaces:County ;
+	livingPlaces:hasName "Dutchess"^^xsd:string ;
+	livingPlaces:pertainToRegion "Hudson Valley"^^livingPlaces:Region ;
+	rdfs:label "Dutchess" .
+
+<http://www.linkedData_Group13.com/resource/Orange> a livingPlaces:County ;
+	livingPlaces:hasName "Orange"^^xsd:string ;
+	livingPlaces:pertainToRegion "Hudson Valley"^^livingPlaces:Region ;
+	rdfs:label "Orange" .
+
+<http://www.linkedData_Group13.com/resource/Rockland> a livingPlaces:County ;
+	livingPlaces:hasName "Rockland"^^xsd:string ;
+	livingPlaces:pertainToRegion "Hudson Valley"^^livingPlaces:Region ;
+	rdfs:label "Rockland" .
+
+<http://www.linkedData_Group13.com/resource/Westchester> a livingPlaces:County ;
+	livingPlaces:hasName "Westchester"^^xsd:string ;
+	livingPlaces:pertainToRegion "Hudson Valley"^^livingPlaces:Region ;
+	rdfs:label "Westchester" .
+
+<http://www.linkedData_Group13.com/resource/Putnam> a livingPlaces:County ;
+	livingPlaces:hasName "Putnam"^^xsd:string ;
+	livingPlaces:pertainToRegion "Hudson Valley"^^livingPlaces:Region ;
+	rdfs:label "Putnam" .
+
+<http://www.linkedData_Group13.com/resource/New+York> a livingPlaces:County ;
+	livingPlaces:hasName "New York"^^xsd:string ;
+	livingPlaces:pertainToRegion "New York City"^^livingPlaces:Region ;
+	rdfs:label "New York" .
+
+<http://www.linkedData_Group13.com/resource/New+York+City> a livingPlaces:Region ;
+	rdfs:label "New York City" ;
+	livingPlaces:hasName "New York City"^^xsd:string ;
+	livingPlaces:hasNumberRegion "9"^^xsd:decimal .
+
+<http://www.linkedData_Group13.com/resource/Bronx> a livingPlaces:County ;
+	livingPlaces:hasName "Bronx"^^xsd:string ;
+	livingPlaces:pertainToRegion "New York City"^^livingPlaces:Region ;
+	rdfs:label "Bronx" .
+
+<http://www.linkedData_Group13.com/resource/Queens> a livingPlaces:County ;
+	livingPlaces:hasName "Queens"^^xsd:string ;
+	livingPlaces:pertainToRegion "New York City"^^livingPlaces:Region ;
+	rdfs:label "Queens" .
+
+<http://www.linkedData_Group13.com/resource/Kings> a livingPlaces:County ;
+	livingPlaces:hasName "Kings"^^xsd:string ;
+	livingPlaces:pertainToRegion "New York City"^^livingPlaces:Region ;
+	rdfs:label "Kings" .
+
+<http://www.linkedData_Group13.com/resource/Richmond> a livingPlaces:County ;
+	livingPlaces:hasName "Richmond"^^xsd:string ;
+	livingPlaces:pertainToRegion "New York City"^^livingPlaces:Region ;
+	rdfs:label "Richmond" .
+
+<http://www.linkedData_Group13.com/resource/Nassau> a livingPlaces:County ;
+	livingPlaces:hasName "Nassau"^^xsd:string ;
+	livingPlaces:pertainToRegion "Long Island"^^livingPlaces:Region ;
+	rdfs:label "Nassau" .
+
+<http://www.linkedData_Group13.com/resource/Long+Island> a livingPlaces:Region ;
+	rdfs:label "Long Island" ;
+	livingPlaces:hasName "Long Island"^^xsd:string ;
+	livingPlaces:hasNumberRegion "10"^^xsd:decimal .
+
+<http://www.linkedData_Group13.com/resource/Suffolk> a livingPlaces:County ;
+	livingPlaces:hasName "Suffolk"^^xsd:string ;
+	livingPlaces:pertainToRegion "Long Island"^^livingPlaces:Region ;
+	rdfs:label "Suffolk" .

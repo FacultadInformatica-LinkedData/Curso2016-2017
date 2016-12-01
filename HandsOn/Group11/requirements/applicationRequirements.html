@@ -1,17 +1,23 @@
 <html>
     <head>
+	<meta charset="utf-8">
         <title>Application Requirements</title>
     </head>
     <body>
         <h1>Application Requirements</h1>
         <h2>Description</h2>
-        <p>
-            The application will use the dataset provided by <a href="http://datos.madrid.es">datos.madrid.es</a>
-            to show which streets or zones are the most affected by any kind of citizen announcement
-            (city breakdowns, malfunciton of bicimad and some others warnings related to the city).
-            Also, It will represent the efectiveness of the services involved (such as firefighters,
-            maintenance of bicimad, clean services, etc), as well as, some graphical statisitcs of
-            breakdowns and announcements around the city.
+	      <p>
+	          The application will use different sources to connect the different entities between them. Some location entities are cultural centers or public libraries. The main sources are:
         </p>
+        <ul>
+            <li>
+                <b>agenda-eventos-culturales.csv</b>: This dataset contains all events
+                available on different places on the city of Madrid.
+            </li>
+            <li>
+                <b>centros-culturales.csv</b>: This dataset contains many places 
+                referred on the upper dataset. It provides more information
+            </li>
+        </ul>
     </body>
 </html>
