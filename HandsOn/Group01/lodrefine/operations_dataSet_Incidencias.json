@@ -1,0 +1,171 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DIA_INICIO",
+    "columnName": "DIA_INICIO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DIA_FINAL",
+    "columnName": "DIA_FINAL"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column RECEPCIONADAS",
+    "columnName": "RECEPCIONADAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ABIERTAS",
+    "columnName": "ABIERTAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column CERRADAS",
+    "columnName": "CERRADAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ABIERTAS_SIN_ACTUAR",
+    "columnName": "ABIERTAS_SIN_ACTUAR"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ACTUADAS_NO_CERRADAS",
+    "columnName": "ACTUADAS_NO_CERRADAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ACTUADAS_Y_CERRADAS",
+    "columnName": "ACTUADAS_Y_CERRADAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column VISADAS_NO_ACTUADAS",
+    "columnName": "VISADAS_NO_ACTUADAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column CERRADAS_POR_CANCELACION",
+    "columnName": "CERRADAS_POR_CANCELACION"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TRASLADOS_INTERNOS",
+    "columnName": "TRASLADOS_INTERNOS"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Id at index 1 based on column SECCION_ANOMALIA using expression null",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Id",
+    "columnInsertIndex": 1,
+    "baseColumnName": "SECCION_ANOMALIA",
+    "expression": "null",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Id",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          ""
+        ],
+        "to": "1++"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Id",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          ""
+        ],
+        "to": "1"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Id",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1"
+        ],
+        "to": 1
+      }
+    ]
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Id",
+    "columnName": "Id"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Id at index 1 based on column SECCION_ANOMALIA using expression grel:value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Id",
+    "columnInsertIndex": 1,
+    "baseColumnName": "SECCION_ANOMALIA",
+    "expression": "grel:value",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Id",
+    "columnName": "Id"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Id at index 1 based on column SECCION_ANOMALIA using expression grel:'a' : 1;\na = a+1;",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Id",
+    "columnInsertIndex": 1,
+    "baseColumnName": "SECCION_ANOMALIA",
+    "expression": "grel:'a' : 1;\na = a+1;",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Id",
+    "columnName": "Id"
+  }
+]

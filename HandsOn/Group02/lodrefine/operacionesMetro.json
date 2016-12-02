@@ -1,0 +1,1819 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Stop_Code_LBSL",
+    "columnName": "Stop_Code_LBSL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Bus_Stop_Code to Codigo parada",
+    "oldColumnName": "Bus_Stop_Code",
+    "newColumnName": "Codigo parada"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Naptan_Atco",
+    "columnName": "Naptan_Atco"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Stop_Name to Nombre parada",
+    "oldColumnName": "Stop_Name",
+    "newColumnName": "Nombre parada"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Location_Easting to Coordenada X",
+    "oldColumnName": "Location_Easting",
+    "newColumnName": "Coordenada X"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Location_Northing to Coordenada Y",
+    "oldColumnName": "Location_Northing",
+    "newColumnName": "Coordenada Y"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Heading to Sentido",
+    "oldColumnName": "Heading",
+    "newColumnName": "Sentido"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Stop_Area to Area parada",
+    "oldColumnName": "Stop_Area",
+    "newColumnName": "Area parada"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Virtual_Bus_Stop",
+    "columnName": "Virtual_Bus_Stop"
+  },
+  {
+    "op": "core/column-move",
+    "description": "Move column Nombre parada to position 0",
+    "columnName": "Nombre parada",
+    "index": 0
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://localhost:3333/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/webSemantica/grupo02/paradas#",
+      "prefixes": [
+        {
+          "name": "bus",
+          "uri": "http://www.semanticweb.org/webSemantica/grupo02/paradas/bus#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "grupo2",
+          "uri": "http://www.semanticweb.org/webSemantica/grupo02#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/webSemantica/grupo02/paradas#",
+      "prefixes": [
+        {
+          "name": "bus",
+          "uri": "http://www.semanticweb.org/webSemantica/grupo02/paradas/bus#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "grupo2",
+          "uri": "http://www.semanticweb.org/webSemantica/grupo02#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Nombre parada",
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/webSemantica/grupo02/bus",
+              "curie": "http://www.semanticweb.org/webSemantica/grupo02/bus"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/webSemantica/grupo02/paradas#tieneNombre",
+              "curie": "http://www.semanticweb.org/webSemantica/grupo02/paradas#tieneNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Nombre parada"
+              }
+            },
+            {
+              "uri": "http://www.semanticorg/webSemantica/grupo02/paradas/bus#tieneCodigoParada",
+              "curie": "http://www.semanticorg/webSemantica/grupo02/paradas/bus#tieneCodigoParada",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Codigo parada"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/webSemantica/grupo02/paradas#tieneCoordenadaX",
+              "curie": "http://www.semanticweb.org/webSemantica/grupo02/paradas#tieneCoordenadaX",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Coordenada X"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/webSemantica/grupo02/paradas#tieneCoordenadaY",
+              "curie": "http://www.semanticweb.org/webSemantica/grupo02/paradas#tieneCoordenadaY",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Coordenada Y"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/webSemantica/grupo02/paradas/bus#tieneSentido",
+              "curie": "http://www.semanticweb.org/webSemantica/grupo02/paradas/bus#tieneSentido",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Sentido"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/webSemantica/grupo02/paradas/bus#tieneAreaParada",
+              "curie": "http://www.semanticweb.org/webSemantica/grupo02/paradas/bus#tieneAreaParada",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Area parada"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/webSemantica/grupo02/paradas#",
+      "prefixes": [
+        {
+          "name": "bus",
+          "uri": "http://www.semanticweb.org/webSemantica/grupo02/paradas/bus#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "grupo2",
+          "uri": "http://www.semanticweb.org/webSemantica/grupo02#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Nombre parada",
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/webSemantica/grupo02/bus",
+              "curie": "http://www.semanticweb.org/webSemantica/grupo02/bus"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/webSemantica/grupo02/paradas#tieneNombre",
+              "curie": "http://www.semanticweb.org/webSemantica/grupo02/paradas#tieneNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Nombre parada"
+              }
+            },
+            {
+              "uri": "http://www.semanticorg/webSemantica/grupo02/paradas/bus#tieneCodigoParada",
+              "curie": "http://www.semanticorg/webSemantica/grupo02/paradas/bus#tieneCodigoParada",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Codigo parada"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/webSemantica/grupo02/paradas#tieneCoordenadaX",
+              "curie": "http://www.semanticweb.org/webSemantica/grupo02/paradas#tieneCoordenadaX",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Coordenada X"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/webSemantica/grupo02/paradas#tieneCoordenadaY",
+              "curie": "http://www.semanticweb.org/webSemantica/grupo02/paradas#tieneCoordenadaY",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Coordenada Y"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/webSemantica/grupo02/paradas/bus#tieneSentido",
+              "curie": "http://www.semanticweb.org/webSemantica/grupo02/paradas/bus#tieneSentido",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Sentido"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/webSemantica/grupo02/paradas/bus#tieneAreaParada",
+              "curie": "http://www.semanticweb.org/webSemantica/grupo02/paradas/bus#tieneAreaParada",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Area parada"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Nombre parada",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre parada",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SHEPHERD'S BUSH STATION <> #",
+          "SHEPHERD'S BUSH STATION #",
+          "SHEPHERD'S BUSH STATION <>",
+          "SHEPHERD'S BUSH STATION<>#"
+        ],
+        "to": "SHEPHERD'S BUSH STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LONDON BRIDGE STATION # <>",
+          "LONDON BRIDGE STATION #",
+          "LONDON BRIDGE STATION <> #"
+        ],
+        "to": "LONDON BRIDGE STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GUNNERSBURY STATION <> #",
+          "GUNNERSBURY STATION",
+          "GUNNERSBURY STATION # <>"
+        ],
+        "to": "GUNNERSBURY STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LIVERPOOL STREET STATION <> #",
+          "LIVERPOOL STREET STATION",
+          "LIVERPOOL STREET STATION <>#"
+        ],
+        "to": "LIVERPOOL STREET STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MARYLEBONE STATION <> #",
+          "MARYLEBONE STATION <>",
+          "MARYLEBONE STATION<>"
+        ],
+        "to": "MARYLEBONE STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WALTHAMSTOW BUS STATION <>",
+          "WALTHAMSTOW BUS STATION",
+          "WALTHAMSTOW BUS STATION <> #"
+        ],
+        "to": "WALTHAMSTOW BUS STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WAPPING STATION",
+          "WAPPING STATION <>",
+          "WAPPING STATION#"
+        ],
+        "to": "WAPPING STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TRAFALGAR SQUARE / CHARING CROSS STN <>#",
+          "TRAFALGAR SQUARE / CHARING CROSS STN <> #",
+          "TRAFALGAR SQUARE / CHARING CROSS STN<>#"
+        ],
+        "to": "TRAFALGAR SQUARE / CHARING CROSS STN "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WILLESDEN JUNCTION STATION <> #",
+          "WILLESDEN JUNCTION STATION <>#",
+          "WILLESDEN JUNCTION STATION # <>"
+        ],
+        "to": "WILLESDEN JUNCTION STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WESTMINSTER STATION <> / PARLIAMENT SQUARE",
+          "PARLIAMENT SQUARE / WESTMINSTER STATION <>",
+          "WESTMINSTER STATION<> / PARLIAMENT SQUARE"
+        ],
+        "to": "WESTMINSTER STATION / PARLIAMENT SQUARE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WATERLOO STATION / WATERLOO ROAD <> #",
+          "WATERLOO STATION <> # / WATERLOO ROAD",
+          "WATERLOO STATION<># / WATERLOO ROAD"
+        ],
+        "to": "WATERLOO STATION / WATERLOO ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HARROW & WEALDSTONE STATION <> #",
+          "HARROW & WEALDSTONE STATION",
+          "HARROW & WEALDSTONE STATION # <>"
+        ],
+        "to": "HARROW & WEALDSTONE STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VICTORIA STATION <> #",
+          "VICTORIA STATION <>#",
+          "VICTORIA STATION # <>"
+        ],
+        "to": "VICTORIA STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "STAFFORD ROAD / WOODCOTE ROAD",
+          "WOODCOTE ROAD / STAFFORD ROAD"
+        ],
+        "to": "STAFFORD ROAD / WOODCOTE ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PICARDY MANORWAY / BELVEDERE STATION",
+          "PICARDY MANORWAY / BELVEDERE STATION #"
+        ],
+        "to": "PICARDY MANORWAY / BELVEDERE STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CROFTON LANE / CROFTON ROAD",
+          "CROFTON ROAD / CROFTON LANE"
+        ],
+        "to": "CROFTON LANE / CROFTON ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HAIL & RIDE BUSH HILL PARK STATION",
+          "HAIL & RIDE BUSH HILL PARK STATION #"
+        ],
+        "to": "HAIL & RIDE BUSH HILL PARK STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ELTHAM ROAD / WESTHORNE AVENUE",
+          "WESTHORNE AVENUE / ELTHAM ROAD"
+        ],
+        "to": "ELTHAM ROAD / WESTHORNE AVENUE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ENFIELD CHASE STATION #",
+          "ENFIELD CHASE STATION"
+        ],
+        "to": "ENFIELD CHASE STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "STRATFORD BUS STATION <>#[DLR]",
+          "STRATFORD BUS STATION <> # [DLR]"
+        ],
+        "to": "STRATFORD BUS STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ACADEMY ROAD / SHOOTERS HILL ROAD",
+          "SHOOTERS HILL ROAD / ACADEMY ROAD"
+        ],
+        "to": "ACADEMY ROAD / SHOOTERS HILL ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SHOOTERS HILL ROAD / WELL HALL ROAD",
+          "WELL HALL ROAD / SHOOTERS HILL ROAD"
+        ],
+        "to": "SHOOTERS HILL ROAD / WELL HALL ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HAIL &  RIDE HELENA ROAD",
+          "HAIL & RIDE HELENA ROAD"
+        ],
+        "to": "HAIL &  RIDE HELENA ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GALPINS ROAD / LONDON ROAD",
+          "LONDON ROAD / GALPINS ROAD"
+        ],
+        "to": "GALPINS ROAD / LONDON ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "EUSTON BUS STATION # <>",
+          "EUSTON BUS STATION <>#"
+        ],
+        "to": "EUSTON BUS STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WARWICK TERRACE / PLUMSTEAD COMMON ROAD",
+          "PLUMSTEAD COMMON ROAD / WARWICK TERRACE"
+        ],
+        "to": "WARWICK TERRACE / PLUMSTEAD COMMON ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TUFNELL PARK STATION <>",
+          "TUFNELL PARK STATION<>"
+        ],
+        "to": "TUFNELL PARK STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CENTRAL WAY / THAMESMEAD TOWN CENTRE",
+          "THAMESMEAD TOWN CENTRE / CENTRAL WAY"
+        ],
+        "to": "CENTRAL WAY / THAMESMEAD TOWN CENTRE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BAKER STREET STATION <>",
+          "BAKER STREET STATION"
+        ],
+        "to": "BAKER STREET STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PECKHAM RYE / EAST DULWICH ROAD",
+          "EAST DULWICH ROAD / PECKHAM RYE"
+        ],
+        "to": "PECKHAM RYE / EAST DULWICH ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WILLESDEN GREEN STATION <>",
+          "WILLESDEN GREEN STATION"
+        ],
+        "to": "WILLESDEN GREEN STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "EARLSFIELD STATION #",
+          "EARLSFIELD STATION#"
+        ],
+        "to": "EARLSFIELD STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ST LEONARD'S ROAD",
+          "ST LEONARDS ROAD"
+        ],
+        "to": "ST LEONARD'S ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ELTHAM HIGH STREET / WESTMOUNT ROAD",
+          "WESTMOUNT ROAD / ELTHAM HIGH STREET"
+        ],
+        "to": "ELTHAM HIGH STREET / WESTMOUNT ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ALEXANDRA PALACE & PARK",
+          "ALEXANDRA PALACE PARK"
+        ],
+        "to": "ALEXANDRA PALACE & PARK"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ST JOHN'S CHURCH",
+          "ST JOHNS CHURCH"
+        ],
+        "to": "ST JOHN'S CHURCH"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MITCHAM LANE / SOUTHCROFT ROAD",
+          "SOUTHCROFT ROAD / MITCHAM LANE"
+        ],
+        "to": "MITCHAM LANE / SOUTHCROFT ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BRENT CROSS STATION <>",
+          "BRENT CROSS STATION"
+        ],
+        "to": "BRENT CROSS STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BLACKFRIARS STATION <># / NORTH ENTRANCE",
+          "BLACKFRIARS STATION<># / NORTH ENTRANCE"
+        ],
+        "to": "BLACKFRIARS STATION  / NORTH ENTRANCE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LOWER ROAD / BELVEDERE STATION",
+          "LOWER ROAD / BELVEDERE STATION #"
+        ],
+        "to": "LOWER ROAD / BELVEDERE STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CLERKENWELL ROAD / ST JOHN STREET",
+          "ST JOHN STREET / CLERKENWELL ROAD"
+        ],
+        "to": "CLERKENWELL ROAD / ST JOHN STREET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HIGH ROAD EASTCOTE",
+          "EASTCOTE HIGH ROAD"
+        ],
+        "to": "HIGH ROAD EASTCOTE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "POTTERS BAR STATION",
+          "POTTERS BAR STATION #"
+        ],
+        "to": "POTTERS BAR STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WARREN STREET STATION <> / EUSTON ROAD",
+          "WARREN STREET STATION <>/ EUSTON ROAD"
+        ],
+        "to": "WARREN STREET STATION  / EUSTON ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "FINSBURY PARK STATION <> #",
+          "FINSBURY PARK STATION"
+        ],
+        "to": "FINSBURY PARK STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BRIXTON STATION <> #",
+          "BRIXTON STATION #"
+        ],
+        "to": "BRIXTON STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BARRY ROAD / PECKHAM RYE",
+          "PECKHAM RYE / BARRY ROAD"
+        ],
+        "to": "BARRY ROAD / PECKHAM RYE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CLAPHAM NORTH & HIGH STREET STATIONS <> #",
+          "CLAPHAM NORTH & HIGH STREET STATIONS # <>"
+        ],
+        "to": "CLAPHAM NORTH & HIGH STREET STATIONS "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CROXTED ROAD / THURLOW PARK ROAD",
+          "THURLOW PARK ROAD / CROXTED ROAD"
+        ],
+        "to": "CROXTED ROAD / THURLOW PARK ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BELLEGROVE ROAD / WELLING WAY",
+          "WELLING WAY / BELLEGROVE ROAD"
+        ],
+        "to": "BELLEGROVE ROAD / WELLING WAY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CHARLTON STATION # / WOOLWICH ROAD",
+          "CHARLTON STATION / WOOLWICH ROAD"
+        ],
+        "to": "CHARLTON STATION  / WOOLWICH ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TRINITY AVE / BUSH HILL PARK STATION",
+          "TRINITY AVE / BUSH HILL PARK STATION #"
+        ],
+        "to": "TRINITY AVE / BUSH HILL PARK STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BRENT CROSS TESCO",
+          "TESCO BRENT CROSS"
+        ],
+        "to": "BRENT CROSS TESCO"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "EDGWARE ROAD STATION <>",
+          "EDGWARE STATION <> / STATION ROAD"
+        ],
+        "to": "EDGWARE ROAD STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MOTTINGHAM ROAD / COURT ROAD",
+          "COURT ROAD / MOTTINGHAM ROAD"
+        ],
+        "to": "MOTTINGHAM ROAD / COURT ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "QUEENS ROAD",
+          "QUEEN'S ROAD"
+        ],
+        "to": "QUEENS ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CROFTON PARK STATION #",
+          "CROFTON PARK STATION#"
+        ],
+        "to": "CROFTON PARK STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          " ICKENHAM STATION<>",
+          "ICKENHAM STATION <>"
+        ],
+        "to": " ICKENHAM STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "STRATHEDEN ROAD / SHOOTERS HILL ROAD",
+          "SHOOTERS HILL ROAD / STRATHEDEN ROAD"
+        ],
+        "to": "STRATHEDEN ROAD / SHOOTERS HILL ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "KEW BRIDGE STATION #",
+          "KEW BRIDGE STATION"
+        ],
+        "to": "KEW BRIDGE STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "OLD STREET STATION <> #",
+          "OLD STREET STATION <>#"
+        ],
+        "to": "OLD STREET STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ST MICHAEL'S CHURCH",
+          "ST MICHAELS CHURCH"
+        ],
+        "to": "ST MICHAEL'S CHURCH"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HIGH ROAD WEMBLEY",
+          "WEMBLEY HIGH ROAD"
+        ],
+        "to": "HIGH ROAD WEMBLEY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "QUEENSWAY / PETTS WOOD STATION #",
+          "QUEENSWAY / PETTS WOOD STATION#"
+        ],
+        "to": "QUEENSWAY / PETTS WOOD STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CANARY WHARF STATION <> [DLR]",
+          "CANARY WHARF STATION [DLR]"
+        ],
+        "to": "CANARY WHARF STATION [DLR]"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NORTH EALING STATION <>",
+          "NORTH EALING STATION<>"
+        ],
+        "to": "NORTH EALING STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BLACKFEN ROAD / WESTWOOD LANE",
+          "WESTWOOD LANE / BLACKFEN ROAD"
+        ],
+        "to": "BLACKFEN ROAD / WESTWOOD LANE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CLAPHAM ROAD / STOCKWELL STATION <>",
+          "CLAPHAM ROAD / STOCKWELL STATION<>"
+        ],
+        "to": "CLAPHAM ROAD / STOCKWELL STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BALDWYNS PARK / DARTFORD ROAD",
+          "DARTFORD ROAD / BALDWYNS PARK"
+        ],
+        "to": "BALDWYNS PARK / DARTFORD ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "COOPER'S LANE",
+          "COOPERS LANE"
+        ],
+        "to": "COOPER'S LANE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BROMLEY ROAD / SHORTLANDS STATION",
+          "BROMLEY ROAD / SHORTLANDS STATION #"
+        ],
+        "to": "BROMLEY ROAD / SHORTLANDS STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "YARNTON WAY / HARROW MANORWAY",
+          "HARROW MANORWAY / YARNTON WAY"
+        ],
+        "to": "YARNTON WAY / HARROW MANORWAY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PLUMSTEAD HIGH STREET / PLUMSTEAD STN",
+          "PLUMSTEAD HIGH STREET / PLUMSTEAD STN #"
+        ],
+        "to": "PLUMSTEAD HIGH STREET / PLUMSTEAD STN"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TURKEY STREET STATION #",
+          "TURKEY STREET STATION"
+        ],
+        "to": "TURKEY STREET STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DOMONIC DRIVE / EDGEBURY",
+          "EDGEBURY / DOMONIC DRIVE"
+        ],
+        "to": "DOMONIC DRIVE / EDGEBURY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "QUEEN'S PARK STATION <> #",
+          "QUEENS PARK STATION"
+        ],
+        "to": "QUEEN'S PARK STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BANSTEAD ROAD SOUTH / DOWNS ROAD",
+          "DOWNS ROAD / BANSTEAD ROAD SOUTH"
+        ],
+        "to": "BANSTEAD ROAD SOUTH / DOWNS ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ST DUNSTAN'S ROAD",
+          "ST DUNSTANS ROAD"
+        ],
+        "to": "ST DUNSTAN'S ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "VICTORIA BUS STATION # <>",
+          "VICTORIA BUS STATION <> #"
+        ],
+        "to": "VICTORIA BUS STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LEYTONSTONE STATION <> / GROVE GREEN ROAD",
+          "LEYTONSTONE STATION <>/ GROVE GREEN ROAD"
+        ],
+        "to": "LEYTONSTONE STATION / GROVE GREEN ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NORWOOD ROAD / ROBSON ROAD",
+          "ROBSON ROAD / NORWOOD ROAD"
+        ],
+        "to": "NORWOOD ROAD / ROBSON ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DOWNS ROAD / RECTORY ROAD",
+          "RECTORY ROAD / DOWNS ROAD"
+        ],
+        "to": "DOWNS ROAD / RECTORY ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "EDGWARE BUS STATION",
+          "EDGWARE BUS STATION <>"
+        ],
+        "to": "EDGWARE BUS STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "EUSTON STATION <>#",
+          "EUSTON STATION <> #"
+        ],
+        "to": "EUSTON STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WATERLOO STATION / YORK ROAD <> #",
+          "WATERLOO STATION <> # / YORK ROAD"
+        ],
+        "to": "WATERLOO STATION / YORK ROAD "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CANADA WATER BUS STATION",
+          "CANADA WATER BUS STATION <> #"
+        ],
+        "to": "CANADA WATER BUS STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TOTTENHAM COURT ROAD STATION <>",
+          "TOTTENHAM COURT ROAD STATION<>"
+        ],
+        "to": "TOTTENHAM COURT ROAD STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "REGENT'S PARK BARRACKS",
+          "REGENTS PARK BARRACKS"
+        ],
+        "to": "REGENT'S PARK BARRACKS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ESSEX ROAD / NEWINGTON GREEN ROAD",
+          "NEWINGTON GREEN ROAD / ESSEX ROAD"
+        ],
+        "to": "ESSEX ROAD / NEWINGTON GREEN ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ST PAUL'S CLOSE",
+          "ST PAULS CLOSE"
+        ],
+        "to": "ST PAUL'S CLOSE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ST PETER'S CHURCH",
+          "ST PETERS CHURCH"
+        ],
+        "to": "ST PETER'S CHURCH"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BRAMPTON ROAD / LONG LANE",
+          "LONG LANE / BRAMPTON ROAD"
+        ],
+        "to": "BRAMPTON ROAD / LONG LANE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "JACK STRAW'S CASTLE / WHITESTONE POND",
+          "WHITESTONE POND / JACK STRAW'S CASTLE"
+        ],
+        "to": "JACK STRAW'S CASTLE / WHITESTONE POND"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GREENFORD STATION <> # / ROCKWARE AVENUE",
+          "ROCKWARE AVENUE / GREENFORD STATION <> #"
+        ],
+        "to": "GREENFORD STATION  / ROCKWARE AVENUE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BROMLEY COMMON / TURPINGTON LANE",
+          "TURPINGTON LANE / BROMLEY COMMON"
+        ],
+        "to": "BROMLEY COMMON / TURPINGTON LANE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ACTON TOWN STATION <>",
+          "ACTON TOWN STATION"
+        ],
+        "to": "ACTON TOWN STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WELLINGTON AVENUE / BLACKFEN ROAD",
+          "BLACKFEN ROAD / WELLINGTON AVENUE"
+        ],
+        "to": "WELLINGTON AVENUE / BLACKFEN ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GANTS HILL STATION <> / WOODFORD AVENUE",
+          "GANTS HILL STATION <>/ WOODFORD AVENUE"
+        ],
+        "to": "GANTS HILL STATION  / WOODFORD AVENUE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CARSHALTON ROAD / RINGSTEAD ROAD",
+          "RINGSTEAD ROAD / CARSHALTON ROAD"
+        ],
+        "to": "CARSHALTON ROAD / RINGSTEAD ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SOUTH RUISLIP STATION <> #",
+          "SOUTH RUISLIP STATION <>#"
+        ],
+        "to": "SOUTH RUISLIP STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ARCHWAY STATION <>",
+          "ARCHWAY STATION"
+        ],
+        "to": "ARCHWAY STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CHISLEHURST ROAD / POVEREST ROAD",
+          "POVEREST ROAD / CHISLEHURST ROAD"
+        ],
+        "to": "CHISLEHURST ROAD / POVEREST ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WEMBLEY PARK STATION <>",
+          "WEMBLEY PARK STATION"
+        ],
+        "to": "WEMBLEY PARK STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ELMBRIDGE AVENUE / SOUTHWOOD DRIVE",
+          "SOUTHWOOD DRIVE / ELMBRIDGE AVENUE"
+        ],
+        "to": "ELMBRIDGE AVENUE / SOUTHWOOD DRIVE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SOUTHBOROUGH LANE / BLACKBROOK LANE",
+          "BLACKBROOK LANE / SOUTHBOROUGH LANE"
+        ],
+        "to": "SOUTHBOROUGH LANE / BLACKBROOK LANE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "STONECOT HILL / GARTH ROAD",
+          "GARTH ROAD / STONECOT HILL"
+        ],
+        "to": "STONECOT HILL / GARTH ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HAVEN GREEN / EALING BROADWAY STATION <> #",
+          "EALING BROADWAY STATION <> # / HAVEN GREEN"
+        ],
+        "to": "HAVEN GREEN / EALING BROADWAY STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ST GEORGE'S HOSPITAL",
+          "ST GEORGES HOSPITAL"
+        ],
+        "to": "ST GEORGE'S HOSPITAL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LONG LANE / WOOLWICH ROAD",
+          "WOOLWICH ROAD / LONG LANE"
+        ],
+        "to": "LONG LANE / WOOLWICH ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WEMBLEY STADIUM STATION #",
+          "WEMBLEY STADIUM STATION"
+        ],
+        "to": "WEMBLEY STADIUM STATION #"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ST THOMAS' DRIVE",
+          "ST THOMAS DRIVE"
+        ],
+        "to": "ST THOMAS' DRIVE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ST STEPHENS CHURCH",
+          "ST STEPHEN'S CHURCH"
+        ],
+        "to": "ST STEPHENS CHURCH"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PARK GROVE",
+          "GROVE PARK"
+        ],
+        "to": "PARK GROVE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SOUTH HARROW BUS STATION <>",
+          "SOUTH HARROW BUS STATION"
+        ],
+        "to": "SOUTH HARROW BUS STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TULSE HILL STATION #",
+          "TULSE HILL STATION  #"
+        ],
+        "to": "TULSE HILL STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RUSSELL SQUARE",
+          "RUSSELL SQUARE <>"
+        ],
+        "to": "RUSSELL SQUARE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SHEPHERD'S BUSH ROAD",
+          "SHEPHERDS BUSH ROAD"
+        ],
+        "to": "SHEPHERD'S BUSH ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HAIL & RIDE MONTPELIER ROAD",
+          "HAIL &  RIDE MONTPELIER ROAD"
+        ],
+        "to": "HAIL & RIDE MONTPELIER ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CHARLIE BROWNS ROUNDABOUT",
+          "CHARLIE BROWN'S ROUNDABOUT"
+        ],
+        "to": "CHARLIE BROWNS ROUNDABOUT"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "FARRINGDON STATION <> #",
+          "FARRINGDON STATION <>#"
+        ],
+        "to": "FARRINGDON STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LOUGHTON STATION <>",
+          "LOUGHTON STATION"
+        ],
+        "to": "LOUGHTON STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BARKING STATION <> #",
+          "BARKING STATION"
+        ],
+        "to": "BARKING STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HOOK LANE / WESTWOOD LANE",
+          "WESTWOOD LANE / HOOK LANE"
+        ],
+        "to": "HOOK LANE / WESTWOOD LANE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ROCHESTER WAY / WELLING WAY",
+          "WELLING WAY / ROCHESTER WAY"
+        ],
+        "to": "ROCHESTER WAY / WELLING WAY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BUSHEY STATION  #",
+          "BUSHEY STATION #"
+        ],
+        "to": "BUSHEY STATION  "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MOORGATE STATION <> #",
+          "MOORGATE STATION # <>"
+        ],
+        "to": "MOORGATE STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ST LEONARD'S AVENUE",
+          "ST LEONARDS AVENUE"
+        ],
+        "to": "ST LEONARD'S AVENUE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BRIDGE ROAD / WHITEHALL LANE",
+          "WHITEHALL LANE / BRIDGE ROAD"
+        ],
+        "to": "BRIDGE ROAD / WHITEHALL LANE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HIGH STREET / STATION ROAD",
+          "STATION ROAD / HIGH STREET"
+        ],
+        "to": "HIGH STREET / STATION ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ALBANY ROAD / CAMBERWELL ROAD",
+          "CAMBERWELL ROAD / ALBANY ROAD"
+        ],
+        "to": "ALBANY ROAD / CAMBERWELL ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RICHMOND STATION <> #",
+          "RICHMOND STATION # <>"
+        ],
+        "to": "RICHMOND STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "KENWORTHY ROAD / WICK ROAD",
+          "WICK ROAD / KENWORTHY ROAD"
+        ],
+        "to": "KENWORTHY ROAD / WICK ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HAIL & RIDE GLENELDON ROAD / STANTHORPE ROAD",
+          "HAIL & RIDE STANTHORPE ROAD / GLENELDON ROAD"
+        ],
+        "to": "HAIL & RIDE GLENELDON ROAD / STANTHORPE ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HAIL & RIDE ST JOHN'S ROAD",
+          "HAIL & RIDE ST JOHN'S  ROAD"
+        ],
+        "to": "HAIL & RIDE ST JOHN'S ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TWICKENHAM STATION",
+          "TWICKENHAM STATION #"
+        ],
+        "to": "TWICKENHAM STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HAIL & RIDE CHALK PIT AVENUE / MAIN ROAD",
+          "HAIL & RIDE MAIN ROAD / CHALK PIT AVENUE"
+        ],
+        "to": "HAIL & RIDE CHALK PIT AVENUE / MAIN ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "KENTON STATION #",
+          "KENTON STATION <> #"
+        ],
+        "to": "KENTON STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ENFIELD TOWN STATION #",
+          "ENFIELD TOWN STATION"
+        ],
+        "to": "ENFIELD TOWN STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WHITE CITY STATION <>",
+          "WHITE CITY STATION<>"
+        ],
+        "to": "WHITE CITY STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ST PAULS WAY TRUST SCHOOL",
+          "ST PAUL'S WAY TRUST SCHOOL"
+        ],
+        "to": "ST PAULS WAY TRUST SCHOOL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HIGHFIELD ROAD / OAKDENE DRIVE",
+          "OAKDENE DRIVE / HIGHFIELD ROAD"
+        ],
+        "to": "HIGHFIELD ROAD / OAKDENE DRIVE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PUTNEY BRIDGE STN <>/ FULHAM HIGH STREET",
+          "PUTNEY BRIDGE STN<> / FULHAM HIGH STREET"
+        ],
+        "to": "PUTNEY BRIDGE STN / FULHAM HIGH STREET"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CANNING TOWN STATION <> #",
+          "CANNING TOWN STATION"
+        ],
+        "to": "CANNING TOWN STATION <> #"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RAINHAM STATION #",
+          "RAINHAM STATION#"
+        ],
+        "to": "RAINHAM STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SOUTHWARK PARK ROAD / ST JAMES'S ROAD",
+          "ST JAMES'S ROAD / SOUTHWARK PARK ROAD"
+        ],
+        "to": "SOUTHWARK PARK ROAD / ST JAMES'S ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BUSHEY ROAD / COLLINGWOOD ROAD",
+          "COLLINGWOOD ROAD / BUSHEY ROAD"
+        ],
+        "to": "BUSHEY ROAD / COLLINGWOOD ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "KING EDWARDS ROAD",
+          "KING EDWARD'S ROAD"
+        ],
+        "to": "KING EDWARDS ROAD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "KENTISH TOWN STATION <> #",
+          "KENTISH TOWN STATION  <> #"
+        ],
+        "to": "KENTISH TOWN STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PECKHAM ROAD / SOUTHAMPTON WAY",
+          "SOUTHAMPTON WAY / PECKHAM ROAD"
+        ],
+        "to": "PECKHAM ROAD / SOUTHAMPTON WAY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ARCHWAY STATION <> / HIGHGATE HILL",
+          "ARCHWAY STATION<> / HIGHGATE HILL"
+        ],
+        "to": "ARCHWAY STATION  / HIGHGATE HILL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HARROW ROAD / KILBURN LANE",
+          "KILBURN LANE / HARROW ROAD"
+        ],
+        "to": "HARROW ROAD / KILBURN LANE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SANDHURST ROAD / VERDANT LANE",
+          "VERDANT LANE / SANDHURST ROAD"
+        ],
+        "to": "SANDHURST ROAD / VERDANT LANE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ELSTREE & BOREHAMWOOD STATION",
+          "ELSTREE & BOREHAMWOOD STATION #"
+        ],
+        "to": "ELSTREE & BOREHAMWOOD STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SYDENHAM STATION # / WESTWOOD HILL",
+          "SYDENHAM STATION #/ WESTWOOD HILL"
+        ],
+        "to": "SYDENHAM STATION / WESTWOOD HILL"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TURNHAM GREEN STATION <>",
+          "TURNHAM GREEN STATION"
+        ],
+        "to": "TURNHAM GREEN STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MIDFIELD WAY / SEVENOAKS WAY",
+          "SEVENOAKS WAY / MIDFIELD WAY"
+        ],
+        "to": "MIDFIELD WAY / SEVENOAKS WAY"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DORSET SQUARE / MARYLEBONE STATION <> #",
+          "DORSET SQUARE / MARYLEBONE STATION<> #"
+        ],
+        "to": "DORSET SQUARE / MARYLEBONE STATION "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PURLEY HIGH STREET / PURLEY STATION #",
+          "PURLEY STATION # / PURLEY HIGH STREET"
+        ],
+        "to": "PURLEY HIGH STREET / PURLEY STATION"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HAIL & RIDE THE DRIVE",
+          "HAIL &  RIDE THE DRIVE"
+        ],
+        "to": "HAIL & RIDE THE DRIVE"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CHASTILIAN ROAD / STATION ROAD",
+          "STATION ROAD / CHASTILIAN ROAD"
+        ],
+        "to": "CHASTILIAN ROAD / STATION ROAD"
+      }
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+A1. Dame todas las propiedades aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician)
+
+SELECT DISTINCT ?p
+
+WHERE { 
+
+  ?x a <http://dbpedia.org/ontology/Politician>.
+
+  ?x ?p ?y.
+
+}
+
+
+A2. Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician)
+
+SELECT DISTINCT ?p
+
+WHERE {
+
+  ?x a <http://dbpedia.org/ontology/Politician>.
+
+  ?x ?p ?y.
+
+  FILTER(?p!=rdf:type)
+
+}
+
+
+A3. ¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician (http://dbpedia.org/ontology/Politician)?
+
+SELECT COUNT DISTINCT ?c
+
+WHERE {
+
+  ?x a <http://dbpedia.org/ontology/Politician>.
+
+  ?x ?c ?y.
+
+  FILTER(?c!=rdf:type)
+
+}
+
+
+A4. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime cuántos valores distintos toman en dichas instancias
+
+SELECT DISTINCT (COUNT(?c) as ?max)
+
+WHERE {
+
+  ?x a <http://dbpedia.org/ontology/Politician> .
+
+  ?x ?p ?c .
+
+  FILTER (?x!=rdf:type)
+
+}
+
+
+A5. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime la media de valores distintos que toman en dichas instancias.
+
+
+
+
+A6. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor
+

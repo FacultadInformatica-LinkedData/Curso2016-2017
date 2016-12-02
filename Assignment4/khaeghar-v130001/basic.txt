@@ -1,0 +1,115 @@
+Prefix pr:<http://GP-onto.fi.upm.es/exercise2#>
+
+#1
+
+select distinct ?Concept where {[] a ?Concept} LIMIT 100
+
+#2
+
+select distinct ?x
+where
+{
+	?x rdfs:subClassOf pr:Establishment
+} LIMIT 100
+
+#3
+
+select distinct ?x
+where {
+	?x a pr:City
+} LIMIT 100
+
+#4
+
+select ?x
+where {
+pr:Santiago_de_Compostela pr:hasInhabitantNumber ?x
+} LIMIT 100
+
+#5
+
+select ?x ?y
+where {
+pr:Santiago_de_Compostela pr:hasInhabitantNumber ?x .
+pr:Arzua pr:hasInhabitantNumber ?y
+} LIMIT 100
+
+#6
+
+select distinct ?x ?y
+where {
+?x pr:hasInhabitantNumber ?y .
+} ORDER BY ASC(?x)
+LIMIT 100
+
+#7
+
+select distinct ?x ?y
+where {
+?z rdfs:subClassOf pr:Locality .
+?x rdfs:subClassOf ?z .
+OPTIONAL { ?x pr:hasInhabitantNumber ?y }
+} LIMIT 100
+
+#8
+
+select distinct ?x ?y
+where {
+?x rdfs:subClassOf pr:Locality .
+?x pr:hasInhabitantNumber ?y .
+FILTER (xsd:integer(?y) > xsd:integer("200000"))
+} LIMIT 100
+
+#9
+
+select ?c ?n ?l ?p
+where {
+pr:Pazo_Breogan pr:hasAddress ?x .
+?x pr:hasStreet ?c .
+?x pr:hasNumber ?n .
+pr:Pazo_Breogan pr:isPlacedIn ?h .
+?h rdfs:label ?p
+?h pr:inProvince ?p .
+}
+
+#10
+
+select distinct ?s
+where {
+?s rdfs:subClassOf pr:Location
+} LIMIT 100
+
+#11
+
+select distinct ?i
+where {
+?x rdfs:subClassOf pr:Locality .
+}
+or
+select distinct ?i
+where {
+?x rdfs:subClassOf pr:Location .
+}
+
+#12
+
+describe ?r
+where {
+?r rdfs:label "Madrid"
+}
+
+#13
+
+construct { ?p pr:isIn ?prov }
+where {
+?x rdfs:subClassOf pr:TouristicLocation.
+?p a ?x ; pr:isPlacedIn ?y.
+?y pr:inProvince ?prov
+}
+
+#14
+
+ask
+where {
+?x a pr:Town.
+}

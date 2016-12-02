@@ -1,0 +1,176 @@
+A4, consultas básicas SPARQL
+Pablo Aceituno Ferro
+
+Fuente: http://sandbox.linkeddata.es/sparql
+Grafo:  http://sandbox.linkeddata.es/Grado_20122013
+
+
+1. Obtener todas las clases --------------------------------------------------------------------------
+
+SELECT DISTINCT ?class 
+WHERE {
+  ?class a <http://www.w3.org/2000/01/rdf-schema#Class>
+} 
+ 
+
+
+2. Obtener las subclases de la clase Establishment ---------------------------------------------------
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?subclass 
+WHERE {
+  ?subclass rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Establishment>
+} 
+
+
+
+3. Obtener las instancias de la clase City -----------------------------------------------------------
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?instanciasCity 
+WHERE {
+  ?instanciasCity a grafo:City 
+}
+
+
+
+4. Obtener el número de habitantes de Santiago de Compostela ----------------------------------------
+
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?habSantiago 
+WHERE {
+   grafo:Santiago_de_Compostela grafo:hasInhabitantNumber ?habSantiago
+}
+
+
+
+5. Obtener el número de habitantes de Santiago de Compostela y de Arzua ---------------------------
+
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?habSantiago ?habArzua 
+WHERE {
+    grafo:Santiago_de_Compostela grafo:hasInhabitantNumber ?habSantiago .
+    grafo:Arzua                  grafo:hasInhabitantNumber ?habArzua
+}
+
+
+
+6. Obtener distintos lugares con número de habitantes, ordenar los ----------------------------------
+resultados por el nombre del lugar (ascendente(a,b,c,...))
+
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?habitantes ?lugares
+WHERE {
+        ?lugares grafo:hasInhabitantNumber ?habitantes
+      }
+ORDER BY ?lugares ASC (?lugares)
+
+
+
+7. Obtener todas las instancias de Locality con su número de habitantes (si existe) -------------------
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?instanciasLocality ?numHabitantes
+WHERE {
+  ?instanciasLocality rdfs:subClassOf grafo:Locality .
+  ?Localidad a ?instanciasLocality
+  OPTIONAL{ ?Localidad grafo:hasInhabitantNumber ?numHabitantes}
+}
+
+
+
+8. Obtener todos los lugares con más de 200.000 habitantes --------------------------------------------
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?lugar ?numHabitantes
+WHERE {
+        ?lugar grafo:hasInhabitantNumber ?numHabitantes
+        FILTER (xsd:integer(?numHabitantes) > xsd:integer("200000"))
+}
+
+
+
+9. Obtener los datos postales de Pazo_Breogan (calle, número, localidad, provincia) --------------------
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?calle ?numero ?localidad ?provincia ?direccion
+WHERE {
+  		grafo:Pazo_Breogan grafo:hasAddress ?direccion .
+        ?direccion grafo:hasNumber ?numero             .
+        ?direccion grafo:hasStreet ?calle              .
+        grafo:Pazo_Breogan grafo:isPlacedIn ?localidad .
+        ?localidad grafo:inProvince ?provincia
+}
+
+
+
+10. Obtener las subclases de la clase Location --------------------------------------------------------
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?subclass 
+WHERE {
+  ?subclass rdfs:subClassOf grafo:Location
+} 
+
+
+
+11. Obtener las instancias de la clase Locality ------------------------------------------------------
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?instanciasLocality 
+WHERE {
+  ?instanciasLocality rdfs:subClassOf grafo:Locality 
+}
+
+
+
+12. Describir el recurso con rdfs:label "Madrid” -------------------------------------------------------
+
+SELECT ?recurso
+WHERE {
+       ?recurso rdfs:label "Madrid"    
+}
+
+
+
+13. Construir el grafo RDF(S) que relaciona directamente todos los lugares ----------------------------
+turísticos con sus respectivas provincias, usando una nueva propiedad
+llamada ”isIn”
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+#SELECT ?provincia ?lugarTuristico
+CONSTRUCT {?lugarTuristico grafo:isIn ?provincia}
+WHERE {
+       ?lugarTuristico grafo:isPlacedIn ?x .
+       ?x grafo:inProvince ?provincia   
+}
+
+
+
+14. Preguntar si hay alguna instancia de Town ---------------------------------------------------------
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+ASK {?querie a grafo:Town}

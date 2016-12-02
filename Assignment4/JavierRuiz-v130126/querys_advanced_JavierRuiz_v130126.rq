@@ -1,0 +1,43 @@
+# Dame todas las propiedades aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+SELECT ?property
+WHERE {
+  ?instance ?a <http://dbpedia.org/ontology/Politician> .
+  ?instance ?property ?x
+}
+
+# Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+SELECT ?property
+WHERE {
+  ?instance ?a <http://dbpedia.org/ontology/Politician> .
+  ?property ?property ?x .
+  FILTER {?property != rdf:type}
+}
+
+# ¿Cuántos valores distintos se pueden encontrar para las propiedades,
+# exceptuando rdf:type, de las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)?
+SELECT COUNT(?property)
+WHERE {
+  ?instance ?a <http://dbpedia.org/ontology/Politician> .
+  ?property ?property ?x .
+FILTER {?property != rdf:type}
+}
+
+# Para cada una de las propiedades, exceptuando rdf:type,
+# aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>),
+# dime cuántos valores distintos toman en dichas instancias
+SELECT COUNT(distinct ?property)
+WHERE {
+  ?instance ?a <http://dbpedia.org/ontology/Politician> .
+  ?property ?property ?x .
+FILTER {?property != rdf:type}
+}
+
+# A5. Para cada una de las propiedades, exceptuando rdf:type,
+# aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician),
+# dime la media de valores distintos que toman en dichas instancias.
+SELECT avg(distinct ?property)
+WHERE {
+  ?instance ?a <http://dbpedia.org/ontology/Politician> .
+  ?property ?property ?x .
+FILTER {?property != rdf:type}
+}
