@@ -1,0 +1,21 @@
+1)How many accidents were there in Madrid in 2013?
+
+PREFIX v: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+select (sum(?x)AS ?total) where {
+?obs a qb:Observation ;
+v:numberOfAccidents ?x.
+}
+
+2)Give me the number of accidens in Usera for each type of accident
+
+PREFIX v: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX property: <http://geo.linkeddata.es/stats/property#>
+
+select ?x ?y where {
+?obs a qb:Observation;
+v:hasAccidentType ?x;
+v:relatedDistrict "USERA";
+v:numberOfAccidents ?y.
+}
