@@ -1,0 +1,37 @@
+@base <http://www.w3.org/2001/sw/rdb2rdf/test-cases/#> .
+@prefix dcterms: <http://purl.org/dc/elements/1.1/> .
+@prefix mpv: <http://mappingpedia.linkeddata.es/vocabulary#> .
+@prefix mpi: <http://mappingpedia.linkeddata.es/instance#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix rdb2rdftest: <http://purl.org/NET/rdb2rdf-test#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# mpv:R2RML rdfs:subClassOf dcterms:BibliographicResource .
+mpi:mapping-258 a mpv:R2RML ;
+    dcterms:identifier "mapping-258" ;
+    dcterms:title "City" ;
+    dcterms:dateSubmitted "2016-12-02";
+    dcterms:creator "Ricardo Mena" ;
+    dcterms:license "Accept all the terms and conditions" ;
+    dcterms:subject "City" ;
+    mpv:hasDataSource mpi:ds-258 ;
+    rdb2rdftest:mappingDocument "mappingpedia-ui/static/rules/mapping_v9TyqSM.html" ;
+.
+
+
+# mpv:Datasource rdfs:subClassOf dcat:Dataset .
+mpi:ds-258 a mpv:DataSource ;
+    dcterms:identifier "data-228" ;
+    dcterms:title "City data" ;
+    dcat:keyword "city"  ;
+    dcterms:publisher mpi:user-258 ;
+    dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    dcat:distribution mpi:ds-258-distribution-228 ;
+.
+
+
+mpi:ds-258-distribution-228 a dcat:Distribution;
+    dcat:mediaType "application/rdb" ;
+.

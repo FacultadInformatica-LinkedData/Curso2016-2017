@@ -1,0 +1,18 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix my_vocabulary: <http://www.semanticweb.org/ricardo/ontologies/2016/11/ontology/my_vocabulary#>.
+@prefix my_instances: <http://www.semanticweb.org/ricardo/ontologies/2016/11/ontology/instances/>.
+@base <http://www.semanticweb.org/ricardo/ontologies/2016/11/ontology/> .
+
+<TriplesMapCity> a rr:TriplesMap;
+
+rr:logicalTable [ rr:tableName "city" ];
+
+rr:subjectMap [ rr:termType rr:IRI;
+ rr:template "http://www.semanticweb.org/ricardo/ontologies/2016/11/ontology/instances/city/{ID}";
+ rr:class my_vocabulary:City
+];
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant my_vocabulary:hasPopulation ];
+ rr:objectMap [ rr:termType rr:Literal; rr:column "population"; ];
+] .
