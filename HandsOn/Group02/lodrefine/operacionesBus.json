@@ -1,0 +1,59 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Stop_Name to Nombre_Parada",
+    "oldColumnName": "Stop_Name",
+    "newColumnName": "Nombre_Parada"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Stop_Code_LBSL",
+    "columnName": "Stop_Code_LBSL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Bus_Stop_Code to Codigo_Parada",
+    "oldColumnName": "Bus_Stop_Code",
+    "newColumnName": "Codigo_Parada"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Naptan_Atco",
+    "columnName": "Naptan_Atco"
+  },
+  {
+    "op": "core/column-move",
+    "description": "Move column Nombre_Parada to position 0",
+    "columnName": "Nombre_Parada",
+    "index": 0
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Location_Easting to Coordenada X",
+    "oldColumnName": "Location_Easting",
+    "newColumnName": "Coordenada X"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Location_Northing to Coordenada Y",
+    "oldColumnName": "Location_Northing",
+    "newColumnName": "Coordenada Y"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Heading to Sentido",
+    "oldColumnName": "Heading",
+    "newColumnName": "Sentido"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Stop_Area to Area_Parada",
+    "oldColumnName": "Stop_Area",
+    "newColumnName": "Area_Parada"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Virtual_Bus_Stop",
+    "columnName": "Virtual_Bus_Stop"
+  }
+]
