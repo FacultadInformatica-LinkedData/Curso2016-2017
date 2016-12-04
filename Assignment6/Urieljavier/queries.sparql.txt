@@ -43,7 +43,7 @@ WHERE {
 PREFIX propiedad: <http://example.org/myVocabulary#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
  
-SELECT ?Distrito max(xsd:integer(?num) as ?BicycleFalls) 
+SELECT ?Distrito 
 WHERE { 
 	?obs a qb:Observation;
    	propiedad:relatedDistrict ?Distrito;
