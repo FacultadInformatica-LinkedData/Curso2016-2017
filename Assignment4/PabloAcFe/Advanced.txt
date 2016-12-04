@@ -1,0 +1,110 @@
+A4, consultas avanzadas SPARQL
+Pablo Aceituno Ferro
+
+Fuente: http://sandbox.linkeddata.es/sparql
+Grafo:  http://sandbox.linkeddata.es/Grado_20122013
+
+1. Dame todas las propiedades aplicables a las instancias de la clase Politician ------------------------------------------------------------
+(<http://dbpedia.org/ontology/Politician>)
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+PREFIX mydbpedia: <http://dbpedia.org/ontology#>
+
+SELECT DISTINCT ?propiedadesAplicables
+WHERE {
+       ?x a dbpedia:Politician .
+       ?x ?propiedadesAplicables []
+ } LIMIT 10
+
+
+
+2. Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias -----------------------------------------------------------
+de la clase Politician
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+PREFIX mydbpedia: <http://dbpedia.org/ontology#>
+PREFIX myorg: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?propiedadesAplicables
+WHERE {
+       ?x a mydbpedia:Politician .
+       ?x ?propiedadesAplicables [] .
+       FILTER(?propiedadesAplicables != myorg:type)
+ } LIMIT 10
+
+
+
+3. ¿Cuántos valores distintos se pueden encontrar para las propiedades, --------------------------------------------------------------------
+exceptuando rdf:type, de las instancias de la clase Politician)?
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+PREFIX mydbpedia: <http://dbpedia.org/ontology#>
+PREFIX myorg: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT (count(?propiedades) as ?propiedesDistintas)
+WHERE {
+       ?x a mydbpedia:Politician .
+       ?x ?propiedades [] .
+       FILTER (?propiedades != myorg:type)
+}
+
+
+
+4. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las ----------------------------------------------------------------
+instancias de la clase Politician, dime cuántos valores distintos toman en dichas
+instancias.
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+PREFIX mydbpedia: <http://dbpedia.org/ontology#>
+PREFIX myorg: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?propiedades (count(?valor) as ?propiedesDistintas)
+WHERE {
+       ?x a mydbpedia:Politician .
+       ?x ?propiedades ?valor .
+       FILTER (?propiedades != myorg:type)
+      }
+
+
+
+5. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las ----------------------------------------------------------------
+instancias de la clase Politician, dime la media de valores distintos que toman
+en dichas instancias.
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+PREFIX mydbpedia: <http://dbpedia.org/ontology#>
+PREFIX myorg: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?propiedades (count(?valor) as ?propiedadesDistintas)
+WHERE {
+       ?x a mydbpedia:Politician .
+       ?x ?propiedades ?valor .
+       FILTER (?propiedades != myorg:type)
+}
+#falta calcular la media
+
+
+
+6. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las ----------------------------------------------------------------
+instancias de la clase Politician, dime el máximo número de valores distintos
+que toman entre todas sus instancias, ordenado de mayor a menor
+<<Dicho de otro modo, dime qué propiedades son las más comunes entre las
+instancias de la clase Politician>>
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+PREFIX mydbpedia: <http://dbpedia.org/ontology#>
+PREFIX myorg: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?propiedades (count(?valor) as ?numMaxDist)
+WHERE {
+       ?x a mydbpedia:Politician .
+       ?x ?propiedades ?valor .
+       FILTER (?propiedades != myorg:type)
+}
+ORDER BY DESC (?numMaxDist)

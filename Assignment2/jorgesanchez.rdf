@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+	<rdf:RDF
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:class="http://www.ontologies.org/ontologies/class#"
+		xmlns="http://www.ontologies.org/ontologies/class#"
+		xmlns:base="http://www.ontologies.org/ontologies/class">
+		
+		<rdf:Property rdf:about="http://www.ontologies.org/ontologies/class#includes"/>
+		<rdf:Property rdf:about="http://www.ontologies.org/ontologies/class#hasMeasurement"/>				
+		<rdf:Property rdf:about="http://www.ontologies.org/ontologies/class#hasTemperature"/>
+		<rdf:Property rdf:about="http://www.ontologies.org/ontologies/class#atTime"/>		
+		<rdf:Property rdf:about="http://www.ontologies.org/ontologies/class#hasOwner"/>
+		<rdf:Property rdf:about="http://www.ontologies.org/ontologies/class#hasName"/>
+				
+		<rdf:Description rdf:about="#Class01">
+			<class:includes rdf:resource="#Sensor029">
+			<class:includes rdf:resource="#Computer101">
+		</rdf:Description>
+		<rdf:Description rdf:about="#Sensor029">
+			<class:hasMeasurement rdf:resource="#Measurement8401">
+		</rdf:Description>
+		<rdf:Description rdf:about="#Measurement8401">
+			<class:hasTemperature>29</hasTemperature>
+			<class:atTime>2010-06-12T12:00:12</atTime>
+		</rdf:Description>
+		<rdf:Description rdf:about="#Computer101">
+			<class:hasOwner rdf:resource="User10A">
+		</rdf:Description>
+		<rdf:Description rdf:about="#User10A">
+			<class:hasName>Pedro</hasName>
+		</rdf:Description>
+	</rdf:RDF>
