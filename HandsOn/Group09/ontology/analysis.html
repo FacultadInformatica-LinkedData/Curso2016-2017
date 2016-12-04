@@ -142,47 +142,58 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Data sets analysis</a>
+  <li><a href="#sec-1">1. Data sets analysis</a>
+    <ul>
+      <li><a href="#sec-1-1">1.1. alojamiento.csv</a>
+        <ul>
+          <li><a href="#sec-1-1-1">1.1.1. Headers, columns or filds definition</a></li>
+          <li><a href="#sec-1-1-2">1.1.2. Data schema</a></li>
+          <li><a href="#sec-1-1-3">1.1.3. Analyse Licensing of the Data Source</a></li>
+        </ul>
+      </li>
+      <li><a href="#sec-1-2">1.2. restaurante.csv</a>
+        <ul>
+          <li><a href="#sec-1-2-1">1.2.1. Headers, columns or filds definition</a></li>
+          <li><a href="#sec-1-2-2">1.2.2. Data schema</a></li>
+          <li><a href="#sec-1-2-3">1.2.3. Analyse Licensing of the Data Source</a></li>
+        </ul>
+      </li>
+      <li><a href="#sec-1-3">1.3. monumento.csv</a>
+        <ul>
+          <li><a href="#sec-1-3-1">1.3.1. Headers, columns or filds definition</a></li>
+          <li><a href="#sec-1-3-2">1.3.2. Data schema</a></li>
+          <li><a href="#sec-1-3-3">1.3.3. Analyse Licensing of the Data Source</a></li>
+        </ul>
+      </li>
+      <li><a href="#sec-1-4">1.4. estacion-bicicletas.csv</a>
+        <ul>
+          <li><a href="#sec-1-4-1">1.4.1. Headers, columns or filds definition</a></li>
+          <li><a href="#sec-1-4-2">1.4.2. Data schema</a></li>
+          <li><a href="#sec-1-4-3">1.4.3. Analyse Licensing of the Data Source</a></li>
+        </ul>
+      </li>
+      <li><a href="#sec-1-5">1.5. poste.csv (Bus stops)</a>
+        <ul>
+          <li><a href="#sec-1-5-1">1.5.1. Headers, columns or filds definition</a></li>
+          <li><a href="#sec-1-5-2">1.5.2. Data schema</a></li>
+          <li><a href="#sec-1-5-3">1.5.3. Analyse Licensing of the Data Source</a></li>
+        </li>
+      </ul>
+    </div>
+    </li>
+  </ul>
+</ul>
 <ul>
-<li><a href="#sec-1-1">1.1. alojamiento.csv</a>
-<ul>
-<li><a href="#sec-1-1-1">1.1.1. Headers, columns or filds definition</a></li>
-<li><a href="#sec-1-1-2">1.1.2. Data schema</a></li>
-<li><a href="#sec-1-1-3">1.1.3. Analyse Licensing of the Data Source</a></li>
+  <li><a href="#sec-2">2. Resource Name Strategy</a>
+    <ul>
+      <li><a href="#sec-2-1">2.1. RNS Alojamientos</a></li>
+      <li><a href="#sec-2-2">2.2. RNS Estacion-bicicletas</a></li>
+      <li><a href="#sec-2-3">2.3. RNS Monumentos</a></li>
+      <li><a href="#sec-2-4">2.4. RNS Poste</a></li>
+      <li><a href="#sec-2-5">2.5. RNS Restaurante</a></li>
+    </ul>
+  </li>
 </ul>
-</li>
-<li><a href="#sec-1-2">1.2. restaurante.csv</a>
-<ul>
-<li><a href="#sec-1-2-1">1.2.1. Headers, columns or filds definition</a></li>
-<li><a href="#sec-1-2-2">1.2.2. Data schema</a></li>
-<li><a href="#sec-1-2-3">1.2.3. Analyse Licensing of the Data Source</a></li>
-</ul>
-</li>
-<li><a href="#sec-1-3">1.3. monumento.csv</a>
-<ul>
-<li><a href="#sec-1-3-1">1.3.1. Headers, columns or filds definition</a></li>
-<li><a href="#sec-1-3-2">1.3.2. Data schema</a></li>
-<li><a href="#sec-1-3-3">1.3.3. Analyse Licensing of the Data Source</a></li>
-</ul>
-</li>
-<li><a href="#sec-1-4">1.4. estacion-bicicletas.csv</a>
-<ul>
-<li><a href="#sec-1-4-1">1.4.1. Headers, columns or filds definition</a></li>
-<li><a href="#sec-1-4-2">1.4.2. Data schema</a></li>
-<li><a href="#sec-1-4-3">1.4.3. Analyse Licensing of the Data Source</a></li>
-</ul>
-</li>
-<li><a href="#sec-1-5">1.5. poste.csv (Bus stops)</a>
-<ul>
-<li><a href="#sec-1-5-1">1.5.1. Headers, columns or filds definition</a></li>
-<li><a href="#sec-1-5-2">1.5.2. Data schema</a></li>
-<li><a href="#sec-1-5-3">1.5.3. Analyse Licensing of the Data Source</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
 </div>
 <p>
 &gt;
@@ -812,6 +823,135 @@ el mundo y por el plazo máximo permitido por la Ley.
 </div>
 </div>
 </div>
+</div>
+<p>
+  &gt;
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+  <h2 id="sec-1"><span class="section-number-2">2</span> Resource Name Strategy</h2>
+  <div class="outline-text-2" id="text-1">
+        <p>
+          El dominio para todos los recursos sera el siguiente:
+          <i>www.websemantica.com/</i>
+          Este dominio es comun para todos nuestros recuersos
+        </p>
+      </div>
+
+      <div id="outline-container-sec-1-1" class="outline-3">
+        <h3 id="sec-1-1"><span class="section-number-3">1.1</span> RNS Alojamientos</h3>
+        <div class="outline-text-3" id="text-1-1">
+          <ul class="org-ul">
+            <li>Como Path individual a un alojamiento seria: 
+              www.websemantica.com/grupo09/alojamiento/&lt;nomnbre-alojamiento&gt; 
+              e.g: <i>www.websemantica.com/grupo09/alojamiento/hotel-delicias</i> 
+
+              <p>
+                Otra forma de hacerlo seria poniendo una referencia, por ejemplo un id   
+                www.websemantica.com/grupo09/alojamiento/&lt;alojamiento-id&gt; 
+                e.g: <i>www.websemantica.com/grupo09/alojamiento/1068</i> 
+              </p>
+            </li>
+          </ul>
+
+
+          <ul class="org-ul">
+            <li>Como path para los terminos se usa el # para acceder al campo de interes: 
+              www.websemantica.com/grupo09/alojamiento/&lt;nomnbre-alojamiento&gt;#&lt;nombre-del-campo&gt; 
+              www.websemantica.com/grupo09/alojamiento/&lt;alojamiento-id&gt;#&lt;nombre-del-campo&gt; 
+              e.g: <i>www.websemantica.com/grupo09/alojamiento/hotel-delicias#Camas</i> 
+              <i>www.websemantica.com/grupo09/alojamiento/1068#Camas</i> 
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="outline-container-sec-1-2" class="outline-3">
+        <h3 id="sec-1-2"><span class="section-number-3">1.2</span> RNS Estacion-bicicletas</h3>
+        <div class="outline-text-3" id="text-1-2">
+          <ul class="org-ul">
+            <li>Como Path individual a una estacion de bicicletas seria:
+              www.websemantica.com/grupo09/estacion-bicicletas/&lt;id-estacion&gt;
+              e.g: <i>www.websemantica.com/grupo09/estacion-bicicletas/101</i>
+            </li>
+
+            <li>Como path para los terminos se usa el # para acceder al campo de interes:
+              www.websemantica.com/grupo09/estacion-bicicletas/&lt;id-estacion&gt;#&lt;nombre-del-campo&gt;
+              e.g: <i>www.websemantica.com/grupo09/estacion-bicicletas/10#bicisDisponibles</i>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="outline-container-sec-1-3" class="outline-3">
+        <h3 id="sec-1-3"><span class="section-number-3">1.3</span> RNS Monumentos</h3>
+        <div class="outline-text-3" id="text-1-3">
+          <ul class="org-ul">
+            <li>Como Path individual a un monumento seria: 
+              www.websemantica.com/grupo09/monumento/&lt;nomnbre-monumneto&gt; 
+              e.g: <i>www.websemantica.com/grupo09/monumento/casa-de-los-morales</i> 
+
+              <p>
+                Otra forma de hacerlo seria poniendo una referencia, por ejemplo un id 
+                www.websemantica.com/grupo09/monumentos/&lt;id&gt; 
+                e.g: <i>www.websemantica.com/grupo09/alojamientos/26</i> 
+              </p>
+            </li>
+
+            <li>Como path para los terminos se usa el # para acceder al campo de interes: 
+              www.websemantica.com/grupo09/monumento/&lt;nomnbre-monumento&gt;#&lt;nombre-del-campo&gt; 
+              www.websemantica.com/grupo09/monumento/&lt;id-monumento&gt;#&lt;nombre-del-campo&gt; 
+              e.g: <i>www.websemantica.com/grupo09/monumento/casa-de-los-morales#description</i> 
+              <i>www.websemantica.com/grupo09/monumento/26#description</i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-sec-1-4" class="outline-3">
+        <h3 id="sec-1-4"><span class="section-number-3">1.4</span> RNS Poste</h3>
+        <div class="outline-text-3" id="text-1-4">
+          <ul class="org-ul">
+            <li>Como Path individual para un poste seria:
+              www.websemantica.com/grupo09/poste/&lt;id-poste&gt;
+              e.g: <i>www.websemantica.com/grupo09/poste/798</i>
+            </li>
+
+            <li>Como path para los terminos se usa el # para acceder al campo de interes:
+              www.websemantica.com/grupo09/poste/&lt;id-poste&gt;#&lt;nombre-del-campo&gt;
+              e.g: <i>www.websemantica.com/grupo09/poste/798#geometry</i>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="outline-container-sec-1-5" class="outline-3">
+        <h3 id="sec-1-5"><span class="section-number-3">1.5</span> RNS Restaurante</h3>
+        <div class="outline-text-3" id="text-1-5">
+          <ul class="org-ul">
+            <li>Como Path individual a un restaurante seria:
+              www.websemantica.com/grupo09/restaurante/&lt;nomnbre-restaurante&gt;
+              e.g: <i>www.websemantica.com/grupo09/restaurante/guetaria</i>
+
+              <p>
+                Otra forma de hacerlo seria poniendo una referencia, por ejemplo un id
+                www.websemantica.com/grupo09/restaurantes/&lt;id&gt;
+                e.g: <i>www.websemantica.com/grupo09/alojamientos/61</i>
+              </p>
+            </li>
+          </ul>
+
+
+          <ul class="org-ul">
+            <li>Como path para los terminos se usa el # para acceder al campo de interes:
+              www.websemantica.com/grupo09/restaurante/&lt;nomnbre-restaurante&gt;#&lt;nombre-del-campo&gt;
+              www.websemantica.com/grupo09/restaurante/&lt;id-restaurante&gt;#&lt;nombre-del-campo&gt;
+              e.g: <i>www.websemantica.com/grupo09/restaurante/guetaria#streetAddress</i>
+              <i>www.websemantica.com/grupo09/restaurante/26#streetAddress</i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: 29/10/2016</p>
