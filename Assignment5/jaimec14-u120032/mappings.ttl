@@ -1,0 +1,56 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix my_vocabulary: <http://example.linkeddata.es/my_vocabulary#> .
+@prefix my_instances: <http://example.linkeddata.es/instances/> .
+@base <http://example.linkeddata.es/> .
+
+<TriplesMapCountry>
+	a rr:TriplesMap;
+
+	rr:logicalTable [ rr:tableName "Country" ];
+
+	rr:subjectMap [ rr:termType rr:IRI;
+		rr:template "http://example.linkeddata.es/instances/Country/{Code}";
+		rr:class my_vocabulary:Country
+	];
+
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant my_vocabulary:hasName ];
+		rr:objectMap [ rr:termType rr:Literal; rr:column "Name"; ];
+	];
+
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant my_vocabulary:hasCapital ];
+		rr:objectMap [ rr:template "http://example.linkeddata.es/instances/City/{Capital}" ];
+	];
+.
+
+<TriplesMapCity>
+	a rr:TriplesMap;
+
+	rr:logicalTable [ rr:tableName "City" ];
+
+	rr:subjectMap [ rr:termType rr:IRI;
+ 		rr:template "http://example.linkeddata.es/instances/City/{ID}";
+ 		rr:class my_vocabulary:City
+	];
+
+	rr:predicateObjectMap [
+ 		rr:predicateMap [ rr:constant my_vocabulary:hasPopulation ];
+ 		rr:objectMap [ rr:termType rr:Literal; rr:column "Population"; ];
+	];
+
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant my_vocabulary:hasName ];
+		rr:objectMap [ rr:termType rr:Literal; rr:column "Name"; ];
+	];
+
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant my_vocabulary:belongsToCountry ];
+		rr:objectMap [ rr:template "http://example.linkeddata.es/instances/Country/{CountryCode}" ];
+	];
+
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant my_vocabulary:belongsToDistrict ];
+		rr:objectMap [ rr:termType rr:Literal; rr:column "District"; ];
+	];
+.
