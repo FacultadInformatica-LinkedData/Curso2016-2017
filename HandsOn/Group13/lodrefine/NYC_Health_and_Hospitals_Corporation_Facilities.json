@@ -1,0 +1,276 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Cross Streets",
+    "columnName": "Cross Streets"
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Location 1 by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Location 1",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "(",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Location 1 1 to Address",
+    "oldColumnName": "Location 1 1",
+    "newColumnName": "Address"
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Location 1 2 by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Location 1 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ", ",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Location 1 2 2 by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Location 1 2 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ")",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Location 1 2 2 2",
+    "columnName": "Location 1 2 2 2"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Location 1 2 1 to Latitude",
+    "oldColumnName": "Location 1 2 1",
+    "newColumnName": "Latitude"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Location 1 2 2 1 to Longitude",
+    "oldColumnName": "Location 1 2 2 1",
+    "newColumnName": "Longitude"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Latitude using expression value.toString()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Latitude",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Longitude using expression value.toString()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Longitude",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Facility Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#HealthFacility",
+              "curie": "livingPlaces:HealthFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasHealthFacilityType",
+              "curie": "livingPlaces:hasHealthFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Facility Type"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToBorough",
+              "curie": "livingPlaces:pertainToBorough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#Borough",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Facility Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasPhone",
+              "curie": "livingPlaces:hasPhone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasAddress",
+              "curie": "livingPlaces:hasAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Address"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasLatitude",
+              "curie": "livingPlaces:hasLatitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasLongitude",
+              "curie": "livingPlaces:hasLongitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Facility Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Borough",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#Borough",
+              "curie": "livingPlaces:Borough"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Borough"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

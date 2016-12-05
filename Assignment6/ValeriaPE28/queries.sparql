@@ -1,0 +1,9 @@
+VALERIA PERFECTO ESPINOSA
+
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+SELECT (SUM(?accidents) AS ?numberOfAccidents) 
+WHERE {
+   ?obs a qb:Observation ;
+   mv:numberOfAccidents ?accidents.
+}
