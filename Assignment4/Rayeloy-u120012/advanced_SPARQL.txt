@@ -1,0 +1,70 @@
+#Carlos Eloy Jose Sanz u120012
+
+#---------------------Cuestionario Avanzado----------------------------
+#1.Dame todas las propiedades aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+SELECT distinct ?Propiedades
+WHERE
+{
+?P ?relacion <http://dbpedia.org/ontology/Politician> .
+?P ?Propiedades ?X
+}
+
+#2.Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+SELECT distinct ?Propiedades
+WHERE
+{
+?P ?relacion <http://dbpedia.org/ontology/Politician> .
+?P ?Propiedades ?X
+FILTER (?Propiedades != rdf:type)
+}
+
+#3.¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)?
+ 
+SELECT  COUNT (DISTINCT ?x) 
+WHERE
+{
+?instancia ?auxiliar <http://dbpedia.org/ontology/Politician>.
+?instancia ?relacion ?x.
+FILTER (?relacion!= rdf:type)
+}
+
+#4.Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime cuántos valores distintos toman en dichas instancias.
+
+SELECT ?relacion COUNT (DISTINCT ?x) 
+WHERE
+{
+?instancia ?auxiliar <http://dbpedia.org/ontology/Politician>.
+?instancia ?relacion ?x.
+FILTER (?relacion!= rdf:type)
+}
+
+#5.Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime la media de valores distintos que toman en dichas instancias.
+
+SELECT  avg(?valores) as ?media
+WHERE
+{
+SELECT ?relacion COUNT (DISTINCT ?valor) as ?valores
+WHERE
+{
+?instancia ?q <http://dbpedia.org/ontology/Politician> .
+?instancia ?relacion ?valor
+FILTER (?relacion != rdf:type)
+}
+}
+
+#6.Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor
+<<Dicho de otro modo, dime qué propiedades son las más comunes entre las instancias de la clase Politician>>
+
+SELECT ?relacion max(?valores) 
+WHERE
+{
+SELECT ?relacion COUNT (DISTINCT?valor) as ?valores
+WHERE
+{
+?instancia ?q <http://dbpedia.org/ontology/Politician> .
+?instancia ?relacion ?valor
+FILTER (?relacion != rdf:type)
+}
+}
