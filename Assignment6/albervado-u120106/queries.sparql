@@ -1,0 +1,59 @@
+PREFIX voc: <http://example.org/myVocabulary#>
+PREFIX cub: <http://purl.org/linked-data/cube#>
+
+#####1. How many accidents were there in Madrid in 2013?
+
+SELECT distinct SUM(?number) as ?Accidents
+where{
+?obs a cub:Observation.
+?obs voc:numberOfAccidents ?number.
+}
+
+
+#####2. Give me the number of accidents in Usera for each type of accident.
+
+SELECT ?type xsd:integer(?numberAccidents)
+ WHERE {
+ 	?obs a cub:Observation;
+ 	voc:relatedDistrict "USERA";
+ 	voc:hasAccidentType ?type;
+ 	voc:numberOfAccidents ?numberAccidents
+ }
+
+
+#####3. Give me the number of multiple collisions for each district.
+
+SELECT ?district xsd:integer(?nMultipleCollisions)
+ WHERE {
+ 	?obs a cub:Observation;
+ 	voc:relatedDistrict ?district;
+ 	voc:hasAccidentType voc:MultipleCollision;
+ 	voc:numberOfAccidents ?nMultipleCollisions.
+}
+
+#####4. Which is the district were the number of bicycle falls was higher in 2013?
+
+SELECT ?district MAX(?nAccidents)
+ WHERE {
+ ?obs a cub:Observation;
+ voc:relatedDistrict ?district;
+ voc:hasAccidentType voc:BicycleFall;
+ voc:numberOfAccidents ?nAccidents
+ }
+ ORDER by desc(?nAccidents) LIMIT 1
+
+#####5. Give me the districts with more than 500 accidents in 2013.
+
+SELECT ?district ?nAccidents WHERE {
+ {
+ SELECT DISTINCT ?district (SUM(xsd:double(?number) as ?nAccidents)
+ WHERE{
+ ?obs a cub:Observation.
+ voc:relatedDistrict ?district.
+ voc:numberOfAccidents ?number.
+ }
+ } FILTER (?nAccidents > 500)
+ } ORDER BY desc(?nAccidents)
+
+
+
