@@ -1,0 +1,78 @@
+#1- How many accidents were there in Madrid in 2013?
+
+PREFIX propiedad: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+SELECT (SUM(?Accidents) as ?NumAccidents)
+WHERE {
+	?obs a qb:Observation;
+	propiedad:numberOfAccidents ?Accidents.
+}
+
+
+#2- Give me the number of accidents in Usera for each type of accident
+
+PREFIX propiedad: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+SELECT ?TipoAccidente (xsd:integer(?num) as ?NumAccidente) 
+WHERE {
+	?obs a qb:Observation ;
+  	propiedad:relatedDistrict  "USERA";
+  	propiedad:hasAccidentType ?TipoAccidente;
+	propiedad:numberOfAccidents ?num.
+}
+
+
+#3- Give me the number of multiple collisions for each district
+
+PREFIX propiedad: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+ 
+SELECT ?Distrito (xsd:integer(?num) as ?NumMultipleColisiones)
+WHERE {	
+	?obs a qb:Observation;
+    	propiedad:relatedDistrict ?Distrito;
+    	propiedad:hasAccidentType propiedad:MultipleCollision;
+    	propiedad:numberOfAccidents ?num.
+}
+
+
+#4- Which is the district were the number of bicycle falls was higher in 2013?
+
+PREFIX propiedad: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+ 
+SELECT ?Distrito 
+WHERE { 
+	?obs a qb:Observation;
+   	propiedad:relatedDistrict ?Distrito;
+   	propiedad:hasAccidentType propiedad:BicycleFall;
+   	propiedad:numberOfAccidents ?num 
+	{ SELECT (MAX(?numAccidentes) as ?num) 
+     		WHERE { 
+			?obs a qb:Observation;
+       			propiedad:relatedDistrict ?Distrito;
+       			propiedad:hasAccidentType propiedad:BicycleFall;
+       			propiedad:numberOfAccidents ?numAccidentes.
+     			}
+   		
+ 	}
+}
+
+
+#5- Give me the districts with more than 500 accidents in 2013
+
+PREFIX propiedad: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+ 
+SELECT ?Distrito ?NumAccidentes 
+WHERE {
+	{ SELECT ?Distrito SUM(xsd:integer(?num)) as ?NumAccidentes 
+    		WHERE { 
+			?obs a qb:Observation;
+      			propiedad:relatedDistrict ?Distrito;
+      			propiedad:numberOfAccidents ?num.
+    		}
+	} FILTER (?NumAccidentes > 500)
+}
