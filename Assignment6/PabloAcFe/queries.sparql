@@ -1,0 +1,66 @@
+# Autor: Pablo Aceituno Ferro, 110115
+# Assigment 6
+
+
+
+# 1) nº accidentes madrid en 2013, res= 11749   *********************************************************
+ 
+PREFIX voc:     <http://example.org/myVocabulary#>
+PREFIX CubeVoc: <http://purl.org/linked-data/cube#>
+
+SELECT DISTINCT SUM(?n) as ?Madrid_num_Accidents_in_2013
+WHERE {
+	?obs a CubeVoc:Observation.
+	?obs voc:numberOfAccidents ?n.
+}
+
+
+
+# 2) nº de accidentes en Usera por tipos, res= tabla a consultar  ***************************************
+
+PREFIX voc:     <http://example.org/myVocabulary#>
+PREFIX CubeVoc: <http://purl.org/linked-data/cube#>
+
+SELECT ?type AS ?Tipo_accidente xsd:integer(?numAcc) AS ?Number_accidents_in_Usera 
+WHERE 
+{
+	?obs a CubeVoc:Observation;
+	voc:relatedDistrict "USERA";
+	voc:hasAccidentType ?type;
+	voc:numberOfAccidents ?numAcc
+}
+
+
+
+# 3) nª de colisiones multiples en cada distrito, res = tabla a consultar ******************************
+
+PREFIX voc:     <http://example.org/myVocabulary#>
+PREFIX CubeVoc: <http://purl.org/linked-data/cube#>
+
+SELECT ?District AS ?Distrito xsd:integer(?numAcc) AS ?Numero_colisiones_multiples
+WHERE{
+	?obs a CubeVoc:Observation.
+	?obs voc:relatedDistrict ?District.
+	?obs voc:hasAccidentType voc:MultipleCollision.
+	?obs voc:numberOfAccidents ?numAcc.
+}
+ORDER BY(?District)
+
+
+
+# 4) distrito en el que hubo mas caidas de ciclistas en 2013, res= en Fuencarral, con 13 ******************
+
+
+PREFIX voc:     <http://example.org/myVocabulary#>
+PREFIX CubeVoc: <http://purl.org/linked-data/cube#>
+
+SELECT ?RDistrict AS ?District (xsd:integer(MAX(?numAcc)) AS ?Numero_mayor_de_caidas)
+WHERE 
+{
+	?obs a CubeVoc:Observation;
+	voc:relatedDistrict ?RDistrict;
+	voc:hasAccidentType voc:BicycleFall;
+    	voc:numberOfAccidents ?numAcc
+}
+ORDER BY DESC(?numAcc) 
+LIMIT 1
