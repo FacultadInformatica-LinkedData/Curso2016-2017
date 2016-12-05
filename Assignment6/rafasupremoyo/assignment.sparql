@@ -1,0 +1,14 @@
+1_
+select distinct  SUM(?Concept2) where {?Concept <http://example.org/myVocabulary#numberOfAccidents> ?Concept2} LIMIT 100
+2_
+
+select distinct   ?Concept2  where { ?Concept3 a <http://purl.org/linked-data/cube#Observation> .
+?Concept3 <http://example.org/myVocabulary#relatedDistrict> "USERA" .
+?Concept3 <http://example.org/myVocabulary#numberOfAccidents> ?Concept2} LIMIT 100
+
+3_
+
+select distinct ?Concept4  ?Concept2 where { ?Concept3 a <http://purl.org/linked-data/cube#Observation> .
+?Concept3 <http://example.org/myVocabulary#hasAccidentType> <http://example.org/myVocabulary#MultipleCollision> .
+?Concept3 <http://example.org/myVocabulary#relatedDistrict> ?Concept4 .
+?Concept3 <http://example.org/myVocabulary#numberOfAccidents> ?Concept2} LIMIT 100

@@ -1,0 +1,238 @@
+@prefix : <http://www.semanticweb.org/grupo09/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/grupo09/> .
+
+<http://www.semanticweb.org/grupo09/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/grupo09/coordenadas
+:coordenadas rdf:type owl:ObjectProperty ;
+             rdfs:domain :Lugar ;
+             rdfs:range :Coordenadas .
+
+
+###  http://www.semanticweb.org/grupo09/enLaDireccion
+:enLaDireccion rdf:type owl:ObjectProperty ;
+               rdfs:domain :Lugar ;
+               rdfs:range :Direccion .
+
+
+###  http://www.semanticweb.org/grupo09/estaEn
+:estaEn rdf:type owl:ObjectProperty ;
+        rdfs:domain :Lugar ;
+        rdfs:range :Ciudad .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/grupo09/accesibilidad
+:accesibilidad rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Alojamiento ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/anclajesDisponibles
+:anclajesDisponibles rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Estaciones ;
+                     rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/grupo09/bicisDisponibles
+:bicisDisponibles rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Estaciones ;
+                  rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/grupo09/camas
+:camas rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Alojamiento ;
+       rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/grupo09/categoria
+:categoria rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Alojamiento ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/ciudad
+:ciudad rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Ciudad ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/codigoPostal
+:codigoPostal rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Lugar ;
+              rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/grupo09/comentarios
+:comentarios rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Alojamiento ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/datacion
+:datacion rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Monumento ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/datos
+:datos rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Monumento ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/descripcion
+:descripcion rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Monumento ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/direccion
+:direccion rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Direccion ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Lugar ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/estilo
+:estilo rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Monumento ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/habitaciones
+:habitaciones rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Alojamiento ;
+              rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/grupo09/horario
+:horario rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Monumento ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/imagen
+:imagen rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Lugar ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/latitud
+:latitud rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Coordenadas ;
+         rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/grupo09/logo
+:logo rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Lugar ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/longitud
+:longitud rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Coordenadas ;
+          rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/grupo09/nombre
+:nombre rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Lugar ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/precio
+:precio rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Monumento ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/sitiosDeInteres
+:sitiosDeInteres rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Monumento ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/telefono
+:telefono rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Lugar ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Lugar ;
+     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/grupo09/visita
+:visita rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Monumento ;
+        rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/grupo09/Alojamiento
+:Alojamiento rdf:type owl:Class ;
+             rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/grupo09/Ciudad
+:Ciudad rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/grupo09/Coordenadas
+:Coordenadas rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/grupo09/Direccion
+:Direccion rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/grupo09/Estaciones
+:Estaciones rdf:type owl:Class ;
+            rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/grupo09/Lugar
+:Lugar rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/grupo09/Monumento
+:Monumento rdf:type owl:Class ;
+           rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/grupo09/Poste
+:Poste rdf:type owl:Class ;
+       rdfs:subClassOf :Lugar .
+
+
+###  http://www.semanticweb.org/grupo09/Restaurante
+:Restaurante rdf:type owl:Class ;
+             rdfs:subClassOf :Lugar .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
