@@ -4,123 +4,147 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.madridcultural.es/ontology.owl#> .
 
-<http://www.madridcultural.es/ontology.owl#> rdf:type owl:Ontology .
+<http://www.madridcultural.es/ontology.owl#> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.madridcultural.es/ontology.owl#es_realizado
 
-#################################################################
-#    Object Properties
-#################################################################
+:es_realizado a owl:ObjectProperty ;
+	rdfs:subPropertyOf owl:topObjectProperty ;
+	rdfs:domain :Lugar ;
+	rdfs:range :Evento .
+# 
+# http://www.madridcultural.es/ontology.owl#pertenece_a
 
-###  http://www.madridcultural.es/ontology.owl#tieneBarrio
-:tieneBarrio rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :tieneDistrito .
+:pertenece_a a owl:ObjectProperty ;
+	rdfs:subPropertyOf owl:topObjectProperty ;
+	rdfs:domain :Tipo ;
+	rdfs:range :Evento .
+# 
+# http://www.madridcultural.es/ontology.owl#seRealizaEn
 
+:seRealizaEn a owl:ObjectProperty ;
+	rdfs:subPropertyOf owl:topObjectProperty ;
+	rdfs:domain :Evento ;
+	rdfs:range :Lugar .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneBarrio
 
-###  http://www.madridcultural.es/ontology.owl#tieneCalle
-:tieneCalle rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf :tieneDireccion .
+:tieneBarrio a owl:ObjectProperty ;
+	rdfs:subPropertyOf :tieneDistrito .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneCalle
 
+:tieneCalle a owl:ObjectProperty ;
+	rdfs:subPropertyOf :tieneDireccion .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneCodigoPostal
 
-###  http://www.madridcultural.es/ontology.owl#tieneCodigoPostal
-:tieneCodigoPostal rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf :tieneDistrito .
+:tieneCodigoPostal a owl:ObjectProperty ;
+	rdfs:subPropertyOf :tieneDistrito .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneDescripcion
 
+:tieneDescripcion a owl:ObjectProperty .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneDireccion
 
-###  http://www.madridcultural.es/ontology.owl#tieneDireccion
-:tieneDireccion rdf:type owl:ObjectProperty .
+:tieneDireccion a owl:ObjectProperty .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneDistrito
 
+:tieneDistrito a owl:ObjectProperty ;
+	rdfs:subPropertyOf owl:topObjectProperty .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneEmail
 
-###  http://www.madridcultural.es/ontology.owl#tieneDistrito
-:tieneDistrito rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf owl:topObjectProperty .
+:tieneEmail a owl:ObjectProperty .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneFecha
 
+:tieneFecha a owl:ObjectProperty .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneHora
 
-###  http://www.madridcultural.es/ontology.owl#tieneEmail
-:tieneEmail rdf:type owl:ObjectProperty .
+:tieneHora a owl:ObjectProperty .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneNombre
 
+:tieneNombre a owl:ObjectProperty .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneNumero
 
-###  http://www.madridcultural.es/ontology.owl#tieneNumero
-:tieneNumero rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :tieneDireccion .
+:tieneNumero a owl:ObjectProperty ;
+	rdfs:subPropertyOf :tieneDireccion .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneTelefono
 
+:tieneTelefono a owl:ObjectProperty .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneTipo
 
-###  http://www.madridcultural.es/ontology.owl#tieneTelefono
-:tieneTelefono rdf:type owl:ObjectProperty .
+:tieneTipo a owl:ObjectProperty .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneTransporte
 
+:tieneTransporte a owl:ObjectProperty .
+# 
+# http://www.madridcultural.es/ontology.owl#tiene_un
 
-###  http://www.madridcultural.es/ontology.owl#tieneTipo
-:tieneTipo rdf:type owl:ObjectProperty .
+:tiene_un a owl:ObjectProperty ;
+	rdfs:subPropertyOf owl:topObjectProperty ;
+	rdfs:domain :Evento ;
+	rdfs:range :Tipo .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.madridcultural.es/ontology.owl#Barrios
 
+:Barrios a owl:Class ;
+	rdfs:subClassOf :Distritos .
+# 
+# http://www.madridcultural.es/ontology.owl#Centros
 
-###  http://www.madridcultural.es/ontology.owl#tieneTransporte
-:tieneTransporte rdf:type owl:ObjectProperty .
+:Centros a owl:Class .
+# 
+# http://www.madridcultural.es/ontology.owl#Direccion
 
+:Direccion a owl:Class .
+# 
+# http://www.madridcultural.es/ontology.owl#Distritos
 
-### http://www.madridcultural.es/ontology.owl#es_realizado
-<http://www.madridcultural.es/ontology.owl#es_realizado> rdf:type owl:ObjectProperty ;
-                                                                                          rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                                          rdfs:domain <http://www.madridcultural.es/ontology.owl#Lugar> ;
-                                                                                          rdfs:range <http://www.madridcultural.es/ontology.owl#Evento> .
+:Distritos a owl:Class .
+# 
+# http://www.madridcultural.es/ontology.owl#Evento
 
+:Evento a owl:Class .
+# 
+# http://www.madridcultural.es/ontology.owl#Lugar
 
-### http://www.madridcultural.es/ontology.owl#pertenece_a
-<http://www.madridcultural.es/ontology.owl#pertenece_a> rdf:type owl:ObjectProperty ;
-                                                                                         rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                                         rdfs:domain <http://www.madridcultural.es/ontology.owl#Tipo> ;
-                                                                                         rdfs:range <http://www.madridcultural.es/ontology.owl#Evento> .
+:Lugar a owl:Class .
+# 
+# http://www.madridcultural.es/ontology.owl#Tipo
 
+:Tipo a owl:Class .
+# 
+# http://www.madridcultural.es/ontology.owl#TiposCentros
 
-### http://www.madridcultural.es/ontology.owl#se_realiza_en
-<http://www.madridcultural.es/ontology.owl#se_realiza_en> rdf:type owl:ObjectProperty ;
-                                                                                           rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                                           rdfs:domain <http://www.madridcultural.es/ontology.owl#Evento> ;
-                                                                                           rdfs:range <http://www.madridcultural.es/ontology.owl#Lugar> .
-
-
-### http://www.madridcultural.es/ontology.owl#tiene_un
-<http://www.madridcultural.es/ontology.owl#tiene_un> rdf:type owl:ObjectProperty ;
-                                                                                      rdfs:subPropertyOf owl:topObjectProperty ;
-                                                                                      rdfs:domain <http://www.madridcultural.es/ontology.owl#Evento> ;
-                                                                                      rdfs:range <http://www.madridcultural.es/ontology.owl#Tipo> .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.madridcultural.es/ontology.owl#Barrios
-:Barrios rdf:type owl:Class ;
-         rdfs:subClassOf :Distritos .
-
-
-###  http://www.madridcultural.es/ontology.owl#Centros
-:Centros rdf:type owl:Class .
-
-
-###  http://www.madridcultural.es/ontology.owl#Direccion
-:Direccion rdf:type owl:Class .
-
-
-###  http://www.madridcultural.es/ontology.owl#Distritos
-:Distritos rdf:type owl:Class .
-
-
-###  http://www.madridcultural.es/ontology.owl#TiposCentros
-:TiposCentros rdf:type owl:Class ;
-              rdfs:subClassOf :Centros .
-
-
-### http://www.madridcultural.es/ontology.owl#Evento
-<http://www.madridcultural.es/ontology.owl#Evento> rdf:type owl:Class .
-
-
-### http://www.madridcultural.es/ontology.owl#Lugar
-<http://www.madridcultural.es/ontology.owl#Lugar> rdf:type owl:Class .
-
-
-### http://www.madridcultural.es/ontology.owl#Tipo
-<http://www.madridcultural.es/ontology.owl#Tipo> rdf:type owl:Class .
-
-
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
+:TiposCentros a owl:Class ;
+	rdfs:subClassOf :Centros .
+# 
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
