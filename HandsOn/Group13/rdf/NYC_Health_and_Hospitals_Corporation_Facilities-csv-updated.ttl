@@ -1,0 +1,761 @@
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix schema: <http://schema.org/> .
+@prefix livingPlaces: <http://www.linkedData_Group13.com/ontology/livingPlaces#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix osadm: <http://data.ordnancesurvey.co.uk/ontology/admingeo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://www.linkedData_Group13.com/resource/Elmhurst+Hospital+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Queens"^^osadm:Borough ;
+	vcard:tel "718-334-4000"^^vcard:text ;
+	schema:streetAddress """79 01
+Elmhurst, NY 11373
+"""^^schema:Text ;
+	geo:lat "40.73871040256307"^^xsd:float ;
+	geo:long "-73.87835115518163"^^xsd:float ;
+	foaf:name "Elmhurst Hospital Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Queens> a osadm:Borough ;
+	foaf:name "Queens"^^xsd:string ;
+	rdfs:label "Queens" .
+
+<http://www.linkedData_Group13.com/resource/Gouverneur+Healthcare+Services> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Nursing Home"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-238-7000"^^vcard:text ;
+	schema:streetAddress """227 Madison Street
+New York, NY 10002
+"""^^schema:Text ;
+	geo:lat "40.712841397447676"^^xsd:float ;
+	geo:long "-73.98759853472393"^^xsd:float ;
+	foaf:name "Gouverneur Healthcare Services"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Manhattan> a osadm:Borough ;
+	foaf:name "Manhattan"^^xsd:string ;
+	rdfs:label "Manhattan" .
+
+<http://www.linkedData_Group13.com/resource/Coler-Goldwater+Specialty+Hospital+and+Nursing+Facility%2FGoldwater+Campus> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Nursing Home"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-318-8000"^^vcard:text ;
+	schema:streetAddress """1 Main St Roosevelt Island
+New York, NY 10044
+"""^^schema:Text ;
+	geo:lat "40.76197648622593"^^xsd:float ;
+	geo:long "-73.94999967494499"^^xsd:float ;
+	foaf:name "Coler-Goldwater Specialty Hospital and Nursing Facility/Goldwater Campus"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Coler-Goldwater+Specialty+Hospital+and+Nursing+Facility%2FColer+Campus> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Nursing Home"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-848-6000 "^^vcard:text ;
+	schema:streetAddress """900 Main Street Roosevelt Island
+New York, NY 10044
+"""^^schema:Text ;
+	geo:lat "40.76197648622593"^^xsd:float ;
+	geo:long "-73.94999967494499"^^xsd:float ;
+	foaf:name "Coler-Goldwater Specialty Hospital and Nursing Facility/Coler Campus"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Gouverneur+Healthcare+Services> livingPlaces:hasHealthFacilityType "Diagnostic & Treatment Center"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Bellevue+Hospital+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Acute Care Hospital"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-562-4141"^^vcard:text ;
+	schema:streetAddress """462 First Avenue
+New York, NY 10016
+"""^^schema:Text ;
+	geo:lat "40.73962320748018"^^xsd:float ;
+	geo:long "-73.97657284664467"^^xsd:float ;
+	foaf:name "Bellevue Hospital Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Harlem+Hospital+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Acute Care Hospital"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-939-1000"^^vcard:text ;
+	schema:streetAddress """506 Lenox Avenue
+New York, NY 10037
+"""^^schema:Text ;
+	geo:lat "40.814275217501645"^^xsd:float ;
+	geo:long "-73.9406028312914"^^xsd:float ;
+	foaf:name "Harlem Hospital Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Woodhull+Medical+and+Mental+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-963-8000"^^vcard:text ;
+	schema:streetAddress """760 Broadway
+Brooklyn, NY 11206
+"""^^schema:Text ;
+	geo:lat "40.70052661478004"^^xsd:float ;
+	geo:long "-73.94164385876527"^^xsd:float ;
+	foaf:name "Woodhull Medical and Mental Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Brooklyn> a osadm:Borough ;
+	foaf:name "Brooklyn"^^xsd:string ;
+	rdfs:label "Brooklyn" .
+
+<http://www.linkedData_Group13.com/resource/Drew+Hamilton+Houses+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-939-8950"^^vcard:text ;
+	schema:streetAddress """2698 Eighth Avenue
+New York, NY 10030
+"""^^schema:Text ;
+	geo:lat "40.82213997942128"^^xsd:float ;
+	geo:long "-73.94238974885882"^^xsd:float ;
+	foaf:name "Drew Hamilton Houses Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Parsons+Communicare+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Queens"^^osadm:Borough ;
+	vcard:tel "718-334-6401"^^vcard:text ;
+	schema:streetAddress """90 37 Parsons Boulevard
+Jamaica, NY 11432
+"""^^schema:Text ;
+	geo:lat "40.71311535449007"^^xsd:float ;
+	geo:long "-73.79282099978928"^^xsd:float ;
+	foaf:name "Parsons Communicare Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Washington+Heights+Child+Health+Care+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-795-0880"^^vcard:text ;
+	schema:streetAddress """600 168th Street
+New York, NY 10032
+"""^^schema:Text ;
+	geo:lat "40.8411278753413"^^xsd:float ;
+	geo:long "-73.9399616966274"^^xsd:float ;
+	foaf:name "Washington Heights Child Health Care Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Segundo+Ruiz+Belvis+Diagnostic+%26+Treatment+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Diagnostic & Treatment Center"^^xsd:string ;
+	dbo:borough "Bronx"^^osadm:Borough ;
+	vcard:tel "718-579-4000"^^vcard:text ;
+	schema:streetAddress """545 142nd Street
+Bronx, NY 10454
+"""^^schema:Text ;
+	geo:lat "40.8101218640426"^^xsd:float ;
+	geo:long "-73.9168118463476"^^xsd:float ;
+	foaf:name "Segundo Ruiz Belvis Diagnostic & Treatment Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Bronx> a osadm:Borough ;
+	foaf:name "Bronx"^^xsd:string ;
+	rdfs:label "Bronx" .
+
+<http://www.linkedData_Group13.com/resource/Coney+Island+Hospital> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Acute Care Hospital"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-616-3000"^^vcard:text ;
+	schema:streetAddress """2601 Ocean Parkway
+Brooklyn, NY 11235
+"""^^schema:Text ;
+	geo:lat "40.58664543395709"^^xsd:float ;
+	geo:long "-73.96583011577816"^^xsd:float ;
+	foaf:name "Coney Island Hospital"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/South+Queens+Community+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Queens"^^osadm:Borough ;
+	vcard:tel "718-883-6699"^^vcard:text ;
+	schema:streetAddress """114 02 Guy R Brewer Blvd
+Jamaica, NY 11434
+"""^^schema:Text ;
+	geo:lat "40.6769452621142"^^xsd:float ;
+	geo:long "-73.77530690169215"^^xsd:float ;
+	foaf:name "South Queens Community Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Judson+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-925-5000"^^vcard:text ;
+	schema:streetAddress """34 Spring Street
+New York, NY 10012
+"""^^schema:Text ;
+	geo:lat "40.72173569231745"^^xsd:float ;
+	geo:long "-73.9957194126485"^^xsd:float ;
+	foaf:name "Judson Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Sutter+Avenue+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-647-0800"^^vcard:text ;
+	schema:streetAddress """1091 Sutter Avenue
+Brooklyn, NY 11208
+"""^^schema:Text ;
+	geo:lat "40.671899036220196"^^xsd:float ;
+	geo:long "-73.87831881794278"^^xsd:float ;
+	foaf:name "Sutter Avenue Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Homecrest+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-339-6243"^^vcard:text ;
+	schema:streetAddress """1601 Avenue
+Brooklyn, NY 11229
+"""^^schema:Text ;
+	geo:lat "40.60123350732056"^^xsd:float ;
+	geo:long "-73.94436854117521"^^xsd:float ;
+	foaf:name "Homecrest Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Elmhurst+Hospital+Center> livingPlaces:hasHealthFacilityType "Acute Care Hospital"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Cumberland+Diagnostic+%26+Treatment+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Diagnostic & Treatment Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-260-7500"^^vcard:text ;
+	schema:streetAddress """100 Portland Avenue
+Brooklyn, NY 11205
+"""^^schema:Text ;
+	geo:lat "40.69514358466528"^^xsd:float ;
+	geo:long "-73.97623557216579"^^xsd:float ;
+	foaf:name "Cumberland Diagnostic & Treatment Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Williamsburg+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-963-7820"^^vcard:text ;
+	schema:streetAddress """279 Graham Avenue
+Brooklyn, NY 11211
+"""^^schema:Text ;
+	geo:lat "40.712103238035546"^^xsd:float ;
+	geo:long "-73.94399407154296"^^xsd:float ;
+	foaf:name "Williamsburg Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Lincoln+Medical+and+Mental+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Acute Care Hospital"^^xsd:string ;
+	dbo:borough "Bronx"^^osadm:Borough ;
+	vcard:tel "718-579-5000"^^vcard:text ;
+	schema:streetAddress """234 149th Street
+Bronx, NY 10451
+"""^^schema:Text ;
+	geo:lat "40.81768848404917"^^xsd:float ;
+	geo:long "-73.92420027148326"^^xsd:float ;
+	foaf:name "Lincoln Medical and Mental Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Dr.+Susan+Smith+McKinney+Nursing+and+Rehabilitation+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Nursing Home"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-245-7000"^^vcard:text ;
+	schema:streetAddress """594 Albany Avenue
+Brooklyn, NY 11203
+"""^^schema:Text ;
+	geo:lat "40.660054516809524"^^xsd:float ;
+	geo:long "-73.93976149574165"^^xsd:float ;
+	foaf:name "Dr. Susan Smith McKinney Nursing and Rehabilitation Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Queens+Hospital+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Acute Care Hospital"^^xsd:string ;
+	dbo:borough "Queens"^^osadm:Borough ;
+	vcard:tel "718-883-3000"^^vcard:text ;
+	schema:streetAddress """82 70 164th Street
+Jamaica, NY 11432
+"""^^schema:Text ;
+	geo:lat "40.71311535449007"^^xsd:float ;
+	geo:long "-73.79282099978928"^^xsd:float ;
+	foaf:name "Queens Hospital Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Sea+View+Hospital+Rehabilitation+Center+%26+Home> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Nursing Home"^^xsd:string ;
+	dbo:borough "Staten Island"^^osadm:Borough ;
+	vcard:tel "718-317-3000"^^vcard:text ;
+	schema:streetAddress """460 Brielle Avenue
+Staten Island, NY 10314
+"""^^schema:Text ;
+	geo:lat "40.597953866387"^^xsd:float ;
+	geo:long "-74.13176632590061"^^xsd:float ;
+	foaf:name "Sea View Hospital Rehabilitation Center & Home"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Staten+Island> a osadm:Borough ;
+	foaf:name "Staten Island"^^xsd:string ;
+	rdfs:label "Staten Island" .
+
+<http://www.linkedData_Group13.com/resource/Sydenham+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-932-6500"^^vcard:text ;
+	schema:streetAddress """215 125th Street
+New York, NY 10027
+"""^^schema:Text ;
+	geo:lat "40.809338651191524"^^xsd:float ;
+	geo:long "-73.94919748407278"^^xsd:float ;
+	foaf:name "Sydenham Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Smith+Communicare+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-346-0500"^^vcard:text ;
+	schema:streetAddress """60 Madison Street
+New York, NY 10038
+"""^^schema:Text ;
+	geo:lat "40.71196972987868"^^xsd:float ;
+	geo:long "-73.99754221557811"^^xsd:float ;
+	foaf:name "Smith Communicare Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Jonathan+Williams+Houses+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-387-6407"^^vcard:text ;
+	schema:streetAddress """118 Roebling Street
+Brooklyn, NY 11211
+"""^^schema:Text ;
+	geo:lat "40.7153676098287"^^xsd:float ;
+	geo:long "-73.95616582356922"^^xsd:float ;
+	foaf:name "Jonathan Williams Houses Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Stapleton+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Staten Island"^^osadm:Borough ;
+	vcard:tel "718-390-0712"^^vcard:text ;
+	schema:streetAddress """111 Canal Street
+Staten Island, NY 10304
+"""^^schema:Text ;
+	geo:lat "40.626576449488084"^^xsd:float ;
+	geo:long "-74.07699447008653"^^xsd:float ;
+	foaf:name "Stapleton Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Mariner%27s+Harbor+Houses+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Staten Island"^^osadm:Borough ;
+	vcard:tel "718-761-2060"^^vcard:text ;
+	schema:streetAddress """2040 Forest Avenue
+Staten Island, NY 10303
+"""^^schema:Text ;
+	geo:lat "40.62609762250995"^^xsd:float ;
+	geo:long "-74.157474896698"^^xsd:float ;
+	foaf:name "Mariner's Harbor Houses Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Brownsville+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-495-7283"^^vcard:text ;
+	schema:streetAddress """259 Bristol Street
+Brooklyn, NY 11212
+"""^^schema:Text ;
+	geo:lat "40.66491117049781"^^xsd:float ;
+	geo:long "-73.9114109163207"^^xsd:float ;
+	foaf:name "Brownsville Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Dyckman+Clinica+De+Las+Americas> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-544-2001"^^vcard:text ;
+	schema:streetAddress """175 Nagle Avenue
+New York, NY 10034
+"""^^schema:Text ;
+	geo:lat "40.86195793859726"^^xsd:float ;
+	geo:long "-73.92380763599004"^^xsd:float ;
+	foaf:name "Dyckman Clinica De Las Americas"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Eleanor+Roosevelt+Houses+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-452-1146"^^vcard:text ;
+	schema:streetAddress """388 Pulaski Street
+Brooklyn, NY 11206
+"""^^schema:Text ;
+	geo:lat "40.693923715490335"^^xsd:float ;
+	geo:long "-73.93545687521755"^^xsd:float ;
+	foaf:name "Eleanor Roosevelt Houses Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Morrisania+Diagnostic+%26+Treatment+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Bronx"^^osadm:Borough ;
+	vcard:tel "718-960-2777"^^vcard:text ;
+	schema:streetAddress """1225 Gerard Avenue
+Bronx, NY 10452
+"""^^schema:Text ;
+	geo:lat "40.83590638794867"^^xsd:float ;
+	geo:long "-73.92003403701939"^^xsd:float ;
+	foaf:name "Morrisania Diagnostic & Treatment Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Woodhull+Medical+and+Mental+Health+Center> livingPlaces:hasHealthFacilityType "Acute Care Hospital"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Daniel+Webster+Houses+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Bronx"^^osadm:Borough ;
+	vcard:tel "718-538-2147"^^vcard:text ;
+	schema:streetAddress """401 168th Street
+Bronx, NY 10456
+"""^^schema:Text ;
+	geo:lat "40.83227984896664"^^xsd:float ;
+	geo:long "-73.90953460187417"^^xsd:float ;
+	foaf:name "Daniel Webster Houses Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Metropolitan+Hospital+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-423-6262"^^vcard:text ;
+	schema:streetAddress """1901 First Avenue
+New York, NY 10029
+"""^^schema:Text ;
+	geo:lat "40.784557024104835"^^xsd:float ;
+	geo:long "-73.9437956536432"^^xsd:float ;
+	foaf:name "Metropolitan Hospital Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Springfield+Gardens+Medical+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Queens"^^osadm:Borough ;
+	vcard:tel "718-883-6800"^^vcard:text ;
+	schema:streetAddress """134 64 Springfield Blvd
+Springfield Gardens, NY 11413
+"""^^schema:Text ;
+	geo:lat "40.66971118122609"^^xsd:float ;
+	geo:long "-73.75087393328533"^^xsd:float ;
+	foaf:name "Springfield Gardens Medical Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Sumner+Avenue+Houses+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-455-3884"^^vcard:text ;
+	schema:streetAddress """47 Marcus Garvey Boulevard
+Brooklyn, NY 11206
+"""^^schema:Text ;
+	geo:lat "40.697855287659436"^^xsd:float ;
+	geo:long "-73.94100661082196"^^xsd:float ;
+	foaf:name "Sumner Avenue Houses Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Corona+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Queens"^^osadm:Borough ;
+	vcard:tel "718-334-6100"^^vcard:text ;
+	schema:streetAddress """104 04 Corona Avenue
+Corona, NY 11368
+"""^^schema:Text ;
+	geo:lat "40.749678220373596"^^xsd:float ;
+	geo:long "-73.85304068857687"^^xsd:float ;
+	foaf:name "Corona Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/East+New+York+Diagnostic+%26+Treatment+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-240-0400"^^vcard:text ;
+	schema:streetAddress """2094 Pitkin Avenue
+Brooklyn, NY 11225
+"""^^schema:Text ;
+	geo:lat "40.671962495106705"^^xsd:float ;
+	geo:long "-73.89520529393025"^^xsd:float ;
+	foaf:name "East New York Diagnostic & Treatment Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Health+Center+at+Tremont> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Bronx"^^osadm:Borough ;
+	vcard:tel "718-918-8700"^^vcard:text ;
+	schema:streetAddress """1826 Arthur Avenue
+Bronx, NY 10457
+"""^^schema:Text ;
+	geo:lat "40.8440002082747"^^xsd:float ;
+	geo:long "-73.8945487244044"^^xsd:float ;
+	foaf:name "Health Center at Tremont"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Baruch+Houses+Family+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-673-5990"^^vcard:text ;
+	schema:streetAddress """280 Delancey Street
+New York, NY 10002
+"""^^schema:Text ;
+	geo:lat "40.71636701786879"^^xsd:float ;
+	geo:long "-73.98013566050324"^^xsd:float ;
+	foaf:name "Baruch Houses Family Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Coney+Island+Hospital> livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/North+Central+Bronx+Hospital> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Bronx"^^osadm:Borough ;
+	vcard:tel "718-519-5000"^^vcard:text ;
+	schema:streetAddress """3424 Kossuth Avenue
+Bronx, NY 10467
+"""^^schema:Text ;
+	geo:lat "40.88046337245572"^^xsd:float ;
+	geo:long "-73.88159287750194"^^xsd:float ;
+	foaf:name "North Central Bronx Hospital"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/East+New+York+Diagnostic+%26+Treatment+Center> livingPlaces:hasHealthFacilityType "Diagnostic & Treatment Center"^^xsd:string ;
+	schema:streetAddress """2094 Pitkin Avenue
+Brooklyn, NY 11207
+"""^^schema:Text .
+
+<http://www.linkedData_Group13.com/resource/Gunhill+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Bronx"^^osadm:Borough ;
+	vcard:tel "718-918-8850"^^vcard:text ;
+	schema:streetAddress """1012 Gunhill Road
+Bronx, NY 10469
+"""^^schema:Text ;
+	geo:lat "40.87462600688702"^^xsd:float ;
+	geo:long "-73.85788741682623"^^xsd:float ;
+	foaf:name "Gunhill Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Bushwick+Communicare> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-573-4860"^^vcard:text ;
+	schema:streetAddress """335 Central Avenue
+Brooklyn, NY 11221
+"""^^schema:Text ;
+	geo:lat "40.69473842718728"^^xsd:float ;
+	geo:long "-73.91922391666616"^^xsd:float ;
+	foaf:name "Bushwick Communicare"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Harlem+Hospital+Center> livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Jacobi+Medical+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Acute Care Hospital"^^xsd:string ;
+	dbo:borough "Bronx"^^osadm:Borough ;
+	vcard:tel "718-918-5000"^^vcard:text ;
+	schema:streetAddress """1400 Pelham Parkway
+Bronx, NY 10461
+"""^^schema:Text ;
+	geo:lat "40.857397104610754"^^xsd:float ;
+	geo:long "-73.84657120408676"^^xsd:float ;
+	foaf:name "Jacobi Medical Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Williamsburg+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-387-2211"^^vcard:text ;
+	schema:streetAddress """279 Graham Ave
+Brooklyn, NY 11206
+"""^^schema:Text ;
+	geo:lat "40.712103238035546"^^xsd:float ;
+	geo:long "-73.94399407154296"^^xsd:float ;
+	foaf:name "Williamsburg Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Bellevue+Hospital+Center> livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Junction+Boulevard+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Queens"^^osadm:Borough ;
+	vcard:tel "718-334-6150"^^vcard:text ;
+	schema:streetAddress """34 33 Junction Boulevard
+Jackson Heights, NY 11372
+"""^^schema:Text ;
+	geo:lat "40.75163073936716"^^xsd:float ;
+	geo:long "-73.88361254528269"^^xsd:float ;
+	foaf:name "Junction Boulevard Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Segundo+Ruiz+Belvis+Diagnostic+%26+Treatment+Center> livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	schema:streetAddress """454 142nd Street
+Bronx, NY 10454
+"""^^schema:Text ;
+	geo:lat "40.81090131647696"^^xsd:float ;
+	geo:long "-73.91931316170773"^^xsd:float .
+
+<http://www.linkedData_Group13.com/resource/Ida+G.+Israel+Community+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-946-3400"^^vcard:text ;
+	schema:streetAddress """2201 Neptune Avenue
+Brooklyn, NY 11224
+"""^^schema:Text ;
+	geo:lat "40.578488319966645"^^xsd:float ;
+	geo:long "-73.98949714812117"^^xsd:float ;
+	foaf:name "Ida G. Israel Community Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Roberto+Clemente+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-387-7400"^^vcard:text ;
+	schema:streetAddress """540 13th Street
+New York, NY 10009
+"""^^schema:Text ;
+	geo:lat "40.72930119328952"^^xsd:float ;
+	geo:long "-73.97991662823794"^^xsd:float ;
+	foaf:name "Roberto Clemente Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Renaissance+Health+Care+Network+Diagnostic+%26+Treatment+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Diagnostic & Treatment Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-932-6500 "^^vcard:text ;
+	schema:streetAddress """215 125 Street
+New York, NY 10027
+"""^^schema:Text ;
+	geo:lat "40.809338651191524"^^xsd:float ;
+	geo:long "-73.94919748407278"^^xsd:float ;
+	foaf:name "Renaissance Health Care Network Diagnostic & Treatment Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Fort+Greene+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-260-7500 ext. 7859"^^vcard:text ;
+	schema:streetAddress """295 Flatbush Avenue Extension
+Brooklyn, NY 11201
+"""^^schema:Text ;
+	geo:lat "40.69205340232306"^^xsd:float ;
+	geo:long "-73.98241301998932"^^xsd:float ;
+	foaf:name "Fort Greene Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Manhattanville%2FSt.+Nicholas+Houses+Child+Health+Care+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-865-1300"^^vcard:text ;
+	schema:streetAddress """281 127th Street
+New York, NY 10027
+"""^^schema:Text ;
+	geo:lat "40.811276995392966"^^xsd:float ;
+	geo:long "-73.9496577551632"^^xsd:float ;
+	foaf:name "Manhattanville/St. Nicholas Houses Child Health Care Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Cumberland+Diagnostic+%26+Treatment+Center> livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Gouverneur+Diagnostic+%26+Treatment+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-238-7200"^^vcard:text ;
+	schema:streetAddress """227 Madison Street
+New York, NY 10002
+"""^^schema:Text ;
+	geo:lat "40.712841397447676"^^xsd:float ;
+	geo:long "-73.98759853472393"^^xsd:float ;
+	foaf:name "Gouverneur Diagnostic & Treatment Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Kings+County+Hospital+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Acute Care Hospital"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-245-3131"^^vcard:text ;
+	schema:streetAddress """451 Clarkson Avenue
+Brooklyn, NY 11203
+"""^^schema:Text ;
+	geo:lat "40.65576180860461"^^xsd:float ;
+	geo:long "-73.94466261553725"^^xsd:float ;
+	foaf:name "Kings County Hospital Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/North+Central+Bronx+Hospital> livingPlaces:hasHealthFacilityType "Acute Care Hospital"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Queens+Hospital+Center> livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	schema:streetAddress """82 68 164th Street
+Jamaica, NY 11432
+"""^^schema:Text .
+
+<http://www.linkedData_Group13.com/resource/Woodside+Houses+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Queens"^^osadm:Borough ;
+	vcard:tel "718-334-6140"^^vcard:text ;
+	schema:streetAddress """50 53 Newtown Road
+Woodside, NY 11377
+"""^^schema:Text ;
+	geo:lat "40.74519376448069"^^xsd:float ;
+	geo:long "-73.9048471440804"^^xsd:float ;
+	foaf:name "Woodside Houses Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Metropolitan+Hospital+Center> livingPlaces:hasHealthFacilityType "Acute Care Hospital"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Crown+Heights+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-735-0561"^^vcard:text ;
+	schema:streetAddress """1218 Prospect Place
+Brooklyn, NY 11213
+"""^^schema:Text ;
+	geo:lat "40.67349222287333"^^xsd:float ;
+	geo:long "-73.93570169738597"^^xsd:float ;
+	foaf:name "Crown Heights Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Lincoln++Medical+%26++Mental+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Bronx"^^osadm:Borough ;
+	vcard:tel "718-579-5000"^^vcard:text ;
+	schema:streetAddress """234 149th Street
+Bronx, NY 10451
+"""^^schema:Text ;
+	geo:lat "40.81768848404917"^^xsd:float ;
+	geo:long "-73.92420027148326"^^xsd:float ;
+	foaf:name "Lincoln  Medical &  Mental Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Melrose+Houses+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Bronx"^^osadm:Borough ;
+	vcard:tel "718-292-2820"^^vcard:text ;
+	schema:streetAddress """348 156th Street
+Bronx, NY 10451
+"""^^schema:Text ;
+	geo:lat "40.82130119464553"^^xsd:float ;
+	geo:long "-73.91770978721219"^^xsd:float ;
+	foaf:name "Melrose Houses Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Greenpoint+Community+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-630-3220"^^vcard:text ;
+	schema:streetAddress """875 Manhattan Avenue
+Brooklyn, NY 11222
+"""^^schema:Text ;
+	geo:lat "40.729665609685696"^^xsd:float ;
+	geo:long "-73.95404546005379"^^xsd:float ;
+	foaf:name "Greenpoint Community Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Lafayette+Houses+Child+Health+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-638-8258"^^vcard:text ;
+	schema:streetAddress """434 Dekalb Avenue
+Brooklyn, NY 11205
+"""^^schema:Text ;
+	geo:lat "40.69036662899639"^^xsd:float ;
+	geo:long "-73.95978265948307"^^xsd:float ;
+	foaf:name "Lafayette Houses Child Health Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Grant+Houses+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-678-8420"^^vcard:text ;
+	schema:streetAddress """3170 Broadway
+New York, NY 10027
+"""^^schema:Text ;
+	geo:lat "40.81525566048751"^^xsd:float ;
+	geo:long "-73.95843049269739"^^xsd:float ;
+	foaf:name "Grant Houses Clinic"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Renaissance+Health+Care+Network+Diagnostic+%26+Treatment+Center> livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	vcard:tel "212-932-6500"^^vcard:text ;
+	schema:streetAddress """215 125th Street
+New York, NY 10027
+"""^^schema:Text .
+
+<http://www.linkedData_Group13.com/resource/Kings+County+Hospital+Center> livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/La+Clinica+Del+Barrio> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Manhattan"^^osadm:Borough ;
+	vcard:tel "212-410-7940"^^vcard:text ;
+	schema:streetAddress """413 120th Street
+New York, NY 10035
+"""^^schema:Text ;
+	geo:lat "40.79820504446883"^^xsd:float ;
+	geo:long "-73.93266794517427"^^xsd:float ;
+	foaf:name "La Clinica Del Barrio"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Bushwick+Community+Health+Center> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Brooklyn"^^osadm:Borough ;
+	vcard:tel "718-919-1200"^^vcard:text ;
+	schema:streetAddress """1420 Bushwick Avenue
+Brooklyn, NY 11207
+"""^^schema:Text ;
+	geo:lat "40.68430356626175"^^xsd:float ;
+	geo:long "-73.90908238517792"^^xsd:float ;
+	foaf:name "Bushwick Community Health Center"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Morrisania+Diagnostic+%26+Treatment+Center> livingPlaces:hasHealthFacilityType "Diagnostic & Treatment Center"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Jacobi+Medical+Center> livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string .
+
+<http://www.linkedData_Group13.com/resource/Ridgewood+Communicare+Clinic> a livingPlaces:HealthFacility ;
+	livingPlaces:hasHealthFacilityType "Child Health Center"^^xsd:string ;
+	dbo:borough "Queens"^^osadm:Borough ;
+	vcard:tel "718-334-6190"^^vcard:text ;
+	schema:streetAddress """769 Onderdonk Avenue
+Ridgewood, NY 11385
+"""^^schema:Text ;
+	geo:lat "40.702949636007894"^^xsd:float ;
+	geo:long "-73.90543308996985"^^xsd:float ;
+	foaf:name "Ridgewood Communicare Clinic"^^rdfs:Literal .
