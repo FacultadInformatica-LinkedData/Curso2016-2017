@@ -1,0 +1,215 @@
+#Carlos Eloy Jose Sanz u120012
+
+#-------------------Cuestionario Básico-----------------------
+#1.Get all the classes
+
+SELECT DISTINCT ?class 
+WHERE {
+  ?class a <http://www.w3.org/2000/01/rdf-schema#Class>
+} 
+
+#2.Get all the subclasses of the class Establishment
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?subclass 
+WHERE {
+  ?subclass rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Establishment>
+} 
+
+#3.Get all instances of the class City
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?instanciasCity 
+WHERE {
+  ?instanciasCity a grafo:City 
+}
+
+
+#4.Get the number of inhabitants of Santiago de Compostela
+
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?habSantiago 
+WHERE {
+   grafo:Santiago_de_Compostela grafo:hasInhabitantNumber ?habSantiago
+}
+
+
+#5.Get the number of inhabitants of Santiago de Compostela and Arzua
+
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?habSantiago ?habArzua 
+WHERE {
+    grafo:Santiago_de_Compostela grafo:hasInhabitantNumber ?habSantiago .
+    grafo:Arzua                  grafo:hasInhabitantNumber ?habArzua
+}
+
+#6.Get all places, together with the number of inhabitants, ordered by the place name (ascending)
+
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?habitantes ?lugares
+WHERE {
+        ?lugares grafo:hasInhabitantNumber ?habitantes
+      }
+ORDER BY ?lugares ASC (?lugares)
+
+#7.Get all instances of  Locality together with their number of inhabitants (if this information exists)
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?instanciasLocality ?numHabitantes
+WHERE {
+  ?instanciasLocality rdfs:subClassOf grafo:Locality .
+  ?Localidad a ?instanciasLocality
+  OPTIONAL{ ?Localidad grafo:hasInhabitantNumber ?numHabitantes}
+}
+
+#8.Get all places with more than 200.000 inhabitants
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?lugar ?numHabitantes
+WHERE {
+        ?lugar grafo:hasInhabitantNumber ?numHabitantes
+        FILTER (xsd:integer(?numHabitantes) > xsd:integer("200000"))
+}
+
+#9.Get postal address data for Pazo_Breogan (street, number, locality, province)
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT ?calle ?numero ?localidad ?provincia ?direccion
+WHERE {
+  		grafo:Pazo_Breogan grafo:hasAddress ?direccion .
+        ?direccion grafo:hasNumber ?numero             .
+        ?direccion grafo:hasStreet ?calle              .
+        grafo:Pazo_Breogan grafo:isPlacedIn ?localidad .
+        ?localidad grafo:inProvince ?provincia
+}
+
+#10.Get all subclasses of class Location
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?subclass 
+WHERE {
+  ?subclass rdfs:subClassOf grafo:Location
+} 
+
+#11.Get all instances of class Locality
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+SELECT DISTINCT ?instanciasLocality 
+WHERE {
+  ?instanciasLocality rdfs:subClassOf grafo:Locality 
+}
+
+#12.Describe the resource with rdfs:label "Madrid"
+
+SELECT ?recurso
+WHERE {
+       ?recurso rdfs:label "Madrid"    
+}
+
+#13.Construct a graph that relates directly all touristic places with their provinces, using a new property called ”isIn”
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+#SELECT ?provincia ?lugarTuristico
+CONSTRUCT {?lugarTuristico grafo:isIn ?provincia}
+WHERE {
+       ?lugarTuristico grafo:isPlacedIn ?x .
+       ?x grafo:inProvince ?provincia   
+}
+
+#14.Check whether there is any instance of Town
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX grafo: <http://GP-onto.fi.upm.es/exercise2#>
+
+ASK {?querie a grafo:Town}
+
+
+#---------------------Cuestionario Avanzado----------------------------
+#1.Dame todas las propiedades aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+SELECT distinct ?Propiedades
+WHERE
+{
+?P ?relacion <http://dbpedia.org/ontology/Politician> .
+?P ?Propiedades ?X
+}
+
+#2.Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+SELECT distinct ?Propiedades
+WHERE
+{
+?P ?relacion <http://dbpedia.org/ontology/Politician> .
+?P ?Propiedades ?X
+FILTER (?Propiedades != rdf:type)
+}
+
+#3.¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)?
+ 
+SELECT  COUNT (DISTINCT ?x) 
+WHERE
+{
+?instancia ?auxiliar <http://dbpedia.org/ontology/Politician>.
+?instancia ?relacion ?x.
+FILTER (?relacion!= rdf:type)
+}
+
+#4.Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime cuántos valores distintos toman en dichas instancias.
+
+SELECT ?relacion COUNT (DISTINCT ?x) 
+WHERE
+{
+?instancia ?auxiliar <http://dbpedia.org/ontology/Politician>.
+?instancia ?relacion ?x.
+FILTER (?relacion!= rdf:type)
+}
+
+#5.Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime la media de valores distintos que toman en dichas instancias.
+
+SELECT  avg(?valores) as ?media
+WHERE
+{
+SELECT ?relacion COUNT (DISTINCT ?valor) as ?valores
+WHERE
+{
+?instancia ?q <http://dbpedia.org/ontology/Politician> .
+?instancia ?relacion ?valor
+FILTER (?relacion != rdf:type)
+}
+}
+
+#6.Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor
+<<Dicho de otro modo, dime qué propiedades son las más comunes entre las instancias de la clase Politician>>
+
+SELECT ?relacion max(?valores) 
+WHERE
+{
+SELECT ?relacion COUNT (DISTINCT?valor) as ?valores
+WHERE
+{
+?instancia ?q <http://dbpedia.org/ontology/Politician> .
+?instancia ?relacion ?valor
+FILTER (?relacion != rdf:type)
+}
+}

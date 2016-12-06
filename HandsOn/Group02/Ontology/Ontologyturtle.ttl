@@ -1,0 +1,263 @@
+@prefix : <http://www.semanticweb.org/webSemantica/gropo02#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/webSemantica/gropo02> .
+
+<http://www.semanticweb.org/webSemantica/gropo02> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#tiene
+
+:tiene rdf:type owl:ObjectProperty ;
+       
+       rdfs:domain :parada .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#tieneAreaParada
+
+:tieneAreaParada rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:domain :parada_bus ;
+                 
+                 rdfs:range xsd:Name .
+
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#tieneCodigoDeParada
+
+:tieneCodigoDeParada rdf:type owl:DatatypeProperty ;
+                     
+                     rdfs:domain :parada_bus ;
+                     
+                     rdfs:range xsd:integer ,
+                                [ rdf:type rdfs:Datatype ;
+                                  owl:onDatatype xsd:integer ;
+                                  owl:withRestrictions ( [ xsd:minInclusive 99000
+                                                         ]
+                                                       )
+                                ] ,
+                                [ rdf:type rdfs:Datatype ;
+                                  owl:onDatatype xsd:integer ;
+                                  owl:withRestrictions ( [ xsd:maxInclusive 47000
+                                                         ]
+                                                       )
+                                ] .
+
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#tieneCodigoPostal
+
+:tieneCodigoPostal rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:domain :parada_metro ;
+                   
+                   rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#tieneLatitud
+
+:tieneLatitud rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :parada_metro ;
+              
+              rdfs:range xsd:double ,
+                         [ rdf:type rdfs:Datatype ;
+                           owl:onDatatype xsd:double ;
+                           owl:withRestrictions ( [ xsd:minInclusive "51,28"^^xsd:string
+                                                  ]
+                                                )
+                         ] ,
+                         [ rdf:type rdfs:Datatype ;
+                           owl:onDatatype xsd:double ;
+                           owl:withRestrictions ( [ xsd:maxInclusive "51,75"^^xsd:string
+                                                  ]
+                                                )
+                         ] .
+
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#tieneLongitud
+
+:tieneLongitud rdf:type owl:DatatypeProperty ;
+               
+               rdfs:domain :parada_metro ;
+               
+               rdfs:range xsd:double ,
+                          [ rdf:type rdfs:Datatype ;
+                            owl:onDatatype xsd:double ;
+                            owl:withRestrictions ( [ xsd:maxInclusive "-0,33"^^xsd:string
+                                                   ]
+                                                 )
+                          ] ,
+                          [ rdf:type rdfs:Datatype ;
+                            owl:onDatatype xsd:double ;
+                            owl:withRestrictions ( [ xsd:minInclusive "-0.61"^^xsd:string
+                                                   ]
+                                                 )
+                          ] .
+
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#tieneNombre
+
+:tieneNombre rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :parada ;
+             
+             rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#tieneParadasAdyacentes
+
+:tieneParadasAdyacentes rdf:type owl:DatatypeProperty ;
+                        
+                        rdfs:domain :parada_metro ;
+                        
+                        rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#tieneSentido
+
+:tieneSentido rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :parada_bus ;
+              
+              rdfs:range xsd:integer ,
+                         [ rdf:type rdfs:Datatype ;
+                           owl:onDatatype xsd:integer ;
+                           owl:withRestrictions ( [ xsd:maxInclusive 360
+                                                  ]
+                                                )
+                         ] ,
+                         [ rdf:type rdfs:Datatype ;
+                           owl:onDatatype xsd:integer ;
+                           owl:withRestrictions ( [ xsd:minInclusive 0
+                                                  ]
+                                                )
+                         ] .
+
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#tieneX
+
+:tieneX rdf:type owl:DatatypeProperty ;
+        
+        rdfs:domain :parada ;
+        
+        rdfs:range xsd:integer ,
+                   [ rdf:type rdfs:Datatype ;
+                     owl:onDatatype xsd:double ;
+                     owl:withRestrictions ( [ xsd:maxInclusive "562,000.000"^^xsd:string
+                                            ]
+                                          )
+                   ] ,
+                   [ rdf:type rdfs:Datatype ;
+                     owl:onDatatype xsd:double ;
+                     owl:withRestrictions ( [ xsd:minInclusive "462,000.000"^^xsd:string
+                                            ]
+                                          )
+                   ] .
+
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#tieneY
+
+:tieneY rdf:type owl:DatatypeProperty ;
+        
+        rdfs:domain :parada ;
+        
+        rdfs:range xsd:integer ,
+                   [ rdf:type rdfs:Datatype ;
+                     owl:onDatatype xsd:double ;
+                     owl:withRestrictions ( [ xsd:maxInclusive "208,000,00"^^xsd:string
+                                            ]
+                                          )
+                   ] ,
+                   [ rdf:type rdfs:Datatype ;
+                     owl:onDatatype xsd:double ;
+                     owl:withRestrictions ( [ xsd:minInclusive "155,000,00"^^xsd:string
+                                            ]
+                                          )
+                   ] .
+
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#tieneZona
+
+:tieneZona rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :parada_metro ;
+           
+           rdfs:range xsd:integer ,
+                      [ rdf:type rdfs:Datatype ;
+                        owl:onDatatype xsd:integer ;
+                        owl:withRestrictions ( [ xsd:minInclusive 1
+                                               ]
+                                             )
+                      ] ,
+                      [ rdf:type rdfs:Datatype ;
+                        owl:onDatatype xsd:integer ;
+                        owl:withRestrictions ( [ xsd:maxInclusive 9
+                                               ]
+                                             )
+                      ] .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#parada
+
+:parada rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#parada_bus
+
+:parada_bus rdf:type owl:Class ;
+            
+            rdfs:subClassOf :parada .
+
+
+
+###  http://www.semanticweb.org/webSemantica/gropo02#parada_metro
+
+:parada_metro rdf:type owl:Class ;
+              
+              rdfs:subClassOf :parada .
+
+
+
+
+###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
+

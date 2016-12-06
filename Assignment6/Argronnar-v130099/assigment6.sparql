@@ -1,0 +1,20 @@
+Accidentes en Madrid
+
+Graph: http://sandbox.linkeddata.es/graph/accidentes
+
+SELECT distinct SUM(?accidents)
+WHERE {?x <http://example.org/myVocabulary#numberOfAccidents> ?accidents}
+
+Query 2
+
+SELECT distinct ?x ?district ?accidents
+WHERE {?x <http://example.org/myVocabulary#relatedDistrict> ?district .
+?x <http://example.org/myVocabulary#numberOfAccidents> ?accidents .
+?x <http://example.org/myVocabulary#relatedDistrict> "USERA"}
+
+Query 3
+
+select distinct ?x ?district ?accidents where{
+?x <http://example.org/myVocabulary#relatedDistrict> ?district .
+?x <http://example.org/myVocabulary#hasAccidentType> <http://example.org/myVocabulary#MultipleCollision> .
+?x <http://example.org/myVocabulary#numberOfAccidents> ?accidents}
