@@ -1,0 +1,71 @@
+#Assignment 6 Rafael Arcas s100008	
+#SPARQL Endpoint: http://sandbox.linkeddata.es/sparql
+#Graph: http://sandbox.linkeddata.es/graph/accidentes
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX mv: <http://example.org/myVocabulary#>
+
+####################################################################################################################
+ How many accidents were there in Madrid in 2013?
+####################################################################################################################
+
+SELECT SUM(?numAccidentes) as ?Accidentes_en_Madrid
+WHERE {
+	?obs a qb:Observation;
+	mv:numberOfAccidents ?numAccidentes
+}
+
+####################################################################################################################
+ Give me the number of accidents in Usera for each type of accident.
+####################################################################################################################
+
+SELECT ?tipoDeAccidente AS ?Type_Of_Accident xsd:integer(?numAccidentes) AS ?Accidentes_en_Usera 
+WHERE {
+	?obs a qb:Observation;
+	mv:relatedDistrict "USERA";
+	mv:hasAccidentType ?tipoDeAccidente ;
+	mv:numberOfAccidents ?numAccidentes
+}
+
+
+####################################################################################################################
+ Give me the number of multiple collisions for each district.
+####################################################################################################################
+
+SELECT ?distrito AS ?District xsd:integer(?numero_de_colisiones_multiples) AS ?Number_Of_Multiple_Collisions
+WHERE {
+	?obs a qb:Observation;
+	mv:relatedDistrict ?distrito;
+	mv:hasAccidentType mv:MultipleCollision;
+	mv:numberOfAccidents ?numero_de_colisiones_multiples.
+}
+
+####################################################################################################################
+ Which is the district were the number of bicycle falls was higher in 2013?
+####################################################################################################################
+
+SELECT ?distrito AS ?District (xsd:integer(MAX(?numAccidents)) AS ?Mayor_numero_de_caidas_en_bici_en_2013)
+WHERE {
+	?obs a qb:Observation;
+	mv:relatedDistrict ?distrito;
+	mv:hasAccidentType mv:BicycleFall;
+    mv:numberOfAccidents ?numAccidents
+}
+ORDER BY DESC(?numAccidents) LIMIT 1
+
+####################################################################################################################
+ Give me the districts with more than 500 accidents in 2013.
+####################################################################################################################
+SELECT ?distrito AS ?District ?numAccidentes AS ?Numero_accidentes_superiorA_500
+WHERE {
+{
+	SELECT ?distrito SUM(xsd:integer(?numAcc)) AS ?numAccidentes
+	WHERE {
+		?obs a qb:Observation;
+		mv:relatedDistrict ?distrito;
+		mv:numberOfAccidents ?numAcc.
+	}
+}
+}
+HAVING(?numAccidentes > 500)
+ORDER BY ASC(?numAccidentes)

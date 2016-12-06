@@ -1,0 +1,50 @@
+#PREFIXES
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX property: <http://geo.linkeddata.es/stats/property#>
+PREFIX mn: <http://example.org/resources/>
+
+#How many accidents were there in Madrid in 2013?
+select sum(?acc)
+where {
+ ?obs a qb:Observation;
+ mv:numberOfAccidents ?acc.
+}
+
+#Give me the number of accidents in Usera for each type of accident
+select ?typeAcc ?acc
+where{
+ ?obs a qb:Observation;
+ mv:relatedDistrict  "USERA";
+ mv:hasAccidentType ?typeAcc;
+ mv:numberOfAccidents ?acc .
+}
+
+#Give me the number of multiple collisions for each district
+select ?district ?acc
+where{
+ ?obs a qb:Observation;
+ mv:relatedDistrict ?district;
+ mv:hasAccidentType mv:MultipleCollision;
+ mv:numberOfAccidents ?acc .
+}
+
+#Which is the district were the number of bicycle falls was higher in 2013?
+select max(?district)
+where{
+ ?obs a qb:Observation;
+ mv:relatedDistrict ?district;
+ mv:hasAccidentType mv:BicycleFall;
+ mv:numberOfAccidents ?acc .
+}
+
+#Give me the districts with more than 500 accidents in 2013
+select ?district ?acc
+where{
+ ?obs a qb:Observation;
+ mv:relatedDistrict ?district;
+ mv:numberOfAccidents ?acc.
+ filter(?acc > 500)
+}
+

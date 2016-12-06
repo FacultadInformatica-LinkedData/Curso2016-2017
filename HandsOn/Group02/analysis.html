@@ -93,16 +93,16 @@
 	</style></head><body dir="ltr" style="margin-top:20mm; margin-bottom:20mm; margin-left:20mm; margin-right:20mm; "><table border="0" cellspacing="0" cellpadding="0" class="ta1"><colgroup><col width="131"/><col width="99"/><col width="720"/><col width="396"/></colgroup><tr class="ro1"><td style="text-align:left;width:29.99mm; " class="ce4"><p>Column</p></td><td style="text-align:left;width:22.58mm; " class="ce4"><p>Type</p></td><td style="text-align:left;width:164.82mm; " class="ce4"><p>Comments/Range</p></td><td style="text-align:left;width:90.73mm; " class="ce4"><p>Problems</p></td></tr><tr class="ro2"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Stop Code LBSL</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>String</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>not empty/First and/or second characters are letters (optional) and the rest of them are numbers (variable size) </p></td><td style="text-align:left;width:90.73mm; " class="ce5"><p>There is no standard format to identify Bus Stops.</p></td></tr><tr class="ro2"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Bus Stop Code</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>Each stop has a 5 numbers code/47,000.00—99,000.00 </p></td><td style="text-align:left;width:90.73mm; " class="ce5"><p>0.18% stops don't have Bus Stop Code</p></td></tr><tr class="ro3"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Naptan Atco</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>String</p></td><td style="text-align:left;width:164.82mm; " class="ce5"><p>not unique, not empty. This code allows to identify any transportation point inside UK</p></td><td style="text-align:left;width:90.73mm; " class="ce5"><p>7% stops don't follow the standard format</p></td></tr><tr class="ro1"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Stop Name</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>String</p></td><td style="text-align:left;width:164.82mm; " class="ce5"><p>not unique, not empty</p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr><tr class="ro3"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Location Easting</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>standard format (6 numbers)/497,000.00—562,000.00</p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr><tr class="ro3"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Location Northing</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>standard format (6 numbers)/148,000.00—203,000.00 </p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr><tr class="ro1"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Heading</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>0.00—360.00 </p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr><tr class="ro3"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Stop Area</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>String</p></td><td style="text-align:left;width:164.82mm; " class="ce5"><p>not unique, not empty. Some of them have letters and numbers and others only have numbers</p></td><td style="text-align:left;width:90.73mm; " class="ce5"><p>There is no standard format to identify Stop Areas</p></td></tr><tr class="ro1"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Virtual Bus Stop</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>0—1 </p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr></table></body></html>
 	
 <h1>Analyse Licensing of the Data Source</h1>
-<h2>-Publisher & Rightholder</h2>
+<h2>-Publisher and Rightholder</h2>
 
 	<p>The publisher for the bus stop CSV is Transport for London (TfL).<br>
 
-	The publisher & the rightsholder for the Underground CSV is Chris Bell(The data is published in his/her personal website). </p>
+	The publisher and the rightsholder for the Underground CSV is Chris Bell(The data is published in his/her personal website). </p>
 <h2>-License</h2>
 
 <p>The license for the bus stop CSV is UK Open Government Licence (OGL v2).<br>
-Please see link to TfL website for <a href="https://www.tfl.gov.uk/corporate/terms-and-conditions/transport-data-service">Terms & Conditions</a> related to this dataset. <br>
-Direct <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">LINK</a> to the Terms & Conditions.</p>
+Please see link to TfL website for <a href="https://www.tfl.gov.uk/corporate/terms-and-conditions/transport-data-service">Terms and Conditions</a> related to this dataset. <br>
+Direct <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">LINK</a> to the Terms and Conditions.</p>
 
 <p>The license for the underground CSV is the specified by Chris Bell in the <a href="https://www.doogal.co.uk/">website</a>.<br>
 As it's said in the licensing, we can use this CSV under a public domain license because there isn't any other comment or copyright notice saying that the CSV comes from another source.</p>
@@ -113,6 +113,16 @@ As it's said in the licensing, we can use this CSV under a public domain license
 We plain to use OGL2 because it's the most restrictive license in the datasets we use in our application.</p>
 
 <h1>Define Resource Naming Strategy</h1>
+
+	<p>Domain:<br>
+	
+	http://www.semanticweb.org/webSemantica/gropo02#<br>
+	
+	Pattern:<br>
+
+	http://www.semanticweb.org/webSemantica/gropo02/Class#<br>
+	
+	</p>
 
 </body>
 

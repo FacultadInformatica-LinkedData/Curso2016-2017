@@ -1,0 +1,92 @@
+-Antonio Fernández Pita t110097-
+SPARQL Questionnaire (Advanced) 
+
+******* 1. Dame todas las propiedades aplicables a las instancias de la clase Politician *******
+
+select distinct ?property
+where {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x 
+	?property
+	?y
+       } LIMIT 5
+
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://purl.org/dc/terms/subject
+http://xmlns.com/foaf/0.1/depiction
+
+
+******* 2. Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician *******
+
+select distinct ?property
+where {
+	?instan  a <http://dbpedia.org/ontology/Politician> .
+	?instan  ?property ?num  .
+	FILTER (?property != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) .
+       } LIMIT 5
+
+property
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://purl.org/dc/terms/subject
+http://xmlns.com/foaf/0.1/depiction
+http://dbpedia.org/ontology/thumbnail
+
+******* 3. ¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician ? *******
+
+select count(distinct ?num)
+where
+{
+	?instan a <http://dbpedia.org/ontology/Politician> .
+	?instan ?property?num .
+	filter (?property!= <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>)
+}
+
+callret-0
+563876
+
+******* 4. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime cuántos valores distintos toman en dichas instancias ******* 
+
+select ?property!count(distinct ?num
+where {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x ?property!?num
+	FILTER (?property!!= <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) .
+}LIMIT 5
+
+property!	callret-1
+http://es.dbpedia.org/property/nombreBatalla	1
+http://es.dbpedia.org/property/mandos	57
+http://dbpedia.org/property/blog	2
+http://es.dbpedia.org/property/genero	1
+http://es.dbpedia.org/property/transcripciónurl	3
+
+
+******* 5. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime la media de valores distintos que toman en dichas instancias. ******* 
+
+
+******* 6. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor ******* 
+
+select ?property max(?num) as ?maxi
+where
+{
+	select ?property count(distinct ?num2) as ?num
+	where
+	{
+	?instan a <http://dbpedia.org/ontology/Politician> .
+	?instan ?property ?num2 .
+	filter (?property != rdf:type)
+	}
+}
+order by desc(?maxi)
+limit 5
+
+property	max
+http://dbpedia.org/ontology/wikiPageWikiLink 	206324
+http://www.w3.org/2002/07/owl#sameAs 	152677
+http://es.dbpedia.org/property/predecesor 	20120
+http://dbpedia.org/ontology/wikiPageExternalLink 	19679
+http://dbpedia.org/ontology/successor 	19183
+
