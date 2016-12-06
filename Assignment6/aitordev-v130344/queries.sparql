@@ -1,0 +1,55 @@
+PREFIX vocu: <http://example.org/myVocabulary#>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+
+#	1. How many accidents were there in Madrid in 2013?
+
+SELECT SUM(?Acc) as ?nAccidents
+WHERE {
+?obs a cube:Observation.
+?obs vocu:numberOfAccidents ?Acc.
+}
+
+#	2. Give me the number of accidents in Usera for each type of accident
+
+SELECT ?Type ?nAccidents
+WHERE {
+?obs a cube:Observation.
+?obs vocu:relatedDistrict "USERA".
+?obs vocu:hasAccidentType ?type.
+?obs vocu:numberOfAccidents ?nAccidents.
+}
+
+#	3. Give me the number of multiple collisions for each district
+
+SELECT ?District ?nAccidents
+WHERE{
+?obs a cube:Observation.
+?obs vocu:relatedDistrict ?District.
+?obs vocu:hasAccidentType vocu:MultipleCollision.
+?obs vocu:numberOfAccidents ?nAccidents.
+}
+ORDER BY(?District)
+
+#	4. Which is the district were the number of bicycle falls was higher in 2013?
+
+SELECT ?District MAX(?nAccidents)
+WHERE {
+?obs a cube:Observation.
+?obs vocu:relatedDistrict ?District.
+?obs vocu:hasAccidentType vocu:BicycleFall.
+?obs vocu:numberOfAccidents ?nAccidents.
+}
+ORDER by desc(?Accidents) LIMIT 1
+
+#	5. Give me the districts with more than 500 accidents in 2013
+
+SELECT ?District ?nAccidents WHERE {
+{
+SELECT DISTINCT ?District (SUM(?n) as ?nAccidents)
+WHERE{
+?obs a cube:Observation.
+?obs vocu:relatedDistrict ?District.
+?obs vocu:numberOfAccidents ?n.
+}
+} FILTER (?nAccidents > 500)
+} ORDER BY desc(?nAccidents)

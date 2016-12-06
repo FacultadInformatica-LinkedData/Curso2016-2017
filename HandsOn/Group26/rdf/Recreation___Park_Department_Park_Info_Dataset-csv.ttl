@@ -1,0 +1,2673 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+<http://www.semanticweb.org/0> a <http://www.semanticweb.org/park> ;
+	foaf:name "ParkName" ;
+	a "ParkType" ;
+	foaf:name "ParkServiceArea" , "PSAManager" ;
+	foaf:mbox "email" ;
+	foaf:phone "Number" .
+
+<http://www.semanticweb.org/1> a <http://www.semanticweb.org/park> ;
+	foaf:name "10TH AVE/CLEMENT MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 1" , "Elder, Steve" ;
+	foaf:mbox "steven.elder@sfgov.org" ;
+	foaf:phone "(415) 601-6501" ;
+	<http://www.semanticweb.org/zipCode> "94118" ;
+	foaf:name "156" ;
+	foaf:based_near """351 9th Ave
+San Francisco, CA
+(37.78184397, -122.46809908)""" .
+
+<http://www.semanticweb.org/2> a <http://www.semanticweb.org/park> ;
+	foaf:name "15TH AVENUE STEPS" ;
+	a "Mini Park" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94122" ;
+	foaf:name "185" ;
+	foaf:based_near """15th Ave b w Kirkham
+San Francisco, CA
+(37.75956493, -122.47226783)""" .
+
+<http://www.semanticweb.org/3> a <http://www.semanticweb.org/park> ;
+	foaf:name "24TH/YORK MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "51" ;
+	foaf:based_near """24th
+San Francisco, CA
+(37.75306042, -122.40857543)""" .
+
+<http://www.semanticweb.org/4> a <http://www.semanticweb.org/park> ;
+	foaf:name "29TH/DIAMOND OPEN SPACE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "194" ;
+	foaf:based_near """Diamond
+San Francisco, CA
+(37.74360211, -122.43523589)""" .
+
+<http://www.semanticweb.org/5> a <http://www.semanticweb.org/park> ;
+	foaf:name "ADAM ROGERS PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "46" ;
+	foaf:based_near """Ingalls
+San Francisco, CA
+(37.73101645, -122.38385466)""" .
+
+<http://www.semanticweb.org/6> a <http://www.semanticweb.org/park> ;
+	foaf:name "ALAMO SQUARE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94117" ;
+	foaf:name "117" ;
+	foaf:based_near """Hayes
+San Francisco, CA
+(37.77634875, -122.43467396)""" .
+
+<http://www.semanticweb.org/7> a <http://www.semanticweb.org/park> ;
+	foaf:name "ALICE CHALMERS PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Taylor, Zack" ;
+	foaf:mbox "zack.taylor@sfgov.org" ;
+	foaf:phone "(415) 601-7277" ;
+	<http://www.semanticweb.org/zipCode> "94112" ;
+	foaf:name "25" ;
+	foaf:based_near """670 Brunswick
+San Francisco, CA
+(37.7098271, -122.44665065)""" .
+
+<http://www.semanticweb.org/8> a <http://www.semanticweb.org/park> ;
+	foaf:name "ALICE MARBLE TENNIS COURTS" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94109" ;
+	foaf:name "151" ;
+	foaf:based_near """Greenwich
+San Francisco, CA
+(37.80142776, -122.42034327)""" .
+
+<http://www.semanticweb.org/9> a <http://www.semanticweb.org/park> ;
+	foaf:name "ALIOTO MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "62" ;
+	foaf:based_near """20th
+San Francisco, CA
+(37.75890196, -122.41821702)""" .
+
+<http://www.semanticweb.org/10> a <http://www.semanticweb.org/park> ;
+	foaf:name "ALLYNE PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94123" ;
+	foaf:name "131" ;
+	foaf:based_near """2609 Gough St
+San Francisco, CA
+(37.79746066, -122.42759992)""" .
+
+<http://www.semanticweb.org/11> a <http://www.semanticweb.org/park> ;
+	foaf:name "ALTA PLAZA" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94115" ;
+	foaf:name "129" ;
+	foaf:based_near """Jackson
+San Francisco, CA
+(37.79117333, -122.43766978)""" .
+
+<http://www.semanticweb.org/12> a <http://www.semanticweb.org/park> ;
+	foaf:name "ANGELO J. ROSSI PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Elder, Steve" ;
+	foaf:mbox "steven.elder@sfgov.org" ;
+	foaf:phone "(415) 601-6501" ;
+	<http://www.semanticweb.org/zipCode> "94118" ;
+	foaf:name "105" ;
+	foaf:based_near """2 Willard North St
+San Francisco, CA
+(37.77874186, -122.45745402)""" .
+
+<http://www.semanticweb.org/13> a <http://www.semanticweb.org/park> ;
+	foaf:name "APTOS PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94127" ;
+	foaf:name "65" ;
+	foaf:based_near """Aptos
+San Francisco, CA
+(37.7285246, -122.46654085)""" .
+
+<http://www.semanticweb.org/14> a <http://www.semanticweb.org/park> ;
+	foaf:name "ARGONNE PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Elder, Steve" ;
+	foaf:mbox "steven.elder@sfgov.org" ;
+	foaf:phone "(415) 601-6501" ;
+	<http://www.semanticweb.org/zipCode> "94121" ;
+	foaf:name "97" ;
+	foaf:based_near """18th Ave
+San Francisco, CA
+(37.779415, -122.47769976)""" .
+
+<http://www.semanticweb.org/15> a <http://www.semanticweb.org/park> ;
+	foaf:name "Arkansas Friendship Garden" ;
+	a "Community Garden" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94107" ;
+	foaf:name "171727" .
+
+<http://www.semanticweb.org/16> a <http://www.semanticweb.org/park> ;
+	foaf:name "Arlington Community Garden" ;
+	a "Community Garden" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "171736" ;
+	foaf:based_near """Arlington
+San Francisco, CA
+(37.73704325, -122.42637624)""" .
+
+<http://www.semanticweb.org/17> a <http://www.semanticweb.org/park> ;
+	foaf:name "BALBOA NATURAL AREA" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Wayne, Lisa" ;
+	foaf:mbox "lisa.wayne@sfgov.org" ;
+	foaf:phone "(415) 666-7092" ;
+	<http://www.semanticweb.org/zipCode> "94121" ;
+	foaf:name "174" ;
+	foaf:based_near """Balboa
+San Francisco, CA
+(37.77591285, -122.51103949)""" .
+
+<http://www.semanticweb.org/18> a <http://www.semanticweb.org/park> ;
+	foaf:name "BALBOA PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94112" ;
+	foaf:name "66" ;
+	foaf:based_near """Ocean
+San Francisco, CA
+(37.72494861, -122.44462659)""" .
+
+<http://www.semanticweb.org/19> a <http://www.semanticweb.org/park> ;
+	foaf:name "BAY VIEW PARK" ;
+	a "Regional Park" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "43" .
+
+<http://www.semanticweb.org/20> a <http://www.semanticweb.org/park> ;
+	foaf:name "BAY VIEW PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "38" ;
+	foaf:based_near """3rd
+San Francisco, CA
+(37.72593906, -122.39329436)""" .
+
+<http://www.semanticweb.org/21> a <http://www.semanticweb.org/park> ;
+	foaf:name "BEIDEMAN/O'FARRELL MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94115" ;
+	foaf:name "106" ;
+	foaf:based_near """O'Farrell
+San Francisco, CA
+(37.78238894, -122.43861654)""" .
+
+<http://www.semanticweb.org/22> a <http://www.semanticweb.org/park> ;
+	foaf:name "BERKELEY WAY OPEN SPACE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "2" ;
+	foaf:based_near """298 Berkeley Wy
+San Francisco, CA
+(37.73956697, -122.43995903)""" .
+
+<http://www.semanticweb.org/23> a <http://www.semanticweb.org/park> ;
+	foaf:name "BERNAL HEIGHTS PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "36" .
+
+<http://www.semanticweb.org/24> a <http://www.semanticweb.org/park> ;
+	foaf:name "BERNAL HEIGHTS RECREATION CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "33" ;
+	foaf:based_near """500 Moultrie
+San Francisco, CA
+(37.73844636, -122.41615685)""" .
+
+<http://www.semanticweb.org/25> a <http://www.semanticweb.org/park> ;
+	foaf:name "BILLY GOAT HILL" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "5" ;
+	foaf:based_near """30th
+San Francisco, CA
+(37.74140787, -122.43319872)""" .
+
+<http://www.semanticweb.org/26> a <http://www.semanticweb.org/park> ;
+	foaf:name "BROADWAY TUNNEL EAST MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94133" ;
+	foaf:name "204" ;
+	foaf:based_near """BRdway
+San Francisco, CA
+(37.79699682, -122.412901)""" .
+
+<http://www.semanticweb.org/27> a <http://www.semanticweb.org/park> ;
+	foaf:name "BROADWAY TUNNEL WEST MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94109" ;
+	foaf:name "203" ;
+	foaf:based_near """1201 Broadway
+San Francisco, CA
+(37.79643576, -122.41742319)""" .
+
+<http://www.semanticweb.org/28> a <http://www.semanticweb.org/park> ;
+	foaf:name "BROOKS PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94132" ;
+	foaf:name "18" ;
+	foaf:based_near """373 Ramsell St
+San Francisco, CA
+(37.71727397, -122.46676875)""" .
+
+<http://www.semanticweb.org/29> a <http://www.semanticweb.org/park> ;
+	foaf:name "BROTHERHOOD/CHESTER MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94132" ;
+	foaf:name "160" ;
+	foaf:based_near """501 Brotherhood Wy
+San Francisco, CA
+(37.71238249, -122.46990318)""" .
+
+<http://www.semanticweb.org/30> a <http://www.semanticweb.org/park> ;
+	foaf:name "BUCHANAN STREET MALL" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94102" ;
+	foaf:name "121" ;
+	foaf:based_near """Buchanan
+San Francisco, CA
+(37.77949531, -122.42856481)""" .
+
+<http://www.semanticweb.org/31> a <http://www.semanticweb.org/park> ;
+	foaf:name "BUENA VISTA PARK" ;
+	a "Regional Park" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94117" ;
+	foaf:name "81" ;
+	foaf:based_near """Buena Vista
+San Francisco, CA
+(37.7685639, -122.44137945)""" .
+
+<http://www.semanticweb.org/32> a <http://www.semanticweb.org/park> ;
+	foaf:name "BUSH/BRODERICK MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94115" ;
+	foaf:name "108" ;
+	foaf:based_near """Baker
+San Francisco, CA
+(37.78557814, -122.44253511)""" .
+
+<http://www.semanticweb.org/33> a <http://www.semanticweb.org/park> ;
+	foaf:name "CABRILLO PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Elder, Steve" ;
+	foaf:mbox "steven.elder@sfgov.org" ;
+	foaf:phone "(415) 601-6501" ;
+	<http://www.semanticweb.org/zipCode> "94121" ;
+	foaf:name "95" ;
+	foaf:based_near """858 38th Ave
+San Francisco, CA
+(37.77286672, -122.49870214)""" .
+
+<http://www.semanticweb.org/34> a <http://www.semanticweb.org/park> ;
+	foaf:name "CAMP MATHER" ;
+	a "Family Camp" ;
+	foaf:name "Outside SF" , "Castile, Steve" ;
+	foaf:mbox "steve.castile@sfgov.org" ;
+	foaf:phone "(415) 841-0856" ;
+	<http://www.semanticweb.org/zipCode> "95321" ;
+	foaf:name "10379" ;
+	foaf:based_near """32560 Mather Rd
+Groveland, CA
+(37.88160218, -119.85076005)""" .
+
+<http://www.semanticweb.org/35> a <http://www.semanticweb.org/park> ;
+	foaf:name "CANDLESTICK PARK" ;
+	a "Concession" ;
+	foaf:name "Candlestick Park Stadium" , "Gay, Mike" ;
+	foaf:mbox "michael.gay@sfgov.org" ;
+	foaf:phone "(415) 218-4786" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "41" ;
+	foaf:based_near """Jamestown Ave
+San Francisco, CA
+(37.71327692, -122.38483572)""" .
+
+<http://www.semanticweb.org/36> a <http://www.semanticweb.org/park> ;
+	foaf:name "CARL LARSEN PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheets, Robert" ;
+	foaf:mbox "robert.sheets@sfgov.org" ;
+	foaf:phone "(415) 235-4576" ;
+	<http://www.semanticweb.org/zipCode> "94116" ;
+	foaf:name "86" ;
+	foaf:based_near """19th Ave
+San Francisco, CA
+(37.73929782, -122.47596603)""" .
+
+<http://www.semanticweb.org/37> a <http://www.semanticweb.org/park> ;
+	foaf:name "CAYUGA PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Taylor, Zack" ;
+	foaf:mbox "zack.taylor@sfgov.org" ;
+	foaf:phone "(415) 601-7277" ;
+	<http://www.semanticweb.org/zipCode> "94112" ;
+	foaf:name "15" ;
+	foaf:based_near """301 Naglee Ave
+San Francisco, CA
+(37.71388814, -122.45029719)""" .
+
+<http://www.semanticweb.org/38> a <http://www.semanticweb.org/park> ;
+	foaf:name "CAYUGA/LAMARTINE MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94112" ;
+	foaf:name "159" ;
+	foaf:based_near """Cayuga
+San Francisco, CA
+(37.73033758, -122.43294264)""" .
+
+<http://www.semanticweb.org/39> a <http://www.semanticweb.org/park> ;
+	foaf:name "CHESTNUT/KEARNY OPEN SPACE" ;
+	a "Mini Park" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94133" ;
+	foaf:name "152" ;
+	foaf:based_near """Chestnut
+San Francisco, CA
+(37.80454125, -122.4070907)""" .
+
+<http://www.semanticweb.org/40> a <http://www.semanticweb.org/park> ;
+	foaf:name "CHINESE RECREATION CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94108" ;
+	foaf:name "140" ;
+	foaf:based_near """1101 Washington St
+San Francisco, CA
+(37.79420965, -122.41178577)""" .
+
+<http://www.semanticweb.org/41> a <http://www.semanticweb.org/park> ;
+	foaf:name "Clipper Terrace Community Garden" ;
+	a "Community Garden" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94114" ;
+	foaf:name "135193" ;
+	foaf:based_near """855 Clipper Terrace
+San Francisco, CA
+(37.74785021, -122.44317435)""" .
+
+<http://www.semanticweb.org/42> a <http://www.semanticweb.org/park> ;
+	foaf:name "COLERIDGE MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "34" ;
+	foaf:based_near """Coleridge
+San Francisco, CA
+(37.74442266, -122.41966647)""" .
+
+<http://www.semanticweb.org/43> a <http://www.semanticweb.org/park> ;
+	foaf:name "COLLIS P. HUNTINGTON PARK" ;
+	a "Civic Plaza or Square" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94108" ;
+	foaf:name "137" ;
+	foaf:based_near """California
+San Francisco, CA
+(37.79216576, -122.41215294)""" .
+
+<http://www.semanticweb.org/44> a <http://www.semanticweb.org/park> ;
+	foaf:name "Connecticut Friendship Garden" ;
+	a "Community Garden" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94107" ;
+	foaf:name "171700" .
+
+<http://www.semanticweb.org/45> a <http://www.semanticweb.org/park> ;
+	foaf:name "CORONA HEIGHTS" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94114" ;
+	foaf:name "80" ;
+	foaf:based_near """Roosevelt
+San Francisco, CA
+(37.76497671, -122.43879691)""" .
+
+<http://www.semanticweb.org/46> a <http://www.semanticweb.org/park> ;
+	foaf:name "Corwin Community Garden" ;
+	a "Community Garden" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94114" ;
+	foaf:name "164221" ;
+	foaf:based_near """410 Douglass St
+San Francisco, CA
+(37.75723015, -122.43902313)""" .
+
+<http://www.semanticweb.org/47> a <http://www.semanticweb.org/park> ;
+	foaf:name "COSO/PRECITA MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "199" ;
+	foaf:based_near """Coso
+San Francisco, CA
+(37.74624354, -122.41812033)""" .
+
+<http://www.semanticweb.org/48> a <http://www.semanticweb.org/park> ;
+	foaf:name "COTTAGE ROW MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94115" ;
+	foaf:name "127" ;
+	foaf:based_near """Sutter
+San Francisco, CA
+(37.78657099, -122.4323102)""" .
+
+<http://www.semanticweb.org/49> a <http://www.semanticweb.org/park> ;
+	foaf:name "COW HOLLOW PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94123" ;
+	foaf:name "110" ;
+	foaf:based_near """1 Miley St
+San Francisco, CA
+(37.79733829, -122.44485143)""" .
+
+<http://www.semanticweb.org/50> a <http://www.semanticweb.org/park> ;
+	foaf:name "CRAGS COURT GARDEN" ;
+	a "Community Garden" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "198" .
+
+<http://www.semanticweb.org/51> a <http://www.semanticweb.org/park> ;
+	foaf:name "CROCKER AMAZON PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Taylor, Zack" ;
+	foaf:mbox "zack.taylor@sfgov.org" ;
+	foaf:phone "(415) 601-7277" ;
+	<http://www.semanticweb.org/zipCode> "94112" ;
+	foaf:name "164" ;
+	foaf:based_near """Moscow
+San Francisco, CA
+(37.7140459, -122.42923866)""" .
+
+<http://www.semanticweb.org/52> a <http://www.semanticweb.org/park> ;
+	foaf:name "Dearborn Community Garden" ;
+	a "Community Garden" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "137654" ;
+	foaf:based_near """59 Dearborn St
+San Francisco, CA
+(37.76237833, -122.42274353)""" .
+
+<http://www.semanticweb.org/53> a <http://www.semanticweb.org/park> ;
+	foaf:name "DIAMOND/FARNUM OPEN SPACE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "181" ;
+	foaf:based_near """Diamond
+San Francisco, CA
+(37.73880241, -122.43431084)""" .
+
+<http://www.semanticweb.org/54> a <http://www.semanticweb.org/park> ;
+	foaf:name "Dog Patch-Miller Memorial Comm. Garden" ;
+	a "Community Garden" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "35" .
+
+<http://www.semanticweb.org/55> a <http://www.semanticweb.org/park> ;
+	foaf:name "DOROTHY ERSKINE PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "179" ;
+	foaf:based_near """Martha
+San Francisco, CA
+(37.73391249, -122.43944536)""" .
+
+<http://www.semanticweb.org/56> a <http://www.semanticweb.org/park> ;
+	foaf:name "DOUGLASS PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "8" ;
+	foaf:based_near """26th
+San Francisco, CA
+(37.74727823, -122.43893283)""" .
+
+<http://www.semanticweb.org/57> a <http://www.semanticweb.org/park> ;
+	foaf:name "DUBOCE PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94117" ;
+	foaf:name "113" ;
+	foaf:based_near """Duboce
+San Francisco, CA
+(37.769615, -122.43342784)""" .
+
+<http://www.semanticweb.org/58> a <http://www.semanticweb.org/park> ;
+	foaf:name "DUNCAN/CASTRO OPEN SPACE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "178" ;
+	foaf:based_near """Duncan
+San Francisco, CA
+(37.74594931, -122.43339409)""" .
+
+<http://www.semanticweb.org/59> a <http://www.semanticweb.org/park> ;
+	foaf:name "DUPONT COURTS" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Elder, Steve" ;
+	foaf:mbox "steven.elder@sfgov.org" ;
+	foaf:phone "(415) 601-6501" ;
+	<http://www.semanticweb.org/zipCode> "94121" ;
+	foaf:name "98" ;
+	foaf:based_near """336 31st Ave
+San Francisco, CA
+(37.78268787, -122.4908331)""" .
+
+<http://www.semanticweb.org/60> a <http://www.semanticweb.org/park> ;
+	foaf:name "EDGEHILL MOUNTAIN" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94127" ;
+	foaf:name "71" ;
+	foaf:based_near """Edgehill
+San Francisco, CA
+(37.74203025, -122.45976472)""" .
+
+<http://www.semanticweb.org/61> a <http://www.semanticweb.org/park> ;
+	foaf:name "ESPRIT PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94107" ;
+	foaf:name "193" .
+
+<http://www.semanticweb.org/62> a <http://www.semanticweb.org/park> ;
+	foaf:name "EUREKA VALLEY REC CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94114" ;
+	foaf:name "75" ;
+	foaf:based_near """100 Collingwood St
+San Francisco, CA
+(37.75978957, -122.43648069)""" .
+
+<http://www.semanticweb.org/63> a <http://www.semanticweb.org/park> ;
+	foaf:name "EVERSON/DIGBY LOTS" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "6" ;
+	foaf:based_near """61 Everson St
+San Francisco, CA
+(37.73807643, -122.43177574)""" .
+
+<http://www.semanticweb.org/64> a <http://www.semanticweb.org/park> ;
+	foaf:name "EXCELSIOR PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Taylor, Zack" ;
+	foaf:mbox "zack.taylor@sfgov.org" ;
+	foaf:phone "(415) 601-7277" ;
+	<http://www.semanticweb.org/zipCode> "94112" ;
+	foaf:name "29" ;
+	foaf:based_near """Russia Ave
+San Francisco, CA
+(37.7203554, -122.43321862)""" .
+
+<http://www.semanticweb.org/65> a <http://www.semanticweb.org/park> ;
+	foaf:name "FAIRMOUNT PLAZA" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "3" ;
+	foaf:based_near """Miquel
+San Francisco, CA
+(37.73849226, -122.42913147)""" .
+
+<http://www.semanticweb.org/66> a <http://www.semanticweb.org/park> ;
+	foaf:name "FATHER ALFRED E. BOEDDEKER PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94102" ;
+	foaf:name "134" ;
+	foaf:based_near """295 Eddy St
+San Francisco, CA
+(37.78439513, -122.4120591)""" .
+
+<http://www.semanticweb.org/67> a <http://www.semanticweb.org/park> ;
+	foaf:name "FAY PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94133" ;
+	foaf:name "184" ;
+	foaf:based_near """2366 Leavenworth St
+San Francisco, CA
+(37.80289031, -122.4178443)""" .
+
+<http://www.semanticweb.org/68> a <http://www.semanticweb.org/park> ;
+	foaf:name "FILLMORE/TURK MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94115" ;
+	foaf:name "182" ;
+	foaf:based_near """Fillmore
+San Francisco, CA
+(37.78018588, -122.43178038)""" .
+
+<http://www.semanticweb.org/69> a <http://www.semanticweb.org/park> ;
+	foaf:name "FRANKLIN SQUARE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "55" ;
+	foaf:based_near """16th
+San Francisco, CA
+(37.76501506, -122.4093148)""" .
+
+<http://www.semanticweb.org/70> a <http://www.semanticweb.org/park> ;
+	foaf:name "FULTON PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Elder, Steve" ;
+	foaf:mbox "steven.elder@sfgov.org" ;
+	foaf:phone "(415) 601-6501" ;
+	<http://www.semanticweb.org/zipCode> "94121" ;
+	foaf:name "96" ;
+	foaf:based_near """855 27th Ave
+San Francisco, CA
+(37.7733822, -122.48693405)""" .
+
+<http://www.semanticweb.org/71> a <http://www.semanticweb.org/park> ;
+	foaf:name "Garden for the Environment" ;
+	a "Community Garden" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "20755" .
+
+<http://www.semanticweb.org/72> a <http://www.semanticweb.org/park> ;
+	foaf:name "GARFIELD SQUARE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "24" ;
+	foaf:based_near """26th
+San Francisco, CA
+(37.75020058, -122.4122356)""" .
+
+<http://www.semanticweb.org/73> a <http://www.semanticweb.org/park> ;
+	foaf:name "GENE FRIEND REC CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94103" ;
+	foaf:name "57" ;
+	foaf:based_near """270 6th St
+San Francisco, CA
+(37.77863929, -122.40635191)""" .
+
+<http://www.semanticweb.org/74> a <http://www.semanticweb.org/park> ;
+	foaf:name "GENEVA AVENUE STRIP" ;
+	a "Mini Park" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94112" ;
+	foaf:name "21" ;
+	foaf:based_near """600 Geneva
+San Francisco, CA
+(37.72046082, -122.44546412)""" .
+
+<http://www.semanticweb.org/75> a <http://www.semanticweb.org/park> ;
+	foaf:name "GEORGE CHRISTOPHER PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "7" ;
+	foaf:based_near """5210 Diamond Heights Blvd
+San Francisco, CA
+(37.74347014, -122.44055037)""" .
+
+<http://www.semanticweb.org/76> a <http://www.semanticweb.org/park> ;
+	foaf:name "GILMAN PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "44" ;
+	foaf:based_near """Gilman Ave
+San Francisco, CA
+(37.71698202, -122.38809021)""" .
+
+<http://www.semanticweb.org/77> a <http://www.semanticweb.org/park> ;
+	foaf:name "GLEN PARK" ;
+	a "Regional Park" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94127" ;
+	foaf:name "1" ;
+	foaf:based_near """Elk St
+San Francisco, CA
+(37.7400257, -122.44273225)""" .
+
+<http://www.semanticweb.org/78> a <http://www.semanticweb.org/park> ;
+	foaf:name "GOLDEN GATE HEIGHTS PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94116" ;
+	foaf:name "89" ;
+	foaf:based_near """12th Ave (off Pacheco
+San Francisco, CA
+(37.74998538, -122.46940674)""" .
+
+<http://www.semanticweb.org/79> a <http://www.semanticweb.org/park> ;
+	foaf:name "GOLDEN GATE PARK" ;
+	a "Regional Park" ;
+	foaf:name "Golden Gate Park" , "Koch-Gonzalez, Gloria" ;
+	foaf:mbox "gloria.koch-gonzalez@sfgov.org" ;
+	foaf:phone "(415) 831-6307" ;
+	<http://www.semanticweb.org/zipCode> "94117" ;
+	foaf:name "94" ;
+	foaf:based_near """Stanyan
+San Francisco, CA
+(37.76905891, -122.48094821)""" .
+
+<http://www.semanticweb.org/80> a <http://www.semanticweb.org/park> ;
+	foaf:name "GOLDEN GATE PARK - Section 1" ;
+	a "Regional Park" ;
+	foaf:name "Golden Gate Park" , "Martin, York (Acting)" ;
+	foaf:mbox "york.martin@sfgov.org" ;
+	foaf:phone "(415) 753-7094" ;
+	foaf:name "756665" .
+
+<http://www.semanticweb.org/81> a <http://www.semanticweb.org/park> ;
+	foaf:name "GOLDEN GATE PARK - Section 2" ;
+	a "Regional Park" ;
+	foaf:name "Golden Gate Park" , "McCormick, James" ;
+	foaf:mbox "james.mccormick@sfgov.org" ;
+	foaf:phone "(415) 666-7002" ;
+	foaf:name "756666" .
+
+<http://www.semanticweb.org/82> a <http://www.semanticweb.org/park> ;
+	foaf:name "GOLDEN GATE PARK - Section 3 (Arboretum)" ;
+	a "Regional Park" ;
+	foaf:name "Golden Gate Park" , "Dennis, Brent" ;
+	foaf:mbox "brent.dennis@sfgov.org" ;
+	foaf:phone "(415) 753-7271" ;
+	foaf:name "756667" .
+
+<http://www.semanticweb.org/83> a <http://www.semanticweb.org/park> ;
+	foaf:name "GOLDEN GATE PARK - Section 4" ;
+	a "Regional Park" ;
+	foaf:name "Golden Gate Park" , "Stone, Andy" ;
+	foaf:mbox "andy.stone@sfgov.org" ;
+	foaf:phone "(415) 666-7003" ;
+	foaf:name "756668" .
+
+<http://www.semanticweb.org/84> a <http://www.semanticweb.org/park> ;
+	foaf:name "GOLDEN GATE PARK - Section 5" ;
+	a "Regional Park" ;
+	foaf:name "Golden Gate Park" , "Giammattei, Joe" ;
+	foaf:mbox "joe.giammattei@sfgov.org" ;
+	foaf:phone "(415) 666-7004" ;
+	foaf:name "756669" .
+
+<http://www.semanticweb.org/85> a <http://www.semanticweb.org/park> ;
+	foaf:name "GOLDEN GATE PARK - Section 6" ;
+	a "Regional Park" ;
+	foaf:name "Golden Gate Park" , "Deasy, Jon" ;
+	foaf:mbox "jon.deasy@sfgov.org" ;
+	foaf:phone "(415) 753-7040" ;
+	foaf:name "756670" .
+
+<http://www.semanticweb.org/86> a <http://www.semanticweb.org/park> ;
+	foaf:name "GOLDEN GATE/STEINER MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94115" ;
+	foaf:name "120" ;
+	foaf:based_near """Golden Gate
+San Francisco, CA
+(37.77958265, -122.43345152)""" .
+
+<http://www.semanticweb.org/87> a <http://www.semanticweb.org/park> ;
+	foaf:name "Good Prospect Community Garden" ;
+	a "Community Garden" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "21141" ;
+	foaf:based_near """100 Cortland Ave
+San Francisco, CA
+(37.74002499, -122.42097734)""" .
+
+<http://www.semanticweb.org/88> a <http://www.semanticweb.org/park> ;
+	foaf:name "GRAND VIEW OPEN SPACE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94122" ;
+	foaf:name "12910" ;
+	foaf:based_near """15th Ave
+San Francisco, CA
+(37.75507227, -122.47235155)""" .
+
+<http://www.semanticweb.org/89> a <http://www.semanticweb.org/park> ;
+	foaf:name "GRAND VIEW PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94122" ;
+	foaf:name "92" ;
+	foaf:based_near """Moraga
+San Francisco, CA
+(37.75646571, -122.47180128)""" .
+
+<http://www.semanticweb.org/90> a <http://www.semanticweb.org/park> ;
+	foaf:name "GRATTAN PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94117" ;
+	foaf:name "104" ;
+	foaf:based_near """1180 Stanyan St
+San Francisco, CA
+(37.76259314, -122.45147654)""" .
+
+<http://www.semanticweb.org/91> a <http://www.semanticweb.org/park> ;
+	foaf:name "HAMILTON REC CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94115" ;
+	foaf:name "125" ;
+	foaf:based_near """1900 Geary Blvd
+San Francisco, CA
+(37.78441485, -122.43603929)""" .
+
+<http://www.semanticweb.org/92> a <http://www.semanticweb.org/park> ;
+	foaf:name "HAWK HILL" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94116" ;
+	foaf:name "186" ;
+	foaf:based_near """14th Ave Rivera
+San Francisco, CA
+(37.74657651, -122.46872941)""" .
+
+<http://www.semanticweb.org/93> a <http://www.semanticweb.org/park> ;
+	foaf:name "HAYES VALLEY PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94102" ;
+	foaf:name "116" ;
+	foaf:based_near """Hayes
+San Francisco, CA
+(37.77606034, -122.42736714)""" .
+
+<http://www.semanticweb.org/94> a <http://www.semanticweb.org/park> ;
+	foaf:name "HEAD/BROTHERHOOD MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94132" ;
+	foaf:name "196" ;
+	foaf:based_near """Head St
+San Francisco, CA
+(37.71262222, -122.46422924)""" .
+
+<http://www.semanticweb.org/95> a <http://www.semanticweb.org/park> ;
+	foaf:name "HELEN WILLS PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94109" ;
+	foaf:name "130" ;
+	foaf:based_near """BRdway
+San Francisco, CA
+(37.79577299, -122.42066143)""" .
+
+<http://www.semanticweb.org/96> a <http://www.semanticweb.org/park> ;
+	foaf:name "HERZ PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Taylor, Zack" ;
+	foaf:mbox "zack.taylor@sfgov.org" ;
+	foaf:phone "(415) 601-7277" ;
+	<http://www.semanticweb.org/zipCode> "94134" ;
+	foaf:name "137671" ;
+	foaf:based_near """Hahn
+San Francisco, CA
+(37.71348444, -122.41659732)""" .
+
+<http://www.semanticweb.org/97> a <http://www.semanticweb.org/park> ;
+	foaf:name "HILLTOP PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "47" ;
+	foaf:based_near """La Salle
+San Francisco, CA
+(37.73291728, -122.38347479)""" .
+
+<http://www.semanticweb.org/98> a <http://www.semanticweb.org/park> ;
+	foaf:name "HOLLY PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "32" .
+
+<http://www.semanticweb.org/99> a <http://www.semanticweb.org/park> ;
+	foaf:name "Hooker Alley Community Garden" ;
+	a "Community Garden" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94108" ;
+	foaf:name "171743" .
+
+<http://www.semanticweb.org/100> a <http://www.semanticweb.org/park> ;
+	foaf:name "HOWARD/LANGTON MINI PARK" ;
+	a "Community Garden" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94103" ;
+	foaf:name "58" ;
+	foaf:based_near """Howard
+San Francisco, CA
+(37.77723739, -122.40981275)""" .
+
+<http://www.semanticweb.org/101> a <http://www.semanticweb.org/park> ;
+	foaf:name "Hunter's Point Recreation Center" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 695-5004" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "165" ;
+	foaf:based_near """200 Middle Point Rd
+San Francisco, CA
+(37.73735, -122.37834)""" .
+
+<http://www.semanticweb.org/102> a <http://www.semanticweb.org/park> ;
+	foaf:name "HYDE/VALLEJO MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94109" ;
+	foaf:name "146" ;
+	foaf:based_near """Hyde
+San Francisco, CA
+(37.79763564, -122.41910564)""" .
+
+<http://www.semanticweb.org/103> a <http://www.semanticweb.org/park> ;
+	foaf:name "INA COOLBRITH MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94133" ;
+	foaf:name "145" ;
+	foaf:based_near """Vallejo
+San Francisco, CA
+(37.79816473, -122.41338371)""" .
+
+<http://www.semanticweb.org/104> a <http://www.semanticweb.org/park> ;
+	foaf:name "INDIA BASIN SHORELINE PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "48" ;
+	foaf:based_near """Evans
+San Francisco, CA
+(37.73366342, -122.37371901)""" .
+
+<http://www.semanticweb.org/105> a <http://www.semanticweb.org/park> ;
+	foaf:name "INTERIOR GREEN BELT" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "87" ;
+	foaf:based_near """Belmont
+San Francisco, CA
+(37.7585442, -122.45319935)""" .
+
+<http://www.semanticweb.org/106> a <http://www.semanticweb.org/park> ;
+	foaf:name "J. P. MURPHY PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94116" ;
+	foaf:name "90" ;
+	foaf:based_near """1960 9th Ave
+San Francisco, CA
+(37.75180107, -122.46500011)""" .
+
+<http://www.semanticweb.org/107> a <http://www.semanticweb.org/park> ;
+	foaf:name "JACKSON PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94107" ;
+	foaf:name "54" ;
+	foaf:based_near """17th
+San Francisco, CA
+(37.7643148, -122.3996072)""" .
+
+<http://www.semanticweb.org/108> a <http://www.semanticweb.org/park> ;
+	foaf:name "JAMES ROLPH JR PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "50" ;
+	foaf:based_near """Potrero
+San Francisco, CA
+(37.7497274, -122.40623124)""" .
+
+<http://www.semanticweb.org/109> a <http://www.semanticweb.org/park> ;
+	foaf:name "JAPANTOWN PEACE PLAZA" ;
+	a "Civic Plaza or Square" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94115" ;
+	foaf:name "126" ;
+	foaf:based_near """Post
+San Francisco, CA
+(37.78520911, -122.42975098)""" .
+
+<http://www.semanticweb.org/110> a <http://www.semanticweb.org/park> ;
+	foaf:name "JEFFERSON SQUARE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94102" ;
+	foaf:name "122" ;
+	foaf:based_near """Eddy
+San Francisco, CA
+(37.78180034, -122.42565792)""" .
+
+<http://www.semanticweb.org/111> a <http://www.semanticweb.org/park> ;
+	foaf:name "JOE DIMAGGIO PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94133" ;
+	foaf:name "150" ;
+	foaf:based_near """651 Lombard St
+San Francisco, CA
+(37.80248342, -122.41206911)""" .
+
+<http://www.semanticweb.org/112> a <http://www.semanticweb.org/park> ;
+	foaf:name "JOHN MCLAREN PARK" ;
+	a "Regional Park" ;
+	foaf:name "PSA 3" , "Taylor, Zack" ;
+	foaf:mbox "zack.taylor@sfgov.org" ;
+	foaf:phone "(415) 601-7277" ;
+	<http://www.semanticweb.org/zipCode> "94112" ;
+	foaf:name "28" ;
+	foaf:based_near """Mansell
+San Francisco, CA
+(37.7180842, -122.41907209)""" .
+
+<http://www.semanticweb.org/113> a <http://www.semanticweb.org/park> ;
+	foaf:name "JOOST/BADEN MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "158" ;
+	foaf:based_near """Joost
+San Francisco, CA
+(37.73273279, -122.4408417)""" .
+
+<http://www.semanticweb.org/114> a <http://www.semanticweb.org/park> ;
+	foaf:name "JOSE CORONADO PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "60" ;
+	foaf:based_near """21st
+San Francisco, CA
+(37.75754628, -122.41510589)""" .
+
+<http://www.semanticweb.org/115> a <http://www.semanticweb.org/park> ;
+	foaf:name "JOSEPH CONRAD MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94109" ;
+	foaf:name "154" ;
+	foaf:based_near """601 Beach St
+San Francisco, CA
+(37.80667244, -122.41906274)""" .
+
+<http://www.semanticweb.org/116> a <http://www.semanticweb.org/park> ;
+	foaf:name "JOSEPH L. ALIOTO PERFORMING ARTS PIAZZA" ;
+	a "Civic Plaza or Square" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94102" ;
+	foaf:name "118" ;
+	foaf:based_near """Grove
+San Francisco, CA
+(37.77948045, -122.4175995)""" .
+
+<http://www.semanticweb.org/117> a <http://www.semanticweb.org/park> ;
+	foaf:name "JOSEPH LEE RECREATION CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "40" ;
+	foaf:based_near """1395 Mendell St
+San Francisco, CA
+(37.73453491, -122.389412)""" .
+
+<http://www.semanticweb.org/118> a <http://www.semanticweb.org/park> ;
+	foaf:name "JULIUS KAHN PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94118" ;
+	foaf:name "166" ;
+	foaf:based_near """Pacific Ave
+San Francisco, CA
+(37.79131306, -122.45397275)""" .
+
+<http://www.semanticweb.org/119> a <http://www.semanticweb.org/park> ;
+	foaf:name "JUNIPERO SERRA PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94132" ;
+	foaf:name "13" ;
+	foaf:based_near """300 Stonecrest Dr
+San Francisco, CA
+(37.72482337, -122.47385187)""" .
+
+<http://www.semanticweb.org/120> a <http://www.semanticweb.org/park> ;
+	foaf:name "JURI COMMONS" ;
+	a "Mini Park" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "23" ;
+	foaf:based_near """Guerrero
+San Francisco, CA
+(37.74950391, -122.42199245)""" .
+
+<http://www.semanticweb.org/121> a <http://www.semanticweb.org/park> ;
+	foaf:name "JUSTIN HERMAN/EMBARCADERO PLAZA" ;
+	a "Civic Plaza or Square" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94111" ;
+	foaf:name "138" ;
+	foaf:based_near """Clay
+San Francisco, CA
+(37.79487978, -122.39476577)""" .
+
+<http://www.semanticweb.org/122> a <http://www.semanticweb.org/park> ;
+	foaf:name "KELLOCH VELASCO MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94134" ;
+	foaf:name "26" ;
+	foaf:based_near """Kelloch
+San Francisco, CA
+(37.70854271, -122.41314877)""" .
+
+<http://www.semanticweb.org/123> a <http://www.semanticweb.org/park> ;
+	foaf:name "KID POWER PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "191" ;
+	foaf:based_near """45 Hoff St
+San Francisco, CA
+(37.76415431, -122.42027989)""" .
+
+<http://www.semanticweb.org/124> a <http://www.semanticweb.org/park> ;
+	foaf:name "KITE HILL" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94114" ;
+	foaf:name "74" ;
+	foaf:based_near """Yukon
+San Francisco, CA
+(37.75824114, -122.44166171)""" .
+
+<http://www.semanticweb.org/125> a <http://www.semanticweb.org/park> ;
+	foaf:name "KOSHLAND PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94102" ;
+	foaf:name "115" ;
+	foaf:based_near """Page
+San Francisco, CA
+(37.77324835, -122.42672942)""" .
+
+<http://www.semanticweb.org/126> a <http://www.semanticweb.org/park> ;
+	foaf:name "LAFAYETTE PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94109" ;
+	foaf:name "128" ;
+	foaf:based_near """Gough
+San Francisco, CA
+(37.79154983, -122.42767158)""" .
+
+<http://www.semanticweb.org/127> a <http://www.semanticweb.org/park> ;
+	foaf:name "LAKE MERCED PARK" ;
+	a "Regional Park" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94132" ;
+	foaf:name "10" .
+
+<http://www.semanticweb.org/128> a <http://www.semanticweb.org/park> ;
+	foaf:name "LAKEVIEW/ASHTON MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94132" ;
+	foaf:name "20" ;
+	foaf:based_near """Ashton
+San Francisco, CA
+(37.71809145, -122.4625727)""" .
+
+<http://www.semanticweb.org/129> a <http://www.semanticweb.org/park> ;
+	foaf:name "LAUREL HILL PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94118" ;
+	foaf:name "107" ;
+	foaf:based_near """251 Euclid Ave
+San Francisco, CA
+(37.78393678, -122.45093931)""" .
+
+<http://www.semanticweb.org/130> a <http://www.semanticweb.org/park> ;
+	foaf:name "LECONTE MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "137649" ;
+	foaf:based_near """845 Meade St
+San Francisco, CA
+(37.71765613, -122.3958507)""" .
+
+<http://www.semanticweb.org/131> a <http://www.semanticweb.org/park> ;
+	foaf:name "LESSING/SEARS MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94112" ;
+	foaf:name "14" ;
+	foaf:based_near """Sickles
+San Francisco, CA
+(37.70860406, -122.4553029)""" .
+
+<http://www.semanticweb.org/132> a <http://www.semanticweb.org/park> ;
+	foaf:name "LINCOLN PARK" ;
+	a "Regional Park" ;
+	foaf:name "PSA 1" , "Elder, Steve" ;
+	foaf:mbox "steven.elder@sfgov.org" ;
+	foaf:phone "(415) 601-6501" ;
+	<http://www.semanticweb.org/zipCode> "94121" ;
+	foaf:name "103" ;
+	foaf:based_near """34th Ave
+San Francisco, CA
+(37.78423843, -122.49838278)""" .
+
+<http://www.semanticweb.org/133> a <http://www.semanticweb.org/park> ;
+	foaf:name "LITTLE HOLLYWOOD PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94134" ;
+	foaf:name "42" ;
+	foaf:based_near """Lathrop
+San Francisco, CA
+(37.70996909, -122.39820878)""" .
+
+<http://www.semanticweb.org/134> a <http://www.semanticweb.org/park> ;
+	foaf:name "LOUIS SUTTER PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Taylor, Zack" ;
+	foaf:mbox "zack.taylor@sfgov.org" ;
+	foaf:phone "(415) 601-7277" ;
+	<http://www.semanticweb.org/zipCode> "94134" ;
+	foaf:name "137665" ;
+	foaf:based_near """Wayland
+San Francisco, CA
+(37.72245982, -122.41392441)""" .
+
+<http://www.semanticweb.org/135> a <http://www.semanticweb.org/park> ;
+	foaf:name "LOWER GREAT HIGHWAY" ;
+	a "Parkway" ;
+	foaf:name "Golden Gate Park" , "Deasy, Jon" ;
+	foaf:mbox "jon.deasy@sfgov.org" ;
+	foaf:phone "(415) 831-6307" ;
+	<http://www.semanticweb.org/zipCode> "94122" ;
+	foaf:name "163" ;
+	foaf:based_near """Great Highway
+San Francisco, CA
+(37.74928062, -122.50817528)""" .
+
+<http://www.semanticweb.org/136> a <http://www.semanticweb.org/park> ;
+	foaf:name "MARGARET S HAYWARD PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94102" ;
+	foaf:name "119" ;
+	foaf:based_near """1016 Laguna
+San Francisco, CA
+(37.78084683, -122.425427)""" .
+
+<http://www.semanticweb.org/137> a <http://www.semanticweb.org/park> ;
+	foaf:name "MARITIME PLAZA" ;
+	a "Civic Plaza or Square" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94111" ;
+	foaf:name "142" ;
+	foaf:based_near """285 Washington St
+San Francisco, CA
+(37.79560513, -122.39923889)""" .
+
+<http://www.semanticweb.org/138> a <http://www.semanticweb.org/park> ;
+	foaf:name "MCCOPPIN SQUARE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheets, Robert" ;
+	foaf:mbox "robert.sheets@sfgov.org" ;
+	foaf:phone "(415) 235-4576" ;
+	<http://www.semanticweb.org/zipCode> "94116" ;
+	foaf:name "88" ;
+	foaf:based_near """24th
+San Francisco, CA
+(37.74382723, -122.48007959)""" .
+
+<http://www.semanticweb.org/139> a <http://www.semanticweb.org/park> ;
+	foaf:name "MCKINLEY SQUARE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94107" ;
+	foaf:name "53" ;
+	foaf:based_near """20th St
+San Francisco, CA
+(37.75913976, -122.40469058)""" .
+
+<http://www.semanticweb.org/140> a <http://www.semanticweb.org/park> ;
+	foaf:name "MERCED HEIGHTS PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94132" ;
+	foaf:name "17" ;
+	foaf:based_near """Byxbee
+San Francisco, CA
+(37.71750931, -122.47028126)""" .
+
+<http://www.semanticweb.org/141> a <http://www.semanticweb.org/park> ;
+	foaf:name "MICHELANGELO PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94133" ;
+	foaf:name "148" ;
+	foaf:based_near """Greenwich
+San Francisco, CA
+(37.80109573, -122.41689916)""" .
+
+<http://www.semanticweb.org/142> a <http://www.semanticweb.org/park> ;
+	foaf:name "MIDTOWN TERRACE PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "167" ;
+	foaf:based_near """Clarendon
+San Francisco, CA
+(37.75223367, -122.45453246)""" .
+
+<http://www.semanticweb.org/143> a <http://www.semanticweb.org/park> ;
+	foaf:name "MINNIE & LOVIE WARD REC CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94112" ;
+	foaf:name "19" ;
+	foaf:based_near """650 Capitol
+San Francisco, CA
+(37.71577016, -122.45757024)""" .
+
+<http://www.semanticweb.org/144> a <http://www.semanticweb.org/park> ;
+	foaf:name "MIRALOMA PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94127" ;
+	foaf:name "70" ;
+	foaf:based_near """Omar
+San Francisco, CA
+(37.73864614, -122.44931265)""" .
+
+<http://www.semanticweb.org/145> a <http://www.semanticweb.org/park> ;
+	foaf:name "MISSION DOLORES PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94114" ;
+	foaf:name "63" ;
+	foaf:based_near """19th
+San Francisco, CA
+(37.75975506, -122.42709405)""" .
+
+<http://www.semanticweb.org/146> a <http://www.semanticweb.org/park> ;
+	foaf:name "MISSION PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "61" ;
+	foaf:based_near """19th
+San Francisco, CA
+(37.7592917, -122.42230064)""" .
+
+<http://www.semanticweb.org/147> a <http://www.semanticweb.org/park> ;
+	foaf:name "MISSION REC CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "59" ;
+	foaf:based_near """2450 Harrison St
+San Francisco, CA
+(37.75813659, -122.41292225)""" .
+
+<http://www.semanticweb.org/148> a <http://www.semanticweb.org/park> ;
+	foaf:name "MOSCONE RECREATION CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94123" ;
+	foaf:name "132" ;
+	foaf:based_near """1800 Chestnut St
+San Francisco, CA
+(37.8021249, -122.43313532)""" .
+
+<http://www.semanticweb.org/149> a <http://www.semanticweb.org/park> ;
+	foaf:name "MOUNTAIN LAKE PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Elder, Steve" ;
+	foaf:mbox "steven.elder@sfgov.org" ;
+	foaf:phone "(415) 601-6501" ;
+	<http://www.semanticweb.org/zipCode> "94118" ;
+	foaf:name "102" ;
+	foaf:based_near """1 11th Ave
+San Francisco, CA
+(37.78724257, -122.4690454)""" .
+
+<http://www.semanticweb.org/150> a <http://www.semanticweb.org/park> ;
+	foaf:name "MT DAVIDSON PARK" ;
+	a "Regional Park" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94127" ;
+	foaf:name "69" .
+
+<http://www.semanticweb.org/151> a <http://www.semanticweb.org/park> ;
+	foaf:name "MT OLYMPUS" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94117" ;
+	foaf:name "78" .
+
+<http://www.semanticweb.org/152> a <http://www.semanticweb.org/park> ;
+	foaf:name "MULLEN/PERALTA MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "176" ;
+	foaf:based_near """Mullen
+San Francisco, CA
+(37.74607638, -122.40880708)""" .
+
+<http://www.semanticweb.org/153> a <http://www.semanticweb.org/park> ;
+	foaf:name "MURIEL LEFF MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 1" , "Elder, Steve" ;
+	foaf:mbox "steven.elder@sfgov.org" ;
+	foaf:phone "(415) 601-6501" ;
+	<http://www.semanticweb.org/zipCode> "94118" ;
+	foaf:name "155" ;
+	foaf:based_near """7th Ave between Geary
+San Francisco, CA
+(37.78006464, -122.46500795)""" .
+
+<http://www.semanticweb.org/154> a <http://www.semanticweb.org/park> ;
+	foaf:name "NOE VALLEY COURTS" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94114" ;
+	foaf:name "72" ;
+	foaf:based_near """24th
+San Francisco, CA
+(37.75140324, -122.43892096)""" .
+
+<http://www.semanticweb.org/155> a <http://www.semanticweb.org/park> ;
+	foaf:name "NOE/BEAVER COMMUNITY GARDEN" ;
+	a "Community Garden" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94114" ;
+	foaf:name "64" ;
+	foaf:based_near """Noe
+San Francisco, CA
+(37.76491711, -122.4334455)""" .
+
+<http://www.semanticweb.org/156> a <http://www.semanticweb.org/park> ;
+	foaf:name "Ogden Terrace Community Garden" ;
+	a "Community Garden" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "171609" ;
+	foaf:based_near """700 Ogden Ave
+San Francisco, CA
+(37.73580357, -122.41203411)""" .
+
+<http://www.semanticweb.org/157> a <http://www.semanticweb.org/park> ;
+	foaf:name "O'SHAUGHNESSY HOLLOW" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94127" ;
+	foaf:name "183" .
+
+<http://www.semanticweb.org/158> a <http://www.semanticweb.org/park> ;
+	foaf:name "PAGE ST. COMMUNITY GARDEN" ;
+	a "Community Garden" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94102" ;
+	foaf:name "11976" ;
+	foaf:based_near """438 Page St
+San Francisco, CA
+(37.77362331, -122.42810149)""" .
+
+<http://www.semanticweb.org/159> a <http://www.semanticweb.org/park> ;
+	foaf:name "PAGE/LAGUNA MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94102" ;
+	foaf:name "114" ;
+	foaf:based_near """Page
+San Francisco, CA
+(37.77346139, -122.42524781)""" .
+
+<http://www.semanticweb.org/160> a <http://www.semanticweb.org/park> ;
+	foaf:name "PALACE OF FINE ARTS" ;
+	a "Civic Plaza or Square" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94123" ;
+	foaf:name "111" ;
+	foaf:based_near """3601 Lyon St &amp; Marina Blvd
+San Francisco, CA
+(37.80299898, -122.44851272)""" .
+
+<http://www.semanticweb.org/161> a <http://www.semanticweb.org/park> ;
+	foaf:name "PALEGA RECREATION CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94134" ;
+	foaf:name "30" ;
+	foaf:based_near """500 Felton St
+San Francisco, CA
+(37.72934205, -122.40978)""" .
+
+<http://www.semanticweb.org/162> a <http://www.semanticweb.org/park> ;
+	foaf:name "PALOU/PHELPS PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "188" ;
+	foaf:based_near """Palou
+San Francisco, CA
+(37.73551382, -122.39472336)""" .
+
+<http://www.semanticweb.org/163> a <http://www.semanticweb.org/park> ;
+	foaf:name "PARK PRESIDIO BLVD" ;
+	a "Parkway" ;
+	foaf:name "PSA 1" , "Elder, Steve" ;
+	foaf:mbox "steven.elder@sfgov.org" ;
+	foaf:phone "(415) 601-6501" ;
+	<http://www.semanticweb.org/zipCode> "94118" ;
+	foaf:name "101" .
+
+<http://www.semanticweb.org/164> a <http://www.semanticweb.org/park> ;
+	foaf:name "Park St Community Garden" ;
+	a "Community Garden" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "171731" ;
+	foaf:based_near """Park
+San Francisco, CA
+(37.73647064, -122.42577666)""" .
+
+<http://www.semanticweb.org/165> a <http://www.semanticweb.org/park> ;
+	foaf:name "PARKSIDE SQUARE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheets, Robert" ;
+	foaf:mbox "robert.sheets@sfgov.org" ;
+	foaf:phone "(415) 235-4576" ;
+	<http://www.semanticweb.org/zipCode> "94132" ;
+	foaf:name "84" ;
+	foaf:based_near """28th Ave
+San Francisco, CA
+(37.73794781, -122.48390596)""" .
+
+<http://www.semanticweb.org/166> a <http://www.semanticweb.org/park> ;
+	foaf:name "PARQUE NINOS UNIDOS" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "187" ;
+	foaf:based_near """23rd
+San Francisco, CA
+(37.75439053, -122.41356906)""" .
+
+<http://www.semanticweb.org/167> a <http://www.semanticweb.org/park> ;
+	foaf:name "PATRICIAS GREEN IN HAYES VALLEY" ;
+	a "Mini Park" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94102" ;
+	foaf:name "59481" ;
+	foaf:based_near """btw Hayes
+San Francisco, CA
+(37.77622289, -122.42441307)""" .
+
+<http://www.semanticweb.org/168> a <http://www.semanticweb.org/park> ;
+	foaf:name "PEIXOTTO PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94114" ;
+	foaf:name "195" ;
+	foaf:based_near """15th St
+San Francisco, CA
+(37.76578838, -122.43790519)""" .
+
+<http://www.semanticweb.org/169> a <http://www.semanticweb.org/park> ;
+	foaf:name "PINE LAKE PARK" ;
+	a "Regional Park" ;
+	foaf:name "PSA 4" , "Sheets, Robert" ;
+	foaf:mbox "robert.sheets@sfgov.org" ;
+	foaf:phone "(415) 235-4576" ;
+	<http://www.semanticweb.org/zipCode> "94132" ;
+	foaf:name "82" ;
+	foaf:based_near """Sloat Blvd
+San Francisco, CA
+(37.7363086, -122.48592744)""" .
+
+<http://www.semanticweb.org/170> a <http://www.semanticweb.org/park> ;
+	foaf:name "PORTOLA OPEN SPACE" ;
+	a "Mini Park" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "37264" ;
+	foaf:based_near """201 Portola
+San Francisco, CA
+(37.74707797, -122.44406156)""" .
+
+<http://www.semanticweb.org/171> a <http://www.semanticweb.org/park> ;
+	foaf:name "PORTSMOUTH SQUARE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94108" ;
+	foaf:name "141" ;
+	foaf:based_near """Washington
+San Francisco, CA
+(37.79483492, -122.40535067)""" .
+
+<http://www.semanticweb.org/172> a <http://www.semanticweb.org/park> ;
+	foaf:name "POTRERO DEL SOL PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Field, Adrian" ;
+	foaf:mbox "adrian.field@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "49" ;
+	foaf:based_near """Potrero
+San Francisco, CA
+(37.75060695, -122.40507971)""" .
+
+<http://www.semanticweb.org/173> a <http://www.semanticweb.org/park> ;
+	foaf:name "POTRERO HILL MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94107" ;
+	foaf:name "10416" ;
+	foaf:based_near """22nd
+San Francisco, CA
+(37.75744642, -122.3965207)""" .
+
+<http://www.semanticweb.org/174> a <http://www.semanticweb.org/park> ;
+	foaf:name "POTRERO HILL RECREATION CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94107" ;
+	foaf:name "52" ;
+	foaf:based_near """801 Arkansas St
+San Francisco, CA
+(37.75613966, -122.39688179)""" .
+
+<http://www.semanticweb.org/175> a <http://www.semanticweb.org/park> ;
+	foaf:name "PRECITA PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "37" ;
+	foaf:based_near """3200 Folsom St
+San Francisco, CA
+(37.74706232, -122.41202466)""" .
+
+<http://www.semanticweb.org/176> a <http://www.semanticweb.org/park> ;
+	foaf:name "PRENTISS MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "201" ;
+	foaf:based_near """Prentiss
+San Francisco, CA
+(37.74021712, -122.41187368)""" .
+
+<http://www.semanticweb.org/177> a <http://www.semanticweb.org/park> ;
+	foaf:name "PRESIDIO HEIGHTS PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94118" ;
+	foaf:name "109" ;
+	foaf:based_near """Clay
+San Francisco, CA
+(37.78847078, -122.4495972)""" .
+
+<http://www.semanticweb.org/178> a <http://www.semanticweb.org/park> ;
+	foaf:name "RANDOLPH/BRIGHT MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 4" , "Sheehy, Chuck" ;
+	foaf:mbox "charles.sheehy@sfgov.org" ;
+	foaf:phone "(415) 218-2226" ;
+	<http://www.semanticweb.org/zipCode> "94132" ;
+	foaf:name "16" ;
+	foaf:based_near """Randolph
+San Francisco, CA
+(37.71451213, -122.46369333)""" .
+
+<http://www.semanticweb.org/179> a <http://www.semanticweb.org/park> ;
+	foaf:name "RAYMOND KIMBELL PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "O'Connor, Tom" ;
+	foaf:mbox "tom.o'connor@sfgov.org" ;
+	foaf:phone "(415) 218-0259" ;
+	<http://www.semanticweb.org/zipCode> "94115" ;
+	foaf:name "124" ;
+	foaf:based_near """Geary Blvd
+San Francisco, CA
+(37.78294403, -122.43512653)""" .
+
+<http://www.semanticweb.org/180> a <http://www.semanticweb.org/park> ;
+	foaf:name "RICHMOND PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Elder, Steve" ;
+	foaf:mbox "steven.elder@sfgov.org" ;
+	foaf:phone "(415) 601-6501" ;
+	<http://www.semanticweb.org/zipCode> "94121" ;
+	foaf:name "100" ;
+	foaf:based_near """18th Ave
+San Francisco, CA
+(37.78513017, -122.47811169)""" .
+
+<http://www.semanticweb.org/181> a <http://www.semanticweb.org/park> ;
+	foaf:name "RICHMOND RECREATION CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Elder, Steve" ;
+	foaf:mbox "steven.elder@sfgov.org" ;
+	foaf:phone "(415) 601-6501" ;
+	<http://www.semanticweb.org/zipCode> "94121" ;
+	foaf:name "172" ;
+	foaf:based_near """251 18th Ave
+San Francisco, CA
+(37.78326998, -122.47797676)""" .
+
+<http://www.semanticweb.org/182> a <http://www.semanticweb.org/park> ;
+	foaf:name "RIDGETOP PLAZA" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "189" .
+
+<http://www.semanticweb.org/183> a <http://www.semanticweb.org/park> ;
+	foaf:name "ROCHAMBEAU PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Elder, Steve" ;
+	foaf:mbox "steven.elder@sfgov.org" ;
+	foaf:phone "(415) 601-6501" ;
+	<http://www.semanticweb.org/zipCode> "94121" ;
+	foaf:name "99" ;
+	foaf:based_near """238 25th Ave
+San Francisco, CA
+(37.78483852, -122.48454408)""" .
+
+<http://www.semanticweb.org/184> a <http://www.semanticweb.org/park> ;
+	foaf:name "ROCK OUTCROPPING" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheets, Robert" ;
+	foaf:mbox "robert.sheets@sfgov.org" ;
+	foaf:phone "(415) 235-4576" ;
+	<http://www.semanticweb.org/zipCode> "94116" ;
+	foaf:name "175" ;
+	foaf:based_near """Ortega
+San Francisco, CA
+(37.75384487, -122.47086479)""" .
+
+<http://www.semanticweb.org/185> a <http://www.semanticweb.org/park> ;
+	foaf:name "ROLPH NICOL PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheets, Robert" ;
+	foaf:mbox "robert.sheets@sfgov.org" ;
+	foaf:phone "(415) 235-4576" ;
+	<http://www.semanticweb.org/zipCode> "94132" ;
+	foaf:name "9" ;
+	foaf:based_near """Eucalyptus Dr
+San Francisco, CA
+(37.73060291, -122.48041933)""" .
+
+<http://www.semanticweb.org/186> a <http://www.semanticweb.org/park> ;
+	foaf:name "ROOSEVELT/HENRY STEPS" ;
+	a "Mini Park" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94114" ;
+	foaf:name "107857" ;
+	foaf:based_near """299 Henry St
+San Francisco, CA
+(37.76655956, -122.43732268)""" .
+
+<http://www.semanticweb.org/187> a <http://www.semanticweb.org/park> ;
+	foaf:name "RUSSIAN HILL OPEN SPACE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94109" ;
+	foaf:name "153" ;
+	foaf:based_near """Hyde
+San Francisco, CA
+(37.80341611, -122.42075699)""" .
+
+<http://www.semanticweb.org/188> a <http://www.semanticweb.org/park> ;
+	foaf:name "SAN FRANCISCO ZOO" ;
+	a "Zoological Garden" ;
+	foaf:name "PSA 4" , "Scott, Ronnie" ;
+	foaf:mbox "ronnie.scott@sfgov.org" ;
+	foaf:phone "(415) 504-7923" ;
+	<http://www.semanticweb.org/zipCode> "94132" ;
+	foaf:name "12" ;
+	foaf:based_near """1 Zoo Rd
+San Francisco, CA
+(37.73158916, -122.50380857)""" .
+
+<http://www.semanticweb.org/189> a <http://www.semanticweb.org/park> ;
+	foaf:name "SATURN STREET STEPS" ;
+	a "Mini Park" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94114" ;
+	foaf:name "79" ;
+	foaf:based_near """Saturn
+San Francisco, CA
+(37.7626853, -122.44055619)""" .
+
+<http://www.semanticweb.org/190> a <http://www.semanticweb.org/park> ;
+	foaf:name "SELBY/PALOU MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "157" ;
+	foaf:based_near """Palou
+San Francisco, CA
+(37.73886468, -122.40035293)""" .
+
+<http://www.semanticweb.org/191> a <http://www.semanticweb.org/park> ;
+	foaf:name "SEWARD MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94114" ;
+	foaf:name "73" ;
+	foaf:based_near """Seward
+San Francisco, CA
+(37.75761058, -122.44006058)""" .
+
+<http://www.semanticweb.org/192> a <http://www.semanticweb.org/park> ;
+	foaf:name "SGT. JOHN MACAULAY PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94109" ;
+	foaf:name "123" ;
+	foaf:based_near """Larkin
+San Francisco, CA
+(37.78540001, -122.41819743)""" .
+
+<http://www.semanticweb.org/193> a <http://www.semanticweb.org/park> ;
+	foaf:name "SHARP PARK" ;
+	a "Regional Park" ;
+	foaf:name "Outside SF" , "Castile, Steve" ;
+	foaf:mbox "steve.castile@sfgov.org" ;
+	foaf:phone "(415) 841-0856" ;
+	<http://www.semanticweb.org/zipCode> "94044" ;
+	foaf:name "10380" ;
+	foaf:based_near """1 Sharp Park Rd
+Pacifica, CA
+(37.62439438, -122.48189132)""" .
+
+<http://www.semanticweb.org/194> a <http://www.semanticweb.org/park> ;
+	foaf:name "SIGMUND STERN RECREATION GROVE" ;
+	a "Regional Park" ;
+	foaf:name "PSA 4" , "Sheets, Robert" ;
+	foaf:mbox "robert.sheets@sfgov.org" ;
+	foaf:phone "(415) 235-4576" ;
+	<http://www.semanticweb.org/zipCode> "94132" ;
+	foaf:name "83" ;
+	foaf:based_near """19th Ave
+San Francisco, CA
+(37.73608224, -122.47829786)""" .
+
+<http://www.semanticweb.org/195> a <http://www.semanticweb.org/park> ;
+	foaf:name "SILVER TERRACE PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "39" ;
+	foaf:based_near """Thornton
+San Francisco, CA
+(37.73285911, -122.40314958)""" .
+
+<http://www.semanticweb.org/196> a <http://www.semanticweb.org/park> ;
+	foaf:name "SOUTH END ROWING/DOLPHIN CLUB" ;
+	a "Concession" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94109" ;
+	foaf:name "190" ;
+	foaf:based_near """500 Jefferson St
+San Francisco, CA
+(37.80796044, -122.42126376)""" .
+
+<http://www.semanticweb.org/197> a <http://www.semanticweb.org/park> ;
+	foaf:name "SOUTH PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94107" ;
+	foaf:name "56" ;
+	foaf:based_near """64 Park Ave
+San Francisco, CA
+(37.78157949, -122.39395227)""" .
+
+<http://www.semanticweb.org/198> a <http://www.semanticweb.org/park> ;
+	foaf:name "SOUTH SUNSET PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheets, Robert" ;
+	foaf:mbox "robert.sheets@sfgov.org" ;
+	foaf:phone "(415) 235-4576" ;
+	<http://www.semanticweb.org/zipCode> "94116" ;
+	foaf:name "85" ;
+	foaf:based_near """40th Ave
+San Francisco, CA
+(37.73738679, -122.49845174)""" .
+
+<http://www.semanticweb.org/199> a <http://www.semanticweb.org/park> ;
+	foaf:name "ST MARY'S REC CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "31" ;
+	foaf:based_near """Murray
+San Francisco, CA
+(37.73365828, -122.42064294)""" .
+
+<http://www.semanticweb.org/200> a <http://www.semanticweb.org/park> ;
+	foaf:name "ST MARY'S SQUARE" ;
+	a "Civic Plaza or Square" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94108" ;
+	foaf:name "136" ;
+	foaf:based_near """California St
+San Francisco, CA
+(37.79205617, -122.40511712)""" .
+
+<http://www.semanticweb.org/201> a <http://www.semanticweb.org/park> ;
+	foaf:name "STATES STREET PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94114" ;
+	foaf:name "200" ;
+	foaf:based_near """86 States St
+San Francisco, CA
+(37.76380044, -122.43785312)""" .
+
+<http://www.semanticweb.org/202> a <http://www.semanticweb.org/park> ;
+	foaf:name "SUE BIERMAN PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 601-7277" ;
+	<http://www.semanticweb.org/zipCode> "94111" ;
+	foaf:name "143" ;
+	foaf:based_near """Clay St
+San Francisco, CA
+(37.79592597, -122.3965106)""" .
+
+<http://www.semanticweb.org/203> a <http://www.semanticweb.org/park> ;
+	foaf:name "SUNNYSIDE CONSERVATORY" ;
+	a "Mini Park" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "180" ;
+	foaf:based_near """Monterey
+San Francisco, CA
+(37.73193576, -122.44076127)""" .
+
+<http://www.semanticweb.org/204> a <http://www.semanticweb.org/park> ;
+	foaf:name "SUNNYSIDE PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94127" ;
+	foaf:name "67" ;
+	foaf:based_near """Teresita Ave
+San Francisco, CA
+(37.73366412, -122.4474787)""" .
+
+<http://www.semanticweb.org/205> a <http://www.semanticweb.org/park> ;
+	foaf:name "SUNSET PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheets, Robert" ;
+	foaf:mbox "robert.sheets@sfgov.org" ;
+	foaf:phone "(415) 235-4576" ;
+	<http://www.semanticweb.org/zipCode> "94122" ;
+	foaf:name "93" ;
+	foaf:based_near """2201 Lawton St
+San Francisco, CA
+(37.75658875, -122.48684698)""" .
+
+<http://www.semanticweb.org/206> a <http://www.semanticweb.org/park> ;
+	foaf:name "TANK HILL" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94117" ;
+	foaf:name "76" ;
+	foaf:based_near """Clarendon
+San Francisco, CA
+(37.75994801, -122.44768643)""" .
+
+<http://www.semanticweb.org/207> a <http://www.semanticweb.org/park> ;
+	foaf:name "TELEGRAPH HILL/PIONEER PARK" ;
+	a "Civic Plaza or Square" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94133" ;
+	foaf:name "149" .
+
+<http://www.semanticweb.org/208> a <http://www.semanticweb.org/park> ;
+	foaf:name "TENDERLOIN CHILDREN'S REC CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94109" ;
+	foaf:name "168" ;
+	foaf:based_near """570 Ellis St
+San Francisco, CA
+(37.78482103, -122.41540228)""" .
+
+<http://www.semanticweb.org/209> a <http://www.semanticweb.org/park> ;
+	foaf:name "TOPAZ OPEN SPACE" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "197" .
+
+<http://www.semanticweb.org/210> a <http://www.semanticweb.org/park> ;
+	foaf:name "TURK/HYDE MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94102" ;
+	foaf:name "192" ;
+	foaf:based_near """Hyde
+San Francisco, CA
+(37.78274031, -122.41596297)""" .
+
+<http://www.semanticweb.org/211> a <http://www.semanticweb.org/park> ;
+	foaf:name "TWIN PEAKS" ;
+	a "Regional Park" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "77" .
+
+<http://www.semanticweb.org/212> a <http://www.semanticweb.org/park> ;
+	foaf:name "UNION SQUARE" ;
+	a "Civic Plaza or Square" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94108" ;
+	foaf:name "135" ;
+	foaf:based_near """Post
+San Francisco, CA
+(37.78793122, -122.40750049)""" .
+
+<http://www.semanticweb.org/213> a <http://www.semanticweb.org/park> ;
+	foaf:name "UPPER NOE RECREATION CENTER" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "O'Brien, Teresa" ;
+	foaf:mbox "teresa.o'brien@sfgov.org" ;
+	foaf:phone "(415) 819-2699" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "22" ;
+	foaf:based_near """Day
+San Francisco, CA
+(37.74243091, -122.42779751)""" .
+
+<http://www.semanticweb.org/214> a <http://www.semanticweb.org/park> ;
+	foaf:name "UTAH/18TH MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "202" ;
+	foaf:based_near """18th
+San Francisco, CA
+(37.76251745, -122.40599759)""" .
+
+<http://www.semanticweb.org/215> a <http://www.semanticweb.org/park> ;
+	foaf:name "VICTORIA MANALO DRAVES PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94103" ;
+	foaf:name "169" ;
+	foaf:based_near """Folsom
+San Francisco, CA
+(37.77700947, -122.40595532)""" .
+
+<http://www.semanticweb.org/216> a <http://www.semanticweb.org/park> ;
+	foaf:name "VISITACION VALLEY GREENWAY" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Taylor, Zack" ;
+	foaf:mbox "zack.taylor@sfgov.org" ;
+	foaf:phone "(415) 601-7277" ;
+	<http://www.semanticweb.org/zipCode> "94134" ;
+	foaf:name "177" ;
+	foaf:based_near """Lel
+San Francisco, CA
+(37.71476638, -122.40613194)""" .
+
+<http://www.semanticweb.org/217> a <http://www.semanticweb.org/park> ;
+	foaf:name "VISITACION VALLEY PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Taylor, Zack" ;
+	foaf:mbox "zack.taylor@sfgov.org" ;
+	foaf:phone "(415) 601-7277" ;
+	<http://www.semanticweb.org/zipCode> "94134" ;
+	foaf:name "27" ;
+	foaf:based_near """251 Lel&amp; St
+San Francisco, CA
+(37.71240126, -122.40908547)""" .
+
+<http://www.semanticweb.org/218> a <http://www.semanticweb.org/park> ;
+	foaf:name "WALTER HAAS PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 5" , "Lockwood, Darlene" ;
+	foaf:mbox "darlene.lockwood@sfgov.org" ;
+	foaf:phone "(415) 717-2872" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "4" ;
+	foaf:based_near """Addison
+San Francisco, CA
+(37.74058384, -122.43436978)""" .
+
+<http://www.semanticweb.org/219> a <http://www.semanticweb.org/park> ;
+	foaf:name "WASHINGTON SQUARE" ;
+	a "Civic Plaza or Square" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94133" ;
+	foaf:name "147" ;
+	foaf:based_near """Filbert
+San Francisco, CA
+(37.80083781, -122.41002829)""" .
+
+<http://www.semanticweb.org/220> a <http://www.semanticweb.org/park> ;
+	foaf:name "WASHINGTON/HYDE MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94109" ;
+	foaf:name "144" ;
+	foaf:based_near """Washington
+San Francisco, CA
+(37.79400955, -122.41740007)""" .
+
+<http://www.semanticweb.org/221> a <http://www.semanticweb.org/park> ;
+	foaf:name "WEST PORTAL PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheets, Robert" ;
+	foaf:mbox "robert.sheets@sfgov.org" ;
+	foaf:phone "(415) 235-4576" ;
+	<http://www.semanticweb.org/zipCode> "94127" ;
+	foaf:name "68" ;
+	foaf:based_near """Ulloa
+San Francisco, CA
+(37.74160392, -122.46524393)""" .
+
+<http://www.semanticweb.org/222> a <http://www.semanticweb.org/park> ;
+	foaf:name "WEST SUNSET PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 4" , "Sheets, Robert" ;
+	foaf:mbox "robert.sheets@sfgov.org" ;
+	foaf:phone "(415) 235-4576" ;
+	<http://www.semanticweb.org/zipCode> "94116" ;
+	foaf:name "91" ;
+	foaf:based_near """3223 Ortega St &amp; 39th Ave
+San Francisco, CA
+(37.74899627, -122.49800859)""" .
+
+<http://www.semanticweb.org/223> a <http://www.semanticweb.org/park> ;
+	foaf:name "White Crane Springs Community Garden" ;
+	a "Community Garden" ;
+	foaf:name "PSA 4" , "Sheets, Robert" ;
+	foaf:mbox "robert.sheets@sfgov.org" ;
+	foaf:phone "(415) 235-4576" ;
+	<http://www.semanticweb.org/zipCode> "94131" ;
+	foaf:name "123631" ;
+	foaf:based_near """of 7th
+San Francisco, CA
+(37.75758279, -122.4633024)""" .
+
+<http://www.semanticweb.org/224> a <http://www.semanticweb.org/park> ;
+	foaf:name "WILLIE WOO WOO WONG PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94108" ;
+	foaf:name "139" .
+
+<http://www.semanticweb.org/225> a <http://www.semanticweb.org/park> ;
+	foaf:name "WOH HEI YUEN PARK" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 1" , "Cleveland, Maggie" ;
+	foaf:mbox "maggie.cleveland@sfgov.org" ;
+	foaf:phone "(415) 254-8014" ;
+	<http://www.semanticweb.org/zipCode> "94133" ;
+	foaf:name "170" ;
+	foaf:based_near """922 Jackson St
+San Francisco, CA
+(37.79584858, -122.41033649)""" .
+
+<http://www.semanticweb.org/226> a <http://www.semanticweb.org/park> ;
+	foaf:name "Wolfe Lane Community Garden" ;
+	a "Community Garden" ;
+	foaf:name "PSA 6" , "Miller, John" ;
+	foaf:mbox "john.miller@sfgov.org" ;
+	foaf:phone "(415) 513-2577" ;
+	<http://www.semanticweb.org/zipCode> "94110" ;
+	foaf:name "171608" ;
+	foaf:based_near """90 Rutledge St
+San Francisco, CA
+(37.74528401, -122.4066037)""" .
+
+<http://www.semanticweb.org/227> a <http://www.semanticweb.org/park> ;
+	foaf:name "YACHT HARBOR AND MARINA GREEN" ;
+	a "Regional Park" ;
+	foaf:name "PSA 1" , "Figone, Joe" ;
+	foaf:mbox "joseph.figone@sfgov.org" ;
+	foaf:phone "(415) 713-4997" ;
+	<http://www.semanticweb.org/zipCode> "94123" ;
+	foaf:name "112" .
+
+<http://www.semanticweb.org/228> a <http://www.semanticweb.org/park> ;
+	foaf:name "YOUNGBLOOD COLEMAN PLAYGROUND" ;
+	a "Neighborhood Park or Playground" ;
+	foaf:name "PSA 3" , "Watkins, Robert" ;
+	foaf:mbox "robert.watkins@sfgov.org" ;
+	foaf:phone "(415) 819-6138" ;
+	<http://www.semanticweb.org/zipCode> "94124" ;
+	foaf:name "45" ;
+	foaf:based_near """1398 Hudson St
+San Francisco, CA
+(37.73876792, -122.38450221)""" .
+
+<http://www.semanticweb.org/229> a <http://www.semanticweb.org/park> ;
+	foaf:name "GUY PLACE MINI PARK" ;
+	a "Mini Park" ;
+	foaf:name "PSA 2" , "Hill, Eric" ;
+	foaf:mbox "eric.hill@sfgov.org" ;
+	foaf:phone "(415) 254-8030" ;
+	<http://www.semanticweb.org/zipCode> "94105" ;
+	foaf:name "445358" ;
+	foaf:based_near """4 8 Guy Place
+San Francisco, CA
+(37.7750329000483, -122.41916720030605)""" .
