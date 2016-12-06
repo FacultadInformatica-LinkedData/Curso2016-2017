@@ -1,0 +1,300 @@
+@prefix : <http://madridOcio.linkeddata.com/ontologyGroup5#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@base <http://madridOcio.linkeddata.com/ontologyGroup5> .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2006/vcard/ns#email
+vcard:email rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2006/vcard/ns#given-name
+vcard:given-name rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2006/vcard/ns#locality
+vcard:locality rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2006/vcard/ns#note
+vcard:note rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2006/vcard/ns#postal-code
+vcard:postal-code rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2006/vcard/ns#region
+vcard:region rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2006/vcard/ns#street-address
+vcard:street-address rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2006/vcard/ns#tel
+vcard:tel rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2006/vcard/ns#hasEmail
+vcard:hasEmail rdf:type owl:ObjectProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                           <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                           <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                           <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                         )
+                           ] ;
+               rdfs:range [ rdf:type owl:Restriction ;
+                            owl:onProperty vcard:email ;
+                            owl:someValuesFrom vcard:email
+                          ] .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasGivenName
+vcard:hasGivenName rdf:type owl:ObjectProperty ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                               <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                               <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                               <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                             )
+                               ] ;
+                   rdfs:range [ rdf:type owl:Restriction ;
+                                owl:onProperty vcard:given-name ;
+                                owl:someValuesFrom vcard:given-name
+                              ] .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasLocality
+vcard:hasLocality rdf:type owl:ObjectProperty ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                              <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                              <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                              <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                            )
+                              ] ;
+                  rdfs:range [ rdf:type owl:Restriction ;
+                               owl:onProperty vcard:locality ;
+                               owl:someValuesFrom vcard:locality
+                             ] .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasNote
+vcard:hasNote rdf:type owl:ObjectProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                          <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                          <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                          <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                        )
+                          ] ;
+              rdfs:range [ rdf:type owl:Restriction ;
+                           owl:onProperty vcard:note ;
+                           owl:someValuesFrom vcard:note
+                         ] .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasPostalCode
+vcard:hasPostalCode rdf:type owl:ObjectProperty ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                                <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                                <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                                <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                              )
+                                ] ;
+                    rdfs:range [ rdf:type owl:Restriction ;
+                                 owl:onProperty vcard:postal-code ;
+                                 owl:someValuesFrom vcard:postal-code
+                               ] .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasRegion
+vcard:hasRegion rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                            <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                            <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                            <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                          )
+                            ] ;
+                rdfs:range [ rdf:type owl:Restriction ;
+                             owl:onProperty vcard:region ;
+                             owl:someValuesFrom vcard:region
+                           ] .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasStreetAddress
+vcard:hasStreetAddress rdf:type owl:ObjectProperty ;
+                       rdfs:domain [ rdf:type owl:Class ;
+                                     owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                                   <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                                   <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                                   <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                                 )
+                                   ] ;
+                       rdfs:range [ rdf:type owl:Restriction ;
+                                    owl:onProperty vcard:street-address ;
+                                    owl:someValuesFrom vcard:street-address
+                                  ] .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasTelephone
+vcard:hasTelephone rdf:type owl:ObjectProperty ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                               <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                               <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                               <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                             )
+                               ] ;
+                   rdfs:range [ rdf:type owl:Restriction ;
+                                owl:onProperty vcard:tel ;
+                                owl:someValuesFrom vcard:tel
+                              ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/2006/vcard/ns#email
+vcard:email rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                        <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                        <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                        <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                      )
+                        ] ;
+            rdfs:range vcard:email .
+
+
+###  http://www.w3.org/2006/vcard/ns#given-name
+vcard:given-name rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                             <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                             <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                             <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                           )
+                             ] ;
+                 rdfs:range vcard:given-name .
+
+
+###  http://www.w3.org/2006/vcard/ns#locality
+vcard:locality rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                           <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                           <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                           <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                         )
+                           ] ;
+               rdfs:range vcard:locality .
+
+
+###  http://www.w3.org/2006/vcard/ns#note
+vcard:note rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                       <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                       <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                       <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                     )
+                       ] ;
+           rdfs:range vcard:note .
+
+
+###  http://www.w3.org/2006/vcard/ns#postal-code
+vcard:postal-code rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                              <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                              <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                              <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                            )
+                              ] ;
+                  rdfs:range vcard:postal-code .
+
+
+###  http://www.w3.org/2006/vcard/ns#region
+vcard:region rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                         <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                         <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                         <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                       )
+                         ] ;
+             rdfs:range vcard:region .
+
+
+###  http://www.w3.org/2006/vcard/ns#street-address
+vcard:street-address rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain [ rdf:type owl:Class ;
+                                   owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                                 <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                                 <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                                 <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                               )
+                                 ] ;
+                     rdfs:range vcard:street-address .
+
+
+###  http://www.w3.org/2006/vcard/ns#tel
+vcard:tel rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas>
+                                      <http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales>
+                                      <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos>
+                                      <http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos>
+                                    )
+                      ] ;
+          rdfs:range vcard:tel .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas> rdf:type owl:Class .
+
+
+###  http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/CentrosCulturales> rdf:type owl:Class .
+
+
+###  http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Museos> rdf:type owl:Class .
+
+
+###  http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
