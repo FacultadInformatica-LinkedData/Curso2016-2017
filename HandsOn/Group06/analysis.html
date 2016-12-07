@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+	<!--ANALISIS DE LOS DATOS -->
+	<h1>Analyse Data Set</h1>
+	<p> <h3>BiCI: aparcabicis</h3>
+	<table border="1">
+		<tr>
+			<th>Columna</th>
+			<th>Tipo</th>
+			<th>Rango</th>
+			<th>Comentarios</th>
+			<th>Problemas</th>
+		</tr>
+		<tr>
+			<td>CENTRO</td>
+			<td>String</td>
+			<td>[3 - 80] caracteres</td>
+			<td>No nulo</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>DIRECCION</td>
+			<td>String</td>
+			<td>[3 - 67] caracteres</td>
+			<td>No nulo</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>DISTRITO</td>
+			<td>String</td>
+			<td>[3 - 67] caracteres</td>
+			<td>No nulo</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Capacidad</td>
+			<td>Entero</td>
+			<td>[5 - 20] caracteres</td>
+			<td> No Nulo</td>
+			<td>Hay algunos datos con valor 0</td>
+		</tr>
+		<tr>
+			<td>OBJECTID</td>
+			<td>Entero</td>
+			<td>[1 - 1419] valor</td>
+			<td>No nulo y unico</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>TITULAR</td>
+			<td>String</td>
+			<td>19 caracteres</td>
+			<td>No puede ser nulo</td>
+			<td>Hay filas vacias</td>
+		
+
+	</table>
+	
+	<p> <h3>calles-tranquilas</h3>
+	<table border="1">
+		<tr>
+			<th>Columna</th>
+			<th>Tipo</th>
+			<th>Rango</th>
+			<th>Comentarios</th>
+			<th>Problemas</th>
+		</tr>
+		<tr>
+			<td>IDENTIFICADOR</td>
+			<td>Interger</td>
+			<td>1-8200</td>
+			<td>No nulo</td>
+			<td>Hay algunos elementos con valor 0</td>
+		</tr>
+		<tr>
+			<td>TIPO</td>
+			<td>String</td>
+			<td>[8 - 11] caracteres</td>
+			<td>Hay algunos datos con valor 0</td>
+			
+		</tr>
+		
+		<tr>
+			<td>NOMBRE</td>
+			<td>String</td>
+			<td>[3 - 51] caracteres</td>
+			<td></td>
+			
+		</tr>
+	</table>
+
+<!--ANALISIS DE LA LICENCIA DE LOS DATOS OBTENIDOS Y CREACIÓN DE LICENCIA-->
+	<h1>Analyse Licensing of the Data Source</h1>
+	<p> El publicador y editor de los datos que hemos escogido es el Ayuntamiento
+		de Madrid. La licencia bajo la que se encuentran sometidos los datos<br> que vamos
+		a utilizar es la siguiente:
+			<p><span style="display:inline-block; width: 5%;"></span><a href="http://datos.madrid.es/egob/catalogo/aviso-legal">http://datos.madrid.es/egob/catalogo/aviso-legal</a>
+		<p>De ella podemos saber que podemos manipular los datos para fines comerciales o
+		no comerciales realizando tareas tales como copia, difusion, modificacion,<br>adaptacion
+		reordenacion, extraccion y combinacion de la informacion. Para la reutilizacion de los datos
+		se aplican unas condiciones como: Debe citarse<br> la fuente de los documentos, debe mencionarse la fecha de la ultima actualizacion, deben conservarse los metadatos sobre la fecha de actualizacion,...<br>
+		Tras la reutilizacion y modificacion de los datos, el agente responsable de esto sera tambien
+		responsable de responder ante terceros por da&ntilde;os derivados de estas.<br>
+		Ademas esta licencia cesa de forma gratuita los derechos de propiedad intelectual.
+		<p> Para los datos que nosotros generaremos en esta practica hemos decidido aplicarle la
+		licencia Creative Commons con las siguientes condiciones:<br>
+		<span style="display:inline-block; width: 5%;"></span> - Reconocimiento (Attribution): En cualquier explotacion de la obra autorizada por la licencia hara falta reconocer la autoria. 	<br>
+		<span style="display:inline-block; width: 5%;"></span> - No Comercial (Non commercial): La explotacion de la obra queda limitada a usos no comerciales. <br>
+		<span style="display:inline-block; width: 5%;"></span> - Compartir Igual (Share alike): La explotacion autorizada incluye la creacion de obras derivadas siempre que mantengan la misma licencia al ser divulgadas. <br>
+		Es decir, no se permite un uso comercial de la obra original ni de las posibles obras derivadas, la distribucion de las cuales se debe hacer con una licencia igual a la que<br> regula la obra original.<br> <img src="http://es.creativecommons.org/blog/wp-content/uploads/2013/04/by-nc-sa.eu_petit.png">
+	
+
+<!-- DEFINICIÓN DEL ESPACIO DE NOMBRES PARA NUESTROS DATOS -->
+		<h1>Define Resource Naming Strategy</h1>
+		<p>
+		<ul>
+			<li>Ontological Terms Pattern: <b>http://www.semanticweb.org/group06/</b><br>
+				Este es el nombre base que hemos utilizado para los elemntos de la ontología,<br>
+				
+			</li>
+			<li>Individuals Pattern: <b>http://http://www.semanticweb.org/group06/ontology/"resource_type"#"resource_name"</b><br>
+				Este es el patrón que utilizaremos para definir los recursos que representarán
+				nuestros datos de los csvs.
+			</li>
+		</ul>	
