@@ -1,0 +1,45 @@
+
+@base                <"http://www.ontogrid.net/StickyNote#">
+
+@prefix class:       <http://www.ontologies.org/ontologies/class#>
+@prefix user:        <http://www.ontologies.org/ontologies/user#>
+@prefix computer:    <http://www.ontologies.org/ontologies/computer#>
+@prefix sensor:      <http://www.ontologies.org/ontologies/sensor#>
+@prefix measurement: <http://www.ontologies.org/ontologies/measurement#>
+
+
+:Class01	 		class:
+						includes :
+							Sensor029 ;
+					class:
+						includes :
+							Computer101 ;
+
+					
+:User10A	 		user:
+						hasName "Pedro";
+
+					
+:Computer101	 	computer:
+						hasOwner :
+							User10A ;
+
+
+:Sensor029	 		sensor:
+						hasMeasurement :
+							Measurement8401 ;
+
+
+:Measurement8401  measurement:
+						hasTemperature :
+							"29";
+                  measurement:
+						atTime :
+							"2010-06-12T 12:00:12"
+				  
+
+
+
+
+
+
