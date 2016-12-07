@@ -1,0 +1,1031 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix group5: <http://madridOcio.linkeddata.com/ontologyGroup5#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/139451> vcard:given-name "Auditorio y sala de exposiciones Paco de Lucía (antigua Sala Latinarte)" ;
+	vcard:street-address "GENERAL FANJUL" ;
+	vcard:note "2A" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LAS AGUILAS" ;
+	vcard:postal-code "28044" ;
+	vcard:email "ruizdm@madrid.es" ;
+	vcard:tel "915 120 890 / 915 120 891" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1956> vcard:given-name "Casa de América" ;
+	vcard:street-address "CIBELES" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "RECOLETOS" ;
+	vcard:postal-code "28014" ;
+	vcard:tel "915 954 800 (información) " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/7320916> vcard:given-name "Casa de la Juventud de Arganzuela" ;
+	vcard:street-address "CHOPERA" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CHOPERA" ;
+	vcard:postal-code "28045" ;
+	vcard:tel """915 132 661                    
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/4605237> vcard:given-name "Centro Casa Asia - Madrid" ;
+	vcard:street-address "MAYOR" ;
+	vcard:note "69" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALACIO" ;
+	vcard:postal-code "28013" ;
+	vcard:email "casaasia@casaasia.es" ;
+	vcard:tel """913 600 194 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1916> vcard:given-name "Centro Conde Duque" ;
+	vcard:street-address "CONDE DUQUE" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28015" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1914> vcard:given-name "Centro Cultural - Centro Socio Cultural Villa de Barajas" ;
+	vcard:street-address "BOTICA" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASCO H.BARAJAS" ;
+	vcard:postal-code "28042" ;
+	vcard:email "ccvillabarajas@madrid.es" ;
+	vcard:tel "913 291 803 - 913 291 676" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/117288> vcard:given-name "Centro Cultural Agustín Díaz (Moncloa - Aravaca)" ;
+	vcard:street-address "COMANDANTE FORTEA" ;
+	vcard:note "42" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASA DE CAMPO" ;
+	vcard:postal-code "28008" ;
+	vcard:email "ccadiaz@madrid.es" ;
+	vcard:tel "915 487 772 / 915 487 773 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/118067> vcard:given-name "Centro Cultural Alfredo Kraus (Fuencarral - El Pardo)" ;
+	vcard:street-address "PRADERA DE VAQUERIZAS" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "MIRASIERRA" ;
+	vcard:postal-code "28035" ;
+	vcard:email "ccakraus@madrid.es" ;
+	vcard:tel "913 767 085" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1990> vcard:given-name "Centro Cultural Almirante Churruca (Latina)" ;
+	vcard:street-address "FUENTE DEL TIRO" ;
+	vcard:note "72" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LAS AGUILAS" ;
+	vcard:postal-code "28024" ;
+	vcard:email "ccchurruca@madrid.es" ;
+	vcard:tel "915 090 581" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1942> vcard:given-name "Centro Cultural Antonio Machado (San Blas - Canillejas)" ;
+	vcard:street-address "SAN ROMÁN DEL VALLE" ;
+	vcard:note "8" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ARCOS" ;
+	vcard:postal-code "28037" ;
+	vcard:email "ccamachado@madrid.es" ;
+	vcard:tel "913 135 294 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1919> vcard:given-name "Centro Cultural Aravaca (Moncloa - Aravaca)" ;
+	vcard:street-address "DE LA ZARZA" ;
+	vcard:note "20" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ARAVACA" ;
+	vcard:postal-code "28023" ;
+	vcard:email "ccaravaca@madrid.es" ;
+	vcard:tel "917 400 882 / 883" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/52511> vcard:given-name "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)" ;
+	vcard:street-address "ARCENTALES" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "HELLIN" ;
+	vcard:postal-code "28037" ;
+	vcard:email "cultusanblas@madrid.es" ;
+	vcard:tel "915 888 065 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/64851> vcard:given-name "Centro Cultural Buenavista (Salamanca)" ;
+	vcard:street-address "TOREROS" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "GUINDALERA" ;
+	vcard:postal-code "28028" ;
+	vcard:email "ccbuenavista@madrid.es" ;
+	vcard:tel "917 240 800 / 917 240 802" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1943> vcard:given-name "Centro Cultural Buero Vallejo (San Blas - Canillejas)" ;
+	vcard:street-address "BOLTA&Ntilde;A" ;
+	vcard:note "27" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CANILLEJAS" ;
+	vcard:postal-code "28022" ;
+	vcard:email "ccbvallejo@madrid.es" ;
+	vcard:tel "917 411 182 / 917 411 013" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/118317> vcard:given-name "Centro Cultural Carril del Conde (Hortaleza)" ;
+	vcard:street-address "CARRIL DEL CONDE" ;
+	vcard:note "57" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CANILLAS" ;
+	vcard:postal-code "28043" ;
+	vcard:email "cccarrilconde@madrid.es" ;
+	vcard:tel """917 161 240 / 917 161 242                          
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1945> vcard:given-name "Centro Cultural Casa de Vacas (Retiro)" ;
+	vcard:street-address "COLOMBIA" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS JERONIMOS" ;
+	vcard:postal-code "28009" ;
+	vcard:email "cccasadevacas@madrid.es" ;
+	vcard:tel """914 095 819 / 915 886 388 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1925> vcard:given-name "Centro Cultural Casa del Reloj (Arganzuela)" ;
+	vcard:street-address "CHOPERA" ;
+	vcard:note "6" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CHOPERA" ;
+	vcard:postal-code "28045" ;
+	vcard:email "crelojarganzuela@madrid.es" ;
+	vcard:tel "915 886 207 /915 886 290" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/4551096> vcard:given-name "Centro Cultural Ciudad Pegaso (San Blas - Canillejas)" ;
+	vcard:street-address "SÉPTIMA" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "REJAS" ;
+	vcard:postal-code "28022" ;
+	vcard:email "cccpegaso@madrid.es" ;
+	vcard:tel "913 209 770 - 917 413 092" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/80143> vcard:given-name "Centro Cultural Dotacional Integrado Arganzuela" ;
+	vcard:street-address "CANARIAS" ;
+	vcard:note "17" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALOS DE MOGUER" ;
+	vcard:postal-code "28045" ;
+	vcard:tel "915 063 610" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/5498725> vcard:given-name "Centro Cultural Eduardo Úrculo (Tetuán)" ;
+	vcard:street-address "DONOSO" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALMENARA" ;
+	vcard:postal-code "28029" ;
+	vcard:email "cceurculo@madrid.es" ;
+	vcard:tel "917 337 249" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1939> vcard:given-name "Centro Cultural El Pozo (Puente de Vallecas)" ;
+	vcard:street-address "DE LAS GLORIETAS" ;
+	vcard:note "19" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ENTREVIAS" ;
+	vcard:postal-code "28053" ;
+	vcard:email "ccptioraimundo@madrid.es" ;
+	vcard:tel "917 866 372 / 917 866 644" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1931> vcard:given-name "Centro Cultural Federico Chueca (Hortaleza)" ;
+	vcard:street-address "BENITA AVILA" ;
+	vcard:note "17" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CANILLAS" ;
+	vcard:postal-code "28043" ;
+	vcard:email "ccfchueca@madrid.es" ;
+	vcard:tel "913 000 389" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/4703628> vcard:given-name "Centro Cultural Fernando Lázaro Carreter (Carabanchel)" ;
+	vcard:street-address "VERDAD" ;
+	vcard:note "29" ;
+	vcard:region "MADRID" ;
+	vcard:locality "OPAÑEL" ;
+	vcard:postal-code "28019" ;
+	vcard:email "cclazarocarreter@act-educo.com" ;
+	vcard:tel """914 690 895               
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1954> vcard:given-name "Centro Cultural Fernando de los Ríos (Latina)" ;
+	vcard:street-address "CAMARENA" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALUCHE" ;
+	vcard:postal-code "28047" ;
+	vcard:email "ccfrios@madrid.es" ;
+	vcard:tel "917 198 994" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1921> vcard:given-name "Centro Cultural Galileo (Chamberí)" ;
+	vcard:street-address "GALILEO" ;
+	vcard:note "39" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ARAPILES" ;
+	vcard:postal-code "28015" ;
+	vcard:email "ccgalileo@madrid.es" ;
+	vcard:tel "915 913 901" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/70243> vcard:given-name "Centro Cultural Gloria Fuertes (Barajas)" ;
+	vcard:street-address "LOGROÑO" ;
+	vcard:note "179" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CORRALEJOS" ;
+	vcard:postal-code "28042" ;
+	vcard:tel "913 120 243" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1930> vcard:given-name "Centro Cultural Hortaleza" ;
+	vcard:street-address "SANTA VIRGILIA" ;
+	vcard:note "15" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PINAR DEL REY" ;
+	vcard:postal-code "28033" ;
+	vcard:email "cchortaleza@madrid.es" ;
+	vcard:tel "913 821 493" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1929> vcard:given-name "Centro Cultural Huerta de la Salud (Hortaleza)" ;
+	vcard:street-address "MAR DE ARAL" ;
+	vcard:note "13" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PINAR DEL REY" ;
+	vcard:postal-code "28033" ;
+	vcard:email "cchuertasalud@madrid.es" ;
+	vcard:tel "913 825 104" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/6017747> vcard:given-name "Centro Cultural José Luis López Vázquez (San Blas - Canillejas)" ;
+	vcard:street-address "FEBRERO" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "REJAS" ;
+	vcard:postal-code "28022" ;
+	vcard:email "ccjllopezvazquez@madrid.es" ;
+	vcard:tel "913 293 900 - 913 295 211 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/142944> vcard:given-name "Centro Cultural José Luis Sampedro (Latina) (antiguo Centro Cultural Lucero)" ;
+	vcard:street-address "CASTROSERNA" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LUCERO" ;
+	vcard:postal-code "28047" ;
+	vcard:email "cclucero@madrid.es" ;
+	vcard:tel "915 267 820 / 821" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1913> vcard:given-name "Centro Cultural Juan Gris (Moncloa - Aravaca)" ;
+	vcard:street-address "FRANCOS RODRíGUEZ" ;
+	vcard:note "100" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VALDEZARZA" ;
+	vcard:postal-code "28039" ;
+	vcard:email "ccjuangris@madrid.es" ;
+	vcard:tel "914 507 865 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1911> vcard:given-name "Centro Cultural Julio Cortázar (Moncloa - Aravaca)" ;
+	vcard:street-address "ANTONIO MACHADO" ;
+	vcard:note "20" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VALDEZARZA" ;
+	vcard:postal-code "28035" ;
+	vcard:email "ccjuliocortazar@madrid.es" ;
+	vcard:tel "913 734 375" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1965> vcard:given-name "Centro Cultural Juvenil Usera" ;
+	vcard:street-address "CUESTA" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "MOSCARDO" ;
+	vcard:postal-code "28026" ;
+	vcard:email "cjusera@madrid.es" ;
+	vcard:tel "913 920 541" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1917> vcard:given-name "Centro Cultural La Vaguada (Fuencarral - El Pardo)" ;
+	vcard:street-address "MONFORTE DE LEMOS" ;
+	vcard:note "38" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EL PILAR" ;
+	vcard:postal-code "28029" ;
+	vcard:email "cclavaguada@madrid.es" ;
+	vcard:tel "915 886 883" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1938> vcard:given-name "Centro Cultural Lope de Vega (Puente de Vallecas)" ;
+	vcard:street-address "CONCEJO DE TEVERGA" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ENTREVIAS" ;
+	vcard:postal-code "28053" ;
+	vcard:email "cclopedevega@madrid.es" ;
+	vcard:tel """917 570 580 / 917 570 582                 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1973> vcard:given-name "Centro Cultural Los Rosales (Villaverde)" ;
+	vcard:street-address "LOS ROSALES" ;
+	vcard:note "133" ;
+	vcard:region "MADRID" ;
+	vcard:locality "BUTARQUE" ;
+	vcard:postal-code "28021" ;
+	vcard:email "cclosrosales@madrid.es" ;
+	vcard:tel "917 109 273" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/4606802> vcard:given-name "Centro Cultural Luis Peidró (Retiro)" ;
+	vcard:street-address "LUIS PEIDRO" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ADELFAS" ;
+	vcard:postal-code "28007" ;
+	vcard:email "ccluispeidro@madrid.es" ;
+	vcard:tel """915 016 942 / 915 021 015       
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/6469004> vcard:given-name "Centro Cultural Mercado de Ibiza (Retiro)" ;
+	vcard:street-address "IBIZA" ;
+	vcard:note "8" ;
+	vcard:region "MADRID" ;
+	vcard:locality "IBIZA" ;
+	vcard:postal-code "28009" ;
+	vcard:email "ccibiza@madrid.es" ;
+	vcard:tel """915 572 601  / 914 009 788 / 915 571 885          
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1933> vcard:given-name "Centro Cultural Meseta de Orcasitas (Usera)" ;
+	vcard:street-address "ASOCIACION" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ORCASITAS" ;
+	vcard:postal-code "28041" ;
+	vcard:email "ccmesetaorcasitas@madrid.es" ;
+	vcard:tel "913 415 677 / 913 415 326" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1955> vcard:given-name "Centro Cultural Miguel Hernández (Latina)" ;
+	vcard:street-address "SERRADILLA" ;
+	vcard:note "13" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LAS AGUILAS" ;
+	vcard:postal-code "28044" ;
+	vcard:email "ccmiguelh@madrid.es" ;
+	vcard:tel "917 066 300" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1972> vcard:given-name "Centro Cultural Moncloa (Moncloa - Aravaca)" ;
+	vcard:street-address "MONCLOA" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ARGUELLES" ;
+	vcard:postal-code "28008" ;
+	vcard:email "ccmoncloa@madrid.es" ;
+	vcard:tel """915 886 978  / 914 800 586 /  915 886 952            
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1932> vcard:given-name "Centro Cultural Nicolás Salmerón (Chamartín)" ;
+	vcard:street-address "MANTUANO" ;
+	vcard:note "51" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CIUDAD JARDIN" ;
+	vcard:postal-code "28002" ;
+	vcard:email "ccnsalmeron@madrid.es" ;
+	vcard:tel "915 103 751" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1934> vcard:given-name "Centro Cultural Orcasur (Usera)" ;
+	vcard:street-address "PUEBLO" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ORCASUR" ;
+	vcard:postal-code "28041" ;
+	vcard:email "ccorcasur@madrid.es" ;
+	vcard:tel "913 188 090 / 913 188 091" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/114978> vcard:given-name "Centro Cultural Palacete Quinta del Berro (Salamanca)" ;
+	vcard:street-address "ENRIQUE D'ALMONTE" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "FUENTE DEL BERRO" ;
+	vcard:postal-code "28028" ;
+	vcard:tel "915 570 805 / 07 /08/ 09" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1952> vcard:given-name "Centro Cultural Príncipe de Asturias (Ciudad Lineal)" ;
+	vcard:street-address "HERMANOS GARCIA NOBLEJAS" ;
+	vcard:note "14" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PUEBLO NUEVO" ;
+	vcard:postal-code "28037" ;
+	vcard:email "ccprincipeasturias@madrid.es" ;
+	vcard:tel """915 887 564                               
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1920> vcard:given-name "Centro Cultural Puerta de Toledo (Centro)" ;
+	vcard:street-address "GRAN VIA DE SAN FRANCISCO" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALACIO" ;
+	vcard:postal-code "28005" ;
+	vcard:email "ccptoledo@madrid.es" ;
+	vcard:tel "913 662 728" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1935> vcard:given-name "Centro Cultural San Fermín (Usera)" ;
+	vcard:street-address "ESTAFETA" ;
+	vcard:note "33" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN FERMIN" ;
+	vcard:postal-code "28041" ;
+	vcard:tel "917 920 111" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/4703422> vcard:given-name "Centro Cultural San Francisco La Prensa (Carabanchel)" ;
+	vcard:street-address "ALISEDA" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PUERTA BONITA" ;
+	vcard:postal-code "28025" ;
+	vcard:email "ccsanfrancisco@act-educo.com" ;
+	vcard:tel """914 284 911       
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1958> vcard:given-name "Centro Cultural San Juan Bautista (Ciudad Lineal)" ;
+	vcard:street-address "SAN NEMESIO" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN JUAN BAUTISTA" ;
+	vcard:postal-code "28043" ;
+	vcard:email "ccsanjuanbautista@madrid.es" ;
+	vcard:tel "914 157 705" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/6018014> vcard:given-name "Centro Cultural Sanchinarro (Hortaleza)" ;
+	vcard:street-address "PRINCESA DE EBOLI" ;
+	vcard:note "29" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VALDEFUENTES" ;
+	vcard:postal-code "28050" ;
+	vcard:email "info@centroculturalsanchinarro.com" ;
+	vcard:tel "915 000 603" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/115404> vcard:given-name "Centro Cultural Sara Montiel (Latina) (antiguo Centro Cultural Campamento)" ;
+	vcard:street-address "BOADILLA DEL MONTE" ;
+	vcard:note "40" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CAMPAMENTO" ;
+	vcard:postal-code "28024" ;
+	vcard:email "ccsaramontiel@madrid.es" ;
+	vcard:tel "915 120 890 / 915 120 891" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1971> vcard:given-name "Centro Cultural Teresa de Calcuta (Barajas)" ;
+	vcard:street-address "NAVIO" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALAMEDA DE OSUNA" ;
+	vcard:postal-code "28042" ;
+	vcard:email "ccteresacalcuta@madrid.es" ;
+	vcard:tel "913 295 920" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1994> vcard:given-name "Centro Cultural Usera 1" ;
+	vcard:street-address "RAFAELA YBARRA" ;
+	vcard:note "49" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PRADOLONGO" ;
+	vcard:postal-code "28026" ;
+	vcard:email "ccusera@madrid.es" ;
+	vcard:tel """915 887 214                        
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/7416137> vcard:given-name "Centro Cultural Usera 2" ;
+	vcard:street-address "FELIPE CASTRO" ;
+	vcard:note "30" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PRADOLONGO" ;
+	vcard:postal-code "28026" ;
+	vcard:email "ccusera@madrid.es" ;
+	vcard:tel """915 887 214             
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/123948> vcard:given-name "Centro Cultural Valdebernardo (Vicálvaro)" ;
+	vcard:street-address "INDALECIO PRIETO" ;
+	vcard:note "21" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASCO H.VICALVARO" ;
+	vcard:postal-code "28032" ;
+	vcard:email "ccvaldebernardo@madrid.es" ;
+	vcard:tel "913 016 460 / 913 016 462" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1980> vcard:given-name "Centro Cultural Zazuar (Villa de Vallecas)" ;
+	vcard:street-address "ZAZUAR" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SANTA EUGENIA" ;
+	vcard:postal-code "28031" ;
+	vcard:email "cczazuar@madrid.es" ;
+	vcard:tel "913 322 529" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1953> vcard:given-name "Centro Cultural el Madroño (Vicálvaro)" ;
+	vcard:street-address "VILLARDONDIEGO" ;
+	vcard:note "36" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASCO H.VICALVARO" ;
+	vcard:postal-code "28032" ;
+	vcard:email "ccelmadrono@madrid.es" ;
+	vcard:tel """917 753 140          
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1940> vcard:given-name "Centro Cultural el Torito (Moratalaz)" ;
+	vcard:street-address "MORATALAZ" ;
+	vcard:note "130" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VINATEROS" ;
+	vcard:postal-code "28030" ;
+	vcard:email "cceltorito@madrid.es" ;
+	vcard:tel "913 287 385 / 913 287 386" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1951> vcard:given-name "Centro Cultural la Elipa (Ciudad Lineal)" ;
+	vcard:street-address "SANTA FELICIDAD" ;
+	vcard:note "39" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VENTAS" ;
+	vcard:postal-code "28017" ;
+	vcard:email "ccelipa@madrid.es" ;
+	vcard:tel "914 055 312" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/4703662> vcard:given-name "Centro Juvenil Carabanchel Alto" ;
+	vcard:street-address "ALFONSO FERNANDEZ" ;
+	vcard:note "23" ;
+	vcard:region "MADRID" ;
+	vcard:locality "BUENAVISTA" ;
+	vcard:postal-code "28044" ;
+	vcard:email "actividadescarabanchel@gmail.com" ;
+	vcard:tel """915 118 980                                                 
+                                                                                         
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/146682> vcard:given-name "Centro Juvenil El Aleph (Villa de Vallecas)" ;
+	vcard:street-address "ZAZUAR" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SANTA EUGENIA" ;
+	vcard:postal-code "28031" ;
+	vcard:email "cj7aleph@madrid.es" ;
+	vcard:tel "913 013 457" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/190703> vcard:given-name "Centro Juvenil El Pardo" ;
+	vcard:street-address "PADRE CIPRIANO" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EL PARDO" ;
+	vcard:postal-code "28048" ;
+	vcard:email "cj3elpardo@madrid.es" ;
+	vcard:tel "913 760 652" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/182139> vcard:given-name "Centro Juvenil El Sitio de mi Recreo (Villa de Vallecas)" ;
+	vcard:street-address "REAL DE ARGANDA" ;
+	vcard:note "39" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SANTA EUGENIA" ;
+	vcard:postal-code "28031" ;
+	vcard:email "cj6srecreo@madrid.es" ;
+	vcard:tel "913 052 448" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/5396226> vcard:given-name "Centro Juvenil Hontalbilla (Fuencarral - El Pardo)" ;
+	vcard:street-address "HONTALBILLA" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VALVERDE" ;
+	vcard:postal-code "28034" ;
+	vcard:email "cj4hontalbilla@madrid.es" ;
+	vcard:tel "917 364 378" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/4923522> vcard:given-name "Centro Juvenil Tetuán Punto Joven" ;
+	vcard:street-address "DULCINEA" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CUATRO CAMINOS" ;
+	vcard:postal-code "28020" ;
+	vcard:email "cj1tetuan@madrid.es" ;
+	vcard:tel "915 347 744" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/112637> vcard:given-name "Centro Santiago Apostol (Hortaleza)" ;
+	vcard:street-address "CARRION DE LOS CONDES" ;
+	vcard:note "73" ;
+	vcard:region "MADRID" ;
+	vcard:locality "APOSTOL SANTIAGO" ;
+	vcard:postal-code "28033" ;
+	vcard:tel "913 835 941" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/4568753> vcard:given-name "Centro Social Polivalente de Vicálvaro" ;
+	vcard:street-address "REAL" ;
+	vcard:note "12" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASCO H.VICALVARO" ;
+	vcard:postal-code "28032" ;
+	vcard:tel "917 602 468 (centralita)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/56495> vcard:given-name "Centro Sociocultural  Siena (Ciudad Lineal)" ;
+	vcard:street-address "SIENA" ;
+	vcard:note "52" ;
+	vcard:region "MADRID" ;
+	vcard:locality "QUINTANA" ;
+	vcard:postal-code "28027" ;
+	vcard:email "cscsiena@madrid.es" ;
+	vcard:tel "914 039 011" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1936> vcard:given-name "Centro Sociocultural Alberto Sánchez (Puente de Vallecas)" ;
+	vcard:street-address "RISCO DE PELOCHE" ;
+	vcard:note "14" ;
+	vcard:region "MADRID" ;
+	vcard:locality "NUMANCIA" ;
+	vcard:postal-code "28038" ;
+	vcard:email "cscalbertosanchez@madrid.es" ;
+	vcard:tel "917 570 320 / 917 570 321" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/72862> vcard:given-name "Centro Sociocultural Alfonso XII (Fuencarral - El Pardo)" ;
+	vcard:street-address "MIRA EL RIO" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EL PARDO" ;
+	vcard:postal-code "28048" ;
+	vcard:email "ccelpardo@madrid.es" ;
+	vcard:tel "913 762 060 / 913 762 062" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1974> vcard:given-name "Centro Sociocultural Aula de Aire Libre (Puente de Vallecas)" ;
+	vcard:street-address "SIERRA CARBONERA" ;
+	vcard:note "74" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN DIEGO" ;
+	vcard:postal-code "28053" ;
+	vcard:email "aalibrepvallecas@madrid.es" ;
+	vcard:tel "917 570 189 / 917 570 241" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1927> vcard:given-name "Centro Sociocultural Blasco Ibáñez (Carabanchel)" ;
+	vcard:street-address "SOLDADO JOSE MARIA REY" ;
+	vcard:note "44" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN ISIDRO" ;
+	vcard:postal-code "28019" ;
+	vcard:email "ccblascoibanez@madrid.es" ;
+	vcard:tel "914 280 554 / 914 280 555" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1949> vcard:given-name "Centro Sociocultural Bohemios (Villaverde)" ;
+	vcard:street-address "LOS BOHEMIOS" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS ANGELES" ;
+	vcard:postal-code "28041" ;
+	vcard:email "ccbohemios@madrid.es" ;
+	vcard:tel "917 109 260 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1967> vcard:given-name "Centro Sociocultural Ciudad Lineal" ;
+	vcard:street-address "JOSE LUIS DE ARRESE" ;
+	vcard:note "81" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VENTAS" ;
+	vcard:postal-code "28017" ;
+	vcard:email "cscciudadlineal@madrid.es" ;
+	vcard:tel """914 055 840                       
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1912> vcard:given-name "Centro Sociocultural Clara del Rey (Centro)" ;
+	vcard:street-address "PALMA" ;
+	vcard:note "36" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28004" ;
+	vcard:email "ccclararey@madrid.es" ;
+	vcard:tel "915 222 823 / 915 324 171" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/118935> vcard:given-name "Centro Sociocultural Cánovas del Castillo (Usera)" ;
+	vcard:street-address "JULIO AGUIRRE" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALMENDRALES" ;
+	vcard:postal-code "28026" ;
+	vcard:email "canovascastillocs@madrid.es" ;
+	vcard:tel "915 005 489" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1941> vcard:given-name "Centro Sociocultural Eduardo Chillida (Moratalaz)" ;
+	vcard:street-address "ARROYO BELINCOSO" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "MEDIA LEGUA" ;
+	vcard:postal-code "28030" ;
+	vcard:email "ccechillida@madrid.es" ;
+	vcard:tel "913 339 141 / 913 339 142" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/26904> vcard:given-name "Centro Sociocultural El Greco (Latina)" ;
+	vcard:street-address "EL GRECO" ;
+	vcard:note "29" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LUCERO" ;
+	vcard:postal-code "28011" ;
+	vcard:email "ccgreco@madrid.es" ;
+	vcard:tel "914 793 261 / 914 793 150" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1944> vcard:given-name "Centro Sociocultural Francisco Fatou (Villa de Vallecas)" ;
+	vcard:street-address "MANUEL VELEZ" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASCO H.VALLECAS" ;
+	vcard:postal-code "28031" ;
+	vcard:email "ccfranciscofatou@madrid.es" ;
+	vcard:tel """913 806 620                 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1926> vcard:given-name "Centro Sociocultural García Lorca (Carabanchel)" ;
+	vcard:street-address "EUGENIA DE MONTIJO" ;
+	vcard:note "105" ;
+	vcard:region "MADRID" ;
+	vcard:locality "BUENAVISTA" ;
+	vcard:postal-code "28044" ;
+	vcard:email "ccgarcialorca@madrid.es" ;
+	vcard:tel """915 110 370                      
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1947> vcard:given-name "Centro Sociocultural José Espronceda (Tetuán)" ;
+	vcard:street-address "ALMANSA" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "BELLAS VISTAS" ;
+	vcard:postal-code "28039" ;
+	vcard:email "cscjespronceda@madrid.es" ;
+	vcard:tel """915 536 160                       
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/6080683> vcard:given-name "Centro Sociocultural Juvenil Ciudad Lineal" ;
+	vcard:street-address "MARIA TERESA SAENZ DE HEREDIA" ;
+	vcard:note "50" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VENTAS" ;
+	vcard:postal-code "28017" ;
+	vcard:tel "913 260 952" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/124354> vcard:given-name "Centro Sociocultural Juvenil Moratalaz" ;
+	vcard:street-address "FUENTE CARRANTONA" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PAVONES" ;
+	vcard:postal-code "28030" ;
+	vcard:email "ccjmoratalaz@madrid.es" ;
+	vcard:tel "915 880 459 / 915 887 435 / 915 887 459" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/102131> vcard:given-name "Centro Sociocultural Latina" ;
+	vcard:street-address "RODRIGO DE ARANA" ;
+	vcard:note "50" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LAS AGUILAS" ;
+	vcard:postal-code "28044" ;
+	vcard:email "juvenlatina@madrid.es" ;
+	vcard:tel """915 095 470 / 471               
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1918> vcard:given-name "Centro Sociocultural Lavapiés (Centro)" ;
+	vcard:street-address "OLIVAR" ;
+	vcard:note "46" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EMBAJADORES" ;
+	vcard:postal-code "28012" ;
+	vcard:email "cclavapies@madrid.es" ;
+	vcard:tel "915 060 712 /0 775" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1961> vcard:given-name "Centro Sociocultural Luis Gonzaga (Chamartín)" ;
+	vcard:street-address "PRINCIPE DE VERGARA" ;
+	vcard:note "142" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CIUDAD JARDIN" ;
+	vcard:postal-code "28002" ;
+	vcard:tel "915 886 596 / 915 885 219" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1909> vcard:given-name "Centro Sociocultural Maestro Alonso (Salamanca)" ;
+	vcard:street-address "MAESTRO ALONSO" ;
+	vcard:note "6" ;
+	vcard:region "MADRID" ;
+	vcard:locality "FUENTE DEL BERRO" ;
+	vcard:postal-code "28028" ;
+	vcard:tel """917 268 800 / 913 560 807   
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/170066> vcard:given-name "Centro Sociocultural Marconi (Villaverde)" ;
+	vcard:street-address "COLONIA MARCONI" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN ANDRES" ;
+	vcard:postal-code "28021" ;
+	vcard:email "ccmarconi@madrid.es" ;
+	vcard:tel "917 100 232" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1970> vcard:given-name "Centro Sociocultural Miguel de Cervantes (San Blas - Canillejas)" ;
+	vcard:street-address "ALIAGA" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CANILLEJAS" ;
+	vcard:postal-code "28022" ;
+	vcard:email "ccmcervantes@madrid.es" ;
+	vcard:tel "917 430 078" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/5514552> vcard:given-name "Centro Sociocultural Montecarmelo (Fuencarral - El Pardo)" ;
+	vcard:street-address "M-607" ;
+	vcard:note "Km. 1300" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EL GOLOSO" ;
+	vcard:postal-code "28049" ;
+	vcard:email "ccmontecarmelo@madrid.es" ;
+	vcard:tel "917 364 151 / 917 364 329" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1964> vcard:given-name "Centro Sociocultural Oporto (Carabanchel)" ;
+	vcard:street-address "OPORTO" ;
+	vcard:note "78" ;
+	vcard:region "MADRID" ;
+	vcard:locality "OPAÑEL" ;
+	vcard:postal-code "28019" ;
+	vcard:email "ccoporto@madrid.es" ;
+	vcard:tel """914 603 801   / 914 603 912                 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1924> vcard:given-name "Centro Sociocultural Rafael de León (Fuencarral - El Pardo)" ;
+	vcard:street-address "ISLA DE ONS" ;
+	vcard:note "14" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PEÑA GRANDE" ;
+	vcard:postal-code "28035" ;
+	vcard:email "ccreleon@madrid.es" ;
+	vcard:tel "917 310 350" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1950> vcard:given-name "Centro Sociocultural San Cristóbal de los Ángeles (Villaverde)" ;
+	vcard:street-address "PINAZO" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN CRISTOBAL" ;
+	vcard:postal-code "28021" ;
+	vcard:email "ccscangeles@madrid.es" ;
+	vcard:tel "917 100 410 / 917 100 413" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/43311> vcard:given-name "Centro Sociocultural San José de Calasanz (Latina)" ;
+	vcard:street-address "MARIA DEL CARMEN" ;
+	vcard:note "65" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PUERTA DEL ANGEL" ;
+	vcard:postal-code "28011" ;
+	vcard:email "cccalasanz@madrid.es" ;
+	vcard:tel "914 649 304" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/117716> vcard:given-name "Centro Sociocultural Santa Petronila (Villaverde)" ;
+	vcard:street-address "MARIA MARTINEZ OVIOL" ;
+	vcard:note "12" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS ROSALES" ;
+	vcard:postal-code "28021" ;
+	vcard:email "ccspetronila@madrid.es" ;
+	vcard:tel "917 109 710" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1937> vcard:given-name "Centro Sociocultural Talleres de Creatividad (Puente de Vallecas)" ;
+	vcard:street-address "SIERRA CARBONERA" ;
+	vcard:note "74" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN DIEGO" ;
+	vcard:postal-code "28053" ;
+	vcard:email "ctcepvallecas@madrid.es" ;
+	vcard:tel "917 570 189 / 917 570 240" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1948> vcard:given-name "Centro Sociocultural Tetuán" ;
+	vcard:street-address "BRAVO MURILLO" ;
+	vcard:note "251" ;
+	vcard:region "MADRID" ;
+	vcard:locality "BERRUGUETE" ;
+	vcard:postal-code "28020" ;
+	vcard:email "csctetuan@madrid.es" ;
+	vcard:tel "915 790 851" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1923> vcard:given-name "Centro Sociocultural Valle Inclán (Fuencarral - El Pardo)" ;
+	vcard:street-address "ARZOBISPO MORCILLO" ;
+	vcard:note "7" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LA PAZ" ;
+	vcard:postal-code "28029" ;
+	vcard:email "ccvalleinclan@madrid.es" ;
+	vcard:tel "913 230 805" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1908> vcard:given-name "Centro Sociocultural Valverde (Fuencarral - El Pardo)" ;
+	vcard:street-address "ISLAS AZORES" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VALVERDE" ;
+	vcard:postal-code "28034" ;
+	vcard:email "ccvalverde@madrid.es" ;
+	vcard:tel """917 364 760                                         
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/4679597> vcard:given-name "Centro Sociocultural Vicálvaro" ;
+	vcard:street-address "LAGO TITICACA" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASCO H.VICALVARO" ;
+	vcard:postal-code "28032" ;
+	vcard:email "cscvicalvaro@madrid.es" ;
+	vcard:tel "917 753 200" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1996> vcard:given-name "Centro Sociocultural Ágata (Villaverde)" ;
+	vcard:street-address "DOCTOR MARTIN AREVALO" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN ANDRES" ;
+	vcard:postal-code "28021" ;
+	vcard:email "ccagata@madrid.es" ;
+	vcard:tel "917 109 300" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/6013703> vcard:given-name "CentroCentro Cibeles de Cultura y Ciudadanía" ;
+	vcard:street-address "CIBELES" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS JERONIMOS" ;
+	vcard:postal-code "28014" ;
+	vcard:email "reservas@centrocentro.org, info@centrocentro.org" ;
+	vcard:tel "010 (915 298 210 si llama desde fuera del municipio de Madrid)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/4535757> vcard:given-name "Consorcio del Centro Sefarad - Israel" ;
+	vcard:street-address "MAYOR" ;
+	vcard:note "69" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALACIO" ;
+	vcard:postal-code "28013" ;
+	vcard:email "centro@sefarad-israel.es" ;
+	vcard:tel "913 911 002" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/1915> vcard:given-name "Fernán Gómez. Centro Cultural de la Villa" ;
+	vcard:street-address "COLON" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "RECOLETOS" ;
+	vcard:postal-code "28001" ;
+	vcard:email "info@teatrofernangomez.com" ;
+	vcard:tel """914 362 540 Ext. 200 (Información general) / Ext. 208 (precios grupos, Amigos del Fernán Gómez y promociones)                       
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/4684678> vcard:given-name "Matadero Madrid" ;
+	vcard:street-address "CHOPERA" ;
+	vcard:note "14" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CHOPERA" ;
+	vcard:postal-code "28045" ;
+	vcard:tel """915 177 309                                                                              
+914 730 957 (taquilla)""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/4776440> vcard:given-name "Medialab - Prado" ;
+	vcard:street-address "ALAMEDA" ;
+	vcard:note "15" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CORTES" ;
+	vcard:postal-code "28014" ;
+	vcard:email "info.m@medialab-prado.es" ;
+	vcard:tel "912 191 157" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/10105051> vcard:given-name "Sala de Trabajos Colectivos Centro Sociocultural de Vicálvaro" ;
+	vcard:street-address "LAGO TITICACA" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASCO H.VICALVARO" ;
+	vcard:postal-code "28032" ;
+	vcard:email "cscvicalvaro@madrid.es" ;
+	vcard:tel "917 753 200" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/10107814> vcard:given-name "Sala de estudio y lectura Arquitecto Juan de Herrera (Latina)" ;
+	vcard:street-address "MARIA DEL CARMEN" ;
+	vcard:note "65" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PUERTA DEL ANGEL" ;
+	vcard:postal-code "28011" ;
+	vcard:tel "914 649 304" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/10107379> vcard:given-name "Sala de estudio y lectura Cayetano Pando (Latina)" ;
+	vcard:street-address "CAYETANO PANDO" ;
+	vcard:note "8" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LUCERO" ;
+	vcard:postal-code "28011" ;
+	vcard:tel "915 264 475" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/10107362> vcard:given-name "Sala de estudio y lectura Cebreros (Latina)" ;
+	vcard:street-address "CEBREROS" ;
+	vcard:note "66" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LUCERO" ;
+	vcard:postal-code "28011" ;
+	vcard:tel "914 796 964" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/10107702> vcard:given-name "Sala de estudio y lectura Escritor Pedro de Répide (Latina)" ;
+	vcard:street-address "MARIA DEL CARMEN" ;
+	vcard:note "65" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PUERTA DEL ANGEL" ;
+	vcard:postal-code "28011" ;
+	vcard:email "cccalasanz@madrid.es" ;
+	vcard:tel "914 649 304" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/10107309> vcard:given-name "Sala de estudio y lectura Maqueda (Latina)" ;
+	vcard:street-address "MAQUEDA" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LUCERO" ;
+	vcard:postal-code "28011" ;
+	vcard:tel "917 110 369" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/CentrosCulturales/10107172> vcard:given-name "Sala de estudio y lectura Paseo de Extremadura (Latina)" ;
+	vcard:street-address "EL GRECO" ;
+	vcard:note "29" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LUCERO" ;
+	vcard:postal-code "28011" ;
+	vcard:tel "914 634 249" .
