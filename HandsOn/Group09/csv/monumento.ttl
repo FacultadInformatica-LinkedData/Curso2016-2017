@@ -1,0 +1,834 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix onto: <http://www.semanticweb.org/grupo09#> .
+
+
+<http://www.semanticweb.org/grupo09#Museo+del+Foro+de+Caesaraugusta> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Pza.+de+la+Seo> a onto:Direccion .
+
+onto:Zaragoza a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#Pza.+de+la+Seo> onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Museo+del+Foro+de+Caesaraugusta> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+la+Seo> ;
+	onto:latitud "4613880.67"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676934.75"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "El Foro es el centro neurálgico de la vida en una ciudad romana: es el principal lugar de reunión donde se desarrolla la vida político-administrativa, económica y religiosa. El recinto forense se organiza a partir de un gran espacio abierto, rodeado de uno o varios pórticos circundantes, en torno al cual se distribuyen los edificios más significativos: la Curia, dedicada a usos políticos y administrativos; la Basílica, donde se resuelven asuntos jurídicos; y el Templo principal de la ciudad. Junto a ellos están las tabernas, locales dedicados a usos comerciales, y seguramente habría otros edificios relacionados con la administración (archivos, acuñación de moneda, etc.). Este conjunto monumental se completa con diversos elementos ornamentales (aras para sacrificios, estatuas honoríficas, arcos de triunfo, etc.) de los que en el caso de Caesaraugusta conocemos algunos a través de su representación en las monedas de la ciudad." ;
+	onto:estilo "romano" ;
+	onto:precio """<em>Entrada</em>: 3 euros
+<em>Consultar las tarifas reducidas para grupos y estudiantes</em>
+<em>Gratuito</em>: Mayores de 65 años, desempleados, periodistas acreditados, monitores acompañantes y responsables de grupos de escolares, miembros del ICOM, Asociación de Críticos de Arte, niños menores de 8 años.
+<em>Bono 4 museos Ruta de Caesaraugusta</em>:Foro, Termas Públicas, Puerto Fluvial Teatro 7 euros. Bono 5 museos: Arqueológicos Romanos y Pablo Gargallo:9 euros. Consultar otras tarifas.
+Entrada incluida en la Zaragoza Card""" ;
+	onto:sitiosDeInteres "Mercado de Augusto, Foro de Tiberio" ;
+	onto:datos """Aforo: 60 personas
+
+GRATUITO: primer domingo de cada mes y los días 29 enero San Valero, 23 abril y 12 octubre Día del Pilar""" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/forop.jpg" ;
+	onto:datacion "Siglo I a.C. - Siglo I d.C." .
+
+<http://www.semanticweb.org/grupo09#Centro+de+Historias+de+Zaragoza.+Antiguo+Convento+de+San+Agust%C3%ADn> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Pza.+San+Agust%C3%ADn> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Centro+de+Historias+de+Zaragoza.+Antiguo+Convento+de+San+Agust%C3%ADn> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+San+Agust%C3%ADn> ;
+	onto:latitud "4613410.17"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "677408.53"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """El área que ocupa el solar del antiguo convento de San Agustín, y en general el entorno de la zona, conserva de forma secuencial vestigios de todas las culturas, etapas e incluso vicisitudes históricas que se han sucedido en Zaragoza. 
+En las diversas campañas arqueológicas que se han realizado en su solar y adyacentes se han encontrado testimonios de la presencia de la cultura ibérica, romana y musulmana, hasta el asentamiento definitivo del Convento de San Agustín, que termina con la desamortización y transformación en cuartel de Intendencia Militar, a mediados del siglo XIX.
+
+No se pueden pasar por alto los acontecimientos que tuvieron lugar durante los Sitios de 1808 y 1809, pues el convento formaba parte de la línea defensiva de la ciudad y en él se situaron baterías y baluartes, objeto de encarnizados combates que arruinaron el convento. Precisamente fue en este lugar donde se abrió una de las brechas por la que las tropas francesas se introdujeron en la ciudad, forzando su rendición. 
+
+En 1978, y como consecuencia de la denominada Operación Cuarteles, el recinto pasó a manos municipales, sucediéndose diversos proyectos, que han desembocado en el actual Centro de Historia de Zaragoza.
+<a href=\"/contenidos/turismo/audio/CentrodeHistoriadeZaragoza.mp3\"><img title=\"Escuchar Descripción\" alt=\"Audio descriptivo del monumento\" src=\"/cont/paginas/img/leelo.gif\"/></a>""" ;
+	onto:estilo "barroco" ;
+	onto:precio "Entrada gratuita" ;
+	onto:sitiosDeInteres "La iglesia y la fachada del convento de San Agustín están declaradas BIC." ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/sanagustinplazaconvento.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/jardin.jpg" ;
+	onto:datacion "Siglo XVII, Rehabilitación: Siglo XX" .
+
+<http://www.semanticweb.org/grupo09#Casa+de+los+Morlanes> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Pza.+de+San+Carlos> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Casa+de+los+Morlanes> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+San+Carlos> ;
+	onto:latitud "4613489.75"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676999.67"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """<a>Patrimonio Cultural Aragonés. Bien Interés Cultural</a>
+
+ La llamada Casa de los Morlanes recibe este nombre por los escultores Gil Morlanes padre e hijo; sin embargo, no se ha podido justificar a fecha de hoy que ambos estén vinculados de alguna manera a la construcción o decoración de la Casa. Es más, es improbable que el apelativo con que es conocida corresponda a la realidad porque, ni se conoce su propietario, ni los artífices de la obra; aunque sí está documentada la intervención decorativa de las ventanas en el año 1555.
+De la estructura inicial sólo se conserva parte de la fachada, en ladrillo, pues según los documentos del siglo XIX, la Casa hacía tiempo que se había dividido en dos. Los balcones aparecen flanqueados por estípites y coronados con frontones rectos y curvos que alojan importantes representaciones iconográficas.
+<a href=\"/contenidos/turismo/audio/CasaMorlanes.mp3\"><img title=\"Escuchar Descripción\" alt=\"Audio descriptivo del monumento\" src=\"/cont/paginas/img/leelo.gif\"/></a>""" ;
+	onto:estilo "Renacentista" ;
+	onto:sitiosDeInteres "Fachada, Patio" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/sancarlosplazuela003-004.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/morlanesp.jpg" ;
+	onto:datacion "Siglo XVI" .
+
+<http://www.semanticweb.org/grupo09#Azud+del+R%C3%ADo+Ebro> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+Vadorrey> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Azud+del+R%C3%ADo+Ebro> onto:estaEn <http://www.semanticweb.org/grupo09#Barrio+de+Vadorrey> ;
+	onto:latitud "4613498.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "678492.63"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """El azud está ubicado entre los barrios de Vadorrey y Las Fuentes, a la altura de la calle Fray Luis Urbano, y entre los puentes de la Unión y de Giménez Abad (Tercer Cinturón), lo que facilita el acceso a este nueva infraestructura tanto en vehículo privado como con transporte público o con bicicleta, ya que los parques que se ubican a ambas márgenes disponen de carril bici hasta el mismo pie del azud.
+
+En su entorno, se encuentra el Puerto Fluvial, principal embarcadero del sistema de navegabilidad del Ebro, así como la reserva de espacio para construir, en el futuro inmediato, un edificio de servicios y un gran equipamiento deportivo, este último de uso público y gestión privada.
+
+Construido con criterios técnicos y medioambientales del siglo XXI, el azud está diseñado de modo que cuando el caudal del río supera los 515 metros cúbicos por segundo (el doble del caudal medio anual del Ebro), las compuertas se bajan automáticamente para permitir que el agua discurra sin obstáculos y si que suba la cota de la lámina de agua, con lo que esta infraestructura no tendrá ninguna incidencia en las avenidas ordinarias, y ningún efecto en las posibles inundaciones de sótanos de las zonas contiguas, que ya se producían antes de la construcción del azud. 
+
+Homenaje a Manuel Lorenzo Pardo
+
+Al nuevo azud del Ebro se le ha impuesto el nombre de Manuel Lorenzo Pardo, en homenaje al ingeniero de caminos, canales y puertos que fundó a principios del siglo XX la Confederación Hidrográfica del Ebro, el primer organismo gestor de cuenca que se implantó en nuestro país y cuya sede instaló en Zaragoza, y que promovió alguna de las grandes infraestructuras de regulación del Ebro en las que está fundamentado el actual sistema de riegos y de abastecimiento.
+
+(información de www.zaragoza.es)""" ;
+	onto:estilo "entorno" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/azudp.jpg" .
+
+<http://www.semanticweb.org/grupo09#Arco+y+casa+del+De%C3%A1n> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#C%2F+del+De%C3%A1n> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Arco+y+casa+del+De%C3%A1n> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+del+De%C3%A1n> ;
+	onto:latitud "4613780.57"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "677043"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Constituye uno de los rincones más emblemáticos de nuestra ciudad. Su origen se sitúa en el s. XIII, cuando se planteó llevar a cabo una construcción que comunicase la catedral con la nueva casa del deán, cabeza del cabildo después del prelado. El arco actual, muy restaurado, responde a la reforma realizada en el s. XIV, siendo lo más sobresaliente de esta obra el mirador, con ventanales de tracería gótico mudéjar." ;
+	onto:estilo "gotico, mudejar, renacentista" ;
+	onto:sitiosDeInteres "Exterior" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/dean05.pdf\">Interés Arquitectónico (A)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/deanp.jpg" ;
+	onto:datacion "Siglos XIII al XX" .
+
+<http://www.semanticweb.org/grupo09#Monasterio+de+la+Resurrecci%C3%B3n+de+canonesas+del+Santo+Sepulcro> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#C%2F+Don+Teobaldo> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Monasterio+de+la+Resurrecci%C3%B3n+de+canonesas+del+Santo+Sepulcro> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Don+Teobaldo> ;
+	onto:latitud "4613722.17"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "677261.51"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """<a>Patrimonio Cultural Aragonés. Bien Interés Cultural</a>
+
+Sobre los restos de las viejas murallas romanas, se levantan estos muros de ladrillo edificados en el siglo XIV para el Convento de los Canonesas Comendadoras del Santo Sepulcro. 
+Este monasterio, cuya fundación se remonta al siglo XIII, es el único ejemplo de arquitectura conventual mudéjar que ha sobrevivido en la ciudad hasta nuestros días. Por su peculiar importancia fue declarado Monumento Nacional ya en 1893.""" ;
+	onto:estilo "mudejar" ;
+	onto:precio "Colaboración 2,5 euros" ;
+	onto:sitiosDeInteres "Claustro mudéjar" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/sannicolasplaza003.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/SEPULCROp.jpg" ;
+	onto:datacion "Siglo XIV" .
+
+<http://www.semanticweb.org/grupo09#Auditorio+-+Palacio+de+Congresos> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#C%2F+Eduardo+Ibarra> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Auditorio+-+Palacio+de+Congresos> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Eduardo+Ibarra> ;
+	onto:latitud "4611949.71"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "674887.32"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Es un edificio de proporciones grandiosas, construido en 1994, según diseño de Manuel Pérez Latorre. Posee un pórtico elevado sobre pilares de gran altura que alberga en su interior un amplio y moderno complejo de servicios, con capacidad para diez mil personas. Es una instalación pionera por su versatilidad para conciertos, congresos, convenciones, exposiciones, etc. 
+Su mejor sala de conciertos, la Sala Mozart, está creada para ofrecer una acústica óptima, toda forrada de madera funciona como un instrumento musical más, según el modelo de Sala de la Filarmónica de Berlín.""" ;
+	onto:estilo "contemporaneo" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/AUDIp.jpg" ;
+	onto:datacion "1994" .
+
+<http://www.semanticweb.org/grupo09#Casa+Solans> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Avda.+Catalu%C3%B1a> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Casa+Solans> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Catalu%C3%B1a> ;
+	onto:latitud "4614531.35"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "677637.22"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """<a>Patrimonio Cultural Aragonés. Bien Interés Cultural</a>
+
+Villa construida por el industrial harinero don Juan Solans, junto a su fábrica \"La Nueva Harinera\" entre 1918-1921, siguiendo el proyecto del arquitecto municipal zaragozano Miguel Angel Navarro.
+
+Tanto por su diseño como por su decoración es un buen ejemplo de arquitectura ecléctica privada, que presenta una ornamentación modernista e historicista, en la que destacan por su vistosidad los paneles de azulejos policromos de la fachada occidental, con las figuras de los signos del zodiaco.La denominada originalmente casa-hotel de Don Juan Solans, era conocida popularmente en el barrio como la \"Casa de los Azulejos\", aunque ha pasado a ser llamada Casa Solans.
+
+En 1921 el edificio sufrió un incendio y en 1926, fallecido Juan Solans, su mujer se instaló en la casa. Posteriormente ante los desperfectos sufridos durante la Guerra Civil, encargó una nueva reforma del inmueble en febrero de 1943, que nunca llegó a realizarse.
+
+Los azulejos y mosaicos que decoran el exterior y el interior del mismo, fueron traídos de fábricas situadas en Castellón y Valencia, encargándose la realización de las vidrieras a \"La Veneciana S.A.\" de Zaragoza.
+
+Desde 2005 hasta el 2015 fue la Oficina de Naciones Unidas de apoyo al Decenio del Agua.""" ;
+	onto:estilo "contemporaneo" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/cataluna-solansfin.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/solansp.jpg" ;
+	onto:datacion "1918 - 1921" .
+
+<http://www.semanticweb.org/grupo09#Plaza+de+Toros+de+la+Misericordia> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Gta.+de+Azn%C3%A1rez> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Plaza+de+Toros+de+la+Misericordia> onto:estaEn <http://www.semanticweb.org/grupo09#Gta.+de+Azn%C3%A1rez> ;
+	onto:latitud "4613775.91"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "675711.66"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """La primera plaza de toros estable de Zaragoza se construyó en el siglo XVIII gracias a la iniciativa de Ramón Pignatelli; la denominación de Coso de la Misericordia aludía a su vinculación con la Real Casa de Misericordia, que se mantenía en parte gracias a los beneficios conseguidos con los festejos taurinos. 
+Este primer coso de madera fue sustituido por otro de ladrillo y piedra en el siglo XIX.
+
+En 1916 se hizo la reforma que le da el aspecto actual, ampliando el aforo de la plaza y dotándola de porche y deambulatorios.
+
+Es la primera plaza de toros de España que contó con cubierta, fija sobre los tendidos y móvil sobre el ruedo. Este cierre de teflón ha permitido diversificar las funciones del coso taurino y celebrar otro tipo de eventos.
+<a href=\"/contenidos/turismo/audio/CosoTaurinodelaMisericordia.mp3\"><img title=\"Escuchar Descripción\" alt=\"Audio descriptivo del monumento\" src=\"/cont/paginas/img/leelo.gif\"/></a>""" ;
+	onto:estilo "contemporaneo" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/pignatelliramon85fin.pdf\">Interés Monumental<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/torosp.jpg" ;
+	onto:datacion "1916" .
+
+<http://www.semanticweb.org/grupo09#Edificio+de+Correos+y+Tel%C3%A9grafos> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Independencia> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Edificio+de+Correos+y+Tel%C3%A9grafos> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Independencia> ;
+	onto:latitud "4613204.69"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676352.46"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """El edificio se levanta sobre el solar del antiguo Teatro Pignatelli, derribado en 1915. 
+El arquitecto madrileño Antonio Rubio diseña una obra que supone un tardío intento de recuperar formas mudéjares, como se refleja en la fachada principal que se abre al Paseo.
+
+El patio de operaciones interior mantiene también el mismo estilo de inspiración neomudéjar en su repertorio decorativo. El edificio de Telefónica, que se encuentra junto a él, se construye un año después en un estilo muy diferente; ambos muestran las variadas tendencias arquitectónicas que conviven en estos momentos.  Fue restaurado en 1981.
+<a href=\"/contenidos/turismo/audio/Correos.mp3\"><img title=\"Escuchar Descripción\" alt=\"Audio descriptivo del monumento\" src=\"/cont/paginas/img/leelo.gif\"/></a>""" ;
+	onto:estilo "contemporaneo: historicismo Neomudéjar" ;
+	onto:sitiosDeInteres "Fachada e interior" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/independencia33.pdf\">Interés Arquitectónico (A)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/correosp.jpg" ;
+	onto:datacion "1926" .
+
+<http://www.semanticweb.org/grupo09#Museo+del+Puerto+Fluvial+de+Caesaraugusta> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Pza.+de+San+Bruno> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Museo+del+Puerto+Fluvial+de+Caesaraugusta> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+San+Bruno> ;
+	onto:latitud "4613893.92"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "677065.6"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """En época romana, el río Ebro era navegable desde Dertosa (Tortosa), donde existía un puerto mixto marítimo y fluvial, hasta Vareia (la actual Logroño), y a lo largo de sus orillas se desarrollaba un intenso comercio que favoreció la aparición de puertos fluviales en varias ciudades. De ellos, el de Caesaraugusta era el principal enclave redistribuidor en el centro del valle tanto de mercancías procedentes del interior (trigo, madera, hierro, pieles, lino, etc.) como de la costa (vino, salazones, cerámicas, mármoles, joyas, etc.). 
+Situadas en el ángulo nordeste del foro, las instalaciones portuarias se extendían por la orilla derecha del río, aprovechando el carácter tranquilo de las aguas en esta zona. Estas instalaciones contaban con un gran edificio, probablemente destinado a funciones de almacenaje entre otras, que se abría al río por una bella fachada de arquerías. Desde esta arquería se accedía a un vestíbulo que a través de una escalinata comunicaba las instalaciones portuarias con el recinto del foro.""" ;
+	onto:estilo "romano" ;
+	onto:precio """<em>Entrada</em>: 3 euros
+<em>Gratuito</em>: Mayores de 65 años, desempleados, periodistas acreditados, monitores acompañantes y responsables de grupos de escolares, miembros del ICOM, Asociación de Críticos de Arte, niños menores de 8 años.
+<em><em>Consultar las tarifas reducidas para grupos y estudiantes</em>
+<em>Bono 4 museos Ruta de Caesaraugusta</em>:Foro, Termas Públicas, Puerto Fluvial Teatro 7 euros. Bono 5 museos: Arqueológicos Romanos y Pablo Gargallo:9 euros. Consultar otras tarifas.
+Entrada incluida en la Zaragoza Card""" ;
+	onto:datos """Aforo: 40 personas
+
+GRATUITO: primer domingo de cada mes y los días 29 enero San Valero, 23 de abril y 12 octubre Día del Pilar""" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/puertop.jpg" ;
+	onto:datacion "Siglo I d.C. - Siglo II d.C." .
+
+<http://www.semanticweb.org/grupo09#Iglesia+Parroquial+de+Santa+Maria+Magdalena> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Pza.+de+la+Magdalena> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Iglesia+Parroquial+de+Santa+Maria+Magdalena> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+la+Magdalena> ;
+	onto:latitud "4613566.53"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "677164.8"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """<a>Patrimonio Cultural Aragonés. Bien Interés Cultural</a>
+
+Se levantó a comienzos del siglo XIV en sustitución de un templo románico anterior. Su tipología corresponde al modelo de iglesia de nave única, con capillas entre los contrafuertes y cabecera poligonal. El templo cambia su orientación en la reforma del siglo XVIII, situándose la nueva puerta de acceso en la antigua cabecera absidial. La portada original con arquivoltas se encuentra cegada en el lado sur, en la calle Mayor. 
+El exterior del ábside se decora con paños de arcos mixtilíneos entrecruzados bajo ventanas apuntadas y, sobre éstas, cruces de múltiples brazos formando rombos. La torre sigue los modelos de las turolenses de San Martín y el Salvador; su estructura responde también al modelo de alminar almohade, como en San Pablo, es decir,está formada por dos torres, una envolviendo a la otra, con la rampa de escaleras entre ambas. Los motivos ornamentales son los tradicionales en la arquitectura mudéjar aragonesa, enriquecidos en este caso con piezas de cerámica vidriada.
+
+En el interior sobresale el conjunto escultórico del Retablo Mayor y las imágenes situadas en la nave, obra de José Ramírez de Arellano (siglo XVIII), autor de las esculturas de la Santa Capilla del Pilar. La iglesia poseyó un retablo de Damián Forment que hoy se conserva troceado en dos capillas del templo.""" ;
+	onto:estilo "mudejar" ;
+	onto:sitiosDeInteres "Torre y ábside" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/magdalenapzasn.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/magdalenp.jpg" ;
+	onto:datacion "Primera mitad del siglo XIV. Reformas en los siglos XVII y XVIII" .
+
+<http://www.semanticweb.org/grupo09#Ba%C3%B1os+Jud%C3%ADos> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#C%2F+Coso> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Ba%C3%B1os+Jud%C3%ADos> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Coso> ;
+	onto:latitud "4613407.72"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "677030.4"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """<a>Patrimonio Cultural Aragonés. Bien Interés Cultural</a>
+
+Su emplazamiento quedaba frente a la Judería y especialmente frente a la fortaleza conocida por Castillo de los Judíos, que estaba sobre el solar que actualmente ocupa el Seminario de San Carlos. Este Castillo de los Judíos servia también de cárcel, sinagoga mayor, hospital y carnicería. Lo conservado es únicamente una sala de planta ligeramente rectangular, organizada a modo de claustro, con cuatro tramos en las galerías cortas y cinco en las largas, abovedados con crucería sencilla, con diez columnas para separarlos del espacio central también rectangular y cubierto por bóveda esquifada.
+Están construidos en ladrillo, salvo las columnas que son de alabrastro.
+Se considera obra mudéjar, con elementos formales cistercienses y siguiendo la disposición de baños hispanomusulmanes, sobre todo taifales del siglo XI.""" ;
+	onto:estilo "mudejar" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/coso126-132.pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/judiosp.jpg" ;
+	onto:datacion "Siglo XIII" .
+
+<http://www.semanticweb.org/grupo09#Catedral+de+San+Salvador+o+la+Seo> a onto:Monumento ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+la+Seo> ;
+	onto:latitud "4613874.35"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676983.07"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """La primera catedral cristiana de Zaragoza, construida bajo la advocación de San Salvador, se levanta sobre el mismo espacio que antes había ocupado el templo romano del foro, la iglesia visigoda y la mezquita mayor musulmana. A finales del siglo XII, se inician las nuevas obras que siguen las pautas artísticas del románico tardío, con elementos que se habían desarrollado en la catedral de Jaca. 
+
+El templo se amplía a finales del siglo XIV, de acuerdo con el nuevo espíritu del gótico. Testimonio de esta época son los ábsides superiores y el muro de la Parroquieta, obra cumbre del mudéjar zaragozano. Este muro cierra la capilla de San Miguel, construida por encargo del arzobispo Lope Fernández de Luna como capilla funeraria; en su interior guarda el sepulcro en alabastro del prelado y una espléndida techumbre de madera dorada. La parte superior del ábside central fue levantada a comienzos del siglo XV gracias al mecenazgo del Papa Luna. La Seo adquiere sus dimensiones y aspecto definitivo en el siglo XVI, bajo el arzobispado de Don Hernando de Aragón. A esta etapa corresponde el cimborrio, que constituye una valiosa muestra del arraigo de la tradición mudéjar en nuestra región; y, también, la capilla de Gabriel de Zaporta, construida entre 1569 y 1578, con retablo en alabastro de Juan de Ancheta.
+Las últimas intervenciones que completan su fisonomía exterior son la torre barroca y la portada clasicista, construidas en los siglos XVII y XVIII.
+
+En el interior destaca el Retablo Mayor, obra representativa del gótico europeo realizada en el siglo XV bajo el patrocinio del arzobispo don Dalmau de Mur. El conjunto, obra de los escultores Pere Johan y Ans Piet d'Anso, sirvió de modelo para numerosos retablos posteriores, entre los que hay que señalar el Retablo Mayor del Pilar.""" ;
+	onto:estilo "mudejar, gotico, renacentista, barroco, neoclasico" ;
+	onto:precio """<strong>Precios</strong>
+<em>Entrada conjunto Catedral y Museo de tapices</em>: 4 euros
+<em>Hasta 18 años y mayores de 65 años</em>: 3 euros
+<em>Niños de 0 a 10 años</em>: gratuito
+Entrada incluida en la Zaragoza Card""" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/seoplaza004catedral.pdf\">Patrimonio de la Humanidad. Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/seop.jpg" ;
+	onto:datacion "Siglos XII al XVIII" .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+la+Cartuja.+Antiguas+Escuelas> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#C%2F+Salduba> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+la+Cartuja.+Antiguas+Escuelas> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Salduba> ;
+	onto:latitud "4608487.46"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "681563.61"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """De este enorme complejo conventual, a pesar de las muchas transformaciones que ha sufrido se conservan bastantes elementos, reflejando su topografía la estructura cartujana característica. Se trata de un recinto rectangular orientado en dirección Norte-Sur, vallado por un muro con torreones y ordenado al interior de forma simétrica, en cuyo centro se sitúa la iglesia como núcleo fundamental del conjunto.
+De construcción tradicional, se ha utilizado en ellos el aparejo que combina el paramento enfoscado con los refuerzos de ladrillo a cara vista en las esquinas, el llamado aparejo toledano. Sus fachadas se rematan en alero de poco vuelo ejecutado en ladrillo sobre canetes tipo modillón.""" ;
+	onto:estilo "contemporaneo: regionalista" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/cartuja-baja-salduba.pdf\">Interés Arquitectónico (C)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:datacion "Siglo XX" .
+
+<http://www.semanticweb.org/grupo09#Estatua+del+Emperador+Augusto> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Avda.+de+C%C3%A9sar+Augusto> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estatua+del+Emperador+Augusto> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+de+C%C3%A9sar+Augusto> ;
+	onto:latitud "4614043.73"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676438.88"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Caesaraugusta, como muchas otras ciudades romanas, estuvo rodeada por un cerco de murallas; además de cumplir una función defensiva, tenía un carácter monumental y era símbolo del prestigio de la colonia. Se comenzó a construir en época de Augusto, aunque se refuerza en diferentes momentos, sobre todo a finales del siglo III ante la amenaza inminente de invasiones. La muralla llegó a alcanzar un perímetro de 3.000 metros y a contar con 120 torreones en sus momentos de mayor desarrollo. El amurallamiento se mantuvo como eficaz defensa de la ciudad durante el periodo visigodo y musulmán; el propio Adb-al-Rahman III quedó sorprendido de su solidez en el s. X. Durante el reinado del monarca aragonés Alfonso I se mantuvo la preocupación por su conservación. En el siglo XIII, comenzaron a abrirse trenques y pasos para comunicar la ciudad antigua con los nuevos barrios. En el siglo XIV la muralla vuelve a cobrar importancia ante la Guerra de los dos Pedros; será a partir del siglo XV cuando se vaya desmontando y sus sillares se reutilicen en la construcción de nuevos edificios. 
+La línea del antiguo recinto fortificado se mantiene aún en el trazado de las actuales calles de César Augusto, Coso y Echegaray y Caballero. Se abría por cuatro puertas situadas en los extremos de las vías principales, cardo y decumano. Desde la Edad Media fueron conocidas como Puerta del Ángel, frente al Puente de Piedra; Puerta Cinegia, a la entrada de la calle de los Mártires; Puerta de Valencia, en la plaza de la Magdalena y Puerta de Toledo, entre Predicadores y Manifestación.     
+
+Se conservan restos de la antigua construcción bajo el Mercado Central, la avenida de César Augusto, Teatro Principal y Coso, aunque sólo son visibles en el Convento del Santo Sepulcro y junto al Torreón de la Zuda. En esta última zona se mantienen los vestigios más importantes: un lienzo de 80 m. de longitud con torreones ultrasemicirculares similares a los de las murallas de Astorga y León.     
+
+Junto a este tramo se encuentra desde hace unos años la estatua del emperador Augusto, copia en bronce del famoso Augusto de Prima Porta, regalo del gobierno italiano a la ciudad en los años 40.      
+
+Debido a la construcción de la Línea 1 del Tranvía, en 2012 se propuso su traslado a la c/Alfonso; sin embargo, diversas Asociaciones Vecinales del Casco Histórico reivindicaron su permanencia en su ubicación original.""" ;
+	onto:estilo "romano" ;
+	onto:sitiosDeInteres "Torreones, murallas, estatua de César Augusto." ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/cesarcolp.jpg" .
+
+<http://www.semanticweb.org/grupo09#Fuente+de+Neptuno+o+Fuente+de+la+Princesa> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Parque+Grande+J.A.+Labordeta> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Fuente+de+Neptuno+o+Fuente+de+la+Princesa> onto:estaEn <http://www.semanticweb.org/grupo09#Parque+Grande+J.A.+Labordeta> ;
+	onto:latitud "4611640.27"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "675252.04"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Conocida como Fuente de Neptuno, fue la primera fuente urbana monumental de Zaragoza, la más céntrica y principal, situada en la entonces Plaza de S. Francisco y hoy de España; cumplió su función de abastecimiento de agua hasta 1902, cuando fue desmontada para ser sustituida por el Monumento a los Mártires. 
+La primera piedra se coloca en 1833 en conmemoración del juramento como princesa heredera de la futura Isabel II.
+La parte escultórica se debe a Tomás Llovet, profesor de la Escuela de Bellas Artes de Zaragoza. La figura de Neptuno, en pie con su tridente, preside el conjunto, mientras el agua mana sobre el vaso de la fuente por las bocas de cuatro delfines.
+
+La imagen del dios de los mares se inspira en la Fuente de Neptuno del Paseo del Prado de Madrid.""" ;
+	onto:estilo "contemporaneo" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/parquefuentep.jpg" ;
+	onto:datacion "1845" .
+
+<http://www.semanticweb.org/grupo09#Canal+Imperial+de+Arag%C3%B3n> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#V%C3%ADa+Pignatelli> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Canal+Imperial+de+Arag%C3%B3n> onto:estaEn <http://www.semanticweb.org/grupo09#V%C3%ADa+Pignatelli> ;
+	onto:latitud "4611417.59"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676270.21"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """El Rey Carlos III encargó al canónigo Ramón de Pignatelli la enorme tarea de crear un gran cauce navegable que comunicase el Cantábrico con el Mediterráneo. Fue una obra de gran envergadura para la época, ya que nace en el Bocal, lugar próximo a Tudela, en Navarra y muere en El Burgo de Ebro, junto a Zaragoza, después de salvar una distancia de 150 Kilómetros.
+<a href=\"/contenidos/turismo/audio/CanalImperial.mp3\"><img title=\"Escuchar Descripción\" alt=\"Audio descriptivo del monumento\" src=\"/cont/paginas/img/leelo.gif\"/></a>""" ;
+	onto:estilo "entorno" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/sancholezcano.pdf\">Interés Arquitectónico (B)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/canalp.jpg" ;
+	onto:datacion "Finales del siglo XVIII" .
+
+<http://www.semanticweb.org/grupo09#Antiguo+Matadero+Municipal> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#C%2F+Miguel+Servet> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Antiguo+Matadero+Municipal> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Miguel+Servet> ;
+	onto:latitud "4612727.95"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "677456.98"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Todo el conjunto de pabellones industriales es obra de Ricardo Magdalena, que lo ideó para la Exposición Aragonesa de 1885-1886. Actualmente es sede del Centro Cultural Salvador Allende. La parte principal de la construcción es un gran patio central abierto en cuyos lados se levantan tres pabellones de planta basilical conectados por unos porches y en la fachada se localizan dos edificios simétricos. Una gran verja de hierro con cinco accesos rodea el recinto." ;
+	onto:estilo "contemporaneo" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/servetmiguel055-057.pdf\">Interés Monumental<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/mataderop.jpg" ;
+	onto:datacion "1880-1884" .
+
+<http://www.semanticweb.org/grupo09#Monumento+a+la+Constituci%C3%B3n+Espa%C3%B1ola+de+1978> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Constituci%C3%B3n> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Monumento+a+la+Constituci%C3%B3n+Espa%C3%B1ola+de+1978> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Constituci%C3%B3n> ;
+	onto:latitud "4612972.49"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676225.05"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Monumento a la Constitución Española de 1989, adjudicado por concurso al escultor turolense Florencio de Pedro Herrera. Consiste en 3 pirámides aguzadas que simbolizan los Poderes Legislativo, Ejecutivo y Judicial. Este esquema y formas geométricas elementales sintetizan las ideas de perfección, de plenitud y de inmortalidad, como expresión de la armonía del sistema de gobierno democrático.
+<a href=\"/contenidos/turismo/audio/MonumentoalaConstitucion.mp3\"><img title=\"Escuchar Descripción\" alt=\"Audio descriptivo del monumento\" src=\"/cont/paginas/img/leelo.gif\"/></a>""" ;
+	onto:estilo "contemporaneo" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/monuconsp.jpg" ;
+	onto:datacion "1989" .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+la+Cartuja.+Iglesia+de+la+Cartuja+Inmaculada+Concepci%C3%B3n> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Pza.+de+Espa%C3%B1a> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+la+Cartuja.+Iglesia+de+la+Cartuja+Inmaculada+Concepci%C3%B3n> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+Espa%C3%B1a> ;
+	onto:latitud "4610580.6"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676950.32"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "La iglesia fue construida entre 1703 y 1731, sufriendo algunas modificaciones ya en tiempo de los cartujos; en 1780 se renovaba su interior, encargándose de las obras el hermano cartujo fray Joaquín Gracián, antiguo maestro de obras. Fue necesaria su restauración tras la invasión napeoleónica y recientemente ha sido restaurada de manera parcial (Juan Martín Trenor 1995-1996). Tiene planta de cruz latina de una sola nave de cinco tramos, con la Capilla del Sagrario tras el muro de la cabecera, algo característico de las cartujas españolas. Se cubre el templo con bóvedas de cañón con luneto, a excepción del crucero que tiene cúpula semiesférica, decoradas con interesantes pinturas murales de temática mariológica ejecutadas por el cartujo fray Ramón Almor, decoraciones correspondientes a la reforma de 1780" ;
+	onto:estilo "barroco" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/cartuja-baja-pzaespana-iglesia.pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:datacion "1703-1731" .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+Movera.+Torre+Santa+Engracia> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Carretera+de+Movera> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+Movera.+Torre+Santa+Engracia> onto:estaEn <http://www.semanticweb.org/grupo09#Carretera+de+Movera> ;
+	onto:latitud "4612601.82"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "682879.46"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """En el año 1970 era adquirida por el Excmo. Ayuntamiento de Zaragoza mediante permuta con la empresa La Montañanesa, la finca denominada \"Torre de Santa Engracia\", por ser propiedad hasta el siglo XIX del monasterio Jerónimo de Sta. Engracia de Zaragoza. Es un edificio de planta ligeramente rectangular que consta de las tres plantas (B + principal + ático) rematado en alero.
+Esta edificada en ladrillo visto y zaboyado en sus fachadas (excepto la que da a la carretera que está revocada) y en ellas se reflejan las distintas fases o momentos de reforma que a lo largo del tiempo ha sufrido la casa.""" ;
+	onto:estilo "barroco, neoclasico" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/moverasantaengracia.pdf\">Interés Monumental<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:datacion "Siglo XVII y Siglo XIX" .
+
+<http://www.semanticweb.org/grupo09#Iglesia+Parroquial+de+San+Gil+Abad> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#D.+Jaime+I> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Iglesia+Parroquial+de+San+Gil+Abad> onto:estaEn <http://www.semanticweb.org/grupo09#D.+Jaime+I> ;
+	onto:latitud "4613595.33"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676697.74"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """<a>Patrimonio Cultural Aragonés. Bien Interés Cultural</a>
+
+Tras la reconquista de la ciudad, se construyó un templo románico que, mediado el siglo XIV, fue destruido para levantar sobre sus ruinas la actual iglesia mudéjar. En el exterior destaca la portada principal, construida en 1640, y, sobre todo, la torre, levantada en ladrillo como el resto de la construcción y documentada ya en 1356. Combina su planta cuadrada de los pisos inferiores con la rectangular de los superiores, abriéndose en los dos últimos cuerpos los vanos para las campanas. 
+El interior corresponde a la reforma barroca llevada a cabo entre 1719 y 1725, cuando se cambió la orientación del templo para dar la nueva entrada, se rehicieron el ábside y el cuerpo de los pies, se construyó la nueva cubierta con bóvedas de cañón con lunetos y fue decorado todo el conjunto con yeserías barrocas. Destaca el retablo mayor, contratado en 1628, dedicado a San Gil Abad.
+
+La sacristía fue construida entre 1776 y 1779, decorada la bóveda con un fresco de Ramón Bayeu y en los muros siete pinturas sobre lienzo, de fray Manuel Bayeu.""" ;
+	onto:estilo "mudejar" ;
+	onto:sitiosDeInteres "Torre mudéjar" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/jaime15local.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/GILp.jpg" ;
+	onto:datacion "Siglo XIV. Reformas en siglo XVIII" .
+
+<http://www.semanticweb.org/grupo09#Murallas+Romanas> a onto:Monumento ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+de+C%C3%A9sar+Augusto> ;
+	onto:latitud "4614073.91"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676461"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """<a>Patrimonio Cultural Aragonés. Bien Interés Cultural</a>
+
+Caesaraugusta estuvo rodeada de una muralla con numerosas torres, quizá hasta 120. Sus muros tenían un considerable grosor, que alcanzaba en muchas zonas los 7 m., siendo la parte exterior de sillares de alabastro y caliza, y la interior de una argamasa extraordinariamente dura <em>(opus caementicium)</em>. Sus torres son semicirculares o ultrasemicirculares y tienen un diámetro en torno a los 8 m., alcanzando los 13 m. en una de las que flanqueaban la puerta occidental 
+La muralla romana protegía un perímetro de 3 km y recorría la calle Echegaray y Caballero, todo el trazado del Coso y la avenida de César Augusto. La ciudad se abría por cuatro puertas, situadas en el extremo de sus ejes, la septentrional en la embocadura del Puente de Piedra, la oriental junto a la iglesia de la Magdalena, la meridional ligeramente al este del Teatro Principal y la occidental al final de la calle Manifestación. Estas puertas se llamaron desde la Edad Media, del Ángel la del norte, de Valencia la del este y de Toledo la del oeste. Ya en época musulmana se accedía al sur de la ciudad por la puerta Cinegia, a la entrada del popular Tubo, algo a occidente de donde estuvo el acceso romano.
+
+Junto a este tramo se encuentra desde hace unos años la estatua del emperador Augusto, copia en bronce del famoso Augusto de Prima Porta, regalo del gobierno italiano a la ciudad en los años 40.      
+
+La figura se sitúa ante tres altos dinteles y un arco de medio punto que evoca la primitiva Puerta de Toledo; en los frentes de alabastro están labrados los cuatro nombres de la ciudad: Salduie, Caesaraugusta, Saraqusta y Zaragoza.""" ;
+	onto:estilo "Romano" ;
+	onto:sitiosDeInteres "Torreones, murallas, estatua de César Augusto" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/cesaraugustosnmurallas.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/murallasp.jpg" ;
+	onto:datacion "Siglos II - III d.C." .
+
+<http://www.semanticweb.org/grupo09#Arboleda+de+Macanaz> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Ribera> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Arboleda+de+Macanaz> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Ribera> ;
+	onto:latitud "4614329.22"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676711.36"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Fue un importante soto ribereño al que se accedía por la antigua pasarela que estuvo en funcionamiento hasta 1965. Los zaragozanos celebraban en ella la fiesta de la Cincomarzada y los almadieros que se dirigían a los aserraderos del Arrabal solían hacer allí una parada. La construcción del Puente de Santiago afectó de forma importante a una cuarta parte del soto y su ajardinamiento terminó con su carácter natural, del que sólo queda la línea de árboles junto al río, fuera de la valla que delimita el parque." ;
+	onto:estilo "entorno" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/macanazp.jpg" .
+
+<http://www.semanticweb.org/grupo09#Soto+de+Cantalobos> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+las+Fuentes> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Soto+de+Cantalobos> onto:estaEn <http://www.semanticweb.org/grupo09#Barrio+de+las+Fuentes> ;
+	onto:latitud "4612877.95"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "680047.04"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Uno de los escasos sotos (o bosques de ribera) que se conservan en las orillas Ebro, resto de la vegetación original del río en este tramo de su curso. Destaca por su excelente conservación, a pesar de la presión agraria y urbana de su entorno. Cuenta con especies típicamente ribereñas: álamos, chopos, tamarindos, sauces, fresnos, carrizos¿, soporte de un rico ecosistema del que también forman parte numerosas especies animales como el ruiseñor bastardo, el pájaro carpintero, el pájaro moscón, el autillo o pequeños mamíferos. En él encuentran refugio y alimento numerosas especies migratorias asociadas al río como garcetas, cormoranes y martinetes" ;
+	onto:estilo "entorno" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/lobosp.jpg" .
+
+<http://www.semanticweb.org/grupo09#Antigua+Joyer%C3%ADa+Aladr%C3%A9n++ahora+Gran+Caf%C3%A9+de+Zaragoza> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#C%2F+Alfonso+I> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Antigua+Joyer%C3%ADa+Aladr%C3%A9n++ahora+Gran+Caf%C3%A9+de+Zaragoza> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Alfonso+I> ;
+	onto:latitud "4613804.95"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676573.86"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """<a>Patrimonio Cultural Aragonés: Bien Catalogado</a>
+
+Local comercial en chaflán diseñado por el arquitecto Luis Aladrén en 1885, seguramente el más importante de los locales catalogados conservados en Zaragoza. 
+El exterior se basa en una articulación de fachadas mediante la rítmica alternancia de plafones rectangulares decorados (con paneles repujados y sobredorados con grandes escaparates acristalados). También presenta una Marquesina volada de hierro y cristal con reloj de dos esferas suspendido. 
+En el interior, las tres salas, con pavimentos de época, están ricamente decoradas con columnas, radiadores de fundición, techos acasetonados de madera y decoración neobarroca.""" ;
+	onto:estilo "contemporaneo: historicismo" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/alfonso25local.pdf\">Interés Arquitectónico (A y BCPCA)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/aladrenp.jpg" ;
+	onto:datacion "1885" .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+Garrapinillos.+Iglesia+de+San+Lorenzo> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Pza.+de+San+Lorenzo> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+Garrapinillos.+Iglesia+de+San+Lorenzo> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+San+Lorenzo> ;
+	onto:latitud "4616761.26"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "664325.51"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Es una obra historicista de Ricardo Magdalena Tabuenca, fechada en 1874 y hecha por encargo del Ayuntamiento de Zaragoza. Se hizo en ladrillo a cara vista, con una nave cubierta con cañón con lunetos y gruesas columnas laterales, dentro de una orientación entre romántica y neobizantina." ;
+	onto:estilo "contemporaneo: historicismo" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/garrapinillos-sanlorenzo.pdf\">Interés Arquitectónico (A)<span class=\"oculto\">Documento pdf</span></a>" .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+Monzalbarba.+Torre+de+la+Antigua+Iglesia> a onto:Monumento ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+Espa%C3%B1a> ;
+	onto:latitud "4619023.21"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "669189.53"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """De su parroquia antigua queda la torre mudéjar y una capilla. La primera es obra del siglo XVI, en ladrillo, compuesta de tres cuerpos cuadrados, el primero almenado, el segundo con frisos de esquinillas y rombos y el tercero con dos vanos por lado,ligeramente apuntados, cegados y decoración de rombos. Le sigue un último cuerpo octogonal, más tardío, con un vano por lado en arco de medio punto doblado, con molduras cóncavas.
+
+En cuanto a la Iglesia parroquial nueva, obra reciente sin interés arquitectónico, conserva algunas imágenes procedentes de la antigua. Así, una Virgen del Rosario, del primer tercio del siglo XVII, de tipo romanista. Muy idealizada aún, conserva su policromía original.
+Cierto interés presentan: una talla de San Blas, procesional, del último tercio del siglo XVIII, con la policromía primitiva imitando mármol, en blanco y oro; y, un San Miguel, de hacia mediados del siglo XVIII, de estilo rococó, de factura bastante popular. La talla de Nuestra Señora de la Sagrada, patrona de la iglesia, están en parte rehecha y repintada y no ofrece gran interés.""" ;
+	onto:estilo "mudejar" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/monzalbarba-espana-torreantiguaiglesia.pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:datacion "1545" .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+Juslibol.+Iglesia+de+Nuestra+Se%C3%B1ora+de+la+Asunci%C3%B3n> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Pza.+Mayor> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+Juslibol.+Iglesia+de+Nuestra+Se%C3%B1ora+de+la+Asunci%C3%B3n> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+Mayor> ;
+	onto:latitud "4618204.56"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "674710.25"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Dedicada a la Asunción de Nuestra Señora, la iglesia parroquial de este barrio es obra del siglo XVIII, edificada en sustitución de otra anterior dedicada a San Andrés.
+Tiene planta de tipo central, ovalada, con el mayor desarrollo longitudinal a eje que se prolonga a ambos lados, en dos rectángulos que ocupan respectivamente el presbiterio y el ingreso al templo.
+En el exterior, destaca la fachada muy reformada y revocada, en su origen de ladrillo visto, en la que destaca la portada en arco de medio punto flanqueada por pilastras que sostienen un entablamento bajo el que se dispone el escudo heráldico del prelado zaragozano.""" ;
+	onto:estilo "neoclasico" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/juslibolmayorsn.pdf\">Interés Arquitectónico (A)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:datacion "Siglo XVIII" .
+
+<http://www.semanticweb.org/grupo09#Torre%C3%B3n+de+la+Zuda> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Glorieta+de+P%C3%ADo+XII> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Torre%C3%B3n+de+la+Zuda> onto:estaEn <http://www.semanticweb.org/grupo09#Glorieta+de+P%C3%ADo+XII> ;
+	onto:latitud "4614130.43"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676488.13"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """<a>Patrimonio Cultural Aragonés. Bien Interés Cultural</a>
+
+El Torreón de La Zuda que hoy conocemos, fruto de diversas reedificaciones, habría sido la torre del homenaje del alcázar sarakustí, edificada sobre uno de los torreones de la muralla romana. El 18 de diciembre de 1118 los musulmanes rinden la ciudad a Alfonso el Batallador, tomando posesión el rey al día siguiente de La Zuda que, según la capitulación, debía ser ocupada por las tropas cristianas. Esta toma de posesión simbolizaba la ocupación de la ciudad. A partir de este momento, será residencia de los monarcas aragoneses, hasta el siglo XIII, en el que empezarán a utilizar para este fin el Palacio de la Aljafería. La imagen actual del torreón responde a la reedificación de la segunda mitad del siglo XVI.
+
+En la actualidad es Oficina Municipal de Turismo y se puede visitar El Mirador de las Cuatro Culturas en la 5ª planta.""" ;
+	onto:estilo "mudejar" ;
+	onto:sitiosDeInteres "Exterior" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/cesarausutotorreonzudasn.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/zudap.jpg" ;
+	onto:datacion "Siglos X al XX" .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+Alfocea.+Iglesia+Inmaculada+Concepci%C3%B3n> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#C%2F+Iglesia> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+Alfocea.+Iglesia+Inmaculada+Concepci%C3%B3n> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Iglesia> ;
+	onto:latitud "4621359.2"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "670526.85"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Es obra construída en ladrillo visto de aparejo a tizón en el exterior. Tiene una sola nave, capillas entre contrafuertes no comunicadas entre sí, crucero alineado y cabecera recta, coro alto a los pies y tribunas sobre las capillas laterales. La nave se cubre con bóveda de cañón con lunetas, las capillas con bóvedas de arista y sobre el crucero se alza la cúpula sobre pechinas.
+En el exterior, destaca la portada construida en piedra de yeso blanco, que centra la fachada principal.
+Sobre uno de los cuerpos laterales de la fachada, se sitúa la torre, de dos cuerpos: el inferior, moldurado con pilastras en los ángulos que alojan campanas; y, el superior, poligonal decorado con pilastras y pequeños óculos.""" ;
+	onto:estilo "barroco" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/alfoceaiglesia09.pdf\">Interés Arquitectónico (A)<span class=\"oculto\">(Documento pdf)</span></a>" ;
+	onto:datacion "1683" .
+
+<http://www.semanticweb.org/grupo09#Ayuntamiento+o+Casa+Consistorial+de+Zaragoza> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Pza.+del+Pilar> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Ayuntamiento+o+Casa+Consistorial+de+Zaragoza> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+del+Pilar> ;
+	onto:latitud "4613965.9"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676840.38"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Inaugurado en 1965, interior y exteriormente responde a la tipología de los palacios renacentistas que se articulan en torno a un gran patio interior abierto. Muy destacables el alero aragonés y las esculturas de Pablo Serrano representando a San Valero y al Angel de la Ciudad a ambos lados de la puerta principal.
+Al interior, tres techumbres de comienzos del siglo XVI: en el Salón de Sesiones, en el Salón de Comisiones y en el Despacho del Sr. Alcalde. Proceden de la casa-palacio de la Baronía de Osera de Zaragoza (demolido en 1963) y presentan estructura en alfarje con decoración labrada y policromada.
+<a href=\"/contenidos/turismo/audio/Ayuntamiento.mp3\"><img title=\"Escuchar Descripción\" alt=\"Audio descriptivo del monumento\" src=\"/cont/paginas/img/leelo.gif\"/></a>""" ;
+	onto:estilo "contemporaneo, mudejar" ;
+	onto:sitiosDeInteres "Techumbres mudéjares" ;
+	onto:datos "<ul><li><a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/pilarplaza018.pdf\">Interés Arquitectónico (A y DCPA). Casa Consistorial<span class=\"oculto\">Documento pdf</span></a></li><li><a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/pilarplaza018techumbres.pdf\">Interés Monumental. Techumbres mudéjares<span class=\"oculto\">Documento pdf</span></a></li></ul>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/ayuntap.jpg" ;
+	onto:datacion "1965" .
+
+<http://www.semanticweb.org/grupo09#Mercado+Central> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Avda.+C%C3%A9sar+Augusto> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Mercado+Central> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+C%C3%A9sar+Augusto> ;
+	onto:latitud "4614022.92"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676423.95"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """<a>Patrimonio Cultural Aragonés. Bien Interés Cultural</a>
+
+El Mercado Central se levanta en el mismo lugar que ocupaba el mercado de la ciudad desde el siglo XIII. El edificio, inaugurado en 1903, no se concibió como una construcción aislada, sino que formaba parte de una actuación urbanística destinada a transformar el entorno de la plaza; esta remodelación, diseñada por el arquitecto municipal Ricardo Magdalena, sólo llegaría a realizarse en parte. 
+
+Félix Navarro proyecta una construcción de dos pisos (sótano y mercado) siendo el superior de planta basilical de tres naves, la central más ancha y alta que las laterales. Junto a materiales como el ladrillo y la piedra, se utilizan otros innovadores, como el hierro y el cristal, dando como resultado un edificio donde se funden tradición y modernidad.
+<a href=\"/contenidos/turismo/audio/MercadoCentral.mp3\"><img title=\"Escuchar Descripción\" alt=\"Audio descriptivo del monumento\" src=\"/cont/paginas/img/leelo.gif\"/></a>""" ;
+	onto:estilo "contemporaneo" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/cesaraugustosnmercadocentralfin.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/mercadocentral.jpg" ;
+	onto:datacion "1903" .
+
+<http://www.semanticweb.org/grupo09#Museo+de+las+Termas+P%C3%BAblicas+de+Caesaraugusta> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#C%2F+San+Juan+y+San+Pedro> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Museo+de+las+Termas+P%C3%BAblicas+de+Caesaraugusta> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Juan+y+San+Pedro> ;
+	onto:latitud "4613684.1"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676867.93"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """En 1982-1983, durante los trabajos de regularización del trazado de la C/San Juan y San Pedro, se localizaron los restos de una gran piscina perteneciente a unas termas romanas de carácter público. El conjunto se amplió en 1990 con el descubrimiento de unas letrinas de una fase anterior. 
+Las termas públicas se localizaban en el centro de Caesaraugusta, en el espacio existente entre el Foro y el Teatro. De las diversas salas con que contaban estas instalaciones: vestuarios, salas calientes, templadas y frías, gimnasio, etc sólo se conservan restos de unas letrinas con capacidad para más de 20 personas (utilizadas todavía a finales del siglo I a.C.) que fueron derribadas para construir, a mediados del siglo I d.C., sobre ellas una gran piscina porticada en la que se podía nadar al aire libre.""" ;
+	onto:estilo "romano" ;
+	onto:precio """<em>Entrada</em>: 3 euros
+<em>Gratuito</em>: Mayores de 65 años, desempleados, periodistas acreditados, monitores acompañantes y responsables de grupos de escolares, miembros del ICOM, Asociación de Críticos de Arte, niños menores de 8 años.
+<em>Consultar las tarifas reducidas para grupos y estudiantes</em>
+<em>Bono 4 museos Ruta de Caesaraugusta</em>:Foro, Termas Públicas, Puerto Fluvial Teatro 7 euros. Bono 5 museos: Arqueológicos Romanos y Pablo Gargallo:9 euros. Consultar otras tarifas.
+Entrada incluida en la Zaragoza Card""" ;
+	onto:sitiosDeInteres "Termas, letrinas y piscina porticada" ;
+	onto:datos """Aforo: 30 personas
+
+GRATUITO: primer domingo de cada mes y los días 29 enero San Valero, 23  de abril y 12 octubre Día del Pilar""" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/termasp.jpg" ;
+	onto:datacion "Siglo I a.C." .
+
+<http://www.semanticweb.org/grupo09#Puente+de+Hierro++o+Puente+del+Pilar> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Puente+de+Hierro++o+Puente+del+Pilar> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero> ;
+	onto:latitud "4613822.82"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "677350.76"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Denominado también \"Puente de Nuestra Señora del Pilar\", se terminó de construir en 1895, tras numerosas modificaciones del proyecto inicial, para aliviar el tráfico del Puente de Piedra. En 1991 concluye su remodelación en la que se repara, peatonaliza y se le añaden dos tableros laterales en forma de arco para el paso de vehículos, solución propuesta por Javier Manterola." ;
+	onto:estilo "contemporaneo" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/puentepilar-puentehierro.pdf\">Interés Arquitectónico (A)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/puentehierrop.jpg" ;
+	onto:datacion "Siglos XIX (1895)  y  XX (5 de mayo de 1991)" .
+
+<http://www.semanticweb.org/grupo09#Monumento+al+Rey+Alfonso+I+El+Batallador> a onto:Monumento ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Parque+Grande+J.A.+Labordeta> ;
+	onto:latitud "4611446.48"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "675579.51"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """La idea de erigir un monumento a este rey surgió con motivo del octavo centenario de la reconquista de Zaragoza (1118).
+
+Este memorial se eleva en el Cabezo de Buenavista del Parque Primo de Rivera. 
+Sobre el basamento se dispone un león de bronce, símbolo de la ciudad; el cuerpo superior, tratado a modo de torreón medieval, sirve de pedestal a la grandiosa estatua del rey Alfonso I el Batallador (6,5 m.) modelada por José Bueno y labrada en mármol de Carrara.
+
+El escultor toma como modelo el retrato del rey pintado por Francisco Pradilla que hoy se guarda en el Ayuntamiento.
+<a href=\"/contenidos/turismo/audio/MonumentoalBatallador.mp3\"><img title=\"Escuchar Descripción\" alt=\"Audio descriptivo del monumento\" src=\"/cont/paginas/img/leelo.gif\"/></a>""" ;
+	onto:estilo "contemporaneo" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/parqueprimoriveraalfonso.pdf\">Interés Monumental. Monumento a Alfonso I el Batallador (pdf)</a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/parquealfonsop.jpg" ;
+	onto:datacion "siglo XX" .
+
+<http://www.semanticweb.org/grupo09#Monumento+al+Justiciazgo> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Pza.+de+Arag%C3%B3n> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Monumento+al+Justiciazgo> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+Arag%C3%B3n> ;
+	onto:latitud "4613105.82"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676251.3"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """El monumento es fruto de la colaboración entre el arquitecto Félix Navarro Pérez y el escultor Francisco Vidal. 
+De 16 metros de altura y 11 metros de anchura, se divide en seis partes: pedestal, columna, silla, estatua, escudo y esfera.
+Durante el siglo XIX se produjo un resurgimiento de la figura del Justicia en todos los ámbitos, por ejemplo en pintura (Unceta, Barbasán) o en literatura (Duque de Rivas o Marqués de Pidal).
+Sin embargo, el Monumento al Justicia de Aragón poseyó y posee una identidad colectiva regional más que un simbolismo de liberalidad.
+En el pedestal se pueden leer dos inscripciones extraídas, una de los Fueros de Sobrarbe; la otra, de \"La capilla de Lanuza\" de Marcos Zapata, dramaturgo aragonés fallecido en 1914.
+La estatua que aparece sobre el pedestal representa al Justicia Juan de Lanuza V, ejecutado el 20 de diciembre de 1591 por orden de Felipe II, al acoger bajo su Fuero al ex secretario aragonés del monarca Antonio Pérez, acusado de asesinar a Escobedo, secretario de don Juan de Austria.
+
+El memorial fue costeado por la Diputación Provincial, el Ayuntamiento de la ciudad y por suscripción de particulares. El 20 de diciembre de cada año las instituciones políticas aragonesas ofrendan coronas conmemorativas, en recuerdo de la ejecución del último Justicia en 1591.
+<a href=\"/contenidos/turismo/audio/Justicia.mp3\"><img title=\"Escuchar Descripción\" alt=\"Audio descriptivo del monumento\" src=\"/cont/paginas/img/leelo.gif\"/></a>""" ;
+	onto:estilo "contemporaneo" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/justiciap.jpg" ;
+	onto:datacion "22 de octubre de 1904" .
+
+<http://www.semanticweb.org/grupo09#Monumento+a+Goya> a onto:Monumento ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+del+Pilar> ;
+	onto:latitud "4613918.71"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676893.72"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Obra del arquitecto José Beltrán Navarro y del escultor Federico Marés, este monumento está concebido como una estatua pintoresca con dos parejas con atuendos dieciochescos, inspiradas en asuntos goyescos. Desde un alto y escalonado pedestal, preside el conjunto la figura de Goya en pie con las piernas cruzadas y una paleta y un pincel en las manos.
+En 1990, según proyecto del arquitecto Ricardo Usón, se dispusieron los surtidores y las láminas de agua.""" ;
+	onto:estilo "actual" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/goyap.jpg" ;
+	onto:datacion "8 de octubre de 1960" .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+San+Gregorio.+Hospital+de+Enfermos+del+t%C3%B3rax> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#C%C2%BA+de+San+Gregorio> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+San+Gregorio.+Hospital+de+Enfermos+del+t%C3%B3rax> onto:estaEn <http://www.semanticweb.org/grupo09#C%C2%BA+de+San+Gregorio> ;
+	onto:latitud "4618060.31"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "678031.92"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Proyectado en 1945, su construcción se dilató durante varios años, abriéndose con pocos recursos técnicos y humanos en 1954.
+El edificio tiene una planta simétrica, originalmente en forma de \"T\", mantenida sustancialmente en las ampliaciones recientes.
+Está construido con fachadas de ladrillo visto, utilizando juegos compositivos en los distintos cuerpos de edificio y volumetrías diferenciadas, escalonadas y jerarquizadas. Se han utilizado distintos repertorios de vanos, elemento compositivo de cada cuerpo del edificio, siempre teniendo en cuenta su funcionalidad.""" ;
+	onto:estilo "racionalista" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/sangregoriohospital.pdf\">Interés Arquitectónico (B)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:datacion "1945-1954" .
+
+<http://www.semanticweb.org/grupo09#Fuente+de+la+Samaritana> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Pza.+del+Justicia> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Fuente+de+la+Samaritana> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+del+Justicia> ;
+	onto:latitud "4613968.1"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676498.52"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Esta fuente, situada originalmente en la Plaza de la Seo, se diseñó como punto de abastecimiento de agua y como elemento ornamental que subrayaba la importancia de este histórico espacio urbano; el traslado a su emplazamiento actual data de los años 60. Fue fundida en los talleres Averly siguiendo modelos procedentes de Francia. La figura de la samaritana supone la cristianización de un tema pagano de gran tradición en las fuentes del neoclasicismo y romanticismo francés: la ninfa que vierte agua de un ánfora." ;
+	onto:estilo "contemporaneo" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/samaritana.jpg" ;
+	onto:datacion "1866" .
+
+<http://www.semanticweb.org/grupo09#Galacho+de+Juslibol> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+Juslibol> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Galacho+de+Juslibol> onto:estaEn <http://www.semanticweb.org/grupo09#Barrio+de+Juslibol> ;
+	onto:latitud "4619475.88"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "672319.04"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Datación: 1961. El Galacho de Juslibol es un espacio de gran valor paisajístico, ecológico y cultural y está situado en la margen izquierda del Ebro a unos 5 Km de Zaragoza entre los barrios rurales de Alfocea, Juslibol, y Monzalbarba. Este galacho (o meandro abandonado), que quedó aislado tras la gran inundación del Ebro en 1961, es el más moderno de los formados por este río. En este espacio, que cuenta con la calificación de Área de especial Protección Urbanística y con más de 100 ha. de superficie, crece una densa vegetación de soto de ribera con especies arbóreas como sauces, álamos, chopos, fresnos y olmos junto a arbustos, lianas, aneas y carrizos y sirve de hábitat a singulares especies animales. El paseo guiado al Galacho incluye la visita a una exposición en el centro de interpretación allí ubicado y un recorrido por el entorno del galacho: el carrizal, el soto de ribera y las lagunas." ;
+	onto:estilo "entorno" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/galacho.jpg" .
+
+<http://www.semanticweb.org/grupo09#Monumento+a+Don+Ram%C3%B3n+Pignatelli> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#Parque+Pignatelli> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Monumento+a+Don+Ram%C3%B3n+Pignatelli> onto:estaEn <http://www.semanticweb.org/grupo09#Parque+Pignatelli> ;
+	onto:latitud "4610921.71"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "674378.55"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Desde 1904 se halla en lo que será el actual parque de Pignatelli, muy próximo al Canal. Pero hasta entonces había presidido la glorieta homónima, actual plaza de Aragón, donde fue erigido a inaugurado con toda solemnidad el 24 de junio de 1859, coincidiendo con el día y mes de aquel año de 1786 en que por primera vez llegaban a Zaragoza las aguas navegables del Canal Imperial.
+
+El proyecto del monumento había sido promovido en 1857 por la Diputación de Zaragoza, quien se le encomendó al escultor Antonio Palao, director de la Escuela de Bellas Artes. Modeló una estatua de Pignatelli de tamaño mayor que el natural, para cuya efigie debió inspirarse en una de las copias del retrato de Goya, existente en la Casa del Canal, aunque modificó sustancialmente la silueta, más obesa, y el rostro, inexpresivo y académico.""" ;
+	onto:estilo "contemporaneo" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/ramonpignatelli.jpg" ;
+	onto:datacion "1858-1859" .
+
+<http://www.semanticweb.org/grupo09#Fuente+de+la+Hispanidad> a onto:Monumento ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+del+Pilar> ;
+	onto:latitud "4614083.11"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676566.08"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Obra del siglo XX construida en honor a los países hispanoamericanos, ya que la Virgen del Pilar es la Patrona de la Hispanidad.
+La fuente representa un mapa de Latinoamérica: en la parte superior izquierda se observa una estría o canal, es la Península del Yucatán y América Central. La cascada representa el norte de Sudamérica y el estanque es el resto del continente hasta Tierra de Fuego.""" ;
+	onto:estilo "actual" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/hispanidad.jpg" ;
+	onto:datacion "1991" .
+
+<http://www.semanticweb.org/grupo09#Real+Seminario+de+San+Carlos+Borromeo.> a onto:Monumento ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+San+Carlos> ;
+	onto:latitud "4613463.62"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676992.23"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """<a>Patrimonio Cultural Aragonés. Bien Interés Cultural</a>
+
+Tras el establecimiento de la Orden jesuita en Zaragoza en los años 40 del siglo XVI, se inicia la construcción del que fuera Colegio de la Inmaculada, hoy conocido como Real Seminario de San Carlos Borromeo. 
+Posteriormente, hacia los años 60 del siglo XVI, sobre el solar que, supuestamente, antes había ocupado la sinagoga mayor de la judería zaragozana, se levanta la iglesia de la Inmaculada, perteneciente a la Compañía de Jesús.  
+
+La iglesia, aunque tardorrenacentista en su estructura, posee una portada barroca y una decoración interior también barroca, creada en el siglo XVIII, convirtiéndose, así, en el conjunto más suntuoso del barroco zaragozano y en modelo para numerosas obras posteriores. La capilla más destacada es la de San José, perteneciente a los duques de Villahermosa. El retablo mayor sería sustituto de uno anterior en lenguaje renacentista, y se situaría en la época en que se produjeron las modificaciones interiores del templo en estilo barroco-rococó bajo la dirección del hermano lego jesuita Pablo Diego Ibáñez.
+Tras la expulsión de los jesuitas (1767) pasa a denominarse Real Seminario de San Carlos Borromeo, en honor del rey Carlos III.
+<a href=\"/contenidos/turismo/audio/SeminarioSanCarlosBorromeo.mp3\"><img title=\"Escuchar Descripción\" alt=\"Audio descriptivo del monumento\" src=\"/cont/paginas/img/leelo.gif\"/></a>""" ;
+	onto:estilo "barroco" ;
+	onto:sitiosDeInteres "Clautro e Iglesia (conjunto ornamental interior, capilla de San José, retablo mayor)" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/sancarlosplazuela005.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/sancarlop.jpg" ;
+	onto:datacion "Siglos XVI, XVII, XVIII" .
+
+<http://www.semanticweb.org/grupo09#Palacio+Arzobispal> a onto:Monumento ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+la+Seo> ;
+	onto:latitud "4613895.88"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676984.82"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Las obras del edificio se realizaron entre 1779 y 1787. La fachada, de dos pisos y realizada en ladrillo, presenta grandes ventanales en la planta baja con verjas de hierro; mientras que las ventanas del piso superior están rematadas por frontones triangulares. El basamento y el enmarque de ventanas, puertas y alero están realizados en piedra. Los vanos de cada portada están flanqueados por dos columnas y pilastras de orden jónico y rematados por un gran balcón.
+<a href=\"/contenidos/turismo/audio/PalacioArzobispal.mp3\"><img title=\"Escuchar Descripción\" alt=\"Audio descriptivo del monumento\" src=\"/cont/paginas/img/leelo.gif\"/></a>""" ;
+	onto:estilo "mudejar, renacentista, barroco, neoclasico" ;
+	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/seoplaza005palacio.pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/arzobispalp.jpg" ;
+	onto:datacion "1787" .
+
+<http://www.semanticweb.org/grupo09#Palacio+de+los+Condes+de+Sobradiel+o+de+Gabarda> a onto:Monumento ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+del+Justicia> ;
+	onto:latitud "4613970.12"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676465.17"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Construcción neoclásica, erigida en el último cuarto del siglo XVIII y reformada a mediados del siglo XIX. La fachada se estructura en tres pisos con ventanales cuadrados en el primero y balcones en la planta noble y en la superior. Un gran patio empedrado utilizado por los carruajes de la época sirve de acceso al interior.
+Situado en la planta baja, se encuentra el alfarje mudéjar con decoración de motivos heráldicos, vegetales, geométricos y epigráficos, procedente de la desaparecida Casa de Lanuza.
+Actualmente, es sede del Colegio de Notarios de Zaragoza.""" ;
+	onto:estilo "neoclasico" ;
+	onto:sitiosDeInteres "Alfarje mudéjar con motivos góticos y renacentistas" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/justiciaplaza2.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/sobradielp.jpg" ;
+	onto:datacion "Ultimo cuarto del siglo XVIII y reformado a mediados del XIX" .
+
+<http://www.semanticweb.org/grupo09#Casa+Juncosa> a onto:Monumento .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+de+Sagasta> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Casa+Juncosa> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+Sagasta> ;
+	onto:latitud "4612562.02"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676181.93"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """José de Yarza Echenique proyecta una obra de elevado coste económico, difícilmente repetible como modelo para la burguesía zaragozana. El modernismo se manifiesta aquí en la exuberante decoración floral, ejecutada en piedra labrada y en hierro forjado.
+Este esplendor ornamental se superpone a la composición clásica de su fachada, que se cierra con remate escalonado.
+
+El interior mantiene todavía el repertorio decorativo original, sobre todo en la planta principal: vidrieras, estucos, puertas de madera tallada, suelos de taracea y chimeneas de mármol. Fue declarada Monumento Nacional en 1983.""" ;
+	onto:estilo "modernista" ;
+	onto:sitiosDeInteres "Fachada e interior" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/sagasta011.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/juncosap.jpg" ;
+	onto:datacion "Siglo XX" .
+
+<http://www.semanticweb.org/grupo09#Casa+Retuerta> a onto:Monumento ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+Sagasta> ;
+	onto:latitud "4612545.51"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "676180.68"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Este edificio de viviendas se levanta en uno de los sectores mejor planificados dentro del ensanche de la ciudad. La situación de la casa en el ángulo de dos calles va a permitir al arquitecto Juan Francisco Gómez Pulido concentrar su atención en el chaflán, resuelto de forma rotunda. 
+En su fachada, el modernismo pierde carácter ornamental para adquirir una mayor solidez y sobriedad. Desaparecen casi por completo los habituales motivos vegetales y florales, que se concentran en la crestería que remata el edificio; el resto de la decoración toma como base un diseño lineal de gran atractivo.
+
+Fue declarado Monumento Nacional en 1983.
+<a href=\"/contenidos/turismo/audio/CasasJuncosayRetuerta.mp3\"><img title=\"Escuchar Descripción\" alt=\"Audio descriptivo del monumento\" src=\"/cont/paginas/img/leelo.gif\"/></a>""" ;
+	onto:estilo "modernista" ;
+	onto:sitiosDeInteres "Fachada" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/sagasta013.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/retuertap.jpg" ;
+	onto:datacion "1904" .
+
+<http://www.semanticweb.org/grupo09#Quiosco+de+la+M%C3%BAsica> a onto:Monumento ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Parque+Grande+J.A.+Labordeta> ;
+	onto:latitud "4611699.94"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:longitud "675463.07"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion """Fue diseñado por los hermanos Martínez Ubago con motivo de la Exposición Hispano-Francesa de 1908.    
+Antes de su actual emplazamiento estuvo situado en la Plaza de los Sitios y en el Paseo de la Independencia, cuando su zona central era peatonal.    
+
+Su estructura de baldaquino se alza sobre un zócalo de piedra; ocho columnas de fundición sostienen una cubierta de cristal en cuyo centro se levanta un cupulín con piezas de cerámica coloreadas.    
+
+Es uno de los ejemplos más bellos y refinados del modernismo zaragozano. Hoy en día se celebran en este lugar conciertos bandas de música.""" ;
+	onto:estilo "modernista" ;
+	onto:datos "<a href=\"http://www.zaragoza.es/pgou/edih/parqueprimoriverakiosko.pdf\" class=\"pdf\">Interés Monumental (BIC)<span class=\"oculto\">Documento pdf</span></a>" ;
+	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/parquequioscop.jpg" ;
+	onto:datacion "1908" .

@@ -1,0 +1,193 @@
+[
+  {
+    "op": "core/column-split",
+    "description": "Split column coordenadas by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "coordenadas",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename coordenadas 1 to X",
+    "oldColumnName": "coordenadas 1",
+    "newColumnName": "X"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename coordenadas 2 to Y",
+    "oldColumnName": "coordenadas 2",
+    "newColumnName": "Y"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column X to Longitud",
+    "oldColumnName": "X",
+    "newColumnName": "Longitud"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Y to Latitud",
+    "oldColumnName": "Y",
+    "newColumnName": "Latitud"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column id",
+    "columnName": "id"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Longitud to longitud",
+    "oldColumnName": "Longitud",
+    "newColumnName": "longitud"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Latitud to latitud",
+    "oldColumnName": "Latitud",
+    "newColumnName": "latitud"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column lastUpdated",
+    "columnName": "lastUpdated"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column description to descripcion",
+    "oldColumnName": "description",
+    "newColumnName": "descripcion"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column title to nombre",
+    "oldColumnName": "title",
+    "newColumnName": "nombre"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column uri to url",
+    "oldColumnName": "uri",
+    "newColumnName": "url"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://localhost:3333/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    },
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column numeroEstacion at index 1 based on column url using expression grel:rowIndex+1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "numeroEstacion",
+    "columnInsertIndex": 1,
+    "baseColumnName": "url",
+    "expression": "grel:rowIndex+1",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column numeroEstacion using expression grel:\"Estacion \"+(rowIndex+1)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "numeroEstacion",
+    "expression": "grel:\"Estacion \"+(rowIndex+1)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column nombre to direccion",
+    "oldColumnName": "nombre",
+    "newColumnName": "direccion"
+  },
+{
+    "op": "core/column-addition",
+    "description": "Create column ciudad at index 2 based on column numeroEstacion using expression grel:Zaragoza",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "ciudad",
+    "columnInsertIndex": 2,
+    "baseColumnName": "numeroEstacion",
+    "expression": "grel:Zaragoza",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ciudad",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ciudad",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          ""
+        ],
+        "to": "Zaragoza"
+      }
+	]
+  },
+  {
+    "op": "core/fill-down",
+    "description": "Fill down cells in column ciudad",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ciudad"
+  }
+]

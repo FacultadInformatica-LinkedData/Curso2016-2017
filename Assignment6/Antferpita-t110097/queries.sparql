@@ -1,0 +1,60 @@
+Antonio Fernández Pita-t110097
+
+1.How many accidents were there in Madrid in 2013?
+
+select SUM(?accidentes) as ?Accidents
+where{
+	?obs a <http://purl.org/linked-data/cube#Observation>.
+	?obs <http://example.org/myVocabulary#numberOfAccidents> ?accidentes.
+	}
+	
+2.Give me the number of accidents in Usera for each type of accident
+
+select ?Type ?Accidents
+where{
+	?obs a <http://purl.org/linked-data/cube#Observation>.
+	?obs <http://example.org/myVocabulary#numberOfAccidents> ?Accidents.
+	?obs <http://example.org/myVocabulary#relatedDistrict> "USERA".
+	?obs <http://example.org/myVocabulary#hasAccidentType> ?e.
+	?e <http://www.w3.org/2004/02/skos/core#prefLabel> ?Type.
+}
+
+
+3.Give me the number of multiple collisions for each district
+
+select ?District ?Accidents
+where{
+	?obs a <http://purl.org/linked-data/cube#Observation>.
+	?obs <http://example.org/myVocabulary#relatedDistrict> ?District.
+	?obs <http://example.org/myVocabulary#hasAccidentType> <http://example.org/myVocabulary#MultipleCollision>.
+	?obs <http://example.org/myVocabulary#numberOfAccidents> ?Accidents.
+}
+
+4.Which is the district were the number of bicycle falls was
+higher in 2013?
+
+select ?District max(?Accidents) as ?Accidents
+where{
+	?obs a <http://purl.org/linked-data/cube#Observation>.
+	?obs <http://example.org/myVocabulary#relatedDistrict> ?District.
+	?obs <http://example.org/myVocabulary#numberOfAccidents> ?Accidents.
+	?obs <http://example.org/myVocabulary#hasAccidentType> <http://example.org/myVocabulary#BicycleFall>.
+}
+ORDER BY desc(?Accidents)
+LIMIT 1
+
+5.Give me the districts with more than 500 accidents in 2013
+
+select ?District ?Accidents
+where{
+	{	
+	select distinct ?District (sum(xsd:double(?b)) as ?Accidents)
+	where{
+		?obs a <http://purl.org/linked-data/cube#Observation>.
+		?obs <http://example.org/myVocabulary#relatedDistrict> ?District.
+		?obs <http://example.org/myVocabulary#numberOfAccidents> ?b.
+	}
+	}
+	FILTER (?Accidents > 500)
+	} 
+ORDER BY desc(?Accidents)
