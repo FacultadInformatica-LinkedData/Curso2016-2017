@@ -1,0 +1,273 @@
+<html>
+	<meta charset="Latin-1">
+	<head>
+	  <link rel="stylesheet" href="./estilo.css">
+	</head>
+	
+	<body>
+	<h1> Archivo Analysis.html </h1>
+	<p> En este documento se especifica el analisis realizado sobre la Licencia de los datos utilizados, los datasets utilizados y la estrategia de nombrado utilizada. </p>
+	
+	<h1> 1.- Analisis de la Licencia </h1>
+	<p> <strong>Licencia de los datos: Atribución 4.0 Internacional (CC BY 4.0)</strong><br>
+			Derechos que concede la licencia:<br>
+			Compartir — copiar y redistribuir el material en cualquier medio o formato.<br>
+			Adaptar — remezclar, transformar y crear a partir del material.<br>
+			Para cualquier propósito, incluso comercialmente.
+			El licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia.<br>
+			Obligaciones que implica la licencia:<br>
+			Atribución — Usted debe darle crédito a esta obra de manera adecuada, proporcionando un enlace a la licencia, e indicando si se han realizado cambios. <br>
+			Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.<br>
+			No hay restricciones adicionales — Usted no puede aplicar términos legales ni medidas tecnológicas que restrinjan legalmente a otros hacer cualquier uso permitido por la licencia. </p>
+		
+	<h1> 2.- Analisis de los Datasets </h1>
+	<h2> Dataset Stops.csv</h2>
+	
+		<table>
+		  <thead>
+			<tr>
+				<th><strong>COLUMN</strong></th>
+				<th><strong>TYPE</strong></th>
+				<th><strong>COMMENTS/RANGE(rounded)</strong></th>
+				<th><strong>PROBLEMS</strong></th>
+				</tr>
+			</thead>
+			<tr>
+				<td>stop_id</td>
+				<td>Integer Unique</td>
+				<td>Identifica de forma exclusiva a una parada o estación.<br> Rango: [0 - numParadas]</td>
+				<td>Es posible que varias rutas utilicen una misma parada.</td>
+			</tr>		
+			<tr>
+				<td>stop_name</td>
+				<td>String Unique</td>
+				<td>Nombre de la parada. Intentando que sea comprensible. <br> Rango: [" " - Total of Memory]</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>stop_lat</td>
+				<td>Decimal Not Unique</td>
+				<td>Latitud de una parada o estacion. <br> Rango de WGS 84</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>stop_lon</td>
+				<td>Decimal Not Unique</td>
+				<td>Longitud de una parada o estacion. <br> Rango de WGS 84 y [-180º to 180º]</td>
+				<td>Valores negativos</td>
+			</tr>
+		</table>
+		
+		<h2> Dataset StopTimes.csv</h2>
+	
+		<table>
+		  <thead>
+			<tr>
+				<th><strong>COLUMN</strong></th>
+				<th><strong>TYPE</strong></th>
+				<th><strong>COMMENTS/RANGE(rounded)</strong></th>
+				<th><strong>PROBLEMS</strong></th>
+				</tr>
+			</thead>
+			<tr>
+				<td>trip_id</td>
+				<td>String Not Unique</td>
+				<td>Identifica a una parada.<br> Rango: [" "- Total of Memory]</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>arrival_time</td>
+				<td>Date Not Unique</td>
+				<td>Hora de llegada a la parada. Expresado en HH:MM:SS <br> Rango: [00:00:00 --- 23:59:59]</td>
+				<td>-</td>
+
+			</tr>		
+			<tr>
+				<td>departure_time</td>
+				<td>Date Not Unique</td>
+				<td>Hora de salida de la parada. Expresado en HH:MM:SS <br> Rango: [00:00:00 --- 23:59:59]</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>stop_id</td>
+				<td>Integer Unique</td>
+				<td>Identificador de parada <br> Rango: [0 - numParadas]</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>stop_sequence</td>
+				<td>Integer Not Unique</td>
+				<td>Identifica el orden de las paradas durante el viaje (se va incrementando) <br> Rango de Naturales</td>
+				<td>-</td>
+			</tr>			 
+		</table>
+		
+		<h2> Dataset Routes.csv</h2>
+	
+		<table>
+		  <thead>
+			<tr>
+				<th><strong>COLUMN</strong></th>
+				<th><strong>TYPE</strong></th>
+				<th><strong>COMMENTS/RANGE(rounded)</strong></th>
+				<th><strong>PROBLEMS</strong></th>
+				</tr>
+			</thead>
+			<tr>
+				<td>route_id</td>
+				<td>Integer Unique</td>
+				<td>Identifica una ruta de forma exclusiva.<br> Rango: [0 - numRoutes]</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>route_short_name</td>
+				<td>String Not Unique</td>
+				<td>Nombre corto de una ruta. Si no tiene, se utiliza una cadena vacía y se especifica en el campo route_long_name. <br> Rango: ["" - Total of Memory]</td>
+				<td>-</td>
+
+			</tr>		
+			<tr>
+				<td>route_long_name</td>
+				<td>String Not Unique</td>
+				<td>Nombre completo de una ruta. <br> Rango: ["" - Total of Memory]</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>route_type</td>
+				<td>Integer Not Unique</td>
+				<td>Describe el tipo de transporte público utilizado en una ruta. <br> Rango: [0 - 7]</td>
+				<td>-</td>
+			</tr>	 
+		</table>
+
+		<h2> Dataset CalendarDates.csv</h2>
+
+		<table>
+		  <thead>
+			<tr>
+				<th><strong>COLUMN</strong></th>
+				<th><strong>TYPE</strong></th>
+				<th><strong>COMMENTS/RANGE(rounded)</strong></th>
+				<th><strong>PROBLEMS</strong></th>
+				</tr>
+			</thead>
+			<tr>
+				<td>service_id</td>
+				<td>Integer Unique</td>
+				<td>ID que identifica de forma exclusiva que el servicio estará disponible en un conjunto de fechas
+				<br>en una o mas rutas. Cada par (service_id,date) solo puede aparecer una vez en calendar_dates<br> Rango: [0 - numServices]</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>date</td>
+				<td>Date Not Unique</td>
+				<td>Especifica una fecha concreta en la que la disponibilidad del servicio sea diferente a la de la norma. <br> Formato AAAAMMDD</td>
+				<td>-</td>
+
+			</tr>		
+			<tr>
+				<td>exception_type</td>
+				<td>Integer Not Unique</td>
+				<td>ndica si el servicio está disponible en la fecha especificada en el campo date.  <br> Rango: [1-2]</td>
+				<td>-</td>
+			</tr>		 
+		</table>
+		
+		<h2> Dataset Calendar.csv</h2>
+	
+		<table>
+		  <thead>
+			<tr>
+				<th><strong>COLUMN</strong></th>
+				<th><strong>TYPE</strong></th>
+				<th><strong>COMMENTS/RANGE(rounded)</strong></th>
+				<th><strong>PROBLEMS</strong></th>
+				</tr>
+			</thead>
+			<tr>
+				<td>service_id</td>
+				<td>Integer Unique</td>
+				<td>Identifica de forma exclusiva a una parada o estación.<br> Rango: [0 - numServices]</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>Monday</td>
+				<td>Binary</td>
+				<td>0: Disponible en el Intervalo <br>1: No disponible en el intervalo</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>Tuesday</td>
+				<td>Binary</td>
+				<td>0: Disponible en el Intervalo <br>1: No disponible en el intervalo</td>
+				<td>-</td>
+			</tr>			
+			<tr>
+				<td>Wednesday</td>
+				<td>Binary</td>
+				<td>0: Disponible en el Intervalo <br>1: No disponible en el intervalo</td>
+				<td>-</td>
+			</tr>	
+			<tr>
+				<td>Thursday</td>
+				<td>Binary</td>
+				<td>0: Disponible en el Intervalo <br>1: No disponible en el intervalo</td>
+				<td>-</td>
+			</tr>	
+			<tr>
+				<td>Friday</td>
+				<td>Binary</td>
+				<td>0: Disponible en el Intervalo <br>1: No disponible en el intervalo</td>
+				<td>-</td>
+			</tr>	
+			<tr>
+				<td>Saturday</td>
+				<td>Binary</td>
+				<td>0: Disponible en el Intervalo <br>1: No disponible en el intervalo</td>
+				<td>-</td>
+			</tr>	
+			<tr>
+				<td>Sunday</td>
+				<td>Binary</td>
+				<td>0: Disponible en el Intervalo <br>1: No disponible en el intervalo</td>
+				<td>-</td>
+			</tr>	
+			<tr>
+				<td>Start_date</td>
+				<td>Date Not Unique</td>
+				<td>DESCRIPCION FALTA <br> Formato AAAAMMDD</td>
+				<td>-</td>
+			</tr>	
+			<tr>
+				<td>End_date</td>
+				<td>Date Not Unique</td>
+				<td>DESCRIPCION FALTA <br> Formato AAAAMMDD</td>
+				<td>-</td>
+			</tr>				
+		</table>
+		
+		<h1> 3.- Estrategia de Nombrado </h1>
+		<p> La estrategia de nombrado que se seguirá será la siguiente </p>
+		<table>
+		  <thead>
+			<tr>
+				<th><strong>CONCEPT</strong></th>
+				<th><strong>EXAMPLE</strong></th>
+				</tr>
+			</thead>
+			<tr>
+				<td>Domain</td>
+				<td>http://smartsevilla.es/</td>
+			</tr>		
+			<tr>
+				<td>Ontological terms Path</td>
+				<td>http://smartsevilla.es/ontology/lookAround# <br> Example:http://smartsevilla.es/ontology/Parada#</td>
+			</tr>		
+			<tr>
+				<td>Individuals Path</td>
+				<td>http://smartsevilla.es/resources/<br> Example:http://smartsevilla.es/resources/buses/Linea1</td>
+			</tr>
+		</table>
+
+	</body>
+</html>

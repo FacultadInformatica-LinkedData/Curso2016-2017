@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g10: <http://smartsevilla.es/ontology> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://smartsevilla.es/ontology/calendar/INVFES85> a <http://smartsevilla.es/ontology/Service> ;
+	<http://smartsevilla.es/ontology/service_id> "INVFES85" ;
+	<http://smartsevilla.es/ontology/start_date> "20160110" ;
+	<http://smartsevilla.es/ontology/end_date> "20160630" .
+
+<http://smartsevilla.es/ontology/calendar/INVLAB85> a <http://smartsevilla.es/ontology/Service> ;
+	<http://smartsevilla.es/ontology/service_id> "INVLAB85" ;
+	<http://smartsevilla.es/ontology/start_date> "20160107" ;
+	<http://smartsevilla.es/ontology/end_date> "20160630" .
+
+<http://smartsevilla.es/ontology/calendar/INVSAB85> a <http://smartsevilla.es/ontology/Service> ;
+	<http://smartsevilla.es/ontology/service_id> "INVSAB85" ;
+	<http://smartsevilla.es/ontology/start_date> "20160109" ;
+	<http://smartsevilla.es/ontology/end_date> "20160630" .
+
+<http://smartsevilla.es/ontology/calendar/INVVIE85> a <http://smartsevilla.es/ontology/Service> ;
+	<http://smartsevilla.es/ontology/service_id> "INVVIE85" ;
+	<http://smartsevilla.es/ontology/start_date> "20160108" ;
+	<http://smartsevilla.es/ontology/end_date> "20160630" .

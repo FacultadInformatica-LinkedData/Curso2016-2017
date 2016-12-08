@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.linkeddata.es/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.linkeddata.es/">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="hasGNPOld"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCountryCode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Kabul"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasIndepYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCapital"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasLocalName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="belongstoContinent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasIsOfficial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPopulation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasGovernmentForm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CountryLanguage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasSurfaceArea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasLifeExpectancy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPercentage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasRegion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasHeadOfState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasLanguage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasGNP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasCode2"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Country"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasDistrict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="City"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="City"/>
+        <NamedIndividual IRI="Kabul"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasPopulation"/>
+        <NamedIndividual IRI="Kabul"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1780000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyDomain>
+        <DataProperty IRI="belongstoContinent"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCapital"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCode"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCode2"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCountryCode"/>
+        <Class IRI="City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasCountryCode"/>
+        <Class IRI="CountryLanguage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasDistrict"/>
+        <Class IRI="City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasGNP"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasGNPOld"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasGovernmentForm"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasHeadOfState"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasID"/>
+        <Class IRI="City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasIndepYear"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasIsOfficial"/>
+        <Class IRI="CountryLanguage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasLanguage"/>
+        <Class IRI="CountryLanguage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasLifeExpectancy"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasLocalName"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasName"/>
+        <Class IRI="City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasName"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasPercentage"/>
+        <Class IRI="CountryLanguage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasPopulation"/>
+        <Class IRI="City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasPopulation"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasRegion"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasSurfaceArea"/>
+        <Class IRI="Country"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="belongstoContinent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasCapital"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasCode2"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasCountryCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasDistrict"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasGNP"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasGNPOld"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasGovernmentForm"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasHeadOfState"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasIndepYear"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasIsOfficial"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasLanguage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasLifeExpectancy"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasLocalName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasPercentage"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasPopulation"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasRegion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasSurfaceArea"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

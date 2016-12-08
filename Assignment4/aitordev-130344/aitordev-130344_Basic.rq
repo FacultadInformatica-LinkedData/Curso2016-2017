@@ -1,0 +1,58 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX pr: <http://GP-onto.fi.upm.es/exercise2#> 
+
+#   1. Get all the classes
+
+SELECT ?cl WHERE { ?cl a rdfs:Class. }
+
+#   2. Get all the subclasses of the class Establishment
+
+SELECT ?scl WHERE { ?scl rdfs:subClassOf pr:Establishment. }
+
+#   3. Get all instances of the class City
+
+SELECT ?ins WHERE { ?ins rdfs:type pr:City. } 
+
+#   4. Get the number of inhabitants of Santiago de Compostela
+
+SELECT ?nsc WHERE { pr:Santiago_de_Compostela pr:hasInhabitantNumber ?nsc. }
+
+#   5. Get the number of inhabitants of Santiago de Compostela and Arzua
+
+SELECT ?nsc ?nar WHERE { pr:Santiago_de_Compostela pr:hasInhabitantNumber ?nsc. pr:Arzua pr:hasInhabitantNumber ?nar. }
+
+#   6. Get all places, together with the number of inhabitants, ordered by the place name (ascending)
+
+SELECT ?place ?num WHERE { ?place pr:hasInhabitantNumber ?num. } ORDER BY ASC(?place)
+
+#   7. Get all instances of Locality together with their number of inhabitants (if this information exists)
+
+SELECT ?loc ?num WHERE { ?l rdfs:subClassOf pr:Locality. ?loc a ?l. OPTIONAL {?loc pr:hasInhabitantNumber ?num. } }
+
+#   8. Get all places with more than 200.000 inhabitants
+
+SELECT ?place ?num WHERE { ?place pr:hasInhabitantNumber ?num. FILTER (xsd:integer(?num) > xsd:integer("200000")) }
+
+#   9. Get postal address data for Pazo_Breogan (street, number, locality, province)
+
+SELECT ?street ?number ?locality ?province WHERE { pr:Pazo_Breogan pr:hasAddress ?address. ?address pr:hasStreet ?street. ?address pr:hasNumber ?number. pr:Pazo_Breogan pr:isPlacedIn ?locality. ?locality pr:inProvince ?province. }
+
+#   10. Get all subclasses of class location
+
+SELECT ?scl WHERE { ?scl rdfs:subClassOf pr:Location. }
+
+#   11. Get all instances of class Locality
+
+SELECT ?loc WHERE { ?sub rdfs:subClassOf pr:Locality. ?loc a ?sub.}
+
+#   12. Describe the resource with rdfs:label "Madrid”
+
+DESCRIBE ?lab WHERE { ?lab rdfs:label "Madrid". }
+
+#   13. Construct a pr that relates directly all touristic places with their provinces, using a new property called ”isIn”
+
+CONSTRUCT { ?x pr:isIn ?y } WHERE { ?tou rdfs:subClassOf pr:TouristicLocation. ?x a ?tou. ?x pr:isPlacedIn ?i. ?i pr:inProvince ?y. }
+
+#   14. Check whether there is any instance of Town
+
+ASK  { ?x a pr:Town. }

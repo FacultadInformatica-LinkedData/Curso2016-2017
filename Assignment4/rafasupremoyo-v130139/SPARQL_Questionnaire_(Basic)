@@ -1,0 +1,175 @@
+1_SELECT ?x
+WHERE{
+  ?x a <http://www.w3.org/2000/01/rdf-schema#Class>
+
+}
+LIMIT 100
+x
+http://GP-onto.fi.upm.es/exercise2#OnFoot
+http://GP-onto.fi.upm.es/exercise2#TransportMedium
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#Establishment
+http://GP-onto.fi.upm.es/exercise2#PhysicalPoint
+http://GP-onto.fi.upm.es/exercise2#Stage
+http://GP-onto.fi.upm.es/exercise2#TransportInfrastructure
+http://GP-onto.fi.upm.es/exercise2#Bus
+http://GP-onto.fi.upm.es/exercise2#Car
+http://GP-onto.fi.upm.es/exercise2#BankService
+http://GP-onto.fi.upm.es/exercise2#Service
+http://GP-onto.fi.upm.es/exercise2#Bicycle
+http://GP-onto.fi.upm.es/exercise2#PostalAddress
+http://GP-onto.fi.upm.es/exercise2#Path
+http://GP-onto.fi.upm.es/exercise2#Road
+http://GP-onto.fi.upm.es/exercise2#Cathedral
+http://GP-onto.fi.upm.es/exercise2#TouristicLocation
+http://GP-onto.fi.upm.es/exercise2#City
+http://GP-onto.fi.upm.es/exercise2#Locality
+http://GP-onto.fi.upm.es/exercise2#Route
+http://GP-onto.fi.upm.es/exercise2#SpacialThing
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest
+http://GP-onto.fi.upm.es/exercise2#Stretch
+http://GP-onto.fi.upm.es/exercise2#Chapel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+http://GP-onto.fi.upm.es/exercise2#Church
+http://GP-onto.fi.upm.es/exercise2#Location
+http://GP-onto.fi.upm.es/exercise2#Palace
+http://GP-onto.fi.upm.es/exercise2#PostalService
+http://GP-onto.fi.upm.es/exercise2#Town
+http://GP-onto.fi.upm.es/exercise2#RestaurationService
+http://GP-onto.fi.upm.es/exercise2#HealthService
+http://GP-onto.fi.upm.es/exercise2#SecurityService
+http://GP-onto.fi.upm.es/exercise2#Track
+http://GP-onto.fi.upm.es/exercise2#Train
+http://GP-onto.fi.upm.es/exercise2#Railway
+http://GP-onto.fi.upm.es/exercise2#Village
+2_
+select distinct ?Concept where {?Concept rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Establishment> } LIMIT 100
+
+Concept
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+3_
+
+SELECT ?x
+WHERE{
+  ?x a  <http://GP-onto.fi.upm.es/exercise2#City>.
+}
+LIMIT 100
+
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+http://GP-onto.fi.upm.es/exercise2#Madrid
+
+4_
+select distinct ?Concept where {<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?Concept  } LIMIT 100
+Concept
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+5_
+select distinct ?Concept ?Concept2  where {<http://GP-onto.fi.upm.es/exercise2#Arzua> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?Concept.
+                                     <http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>  ?Concept2} LIMIT 100
+Concept 	Concept2
+" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer> 	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+6_
+select distinct ?Concept ?Concept2  where {?Concept <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>   ?Concept2} ORDER BY ASC(?Concept) LIMIT 100
+Concept 	Concept2
+http://GP-onto.fi.upm.es/exercise2#Arzua 	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela 	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+7_
+select distinct  ?Concept2  ?i where {?Concept  <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://GP-onto.fi.upm.es/exercise2#Locality>.
+?Concept2 ?p ?Concept
+OPTIONAL{?Concept2 <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?i}}  LIMIT 100
+Concept2 	i
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a 	
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela 	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Madrid 	
+http://GP-onto.fi.upm.es/exercise2#Arzua 	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+8_
+select distinct  ?Concept2 ?p  where {?Concept <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://GP-onto.fi.upm.es/exercise2#Locality>.
+?Concept2 a ?Concept.
+?Concept2 <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?p
+FILTER(xsd:integer(?p) > 20000 )
+
+}  LIMIT 100
+Concept2 	p
+http://GP-onto.fi.upm.es/exercise2#Arzua 	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela 	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+9_
+select distinct  ?u ?j ?l ?g   where {<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan> <http://GP-onto.fi.upm.es/exercise2#hasAddress> ?Concept.
+?Concept <http://GP-onto.fi.upm.es/exercise2#hasNumber> ?j.
+?Concept <http://GP-onto.fi.upm.es/exercise2#hasStreet> ?u.
+<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan> <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> ?k.
+?k rdfs:label ?l.
+?k <http://GP-onto.fi.upm.es/exercise2#inProvince> ?g
+
+}  LIMIT 100
+u 	j 	l 	g
+C/Mayor 	5 	Arzua 	Pontevedra
+10_
+select distinct  ?Concept  ?Concept2 ?Concept3   where {?Concept <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://GP-onto.fi.upm.es/exercise2#Location>.
+?Concept2 <http://www.w3.org/2000/01/rdf-schema#subClassOf> ?Concept.
+?Concept3 <http://www.w3.org/2000/01/rdf-schema#subClassOf> ?Concept2
+}  LIMIT 100
+Concept 	Concept2 	Concept3
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest 	http://GP-onto.fi.upm.es/exercise2#Establishment 	http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest 	http://GP-onto.fi.upm.es/exercise2#Establishment 	http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest 	http://GP-onto.fi.upm.es/exercise2#Establishment 	http://GP-onto.fi.upm.es/exercise2#Hotel
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest 	http://GP-onto.fi.upm.es/exercise2#TouristicLocation 	http://GP-onto.fi.upm.es/exercise2#Cathedral
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest 	http://GP-onto.fi.upm.es/exercise2#TouristicLocation 	http://GP-onto.fi.upm.es/exercise2#Chapel
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest 	http://GP-onto.fi.upm.es/exercise2#TouristicLocation 	http://GP-onto.fi.upm.es/exercise2#Church
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest 	http://GP-onto.fi.upm.es/exercise2#TouristicLocation 	http://GP-onto.fi.upm.es/exercise2#Palace
+11_
+select distinct   ?Concept2   where {?Concept <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://GP-onto.fi.upm.es/exercise2#Locality>.
+?Concept2 a ?Concept.
+}  LIMIT 100
+Concept2
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+http://GP-onto.fi.upm.es/exercise2#Madrid
+http://GP-onto.fi.upm.es/exercise2#Arzua
+12_
+describe    ?Concept   where {?Concept rdfs:label "Madrid"
+}  LIMIT 100 
+Aitor Upm:
+This document contains 5 facts in HTML Microdata format.
+
+A generic web browser may not display them properly but the document can be saved on disk and used by some appropriate program or sent to a third party. Use "Save As" or "Send To" menu item of the browser; choose "HTML" file type, not "text file" or "web archive".
+
+The rest of the document may look like garbage for humans or not displayed by the browser.
+Prefix  Namespace IRI
+xsdh  http://www.w3.org/2001/XMLSchema#
+n3  http://www.w3.org/2000/01/rdf-schema#
+n2  http://GP-onto.fi.upm.es/exercise2#
+rdf  http://www.w3.org/1999/02/22-rdf-syntax-ns#
+
+Subject Item
+    n2:GP_Santiago_Instance_72
+n2:hasEnd
+    n2:Madrid 
+
+Subject Item
+    n2:Madrid
+rdf:type
+    n2:City 
+n3:label
+    Madrid 
+n2:isLocatedAtPoint
+    n2:GP_Santiago_Instance_74 
+n2:inProvince
+    Madrid
+13_
+CONSTRUCT
+{
+        ?o <http://GP-onto.fi.upm.es/exercise2#isIn> ?l.
+    
+}   where {?Concept rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#TouristicLocation>.
+?o a ?Concept.
+?o <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> ?r.
+?r <http://GP-onto.fi.upm.es/exercise2#inProvince> ?l } LIMIT 100
+@prefix ns0:	<http://GP-onto.fi.upm.es/exercise2#> .
+ns0:Cathedral_Santiago_Compostela	ns0:isIn	"Pontevedra" .
+ns0:Pazo_Breogan	ns0:isIn	"Pontevedra" .
+14_
+ASK{ ?p a <http://GP-onto.fi.upm.es/exercise2#Town> }
+true

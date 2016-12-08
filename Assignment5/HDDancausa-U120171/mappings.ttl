@@ -1,0 +1,16 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix my_vocabulary: <www.semanticweb.org/hddancausa/assignment5/ontologies/vocabulary#> .
+@prefix my_instances: <www.semanticweb.org/hddancausa/assignment5/ontologies/instances#> .
+@base <www.semanticweb.org/hddancausa/assignment5/ontologies> .
+
+<TriplesMapCity> 
+
+a rr:TriplesMap;
+rr:logicalTable [ rr:tableName "city" ];
+rr:subjectMap [ rr:termType rr:IRI;
+rr:template "www.semanticweb.org/hddancausa/assignment5/ontologies/nstances/City/{ID}";
+rr:class my_vocabulary:City ];
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant my_vocabulary:hasPopulation ];
+ rr:objectMap [ rr:termType rr:Literal; rr:column "population"; ];
+] .

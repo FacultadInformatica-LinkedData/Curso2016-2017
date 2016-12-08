@@ -1,0 +1,148 @@
+@prefix : <http://www.semanticweb.org/group01> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/group01> .
+
+<http://www.semanticweb.org/group01> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/esIncidenciaDe
+<http://www.semanticweb.org/esIncidenciaDe> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://www.semanticweb.org/Incidencias> ;
+                                            rdfs:range <http://www.semanticweb.org/Bici_Mad> .
+
+
+###  http://www.semanticweb.org/estaAparcadaEn
+<http://www.semanticweb.org/estaAparcadaEn> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf owl:topObjectProperty ;
+                                            rdfs:domain <http://www.semanticweb.org/Bici_Mad> ;
+                                            rdfs:range <http://www.semanticweb.org/Aparcamientos> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/esBarrioDe
+<http://www.semanticweb.org/esBarrioDe> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://www.semanticweb.org/Aparcamiento_BiciMad> ;
+                                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/esCalleDe
+<http://www.semanticweb.org/esCalleDe> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://www.semanticweb.org/Aparcamiento_BiciMad> ;
+                                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/esCapacidadDe
+<http://www.semanticweb.org/esCapacidadDe> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://www.semanticweb.org/Aparcamiento_privado> ;
+                                           rdfs:range [ rdf:type rdfs:Datatype ;
+                                                        owl:onDatatype xsd:int ;
+                                                        owl:withRestrictions ( [ xsd:minInclusive "0"^^xsd:int
+                                                                               ]
+                                                                               [ xsd:maxInclusive "140"^^xsd:int
+                                                                               ]
+                                                                             )
+                                                      ] .
+
+
+###  http://www.semanticweb.org/esCausaDe
+<http://www.semanticweb.org/esCausaDe> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://www.semanticweb.org/Incidencias> ;
+                                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/esCentroDe
+<http://www.semanticweb.org/esCentroDe> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://www.semanticweb.org/Aparcamiento_privado> ;
+                                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/esDireccionDe
+<http://www.semanticweb.org/esDireccionDe> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://www.semanticweb.org/Aparcamiento_privado> ;
+                                           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/esDistritoDe
+<http://www.semanticweb.org/esDistritoDe> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://www.semanticweb.org/Aparcamiento_BiciMad> ;
+                                          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/esFotoDe
+<http://www.semanticweb.org/esFotoDe> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://www.semanticweb.org/Aparcamiento_privado> .
+
+
+###  http://www.semanticweb.org/esPlazaDe
+<http://www.semanticweb.org/esPlazaDe> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain <http://www.semanticweb.org/Aparcamiento_BiciMad> ;
+                                       rdfs:range [ rdf:type rdfs:Datatype ;
+                                                    owl:onDatatype xsd:int ;
+                                                    owl:withRestrictions ( [ xsd:minInclusive "18"^^xsd:int
+                                                                           ]
+                                                                           [ xsd:maxInclusive "36"^^xsd:int
+                                                                           ]
+                                                                         )
+                                                  ] .
+
+
+###  http://www.semanticweb.org/group01#esIDde
+:esIDde rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://www.semanticweb.org/Aparcamiento_privado> ;
+        rdfs:range xsd:int .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/Aparcamiento_BiciMad
+<http://www.semanticweb.org/Aparcamiento_BiciMad> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.semanticweb.org/Aparcamientos> .
+
+
+###  http://www.semanticweb.org/Aparcamiento_privado
+<http://www.semanticweb.org/Aparcamiento_privado> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.semanticweb.org/Aparcamientos> .
+
+
+###  http://www.semanticweb.org/Aparcamientos
+<http://www.semanticweb.org/Aparcamientos> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Bici_Mad
+<http://www.semanticweb.org/Bici_Mad> rdf:type owl:Class ;
+                                      rdfs:comment "This class will represent the rental bicicles." .
+
+
+###  http://www.semanticweb.org/Incidencias
+<http://www.semanticweb.org/Incidencias> rdf:type owl:Class ;
+                                         rdfs:comment "" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/group01Aparcamiento1
+:Aparcamiento1 rdf:type owl:NamedIndividual ,
+                        <http://www.semanticweb.org/Aparcamientos> .
+
+
+###  http://www.semanticweb.org/group01Bici1
+:Bici1 rdf:type owl:NamedIndividual ,
+                <http://www.semanticweb.org/Bici_Mad> ;
+       <http://www.semanticweb.org/estaAparcadaEn> :Aparcamiento1 .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
