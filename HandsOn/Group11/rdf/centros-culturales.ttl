@@ -1,0 +1,1176 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ontology: <http://www.madridcultural.es/ontology.owl#> .
+
+
+<http://www.madridcultural.es/centrosculturales/139451> ontology:tieneNombre "Auditorio y sala de exposiciones Paco de Lucía (antigua Sala Latinarte)" ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "LAS AGUILAS" ;
+	ontology:tieneCodigoPostal "28044" ;
+	ontology:tieneTransporte " Metro: Aluche (línea 5)  Bus: 17, 31, 117, 121, 131, 138, 139, 155    Renfe: Aluce " ;
+	ontology:tieneEmail "ruizdm@madrid.es" ;
+	ontology:tieneTelefono "915 120 890 / 915 120 891" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6089ba61e681c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1956> ontology:tieneNombre "Casa de América" ;
+	ontology:tieneDescripcion " Antiguo Palacio de Linares, diseñado por Carlos Colubí en 1872.  De estilo rococó, destaca la escalera de mármol de Manuel Aníbal Álvarez y toda la decoración interior. " ;
+	ontology:tieneDistrito "SALAMANCA" ;
+	ontology:tieneBarrio "RECOLETOS" ;
+	ontology:tieneCodigoPostal "28014" ;
+	ontology:tieneTransporte " Metro: Banco de España (línea 2)  Bus: 1, 2, 5, 9, 10, 14, 15, 20, 27, 34, 37, 45, 51, 52, 53, 74, 146, 150, 202  Cercanías Renfe: Recoletos " ;
+	ontology:tieneTelefono "915 954 800 (información) " ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=10f979262ef5d010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/7320916> ontology:tieneNombre "Casa de la Juventud de Arganzuela" ;
+	ontology:tieneDistrito "ARGANZUELA" ;
+	ontology:tieneBarrio "CHOPERA" ;
+	ontology:tieneCodigoPostal "28045" ;
+	ontology:tieneTransporte " Metro: Legazpi (líneas 3, 6), Pirámides (línea 5)   Bus: 6, 8, 18, 19, 45, 47, 59, 78, 85, 86, 148, 62 " ;
+	ontology:tieneTelefono """915 132 661                    
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=84701c2830b14410VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/4605237> ontology:tieneNombre "Centro Casa Asia - Madrid" ;
+	ontology:tieneDistrito "CENTRO" ;
+	ontology:tieneBarrio "PALACIO" ;
+	ontology:tieneCodigoPostal "28013" ;
+	ontology:tieneTransporte " Bus: 3, 148, L3 " ;
+	ontology:tieneEmail "casaasia@casaasia.es" ;
+	ontology:tieneTelefono """913 600 194 
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1baf0c4d68263110VgnVCM2000000c205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1916> ontology:tieneNombre "Centro Conde Duque" ;
+	ontology:tieneDescripcion """ Centro Conde Duque es un espacio cultural vinculado a la memoria y a la la difusión de Madrid. 
+ Entre sus fines se encuentran: la difusión de la historia de Madrid, el intercambio de conocimientos históricos con la sociedad, la conservación de  los fondos históricos y artísticos del Ayuntamiento y la producción y exhibición de manifestaciones artísticas relacionadas con el mundo de la escena y de la música. """ ;
+	ontology:tieneDistrito "CENTRO" ;
+	ontology:tieneBarrio "UNIVERSIDAD" ;
+	ontology:tieneCodigoPostal "28015" ;
+	ontology:tieneTransporte """ Metro: Ventura Rodríguez (línea 3), San Bernardo (línea 2 y 4) y Noviciado (línea 2). 
+ Bus: 1, 2, 44, 74, 133, 202, 749, Minibús M-2 """ ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=64463d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1914> ontology:tieneNombre "Centro Cultural - Centro Socio Cultural Villa de Barajas" ;
+	ontology:tieneDescripcion """ En el CSC Villa de Barajas, C/ Botica, 10: 
+ 
+ De lunes a viernes de 8,30 a 22 horas 
+  Sábados de 9,45 a 14,15 y de 17 a 20,15 horas  
+ 
+   
+ En el CSC Villa de Barajas, C/ Botica, 7: 
+ 
+  De lunes a viernes de 8,30 a 21,30 horas 
+   Sábados de 9,45 a 14,15  horas  
+ 
+   
+  El mes de agosto los dos centros permanecen cerrados.  """ ;
+	ontology:tieneDistrito "BARAJAS" ;
+	ontology:tieneBarrio "CASCO H.BARAJAS" ;
+	ontology:tieneCodigoPostal "28042" ;
+	ontology:tieneTransporte """ Metro: Barajas (línea 8) 
+ Bus: 101, 105, 115 """ ;
+	ontology:tieneEmail "ccvillabarajas@madrid.es" ;
+	ontology:tieneTelefono "913 291 803 - 913 291 676" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=476c1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/117288> ontology:tieneNombre "Centro Cultural Agustín Díaz (Moncloa - Aravaca)" ;
+	ontology:tieneDistrito "MONCLOA-ARAVACA" ;
+	ontology:tieneBarrio "CASA DE CAMPO" ;
+	ontology:tieneCodigoPostal "28008" ;
+	ontology:tieneTransporte " Bus: 41, 46, 75, N20. " ;
+	ontology:tieneEmail "ccadiaz@madrid.es" ;
+	ontology:tieneTelefono "915 487 772 / 915 487 773 " ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2d07cbf06c81c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/118067> ontology:tieneNombre "Centro Cultural Alfredo Kraus (Fuencarral - El Pardo)" ;
+	ontology:tieneDistrito "FUENCARRAL-EL PARDO" ;
+	ontology:tieneBarrio "MIRASIERRA" ;
+	ontology:tieneCodigoPostal "28035" ;
+	ontology:tieneTransporte " Bus: 49 , 64 " ;
+	ontology:tieneEmail "ccakraus@madrid.es" ;
+	ontology:tieneTelefono "913 767 085" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=7337cbf06c81c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1990> ontology:tieneNombre "Centro Cultural Almirante Churruca (Latina)" ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "LAS AGUILAS" ;
+	ontology:tieneCodigoPostal "28024" ;
+	ontology:tieneTransporte """ Metro: Aviación Española (línea 10) 
+ Bus: 17 y 34 
+ Renfe: Las Águilas (C5), Fanjul (C5) """ ;
+	ontology:tieneEmail "ccchurruca@madrid.es" ;
+	ontology:tieneTelefono "915 090 581" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=76c43d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1942> ontology:tieneNombre "Centro Cultural Antonio Machado (San Blas - Canillejas)" ;
+	ontology:tieneDistrito "SAN BLAS-CANILLEJAS" ;
+	ontology:tieneBarrio "ARCOS" ;
+	ontology:tieneCodigoPostal "28037" ;
+	ontology:tieneTransporte """ Metro: Alsacia (línea 2) 
+ Bus: 4, 38, 48, 70, 106, 140 """ ;
+	ontology:tieneEmail "ccamachado@madrid.es" ;
+	ontology:tieneTelefono "913 135 294 " ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=cce43d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1919> ontology:tieneNombre "Centro Cultural Aravaca (Moncloa - Aravaca)" ;
+	ontology:tieneDistrito "MONCLOA-ARAVACA" ;
+	ontology:tieneBarrio "ARAVACA" ;
+	ontology:tieneCodigoPostal "28023" ;
+	ontology:tieneTransporte " Bus: 160, 161 " ;
+	ontology:tieneEmail "ccaravaca@madrid.es" ;
+	ontology:tieneTelefono "917 400 882 / 883" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=13153d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/52511> ontology:tieneNombre "Centro Cultural Auditorio Parque El Paraíso (San Blas - Canillejas)" ;
+	ontology:tieneDistrito "SAN BLAS-CANILLEJAS" ;
+	ontology:tieneBarrio "HELLIN" ;
+	ontology:tieneCodigoPostal "28037" ;
+	ontology:tieneTransporte """ Metro: Simancas (línea 7). 
+ Bus: 4, 38, 48, 70, 109. """ ;
+	ontology:tieneEmail "cultusanblas@madrid.es" ;
+	ontology:tieneTelefono "915 888 065 " ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a395946be351c010VgnVCM2000000c205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/64851> ontology:tieneNombre "Centro Cultural Buenavista (Salamanca)" ;
+	ontology:tieneDistrito "SALAMANCA" ;
+	ontology:tieneBarrio "GUINDALERA" ;
+	ontology:tieneCodigoPostal "28028" ;
+	ontology:tieneTransporte """ Metro: Diego de León (líneas 4 , 5 , 6) 
+ Bus: 1, 12, 48, 74 """ ;
+	ontology:tieneEmail "ccbuenavista@madrid.es" ;
+	ontology:tieneTelefono "917 240 800 / 917 240 802" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=068e598d1351c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1943> ontology:tieneNombre "Centro Cultural Buero Vallejo (San Blas - Canillejas)" ;
+	ontology:tieneDistrito "SAN BLAS-CANILLEJAS" ;
+	ontology:tieneBarrio "CANILLEJAS" ;
+	ontology:tieneCodigoPostal "28022" ;
+	ontology:tieneTransporte """ Metro: Torres Arias y Canillejas (línea 5) 
+ Bus: 77, 101, 140  """ ;
+	ontology:tieneEmail "ccbvallejo@madrid.es" ;
+	ontology:tieneTelefono "917 411 182 / 917 411 013" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=98953d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/118317> ontology:tieneNombre "Centro Cultural Carril del Conde (Hortaleza)" ;
+	ontology:tieneDistrito "HORTALEZA" ;
+	ontology:tieneBarrio "CANILLAS" ;
+	ontology:tieneCodigoPostal "28043" ;
+	ontology:tieneTransporte """ Metro: Arturo Soria (línea 4) 
+ Bus: 9, 72, 73 """ ;
+	ontology:tieneEmail "cccarrilconde@madrid.es" ;
+	ontology:tieneTelefono """917 161 240 / 917 161 242                          
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=66a7cbf06c81c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1945> ontology:tieneNombre "Centro Cultural Casa de Vacas (Retiro)" ;
+	ontology:tieneDistrito "RETIRO" ;
+	ontology:tieneBarrio "LOS JERONIMOS" ;
+	ontology:tieneCodigoPostal "28009" ;
+	ontology:tieneTransporte """ Metro: Retiro (línea 2) 
+ Bus: 2, 20, 28, 202 """ ;
+	ontology:tieneEmail "cccasadevacas@madrid.es" ;
+	ontology:tieneTelefono """914 095 819 / 915 886 388 
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=35e53d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1925> ontology:tieneNombre "Centro Cultural Casa del Reloj (Arganzuela)" ;
+	ontology:tieneDistrito "ARGANZUELA" ;
+	ontology:tieneBarrio "CHOPERA" ;
+	ontology:tieneCodigoPostal "28045" ;
+	ontology:tieneTransporte """ Metro: Legazpi (líneas 3, 6) 
+ Bus: 6, 18, 62, 78, 148 """ ;
+	ontology:tieneEmail "crelojarganzuela@madrid.es" ;
+	ontology:tieneTelefono "915 886 207 /915 886 290" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=8b063d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/4551096> ontology:tieneNombre "Centro Cultural Ciudad Pegaso (San Blas - Canillejas)" ;
+	ontology:tieneDistrito "SAN BLAS-CANILLEJAS" ;
+	ontology:tieneBarrio "REJAS" ;
+	ontology:tieneCodigoPostal "28022" ;
+	ontology:tieneTransporte " Bus :  77 " ;
+	ontology:tieneEmail "cccpegaso@madrid.es" ;
+	ontology:tieneTelefono "913 209 770 - 917 413 092" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=07f63190712b1110VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/80143> ontology:tieneNombre "Centro Cultural Dotacional Integrado Arganzuela" ;
+	ontology:tieneDistrito "ARGANZUELA" ;
+	ontology:tieneBarrio "PALOS DE MOGUER" ;
+	ontology:tieneCodigoPostal "28045" ;
+	ontology:tieneTransporte """ Metro: Palos de la Frontera (línea 3) 
+ Bus: 6, 8, 19, 45, 47, 55, 59, 85, 86, 102, 247 
+ Renfe: Delicias """ ;
+	ontology:tieneTelefono "915 063 610" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f9ea79262ef5d010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/5498725> ontology:tieneNombre "Centro Cultural Eduardo Úrculo (Tetuán)" ;
+	ontology:tieneDistrito "TETUAN" ;
+	ontology:tieneBarrio "ALMENARA" ;
+	ontology:tieneCodigoPostal "28029" ;
+	ontology:tieneTransporte """ Metro: Ventilla (línea 9) 
+ Bus: 42 """ ;
+	ontology:tieneEmail "cceurculo@madrid.es" ;
+	ontology:tieneTelefono "917 337 249" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f8f9338588355210VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1939> ontology:tieneNombre "Centro Cultural El Pozo (Puente de Vallecas)" ;
+	ontology:tieneDistrito "PUENTE DE VALLECAS" ;
+	ontology:tieneBarrio "ENTREVIAS" ;
+	ontology:tieneCodigoPostal "28053" ;
+	ontology:tieneTransporte """ Renfe: El Pozo 
+ Bus: 24, 102, 103, 310 """ ;
+	ontology:tieneEmail "ccptioraimundo@madrid.es" ;
+	ontology:tieneTelefono "917 866 372 / 917 866 644" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=add63d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1931> ontology:tieneNombre "Centro Cultural Federico Chueca (Hortaleza)" ;
+	ontology:tieneDistrito "HORTALEZA" ;
+	ontology:tieneBarrio "CANILLAS" ;
+	ontology:tieneCodigoPostal "28043" ;
+	ontology:tieneTransporte " Bus: 72, 73, 87 " ;
+	ontology:tieneEmail "ccfchueca@madrid.es" ;
+	ontology:tieneTelefono "913 000 389" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=90573d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/4703628> ontology:tieneNombre "Centro Cultural Fernando Lázaro Carreter (Carabanchel)" ;
+	ontology:tieneDistrito "CARABANCHEL" ;
+	ontology:tieneBarrio "OPAÑEL" ;
+	ontology:tieneCodigoPostal "28019" ;
+	ontology:tieneTransporte " Bus: 55, 60, 116, E1 " ;
+	ontology:tieneEmail "cclazarocarreter@act-educo.com" ;
+	ontology:tieneTelefono """914 690 895               
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=340ed2d6fe9a6110VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1954> ontology:tieneNombre "Centro Cultural Fernando de los Ríos (Latina)" ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "ALUCHE" ;
+	ontology:tieneCodigoPostal "28047" ;
+	ontology:tieneTransporte """ Metro: Laguna (línea 6) 
+ Bus: 25, 31, 138 
+ Renfe: Laguna (C5), Aluche (C5) """ ;
+	ontology:tieneEmail "ccfrios@madrid.es" ;
+	ontology:tieneTelefono "917 198 994" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3d973d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1921> ontology:tieneNombre "Centro Cultural Galileo (Chamberí)" ;
+	ontology:tieneDistrito "CHAMBERI" ;
+	ontology:tieneBarrio "ARAPILES" ;
+	ontology:tieneCodigoPostal "28015" ;
+	ontology:tieneTransporte """ Metro: Quevedo (línea 2) 
+ Bus: 2, 16, 21 y 61 """ ;
+	ontology:tieneEmail "ccgalileo@madrid.es" ;
+	ontology:tieneTelefono "915 913 901" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=30181e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/70243> ontology:tieneNombre "Centro Cultural Gloria Fuertes (Barajas)" ;
+	ontology:tieneDistrito "BARAJAS" ;
+	ontology:tieneBarrio "CORRALEJOS" ;
+	ontology:tieneCodigoPostal "28042" ;
+	ontology:tieneTransporte " Bus: 105, 112, 115, 151. " ;
+	ontology:tieneTelefono "913 120 243" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2e5068540e41c010VgnVCM2000000c205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1930> ontology:tieneNombre "Centro Cultural Hortaleza" ;
+	ontology:tieneDistrito "HORTALEZA" ;
+	ontology:tieneBarrio "PINAR DEL REY" ;
+	ontology:tieneCodigoPostal "28033" ;
+	ontology:tieneTransporte """ Metro: Parque de Santa María (línea 4) 
+ Bus: 72, 87, 107 """ ;
+	ontology:tieneEmail "cchortaleza@madrid.es" ;
+	ontology:tieneTelefono "913 821 493" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=86381e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1929> ontology:tieneNombre "Centro Cultural Huerta de la Salud (Hortaleza)" ;
+	ontology:tieneDistrito "HORTALEZA" ;
+	ontology:tieneBarrio "PINAR DEL REY" ;
+	ontology:tieneCodigoPostal "28033" ;
+	ontology:tieneTransporte """ Metro: San Lorenzo (línea 4) 
+ Bus: 9, 72, 87, 107 """ ;
+	ontology:tieneEmail "cchuertasalud@madrid.es" ;
+	ontology:tieneTelefono "913 825 104" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=dc581e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/6017747> ontology:tieneNombre "Centro Cultural José Luis López Vázquez (San Blas - Canillejas)" ;
+	ontology:tieneDistrito "SAN BLAS-CANILLEJAS" ;
+	ontology:tieneBarrio "REJAS" ;
+	ontology:tieneCodigoPostal "28022" ;
+	ontology:tieneTransporte " Bus :  77 " ;
+	ontology:tieneEmail "ccjllopezvazquez@madrid.es" ;
+	ontology:tieneTelefono "913 293 900 - 913 295 211 " ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=b790e37de110f210VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/142944> ontology:tieneNombre "Centro Cultural José Luis Sampedro (Latina) (antiguo Centro Cultural Lucero)" ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "LUCERO" ;
+	ontology:tieneCodigoPostal "28047" ;
+	ontology:tieneTransporte """ Metro: Laguna (línea 6) 
+ Bus: 55, 119, 138 
+ Renfe: Laguna """ ;
+	ontology:tieneEmail "cclucero@madrid.es" ;
+	ontology:tieneTelefono "915 267 820 / 821" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=bd3fba61e681c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1913> ontology:tieneNombre "Centro Cultural Juan Gris (Moncloa - Aravaca)" ;
+	ontology:tieneDistrito "MONCLOA-ARAVACA" ;
+	ontology:tieneBarrio "VALDEZARZA" ;
+	ontology:tieneCodigoPostal "28039" ;
+	ontology:tieneTransporte """ Metro: Francos Rodríguez (línea 7) 
+ Bus: 44, 64, 126, 127, 128, 132, N21 """ ;
+	ontology:tieneEmail "ccjuangris@madrid.es" ;
+	ontology:tieneTelefono "914 507 865 " ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=79a81e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1911> ontology:tieneNombre "Centro Cultural Julio Cortázar (Moncloa - Aravaca)" ;
+	ontology:tieneDistrito "MONCLOA-ARAVACA" ;
+	ontology:tieneBarrio "VALDEZARZA" ;
+	ontology:tieneCodigoPostal "28035" ;
+	ontology:tieneTransporte """ Metro: Valdezarza y Antonio Machado (línea 7) 
+ Bus: 64, 126, 127, 132, 137, N21 
+   """ ;
+	ontology:tieneEmail "ccjuliocortazar@madrid.es" ;
+	ontology:tieneTelefono "913 734 375" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=cfc81e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1965> ontology:tieneNombre "Centro Cultural Juvenil Usera" ;
+	ontology:tieneDistrito "USERA" ;
+	ontology:tieneBarrio "MOSCARDO" ;
+	ontology:tieneCodigoPostal "28026" ;
+	ontology:tieneTransporte """ Metro: Usera (línea 6) 
+ Bus: 23, 47, 55, 60, 247, N15, N17 """ ;
+	ontology:tieneEmail "cjusera@madrid.es" ;
+	ontology:tieneTelefono "913 920 541" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=876e1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1917> ontology:tieneNombre "Centro Cultural La Vaguada (Fuencarral - El Pardo)" ;
+	ontology:tieneDistrito "FUENCARRAL-EL PARDO" ;
+	ontology:tieneBarrio "EL PILAR" ;
+	ontology:tieneCodigoPostal "28029" ;
+	ontology:tieneTransporte " Metro: Barrio del Pilar (línea 9).  Bus: 49 , 83 , 128 , 132 , 137 " ;
+	ontology:tieneEmail "cclavaguada@madrid.es" ;
+	ontology:tieneTelefono "915 886 883" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=09691e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1938> ontology:tieneNombre "Centro Cultural Lope de Vega (Puente de Vallecas)" ;
+	ontology:tieneDistrito "PUENTE DE VALLECAS" ;
+	ontology:tieneBarrio "ENTREVIAS" ;
+	ontology:tieneCodigoPostal "28053" ;
+	ontology:tieneTransporte """ Renfe: Asamblea de Madrid-Entrevías 
+ Bus: 24, 102, 103, 111, 144 """ ;
+	ontology:tieneEmail "cclopedevega@madrid.es" ;
+	ontology:tieneTelefono """917 570 580 / 917 570 582                 
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4a273d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1973> ontology:tieneNombre "Centro Cultural Los Rosales (Villaverde)" ;
+	ontology:tieneDistrito "VILLAVERDE" ;
+	ontology:tieneBarrio "BUTARQUE" ;
+	ontology:tieneCodigoPostal "28021" ;
+	ontology:tieneTransporte " Bus: 85 " ;
+	ontology:tieneEmail "cclosrosales@madrid.es" ;
+	ontology:tieneTelefono "917 109 273" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a5b91e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/4606802> ontology:tieneNombre "Centro Cultural Luis Peidró (Retiro)" ;
+	ontology:tieneDistrito "RETIRO" ;
+	ontology:tieneBarrio "ADELFAS" ;
+	ontology:tieneCodigoPostal "28007" ;
+	ontology:tieneTransporte """ Metro: Puente de Vallecas (línea 1) , Mendez Álvaro (línea 6) 
+ Bus: 113, 148 """ ;
+	ontology:tieneEmail "ccluispeidro@madrid.es" ;
+	ontology:tieneTelefono """915 016 942 / 915 021 015       
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a6c875993dc63110VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/6469004> ontology:tieneNombre "Centro Cultural Mercado de Ibiza (Retiro)" ;
+	ontology:tieneDistrito "RETIRO" ;
+	ontology:tieneBarrio "IBIZA" ;
+	ontology:tieneCodigoPostal "28009" ;
+	ontology:tieneTransporte """ Metro: Ibiza (línea 9) 
+ Bus: 15, 26, 61, 63, 202, 215 """ ;
+	ontology:tieneEmail "ccibiza@madrid.es" ;
+	ontology:tieneTelefono """915 572 601  / 914 009 788 / 915 571 885          
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=dbeab973f50e7310VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1933> ontology:tieneNombre "Centro Cultural Meseta de Orcasitas (Usera)" ;
+	ontology:tieneDistrito "USERA" ;
+	ontology:tieneBarrio "ORCASITAS" ;
+	ontology:tieneCodigoPostal "28041" ;
+	ontology:tieneTransporte """ Bus: 78, 81, 116 
+ Renfe: Orcasitas (C5) """ ;
+	ontology:tieneEmail "ccmesetaorcasitas@madrid.es" ;
+	ontology:tieneTelefono "913 415 677 / 913 415 326" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=fbd91e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1955> ontology:tieneNombre "Centro Cultural Miguel Hernández (Latina)" ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "LAS AGUILAS" ;
+	ontology:tieneCodigoPostal "28044" ;
+	ontology:tieneTransporte """ Bus: 17, 34, 39, 117, 139 
+ Renfe: Las Aguilas (C5) """ ;
+	ontology:tieneEmail "ccmiguelh@madrid.es" ;
+	ontology:tieneTelefono "917 066 300" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=420a1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1972> ontology:tieneNombre "Centro Cultural Moncloa (Moncloa - Aravaca)" ;
+	ontology:tieneDescripcion "            " ;
+	ontology:tieneDistrito "MONCLOA-ARAVACA" ;
+	ontology:tieneBarrio "ARGUELLES" ;
+	ontology:tieneCodigoPostal "28008 " ;
+	ontology:tieneTransporte """ Metro: Moncloa (líneas 3, 6) 
+ Bus: 1, 16, 44, 61, 82, 83, 132, 133, 160, 161, 162, A, G, C """ ;
+	ontology:tieneEmail "ccmoncloa@madrid.es" ;
+	ontology:tieneTelefono """915 886 978  / 914 800 586 /  915 886 952            
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=982a1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1932> ontology:tieneNombre "Centro Cultural Nicolás Salmerón (Chamartín)" ;
+	ontology:tieneDistrito "CHAMARTIN" ;
+	ontology:tieneBarrio "CIUDAD JARDIN" ;
+	ontology:tieneCodigoPostal "28002" ;
+	ontology:tieneTransporte """ Metro: Concha Espina (línea 9), Prosperidad (línea 4), Cruz del Rayo (línea 9) 
+ Bus: 7, 16, 19, 29, 51, 52 """ ;
+	ontology:tieneEmail "ccnsalmeron@madrid.es" ;
+	ontology:tieneTelefono "915 103 751" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ee4a1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1934> ontology:tieneNombre "Centro Cultural Orcasur (Usera)" ;
+	ontology:tieneDistrito "USERA" ;
+	ontology:tieneBarrio "ORCASUR" ;
+	ontology:tieneCodigoPostal "28041" ;
+	ontology:tieneTransporte """ Bus: 76, 78, 116 
+ Renfe: Orcasitas (C5) """ ;
+	ontology:tieneEmail "ccorcasur@madrid.es" ;
+	ontology:tieneTelefono "913 188 090 / 913 188 091" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=8b9a1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/114978> ontology:tieneNombre "Centro Cultural Palacete Quinta del Berro (Salamanca)" ;
+	ontology:tieneDistrito "SALAMANCA" ;
+	ontology:tieneBarrio "FUENTE DEL BERRO" ;
+	ontology:tieneCodigoPostal "28028" ;
+	ontology:tieneTransporte " Bus: 15 , 28 , 71 " ;
+	ontology:tieneTelefono "915 570 805 / 07 /08/ 09" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=bcc7cbf06c81c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1952> ontology:tieneNombre "Centro Cultural Príncipe de Asturias (Ciudad Lineal)" ;
+	ontology:tieneDistrito "CIUDAD LINEAL" ;
+	ontology:tieneBarrio "PUEBLO NUEVO" ;
+	ontology:tieneCodigoPostal "28037" ;
+	ontology:tieneTransporte """ Metro: Ciudad Lineal (línea 5) 
+ Bus: 4, 38, 48, 70, 77, 104, 105, 109, 113 """ ;
+	ontology:tieneEmail "ccprincipeasturias@madrid.es" ;
+	ontology:tieneTelefono """915 887 564                               
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=d1ca1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1920> ontology:tieneNombre "Centro Cultural Puerta de Toledo (Centro)" ;
+	ontology:tieneDistrito "CENTRO" ;
+	ontology:tieneBarrio "PALACIO" ;
+	ontology:tieneCodigoPostal "28005" ;
+	ontology:tieneTransporte """ Metro: Puerta de Toledo (línea 5). 
+ Bus: 3, 17, 18, 23, 35, 41, 60, 148. """ ;
+	ontology:tieneEmail "ccptoledo@madrid.es" ;
+	ontology:tieneTelefono "913 662 728" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=28ea1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1935> ontology:tieneNombre "Centro Cultural San Fermín (Usera)" ;
+	ontology:tieneDistrito "USERA" ;
+	ontology:tieneBarrio "SAN FERMIN" ;
+	ontology:tieneCodigoPostal "28041" ;
+	ontology:tieneTransporte """ Metro: San Fermín - Orcasur (línea 3) 
+ Bus: 23, 78, 123 """ ;
+	ontology:tieneTelefono "917 920 111" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1b5b1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/4703422> ontology:tieneNombre "Centro Cultural San Francisco La Prensa (Carabanchel)" ;
+	ontology:tieneDistrito "CARABANCHEL" ;
+	ontology:tieneBarrio "PUERTA BONITA" ;
+	ontology:tieneCodigoPostal "28025" ;
+	ontology:tieneTransporte """ Metro: San Francisco (línea 11) 
+ Bus: 47, 108, 118 """ ;
+	ontology:tieneEmail "ccsanfrancisco@act-educo.com" ;
+	ontology:tieneTelefono """914 284 911       
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=5787e842ec9a6110VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1958> ontology:tieneNombre "Centro Cultural San Juan Bautista (Ciudad Lineal)" ;
+	ontology:tieneDistrito "CIUDAD LINEAL" ;
+	ontology:tieneBarrio "SAN JUAN BAUTISTA" ;
+	ontology:tieneCodigoPostal "28043" ;
+	ontology:tieneTransporte """ Metro: Avenida de la Paz (línea 4) 
+ Bus: 11, 53, 70, 122 """ ;
+	ontology:tieneEmail "ccsanjuanbautista@madrid.es" ;
+	ontology:tieneTelefono "914 157 705" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=618b1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/6018014> ontology:tieneNombre "Centro Cultural Sanchinarro (Hortaleza)" ;
+	ontology:tieneDistrito "HORTALEZA" ;
+	ontology:tieneBarrio "VALDEFUENTES" ;
+	ontology:tieneCodigoPostal "28050" ;
+	ontology:tieneTransporte " Bus: 172, 173, 174 " ;
+	ontology:tieneEmail "info@centroculturalsanchinarro.com" ;
+	ontology:tieneTelefono "915 000 603" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=12eb70618510f210VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/115404> ontology:tieneNombre "Centro Cultural Sara Montiel (Latina) (antiguo Centro Cultural Campamento)" ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "CAMPAMENTO" ;
+	ontology:tieneCodigoPostal "28024" ;
+	ontology:tieneTransporte """ Metro: Colonia Jardín (línea 10), ML2, ML3 
+ Bus: 65, H """ ;
+	ontology:tieneEmail "ccsaramontiel@madrid.es" ;
+	ontology:tieneTelefono "915 120 890 / 915 120 891" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c957cbf06c81c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1971> ontology:tieneNombre "Centro Cultural Teresa de Calcuta (Barajas)" ;
+	ontology:tieneDistrito "BARAJAS" ;
+	ontology:tieneBarrio "ALAMEDA DE OSUNA" ;
+	ontology:tieneCodigoPostal "28042" ;
+	ontology:tieneTransporte """ Metro: Alameda de Osuna (línea 5) 
+ Bus: 101, 112, 114, 115, 151 """ ;
+	ontology:tieneEmail "ccteresacalcuta@madrid.es" ;
+	ontology:tieneTelefono "913 295 920" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f50e1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1994> ontology:tieneNombre "Centro Cultural Usera 1" ;
+	ontology:tieneDistrito "USERA" ;
+	ontology:tieneBarrio "PRADOLONGO" ;
+	ontology:tieneCodigoPostal "28026" ;
+	ontology:tieneTransporte """ Metro: Plaza Elíptica (línea 6) 
+ Bus: 6, 60, 78, 81 """ ;
+	ontology:tieneEmail "ccusera@madrid.es" ;
+	ontology:tieneTelefono """915 887 214                        
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=54fb1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/7416137> ontology:tieneNombre "Centro Cultural Usera 2" ;
+	ontology:tieneDistrito "USERA" ;
+	ontology:tieneBarrio "PRADOLONGO" ;
+	ontology:tieneCodigoPostal "28026" ;
+	ontology:tieneTransporte """ Metro: Usera (línea 6) 
+ Bus: 6, 47, 60, 81, 247 """ ;
+	ontology:tieneEmail "ccusera@madrid.es" ;
+	ontology:tieneTelefono """915 887 214             
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3cadb2cffdc15410VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/123948> ontology:tieneNombre "Centro Cultural Valdebernardo (Vicálvaro)" ;
+	ontology:tieneDescripcion "     " ;
+	ontology:tieneDistrito "VICALVARO" ;
+	ontology:tieneBarrio "CASCO H.VICALVARO" ;
+	ontology:tieneCodigoPostal "28032" ;
+	ontology:tieneTransporte """ Metro: Valdebernardo (línea 9) 
+ Bus: 8, 71, 130 """ ;
+	ontology:tieneEmail "ccvaldebernardo@madrid.es" ;
+	ontology:tieneTelefono "913 016 460 / 913 016 462" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=69188899fc81c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1980> ontology:tieneNombre "Centro Cultural Zazuar (Villa de Vallecas)" ;
+	ontology:tieneDistrito "VILLA DE VALLECAS" ;
+	ontology:tieneBarrio "SANTA EUGENIA" ;
+	ontology:tieneCodigoPostal "28031" ;
+	ontology:tieneTransporte " Bus: 58, 63, 145 " ;
+	ontology:tieneEmail "cczazuar@madrid.es" ;
+	ontology:tieneTelefono "913 322 529" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=9d8c1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1953> ontology:tieneNombre "Centro Cultural el Madroño (Vicálvaro)" ;
+	ontology:tieneDescripcion "     " ;
+	ontology:tieneDistrito "VICALVARO" ;
+	ontology:tieneBarrio "CASCO H.VICALVARO" ;
+	ontology:tieneCodigoPostal "28032" ;
+	ontology:tieneTransporte """ Metro: Vicálvaro (línea 9) 
+ Bus: 4, 100, 106, 130 """ ;
+	ontology:tieneEmail "ccelmadrono@madrid.es" ;
+	ontology:tieneTelefono """917 753 140          
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=57b63d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1940> ontology:tieneNombre "Centro Cultural el Torito (Moratalaz)" ;
+	ontology:tieneDistrito "MORATALAZ" ;
+	ontology:tieneBarrio "VINATEROS" ;
+	ontology:tieneCodigoPostal "28030" ;
+	ontology:tieneTransporte """ Metro: Artilleros (línea 9) 
+ Bus: 20, 30, 32, 71, 100 """ ;
+	ontology:tieneEmail "cceltorito@madrid.es" ;
+	ontology:tieneTelefono "913 287 385 / 913 287 386" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f3073d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1951> ontology:tieneNombre "Centro Cultural la Elipa (Ciudad Lineal)" ;
+	ontology:tieneDistrito "CIUDAD LINEAL" ;
+	ontology:tieneBarrio "VENTAS" ;
+	ontology:tieneCodigoPostal "28017" ;
+	ontology:tieneTransporte """ Metro: La Elipa (línea 2). 
+ Bus: 15, 28, 110, 113, 210. """ ;
+	ontology:tieneEmail "ccelipa@madrid.es" ;
+	ontology:tieneTelefono "914 055 312" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6c191e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/4703662> ontology:tieneNombre "Centro Juvenil Carabanchel Alto" ;
+	ontology:tieneDescripcion " Mira la programación mensual de cada uno de los centros juveniles, encontrarás talleres, teatro, actividades, cesiones de espacios para tu música o tus ensayos, exposiciones; además Wifi gratuito, oficinas de información juvenil y un montón de cosas interesantes. " ;
+	ontology:tieneDistrito "CARABANCHEL" ;
+	ontology:tieneBarrio "BUENAVISTA" ;
+	ontology:tieneCodigoPostal "28044" ;
+	ontology:tieneTransporte """ Metro :  La Peseta (línea 11) 
+ Bus :  35 y 47 """ ;
+	ontology:tieneEmail "actividadescarabanchel@gmail.com" ;
+	ontology:tieneTelefono """915 118 980                                                 
+                                                                                         
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2565d2d6fe9a6110VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/146682> ontology:tieneNombre "Centro Juvenil El Aleph (Villa de Vallecas)" ;
+	ontology:tieneDescripcion """ Mira la programación mensual de cada uno de los centros juveniles, encontrarás talleres, teatro, actividades, cesiones de espacios para tu música o tus ensayos, exposiciones; además Wifi gratuito, oficinas de información juvenil y un montón de cosas interesantes. 
+  Información sobre las actividades:  
+  Correo :  actividadesaleph@gmail.com  
+  Teléfono : 913 312 725 """ ;
+	ontology:tieneDistrito "VILLA DE VALLECAS" ;
+	ontology:tieneBarrio "SANTA EUGENIA" ;
+	ontology:tieneCodigoPostal "28031" ;
+	ontology:tieneTransporte """ Bus: 58 , 63 , 145 
+ Renfe: Santa Eugenia """ ;
+	ontology:tieneEmail "cj7aleph@madrid.es" ;
+	ontology:tieneTelefono "913 013 457" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=84869475d381c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/190703> ontology:tieneNombre "Centro Juvenil El Pardo" ;
+	ontology:tieneDescripcion """ Mira la programación mensual de cada uno de los centros juveniles, encontrarás talleres, teatro, actividades, cesiones de espacios para tu música o tus ensayos, exposiciones; además Wifi gratuito, oficinas de información juvenil y un montón de cosas interesantes. 
+  Información sobre las actividades  
+  Correo :  actividadeselpardo@gmail.com  
+  Teléfono : 913 760 652 """ ;
+	ontology:tieneDistrito "FUENCARRAL-EL PARDO" ;
+	ontology:tieneBarrio "EL PARDO" ;
+	ontology:tieneCodigoPostal "28048" ;
+	ontology:tieneTransporte "  Autobús:  desde el intercambiador de Moncloa el  601  (isla 3-dársena 30) y el  602  que sale del hospital Universitario la Paz. " ;
+	ontology:tieneEmail "cj3elpardo@madrid.es" ;
+	ontology:tieneTelefono "913 760 652" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=617ef50ad2a30110VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/182139> ontology:tieneNombre "Centro Juvenil El Sitio de mi Recreo (Villa de Vallecas)" ;
+	ontology:tieneDescripcion """ Mira la programación mensual de cada uno de los centros juveniles, encontrarás talleres, teatro, actividades, cesiones de espacios para tu música o tus ensayos, exposiciones; además Wifi gratuito, oficinas de información juvenil y un montón de cosas interesantes. 
+  Información sobre las actividades:  
+  Correo :  actividadeselrecreo@gmail.com  
+  Teléfono : 913 05 24 48 """ ;
+	ontology:tieneDistrito "VILLA DE VALLECAS" ;
+	ontology:tieneBarrio "SANTA EUGENIA" ;
+	ontology:tieneCodigoPostal "28031" ;
+	ontology:tieneTransporte """ 
+  Metro:  Villa de Vallecas (línea 1)  
+  Bus:  54, 58, 103, 142, 143, N9 
+  Renfe:  Vallecas 
+ """ ;
+	ontology:tieneEmail "cj6srecreo@madrid.es" ;
+	ontology:tieneTelefono "913 052 448" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=9bd738d60b41c010VgnVCM2000000c205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/5396226> ontology:tieneNombre "Centro Juvenil Hontalbilla (Fuencarral - El Pardo)" ;
+	ontology:tieneDescripcion """ Mira la programación mensual de cada uno de los centros juveniles, encontrarás talleres, teatro, actividades, cesiones de espacios para tu música o tus ensayos, exposiciones; además Wifi gratuito, oficinas de información juvenil y un montón de cosas interesantes. 
+  Información sobre las actividades  
+  Correo :  actividadeshontalbilla@gmail.com  
+  Teléfono : 917 342 878 y 917 364 378 
+   """ ;
+	ontology:tieneDistrito "FUENCARRAL-EL PARDO" ;
+	ontology:tieneBarrio "VALVERDE" ;
+	ontology:tieneCodigoPostal "28034" ;
+	ontology:tieneTransporte """ Metro: Fuencarral (línea 10) 
+ Bus: 66, 124 y 137, 154,  N 24 
+ Renfe: Madrid-Ramón y Cajal """ ;
+	ontology:tieneEmail "cj4hontalbilla@madrid.es" ;
+	ontology:tieneTelefono "917 364 378" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=afc93331c9ee2210VgnVCM2000000c205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/4923522> ontology:tieneNombre "Centro Juvenil Tetuán Punto Joven" ;
+	ontology:tieneDescripcion """ Mira la programación mensual de cada uno de los centros juveniles, encontrarás talleres, teatro, actividades, cesiones de espacios para tu música o tus ensayos, exposiciones; además Wifi gratuito, oficinas de información juvenil y un montón de cosas interesantes. 
+  Información sobre las actividades  
+  Correo :  tetuanpuntojoven@gmail.com  
+  Teléfono : 915 347 744 """ ;
+	ontology:tieneDistrito "TETUAN" ;
+	ontology:tieneBarrio "CUATRO CAMINOS" ;
+	ontology:tieneCodigoPostal "28020" ;
+	ontology:tieneTransporte """ Metro: Cuatro Caminos (líneas 1, 2 y 6) y Nuevos Ministerios (líneas 6, 8 y 10) 
+ Bus: 5, 45, 66, 127, 128, 14 ,  C 1,  C 2 
+ Cercanías: Nuevos Ministerios """ ;
+	ontology:tieneEmail "cj1tetuan@madrid.es" ;
+	ontology:tieneTelefono "915 347 744" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2f9e41aee5a2a110VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/112637> ontology:tieneNombre "Centro Santiago Apostol (Hortaleza)" ;
+	ontology:tieneDistrito "HORTALEZA" ;
+	ontology:tieneBarrio "APOSTOL SANTIAGO" ;
+	ontology:tieneCodigoPostal "28033" ;
+	ontology:tieneTransporte """ Metro: Manoteras (línea 4). 
+ Bus: 7, 9, 129. """ ;
+	ontology:tieneTelefono "913 835 941" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=38f415a11a81c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/4568753> ontology:tieneNombre "Centro Social Polivalente de Vicálvaro" ;
+	ontology:tieneDistrito "VICALVARO" ;
+	ontology:tieneBarrio "CASCO H.VICALVARO" ;
+	ontology:tieneCodigoPostal "28032" ;
+	ontology:tieneTransporte " Bus: 100, 130 " ;
+	ontology:tieneTelefono "917 602 468 (centralita)" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=59c6ca957d152110VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/56495> ontology:tieneNombre "Centro Sociocultural  Siena (Ciudad Lineal)" ;
+	ontology:tieneDistrito "CIUDAD LINEAL" ;
+	ontology:tieneBarrio "QUINTANA" ;
+	ontology:tieneCodigoPostal "28027" ;
+	ontology:tieneTransporte """ Metro: Quintana (línea 5)  
+ Bus: 21, 38, 48, 106, 146. """ ;
+	ontology:tieneEmail "cscsiena@madrid.es" ;
+	ontology:tieneTelefono "914 039 011" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1114c2c6e051c010VgnVCM2000000c205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1936> ontology:tieneNombre "Centro Sociocultural Alberto Sánchez (Puente de Vallecas)" ;
+	ontology:tieneDistrito "PUENTE DE VALLECAS" ;
+	ontology:tieneBarrio "NUMANCIA" ;
+	ontology:tieneCodigoPostal "28038" ;
+	ontology:tieneTransporte """ Metro: Buenos Aires, Portazgo (línea 1) 
+ Bus: 54, 58, 103, 136, 141, 143 """ ;
+	ontology:tieneEmail "cscalbertosanchez@madrid.es" ;
+	ontology:tieneTelefono "917 570 320 / 917 570 321" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=20a43d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/72862> ontology:tieneNombre "Centro Sociocultural Alfonso XII (Fuencarral - El Pardo)" ;
+	ontology:tieneDistrito "FUENCARRAL-EL PARDO" ;
+	ontology:tieneBarrio "EL PARDO" ;
+	ontology:tieneCodigoPostal "28048" ;
+	ontology:tieneTransporte "Bus: 601 (salida desde el Intercambiador de Moncloa)." ;
+	ontology:tieneEmail "ccelpardo@madrid.es" ;
+	ontology:tieneTelefono "913 762 060 / 913 762 062" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=b7d168540e41c010VgnVCM2000000c205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1974> ontology:tieneNombre "Centro Sociocultural Aula de Aire Libre (Puente de Vallecas)" ;
+	ontology:tieneDistrito "PUENTE DE VALLECAS" ;
+	ontology:tieneBarrio "SAN DIEGO" ;
+	ontology:tieneCodigoPostal "28053" ;
+	ontology:tieneTransporte " Bus: 24, 57, 103, 111, 310 " ;
+	ontology:tieneEmail "aalibrepvallecas@madrid.es" ;
+	ontology:tieneTelefono "917 570 189 / 917 570 241" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=314e1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1927> ontology:tieneNombre "Centro Sociocultural Blasco Ibáñez (Carabanchel)" ;
+	ontology:tieneDistrito "CARABANCHEL" ;
+	ontology:tieneBarrio "SAN ISIDRO" ;
+	ontology:tieneCodigoPostal "28019" ;
+	ontology:tieneTransporte " Bus: 119 " ;
+	ontology:tieneEmail "ccblascoibanez@madrid.es" ;
+	ontology:tieneTelefono "914 280 554 / 914 280 555" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=fb453d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1949> ontology:tieneNombre "Centro Sociocultural Bohemios (Villaverde)" ;
+	ontology:tieneDistrito "VILLAVERDE" ;
+	ontology:tieneBarrio "LOS ANGELES" ;
+	ontology:tieneCodigoPostal "28041" ;
+	ontology:tieneTransporte " Bus: 22 , 59 , 79 , 85 " ;
+	ontology:tieneEmail "ccbohemios@madrid.es" ;
+	ontology:tieneTelefono "917 109 260 " ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=42753d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1967> ontology:tieneNombre "Centro Sociocultural Ciudad Lineal" ;
+	ontology:tieneDistrito "CIUDAD LINEAL" ;
+	ontology:tieneBarrio "VENTAS" ;
+	ontology:tieneCodigoPostal "28017" ;
+	ontology:tieneTransporte " Bus: 15, 28, 110, 113, 210 " ;
+	ontology:tieneEmail "cscciudadlineal@madrid.es" ;
+	ontology:tieneTelefono """914 055 840                       
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=16f81e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1912> ontology:tieneNombre "Centro Sociocultural Clara del Rey (Centro)" ;
+	ontology:tieneDistrito "CENTRO" ;
+	ontology:tieneBarrio "UNIVERSIDAD" ;
+	ontology:tieneCodigoPostal "28004" ;
+	ontology:tieneTransporte """ Metro: Noviciado (línea 2). 
+ Bus: 3, 147. """ ;
+	ontology:tieneEmail "ccclararey@madrid.es" ;
+	ontology:tieneTelefono "915 222 823 / 915 324 171" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1e163d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/118935> ontology:tieneNombre "Centro Sociocultural Cánovas del Castillo (Usera)" ;
+	ontology:tieneDistrito "USERA" ;
+	ontology:tieneBarrio "ALMENDRALES" ;
+	ontology:tieneCodigoPostal "28026" ;
+	ontology:tieneTransporte """ Metro: Almendrales (línea 3) 
+ Bus: 6, 18, 22, 23, 47, 59, 76, 78, 79, 85, 86, 123, 247 """ ;
+	ontology:tieneEmail "canovascastillocs@madrid.es" ;
+	ontology:tieneTelefono "915 005 489" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1087cbf06c81c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1941> ontology:tieneNombre "Centro Sociocultural Eduardo Chillida (Moratalaz)" ;
+	ontology:tieneDistrito "MORATALAZ" ;
+	ontology:tieneBarrio "MEDIA LEGUA" ;
+	ontology:tieneCodigoPostal "28030" ;
+	ontology:tieneTransporte """ Metro: Vinateros (línea 9) 
+ Bus: 30, 32, 71, 113 """ ;
+	ontology:tieneEmail "ccechillida@madrid.es" ;
+	ontology:tieneTelefono "913 339 141 / 913 339 142" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=01963d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/26904> ontology:tieneNombre "Centro Sociocultural El Greco (Latina)" ;
+	ontology:tieneDescripcion " Calle El Greco con vuelta a calle Villamanín. " ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "LUCERO" ;
+	ontology:tieneCodigoPostal "28011" ;
+	ontology:tieneTransporte """ Metro: Lucero (línea 6) 
+ Bus: 31, 33, 36, 39, 65 """ ;
+	ontology:tieneEmail "ccgreco@madrid.es" ;
+	ontology:tieneTelefono "914 793 261 / 914 793 150" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=cae2b3e42751c010VgnVCM2000000c205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1944> ontology:tieneNombre "Centro Sociocultural Francisco Fatou (Villa de Vallecas)" ;
+	ontology:tieneDistrito "VILLA DE VALLECAS" ;
+	ontology:tieneBarrio "CASCO H.VALLECAS" ;
+	ontology:tieneCodigoPostal "28031" ;
+	ontology:tieneTransporte """ Metro: Villa de Vallecas (línea 1) 
+ Bus: 54, 58, 103, 142, 143 """ ;
+	ontology:tieneEmail "ccfranciscofatou@madrid.es" ;
+	ontology:tieneTelefono """913 806 620                 
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=d9e73d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1926> ontology:tieneNombre "Centro Sociocultural García Lorca (Carabanchel)" ;
+	ontology:tieneDistrito "CARABANCHEL" ;
+	ontology:tieneBarrio "BUENAVISTA" ;
+	ontology:tieneCodigoPostal "28044" ;
+	ontology:tieneTransporte """ Metro: Carabanchel Alto (línea 11) 
+ Bus: 34, 35, 47, 121, 131, 139 """ ;
+	ontology:tieneEmail "ccgarcialorca@madrid.es" ;
+	ontology:tieneTelefono """915 110 370                      
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e6773d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1947> ontology:tieneNombre "Centro Sociocultural José Espronceda (Tetuán)" ;
+	ontology:tieneDistrito "TETUAN" ;
+	ontology:tieneBarrio "BELLAS VISTAS" ;
+	ontology:tieneCodigoPostal "28039" ;
+	ontology:tieneTransporte """ Metro: Cuatro Caminos (líneas 1, 2, 6) 
+ Bus: 3, 64, 66, 124, 128, 149 """ ;
+	ontology:tieneEmail "cscjespronceda@madrid.es" ;
+	ontology:tieneTelefono """915 536 160                       
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=23881e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/6080683> ontology:tieneNombre "Centro Sociocultural Juvenil Ciudad Lineal" ;
+	ontology:tieneDistrito "CIUDAD LINEAL" ;
+	ontology:tieneBarrio "VENTAS" ;
+	ontology:tieneCodigoPostal "28017" ;
+	ontology:tieneTransporte """ Metro: La Elipa (línea 2). 
+ Bus: 15, 28, 110, 113, 210. """ ;
+	ontology:tieneTelefono "913 260 952" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=aa306f6bbd020310VgnVCM2000000c205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/124354> ontology:tieneNombre "Centro Sociocultural Juvenil Moratalaz" ;
+	ontology:tieneDistrito "MORATALAZ" ;
+	ontology:tieneBarrio "PAVONES" ;
+	ontology:tieneCodigoPostal "28030" ;
+	ontology:tieneTransporte """ Metro: Pavones (línea 9) 
+ Bus: 8, 20, 63, 71, 140, 142, 144 """ ;
+	ontology:tieneEmail "ccjmoratalaz@madrid.es" ;
+	ontology:tieneTelefono "915 880 459 / 915 887 435 / 915 887 459" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=bf388899fc81c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/102131> ontology:tieneNombre "Centro Sociocultural Latina" ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "LAS AGUILAS" ;
+	ontology:tieneCodigoPostal "28044" ;
+	ontology:tieneTransporte " Bus: 17, 34, 117, 155 " ;
+	ontology:tieneEmail "juvenlatina@madrid.es" ;
+	ontology:tieneTelefono """915 095 470 / 471               
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a4ed8899fc81c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1918> ontology:tieneNombre "Centro Sociocultural Lavapiés (Centro)" ;
+	ontology:tieneDistrito "CENTRO" ;
+	ontology:tieneBarrio "EMBAJADORES" ;
+	ontology:tieneCodigoPostal "28012" ;
+	ontology:tieneTransporte """ Metro: Lavapiés (línea 3). 
+ Bus: M1 """ ;
+	ontology:tieneEmail "cclavapies@madrid.es" ;
+	ontology:tieneTelefono "915 060 712 /0 775" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=5f891e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1961> ontology:tieneNombre "Centro Sociocultural Luis Gonzaga (Chamartín)" ;
+	ontology:tieneDistrito "CHAMARTIN" ;
+	ontology:tieneBarrio "CIUDAD JARDIN" ;
+	ontology:tieneCodigoPostal "28002" ;
+	ontology:tieneTransporte """ Metro: Cruz del Rayo (línea 9) 
+ Bus: 1, 29, 52 """ ;
+	ontology:tieneTelefono "915 886 596 / 915 885 219" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ba8b3d232e91f010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1909> ontology:tieneNombre "Centro Sociocultural Maestro Alonso (Salamanca)" ;
+	ontology:tieneDistrito "SALAMANCA" ;
+	ontology:tieneBarrio "FUENTE DEL BERRO" ;
+	ontology:tieneCodigoPostal "28028" ;
+	ontology:tieneTransporte """ Metro: Ventas (líneas 2, 5) 
+ Bus: 12, 21, 38, 53, 106, 110, 146 """ ;
+	ontology:tieneTelefono """917 268 800 / 913 560 807   
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=783f1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/170066> ontology:tieneNombre "Centro Sociocultural Marconi (Villaverde)" ;
+	ontology:tieneDistrito "VILLAVERDE" ;
+	ontology:tieneBarrio "SAN ANDRES" ;
+	ontology:tieneCodigoPostal "28021" ;
+	ontology:tieneTransporte """ Bus: 79 
+ Renfe: San Cristóbal Industrial """ ;
+	ontology:tieneEmail "ccmarconi@madrid.es" ;
+	ontology:tieneTelefono "917 100 232" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6cb0085f5181c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1970> ontology:tieneNombre "Centro Sociocultural Miguel de Cervantes (San Blas - Canillejas)" ;
+	ontology:tieneDistrito "SAN BLAS-CANILLEJAS" ;
+	ontology:tieneBarrio "CANILLEJAS" ;
+	ontology:tieneCodigoPostal "28022" ;
+	ontology:tieneTransporte " Bus: 28, 38, 48, 140, 153 " ;
+	ontology:tieneEmail "ccmcervantes@madrid.es" ;
+	ontology:tieneTelefono "917 430 078" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=24be1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/5514552> ontology:tieneNombre "Centro Sociocultural Montecarmelo (Fuencarral - El Pardo)" ;
+	ontology:tieneDistrito "FUENCARRAL-EL PARDO" ;
+	ontology:tieneBarrio "EL GOLOSO" ;
+	ontology:tieneCodigoPostal "28049" ;
+	ontology:tieneTransporte "Bus: 134 , 178" ;
+	ontology:tieneEmail "ccmontecarmelo@madrid.es" ;
+	ontology:tieneTelefono "917 364 151 / 917 364 329" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=30f2b51ae6295210VgnVCM2000000c205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1964> ontology:tieneNombre "Centro Sociocultural Oporto (Carabanchel)" ;
+	ontology:tieneDistrito "CARABANCHEL" ;
+	ontology:tieneBarrio "OPAÑEL" ;
+	ontology:tieneCodigoPostal "28019" ;
+	ontology:tieneTransporte """ Metro: Oporto (líneas 5, 6) , Opañel (línea 6) 
+ Bus: 55, 81, 108, 118, 247 """ ;
+	ontology:tieneEmail "ccoporto@madrid.es" ;
+	ontology:tieneTelefono """914 603 801   / 914 603 912                 
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=357a1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1924> ontology:tieneNombre "Centro Sociocultural Rafael de León (Fuencarral - El Pardo)" ;
+	ontology:tieneDistrito "FUENCARRAL-EL PARDO" ;
+	ontology:tieneBarrio "PEÑA GRANDE" ;
+	ontology:tieneCodigoPostal "28035" ;
+	ontology:tieneTransporte " Metro: Avenida de la Ilustración (línea 7)  Bus: 49 , 64 , 67 , 83 , 133 " ;
+	ontology:tieneEmail "ccreleon@madrid.es" ;
+	ontology:tieneTelefono "917 310 350" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=7e0b1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1950> ontology:tieneNombre "Centro Sociocultural San Cristóbal de los Ángeles (Villaverde)" ;
+	ontology:tieneDistrito "VILLAVERDE" ;
+	ontology:tieneBarrio "SAN CRISTOBAL" ;
+	ontology:tieneCodigoPostal "28021" ;
+	ontology:tieneTransporte """ Metro: San Cristóbal (línea 3) 
+ Bus: 59, 79, """ ;
+	ontology:tieneEmail "ccscangeles@madrid.es" ;
+	ontology:tieneTelefono "917 100 410 / 917 100 413" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=7f4a79262ef5d010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/43311> ontology:tieneNombre "Centro Sociocultural San José de Calasanz (Latina)" ;
+	ontology:tieneDescripcion """     
+   """ ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "PUERTA DEL ANGEL" ;
+	ontology:tieneCodigoPostal "28011" ;
+	ontology:tieneTransporte " Bus: 119, 138 " ;
+	ontology:tieneEmail "cccalasanz@madrid.es" ;
+	ontology:tieneTelefono "914 649 304" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2bae598d1351c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/117716> ontology:tieneNombre "Centro Sociocultural Santa Petronila (Villaverde)" ;
+	ontology:tieneDistrito "VILLAVERDE" ;
+	ontology:tieneBarrio "LOS ROSALES" ;
+	ontology:tieneCodigoPostal "28021" ;
+	ontology:tieneTransporte """ Metro: Villaverde Bajo Cruce (línea 3) 
+ Bus: 59 , 79 , 85 , 123 
+ Renfe: Villaverde Bajo """ ;
+	ontology:tieneEmail "ccspetronila@madrid.es" ;
+	ontology:tieneTelefono "917 109 710" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=03f7cbf06c81c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1937> ontology:tieneNombre "Centro Sociocultural Talleres de Creatividad (Puente de Vallecas)" ;
+	ontology:tieneDistrito "PUENTE DE VALLECAS" ;
+	ontology:tieneBarrio "SAN DIEGO" ;
+	ontology:tieneCodigoPostal "28053" ;
+	ontology:tieneTransporte """ Metro: Nueva Numancia, Portazgo (línea 1) 
+ Bus: 10, 24, 57, 103, 111, 310 """ ;
+	ontology:tieneEmail "ctcepvallecas@madrid.es" ;
+	ontology:tieneTelefono "917 570 189 / 917 570 240" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=b7ab1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1948> ontology:tieneNombre "Centro Sociocultural Tetuán" ;
+	ontology:tieneDistrito "TETUAN" ;
+	ontology:tieneBarrio "BERRUGUETE" ;
+	ontology:tieneCodigoPostal "28020" ;
+	ontology:tieneTransporte """ Metro: Tetuán (línea 1) 
+ Bus: 66, 124 """ ;
+	ontology:tieneEmail "csctetuan@madrid.es" ;
+	ontology:tieneTelefono "915 790 851" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=0ecb1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1923> ontology:tieneNombre "Centro Sociocultural Valle Inclán (Fuencarral - El Pardo)" ;
+	ontology:tieneDistrito "FUENCARRAL-EL PARDO" ;
+	ontology:tieneBarrio "LA PAZ" ;
+	ontology:tieneCodigoPostal "28029" ;
+	ontology:tieneTransporte " Bus: 67 , 132 " ;
+	ontology:tieneEmail "ccvalleinclan@madrid.es" ;
+	ontology:tieneTelefono "913 230 805" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=aa1c1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1908> ontology:tieneNombre "Centro Sociocultural Valverde (Fuencarral - El Pardo)" ;
+	ontology:tieneDistrito "FUENCARRAL-EL PARDO" ;
+	ontology:tieneBarrio "VALVERDE" ;
+	ontology:tieneCodigoPostal "28034" ;
+	ontology:tieneTransporte " Metro: Fuencarral (línea 10)  Bus: 66, 137  " ;
+	ontology:tieneEmail "ccvalverde@madrid.es" ;
+	ontology:tieneTelefono """917 364 760                                         
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f04c1e79ee71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/4679597> ontology:tieneNombre "Centro Sociocultural Vicálvaro" ;
+	ontology:tieneDistrito "VICALVARO" ;
+	ontology:tieneBarrio "CASCO H.VICALVARO" ;
+	ontology:tieneCodigoPostal "28032" ;
+	ontology:tieneTransporte """ Metro: Vicálvaro (línea 9) 
+ Bus: 4, 100, 106, 130, E3 """ ;
+	ontology:tieneEmail "cscvicalvaro@madrid.es" ;
+	ontology:tieneTelefono "917 753 200" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=05ec3ef2c5ff5110VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1996> ontology:tieneNombre "Centro Sociocultural Ágata (Villaverde)" ;
+	ontology:tieneDistrito "VILLAVERDE" ;
+	ontology:tieneBarrio "SAN ANDRES" ;
+	ontology:tieneCodigoPostal "28021" ;
+	ontology:tieneTransporte " Bus: 22 , 79 , 86 , 130 , 131 " ;
+	ontology:tieneEmail "ccagata@madrid.es" ;
+	ontology:tieneTelefono "917 109 300" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=d9743d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/6013703> ontology:tieneNombre "CentroCentro Cibeles de Cultura y Ciudadanía" ;
+	ontology:tieneDescripcion "  CentroCentro  Cibeles de Cultura y Ciudadanía es un punto de acogida e información cultural y un espacio para la reflexión colectiva sobre la vida y la cultura urbanas contemporáneas. Ubicado en el corazón del Paseo del Arte, es un lugar de reunión intercultural, escenario de participación, acción, ocio y aprendizaje. Una fábrica de ideas a imagen de la ciudad. " ;
+	ontology:tieneDistrito "RETIRO" ;
+	ontology:tieneBarrio "LOS JERONIMOS" ;
+	ontology:tieneCodigoPostal "28014" ;
+	ontology:tieneTransporte """ Metro: Banco de España 
+ Tren: Recoletos 
+ Autobuses: 1, 2, 202, 5, 9, 10, 14,15,20,27,34,37,45,51,52,53,74,146,150, 203, Línea Expres Aeropuerto 
+ Aparcamiento: calle Montalbán 
+ Aparcamiento para bicicletas: calle Montalbán, 1 """ ;
+	ontology:tieneEmail "reservas@centrocentro.org, info@centrocentro.org" ;
+	ontology:tieneTelefono "010 (915 298 210 si llama desde fuera del municipio de Madrid)" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=5ff519cd7bcee210VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/4535757> ontology:tieneNombre "Consorcio del Centro Sefarad - Israel" ;
+	ontology:tieneDescripcion " Tiene como objetivos entre otros, impulsar el desarrollo de las relaciones de España con la comunidad y organizaciones judias, sobre todo en los ámbitos cultural, social y científico. " ;
+	ontology:tieneDistrito "CENTRO" ;
+	ontology:tieneBarrio "PALACIO" ;
+	ontology:tieneCodigoPostal "28013" ;
+	ontology:tieneTransporte " Metro: Sol (líneas 1, 2, 3), Ópera (líneas 2, 5, R), Latina (línea 5)  Bus: 3, 31, 50, 65  Renfe: Sol " ;
+	ontology:tieneEmail "centro@sefarad-israel.es" ;
+	ontology:tieneTelefono "913 911 002" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=9d50215a57131110VgnVCM2000000c205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/1915> ontology:tieneNombre "Fernán Gómez. Centro Cultural de la Villa" ;
+	ontology:tieneDistrito "SALAMANCA" ;
+	ontology:tieneBarrio "RECOLETOS" ;
+	ontology:tieneCodigoPostal "28001" ;
+	ontology:tieneTransporte """ Metro: Colón (línea 4), Serrano (línea 4) 
+ Bus: 1, 5, 9, 14, 19, 21, 27, 37, 45,  51, 53,  74, 150 
+ Renfe: Recoletos """ ;
+	ontology:tieneEmail "info@teatrofernangomez.com" ;
+	ontology:tieneTelefono """914 362 540 Ext. 200 (Información general) / Ext. 208 (precios grupos, Amigos del Fernán Gómez y promociones)                       
+""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ba663d0b5e71c010VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/4684678> ontology:tieneNombre "Matadero Madrid" ;
+	ontology:tieneDistrito "ARGANZUELA" ;
+	ontology:tieneBarrio "CHOPERA" ;
+	ontology:tieneCodigoPostal "28045" ;
+	ontology:tieneTransporte """ Metro :  Legazpi 
+ Bus: 6 , 8 , 18 , 19 , 45 , 78 , 148 
+ Renfe: Embajadores """ ;
+	ontology:tieneTelefono """915 177 309                                                                              
+914 730 957 (taquilla)""" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ef686a9ee7336110VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/4776440> ontology:tieneNombre "Medialab - Prado" ;
+	ontology:tieneDescripcion " Centro  dedicado a la  producción, investigación y difusión de la  cultura digital.  Promueve la  participación de los usuarios a través del desarrollo de  proyectos colaborativos.   Se concibe como un laboratorio ciudadano que explora las formas de experimentación y aprendizaje colaborativo que han surgido de las redes digitales. " ;
+	ontology:tieneDistrito "CENTRO" ;
+	ontology:tieneBarrio "CORTES" ;
+	ontology:tieneCodigoPostal "28014" ;
+	ontology:tieneTransporte " Metro y Cercanías: Atocha  Bus: 6, 10, 14, 19, 26, 27, 32, 34, 37 y 45  " ;
+	ontology:tieneEmail "info.m@medialab-prado.es" ;
+	ontology:tieneTelefono "912 191 157" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=79f59dacff4d7110VgnVCM1000000b205a0aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/10105051> ontology:tieneNombre "Sala de Trabajos Colectivos Centro Sociocultural de Vicálvaro" ;
+	ontology:tieneDistrito "VICALVARO" ;
+	ontology:tieneBarrio "CASCO H.VICALVARO" ;
+	ontology:tieneCodigoPostal "28032" ;
+	ontology:tieneTransporte """ Metro: Vicálvaro (línea 9) 
+ Bus: 4, 100, 106, 130, E3 """ ;
+	ontology:tieneEmail "cscvicalvaro@madrid.es" ;
+	ontology:tieneTelefono "917 753 200" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2597a077d6fb5510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/10107814> ontology:tieneNombre "Sala de estudio y lectura Arquitecto Juan de Herrera (Latina)" ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "PUERTA DEL ANGEL" ;
+	ontology:tieneCodigoPostal "28011" ;
+	ontology:tieneTransporte " Bus: 119, 138 " ;
+	ontology:tieneTelefono "914 649 304" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6a6c61366ded5510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/10107379> ontology:tieneNombre "Sala de estudio y lectura Cayetano Pando (Latina)" ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "LUCERO" ;
+	ontology:tieneCodigoPostal "28011" ;
+	ontology:tieneTransporte """ Metro: Lucero (línea 6) y Laguna (línea 6) 
+ Cercanías: C5 
+  Bus: 33, 138  
+  Metro: Lucero (línea 6),  Batán (línea 10) """ ;
+	ontology:tieneTelefono "915 264 475" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f565aea7089d5510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/10107362> ontology:tieneNombre "Sala de estudio y lectura Cebreros (Latina)" ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "LUCERO" ;
+	ontology:tieneCodigoPostal "28011" ;
+	ontology:tieneTransporte """ Metro: Alto de Extremadura (línea 6) y Puerta del Ángel (línea 6) 
+  Bus: 33, 36, 39, 65, 138  
+  Metro: Lucero (línea 6),  Batán (línea 10) """ ;
+	ontology:tieneTelefono "914 796 964" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=7d52aea7089d5510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/10107702> ontology:tieneNombre "Sala de estudio y lectura Escritor Pedro de Répide (Latina)" ;
+	ontology:tieneDescripcion """     
+   """ ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "PUERTA DEL ANGEL" ;
+	ontology:tieneCodigoPostal "28011" ;
+	ontology:tieneTransporte " Bus: 119, 138 " ;
+	ontology:tieneEmail "cccalasanz@madrid.es" ;
+	ontology:tieneTelefono "914 649 304" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=5e0861366ded5510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/10107309> ontology:tieneNombre "Sala de estudio y lectura Maqueda (Latina)" ;
+	ontology:tieneDescripcion " Calle Maqueda, 5 bloque C " ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "LUCERO" ;
+	ontology:tieneCodigoPostal "28011" ;
+	ontology:tieneTransporte """ Metro: Campamento (línea 5) 
+  Bus: 25, 121, 131, H  """ ;
+	ontology:tieneTelefono "917 110 369" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=afacaea7089d5510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.madridcultural.es/centrosculturales/10107172> ontology:tieneNombre "Sala de estudio y lectura Paseo de Extremadura (Latina)" ;
+	ontology:tieneDistrito "LATINA" ;
+	ontology:tieneBarrio "LUCERO" ;
+	ontology:tieneCodigoPostal "28011" ;
+	ontology:tieneTransporte """ Metro: Alto de Extremadura (línea 6) y Puerta del Ángel (línea 6) 
+  Bus: 31, 33, 36, 39, 65  """ ;
+	ontology:tieneTelefono "914 634 249" ;
+	ontology:tieneURL "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ae857f23530d5510VgnVCM2000001f4a900aRCRD" .

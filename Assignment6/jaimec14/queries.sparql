@@ -1,0 +1,58 @@
+#SPARQL endpoint: http://sandbox.linkeddata.es/sparql
+#Graph: http://sandbox.linkeddata.es/graph/accidentes
+
+#1. How many accidents were there in Madrid in 2013?
+
+select SUM(?b) as ?Accidents
+where{
+?obs a <http://purl.org/linked-data/cube#Observation>.
+?obs <http://example.org/myVocabulary#numberOfAccidents> ?b.
+}
+
+#2. Give me the number of accidents in Usera for each type of accident
+
+select ?Type ?Accidents
+where{
+?obs a <http://purl.org/linked-data/cube#Observation>.
+?obs <http://example.org/myVocabulary#relatedDistrict> "USERA".
+?obs <http://example.org/myVocabulary#hasAccidentType> ?e.
+?e <http://www.w3.org/2004/02/skos/core#prefLabel> ?Type.
+?obs <http://example.org/myVocabulary#numberOfAccidents> ?Accidents.
+FILTER ( lang(?Type) = "es" ) 
+}
+
+#3. Give me the number of multiple collisions for each district
+
+select ?District ?Accidents
+where{
+?obs a <http://purl.org/linked-data/cube#Observation>.
+?obs <http://example.org/myVocabulary#relatedDistrict> ?District.
+?obs <http://example.org/myVocabulary#hasAccidentType> <http://example.org/myVocabulary#MultipleCollision>.
+?obs <http://example.org/myVocabulary#numberOfAccidents> ?Accidents.
+}
+ORDER BY(?District)
+
+#4. Which is the district were the number of bicycle falls was higher in 2013?
+
+select ?District max(?Accidents) as ?Accidents
+where {
+?obs a <http://purl.org/linked-data/cube#Observation>.
+?obs <http://example.org/myVocabulary#relatedDistrict> ?District.
+?obs <http://example.org/myVocabulary#hasAccidentType> <http://example.org/myVocabulary#BicycleFall>.
+?obs <http://example.org/myVocabulary#numberOfAccidents> ?Accidents.
+}
+ORDER by desc(?Accidents)
+LIMIT 1
+
+#5. Give me the districts with more than 500 accidents in 2013
+
+select ?District ?Accidents WHERE {
+{
+select distinct ?District (sum(xsd:double(?b)) as ?Accidents)
+where{
+?obs a <http://purl.org/linked-data/cube#Observation>.
+?obs <http://example.org/myVocabulary#relatedDistrict> ?District.
+?obs <http://example.org/myVocabulary#numberOfAccidents> ?b.
+}
+} FILTER (?Accidents > 500)
+} ORDER BY desc(?Accidents)

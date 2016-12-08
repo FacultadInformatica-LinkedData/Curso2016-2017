@@ -1,0 +1,41 @@
+#Alejandro Torres Atochero
+
+
+PREFIX sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX mv: <http://example.org/myVocabulary#>
+
+#NÚMERO DE ACCIDENTES EN MADRID EN 2013
+SELECT SUM(?acc) AS ?Accidentes WHERE {
+  ?obs a qb:Observation ;
+  mv:numberOfAccidents ?acc .
+}
+#NÚMERO DE ACCIDENTES EN USERA POR CADA TIPO
+SELECT ?typeAcc ?acc  WHERE {
+  ?obs a qb:Observation ;
+  mv:relatedDistrict  "USERA" ;
+  mv:hasAccidentType ?typeAcc ;
+  mv:numberOfAccidents ?acc .
+}
+#NÚMERO DE MULTIPLE COLISIÓN EN CADA DISTRITO
+SELECT  ?district ?acc  WHERE{
+  ?obs a qb:Observation ;
+  mv:hasAccidentType mv:MultipleCollision ;
+  mv:numberOfAccidents ?acc ;
+  mv:relatedDistrict ?district .
+}
+#DISTRITO CON MAYOR NÚMERO DE CAIDAS DE BICI EN 2013
+SELECT ?district MAX(?acc) WHERE{
+  ?obs a qb:Observation ;
+  mv:hasAccidentType mv:BicycleFall;
+  mv:numberOfAccidents ?acc ;
+  mv:relatedDistrict ?district .
+
+}
+#DISTRITOS CON >500 ACCIDENTES EN 2013
+SELECT ?district WHERE{
+  ?obs a qb:Observation ;
+  mv:numberOfAccidents ?acc ;
+  mv:relatedDistrict ?district .
+  FILTER (?acc>500)
+}
