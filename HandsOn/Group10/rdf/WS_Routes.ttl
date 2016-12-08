@@ -1,0 +1,270 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g10: <http://smartsevilla.es/ontology> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://smartsevilla.es/ontology/routes/01> <http://smartsevilla.es/ontology/route_id> "1" ;
+	<http://smartsevilla.es/ontology/route_short_name> "01" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Pgno.Norte-Glorieta Plus Ultra" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/02> <http://smartsevilla.es/ontology/route_id> "2" ;
+	<http://smartsevilla.es/ontology/route_short_name> "02" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Barqueta-Glorieta Heliopolis" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/03> <http://smartsevilla.es/ontology/route_id> "3" ;
+	<http://smartsevilla.es/ontology/route_short_name> "03" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Bellavista - Pino Montano" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/05> <http://smartsevilla.es/ontology/route_id> "5" ;
+	<http://smartsevilla.es/ontology/route_short_name> "05" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Puerta Triana-Santa Aurelia" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/06> <http://smartsevilla.es/ontology/route_id> "6" ;
+	<http://smartsevilla.es/ontology/route_short_name> "06" ;
+	<http://smartsevilla.es/ontology/route_long_name> "San Lazaro-Glorieta Heliopolis" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/10> <http://smartsevilla.es/ontology/route_id> "10" ;
+	<http://smartsevilla.es/ontology/route_short_name> "10" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Ponce de Leon -San Jeronimo" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/11> <http://smartsevilla.es/ontology/route_id> "11" ;
+	<http://smartsevilla.es/ontology/route_short_name> "11" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Pz.Ponce de Leon-Los Principes" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/12> <http://smartsevilla.es/ontology/route_id> "12" ;
+	<http://smartsevilla.es/ontology/route_short_name> "12" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Ponce de  Leon-Pino Montano" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/13> <http://smartsevilla.es/ontology/route_id> "13" ;
+	<http://smartsevilla.es/ontology/route_short_name> "13" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Plaza Duque-Pino Montano" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/14> <http://smartsevilla.es/ontology/route_id> "14" ;
+	<http://smartsevilla.es/ontology/route_short_name> "14" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Plaza Duque-Poligono Norte" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/15> <http://smartsevilla.es/ontology/route_id> "15" ;
+	<http://smartsevilla.es/ontology/route_short_name> "15" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Ponce de Leon-San Diego" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/16> <http://smartsevilla.es/ontology/route_id> "16" ;
+	<http://smartsevilla.es/ontology/route_short_name> "16" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Pza.Jeron. Cordoba-Valdezorras" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/20> <http://smartsevilla.es/ontology/route_id> "20" ;
+	<http://smartsevilla.es/ontology/route_short_name> "20" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Ponce de Leon-Pgno.San Pablo" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/21> <http://smartsevilla.es/ontology/route_id> "21" ;
+	<http://smartsevilla.es/ontology/route_short_name> "21" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Plaza Armas-Poligono S. Pablo" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/22> <http://smartsevilla.es/ontology/route_id> "22" ;
+	<http://smartsevilla.es/ontology/route_short_name> "22" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado-Sevilla Este" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/24> <http://smartsevilla.es/ontology/route_id> "24" ;
+	<http://smartsevilla.es/ontology/route_short_name> "24" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Ponce de Leon-Palmete" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/25> <http://smartsevilla.es/ontology/route_id> "25" ;
+	<http://smartsevilla.es/ontology/route_short_name> "25" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado-Rochelambert" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/26> <http://smartsevilla.es/ontology/route_id> "26" ;
+	<http://smartsevilla.es/ontology/route_short_name> "26" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado-Cerro del Aguila" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/27> <http://smartsevilla.es/ontology/route_id> "27" ;
+	<http://smartsevilla.es/ontology/route_short_name> "27" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Plaza del - Duque-Sevilla Este" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/28> <http://smartsevilla.es/ontology/route_id> "28" ;
+	<http://smartsevilla.es/ontology/route_short_name> "28" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado-Parque Alcosa" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/29> <http://smartsevilla.es/ontology/route_id> "29" ;
+	<http://smartsevilla.es/ontology/route_short_name> "29" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado-Torreblanca" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/30> <http://smartsevilla.es/ontology/route_id> "30" ;
+	<http://smartsevilla.es/ontology/route_short_name> "30" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado-La Paz" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/31> <http://smartsevilla.es/ontology/route_id> "31" ;
+	<http://smartsevilla.es/ontology/route_short_name> "31" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado-Poligono Sur" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/32> <http://smartsevilla.es/ontology/route_id> "32" ;
+	<http://smartsevilla.es/ontology/route_short_name> "32" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Plaza del - Duque-Poligono Sur" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/34> <http://smartsevilla.es/ontology/route_id> "34" ;
+	<http://smartsevilla.es/ontology/route_short_name> "34" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado-Los Bermejales" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/37> <http://smartsevilla.es/ontology/route_id> "37" ;
+	<http://smartsevilla.es/ontology/route_short_name> "37" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Pta.Jerez - Bellavista" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/38> <http://smartsevilla.es/ontology/route_id> "38" ;
+	<http://smartsevilla.es/ontology/route_short_name> "38" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado - Univ.Pablo Olavide" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/39> <http://smartsevilla.es/ontology/route_id> "39" ;
+	<http://smartsevilla.es/ontology/route_short_name> "39" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Los Arcos-Hacienda San Antonio" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/40> <http://smartsevilla.es/ontology/route_id> "40" ;
+	<http://smartsevilla.es/ontology/route_short_name> "40" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Plaza Magdalena-Triana" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/41> <http://smartsevilla.es/ontology/route_id> "41" ;
+	<http://smartsevilla.es/ontology/route_short_name> "41" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Plz. Magdalena-Los Remedios" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/43> <http://smartsevilla.es/ontology/route_id> "43" ;
+	<http://smartsevilla.es/ontology/route_short_name> "43" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Plaza Magdalena- El Turruñuelo" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/52> <http://smartsevilla.es/ontology/route_id> "52" ;
+	<http://smartsevilla.es/ontology/route_short_name> "52" ;
+	<http://smartsevilla.es/ontology/route_long_name> "San Bernardo-Palmete" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/53> <http://smartsevilla.es/ontology/route_id> "53" ;
+	<http://smartsevilla.es/ontology/route_short_name> "53" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Los Arcos - C.Penitenciario" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/T1> <http://smartsevilla.es/ontology/route_id> "60" ;
+	<http://smartsevilla.es/ontology/route_short_name> "T1" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Plaza Nueva-San Bernardo" ;
+	<http://smartsevilla.es/ontology/route_type> "0" .
+
+<http://smartsevilla.es/ontology/routes/C1> <http://smartsevilla.es/ontology/route_id> "81" ;
+	<http://smartsevilla.es/ontology/route_short_name> "C1" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Isla de La Cartuja-Prado" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/C2> <http://smartsevilla.es/ontology/route_id> "82" ;
+	<http://smartsevilla.es/ontology/route_short_name> "C2" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Isla de La Cartuja-Prado" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/C3> <http://smartsevilla.es/ontology/route_id> "83" ;
+	<http://smartsevilla.es/ontology/route_short_name> "C3" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Barqueta-Prado" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/C4> <http://smartsevilla.es/ontology/route_id> "84" ;
+	<http://smartsevilla.es/ontology/route_short_name> "C4" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Barqueta-Prado" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/B3> <http://smartsevilla.es/ontology/route_id> "87" ;
+	<http://smartsevilla.es/ontology/route_short_name> "B3" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Gran Plaza-Santa Clara" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/EA> <http://smartsevilla.es/ontology/route_id> "100" ;
+	<http://smartsevilla.es/ontology/route_short_name> "EA" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Especial -  Aeropuerto" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/A1> <http://smartsevilla.es/ontology/route_id> "101" ;
+	<http://smartsevilla.es/ontology/route_short_name> "A1" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado- Pino Montano" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/A2> <http://smartsevilla.es/ontology/route_id> "102" ;
+	<http://smartsevilla.es/ontology/route_short_name> "A2" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado - San Jeronimo" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/A3> <http://smartsevilla.es/ontology/route_id> "103" ;
+	<http://smartsevilla.es/ontology/route_short_name> "A3" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado - Sevilla Este" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/A4> <http://smartsevilla.es/ontology/route_id> "104" ;
+	<http://smartsevilla.es/ontology/route_short_name> "A4" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado - Santa Aurelia" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/A5> <http://smartsevilla.es/ontology/route_id> "105" ;
+	<http://smartsevilla.es/ontology/route_short_name> "A5" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado - Poligono Sur" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/A6> <http://smartsevilla.es/ontology/route_id> "106" ;
+	<http://smartsevilla.es/ontology/route_short_name> "A6" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado - Bellavista" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/A7> <http://smartsevilla.es/ontology/route_id> "107" ;
+	<http://smartsevilla.es/ontology/route_short_name> "A7" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Circular Nocturno" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/C6A> <http://smartsevilla.es/ontology/route_id> "108" ;
+	<http://smartsevilla.es/ontology/route_short_name> "C6A" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Circular Macarena Norte" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/C6B> <http://smartsevilla.es/ontology/route_id> "109" ;
+	<http://smartsevilla.es/ontology/route_short_name> "C6B" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Circular Macarena Norte" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/A8> <http://smartsevilla.es/ontology/route_id> "110" ;
+	<http://smartsevilla.es/ontology/route_short_name> "A8" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado - Parque Alcosa" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/B4> <http://smartsevilla.es/ontology/route_id> "119" ;
+	<http://smartsevilla.es/ontology/route_short_name> "B4" ;
+	<http://smartsevilla.es/ontology/route_long_name> "San Bernardo-Torreblanca" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/C5> <http://smartsevilla.es/ontology/route_id> "121" ;
+	<http://smartsevilla.es/ontology/route_short_name> "C5" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Plaza Duque-Puerta Jerez" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .
+
+<http://smartsevilla.es/ontology/routes/38A> <http://smartsevilla.es/ontology/route_id> "125" ;
+	<http://smartsevilla.es/ontology/route_short_name> "38A" ;
+	<http://smartsevilla.es/ontology/route_long_name> "Prado - Pitamo - Upo" ;
+	<http://smartsevilla.es/ontology/route_type> "3" .

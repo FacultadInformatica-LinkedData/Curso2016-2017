@@ -1,0 +1,55 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+<http://www.semanticweb.org/0> a <http://www.semanticweb.org/police_station> ;
+	foaf:name "CENTRAL STN" , "766 VALLEJO ST" ;
+	foaf:phone "415-315-2400" ;
+	foaf:name "(37.7986453192461, -122.4098629092911)" .
+
+<http://www.semanticweb.org/1> a <http://www.semanticweb.org/police_station> ;
+	foaf:name "SOUTHERN STN" , "850 BRYANT ST" ;
+	foaf:phone "415-553-1373" ;
+	foaf:name "(37.7749888994694, -122.4043283015447)" .
+
+<http://www.semanticweb.org/2> a <http://www.semanticweb.org/police_station> ;
+	foaf:name "BAYVIEW STN" , "201 WILLIAMS ST" ;
+	foaf:phone "415-671-2300" ;
+	foaf:name "(37.7296417183220, -122.3980865549364)" .
+
+<http://www.semanticweb.org/3> a <http://www.semanticweb.org/police_station> ;
+	foaf:name "MISSION STN" , "630 VALLENCIA ST" ;
+	foaf:phone "415-558-5400" ;
+	foaf:name "(37.7626807026424, -122.4219696654014)" .
+
+<http://www.semanticweb.org/4> a <http://www.semanticweb.org/police_station> ;
+	foaf:name "NORTHERN STN" , "1125 FILLMORE ST" ;
+	foaf:phone "415-614-3400" ;
+	foaf:name "(37.7801611403781, -122.4323904351790)" .
+
+<http://www.semanticweb.org/5> a <http://www.semanticweb.org/police_station> ;
+	foaf:name "PARK STN" , "1899 WALLER ST" ;
+	foaf:phone "415-242-3000" ;
+	foaf:name "(37.7678486242834, -122.4552665971872)" .
+
+<http://www.semanticweb.org/6> a <http://www.semanticweb.org/police_station> ;
+	foaf:name "RICHMOND STN" , "461 6TH AV" ;
+	foaf:phone "415-666-8000" ;
+	foaf:name "(37.7800012925707, -122.4644607286463)" .
+
+<http://www.semanticweb.org/7> a <http://www.semanticweb.org/police_station> ;
+	foaf:name "INGLESIDE STN" , "1 JOHN YOUNG LN" ;
+	foaf:phone "415-404-4000" ;
+	foaf:name "(37.7247701343562, -122.4462510450206)" .
+
+<http://www.semanticweb.org/8> a <http://www.semanticweb.org/police_station> ;
+	foaf:name "TARAVAL STN" , "2345 24TH AV" ;
+	foaf:phone "415-759-3100" ;
+	foaf:name "(37.7437337946250, -122.4814607671523)" .
+
+<http://www.semanticweb.org/9> a <http://www.semanticweb.org/police_station> ;
+	foaf:name "TENDERLOIN STN" , "301 EDDY ST" ;
+	foaf:phone "415-345-7300" ;
+	foaf:name "(37.7837040581307, -122.4128957522243)" .

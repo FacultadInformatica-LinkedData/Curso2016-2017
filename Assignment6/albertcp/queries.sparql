@@ -1,0 +1,76 @@
+# How many accidents were there in Madrid in 2013
+
+PREFIX graph: <http://example.org/myVocabulary#>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+
+select (SUM(?x) AS ?total)
+where {
+  ?obs a cube:Observation;
+    graph:numberOfAccidents ?x.
+}
+
+
+# Number of accidents in Usera for each type of accident
+
+PREFIX graph: <http://example.org/myVocabulary#>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+
+select ?type ?num
+where {
+  ?obs a cube:Observation;
+    graph:numberOfAccidents ?num;
+    graph:relatedDistrict "USERA";
+    graph:hasAccidentType ?type
+}
+
+
+# Number of multiple collitions for each district
+
+PREFIX graph: <http://example.org/myVocabulary#>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+
+select ?district ?num
+where {
+  ?obs a cube:Observation;
+    graph:numberOfAccidents ?num;
+    graph:hasAccidentType graph:MultipleCollision;
+    graph:relatedDistrict ?district
+}
+
+
+# Which is the district were the number of bicycle falls was higher in 2013
+
+PREFIX graph: <http://example.org/myVocabulary#>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+
+select ?district ?max
+where {
+  ?obs a cube:Observation;
+    graph:numberOfAccidents ?max;
+    graph:hasAccidentType graph:BicycleFall;
+    graph:relatedDistrict ?district.
+
+   {
+    select (MAX(?num) as ?max)
+    where{
+       ?obs a cube:Observation;
+          graph:numberOfAccidents ?num;
+          graph:hasAccidentType graph:BicycleFall.
+   }
+ }
+
+
+
+# The districts with more than 500 accidents in 2013
+
+PREFIX graph: <http://example.org/myVocabulary#>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+
+select ?district SUM(xsd:double(?num)) as ?total
+where {
+  ?obs a cube:Observation;
+    graph:numberOfAccidents ?num;
+    graph:hasAccidentType ?type;
+    graph:relatedDistrict ?district.
+}
+having (SUM(xsd:double(?num)) >= 500)
