@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.example.world.org/vocab#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.example.world.org/vocab#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CountryCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="District"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Language"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPopulation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inContinent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inDistrict"/>
+    </Declaration>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCode"/>
+        <Class IRI="CountryCode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasLanguage"/>
+        <Class IRI="Language"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasName"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPopulation"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inContinent"/>
+        <Class IRI="Continent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inDistrict"/>
+        <Class IRI="District"/>
+    </ObjectPropertyDomain>
+</Ontology>
