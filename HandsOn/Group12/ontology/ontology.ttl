@@ -1,115 +1,89 @@
-@prefix : <http://www.semanticweb.org/grupo12/ontologies/ontologia12#> .
+@prefix : <http://www.semanticweb.org/grupo12/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/grupo12/ontologies/ontologia12> .
+@base <http://www.semanticweb.org/grupo12/ontology> .
 
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12> rdf:type owl:Ontology .
+<http://www.semanticweb.org/grupo12/ontology> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso#hasBarrio
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso#hasBarrio> rdf:type owl:ObjectProperty ;
-                                                                            rdfs:domain <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso> ;
-                                                                            rdfs:range <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Barrio> .
+###  http://www.semanticweb.org/grupo12/ontology#hasBarrio
+:hasBarrio rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://www.semanticweb.org/grupo12/ontology/Aviso> ,
+                       <http://www.semanticweb.org/grupo12/ontology/Valoracion> ;
+           rdfs:range <http://www.semanticweb.org/grupo12/ontology/Barrio> .
 
 
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Barrio#hasDistrito
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Barrio#hasDistrito> rdf:type owl:ObjectProperty ;
-                                                                               rdfs:domain <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Barrio> ;
-                                                                               rdfs:range <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Distrito> .
-
-
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Valoracion#hasBarrio
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Valoracion#hasBarrio> rdf:type owl:ObjectProperty ;
-                                                                                 rdfs:domain <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Valoracion> ;
-                                                                                 rdfs:range <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Barrio> .
+###  http://www.semanticweb.org/grupo12/ontology#hasDistrito
+:hasDistrito rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://www.semanticweb.org/grupo12/ontology/Barrio> ;
+             rdfs:range <http://www.semanticweb.org/grupo12/ontology/Distrito> .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso#date
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso#date> rdf:type owl:DatatypeProperty ;
-                                                                       rdfs:domain <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso> ;
-                                                                       rdfs:range xsd:dateTime .
+###  http://www.semanticweb.org/grupo12/ontology#hasCalle
+:hasCalle rdf:type owl:DatatypeProperty ;
+          rdfs:domain <http://www.semanticweb.org/grupo12/ontology/Aviso> ;
+          rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso#hasCalle
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso#hasCalle> rdf:type owl:DatatypeProperty ;
-                                                                           rdfs:domain <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso> ;
-                                                                           rdfs:range xsd:string .
+###  http://www.semanticweb.org/grupo12/ontology#hasCodigoPostal
+:hasCodigoPostal rdf:type owl:DatatypeProperty ;
+                 rdfs:domain <http://www.semanticweb.org/grupo12/ontology/Aviso> ;
+                 rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso#idAviso
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso#idAviso> rdf:type owl:DatatypeProperty .
+###  http://www.semanticweb.org/grupo12/ontology#hasFecha
+:hasFecha rdf:type owl:DatatypeProperty ;
+          rdfs:domain <http://www.semanticweb.org/grupo12/ontology/Aviso> ;
+          rdfs:range xsd:dateTime .
 
 
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso#postCode
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso#postCode> rdf:type owl:DatatypeProperty ;
-                                                                           rdfs:domain <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso> ;
-                                                                           rdfs:range xsd:string .
+###  http://www.semanticweb.org/grupo12/ontology#hasNombre
+:hasNombre rdf:type owl:DatatypeProperty ;
+           rdfs:domain <http://www.semanticweb.org/grupo12/ontology/Barrio> ,
+                       <http://www.semanticweb.org/grupo12/ontology/Distrito> ;
+           rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso#type
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso#type> rdf:type owl:DatatypeProperty ;
-                                                                       rdfs:domain <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso> ;
-                                                                       rdfs:range xsd:string .
+###  http://www.semanticweb.org/grupo12/ontology#hasPuntuacion
+:hasPuntuacion rdf:type owl:DatatypeProperty ;
+               rdfs:domain <http://www.semanticweb.org/grupo12/ontology/Valoracion> ;
+               rdfs:range xsd:float .
 
 
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Barrio#idBarrio
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Barrio#idBarrio> rdf:type owl:DatatypeProperty ;
-                                                                            rdfs:domain <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Barrio> ;
-                                                                            rdfs:range xsd:float .
-
-
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Barrio#nameBarrio
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Barrio#nameBarrio> rdf:type owl:DatatypeProperty ;
-                                                                              rdfs:domain <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Barrio> ;
-                                                                              rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Distrito#idDistrito
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Distrito#idDistrito> rdf:type owl:DatatypeProperty ;
-                                                                                rdfs:domain <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Distrito> ;
-                                                                                rdfs:range xsd:float .
-
-
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Distrito#nameDistrito
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Distrito#nameDistrito> rdf:type owl:DatatypeProperty ;
-                                                                                  rdfs:domain <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Distrito> ;
-                                                                                  rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Valoracion#hasScore
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Valoracion#hasScore> rdf:type owl:DatatypeProperty ;
-                                                                                rdfs:domain <http://www.semanticweb.org/grupo12/ontologies/ontologia12/Valoracion> ;
-                                                                                rdfs:range xsd:float .
+###  http://www.semanticweb.org/grupo12/ontology#hasTipo
+:hasTipo rdf:type owl:DatatypeProperty ;
+         rdfs:domain <http://www.semanticweb.org/grupo12/ontology/Aviso> ;
+         rdfs:range xsd:string .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Aviso> rdf:type owl:Class .
+###  http://www.semanticweb.org/grupo12/ontology/Aviso
+<http://www.semanticweb.org/grupo12/ontology/Aviso> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Barrio
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Barrio> rdf:type owl:Class .
+###  http://www.semanticweb.org/grupo12/ontology/Barrio
+<http://www.semanticweb.org/grupo12/ontology/Barrio> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Distrito
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Distrito> rdf:type owl:Class .
+###  http://www.semanticweb.org/grupo12/ontology/Distrito
+<http://www.semanticweb.org/grupo12/ontology/Distrito> rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/grupo12/ontologies/ontologia12/Valoracion
-<http://www.semanticweb.org/grupo12/ontologies/ontologia12/Valoracion> rdf:type owl:Class .
+###  http://www.semanticweb.org/grupo12/ontology/Valoracion
+<http://www.semanticweb.org/grupo12/ontology/Valoracion> rdf:type owl:Class .
 
 
 ###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
