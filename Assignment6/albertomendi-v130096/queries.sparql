@@ -1,0 +1,65 @@
+#SPARQL endpoint: http://sandbox.linkeddata.es/sparql
+#Graph: http://sandbox.linkeddata.es/graph/accidentes
+
+#1. How many accidents were there in Madrid in 2013?
+
+PREFIX vocab: <http://example.org/myVocabulary#>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+SELECT SUM(?accidentes) AS ?Accidents
+WHERE{
+?obs a cube:Observation.
+?obs vocab:numberOfAccidents ?accidentes.
+}
+
+#2. Give me the number of accidents in Usera for each type of accident
+
+PREFIX vocab: <http://example.org/myVocabulary#>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+SELECT ?Type ?Accidents
+where{
+?obs a cube:Observation.
+?obs vocab:relatedDistrict "USERA".
+?obs vocab:hasAccidentType ?type.
+?obs vocab:numberOfAccidents ?Accidents.
+}
+
+#3. Give me the number of multiple collisions for each district
+
+PREFIX vocab: <http://example.org/myVocabulary#>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+SELECT ?District ?Accidents
+WHERE{
+?obs a cube:Observation.
+?obs vocab:relatedDistrict ?District.
+?obs vocab:hasAccidentType vocab:MultipleCollision.
+?obs vocab:numberOfAccidents ?Accidents.
+}
+ORDER BY(?District)
+
+#4. Which is the district were the number of bicycle falls was higher in 2013?
+
+PREFIX vocab: <http://example.org/myVocabulary#>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+SELECT ?District max(?Accidents) AS ?Accidents
+WHERE {
+?obs a cube:Observation.
+?obs vocab:relatedDistrict ?District.
+?obs vocab:hasAccidentType vocab:BicycleFall.
+?obs vocab:numberOfAccidents ?Accidents.
+}
+ORDER BY desc(?Accidents)
+LIMIT 1
+
+#5. Give me the districts with more than 500 accidents in 2013
+PREFIX vocab: <http://example.org/myVocabulary#>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+select ?District ?Accidents WHERE {
+{
+SELECT DISTINCT ?District (sum(xsd:double(?b)) AS ?Accidents)
+WHERE{
+?obs a cube:Observation.
+?obs vocab:relatedDistrict ?District.
+?obs vocab:numberOfAccidents> ?b.
+}
+} FILTER (?Accidents > 500)
+} ORDER BY desc(?Accidents)

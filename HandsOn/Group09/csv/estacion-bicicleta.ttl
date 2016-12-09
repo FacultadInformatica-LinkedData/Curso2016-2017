@@ -1,0 +1,750 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix onto: <http://www.semanticweb.org/grupo09#> .
+
+
+<http://www.semanticweb.org/grupo09#Estacion+1> a onto:Estaciones ;
+	onto:bicisDisponibles "13"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 13</li><li>Anclajes disponibles: 7</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "678017.9803453928"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613320.634481554"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#C%2F+Doctor+Iranzo+> a onto:Direccion .
+
+onto:Zaragoza a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#C%2F+Doctor+Iranzo+> onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+1> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Doctor+Iranzo+> .
+
+<http://www.semanticweb.org/grupo09#++C%2F+Escultor+Benlliure> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+1> onto:estaEn <http://www.semanticweb.org/grupo09#++C%2F+Escultor+Benlliure> .
+
+<http://www.semanticweb.org/grupo09#Estacion+2> a onto:Estaciones ;
+	onto:bicisDisponibles "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 12</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676822.7225656463"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613438.861592172"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#C%2F+Pedro+Joaqu%C3%ADn+Soler+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+2> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Pedro+Joaqu%C3%ADn+Soler+> .
+
+<http://www.semanticweb.org/grupo09#C%2F+Coso> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+2> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Coso> .
+
+<http://www.semanticweb.org/grupo09#Estacion+3> a onto:Estaciones ;
+	onto:bicisDisponibles "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 10</li><li>Anclajes disponibles: 11</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676517.3458413489"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612706.090795129"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#C%2F+Lacarra+de+Miguel+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+3> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Lacarra+de+Miguel+> .
+
+<http://www.semanticweb.org/grupo09#+C%2F+San+Vicente+Martir> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+3> onto:estaEn <http://www.semanticweb.org/grupo09#+C%2F+San+Vicente+Martir> .
+
+<http://www.semanticweb.org/grupo09#Estacion+4> a onto:Estaciones ;
+	onto:bicisDisponibles "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 11</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "675841.2652424083"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613665.173932331"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#C%2F+Madre+Rafols+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+4> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Madre+Rafols+> .
+
+<http://www.semanticweb.org/grupo09#D.G.A.> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+4> onto:estaEn <http://www.semanticweb.org/grupo09#D.G.A.> .
+
+<http://www.semanticweb.org/grupo09#Estacion+5> a onto:Estaciones ;
+	onto:bicisDisponibles "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "15"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 15</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "675140.5935417247"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4611902.584283835"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Pza.+Emperador+Carlos+V> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+5> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+Emperador+Carlos+V> .
+
+<http://www.semanticweb.org/grupo09#Estacion+6> a onto:Estaciones ;
+	onto:bicisDisponibles "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "17"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 4</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "673818.3928125117"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612194.426397253"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#V%C3%ADa+Hispanidad+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+6> onto:estaEn <http://www.semanticweb.org/grupo09#V%C3%ADa+Hispanidad+> .
+
+<http://www.semanticweb.org/grupo09#+Avda.+G%C3%B3mez+Laguna> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+6> onto:estaEn <http://www.semanticweb.org/grupo09#+Avda.+G%C3%B3mez+Laguna> .
+
+<http://www.semanticweb.org/grupo09#Estacion+7> a onto:Estaciones ;
+	onto:bicisDisponibles "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 11</li><li>Anclajes disponibles: 10</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "673535.126796119"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612856.6010818435"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#V%C3%ADa+Hispanidad+> .
+
+<http://www.semanticweb.org/grupo09#+C%2F+Oc%C3%A9ano+Atl%C3%A1ntico> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+7> onto:estaEn <http://www.semanticweb.org/grupo09#+C%2F+Oc%C3%A9ano+Atl%C3%A1ntico> .
+
+<http://www.semanticweb.org/grupo09#Estacion+8> a onto:Estaciones ;
+	onto:bicisDisponibles "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 12</li><li>Anclajes disponibles: 9</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "674126.8415899678"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612286.664687123"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Avda.+Juan+Pablo+II+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+8> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Juan+Pablo+II+> , <http://www.semanticweb.org/grupo09#+Avda.+G%C3%B3mez+Laguna> .
+
+<http://www.semanticweb.org/grupo09#Estacion+9> a onto:Estaciones ;
+	onto:bicisDisponibles "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 11</li><li>Anclajes disponibles: 10</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "674353.1383456963"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4611979.637886653"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Avda.+Juan+Carlos+I+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+9> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Juan+Carlos+I+> .
+
+<http://www.semanticweb.org/grupo09#+C%2F+Ram%C3%B3n+Sainz+de+Varanda> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+9> onto:estaEn <http://www.semanticweb.org/grupo09#+C%2F+Ram%C3%B3n+Sainz+de+Varanda> .
+
+<http://www.semanticweb.org/grupo09#Estacion+10> a onto:Estaciones ;
+	onto:bicisDisponibles "13"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 13</li><li>Anclajes disponibles: 8</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "674454.0980053664"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4611556.142109903"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#C%2F+As%C3%ADn+y+Palacios+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+10> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+As%C3%ADn+y+Palacios+> .
+
+<http://www.semanticweb.org/grupo09#+C%2F+Pedro+IV+El+Ceremonioso> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+10> onto:estaEn <http://www.semanticweb.org/grupo09#+C%2F+Pedro+IV+El+Ceremonioso> .
+
+<http://www.semanticweb.org/grupo09#Estacion+11> a onto:Estaciones ;
+	onto:bicisDisponibles "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "18"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 3</li><li>Anclajes disponibles: 18</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "674849.903485189"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612042.595863729"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#C%2F+Eduardo+Ibarra+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+11> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Eduardo+Ibarra+> .
+
+<http://www.semanticweb.org/grupo09#+C%2F+Violante+de+Hungr%C3%ADa> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+11> onto:estaEn <http://www.semanticweb.org/grupo09#+C%2F+Violante+de+Hungr%C3%ADa> .
+
+<http://www.semanticweb.org/grupo09#Estacion+12> a onto:Estaciones ;
+	onto:bicisDisponibles "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 8</li><li>Anclajes disponibles: 12</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "674209.1338063633"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613140.443152811"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Via+Univ%C3%A9rsitas+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+12> onto:estaEn <http://www.semanticweb.org/grupo09#Via+Univ%C3%A9rsitas+> .
+
+<http://www.semanticweb.org/grupo09#+C%2F+Hermanos+Gambra> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+12> onto:estaEn <http://www.semanticweb.org/grupo09#+C%2F+Hermanos+Gambra> .
+
+<http://www.semanticweb.org/grupo09#Estacion+13> a onto:Estaciones ;
+	onto:bicisDisponibles "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "15"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 15</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "674246.1387059671"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613850.8095116075"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Avda.+Navarra+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+13> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Navarra+> .
+
+<http://www.semanticweb.org/grupo09#+C%2F+Rioja> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+13> onto:estaEn <http://www.semanticweb.org/grupo09#+C%2F+Rioja> .
+
+<http://www.semanticweb.org/grupo09#Estacion+14> a onto:Estaciones ;
+	onto:bicisDisponibles "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 11</li><li>Anclajes disponibles: 10</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "674776.6682624074"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613537.967226235"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#C%2F+Graus+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+14> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Graus+> .
+
+<http://www.semanticweb.org/grupo09#+C%2F+Unceta> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+14> onto:estaEn <http://www.semanticweb.org/grupo09#+C%2F+Unceta> .
+
+<http://www.semanticweb.org/grupo09#Estacion+15> a onto:Estaciones ;
+	onto:bicisDisponibles "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 12</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "675169.6621584316"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612596.989091256"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#C%2F+Corona+de+Arag%C3%B3n+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+15> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Corona+de+Arag%C3%B3n+> .
+
+<http://www.semanticweb.org/grupo09#+C%2F+Lorente> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+15> onto:estaEn <http://www.semanticweb.org/grupo09#+C%2F+Lorente> .
+
+<http://www.semanticweb.org/grupo09#Estacion+16> a onto:Estaciones ;
+	onto:bicisDisponibles "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "18"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 18</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "674531.7776761394"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4615518.329386774"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Avda.+Pablo+Ruiz+Picasso+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+16> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Pablo+Ruiz+Picasso+> .
+
+<http://www.semanticweb.org/grupo09#+Torre+del+Agua> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+16> onto:estaEn <http://www.semanticweb.org/grupo09#+Torre+del+Agua> .
+
+<http://www.semanticweb.org/grupo09#Estacion+17> a onto:Estaciones ;
+	onto:bicisDisponibles "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "14"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 14</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "675082.8512086545"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4615741.954081438"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Avda.+Ranillas+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+17> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Ranillas+> .
+
+<http://www.semanticweb.org/grupo09#+Avda.+Pablo+Ruiz+Picasso> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+17> onto:estaEn <http://www.semanticweb.org/grupo09#+Avda.+Pablo+Ruiz+Picasso> .
+
+<http://www.semanticweb.org/grupo09#Estacion+18> a onto:Estaciones ;
+	onto:bicisDisponibles "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "17"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 7</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "675469.635585876"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4615158.24649585"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Pasarela+del+Voluntariado+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+18> onto:estaEn <http://www.semanticweb.org/grupo09#Pasarela+del+Voluntariado+> .
+
+<http://www.semanticweb.org/grupo09#+Avda.+Ranillas> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+18> onto:estaEn <http://www.semanticweb.org/grupo09#+Avda.+Ranillas> .
+
+<http://www.semanticweb.org/grupo09#Estacion+19> a onto:Estaciones ;
+	onto:bicisDisponibles "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 10</li><li>Anclajes disponibles: 11</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "675887.9946791041"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614631.435627686"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Ranillas+> .
+
+<http://www.semanticweb.org/grupo09#+Puente+de+La+Almozara> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+19> onto:estaEn <http://www.semanticweb.org/grupo09#+Puente+de+La+Almozara> .
+
+<http://www.semanticweb.org/grupo09#Estacion+20> a onto:Estaciones ;
+	onto:bicisDisponibles "0"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "17"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 0</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676521.483524982"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614439.010262394"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Ribera+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+20> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Ribera+> .
+
+<http://www.semanticweb.org/grupo09#+Puente+de+Santiago> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+20> onto:estaEn <http://www.semanticweb.org/grupo09#+Puente+de+Santiago> .
+
+<http://www.semanticweb.org/grupo09#Estacion+21> a onto:Estaciones ;
+	onto:bicisDisponibles "13"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 13</li><li>Anclajes disponibles: 8</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "677458.6056386359"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614044.937332258"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Ribera+> .
+
+<http://www.semanticweb.org/grupo09#+Puente+del+Pilar> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+21> onto:estaEn <http://www.semanticweb.org/grupo09#+Puente+del+Pilar> .
+
+<http://www.semanticweb.org/grupo09#Estacion+22> a onto:Estaciones ;
+	onto:bicisDisponibles "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "13"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 13</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "677769.8830778005"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613631.346063166"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+22> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+> .
+
+<http://www.semanticweb.org/grupo09#+Pasarela+del+Huerva> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+22> onto:estaEn <http://www.semanticweb.org/grupo09#+Pasarela+del+Huerva> .
+
+<http://www.semanticweb.org/grupo09#Estacion+23> a onto:Estaciones ;
+	onto:bicisDisponibles "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "14"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 7</li><li>Anclajes disponibles: 14</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "677403.1636507643"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613776.593027227"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+> , <http://www.semanticweb.org/grupo09#+Puente+del+Pilar> .
+
+<http://www.semanticweb.org/grupo09#Estacion+24> a onto:Estaciones ;
+	onto:bicisDisponibles "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "20"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 20</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676982.2461119632"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613971.405242417"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+> .
+
+<http://www.semanticweb.org/grupo09#+Puente+de+Piedra> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+24> onto:estaEn <http://www.semanticweb.org/grupo09#+Puente+de+Piedra> .
+
+<http://www.semanticweb.org/grupo09#Estacion+25> a onto:Estaciones ;
+	onto:bicisDisponibles "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "17"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 4</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676504.2527290656"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614170.725479681"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+> , <http://www.semanticweb.org/grupo09#+Puente+de+Santiago> .
+
+<http://www.semanticweb.org/grupo09#Estacion+26> a onto:Estaciones ;
+	onto:bicisDisponibles "14"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 14</li><li>Anclajes disponibles: 7</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "675643.0073561185"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614306.693232718"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+> , <http://www.semanticweb.org/grupo09#+Puente+de+La+Almozara> .
+
+<http://www.semanticweb.org/grupo09#Estacion+27> a onto:Estaciones ;
+	onto:bicisDisponibles "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 12</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "675258.2438197444"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614764.45746837"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Pasarela+del+Voluntariado+> .
+
+<http://www.semanticweb.org/grupo09#+Avda.+Almozara> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+27> onto:estaEn <http://www.semanticweb.org/grupo09#+Avda.+Almozara> .
+
+<http://www.semanticweb.org/grupo09#Estacion+28> a onto:Estaciones ;
+	onto:bicisDisponibles "0"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "24"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 0</li><li>Anclajes disponibles: 24</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "674353.7498153094"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614541.783660298"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#C%2F+Francia+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+28> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Francia+> .
+
+<http://www.semanticweb.org/grupo09#+Pabell%C3%B3n+Puente> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+28> onto:estaEn <http://www.semanticweb.org/grupo09#+Pabell%C3%B3n+Puente> .
+
+<http://www.semanticweb.org/grupo09#Estacion+29> a onto:Estaciones ;
+	onto:bicisDisponibles "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "23"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 7</li><li>Anclajes disponibles: 23</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "674227.3492706296"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614154.64966946"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Estaci%C3%B3n+Intermodal+Delicias+%28Salidas%29> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+29> onto:estaEn <http://www.semanticweb.org/grupo09#Estaci%C3%B3n+Intermodal+Delicias+%28Salidas%29> .
+
+<http://www.semanticweb.org/grupo09#Estacion+30> a onto:Estaciones ;
+	onto:bicisDisponibles "16"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 16</li><li>Anclajes disponibles: 5</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "675329.9923329047"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613409.474988687"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Estaci%C3%B3n+de+Cercan%C3%ADas+El+Portillo+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+30> onto:estaEn <http://www.semanticweb.org/grupo09#Estaci%C3%B3n+de+Cercan%C3%ADas+El+Portillo+> .
+
+<http://www.semanticweb.org/grupo09#Estacion+31> a onto:Estaciones ;
+	onto:bicisDisponibles "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "17"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676582.2035544008"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613504.823403645"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Pza.+Espa%C3%B1a> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+31> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+Espa%C3%B1a> .
+
+<http://www.semanticweb.org/grupo09#Estacion+32> a onto:Estaciones ;
+	onto:bicisDisponibles "14"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "15"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 14</li><li>Anclajes disponibles: 15</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676293.4849388119"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613036.333235371"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Constituci%C3%B3n+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+32> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Constituci%C3%B3n+> .
+
+<http://www.semanticweb.org/grupo09#Pza.+Arag%C3%B3n+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+32> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+Arag%C3%B3n+> .
+
+<http://www.semanticweb.org/grupo09#Estacion+33> a onto:Estaciones ;
+	onto:bicisDisponibles "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "15"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 15</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "677485.1699573445"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613408.545050463"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#C%2F+Asalto+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+33> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Asalto+> .
+
+<http://www.semanticweb.org/grupo09#+Edificio+Trovador> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+33> onto:estaEn <http://www.semanticweb.org/grupo09#+Edificio+Trovador> .
+
+<http://www.semanticweb.org/grupo09#Estacion+34> a onto:Estaciones ;
+	onto:bicisDisponibles "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "16"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 5</li><li>Anclajes disponibles: 16</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "677009.1305011907"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613188.480893311"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Asalto+> .
+
+<http://www.semanticweb.org/grupo09#+C%2F+Miguel+Servet+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+34> onto:estaEn <http://www.semanticweb.org/grupo09#+C%2F+Miguel+Servet+> .
+
+<http://www.semanticweb.org/grupo09#Estacion+35> a onto:Estaciones ;
+	onto:bicisDisponibles "13"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 13</li><li>Anclajes disponibles: 8</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676280.2924439493"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613553.287068226"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Pza.+Salamero> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+35> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+Salamero> .
+
+<http://www.semanticweb.org/grupo09#Estacion+36> a onto:Estaciones ;
+	onto:bicisDisponibles "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "15"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 15</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676275.2698373196"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613774.806717717"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Avda.+C%C3%A9sar+Augusto+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+36> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+C%C3%A9sar+Augusto+> .
+
+<http://www.semanticweb.org/grupo09#+Avda.+Conde+Aranda> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+36> onto:estaEn <http://www.semanticweb.org/grupo09#+Avda.+Conde+Aranda> .
+
+<http://www.semanticweb.org/grupo09#Estacion+37> a onto:Estaciones ;
+	onto:bicisDisponibles "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "20"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 10</li><li>Anclajes disponibles: 20</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "673760.3177675647"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614266.757959997"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Estaci%C3%B3n+Intermodal+Delicias+%28Llegadas%29> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+37> onto:estaEn <http://www.semanticweb.org/grupo09#Estaci%C3%B3n+Intermodal+Delicias+%28Llegadas%29> .
+
+<http://www.semanticweb.org/grupo09#Estacion+38> a onto:Estaciones ;
+	onto:bicisDisponibles "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "13"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 8</li><li>Anclajes disponibles: 13</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "678460.7452327413"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613654.374655051"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+de+La+Ribera+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+38> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+La+Ribera+> .
+
+<http://www.semanticweb.org/grupo09#+Pasarela+Azud> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+38> onto:estaEn <http://www.semanticweb.org/grupo09#+Pasarela+Azud> .
+
+<http://www.semanticweb.org/grupo09#Estacion+39> a onto:Estaciones ;
+	onto:bicisDisponibles "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 10</li><li>Anclajes disponibles: 11</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676875.6737743317"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613589.483909276"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Pza.+San+Pedro+Nolasco> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+39> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+San+Pedro+Nolasco> .
+
+<http://www.semanticweb.org/grupo09#Estacion+40> a onto:Estaciones ;
+	onto:bicisDisponibles "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "14"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 7</li><li>Anclajes disponibles: 14</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676648.6412621725"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613117.609568934"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Pza.+de+los+Sitios+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+40> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+los+Sitios+> .
+
+<http://www.semanticweb.org/grupo09#Estacion+41> a onto:Estaciones ;
+	onto:bicisDisponibles "14"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 14</li><li>Anclajes disponibles: 7</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676049.8715700008"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613211.22537717"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Pamplona+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+41> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Pamplona+> .
+
+<http://www.semanticweb.org/grupo09#+Puerta+del+Carmen> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+41> onto:estaEn <http://www.semanticweb.org/grupo09#+Puerta+del+Carmen> .
+
+<http://www.semanticweb.org/grupo09#Estacion+42> a onto:Estaciones ;
+	onto:bicisDisponibles "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 12</li><li>Anclajes disponibles: 9</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "675682.3195447342"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613483.302453537"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+M%C2%AA+Agust%C3%ADn+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+42> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+M%C2%AA+Agust%C3%ADn+> .
+
+<http://www.semanticweb.org/grupo09#+Colegio+Joaqu%C3%ADn+Costa> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+42> onto:estaEn <http://www.semanticweb.org/grupo09#+Colegio+Joaqu%C3%ADn+Costa> .
+
+<http://www.semanticweb.org/grupo09#Estacion+43> a onto:Estaciones ;
+	onto:bicisDisponibles "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "16"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 5</li><li>Anclajes disponibles: 16</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "675620.8765705475"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613838.870355027"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Pza.+del+Portillo+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+43> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+del+Portillo+> .
+
+<http://www.semanticweb.org/grupo09#+Plaza+de+Toros> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+43> onto:estaEn <http://www.semanticweb.org/grupo09#+Plaza+de+Toros> .
+
+<http://www.semanticweb.org/grupo09#Estacion+44> a onto:Estaciones ;
+	onto:bicisDisponibles "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 12</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "675242.2729886677"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613893.277580566"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Avda.+Madrid+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+44> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Madrid+> .
+
+<http://www.semanticweb.org/grupo09#+Aljafer%C3%ADa> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+44> onto:estaEn <http://www.semanticweb.org/grupo09#+Aljafer%C3%ADa> .
+
+<http://www.semanticweb.org/grupo09#Estacion+45> a onto:Estaciones ;
+	onto:bicisDisponibles "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "13"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 8</li><li>Anclajes disponibles: 13</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "674828.098925371"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614498.440154144"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Avda.+Pablo+Gargallo+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+45> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Pablo+Gargallo+> .
+
+<http://www.semanticweb.org/grupo09#+Avda.+Puerta+Sancho> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+45> onto:estaEn <http://www.semanticweb.org/grupo09#+Avda.+Puerta+Sancho> .
+
+<http://www.semanticweb.org/grupo09#Estacion+46> a onto:Estaciones ;
+	onto:bicisDisponibles "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 12</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "675300.9241561615"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614364.322915688"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Pablo+Gargallo+> .
+
+<http://www.semanticweb.org/grupo09#+C%2F+Ignacio+Menaya> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+46> onto:estaEn <http://www.semanticweb.org/grupo09#+C%2F+Ignacio+Menaya> .
+
+<http://www.semanticweb.org/grupo09#Estacion+47> a onto:Estaciones ;
+	onto:bicisDisponibles "15"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 15</li><li>Anclajes disponibles: 6</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676094.9231835532"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613477.412387599"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#C%2F+Ram%C3%B3n+y+Cajal+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+47> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Ram%C3%B3n+y+Cajal+> .
+
+<http://www.semanticweb.org/grupo09#+C%2F+Madre+Rafols> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+47> onto:estaEn <http://www.semanticweb.org/grupo09#+C%2F+Madre+Rafols> .
+
+<http://www.semanticweb.org/grupo09#Estacion+48> a onto:Estaciones ;
+	onto:bicisDisponibles "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "17"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 4</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "676787.9508470903"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613916.956013001"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Pza.+del+Pilar+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+48> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+del+Pilar+> .
+
+<http://www.semanticweb.org/grupo09#+Edificio+Turismo+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+48> onto:estaEn <http://www.semanticweb.org/grupo09#+Edificio+Turismo+> .
+
+<http://www.semanticweb.org/grupo09#Estacion+49> a onto:Estaciones ;
+	onto:bicisDisponibles "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "17"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 3</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "677195.2331748571"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613545.258063194"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#Pza.+Magdalena> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+49> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+Magdalena> .
+
+<http://www.semanticweb.org/grupo09#Estacion+50> a onto:Estaciones ;
+	onto:bicisDisponibles "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:anclajesDisponibles "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 10</li><li>Anclajes disponibles: 11</li></ul><p>Actualizado: 15:01</p>" ;
+	onto:longitud "678253.8887429056"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613481.584281914"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+> .
+
+<http://www.semanticweb.org/grupo09#+C%2F+Salvador+Minguij%C3%B3n> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#Estacion+50> onto:estaEn <http://www.semanticweb.org/grupo09#+C%2F+Salvador+Minguij%C3%B3n> .

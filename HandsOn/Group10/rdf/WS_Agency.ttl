@@ -1,0 +1,13 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g10: <http://smartsevilla.es/ontology> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://smartsevilla.es/ontology/agency/TUSSAM> a <http://smartsevilla.es/ontology/Agency> ;
+	<http://smartsevilla.es/ontology/agency_id> "TUSSAM" ;
+	<http://smartsevilla.es/ontology/agency_name> "Transportes Urbanos de Sevilla S.A.M." ;
+	<http://smartsevilla.es/ontology/agency_url> "http://www.tussam.es" ;
+	<http://smartsevilla.es/ontology/agency_timezone> "Europe/Madrid" ;
+	<http://smartsevilla.es/ontology/agency_lang> "es" ;
+	<http://smartsevilla.es/ontology/agency_phone> "+34 955 479 000     " .
