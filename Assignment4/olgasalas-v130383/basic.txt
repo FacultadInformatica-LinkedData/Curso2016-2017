@@ -1,0 +1,110 @@
+# 1. Get all the classes
+
+SELECT DISTINCT ?Class
+WHERE{
+  ?Class a <http://www.w3.org/2000/01/rdf-schema#Class>
+}
+
+# 2. Get all the subclasses of the class Establishment
+
+SELECT DISTINCT ?SubClass
+WHERE{
+  ?SubClass rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Establishment>
+}
+
+# 3. Get all instances of the class City
+
+SELECT DISTINCT ?instance
+WHERE{
+  ?instance a <http://GP-onto.fi.upm.es/exercise2#City>
+}
+
+# 4. Get the number of inhabitants of Santiago de Compostela
+
+PREFIX ont: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT DISTINCT ?inhabitants
+WHERE{
+  ont:Santiago_de_Compostela ont:hasInhabitantNumber ?inhabitants
+}
+
+# 5. Get the number of inhabitants of Santiago de Compostela and Arzua
+
+PREFIX ont: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT DISTINCT ?santiagoInhabitants ?arzuaInhabitants
+WHERE{
+  ont:Santiago_de_Compostela ont:hasInhabitantNumber ?santiagoInhabitants .
+  ont:Arzua ont:hasInhabitantNumber ?arzuaInhabitants
+} 
+
+# 6. Get all places, together with the number of inhabitants, ordered by the place name (ascending)
+
+PREFIX ont: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT DISTINCT ?place ?inhabitants
+WHERE{
+  ?place ont:hasInhabitantNumber ?inhabitants
+}
+ORDER BY ?place ASC (?place)
+
+# 7. Get all instances of Locality together with their number of inhabitants (if this information exists)
+
+PREFIX ont: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT DISTINCT ?locality ?inhabitants
+WHERE{
+  ?locality a ont:Location .
+  OPTIONAL{
+    ?locality ont:hasInhabitantNumber ?inhabitants
+  }
+}
+
+# 8. Get all places with more than 200.000 inhabitants
+
+PREFIX ont: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT DISTINCT ?place ?inhabitants
+WHERE{
+  ?place ont:hasInhabitantNumber ?inhabitants
+  FILTER (xsd:integer(?inhabitants) > xsd:integer("200000"))
+}
+
+# 9. Get postal address data for Pazo_Breogan (street, number, locality, province)
+
+PREFIX ont: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT DISTINCT ?street ?number ?locality ?province
+WHERE{
+  ont:Pazo_Breogan ont:hasAddress ?instance .
+  ?instance ont:hasStreet ?street .
+  ?instance ont:hasNumber ?number .
+  ont:Pazo_Breogan ont:isPlacedIn ?locality .
+  ?locality ont:inProvince ?province
+}
+
+# 10. Get all subclasses of class Location
+
+PREFIX ont: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT DISTINCT ?subClass
+WHERE{
+  ?subClass rdfs:subClassOf ont:Location
+}
+
+# 11. Get all instances of class Locality
+
+PREFIX ont: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT DISTINCT ?locality
+WHERE{
+  ?locality a ont:Location
+}
+
+# 12. Describe the resource with rdfs:label "Madrid"
+
+SELECT DISTINCT ?resource
+WHERE{
+ ?resource rdfs:label "Madrid"
+}
+
+# 13. Construct a graph that relates directly all touristic places with their provinces, using a new property called "isln"
+
+# 14. Check whether there is any instance of Town
+
+PREFIX ont: <http://GP-onto.fi.upm.es/exercise2#>
+ASK{
+  ?instance a ont:Town
+}

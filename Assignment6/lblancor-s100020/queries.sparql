@@ -1,0 +1,93 @@
+#SPARQL Endpoint: http://sandbox.linkeddata.es/sparql
+#Graph: http://sandbox.linkeddata.es/graph/accidentes
+
+
+#Queries:
+
+#1. How many accidents were there in Madrid in 2013?
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX mv: <http://example.org/myVocabulary#>
+
+SELECT SUM(?naccidents) AS ?Accidents_In_Madrid_in_2013
+WHERE {
+	?obs a qb:Observation;
+	mv:numberOfAccidents ?naccidents
+}
+
+
+#2. Give me the number of accidents in Usera for each type of accident.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX mv: <http://example.org/myVocabulary#>
+
+SELECT ?typeaccident AS ?Type_Of_Accident xsd:integer(?naccidents) AS ?Accidents_In_Usera 
+WHERE {
+	?obs a qb:Observation;
+	mv:relatedDistrict "USERA";
+	mv:hasAccidentType ?typeaccident;
+	mv:numberOfAccidents ?naccidents
+}
+
+
+#3. Give me the number of multiple collisions for each district.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX mv: <http://example.org/myVocabulary#>
+
+SELECT ?district AS ?District xsd:integer(?nmp) AS ?Number_Of_Multiple_Collisions
+WHERE {
+	?obs a qb:Observation;
+	mv:relatedDistrict ?district;
+	mv:hasAccidentType mv:MultipleCollision;
+	mv:numberOfAccidents ?nmp.
+}
+
+
+#4. Which is the district were the number of bicycle falls was higher in 2013?
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX mv: <http://example.org/myVocabulary#>
+
+SELECT ?district AS ?District (xsd:integer(MAX(?naccidents)) AS ?Highest_Number_Of_Bycicle_Falls)
+WHERE {
+	?obs a qb:Observation;
+	mv:relatedDistrict ?district;
+	mv:hasAccidentType mv:BicycleFall;
+    mv:numberOfAccidents ?naccidents
+}
+ORDER BY DESC(?naccidents) LIMIT 1
+
+
+#5. Give me the districts with more than 500 accidents in 2013.
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX mv: <http://example.org/myVocabulary#>
+
+SELECT ?district AS ?District ?naccidents AS ?Number_Of_Accidents_Greater_Than_500
+WHERE {
+{
+	SELECT ?district SUM(xsd:integer(?nacc)) AS ?naccidents
+	WHERE {
+		?obs a qb:Observation;
+		mv:relatedDistrict ?district;
+		mv:numberOfAccidents ?nacc.
+	}
+}
+}
+HAVING(?naccidents > 500)
+ORDER BY ASC(?naccidents)
+
+
+########################################
+
+#Help Queries.
+
+#Types of accident (for the fourth query).
+
+PREFIX mv: <http://example.org/myVocabulary#>
+
+SELECT distinct ?types
+WHERE {?a mv:hasAccidentType ?types}
+
+########################################

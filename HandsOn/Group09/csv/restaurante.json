@@ -1,0 +1,176 @@
+[
+  {
+    "op": "core/column-split",
+    "description": "Split column coordenadas by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "coordenadas",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename coordenadas 1 to X",
+    "oldColumnName": "coordenadas 1",
+    "newColumnName": "X"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename coordenadas 2 to Y",
+    "oldColumnName": "coordenadas 2",
+    "newColumnName": "Y"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column X to Longitud",
+    "oldColumnName": "X",
+    "newColumnName": "Longitud"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Y to Latitud",
+    "oldColumnName": "Y",
+    "newColumnName": "Latitud"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column id",
+    "columnName": "id"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column title to nombre",
+    "oldColumnName": "title",
+    "newColumnName": "nombre"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column streetAddress to direccion",
+    "oldColumnName": "streetAddress",
+    "newColumnName": "direccion"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column postalCode to codigoPostal",
+    "oldColumnName": "postalCode",
+    "newColumnName": "codigoPostal"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column addressLocality to ciudad",
+    "oldColumnName": "addressLocality",
+    "newColumnName": "ciudad"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column image to imagen",
+    "oldColumnName": "image",
+    "newColumnName": "imagen"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column servesCuisine",
+    "columnName": "servesCuisine"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column comment to comentarios",
+    "oldColumnName": "comment",
+    "newColumnName": "comentarios"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column tenedores",
+    "columnName": "tenedores"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column capacidad",
+    "columnName": "capacidad"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Longitud to longitud",
+    "oldColumnName": "Longitud",
+    "newColumnName": "longitud"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Latitud to latitud",
+    "oldColumnName": "Latitud",
+    "newColumnName": "latitud"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column description to descripcion",
+    "oldColumnName": "description",
+    "newColumnName": "descripcion"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column link",
+    "columnName": "link"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column imagen using expression grel:\"www.zaragoza.es\"+value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "imagen",
+    "expression": "grel:\"www.zaragoza.es\"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column logo using expression grel:\"www.zaragoza.es\"+value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "logo",
+    "expression": "grel:\"www.zaragoza.es\"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column direccion by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "direccion",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ", ",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column direccion 2",
+    "columnName": "direccion 2"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column direccion 3",
+    "columnName": "direccion 3"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column direccion 4",
+    "columnName": "direccion 4"
+  }
+]

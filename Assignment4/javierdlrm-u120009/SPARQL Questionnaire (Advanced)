@@ -1,0 +1,198 @@
+##########################################################
+#   A1. Dame todas las propiedades aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician)
+##########################################################
+
+# QUERY
+select distinct ?property
+where
+{
+    ?instance a <http://dbpedia.org/ontology/Politician> .
+    ?instance ?property ?object
+}
+
+# RESULT
+property
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://purl.org/dc/terms/subject
+http://xmlns.com/foaf/0.1/depiction
+http://dbpedia.org/ontology/thumbnail
+http://dbpedia.org/property/designado
+http://xmlns.com/foaf/0.1/homepage
+http://dbpedia.org/property/enelcargo
+http://dbpedia.org/property/oponentes
+http://dbpedia.org/property/religion
+http://dbpedia.org/ontology/wikiPageExternalLink
+http://dbpedia.org/property/alineaciónTexto
+http://dbpedia.org/property/almamáter
+http://dbpedia.org/property/ancho
+http://dbpedia.org/property/apellido
+...
+...
+
+##########################################################
+#   A2. Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician)
+##########################################################
+
+# QUERY
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select distinct ?property
+where
+{
+    ?instance a <http://dbpedia.org/ontology/Politician> .
+    ?instance ?property ?object
+    minus { ?instance rdf:type ?object }
+}
+
+# RESULT
+property
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.w3.org/2000/01/rdf-schema#comment
+http://purl.org/dc/terms/subject
+http://xmlns.com/foaf/0.1/depiction
+http://dbpedia.org/ontology/thumbnail
+http://dbpedia.org/property/designado
+http://xmlns.com/foaf/0.1/homepage
+http://dbpedia.org/property/enelcargo
+http://dbpedia.org/property/oponentes
+http://dbpedia.org/property/religion
+http://dbpedia.org/ontology/wikiPageExternalLink
+http://dbpedia.org/property/alineaciónTexto
+http://dbpedia.org/property/almamáter
+http://dbpedia.org/property/ancho
+http://dbpedia.org/property/apellido
+...
+...
+
+##########################################################
+#   A3. ¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician (http://dbpedia.org/ontology/Politician)?
+##########################################################
+
+# QUERY
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select count distinct ?property
+where
+{
+    ?instance a <http://dbpedia.org/ontology/Politician> .
+    ?instance ?property ?object
+    minus { ?instance rdf:type ?object }
+}
+
+# RESULT
+callret-0
+1438
+
+##########################################################
+#   A4. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime cuántos valores distintos toman en dichas instancias
+##########################################################
+
+# QUERY
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select count (distinct ?property)
+where
+{
+    ?instance a <http://dbpedia.org/ontology/Politician> .
+    ?instance ?property ?object
+    minus { ?instance rdf:type ?object }
+}
+group by ?instance
+
+# RESULT
+callret-0
+33
+35
+33
+37
+29
+21
+26
+37
+20
+35
+28
+31
+26
+33
+40
+39
+25
+29
+51
+27
+...
+...
+
+##########################################################
+#   A5. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime la media de valores distintos que toman en dichas instancias.
+##########################################################
+
+# QUERY
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select avg (?media)
+where
+{
+    select count (distinct ?property) as ?media
+    where
+    {
+        ?instance a <http://dbpedia.org/ontology/Politician> .
+        ?instance ?property ?object
+        minus { ?instance rdf:type ?object }
+    }
+    group by ?instance
+}
+
+# RESULT
+callret-0
+30.271210074513051
+
+##########################################################
+#   A6. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor
+##########################################################
+
+# QUERY
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select ?property max(?number)
+where
+{
+    select ?property count (?property) as ?number
+    where
+    {
+        ?instance a <http://dbpedia.org/ontology/Politician> .
+        ?instance ?property ?object
+        minus { ?instance rdf:type ?object }
+    }
+    group by ?property
+}
+order by desc (?number)
+
+# RESULT
+property                                                        callret-1
+http://dbpedia.org/ontology/wikiPageWikiLink                    1174374
+http://www.w3.org/2002/07/owl#sameAs                            152677
+http://purl.org/dc/terms/subject                                115467
+http://es.dbpedia.org/property/wikiPageUsesTemplate             59487
+http://dbpedia.org/ontology/wikiPageExternalLink                32728
+http://es.dbpedia.org/property/cargo                            31614
+http://xmlns.com/foaf/0.1/name                                  31248
+http://es.dbpedia.org/property/predecesor                       26180
+http://es.dbpedia.org/property/sucesor                          25080
+http://dbpedia.org/ontology/successor                           24185
+http://www.w3.org/2000/01/rdf-schema#label                      22860
+http://dbpedia.org/ontology/abstract                            22845
+http://www.w3.org/2000/01/rdf-schema#comment                    22839
+http://es.dbpedia.org/property/inicio                           21100
+http://es.dbpedia.org/property/título                           20906
+http://xmlns.com/foaf/0.1/depiction                             20602
+http://dbpedia.org/ontology/thumbnail                           20602
+http://dbpedia.org/ontology/party                               18858
+http://es.dbpedia.org/property/final                            18706
+http://es.dbpedia.org/property/lugarnac                         18083
+http://es.dbpedia.org/property/partido                          15508
+http://xmlns.com/foaf/0.1/isPrimaryTopicOf                      15400
+http://dbpedia.org/ontology/wikiPageID                          15400
+http://dbpedia.org/ontology/wikiPageLength                      15400
+http://dbpedia.org/ontology/wikiPageRevisionID                  15400
+http://dbpedia.org/ontology/wikiPageOutDegree                   15400
+...
+...

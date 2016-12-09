@@ -1,0 +1,608 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix group5: <http://madridOcio.linkeddata.com/ontologyGroup5#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/49338> vcard:given-name "Centro Deportivo Municipal Alberto García (Pozo Tío Raimundo)" ;
+	vcard:street-address "REGUERA DE TOMATEROS" ;
+	vcard:note "39 B" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ENTREVIAS" ;
+	vcard:postal-code "28053" ;
+	vcard:email "idmagarcia@madrid.es" ;
+	vcard:tel "917 854 751" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/114782> vcard:given-name "Centro Deportivo Municipal Alfredo Goyeneche" ;
+	vcard:street-address "ARROYO DE POZUELO" ;
+	vcard:note "99" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ARAVACA" ;
+	vcard:postal-code "28023" ;
+	vcard:email "idmagoyeneche@madrid.es" ;
+	vcard:tel "913 571 228" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4696> vcard:given-name "Centro Deportivo Municipal Aluche" ;
+	vcard:street-address "GENERAL FANJUL" ;
+	vcard:note "14" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LAS AGUILAS" ;
+	vcard:postal-code "28044" ;
+	vcard:email "idmaluche@madrid.es" ;
+	vcard:tel """917 062 868 /                                                                                                                                       
+917 062 869                                                                        
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4617960> vcard:given-name "Centro Deportivo Municipal Antiguo Canódromo" ;
+	vcard:street-address "VIA CARPETANA" ;
+	vcard:note "57" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN ISIDRO" ;
+	vcard:postal-code "28047" ;
+	vcard:tel "685534621" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4624404> vcard:given-name "Centro Deportivo Municipal Antonio Díaz Miguel" ;
+	vcard:street-address "JOAQUIN DICENTA" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALMENARA" ;
+	vcard:postal-code "28029" ;
+	vcard:tel "913 145 437" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4694> vcard:given-name "Centro Deportivo Municipal Arganzuela" ;
+	vcard:street-address "ALICANTE" ;
+	vcard:note "14" ;
+	vcard:region "MADRID" ;
+	vcard:locality "DELICIAS" ;
+	vcard:postal-code "28045" ;
+	vcard:email "idmarganzuela@madrid.es" ;
+	vcard:tel "915 288 879" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/99578> vcard:given-name "Centro Deportivo Municipal Barajas" ;
+	vcard:street-address "LOGROÑO" ;
+	vcard:note "70" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALAMEDA DE OSUNA" ;
+	vcard:postal-code "28042" ;
+	vcard:tel "913 294 219 / 913 290 602" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4705> vcard:given-name "Centro Deportivo Municipal Casa de Campo" ;
+	vcard:street-address "PUERTA DEL ANGEL" ;
+	vcard:note "7" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASA DE CAMPO" ;
+	vcard:postal-code "28011" ;
+	vcard:tel "914 630 050 / 914 649 889" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/78960> vcard:given-name "Centro Deportivo Municipal Centro Integrado Arganzuela" ;
+	vcard:street-address "CANARIAS" ;
+	vcard:note "17" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALOS DE MOGUER" ;
+	vcard:postal-code "28045" ;
+	vcard:email "idmestacionsur@madrid.es" ;
+	vcard:tel """915 063 616                                                                                 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4687> vcard:given-name "Centro Deportivo Municipal Cerro Almodóvar" ;
+	vcard:street-address "CERRO DE ALMODOVAR" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SANTA EUGENIA" ;
+	vcard:postal-code "28007" ;
+	vcard:tel """913 314 047                                                                                       
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4700> vcard:given-name "Centro Deportivo Municipal Chamartín" ;
+	vcard:street-address "PIO XII" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "NUEVA ESPAÑA" ;
+	vcard:postal-code "28016" ;
+	vcard:email "recepcionchamartin@forus.es" ;
+	vcard:tel "91 359 33 39" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/6208448> vcard:given-name "Centro Deportivo Municipal Circuito BMX" ;
+	vcard:street-address "EMBAJADORES" ;
+	vcard:note "316" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LEGAZPI" ;
+	vcard:postal-code "28045" ;
+	vcard:tel "915 279 704" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4702> vcard:given-name "Centro Deportivo Municipal Ciudad de Los Poetas" ;
+	vcard:street-address "ANTONIO MACHADO" ;
+	vcard:note "12" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VALDEZARZA" ;
+	vcard:postal-code "28035" ;
+	vcard:email "idmcpoetas@madrid.es" ;
+	vcard:tel "91 373 27 39" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4672> vcard:given-name "Centro Deportivo Municipal Concepción" ;
+	vcard:street-address "JOSE DEL HIERRO" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CONCEPCION" ;
+	vcard:postal-code "28027" ;
+	vcard:tel """914 039 020                                                                                     
+914 039 021""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/134059> vcard:given-name "Centro Deportivo Municipal Daoíz y Velarde 1" ;
+	vcard:street-address "DAOIZ Y VELARDE" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PACIFICO" ;
+	vcard:postal-code "28007" ;
+	vcard:tel """914 338 950                                                                                  
+914 338 770""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4726> vcard:given-name "Centro Deportivo Municipal Daoíz y Velarde 2" ;
+	vcard:street-address "ALBERCHE" ;
+	vcard:note "21" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PACIFICO" ;
+	vcard:postal-code "28007" ;
+	vcard:tel "91 433 27 58" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/140197> vcard:given-name "Centro Deportivo Municipal El Espinillo" ;
+	vcard:street-address "VILLAVERDE A VALLECAS" ;
+	vcard:note "19" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS ROSALES" ;
+	vcard:postal-code "28041" ;
+	vcard:tel """913 172 966                                                          
+913 172 957""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/84661> vcard:given-name "Centro Deportivo Municipal El Olivillo" ;
+	vcard:street-address "OLIVILLO" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LUCERO" ;
+	vcard:postal-code "28011" ;
+	vcard:tel "914 790 212" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4676> vcard:given-name "Centro Deportivo Municipal Entrevías" ;
+	vcard:street-address "SUR" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ENTREVIAS" ;
+	vcard:postal-code "28053" ;
+	vcard:tel """917 854 214 / 917 867 064                                                                             
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/6486044> vcard:given-name "Centro Deportivo Municipal Escuelas de San Antón" ;
+	vcard:street-address "FARMACIA" ;
+	vcard:note "13" ;
+	vcard:region "MADRID" ;
+	vcard:locality "JUSTICIA" ;
+	vcard:postal-code "28004" ;
+	vcard:email "info@cdmescuelassananton.com" ;
+	vcard:tel "918 289 006" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4728> vcard:given-name "Centro Deportivo Municipal Estanque del Retiro" ;
+	vcard:street-address "COLOMBIA" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS JERONIMOS" ;
+	vcard:postal-code "28009" ;
+	vcard:tel """915 744 024                      
+915 571 994""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4622862> vcard:given-name "Centro Deportivo Municipal Fabián Roncero" ;
+	vcard:street-address "SEPTIMA" ;
+	vcard:note "68" ;
+	vcard:region "MADRID" ;
+	vcard:locality "REJAS" ;
+	vcard:postal-code "28022" ;
+	vcard:email "info@cdmfabianroncero.es" ;
+	vcard:tel "917 462 995" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4703> vcard:given-name "Centro Deportivo Municipal Fernando Martín" ;
+	vcard:street-address "SANTO ANGEL DE LA GUARDA" ;
+	vcard:note "6" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VALDEZARZA" ;
+	vcard:postal-code "28039" ;
+	vcard:email "idmfmartin@madrid.es" ;
+	vcard:tel "914 507 344 - 914 505 530" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4623547> vcard:given-name "Centro Deportivo Municipal Francisco Fernández Ochoa" ;
+	vcard:street-address "CATORCE OLIVAS" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "BUENAVISTA" ;
+	vcard:postal-code "28054" ;
+	vcard:email "ffernandez.ochoa@duetsports.com" ;
+	vcard:tel "911 250 051" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4685> vcard:given-name "Centro Deportivo Municipal Francos Rodríguez" ;
+	vcard:street-address "NUMANCIA" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CIUDAD UNIVERSITARIA" ;
+	vcard:postal-code "28039" ;
+	vcard:tel "914 599 871" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4623697> vcard:given-name "Centro Deportivo Municipal Fuente del Berro" ;
+	vcard:street-address "ELVIRA" ;
+	vcard:note "36" ;
+	vcard:region "MADRID" ;
+	vcard:locality "FUENTE DEL BERRO" ;
+	vcard:postal-code "28028" ;
+	vcard:email "info@cdmfuentedelberro.es" ;
+	vcard:tel "910 809 929" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/124194> vcard:given-name "Centro Deportivo Municipal Félix Rubio" ;
+	vcard:street-address "ALIANZA" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS ROSALES" ;
+	vcard:postal-code "28041" ;
+	vcard:tel "913 180 435" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4698> vcard:given-name "Centro Deportivo Municipal Gallur" ;
+	vcard:street-address "GALLUR" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS CARMENES" ;
+	vcard:postal-code "28047" ;
+	vcard:tel "915 251 059" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/51661> vcard:given-name "Centro Deportivo Municipal Gimnasio Moscardó" ;
+	vcard:street-address "PILAR DE ZARAGOZA" ;
+	vcard:note "93" ;
+	vcard:region "MADRID" ;
+	vcard:locality "GUINDALERA" ;
+	vcard:postal-code "28028" ;
+	vcard:tel "913 553 201" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4680> vcard:given-name "Centro Deportivo Municipal Hortaleza" ;
+	vcard:street-address "ESTACION DE HORTALEZA" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "APOSTOL SANTIAGO" ;
+	vcard:postal-code "28033" ;
+	vcard:email "idmhortaleza@madrid.es" ;
+	vcard:tel "913 821 965 / 913 818 260" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4704> vcard:given-name "Centro Deportivo Municipal José María Cagigal" ;
+	vcard:street-address "SANTA POLA" ;
+	vcard:note "22" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASA DE CAMPO" ;
+	vcard:postal-code "28008" ;
+	vcard:tel """915 413 716                                                         
+915 413 746""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4623700> vcard:given-name "Centro Deportivo Municipal La Almudena" ;
+	vcard:street-address "NICOLAS SALMERÓN" ;
+	vcard:note "8" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PUEBLO NUEVO" ;
+	vcard:postal-code "28017" ;
+	vcard:tel "914 400 763 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4722> vcard:given-name "Centro Deportivo Municipal La Bombilla" ;
+	vcard:street-address "SENDA DEL REY" ;
+	vcard:note "8" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASA DE CAMPO" ;
+	vcard:postal-code "28040" ;
+	vcard:tel "917 588 677" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4697> vcard:given-name "Centro Deportivo Municipal La Chopera" ;
+	vcard:street-address "FERNAN NU&Ntilde;EZ" ;
+	vcard:note "3" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS JERONIMOS" ;
+	vcard:postal-code "28009" ;
+	vcard:tel "914 201 154 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4674> vcard:given-name "Centro Deportivo Municipal La Elipa" ;
+	vcard:street-address "ALCALDE GARRIDO JUARISTI" ;
+	vcard:note "17" ;
+	vcard:region "MADRID" ;
+	vcard:locality "MEDIA LEGUA" ;
+	vcard:postal-code "28030" ;
+	vcard:tel "914 303 511" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/104235> vcard:given-name "Centro Deportivo Municipal La Masó" ;
+	vcard:street-address "MASO" ;
+	vcard:note "80" ;
+	vcard:region "MADRID" ;
+	vcard:locality "MIRASIERRA" ;
+	vcard:postal-code "28034" ;
+	vcard:tel "917 397 555" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4695> vcard:given-name "Centro Deportivo Municipal La Mina" ;
+	vcard:street-address "MONSEÑOR OSCAR ROMERO" ;
+	vcard:note "41" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VISTA ALEGRE" ;
+	vcard:postal-code "28025" ;
+	vcard:tel """914 661 278                                                                     
+914 661 732""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4707> vcard:given-name "Centro Deportivo Municipal La Vaguada" ;
+	vcard:street-address "MONFORTE DE LEMOS" ;
+	vcard:note "38 A" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EL PILAR" ;
+	vcard:postal-code "28029" ;
+	vcard:tel "914 800 476" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4834> vcard:given-name "Centro Deportivo Municipal Lago Casa de Campo" ;
+	vcard:street-address "EMBARCADERO" ;
+	vcard:note "8" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASA DE CAMPO" ;
+	vcard:postal-code "28011" ;
+	vcard:tel "91 464 46 10" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4538574> vcard:given-name "Centro Deportivo Municipal Las Cruces" ;
+	vcard:street-address "POBLADOS" ;
+	vcard:note "72" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LAS AGUILAS" ;
+	vcard:postal-code "28044" ;
+	vcard:email "lascruces@basicosportcenter.com" ;
+	vcard:tel "911 288 330" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4619937> vcard:given-name "Centro Deportivo Municipal Los Prunos" ;
+	vcard:street-address "PETUNIAS" ;
+	vcard:note "30" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALOMAS" ;
+	vcard:postal-code "28042" ;
+	vcard:tel "917 432 001" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4681> vcard:given-name "Centro Deportivo Municipal Luis Aragonés" ;
+	vcard:street-address "EL PROVENCIO" ;
+	vcard:note "20" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CANILLAS" ;
+	vcard:postal-code "28043" ;
+	vcard:tel "913 003 612 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/121729> vcard:given-name "Centro Deportivo Municipal Marqués de Samaranch" ;
+	vcard:street-address "IMPERIAL" ;
+	vcard:note "20" ;
+	vcard:region "MADRID" ;
+	vcard:locality "IMPERIAL" ;
+	vcard:postal-code "28005" ;
+	vcard:tel "913 642 240" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4701827> vcard:given-name "Centro Deportivo Municipal Miguel Guillén Prim" ;
+	vcard:street-address "FUENTIDUEÑA" ;
+	vcard:note "6" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASCO H.VALLECAS" ;
+	vcard:postal-code "28031" ;
+	vcard:tel "913 053 451" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4673> vcard:given-name "Centro Deportivo Municipal Moratalaz" ;
+	vcard:street-address "VALDEBERNARDO" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PAVONES" ;
+	vcard:postal-code "28030" ;
+	vcard:email "idmmoratalaz@madrid.es" ;
+	vcard:tel """917 727 100                                                                                                                                     
+- 917 727 121                                            
+- Verano: 914 801 853                                                                                           
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4691> vcard:given-name "Centro Deportivo Municipal Moscardó" ;
+	vcard:street-address "ANDRES ARTEAGA" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "MOSCARDO" ;
+	vcard:postal-code "28026" ;
+	vcard:tel "915 003 940" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4693> vcard:given-name "Centro Deportivo Municipal Orcasitas" ;
+	vcard:street-address "RAFAELA YBARRA" ;
+	vcard:note "52" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ZOFIO" ;
+	vcard:postal-code "28026" ;
+	vcard:tel "914 692 374" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4690> vcard:given-name "Centro Deportivo Municipal Orcasur" ;
+	vcard:street-address "MOREJA" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ORCASUR" ;
+	vcard:postal-code "28041" ;
+	vcard:tel "913 171 062" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4675> vcard:given-name "Centro Deportivo Municipal Palomeras" ;
+	vcard:street-address "TRANVIA DE ARGANDA" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALOMERAS SURESTE" ;
+	vcard:postal-code "28031" ;
+	vcard:tel "917 774 901" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4622991> vcard:given-name "Centro Deportivo Municipal Pepu Hernández" ;
+	vcard:street-address "NIZA" ;
+	vcard:note "8" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ROSAS" ;
+	vcard:postal-code "28022" ;
+	vcard:tel "917 755 866" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4727> vcard:given-name "Centro Deportivo Municipal Peñuelas" ;
+	vcard:street-address "ARGANDA" ;
+	vcard:note "25" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ACACIAS" ;
+	vcard:postal-code "28005" ;
+	vcard:tel "914 732 491" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4719> vcard:given-name "Centro Deportivo Municipal Plata y Castañar" ;
+	vcard:street-address "PLATA Y CASTAÑAR" ;
+	vcard:note "7" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN ANDRES" ;
+	vcard:postal-code "28021" ;
+	vcard:tel """915 051 532                                                                 
+915 051 195""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4718> vcard:given-name "Centro Deportivo Municipal Playa Victoria" ;
+	vcard:street-address "HIERBABUENA" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "BERRUGUETE" ;
+	vcard:postal-code "28039" ;
+	vcard:tel "915 701 841 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4701> vcard:given-name "Centro Deportivo Municipal Pradillo" ;
+	vcard:street-address "PRADILLO" ;
+	vcard:note "33" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CIUDAD JARDIN" ;
+	vcard:postal-code "28002" ;
+	vcard:email "idmpradillo@madrid.es" ;
+	vcard:tel "914 137 105 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4720> vcard:given-name "Centro Deportivo Municipal Pueblo Nuevo" ;
+	vcard:street-address "FRANCISCO RIOJA" ;
+	vcard:note "14" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PUEBLO NUEVO" ;
+	vcard:postal-code "28017" ;
+	vcard:tel "913 770 251" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4678> vcard:given-name "Centro Deportivo Municipal Puente de Vallecas" ;
+	vcard:street-address "PAYASO FOFO" ;
+	vcard:note "7" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALOMERAS BAJAS" ;
+	vcard:postal-code "28018" ;
+	vcard:tel "914 781 492" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/106242> vcard:given-name "Centro Deportivo Municipal Raúl González" ;
+	vcard:street-address "BENIMAMET" ;
+	vcard:note "137" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN CRISTOBAL" ;
+	vcard:postal-code "28021" ;
+	vcard:tel "917 953 792" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4689> vcard:given-name "Centro Deportivo Municipal San Blas" ;
+	vcard:street-address "ARCOS DE JALON" ;
+	vcard:note "59" ;
+	vcard:region "MADRID" ;
+	vcard:locality "HELLIN" ;
+	vcard:postal-code "28037" ;
+	vcard:tel "913 209 818 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4686> vcard:given-name "Centro Deportivo Municipal San Cristóbal" ;
+	vcard:street-address "PINAZO" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN CRISTOBAL" ;
+	vcard:postal-code "28021" ;
+	vcard:email "idmsancristobal@madrid.es" ;
+	vcard:tel "917 950 911  " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4692> vcard:given-name "Centro Deportivo Municipal San Fermín" ;
+	vcard:street-address "SAN MARIO" ;
+	vcard:note "18" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN FERMIN" ;
+	vcard:postal-code "28041" ;
+	vcard:email "idmsanfermin@madrid.es" ;
+	vcard:tel "917 922 102" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4679> vcard:given-name "Centro Deportivo Municipal San Juan Bautista" ;
+	vcard:street-address "TREVIANA" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN JUAN BAUTISTA" ;
+	vcard:postal-code "28043" ;
+	vcard:email "idmsjbautista@madrid.es" ;
+	vcard:tel "914 164 259" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4706> vcard:given-name "Centro Deportivo Municipal Santa Ana" ;
+	vcard:street-address "ALAMEDILLAS" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VALVERDE" ;
+	vcard:postal-code "28034" ;
+	vcard:email "idmsantaana@madrid.es" ;
+	vcard:tel "913 721 138" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/28525> vcard:given-name "Centro Deportivo Municipal Tenis Casa de Campo" ;
+	vcard:street-address "PRINCIPE" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASA DE CAMPO" ;
+	vcard:postal-code "28011" ;
+	vcard:email "idmteniscc@madrid.es" ;
+	vcard:tel "914 649 617" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4684> vcard:given-name "Centro Deportivo Municipal Triángulo de Oro" ;
+	vcard:street-address "BRAVO MURILLO" ;
+	vcard:note "376" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASTILLEJOS" ;
+	vcard:postal-code "28020" ;
+	vcard:email "idmtoro@madrid.es" ;
+	vcard:tel "915 714 117 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/120275> vcard:given-name "Centro Deportivo Municipal Valdebernardo" ;
+	vcard:street-address "LADERA DE LOS ALMENDROS" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASCO H.VICALVARO" ;
+	vcard:postal-code "28032" ;
+	vcard:email "idmvaldebernardo@madrid.es" ;
+	vcard:tel "917 723 591" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4677> vcard:given-name "Centro Deportivo Municipal Vallecas" ;
+	vcard:street-address "ARROYO DEL OLIVAR" ;
+	vcard:note "51" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALOMERAS BAJAS" ;
+	vcard:postal-code "28018" ;
+	vcard:email "idmvallecas@madrid.es" ;
+	vcard:tel "913 030 608" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/7411340> vcard:given-name "Centro Deportivo Municipal Vallehermoso" ;
+	vcard:street-address "FILIPINAS" ;
+	vcard:note "7" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VALLEHERMOSO" ;
+	vcard:postal-code "28003" ;
+	vcard:tel "917 589 615" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4699> vcard:given-name "Centro Deportivo Municipal Vicente del Bosque" ;
+	vcard:street-address "MONFORTE DE LEMOS" ;
+	vcard:note "13" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LA PAZ" ;
+	vcard:postal-code "28029" ;
+	vcard:email "idmbpilar@madrid.es" ;
+	vcard:tel "913 147 943 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/4688> vcard:given-name "Centro Deportivo Municipal Vicálvaro" ;
+	vcard:street-address "POLIDEPORTIVO" ;
+	vcard:note "3" ;
+	vcard:region "MADRID" ;
+	vcard:locality "AMBROZ" ;
+	vcard:postal-code "28032" ;
+	vcard:email "idmvicalvaro@madrid.es" ;
+	vcard:tel "917 769 874" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Polideportivos/5273495> vcard:given-name "Madrid Caja Mágica" ;
+	vcard:street-address "PERALES" ;
+	vcard:note "23" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN FERMIN" ;
+	vcard:postal-code "28041" ;
+	vcard:tel "917 220 400" .

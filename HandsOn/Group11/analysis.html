@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta <charset="utf-8">
+            <title>Analysis</title>
+    </head>
+    <body>
+        <h1>Analyse the dataset</h1>
+        <!--Analyse both the data (quantities, value ranges, etc.)
+             as well as the schema of the data.-->
+        <h4>Centros culturales</h4>
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td>Tipo de valor</td>
+                <td>Descripción</td>
+		<td>Rango de valores</td>
+            </tr>
+            <tr>
+                <td>PK</td>
+                <td>Entero</td>
+                <td>campo clave, dentro de la web municipal, para uso interno</td>
+		<td>[0-9]</td>
+            </tr>
+            <tr>
+                <td>Nombre</td>
+                <td>Cadena</td>
+                <td>Denominación de la instalación</td>
+            	<td>[a-Z][0-9]</td>
+	    </tr>
+            <tr>
+                <td>Descripción-entidad</td>
+                <td>Cadena</td>
+                <td>Horario de apertura</td>
+            </tr>
+            <tr>
+                <td>Equipamiento</td>
+                <td>Cadena</td>
+                <td>Detalle de espacios internos especializados</td>
+		<td>[a-z][A-Z]</td>
+            </tr>
+            <tr>
+                <td>Transporte</td>
+                <td>Cadena</td>
+                <td>estaciones de metro e indicación de línea; líneas de bus; estaciones de Renfe.</td>
+		<td>[a-z][A-Z][0-9]</td>
+            </tr>
+            <tr>
+                <td>Descripción</td>
+                <td>Cadena</td>
+                <td>Información adicional; por ej.: otros equipamientos con los que se comparte la sede física; información de venta de entradas</td>
+            	<td>[a-z][A-Z][0-9]</td>
+	    </tr>
+            <tr>
+                <td>Accesibilidad</td>
+                <td>Booleano</td>
+                <td>Si es accesible o no para personas con minusvalías</td>
+		<td>[a-z][A-Z][0-9]</td>
+            </tr>
+            <tr>
+                <td>Content-URL</td>
+                <td>Cadena</td>
+                <td>Nombre del recurso en internet</td>
+		<td>[a-z][A-Z][0-9]</td>
+            </tr>
+            <tr>
+                <td>Nombre vía</td>
+                <td>Cadena</td>
+                <td></td>
+		<td>[a-z][A-Z]</td>
+            </tr>
+            <tr>
+                <td>Clase vía</td>
+                <td>Cadena</td>
+                <td>Tipo de vía: calle, avenida, etc</td>
+		<td>[a-z][A-Z]</td>
+            </tr>
+            <tr>
+                <td>Tipo num</td>
+                <td>Cadena</td>
+                <td>V, S/N, KM</td>
+		<td><td>[A-Z]</td>
+            </tr>
+            <tr>
+                <td>Núm</td>
+                <td>Entero</td>
+                <td>número del equipamiento en el vial</td>
+		<td>[0-9]</td>
+            </tr>
+            <tr>
+                <td>Planta</td>
+                <td>Entero</td>
+                <td>Nivel que ocupa el inmueble</td>
+		<td>[0-9]</td>
+            </tr>
+            <tr>
+                <td>Puerta</td>
+                <td>Entero</td>
+                <td>Puerta que ocupa en el inmueble</td>
+		<td>[0-9]</td>
+            </tr>
+            <tr>
+                <td>Escalera</td>
+                <td>Entero</td>
+                <td>Escalera de acceso</td>
+		<td>[0-9]</td>
+            </tr>
+            <tr>
+                <td>Orientación</td>
+                <td>Cadena</td>
+                <td>Detalles descriptivos de la dirección</td>
+		<td>[a-z][A-Z]</td>
+            </tr>
+            <tr>
+                <td>Localidad</td>
+                <td>Cadena</td>
+                <td>Municipio del lugar</td>
+		<td>[a-z][A-Z]</td>
+            </tr>
+            <tr>
+                <td>Provincia</td>
+                <td>Cadena</td>
+                <td>Provincia a la que pertenece la localidad</td>
+		<td>[a-z][A-Z]</td>
+            </tr>
+            <tr>
+                <td>Código postal</td>
+                <td>Entero</td>
+                <td>Código postal del centro cultural</td>
+		<td>[0-9]</td>
+            </tr>
+            <tr>
+                <td>Barrio</td>
+                <td>Cadena</td>
+                <td>Barrio donde esta el centro cultural</td>
+		<td>[a-z][A-Z]</td>
+            </tr>
+            <tr>
+                <td>Distrito</td>
+                <td>Cadena</td>
+                <td>Distrito donde esta el centro cultural</td>
+		<td>[a-z][A-Z]</td>
+            </tr>
+            <tr>
+                <td>Coordenada X</td>
+                <td>Entero</td>
+                <td>coordenada de 6 caracteres sobre plano de la ciudad</td>
+		<td>[0-9]</td>
+            </tr>
+            <tr>
+                <td>Cordenada Y</td>
+                <td>Entero</td>
+                <td>coordenada de 7 caracteres sobre plano de la ciudad</td>
+		<td>[0-9]</td>
+            </tr>
+            <tr>
+                <td>Latitud</td>
+                <td>Decimal</td>
+                <td>coordenada latitud en el sistema de referencia WGS84</td>
+		<td>[0-9].[0-9]</td>
+            </tr>
+            <tr>
+                <td>Longitud</td>
+                <td>Decimal</td>
+                <td>coordenada longitud en el sistema de referencia WGS84</td>
+		<td>[0-9].[0-9]</td>
+            </tr>
+            <tr>
+                <td>Teléfono</td>
+                <td>Entero</td>
+                <td>Teléfono del centro cultural</td>
+		<td>[0-9]</td>
+            </tr>
+            <tr>
+                <td>Fax</td>
+                <td>Entero</td>
+                <td>Fax del centro cultural</td>
+		<td>[0-9]</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>Cadena</td>
+                <td>Correo electrónico del centro cultural</td>
+		<td>[a-z][A-Z][0-9]</td>
+            </tr>
+            <tr>
+                <td>Tipo</td>
+                <td>Cadena</td>
+                <td>Descripción de la tipología de la instalación</td>
+		<td>[a-z][A-Z][0-9]</td>
+            </tr>
+        </table>
+
+        <h4>Dataset: agenda eventos culturales</h4>
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td>Tipo de valor</td>
+                <td>Descripción</td>
+		<td>Rango de valores</td>
+            </tr>
+                <td>id-evento</td>
+                <td>Integer</td>
+                <td>Es un campo clave, dentro de la web municipal, para uso interno</td>
+                <td>[0-9]{1,8}</td>
+            </tr>
+            <tr>
+                <td>Título</td>
+                <td>String</td>
+                <td>Denominación del evento al que se refiere</td>
+                <td>Cualquier carácter alfanumérico</td>
+            </tr>
+            <tr>
+                <td>Precio</td>
+                <td>Integer</td>
+                <td>Coste del evento/actividad. Si son gratuitas, el campo aparece vacío</td>
+		<td>Cualquier número</td>
+            </tr>
+            <tr>
+                <td>Gratuito</td>
+                <td>Booleano</td>
+                <td>Figurará un 1 o 0 si es gratuito o no</td>
+            </tr>
+            <tr>
+                <td>Larga duración</td>
+                <td>Booleano</td>
+                <td>Figurará un 1 o 0 si es un evento que se realiza a lo largo del tiempo</td>
+		<td>[0-1]</td>
+            </tr>
+            <tr>
+                <td>Días semana</td>
+                <td>String</td>
+                <td>Iniciales de cada día de la semana en los que se desarrolla el evento. L,M,X,J,V. Esta codificación no es válida para eventos de larga duración.</td>
+		<td>L,M,X,J,V</td>
+            </tr>
+            <tr>
+                <td>Días excluidos</td>
+                <td>Date</td>
+                <td>En eventos de larga duración, son los días concretos que no se celebra la misma. Es una fecha en formato D/M/AAAA. Si existiesen varios días que no se celebran, se mostrarían las fechas separadas por el carácter ";"</td>
+		<td>Cualquier fecha</td>
+            </tr>
+            <tr>
+                <td>Fecha</td>
+                <td>Date</td>
+                <td>Campo fecha del inicio del evento, con estructura "aaaa-mm-dd hh:mm:ss"</td>
+		<td>Cualquier fecha</td>
+            </tr>
+            <tr>
+                <td>Fecha-FIN</td>
+                <td>Date</td>
+                <td>Campo fecha del fin del evento, con estructura "aaaa-mm-dd hh:mm:ss"</td>
+		<td>Cualquier fecha</td>
+            </tr>
+            <tr>
+                <td>Hora</td>
+                <td>Date</td>
+                <td>Campo en el que se indica la hora de inicio del evento, con la estructura "hh:mm"</td>
+		<td>[0-23]:[0-59]</td>
+            </tr>
+            <tr>
+                <td>Descripción</td>
+                <td>String</td>
+                <td>Campo con la descripción del evento</td>
+		<td>Cualquier cadena de carácteres</td>
+            </tr>
+            <tr>
+                <td>Content-URL</td>
+                <td>URL</td>
+                <td>Nombre del recurso en internet del evento en concreto, en la <a href="www.madrid.es">web municipal</a></td>
+		<td>"http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=*" donde asterisco es cualquier identificador o cadena de carácteres</td>
+            </tr>
+            <tr>
+                <td>Título Actividad</td>
+                <td>String</td>
+                <td>denominación del evento o actividad a la que esté asociado</td>
+		<td>Cualquier cadena de carácteres</td>
+            </tr>
+            <tr>
+                <td>URL-Actividad</td>
+                <td>URL</td>
+                <td>Nombre del recurso en internet, en la <a href="www.madrid.es">web municipal</a></td>
+		<td>"http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=*" donde asterisco es cualquier identificador o cadena de carácteres</td>
+            </tr>
+            <tr>
+                <td>URL-Instalación</td>
+                <td>URL</td>
+                <td>Nombre del recurso centro en internet, en la <a href="www.madrid.es">web municipal</a></td>
+		<td>"http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=*" donde asterisco es cualquier identificador o cadena de carácteres</td>
+            </tr>
+            <tr>
+                <td>Nombre instalación</td>
+                <td>String</td>
+                <td>Denominación de la instalación donde se desarrolla el evento</td>
+		<td>Cualquier cadena de carácteres</td>
+            </tr>
+            <tr>
+                <td>Coordenada X</td>
+                <td>Integer</td>
+                <td>Coordenada de 6 caracteres sobre el plano de la ciudad</td>
+		<td>[0-9]{1,6}</td>
+            </tr>
+            <tr>
+                <td>Coordenada Y</td>
+                <td>Integer</td>
+                <td>Coordenada de 7 caracteres sobre el plano de la ciudad</td>
+		<td>[0-9]{1,6}</td>
+             </tr>
+             <tr>
+                 <td>Latitud</td>
+                 <td>float</td>
+                 <td>Coordenada latitud en el sistema de referencia WGS84</td>
+		 <td>[-+]?[0-9].[0-9]</td>
+             </tr>
+             <tr>
+                 <td>Longitud</td>
+                 <td>float</td>
+                 <td>Coordenada longitud en el sistema de referencia WGS84. <b>NOTA:</b> si se abre en fichero excel o csv se muestran mal por temas de conversión.</td>
+		 <td>[-+]?[0-9]*\.?[0-9]*</td>
+             </tr>
+             <tr>
+                 <td>Distrito</td>
+                 <td>String</td>
+                 <td>Nombre del drisrito donde se desarrolla la actividad</td>
+		 <td>Cualquier cadena de carácteres</td>
+             </tr>
+             <tr>
+                 <td>Tipo</td>
+                 <td>String</td>
+                 <td>Descripción de la tipología de la actividad. Se encuentra al final de la cadena de texto. En muchos conjunto de datos, el valor que contenga será igual, pero por ejemplo en otros, como Actividades, si ue permite una clasificación.</td>
+		 <td>Cualquier cadena de carácteres</td>
+             </tr>
+        </table>
+
+        <h1>Analyse licensing of the data source</h1>
+        <!--Analyse who is the publisher of the dataset and its rightsholder,
+             as well as the licence of the dataset. Define the potential license
+             to be used for the dataset to be generated.-->
+        The dataset uses an open license created by Madrid. You can read about it here: http://datos.madrid.es/egob/catalogo/aviso-legal 
+
+        <h1>Naming strategy</h1>
+        <!-- Define the resource naming strategy to be followed for the
+             ontology and the data to be generated (URI form, content negotiation,
+             URIs domain, path, patterns, etc.).-->
+        <h4>Centros culturales</h4>
+        <ul>
+            <li><u>Centros Culturales</u>: /recursos/centros#</li>
+        </ul>
+
+        <h4>Agendas eventos culturales</h4>
+        <ul>
+            <li><u>Evento</u>: http://www.madridcultura.es/recursos/evento</li>
+            <li><u>Centro</u>: http://www.madridcultura.es/recursos/lugar</li>
+            <li><u>Distrito</u>: http://www.madridcultura.es/recursos/distrito</li>
+            <li><u>Tipo</u>: http://www.madridcultura.es/recursos/tipo</li>
+        </ul>
+    </body>
+</html>

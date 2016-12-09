@@ -1,0 +1,631 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix group5: <http://madridOcio.linkeddata.com/ontologyGroup5#> .
+
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2071> group5:name "Arte Público (Museo al Aire Libre de la Castellana)" ;
+	group5:nombreCalle "CASTELLANA" ;
+	group5:numeroCalle "40" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CASTELLANA" ;
+	group5:codigoPostal "28046" ;
+	group5:email "paisajeypatrimonio@madrid.es" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4949641> group5:name "Casa - Museo del Ratoncito Pérez" ;
+	group5:nombreCalle "ARENAL" ;
+	group5:numeroCalle "8" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "SOL" ;
+	group5:codigoPostal "28013" ;
+	group5:telefono "915 226 968" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4847190> group5:name "Casa Museo Lope de Vega" ;
+	group5:nombreCalle "CERVANTES" ;
+	group5:numeroCalle "11" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CORTES" ;
+	group5:codigoPostal "28014" ;
+	group5:email "casamuseolopedevega@madrid.org" ;
+	group5:telefono "914 299 216" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/5682031> group5:name "Castillo de la Alameda" ;
+	group5:nombreCalle "ANTONIO SANCHA" ;
+	group5:numeroCalle "1" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ALAMEDA DE OSUNA" ;
+	group5:codigoPostal "28042" ;
+	group5:email "castilloalameda@madrid.es" ;
+	group5:telefono """913 667 415                                                                         
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2064> group5:name "Casón del Buen Retiro" ;
+	group5:nombreCalle "ALFONSO XII" ;
+	group5:numeroCalle "28" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "LOS JERONIMOS" ;
+	group5:codigoPostal "28014" ;
+	group5:email "biblioteca@museodelprado.es" ;
+	group5:telefono "902 107 077" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/103331> group5:name "Centro Social y Cultural la Casa Encendida" ;
+	group5:nombreCalle "VALENCIA" ;
+	group5:numeroCalle "2" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "EMBAJADORES" ;
+	group5:codigoPostal "28012" ;
+	group5:email "lacasaencendida@montemadrid.es" ;
+	group5:telefono """902 430 322                                                                 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/6469186> group5:name "Ermita de San Antonio de la Florida (Museo)" ;
+	group5:nombreCalle "SAN ANTONIO DE LA FLORIDA" ;
+	group5:numeroCalle "5" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CASA DE CAMPO" ;
+	group5:codigoPostal "28008" ;
+	group5:email "sanantonio@madrid.es" ;
+	group5:telefono "915 420 722" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/58353> group5:name "Espacio Fundación Telefónica" ;
+	group5:nombreCalle "FUENCARRAL" ;
+	group5:numeroCalle "3" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "UNIVERSIDAD" ;
+	group5:codigoPostal "28004" ;
+	group5:telefono "915 808 700 (información general)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/6017808> group5:name "Fundación AMYC (Arte Moderno y Contemporáneo). Casa - Museo Fuente del Rey" ;
+	group5:nombreCalle "FUENTE DEL REY" ;
+	group5:numeroCalle "11" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ARAVACA" ;
+	group5:codigoPostal "28023" ;
+	group5:email "info@fundacionamyc.org" ;
+	group5:telefono "913 579 116" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/3348> group5:name "Monasterio de las Descalzas Reales" ;
+	group5:nombreCalle "DESCALZAS" ;
+	group5:numeroCalle "3" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "SOL" ;
+	group5:codigoPostal "28013" ;
+	group5:telefono """914 548 700                                                             
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/5873478> group5:name "Museo ABC" ;
+	group5:nombreCalle "AMANIEL" ;
+	group5:numeroCalle "29" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "UNIVERSIDAD" ;
+	group5:codigoPostal "28015" ;
+	group5:email "info_museo@abc.es" ;
+	group5:telefono "917 588 379" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2067> group5:name "Museo Africano Mundo Negro" ;
+	group5:nombreCalle "ARTURO SORIA" ;
+	group5:numeroCalle "101" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "SAN JUAN BAUTISTA" ;
+	group5:codigoPostal "28043" ;
+	group5:telefono "914 152 412" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2050> group5:name "Museo Arqueológico Nacional" ;
+	group5:nombreCalle "SERRANO" ;
+	group5:numeroCalle "13" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "RECOLETOS" ;
+	group5:codigoPostal "28001" ;
+	group5:email "sugerencias@man.es" ;
+	group5:telefono """915 777 912                                                                     
+                                                                                     
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2072> group5:name "Museo Casa de la Moneda" ;
+	group5:nombreCalle "DOCTOR ESQUERDO" ;
+	group5:numeroCalle "36" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "GOYA" ;
+	group5:codigoPostal "28028" ;
+	group5:email "museo@fnmt.es" ;
+	group5:telefono """915 666 544                                 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4112> group5:name "Museo Cerralbo" ;
+	group5:nombreCalle "VENTURA RODRIGUEZ" ;
+	group5:numeroCalle "17" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ARGUELLES" ;
+	group5:codigoPostal "28008" ;
+	group5:email "museo.cerralbo@mecd.es" ;
+	group5:telefono "915 473 646 / 47" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/18176> group5:name "Museo Colecciones del Instituto de Crédito Oficial (ICO)" ;
+	group5:nombreCalle "ZORRILLA" ;
+	group5:numeroCalle "3" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CORTES" ;
+	group5:codigoPostal "28014" ;
+	group5:email "museoico@ico.es" ;
+	group5:telefono "914 201 242" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/10091450> group5:name "Museo EMT" ;
+	group5:nombreCalle "MAURICIO LEGENDRE" ;
+	group5:numeroCalle "40" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CASTILLA" ;
+	group5:codigoPostal "28046" ;
+	group5:telefono "914 068 810" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2074> group5:name "Museo Geominero" ;
+	group5:nombreCalle "RIOS ROSAS" ;
+	group5:numeroCalle "23" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "RIOS ROSAS" ;
+	group5:codigoPostal "28003" ;
+	group5:email "m.geominero@igme.es" ;
+	group5:telefono "913 495 759" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2075> group5:name "Museo Histórico Minero Don Felipe de Borbón y Grecia" ;
+	group5:nombreCalle "RIOS ROSAS" ;
+	group5:numeroCalle "21" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "RIOS ROSAS" ;
+	group5:codigoPostal "28003" ;
+	group5:telefono "913 367 026" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/6019032> group5:name "Museo Los Caños del Peral. Estación de Metro Ópera" ;
+	group5:nombreCalle "ISABEL II" ;
+	group5:numeroCalle "1" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PALACIO" ;
+	group5:codigoPostal "28013" ;
+	group5:telefono "902 444 403 / 917 796 399  (Información)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2053> group5:name "Museo Lázaro Galdiano" ;
+	group5:nombreCalle "SERRANO" ;
+	group5:numeroCalle "122" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CASTELLANA" ;
+	group5:codigoPostal "28006" ;
+	group5:email "secretaria.fundacion@flg.es" ;
+	group5:telefono "915 616 084" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/5349304> group5:name "Museo Nacional Centro de Arte Reina Sofía (MNCARS)" ;
+	group5:nombreCalle "SANTA ISABEL" ;
+	group5:numeroCalle "52" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "EMBAJADORES" ;
+	group5:codigoPostal "28012" ;
+	group5:email "info@museoreinasofia.es" ;
+	group5:telefono """917 741 000                                                                                         
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2057> group5:name "Museo Nacional de Antropología" ;
+	group5:nombreCalle "ALFONSO XII" ;
+	group5:numeroCalle "68" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "LOS JERONIMOS" ;
+	group5:codigoPostal "28014" ;
+	group5:telefono "915 306 418 /915 395 995" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2055> group5:name "Museo Nacional de Artes Decorativas" ;
+	group5:nombreCalle "MONTALBAN" ;
+	group5:numeroCalle "12" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "LOS JERONIMOS" ;
+	group5:codigoPostal "28014" ;
+	group5:telefono """915 326 499 / 915 326 845          
+Reserva actividades infantiles: 910 505 755          
+Biblioteca: 910 505 768          
+Atención a investigadores: 910 505 763          
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2056> group5:name "Museo Nacional de Ciencias Naturales" ;
+	group5:nombreCalle "JOSE GUTIERREZ ABASCAL" ;
+	group5:numeroCalle "2" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "EL VISO" ;
+	group5:codigoPostal "28006" ;
+	group5:email "museo@bib.csic.es" ;
+	group5:telefono "914 111 328 (centralita)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2076> group5:name "Museo Naval" ;
+	group5:nombreCalle "PRADO" ;
+	group5:numeroCalle "5" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "LOS JERONIMOS" ;
+	group5:codigoPostal "28014" ;
+	group5:email "ohculturanaval@fn.mde.es" ;
+	group5:telefono "915 238 516 / 609 467 117 (martes y viernes de 9 a 14 horas) " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2085> group5:name "Museo Postal y Telegráfico" ;
+	group5:nombreCalle "TAPIA DE CASARIEGO" ;
+	group5:numeroCalle "6" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "VALDEMARIN" ;
+	group5:codigoPostal "28023" ;
+	group5:email "museopostaltelegrafico@correos.com" ;
+	group5:telefono "917 400 668 / 917 400 664 (biblioteca)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4997114> group5:name "Museo Sorolla" ;
+	group5:nombreCalle "GENERAL MARTINEZ CAMPOS" ;
+	group5:numeroCalle "37" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ALMAGRO" ;
+	group5:codigoPostal "28010" ;
+	group5:email "museo.sorolla@mecd.es" ;
+	group5:telefono "913 101 584" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2077> group5:name "Museo Taurino de la Plaza de las Ventas" ;
+	group5:nombreCalle "ALCALA" ;
+	group5:numeroCalle "237" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "GUINDALERA" ;
+	group5:codigoPostal "28028" ;
+	group5:email "museotaurinolasventas@madrid.org" ;
+	group5:telefono """912 761 287                 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2099> group5:name "Museo Thyssen Bornemisza" ;
+	group5:nombreCalle "PRADO" ;
+	group5:numeroCalle "8" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CORTES" ;
+	group5:codigoPostal "28014" ;
+	group5:email "mtb@museothyssen.org" ;
+	group5:telefono """902 760 511 (Información general)                                                                                                                                                                                                                        
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2101> group5:name "Museo Tiflológico" ;
+	group5:nombreCalle "LA CORUÑA" ;
+	group5:numeroCalle "18" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CUATRO CAMINOS" ;
+	group5:codigoPostal "28020" ;
+	group5:email "museo@once.es" ;
+	group5:telefono "915 894 219" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2068> group5:name "Museo de Aeronáutica y Astronáutica" ;
+	group5:nombreCalle "A-5" ;
+	group5:numeroCalle "10.7" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CUATRO VIENTOS" ;
+	group5:codigoPostal "28024" ;
+	group5:email "museodelaire@ea.mde.es " ;
+	group5:telefono "915 091 690 (centralita)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2091> group5:name "Museo de América" ;
+	group5:nombreCalle "REYES CATOLICOS" ;
+	group5:numeroCalle "6" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CIUDAD UNIVERSITARIA" ;
+	group5:codigoPostal "28040" ;
+	group5:email "museo.america@mecd.es" ;
+	group5:telefono "915 439 437 / 915 492 641" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/83922> group5:name "Museo de Arte Contemporáneo de Madrid" ;
+	group5:nombreCalle "CONDE DUQUE" ;
+	group5:numeroCalle "9" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "UNIVERSIDAD" ;
+	group5:codigoPostal "28015" ;
+	group5:email "mmacmdifusion@madrid.es" ;
+	group5:telefono "915 885 928  /  915 885 861" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2069> group5:name "Museo de Artes y Tradiciones Populares. Centro Cultural La Corrala" ;
+	group5:nombreCalle "CARLOS ARNICHES" ;
+	group5:numeroCalle "3-5" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "EMBAJADORES" ;
+	group5:codigoPostal "28005" ;
+	group5:email "museoatp@uam.es" ;
+	group5:telefono "914 976 500" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2092> group5:name "Museo de Astronomía y Geodesia" ;
+	group5:nombreCalle "CIENCIAS" ;
+	group5:numeroCalle "3" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CIUDAD UNIVERSITARIA" ;
+	group5:codigoPostal "28040" ;
+	group5:email "astronomia_geodesia@mat.ucm.es" ;
+	group5:telefono "913 944 615" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/5727435> group5:name "Museo de Bomberos" ;
+	group5:nombreCalle "BOADA" ;
+	group5:numeroCalle "4" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "NUMANCIA" ;
+	group5:codigoPostal "28038" ;
+	group5:email "jcbomberos@madrid.es" ;
+	group5:telefono """91 478 65 72 (Museo),                                                                                                                                           
+                                                                                                                                               
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2090> group5:name "Museo de Calcografía Nacional" ;
+	group5:nombreCalle "ALCALA" ;
+	group5:numeroCalle "13" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "SOL" ;
+	group5:codigoPostal "28014" ;
+	group5:email "calcografianacional.delegado@rabasf.org" ;
+	group5:telefono "915 240 864" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2084> group5:name "Museo de Cera" ;
+	group5:nombreCalle "RECOLETOS" ;
+	group5:numeroCalle "41" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "JUSTICIA" ;
+	group5:codigoPostal "28004" ;
+	group5:email "info@museoceramadrid.com" ;
+	group5:telefono "913 199 330" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2054> group5:name "Museo de Historia de Madrid" ;
+	group5:nombreCalle "FUENCARRAL" ;
+	group5:numeroCalle "78" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "JUSTICIA" ;
+	group5:codigoPostal "28004" ;
+	group5:email "smuseosm@madrid.es" ;
+	group5:telefono "917 011 863" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4545827> group5:name "Museo de Historia de la Comunidad Judía de Madrid" ;
+	group5:nombreCalle "BALMES" ;
+	group5:numeroCalle "3" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "TRAFALGAR" ;
+	group5:codigoPostal "28010" ;
+	group5:email "visitas@cjmadrid.org" ;
+	group5:telefono "915 913 131 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2095> group5:name "Museo de Mineralogía" ;
+	group5:nombreCalle "COLMENAR VIEJO" ;
+	group5:numeroCalle "19000" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "EL GOLOSO" ;
+	group5:codigoPostal "28049" ;
+	group5:email "museo.mineralogia@uam.es" ;
+	group5:telefono "914 974 132 / 914 974 800" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2112> group5:name "Museo de San Isidro. Los orígenes de Madrid" ;
+	group5:nombreCalle "SAN ANDRES" ;
+	group5:numeroCalle "1" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PALACIO" ;
+	group5:codigoPostal "28005" ;
+	group5:email "museosanisidro@madrid.es" ;
+	group5:telefono "913 667 415" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/85301> group5:name "Museo de Sanidad e Higiene Pública" ;
+	group5:nombreCalle "MONFORTE DE LEMOS" ;
+	group5:numeroCalle "5" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "LA PAZ" ;
+	group5:codigoPostal "28029" ;
+	group5:email "museodesanidad@iscii.es" ;
+	group5:telefono "918 222 414  (Cita previa)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4591873> group5:name "Museo de la Biblioteca Nacional de España" ;
+	group5:nombreCalle "RECOLETOS" ;
+	group5:numeroCalle "20" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "RECOLETOS" ;
+	group5:codigoPostal "28001" ;
+	group5:email "museo@bne.es" ;
+	group5:telefono """915 168 967 / 915 807 759                                   
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4566286> group5:name "Museo de la Catedral de la Almudena" ;
+	group5:nombreCalle "BAILEN" ;
+	group5:numeroCalle "10" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PALACIO" ;
+	group5:codigoPostal "28013" ;
+	group5:email "museoalmudena@planalfa.es" ;
+	group5:telefono "915 592 874" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2073> group5:name "Museo de la Farmacia Hispana" ;
+	group5:nombreCalle "RAMON Y CAJAL" ;
+	group5:numeroCalle "0" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CIUDAD UNIVERSITARIA" ;
+	group5:codigoPostal "28040" ;
+	group5:email "museofar@farm.ucm.es" ;
+	group5:telefono "913 941 797" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2107> group5:name "Museo de la Guardia Civil" ;
+	group5:nombreCalle "GUZMAN EL BUENO" ;
+	group5:numeroCalle "110" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "VALLEHERMOSO" ;
+	group5:codigoPostal "28003" ;
+	group5:email "dg-estuhistoricos-registro@guardiacivil.org" ;
+	group5:telefono "915 146 000, extensiones 48495 (Oficina Museo), 48477 (Salas Museo), " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2114> group5:name "Museo de la Real Academia de Bellas Artes de San Fernando" ;
+	group5:nombreCalle "ALCALA" ;
+	group5:numeroCalle "13" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "SOL" ;
+	group5:codigoPostal "28014" ;
+	group5:email "museo@rabasf.org" ;
+	group5:telefono """915 240 864 (Centralita)                                                    
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/187029> group5:name "Museo del Atlético de Madrid" ;
+	group5:nombreCalle "VIRGEN DEL PUERTO" ;
+	group5:numeroCalle "67" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "IMPERIAL" ;
+	group5:codigoPostal "28005" ;
+	group5:email "museo@clubatleticodemadrid.com" ;
+	group5:telefono "913 650 931 / 913 666 568" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2066> group5:name "Museo del Ferrocarril de Madrid" ;
+	group5:nombreCalle "DELICIAS" ;
+	group5:numeroCalle "61" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "DELICIAS" ;
+	group5:codigoPostal "28045" ;
+	group5:email "museodelicias@ffe.es" ;
+	group5:telefono """902 228 822                                                                                                 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2058> group5:name "Museo del Prado" ;
+	group5:nombreCalle "RUIZ DE ALARCON" ;
+	group5:numeroCalle "1324" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "LOS JERONIMOS" ;
+	group5:codigoPostal "28014" ;
+	group5:telefono "913 302 800" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2086> group5:name "Museo del Reloj Grassy" ;
+	group5:nombreCalle "GRAN VIA" ;
+	group5:numeroCalle "1" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CORTES" ;
+	group5:codigoPostal "28013" ;
+	group5:email "marta@grassy.es" ;
+	group5:telefono "915 321 007" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/7685664> group5:name "Museo del Robot" ;
+	group5:nombreCalle "ALBERTO AGUILERA" ;
+	group5:numeroCalle "1" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "UNIVERSIDAD" ;
+	group5:codigoPostal "28015" ;
+	group5:email "antencionalcliente@therobotmuseum.eu" ;
+	group5:telefono "914 478 808" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2059> group5:name "Museo del Romanticismo" ;
+	group5:nombreCalle "SAN MATEO" ;
+	group5:numeroCalle "13" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "JUSTICIA" ;
+	group5:codigoPostal "28004" ;
+	group5:email "informacion.romanticismo@mecd.es" ;
+	group5:telefono "914 481 045 / 914 480 163" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/6337393> group5:name "Museo del Seguro. Fundación Mapfre" ;
+	group5:nombreCalle "BARBARA DE BRAGANZA" ;
+	group5:numeroCalle "14" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "JUSTICIA" ;
+	group5:codigoPostal "28004" ;
+	group5:telefono """916 025 221 (para reservas)                                      
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2115> group5:name "Museo del Traje. Centro de Investigación del Patrimonio Etnológico (CIPE)" ;
+	group5:nombreCalle "JUAN DE HERRERA" ;
+	group5:numeroCalle "2" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CIUDAD UNIVERSITARIA" ;
+	group5:codigoPostal "28040" ;
+	group5:email "museodeltraje@mecd.es" ;
+	group5:telefono "915 504 700 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2062> group5:name "Palacio Real" ;
+	group5:nombreCalle "BAILEN" ;
+	group5:numeroCalle "0" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PALACIO" ;
+	group5:codigoPostal "28013" ;
+	group5:email "info@patrimonionacional.es" ;
+	group5:telefono "914 548 700 (Información general)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2063> group5:name "Palacio de Liria" ;
+	group5:nombreCalle "PRINCESA" ;
+	group5:numeroCalle "20" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "UNIVERSIDAD" ;
+	group5:codigoPostal "28008" ;
+	group5:telefono "91 547 53 02" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2079> group5:name "Panteón de Hombres Ilustres" ;
+	group5:nombreCalle "JULIAN GAYARRE" ;
+	group5:numeroCalle "3" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PACIFICO" ;
+	group5:codigoPostal "28014" ;
+	group5:email "info@patrimonionacional.es" ;
+	group5:telefono "914 548 700 (Información general)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/3362> group5:name "Parroquia Santa Cruz" ;
+	group5:nombreCalle "ATOCHA" ;
+	group5:numeroCalle "6" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "SOL" ;
+	group5:codigoPostal "28012" ;
+	group5:telefono "913 691 239" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2213> group5:name "Planetario de Madrid" ;
+	group5:nombreCalle "PLANETARIO" ;
+	group5:numeroCalle "16" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "LEGAZPI" ;
+	group5:codigoPostal "28045" ;
+	group5:email "buzon@planetmad.es" ;
+	group5:telefono """914 673 461 (reserva grupos)                                                                                                                                                                                                                                                                                                                                                                                                                                               
+914 673 898 (contestador automático de información)""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/3359> group5:name "Real Basílica San Francisco el Grande" ;
+	group5:nombreCalle "SAN BUENAVENTURA" ;
+	group5:numeroCalle "1" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PALACIO" ;
+	group5:codigoPostal "28005" ;
+	group5:telefono "913 653 800 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2087> group5:name "Real Fábrica de Tapices" ;
+	group5:nombreCalle "FUENTERRABIA" ;
+	group5:numeroCalle "2" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PACIFICO" ;
+	group5:codigoPostal "28014" ;
+	group5:email "info@realfabricadetapices.com" ;
+	group5:telefono "914 340 550" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4707297> group5:name "Real Monasterio de Santa Isabel" ;
+	group5:nombreCalle "SANTA ISABEL" ;
+	group5:numeroCalle "48" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "EMBAJADORES" ;
+	group5:codigoPostal "28012" ;
+	group5:email "info@patrimonionacional.es" ;
+	group5:telefono "914 548 700 (Información general)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/3349> group5:name "Real Monasterio de la Encarnación" ;
+	group5:nombreCalle "ENCARNACION" ;
+	group5:numeroCalle "1" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "PALACIO" ;
+	group5:codigoPostal "28013" ;
+	group5:email "info@patrimonionacional.es" ;
+	group5:telefono "914 548 700 (Información general)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2061> group5:name "Real Sitio de El Pardo" ;
+	group5:nombreCalle "MANUEL ALONSO" ;
+	group5:numeroCalle "8" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "EL PARDO" ;
+	group5:codigoPostal "28048" ;
+	group5:email "info@patrimonionacional.es" ;
+	group5:telefono "914 548 700 (Información general)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/20605> group5:name "Templo de Debod" ;
+	group5:nombreCalle "FERRAZ" ;
+	group5:numeroCalle "1" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "CASA DE CAMPO" ;
+	group5:codigoPostal "28008" ;
+	group5:email "templodebod@madrid.es" ;
+	group5:telefono "913 667 415 (Museo de San Isidro / Templo de Debod)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/7071384> group5:name "Yacimiento paleontológico. Estación de Metro Carpetana" ;
+	group5:nombreCalle "VIA CARPETANA" ;
+	group5:numeroCalle "328" ;
+	group5:localidad "MADRID" ;
+	group5:barrio "ALUCHE" ;
+	group5:codigoPostal "28047" ;
+	group5:telefono "902 444 403 (Información)" .
