@@ -1,0 +1,31 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix my_vocabulary: <http://www.semanticweb.org/onto#> .
+@prefix my_instances: <http://www.semanticweb.org/resources> .
+@base <http://www.semanticweb.org/> .
+
+<TriplesMapLanguage> 
+a rr:TriplesMap;
+rr:logicalTable [ rr:tableName  "CountryLanguage" ]; 
+rr:subjectMap [ rr:termType rr:IRI; 
+rr:template "http://example.linkeddata.es/instances/CountryLanguage/{CountryCode}"; 
+rr:class my_vocabulary:CountryLanguage
+]; 
+
+rr:predicateObjectMap [  
+rr:predicateMap [ rr:constant my_vocabulary:hasLanguage ];  
+rr:objectMap    [ rr:termType rr:Literal; rr:column "Language"; ]; 
+]; 
+.
+	
+<TriplesMapCity> 
+a rr:TriplesMap;
+rr:logicalTable [ rr:tableName  "City" ]; 
+rr:subjectMap [ rr:termType rr:IRI; 
+rr:template "http://example.linkeddata.es/instances/City/{ID}"; 
+rr:class my_vocabulary:City
+]; 
+rr:predicateObjectMap [  
+rr:predicateMap [ rr:constant my_vocabulary:hasPopulation ];  
+rr:objectMap    [ rr:termType rr:Literal; rr:column "Population"; ]; 
+] 
+.
