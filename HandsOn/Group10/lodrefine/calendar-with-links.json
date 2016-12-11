@@ -1,0 +1,202 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/ontology/service",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": ""
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"service/\" + replaceChars(value, \" -\",\"\")",
+          "isRowNumberCell": false,
+          "columnName": "���service_id",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/ontology/service",
+              "curie": "g10:service"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://dbpedia.org/property/name",
+              "curie": "g10:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "���service_id"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology/end_date",
+              "curie": "g10:end_date",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "end_date"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology/start_date",
+              "curie": "g10:start_date",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "start_date"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column ���service_id to type ",
+    "columnName": "���service_id",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/es-dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "",
+        "name": ""
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"INVFES85\" in column ���service_id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "���service_id",
+    "similarValue": "INVFES85"
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column start_date to type ",
+    "columnName": "start_date",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "",
+        "name": ""
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/ontology/service",
+      "prefixes": [
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology/"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"service/\" + replaceChars(value, \" -\",\"\")",
+          "isRowNumberCell": false,
+          "columnName": "���service_id",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/ontology/service",
+              "curie": "g10:service"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://dbpedia.org/property/name",
+              "curie": "g10:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "���service_id"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology/end_date",
+              "curie": "g10:end_date",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "end_date"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology/start_date",
+              "curie": "g10:start_date",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "start_date"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
