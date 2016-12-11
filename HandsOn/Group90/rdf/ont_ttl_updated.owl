@@ -12,8 +12,8 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/g90/ontologies/2016/11/untitled-ontology-23/#entradaGratuita
-<http://www.semanticweb.org/g90/ontologies/2016/11/untitled-ontology-23/#entradaGratuita> rdf:type owl:ObjectProperty ;
+###  http://www.semanticweb.org/g90/ontologies/2016/11/untitled-ontology-23#entradaGratuita
+<http://www.semanticweb.org/g90/ontologies/2016/11/untitled-ontology-23#entradaGratuita> rdf:type owl:ObjectProperty ;
                                                                                          rdfs:domain <https://schema.org/Event> ;
                                                                                          rdfs:range [ rdf:type owl:Restriction ;
                                                                                                       owl:onProperty <https://schema.org/price> ;
@@ -21,8 +21,8 @@
                                                                                                     ] .
 
 
-###  http://www.semanticweb.org/g90/ontologies/2016/11/untitled-ontology-23/#familiar
-<http://www.semanticweb.org/g90/ontologies/2016/11/untitled-ontology-23/#familiar> rdf:type owl:ObjectProperty ;
+###  http://www.semanticweb.org/g90/ontologies/2016/11/untitled-ontology-23#familiar
+<http://www.semanticweb.org/g90/ontologies/2016/11/untitled-ontology-23#familiar> rdf:type owl:ObjectProperty ;
                                                                                   rdfs:domain <https://schema.org/Event> ;
                                                                                   rdfs:range [ rdf:type owl:Restriction ;
                                                                                                owl:onProperty <http://purl.org/dc/terms/audience> ;
