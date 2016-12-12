@@ -1,0 +1,191 @@
+@prefix : <http://www.semanticweb.org/dani/ontologies/2016/11/untitled-ontology-38#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://wsld.r2rml.upm.es/> .
+
+<http://wsld.r2rml.upm.es/> rdf:type owl:Ontology .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://wsld.r2rml.upm.es/ontology#hasCapital
+<http://wsld.r2rml.upm.es/ontology#hasCapital> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://wsld.r2rml.upm.es/ontology#country> ;
+                                               rdfs:range xsd:int .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasCode
+<http://wsld.r2rml.upm.es/ontology#hasCode> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://wsld.r2rml.upm.es/ontology#country> ;
+                                            rdfs:range xsd:string .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasCode2
+<http://wsld.r2rml.upm.es/ontology#hasCode2> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <http://wsld.r2rml.upm.es/ontology#country> ;
+                                             rdfs:range xsd:string .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasContinent
+<http://wsld.r2rml.upm.es/ontology#hasContinent> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://wsld.r2rml.upm.es/ontology#country> ;
+                                                 rdfs:range [ rdf:type rdfs:Datatype ;
+                                                              owl:oneOf [ rdf:type rdf:List ;
+                                                                          rdf:first "Africa" ;
+                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                     rdf:first "Antarctica" ;
+                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                rdf:first "Asia" ;
+                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                           rdf:first "Europe" ;
+                                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                                      rdf:first "North America" ;
+                                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                 rdf:first "Oceania" ;
+                                                                                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                            rdf:first "South America" ;
+                                                                                                                                            rdf:rest rdf:nil
+                                                                                                                                          ]
+                                                                                                                               ]
+                                                                                                                    ]
+                                                                                                         ]
+                                                                                              ]
+                                                                                   ]
+                                                                        ]
+                                                            ] .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasCountryCode
+<http://wsld.r2rml.upm.es/ontology#hasCountryCode> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <http://wsld.r2rml.upm.es/ontology#city> ,
+                                                               <http://wsld.r2rml.upm.es/ontology#countrylanguage> ;
+                                                   rdfs:range xsd:string .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasDistrict
+<http://wsld.r2rml.upm.es/ontology#hasDistrict> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://wsld.r2rml.upm.es/ontology#city> ;
+                                                rdfs:range xsd:string .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasGNP
+<http://wsld.r2rml.upm.es/ontology#hasGNP> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://wsld.r2rml.upm.es/ontology#country> ;
+                                           rdfs:range xsd:float .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasGNPOld
+<http://wsld.r2rml.upm.es/ontology#hasGNPOld> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://wsld.r2rml.upm.es/ontology#country> ;
+                                              rdfs:range xsd:float .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasGovernmentForm
+<http://wsld.r2rml.upm.es/ontology#hasGovernmentForm> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://wsld.r2rml.upm.es/ontology#country> ;
+                                                      rdfs:range xsd:string .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasHeadOfState
+<http://wsld.r2rml.upm.es/ontology#hasHeadOfState> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <http://wsld.r2rml.upm.es/ontology#country> ;
+                                                   rdfs:range xsd:string .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasId
+<http://wsld.r2rml.upm.es/ontology#hasId> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://wsld.r2rml.upm.es/ontology#city> ;
+                                          rdfs:range xsd:int .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasIndepYear
+<http://wsld.r2rml.upm.es/ontology#hasIndepYear> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://wsld.r2rml.upm.es/ontology#country> ;
+                                                 rdfs:range xsd:int .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasIsOfficial
+<http://wsld.r2rml.upm.es/ontology#hasIsOfficial> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://wsld.r2rml.upm.es/ontology#countrylanguage> ;
+                                                  rdfs:range [ rdf:type rdfs:Datatype ;
+                                                               owl:oneOf [ rdf:type rdf:List ;
+                                                                           rdf:first "F" ;
+                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                      rdf:first "T" ;
+                                                                                      rdf:rest rdf:nil
+                                                                                    ]
+                                                                         ]
+                                                             ] .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasLanguage
+<http://wsld.r2rml.upm.es/ontology#hasLanguage> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://wsld.r2rml.upm.es/ontology#countrylanguage> ;
+                                                rdfs:range xsd:string .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasLifeExpectancy
+<http://wsld.r2rml.upm.es/ontology#hasLifeExpectancy> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://wsld.r2rml.upm.es/ontology#country> ;
+                                                      rdfs:range xsd:float .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasLocalName
+<http://wsld.r2rml.upm.es/ontology#hasLocalName> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://wsld.r2rml.upm.es/ontology#country> ;
+                                                 rdfs:range xsd:string .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasName
+<http://wsld.r2rml.upm.es/ontology#hasName> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://wsld.r2rml.upm.es/ontology#city> ,
+                                                        <http://wsld.r2rml.upm.es/ontology#country> ;
+                                            rdfs:range xsd:string .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasPercentage
+<http://wsld.r2rml.upm.es/ontology#hasPercentage> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://wsld.r2rml.upm.es/ontology#countrylanguage> ;
+                                                  rdfs:range xsd:float .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasPopulation
+<http://wsld.r2rml.upm.es/ontology#hasPopulation> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://wsld.r2rml.upm.es/ontology#city> ,
+                                                              <http://wsld.r2rml.upm.es/ontology#country> ;
+                                                  rdfs:range xsd:int .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasRegion
+<http://wsld.r2rml.upm.es/ontology#hasRegion> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://wsld.r2rml.upm.es/ontology#country> ;
+                                              rdfs:range xsd:string .
+
+
+###  http://wsld.r2rml.upm.es/ontology#hasSurfaceArea
+<http://wsld.r2rml.upm.es/ontology#hasSurfaceArea> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <http://wsld.r2rml.upm.es/ontology#country> ;
+                                                   rdfs:range xsd:float .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://wsld.r2rml.upm.es/ontology#city
+<http://wsld.r2rml.upm.es/ontology#city> rdf:type owl:Class .
+
+
+###  http://wsld.r2rml.upm.es/ontology#country
+<http://wsld.r2rml.upm.es/ontology#country> rdf:type owl:Class .
+
+
+###  http://wsld.r2rml.upm.es/ontology#countrylanguage
+<http://wsld.r2rml.upm.es/ontology#countrylanguage> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi
