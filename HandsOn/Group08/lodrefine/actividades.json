@@ -1,0 +1,234 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column",
+    "columnName": "Column"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 13",
+    "columnName": "Column 13"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 15",
+    "columnName": "Column 15"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 17",
+    "columnName": "Column 17"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 18",
+    "columnName": "Column 18"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 19",
+    "columnName": "Column 19"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 20",
+    "columnName": "Column 20"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 21",
+    "columnName": "Column 21"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 23",
+    "columnName": "Column 23"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 2 to NOMBRE",
+    "oldColumnName": "Column 2",
+    "newColumnName": "NOMBRE"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 3 to PRECIO",
+    "oldColumnName": "Column 3",
+    "newColumnName": "PRECIO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 8 to FECHA-INICIO",
+    "oldColumnName": "Column 8",
+    "newColumnName": "FECHA-INICIO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 9 to FECHA-FIN",
+    "oldColumnName": "Column 9",
+    "newColumnName": "FECHA-FIN"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 10 to HORA",
+    "oldColumnName": "Column 10",
+    "newColumnName": "HORA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 12 to CONTENT-URL",
+    "oldColumnName": "Column 12",
+    "newColumnName": "CONTENT-URL"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column CONTENT-URL",
+    "columnName": "CONTENT-URL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 14 to URL-ACTIVIDAD",
+    "oldColumnName": "Column 14",
+    "newColumnName": "URL-ACTIVIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 16 to NOMBRE-INSTALACION",
+    "oldColumnName": "Column 16",
+    "newColumnName": "NOMBRE-INSTALACION"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 22 to TIPO",
+    "oldColumnName": "Column 22",
+    "newColumnName": "TIPO"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Actividad",
+              "curie": "ont:Actividad"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasPrecio",
+              "curie": "ont:hasPrecio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "PRECIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaInicio",
+              "curie": "ont:hasFechaInicio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "FECHA-INICIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaFin",
+              "curie": "ont:hasFechaFin",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "FECHA-FIN"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#startsHora",
+              "curie": "ont:startsHora",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "HORA"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "URL-ACTIVIDAD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#celebratesIn",
+              "curie": "ont:celebratesIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-INSTALACION",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+                    "curie": "ont:Instalacion"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasTipo",
+              "curie": "ont:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TIPO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
