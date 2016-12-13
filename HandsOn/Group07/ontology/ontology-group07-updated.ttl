@@ -1,0 +1,314 @@
+@prefix : <http://www.semanticweb.org/group07/ontology> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/group07/ontology/JobSearch#> .
+
+<http://www.semanticweb.org/group07/ontology/JobSearch#> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/group07/ontologycapital
+:capital rdf:type owl:ObjectProperty ;
+         rdfs:domain : <http://dbpedia.org/page/Province> ;
+         rdfs:range : <http://dbpedia.org/page/Locality> .
+
+
+###  http://www.semanticweb.org/group07/ontologyen-localidad
+:en-localidad rdf:type owl:ObjectProperty ;
+              rdfs:domain :<http://dbpedia.org/page/Employment> ,
+                          :<http://dbpedia.org/page/Organization> ;
+              rdfs:range : <http://dbpedia.org/page/Locality> .
+
+
+###  http://www.semanticweb.org/group07/ontologyen-provincia
+:en-provincia rdf:type owl:ObjectProperty ;
+              rdfs:domain : <http://dbpedia.org/page/Employment> ,
+                          : <http://dbpedia.org/page/Locality> ;
+              rdfs:range : <http://dbpedia.org/page/Province> .
+
+
+###  http://www.semanticweb.org/group07/ontologygestionado-por
+:gestionado-por rdf:type owl:ObjectProperty ;
+                rdfs:domain : <http://dbpedia.org/page/Employment> ;
+                rdfs:range : <http://dbpedia.org/page/Organization> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/group07/ontologycalle
+:calle rdf:type owl:DatatypeProperty ;
+       rdfs:domain :<http://dbpedia.org/page/Organization> ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologycantidad-municipios
+:cantidad-municipios rdf:type owl:DatatypeProperty ;
+                     rdfs:domain : <http://dbpedia.org/page/Province> ;
+                     rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontologycodigo-postal
+:codigo-postal rdf:type owl:DatatypeProperty ;
+               rdfs:domain :<http://dbpedia.org/page/Organization> ,
+                           : <http://dbpedia.org/page/Province> .
+               rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontologycodigo-postal-localidad
+:codigo-postal-localidad rdf:type owl:DatatypeProperty ;
+                         rdfs:domain : <http://dbpedia.org/page/Locality> ;
+                         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontologycodigo-postal-provincia
+:codigo-postal-provincia rdf:type owl:DatatypeProperty ;
+                         rdfs:domain : <http://dbpedia.org/page/Locality> ;
+                         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontologydatos-personales
+:datos-personales rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :<http://dbpedia.org/page/Organization> ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologydescripcion
+:descripcion rdf:type owl:DatatypeProperty ;
+             rdfs:domain : <http://dbpedia.org/page/Employment> ,
+                         :<http://dbpedia.org/page/Organization> ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologydevolucion-exencion-de-tasas
+:devolucion-exencion-de-tasas rdf:type owl:DatatypeProperty ;
+                              rdfs:domain : <http://dbpedia.org/page/Employment> ;
+                              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologydireccion
+:direccion rdf:type owl:DatatypeProperty ;
+           rdfs:domain :<http://dbpedia.org/page/Organization> ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologydirectorio-superior
+:directorio-superior rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :<http://dbpedia.org/page/Organization> ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologyemail
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:domain :<http://dbpedia.org/page/Organization> ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologyenlace-contenido
+:enlace-contenido rdf:type owl:DatatypeProperty ;
+                  rdfs:domain : <http://dbpedia.org/page/Employment> ,
+                              :<http://dbpedia.org/page/Organization> ;
+                  rdfs:range xsd:anyURI .
+
+
+###  http://www.semanticweb.org/group07/ontologyfax
+:fax rdf:type owl:DatatypeProperty ;
+     rdfs:domain :<http://dbpedia.org/page/Organization> ;
+     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologyfecha-finalizacion
+:fecha-finalizacion rdf:type owl:DatatypeProperty ;
+                    rdfs:domain : <http://dbpedia.org/page/Employment> ;
+                    rdfs:range xsd:date .
+
+
+###  http://www.semanticweb.org/group07/ontologyfecha-inicio
+:fecha-inicio rdf:type owl:DatatypeProperty ;
+              rdfs:domain : <http://dbpedia.org/page/Employment> ;
+              rdfs:range xsd:date .
+
+
+###  http://www.semanticweb.org/group07/ontologyfecha-publicacion
+:fecha-publicacion rdf:type owl:DatatypeProperty ;
+                   rdfs:domain : <http://dbpedia.org/page/Employment> ;
+                   rdfs:range xsd:date .
+
+
+###  http://www.semanticweb.org/group07/ontologyfuente-contenido
+:fuente-contenido rdf:type owl:DatatypeProperty ;
+                  rdfs:domain : <http://dbpedia.org/page/Employment> ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologyidentificador
+:identificador rdf:type owl:DatatypeProperty ;
+               rdfs:domain : <http://dbpedia.org/page/Employment> ,
+                           :<http://dbpedia.org/page/Organization> ;
+               rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontologyidentificador-dir-superior
+:identificador-dir-superior rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :<http://dbpedia.org/page/Organization> ;
+                            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontologyinformacion-adicional
+:informacion-adicional rdf:type owl:DatatypeProperty ;
+                       rdfs:domain : <http://dbpedia.org/page/Employment> ,
+                                   :<http://dbpedia.org/page/Organization> ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologyingreso-libre
+:ingreso-libre rdf:type owl:DatatypeProperty ;
+               rdfs:domain : <http://dbpedia.org/page/Employment> ;
+               rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontologylugar-de-presentacion
+:lugar-de-presentacion rdf:type owl:DatatypeProperty ;
+                       rdfs:domain : <http://dbpedia.org/page/Employment> ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologyminusvalia
+:minusvalia rdf:type owl:DatatypeProperty ;
+            rdfs:domain : <http://dbpedia.org/page/Employment> ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologynombre
+:nombre rdf:type owl:DatatypeProperty ;
+        rdfs:domain : <http://dbpedia.org/page/Locality> ,
+                    :<http://dbpedia.org/page/Province> ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologynumero-plazas
+:numero-plazas rdf:type owl:DatatypeProperty ;
+               rdfs:domain : <http://dbpedia.org/page/Employment> ;
+               rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontologypagina-web
+:pagina-web rdf:type owl:DatatypeProperty ;
+            rdfs:domain :<http://dbpedia.org/page/Organization> ;
+            rdfs:range xsd:anyURI .
+
+
+###  http://www.semanticweb.org/group07/ontologyplazo-presentacion
+:plazo-presentacion rdf:type owl:DatatypeProperty ;
+                    rdfs:domain : <http://dbpedia.org/page/Employment> ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologyposicion
+:posicion rdf:type owl:DatatypeProperty ;
+          rdfs:domain :<http://dbpedia.org/page/Organization> ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologyprocedimiento
+:procedimiento rdf:type owl:DatatypeProperty ;
+               rdfs:domain : <http://dbpedia.org/page/Employment> ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologypromocion-interna
+:promocion-interna rdf:type owl:DatatypeProperty ;
+                   rdfs:domain : <http://dbpedia.org/page/Employment> ;
+                   rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontologyrequisitos
+:requisitos rdf:type owl:DatatypeProperty ;
+            rdfs:domain : <http://dbpedia.org/page/Employment> ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologysolicitud
+:solicitud rdf:type owl:DatatypeProperty ;
+           rdfs:domain : <http://dbpedia.org/page/Employment> ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologysuperficie
+:superficie rdf:type owl:DatatypeProperty ;
+            rdfs:domain : <http://dbpedia.org/page/Province> ;
+            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group07/ontologytasas
+:tasas rdf:type owl:DatatypeProperty ;
+       rdfs:domain : <http://dbpedia.org/page/Employment> ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologytelefono
+:telefono rdf:type owl:DatatypeProperty ;
+          rdfs:domain :<http://dbpedia.org/page/Organization> ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologytematica
+:tematica rdf:type owl:DatatypeProperty ;
+          rdfs:domain : <http://dbpedia.org/page/Employment> ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologytipo
+:tipo rdf:type owl:DatatypeProperty ;
+      rdfs:domain : <http://dbpedia.org/page/Employment> ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologytitulo
+:titulo rdf:type owl:DatatypeProperty ;
+        rdfs:domain : <http://dbpedia.org/page/Employment> ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/group07/ontologyultima-actualizacion
+:ultima-actualizacion rdf:type owl:DatatypeProperty ;
+                      rdfs:domain : <http://dbpedia.org/page/Employment> ,
+                                  :<http://dbpedia.org/page/Organization> ;
+                      rdfs:range xsd:date .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/group07/ontologyEmpleo
+<http://dbpedia.org/page/Employment> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group07/ontologyLocalidad
+<http://dbpedia.org/page/Locality> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group07/ontologyOrganismo_Gestor
+<http://dbpedia.org/page/Organization> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group07/ontologyProvincia
+<http://dbpedia.org/page/Province> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
