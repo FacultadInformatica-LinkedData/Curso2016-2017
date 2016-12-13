@@ -1,189 +1,190 @@
-@prefix : <http://smartsevilla.es/ontology/> .
+@prefix : <http://smartsevilla.es/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://smartsevilla.es/ontology/> .
 
-<http://smartsevilla.es/ontology/> rdf:type owl:Ontology .
+<http://smartsevilla.es/ontology#> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://smartsevilla.es/ontology#contieneEdificio
 
-#################################################################
-#    Object Properties
-#################################################################
+:contieneEdificio a owl:ObjectProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/Street> ;
+	rdfs:range <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> .
+# 
+# http://smartsevilla.es/ontology#estaEnCalle
 
-###  http://smartsevilla.es/ontology/belongsToLine
-:belongsToLine rdf:type owl:ObjectProperty ;
-               rdfs:domain <http://dbpedia.org/page/Bus_stop> ;
-               rdfs:range <http://dbpedia.org/page/Travel> .
+:estaEnCalle a owl:ObjectProperty ;
+	rdfs:domain <http://dbpedia.org/page/Bus_stop> ;
+	rdfs:range <http://dbpedia.org/ontology/Street> .
+# 
+# http://smartsevilla.es/ontology#establece
 
+:establece a owl:ObjectProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/BusCompany> ;
+	rdfs:range <http://dbpedia.org/page/Travel> .
+# 
+# http://smartsevilla.es/ontology#provee
 
-###  http://smartsevilla.es/ontology/isInStreet
-:isInStreet rdf:type owl:ObjectProperty ;
-            rdfs:domain <http://dbpedia.org/page/Bus_stop> ;
-            rdfs:range <http://dbpedia.org/ontology/Street> .
+:provee a owl:ObjectProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/BusCompany> ;
+	rdfs:range <http://dbpedia.org/ontology/service> .
+# 
+# http://smartsevilla.es/ontology#tieneParadaEn
 
+:tieneParadaEn a owl:ObjectProperty ;
+	rdfs:domain <http://dbpedia.org/page/Travel> ;
+	rdfs:range <http://dbpedia.org/page/Bus_stop> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/property/address
 
-###  http://smartsevilla.es/ontology/passesBy
-:passesBy rdf:type owl:ObjectProperty ;
-          rdfs:domain <http://dbpedia.org/page/Bus> ,
-                      <http://dbpedia.org/page/Travel> ;
-          rdfs:range <http://dbpedia.org/ontology/Street> .
+<http://dbpedia.org/property/address> a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> ;
+	rdfs:range xsd:string .
+# 
+# http://dbpedia.org/property/fullname
 
+<http://dbpedia.org/property/fullname> a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/BusCompany> , <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> , <http://dbpedia.org/page/Bus_stop> , <http://dbpedia.org/page/Travel> ;
+	rdfs:range xsd:string .
+# 
+# http://dbpedia.org/property/language
 
-###  http://smartsevilla.es/ontology/stopsAt
-:stopsAt rdf:type owl:ObjectProperty ;
-         rdfs:domain <http://dbpedia.org/page/Bus> ;
-         rdfs:range <http://dbpedia.org/page/Bus_stop> .
+<http://dbpedia.org/property/language> a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/BusCompany> ;
+	rdfs:range xsd:language .
+# 
+# http://dbpedia.org/property/latitude
 
+<http://dbpedia.org/property/latitude> a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> , <http://dbpedia.org/page/Bus_stop> ;
+	rdfs:range xsd:double .
+# 
+# http://dbpedia.org/property/longitude
 
-#################################################################
-#    Data properties
-#################################################################
+<http://dbpedia.org/property/longitude> a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> , <http://dbpedia.org/page/Bus_stop> ;
+	rdfs:range xsd:double .
+# 
+# http://dbpedia.org/property/name
 
-###  http://dbpedia.org/property/fullname
-<http://dbpedia.org/property/fullname> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <http://dbpedia.org/ontology/BusCompany> ,
-                                                   <http://dbpedia.org/ontology/route> ,
-                                                   <http://dbpedia.org/page/Bus_stop> ;
-                                       rdfs:range xsd:string .
+<http://dbpedia.org/property/name> a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/BusCompany> , <http://dbpedia.org/ontology/Street> , <http://dbpedia.org/ontology/service> , <http://dbpedia.org/page/Travel> ;
+	rdfs:range xsd:string .
+# 
+# http://dbpedia.org/property/phoneNumber
 
+<http://dbpedia.org/property/phoneNumber> a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/BusCompany> , <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> ;
+	rdfs:range xsd:string .
+# 
+# http://dbpedia.org/property/photo
 
-###  http://dbpedia.org/property/language
-<http://dbpedia.org/property/language> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <http://dbpedia.org/ontology/BusCompany> ;
-                                       rdfs:range xsd:language .
+<http://dbpedia.org/property/photo> a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> ;
+	rdfs:range xsd:anyURI .
+# 
+# http://dbpedia.org/property/timeZone
 
+<http://dbpedia.org/property/timeZone> a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/BusCompany> ;
+	rdfs:range xsd:string .
+# 
+# http://dbpedia.org/property/type
 
-###  http://dbpedia.org/property/latitude
-<http://dbpedia.org/property/latitude> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <http://dbpedia.org/page/Bus_stop> ;
-                                       rdfs:range xsd:decimal .
+<http://dbpedia.org/property/type> a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/page/Travel> ;
+	rdfs:range xsd:integer .
+# 
+# http://dbpedia.org/property/url
 
+<http://dbpedia.org/property/url> a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/BusCompany> , <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> ;
+	rdfs:range xsd:anyURI .
+# 
+# http://smartsevilla.es/ontology#end_date
 
-###  http://dbpedia.org/property/longitude
-<http://dbpedia.org/property/longitude> rdf:type owl:DatatypeProperty ;
-                                        rdfs:domain <http://dbpedia.org/page/Bus_stop> ;
-                                        rdfs:range xsd:decimal .
+:end_date a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/service> ;
+	rdfs:range xsd:dateTime .
+# 
+# http://smartsevilla.es/ontology#route_id
 
+:route_id a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/page/Travel> ;
+	rdfs:range xsd:integer .
+# 
+# http://smartsevilla.es/ontology#service_id
 
-###  http://dbpedia.org/property/name
-<http://dbpedia.org/property/name> rdf:type owl:DatatypeProperty ;
-                                   rdfs:domain <http://dbpedia.org/ontology/BusCompany> ,
-                                               <http://dbpedia.org/ontology/Street> ,
-                                               <http://dbpedia.org/ontology/route> ,
-                                               <http://dbpedia.org/ontology/service> ;
-                                   rdfs:range xsd:string .
+:service_id a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/service> ;
+	rdfs:range xsd:string .
+# 
+# http://smartsevilla.es/ontology#start_date
 
+:start_date a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/ontology/service> ;
+	rdfs:range xsd:dateTime .
+# 
+# http://smartsevilla.es/ontology#stop_id
 
-###  http://dbpedia.org/property/phoneNumber
-<http://dbpedia.org/property/phoneNumber> rdf:type owl:DatatypeProperty ;
-                                          rdfs:domain <http://dbpedia.org/ontology/BusCompany> ;
-                                          rdfs:range xsd:string .
+:stop_id a owl:DatatypeProperty ;
+	rdfs:domain <http://dbpedia.org/page/Bus_stop> ;
+	rdfs:range xsd:integer .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/BusCompany
 
+<http://dbpedia.org/ontology/BusCompany> a owl:Class .
+# 
+# http://dbpedia.org/ontology/Monument
 
-###  http://dbpedia.org/property/timeZone
-<http://dbpedia.org/property/timeZone> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <http://dbpedia.org/ontology/BusCompany> ;
-                                       rdfs:range xsd:string .
+<http://dbpedia.org/ontology/Monument> a owl:Class .
+# 
+# http://dbpedia.org/ontology/Museum
 
+<http://dbpedia.org/ontology/Museum> a owl:Class .
+# 
+# http://dbpedia.org/ontology/Street
 
-###  http://dbpedia.org/property/url
-<http://dbpedia.org/property/url> rdf:type owl:DatatypeProperty ;
-                                  rdfs:domain <http://dbpedia.org/ontology/BusCompany> ;
-                                  rdfs:range xsd:string .
+<http://dbpedia.org/ontology/Street> a owl:Class .
+# 
+# http://dbpedia.org/ontology/service
 
+<http://dbpedia.org/ontology/service> a owl:Class .
+# 
+# http://dbpedia.org/page/Bus_stop
 
-###  http://fr.dbpedia.org/property/type
-<http://fr.dbpedia.org/property/type> rdf:type owl:DatatypeProperty ;
-                                      rdfs:domain <http://dbpedia.org/ontology/route> ;
-                                      rdfs:range xsd:integer .
+<http://dbpedia.org/page/Bus_stop> a owl:Class .
+# 
+# http://dbpedia.org/page/Travel
 
-
-###  http://smartsevilla.es/ontology/arrival_time
-:arrival_time rdf:type owl:DatatypeProperty ;
-              rdfs:domain <http://dbpedia.org/page/Bus> ;
-              rdfs:range xsd:dateTime .
-
-
-###  http://smartsevilla.es/ontology/departure_time
-:departure_time rdf:type owl:DatatypeProperty ;
-                rdfs:domain <http://dbpedia.org/page/Bus> ;
-                rdfs:range xsd:dateTime .
-
-
-###  http://smartsevilla.es/ontology/end_date
-:end_date rdf:type owl:DatatypeProperty ;
-          rdfs:domain <http://dbpedia.org/ontology/service> ;
-          rdfs:range xsd:dateTime .
-
-
-###  http://smartsevilla.es/ontology/exception_type
-:exception_type rdf:type owl:DatatypeProperty ;
-                rdfs:domain <http://dbpedia.org/ontology/service> ;
-                rdfs:range xsd:integer .
-
-
-###  http://smartsevilla.es/ontology/route_id
-:route_id rdf:type owl:DatatypeProperty ;
-          rdfs:domain <http://dbpedia.org/ontology/route> ;
-          rdfs:range xsd:integer .
-
-
-###  http://smartsevilla.es/ontology/service_id
-:service_id rdf:type owl:DatatypeProperty ;
-            rdfs:domain <http://dbpedia.org/ontology/service> ;
-            rdfs:range xsd:integer .
-
-
-###  http://smartsevilla.es/ontology/start_date
-:start_date rdf:type owl:DatatypeProperty ;
-            rdfs:domain <http://dbpedia.org/ontology/service> ;
-            rdfs:range xsd:dateTime .
-
-
-###  http://smartsevilla.es/ontology/stop_id
-:stop_id rdf:type owl:DatatypeProperty ;
-         rdfs:domain <http://dbpedia.org/page/Bus_stop> ;
-         rdfs:range xsd:integer .
-
-
-###  http://smartsevilla.es/ontology/tripId
-:tripId rdf:type owl:DatatypeProperty ;
-        rdfs:domain <http://dbpedia.org/ontology/route> ;
-        rdfs:range xsd:string .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://dbpedia.org/ontology/BusCompany
-<http://dbpedia.org/ontology/BusCompany> rdf:type owl:Class .
-
-
-###  http://dbpedia.org/ontology/Street
-<http://dbpedia.org/ontology/Street> rdf:type owl:Class .
-
-
-###  http://dbpedia.org/ontology/route
-<http://dbpedia.org/ontology/route> rdf:type owl:Class .
-
-
-###  http://dbpedia.org/ontology/service
-<http://dbpedia.org/ontology/service> rdf:type owl:Class .
-
-
-###  http://dbpedia.org/page/Bus
-<http://dbpedia.org/page/Bus> rdf:type owl:Class .
-
-
-###  http://dbpedia.org/page/Bus_stop
-<http://dbpedia.org/page/Bus_stop> rdf:type owl:Class .
-
-
-###  http://dbpedia.org/page/Travel
-<http://dbpedia.org/page/Travel> rdf:type owl:Class .
-
-
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
+<http://dbpedia.org/page/Travel> a owl:Class .
+# 
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

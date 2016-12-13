@@ -1,0 +1,567 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FID",
+    "columnName": "FID"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column HORARIO",
+    "columnName": "HORARIO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Texto",
+    "columnName": "Texto"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/museos/",
+      "prefixes": [
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(value, \" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/ontology/museum",
+              "curie": "dbo:museum"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://dbpedia.org/property/longitude",
+              "curie": "dbp:longitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "lon"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/latitude",
+              "curie": "dbp:latitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "lat"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/fullname",
+              "curie": "dbp:fullname",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/address",
+              "curie": "dbp:address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/phoneNumber",
+              "curie": "dbp:phoneNumber",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/url",
+              "curie": "dbp:url",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "WEB",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/photo",
+              "curie": "dbp:photo",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Foto",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column NOMBRE to type null",
+    "columnName": "NOMBRE",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia-es",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": null,
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Arqueologico (Sevilla) (http://es.dbpedia.org/resource/Museo_Arqueologico_(Sevilla)) for cells containing \"Museo Arqueologico\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Arqueologico",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Museo_Arqueologico_(Sevilla)",
+      "name": "Museo Arqueologico (Sevilla)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo del Baile Flamenco (http://es.dbpedia.org/resource/Museo_del_Baile_Flamenco) for cells containing \"Museo de Baile Flamenco\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de Baile Flamenco",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Museo_del_Baile_Flamenco",
+      "name": "Museo del Baile Flamenco",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Museo de Bellas Artes\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de Bellas Artes"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Museo de la Ciudad, Convento Sta. Clara, Torre D. Fadrique\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de la Ciudad, Convento Sta. Clara, Torre D. Fadrique"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Museo de la Congregacion de Terciarias Franciscanas\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de la Congregacion de Terciarias Franciscanas"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Atarazanas Reales de Sevilla (http://es.dbpedia.org/resource/Atarazanas_Reales_de_Sevilla) for cells containing \"Museo de la Reales Atarazanas\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de la Reales Atarazanas",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Atarazanas_Reales_de_Sevilla",
+      "name": "Atarazanas Reales de Sevilla",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Museo de Munecas y Juguetes Antiguos\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de Munecas y Juguetes Antiguos"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Palacio de la Condesa de Lebrija (http://es.dbpedia.org/resource/Palacio_de_la_Condesa_de_Lebrija) for cells containing \"Museo Palacio de la Condesa de Lebrija\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Palacio de la Condesa de Lebrija",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Palacio_de_la_Condesa_de_Lebrija",
+      "name": "Palacio de la Condesa de Lebrija",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Taurino (Sevilla) (http://es.dbpedia.org/resource/Museo_Taurino_(Sevilla)) for cells containing \"Museo Taurino y Pza. Toros Real Maestranza\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Taurino y Pza. Toros Real Maestranza",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Museo_Taurino_(Sevilla)",
+      "name": "Museo Taurino (Sevilla)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Macarena (Sevilla) (http://es.dbpedia.org/resource/Macarena_(Sevilla)) for cells containing \"Tesoro de la Macarena\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Tesoro de la Macarena",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Macarena_(Sevilla)",
+      "name": "Macarena (Sevilla)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Museo Tesoro del Templo Gran Poder\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Tesoro del Templo Gran Poder"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Naval de Sevilla (http://es.dbpedia.org/resource/Museo_Naval_de_Sevilla) for cells containing \"Torre del Oro / Museo Naval\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Torre del Oro / Museo Naval",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Museo_Naval_de_Sevilla",
+      "name": "Museo Naval de Sevilla",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Museo de la Ceramica de Triana\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de la Ceramica de Triana"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Castillo de San Jorge de Sevilla (http://es.dbpedia.org/resource/Castillo_de_San_Jorge_de_Sevilla) for cells containing \"Museo del castillo de San Jorge\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo del castillo de San Jorge",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Castillo_de_San_Jorge_de_Sevilla",
+      "name": "Castillo de San Jorge de Sevilla",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Acuario de Sevilla\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Acuario de Sevilla"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Casa de la Ciencia de Sevilla (http://es.dbpedia.org/resource/Casa_de_la_Ciencia_de_Sevilla) for cells containing \"Museo Casa de la Ciencia\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Casa de la Ciencia",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Casa_de_la_Ciencia_de_Sevilla",
+      "name": "Casa de la Ciencia de Sevilla",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Museum's URI from DBpedia at index 3 based on column NOMBRE using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Museum's URI from DBpedia",
+    "columnInsertIndex": 3,
+    "baseColumnName": "NOMBRE",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/museos/",
+      "prefixes": [
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(value, \" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/ontology/museum",
+              "curie": "dbo:museum"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://dbpedia.org/property/longitude",
+              "curie": "dbp:longitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "lon"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/latitude",
+              "curie": "dbp:latitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "lat"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/fullname",
+              "curie": "dbp:fullname",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/address",
+              "curie": "dbp:address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/phoneNumber",
+              "curie": "dbp:phoneNumber",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/url",
+              "curie": "dbp:url",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "WEB",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/photo",
+              "curie": "dbp:photo",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Foto",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Museum's URI from DBpedia",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Tesoro de la Macarena\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Tesoro de la Macarena"
+  }
+]
