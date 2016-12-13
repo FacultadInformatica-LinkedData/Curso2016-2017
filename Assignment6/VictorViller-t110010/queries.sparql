@@ -1,0 +1,64 @@
+# VictorViller - t110010
+# --------------------------------------------------------------------------
+# Graph IRI: http://sandbox.linkeddata.es/graph/accidentes
+# --------------------------------------------------------------------------
+# How many accidents were there in Madrid in 2013?
+
+select SUM(?numAcc)
+where
+{
+	?n <http://example.org/myVocabulary#numberOfAccidents> ?numAcc.
+}
+
+# Result: 11749
+# --------------------------------------------------------------------------
+# Give me the number of accidents in Usera for each type of accident
+
+select ?TypeAccident ?NumAccidents
+where
+{
+	?type <http://www.w3.org/2004/02/skos/core#prefLabel> ?TypeAccident.
+	?site <http://example.org/myVocabulary#hasAccidentType> ?type.
+	?site <http://example.org/myVocabulary#relatedDistrict> "USERA".
+	?site <http://example.org/myVocabulary#numberOfAccidents> ?NumAccidents.
+}
+
+# --------------------------------------------------------------------------
+# Give me the number of multiple collisions for each district
+
+select ?District ?NumAccidents
+where
+{
+	?multiple <http://example.org/myVocabulary#relatedDistrict> ?District.
+	?multiple <http://example.org/myVocabulary#numberOfAccidents> ?NumAccidents.
+}
+
+# --------------------------------------------------------------------------
+# Which is the district were the number of bicycle falls was higher in 2013?
+
+select max(?NumAccidents) as ?NumAccidents ?District
+where 
+{
+?maxAccident <http://example.org/myVocabulary#hasAccidentType> <http://example.org/myVocabulary#BicycleFall>.
+?maxAccident <http://example.org/myVocabulary#relatedDistrict> ?District.
+?maxAccident <http://example.org/myVocabulary#numberOfAccidents> ?NumAccidents.
+}
+ORDER by desc(?NumAccidents)
+LIMIT 1
+
+# --------------------------------------------------------------------------
+# Give me the districts with more than 500 accidents in 2013
+
+select ?District ?Accidents WHERE {
+{
+	select distinct ?District ?numAcc as ?Accidents
+	where
+	{
+		?n <http://example.org/myVocabulary#relatedDistrict> ?District.
+		?n <http://example.org/myVocabulary#numberOfAccidents> ?numAcc.
+	}
+} 
+FILTER (?Accidents > 500)
+}
+
+# --------------------------------------------------------------------------
