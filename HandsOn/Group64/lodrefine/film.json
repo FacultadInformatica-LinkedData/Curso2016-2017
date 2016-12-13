@@ -1,0 +1,1796 @@
+[
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Locations",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Locations",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Alamo Square",
+          "Alamo Square "
+        ],
+        "to": "Alamo Square"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Japanese Tea Garden (Hagiwara Tea Garden Drive, Golden Gate Park)",
+          "Japanese Tea Garden, Hagiwara Tea Garden Drive, Golden Gate Park"
+        ],
+        "to": "Japanese Tea Garden (Hagiwara Tea Garden Drive, Golden Gate Park)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Washington Square (North Beach)",
+          "Washington Square, North Beach"
+        ],
+        "to": "Washington Square (North Beach)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Postcard Row (Alamo Square, Hayes Valley)",
+          "Postcard Row, Alamo Square, Hayes Valley"
+        ],
+        "to": "Postcard Row (Alamo Square, Hayes Valley)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "City Hall",
+          "City Hall "
+        ],
+        "to": "City Hall"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Presidio (Golden Gate National Recreation Area)",
+          "Presidio, Golden Gate National Recreation Area"
+        ],
+        "to": "Presidio (Golden Gate National Recreation Area)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Conservatory of Flowers (Golden Gate Park)",
+          "Conservatory of Flowers, Golden Gate Park"
+        ],
+        "to": "Conservatory of Flowers (Golden Gate Park)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bush Street at Jones",
+          "Jones Street at Bush"
+        ],
+        "to": "Bush Street at Jones"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mark Hopkins Intercontinental Hotel (1 Nob Hill Circle, Nob Hill)",
+          "Mark Hopkins Intercontinental Hotel (1 Nob Hill Circle)"
+        ],
+        "to": "Mark Hopkins Intercontinental Hotel (1 Nob Hill Circle, Nob Hill)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Marina Green (Marina District)",
+          "Marina Green, Marina District"
+        ],
+        "to": "Marina Green (Marina District)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "770 Haight St",
+          "770 Haight St."
+        ],
+        "to": "770 Haight St"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Actor 2",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Actor 2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diane Keaton",
+          " Diane Keaton"
+        ],
+        "to": "Diane Keaton"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Title",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Title",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "A Smile Like Yours ",
+          "A Smile Like Yours"
+        ],
+        "to": "A Smile Like Yours "
+      }
+    ]
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "originalTitle ",
+              "curie": ":originalTitle ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "releaseLocation ",
+              "curie": ":releaseLocation ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "originalTitle ",
+              "curie": ":originalTitle ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "releaseLocation ",
+              "curie": ":releaseLocation ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "originalTitle ",
+              "curie": ":originalTitle ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "releaseLocation ",
+              "curie": ":releaseLocation ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Fun Facts",
+    "columnName": "Fun Facts"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Release Year",
+    "columnName": "Release Year"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Production Company",
+    "columnName": "Production Company"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Distributor",
+    "columnName": "Distributor"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Actor 1",
+    "columnName": "Actor 1"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Actor 2",
+    "columnName": "Actor 2"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Actor 3",
+    "columnName": "Actor 3"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "originalTitle ",
+              "curie": ":originalTitle ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "releaseLocation ",
+              "curie": ":releaseLocation ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "originalTitle ",
+              "curie": ":originalTitle ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "releaseLocation ",
+              "curie": ":releaseLocation ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "originalTitle ",
+              "curie": ":originalTitle ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "releaseLocation ",
+              "curie": ":releaseLocation ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "originalTitle ",
+              "curie": ":originalTitle ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "releaseLocation ",
+              "curie": ":releaseLocation ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "originalTitle ",
+              "curie": ":originalTitle ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "releaseLocation ",
+              "curie": ":releaseLocation ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "originalTitle ",
+              "curie": ":originalTitle ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "releaseLocation ",
+              "curie": ":releaseLocation ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "originalTitle ",
+              "curie": ":originalTitle ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "releaseLocation ",
+              "curie": ":releaseLocation ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "originalTitle ",
+              "curie": ":originalTitle ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "releaseLocation ",
+              "curie": ":releaseLocation ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "curie": "rdf:langString",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "releaseLocation ",
+              "curie": ":releaseLocation ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "curie": "rdf:langString",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "releaseLocation ",
+              "curie": ":releaseLocation ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "curie": "rdf:langString",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "place",
+              "curie": ":place",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "curie": "rdf:langString",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "place",
+              "curie": ":place",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "director ",
+              "curie": ":director ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "writer",
+              "curie": ":writer",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "curie": "rdf:langString",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "place",
+              "curie": ":place",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "person",
+              "curie": ":person",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "person",
+              "curie": ":person",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Film#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "curie": "rdf:langString",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "place",
+              "curie": ":place",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "person",
+              "curie": ":person",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "person",
+              "curie": ":person",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://grupo64.es/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "g64",
+          "uri": ""
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "curie": "rdf:langString",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "place",
+              "curie": ":place",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "person",
+              "curie": ":person",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "person",
+              "curie": ":person",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://grupo64.es/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "g64",
+          "uri": ""
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#Film",
+              "curie": "g64:Film"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#hasTitle",
+              "curie": "g64:hasTitle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#hasLocation",
+              "curie": "g64:hasLocation",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#hasDirector",
+              "curie": "g64:hasDirector",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#hasWritter",
+              "curie": "g64:hasWritter",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://grupo64.es/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "g64",
+          "uri": ""
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#Film",
+              "curie": "g64:Film"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#hasTitle",
+              "curie": "g64:hasTitle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#hasLocation",
+              "curie": "g64:hasLocation",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#hasDirector",
+              "curie": "g64:hasDirector",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#hasWritter",
+              "curie": "g64:hasWritter",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://grupo64.es/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "g64",
+          "uri": ""
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#Film",
+              "curie": "g64:Film"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#hasTitle",
+              "curie": "g64:hasTitle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Title"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#hasLocation",
+              "curie": "g64:hasLocation",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Locations"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#hasDirector",
+              "curie": "g64:hasDirector",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Director"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-15#hasWritter",
+              "curie": "g64:hasWritter",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Writer"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

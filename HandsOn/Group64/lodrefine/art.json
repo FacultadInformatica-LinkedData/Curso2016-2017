@@ -1,0 +1,794 @@
+[
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column artist",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "artist",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Olmsted, Jr., Frederick Law",
+          "Olmsted, Frederick Law Jr."
+        ],
+        "to": "Olmsted, Jr., Frederick Law"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column artist",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "artist",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Saulls, Vicki",
+          "Saulls, Vicky"
+        ],
+        "to": "Saulls, Vicki"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Murrill, Gwyn",
+          "Murrill, Gwynn"
+        ],
+        "to": "Murrill, Gwyn"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Demetrios, Aristedes",
+          "Demetrios, Aristides"
+        ],
+        "to": "Demetrios, Aristedes"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column location_description",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location_description",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Public Display : District 1 : GGP, Music Concourse",
+          "Public Display : District 1 : GGP : Music Concourse",
+          "Public Display : District 1 : GGP: Music Concourse"
+        ],
+        "to": "Public Display : District 1 : GGP, Music Concourse"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "City Department : Laguna Honda Hospital : Historic Lobby",
+          "City Department : Laguna Honda Hospital  : Historic Lobby"
+        ],
+        "to": "City Department : Laguna Honda Hospital : Historic Lobby"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Public Display : District 6 : SFPL, Main : 100 Larkin St. : Periodicals",
+          "Public Display : District 6 : SFPL, Main : 100 Larkin St. : Periodicals "
+        ],
+        "to": "Public Display : District 6 : SFPL, Main : 100 Larkin St. : Periodicals"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Public Display : District 3 : Columbus Avenue at Powell and Union",
+          "Public Display : District 3 : Columbus Avenue at Union and Powell"
+        ],
+        "to": "Public Display : District 3 : Columbus Avenue at Powell and Union"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Public Display : District 11 : CCSF, Phelan Campus",
+          "Public Display : District 11 : CCSF, Phelan Campus, "
+        ],
+        "to": "Public Display : District 11 : CCSF, Phelan Campus"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "City Department : San Francisco International Airport : John Martin's Office",
+          "City Department : San Francisco International Airport  : John Martin's Office"
+        ],
+        "to": "City Department : San Francisco International Airport : John Martin's Office"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Storage : Airport",
+          "Airport : Storage"
+        ],
+        "to": "Storage : Airport"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Public Display : District 6 : 850 Bryant, Main entrance",
+          "Public Display : District 6 : 850 Bryant, main entrance"
+        ],
+        "to": "Public Display : District 6 : 850 Bryant, Main entrance"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Public Display : District 11 : CCSF : Phelan Campus : Administration Building",
+          "Public Display : District 11 : CCSF : Phelan campus : Administration Building : "
+        ],
+        "to": "Public Display : District 11 : CCSF : Phelan Campus : Administration Building"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Museum : deYoung",
+          "Museum : deYoung Museum"
+        ],
+        "to": "Museum : deYoung"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Public Display : District 7 : West Portal Clubhouse : exterior",
+          "Public Display : District 7 : West Portal Clubhouse, exterior"
+        ],
+        "to": "Public Display : District 7 : West Portal Clubhouse : exterior"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column medium",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "medium",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cor-ten Steel",
+          "Corten steel",
+          "corten steel"
+        ],
+        "to": "Cor-ten Steel"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oil",
+          "Oil ",
+          "oil"
+        ],
+        "to": "Oil"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Stainless steel",
+          "Stainless steel ",
+          "stainless steel"
+        ],
+        "to": "Stainless steel"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ceramic tile",
+          "Ceramic Tile",
+          "Ceramic tile"
+        ],
+        "to": "ceramic tile"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cast concrete",
+          "cast concrete",
+          "Cast Concrete"
+        ],
+        "to": "Cast concrete"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glass and stainless steel",
+          "Stainless steel and glass",
+          "glass and stainless steel"
+        ],
+        "to": "Glass and stainless steel"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Painted Aluminum",
+          "Painted aluminum",
+          "painted aluminum"
+        ],
+        "to": "Painted Aluminum"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bronze",
+          "bronze",
+          "Bronze "
+        ],
+        "to": "Bronze"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bronze, granite and marble",
+          "Marble, granite and bronze"
+        ],
+        "to": "Bronze, granite and marble"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mixed media",
+          "Mixed Media "
+        ],
+        "to": "Mixed media"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cast bronze",
+          "cast bronze"
+        ],
+        "to": "Cast bronze"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Redwood",
+          "redwood"
+        ],
+        "to": "Redwood"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Copper and Bronze",
+          "bronze and copper"
+        ],
+        "to": "Copper and Bronze"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Porcelain enamel",
+          "porcelain enamel"
+        ],
+        "to": "Porcelain enamel"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Granite",
+          "Granite (?)"
+        ],
+        "to": "Granite"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aluminum and steel",
+          "Steel and aluminum"
+        ],
+        "to": "Aluminum and steel"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Stained glass",
+          "stained glass"
+        ],
+        "to": "Stained glass"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "concrete",
+          "Concrete"
+        ],
+        "to": "concrete"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tuff stone",
+          "tuff stone"
+        ],
+        "to": "Tuff stone"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glazed ceramic tile",
+          "glazed ceramic tile"
+        ],
+        "to": "Glazed ceramic tile"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mosaic-tile mural",
+          "Mosaic-tile mural."
+        ],
+        "to": "Mosaic-tile mural"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glass",
+          "glass"
+        ],
+        "to": "Glass"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bronze and granite",
+          "bronze and granite"
+        ],
+        "to": "Bronze and granite"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "cotton thread tapestry",
+          "Cotton thread tapestry"
+        ],
+        "to": "cotton thread tapestry"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Steel",
+          "steel"
+        ],
+        "to": "Steel"
+      }
+    ]
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column created_at by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "created_at",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 2
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column created_at 1 to DATE (YEAR)",
+    "oldColumnName": "created_at 1",
+    "newColumnName": "DATE (YEAR)"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column created_at 2 to DATE (HOUR)",
+    "oldColumnName": "created_at 2",
+    "newColumnName": "DATE (HOUR)"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column _id_",
+    "columnName": "_id_"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column _rev",
+    "columnName": "_rev"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column accession_id",
+    "columnName": "accession_id"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DATE (YEAR)",
+    "columnName": "DATE (YEAR)"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DATE (HOUR)",
+    "columnName": "DATE (HOUR)"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column credit_line",
+    "columnName": "credit_line"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column display_dimensions",
+    "columnName": "display_dimensions"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column geometry",
+    "columnName": "geometry"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column medium",
+    "columnName": "medium"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column source",
+    "columnName": "source"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Location 1",
+    "columnName": "Location 1"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Artwork#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "author",
+              "curie": ":author",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "artist"
+              }
+            },
+            {
+              "uri": "originalTitle",
+              "curie": ":originalTitle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "title"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Artwork#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "author",
+              "curie": ":author",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "artist"
+              }
+            },
+            {
+              "uri": "originalTitle",
+              "curie": ":originalTitle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "title"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Artwork#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "author",
+              "curie": ":author",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "artist"
+              }
+            },
+            {
+              "uri": "originalTitle",
+              "curie": ":originalTitle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "title"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://grupo64.es/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "g64",
+          "uri": ""
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-16#Art",
+              "curie": "g64:Art"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-16#hasArtistName",
+              "curie": "g64:hasArtistName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "artist"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-16#hasTitle",
+              "curie": "g64:hasTitle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "title"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://grupo64.es/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "g64",
+          "uri": ""
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-16#Art",
+              "curie": "g64:Art"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-16#hasArtistName",
+              "curie": "g64:hasArtistName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "artist"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-16#hasTitle",
+              "curie": "g64:hasTitle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "title"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
