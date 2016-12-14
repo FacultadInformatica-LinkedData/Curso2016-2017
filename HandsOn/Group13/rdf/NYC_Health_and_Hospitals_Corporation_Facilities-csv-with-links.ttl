@@ -23,7 +23,8 @@ Elmhurst, NY 11373
 	rdfs:label "Elmhurst Hospital Center"^^rdfs:Literal .
 
 <http://www.linkedData_Group13.com/resource/Queens> a osadm:Borough ;
-	rdfs:label "Queens"^^rdfs:Literal .
+	rdfs:label "Queens"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Queens> .
 
 <http://www.linkedData_Group13.com/resource/Gouverneur+Healthcare+Services> a livingPlaces:HealthFacility ;
 	livingPlaces:hasHealthFacilityType "Nursing Home"^^xsd:string ;
@@ -144,7 +145,8 @@ Bronx, NY 10454
 	rdfs:label "Segundo Ruiz Belvis Diagnostic & Treatment Center"^^rdfs:Literal .
 
 <http://www.linkedData_Group13.com/resource/Bronx> a osadm:Borough ;
-	rdfs:label "Bronx"^^rdfs:Literal .
+	rdfs:label "Bronx"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/The_Bronx> .
 
 <http://www.linkedData_Group13.com/resource/Coney+Island+Hospital> a livingPlaces:HealthFacility ;
 	livingPlaces:hasHealthFacilityType "Acute Care Hospital"^^xsd:string ;

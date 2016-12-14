@@ -36,7 +36,10 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/56/details.aspx> , <http://nysparks.com/golf-courses/4/details.aspx> , <http://www.nysparks.com/environment/nature-centers/11/details.aspx> ;
 	geo:long "-78.9531063633"^^xsd:float ;
-	geo:lat "42.9657659397"^^xsd:float .
+	geo:lat "42.9657659397"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Beaver_Island_Head_Light> .
+
+<http://www.linkedData_Group13.com/resource/Erie> owl:sameAs <http://dbpedia.org/resource/Erie_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Big+Six+Mile+Creek+Marina> a livingPlaces:StateParkFacility ;
 	rdfs:label "Big Six Mile Creek Marina"^^rdfs:Literal ;
@@ -62,7 +65,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/174/details.aspx> ;
 	geo:long "-78.9807473248"^^xsd:float ;
-	geo:lat "43.0585164791"^^xsd:float .
+	geo:lat "43.0585164791"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Buckhorn_Island_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Darwin+Martin+House> a livingPlaces:StateParkFacility ;
 	rdfs:label "Darwin Martin House"^^rdfs:Literal ;
@@ -104,7 +108,8 @@
 	geo:lat "43.1346318545"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/Niagara> a osadm:County ;
-	rdfs:label "Niagara"^^rdfs:Literal .
+	rdfs:label "Niagara"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Niagara_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Earl+W.+Brydges+Artpark> a livingPlaces:StateParkFacility ;
 	rdfs:label "Earl W. Brydges Artpark"^^rdfs:Literal ;
@@ -117,7 +122,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/113/details.aspx> ;
 	geo:long "-79.0419282069"^^xsd:float ;
-	geo:lat "43.1656182246"^^xsd:float .
+	geo:lat "43.1656182246"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Earl_W._Brydges_Artpark_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Evangola> a livingPlaces:StateParkFacility ;
 	rdfs:label "Evangola"^^rdfs:Literal ;
@@ -130,7 +136,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/91/details.aspx> ;
 	geo:long "-79.1018592578"^^xsd:float ;
-	geo:lat "42.6057993585"^^xsd:float .
+	geo:lat "42.6057993585"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Evangola_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Fort+Niagara> a livingPlaces:StateParkFacility ;
 	rdfs:label "Fort Niagara"^^rdfs:Literal ;
@@ -169,7 +176,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/143/details.aspx> ;
 	geo:long "-78.4801588564"^^xsd:float ;
-	geo:lat "43.3694616791"^^xsd:float .
+	geo:lat "43.3694616791"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Golden_Hill_Bridge> .
 
 <http://www.linkedData_Group13.com/resource/Joseph+Davis> a livingPlaces:StateParkFacility ;
 	rdfs:label "Joseph Davis"^^rdfs:Literal ;
@@ -182,7 +190,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/45/details.aspx> ;
 	geo:long "-79.0399244577"^^xsd:float ;
-	geo:lat "43.214121149"^^xsd:float .
+	geo:lat "43.214121149"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Joseph_Davis_House> .
 
 <http://www.linkedData_Group13.com/resource/Knox+Farm> a livingPlaces:StateParkFacility ;
 	rdfs:label "Knox Farm"^^rdfs:Literal ;
@@ -195,7 +204,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/163/details.aspx> ;
 	geo:long "-78.6477499359"^^xsd:float ;
-	geo:lat "42.7738672657"^^xsd:float .
+	geo:lat "42.7738672657"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Knox_Farm_Historic_District> .
 
 <http://www.linkedData_Group13.com/resource/Niagara+Falls> a livingPlaces:StateParkFacility ;
 	rdfs:label "Niagara Falls"^^rdfs:Literal ;
@@ -208,7 +218,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/46/details.aspx> ;
 	geo:long "-79.0670195347"^^xsd:float ;
-	geo:lat "43.0867482021"^^xsd:float .
+	geo:lat "43.0867482021"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Niagara_Falls_Museum> .
 
 <http://www.linkedData_Group13.com/resource/Old+Fort+Niagara> a livingPlaces:StateParkFacility ;
 	rdfs:label "Old Fort Niagara"^^rdfs:Literal ;
@@ -234,7 +245,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/75/details.aspx> ;
 	geo:long "-79.0150381473"^^xsd:float ;
-	geo:lat "43.1340115441"^^xsd:float .
+	geo:lat "43.1340115441"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Zainsk_Reservoir> .
 
 <http://www.linkedData_Group13.com/resource/Strawberry+Island> a livingPlaces:StateParkFacility ;
 	rdfs:label "Strawberry Island"^^rdfs:Literal ;
@@ -259,7 +271,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/105/details.aspx> ;
 	geo:long "-79.0634179678"^^xsd:float ;
-	geo:lat "43.1204004767"^^xsd:float .
+	geo:lat "43.1204004767"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Niagara_Whirlpool> .
 
 <http://www.linkedData_Group13.com/resource/Wilson-Tuscarora> a livingPlaces:StateParkFacility ;
 	rdfs:label "Wilson-Tuscarora"^^rdfs:Literal ;
@@ -272,7 +285,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/69/details.aspx> ;
 	geo:long "-78.8556088836"^^xsd:float ;
-	geo:lat "43.3037772926"^^xsd:float .
+	geo:lat "43.3037772926"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Wilson-Tuscarora_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Woodlawn+Beach> a livingPlaces:StateParkFacility ;
 	rdfs:label "Woodlawn Beach"^^rdfs:Literal ;
@@ -285,7 +299,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/47/details.aspx> , <http://www.nysparks.com/environment/nature-centers/10/details.aspx> ;
 	geo:long "-78.8522078489"^^xsd:float ;
-	geo:lat "42.7938189008"^^xsd:float .
+	geo:lat "42.7938189008"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Woodlawn_Beach_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Allegany> a livingPlaces:StateParkFacility ;
 	rdfs:label "Allegany"^^rdfs:Literal ;
@@ -298,10 +313,12 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/136/details.aspx> , <http://www.nysparks.com/environment/nature-centers/12/details.aspx> ;
 	geo:long "-78.7685586473"^^xsd:float ;
-	geo:lat "42.0547575211"^^xsd:float .
+	geo:lat "42.0547575211"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Allegany_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Cattaraugus> a osadm:County ;
-	rdfs:label "Cattaraugus"^^rdfs:Literal .
+	rdfs:label "Cattaraugus"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Cattaraugus_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Lake+Erie> a livingPlaces:StateParkFacility ;
 	rdfs:label "Lake Erie"^^rdfs:Literal ;
@@ -314,10 +331,12 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/129/details.aspx> ;
 	geo:long "-79.431417873"^^xsd:float ;
-	geo:lat "42.4228907897"^^xsd:float .
+	geo:lat "42.4228907897"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Lake_Erie_AVA> .
 
 <http://www.linkedData_Group13.com/resource/Chautauqua> a osadm:County ;
-	rdfs:label "Chautauqua"^^rdfs:Literal .
+	rdfs:label "Chautauqua"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Chautauqua_County,_Kansas> .
 
 <http://www.linkedData_Group13.com/resource/Long+Point> a livingPlaces:StateParkFacility ;
 	rdfs:label "Long Point"^^rdfs:Literal ;
@@ -330,7 +349,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/109/details.aspx> ;
 	geo:long "-79.4109114045"^^xsd:float ;
-	geo:lat "42.1787606524"^^xsd:float .
+	geo:lat "42.1787606524"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Long_Point,_Illinois> .
 
 <http://www.linkedData_Group13.com/resource/Midway> a livingPlaces:StateParkFacility ;
 	rdfs:label "Midway"^^rdfs:Literal ;
@@ -372,6 +392,8 @@
 	geo:long "-77.5463410098"^^xsd:float ;
 	geo:lat "43.0925511521"^^xsd:float .
 
+<http://www.linkedData_Group13.com/resource/Monroe> owl:sameAs <http://dbpedia.org/resource/Monroe_County,_Florida> .
+
 <http://www.linkedData_Group13.com/resource/Conesus+Lake+Marine+Park> a livingPlaces:StateParkFacility ;
 	rdfs:label "Conesus Lake Marine Park"^^rdfs:Literal ;
 	livingPlaces:hasParkFacilityType "Marine Facility"^^xsd:string ;
@@ -386,7 +408,8 @@
 	geo:lat "42.7758061511"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/Livingston> a osadm:County ;
-	rdfs:label "Livingston"^^rdfs:Literal .
+	rdfs:label "Livingston"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Livingston_Parish,_Louisiana> .
 
 <http://www.linkedData_Group13.com/resource/Darien+Lakes> a livingPlaces:StateParkFacility ;
 	rdfs:label "Darien Lakes"^^rdfs:Literal ;
@@ -399,10 +422,12 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/144/details.aspx> ;
 	geo:long "-78.4114922979"^^xsd:float ;
-	geo:lat "42.9118141573"^^xsd:float .
+	geo:lat "42.9118141573"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Darien_Lakes_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Genesee> a osadm:County ;
-	rdfs:label "Genesee"^^rdfs:Literal .
+	rdfs:label "Genesee"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Genesee_County,_Michigan> .
 
 <http://www.linkedData_Group13.com/resource/Genesee+River> a livingPlaces:StateParkFacility ;
 	rdfs:label "Genesee River"^^rdfs:Literal ;
@@ -427,7 +452,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/20/details.aspx> ;
 	geo:long "-77.9550976705"^^xsd:float ;
-	geo:lat "43.3600913014"^^xsd:float .
+	geo:lat "43.3600913014"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Hamlin_Beach_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Irondequoit+Bay+Marine+Park> a livingPlaces:StateParkFacility ;
 	rdfs:label "Irondequoit Bay Marine Park"^^rdfs:Literal ;
@@ -456,7 +482,8 @@
 	geo:lat "43.3663835822"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/Orleans> a osadm:County ;
-	rdfs:label "Orleans"^^rdfs:Literal .
+	rdfs:label "Orleans"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Orleans_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Letchworth> a livingPlaces:StateParkFacility ;
 	rdfs:label "Letchworth"^^rdfs:Literal ;
@@ -498,10 +525,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/104/details.aspx> ;
 	geo:long "-78.0565609783"^^xsd:float ;
-	geo:lat "42.6792542189"^^xsd:float .
+	geo:lat "42.6792542189"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Silver_Lake,_Indiana> .
 
 <http://www.linkedData_Group13.com/resource/Wyoming> a osadm:County ;
-	rdfs:label "Wyoming"^^rdfs:Literal .
+	rdfs:label "Wyoming"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Albany_County,_Wyoming> .
 
 <http://www.linkedData_Group13.com/resource/Allan+H.+Treman> a livingPlaces:StateParkFacility ;
 	rdfs:label "Allan H. Treman"^^rdfs:Literal ;
@@ -514,10 +543,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/35/details.aspx> ;
 	geo:long "-76.517568174"^^xsd:float ;
-	geo:lat "42.4613966817"^^xsd:float .
+	geo:lat "42.4613966817"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Allan_H._Treman_State_Marine_Park> .
 
 <http://www.linkedData_Group13.com/resource/Tompkins> a osadm:County ;
-	rdfs:label "Tompkins"^^rdfs:Literal .
+	rdfs:label "Tompkins"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Tompkins_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Beechwood> a livingPlaces:StateParkFacility ;
 	rdfs:label "Beechwood"^^rdfs:Literal ;
@@ -529,10 +560,12 @@
 	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	geo:long "-77.0337933037"^^xsd:float ;
-	geo:lat "43.266694455"^^xsd:float .
+	geo:lat "43.266694455"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Beechwood_railway_station> .
 
 <http://www.linkedData_Group13.com/resource/Wayne> a osadm:County ;
-	rdfs:label "Wayne"^^rdfs:Literal .
+	rdfs:label "Wayne"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Wayne_County,_Mississippi> .
 
 <http://www.linkedData_Group13.com/resource/Bonavista> a livingPlaces:StateParkFacility ;
 	rdfs:label "Bonavista"^^rdfs:Literal ;
@@ -545,10 +578,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/160/details.aspx> , <http://nysparks.com/golf-courses/10/details.aspx> ;
 	geo:long "-76.8677249793"^^xsd:float ;
-	geo:lat "42.6731942171"^^xsd:float .
+	geo:lat "42.6731942171"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Bonavista—Trinity—Conception> .
 
 <http://www.linkedData_Group13.com/resource/Seneca> a osadm:County ;
-	rdfs:label "Seneca"^^rdfs:Literal .
+	rdfs:label "Seneca"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Seneca_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Buttermilk+Falls> a livingPlaces:StateParkFacility ;
 	rdfs:label "Buttermilk Falls"^^rdfs:Literal ;
@@ -561,7 +596,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/151/details.aspx> ;
 	geo:long "-76.5122566369"^^xsd:float ;
-	geo:lat "42.4040259595"^^xsd:float .
+	geo:lat "42.4040259595"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Buttermilk_Falls_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Canandaigua+Lake+Marine+Park> a livingPlaces:StateParkFacility ;
 	rdfs:label "Canandaigua Lake Marine Park"^^rdfs:Literal ;
@@ -577,7 +613,8 @@
 	geo:lat "42.8766685939"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/Ontario> a osadm:County ;
-	rdfs:label "Ontario"^^rdfs:Literal .
+	rdfs:label "Ontario"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Morrisburg,_Ontario> .
 
 <http://www.linkedData_Group13.com/resource/Cayuga+Lake> a livingPlaces:StateParkFacility ;
 	rdfs:label "Cayuga Lake"^^rdfs:Literal ;
@@ -603,7 +640,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/43/details.aspx> ;
 	geo:long "-76.9170242028"^^xsd:float ;
-	geo:lat "43.2809455173"^^xsd:float .
+	geo:lat "43.2809455173"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Chimney_Bluffs_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Deans+Cove+Boat+Launch> a livingPlaces:StateParkFacility ;
 	rdfs:label "Deans Cove Boat Launch"^^rdfs:Literal ;
@@ -632,7 +670,8 @@
 	geo:lat "43.3417081221"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/Cayuga> a osadm:County ;
-	rdfs:label "Cayuga"^^rdfs:Literal .
+	rdfs:label "Cayuga"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Cayuga_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Fillmore+Glen> a livingPlaces:StateParkFacility ;
 	rdfs:label "Fillmore Glen"^^rdfs:Literal ;
@@ -645,7 +684,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/157/details.aspx> ;
 	geo:long "-76.388006245"^^xsd:float ;
-	geo:lat "42.6909689808"^^xsd:float .
+	geo:lat "42.6909689808"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Fillmore_Glen_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Ganondagon> a livingPlaces:StateParkFacility ;
 	rdfs:label "Ganondagon"^^rdfs:Literal ;
@@ -671,7 +711,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/164/details.aspx> ;
 	geo:long "-77.5154780869"^^xsd:float ;
-	geo:lat "42.688112003"^^xsd:float .
+	geo:lat "42.688112003"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Harriet_Hollister_Spencer_State_Recreation_Area> .
 
 <http://www.linkedData_Group13.com/resource/Honeoye+Marine+Park> a livingPlaces:StateParkFacility ;
 	rdfs:label "Honeoye Marine Park"^^rdfs:Literal ;
@@ -697,10 +738,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/golf-courses/19/details.aspx> ;
 	geo:long "-77.1547655357"^^xsd:float ;
-	geo:lat "42.0930548903"^^xsd:float .
+	geo:lat "42.0930548903"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Indian_Hills,_Kentucky> .
 
 <http://www.linkedData_Group13.com/resource/Steuben> a osadm:County ;
-	rdfs:label "Steuben"^^rdfs:Literal .
+	rdfs:label "Steuben"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Steuben_County,_Indiana> .
 
 <http://www.linkedData_Group13.com/resource/Keuka+Lake> a livingPlaces:StateParkFacility ;
 	rdfs:label "Keuka Lake"^^rdfs:Literal ;
@@ -747,10 +790,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/138/details.aspx> , <http://nysparks.com/golf-courses/3/details.aspx> ;
 	geo:long "-76.8356909125"^^xsd:float ;
-	geo:lat "42.211660694"^^xsd:float .
+	geo:lat "42.211660694"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Mark_Twain_Cave> .
 
 <http://www.linkedData_Group13.com/resource/Chemung> a osadm:County ;
-	rdfs:label "Chemung"^^rdfs:Literal .
+	rdfs:label "Chemung"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Chemung_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Newtown+Battlefield> a livingPlaces:StateParkFacility ;
 	rdfs:label "Newtown Battlefield"^^rdfs:Literal ;
@@ -763,7 +808,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/107/details.aspx> ;
 	geo:long "-76.7363172694"^^xsd:float ;
-	geo:lat "42.0490265183"^^xsd:float .
+	geo:lat "42.0490265183"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Newtown_Battlefield_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Parrot+Hall> a livingPlaces:StateParkFacility ;
 	rdfs:label "Parrot Hall"^^rdfs:Literal ;
@@ -788,7 +834,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/4/details.aspx> , <http://nysparks.com/golf-courses/16/details.aspx> ;
 	geo:long "-77.2145609228"^^xsd:float ;
-	geo:lat "42.0973529692"^^xsd:float .
+	geo:lat "42.0973529692"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Pinnacle_Ridge> .
 
 <http://www.linkedData_Group13.com/resource/Robert+H.+Treman> a livingPlaces:StateParkFacility ;
 	rdfs:label "Robert H. Treman"^^rdfs:Literal ;
@@ -801,7 +848,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/135/details.aspx> ;
 	geo:long "-76.5795442076"^^xsd:float ;
-	geo:lat "42.4005756394"^^xsd:float .
+	geo:lat "42.4005756394"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Robert_H._Treman_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Sampson> a livingPlaces:StateParkFacility ;
 	rdfs:label "Sampson"^^rdfs:Literal ;
@@ -856,7 +904,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/118/details.aspx> ;
 	geo:long "-77.6929663929"^^xsd:float ;
-	geo:lat "42.5185595291"^^xsd:float .
+	geo:lat "42.5185595291"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Stony_Brook_Railroad> .
 
 <http://www.linkedData_Group13.com/resource/Taughannock+Falls> a livingPlaces:StateParkFacility ;
 	rdfs:label "Taughannock Falls"^^rdfs:Literal ;
@@ -869,7 +918,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/62/details.aspx> ;
 	geo:long "-76.6097670832"^^xsd:float ;
-	geo:lat "42.5407382384"^^xsd:float .
+	geo:lat "42.5407382384"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Taughannock_Falls_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Two+Rivers> a livingPlaces:StateParkFacility ;
 	rdfs:label "Two Rivers"^^rdfs:Literal ;
@@ -882,10 +932,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/179/details.aspx> ;
 	geo:long "-76.5473199933"^^xsd:float ;
-	geo:lat "42.0251635453"^^xsd:float .
+	geo:lat "42.0251635453"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Two_Rivers_Dam> .
 
 <http://www.linkedData_Group13.com/resource/Tioga> a osadm:County ;
-	rdfs:label "Tioga"^^rdfs:Literal .
+	rdfs:label "Tioga"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Tioga_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Watkins+Glen> a livingPlaces:StateParkFacility ;
 	rdfs:label "Watkins Glen"^^rdfs:Literal ;
@@ -898,10 +950,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/142/details.aspx> ;
 	geo:long "-76.9001337586"^^xsd:float ;
-	geo:lat "42.3675397399"^^xsd:float .
+	geo:lat "42.3675397399"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Watkins_Glen,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Schuyler> a osadm:County ;
-	rdfs:label "Schuyler"^^rdfs:Literal .
+	rdfs:label "Schuyler"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Schuyler_County,_Missouri> .
 
 <http://www.linkedData_Group13.com/resource/Battle+Island> a livingPlaces:StateParkFacility ;
 	rdfs:label "Battle Island"^^rdfs:Literal ;
@@ -914,10 +968,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/44/details.aspx> , <http://nysparks.com/golf-courses/5/details.aspx> ;
 	geo:long "-76.4360441829"^^xsd:float ;
-	geo:lat "43.3616709338"^^xsd:float .
+	geo:lat "43.3616709338"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Battle_Island_Light> .
 
 <http://www.linkedData_Group13.com/resource/Oswego> a osadm:County ;
-	rdfs:label "Oswego"^^rdfs:Literal .
+	rdfs:label "Oswego"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Oswego_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Betty+%26+Wilbur+Davis> a livingPlaces:StateParkFacility ;
 	rdfs:label "Betty & Wilbur Davis"^^rdfs:Literal ;
@@ -933,7 +989,8 @@
 	geo:lat "42.6636396942"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/Otsego> a osadm:County ;
-	rdfs:label "Otsego"^^rdfs:Literal .
+	rdfs:label "Otsego"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Otsego_County,_Michigan> .
 
 <http://www.linkedData_Group13.com/resource/Bowman+Lake> a livingPlaces:StateParkFacility ;
 	rdfs:label "Bowman Lake"^^rdfs:Literal ;
@@ -946,10 +1003,12 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/76/details.aspx> ;
 	geo:long "-75.6806338029"^^xsd:float ;
-	geo:lat "42.519984738"^^xsd:float .
+	geo:lat "42.519984738"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Bowman_Lake_(Montana)> .
 
 <http://www.linkedData_Group13.com/resource/Chenango> a osadm:County ;
-	rdfs:label "Chenango"^^rdfs:Literal .
+	rdfs:label "Chenango"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Chenango_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Canadarago+Boat+Marine+Park> a livingPlaces:StateParkFacility ;
 	rdfs:label "Canadarago Boat Marine Park"^^rdfs:Literal ;
@@ -974,10 +1033,12 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/41/details.aspx> , <http://nysparks.com/golf-courses/20/details.aspx> ;
 	geo:long "-75.8362368401"^^xsd:float ;
-	geo:lat "42.2155402507"^^xsd:float .
+	geo:lat "42.2155402507"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Chenango_Valley_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Broome> a osadm:County ;
-	rdfs:label "Broome"^^rdfs:Literal .
+	rdfs:label "Broome"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Broome_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Chittenango+Falls> a livingPlaces:StateParkFacility ;
 	rdfs:label "Chittenango Falls"^^rdfs:Literal ;
@@ -990,10 +1051,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/130/details.aspx> ;
 	geo:long "-75.8466563129"^^xsd:float ;
-	geo:lat "42.9814847366"^^xsd:float .
+	geo:lat "42.9814847366"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Chittenango_Falls_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Madison> a osadm:County ;
-	rdfs:label "Madison"^^rdfs:Literal .
+	rdfs:label "Madison"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Madison_Parish,_Louisiana> .
 
 <http://www.linkedData_Group13.com/resource/Clark+Reservation> a livingPlaces:StateParkFacility ;
 	rdfs:label "Clark Reservation"^^rdfs:Literal ;
@@ -1009,7 +1072,8 @@
 	geo:lat "42.9975225031"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/Onondaga> a osadm:County ;
-	rdfs:label "Onondaga"^^rdfs:Literal .
+	rdfs:label "Onondaga"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Onondaga_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Delta+Lake> a livingPlaces:StateParkFacility ;
 	rdfs:label "Delta Lake"^^rdfs:Literal ;
@@ -1051,7 +1115,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/19/details.aspx> ;
 	geo:long "-75.1324631246"^^xsd:float ;
-	geo:lat "42.586583996"^^xsd:float .
+	geo:lat "42.586583996"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Gilbert_Lake_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Glimmerglass> a livingPlaces:StateParkFacility ;
 	rdfs:label "Glimmerglass"^^rdfs:Literal ;
@@ -1064,7 +1129,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/28/details.aspx> ;
 	geo:long "-74.8686839156"^^xsd:float ;
-	geo:lat "42.7936261732"^^xsd:float .
+	geo:lat "42.7936261732"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Glimmerglass_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Green+Lakes> a livingPlaces:StateParkFacility ;
 	rdfs:label "Green Lakes"^^rdfs:Literal ;
@@ -1077,7 +1143,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/172/details.aspx> , <http://nysparks.com/golf-courses/14/details.aspx> ;
 	geo:long "-75.9818848047"^^xsd:float ;
-	geo:lat "43.0469783183"^^xsd:float .
+	geo:lat "43.0469783183"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Green_Lakes_Mountain> .
 
 <http://www.linkedData_Group13.com/resource/Helen+L.+McNitt> a livingPlaces:StateParkFacility ;
 	rdfs:label "Helen L. McNitt"^^rdfs:Literal ;
@@ -1102,10 +1169,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/14/details.aspx> ;
 	geo:long "-74.8158650531"^^xsd:float ;
-	geo:lat "43.0253285628"^^xsd:float .
+	geo:lat "43.0253285628"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Herkimer_Home_State_Historic_Site> .
 
 <http://www.linkedData_Group13.com/resource/Herkimer> a osadm:County ;
-	rdfs:label "Herkimer"^^rdfs:Literal .
+	rdfs:label "Herkimer"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Herkimer_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Hyde+Hall> a livingPlaces:StateParkFacility ;
 	rdfs:label "Hyde Hall"^^rdfs:Literal ;
@@ -1134,7 +1203,8 @@
 	geo:lat "42.2947419755"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/Delaware> a osadm:County ;
-	rdfs:label "Delaware"^^rdfs:Literal .
+	rdfs:label "Delaware"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Delaware_County,_Indiana> .
 
 <http://www.linkedData_Group13.com/resource/Lorenzo> a livingPlaces:StateParkFacility ;
 	rdfs:label "Lorenzo"^^rdfs:Literal ;
@@ -1159,7 +1229,8 @@
 	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	geo:long "-76.2584640776"^^xsd:float ;
-	geo:lat "43.5199984003"^^xsd:float .
+	geo:lat "43.5199984003"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Mexico_Point_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Mexico+Point+Marine+Park> a livingPlaces:StateParkFacility ;
 	rdfs:label "Mexico Point Marine Park"^^rdfs:Literal ;
@@ -1185,7 +1256,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/32/details.aspx> ;
 	geo:long "-75.9217693491"^^xsd:float ;
-	geo:lat "43.0754747048"^^xsd:float .
+	geo:lat "43.0754747048"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Enlarged_Double_Lock_No._33_Old_Erie_Canal> .
 
 <http://www.linkedData_Group13.com/resource/Onon/Mad/Oneida> a osadm:County ;
 	rdfs:label "Onon/Mad/Oneida"^^rdfs:Literal .
@@ -1201,7 +1273,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/27/details.aspx> ;
 	geo:long "-75.4246793483"^^xsd:float ;
-	geo:lat "42.1780514491"^^xsd:float .
+	geo:lat "42.1780514491"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Oquaga_Creek_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Broome/Delaware> a osadm:County ;
 	rdfs:label "Broome/Delaware"^^rdfs:Literal .
@@ -1230,7 +1303,10 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/32/details.aspx> ;
 	geo:long "-75.3414755523"^^xsd:float ;
-	geo:lat "43.4043184536"^^xsd:float .
+	geo:lat "43.4043184536"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Pixley_Falls_State_Park> .
+
+<http://www.linkedData_Group13.com/resource/Oneida> owl:sameAs <http://dbpedia.org/resource/Oneida_County,_Idaho> .
 
 <http://www.linkedData_Group13.com/resource/Robert+V.+Riddell> a livingPlaces:StateParkFacility ;
 	rdfs:label "Robert V. Riddell"^^rdfs:Literal ;
@@ -1269,7 +1345,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/84/details.aspx> ;
 	geo:long "-76.1984400233"^^xsd:float ;
-	geo:lat "43.5556620105"^^xsd:float .
+	geo:lat "43.5556620105"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Selkirk_Shores_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/State+Park+at+the+Fair> a livingPlaces:StateParkFacility ;
 	rdfs:label "State Park at the Fair"^^rdfs:Literal ;
@@ -1295,7 +1372,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/2/details.aspx> ;
 	geo:long "-75.2324893011"^^xsd:float ;
-	geo:lat "43.3381056996"^^xsd:float .
+	geo:lat "43.3381056996"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Steuben_Memorial_State_Historic_Site> .
 
 <http://www.linkedData_Group13.com/resource/Verona+Beach> a livingPlaces:StateParkFacility ;
 	rdfs:label "Verona Beach"^^rdfs:Literal ;
@@ -1308,7 +1386,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/102/details.aspx> ;
 	geo:long "-75.716586586"^^xsd:float ;
-	geo:lat "43.178008249"^^xsd:float .
+	geo:lat "43.178008249"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Verona_Beach_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Clarence+Fahnestock> a livingPlaces:StateParkFacility ;
 	rdfs:label "Clarence Fahnestock"^^rdfs:Literal ;
@@ -1321,10 +1400,12 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/133/details.aspx> , <http://www.nysparks.com/environment/nature-centers/3/details.aspx> ;
 	geo:long "-73.8476473928"^^xsd:float ;
-	geo:lat "41.4527563307"^^xsd:float .
+	geo:lat "41.4527563307"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Clarence_Fahnestock_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Putnam> a osadm:County ;
-	rdfs:label "Putnam"^^rdfs:Literal .
+	rdfs:label "Putnam"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Putnam_County,_Missouri> .
 
 <http://www.linkedData_Group13.com/resource/Clermont> a livingPlaces:StateParkFacility ;
 	rdfs:label "Clermont"^^rdfs:Literal ;
@@ -1337,7 +1418,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/16/details.aspx> ;
 	geo:long "-73.911040157"^^xsd:float ;
-	geo:lat "42.0833097387"^^xsd:float .
+	geo:lat "42.0833097387"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Clermont,_Ariège> .
 
 <http://www.linkedData_Group13.com/resource/Col/Dutch> a osadm:County ;
 	rdfs:label "Col/Dutch"^^rdfs:Literal .
@@ -1368,7 +1450,8 @@
 	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	geo:long "-73.8083717836"^^xsd:float ;
-	geo:lat "41.3453986775"^^xsd:float .
+	geo:lat "41.3453986775"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Donald_J._Trump_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Putnam/Westchester> a osadm:County ;
 	rdfs:label "Putnam/Westchester"^^rdfs:Literal .
@@ -1387,10 +1470,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/148/details.aspx> ;
 	geo:long "-73.8087569052"^^xsd:float ;
-	geo:lat "41.2823041702"^^xsd:float .
+	geo:lat "41.2823041702"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Franklin_Delano_Roosevelt_Bridge> .
 
 <http://www.linkedData_Group13.com/resource/Westchester> a osadm:County ;
-	rdfs:label "Westchester"^^rdfs:Literal .
+	rdfs:label "Westchester"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Westchester_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Hart%27s+Brook+Nature+Preserve+%26+Arboretum> a livingPlaces:StateParkFacility ;
 	rdfs:label "Hart's Brook Nature Preserve & Arboretum"^^rdfs:Literal ;
@@ -1415,7 +1500,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/9/details.aspx> ;
 	geo:long "-73.9621103209"^^xsd:float ;
-	geo:lat "41.433755673"^^xsd:float .
+	geo:lat "41.433755673"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Hudson_Highlands_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Dutch/Put> a osadm:County ;
 	rdfs:label "Dutch/Put"^^rdfs:Literal .
@@ -1433,6 +1519,8 @@
 	geo:long "-73.7954318134"^^xsd:float ;
 	geo:lat "41.6880050951"^^xsd:float .
 
+<http://www.linkedData_Group13.com/resource/Dutchess> owl:sameAs <http://dbpedia.org/resource/Dutchess_County,_New_York> .
+
 <http://www.linkedData_Group13.com/resource/John+Jay+Homestead> a livingPlaces:StateParkFacility ;
 	rdfs:label "John Jay Homestead"^^rdfs:Literal ;
 	livingPlaces:hasParkFacilityType "State Historic Site"^^xsd:string ;
@@ -1444,7 +1532,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/4/details.aspx> ;
 	geo:long "-73.6588064087"^^xsd:float ;
-	geo:lat "41.2503409573"^^xsd:float .
+	geo:lat "41.2503409573"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/John_Jay_Homestead_State_Historic_Site> .
 
 <http://www.linkedData_Group13.com/resource/Lake+Taghkanic> a livingPlaces:StateParkFacility ;
 	rdfs:label "Lake Taghkanic"^^rdfs:Literal ;
@@ -1460,7 +1549,8 @@
 	geo:lat "42.092881818"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/Columbia> a osadm:County ;
-	rdfs:label "Columbia"^^rdfs:Literal .
+	rdfs:label "Columbia"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Columbia_County,_Arkansas> .
 
 <http://www.linkedData_Group13.com/resource/Margaret+Lewis+Norrie> a livingPlaces:StateParkFacility ;
 	rdfs:label "Margaret Lewis Norrie"^^rdfs:Literal ;
@@ -1538,7 +1628,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/37/details.aspx> ;
 	geo:long "-73.8993128614"^^xsd:float ;
-	geo:lat "40.9355500517"^^xsd:float .
+	geo:lat "40.9355500517"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Philipse_Manor_Hall_State_Historic_Site> .
 
 <http://www.linkedData_Group13.com/resource/Quiet+Cove+Riverfront+Park> a livingPlaces:StateParkFacility ;
 	rdfs:label "Quiet Cove Riverfront Park"^^rdfs:Literal ;
@@ -1589,7 +1680,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/83/details.aspx> ;
 	geo:long "-73.5174392806"^^xsd:float ;
-	geo:lat "42.0778638556"^^xsd:float .
+	geo:lat "42.0778638556"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Taconic_Mountains> .
 
 <http://www.linkedData_Group13.com/resource/Taxter+Ridge> a livingPlaces:StateParkFacility ;
 	rdfs:label "Taxter Ridge"^^rdfs:Literal ;
@@ -1626,7 +1718,8 @@
 	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	geo:long "-73.6465863149"^^xsd:float ;
-	geo:lat "41.4919031611"^^xsd:float .
+	geo:lat "41.4919031611"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Wonder_Lake,_Illinois> .
 
 <http://www.linkedData_Group13.com/resource/Bear+Mountain> a livingPlaces:StateParkFacility ;
 	rdfs:label "Bear Mountain"^^rdfs:Literal ;
@@ -1639,7 +1732,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/145/details.aspx> ;
 	geo:long "-73.9924016123"^^xsd:float ;
-	geo:lat "41.2990042301"^^xsd:float .
+	geo:lat "41.2990042301"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Bear_Mountain_(ski_area)> .
 
 <http://www.linkedData_Group13.com/resource/Rockland/Orange> a osadm:County ;
 	rdfs:label "Rockland/Orange"^^rdfs:Literal .
@@ -1655,10 +1749,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/49/details.aspx> ;
 	geo:long "-73.9373730834"^^xsd:float ;
-	geo:lat "41.074241369"^^xsd:float .
+	geo:lat "41.074241369"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Blauvelt-Demarest_House> .
 
 <http://www.linkedData_Group13.com/resource/Rockland> a osadm:County ;
-	rdfs:label "Rockland"^^rdfs:Literal .
+	rdfs:label "Rockland"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Rockland_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Bristol+Beach> a livingPlaces:StateParkFacility ;
 	rdfs:label "Bristol Beach"^^rdfs:Literal ;
@@ -1683,10 +1779,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/28/details.aspx> ;
 	geo:long "-73.9895724569"^^xsd:float ;
-	geo:lat "41.3243022048"^^xsd:float .
+	geo:lat "41.3243022048"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Fort_Montgomery,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Orange> a osadm:County ;
-	rdfs:label "Orange"^^rdfs:Literal .
+	rdfs:label "Orange"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Orange_County,_California> .
 
 <http://www.linkedData_Group13.com/resource/Franny+Reese+Preserve> a livingPlaces:StateParkFacility ;
 	rdfs:label "Franny Reese Preserve"^^rdfs:Literal ;
@@ -1701,7 +1799,8 @@
 	geo:lat "41.7014644466"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/Ulster> a osadm:County ;
-	rdfs:label "Ulster"^^rdfs:Literal .
+	rdfs:label "Ulster"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Ulster_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Goosepond+Mountain> a livingPlaces:StateParkFacility ;
 	rdfs:label "Goosepond Mountain"^^rdfs:Literal ;
@@ -1714,7 +1813,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/55/details.aspx> ;
 	geo:long "-74.2466476409"^^xsd:float ;
-	geo:lat "41.3375248269"^^xsd:float .
+	geo:lat "41.3375248269"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Goosepond_Mountain_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Harriman> a livingPlaces:StateParkFacility ;
 	rdfs:label "Harriman"^^rdfs:Literal ;
@@ -1727,7 +1827,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/145/details.aspx> ;
 	geo:long "-74.1016999643"^^xsd:float ;
-	geo:lat "41.2373304835"^^xsd:float .
+	geo:lat "41.2373304835"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Harriman_School> .
 
 <http://www.linkedData_Group13.com/resource/Rock/Orange> a osadm:County ;
 	rdfs:label "Rock/Orange"^^rdfs:Literal .
@@ -1742,7 +1843,8 @@
 	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	geo:long "-73.9431704761"^^xsd:float ;
-	geo:lat "41.1779918118"^^xsd:float .
+	geo:lat "41.1779918118"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Haverstraw_Beach_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/High+Tor> a livingPlaces:StateParkFacility ;
 	rdfs:label "High Tor"^^rdfs:Literal ;
@@ -1755,7 +1857,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/78/details.aspx> ;
 	geo:long "-73.9840129896"^^xsd:float ;
-	geo:lat "41.1906178735"^^xsd:float .
+	geo:lat "41.1906178735"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/High_Tor_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Highland+Lakes> a livingPlaces:StateParkFacility ;
 	rdfs:label "Highland Lakes"^^rdfs:Literal ;
@@ -1768,7 +1871,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/5/details.aspx> ;
 	geo:long "-74.3285754476"^^xsd:float ;
-	geo:lat "41.4913005789"^^xsd:float .
+	geo:lat "41.4913005789"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Highland_Lakes,_Alabama> .
 
 <http://www.linkedData_Group13.com/resource/Hook+Mountain> a livingPlaces:StateParkFacility ;
 	rdfs:label "Hook Mountain"^^rdfs:Literal ;
@@ -1780,7 +1884,8 @@
 	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	geo:long "-73.915881718"^^xsd:float ;
-	geo:lat "41.1517064047"^^xsd:float .
+	geo:lat "41.1517064047"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Hook_Mountain_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Iona+Island> a livingPlaces:StateParkFacility ;
 	rdfs:label "Iona Island"^^rdfs:Literal ;
@@ -1792,7 +1897,8 @@
 	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	geo:long "-73.9760036984"^^xsd:float ;
-	geo:lat "41.304270602"^^xsd:float .
+	geo:lat "41.304270602"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Iona_Island_(New_York)> .
 
 <http://www.linkedData_Group13.com/resource/Knox+Headquarters> a livingPlaces:StateParkFacility ;
 	rdfs:label "Knox Headquarters"^^rdfs:Literal ;
@@ -1834,7 +1940,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/127/details.aspx> ;
 	geo:long "-74.2932352939"^^xsd:float ;
-	geo:lat "41.7158154916"^^xsd:float .
+	geo:lat "41.7158154916"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Minnewaska_Hospital> .
 
 <http://www.linkedData_Group13.com/resource/New+Windsor+Cantonement> a livingPlaces:StateParkFacility ;
 	rdfs:label "New Windsor Cantonement"^^rdfs:Literal ;
@@ -1860,7 +1967,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/156/details.aspx> ;
 	geo:long "-73.9086544942"^^xsd:float ;
-	geo:lat "41.1271276953"^^xsd:float .
+	geo:lat "41.1271276953"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Nyack_Beach_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Palisades> a livingPlaces:StateParkFacility ;
 	rdfs:label "Palisades"^^rdfs:Literal ;
@@ -1872,7 +1980,8 @@
 	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	geo:long "-73.9035443708"^^xsd:float ;
-	geo:lat "41.0000423858"^^xsd:float .
+	geo:lat "41.0000423858"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Palisades_Dam> .
 
 <http://www.linkedData_Group13.com/resource/Rockland+Lake> a livingPlaces:StateParkFacility ;
 	rdfs:label "Rockland Lake"^^rdfs:Literal ;
@@ -1885,7 +1994,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/81/details.aspx> , <http://nysparks.com/golf-courses/6/details.aspx> ;
 	geo:long "-73.9219192445"^^xsd:float ;
-	geo:lat "41.1362106822"^^xsd:float .
+	geo:lat "41.1362106822"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Rockland_Lake_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Schunnemunk+Mountain> a livingPlaces:StateParkFacility ;
 	rdfs:label "Schunnemunk Mountain"^^rdfs:Literal ;
@@ -1911,7 +2021,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/18/details.aspx> ;
 	geo:long "-74.0188842412"^^xsd:float ;
-	geo:lat "41.9349364666"^^xsd:float .
+	geo:lat "41.9349364666"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Senate_House_State_Historic_Site> .
 
 <http://www.linkedData_Group13.com/resource/Sterling+Forest> a livingPlaces:StateParkFacility ;
 	rdfs:label "Sterling Forest"^^rdfs:Literal ;
@@ -1950,7 +2061,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/152/details.aspx> ;
 	geo:long "-73.991346402"^^xsd:float ;
-	geo:lat "41.425644491"^^xsd:float .
+	geo:lat "41.425644491"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Storm_King_Highway> .
 
 <http://www.linkedData_Group13.com/resource/Tallman+Mountain> a livingPlaces:StateParkFacility ;
 	rdfs:label "Tallman Mountain"^^rdfs:Literal ;
@@ -1976,7 +2088,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/17/details.aspx> ;
 	geo:long "-74.0096075788"^^xsd:float ;
-	geo:lat "41.4977050471"^^xsd:float .
+	geo:lat "41.4977050471"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Washington's_Headquarters_(Valley_Forge)> .
 
 <http://www.linkedData_Group13.com/resource/Alfred+E.+Smith%2FSunken+Meadow> a livingPlaces:StateParkFacility ;
 	rdfs:label "Alfred E. Smith/Sunken Meadow"^^rdfs:Literal ;
@@ -1992,7 +2105,8 @@
 	geo:lat "40.9099922695"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/Suffolk> a osadm:County ;
-	rdfs:label "Suffolk"^^rdfs:Literal .
+	rdfs:label "Suffolk"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Suffolk> .
 
 <http://www.linkedData_Group13.com/resource/Amsterdam+Beach> a livingPlaces:StateParkFacility ;
 	rdfs:label "Amsterdam Beach"^^rdfs:Literal ;
@@ -2004,7 +2118,8 @@
 	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	geo:long "-71.900265311"^^xsd:float ;
-	geo:lat "41.0477711309"^^xsd:float .
+	geo:lat "41.0477711309"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Amsterdam_Beach_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Bayard+Cutting+Arboretum> a livingPlaces:StateParkFacility ;
 	rdfs:label "Bayard Cutting Arboretum"^^rdfs:Literal ;
@@ -2017,7 +2132,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/95/details.aspx> ;
 	geo:long "-73.1577583532"^^xsd:float ;
-	geo:lat "40.7472405356"^^xsd:float .
+	geo:lat "40.7472405356"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Bayard_Cutting_Arboretum_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Belmont+Lake> a livingPlaces:StateParkFacility ;
 	rdfs:label "Belmont Lake"^^rdfs:Literal ;
@@ -2030,7 +2146,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/88/details.aspx> ;
 	geo:long "-73.3367949963"^^xsd:float ;
-	geo:lat "40.7262324019"^^xsd:float .
+	geo:lat "40.7262324019"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Belmont_Lake_(Ontario)> .
 
 <http://www.linkedData_Group13.com/resource/Bethpage> a livingPlaces:StateParkFacility ;
 	rdfs:label "Bethpage"^^rdfs:Literal ;
@@ -2043,10 +2160,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/108/details.aspx> , <http://nysparks.com/golf-courses/11/details.aspx> ;
 	geo:long "-73.4568035403"^^xsd:float ;
-	geo:lat "40.7475174105"^^xsd:float .
+	geo:lat "40.7475174105"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Bethpage_Branch> .
 
 <http://www.linkedData_Group13.com/resource/Nassau> a osadm:County ;
-	rdfs:label "Nassau"^^rdfs:Literal .
+	rdfs:label "Nassau"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Nassau_County> .
 
 <http://www.linkedData_Group13.com/resource/Brentwood> a livingPlaces:StateParkFacility ;
 	rdfs:label "Brentwood"^^rdfs:Literal ;
@@ -2058,7 +2177,8 @@
 	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	geo:long "-73.2711299925"^^xsd:float ;
-	geo:lat "40.7915533842"^^xsd:float .
+	geo:lat "40.7915533842"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Brentwood_Farm> .
 
 <http://www.linkedData_Group13.com/resource/Brookhaven> a livingPlaces:StateParkFacility ;
 	rdfs:label "Brookhaven"^^rdfs:Literal ;
@@ -2071,7 +2191,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/180/details.aspx> ;
 	geo:long "-72.8648165733"^^xsd:float ;
-	geo:lat "40.9209500377"^^xsd:float .
+	geo:lat "40.9209500377"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Brookhaven_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Caleb+Smith+Park+Preserve> a livingPlaces:StateParkFacility ;
 	rdfs:label "Caleb Smith Park Preserve"^^rdfs:Literal ;
@@ -2097,7 +2218,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/97/details.aspx> ;
 	geo:long "-71.8777872995"^^xsd:float ;
-	geo:lat "41.0617719475"^^xsd:float .
+	geo:lat "41.0617719475"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Camp_Hero_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Captree> a livingPlaces:StateParkFacility ;
 	rdfs:label "Captree"^^rdfs:Literal ;
@@ -2110,7 +2232,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/65/details.aspx> ;
 	geo:long "-73.2612735859"^^xsd:float ;
-	geo:lat "40.6388521833"^^xsd:float .
+	geo:lat "40.6388521833"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Captree_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Caumsett> a livingPlaces:StateParkFacility ;
 	rdfs:label "Caumsett"^^rdfs:Literal ;
@@ -2136,7 +2259,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/115/details.aspx> ;
 	geo:long "-73.4602230086"^^xsd:float ;
-	geo:lat "40.8628393914"^^xsd:float .
+	geo:lat "40.8628393914"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Cold_Spring_Harbor_Library> .
 
 <http://www.linkedData_Group13.com/resource/Connetquot+River> a livingPlaces:StateParkFacility ;
 	rdfs:label "Connetquot River"^^rdfs:Literal ;
@@ -2175,7 +2299,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/181/details.aspx> ;
 	geo:long "-72.5974738093"^^xsd:float ;
-	geo:lat "40.9907206945"^^xsd:float .
+	geo:lat "40.9907206945"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Hallock,_Minnesota> .
 
 <http://www.linkedData_Group13.com/resource/Heckscher> a livingPlaces:StateParkFacility ;
 	rdfs:label "Heckscher"^^rdfs:Literal ;
@@ -2188,7 +2313,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/136/details.aspx> ;
 	geo:long "-73.1649223786"^^xsd:float ;
-	geo:lat "40.7086615084"^^xsd:float .
+	geo:lat "40.7086615084"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Heckscher_State_Parkway> .
 
 <http://www.linkedData_Group13.com/resource/Hempstead+Lake> a livingPlaces:StateParkFacility ;
 	rdfs:label "Hempstead Lake"^^rdfs:Literal ;
@@ -2239,7 +2365,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/10/details.aspx> , <http://nysparks.com/golf-courses/18/details.aspx> , <http://www.nysparks.com/environment/nature-centers/4/details.aspx> ;
 	geo:long "-73.5164273182"^^xsd:float ;
-	geo:lat "40.596010848"^^xsd:float .
+	geo:lat "40.596010848"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Jones_Beach_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Montauk+Downs> a livingPlaces:StateParkFacility ;
 	rdfs:label "Montauk Downs"^^rdfs:Literal ;
@@ -2265,7 +2392,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/61/details.aspx> ;
 	geo:long "-71.8813883492"^^xsd:float ;
-	geo:lat "41.0714502774"^^xsd:float .
+	geo:lat "41.0714502774"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Montauk_Point_Light> .
 
 <http://www.linkedData_Group13.com/resource/Napeague> a livingPlaces:StateParkFacility ;
 	rdfs:label "Napeague"^^rdfs:Literal ;
@@ -2303,7 +2431,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/106/details.aspx> ;
 	geo:long "-72.271525252"^^xsd:float ;
-	geo:lat "41.1285513249"^^xsd:float .
+	geo:lat "41.1285513249"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Orient_Beach_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Planting+Fields+Arboretum> a livingPlaces:StateParkFacility ;
 	rdfs:label "Planting Fields Arboretum"^^rdfs:Literal ;
@@ -2316,7 +2445,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/24/details.aspx> ;
 	geo:long "-73.5572253299"^^xsd:float ;
-	geo:lat "40.8621752807"^^xsd:float .
+	geo:lat "40.8621752807"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Planting_Fields_Arboretum_State_Historic_Park> .
 
 <http://www.linkedData_Group13.com/resource/Robert+Moses> a livingPlaces:StateParkFacility ;
 	rdfs:label "Robert Moses"^^rdfs:Literal ;
@@ -2329,7 +2459,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/7/details.aspx> , <http://nysparks.com/golf-courses/12/details.aspx> ;
 	geo:long "-73.2651424363"^^xsd:float ;
-	geo:lat "40.6235177464"^^xsd:float .
+	geo:lat "40.6235177464"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Robert_Moses_Causeway> .
 
 <http://www.linkedData_Group13.com/resource/Sag+Harbor> a livingPlaces:StateParkFacility ;
 	rdfs:label "Sag Harbor"^^rdfs:Literal ;
@@ -2342,7 +2473,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/golf-courses/17/details.aspx> ;
 	geo:long "-72.2605666428"^^xsd:float ;
-	geo:lat "40.9970245166"^^xsd:float .
+	geo:lat "40.9970245166"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Sag_Harbor_Branch> .
 
 <http://www.linkedData_Group13.com/resource/Shadmoor> a livingPlaces:StateParkFacility ;
 	rdfs:label "Shadmoor"^^rdfs:Literal ;
@@ -2355,7 +2487,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/16/details.aspx> ;
 	geo:long "-71.9277281182"^^xsd:float ;
-	geo:lat "41.0386809843"^^xsd:float .
+	geo:lat "41.0386809843"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Shadmoor_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Trail+View> a livingPlaces:StateParkFacility ;
 	rdfs:label "Trail View"^^rdfs:Literal ;
@@ -2381,7 +2514,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/159/details.aspx> ;
 	geo:long "-73.6942502018"^^xsd:float ;
-	geo:lat "40.678766026"^^xsd:float .
+	geo:lat "40.678766026"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Valley_Stream,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Walt+Whitman+Birthplace> a livingPlaces:StateParkFacility ;
 	rdfs:label "Walt Whitman Birthplace"^^rdfs:Literal ;
@@ -2394,7 +2528,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/19/details.aspx> ;
 	geo:long "-73.4117645186"^^xsd:float ;
-	geo:lat "40.8171750838"^^xsd:float .
+	geo:lat "40.8171750838"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Walt_Whitman_Birthplace_State_Historic_Site> .
 
 <http://www.linkedData_Group13.com/resource/Wildwood> a livingPlaces:StateParkFacility ;
 	rdfs:label "Wildwood"^^rdfs:Literal ;
@@ -2407,7 +2542,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/68/details.aspx> ;
 	geo:long "-72.7945734139"^^xsd:float ;
-	geo:lat "40.9604999599"^^xsd:float .
+	geo:lat "40.9604999599"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Wildwood_Dam> .
 
 <http://www.linkedData_Group13.com/resource/Black+Lake+Boat+Launch> a livingPlaces:StateParkFacility ;
 	rdfs:label "Black Lake Boat Launch"^^rdfs:Literal ;
@@ -2422,7 +2558,8 @@
 	geo:lat "44.5093867729"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/St.+Lawrence> a osadm:County ;
-	rdfs:label "St. Lawrence"^^rdfs:Literal .
+	rdfs:label "St. Lawrence"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/St._Lawrence_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Burnham+Point> a livingPlaces:StateParkFacility ;
 	rdfs:label "Burnham Point"^^rdfs:Literal ;
@@ -2435,10 +2572,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/57/details.aspx> ;
 	geo:long "-76.2644442667"^^xsd:float ;
-	geo:lat "44.1625024865"^^xsd:float .
+	geo:lat "44.1625024865"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Burnham_Point_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Jefferson> a osadm:County ;
-	rdfs:label "Jefferson"^^rdfs:Literal .
+	rdfs:label "Jefferson"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Jefferson_Parish,_Louisiana> .
 
 <http://www.linkedData_Group13.com/resource/Canoe+Picnic+Point> a livingPlaces:StateParkFacility ;
 	rdfs:label "Canoe Picnic Point"^^rdfs:Literal ;
@@ -2451,7 +2590,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/64/details.aspx> ;
 	geo:long "-76.0747121606"^^xsd:float ;
-	geo:lat "44.304171386"^^xsd:float .
+	geo:lat "44.304171386"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Canoe-Picnic_Point_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Cedar+Island> a livingPlaces:StateParkFacility ;
 	rdfs:label "Cedar Island"^^rdfs:Literal ;
@@ -2464,7 +2604,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/25/details.aspx> ;
 	geo:long "-75.7905288637"^^xsd:float ;
-	geo:lat "44.449679332"^^xsd:float .
+	geo:lat "44.449679332"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Cedar_Island_Light> .
 
 <http://www.linkedData_Group13.com/resource/Cedar+Point> a livingPlaces:StateParkFacility ;
 	rdfs:label "Cedar Point"^^rdfs:Literal ;
@@ -2477,7 +2618,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/21/details.aspx> ;
 	geo:long "-76.19613394"^^xsd:float ;
-	geo:lat "44.2034891967"^^xsd:float .
+	geo:lat "44.2034891967"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Cedar_Point,_Kansas> .
 
 <http://www.linkedData_Group13.com/resource/Chaumont+Boat+Launch> a livingPlaces:StateParkFacility ;
 	rdfs:label "Chaumont Boat Launch"^^rdfs:Literal ;
@@ -2502,7 +2644,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/72/details.aspx> ;
 	geo:long "-75.1232360855"^^xsd:float ;
-	geo:lat "44.8847335701"^^xsd:float .
+	geo:lat "44.8847335701"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Coles_Creek_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Crab+Island> a livingPlaces:StateParkFacility ;
 	rdfs:label "Crab Island"^^rdfs:Literal ;
@@ -2555,7 +2698,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/22/details.aspx> ;
 	geo:long "-75.9901417959"^^xsd:float ;
-	geo:lat "44.3327407662"^^xsd:float .
+	geo:lat "44.3327407662"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Dewolf_Point_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Eel+Weir> a livingPlaces:StateParkFacility ;
 	rdfs:label "Eel Weir"^^rdfs:Literal ;
@@ -2568,7 +2712,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/121/details.aspx> ;
 	geo:long "-75.4759295772"^^xsd:float ;
-	geo:lat "44.6299900391"^^xsd:float .
+	geo:lat "44.6299900391"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Eel_Weir_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Galop+Island> a livingPlaces:StateParkFacility ;
 	rdfs:label "Galop Island"^^rdfs:Literal ;
@@ -2593,7 +2738,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/139/details.aspx> ;
 	geo:long "-75.9959300735"^^xsd:float ;
-	geo:lat "44.2817668143"^^xsd:float .
+	geo:lat "44.2817668143"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Grass_Point_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Great+Chazy+Boat+Launch> a livingPlaces:StateParkFacility ;
 	rdfs:label "Great Chazy Boat Launch"^^rdfs:Literal ;
@@ -2607,6 +2753,8 @@
 	geo:long "-73.3872247618"^^xsd:float ;
 	geo:lat "44.9315944647"^^xsd:float .
 
+<http://www.linkedData_Group13.com/resource/Clinton> owl:sameAs <http://dbpedia.org/resource/County_of_Clinton,_Queensland> .
+
 <http://www.linkedData_Group13.com/resource/Higley+Flow> a livingPlaces:StateParkFacility ;
 	rdfs:label "Higley Flow"^^rdfs:Literal ;
 	livingPlaces:hasParkFacilityType "State Park"^^xsd:string ;
@@ -2618,7 +2766,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/58/details.aspx> ;
 	geo:long "-74.9146427262"^^xsd:float ;
-	geo:lat "44.498298634"^^xsd:float .
+	geo:lat "44.498298634"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Higley_Flow_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Jacques+Cartier> a livingPlaces:StateParkFacility ;
 	rdfs:label "Jacques Cartier"^^rdfs:Literal ;
@@ -2631,7 +2780,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/114/details.aspx> ;
 	geo:long "-75.6805191967"^^xsd:float ;
-	geo:lat "44.5548414638"^^xsd:float .
+	geo:lat "44.5548414638"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Jacques-Cartier_National_Park> .
 
 <http://www.linkedData_Group13.com/resource/Keewaydin> a livingPlaces:StateParkFacility ;
 	rdfs:label "Keewaydin"^^rdfs:Literal ;
@@ -2644,7 +2794,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/24/details.aspx> ;
 	geo:long "-75.929711027"^^xsd:float ;
-	geo:lat "44.3234302144"^^xsd:float .
+	geo:lat "44.3234302144"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Keewaydin_Club> .
 
 <http://www.linkedData_Group13.com/resource/Kring+Point> a livingPlaces:StateParkFacility ;
 	rdfs:label "Kring Point"^^rdfs:Literal ;
@@ -2690,7 +2841,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/40/details.aspx> ;
 	geo:long "-75.9215781208"^^xsd:float ;
-	geo:lat "44.3655711042"^^xsd:float .
+	geo:lat "44.3655711042"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Mary_Island_Light> .
 
 <http://www.linkedData_Group13.com/resource/Point+Au+Roche> a livingPlaces:StateParkFacility ;
 	rdfs:label "Point Au Roche"^^rdfs:Literal ;
@@ -2759,7 +2911,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/7/details.aspx> ;
 	geo:long "-76.129780271"^^xsd:float ;
-	geo:lat "43.9463098277"^^xsd:float .
+	geo:lat "43.9463098277"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Sackets_Harbor,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Southwick+Beach> a livingPlaces:StateParkFacility ;
 	rdfs:label "Southwick Beach"^^rdfs:Literal ;
@@ -2784,7 +2937,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/70/details.aspx> , <http://nysparks.com/golf-courses/2/details.aspx> ;
 	geo:long "-75.5765698357"^^xsd:float ;
-	geo:lat "44.6298363383"^^xsd:float .
+	geo:lat "44.6298363383"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/St_Lawrence's_Church,_St_Lawrence> .
 
 <http://www.linkedData_Group13.com/resource/Stony+Creek+Boat+Launch> a livingPlaces:StateParkFacility ;
 	rdfs:label "Stony Creek Boat Launch"^^rdfs:Literal ;
@@ -2822,7 +2976,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/52/details.aspx> , <http://nysparks.com/golf-courses/7/details.aspx> , <http://www.nysparks.com/environment/nature-centers/2/details.aspx> ;
 	geo:long "-76.0154482065"^^xsd:float ;
-	geo:lat "44.3292380029"^^xsd:float .
+	geo:lat "44.3292380029"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Wellesley_Island_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Westcott+Beach> a livingPlaces:StateParkFacility ;
 	rdfs:label "Westcott Beach"^^rdfs:Literal ;
@@ -2835,7 +2990,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/90/details.aspx> ;
 	geo:long "-76.118017026"^^xsd:float ;
-	geo:lat "43.8969804832"^^xsd:float .
+	geo:lat "43.8969804832"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Westcott_Beach_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Whetstone+Gulf> a livingPlaces:StateParkFacility ;
 	rdfs:label "Whetstone Gulf"^^rdfs:Literal ;
@@ -2848,10 +3004,12 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/92/details.aspx> ;
 	geo:long "-75.4774154637"^^xsd:float ;
-	geo:lat "43.6985075739"^^xsd:float .
+	geo:lat "43.6985075739"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Whetstone_Gulf_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Lewis> a osadm:County ;
-	rdfs:label "Lewis"^^rdfs:Literal .
+	rdfs:label "Lewis"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Lewis_County,_Missouri> .
 
 <http://www.linkedData_Group13.com/resource/Wilson+Hill+Boat+Launch> a livingPlaces:StateParkFacility ;
 	rdfs:label "Wilson Hill Boat Launch"^^rdfs:Literal ;
@@ -2878,7 +3036,8 @@
 	geo:lat "42.2729538399"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/Greene> a osadm:County ;
-	rdfs:label "Greene"^^rdfs:Literal .
+	rdfs:label "Greene"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Greene_County> .
 
 <http://www.linkedData_Group13.com/resource/Bennington+Battlefield> a livingPlaces:StateParkFacility ;
 	rdfs:label "Bennington Battlefield"^^rdfs:Literal ;
@@ -2891,10 +3050,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/12/details.aspx> ;
 	geo:long "-73.3022506021"^^xsd:float ;
-	geo:lat "42.9395061504"^^xsd:float .
+	geo:lat "42.9395061504"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Bennington_Battlefield_State_Historic_Site> .
 
 <http://www.linkedData_Group13.com/resource/Rensselaer> a osadm:County ;
-	rdfs:label "Rensselaer"^^rdfs:Literal .
+	rdfs:label "Rensselaer"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Rensselaer_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Cherry+Plain> a livingPlaces:StateParkFacility ;
 	rdfs:label "Cherry Plain"^^rdfs:Literal ;
@@ -2907,7 +3068,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/173/details.aspx> ;
 	geo:long "-73.412215266"^^xsd:float ;
-	geo:lat "42.6178677896"^^xsd:float .
+	geo:lat "42.6178677896"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Cherry_Plain,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Coxsackie+Boat+Launch> a livingPlaces:StateParkFacility ;
 	rdfs:label "Coxsackie Boat Launch"^^rdfs:Literal ;
@@ -2932,7 +3094,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/30/details.aspx> ;
 	geo:long "-73.749225681"^^xsd:float ;
-	geo:lat "42.6346290753"^^xsd:float .
+	geo:lat "42.6346290753"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Fort_Crailo> .
 
 <http://www.linkedData_Group13.com/resource/Crown+Point> a livingPlaces:StateParkFacility ;
 	rdfs:label "Crown Point"^^rdfs:Literal ;
@@ -2945,10 +3108,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/34/details.aspx> ;
 	geo:long "-73.4316631872"^^xsd:float ;
-	geo:lat "44.0233248124"^^xsd:float .
+	geo:lat "44.0233248124"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Crown_Point,_Alaska> .
 
 <http://www.linkedData_Group13.com/resource/Essex> a osadm:County ;
-	rdfs:label "Essex"^^rdfs:Literal .
+	rdfs:label "Essex"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Maldon,_Essex> .
 
 <http://www.linkedData_Group13.com/resource/Grafton+Lakes> a livingPlaces:StateParkFacility ;
 	rdfs:label "Grafton Lakes"^^rdfs:Literal ;
@@ -2974,10 +3139,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/9/details.aspx> ;
 	geo:long "-73.7454175731"^^xsd:float ;
-	geo:lat "43.2012117039"^^xsd:float .
+	geo:lat "43.2012117039"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Grant_Cottage_State_Historic_Site> .
 
 <http://www.linkedData_Group13.com/resource/Saratoga> a osadm:County ;
-	rdfs:label "Saratoga"^^rdfs:Literal .
+	rdfs:label "Saratoga"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Saratoga_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Guy+Park> a livingPlaces:StateParkFacility ;
 	rdfs:label "Guy Park"^^rdfs:Literal ;
@@ -3005,7 +3172,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/98/details.aspx> ;
 	geo:long "-73.7783764"^^xsd:float ;
-	geo:lat "42.3288852476"^^xsd:float .
+	geo:lat "42.3288852476"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Hudson_River_Islands_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Columb/Greene> a osadm:County ;
 	rdfs:label "Columb/Greene"^^rdfs:Literal .
@@ -3021,10 +3189,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/128/details.aspx> , <http://www.nysparks.com/environment/nature-centers/8/details.aspx> ;
 	geo:long "-74.0147061578"^^xsd:float ;
-	geo:lat "42.655465525"^^xsd:float .
+	geo:lat "42.655465525"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/John_Boyd_Thacher_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Albany> a osadm:County ;
-	rdfs:label "Albany"^^rdfs:Literal .
+	rdfs:label "Albany"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Albany_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/John+Brown+Farm> a livingPlaces:StateParkFacility ;
 	rdfs:label "John Brown Farm"^^rdfs:Literal ;
@@ -3037,7 +3207,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/29/details.aspx> ;
 	geo:long "-73.9715067492"^^xsd:float ;
-	geo:lat "44.2495745037"^^xsd:float .
+	geo:lat "44.2495745037"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/John_Brown_Farm_State_Historic_Site> .
 
 <http://www.linkedData_Group13.com/resource/Johnson+Hall> a livingPlaces:StateParkFacility ;
 	rdfs:label "Johnson Hall"^^rdfs:Literal ;
@@ -3068,7 +3239,8 @@
 	geo:lat "43.0850856219"^^xsd:float .
 
 <http://www.linkedData_Group13.com/resource/Washington> a osadm:County ;
-	rdfs:label "Washington"^^rdfs:Literal .
+	rdfs:label "Washington"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Ferry_County,_Washington> .
 
 <http://www.linkedData_Group13.com/resource/Max+V.+Shaul> a livingPlaces:StateParkFacility ;
 	rdfs:label "Max V. Shaul"^^rdfs:Literal ;
@@ -3081,10 +3253,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/94/details.aspx> ;
 	geo:long "-74.4109223135"^^xsd:float ;
-	geo:lat "42.5479937717"^^xsd:float .
+	geo:lat "42.5479937717"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Max_V._Shaul_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Schoharie> a osadm:County ;
-	rdfs:label "Schoharie"^^rdfs:Literal .
+	rdfs:label "Schoharie"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Schoharie_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Mine+Kill> a livingPlaces:StateParkFacility ;
 	rdfs:label "Mine Kill"^^rdfs:Literal ;
@@ -3097,7 +3271,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/165/details.aspx> ;
 	geo:long "-74.4611210967"^^xsd:float ;
-	geo:lat "42.4340245355"^^xsd:float .
+	geo:lat "42.4340245355"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Mine_Kill_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Mohawk+River> a livingPlaces:StateParkFacility ;
 	rdfs:label "Mohawk River"^^rdfs:Literal ;
@@ -3109,10 +3284,12 @@
 	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	geo:long "-73.8496398366"^^xsd:float ;
-	geo:lat "42.8004093799"^^xsd:float .
+	geo:lat "42.8004093799"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Mohawk_River_(Oregon)> .
 
 <http://www.linkedData_Group13.com/resource/Schenectady> a osadm:County ;
-	rdfs:label "Schenectady"^^rdfs:Literal .
+	rdfs:label "Schenectady"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Schenectady_County,_New_York> .
 
 <http://www.linkedData_Group13.com/resource/Moreau+Lake> a livingPlaces:StateParkFacility ;
 	rdfs:label "Moreau Lake"^^rdfs:Literal ;
@@ -3125,7 +3302,8 @@
 	livingPlaces:hasBeach "Y"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/150/details.aspx> , <http://www.nysparks.com/environment/nature-centers/7/details.aspx> ;
 	geo:long "-73.7337768981"^^xsd:float ;
-	geo:lat "43.2332136686"^^xsd:float .
+	geo:lat "43.2332136686"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Moreau_Lake_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Peebles+Island> a livingPlaces:StateParkFacility ;
 	rdfs:label "Peebles Island"^^rdfs:Literal ;
@@ -3138,7 +3316,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/111/details.aspx> ;
 	geo:long "-73.6845492304"^^xsd:float ;
-	geo:lat "42.7823213594"^^xsd:float .
+	geo:lat "42.7823213594"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Peebles_Island_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Rexford+Aqueduct> a livingPlaces:StateParkFacility ;
 	rdfs:label "Rexford Aqueduct"^^rdfs:Literal ;
@@ -3179,7 +3358,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/112/details.aspx> , <http://nysparks.com/golf-courses/15/details.aspx> ;
 	geo:long "-73.8039355929"^^xsd:float ;
-	geo:lat "43.0508914472"^^xsd:float .
+	geo:lat "43.0508914472"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Saratoga_Spa_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Schodack+Island> a livingPlaces:StateParkFacility ;
 	rdfs:label "Schodack Island"^^rdfs:Literal ;
@@ -3208,7 +3388,10 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/historic-sites/27/details.aspx> ;
 	geo:long "-74.2675702789"^^xsd:float ;
-	geo:lat "42.9493448538"^^xsd:float .
+	geo:lat "42.9493448538"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Schoharie_Crossing_State_Historic_Site> .
+
+<http://www.linkedData_Group13.com/resource/Montgomery> owl:sameAs <http://dbpedia.org/resource/Montgomery_County,_Mississippi> .
 
 <http://www.linkedData_Group13.com/resource/Schuyler+Mansion> a livingPlaces:StateParkFacility ;
 	rdfs:label "Schuyler Mansion"^^rdfs:Literal ;
@@ -3233,7 +3416,8 @@
 	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	geo:long "-73.423119782"^^xsd:float ;
-	geo:lat "43.1105299662"^^xsd:float .
+	geo:lat "43.1105299662"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Susan_B._Anthony_House> .
 
 <http://www.linkedData_Group13.com/resource/Thompson%27s+Lake> a livingPlaces:StateParkFacility ;
 	rdfs:label "Thompson's Lake"^^rdfs:Literal ;
@@ -3259,10 +3443,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/86/details.aspx> ;
 	geo:long "-73.7725529333"^^xsd:float ;
-	geo:lat "40.6128179007"^^xsd:float .
+	geo:lat "40.6128179007"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Bayswater_(Dubai)> .
 
 <http://www.linkedData_Group13.com/resource/Queens> a osadm:County ;
-	rdfs:label "Queens"^^rdfs:Literal .
+	rdfs:label "Queens"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Queens> .
 
 <http://www.linkedData_Group13.com/resource/Clay+Pit+Ponds> a livingPlaces:StateParkFacility ;
 	rdfs:label "Clay Pit Ponds"^^rdfs:Literal ;
@@ -3275,10 +3461,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/166/details.aspx> , <http://www.nysparks.com/environment/nature-centers/14/details.aspx> ;
 	geo:long "-74.2290460884"^^xsd:float ;
-	geo:lat "40.5405635456"^^xsd:float .
+	geo:lat "40.5405635456"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Clay_Pit_Ponds_State_Park_Preserve> .
 
 <http://www.linkedData_Group13.com/resource/Richmond> a osadm:County ;
-	rdfs:label "Richmond"^^rdfs:Literal .
+	rdfs:label "Richmond"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Richmond_County,_New_South_Wales> .
 
 <http://www.linkedData_Group13.com/resource/East+River> a livingPlaces:StateParkFacility ;
 	rdfs:label "East River"^^rdfs:Literal ;
@@ -3323,7 +3511,8 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/149/details.aspx> ;
 	geo:long "-73.959045245"^^xsd:float ;
-	geo:lat "40.7443521446"^^xsd:float .
+	geo:lat "40.7443521446"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Gantry_Plaza_State_Park> .
 
 <http://www.linkedData_Group13.com/resource/Hudson+River+Park> a livingPlaces:StateParkFacility ;
 	rdfs:label "Hudson River Park"^^rdfs:Literal ;
@@ -3348,7 +3537,10 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/93/details.aspx> ;
 	geo:long "-73.9568541697"^^xsd:float ;
-	geo:lat "40.8255348249"^^xsd:float .
+	geo:lat "40.8255348249"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Riverbank_Park> .
+
+<http://www.linkedData_Group13.com/resource/Manhattan> owl:sameAs <http://dbpedia.org/resource/Manhattan> .
 
 <http://www.linkedData_Group13.com/resource/Roberto+Clemente> a livingPlaces:StateParkFacility ;
 	rdfs:label "Roberto Clemente"^^rdfs:Literal ;
@@ -3361,10 +3553,12 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/140/details.aspx> ;
 	geo:long "-73.9200427364"^^xsd:float ;
-	geo:lat "40.8553636655"^^xsd:float .
+	geo:lat "40.8553636655"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Roberto_Clemente_Bridge> .
 
 <http://www.linkedData_Group13.com/resource/Bronx> a osadm:County ;
-	rdfs:label "Bronx"^^rdfs:Literal .
+	rdfs:label "Bronx"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/The_Bronx> .
 
 <http://www.linkedData_Group13.com/resource/Buffalo+Harbor> a livingPlaces:StateParkFacility ;
 	rdfs:label "Buffalo Harbor"^^rdfs:Literal ;
@@ -3377,4 +3571,5 @@
 	livingPlaces:hasBeach "N"^^xsd:boolean ;
 	schema:url <http://nysparks.com/parks/191/details.aspx> ;
 	geo:long "-78.8646829903"^^xsd:float ;
-	geo:lat "42.8463872552"^^xsd:float .
+	geo:lat "42.8463872552"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Buffalo_Harbor_State_Park> .
