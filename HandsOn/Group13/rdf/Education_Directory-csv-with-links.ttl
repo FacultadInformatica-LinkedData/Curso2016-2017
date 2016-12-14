@@ -24,7 +24,8 @@ Waterford, CT 06385
 	rdfs:label "Oswegatchie Elementary School"^^rdfs:Literal .
 
 <http://www.linkedData_Group13.com/resource/Waterford+School+District> a livingPlaces:SchoolDistrict ;
-	rdfs:label "Waterford School District"^^rdfs:Literal .
+	rdfs:label "Waterford School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Waterford_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Bedford+Middle+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Westport+School+District> ;
@@ -85,10 +86,12 @@ Norwalk, CT 06850
 	geo:long "-73.43344073899993"^^xsd:float ;
 	dbo:zipCode "06850"^^xsd:string ;
 	vcard:tel "203-899-2880"^^vcard:text ;
-	rdfs:label "Kendall Elementary School"^^rdfs:Literal .
+	rdfs:label "Kendall Elementary School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Kendall_Central_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Norwalk+School+District> a livingPlaces:SchoolDistrict ;
-	rdfs:label "Norwalk School District"^^rdfs:Literal .
+	rdfs:label "Norwalk School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Norwalk_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Redding+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Redding+School+District> ;
@@ -104,7 +107,8 @@ Redding, CT 06875
 	rdfs:label "Redding Elementary School"^^rdfs:Literal .
 
 <http://www.linkedData_Group13.com/resource/Redding+School+District> a livingPlaces:SchoolDistrict ;
-	rdfs:label "Redding School District"^^rdfs:Literal .
+	rdfs:label "Redding School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Redding_School_District> .
 
 <http://www.linkedData_Group13.com/resource/HPHS+Academy+of+Nursing+and+Health+Science> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Hartford+School+District> ;
@@ -305,7 +309,8 @@ Stratford, CT 06614
 	rdfs:label "Chapel School"^^rdfs:Literal .
 
 <http://www.linkedData_Group13.com/resource/Stratford+School+District> a livingPlaces:SchoolDistrict ;
-	rdfs:label "Stratford School District"^^rdfs:Literal .
+	rdfs:label "Stratford School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Stratford_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Hebron+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Hebron+School+District> ;
@@ -345,7 +350,8 @@ Middletown, CT 06457
 	geo:long "-72.62259473399996"^^xsd:float ;
 	dbo:zipCode "06457"^^xsd:string ;
 	vcard:tel "860-704-4020"^^vcard:text ;
-	rdfs:label "Riverview School"^^rdfs:Literal .
+	rdfs:label "Riverview School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Riverview_School> .
 
 <http://www.linkedData_Group13.com/resource/Unified+School+District+%232> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Unified School District #2"^^rdfs:Literal .
@@ -526,7 +532,8 @@ Bridgeport, CT 06606
 	rdfs:label "Biotechnology, Research and Zoological Studies HS at the Fairchild-Wheeler Magnet Campus"^^rdfs:Literal .
 
 <http://www.linkedData_Group13.com/resource/Bridgeport+School+District> a livingPlaces:SchoolDistrict ;
-	rdfs:label "Bridgeport School District"^^rdfs:Literal .
+	rdfs:label "Bridgeport School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Bridgeport_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Gaffney+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/New+Britain+School+District> ;
@@ -775,7 +782,8 @@ Falls Village, CT 06031
 	dbo:zipCode "06031"^^xsd:string ;
 	vcard:tel "860-927-3537"^^vcard:text ;
 	rdfs:label "Kent School District"^^rdfs:Literal ;
-	a livingPlaces:SchoolDistrict .
+	a livingPlaces:SchoolDistrict ;
+	owl:sameAs <http://dbpedia.org/resource/Kent_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Frank+Ward+Strong+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Regional+School+District+13> ;
@@ -831,7 +839,8 @@ Waterbury, CT 06705
 	geo:long "-72.97408892399994"^^xsd:float ;
 	dbo:zipCode "06705"^^xsd:string ;
 	vcard:tel "203-574-8061"^^vcard:text ;
-	rdfs:label "Crosby High School"^^rdfs:Literal .
+	rdfs:label "Crosby High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Crosby_High_School_(Waterbury,_Connecticut)> .
 
 <http://www.linkedData_Group13.com/resource/Stratford+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Stratford+School+District> ;
@@ -870,7 +879,8 @@ Chaplin, CT 06235
 	geo:long "-72.10765186999998"^^xsd:float ;
 	dbo:zipCode "06235"^^xsd:string ;
 	vcard:tel "860-455-9584"^^vcard:text ;
-	rdfs:label "Parish Hill High School"^^rdfs:Literal .
+	rdfs:label "Parish Hill High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Parish_Hill_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Regional+School+District+11> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Regional School District 11"^^rdfs:Literal .
@@ -967,7 +977,8 @@ Milford, CT 06460
 	rdfs:label "Orange Avenue School"^^rdfs:Literal .
 
 <http://www.linkedData_Group13.com/resource/Milford+School+District> a livingPlaces:SchoolDistrict ;
-	rdfs:label "Milford School District"^^rdfs:Literal .
+	rdfs:label "Milford School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Milford_School_District> .
 
 <http://www.linkedData_Group13.com/resource/East+Hartford+Middle+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/East+Hartford+School+District> ;
@@ -1145,7 +1156,8 @@ Hartford, CT 06106
 	geo:long "-72.67549714099994"^^xsd:float ;
 	dbo:zipCode "06106"^^xsd:string ;
 	vcard:tel "860-296-2090"^^vcard:text ;
-	rdfs:label "Discovery Academy"^^rdfs:Literal .
+	rdfs:label "Discovery Academy"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Discovery_Academy,_Stoke-on-Trent> .
 
 <http://www.linkedData_Group13.com/resource/John+Paterson+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Newington+School+District> ;
@@ -1217,7 +1229,8 @@ NEW MILFORD, CT 06776
 	dbo:zipCode "06776"^^xsd:string ;
 	vcard:tel "860-355-8406"^^vcard:text ;
 	rdfs:label "New Milford School District"^^rdfs:Literal ;
-	a livingPlaces:SchoolDistrict .
+	a livingPlaces:SchoolDistrict ;
+	owl:sameAs <http://dbpedia.org/resource/New_Milford_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Parkville+Community+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Hartford+School+District> ;
@@ -1246,7 +1259,8 @@ Torrington, CT 06790
 	rdfs:label "East School"^^rdfs:Literal .
 
 <http://www.linkedData_Group13.com/resource/Torrington+School+District> a livingPlaces:SchoolDistrict ;
-	rdfs:label "Torrington School District"^^rdfs:Literal .
+	rdfs:label "Torrington School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Torrington_School_District> .
 
 <http://www.linkedData_Group13.com/resource/J.+M.+Wright+Technical+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Connecticut+Technical+High+School+System> ;
@@ -1275,7 +1289,8 @@ Ellington, CT 06029
 	geo:long "-72.46019691599997"^^xsd:float ;
 	dbo:zipCode "06029"^^xsd:string ;
 	vcard:tel "860-896-2352"^^vcard:text ;
-	rdfs:label "Ellington High School"^^rdfs:Literal .
+	rdfs:label "Ellington High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Ellington_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Plymouth+Alternative+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Plymouth+School+District> ;
@@ -1389,7 +1404,8 @@ Shelton, CT 06484
 	rdfs:label "Elizabeth Shelton School"^^rdfs:Literal .
 
 <http://www.linkedData_Group13.com/resource/Shelton+School+District> a livingPlaces:SchoolDistrict ;
-	rdfs:label "Shelton School District"^^rdfs:Literal .
+	rdfs:label "Shelton School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Shelton_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Montville+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Montville+School+District> ;
@@ -1402,7 +1418,8 @@ Oakdale, CT 06370
 	geo:long "-72.16302734299995"^^xsd:float ;
 	dbo:zipCode "06370"^^xsd:string ;
 	vcard:tel "860-848-9208"^^vcard:text ;
-	rdfs:label "Montville High School"^^rdfs:Literal .
+	rdfs:label "Montville High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Montville_High_School_(Connecticut)> .
 
 <http://www.linkedData_Group13.com/resource/Wheeler+Middle+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/North+Stonington+School+District> ;
@@ -1473,7 +1490,8 @@ Manchester, CT 06042
 	geo:long "-72.49259917999996"^^xsd:float ;
 	dbo:zipCode "06042"^^xsd:string ;
 	vcard:tel "860-647-3302"^^vcard:text ;
-	rdfs:label "Buckley School"^^rdfs:Literal .
+	rdfs:label "Buckley School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Buckley_School_(California)> .
 
 <http://www.linkedData_Group13.com/resource/Manchester+School+District> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Manchester School District"^^rdfs:Literal .
@@ -1528,7 +1546,8 @@ Plantsville, CT 06479
 	geo:long "-72.89516726899996"^^xsd:float ;
 	dbo:zipCode "06479"^^xsd:string ;
 	vcard:tel "860-628-3275"^^vcard:text ;
-	rdfs:label "John F. Kennedy Middle School"^^rdfs:Literal .
+	rdfs:label "John F. Kennedy Middle School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Cheektowaga-Sloan_Union_Free_School_District> .
 
 <http://www.linkedData_Group13.com/resource/North+Canaan+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/North+Canaan+School+District> ;
@@ -1645,7 +1664,8 @@ Cheshire, CT 06410
 	geo:long "-72.90478651699993"^^xsd:float ;
 	dbo:zipCode "06410"^^xsd:string ;
 	vcard:tel "203-250-2511"^^vcard:text ;
-	rdfs:label "Cheshire High School"^^rdfs:Literal .
+	rdfs:label "Cheshire High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Cheshire_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Cheshire+School+District> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Cheshire School District"^^rdfs:Literal .
@@ -1661,7 +1681,8 @@ Deep River, CT 06417
 	geo:long "-72.44743470599997"^^xsd:float ;
 	dbo:zipCode "06417"^^xsd:string ;
 	vcard:tel "860-526-5328"^^vcard:text ;
-	rdfs:label "Valley Regional High School"^^rdfs:Literal .
+	rdfs:label "Valley Regional High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Valley_Regional_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Regional+School+District+04> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Regional School District 04"^^rdfs:Literal .
@@ -1706,7 +1727,8 @@ Stamford, CT 06906
 	geo:long "-73.55985619699999"^^xsd:float ;
 	dbo:zipCode "06906"^^xsd:string ;
 	vcard:tel "203-977-4572"^^vcard:text ;
-	rdfs:label "Westover School"^^rdfs:Literal .
+	rdfs:label "Westover School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Westover_School> .
 
 <http://www.linkedData_Group13.com/resource/North+Haven+Middle+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/North+Haven+School+District> ;
@@ -1864,7 +1886,8 @@ Cromwell, CT 06416
 	geo:long "-72.66804569199996"^^xsd:float ;
 	dbo:zipCode "06416"^^xsd:string ;
 	vcard:tel "860-632-4841"^^vcard:text ;
-	rdfs:label "Cromwell High School"^^rdfs:Literal .
+	rdfs:label "Cromwell High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Cromwell_High_School> .
 
 <http://www.linkedData_Group13.com/resource/West+Hartford+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/West+Hartford+School+District> ;
@@ -1928,7 +1951,8 @@ Torrington, CT 06790
 	geo:long "-73.11074917099995"^^xsd:float ;
 	dbo:zipCode "06790"^^xsd:string ;
 	vcard:tel "860-489-2294"^^vcard:text ;
-	rdfs:label "Torrington High School"^^rdfs:Literal .
+	rdfs:label "Torrington High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Torrington_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Lewin+G.+Joel+Jr.+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Clinton+School+District> ;
@@ -1986,7 +2010,8 @@ Danbury, CT 06811
 	geo:long "-73.45387782199998"^^xsd:float ;
 	dbo:zipCode "06811"^^xsd:string ;
 	vcard:tel "203-797-4460"^^vcard:text ;
-	rdfs:label "Henry Abbott Technical High School"^^rdfs:Literal .
+	rdfs:label "Henry Abbott Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Henry_Abbott_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Griswold+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Griswold+School+District> ;
@@ -2072,7 +2097,8 @@ Hebron, CT 06248
 	geo:long "-72.36339005399998"^^xsd:float ;
 	dbo:zipCode "06248"^^xsd:string ;
 	vcard:tel "860-228-9474"^^vcard:text ;
-	rdfs:label "RHAM High School"^^rdfs:Literal .
+	rdfs:label "RHAM High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/RHAM_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Regional+School+District+08> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Regional School District 08"^^rdfs:Literal .
@@ -2239,7 +2265,8 @@ Trumbull, CT 06611
 	geo:long "-73.19174607499997"^^xsd:float ;
 	dbo:zipCode "06611"^^xsd:string ;
 	vcard:tel "203-452-4555"^^vcard:text ;
-	rdfs:label "Trumbull High School"^^rdfs:Literal .
+	rdfs:label "Trumbull High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Trumbull_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Ellington+Middle+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Ellington+School+District> ;
@@ -2440,7 +2467,8 @@ West Hartford, CT 06107
 	geo:long "-72.74803829899997"^^xsd:float ;
 	dbo:zipCode "06107"^^xsd:string ;
 	vcard:tel "860-231-5000"^^vcard:text ;
-	rdfs:label "Conard High School"^^rdfs:Literal .
+	rdfs:label "Conard High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Conard_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Bristol+Early+Childhood+Center-BECC> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Bristol+School+District> ;
@@ -2537,7 +2565,8 @@ East Hartford, CT 06118
 	geo:long "-72.60560871299998"^^xsd:float ;
 	dbo:zipCode "06118"^^xsd:string ;
 	vcard:tel "860-622-5200"^^vcard:text ;
-	rdfs:label "East Hartford High School"^^rdfs:Literal .
+	rdfs:label "East Hartford High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/East_Hartford_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Regional+School+District+15> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Regional+School+District+15> ;
@@ -2551,6 +2580,7 @@ Middlebury, CT 06762
 	dbo:zipCode "06762"^^xsd:string ;
 	vcard:tel "203-758-8259"^^vcard:text ;
 	rdfs:label "Regional School District 15"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Regional_School_District_15> ;
 	a livingPlaces:SchoolDistrict .
 
 <http://www.linkedData_Group13.com/resource/Park+City+Magnet+School> a schema:School ;
@@ -2577,7 +2607,8 @@ Naugatuck, CT 06770
 	geo:long "-73.07356814899998"^^xsd:float ;
 	dbo:zipCode "06770"^^xsd:string ;
 	vcard:tel "203-720-5400"^^vcard:text ;
-	rdfs:label "Naugatuck High School"^^rdfs:Literal .
+	rdfs:label "Naugatuck High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Naugatuck_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Naugatuck+School+District> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Naugatuck School District"^^rdfs:Literal .
@@ -2593,7 +2624,8 @@ Stamford, CT 06902
 	geo:long "-73.56716765299996"^^xsd:float ;
 	dbo:zipCode "06902"^^xsd:string ;
 	vcard:tel "203-977-4477"^^vcard:text ;
-	rdfs:label "Westhill High School"^^rdfs:Literal .
+	rdfs:label "Westhill High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Westhill_High_School_(Connecticut)> .
 
 <http://www.linkedData_Group13.com/resource/Canaan+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Canaan+School+District> ;
@@ -2678,7 +2710,8 @@ Dayville, CT 06241
 	geo:long "-71.88087811499997"^^xsd:float ;
 	dbo:zipCode "06241"^^xsd:string ;
 	vcard:tel "860-779-6620"^^vcard:text ;
-	rdfs:label "Killingly High School"^^rdfs:Literal .
+	rdfs:label "Killingly High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Killingly_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Killingly+School+District> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Killingly School District"^^rdfs:Literal .
@@ -2750,6 +2783,7 @@ Columbia, CT 06237
 	dbo:zipCode "06237"^^xsd:string ;
 	vcard:tel "860-228-9493"^^vcard:text ;
 	rdfs:label "Columbia School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Columbia_School_District> ;
 	a livingPlaces:SchoolDistrict .
 
 <http://www.linkedData_Group13.com/resource/York+Correctional+Institution> a schema:School ;
@@ -2776,7 +2810,8 @@ Winsted, CT 06098
 	geo:long "-73.04759698899994"^^xsd:float ;
 	dbo:zipCode "06098"^^xsd:string ;
 	vcard:tel "860-379-8525"^^vcard:text ;
-	rdfs:label "Northwestern Regional High School"^^rdfs:Literal .
+	rdfs:label "Northwestern Regional High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Northwestern_Regional_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Regional+School+District+07> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Regional School District 07"^^rdfs:Literal .
@@ -3009,7 +3044,8 @@ Unionville, CT 06085
 	rdfs:label "Union School"^^rdfs:Literal .
 
 <http://www.linkedData_Group13.com/resource/Farmington+School+District> a livingPlaces:SchoolDistrict ;
-	rdfs:label "Farmington School District"^^rdfs:Literal .
+	rdfs:label "Farmington School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Farmington_School_District> .
 
 <http://www.linkedData_Group13.com/resource/North+Street+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Windsor+Locks+School+District> ;
@@ -3022,7 +3058,8 @@ Windsor Locks, CT 06096
 	geo:long "-72.64779195199998"^^xsd:float ;
 	dbo:zipCode "06096"^^xsd:string ;
 	vcard:tel "860-292-5027"^^vcard:text ;
-	rdfs:label "North Street School"^^rdfs:Literal .
+	rdfs:label "North Street School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Geneva_City_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Windsor+Locks+School+District> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Windsor Locks School District"^^rdfs:Literal .
@@ -3041,7 +3078,8 @@ Lebanon, CT 06249
 	rdfs:label "Lyman Memorial High School"^^rdfs:Literal .
 
 <http://www.linkedData_Group13.com/resource/Lebanon+School+District> a livingPlaces:SchoolDistrict ;
-	rdfs:label "Lebanon School District"^^rdfs:Literal .
+	rdfs:label "Lebanon School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Lebanon_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Calf+Pen+Meadow+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Milford+School+District> ;
@@ -3228,6 +3266,7 @@ UNION, CT 06076
 	dbo:zipCode "06076"^^xsd:string ;
 	vcard:tel "860-684-3146"^^vcard:text ;
 	rdfs:label "Union School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Union_school_district> ;
 	a livingPlaces:SchoolDistrict .
 
 <http://www.linkedData_Group13.com/resource/Joseph+Melillo+Middle+School> a schema:School ;
@@ -3332,7 +3371,8 @@ New Haven, CT 06519
 	geo:long "-72.94048996899994"^^xsd:float ;
 	dbo:zipCode "06519"^^xsd:string ;
 	vcard:tel "203-946-5845"^^vcard:text ;
-	rdfs:label "Hill Regional Career High School"^^rdfs:Literal .
+	rdfs:label "Hill Regional Career High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Hill_Regional_Career_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Riverside+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Greenwich+School+District> ;
@@ -3465,7 +3505,8 @@ New Milford, CT 06776
 	geo:long "-73.41792872099995"^^xsd:float ;
 	dbo:zipCode "06776"^^xsd:string ;
 	vcard:tel "860-210-4020"^^vcard:text ;
-	rdfs:label "Sarah Noble Intermediate School"^^rdfs:Literal .
+	rdfs:label "Sarah Noble Intermediate School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Sarah_Noble_Intermediate_School> .
 
 <http://www.linkedData_Group13.com/resource/Daniel+Hand+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Madison+School+District> ;
@@ -3478,7 +3519,8 @@ Madison, CT 06443
 	geo:long "-72.62127669999995"^^xsd:float ;
 	dbo:zipCode "06443"^^xsd:string ;
 	vcard:tel "203-245-6350"^^vcard:text ;
-	rdfs:label "Daniel Hand High School"^^rdfs:Literal .
+	rdfs:label "Daniel Hand High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Daniel_Hand_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Waterford+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Waterford+School+District> ;
@@ -3529,7 +3571,8 @@ Woodstock, CT 06281
 	geo:long "-71.97667767299998"^^xsd:float ;
 	dbo:zipCode "06281"^^xsd:string ;
 	vcard:tel "860-928-6575"^^vcard:text ;
-	rdfs:label "Woodstock Academy"^^rdfs:Literal .
+	rdfs:label "Woodstock Academy"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Woodstock_Academy> .
 
 <http://www.linkedData_Group13.com/resource/Woodstock+Academy+District> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Woodstock Academy District"^^rdfs:Literal .
@@ -3584,7 +3627,8 @@ Waterbury, CT 06708
 	geo:long "-73.05614788699995"^^xsd:float ;
 	dbo:zipCode "06708"^^xsd:string ;
 	vcard:tel "203-574-8153"^^vcard:text ;
-	rdfs:label "John F. Kennedy High School"^^rdfs:Literal .
+	rdfs:label "John F. Kennedy High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Cheektowaga-Sloan_Union_Free_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Waddell+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Manchester+School+District> ;
@@ -3635,7 +3679,8 @@ Andover, CT 06232
 	geo:long "-72.36613178499994"^^xsd:float ;
 	dbo:zipCode "06232"^^xsd:string ;
 	vcard:tel "860-742-7339"^^vcard:text ;
-	rdfs:label "Andover Elementary School"^^rdfs:Literal .
+	rdfs:label "Andover Elementary School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Andover_Elementary_School> .
 
 <http://www.linkedData_Group13.com/resource/Andover+School+District> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Andover School District"^^rdfs:Literal .
@@ -3716,7 +3761,8 @@ Riverside, CT 06878
 	geo:long "-73.57510687499996"^^xsd:float ;
 	dbo:zipCode "06878"^^xsd:string ;
 	vcard:tel "203-637-3800"^^vcard:text ;
-	rdfs:label "International School At Dundee"^^rdfs:Literal .
+	rdfs:label "International School At Dundee"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/International_School_at_Dundee> .
 
 <http://www.linkedData_Group13.com/resource/Urbin+T.+Kelley+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Southington+School+District> ;
@@ -3951,7 +3997,8 @@ West Haven, CT 06516
 	geo:long "-72.96449672699998"^^xsd:float ;
 	dbo:zipCode "06516"^^xsd:string ;
 	vcard:tel "203-937-4360"^^vcard:text ;
-	rdfs:label "West Haven High School"^^rdfs:Literal .
+	rdfs:label "West Haven High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/West_Haven_High_School> .
 
 <http://www.linkedData_Group13.com/resource/West+Haven+School+District> a livingPlaces:SchoolDistrict ;
 	rdfs:label "West Haven School District"^^rdfs:Literal .
@@ -4032,7 +4079,8 @@ Burlington, CT 06013
 	geo:long "-72.98845600499999"^^xsd:float ;
 	dbo:zipCode "06013"^^xsd:string ;
 	vcard:tel "860-673-0423"^^vcard:text ;
-	rdfs:label "Lewis S. Mills High School"^^rdfs:Literal .
+	rdfs:label "Lewis S. Mills High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Lewis_S._Mills_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Willard%2FCybulski+Correctional+Institution> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Unified+School+District+%231> ;
@@ -4071,7 +4119,8 @@ Milford, CT 06460
 	geo:long "-73.01165188599998"^^xsd:float ;
 	dbo:zipCode "06460"^^xsd:string ;
 	vcard:tel "203-783-3502"^^vcard:text ;
-	rdfs:label "Joseph A. Foran High School"^^rdfs:Literal .
+	rdfs:label "Joseph A. Foran High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Joseph_A._Foran_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Maple+Street+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Vernon+School+District> ;
@@ -4314,7 +4363,8 @@ Stratford, CT 06614
 	geo:long "-73.13951554099998"^^xsd:float ;
 	dbo:zipCode "06614"^^xsd:string ;
 	vcard:tel "203-385-4294"^^vcard:text ;
-	rdfs:label "Nichols School"^^rdfs:Literal .
+	rdfs:label "Nichols School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Nichols_School> .
 
 <http://www.linkedData_Group13.com/resource/Metacomet+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Bloomfield+School+District> ;
@@ -4375,7 +4425,8 @@ Southport, CT 06890
 	rdfs:label "Mill Hill School"^^rdfs:Literal .
 
 <http://www.linkedData_Group13.com/resource/Fairfield+School+District> a livingPlaces:SchoolDistrict ;
-	rdfs:label "Fairfield School District"^^rdfs:Literal .
+	rdfs:label "Fairfield School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Fairfield_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Skane+Center> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Bridgeport+School+District> ;
@@ -4469,7 +4520,8 @@ Tolland, CT 06084
 	geo:long "-72.34101577799998"^^xsd:float ;
 	dbo:zipCode "06084"^^xsd:string ;
 	vcard:tel "860-870-6818"^^vcard:text ;
-	rdfs:label "Tolland High School"^^rdfs:Literal .
+	rdfs:label "Tolland High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Tolland_High_School> .
 
 <http://www.linkedData_Group13.com/resource/George+Hersey+Robertson+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Coventry+School+District> ;
@@ -4600,7 +4652,8 @@ New Fairfield, CT 06812
 	geo:long "-73.49829594499994"^^xsd:float ;
 	dbo:zipCode "06812"^^xsd:string ;
 	vcard:tel "203-312-5800"^^vcard:text ;
-	rdfs:label "New Fairfield High School"^^rdfs:Literal .
+	rdfs:label "New Fairfield High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/New_Fairfield_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Wesley+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Middletown+School+District> ;
@@ -4626,7 +4679,8 @@ Bridgeport, CT 06610
 	geo:long "-73.16502169199998"^^xsd:float ;
 	dbo:zipCode "06610"^^xsd:string ;
 	vcard:tel "203-579-6333"^^vcard:text ;
-	rdfs:label "Bullard-Havens Technical High School"^^rdfs:Literal .
+	rdfs:label "Bullard-Havens Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Bullard-Havens_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Hockanum+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/East+Hartford+School+District> ;
@@ -4678,7 +4732,8 @@ Old Lyme, CT 06371
 	geo:long "-72.32902752799998"^^xsd:float ;
 	dbo:zipCode "06371"^^xsd:string ;
 	vcard:tel "860-434-1651"^^vcard:text ;
-	rdfs:label "Lyme-Old Lyme High School"^^rdfs:Literal .
+	rdfs:label "Lyme-Old Lyme High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Lyme-Old_Lyme_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Scotland+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Scotland+School+District> ;
@@ -4703,7 +4758,8 @@ Meriden, CT 06450
 	geo:long "-72.77415808899997"^^xsd:float ;
 	dbo:zipCode "06450"^^xsd:string ;
 	vcard:tel "203-238-2334"^^vcard:text ;
-	rdfs:label "Francis T. Maloney High School"^^rdfs:Literal .
+	rdfs:label "Francis T. Maloney High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Francis_T._Maloney_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Plantsville+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Southington+School+District> ;
@@ -4770,7 +4826,8 @@ Storrs, CT 06268
 	geo:long "-72.24239501099999"^^xsd:float ;
 	dbo:zipCode "06268"^^xsd:string ;
 	vcard:tel "860-487-0877"^^vcard:text ;
-	rdfs:label "E. O. Smith High School"^^rdfs:Literal .
+	rdfs:label "E. O. Smith High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/E._O._Smith_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Regional+School+District+19> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Regional School District 19"^^rdfs:Literal .
@@ -5000,7 +5057,8 @@ North Stonington, CT 06359
 	geo:long "-71.88019625999993"^^xsd:float ;
 	dbo:zipCode "06359"^^xsd:string ;
 	vcard:tel "860-535-0377"^^vcard:text ;
-	rdfs:label "Wheeler High School"^^rdfs:Literal .
+	rdfs:label "Wheeler High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Wheeler_High_School_(Fossil,_Oregon)> .
 
 <http://www.linkedData_Group13.com/resource/Ana+Grace+Academy+of+the+Arts+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Capitol+Region+Education+Council> ;
@@ -5166,7 +5224,8 @@ Simsbury, CT 06070
 	geo:long "-72.82257624299996"^^xsd:float ;
 	dbo:zipCode "06070"^^xsd:string ;
 	vcard:tel "860-658-0451"^^vcard:text ;
-	rdfs:label "Simsbury High School"^^rdfs:Literal .
+	rdfs:label "Simsbury High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Simsbury_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Emma+Hart+Willard+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Berlin+School+District> ;
@@ -5195,7 +5254,8 @@ Thomaston, CT 06787
 	geo:long "-73.09509006599995"^^xsd:float ;
 	dbo:zipCode "06787"^^xsd:string ;
 	vcard:tel "860-283-3030"^^vcard:text ;
-	rdfs:label "Thomaston High School"^^rdfs:Literal .
+	rdfs:label "Thomaston High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Thomaston_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Botelle+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Norfolk+School+District> ;
@@ -5262,7 +5322,8 @@ Berlin, CT 06037
 	geo:long "-72.76255115499998"^^xsd:float ;
 	dbo:zipCode "06037"^^xsd:string ;
 	vcard:tel "860-828-0323"^^vcard:text ;
-	rdfs:label "Catherine M. McGee Middle School"^^rdfs:Literal .
+	rdfs:label "Catherine M. McGee Middle School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Catherine_M._McGee_Middle_School> .
 
 <http://www.linkedData_Group13.com/resource/Rock+Hill+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Wallingford+School+District> ;
@@ -5472,7 +5533,8 @@ Seymour, CT 06483
 	geo:long "-73.09541195499997"^^xsd:float ;
 	dbo:zipCode "06483"^^xsd:string ;
 	vcard:tel "203-888-2561"^^vcard:text ;
-	rdfs:label "Seymour High School"^^rdfs:Literal .
+	rdfs:label "Seymour High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Seymour_High_School_(Texas)> .
 
 <http://www.linkedData_Group13.com/resource/Seymour+School+District> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Seymour School District"^^rdfs:Literal .
@@ -5530,7 +5592,8 @@ Greenwich, CT 06830
 	geo:long "-73.61184737999997"^^xsd:float ;
 	dbo:zipCode "06830"^^xsd:string ;
 	vcard:tel "203-625-8000"^^vcard:text ;
-	rdfs:label "Greenwich High School"^^rdfs:Literal .
+	rdfs:label "Greenwich High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Greenwich_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Ridgefield+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Ridgefield+School+District> ;
@@ -5543,7 +5606,8 @@ Ridgefield, CT 06877
 	geo:long "-73.52840430799995"^^xsd:float ;
 	dbo:zipCode "06877"^^xsd:string ;
 	vcard:tel "203-438-3785"^^vcard:text ;
-	rdfs:label "Ridgefield High School"^^rdfs:Literal .
+	rdfs:label "Ridgefield High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Ridgefield_High_School_(Ridgefield,_Washington)> .
 
 <http://www.linkedData_Group13.com/resource/Cooperative+Educational+Services> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Cooperative+Educational+Services> ;
@@ -5671,7 +5735,8 @@ Plainville, CT 06062
 	geo:long "-72.85803959599997"^^xsd:float ;
 	dbo:zipCode "06062"^^xsd:string ;
 	vcard:tel "860-793-3220"^^vcard:text ;
-	rdfs:label "Plainville High School"^^rdfs:Literal .
+	rdfs:label "Plainville High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Plainville_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Cloonan+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Stamford+School+District> ;
@@ -5813,7 +5878,8 @@ Falls Village, CT 06031
 	geo:long "-73.36161069999997"^^xsd:float ;
 	dbo:zipCode "06031"^^xsd:string ;
 	vcard:tel "860-824-5123"^^vcard:text ;
-	rdfs:label "Housatonic Valley Regional High School"^^rdfs:Literal .
+	rdfs:label "Housatonic Valley Regional High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Housatonic_Valley_Regional_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Farmington+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Farmington+School+District> ;
@@ -6167,7 +6233,8 @@ Enfield, CT 06082
 	geo:long "-72.56286717899997"^^xsd:float ;
 	dbo:zipCode "06082"^^xsd:string ;
 	vcard:tel "860-253-6540"^^vcard:text ;
-	rdfs:label "Henry Barnard School"^^rdfs:Literal .
+	rdfs:label "Henry Barnard School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Henry_Barnard_Early_Childhood_Center> .
 
 <http://www.linkedData_Group13.com/resource/Center+School> livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Regional+School+District+18> ;
 	livingPlaces:hasOrganizationType "Regional Schools"^^xsd:string ;
@@ -6230,7 +6297,8 @@ Fairfield, CT 06825
 	geo:long "-73.23286649999994"^^xsd:float ;
 	dbo:zipCode "06825"^^xsd:string ;
 	vcard:tel "203-255-8449"^^vcard:text ;
-	rdfs:label "Fairfield Warde High School"^^rdfs:Literal .
+	rdfs:label "Fairfield Warde High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Fairfield_Warde_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Naubuc+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Glastonbury+School+District> ;
@@ -6372,7 +6440,8 @@ Oxford, CT 06478
 	rdfs:label "Quaker Farms School"^^rdfs:Literal .
 
 <http://www.linkedData_Group13.com/resource/Oxford+School+District> a livingPlaces:SchoolDistrict ;
-	rdfs:label "Oxford School District"^^rdfs:Literal .
+	rdfs:label "Oxford School District"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Oxford_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Veterans+Park+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Ridgefield+School+District> ;
@@ -6426,7 +6495,8 @@ Ansonia, CT 06401
 	geo:long "-73.06333012499994"^^xsd:float ;
 	dbo:zipCode "06401"^^xsd:string ;
 	vcard:tel "203-736-5060"^^vcard:text ;
-	rdfs:label "Ansonia High School"^^rdfs:Literal .
+	rdfs:label "Ansonia High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Ansonia_High_School_(Connecticut)> .
 
 <http://www.linkedData_Group13.com/resource/Clover+Street+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Windsor+School+District> ;
@@ -6813,7 +6883,8 @@ New Canaan, CT 06840
 	geo:long "-73.48751000999994"^^xsd:float ;
 	dbo:zipCode "06840"^^xsd:string ;
 	vcard:tel "203-594-4600"^^vcard:text ;
-	rdfs:label "New Canaan High School"^^rdfs:Literal .
+	rdfs:label "New Canaan High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/New_Canaan_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Roxbury+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Stamford+School+District> ;
@@ -6839,7 +6910,8 @@ New Britain, CT 06051
 	geo:long "-72.77786843699994"^^xsd:float ;
 	dbo:zipCode "06051"^^xsd:string ;
 	vcard:tel "860-225-6350"^^vcard:text ;
-	rdfs:label "New Britain High School"^^rdfs:Literal .
+	rdfs:label "New Britain High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/New_Britain_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Fairfield+Woods+Middle+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Fairfield+School+District> ;
@@ -6942,7 +7014,8 @@ East Granby, CT 06026
 	geo:long "-72.72293685799997"^^xsd:float ;
 	dbo:zipCode "06026"^^xsd:string ;
 	vcard:tel "860-653-2541"^^vcard:text ;
-	rdfs:label "East Granby High School"^^rdfs:Literal .
+	rdfs:label "East Granby High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/East_Granby_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Glenville+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Greenwich+School+District> ;
@@ -7036,7 +7109,8 @@ Waterbury, CT 06708
 	geo:long "-73.06549916499995"^^xsd:float ;
 	dbo:zipCode "06708"^^xsd:string ;
 	vcard:tel "203-596-4302"^^vcard:text ;
-	rdfs:label "W. F. Kaynor Technical High School"^^rdfs:Literal .
+	rdfs:label "W. F. Kaynor Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/W.F._Kaynor_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Gilmartin+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Waterbury+School+District> ;
@@ -7101,7 +7175,8 @@ Guilford, CT 06437
 	geo:long "-72.71335678699995"^^xsd:float ;
 	dbo:zipCode "06437"^^xsd:string ;
 	vcard:tel "203-453-2741"^^vcard:text ;
-	rdfs:label "Guilford High School"^^rdfs:Literal .
+	rdfs:label "Guilford High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Guilford_High_School_(Connecticut)> .
 
 <http://www.linkedData_Group13.com/resource/Hartland+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Hartland+School+District> ;
@@ -7178,7 +7253,8 @@ Bristol, CT 06010
 	geo:long "-72.92510870499996"^^xsd:float ;
 	dbo:zipCode "06010"^^xsd:string ;
 	vcard:tel "860-584-7876"^^vcard:text ;
-	rdfs:label "Bristol Eastern High School"^^rdfs:Literal .
+	rdfs:label "Bristol Eastern High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Bristol_Eastern_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Washington+Middle+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Meriden+School+District> ;
@@ -7217,7 +7293,8 @@ Waterbury, CT 06704
 	geo:long "-73.02121930099997"^^xsd:float ;
 	dbo:zipCode "06704"^^xsd:string ;
 	vcard:tel "203-574-8000"^^vcard:text ;
-	rdfs:label "Waterbury Career Academy"^^rdfs:Literal .
+	rdfs:label "Waterbury Career Academy"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Waterbury_Career_Academy> .
 
 <http://www.linkedData_Group13.com/resource/Melissa+Jones+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Guilford+School+District> ;
@@ -7285,7 +7362,8 @@ Danielson, CT 06239
 	geo:long "-71.89279616599998"^^xsd:float ;
 	dbo:zipCode "06239"^^xsd:string ;
 	vcard:tel "860-412-7500"^^vcard:text ;
-	rdfs:label "H. H. Ellis Technical High School"^^rdfs:Literal .
+	rdfs:label "H. H. Ellis Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/H._H._Ellis_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Bassick+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Bridgeport+School+District> ;
@@ -7298,7 +7376,8 @@ Bridgeport, CT 06605
 	geo:long "-73.20687120199995"^^xsd:float ;
 	dbo:zipCode "06605"^^xsd:string ;
 	vcard:tel "203-576-7350"^^vcard:text ;
-	rdfs:label "Bassick High School"^^rdfs:Literal .
+	rdfs:label "Bassick High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Bassick_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Pawcatuck+Middle+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Stonington+School+District> ;
@@ -7545,7 +7624,8 @@ Redding, CT 06896
 	geo:long "-73.34447305999998"^^xsd:float ;
 	dbo:zipCode "06896"^^xsd:string ;
 	vcard:tel "203-938-2508"^^vcard:text ;
-	rdfs:label "Joel Barlow High School"^^rdfs:Literal .
+	rdfs:label "Joel Barlow High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Joel_Barlow_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Deep+River+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Deep+River+School+District> ;
@@ -7587,7 +7667,8 @@ South Windsor, CT 06074
 	geo:long "-72.55177691699998"^^xsd:float ;
 	dbo:zipCode "06074"^^xsd:string ;
 	vcard:tel "860-648-5000"^^vcard:text ;
-	rdfs:label "South Windsor High School"^^rdfs:Literal .
+	rdfs:label "South Windsor High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/South_Windsor_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Salem+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Naugatuck+School+District> ;
@@ -7667,7 +7748,8 @@ New Haven, CT 06511
 	geo:long "-72.93812662599998"^^xsd:float ;
 	dbo:zipCode "06511"^^xsd:string ;
 	vcard:tel "203-946-8484"^^vcard:text ;
-	rdfs:label "James Hillhouse High School"^^rdfs:Literal .
+	rdfs:label "James Hillhouse High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Hillhouse_High_School> .
 
 <http://www.linkedData_Group13.com/resource/West+District+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Farmington+School+District> ;
@@ -7852,7 +7934,8 @@ Branford, CT 06405
 	geo:long "-72.80181996099998"^^xsd:float ;
 	dbo:zipCode "06405"^^xsd:string ;
 	vcard:tel "203-488-7291"^^vcard:text ;
-	rdfs:label "Branford High School"^^rdfs:Literal .
+	rdfs:label "Branford High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Branford_High_School_(Connecticut)> .
 
 <http://www.linkedData_Group13.com/resource/Stonington+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Stonington+School+District> ;
@@ -7891,7 +7974,8 @@ New Haven, CT 06511
 	geo:long "-72.91498651599994"^^xsd:float ;
 	dbo:zipCode "06511"^^xsd:string ;
 	vcard:tel "203-946-8995"^^vcard:text ;
-	rdfs:label "New Haven Academy"^^rdfs:Literal .
+	rdfs:label "New Haven Academy"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/New_Haven_Academy> .
 
 <http://www.linkedData_Group13.com/resource/Head+O%27Meadow+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Newtown+School+District> ;
@@ -7979,7 +8063,8 @@ Brookfield, CT 06804
 	geo:long "-73.38482366499994"^^xsd:float ;
 	dbo:zipCode "06804"^^xsd:string ;
 	vcard:tel "203-775-7650"^^vcard:text ;
-	rdfs:label "Center Elementary School"^^rdfs:Literal .
+	rdfs:label "Center Elementary School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Center_School_(Connecticut)> .
 
 <http://www.linkedData_Group13.com/resource/Alfred+W.+Hanmer+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Wethersfield+School+District> ;
@@ -8008,7 +8093,8 @@ Southington, CT 06489
 	geo:long "-72.85994316599994"^^xsd:float ;
 	dbo:zipCode "06489"^^xsd:string ;
 	vcard:tel "860-628-3229"^^vcard:text ;
-	rdfs:label "Southington High School"^^rdfs:Literal .
+	rdfs:label "Southington High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Southington_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Katherine+Brennan%2FClarence+Rogers+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/New+Haven+School+District> ;
@@ -8082,7 +8168,8 @@ East Lyme, CT 06333
 	geo:long "-72.21047892099995"^^xsd:float ;
 	dbo:zipCode "06333"^^xsd:string ;
 	vcard:tel "860-739-6946"^^vcard:text ;
-	rdfs:label "East Lyme High School"^^rdfs:Literal .
+	rdfs:label "East Lyme High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/East_Lyme_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Grace+Alternative+Detention+Center> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Judicial+Centers> ;
@@ -8173,7 +8260,8 @@ West Suffield, CT 06093
 	geo:long "-72.69170818799995"^^xsd:float ;
 	dbo:zipCode "06093"^^xsd:string ;
 	vcard:tel "860-668-3810"^^vcard:text ;
-	rdfs:label "Suffield High School"^^rdfs:Literal .
+	rdfs:label "Suffield High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Suffield_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Goshen+Center+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Regional+School+District+06> ;
@@ -8472,7 +8560,8 @@ Bloomfield, CT 06002
 	geo:long "-72.72214207299999"^^xsd:float ;
 	dbo:zipCode "06002"^^xsd:string ;
 	vcard:tel "860-286-2675"^^vcard:text ;
-	rdfs:label "Laurel School"^^rdfs:Literal .
+	rdfs:label "Laurel School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Laurel_School> .
 
 <http://www.linkedData_Group13.com/resource/Nathan+Hale+School> livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/New+Haven+School+District> ;
 	schema:leiCode "0931411"^^schema:Text ;
@@ -8599,7 +8688,8 @@ North Branford, CT 06471
 	geo:long "-72.80276497999995"^^xsd:float ;
 	dbo:zipCode "06471"^^xsd:string ;
 	vcard:tel "203-484-1465"^^vcard:text ;
-	rdfs:label "North Branford High School"^^rdfs:Literal .
+	rdfs:label "North Branford High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/North_Branford_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Oxford+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Oxford+School+District> ;
@@ -8663,7 +8753,8 @@ East Haven, CT 06513
 	geo:long "-72.83216471199995"^^xsd:float ;
 	dbo:zipCode "06513"^^xsd:string ;
 	vcard:tel "203-468-3254"^^vcard:text ;
-	rdfs:label "East Haven High School"^^rdfs:Literal .
+	rdfs:label "East Haven High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/East_Haven_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Windsor+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Windsor+School+District> ;
@@ -8828,7 +8919,8 @@ Stafford Springs, CT 06076
 	geo:long "-72.30889104799996"^^xsd:float ;
 	dbo:zipCode "06076"^^xsd:string ;
 	vcard:tel "860-684-4233"^^vcard:text ;
-	rdfs:label "Stafford High School"^^rdfs:Literal .
+	rdfs:label "Stafford High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Stafford_Senior_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Poquonock+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Windsor+School+District> ;
@@ -8867,7 +8959,8 @@ Trumbull, CT 06611
 	geo:long "-73.19875744599995"^^xsd:float ;
 	dbo:zipCode "06611"^^xsd:string ;
 	vcard:tel "203-452-4466"^^vcard:text ;
-	rdfs:label "Hillcrest Middle School"^^rdfs:Literal .
+	rdfs:label "Hillcrest Middle School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Hillcrest_Public_School_(Mississauga)> .
 
 <http://www.linkedData_Group13.com/resource/Royle+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Darien+School+District> ;
@@ -9633,7 +9726,8 @@ Rocky Hill, CT 06067
 	geo:long "-72.64501176799996"^^xsd:float ;
 	dbo:zipCode "06067"^^xsd:string ;
 	vcard:tel "860-258-7721"^^vcard:text ;
-	rdfs:label "Rocky Hill High School"^^rdfs:Literal .
+	rdfs:label "Rocky Hill High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Rocky_Hill_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Center+Road+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Vernon+School+District> ;
@@ -9827,7 +9921,8 @@ North Franklin, CT 06254
 	geo:long "-72.12642543099997"^^xsd:float ;
 	dbo:zipCode "06254"^^xsd:string ;
 	vcard:tel "860-642-7063"^^vcard:text ;
-	rdfs:label "Franklin Elementary School"^^rdfs:Literal .
+	rdfs:label "Franklin Elementary School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Redlands_Unified_School_District> .
 
 <http://www.linkedData_Group13.com/resource/Regional+School+District+07> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Regional+School+District+07> ;
@@ -10102,7 +10197,8 @@ Middletown, CT 06457
 	geo:long "-72.67327908799996"^^xsd:float ;
 	dbo:zipCode "06457"^^xsd:string ;
 	vcard:tel "860-344-7100"^^vcard:text ;
-	rdfs:label "Vinal Technical High School"^^rdfs:Literal .
+	rdfs:label "Vinal Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Vinal_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Regional+School+District+19> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Regional+School+District+19> ;
@@ -10153,7 +10249,8 @@ Ellington, CT 06029
 	geo:long "-72.49909600299998"^^xsd:float ;
 	dbo:zipCode "06029"^^xsd:string ;
 	vcard:tel "860-896-2329"^^vcard:text ;
-	rdfs:label "Windermere School"^^rdfs:Literal .
+	rdfs:label "Windermere School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Windermere_School> .
 
 <http://www.linkedData_Group13.com/resource/Litchfield+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Litchfield+School+District> ;
@@ -10191,7 +10288,8 @@ Granby, CT 06035
 	geo:long "-72.79073711999996"^^xsd:float ;
 	dbo:zipCode "06035"^^xsd:string ;
 	vcard:tel "860-844-3014"^^vcard:text ;
-	rdfs:label "Granby Memorial High School"^^rdfs:Literal .
+	rdfs:label "Granby Memorial High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Granby_Memorial_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Coginchaug+Regional+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Regional+School+District+13> ;
@@ -10204,7 +10302,8 @@ Durham, CT 06422
 	geo:long "-72.67140904299998"^^xsd:float ;
 	dbo:zipCode "06422"^^xsd:string ;
 	vcard:tel "860-349-7215"^^vcard:text ;
-	rdfs:label "Coginchaug Regional High School"^^rdfs:Literal .
+	rdfs:label "Coginchaug Regional High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Coginchaug_Regional_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Brass+City+Charter+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Brass+City+Charter+School+District> ;
@@ -10401,7 +10500,8 @@ Milford, CT 06460
 	geo:long "-73.08771866899997"^^xsd:float ;
 	dbo:zipCode "06460"^^xsd:string ;
 	vcard:tel "203-783-3574"^^vcard:text ;
-	rdfs:label "Jonathan Law High School"^^rdfs:Literal .
+	rdfs:label "Jonathan Law High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Jonathan_Law_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Nayaug+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Glastonbury+School+District> ;
@@ -10811,7 +10911,8 @@ Ansonia, CT 06401
 	geo:long "-73.06412113999994"^^xsd:float ;
 	dbo:zipCode "06401"^^xsd:string ;
 	vcard:tel "203-732-1800"^^vcard:text ;
-	rdfs:label "Emmett O'Brien Technical High School"^^rdfs:Literal .
+	rdfs:label "Emmett O'Brien Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Emmett_O'Brien_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Wakelee+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Wolcott+School+District> ;
@@ -10837,7 +10938,8 @@ Winsted, CT 06098
 	geo:long "-73.07180158099999"^^xsd:float ;
 	dbo:zipCode "06098"^^xsd:string ;
 	vcard:tel "860-379-8521"^^vcard:text ;
-	rdfs:label "The Gilbert School"^^rdfs:Literal .
+	rdfs:label "The Gilbert School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Gilbert_School> .
 
 <http://www.linkedData_Group13.com/resource/The+Gilbert+School+District> a livingPlaces:SchoolDistrict ;
 	rdfs:label "The Gilbert School District"^^rdfs:Literal .
@@ -10879,7 +10981,8 @@ Norwich, CT 06360
 	geo:long "-72.08292727399999"^^xsd:float ;
 	dbo:zipCode "06360"^^xsd:string ;
 	vcard:tel "860-887-2505"^^vcard:text ;
-	rdfs:label "Norwich Free Academy"^^rdfs:Literal .
+	rdfs:label "Norwich Free Academy"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Norwich_Free_Academy> .
 
 <http://www.linkedData_Group13.com/resource/Norwich+Free+Academy+District> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Norwich Free Academy District"^^rdfs:Literal .
@@ -11050,7 +11153,8 @@ Wallingford, CT 06492
 	geo:long "-72.82145233399996"^^xsd:float ;
 	dbo:zipCode "06492"^^xsd:string ;
 	vcard:tel "203-294-5350"^^vcard:text ;
-	rdfs:label "Lyman Hall High School"^^rdfs:Literal .
+	rdfs:label "Lyman Hall High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Lyman_Hall_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Hebron+Avenue+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Glastonbury+School+District> ;
@@ -11089,7 +11193,8 @@ Portland, CT 06480
 	geo:long "-72.62478066299997"^^xsd:float ;
 	dbo:zipCode "06480"^^xsd:string ;
 	vcard:tel "860-342-1720"^^vcard:text ;
-	rdfs:label "Portland High School"^^rdfs:Literal .
+	rdfs:label "Portland High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Portland_High_School_(Michigan)> .
 
 <http://www.linkedData_Group13.com/resource/Dr.+John+A.+Langford+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/East+Hartford+School+District> ;
@@ -11166,7 +11271,8 @@ Litchfield, CT 06759
 	geo:long "-73.22465889199998"^^xsd:float ;
 	dbo:zipCode "06759"^^xsd:string ;
 	vcard:tel "860-567-7410"^^vcard:text ;
-	rdfs:label "Wamogo Regional High School"^^rdfs:Literal .
+	rdfs:label "Wamogo Regional High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Wamogo_Regional_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Stafford+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Bristol+School+District> ;
@@ -11413,7 +11519,8 @@ Central Village, CT 06332
 	geo:long "-71.90719612399994"^^xsd:float ;
 	dbo:zipCode "06332"^^xsd:string ;
 	vcard:tel "860-564-6417"^^vcard:text ;
-	rdfs:label "Plainfield High School"^^rdfs:Literal .
+	rdfs:label "Plainfield High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Plainfield_High_School_(Plainfield,_Indiana)> .
 
 <http://www.linkedData_Group13.com/resource/Haddam-Killingworth+Middle+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Regional+School+District+17> ;
@@ -11504,7 +11611,8 @@ Danbury, CT 06811
 	geo:long "-73.45503629399997"^^xsd:float ;
 	dbo:zipCode "06811"^^xsd:string ;
 	vcard:tel "203-797-4751"^^vcard:text ;
-	rdfs:label "Pembroke School"^^rdfs:Literal .
+	rdfs:label "Pembroke School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Pembroke_School,_Adelaide> .
 
 <http://www.linkedData_Group13.com/resource/Julian+Curtiss+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Greenwich+School+District> ;
@@ -11711,7 +11819,8 @@ Bethel, CT 06801
 	geo:long "-73.39426546199996"^^xsd:float ;
 	dbo:zipCode "06801"^^xsd:string ;
 	vcard:tel "203-794-8600"^^vcard:text ;
-	rdfs:label "Bethel High School"^^rdfs:Literal .
+	rdfs:label "Bethel High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Bethel_High_School_(Spanaway,_Washington)> .
 
 <http://www.linkedData_Group13.com/resource/Holmes+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Darien+School+District> ;
@@ -11792,7 +11901,8 @@ Derby, CT 06418
 	geo:long "-73.09994300199997"^^xsd:float ;
 	dbo:zipCode "06418"^^xsd:string ;
 	vcard:tel "203-736-5032"^^vcard:text ;
-	rdfs:label "Derby High School"^^rdfs:Literal .
+	rdfs:label "Derby High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Derby_High_School,_Derby> .
 
 <http://www.linkedData_Group13.com/resource/Augusta+Lewis+Troup+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/New+Haven+School+District> ;
@@ -11892,7 +12002,8 @@ Ashford, CT 06278
 	geo:long "-72.17013517999999"^^xsd:float ;
 	dbo:zipCode "06278"^^xsd:string ;
 	vcard:tel "860-429-6419"^^vcard:text ;
-	rdfs:label "Ashford School"^^rdfs:Literal .
+	rdfs:label "Ashford School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Ashford_School> .
 
 <http://www.linkedData_Group13.com/resource/Ashford+School+District> a livingPlaces:SchoolDistrict ;
 	rdfs:label "Ashford School District"^^rdfs:Literal .
@@ -11959,7 +12070,8 @@ Hamden, CT 06514
 	geo:long "-72.92107402099998"^^xsd:float ;
 	dbo:zipCode "06514"^^xsd:string ;
 	vcard:tel "203-407-2040"^^vcard:text ;
-	rdfs:label "Hamden High School"^^rdfs:Literal .
+	rdfs:label "Hamden High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Hamden_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Claude+Chester+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Groton+School+District> ;
@@ -12062,7 +12174,8 @@ Glastonbury, CT 06033
 	geo:long "-72.59214826299996"^^xsd:float ;
 	dbo:zipCode "06033"^^xsd:string ;
 	vcard:tel "860-652-7200"^^vcard:text ;
-	rdfs:label "Glastonbury High School"^^rdfs:Literal .
+	rdfs:label "Glastonbury High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Glastonbury_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Edgewood+School> livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Bristol+School+District> ;
 	schema:leiCode "0170311"^^schema:Text ;
@@ -12137,7 +12250,8 @@ Manchester, CT 06040
 	geo:long "-72.52829727999995"^^xsd:float ;
 	dbo:zipCode "06040"^^xsd:string ;
 	vcard:tel "860-649-5396"^^vcard:text ;
-	rdfs:label "Howell Cheney Technical High School"^^rdfs:Literal .
+	rdfs:label "Howell Cheney Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Howell_Cheney_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Wethersfield+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Wethersfield+School+District> ;
@@ -12276,7 +12390,8 @@ Milford, CT 06461
 	geo:long "-73.04414578499996"^^xsd:float ;
 	dbo:zipCode "06461"^^xsd:string ;
 	vcard:tel "203-783-5300"^^vcard:text ;
-	rdfs:label "Platt Technical High School"^^rdfs:Literal .
+	rdfs:label "Platt Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Platt_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/The+Bridge+Academy> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/The+Bridge+Academy+District> ;
@@ -12289,7 +12404,8 @@ Bridgeport, CT 06608
 	geo:long "-73.18284298399993"^^xsd:float ;
 	dbo:zipCode "06608"^^xsd:string ;
 	vcard:tel "203-336-9999"^^vcard:text ;
-	rdfs:label "The Bridge Academy"^^rdfs:Literal .
+	rdfs:label "The Bridge Academy"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/The_Bridge_Academy> .
 
 <http://www.linkedData_Group13.com/resource/The+Bridge+Academy+District> a livingPlaces:SchoolDistrict ;
 	rdfs:label "The Bridge Academy District"^^rdfs:Literal .
@@ -12419,7 +12535,8 @@ Hartford, CT 06105
 	geo:long "-72.69556901299995"^^xsd:float ;
 	dbo:zipCode "06105"^^xsd:string ;
 	vcard:tel "860-695-5480"^^vcard:text ;
-	rdfs:label "West Middle School"^^rdfs:Literal .
+	rdfs:label "West Middle School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/West_Seneca_Central_School_District> .
 
 <http://www.linkedData_Group13.com/resource/East+Hartford+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/East+Hartford+School+District> ;
@@ -12544,7 +12661,8 @@ Fairfield, CT 06824
 	geo:long "-73.25786910799997"^^xsd:float ;
 	dbo:zipCode "06824"^^xsd:string ;
 	vcard:tel "203-255-8336"^^vcard:text ;
-	rdfs:label "Tomlinson Middle School"^^rdfs:Literal .
+	rdfs:label "Tomlinson Middle School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Tomlinson_Middle_School> .
 
 <http://www.linkedData_Group13.com/resource/Mauro-Sheridan+Magnet+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/New+Haven+School+District> ;
@@ -12864,7 +12982,8 @@ Norwalk, CT 06854
 	geo:long "-73.43527401899996"^^xsd:float ;
 	dbo:zipCode "06854"^^xsd:string ;
 	vcard:tel "203-852-9488"^^vcard:text ;
-	rdfs:label "Brien McMahon High School"^^rdfs:Literal .
+	rdfs:label "Brien McMahon High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Brien_McMahon_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Blackham+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Bridgeport+School+District> ;
@@ -12929,7 +13048,8 @@ Cheshire, CT 06410
 	geo:long "-72.91799512399996"^^xsd:float ;
 	dbo:zipCode "06410"^^xsd:string ;
 	vcard:tel "203-272-7283"^^vcard:text ;
-	rdfs:label "Norton School"^^rdfs:Literal .
+	rdfs:label "Norton School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Norton_School> .
 
 <http://www.linkedData_Group13.com/resource/Center+School> livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Willington+School+District> ;
 	schema:leiCode "1600111"^^schema:Text ;
@@ -13010,7 +13130,8 @@ Woodbury, CT 06798
 	geo:long "-73.20650918899997"^^xsd:float ;
 	dbo:zipCode "06798"^^xsd:string ;
 	vcard:tel "203-263-2186"^^vcard:text ;
-	rdfs:label "Nonnewaug High School"^^rdfs:Literal .
+	rdfs:label "Nonnewaug High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Nonnewaug_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Stratford+Academy+-+Johnson+House> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Stratford+School+District> ;
@@ -13036,7 +13157,8 @@ Fairfield, CT 06824
 	geo:long "-73.26390551599997"^^xsd:float ;
 	dbo:zipCode "06824"^^xsd:string ;
 	vcard:tel "203-255-7201"^^vcard:text ;
-	rdfs:label "Fairfield Ludlowe High School"^^rdfs:Literal .
+	rdfs:label "Fairfield Ludlowe High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Fairfield_Ludlowe_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Roosevelt+Middle+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/New+Britain+School+District> ;
@@ -13075,7 +13197,8 @@ New Britain, CT 06053
 	geo:long "-72.80746364299995"^^xsd:float ;
 	dbo:zipCode "06053"^^xsd:string ;
 	vcard:tel "860-827-7736"^^vcard:text ;
-	rdfs:label "E. C. Goodwin Technical High School"^^rdfs:Literal .
+	rdfs:label "E. C. Goodwin Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/E._C._Goodwin_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Schaghticoke+Middle+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/New+Milford+School+District> ;
@@ -13266,7 +13389,8 @@ Norwich, CT 06360
 	geo:long "-72.07823625099996"^^xsd:float ;
 	dbo:zipCode "06360"^^xsd:string ;
 	vcard:tel "860-889-8453"^^vcard:text ;
-	rdfs:label "Norwich Technical High School"^^rdfs:Literal .
+	rdfs:label "Norwich Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Norwich_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Braeburn+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/West+Hartford+School+District> ;
@@ -13305,7 +13429,8 @@ Monroe, CT 06468
 	geo:long "-73.19794890499998"^^xsd:float ;
 	dbo:zipCode "06468"^^xsd:string ;
 	vcard:tel "203-452-5823"^^vcard:text ;
-	rdfs:label "Masuk High School"^^rdfs:Literal .
+	rdfs:label "Masuk High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Masuk_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Somers+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Somers+School+District> ;
@@ -13372,7 +13497,8 @@ Enfield, CT 06082
 	geo:long "-72.59226826599996"^^xsd:float ;
 	dbo:zipCode "06082"^^xsd:string ;
 	vcard:tel "860-253-5540"^^vcard:text ;
-	rdfs:label "Enfield High School"^^rdfs:Literal .
+	rdfs:label "Enfield High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Enfield_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Waltersville+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Bridgeport+School+District> ;
@@ -13398,7 +13524,8 @@ Darien, CT 06820
 	geo:long "-73.49869906699996"^^xsd:float ;
 	dbo:zipCode "06820"^^xsd:string ;
 	vcard:tel "203-655-2518"^^vcard:text ;
-	rdfs:label "Middlesex Middle School"^^rdfs:Literal .
+	rdfs:label "Middlesex Middle School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Middlesex_Middle_School> .
 
 <http://www.linkedData_Group13.com/resource/North+Stonington+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/North+Stonington+School+District> ;
@@ -13475,7 +13602,8 @@ Bristol, CT 06010
 	geo:long "-72.95870503599997"^^xsd:float ;
 	dbo:zipCode "06010"^^xsd:string ;
 	vcard:tel "860-584-7735"^^vcard:text ;
-	rdfs:label "Bristol Central High School"^^rdfs:Literal .
+	rdfs:label "Bristol Central High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Bristol_Central_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Bear+Path+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Hamden+School+District> ;
@@ -13696,7 +13824,8 @@ Norwalk, CT 06851
 	geo:long "-73.42613527199995"^^xsd:float ;
 	dbo:zipCode "06851"^^xsd:string ;
 	vcard:tel "203-899-2820"^^vcard:text ;
-	rdfs:label "Briggs High School"^^rdfs:Literal .
+	rdfs:label "Briggs High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Briggs_High_School_(Columbus,_Ohio)> .
 
 <http://www.linkedData_Group13.com/resource/Center+School> livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Litchfield+School+District> ;
 	schema:leiCode "0740211"^^schema:Text ;
@@ -13806,7 +13935,8 @@ New Haven, CT 06511
 	geo:long "-72.90865203999994"^^xsd:float ;
 	dbo:zipCode "06511"^^xsd:string ;
 	vcard:tel "203-946-8728"^^vcard:text ;
-	rdfs:label "Wilbur Cross High School"^^rdfs:Literal .
+	rdfs:label "Wilbur Cross High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Wilbur_Cross_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Orange+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Orange+School+District> ;
@@ -13907,7 +14037,8 @@ Southbury, CT 06488
 	geo:long "-73.16193203199998"^^xsd:float ;
 	dbo:zipCode "06488"^^xsd:string ;
 	vcard:tel "203-262-3200"^^vcard:text ;
-	rdfs:label "Pomperaug Regional High School"^^rdfs:Literal .
+	rdfs:label "Pomperaug Regional High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Pomperaug_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Willington+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Willington+School+District> ;
@@ -14082,7 +14213,8 @@ West Hartford, CT 06117
 	geo:long "-72.74291511999996"^^xsd:float ;
 	dbo:zipCode "06117"^^xsd:string ;
 	vcard:tel "860-233-8236"^^vcard:text ;
-	rdfs:label "King Philip Middle School"^^rdfs:Literal .
+	rdfs:label "King Philip Middle School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/King_Philip_Middle_School> .
 
 <http://www.linkedData_Group13.com/resource/Stafford+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Stafford+School+District> ;
@@ -14251,7 +14383,8 @@ Coventry, CT 06238
 	geo:long "-72.31371922399995"^^xsd:float ;
 	dbo:zipCode "06238"^^xsd:string ;
 	vcard:tel "860-742-7346"^^vcard:text ;
-	rdfs:label "Coventry High School"^^rdfs:Literal .
+	rdfs:label "Coventry High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Coventry_High_School_(Ohio)> .
 
 <http://www.linkedData_Group13.com/resource/Wolfpit+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Norwalk+School+District> ;
@@ -14289,7 +14422,8 @@ Canton, CT 06019
 	geo:long "-72.91511631599997"^^xsd:float ;
 	dbo:zipCode "06019"^^xsd:string ;
 	vcard:tel "860-693-7707"^^vcard:text ;
-	rdfs:label "Canton High School"^^rdfs:Literal .
+	rdfs:label "Canton High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Canton_High_School_(Texas)> .
 
 <http://www.linkedData_Group13.com/resource/Gainfield+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Regional+School+District+15> ;
@@ -14367,7 +14501,8 @@ Wallingford, CT 06492
 	geo:long "-72.81971501199996"^^xsd:float ;
 	dbo:zipCode "06492"^^xsd:string ;
 	vcard:tel "203-294-3700"^^vcard:text ;
-	rdfs:label "Dag  Hammarskjold Middle School"^^rdfs:Literal .
+	rdfs:label "Dag  Hammarskjold Middle School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Dag_Hammarskjold_Middle_School> .
 
 <http://www.linkedData_Group13.com/resource/Meadowside+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Milford+School+District> ;
@@ -14393,7 +14528,8 @@ New Haven, CT 06511
 	geo:long "-72.91406814699997"^^xsd:float ;
 	dbo:zipCode "06511"^^xsd:string ;
 	vcard:tel "203-691-3700"^^vcard:text ;
-	rdfs:label "Worthington Hooker School"^^rdfs:Literal .
+	rdfs:label "Worthington Hooker School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Worthington_Hooker_School> .
 
 <http://www.linkedData_Group13.com/resource/Marine+Science+Magnet+High+School+of+Southeastern+Connecticut> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Learn> ;
@@ -14442,7 +14578,8 @@ Middletown, CT 06457
 	geo:long "-72.68296114699996"^^xsd:float ;
 	dbo:zipCode "06457"^^xsd:string ;
 	vcard:tel "860-632-2158"^^vcard:text ;
-	rdfs:label "Lawrence School"^^rdfs:Literal .
+	rdfs:label "Lawrence School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Lawrence_School_(Sagamore_Hills,_Ohio)> .
 
 <http://www.linkedData_Group13.com/resource/East+Windsor+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/East+Windsor+School+District> ;
@@ -14697,7 +14834,8 @@ Hamden, CT 06514
 	geo:long "-72.94145948099998"^^xsd:float ;
 	dbo:zipCode "06514"^^xsd:string ;
 	vcard:tel "203-397-4031"^^vcard:text ;
-	rdfs:label "Eli Whitney Technical High School"^^rdfs:Literal .
+	rdfs:label "Eli Whitney Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Eli_Whitney_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Stafford+Middle+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Stafford+School+District> ;
@@ -14839,7 +14977,8 @@ Willimantic, CT 06226
 	geo:long "-72.22088664599994"^^xsd:float ;
 	dbo:zipCode "06226"^^xsd:string ;
 	vcard:tel "860-456-3879"^^vcard:text ;
-	rdfs:label "Windham Technical High School"^^rdfs:Literal .
+	rdfs:label "Windham Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Windham_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Plainfield+Memorial+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Plainfield+School+District> ;
@@ -14865,7 +15004,8 @@ Beacon Falls, CT 06403
 	geo:long "-73.08210194799994"^^xsd:float ;
 	dbo:zipCode "06403"^^xsd:string ;
 	vcard:tel "203-881-5551"^^vcard:text ;
-	rdfs:label "Woodland Regional High School"^^rdfs:Literal .
+	rdfs:label "Woodland Regional High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Woodland_Regional_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Bethlehem+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Regional+School+District+14> ;
@@ -14928,7 +15068,8 @@ Rocky Hill, CT 06067
 	geo:long "-72.67895586999998"^^xsd:float ;
 	dbo:zipCode "06067"^^xsd:string ;
 	vcard:tel "860-258-7761"^^vcard:text ;
-	rdfs:label "West Hill School"^^rdfs:Literal .
+	rdfs:label "West Hill School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/West_Hill_School> .
 
 <http://www.linkedData_Group13.com/resource/Highland+Park+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Manchester+School+District> ;
@@ -15107,7 +15248,8 @@ Groton, CT 06340
 	geo:long "-72.02200625999996"^^xsd:float ;
 	dbo:zipCode "06340"^^xsd:string ;
 	vcard:tel "860-448-0220"^^vcard:text ;
-	rdfs:label "Ella T. Grasso Southeastern Technical High School"^^rdfs:Literal .
+	rdfs:label "Ella T. Grasso Southeastern Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Ella_T._Grasso_Southeastern_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Berlin+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Berlin+School+District> ;
@@ -15197,7 +15339,8 @@ CLINTON, CT 06413
 	geo:lat "41.30437798400004"^^xsd:float ;
 	geo:long "-72.52457998699998"^^xsd:float ;
 	dbo:zipCode "06413"^^xsd:string ;
-	vcard:tel "860-664-6500"^^vcard:text .
+	vcard:tel "860-664-6500"^^vcard:text ;
+	owl:sameAs <http://dbpedia.org/resource/Clinton_School_District_(Missouri)> .
 
 <http://www.linkedData_Group13.com/resource/Seymour+Middle+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Seymour+School+District> ;
@@ -15223,7 +15366,8 @@ Woodbridge, CT 06525
 	geo:long "-73.01087710399997"^^xsd:float ;
 	dbo:zipCode "06525"^^xsd:string ;
 	vcard:tel "203-397-4830"^^vcard:text ;
-	rdfs:label "Amity Regional High School"^^rdfs:Literal .
+	rdfs:label "Amity Regional High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Amity_Regional_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Bloomfield+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Bloomfield+School+District> ;
@@ -15264,7 +15408,8 @@ New Haven, CT 06513
 	geo:long "-72.89259652799996"^^xsd:float ;
 	dbo:zipCode "06513"^^xsd:string ;
 	vcard:tel "203-691-3300"^^vcard:text ;
-	rdfs:label "Clinton Avenue School"^^rdfs:Literal .
+	rdfs:label "Clinton Avenue School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Clinton_Avenue_School> .
 
 <http://www.linkedData_Group13.com/resource/Pumpkin+Delight+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Milford+School+District> ;
@@ -15498,7 +15643,8 @@ Manchester, CT 06040
 	geo:long "-72.52829727999995"^^xsd:float ;
 	dbo:zipCode "06040"^^xsd:string ;
 	vcard:tel "860-647-3530"^^vcard:text ;
-	rdfs:label "Manchester High School"^^rdfs:Literal .
+	rdfs:label "Manchester High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Manchester_High_School_(Connecticut)> .
 
 <http://www.linkedData_Group13.com/resource/Renzulli+Academy> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Hartford+School+District> ;
@@ -15653,7 +15799,8 @@ Colchester, CT 06415
 	geo:long "-72.30466662499998"^^xsd:float ;
 	dbo:zipCode "06415"^^xsd:string ;
 	vcard:tel "860-537-2378"^^vcard:text ;
-	rdfs:label "Bacon Academy"^^rdfs:Literal .
+	rdfs:label "Bacon Academy"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Bacon_Academy> .
 
 <http://www.linkedData_Group13.com/resource/Mathewson+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Milford+School+District> ;
@@ -15679,7 +15826,8 @@ Torrington, CT 06790
 	geo:long "-73.11155675799995"^^xsd:float ;
 	dbo:zipCode "06790"^^xsd:string ;
 	vcard:tel "860-496-5300"^^vcard:text ;
-	rdfs:label "Oliver Wolcott Technical High School"^^rdfs:Literal .
+	rdfs:label "Oliver Wolcott Technical High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Oliver_Wolcott_Technical_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Darien+High+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Darien+School+District> ;
@@ -15692,7 +15840,8 @@ Darien, CT 06820
 	geo:long "-73.48981036499998"^^xsd:float ;
 	dbo:zipCode "06820"^^xsd:string ;
 	vcard:tel "203-655-3981"^^vcard:text ;
-	rdfs:label "Darien High School"^^rdfs:Literal .
+	rdfs:label "Darien High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Darien_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Church+Street+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Hamden+School+District> ;
@@ -15744,7 +15893,8 @@ Enfield, CT 06082
 	geo:long "-72.54091120999993"^^xsd:float ;
 	dbo:zipCode "06082"^^xsd:string ;
 	vcard:tel "860-763-8800"^^vcard:text ;
-	rdfs:label "Enrico Fermi High School"^^rdfs:Literal .
+	rdfs:label "Enrico Fermi High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Enrico_Fermi_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Booth+Free+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Regional+School+District+12> ;
@@ -15874,7 +16024,8 @@ Danbury, CT 06810
 	geo:long "-73.44078363399996"^^xsd:float ;
 	dbo:zipCode "06810"^^xsd:string ;
 	vcard:tel "203-797-4786"^^vcard:text ;
-	rdfs:label "Alternative Center For Excellence"^^rdfs:Literal .
+	rdfs:label "Alternative Center For Excellence"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Alternative_Center_for_Excellence> .
 
 <http://www.linkedData_Group13.com/resource/Eastford+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Eastford+School+District> ;
@@ -15977,7 +16128,8 @@ Old Saybrook, CT 06475
 	geo:long "-72.39608650999998"^^xsd:float ;
 	dbo:zipCode "06475"^^xsd:string ;
 	vcard:tel "860-395-3175"^^vcard:text ;
-	rdfs:label "Old Saybrook Senior High School"^^rdfs:Literal .
+	rdfs:label "Old Saybrook Senior High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Old_Saybrook_Senior_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Charles+Wright+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Wethersfield+School+District> ;
@@ -16003,7 +16155,8 @@ Watertown, CT 06795
 	geo:long "-73.10191213099995"^^xsd:float ;
 	dbo:zipCode "06795"^^xsd:string ;
 	vcard:tel "860-945-4810"^^vcard:text ;
-	rdfs:label "Watertown High School"^^rdfs:Literal .
+	rdfs:label "Watertown High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Watertown_High_School_(New_York)> .
 
 <http://www.linkedData_Group13.com/resource/Department+of+Developmental+Services+%28DDS%29%2C+USD+%233> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Department+of+Developmental+Services+%28DDS%29%2C+USD+%233> ;
@@ -16272,7 +16425,8 @@ Hartford, CT 06112
 	geo:long "-72.68171770699996"^^xsd:float ;
 	dbo:zipCode "06112"^^xsd:string ;
 	vcard:tel "860-695-6020"^^vcard:text ;
-	rdfs:label "Global Communications Academy"^^rdfs:Literal .
+	rdfs:label "Global Communications Academy"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Global_Communications_Academy> .
 
 <http://www.linkedData_Group13.com/resource/Southeast+Elementary+School> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Mansfield+School+District> ;
@@ -16545,7 +16699,8 @@ Newington, CT 06111
 	geo:long "-72.73466593499995"^^xsd:float ;
 	dbo:zipCode "06111"^^xsd:string ;
 	vcard:tel "860-666-5611"^^vcard:text ;
-	rdfs:label "Newington High School"^^rdfs:Literal .
+	rdfs:label "Newington High School"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Newington_High_School> .
 
 <http://www.linkedData_Group13.com/resource/Cheshire+School+District> a schema:School ;
 	livingPlaces:pertainToSchoolDistrict <http://www.linkedData_Group13.com/resource/Cheshire+School+District> ;

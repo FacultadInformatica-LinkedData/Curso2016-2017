@@ -21,7 +21,8 @@
 	schema:url <http://www.nypl.org/locations/115th-street> .
 
 <http://www.linkedData_Group13.com/resource/Manhattan> a osadm:Borough ;
-	rdfs:label "Manhattan"^^<rdfs:Literal> .
+	rdfs:label "Manhattan"^^<rdfs:Literal> ;
+	owl:sameAs <http://dbpedia.org/resource/Manhattan> .
 
 <http://www.linkedData_Group13.com/resource/125th+Street+Library> a schema:Library ;
 	geo:long "-73.9348475633247"^^xsd:float ;
@@ -94,7 +95,8 @@
 	schema:url <http://www.nypl.org/locations/allerton> .
 
 <http://www.linkedData_Group13.com/resource/Bronx> a osadm:Borough ;
-	rdfs:label "Bronx"^^<rdfs:Literal> .
+	rdfs:label "Bronx"^^<rdfs:Literal> ;
+	owl:sameAs <http://dbpedia.org/resource/The_Bronx> .
 
 <http://www.linkedData_Group13.com/resource/Andrew+Heiskell+Braille+and+Talking+Book> a schema:Library ;
 	geo:long "-73.99335691118674"^^xsd:float ;
@@ -174,7 +176,8 @@
 	livingPlaces:hasHouseNumber "33"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
 	dbo:zipCode "10002"^^xsd:string ;
-	schema:url <http://www.nypl.org/locations/chatham-square> .
+	schema:url <http://www.nypl.org/locations/chatham-square> ;
+	owl:sameAs <http://dbpedia.org/resource/Chatham_Square> .
 
 <http://www.linkedData_Group13.com/resource/City+Island> a schema:Library ;
 	geo:long "-73.78636658900808"^^xsd:float ;
@@ -227,7 +230,8 @@
 	schema:url <http://www.nypl.org/locations/dongan-hills> .
 
 <http://www.linkedData_Group13.com/resource/Staten+Island> a osadm:Borough ;
-	rdfs:label "Staten Island"^^<rdfs:Literal> .
+	rdfs:label "Staten Island"^^<rdfs:Literal> ;
+	owl:sameAs <http://dbpedia.org/resource/Staten_Island> .
 
 <http://www.linkedData_Group13.com/resource/Eastchester> a schema:Library ;
 	geo:long "-73.84506427532864"^^xsd:float ;
@@ -487,7 +491,8 @@
 	livingPlaces:hasHouseNumber "2900"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
 	dbo:zipCode "10025"^^xsd:string ;
-	schema:url <http://www.nypl.org/locations/morningside-heights> .
+	schema:url <http://www.nypl.org/locations/morningside-heights> ;
+	owl:sameAs <http://dbpedia.org/resource/Morningside_Heights,_Manhattan> .
 
 <http://www.linkedData_Group13.com/resource/Morris+Park> a schema:Library ;
 	geo:long "-73.85695785375374"^^xsd:float ;
@@ -627,7 +632,8 @@
 	livingPlaces:hasHouseNumber "75"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
 	dbo:zipCode "10302"^^xsd:string ;
-	schema:url <http://www.nypl.org/locations/port-richmond> .
+	schema:url <http://www.nypl.org/locations/port-richmond> ;
+	owl:sameAs <http://dbpedia.org/resource/Port_Richmond,_Virginia> .
 
 <http://www.linkedData_Group13.com/resource/Richmondtown> a schema:Library ;
 	geo:long "-74.13853387646311"^^xsd:float ;
@@ -667,7 +673,8 @@
 	livingPlaces:hasHouseNumber "524"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
 	dbo:zipCode "10044"^^xsd:string ;
-	schema:url <http://www.nypl.org/locations/roosevelt-island> .
+	schema:url <http://www.nypl.org/locations/roosevelt-island> ;
+	owl:sameAs <http://dbpedia.org/resource/Roosevelt_Island> .
 
 <http://www.linkedData_Group13.com/resource/Schomburg+Center+for+Research+in+Black+Culture> a schema:Library ;
 	geo:long "-73.94094393837611"^^xsd:float ;
@@ -677,7 +684,8 @@
 	livingPlaces:hasHouseNumber "515"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
 	dbo:zipCode "10037"^^xsd:string ;
-	schema:url <http://www.nypl.org/locations/schomburg> .
+	schema:url <http://www.nypl.org/locations/schomburg> ;
+	owl:sameAs <http://dbpedia.org/resource/Schomburg_Center_for_Research_in_Black_Culture> .
 
 <http://www.linkedData_Group13.com/resource/Science%2C+Industry+and+Business+Library+%28SIBL%29> a schema:Library ;
 	geo:long "-73.98300921762814"^^xsd:float ;
@@ -949,7 +957,8 @@
 	schema:url <http://www.bklynlibrary.org/locations/arlington> .
 
 <http://www.linkedData_Group13.com/resource/Brooklyn> a osadm:Borough ;
-	rdfs:label "Brooklyn"^^<rdfs:Literal> .
+	rdfs:label "Brooklyn"^^<rdfs:Literal> ;
+	owl:sameAs <http://dbpedia.org/resource/Brooklyn> .
 
 <http://www.linkedData_Group13.com/resource/Bay+Ridge> a schema:Library ;
 	geo:long "-74.02953835191357"^^xsd:float ;
@@ -979,7 +988,8 @@
 	livingPlaces:hasHouseNumber "1265"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
 	dbo:zipCode "11219"^^xsd:string ;
-	schema:url <http://www.bklynlibrary.org/locations/borough-park> .
+	schema:url <http://www.bklynlibrary.org/locations/borough-park> ;
+	owl:sameAs <http://dbpedia.org/resource/Borough_Park,_Brooklyn> .
 
 <http://www.linkedData_Group13.com/resource/Brighton+Beach+> a schema:Library ;
 	geo:long "-73.9667748761715"^^xsd:float ;
@@ -989,7 +999,8 @@
 	livingPlaces:hasHouseNumber "16"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
 	dbo:zipCode "11235"^^xsd:string ;
-	schema:url <http://www.bklynlibrary.org/locations/brighton-beach> .
+	schema:url <http://www.bklynlibrary.org/locations/brighton-beach> ;
+	owl:sameAs <http://dbpedia.org/resource/Brighton_Beach> .
 
 <http://www.linkedData_Group13.com/resource/Brooklyn+Heights> a schema:Library ;
 	geo:long "-73.99134798814833"^^xsd:float ;
@@ -1159,7 +1170,8 @@
 	livingPlaces:hasHouseNumber "1044"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
 	dbo:zipCode "11213"^^xsd:string ;
-	schema:url <http://www.bklynlibrary.org/locations/eastern-parkway> .
+	schema:url <http://www.bklynlibrary.org/locations/eastern-parkway> ;
+	owl:sameAs <http://dbpedia.org/resource/Eastern_Parkway> .
 
 <http://www.linkedData_Group13.com/resource/Flatbush> a schema:Library ;
 	geo:long "-73.95824218248399"^^xsd:float ;
@@ -1209,7 +1221,8 @@
 	livingPlaces:hasHouseNumber "303"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
 	dbo:zipCode "11223"^^xsd:string ;
-	schema:url <http://www.bklynlibrary.org/locations/gravesend> .
+	schema:url <http://www.bklynlibrary.org/locations/gravesend> ;
+	owl:sameAs <http://dbpedia.org/resource/Gravesend> .
 
 <http://www.linkedData_Group13.com/resource/Greenpoint> a schema:Library ;
 	geo:long "-73.95069497514092"^^xsd:float ;
@@ -1249,7 +1262,8 @@
 	livingPlaces:hasHouseNumber "9727"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
 	dbo:zipCode "11236"^^xsd:string ;
-	schema:url <http://www.bklynlibrary.org/locations/jamaica-bay> .
+	schema:url <http://www.bklynlibrary.org/locations/jamaica-bay> ;
+	owl:sameAs <http://dbpedia.org/resource/Jamaica_Bay> .
 
 <http://www.linkedData_Group13.com/resource/Kensington> a schema:Library ;
 	geo:long "-73.97543590517284"^^xsd:float ;
@@ -1399,7 +1413,8 @@
 	livingPlaces:hasHouseNumber "431"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
 	dbo:zipCode "11215"^^xsd:string ;
-	schema:url <http://www.bklynlibrary.org/locations/park-slope> .
+	schema:url <http://www.bklynlibrary.org/locations/park-slope> ;
+	owl:sameAs <http://dbpedia.org/resource/Park_Slope> .
 
 <http://www.linkedData_Group13.com/resource/Red+Hook> a schema:Library ;
 	geo:long "-74.0103430690854"^^xsd:float ;
@@ -1692,7 +1707,8 @@
 	livingPlaces:hasHouseNumber "25-01"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Long+Island+City> ;
 	dbo:zipCode "11101"^^xsd:string ;
-	schema:url <http://www.queenslibrary.org/branch/Court-Square?filters=ev_loc:97100000> .
+	schema:url <http://www.queenslibrary.org/branch/Court-Square?filters=ev_loc:97100000> ;
+	owl:sameAs <http://dbpedia.org/resource/Court_Square> .
 
 <http://www.linkedData_Group13.com/resource/Douglaston%2FLittle+Neck> a schema:Library ;
 	geo:long "-73.73822944076473"^^xsd:float ;
@@ -1773,7 +1789,8 @@
 	dbo:zipCode "11375"^^xsd:string ;
 	schema:url <http://www.queenslibrary.org/branch/Forest-Hills?filters=ev_loc:91500000> ;
 	a osadm:Borough ;
-	rdfs:label "Forest Hills"^^<rdfs:Literal> .
+	rdfs:label "Forest Hills"^^<rdfs:Literal> ;
+	owl:sameAs <http://dbpedia.org/resource/Forest_Hills,_Pennsylvania> .
 
 <http://www.linkedData_Group13.com/resource/Fresh+Meadows> a schema:Library ;
 	geo:long "-73.78228143761608"^^xsd:float ;
@@ -1796,6 +1813,7 @@
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Glen+Oaks> ;
 	dbo:zipCode "11004"^^xsd:string ;
 	schema:url <http://www.queenslibrary.org/branch/Glen-Oaks?filters=ev_loc:93300000> ;
+	owl:sameAs <http://dbpedia.org/resource/Glen_Oaks,_Baltimore> ;
 	a osadm:Borough ;
 	rdfs:label "Glen Oaks"^^<rdfs:Literal> .
 
@@ -1886,6 +1904,7 @@
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Laurelton> ;
 	dbo:zipCode "11413"^^xsd:string ;
 	schema:url <http://www.queenslibrary.org/branch/Laurelton?filters=ev_loc:91800000> ;
+	owl:sameAs <http://dbpedia.org/resource/Laurelton,_Pennsylvania> ;
 	a osadm:Borough ;
 	rdfs:label "Laurelton"^^<rdfs:Literal> .
 
@@ -1920,7 +1939,8 @@
 	livingPlaces:hasHouseNumber "37-44"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Long+Island+City> ;
 	dbo:zipCode "11101"^^xsd:string ;
-	schema:url <http://www.queenslibrary.org/branch/Long-Island-City?filters=ev_loc:97300000> .
+	schema:url <http://www.queenslibrary.org/branch/Long-Island-City?filters=ev_loc:97300000> ;
+	owl:sameAs <http://dbpedia.org/resource/Long_Island_City> .
 
 <http://www.linkedData_Group13.com/resource/Maspeth> a schema:Library ;
 	geo:long "-73.89310456490118"^^xsd:float ;
@@ -2053,6 +2073,7 @@
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Queens+Village> ;
 	dbo:zipCode "11428"^^xsd:string ;
 	schema:url <http://www.queenslibrary.org/branch/Queens-Village?filters=ev_loc:91900000> ;
+	owl:sameAs <http://dbpedia.org/resource/Queens_Village_(LIRR_station)> ;
 	a osadm:Borough ;
 	rdfs:label "Queens Village"^^<rdfs:Literal> .
 
@@ -2245,7 +2266,8 @@
 	livingPlaces:hasHouseNumber "79-50"^^xsd:decimal ;
 	dbo:Borough <http://www.linkedData_Group13.com/resource/Bayside> ;
 	dbo:zipCode "11364"^^xsd:string ;
-	schema:url <http://www.queenslibrary.org/branch/Windsor-Park?filters=ev_loc:95900000> .
+	schema:url <http://www.queenslibrary.org/branch/Windsor-Park?filters=ev_loc:95900000> ;
+	owl:sameAs <http://dbpedia.org/resource/Windsor_Park> .
 
 <http://www.linkedData_Group13.com/resource/Woodhaven> a schema:Library ;
 	geo:long "-73.86145741517984"^^xsd:float ;
