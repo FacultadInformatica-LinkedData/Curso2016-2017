@@ -1,0 +1,2043 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column to PK",
+    "oldColumnName": "Column",
+    "newColumnName": "PK"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 2 to NOMBRE",
+    "oldColumnName": "Column 2",
+    "newColumnName": "NOMBRE"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 3 to DESCRIPCION-ENTIDAD",
+    "oldColumnName": "Column 3",
+    "newColumnName": "DESCRIPCION-ENTIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 4 to HORARIO",
+    "oldColumnName": "Column 4",
+    "newColumnName": "HORARIO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 5 to EQUIPAMIENTO",
+    "oldColumnName": "Column 5",
+    "newColumnName": "EQUIPAMIENTO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 6 to TRANSPORTE",
+    "oldColumnName": "Column 6",
+    "newColumnName": "TRANSPORTE"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 7 to DESCRIPCION",
+    "oldColumnName": "Column 7",
+    "newColumnName": "DESCRIPCION"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 8 to ACCESIBILIDAD",
+    "oldColumnName": "Column 8",
+    "newColumnName": "ACCESIBILIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 9 to CONTENT-URL",
+    "oldColumnName": "Column 9",
+    "newColumnName": "CONTENT-URL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 10 to NOMBRE-VIA",
+    "oldColumnName": "Column 10",
+    "newColumnName": "NOMBRE-VIA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 11 to CLASE-VIAL",
+    "oldColumnName": "Column 11",
+    "newColumnName": "CLASE-VIAL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 12 to TIPO-NUM",
+    "oldColumnName": "Column 12",
+    "newColumnName": "TIPO-NUM"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 13 to NUM",
+    "oldColumnName": "Column 13",
+    "newColumnName": "NUM"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 14 to PLANTA",
+    "oldColumnName": "Column 14",
+    "newColumnName": "PLANTA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 15 to PUERTA",
+    "oldColumnName": "Column 15",
+    "newColumnName": "PUERTA"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column PLANTA",
+    "columnName": "PLANTA"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column PUERTA",
+    "columnName": "PUERTA"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 16",
+    "columnName": "Column 16"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 17",
+    "columnName": "Column 17"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 18 to LOCALIDAD",
+    "oldColumnName": "Column 18",
+    "newColumnName": "LOCALIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 19 to PROVINCIA",
+    "oldColumnName": "Column 19",
+    "newColumnName": "PROVINCIA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 20 to CODIGO-POSTAL",
+    "oldColumnName": "Column 20",
+    "newColumnName": "CODIGO-POSTAL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 21 to BARRIO",
+    "oldColumnName": "Column 21",
+    "newColumnName": "BARRIO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 22 to DISTRITO",
+    "oldColumnName": "Column 22",
+    "newColumnName": "DISTRITO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 23 to COORDENADA-X",
+    "oldColumnName": "Column 23",
+    "newColumnName": "COORDENADA-X"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 24 to COORDENADA-Y",
+    "oldColumnName": "Column 24",
+    "newColumnName": "COORDENADA-Y"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 25 to LATITUD",
+    "oldColumnName": "Column 25",
+    "newColumnName": "LATITUD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 26 to LONGITUD",
+    "oldColumnName": "Column 26",
+    "newColumnName": "LONGITUD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 27 to TELEFONO",
+    "oldColumnName": "Column 27",
+    "newColumnName": "TELEFONO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 28",
+    "columnName": "Column 28"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 29 to EMAIL",
+    "oldColumnName": "Column 29",
+    "newColumnName": "EMAIL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 30 to TIPO",
+    "oldColumnName": "Column 30",
+    "newColumnName": "TIPO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 31",
+    "columnName": "Column 31"
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Turismo/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#name",
+              "curie": "group5:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#nombreCalle",
+              "curie": "group5:nombreCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#numeroCalle",
+              "curie": "group5:numeroCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#localidad",
+              "curie": "group5:localidad",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#barrio",
+              "curie": "group5:barrio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#codigoPostal",
+              "curie": "group5:codigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#email",
+              "curie": "group5:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#telefono",
+              "curie": "group5:telefono",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"Turismo/\"+value",
+          "isRowNumberCell": true,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int"
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Turismo/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#name",
+              "curie": "group5:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#nombreCalle",
+              "curie": "group5:nombreCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#numeroCalle",
+              "curie": "group5:numeroCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#localidad",
+              "curie": "group5:localidad",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#barrio",
+              "curie": "group5:barrio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#codigoPostal",
+              "curie": "group5:codigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#email",
+              "curie": "group5:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#telefono",
+              "curie": "group5:telefono",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"Turismo/\"+value",
+          "isRowNumberCell": true,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int"
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Turismo/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#given-name",
+              "curie": "vcard:given-name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#street-address",
+              "curie": "vcard:street-address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#note",
+              "curie": "vcard:note",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#region",
+              "curie": "vcard:region",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#locality",
+              "curie": "vcard:locality",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#postal-code",
+              "curie": "vcard:postal-code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#email",
+              "curie": "vcard:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"Turismo/\"+value",
+          "isRowNumberCell": true,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column NOMBRE to type http://www.wikidata.org/entity/Q49389",
+    "columnName": "NOMBRE",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://www.wikidata.org/entity/Q49389",
+        "name": "Turismo"
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Arte Público (http://www.wikidata.org/entity/Q2283575) for cells containing \"Arte Público (Museo al Aire Libre de la Castellana)\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Arte Público (Museo al Aire Libre de la Castellana)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q2283575",
+      "name": "Museo Arte Público",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Casa Museo Lope de Vega (http://www.wikidata.org/entity/Q948580) for cells containing \"Casa Museo Lope de Vega\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Casa Museo Lope de Vega",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q948580",
+      "name": "Casa Museo Lope de Vega",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Castillo de La Alameda (http://www.wikidata.org/entity/Q8342365) for cells containing \"Castillo de la Alameda\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Castillo de la Alameda",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q8342365",
+      "name": "Castillo de La Alameda",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Casón del Buen Retiro (http://www.wikidata.org/entity/Q3321174) for cells containing \"Casón del Buen Retiro\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Casón del Buen Retiro",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q3321174",
+      "name": "Casón del Buen Retiro",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic La Casa Encendida (http://www.wikidata.org/entity/Q5962732) for cells containing \"Centro Social y Cultural la Casa Encendida\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Social y Cultural la Casa Encendida",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q5962732",
+      "name": "La Casa Encendida",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ermita de San Antonio de la Florida (http://www.wikidata.org/entity/Q3109752) for cells containing \"Ermita de San Antonio de la Florida (Museo)\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Ermita de San Antonio de la Florida (Museo)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q3109752",
+      "name": "Ermita de San Antonio de la Florida",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Monasterio de las Descalzas Reales (http://www.wikidata.org/entity/Q2268271) for cells containing \"Monasterio de las Descalzas Reales\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Monasterio de las Descalzas Reales",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q2268271",
+      "name": "Monasterio de las Descalzas Reales",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo ABC (http://www.wikidata.org/entity/Q21564330) for cells containing \"Museo ABC\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo ABC",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q21564330",
+      "name": "Museo ABC",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Africano (http://www.wikidata.org/entity/Q16335832) for cells containing \"Museo Africano Mundo Negro\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Africano Mundo Negro",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q16335832",
+      "name": "Museo Africano",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Arqueológico Nacional de España (http://www.wikidata.org/entity/Q1352282) for cells containing \"Museo Arqueológico Nacional\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Arqueológico Nacional",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q1352282",
+      "name": "Museo Arqueológico Nacional de España",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Casa de la Moneda (http://www.wikidata.org/entity/Q847038) for cells containing \"Museo Casa de la Moneda\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Casa de la Moneda",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q847038",
+      "name": "Casa de la Moneda",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Cerralbo (http://www.wikidata.org/entity/Q976019) for cells containing \"Museo Cerralbo\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Cerralbo",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q976019",
+      "name": "Museo Cerralbo",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Instituto de Crédito Oficial (http://www.wikidata.org/entity/Q5918089) for cells containing \"Museo Colecciones del Instituto de Crédito Oficial (ICO)\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Colecciones del Instituto de Crédito Oficial (ICO)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q5918089",
+      "name": "Instituto de Crédito Oficial",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic EMT (http://www.wikidata.org/entity/Q407764) for cells containing \"Museo EMT\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo EMT",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q407764",
+      "name": "EMT",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic EMT Madrid (http://dbpedia.org/resource/EMT_Madrid) for cells containing \"Museo EMT\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo EMT",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/EMT_Madrid",
+      "name": "EMT Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Geominero (http://www.wikidata.org/entity/Q13532751) for cells containing \"Museo Geominero\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Geominero",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q13532751",
+      "name": "Museo Geominero",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Fuente de los Caños del Peral (http://www.wikidata.org/entity/Q5870258) for cells containing \"Museo Los Caños del Peral. Estación de Metro Ópera\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Los Caños del Peral. Estación de Metro Ópera",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q5870258",
+      "name": "Fuente de los Caños del Peral",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Lázaro Galdiano (http://www.wikidata.org/entity/Q386570) for cells containing \"Museo Lázaro Galdiano\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Lázaro Galdiano",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q386570",
+      "name": "Museo Lázaro Galdiano",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Nacional Centro de Arte Reina Sofía (http://www.wikidata.org/entity/Q460889) for cells containing \"Museo Nacional Centro de Arte Reina Sofía (MNCARS)\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Nacional Centro de Arte Reina Sofía (MNCARS)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q460889",
+      "name": "Museo Nacional Centro de Arte Reina Sofía",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Nacional de Antropología (http://www.wikidata.org/entity/Q2917041) for cells containing \"Museo Nacional de Antropología\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Nacional de Antropología",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q2917041",
+      "name": "Museo Nacional de Antropología",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Nacional de Artes Decorativas (http://www.wikidata.org/entity/Q5361303) for cells containing \"Museo Nacional de Artes Decorativas\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Nacional de Artes Decorativas",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q5361303",
+      "name": "Museo Nacional de Artes Decorativas",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Nacional de Ciencias Naturales (http://www.wikidata.org/entity/Q1966699) for cells containing \"Museo Nacional de Ciencias Naturales\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Nacional de Ciencias Naturales",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q1966699",
+      "name": "Museo Nacional de Ciencias Naturales",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Naval de Madrid (http://www.wikidata.org/entity/Q1815235) for cells containing \"Museo Naval\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Naval",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q1815235",
+      "name": "Museo Naval de Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Postal y Telegráfico (http://www.wikidata.org/entity/Q6033677) for cells containing \"Museo Postal y Telegráfico\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Postal y Telegráfico",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q6033677",
+      "name": "Museo Postal y Telegráfico",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Sorolla (http://www.wikidata.org/entity/Q1592523) for cells containing \"Museo Sorolla\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Sorolla",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q1592523",
+      "name": "Museo Sorolla",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Plaza de Toros de Las Ventas (http://dbpedia.org/resource/Plaza_de_Toros_de_Las_Ventas) for cells containing \"Museo Taurino de la Plaza de las Ventas\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Taurino de la Plaza de las Ventas",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Plaza_de_Toros_de_Las_Ventas",
+      "name": "Plaza de Toros de Las Ventas",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo Thyssen-Bornemisza (http://www.wikidata.org/entity/Q176251) for cells containing \"Museo Thyssen Bornemisza\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo Thyssen Bornemisza",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q176251",
+      "name": "Museo Thyssen-Bornemisza",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo de Aeronáutica y Astronáutica de España (http://www.wikidata.org/entity/Q11057120) for cells containing \"Museo de Aeronáutica y Astronáutica\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de Aeronáutica y Astronáutica",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q11057120",
+      "name": "Museo de Aeronáutica y Astronáutica de España",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo de América (Madrid) (http://dbpedia.org/resource/Museo_de_América_(Madrid)) for cells containing \"Museo de América\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de América",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Museo_de_América_(Madrid)",
+      "name": "Museo de América (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo de Arte Contemporáneo de Barcelona (http://www.wikidata.org/entity/Q1067140) for cells containing \"Museo de Arte Contemporáneo de Madrid\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de Arte Contemporáneo de Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q1067140",
+      "name": "Museo de Arte Contemporáneo de Barcelona",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo de Arte Contemporáneo (Madrid) (http://dbpedia.org/resource/Museo_de_Arte_Contemporáneo_(Madrid)) for cells containing \"Museo de Arte Contemporáneo de Madrid\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de Arte Contemporáneo de Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Museo_de_Arte_Contemporáneo_(Madrid)",
+      "name": "Museo de Arte Contemporáneo (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo de Astronomía y Geofísica (http://www.wikidata.org/entity/Q17623094) for cells containing \"Museo de Astronomía y Geodesia\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de Astronomía y Geodesia",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q17623094",
+      "name": "Museo de Astronomía y Geofísica",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo de cera (http://www.wikidata.org/entity/Q667018) for cells containing \"Museo de Cera\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de Cera",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q667018",
+      "name": "Museo de cera",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo de Historia de Madrid (http://www.wikidata.org/entity/Q876383) for cells containing \"Museo de Historia de Madrid\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de Historia de Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q876383",
+      "name": "Museo de Historia de Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic San Isidro (http://www.wikidata.org/entity/Q155876) for cells containing \"Museo de San Isidro. Los orígenes de Madrid\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de San Isidro. Los orígenes de Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q155876",
+      "name": "San Isidro",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Biblioteca Nacional de España (http://www.wikidata.org/entity/Q750403) for cells containing \"Museo de la Biblioteca Nacional de España\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de la Biblioteca Nacional de España",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q750403",
+      "name": "Biblioteca Nacional de España",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Catedral de la Almudena (Madrid) (http://dbpedia.org/resource/Almudena_Cathedral) for cells containing \"Museo de la Catedral de la Almudena\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de la Catedral de la Almudena",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Almudena_Cathedral",
+      "name": "Catedral de la Almudena (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Real Academia de Bellas Artes de San Fernando (http://dbpedia.org/resource/Real_Academia_de_Bellas_Artes_de_San_Fernando) for cells containing \"Museo de la Real Academia de Bellas Artes de San Fernando\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo de la Real Academia de Bellas Artes de San Fernando",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Real_Academia_de_Bellas_Artes_de_San_Fernando",
+      "name": "Real Academia de Bellas Artes de San Fernando",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Estadio Vicente Calderon (http://dbpedia.org/resource/Estadio_Vicente_Calderon) for cells containing \"Museo del Atlético de Madrid\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo del Atlético de Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Estadio_Vicente_Calderon",
+      "name": "Estadio Vicente Calderon",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo del Ferrocarril de Madrid (http://www.wikidata.org/entity/Q6034436) for cells containing \"Museo del Ferrocarril de Madrid\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo del Ferrocarril de Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q6034436",
+      "name": "Museo del Ferrocarril de Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo del Prado, Madrid (http://dbpedia.org/resource/Museo_del_Prado,_Madrid) for cells containing \"Museo del Prado\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo del Prado",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Museo_del_Prado,_Madrid",
+      "name": "Museo del Prado, Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo del Romanticismo (Madrid) (http://dbpedia.org/resource/Museum_of_Romanticism_(Madrid)) for cells containing \"Museo del Romanticismo\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo del Romanticismo",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Museum_of_Romanticism_(Madrid)",
+      "name": "Museo del Romanticismo (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Fundación MAPFRE (http://dbpedia.org/resource/Fundación_MAPFRE) for cells containing \"Museo del Seguro. Fundación Mapfre\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo del Seguro. Fundación Mapfre",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Fundación_MAPFRE",
+      "name": "Fundación MAPFRE",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Museo del Traje (http://www.wikidata.org/entity/Q9047135) for cells containing \"Museo del Traje. Centro de Investigación del Patrimonio Etnológico (CIPE)\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Museo del Traje. Centro de Investigación del Patrimonio Etnológico (CIPE)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q9047135",
+      "name": "Museo del Traje",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Palacio Real de Madrid (http://dbpedia.org/resource/Palacio_Real_de_Madrid) for cells containing \"Palacio Real\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Palacio Real",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Palacio_Real_de_Madrid",
+      "name": "Palacio Real de Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Palacio de Liria (http://www.wikidata.org/entity/Q3288223) for cells containing \"Palacio de Liria\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Palacio de Liria",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q3288223",
+      "name": "Palacio de Liria",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Panteón de Hombres Ilustres (http://www.wikidata.org/entity/Q7131757) for cells containing \"Panteón de Hombres Ilustres\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Panteón de Hombres Ilustres",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q7131757",
+      "name": "Panteón de Hombres Ilustres",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Planetario de Madrid (http://www.wikidata.org/entity/Q9060456) for cells containing \"Planetario de Madrid\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Planetario de Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q9060456",
+      "name": "Planetario de Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Real Basílica de San Francisco el Grande (http://www.wikidata.org/entity/Q2473884) for cells containing \"Real Basílica San Francisco el Grande\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Real Basílica San Francisco el Grande",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q2473884",
+      "name": "Real Basílica de San Francisco el Grande",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Real Fábrica de Tapices (http://www.wikidata.org/entity/Q570665) for cells containing \"Real Fábrica de Tapices\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Real Fábrica de Tapices",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q570665",
+      "name": "Real Fábrica de Tapices",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Real Monasterio de Santa Isabel (http://www.wikidata.org/entity/Q9067089) for cells containing \"Real Monasterio de Santa Isabel\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Real Monasterio de Santa Isabel",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q9067089",
+      "name": "Real Monasterio de Santa Isabel",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Real Monasterio de la Encarnación (http://www.wikidata.org/entity/Q205524) for cells containing \"Real Monasterio de la Encarnación\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Real Monasterio de la Encarnación",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q205524",
+      "name": "Real Monasterio de la Encarnación",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic El Pardo (Madrid) (http://dbpedia.org/resource/El_Pardo) for cells containing \"Real Sitio de El Pardo\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Real Sitio de El Pardo",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/El_Pardo",
+      "name": "El Pardo (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Templo de Debod (http://www.wikidata.org/entity/Q1140249) for cells containing \"Templo de Debod\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Templo de Debod",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q1140249",
+      "name": "Templo de Debod",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic yacimiento paleontológico (http://www.wikidata.org/entity/Q9096832) for cells containing \"Yacimiento paleontológico. Estación de Metro Carpetana\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Yacimiento paleontológico. Estación de Metro Carpetana",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q9096832",
+      "name": "yacimiento paleontológico",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Turismo de DBpedia at index 2 based on column NOMBRE using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Turismo de DBpedia",
+    "columnInsertIndex": 2,
+    "baseColumnName": "NOMBRE",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Turismo/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#given-name",
+              "curie": "vcard:given-name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#street-address",
+              "curie": "vcard:street-address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#note",
+              "curie": "vcard:note",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#region",
+              "curie": "vcard:region",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#locality",
+              "curie": "vcard:locality",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#postal-code",
+              "curie": "vcard:postal-code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#email",
+              "curie": "vcard:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"Turismo/\"+value",
+          "isRowNumberCell": true,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int"
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Turismo/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/TouristAttraction",
+              "curie": "schema:TouristAttraction"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#given-name",
+              "curie": "vcard:given-name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#street-address",
+              "curie": "vcard:street-address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#note",
+              "curie": "vcard:note",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#region",
+              "curie": "vcard:region",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#locality",
+              "curie": "vcard:locality",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#postal-code",
+              "curie": "vcard:postal-code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#email",
+              "curie": "vcard:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Turismo de DBpedia",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"Turismo/\"+value",
+          "isRowNumberCell": true,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int"
+        }
+      ]
+    }
+  }
+]
