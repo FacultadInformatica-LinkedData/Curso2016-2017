@@ -1,0 +1,97 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> -
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://semanticweb.es/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://semanticweb.es/assignment5/> .
+
+<TriplesMap1>
+	a rr:TriplesMap;
+	
+	rr:logicalTable [ rr:tableName "city" ];
+	
+	rr:subjectMap [ 
+			rr:template "http://example.com/city#{ID}"; 		
+	];
+	
+	rr:predicateObjectMap
+	[
+		rr:predicate	ex:name;
+		rr:objectMap	[ rr:column "Name" ]
+	];
+	
+	rr:predicateObjectMap
+	[
+		rr:predicate	ex:countryCode;
+		rr:objectMap	[ rr:column "CountryCode" ]
+	];
+	
+	rr:predicateObjectMap
+	[
+		rr:predicate	ex:district;
+		rr:objectMap	[ rr:column "District" ]
+	].
+	
+<TriplesMap2>
+	a rr:TriplesMap;
+	
+	rr:logicalTable [ rr:tableName "country" ];
+	
+	rr:subjectMap [ rr:template "http://example.com/country#{Code}"; ];
+	
+	rr:predicateObjectMap
+	[
+		rr:predicate	ex:name;
+		rr:objectMap	[ rr:column "Name" ]
+	];
+	
+	rr:predicateObjectMap
+	[
+		rr:predicate	ex:continent;
+		rr:objectMap	[ rr:column "Continent" ]
+	];
+	
+	rr:predicateObjectMap
+	[
+		rr:predicate	ex:region;
+		rr:objectMap	[ rr:column "Region" ]
+	].
+	
+<TriplesMap3>
+	a rr:TriplesMap;
+	
+	rr:logicalTable [ rr:tableName "countrylanguage" ];
+	
+	rr:subjectMap [ rr:template "http://example.com/countrylanguage#{CountryCode}"; ];
+	
+	rr:predicateObjectMap
+	[
+		rr:predicate	ex:language;
+		rr:objectMap	[ rr:column "Language" ]
+	];
+	
+	rr:predicateObjectMap
+	[
+		rr:predicate	ex:isofficial;
+		rr:objectMap	[ rr:column "IsOfficial" ]
+	];
+	
+	rr:predicateObjectMap
+	[
+		rr:predicate	ex:percentage;
+		rr:objectMap	[ rr:column "Percentage" ]
+	].
+	
+<LinkMap_1_3>
+	a rr:TriplesMap;
+	
+	rr:logicalTable [ rr:tableName "countrylanguage" ];
+	
+	rr:subjectMap [ rr:template "http://example.com/city#{ID}"; ];
+	
+	rr:predicateObjectMap
+	[
+		rr:predicate	ex:havecountrylanguage;
+		rr:objectMap	[ rr:template "http://example.com/countrylanguage#{CountryCode}" ];
+	].
+	

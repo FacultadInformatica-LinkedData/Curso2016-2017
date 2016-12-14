@@ -1,0 +1,635 @@
+[
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Nombre to type http://schema.org/Place",
+    "columnName": "Nombre",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia-es",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://schema.org/Place",
+        "name": "schema:Place"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Convento de Santa Paula (Sevilla) (http://es.dbpedia.org/resource/Convento_de_Santa_Paula_(Sevilla)) for cells containing \"Convento de Santa Paula (Sevilla)\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Convento de Santa Paula (Sevilla)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Convento_de_Santa_Paula_(Sevilla)",
+      "name": "Convento de Santa Paula (Sevilla)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Iglesia del Divino Salvador (Sevilla) (http://es.dbpedia.org/resource/Iglesia_del_Divino_Salvador_(Sevilla)) for cells containing \"Iglesia del Divino Salvador (Sevilla)\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Iglesia del Divino Salvador (Sevilla)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Iglesia_del_Divino_Salvador_(Sevilla)",
+      "name": "Iglesia del Divino Salvador (Sevilla)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Iglesia de la Magdalena (Sevilla) (http://es.dbpedia.org/resource/Iglesia_de_la_Magdalena_(Sevilla)) for cells containing \"Iglesia de la Magdalena (Sevilla)\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Iglesia de la Magdalena (Sevilla)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Iglesia_de_la_Magdalena_(Sevilla)",
+      "name": "Iglesia de la Magdalena (Sevilla)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Iglesia de San Andres (Sevilla) (http://es.dbpedia.org/resource/Iglesia_de_San_Andres_(Sevilla)) for cells containing \"Iglesia de San Andres (Sevilla)\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Iglesia de San Andres (Sevilla)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Iglesia_de_San_Andres_(Sevilla)",
+      "name": "Iglesia de San Andres (Sevilla)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Iglesia de San Gil (Sevilla) (http://es.dbpedia.org/resource/Iglesia_de_San_Gil_(Sevilla)) for cells containing \"Iglesia de San Gil (Sevilla)\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Iglesia de San Gil (Sevilla)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Iglesia_de_San_Gil_(Sevilla)",
+      "name": "Iglesia de San Gil (Sevilla)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Jardin Americano (http://es.dbpedia.org/resource/Jardin_Americano) for cells containing \"Jardin Americano\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Jardin Americano",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Jardin_Americano",
+      "name": "Jardin Americano",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Centro Andaluz de Arte Contemporaneo (http://es.dbpedia.org/resource/Centro_Andaluz_de_Arte_Contemporaneo) for cells containing \"Centro Andaluz de Arte Contemporaneo\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Centro Andaluz de Arte Contemporaneo",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Centro_Andaluz_de_Arte_Contemporaneo",
+      "name": "Centro Andaluz de Arte Contemporaneo",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Real alcazar (http://es.dbpedia.org/resource/Real_alcazar) for cells containing \"Real alcazar\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Real alcazar",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Real_alcazar",
+      "name": "Real alcazar",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Mercado de Triana (http://es.dbpedia.org/resource/Mercado_de_Triana) for cells containing \"Mercado de Triana\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Mercado de Triana",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Mercado_de_Triana",
+      "name": "Mercado de Triana",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic La Giralda (http://es.dbpedia.org/resource/La_Giralda) for cells containing \"La Giralda\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "La Giralda",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/La_Giralda",
+      "name": "La Giralda",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ayuntamiento de Sevilla (http://es.dbpedia.org/resource/Ayuntamiento_de_Sevilla) for cells containing \"Ayuntamiento de Sevilla\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Ayuntamiento de Sevilla",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Ayuntamiento_de_Sevilla",
+      "name": "Ayuntamiento de Sevilla",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Archivo de Indias de Sevilla (http://es.dbpedia.org/resource/Archivo_de_Indias_de_Sevilla) for cells containing \"Archivo de Indias de Sevilla\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Archivo de Indias de Sevilla",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Archivo_de_Indias_de_Sevilla",
+      "name": "Archivo de Indias de Sevilla",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Plaza Nueva (Sevilla) (http://es.dbpedia.org/resource/Plaza_Nueva_(Sevilla)) for cells containing \"Plaza Nueva (Sevilla)\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Plaza Nueva (Sevilla)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Plaza_Nueva_(Sevilla)",
+      "name": "Plaza Nueva (Sevilla)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Palacio de San Telmo (Sevilla) (http://dbpedia.org/resource/Palace_of_San_Telmo) for cells containing \"Palacio de San Telmo (Sevilla)\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Palacio de San Telmo (Sevilla)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Palace_of_San_Telmo",
+      "name": "Palacio de San Telmo (Sevilla)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Palacio de San Telmo (Sevilla) (http://es.dbpedia.org/resource/Palacio_de_San_Telmo_(Sevilla)) for cells containing \"Palacio de San Telmo (Sevilla)\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Palacio de San Telmo (Sevilla)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Palacio_de_San_Telmo_(Sevilla)",
+      "name": "Palacio de San Telmo (Sevilla)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Palacio arzobispal de Sevilla (http://es.dbpedia.org/resource/Palacio_arzobispal_de_Sevilla) for cells containing \"Palacio arzobispal de Sevilla\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Palacio arzobispal de Sevilla",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Palacio_arzobispal_de_Sevilla",
+      "name": "Palacio arzobispal de Sevilla",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Pabellon de la navegacion (http://es.dbpedia.org/resource/Pabellon_de_la_navegacion) for cells containing \"Pabellon de la navegacion\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Pabellon de la navegacion",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Pabellon_de_la_navegacion",
+      "name": "Pabellon de la navegacion",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Muelle de las Delicias (http://es.dbpedia.org/resource/Muelle_de_las_Delicias) for cells containing \"Muelle de las Delicias\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Muelle de las Delicias",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Muelle_de_las_Delicias",
+      "name": "Muelle de las Delicias",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Parque de Maria Luisa (Sevilla) (http://es.dbpedia.org/resource/Parque_de_Maria_Luisa_(Sevilla)) for cells containing \"Parque de Maria Luisa (Sevilla)\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Parque de Maria Luisa (Sevilla)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Parque_de_Maria_Luisa_(Sevilla)",
+      "name": "Parque de Maria Luisa (Sevilla)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Casa de la Ciencia de Sevilla (http://es.dbpedia.org/resource/Casa_de_la_Ciencia_de_Sevilla) for cells containing \"Casa de la Ciencia de Sevilla\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Casa de la Ciencia de Sevilla",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Casa_de_la_Ciencia_de_Sevilla",
+      "name": "Casa de la Ciencia de Sevilla",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Convento de las Minimas\" in column Nombre",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Nombre",
+    "similarValue": "Convento de las Minimas"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Descripcion",
+    "columnName": "Descripcion"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Tipo",
+    "columnName": "Tipo"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Direccion",
+    "columnName": "Direccion"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Latitud",
+    "columnName": "Latitud"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Longitud",
+    "columnName": "Longitud"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 7",
+    "columnName": "Column 7"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 8",
+    "columnName": "Column 8"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 9",
+    "columnName": "Column 9"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 10",
+    "columnName": "Column 10"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 11",
+    "columnName": "Column 11"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 12",
+    "columnName": "Column 12"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 13",
+    "columnName": "Column 13"
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "Nombre"
+    ]
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/monuments/",
+      "prefixes": [
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column monument's URI from DBpedia at index 1 based on column Nombre using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "monument's URI from DBpedia",
+    "columnInsertIndex": 1,
+    "baseColumnName": "Nombre",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/monuments/",
+      "prefixes": [
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(trim(chomp(value, \" (Sevilla)\")), \" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "Nombre",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/ontology/Monument",
+              "curie": "dbo:Monument"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://dbpedia.org/property/fullname",
+              "curie": "dbp:fullname",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Nombre"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "trim(replace(value,\"(Sevilla)\",\"%28Sevilla%29\"))",
+                "isRowNumberCell": false,
+                "columnName": "monument's URI from DBpedia",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

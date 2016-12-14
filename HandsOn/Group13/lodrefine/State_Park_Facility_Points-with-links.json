@@ -1,0 +1,2717 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Location",
+    "columnName": "Location"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Nature Center using expression grel:if(value.contains(\"Y\"),\"Y\",\"N\")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Nature Center",
+    "expression": "grel:if(value.contains(\"Y\"),\"Y\",\"N\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Beach using expression grel:if(value.contains(\"Y\"),\"Y\",\"N\")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Beach",
+    "expression": "grel:if(value.contains(\"Y\"),\"Y\",\"N\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#StateParkFacility",
+              "curie": "livingPlaces:StateParkFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasParkFacilityType",
+              "curie": "livingPlaces:hasParkFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Category"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToRegion",
+              "curie": "livingPlaces:pertainToRegion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#Region",
+                "columnName": "Region"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToCounty",
+              "curie": "livingPlaces:pertainToCounty",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#County",
+                "columnName": "County"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasGolfCourse",
+              "curie": "livingPlaces:hasGolfCourse",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Golf"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasCampZone",
+              "curie": "livingPlaces:hasCampZone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#booelan",
+                "columnName": "Camp"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasPlayGround",
+              "curie": "livingPlaces:hasPlayGround",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Playground"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#isNatureCenter",
+              "curie": "livingPlaces:isNatureCenter",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#booelan",
+                "columnName": "Nature Center"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasBeach",
+              "curie": "livingPlaces:hasBeach",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Beach"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasUrl",
+              "curie": "livingPlaces:hasUrl",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#anyURI",
+                "columnName": "Facility URL"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasUrl",
+              "curie": "livingPlaces:hasUrl",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#anyURI",
+                "columnName": "Golf URL"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasUrl",
+              "curie": "livingPlaces:hasUrl",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#anyURI",
+                "columnName": "Nature Center URL"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasLongitude",
+              "curie": "livingPlaces:hasLongitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasLatitude",
+              "curie": "livingPlaces:hasLatitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": true,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#StateParkFacility",
+              "curie": "livingPlaces:StateParkFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasParkFacilityType",
+              "curie": "livingPlaces:hasParkFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Category"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToRegion",
+              "curie": "livingPlaces:pertainToRegion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#Region",
+                "columnName": "Region"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/county",
+              "curie": "dbo:county",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://data.ordnancesurvey.co.uk/ontology/admingeo/County",
+                "columnName": "County"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasGolfCourse",
+              "curie": "livingPlaces:hasGolfCourse",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Golf"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasCampZone",
+              "curie": "livingPlaces:hasCampZone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#booelan",
+                "columnName": "Camp"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasPlayGround",
+              "curie": "livingPlaces:hasPlayGround",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Playground"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#isNatureCenter",
+              "curie": "livingPlaces:isNatureCenter",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#booelan",
+                "columnName": "Nature Center"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasBeach",
+              "curie": "livingPlaces:hasBeach",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Beach"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasUrl",
+              "curie": "livingPlaces:hasUrl",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#anyURI",
+                "columnName": "Facility URL"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasUrl",
+              "curie": "livingPlaces:hasUrl",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#anyURI",
+                "columnName": "Golf URL"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasUrl",
+              "curie": "livingPlaces:hasUrl",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#anyURI",
+                "columnName": "Nature Center URL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": true,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#StateParkFacility",
+              "curie": "livingPlaces:StateParkFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasParkFacilityType",
+              "curie": "livingPlaces:hasParkFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Category"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/county",
+              "curie": "dbo:county",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://data.ordnancesurvey.co.uk/ontology/admingeo/County",
+                "columnName": "County"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasGolfCourse",
+              "curie": "livingPlaces:hasGolfCourse",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Golf"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasCampZone",
+              "curie": "livingPlaces:hasCampZone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#booelan",
+                "columnName": "Camp"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasPlayGround",
+              "curie": "livingPlaces:hasPlayGround",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Playground"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#isNatureCenter",
+              "curie": "livingPlaces:isNatureCenter",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#booelan",
+                "columnName": "Nature Center"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasBeach",
+              "curie": "livingPlaces:hasBeach",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Beach"
+              }
+            },
+            {
+              "uri": "http://schema.org/url",
+              "curie": "schema:url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/URL",
+                "columnName": "Facility URL"
+              }
+            },
+            {
+              "uri": "http://schema.org/url",
+              "curie": "schema:url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/URL",
+                "columnName": "Golf URL"
+              }
+            },
+            {
+              "uri": "http://schema.org/url",
+              "curie": "schema:url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/URL",
+                "columnName": "Nature Center URL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#StateParkFacility",
+              "curie": "livingPlaces:StateParkFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasParkFacilityType",
+              "curie": "livingPlaces:hasParkFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Category"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/county",
+              "curie": "dbo:county",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://data.ordnancesurvey.co.uk/ontology/admingeo/County",
+                "columnName": "County"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasGolfCourse",
+              "curie": "livingPlaces:hasGolfCourse",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Golf"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasCampZone",
+              "curie": "livingPlaces:hasCampZone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#booelan",
+                "columnName": "Camp"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasPlayGround",
+              "curie": "livingPlaces:hasPlayGround",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Playground"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#isNatureCenter",
+              "curie": "livingPlaces:isNatureCenter",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#booelan",
+                "columnName": "Nature Center"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasBeach",
+              "curie": "livingPlaces:hasBeach",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Beach"
+              }
+            },
+            {
+              "uri": "http://schema.org/url",
+              "curie": "schema:url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/URL",
+                "columnName": "Facility URL"
+              }
+            },
+            {
+              "uri": "http://schema.org/url",
+              "curie": "schema:url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/URL",
+                "columnName": "Golf URL"
+              }
+            },
+            {
+              "uri": "http://schema.org/url",
+              "curie": "schema:url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/URL",
+                "columnName": "Nature Center URL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Name to type http://umbel.org/umbel/rc/Park",
+    "columnName": "Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://umbel.org/umbel/rc/Park",
+        "name": "umbelrc:Park"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Name to type http://dbpedia.org/class/yago/Park108615149",
+    "columnName": "Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/Park108615149",
+        "name": "yago:Park108615149"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Name to type http://dbpedia.org/ontology/Place",
+    "columnName": "Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/Place",
+        "name": "dbo:Place"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Beaver Island Head Light (http://dbpedia.org/resource/Beaver_Island_Head_Light) for cells containing \"Beaver Island\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Beaver Island",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Beaver_Island_Head_Light",
+      "name": "Beaver Island Head Light",
+      "score": 0.5416666269302368,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Buckhorn Island State Park (http://dbpedia.org/resource/Buckhorn_Island_State_Park) for cells containing \"Buckhorn Island\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Buckhorn Island",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Buckhorn_Island_State_Park",
+      "name": "Buckhorn Island State Park",
+      "score": 0.5769230723381042,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Earl W. Brydges Artpark State Park (http://dbpedia.org/resource/Earl_W._Brydges_Artpark_State_Park) for cells containing \"Earl W. Brydges Artpark\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Earl W. Brydges Artpark",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Earl_W._Brydges_Artpark_State_Park",
+      "name": "Earl W. Brydges Artpark State Park",
+      "score": 0.6764705777168274,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Evangola State Park (http://dbpedia.org/resource/Evangola_State_Park) for cells containing \"Evangola\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Evangola",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Evangola_State_Park",
+      "name": "Evangola State Park",
+      "score": 0.42105263471603394,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Joseph Davis State Park (http://dbpedia.org/resource/Joseph_Davis_State_Park) for cells containing \"Joseph Davis\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Joseph Davis",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Joseph_Davis_State_Park",
+      "name": "Joseph Davis State Park",
+      "score": 0.52173912525177,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Knox Farm Historic District (http://dbpedia.org/resource/Knox_Farm_Historic_District) for cells containing \"Knox Farm\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Knox Farm",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Knox_Farm_Historic_District",
+      "name": "Knox Farm Historic District",
+      "score": 0.3333333134651184,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Whirlpool Rapids (http://dbpedia.org/resource/Niagara_Whirlpool) for cells containing \"Whirlpool\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Whirlpool",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Niagara_Whirlpool",
+      "name": "Whirlpool Rapids",
+      "score": 0.5625,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Wilson-Tuscarora State Park (http://dbpedia.org/resource/Wilson-Tuscarora_State_Park) for cells containing \"Wilson-Tuscarora\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Wilson-Tuscarora",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Wilson-Tuscarora_State_Park",
+      "name": "Wilson-Tuscarora State Park",
+      "score": 0.5925925970077515,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Woodlawn Beach State Park (http://dbpedia.org/resource/Woodlawn_Beach_State_Park) for cells containing \"Woodlawn Beach\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Woodlawn Beach",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Woodlawn_Beach_State_Park",
+      "name": "Woodlawn Beach State Park",
+      "score": 0.5600000023841858,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Allegany State Park (http://dbpedia.org/resource/Allegany_State_Park) for cells containing \"Allegany\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Allegany",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Allegany_State_Park",
+      "name": "Allegany State Park",
+      "score": 0.42105263471603394,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Lake Erie Metropark (http://dbpedia.org/resource/Lake_Erie_Metropark) for cells containing \"Lake Erie\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Lake Erie",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Lake_Erie_Metropark",
+      "name": "Lake Erie Metropark",
+      "score": 0.4736841917037964,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Hamlin Beach State Park (http://dbpedia.org/resource/Hamlin_Beach_State_Park) for cells containing \"Hamlin Beach\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Hamlin Beach",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Hamlin_Beach_State_Park",
+      "name": "Hamlin Beach State Park",
+      "score": 0.52173912525177,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Allan H. Treman State Marine Park (http://dbpedia.org/resource/Allan_H._Treman_State_Marine_Park) for cells containing \"Allan H. Treman\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Allan H. Treman",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Allan_H._Treman_State_Marine_Park",
+      "name": "Allan H. Treman State Marine Park",
+      "score": 0.45454543828964233,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Bonavista State Park Golf Course (http://dbpedia.org/resource/Bonavista_State_Park_Golf_Course) for cells containing \"Bonavista\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Bonavista",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Bonavista_State_Park_Golf_Course",
+      "name": "Bonavista State Park Golf Course",
+      "score": 0.28125,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Chimney Bluffs State Park (http://dbpedia.org/resource/Chimney_Bluffs_State_Park) for cells containing \"Chimney Bluffs\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Chimney Bluffs",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Chimney_Bluffs_State_Park",
+      "name": "Chimney Bluffs State Park",
+      "score": 0.5600000023841858,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Buttermilk Falls State Park (http://dbpedia.org/resource/Buttermilk_Falls_State_Park) for cells containing \"Buttermilk Falls\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Buttermilk Falls",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Buttermilk_Falls_State_Park",
+      "name": "Buttermilk Falls State Park",
+      "score": 0.5925925970077515,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Fillmore Glen State Park (http://dbpedia.org/resource/Fillmore_Glen_State_Park) for cells containing \"Fillmore Glen\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Fillmore Glen",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Fillmore_Glen_State_Park",
+      "name": "Fillmore Glen State Park",
+      "score": 0.5416666269302368,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Harriet Hollister Spencer State Recreation Area (http://dbpedia.org/resource/Harriet_Hollister_Spencer_State_Recreation_Area) for cells containing \"Harriet Hollister Spencer\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Harriet Hollister Spencer",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Harriet_Hollister_Spencer_State_Recreation_Area",
+      "name": "Harriet Hollister Spencer State Recreation Area",
+      "score": 0.5319148898124695,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Mark Twain Golf Course (http://dbpedia.org/resource/Mark_Twain_Golf_Course) for cells containing \"Mark Twain\" in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name",
+    "similarValue": "Mark Twain",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Mark_Twain_Golf_Course",
+      "name": "Mark Twain Golf Course",
+      "score": 0.45454543828964233,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-match-best-candidates",
+    "description": "Match each cell to its best recon candidate in column Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "Name"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column dbo:Place at index 1 based on column Name using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "newColumnName": "dbo:Place",
+    "columnInsertIndex": 1,
+    "baseColumnName": "Name",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#StateParkFacility",
+              "curie": "livingPlaces:StateParkFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasParkFacilityType",
+              "curie": "livingPlaces:hasParkFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Category"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/county",
+              "curie": "dbo:county",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://data.ordnancesurvey.co.uk/ontology/admingeo/County",
+                "columnName": "County"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasGolfCourse",
+              "curie": "livingPlaces:hasGolfCourse",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Golf"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasCampZone",
+              "curie": "livingPlaces:hasCampZone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#booelan",
+                "columnName": "Camp"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasPlayGround",
+              "curie": "livingPlaces:hasPlayGround",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Playground"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#isNatureCenter",
+              "curie": "livingPlaces:isNatureCenter",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#booelan",
+                "columnName": "Nature Center"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasBeach",
+              "curie": "livingPlaces:hasBeach",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Beach"
+              }
+            },
+            {
+              "uri": "http://schema.org/url",
+              "curie": "schema:url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/URL",
+                "columnName": "Facility URL"
+              }
+            },
+            {
+              "uri": "http://schema.org/url",
+              "curie": "schema:url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/URL",
+                "columnName": "Golf URL"
+              }
+            },
+            {
+              "uri": "http://schema.org/url",
+              "curie": "schema:url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/URL",
+                "columnName": "Nature Center URL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#County",
+              "curie": "livingPlaces:County"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "County"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column County to type http://dbpedia.org/ontology/Place",
+    "columnName": "County",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/Place",
+        "name": "dbo:Place"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column County to type http://dbpedia.org/class/yago/County108546183",
+    "columnName": "County",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/County108546183",
+        "name": "yago:County108546183"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Erie County (http://dbpedia.org/resource/Erie_County,_New_York) for cells containing \"Erie\" in column County",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "County",
+    "similarValue": "Erie",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Erie_County,_New_York",
+      "name": "Erie County",
+      "score": 0.3636363744735718,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Niagara County (http://dbpedia.org/resource/Niagara_County,_New_York) for cells containing \"Niagara\" in column County",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "County",
+    "similarValue": "Niagara",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Niagara_County,_New_York",
+      "name": "Niagara County",
+      "score": 0.5,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Cattaraugus County, New York (http://dbpedia.org/resource/Cattaraugus_County,_New_York) for cells containing \"Cattaraugus\" in column County",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "County",
+    "similarValue": "Cattaraugus",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Cattaraugus_County,_New_York",
+      "name": "Cattaraugus County, New York",
+      "score": 0.3928571343421936,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-match-best-candidates",
+    "description": "Match each cell to its best recon candidate in column County",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "columnName": "County"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column yago:County at index 5 based on column County using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.281,
+          "to": 0.834,
+          "type": "range",
+          "columnName": "Name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Name: best candidate's score",
+          "from": 0.17,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "Name"
+        }
+      ]
+    },
+    "newColumnName": "yago:County",
+    "columnInsertIndex": 5,
+    "baseColumnName": "County",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#StateParkFacility",
+              "curie": "livingPlaces:StateParkFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasParkFacilityType",
+              "curie": "livingPlaces:hasParkFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Category"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/county",
+              "curie": "dbo:county",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://data.ordnancesurvey.co.uk/ontology/admingeo/County",
+                "columnName": "County"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasGolfCourse",
+              "curie": "livingPlaces:hasGolfCourse",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Golf"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasCampZone",
+              "curie": "livingPlaces:hasCampZone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#booelan",
+                "columnName": "Camp"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasPlayGround",
+              "curie": "livingPlaces:hasPlayGround",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Playground"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#isNatureCenter",
+              "curie": "livingPlaces:isNatureCenter",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#booelan",
+                "columnName": "Nature Center"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasBeach",
+              "curie": "livingPlaces:hasBeach",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "Beach"
+              }
+            },
+            {
+              "uri": "http://schema.org/url",
+              "curie": "schema:url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/URL",
+                "columnName": "Facility URL"
+              }
+            },
+            {
+              "uri": "http://schema.org/url",
+              "curie": "schema:url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/URL",
+                "columnName": "Golf URL"
+              }
+            },
+            {
+              "uri": "http://schema.org/url",
+              "curie": "schema:url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/URL",
+                "columnName": "Nature Center URL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dbo:Place",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#County",
+              "curie": "livingPlaces:County"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "County"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "yago:County",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

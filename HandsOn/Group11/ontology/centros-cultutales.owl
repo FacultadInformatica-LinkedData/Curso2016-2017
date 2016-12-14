@@ -13,16 +13,13 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#centros"/>
+        <Class IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#tieneBarrio"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#tiposcentros"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#direccion"/>
+        <Class IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Lugar"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#tieneDistrito"/>
@@ -31,10 +28,10 @@
         <ObjectProperty IRI="#tieneTransporte"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#tieneCalle"/>
+        <Class IRI="#Centros"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#distritos"/>
+        <ObjectProperty IRI="#tieneCalle"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#tieneTipo"/>
@@ -43,13 +40,25 @@
         <ObjectProperty IRI="#tieneTelefono"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Tipo"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#tieneEmail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Direccion"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#tieneCodigoPostal"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#barrios"/>
+        <Class IRI="#TiposCentros"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distritos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Barrios"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#tieneDireccion"/>
@@ -57,21 +66,29 @@
     <Declaration>
         <ObjectProperty IRI="#tieneNumero"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#tiene_un"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#se_realiza_en"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#pertenece_a"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#es_realizado"/>
+    </Declaration>
     <SubClassOf>
-        <Class IRI="#barrios"/>
-        <Class IRI="#distritos"/>
+        <Class IRI="#Barrios"/>
+        <Class IRI="#Distritos"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#distritos"/>
-        <Class IRI="#direccion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#tiposcentros"/>
-        <Class IRI="#centros"/>
+        <Class IRI="#TiposCentros"/>
+        <Class IRI="#Centros"/>
     </SubClassOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#tieneBarrio"/>
-        <ObjectProperty IRI="#tieneDireccion"/>
+        <ObjectProperty IRI="#tieneDistrito"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#tieneCalle"/>
@@ -79,16 +96,64 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#tieneCodigoPostal"/>
-        <ObjectProperty IRI="#tieneDireccion"/>
+        <ObjectProperty IRI="#tieneDistrito"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#tieneDistrito"/>
-        <ObjectProperty IRI="#tieneDireccion"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#tieneNumero"/>
         <ObjectProperty IRI="#tieneDireccion"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#es_realizado"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#pertenece_a"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#se_realiza_en"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#tiene_un"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#es_realizado"/>
+        <Class IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Lugar"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#pertenece_a"/>
+        <Class IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Tipo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#se_realiza_en"/>
+        <Class IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#tiene_un"/>
+        <Class IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#es_realizado"/>
+        <Class IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#pertenece_a"/>
+        <Class IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Evento"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#se_realiza_en"/>
+        <Class IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Lugar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#tiene_un"/>
+        <Class IRI="http://www.semanticweb.org/albertcp/ontologies/2016/10/untitled-ontology-5#Tipo"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 
