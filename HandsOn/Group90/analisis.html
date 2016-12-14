@@ -9,9 +9,9 @@
 	<body>
 		<h2>Análisis de la fuente y licencia de los datos:</h2>
 		
-			<li> El data set recoge información sobre los diferentes museos, exposiciones, eventos, etc que se producen en Leeds.</li>
-			<li> Las columnas se organizan en: Extract date, Organisation URI, Organisation label, Service type URI, Service type label, Programme , Event title , Event description , Event type, Site name, Month,Date and time, Audience / Type, Ticket price y Booking information.</li>
-			<li> En total hay 437 entradas en el Data Set. </li>	
+			<li> El data set recoge información sobre los semáforos con cámara para la sanción de conductores cuando cruzan en rojo.</li>
+			<li> Las columnas se organizan en: IdElem, Nombre, Activo, Barrio, Icruce, UTM_x , UTM_y y Comunidad.</li>
+			<li> En total hay 44 entradas en el Data Set. </li>	
 			<br>
 			
 
@@ -19,27 +19,19 @@
 				 <TABLE BORDER="3" CELLSPACING="3" WIDTH="70%"> 
  					<tr><TH BGCOLOR="#CEE3F6">Nombre</th><TH BGCOLOR="#CEE3F6">Tipo</th><TH BGCOLOR="#CEE3F6">Información</th>
  					</tr>
- 					<tr> <td>Organisation URI</td><td>String</td><td>URI de la organizadora del evento</td></tr>
- 					<tr> <td>Organisation Label</td><td>String</td><td>Nombre de la localidad</td></tr>
- 					<tr> <td>Service type URI</td><td>String</td><td>URI del tipo de servicio</td></tr>
- 					<tr> <td>Service type label</td><td>String</td><td>Nombre del tipo de servicio</td></tr>
- 					<tr> <td>Programme</td><td>String</td><td>Tipo del programa</td></tr>
- 					<tr> <td>Event title</td><td>String</td><td>Titulo del evento</td></tr>
- 					<tr> <td>Event description</td><td>String</td><td>Descripción del evento</td></tr>
- 					<tr> <td>Event type</td><td>String</td><td>Tipo del evento</td></tr>
- 					<tr> <td>Site name</td><td>String</td><td>Lugar del evento</td></tr>
- 					<tr> <td>Month</td><td>String</td><td>Mes del evento</td></tr>
- 					<tr> <td>Date and time</td><td>String</td><td>Comentario sobre la hora de inicio y la duración del evento</td></tr>
- 					<tr> <td>Audience/Type</td><td>String</td><td>Tipo de público</td></tr>
- 					<tr> <td>Ticket price</td><td>String</td><td>Precio del evento</td></tr>
- 					<tr> <td>Booking information</td><td>String</td><td>Teléfono y mail de reserva</td></tr>
- 					
+ 					<tr> <td>IdElem</td><td>Entero</td><td>Identificación única del elemento en el Ayuntamiento de Madrid</td></tr>
+ 					<tr> <td>Nombre</td><td>String</td><td>Nombre del equipo</td></tr>
+ 					<tr> <td>Activo</td><td>Entero</td><td>Indicador del estado del equipo: 1 = Activo y sancionando. 0 = Previsto o en pruebas pero sin sancionar.</td></tr>
+ 					<tr> <td>Barrio</td><td>String</td><td>Número del distrito donde está ubicado el equipo</td></tr>
+ 					<tr> <td>UTM_x</td><td>Double</td><td>Coordenada UTM X de la ubicación del equipo</td></tr>
+ 					<tr> <td>UTM_y</td><td>Double</td><td>Coordenada UTM Y de la ubicación del equipo</td></tr>
+ 					<tr> <td>Comunidad</td><td>String</td><td>Comunidad autonómica donde está ubicado el equipo</td></tr>
  				</table>
 
  		<h2>Análisis de la licencia sobre los datos:</h2>
 
  	 	<body>
- 	 		El data set está bajo la licencia Open Goverment License for public sector information.<br> 
+ 	 		Las condiciones generales permiten la reutilización de los documentos para fines comerciales y no comerciales. Se entiende por reutilización el uso de documentos que obran en poder del Ayuntamiento de Madrid, siempre que dicho uso no constituya una actividad administrativa pública.<br> 
 
  	 		Esta licencia nos permite:<br> 
  	 		
@@ -56,32 +48,25 @@
 		<h2>Análisis de la estrategia de nombrado:</h2>
 		
 		<body>
-			El nivel superior en nuestra estretegia de nombrado de recursos es: www.websemG90.es<BR> <br>
+			El nivel superior en nuestra estretegia de nombrado de recursos es: www.semanticweb.org/g90/ontology<BR> <br>
 
 <table>
  <TABLE BORDER="3" CELLSPACING="3" WIDTH="70%"> 
 <tr> <TH BGCOLOR="#CEE3F6">Entidad</th><TH BGCOLOR="#CEE3F6">URI</th></tr>
-<tr> <th>Evento</th><th>www.websemG90.es/resource/Evento/"eventoId"</th></tr>
-<tr> <th>Servicio</th><th>www.websemG90.es/resource/Servicio/"servicioId"</th></tr>
-<tr> <th>Organizador</th><th>www.websemG90.es/resource/Organizador/"organizadorId"</th></tr>
+<tr> <th>Camara</th><th>www.semanticweb.org/g90/ontology#Camara</th></tr>
 </table>
 <br>
 <br>
 <table>
  <TABLE BORDER="3" CELLSPACING="3" WIDTH="70%"> 
 <tr> <TH BGCOLOR="#CEE3F6">Data Properties</th><TH BGCOLOR="#CEE3F6">URI</th></tr>
-<tr> <th>Tipo Evento</th><th>www.websemG90.es/ontology#tipoEvento</th></tr>
-<tr> <th>Descripcion</th><th>www.websemG90.es/ontology#descripcion</th></tr>
-<tr> <th>Programa</th><th>www.websemG90.es/ontology#programa</th></tr>
-<tr> <th>Nombre del evento</th><th>www.websemG90.es/ontology#nomEvento</th></tr>
-<tr> <th>Mes</th><th>www.websemG90.es/ontology#mesEvento</th></tr>
-<tr> <th>Date Evento</th><th>www.websemG90.es/ontology#dateEvento</th></tr>
-<tr> <th>Lugar Evento</th><th>www.websemG90.es/ontology#lugarEvento</th></tr>
-<tr> <th>Publico</th><th>www.websemG90.es/ontology#publicoEvento</th></tr>
-<tr> <th>Info de reserva</th><th>www.websemG90.es/ontology#infoReserva</th></tr>
-<tr> <th>Precio</th><th>www.websemG90.es/ontology#Precio</th></tr>	 
-<tr> <th>Nombre Servicio</th><th>www.websemG90.es/ontology#nomServicio</th></tr>
-<tr> <th>Nombre Organizador</th><th>www.websemG90.es/ontology#nomOrg</th></tr>
+<tr> <th>IdElem</th><th>www.semanticweb.org/g90/ontology#idElem</th></tr>
+<tr> <th>Nombre</th><th>www.semanticweb.org/g90/ontology#nomEquipo</th></tr>
+<tr> <th>Activo</th><th>www.semanticweb.org/g90/ontology#activo</th></tr>
+<tr> <th>Barrio</th><th>www.semanticweb.org/g90/ontology#barrio</th></tr>
+<tr> <th>UTM_x</th><th>www.semanticweb.org/g90/ontology#utm_x</th></tr>
+<tr> <th>UTM_y</th><th>www.semanticweb.org/g90/ontology#utm_y</th></tr>
+<tr> <th>Comunidad</th><th>www.semanticweb.org/g90/ontology#comunidad</th></tr>
 </table>
 		</body>
 
