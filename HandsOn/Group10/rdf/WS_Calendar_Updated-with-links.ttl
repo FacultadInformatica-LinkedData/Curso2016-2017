@@ -1,0 +1,28 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g10: <http://smartsevilla.es/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://smartsevilla.es/resources/services/INVFES85> a dbo:service ;
+	g10:service_id "INVFES85"^^<xsd:string> ;
+	g10:start_date "20160110"^^xsd:date ;
+	g10:end_date "20160630"^^xsd:date .
+
+<http://smartsevilla.es/resources/services/INVLAB85> a dbo:service ;
+	g10:service_id "INVLAB85"^^<xsd:string> ;
+	g10:start_date "20160107"^^xsd:date ;
+	g10:end_date "20160630"^^xsd:date .
+
+<http://smartsevilla.es/resources/services/INVSAB85> a dbo:service ;
+	g10:service_id "INVSAB85"^^<xsd:string> ;
+	g10:start_date "20160109"^^xsd:date ;
+	g10:end_date "20160630"^^xsd:date .
+
+<http://smartsevilla.es/resources/services/INVVIE85> a dbo:service ;
+	g10:service_id "INVVIE85"^^<xsd:string> ;
+	g10:start_date "20160108"^^xsd:date ;
+	g10:end_date "20160630"^^xsd:date .
