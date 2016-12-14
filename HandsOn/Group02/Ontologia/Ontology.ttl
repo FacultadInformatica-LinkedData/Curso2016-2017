@@ -16,18 +16,31 @@
 #################################################################
 
 
-###  http://www.semanticweb.org/webSemantica/grupo02/#tieneDireccion
+###  http://www.semanticweb.org/webSemantica/grupo02/#tieneDireccion-Banio
 
-<http://www.semanticweb.org/webSemantica/grupo02/#tieneDireccion> rdf:type owl:ObjectProperty ;
-                                                                  
-                                                                  rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Banio> ,
-                                                                              <http://www.semanticweb.org/webSemantica/grupo02/#Restaurante> .
+<http://www.semanticweb.org/webSemantica/grupo02/#tieneDireccion-Banio> rdf:type owl:ObjectProperty ;
+                                                                        
+                                                                        rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Banio> ;
+                                                                        
+                                                                        rdfs:range <http://www.semanticweb.org/webSemantica/grupo02/#Direccion> .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/#tieneDireccion-Restaurante
+
+<http://www.semanticweb.org/webSemantica/grupo02/#tieneDireccion-Restaurante> rdf:type owl:ObjectProperty ;
+                                                                              
+                                                                              rdfs:range <http://www.semanticweb.org/webSemantica/grupo02/#Restaurante> ;
+                                                                              
+                                                                              rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Restaurante> .
 
 
 
 ###  http://www.semanticweb.org/webSemantica/grupo02/#tieneLinea
 
 <http://www.semanticweb.org/webSemantica/grupo02/#tieneLinea> rdf:type owl:ObjectProperty ;
+                                                              
+                                                              rdfs:range <http://www.semanticweb.org/webSemantica/grupo02/#Linea> ;
                                                               
                                                               rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Parada_metro> .
 
@@ -62,13 +75,13 @@
 
 
 
-###  http://www.semanticweb.org/webSemantica/grupo02/#tieneBaÃ±osFamiliares
+###  http://www.semanticweb.org/webSemantica/grupo02/#tieneBaniosFamiliares
 
-<http://www.semanticweb.org/webSemantica/grupo02/#tieneBaÃ±osFamiliares> rdf:type owl:DatatypeProperty ;
-                                                                        
-                                                                        rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Banio> ;
-                                                                        
-                                                                        rdfs:range xsd:string .
+<http://www.semanticweb.org/webSemantica/grupo02/#tieneBaniosFamiliares> rdf:type owl:DatatypeProperty ;
+                                                                         
+                                                                         rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Banio> ;
+                                                                         
+                                                                         rdfs:range xsd:boolean .
 
 
 
@@ -78,7 +91,7 @@
                                                                   
                                                                   rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Banio> ;
                                                                   
-                                                                  rdfs:range xsd:string .
+                                                                  rdfs:range xsd:boolean .
 
 
 
@@ -88,7 +101,7 @@
                                                                         
                                                                         rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Banio> ;
                                                                         
-                                                                        rdfs:range xsd:string .
+                                                                        rdfs:range xsd:boolean .
 
 
 
@@ -118,19 +131,7 @@
                                                                        
                                                                        rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Parada_bus> ;
                                                                        
-                                                                       rdfs:range xsd:integer ,
-                                                                                  [ rdf:type rdfs:Datatype ;
-                                                                                    owl:onDatatype xsd:integer ;
-                                                                                    owl:withRestrictions ( [ xsd:minInclusive 99000
-                                                                                                           ]
-                                                                                                         )
-                                                                                  ] ,
-                                                                                  [ rdf:type rdfs:Datatype ;
-                                                                                    owl:onDatatype xsd:integer ;
-                                                                                    owl:withRestrictions ( [ xsd:maxInclusive 47000
-                                                                                                           ]
-                                                                                                         )
-                                                                                  ] .
+                                                                       rdfs:range xsd:integer .
 
 
 
@@ -152,19 +153,7 @@
                                                                      rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Banio> ,
                                                                                  <http://www.semanticweb.org/webSemantica/grupo02/#Parada> ;
                                                                      
-                                                                     rdfs:range xsd:integer ,
-                                                                                [ rdf:type rdfs:Datatype ;
-                                                                                  owl:onDatatype xsd:double ;
-                                                                                  owl:withRestrictions ( [ xsd:minInclusive "462,000.000"^^xsd:string
-                                                                                                         ]
-                                                                                                       )
-                                                                                ] ,
-                                                                                [ rdf:type rdfs:Datatype ;
-                                                                                  owl:onDatatype xsd:double ;
-                                                                                  owl:withRestrictions ( [ xsd:maxInclusive "562,000.000"^^xsd:string
-                                                                                                         ]
-                                                                                                       )
-                                                                                ] .
+                                                                     rdfs:range xsd:integer .
 
 
 
@@ -175,19 +164,7 @@
                                                                      rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Banio> ,
                                                                                  <http://www.semanticweb.org/webSemantica/grupo02/#Parada> ;
                                                                      
-                                                                     rdfs:range xsd:integer ,
-                                                                                [ rdf:type rdfs:Datatype ;
-                                                                                  owl:onDatatype xsd:double ;
-                                                                                  owl:withRestrictions ( [ xsd:maxInclusive "208,000,00"^^xsd:string
-                                                                                                         ]
-                                                                                                       )
-                                                                                ] ,
-                                                                                [ rdf:type rdfs:Datatype ;
-                                                                                  owl:onDatatype xsd:double ;
-                                                                                  owl:withRestrictions ( [ xsd:minInclusive "155,000,00"^^xsd:string
-                                                                                                         ]
-                                                                                                       )
-                                                                                ] .
+                                                                     rdfs:range xsd:integer .
 
 
 
@@ -238,19 +215,7 @@
                                                                 rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Parada_metro> ,
                                                                             <http://www.semanticweb.org/webSemantica/grupo02/#Restaurante> ;
                                                                 
-                                                                rdfs:range xsd:double ,
-                                                                           [ rdf:type rdfs:Datatype ;
-                                                                             owl:onDatatype xsd:double ;
-                                                                             owl:withRestrictions ( [ xsd:minInclusive "51,28"^^xsd:string
-                                                                                                    ]
-                                                                                                  )
-                                                                           ] ,
-                                                                           [ rdf:type rdfs:Datatype ;
-                                                                             owl:onDatatype xsd:double ;
-                                                                             owl:withRestrictions ( [ xsd:maxInclusive "51,75"^^xsd:string
-                                                                                                    ]
-                                                                                                  )
-                                                                           ] .
+                                                                rdfs:range xsd:double .
 
 
 
@@ -271,19 +236,7 @@
                                                                  rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Parada_metro> ,
                                                                              <http://www.semanticweb.org/webSemantica/grupo02/#Restaurante> ;
                                                                  
-                                                                 rdfs:range xsd:double ,
-                                                                            [ rdf:type rdfs:Datatype ;
-                                                                              owl:onDatatype xsd:double ;
-                                                                              owl:withRestrictions ( [ xsd:minInclusive "-0.61"^^xsd:string
-                                                                                                     ]
-                                                                                                   )
-                                                                            ] ,
-                                                                            [ rdf:type rdfs:Datatype ;
-                                                                              owl:onDatatype xsd:double ;
-                                                                              owl:withRestrictions ( [ xsd:maxInclusive "-0,33"^^xsd:string
-                                                                                                     ]
-                                                                                                   )
-                                                                            ] .
+                                                                 rdfs:range xsd:double .
 
 
 
@@ -324,19 +277,7 @@
                                                                 
                                                                 rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Parada_bus> ;
                                                                 
-                                                                rdfs:range xsd:string ,
-                                                                           [ rdf:type rdfs:Datatype ;
-                                                                             owl:onDatatype xsd:integer ;
-                                                                             owl:withRestrictions ( [ xsd:minInclusive 0
-                                                                                                    ]
-                                                                                                  )
-                                                                           ] ,
-                                                                           [ rdf:type rdfs:Datatype ;
-                                                                             owl:onDatatype xsd:integer ;
-                                                                             owl:withRestrictions ( [ xsd:maxInclusive 360
-                                                                                                    ]
-                                                                                                  )
-                                                                           ] .
+                                                                rdfs:range xsd:string .
 
 
 
@@ -366,19 +307,7 @@
                                                              
                                                              rdfs:domain <http://www.semanticweb.org/webSemantica/grupo02/#Parada_metro> ;
                                                              
-                                                             rdfs:range xsd:integer ,
-                                                                        [ rdf:type rdfs:Datatype ;
-                                                                          owl:onDatatype xsd:integer ;
-                                                                          owl:withRestrictions ( [ xsd:maxInclusive 9
-                                                                                                 ]
-                                                                                               )
-                                                                        ] ,
-                                                                        [ rdf:type rdfs:Datatype ;
-                                                                          owl:onDatatype xsd:integer ;
-                                                                          owl:withRestrictions ( [ xsd:minInclusive 1
-                                                                                                 ]
-                                                                                               )
-                                                                        ] .
+                                                             rdfs:range xsd:integer .
 
 
 
@@ -439,4 +368,5 @@
 
 
 ###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
+
 
