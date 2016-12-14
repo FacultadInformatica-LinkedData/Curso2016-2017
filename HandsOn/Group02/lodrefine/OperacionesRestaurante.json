@@ -1,0 +1,70 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column name to Nombre",
+    "oldColumnName": "name",
+    "newColumnName": "Nombre"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column id",
+    "columnName": "id"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column address to Direccion",
+    "oldColumnName": "address",
+    "newColumnName": "Direccion"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column category to Categoria",
+    "oldColumnName": "category",
+    "newColumnName": "Categoria"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column location to Localizacion",
+    "oldColumnName": "location",
+    "newColumnName": "Localizacion"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column lat to Latitud",
+    "oldColumnName": "lat",
+    "newColumnName": "Latitud"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column lng to Longitud",
+    "oldColumnName": "lng",
+    "newColumnName": "Longitud"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column details to Detalles",
+    "oldColumnName": "details",
+    "newColumnName": "Detalles"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column reviews to Critica",
+    "oldColumnName": "reviews",
+    "newColumnName": "Critica"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 10",
+    "columnName": "Column 10"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 11",
+    "columnName": "Column 11"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 12",
+    "columnName": "Column 12"
+  }
+]
