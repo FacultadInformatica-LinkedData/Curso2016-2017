@@ -1,130 +1,370 @@
 <!DOCTYPE html>
-<html lang="en">
-<head >
-<meta charset="utf-8">
+<html>
+<meta charset="utf-16">
 <title>Group 02  Hands-on</title>
-</head>
 <body>
+<style type="text/css">
 
-<h1>Analyse data source</h1>
-<h2>-London Underground Stations</h2>
+            table {
+                border: 1px solid #bbb;
+                margin-bottom: 1em;
+                width: 100%;
+                border-collapse: collapse;
+            }
+            td, th {
+                border: 1px solid #bbb;
+                line-height: 1.7;
+                text-align: center;
+            }
 
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><!--This file was converted to xhtml by LibreOffice - see http://cgit.freedesktop.org/libreoffice/core/tree/filter/source/xslt for the code.--><head profile="http://dublincore.org/documents/dcmi-terms/"><meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/><title xml:lang="en-US">- no title specified</title><meta name="DCTERMS.title" content="" xml:lang="en-US"/><meta name="DCTERMS.language" content="en-US" scheme="DCTERMS.RFC4646"/><meta name="DCTERMS.source" content="http://xml.openoffice.org/odf2xhtml"/><meta name="DCTERMS.issued" content="2016-10-28T10:15:35.089000000" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.modified" content="2016-10-28T10:16:39.669000000" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.provenance" content="" xml:lang="en-US"/><meta name="DCTERMS.subject" content="," xml:lang="en-US"/><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" hreflang="en"/><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" hreflang="en"/><link rel="schema.DCTYPE" href="http://purl.org/dc/dcmitype/" hreflang="en"/><link rel="schema.DCAM" href="http://purl.org/dc/dcam/" hreflang="en"/><style type="text/css">
-	@page {  }
-	table { border-collapse:collapse; border-spacing:0; empty-cells:show }
-	td, th { vertical-align:top; font-size:10pt;}
-	h1, h2, h3, h4, h5, h6 { clear:both }
-	ol, ul { margin:0; padding:0;}
-	li { list-style: none; margin:0; padding:0;}
-	<!-- "li span.odfLiEnd" - IE 7 issue-->
-	li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
-	span.footnodeNumber { padding-right:1em; }
-	span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
-	* { margin:0;}
-	.ta1 { writing-mode:lr-tb; }
-	.ce1 { font-family:Liberation Sans; background-color:#66ccff; border-width:0.0133cm; border-style:solid; border-color:#000000; text-align:center ! important; margin-left:0mm; font-style:italic; font-weight:bold; }
-	.ce2 { font-family:Liberation Sans; border-width:0.0133cm; border-style:solid; border-color:#000000; text-align:center ! important; margin-left:0mm; }
-	.ce3 { font-family:Liberation Serif; text-align:center ! important; margin-left:0mm; font-size:10pt; font-style:normal; text-shadow:none; text-decoration:none ! important; font-weight:normal; }
-	.co1 { width:22.58mm; }
-	.co2 { width:44.64mm; }
-	.co3 { width:37.87mm; }
-	.ro1 { height:4.52mm; }
-	.ro2 { height:8.48mm; }
-	<!-- ODF styles with no properties representable as CSS -->
-	 { }
-	</style></head><body dir="ltr"><table border="0" cellspacing="0" cellpadding="0" class="ta1"><colgroup><col width="99"/><col width="99"/><col width="195"/><col width="165"/></colgroup><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce1"><p>Column</p></td><td style="text-align:left;width:22.58mm; " class="ce1"><p>Type</p></td><td style="text-align:left;width:44.64mm; " class="ce1"><p>Comments/Range</p></td><td style="text-align:left;width:37.87mm; " class="ce1"><p>Problems</p></td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>Station</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>String</p></td><td style="text-align:left;width:44.64mm; " class="ce2"><p>not unique, not empty</p></td><td style="text-align:left;width:37.87mm; " class="ce2"> </td></tr><tr class="ro2"><td style="text-align:left;width:22.58mm; " class="ce2"><p>OS X</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>int</p></td><td style="text-align:left;width:44.64mm; " class="ce3"><p>496,000,00—562,000,00</p></td><td style="text-align:left;width:37.87mm; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>OS Y</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>int</p></td><td style="text-align:left;width:44.64mm; " class="ce2"><p>155,000,00—208,000,00</p></td><td style="text-align:left;width:37.87mm; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>Latitude</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>double</p></td><td style="text-align:left;width:44.64mm; " class="ce2"><p>51,28—51,75</p></td><td style="text-align:left;width:37.87mm; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>Longitude</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>double</p></td><td style="text-align:left;width:44.64mm; " class="ce2"><p>-0,61—0,33</p></td><td style="text-align:left;width:37.87mm; " class="ce2"><p>Negative values</p></td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>Zone</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>int</p></td><td style="text-align:left;width:44.64mm; " class="ce3"><p>1— 9</p></td><td style="text-align:left;width:37.87mm; " class="ce2"> </td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>Postcode</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>String</p></td><td style="text-align:left;width:44.64mm; " class="ce2"><p>not unique, not empty</p></td><td style="text-align:left;width:37.87mm; " class="ce2"> </td></tr></table></body></html>
+            th {
+                background: #f5f5f5;
+            }
 
-<h2>-London Underground Lines</h2>	
-	
-	<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><!--This file was converted to xhtml by LibreOffice - see http://cgit.freedesktop.org/libreoffice/core/tree/filter/source/xslt for the code.--><head profile="http://dublincore.org/documents/dcmi-terms/"><meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/><title xml:lang="en-US">- no title specified</title><meta name="DCTERMS.title" content="" xml:lang="en-US"/><meta name="DCTERMS.language" content="en-US" scheme="DCTERMS.RFC4646"/><meta name="DCTERMS.source" content="http://xml.openoffice.org/odf2xhtml"/><meta name="DCTERMS.issued" content="2016-10-28T10:18:47.351000000" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.modified" content="2016-10-28T10:25:10.506000000" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.provenance" content="" xml:lang="en-US"/><meta name="DCTERMS.subject" content="," xml:lang="en-US"/><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" hreflang="en"/><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" hreflang="en"/><link rel="schema.DCTYPE" href="http://purl.org/dc/dcmitype/" hreflang="en"/><link rel="schema.DCAM" href="http://purl.org/dc/dcam/" hreflang="en"/><style type="text/css">
-	@page {  }
-	table { border-collapse:collapse; border-spacing:0; empty-cells:show }
-	td, th { vertical-align:top; font-size:10pt;}
-	h1, h2, h3, h4, h5, h6 { clear:both }
-	ol, ul { margin:0; padding:0;}
-	li { list-style: none; margin:0; padding:0;}
-	<!-- "li span.odfLiEnd" - IE 7 issue-->
-	li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
-	span.footnodeNumber { padding-right:1em; }
-	span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
-	* { margin:0;}
-	.ta1 { writing-mode:lr-tb; }
-	.ce1 { font-family:Liberation Sans; background-color:#66ccff; border-width:0.0133cm; border-style:solid; border-color:#000000; text-align:center ! important; margin-left:0mm; font-style:italic; text-decoration:none ! important; font-weight:bold; }
-	.ce2 { font-family:Liberation Sans; border-width:0.0133cm; border-style:solid; border-color:#000000; text-align:center ! important; margin-left:0mm; }
-	.co1 { width:22.58mm; }
-	.co2 { width:40.5mm; }
-	.co3 { width:28.66mm; }
-	.ro1 { height:4.52mm; }
-	<!-- ODF styles with no properties representable as CSS -->
-	 { }
-	</style></head><body dir="ltr"><table border="0" cellspacing="0" cellpadding="0" class="ta1"><colgroup><col width="99"/><col width="99"/><col width="177"/><col width="125"/></colgroup><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce1"><p>Column</p></td><td style="text-align:left;width:22.58mm; " class="ce1"><p>Type</p></td><td style="text-align:left;width:40.5mm; " class="ce1"><p>Comments/Range</p></td><td style="text-align:left;width:28.66mm; " class="ce1"><p>Problems</p></td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>Tube Line</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>String</p></td><td style="text-align:left;width:40.5mm; " class="ce2"><p>not unique, not empty</p></td><td style="text-align:left;width:28.66mm; " class="ce2"><p>Names repeated</p></td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>From Station</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>String</p></td><td style="text-align:left;width:40.5mm; " class="ce2"><p>not unique, not empty</p></td><td style="text-align:left;width:28.66mm; " class="ce2"><p>Names repeated</p></td></tr><tr class="ro1"><td style="text-align:left;width:22.58mm; " class="ce2"><p>To Station</p></td><td style="text-align:left;width:22.58mm; " class="ce2"><p>String</p></td><td style="text-align:left;width:40.5mm; " class="ce2"><p>not unique, not empty</p></td><td style="text-align:left;width:28.66mm; " class="ce2"><p>Names repeated</p></td></tr></table></body></html>
+            tr:hover {
+                background: #eee;
+            }
 
-<h2>-London Bus Stops</h2>	
-	
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><!--This file was converted to xhtml by LibreOffice - see http://cgit.freedesktop.org/libreoffice/core/tree/filter/source/xslt for the code.--><head profile="http://dublincore.org/documents/dcmi-terms/"><meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/><title xml:lang="en-US">- no title specified</title><meta name="DCTERMS.title" content="" xml:lang="en-US"/><meta name="DCTERMS.language" content="en-US" scheme="DCTERMS.RFC4646"/><meta name="DCTERMS.source" content="http://xml.openoffice.org/odf2xhtml"/><meta name="DCTERMS.issued" content="2016-10-28T10:18:47" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.modified" content="2016-10-28T12:02:48.21" scheme="DCTERMS.W3CDTF"/><meta name="DCTERMS.provenance" content="" xml:lang="en-US"/><meta name="DCTERMS.subject" content="," xml:lang="en-US"/><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" hreflang="en"/><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" hreflang="en"/><link rel="schema.DCTYPE" href="http://purl.org/dc/dcmitype/" hreflang="en"/><link rel="schema.DCAM" href="http://purl.org/dc/dcam/" hreflang="en"/><style type="text/css">
-	@page {  }
-	table { border-collapse:collapse; border-spacing:0; empty-cells:show }
-	td, th { vertical-align:top; font-size:10pt;}
-	h1, h2, h3, h4, h5, h6 { clear:both }
-	ol, ul { margin:0; padding:0;}
-	li { list-style: none; margin:0; padding:0;}
-	<!-- "li span.odfLiEnd" - IE 7 issue-->
-	li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
-	span.footnodeNumber { padding-right:1em; }
-	span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
-	* { margin:0;}
-	.ta1 { writing-mode:lr-tb; }
-	.ce4 { font-family:Arial; background-color:#66ccff; border-width:0.0133cm; border-style:solid; border-color:#000000; vertical-align:top; text-align:center ! important; margin-left:0mm; writing-mode:page; font-size:10pt; font-style:italic; text-shadow:none; text-decoration:none ! important; font-weight:bold; }
-	.ce5 { font-family:Arial; border-width:0.0133cm; border-style:solid; border-color:#000000; vertical-align:top; text-align:center ! important; margin-left:0mm; writing-mode:page; font-size:10pt; font-style:normal; text-shadow:none; text-decoration:none ! important; font-weight:normal; }
-	.ce6 { font-family:Times New Roman; border-width:0.0133cm; border-style:solid; border-color:#000000; vertical-align:top; text-align:center ! important; margin-left:0mm; writing-mode:page; font-size:10pt; font-style:normal; text-shadow:none; text-decoration:none ! important; font-weight:normal; }
-	.co1 { width:29.99mm; }
-	.co2 { width:22.58mm; }
-	.co3 { width:164.82mm; }
-	.co4 { width:90.73mm; }
-	.ro1 { height:4.53mm; }
-	.ro2 { height:8.41mm; }
-	.ro3 { height:4.73mm; }
-	.T1 { font-family:Times New Roman; font-size:12pt; font-style:normal; text-shadow:none; text-decoration:none ! important; font-weight:normal; }
-	<!-- ODF styles with no properties representable as CSS -->
-	 { }
-	</style></head><body dir="ltr" style="margin-top:20mm; margin-bottom:20mm; margin-left:20mm; margin-right:20mm; "><table border="0" cellspacing="0" cellpadding="0" class="ta1"><colgroup><col width="131"/><col width="99"/><col width="720"/><col width="396"/></colgroup><tr class="ro1"><td style="text-align:left;width:29.99mm; " class="ce4"><p>Column</p></td><td style="text-align:left;width:22.58mm; " class="ce4"><p>Type</p></td><td style="text-align:left;width:164.82mm; " class="ce4"><p>Comments/Range</p></td><td style="text-align:left;width:90.73mm; " class="ce4"><p>Problems</p></td></tr><tr class="ro2"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Stop Code LBSL</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>String</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>not empty/First and/or second characters are letters (optional) and the rest of them are numbers (variable size) </p></td><td style="text-align:left;width:90.73mm; " class="ce5"><p>There is no standard format to identify Bus Stops.</p></td></tr><tr class="ro2"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Bus Stop Code</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>Each stop has a 5 numbers code/47,000.00—99,000.00 </p></td><td style="text-align:left;width:90.73mm; " class="ce5"><p>0.18% stops don't have Bus Stop Code</p></td></tr><tr class="ro3"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Naptan Atco</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>String</p></td><td style="text-align:left;width:164.82mm; " class="ce5"><p>not unique, not empty. This code allows to identify any transportation point inside UK</p></td><td style="text-align:left;width:90.73mm; " class="ce5"><p>7% stops don't follow the standard format</p></td></tr><tr class="ro1"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Stop Name</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>String</p></td><td style="text-align:left;width:164.82mm; " class="ce5"><p>not unique, not empty</p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr><tr class="ro3"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Location Easting</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>standard format (6 numbers)/497,000.00—562,000.00</p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr><tr class="ro3"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Location Northing</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>standard format (6 numbers)/148,000.00—203,000.00 </p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr><tr class="ro1"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Heading</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>0.00—360.00 </p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr><tr class="ro3"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Stop Area</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>String</p></td><td style="text-align:left;width:164.82mm; " class="ce5"><p>not unique, not empty. Some of them have letters and numbers and others only have numbers</p></td><td style="text-align:left;width:90.73mm; " class="ce5"><p>There is no standard format to identify Stop Areas</p></td></tr><tr class="ro1"><td style="text-align:left;width:29.99mm; " class="ce5"><p>Virtual Bus Stop</p></td><td style="text-align:left;width:22.58mm; " class="ce5"><p>int</p></td><td style="text-align:left;width:164.82mm; " class="ce6"><p>0—1 </p></td><td style="text-align:left;width:90.73mm; " class="ce5"> </td></tr></table></body></html>
-	
-<h1>Analyse Licensing of the Data Source</h1>
-<h2>-Publisher and Rightholder</h2>
+    .tdlight{
+        background: lightblue;
+    }
+    .h1_doc{
+        text-align: center !important;
+        font-size: 300%;
+    }
+</style>
+<div>
+    <h1 class="h1_doc">Analyse data source</h1>
+    <hr>
+    <h2 style="border-bottom: 2px">Paradas de metro de Londres</h2>
+    <ul>
+    <li><b>Nombre del fichero:</b>London stations.csv</li>
+    <li><b>Descripción:</b>Paradas de metro en la ciudad de Londres</li>
+    <li><b>Origen de los datos :</b><a href="https://www.doogal.co.uk/london_stations.php">Click Aqui</a></li>
+    <li><a href="https://www.doogal.co.uk/london_stations.php">Licencia</a></li>
+</ul>
+    <table>
+        <tbody>
+            <tr class="tdlight">
+                <td><p>Columna</p></td>
+                <td><p>Tipo</p></td>
+                <td><p>Comentarios / Rango</p></td>
+                <td><p>Problemas / Conflictos</p></td>
+            </tr>
+            <tr>
+                <td><p>Nombre</p></td>
+                <td><p>String</p></td>
+                <td><p>not unique, not empty</p></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><p>Coordenada-X</p></td>
+                <td><p>int</p></td>
+                <td><p>496,000,00—562,000,00</p></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><p>Coordenada-Y</p></td>
+                <td><p>int</p></td>
+                <td><p>155,000,00—208,000,00</p></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><p>Latitud</p></td>
+                <td><p>double</p></td>
+                <td><p>51,28—51,75</p></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><p>Longitud</p></td>
+                <td><p>double</p></td>
+                <td><p>-0,61—0,33</p></td>
+                <td><p>Negative values</p></td>
+            </tr>
+            <tr>
+                <td><p>Zona</p></td>
+                <td><p>int</p></td>
+                <td><p>[1— 9]</p></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><p>Código Postal</p></td>
+                <td><p>String</p></td>
+                <td><p>not unique, not empty</p></td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 style="border-bottom: 2px">Líneas de metro de Londres</h2>
+    <ul>
+    <li><b>Nombre del fichero:</b>London Tube Lines.csv</li>
+    <li><b>Descripción:</b>Relación entre las paradas de metro y las lineas a las que pertece</li>
+    <li><b>Origen de los datos :</b><a href="https://www.doogal.co.uk/london_stations.php">Click Aqui</a></li>
+    <li><a href="https://www.doogal.co.uk/london_stations.php">Licencia</a></li>
+</ul>
+    <table>
+        <tbody>
+            <tr class="tdlight">
+                <td><p>Columna</p></td>
+                <td><p>Tipo</p></td>
+                <td><p>Comentarios / Rango</p></td>
+                <td><p>Problemas / Conflictos</p></td>
+            </tr>
+            <tr>
+                <td><p>Linea</p></td>
+                <td><p>String</p></td>
+                <td><p>not unique, not empty</p></td>
+                <td><p>Names repeated</p></td>
+            </tr>
+            <tr>
+                <td><p>Desde parada</p></td>
+                <td><p>String</p></td>
+                <td><p>not unique, not empty</p></td>
+                <td><p>Names repeated</p></td>
+            </tr>
+            <tr>
+                <td><p>Hasta parada</p></td>
+                <td><p>String</p></td>
+                <td><p>not unique, not empty</p></td>
+                <td><p>Names repeated</p></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 style="border-bottom: 2px">Paradas de autobuses en Londres</h2>
+       <ul>
+    <li><b>Nombre del fichero:</b>London-bus-stops.csv</li>
+    <li><b>Descripción:</b>Paradas de bus en la ciudad de Londres</li>
+    <li><b>Origen de los datos :</b><a href=" https://data.london.gov.uk/dataset/tfl-bus-stop-locations-and-routes/resource/673033eb-59a6-4903-84bc-d24495661707">Click aqui</a></li>
+    <li><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">Licencia</a></li>
+</ul>
+    <table>
+        <tbody>
 
-	<p>The publisher for the bus stop CSV is Transport for London (TfL).<br>
+        <tr class="tdlight">
+            <td><p>Columna</p></td>
+            <td><p>Tipo</p></td>
+            <td><p>Comentarios / Rango</p></td>
+            <td><p>Problemas / Conflictos</p></td>
+        </tr>
+               <tr>
+            <td><p>Nombre</p></td>
+            <td><p>String</p></td>
+            <td><p>not unique, not empty</p></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><p>Código de parada</p></td>
+            <td><p>int</p></td>
+            <td><p>Each stop has a 5 numbers code/47,000.00—99,000.00 </p></td>
+            <td><p>0.18% stops don't have Bus Stop Code</p></td>
+        </tr>
+        <tr>
+            <td><p>Coordenada X</p></td>
+            <td><p>int</p></td>
+            <td><p>standard format (6 numbers)/497,000.00—562,000.00</p></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><p>Coordenada Y</p></td>
+            <td><p>int</p></td>
+            <td><p>standard format (6 numbers)/148,000.00—203,000.00 </p></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><p>Sentido</p></td>
+            <td><p>int</p></td>
+            <td><p>0.00—360.00 </p></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><p>Area de parada</p></td>
+            <td><p>String</p></td>
+            <td><p>not unique, not empty. Some of them have letters and numbers and others only have numbers</p></td>
+            <td><p>There is no standard format to identify Stop Areas</p></td>
+        </tr>
+    </tbody>
+    </table>
+    <h2 style="border-bottom: 2px">Baños públicos</h2>
+        <ul>
+    <li><b>Nombre del fichero:</b>public-toilets.csv</li>
+    <li><b>Descripción:</b>Baños públicos en la ciudad de Londres</li>
+    <li><b>Origen de los datos :</b><a href=" https://data.gov.uk/dataset/public-toilets-2014-15/resource/3e9934ac-492a-4042-971c-fe49bd9ca7e7">Click aqui</a></li>
+    <li><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Licencia</a></li>
+</ul>
+        <table>
+        <tbody>
+            <tr class="tdlight">
+                <td><p>Columna</p></td>
+                <td><p>Tipo</p></td>
+                <td><p>Comentarios / Rango</p></td>
+                <td><p>Problemas / Conflictos</p></td>
+            </tr>
+            <tr>
+                <td><p>Servicio</p></td>
+                <td><p>String</p></td>
+                <td><p>not unique, not empty.</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Dirección</p></td>
+                <td><p>String</p></td>
+                <td><p>not unique, not empty. There are numbers in the String</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Coordenada X</p></td>
+                <td><p>Number</p></td>
+                <td><p>519,500.00 — 528,000.00</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Coordenada Y</p></td>
+                <td><p>Number</p></td>
+                <td><p>188,400.00 — 196,800.00</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Catagoría accesible</p></td>
+                <td><p>String</p></td>
+                <td><p>UNISEX or FEMALE AND MALE</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Cambiador de bebe</p></td>
+                <td><p>String</p></td>
+                <td><p>YES or NO</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Baños familiares</p></td>
+                <td><p>String</p></td>
+                <td><p>YES or NO</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Cambiador</p></td>
+                <td><p>String</p></td>
+                <td><p>YES or NO</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Horas de apertura</p></td>
+                <td><p>String</p></td>
+                <td><p>There are also numbers</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Administrado por</p></td>
+                <td><p>String</p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Email de contacto</p></td>
+                <td><p>String</p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Teléfono de contacto</p></td>
+                <td><p>Number</p></td>
+                <td><p></p></td>
+                <td><p>&nbsp;</p></td>
+            </tr>
+            <tr>
+                <td><p>Notas</p></td>
+                <td><p>String</p></td>
+                <td><p></p></td>
+                <td><p>&nbsp;</p></td>
+            </tr>
+            <tr>
+                <td><p>Código Postal</p></td>
+                <td><p>String</p></td>
+                <td><p>Has letters and numbers</p></td>
+                <td><p>&nbsp;</p></td>
+            </tr>
+        </tbody>
+    </table>
+        <h2 style="border-bottom: 2px">Restaurantes</h2>
+      <ul>
+    <li><b>Nombre del fichero:</b>london-restaurant.csv</li>
+    <li><b>Descripción:</b>Restaurantes en la ciudad de Londres</li>
+    <li><b>Origen de los datos :</b><a href=" http://tour-pedia.org/about/datasets.html">Click aqui</a></li>
+    <li><a href="http://opendefinition.org/licenses/cc-zero/">Licencia</a></li>
+</ul>
+    <table>
+        <tbody>
+            <tr class="tdlight">
+                <td><p>id</p></td>
+                <td><p>Tipo</p></td>
+                <td><p>Comentarios / Rango</p></td>
+                <td><p>Problemas / Conflictos</p></td>
+            </tr>
+            <tr>
+                <td><p>Nombre</p></td>
+                <td><p>String</p></td>
+                <td><p>not unique, not empty</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Dirección</p></td>
+                <td><p>String</p></td>
+                <td><p>not empty</p></td>
+                <td><p>Names repeated</p></td>
+            </tr>
+            <tr>
+                <td><p>Categoría</p></td>
+                <td><p>String</p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Localización</p></td>
+                <td><p>String</p></td>
+                <td><p></p></td>
+                <td><p>Has letters and numbers</p></td>
+            </tr>
+            <tr>
+                <td><p>Latitud</p></td>
+                <td><p>Number</p></td>
+                <td><p>53.73 — 53.93</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Longitud</p></td>
+                <td><p>Number</p></td>
+                <td><p>-1.71 — -1.32</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>detalles</p></td>
+                <td><p>String</p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Crítica</p></td>
+                <td><p>String</p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+            </tr>
+        </tbody>
+    </table>
 
-	The publisher and the rightsholder for the Underground CSV is Chris Bell(The data is published in his/her personal website). </p>
-<h2>-License</h2>
+        <h1>Define Resource Naming Strategy</h1>
+        
+        <p>Domain:</p> 
+        <p>http://www.semanticweb.org/webSemantica/gropo02/</p>
+		<p>Ontological terms path:</p> 
+		<p>http://www.semanticweb.org/webSemantica/grupo02/vocabulary#</p>
+		<p>Individuals path:</p>
+		<p>http://www.semanticweb.org/webSemantica/grupo02/</p>
+		<p>Ontological terms pattern:</p> 
+		<p>http://www.semanticweb.org/webSemantica/grupo02/vocabulary#<term_name></p>
+		<p>Individuals pattern:</p> 
+		<p>http://www.semanticweb.org/webSemantica/grupo02/&ltresource_type&gt/&ltresource_name&gt</p>
 
-<p>The license for the bus stop CSV is UK Open Government Licence (OGL v2).<br>
-Please see link to TfL website for <a href="https://www.tfl.gov.uk/corporate/terms-and-conditions/transport-data-service">Terms and Conditions</a> related to this dataset. <br>
-Direct <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">LINK</a> to the Terms and Conditions.</p>
-
-<p>The license for the underground CSV is the specified by Chris Bell in the <a href="https://www.doogal.co.uk/">website</a>.<br>
-As it's said in the licensing, we can use this CSV under a public domain license because there isn't any other comment or copyright notice saying that the CSV comes from another source.</p>
-
-<h2>-License to be used for the generated Dataset</h2>
-
-<p> Contains public sector information licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">Open Government Licence v2.0</a>.<br>
-We plain to use OGL2 because it's the most restrictive license in the datasets we use in our application.</p>
-
-<h1>Define Resource Naming Strategy</h1>
-
-	<p>Domain:<br>
-	
-	http://www.semanticweb.org/webSemantica/gropo02#<br>
-	
-	Pattern:<br>
-
-	http://www.semanticweb.org/webSemantica/gropo02/Class#<br>
-	
-	</p>
-
+        
+    </div>    
 </body>
-
-
 </html>
