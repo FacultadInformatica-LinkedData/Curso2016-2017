@@ -23,21 +23,21 @@
 #################################################################
 
 ###  http://www.semanticweb.org/g90/ontologyactivo
-:activo> rdf:type owl:DatatypeProperty ;
-         rdfs:domain <http://dbpedia.org/page/Camera> ;
-         rdfs:range xsd:int .
+:activo rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://dbpedia.org/page/Camera> ;
+        rdfs:range xsd:int .
 
 
-###  https://schema.org/Place
-<https://schema.org/Place> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:domain <http://dbpedia.org/page/Camera> ;
-                                                 rdfs:range xsd:string .
+###  http://www.semanticweb.org/g90/ontologybarrio
+:barrio rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://dbpedia.org/page/Camera> ;
+        rdfs:range xsd:string .
 
 
-###  https://schema.org/AdministrativeArea
-<https://schema.org/AdministrativeArea> rdf:type owl:DatatypeProperty ;
-                                                    rdfs:domain <http://dbpedia.org/page/Camera> ;
-                                                    rdfs:range xsd:string .
+###  http://www.semanticweb.org/g90/ontologycomunidad
+:comunidad rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://dbpedia.org/page/Camera> ;
+        rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/g90/ontologyidElem
