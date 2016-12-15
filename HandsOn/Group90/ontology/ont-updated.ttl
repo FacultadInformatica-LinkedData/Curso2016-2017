@@ -15,10 +15,7 @@
 ###  http://www.semanticweb.org/g90/ontology#enFuncionamiento
 <http://www.semanticweb.org/g90/ontology#enFuncionamiento> rdf:type owl:ObjectProperty ;
                                                            rdfs:domain <http://www.semanticweb.org/g90/ontology#Camara> ;
-                                                           rdfs:range [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty <http://www.semanticweb.org/g90/ontology#activo> ;
-                                                                        owl:someValuesFrom xsd:boolean
-                                                                      ] .
+                                                           rdfs:range <http://dbpedia.org/page/Recording>.
 
 
 #################################################################
