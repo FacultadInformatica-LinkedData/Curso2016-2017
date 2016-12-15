@@ -496,5 +496,146 @@
         }
       ]
     }
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column month",
+    "columnName": "month"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column street_name using expression value.toTitlecase()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "street_name",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group03/ontologies/handson/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "group03",
+          "uri": "http://www.semanticweb.org/group03/ontologies/handson#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#year",
+              "curie": "group03:year",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "year"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#town",
+              "curie": "group03:town",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "town"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#room_type",
+              "curie": "group03:room_type",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "room_type"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#street_name",
+              "curie": "group03:street_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "street_name"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#floor_area_sqm",
+              "curie": "group03:floor_area_sqm",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "columnName": "floor_area_sqm"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#flat_model",
+              "curie": "group03:flat_model",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "flat_model"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#lease_commence_date",
+              "curie": "group03:lease_commence_date",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "lease_commence_date"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#price",
+              "curie": "group03:price",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "columnName": "price"
+              }
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
