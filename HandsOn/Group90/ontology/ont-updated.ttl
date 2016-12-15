@@ -13,9 +13,9 @@
 #################################################################
 
 ###  http://www.semanticweb.org/g90/ontologyenFuncionamiento
-<http://www.semanticweb.org/g90/ontology#enFuncionamiento> rdf:type owl:ObjectProperty ;
-                                                           rdfs:domain <http://dbpedia.org/page/Camera> ;
-                                                           rdfs:range <http://dbpedia.org/page/Recording>.
+:enFuncionamiento rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://dbpedia.org/page/Camera> ;
+                  rdfs:range <http://dbpedia.org/page/Recording>.
 
 
 #################################################################
@@ -23,9 +23,9 @@
 #################################################################
 
 ###  http://www.semanticweb.org/g90/ontologyactivo
-<http://www.semanticweb.org/g90/ontology#activo> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:domain <http://dbpedia.org/page/Camera> ;
-                                                 rdfs:range xsd:int .
+:activo> rdf:type owl:DatatypeProperty ;
+         rdfs:domain <http://dbpedia.org/page/Camera> ;
+         rdfs:range xsd:int .
 
 
 ###  https://schema.org/Place
@@ -41,27 +41,27 @@
 
 
 ###  http://www.semanticweb.org/g90/ontologyidElem
-<http://www.semanticweb.org/g90/ontology#idElem> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:domain <http://dbpedia.org/page/Camera> ;
-                                                 rdfs:range xsd:int .
+:idElem rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://dbpedia.org/page/Camera> ;
+        rdfs:range xsd:int .
 
 
 ###  http://www.semanticweb.org/g90/ontologynombre
-<http://www.semanticweb.org/g90/ontology#nombre> rdf:type owl:DatatypeProperty ;
-                                                 rdfs:domain <http://dbpedia.org/page/Camera> ;
-                                                 rdfs:range xsd:string .
+:nombre rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://dbpedia.org/page/Camera> ;
+        rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/g90/ontologyutm_x
-<http://www.semanticweb.org/g90/ontology#utm_x> rdf:type owl:DatatypeProperty ;
-                                                rdfs:domain <http://dbpedia.org/page/Camera> ;
-                                                rdfs:range xsd:double .
+:utm_x rdf:type owl:DatatypeProperty ;
+       rdfs:domain <http://dbpedia.org/page/Camera> ;
+       rdfs:range xsd:double .
 
 
 ###  http://www.semanticweb.org/g90/ontologyutm_y
-<http://www.semanticweb.org/g90/ontology#utm_y> rdf:type owl:DatatypeProperty ;
-                                                rdfs:domain <http://dbpedia.org/page/Camera> ;
-                                                rdfs:range xsd:double .
+:utm_y rdf:type owl:DatatypeProperty ;
+       rdfs:domain <http://dbpedia.org/page/Camera> ;
+       rdfs:range xsd:double .
 
 
 #################################################################
