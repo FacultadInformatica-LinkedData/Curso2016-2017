@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://wsyld-assignment5/javierdlrm/ontology#"
+     xml:base="http://wsyld-assignment5/javierdlrm/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://wsyld-assignment5/javierdlrm/ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#inCountry -->
+
+    <owl:ObjectProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#inCountry">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#city"/>
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#countryLanguage"/>
+        <rdfs:range rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#hasCapital -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#hasCapital">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#hasCode -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#hasCode">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#token"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#hasCode2 -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#hasCode2">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#token"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#hasGNP -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#hasGNP">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#hasGNPOld -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#hasGNPOld">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#hasId -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#hasId">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#city"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#hasLocalName -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#hasLocalName">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#hasName">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#city"/>
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#inContinent -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#inContinent">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#inDistrict -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#inDistrict">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#city"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#inRegion -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#inRegion">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#isOfficial -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#isOfficial">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#countryLanguage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#withGovernmentForm -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#withGovernmentForm">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#withHeadOfState -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#withHeadOfState">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#withIndepYear -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#withIndepYear">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#withLanguage -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#withLanguage">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#countryLanguage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#withLifeExpectancy -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#withLifeExpectancy">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#withPercentage -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#withPercentage">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#countryLanguage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#withPopulation -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#withPopulation">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#city"/>
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#withSurfaceArea -->
+
+    <owl:DatatypeProperty rdf:about="http://wsyld-assignment5/javierdlrm/ontology#withSurfaceArea">
+        <rdfs:domain rdf:resource="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#city -->
+
+    <owl:Class rdf:about="http://wsyld-assignment5/javierdlrm/ontology#city"/>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#country -->
+
+    <owl:Class rdf:about="http://wsyld-assignment5/javierdlrm/ontology#country"/>
+    
+
+
+    <!-- http://wsyld-assignment5/javierdlrm/ontology#countryLanguage -->
+
+    <owl:Class rdf:about="http://wsyld-assignment5/javierdlrm/ontology#countryLanguage"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->

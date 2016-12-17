@@ -1,0 +1,68 @@
+######### ASIGNMENT 6 JOSE MARIO LOPEZ LEIVA A.K.A MARIOSAIGON
+# LINKED DATA 2016
+#SPARQL Endpoint: http://sandbox.linkeddata.es/sparql
+#Graph: http://sandbox.linkeddata.es/graph/accidentes
+
+PREFIX vocab: <http://example.org/myVocabulary#>
+PREFIX CubeVocab: <http://purl.org/linked-data/cube#>
+
+#	1 ) dame el numero de accidentes en madrid en 2013
+
+SELECT SUM(?MadridAcc) as ?Madrid_num_Accidents_in_2013
+WHERE {
+?obs a CubeVocab:Observation.
+?obs vocab:numberOfAccidents ?MadridAcc.
+}
+
+#	2) dame el numero de accidentes en Usera para cada tipo de accidente
+
+SELECT ?tipo AS ?Tipo_accidente xsd:integer(?numAccidents) AS ?Number_accidents_in_Usera 
+WHERE 
+{
+	?obs a CubeVocab:Observation;
+	vocab:relatedDistrict "USERA";
+	vocab:hasAccidentType ?tipo;
+	vocab:numberOfAccidents ?numAccidents
+}
+
+#	3) Dame el numero de colisiones multiples de cada district
+
+SELECT ?Distrito AS ?Distrito xsd:integer(?numAccidents) AS ?Numero_colisiones_multiples
+WHERE{
+?obs a CubeVocab:Observation.
+?obs vocab:relatedDistrict ?Distrito.
+?obs vocab:hasAccidentType vocab:MultipleCollision.
+?obs vocab:numberOfAccidents ?numAccidents.
+}
+ORDER BY(?Distrito)
+LIMIT 200
+
+#	4) distrito donde las caidas en bicicleta fueron mayores en 2013
+
+
+SELECT ?district AS ?Distrito (xsd:integer(MAX(?numAccidents)) AS ?Numero_mayor_de_caidas)
+WHERE 
+{
+	?obs a CubeVocab:Observation;
+	vocab:relatedDistrict ?district;
+	vocab:hasAccidentType vocab:BicycleFall;
+    vocab:numberOfAccidents ?numAccidents
+}
+ORDER BY DESC(?numAccidents) LIMIT 1
+
+
+#	5) distritos con mas de 500 accidentes en e2013
+
+SELECT ?district AS ?Distrito ?Numaccidentes AS ?Mas_de_500_accidentes
+WHERE {
+{
+	SELECT ?district SUM(xsd:integer(?Numaccidentes)) AS ?Numaccidentes
+	WHERE {
+		?obs a CubeVocab:Observation;
+		vocab:relatedDistrict ?district;
+		vocab:numberOfAccidents ?Numaccidentes.
+	}
+}
+}
+HAVING(?Numaccidentes > 500)
+ORDER BY ASC(?Numaccidentes)

@@ -1,0 +1,342 @@
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix frp: <http://fr.dbpedia.org/property/> .
+@prefix g10: <http://smartsevilla.es/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://smartsevilla.es/ontology/route/01> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "1" ;
+	dbp:name "01" ;
+	dbp:fullname "Pgno.Norte-Glorieta Plus Ultra" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/02> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "2" ;
+	dbp:name "02" ;
+	dbp:fullname "Barqueta-Glorieta Heliopolis" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Heliopolis_(Sevilla)" .
+
+<http://smartsevilla.es/ontology/route/03> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "3" ;
+	dbp:name "03" ;
+	dbp:fullname "Bellavista - Pino Montano" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Bellavista_(Sevilla)" .
+
+<http://smartsevilla.es/ontology/route/05> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "5" ;
+	dbp:name "05" ;
+	dbp:fullname "Puerta Triana-Santa Aurelia" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Triana_(Sevilla)" .
+
+<http://smartsevilla.es/ontology/route/06> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "6" ;
+	dbp:name "06" ;
+	dbp:fullname "San Lazaro-Glorieta Heliopolis" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/10> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "10" ;
+	dbp:name "10" ;
+	dbp:fullname "Ponce de Leon -San Jeronimo" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/San_Jeronimo_(Sevilla)" .
+
+<http://smartsevilla.es/ontology/route/11> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "11" ;
+	dbp:name "11" ;
+	dbp:fullname "Pz.Ponce de Leon-Los Principes" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Parque_de_los_Principes_(Sevilla)" .
+
+<http://smartsevilla.es/ontology/route/12> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "12" ;
+	dbp:name "12" ;
+	dbp:fullname "Ponce de  Leon-Pino Montano" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/13> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "13" ;
+	dbp:name "13" ;
+	dbp:fullname "Plaza Duque-Pino Montano" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/14> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "14" ;
+	dbp:name "14" ;
+	dbp:fullname "Plaza Duque-Poligono Norte" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/15> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "15" ;
+	dbp:name "15" ;
+	dbp:fullname "Ponce de Leon-San Diego" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/16> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "16" ;
+	dbp:name "16" ;
+	dbp:fullname "Pza.Jeron. Cordoba-Valdezorras" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Valdezorras" .
+
+<http://smartsevilla.es/ontology/route/20> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "20" ;
+	dbp:name "20" ;
+	dbp:fullname "Ponce de Leon-Pgno.San Pablo" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/21> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "21" ;
+	dbp:name "21" ;
+	dbp:fullname "Plaza Armas-Poligono S. Pablo" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/22> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "22" ;
+	dbp:name "22" ;
+	dbp:fullname "Prado-Sevilla Este" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/24> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "24" ;
+	dbp:name "24" ;
+	dbp:fullname "Ponce de Leon-Palmete" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/25> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "25" ;
+	dbp:name "25" ;
+	dbp:fullname "Prado-Rochelambert" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/26> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "26" ;
+	dbp:name "26" ;
+	dbp:fullname "Prado-Cerro del Aguila" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/27> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "27" ;
+	dbp:name "27" ;
+	dbp:fullname "Plaza del - Duque-Sevilla Este" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Sevilla_Este" .
+
+<http://smartsevilla.es/ontology/route/28> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "28" ;
+	dbp:name "28" ;
+	dbp:fullname "Prado-Parque Alcosa" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Parque_Alcosa" .
+
+<http://smartsevilla.es/ontology/route/29> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "29" ;
+	dbp:name "29" ;
+	dbp:fullname "Prado-Torreblanca" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Torreblanca_(Sevilla)" .
+
+<http://smartsevilla.es/ontology/route/30> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "30" ;
+	dbp:name "30" ;
+	dbp:fullname "Prado-La Paz" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/31> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "31" ;
+	dbp:name "31" ;
+	dbp:fullname "Prado-Poligono Sur" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Poligono_Sur_(Sevilla)" .
+
+<http://smartsevilla.es/ontology/route/32> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "32" ;
+	dbp:name "32" ;
+	dbp:fullname "Plaza del - Duque-Poligono Sur" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Poligono_Sur_(Sevilla)" .
+
+<http://smartsevilla.es/ontology/route/34> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "34" ;
+	dbp:name "34" ;
+	dbp:fullname "Prado-Los Bermejales" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Los_Bermejales,_Sevilla" .
+
+<http://smartsevilla.es/ontology/route/37> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "37" ;
+	dbp:name "37" ;
+	dbp:fullname "Pta.Jerez - Bellavista" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Bellavista_(Sevilla)" .
+
+<http://smartsevilla.es/ontology/route/38> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "38" ;
+	dbp:name "38" ;
+	dbp:fullname "Prado - Univ.Pablo Olavide" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Universidad_Pablo_Olavide" .
+
+<http://smartsevilla.es/ontology/route/39> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "39" ;
+	dbp:name "39" ;
+	dbp:fullname "Los Arcos-Hacienda San Antonio" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/40> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "40" ;
+	dbp:name "40" ;
+	dbp:fullname "Plaza Magdalena-Triana" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/41> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "41" ;
+	dbp:name "41" ;
+	dbp:fullname "Plz. Magdalena-Los Remedios" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Barrio_los_remedios_(sevilla)" .
+
+<http://smartsevilla.es/ontology/route/43> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "43" ;
+	dbp:name "43" ;
+	dbp:fullname "Plaza Magdalena- El Turruñuelo" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/52> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "52" ;
+	dbp:name "52" ;
+	dbp:fullname "San Bernardo-Palmete" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/53> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "53" ;
+	dbp:name "53" ;
+	dbp:fullname "Los Arcos - C.Penitenciario" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/T1> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "60" ;
+	dbp:name "T1" ;
+	dbp:fullname "Plaza Nueva-San Bernardo" ;
+	frp:type "0" .
+
+<http://smartsevilla.es/ontology/route/C1> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "81" ;
+	dbp:name "C1" ;
+	dbp:fullname "Isla de La Cartuja-Prado" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/C2> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "82" ;
+	dbp:name "C2" ;
+	dbp:fullname "Isla de La Cartuja-Prado" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/C3> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "83" ;
+	dbp:name "C3" ;
+	dbp:fullname "Barqueta-Prado" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/C4> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "84" ;
+	dbp:name "C4" ;
+	dbp:fullname "Barqueta-Prado" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/B3> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "87" ;
+	dbp:name "B3" ;
+	dbp:fullname "Gran Plaza-Santa Clara" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Santa_Clara_(California)" .
+
+<http://smartsevilla.es/ontology/route/EA> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "100" ;
+	dbp:name "EA" ;
+	dbp:fullname "Especial -  Aeropuerto" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/A1> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "101" ;
+	dbp:name "A1" ;
+	dbp:fullname "Prado- Pino Montano" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/A2> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "102" ;
+	dbp:name "A2" ;
+	dbp:fullname "Prado - San Jeronimo" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/A3> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "103" ;
+	dbp:name "A3" ;
+	dbp:fullname "Prado - Sevilla Este" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/A4> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "104" ;
+	dbp:name "A4" ;
+	dbp:fullname "Prado - Santa Aurelia" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/A5> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "105" ;
+	dbp:name "A5" ;
+	dbp:fullname "Prado - Poligono Sur" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/A6> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "106" ;
+	dbp:name "A6" ;
+	dbp:fullname "Prado - Bellavista" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/A7> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "107" ;
+	dbp:name "A7" ;
+	dbp:fullname "Circular Nocturno" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/C6A> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "108" ;
+	dbp:name "C6A" ;
+	dbp:fullname "Circular Macarena Norte" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/C6B> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "109" ;
+	dbp:name "C6B" ;
+	dbp:fullname "Circular Macarena Norte" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/A8> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "110" ;
+	dbp:name "A8" ;
+	dbp:fullname "Prado - Parque Alcosa" ;
+	frp:type "3" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Parque_Alcosa" .
+
+<http://smartsevilla.es/ontology/route/B4> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "119" ;
+	dbp:name "B4" ;
+	dbp:fullname "San Bernardo-Torreblanca" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/C5> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "121" ;
+	dbp:name "C5" ;
+	dbp:fullname "Plaza Duque-Puerta Jerez" ;
+	frp:type "3" .
+
+<http://smartsevilla.es/ontology/route/38A> a <http://dbpedia.org/ontology/route> ;
+	g10:route_id "125" ;
+	dbp:name "38A" ;
+	dbp:fullname "Prado - Pitamo - Upo" ;
+	frp:type "3" .

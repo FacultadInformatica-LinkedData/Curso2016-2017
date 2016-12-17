@@ -1,0 +1,884 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/Group07/ontology/JobSearch#",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Identificador",
+          "rdfTypes": [
+            {
+              "uri": "Empleo",
+              "curie": ":Empleo"
+            }
+          ],
+          "links": [
+            {
+              "uri": "titulo",
+              "curie": ":titulo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Título"
+              }
+            },
+            {
+              "uri": "tematica",
+              "curie": ":tematica",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Tematica"
+              }
+            },
+            {
+              "uri": "enProvincia",
+              "curie": ":enProvincia",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Provincia",
+                "rdfTypes": [
+                  {
+                    "uri": "Provincia",
+                    "curie": ":Provincia"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "fechaPublicacion",
+              "curie": ":fechaPublicacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "datePart(value,\"years\")+\"-\"+datePart(value,\"month\")+\"-\"+datePart(value,\"days\")",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "Fecha de publicación"
+              }
+            },
+            {
+              "uri": "descripcion",
+              "curie": ":descripcion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Descripción"
+              }
+            },
+            {
+              "uri": "enProvinciaAlternativa",
+              "curie": ":enProvinciaAlternativa",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "ProvinciaAlternativa",
+                "rdfTypes": [
+                  {
+                    "uri": "Provincia",
+                    "curie": ":Provincia"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "fuenteContenido",
+              "curie": ":fuenteContenido",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "FuenteContenido"
+              }
+            },
+            {
+              "uri": "localidad",
+              "curie": ":localidad",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LocalidadAsset",
+                "rdfTypes": [
+                  {
+                    "uri": "Localidad",
+                    "curie": ":Localidad"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "documentosAsociados",
+              "curie": ":documentosAsociados",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DocumentosAsociados"
+              }
+            },
+            {
+              "uri": "ultimaActualizacion",
+              "curie": ":ultimaActualizacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "datePart(value,\"years\")+\"-\"+datePart(value,\"month\")+\"-\"+datePart(value,\"days\")",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "ultimaActualizacion"
+              }
+            },
+            {
+              "uri": "enlaceContenido",
+              "curie": ":enlaceContenido",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Enlace al contenido"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column LocalidadAsset to type ",
+    "columnName": "LocalidadAsset",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/locs",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "",
+        "name": ""
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Burgos (http://www.websemantica.org/ontology/jobsearch#597) for cells containing \"Burgos\" in column LocalidadAsset",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LocalidadAsset",
+    "similarValue": "Burgos",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.websemantica.org/ontology/jobsearch#597",
+      "name": "Burgos",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Burgos (http://www.websemantica.org/ontology/jobsearch#597) for cells containing \"Burgos\" in column LocalidadAsset",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LocalidadAsset",
+    "similarValue": "Burgos",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.websemantica.org/ontology/jobsearch#597",
+      "name": "Burgos",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Burgos (http://www.websemantica.org/ontology/jobsearch#597) for cells containing \"Burgos\" in column LocalidadAsset",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LocalidadAsset",
+    "similarValue": "Burgos",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.websemantica.org/ontology/jobsearch#597",
+      "name": "Burgos",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic LeÃ³n (http://www.websemantica.org/ontology/jobsearch#896) for cells containing \"León\" in column LocalidadAsset",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LocalidadAsset",
+    "similarValue": "León",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.websemantica.org/ontology/jobsearch#896",
+      "name": "LeÃ³n",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Provincia to type ",
+    "columnName": "Provincia",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/provincias",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "",
+        "name": ""
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Zamora (http://websemantica.org/resources/provincias#49) for cells containing \"Zamora\" in column Provincia",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Provincia",
+    "similarValue": "Zamora",
+    "judgment": "matched",
+    "match": {
+      "id": "http://websemantica.org/resources/provincias#49",
+      "name": "Zamora",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Burgos (http://websemantica.org/resources/provincias#9) for cells containing \"Burgos\" in column Provincia",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Provincia",
+    "similarValue": "Burgos",
+    "judgment": "matched",
+    "match": {
+      "id": "http://websemantica.org/resources/provincias#9",
+      "name": "Burgos",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Salamanca (http://websemantica.org/resources/provincias#37) for cells containing \"Salamanca\" in column Provincia",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Provincia",
+    "similarValue": "Salamanca",
+    "judgment": "matched",
+    "match": {
+      "id": "http://websemantica.org/resources/provincias#37",
+      "name": "Salamanca",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ã�vila (http://websemantica.org/resources/provincias#5) for cells containing \"Ávila\" in column Provincia",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Provincia: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Provincia"
+        }
+      ]
+    },
+    "columnName": "Provincia",
+    "similarValue": "Ávila",
+    "judgment": "matched",
+    "match": {
+      "id": "http://websemantica.org/resources/provincias#5",
+      "name": "Ã�vila",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Otra\" in column Provincia",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Provincia: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Provincia"
+        }
+      ]
+    },
+    "columnName": "Provincia",
+    "similarValue": "Otra",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Empleo:Provincia at index 3 based on column Provincia using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Empleo:Provincia",
+    "columnInsertIndex": 3,
+    "baseColumnName": "Provincia",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/Group07/ontology/JobSearch#",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Identificador",
+          "rdfTypes": [
+            {
+              "uri": "Empleo",
+              "curie": ":Empleo"
+            }
+          ],
+          "links": [
+            {
+              "uri": "titulo",
+              "curie": ":titulo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Título"
+              }
+            },
+            {
+              "uri": "tematica",
+              "curie": ":tematica",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Tematica"
+              }
+            },
+            {
+              "uri": "enProvincia",
+              "curie": ":enProvincia",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Provincia",
+                "rdfTypes": [
+                  {
+                    "uri": "Provincia",
+                    "curie": ":Provincia"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                    "curie": "owl:sameAs",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Empleo:Provincia",
+                      "rdfTypes": [],
+                      "links": []
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Provincia"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "fechaPublicacion",
+              "curie": ":fechaPublicacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "datePart(value,\"years\")+\"-\"+datePart(value,\"month\")+\"-\"+datePart(value,\"days\")",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "Fecha de publicación"
+              }
+            },
+            {
+              "uri": "descripcion",
+              "curie": ":descripcion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Descripción"
+              }
+            },
+            {
+              "uri": "enProvinciaAlternativa",
+              "curie": ":enProvinciaAlternativa",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "ProvinciaAlternativa",
+                "rdfTypes": [
+                  {
+                    "uri": "Provincia",
+                    "curie": ":Provincia"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "fuenteContenido",
+              "curie": ":fuenteContenido",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "FuenteContenido"
+              }
+            },
+            {
+              "uri": "localidad",
+              "curie": ":localidad",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LocalidadAsset",
+                "rdfTypes": [
+                  {
+                    "uri": "Localidad",
+                    "curie": ":Localidad"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "LocalidadAsset"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "documentosAsociados",
+              "curie": ":documentosAsociados",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DocumentosAsociados"
+              }
+            },
+            {
+              "uri": "ultimaActualizacion",
+              "curie": ":ultimaActualizacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "datePart(value,\"years\")+\"-\"+datePart(value,\"month\")+\"-\"+datePart(value,\"days\")",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "ultimaActualizacion"
+              }
+            },
+            {
+              "uri": "enlaceContenido",
+              "curie": ":enlaceContenido",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Enlace al contenido"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column empleo:localidad at index 9 based on column LocalidadAsset using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "empleo:localidad",
+    "columnInsertIndex": 9,
+    "baseColumnName": "LocalidadAsset",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/Group07/ontology/JobSearch#",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Identificador",
+          "rdfTypes": [
+            {
+              "uri": "Empleo",
+              "curie": ":Empleo"
+            }
+          ],
+          "links": [
+            {
+              "uri": "titulo",
+              "curie": ":titulo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Título"
+              }
+            },
+            {
+              "uri": "tematica",
+              "curie": ":tematica",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Tematica"
+              }
+            },
+            {
+              "uri": "enProvincia",
+              "curie": ":enProvincia",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Provincia",
+                "rdfTypes": [
+                  {
+                    "uri": "Provincia",
+                    "curie": ":Provincia"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                    "curie": "owl:sameAs",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Empleo:Provincia",
+                      "rdfTypes": [],
+                      "links": []
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Provincia"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "fechaPublicacion",
+              "curie": ":fechaPublicacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "datePart(value,\"years\")+\"-\"+datePart(value,\"month\")+\"-\"+datePart(value,\"days\")",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "Fecha de publicación"
+              }
+            },
+            {
+              "uri": "descripcion",
+              "curie": ":descripcion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Descripción"
+              }
+            },
+            {
+              "uri": "enProvinciaAlternativa",
+              "curie": ":enProvinciaAlternativa",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "ProvinciaAlternativa",
+                "rdfTypes": [
+                  {
+                    "uri": "Provincia",
+                    "curie": ":Provincia"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "fuenteContenido",
+              "curie": ":fuenteContenido",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "FuenteContenido"
+              }
+            },
+            {
+              "uri": "localidad",
+              "curie": ":localidad",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LocalidadAsset",
+                "rdfTypes": [
+                  {
+                    "uri": "Localidad",
+                    "curie": ":Localidad"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "LocalidadAsset"
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                    "curie": "owl:sameAs",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "empleo:localidad",
+                      "rdfTypes": [],
+                      "links": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "documentosAsociados",
+              "curie": ":documentosAsociados",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DocumentosAsociados"
+              }
+            },
+            {
+              "uri": "ultimaActualizacion",
+              "curie": ":ultimaActualizacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "datePart(value,\"years\")+\"-\"+datePart(value,\"month\")+\"-\"+datePart(value,\"days\")",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "ultimaActualizacion"
+              }
+            },
+            {
+              "uri": "enlaceContenido",
+              "curie": ":enlaceContenido",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Enlace al contenido"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

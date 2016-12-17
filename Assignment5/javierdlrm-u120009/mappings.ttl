@@ -1,0 +1,154 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://wsyld-assignment5/javierdlrm/> .
+@prefix ontology: <http://wsyld-assignment5/javierdlrm/ontology#> .
+@prefix instances: <http://wsyld-assignment5/javierdlrm/instances/> .
+
+#### City
+
+<TriplesMapCity>
+
+	a rr:TriplesMap;
+
+	rr:logicalTable [ 
+		rr:tableName "City" 
+	];
+
+	rr:subjectMap [ 
+		rr:termType rr:IRI;
+		rr:class ontology:City;	 
+		rr:template "http://wsyld-assignment5/javierdlrm/instances/City/{ID}"
+	];
+
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:hasId ];
+		rr:objectMap [ rr:column "ID"; rr:datatype xsd:int ]
+	];
+	rr:predicateObjectMap [ 
+		rr:predicateMap [ rr:constant ontology:hasName ]; 
+		rr:objectMap [ rr:column "Name"; rr:datatype xsd:string ]
+	];
+	rr:predicateObjectMap [ 
+		rr:predicateMap [ rr:constant ontology:inDistrict ]; 
+		rr:objectMap [ rr:column "District"; rr:datatype xsd:string ]
+	];
+	rr:predicateObjectMap [ 
+		rr:predicateMap [ rr:constant ontology:withPopulation ]; 
+		rr:objectMap [ rr:column "Population"; rr:datatype xsd:int ]
+	];
+	rr:predicateObjectMap [ 
+		rr:predicateMap [ rr:constant ontology:inCountry ]; 
+		rr:objectMap [ rr:column "CountryCode"; rr:datatype xsd:token ]
+	].
+
+#### Country
+
+<TriplesMapCountry>
+
+	a rr:TriplesMap;
+
+	rr:logicalTable [ 
+		rr:tableName "Country" 
+	];
+
+	rr:subjectMap [ 
+		rr:termType rr:IRI;
+		rr:class ontology:Country;
+		rr:template "http://wsyld-assignment5/javierdlrm/instances/Country/{Code}"
+	];
+
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:hasCode ];
+		rr:objectMap [ rr:column "Code"; rr:datatype xsd:token ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:hasName ];
+		rr:objectMap [ rr:column "Name"; rr:datatype xsd:string ];
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:inContinent ];
+		rr:objectMap [ rr:column "Continent"; rr:datatype xsd:string ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:inRegion ];
+		rr:objectMap [ rr:column "Region"; rr:datatype xsd:string ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:withSurfaceArea ];
+		rr:objectMap [ rr:column "SurfaceArea"; rr:datatype xsd:float ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:withIndepYear ];
+		rr:objectMap [ rr:column "IndepYear"; rr:datatype xsd:int ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:withPopulation ];
+		rr:objectMap [ rr:column "Population"; rr:datatype xsd:int ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:withLifeExpectancy ];
+		rr:objectMap [ rr:column "LifeExpectancy"; rr:datatype xsd:float ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:hasGNP ];
+		rr:objectMap [ rr:column "GNP"; rr:datatype xsd:float ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:hasGNPOld ];
+		rr:objectMap [ rr:column "GNPOld"; rr:datatype xsd:float ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:hasLocalName ];
+		rr:objectMap [ rr:column "LocalName"; rr:datatype xsd:string ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:withGovernmentForm ];
+		rr:objectMap [ rr:column "GovernmentForm"; rr:datatype xsd:string ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:withHeadOfState ];
+		rr:objectMap [ rr:column "HeadOfState"; rr:datatype xsd:string ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:hasCapital ];
+		rr:objectMap [ rr:column "Capital"; rr:datatype xsd:int ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:hasCode2 ];
+		rr:objectMap [ rr:column "Code2"; rr:datatype xsd:token ]
+	].
+
+#### CountryLanguage
+
+<TriplesMapCountryLanguage> 
+
+	a rr:TriplesMap;
+
+	rr:logicalTable [ 
+		rr:tableName "CountryLanguage" 
+	];
+
+	rr:subjectMap [ 
+		rr:termType rr:IRI;
+		rr:class ontology:CountryLanguage;
+		rr:template "http://wsyld-assignment5/javierdlrm/instances/CountryLanguage/{CountryCode}"
+	];
+
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:inCountry ];
+		rr:objectMap [ rr:column "CountryCode"; rr:datatype xsd:token ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:withLanguage ];
+		rr:objectMap [ rr:column "Language"; rr:datatype xsd:string ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:isOfficial ];
+		rr:objectMap [ rr:column "IsOfficial"; rr:datatype xsd:string ]
+	];
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant ontology:withPercentage ];
+		rr:objectMap [ rr:column "Percentage"; rr:datatype xsd:float ]
+	].
