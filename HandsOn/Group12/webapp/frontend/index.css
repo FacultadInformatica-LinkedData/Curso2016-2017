@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Oswald, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.madrid {
+  height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #CCC;
+}
+
+.madrid__title {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+}
+
+.madrid__population {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: right;
+}
+
+.madrid__score-container {
+  width: 220px;
+  height: 220px;
+  border: 8px #000 solid;
+  margin: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.madrid__score {
+  font-weight: 700;
+  font-size: 88px;
+}
+
+
+.places {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 32px;
+  display: flex;
+}
+
+.place {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.place__header {
+  flex: 1;
+}
+
+.place__name {
+  margin: 0;
+  padding: 0;
+}
+
+.place__score-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px #000 solid;
+  border-radius: 50%;
+  margin-left: 20px;
+}
