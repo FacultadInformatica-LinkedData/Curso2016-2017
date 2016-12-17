@@ -1,0 +1,1682 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column to PK",
+    "oldColumnName": "Column",
+    "newColumnName": "PK"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 2 to NOMBRE",
+    "oldColumnName": "Column 2",
+    "newColumnName": "NOMBRE"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 3 to DESCRIPCION-ENTIDAD",
+    "oldColumnName": "Column 3",
+    "newColumnName": "DESCRIPCION-ENTIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 4 to HORARIO",
+    "oldColumnName": "Column 4",
+    "newColumnName": "HORARIO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 5 to EQUIPAMIENTO",
+    "oldColumnName": "Column 5",
+    "newColumnName": "EQUIPAMIENTO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 6 to TRANSPORTE",
+    "oldColumnName": "Column 6",
+    "newColumnName": "TRANSPORTE"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 7 to DESCRIPCION",
+    "oldColumnName": "Column 7",
+    "newColumnName": "DESCRIPCION"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 8 to ACCESIBILIDAD",
+    "oldColumnName": "Column 8",
+    "newColumnName": "ACCESIBILIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 9 to CONTENT-URL",
+    "oldColumnName": "Column 9",
+    "newColumnName": "CONTENT-URL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 10 to NOMBRE-VIA",
+    "oldColumnName": "Column 10",
+    "newColumnName": "NOMBRE-VIA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 11 to CLASE-VIAL",
+    "oldColumnName": "Column 11",
+    "newColumnName": "CLASE-VIAL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 12 to TIPO-NUM",
+    "oldColumnName": "Column 12",
+    "newColumnName": "TIPO-NUM"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 13 to NUM",
+    "oldColumnName": "Column 13",
+    "newColumnName": "NUM"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 14",
+    "columnName": "Column 14"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 15",
+    "columnName": "Column 15"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 16",
+    "columnName": "Column 16"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 17",
+    "columnName": "Column 17"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 18 to LOCALIDAD",
+    "oldColumnName": "Column 18",
+    "newColumnName": "LOCALIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 19 to PROVINCIA",
+    "oldColumnName": "Column 19",
+    "newColumnName": "PROVINCIA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 20 to CODIGO-POSTAL",
+    "oldColumnName": "Column 20",
+    "newColumnName": "CODIGO-POSTAL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 21 to BARRIO",
+    "oldColumnName": "Column 21",
+    "newColumnName": "BARRIO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 22 to DISTRITO",
+    "oldColumnName": "Column 22",
+    "newColumnName": "DISTRITO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 23 to COORDENADA-X",
+    "oldColumnName": "Column 23",
+    "newColumnName": "COORDENADA-X"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 24 to COORDENADA-Y",
+    "oldColumnName": "Column 24",
+    "newColumnName": "COORDENADA-Y"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 25 to LATITUD",
+    "oldColumnName": "Column 25",
+    "newColumnName": "LATITUD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 26 to LONGITUD",
+    "oldColumnName": "Column 26",
+    "newColumnName": "LONGITUD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 27 to TELEFONO",
+    "oldColumnName": "Column 27",
+    "newColumnName": "TELEFONO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 28",
+    "columnName": "Column 28"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 29 to EMAIL",
+    "oldColumnName": "Column 29",
+    "newColumnName": "EMAIL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 30 to TIPO",
+    "oldColumnName": "Column 30",
+    "newColumnName": "TIPO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 31",
+    "columnName": "Column 31"
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"Polideportivos/\"+value",
+          "isRowNumberCell": true,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int"
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Polideportivos/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#name",
+              "curie": "group5:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#nombreCalle",
+              "curie": "group5:nombreCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#numeroCalle",
+              "curie": "group5:numeroCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#localidad",
+              "curie": "group5:localidad",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#barrio",
+              "curie": "group5:barrio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#codigoPostal",
+              "curie": "group5:codigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#email",
+              "curie": "group5:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#telefono",
+              "curie": "group5:telefono",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"Polideportivos/\"+value",
+          "isRowNumberCell": true,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int"
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Polideportivos/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#name",
+              "curie": "group5:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#nombreCalle",
+              "curie": "group5:nombreCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#numeroCalle",
+              "curie": "group5:numeroCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#localidad",
+              "curie": "group5:localidad",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#barrio",
+              "curie": "group5:barrio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#codigoPostal",
+              "curie": "group5:codigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#email",
+              "curie": "group5:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#telefono",
+              "curie": "group5:telefono",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"Polideportivos/\"+value",
+          "isRowNumberCell": true,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int"
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Polideportivos/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#given-name",
+              "curie": "vcard:given-name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#street-address",
+              "curie": "vcard:street-address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#note",
+              "curie": "vcard:note",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#region",
+              "curie": "vcard:region",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#locality",
+              "curie": "vcard:locality",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#postal-code",
+              "curie": "vcard:postal-code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#email",
+              "curie": "vcard:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column NOMBRE to type http://www.wikidata.org/entity/Q16620760",
+    "columnName": "NOMBRE",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://www.wikidata.org/entity/Q16620760",
+        "name": "Polideportivo"
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Estadio Antiguo Canódromo (http://www.wikidata.org/entity/Q5847766) for cells containing \"Centro Deportivo Municipal Antiguo Canódromo\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Antiguo Canódromo",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q5847766",
+      "name": "Estadio Antiguo Canódromo",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Polideportivo Daoiz y Velarde (http://www.wikidata.org/entity/Q6081742) for cells containing \"Centro Deportivo Municipal Daoíz y Velarde 1\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Daoíz y Velarde 1",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q6081742",
+      "name": "Polideportivo Daoiz y Velarde",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Polideportivo Fernando Martín (http://www.wikidata.org/entity/Q3324750) for cells containing \"Centro Deportivo Municipal Fernando Martín\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Fernando Martín",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q3324750",
+      "name": "Polideportivo Fernando Martín",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Centro Deportivo Municipal La Mina (http://www.wikidata.org/entity/Q5761224) for cells containing \"Centro Deportivo Municipal La Mina\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal La Mina",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q5761224",
+      "name": "Centro Deportivo Municipal La Mina",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Caja Mágica (http://www.wikidata.org/entity/Q371585) for cells containing \"Madrid Caja Mágica\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Madrid Caja Mágica",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q371585",
+      "name": "Caja Mágica",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Alberto García (Pozo Tío Raimundo)\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Alberto García (Pozo Tío Raimundo)",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Alfredo Goyeneche\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Alfredo Goyeneche",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Aluche\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Aluche",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Antonio Díaz Miguel\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Antonio Díaz Miguel",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Arganzuela\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Arganzuela",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Barajas\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Barajas",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Casa de Campo\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Casa de Campo",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Centro Integrado Arganzuela\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Centro Integrado Arganzuela",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Cerro Almodóvar\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Cerro Almodóvar",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Chamartín\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Chamartín",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Circuito BMX\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Circuito BMX",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Ciudad de Los Poetas\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Ciudad de Los Poetas",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Concepción\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Concepción",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal El Espinillo\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal El Espinillo",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal El Olivillo\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal El Olivillo",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        },
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/row-star",
+    "description": "Star rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "starred": true
+  },
+  {
+    "op": "core/row-star",
+    "description": "Unstar rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "starred": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Francos Rodríguez\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Francos Rodríguez",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Fuente del Berro\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Fuente del Berro",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Estanque del Retiro\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Estanque del Retiro",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Félix Rubio\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Félix Rubio",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Gimnasio Moscardó\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Gimnasio Moscardó",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Gallur\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Gallur",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Deportivo Municipal Hortaleza\" in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.flagged",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Flagged Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "NOMBRE",
+    "similarValue": "Centro Deportivo Municipal Hortaleza",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Polideportivos en DBpedia at index 2 based on column NOMBRE using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Polideportivos en DBpedia",
+    "columnInsertIndex": 2,
+    "baseColumnName": "NOMBRE",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"Polideportivos/\"+value",
+          "isRowNumberCell": true,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int"
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Polideportivos/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/SportsClub",
+              "curie": "schema:SportsClub"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#given-name",
+              "curie": "vcard:given-name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#street-address",
+              "curie": "vcard:street-address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#note",
+              "curie": "vcard:note",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#region",
+              "curie": "vcard:region",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#locality",
+              "curie": "vcard:locality",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#postal-code",
+              "curie": "vcard:postal-code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#email",
+              "curie": "vcard:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Polideportivos en DBpedia",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

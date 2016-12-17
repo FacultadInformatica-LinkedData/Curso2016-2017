@@ -1,0 +1,2150 @@
+[
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column District Name using expression value.toString()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "District Name",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column School Name using expression value.toString()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "School Name",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Organization Type using expression value.toString()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Organization Type",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Organization Code using expression value.toString()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Organization Code",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Location 1 by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Location 1",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "(",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Location 1 1 to Street Location",
+    "oldColumnName": "Location 1 1",
+    "newColumnName": "Street Location"
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Location 1 2 by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Location 1 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Location 1 2 2 by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Location 1 2 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ")",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Location 1 2 2 2",
+    "columnName": "Location 1 2 2 2"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Location 1 2 1 to Latitude",
+    "oldColumnName": "Location 1 2 1",
+    "newColumnName": "Latitude"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Location 1 2 2 1 to Longitude",
+    "oldColumnName": "Location 1 2 2 1",
+    "newColumnName": "Longitude"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Website",
+    "columnName": "Website"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column PreKindergarten",
+    "columnName": "PreKindergarten"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Kindergarten",
+    "columnName": "Kindergarten"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Grade 1",
+    "columnName": "Grade 1"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Grade 2",
+    "columnName": "Grade 2"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Grade 3",
+    "columnName": "Grade 3"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Grade 4",
+    "columnName": "Grade 4"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Grade 5",
+    "columnName": "Grade 5"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Grade 6",
+    "columnName": "Grade 6"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Grade 7",
+    "columnName": "Grade 7"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Grade 8",
+    "columnName": "Grade 8"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Grade 9",
+    "columnName": "Grade 9"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Grade 10",
+    "columnName": "Grade 10"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Grade 11",
+    "columnName": "Grade 11"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Grade 12",
+    "columnName": "Grade 12"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Student Open Date",
+    "columnName": "Student Open Date"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Interdistrict Magnet",
+    "columnName": "Interdistrict Magnet"
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Latitude by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Latitude",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Latitude 2",
+    "columnName": "Latitude 2"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Latitude 1 to Latitude",
+    "oldColumnName": "Latitude 1",
+    "newColumnName": "Latitude"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Latitude using expression value.toString()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Latitude",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Longitude using expression value.toString()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Longitude",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "School Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#School",
+              "curie": "livingPlaces:School"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToSchoolDistrict",
+              "curie": "livingPlaces:pertainToSchoolDistrict",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+                "columnName": "District Name"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "School Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasOrganizationType",
+              "curie": "livingPlaces:hasOrganizationType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Organization Type"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasOrganizationalCode",
+              "curie": "livingPlaces:hasOrganizationalCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                "columnName": "Organization Code"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasAddress",
+              "curie": "livingPlaces:hasAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Street Location"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasLatitude",
+              "curie": "livingPlaces:hasLatitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasLongitude",
+              "curie": "livingPlaces:hasLongitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasZipCode",
+              "curie": "livingPlaces:hasZipCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasPhone",
+              "curie": "livingPlaces:hasPhone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "School Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "District Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+              "curie": "livingPlaces:SchoolDistrict"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "District Name"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "School Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#School",
+              "curie": "livingPlaces:School"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToSchoolDistrict",
+              "curie": "livingPlaces:pertainToSchoolDistrict",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+                "columnName": "District Name"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "School Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasOrganizationType",
+              "curie": "livingPlaces:hasOrganizationType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Organization Type"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasOrganizationalCode",
+              "curie": "livingPlaces:hasOrganizationalCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                "columnName": "Organization Code"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasAddress",
+              "curie": "livingPlaces:hasAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Street Location"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasLatitude",
+              "curie": "livingPlaces:hasLatitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasLongitude",
+              "curie": "livingPlaces:hasLongitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasZipCode",
+              "curie": "livingPlaces:hasZipCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasPhone",
+              "curie": "livingPlaces:hasPhone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "School Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "District Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+              "curie": "livingPlaces:SchoolDistrict"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "District Name"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "School Name",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/School",
+              "curie": "schema:School"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToSchoolDistrict",
+              "curie": "livingPlaces:pertainToSchoolDistrict",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+                "columnName": "District Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasOrganizationType",
+              "curie": "livingPlaces:hasOrganizationType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Organization Type"
+              }
+            },
+            {
+              "uri": "http://schema.org/leiCode",
+              "curie": "schema:leiCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Organization Code"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Street Location"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasLongitude",
+              "curie": "livingPlaces:hasLongitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasZipCode",
+              "curie": "livingPlaces:hasZipCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasPhone",
+              "curie": "livingPlaces:hasPhone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "School Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "District Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+              "curie": "livingPlaces:SchoolDistrict"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "District Name"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "School Name",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/School",
+              "curie": "schema:School"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToSchoolDistrict",
+              "curie": "livingPlaces:pertainToSchoolDistrict",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+                "columnName": "District Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasOrganizationType",
+              "curie": "livingPlaces:hasOrganizationType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Organization Type"
+              }
+            },
+            {
+              "uri": "http://schema.org/leiCode",
+              "curie": "schema:leiCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Organization Code"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Street Location"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasZipCode",
+              "curie": "livingPlaces:hasZipCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasPhone",
+              "curie": "livingPlaces:hasPhone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "School Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "District Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+              "curie": "livingPlaces:SchoolDistrict"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "District Name"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "School Name",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/School",
+              "curie": "schema:School"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToSchoolDistrict",
+              "curie": "livingPlaces:pertainToSchoolDistrict",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+                "columnName": "District Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasOrganizationType",
+              "curie": "livingPlaces:hasOrganizationType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Organization Type"
+              }
+            },
+            {
+              "uri": "http://schema.org/leiCode",
+              "curie": "schema:leiCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Organization Code"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Street Location"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/zipCode",
+              "curie": "dbo:zipCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2006/vcard/ns#text",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "School Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "District Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+              "curie": "livingPlaces:SchoolDistrict"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "District Name"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "School Name",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/School",
+              "curie": "schema:School"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToSchoolDistrict",
+              "curie": "livingPlaces:pertainToSchoolDistrict",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+                "columnName": "District Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasOrganizationType",
+              "curie": "livingPlaces:hasOrganizationType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Organization Type"
+              }
+            },
+            {
+              "uri": "http://schema.org/leiCode",
+              "curie": "schema:leiCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Organization Code"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Street Location"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/zipCode",
+              "curie": "dbo:zipCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2006/vcard/ns#text",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "School Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "District Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+              "curie": "livingPlaces:SchoolDistrict"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "District Name"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "School Name",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/School",
+              "curie": "schema:School"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToSchoolDistrict",
+              "curie": "livingPlaces:pertainToSchoolDistrict",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+                "columnName": "District Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasOrganizationType",
+              "curie": "livingPlaces:hasOrganizationType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Organization Type"
+              }
+            },
+            {
+              "uri": "http://schema.org/leiCode",
+              "curie": "schema:leiCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Organization Code"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Street Location"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/zipCode",
+              "curie": "dbo:zipCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2006/vcard/ns#text",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "School Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "District Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+              "curie": "livingPlaces:SchoolDistrict"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "District Name"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column District Name to type http://dbpedia.org/class/yago/SchoolDistrict108587709",
+    "columnName": "District Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/SchoolDistrict108587709",
+        "name": "yago:SchoolDistrict108587709"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column District Name to type http://dbpedia.org/class/yago/AdministrativeDistrict108491826",
+    "columnName": "District Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/AdministrativeDistrict108491826",
+        "name": "yago:AdministrativeDistrict108491826"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column District Name to type http://dbpedia.org/ontology/EducationalInstitution",
+    "columnName": "District Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/EducationalInstitution",
+        "name": "dbo:EducationalInstitution"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column District Name to type http://dbpedia.org/class/yago/District108552138",
+    "columnName": "District Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/District108552138",
+        "name": "yago:District108552138"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "District Name: best candidate's score",
+          "from": 0.606,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "District Name"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column District Name to type http://dbpedia.org/class/yago/Location100027167",
+    "columnName": "District Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/Location100027167",
+        "name": "yago:Location100027167"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "District Name: best candidate's score",
+          "from": 0.606,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "District Name"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column District Name to type http://dbpedia.org/class/yago/SchoolDistrict108587709",
+    "columnName": "District Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/SchoolDistrict108587709",
+        "name": "yago:SchoolDistrict108587709"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 1
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "District Name: best candidate's score",
+          "from": 0.606,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "District Name"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column District Name to type http://dbpedia.org/class/yago/AdministrativeDistrict108491826",
+    "columnName": "District Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/AdministrativeDistrict108491826",
+        "name": "yago:AdministrativeDistrict108491826"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "District Name: best candidate's score",
+          "from": 0.606,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "District Name"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column District Name to type http://dbpedia.org/class/yago/District108552138",
+    "columnName": "District Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/District108552138",
+        "name": "yago:District108552138"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "District Name: best candidate's score",
+          "from": 0.606,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "District Name"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column yago:AdministrativeDistrict at index 1 based on column District Name using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "District Name: best candidate's score",
+          "from": 0.606,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "District Name"
+        }
+      ]
+    },
+    "newColumnName": "yago:AdministrativeDistrict",
+    "columnInsertIndex": 1,
+    "baseColumnName": "District Name",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column School Name to type http://schema.org/School",
+    "columnName": "School Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://schema.org/School",
+        "name": "schema:School"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "District Name: best candidate's score",
+          "from": 0.606,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "District Name"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column School Name to type http://dbpedia.org/ontology/EducationalInstitution",
+    "columnName": "School Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/EducationalInstitution",
+        "name": "dbo:EducationalInstitution"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "District Name: best candidate's score",
+          "from": 0.606,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "District Name"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column dbo:EducationalIntitution at index 3 based on column School Name using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "District Name: best candidate's score",
+          "from": 0.606,
+          "to": 1.002,
+          "type": "range",
+          "columnName": "District Name"
+        }
+      ]
+    },
+    "newColumnName": "dbo:EducationalIntitution",
+    "columnInsertIndex": 3,
+    "baseColumnName": "School Name",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "School Name",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/School",
+              "curie": "schema:School"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToSchoolDistrict",
+              "curie": "livingPlaces:pertainToSchoolDistrict",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+                "columnName": "District Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasOrganizationType",
+              "curie": "livingPlaces:hasOrganizationType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Organization Type"
+              }
+            },
+            {
+              "uri": "http://schema.org/leiCode",
+              "curie": "schema:leiCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Organization Code"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Street Location"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/zipCode",
+              "curie": "dbo:zipCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2006/vcard/ns#text",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "School Name"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dbo:EducationalIntitution",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "District Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#SchoolDistrict",
+              "curie": "livingPlaces:SchoolDistrict"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "District Name"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "yago:AdministrativeDistrict",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
