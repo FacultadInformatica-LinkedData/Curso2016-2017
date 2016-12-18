@@ -1,0 +1,28 @@
+# How many accidents were there in Madrid in 2013?
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+SELECT (SUM(?accidentes) AS ?Cont) WHERE {
+    ?obs a qb:Observation;
+    mv:numberOfAccidents ?accidentes
+}
+
+# Give me the number of accidents in Usera for each type of accident
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+SELECT ?Tipo ?Cont WHERE {
+	?obs a qb:Observation;
+	mv:hasAccidentType ?Tipo;
+	mv:relatedDistrict "USERA";
+	mv:numberOfAccidents ?Cont.
+}
+
+# Give me the number of multiple collisions for each district
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+SELECT ?Distrito ?Cont WHERE {
+    ?obs a qb:Observation ;
+    mv:relatedDistrict ?Distrito;
+    mv:numberOfAccidents ?Cont;
+    mv:hasAccidentType mv:MultipleCollision.
+}
+
