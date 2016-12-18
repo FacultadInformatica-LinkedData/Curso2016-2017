@@ -1,0 +1,512 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ontology: <http://www.madridcultural.es/ontology.owl#> .
+
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3ca05c2cdc41c010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Arganzuela" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: Legazpi (l�neas, 3, 6) 
+ Bus: 6, 18, 62, 78, 148 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Arganzuela , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "CHOPERA" ;
+	ontology:tipoVia "PASEO" ;
+	ontology:numero "10" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28045" ;
+	ontology:tieneBarrio "CHOPERA" ;
+	ontology:tieneDistrito "ARGANZUELA" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                               
+""" .
+
+_:node1b4902iplx1 a schema:GeoCoordinates ;
+	schema:latitude "40.3933877847248" ;
+	schema:longitude "-3.698565632659468" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3ca05c2cdc41c010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx1 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=82d05c2cdc41c010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Barajas" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: Barajas (l�nea 8) 
+ Bus: 101, 105, 115 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Barajas , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "MERCURIO" ;
+	ontology:tipoVia "PLAZA" ;
+	ontology:numero "1" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28042" ;
+	ontology:tieneBarrio "CASCO H.BARAJAS" ;
+	ontology:tieneDistrito "BARAJAS" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                    
+""" .
+
+_:node1b4902iplx2 a schema:GeoCoordinates ;
+	schema:latitude "40.47479357890765" ;
+	schema:longitude "-3.577768444536064" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=82d05c2cdc41c010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx2 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=63688aa6bd91f010VgnVCM1000000b205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Carabanchel" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte " Bus: 34, 108 " ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Carabanchel , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "CARABANCHEL" ;
+	ontology:tipoVia "PLAZA" ;
+	ontology:numero "1" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28025" ;
+	ontology:tieneBarrio "PUERTA BONITA" ;
+	ontology:tieneDistrito "CARABANCHEL" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                                         
+""" ;
+	schema:email "jmcarabanchel@madrid.es" .
+
+_:node1b4902iplx3 a schema:GeoCoordinates ;
+	schema:latitude "40.38046387365159" ;
+	schema:longitude "-3.7413135828951924" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=63688aa6bd91f010VgnVCM1000000b205a0aRCRD> schema:geocoordinates _:node1b4902iplx3 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=0ba88aa6bd91f010VgnVCM1000000b205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Centro" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: Sol (l�neas 1, 2, 3), �pera (l�neas 2, 5, R) 
+ Bus: 3, 5, 15, 20, 50, 51, 52, 53, 150 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Centro , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "MAYOR" ;
+	ontology:tipoVia "CALLE" ;
+	ontology:numero "72" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28013" ;
+	ontology:tieneBarrio "PALACIO" ;
+	ontology:tieneDistrito "CENTRO" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                          
+""" .
+
+_:node1b4902iplx4 a schema:GeoCoordinates ;
+	schema:latitude "40.41553854185091" ;
+	schema:longitude "-3.7108053614187186" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=0ba88aa6bd91f010VgnVCM1000000b205a0aRCRD> schema:geocoordinates _:node1b4902iplx4 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4cd88aa6bd91f010VgnVCM1000000b205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Chamart�n" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: Cruz del Rayo (l�nea 9), Prosperidad (l�nea 4) 
+ Bus: 7, 16, 19, 29, 51, 52 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Chamart�n , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "PRINCIPE DE VERGARA" ;
+	ontology:tipoVia "CALLE" ;
+	ontology:numero "142" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28002" ;
+	ontology:tieneBarrio "CIUDAD JARDIN" ;
+	ontology:tieneDistrito "CHAMARTIN" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                               
+""" ;
+	schema:email "jmchamartin@madrid.es" .
+
+_:node1b4902iplx5 a schema:GeoCoordinates ;
+	schema:latitude "40.44489723228663" ;
+	schema:longitude "-3.6780972922453685" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4cd88aa6bd91f010VgnVCM1000000b205a0aRCRD> schema:geocoordinates _:node1b4902iplx5 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3fae0a47f441f010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Chamber�" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: Iglesia (l�nea 1) 
+ Bus: 3, 40, 147 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Chamber� , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "CHAMBERI" ;
+	ontology:tipoVia "PLAZA" ;
+	ontology:numero "4" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28010" ;
+	ontology:tieneBarrio "ALMAGRO" ;
+	ontology:tieneDistrito "CHAMBERI" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                                                      
+""" ;
+	schema:email "gdchamberi@madrid.es" .
+
+_:node1b4902iplx6 a schema:GeoCoordinates ;
+	schema:latitude "40.43305424706676" ;
+	schema:longitude "-3.6971367503492316" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3fae0a47f441f010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx6 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f5de0a47f441f010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Ciudad Lineal" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: Ciudad Lineal (l�nea 5) , Pueblo Nuevo (l�nea 5, 7) 
+ Bus: 4, 38, 48, 70, 77, 105, 109,  775 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Ciudad Lineal , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "HERMANOS GARCIA NOBLEJAS" ;
+	ontology:tipoVia "CALLE" ;
+	ontology:numero "16" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28037" ;
+	ontology:tieneBarrio "PUEBLO NUEVO" ;
+	ontology:tieneDistrito "CIUDAD LINEAL" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                       
+""" .
+
+_:node1b4902iplx7 a schema:GeoCoordinates ;
+	schema:latitude "40.43599597484312" ;
+	schema:longitude "-3.636977491626707" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f5de0a47f441f010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx7 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=bcfe0a47f441f010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Fuencarral - El Pardo" ;
+	ontology:horario """ De lunes a jueves de 8:30 a 17 horas. Viernes de 8:30 a 14 horas. S�bados, domingos y festivos cerrado. 
+ Los horarios especiales se especifican en cada una de las dependencias.  """ ;
+	ontology:tieneTransporte """ Metro: Barrio del Pilar (l�nea 9), Pe�agrande (l�nea 7), Avenida de la Ilustraci�n (l�nea 7) 
+ Bus: 42, 49, 83, 128, 132, 137 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de las  Oficinas de L�nea Madrid de Fuencarral - El Pardo , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "MONFORTE DE LEMOS" ;
+	ontology:tipoVia "AVENIDA" ;
+	ontology:numero "40" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28029" ;
+	ontology:tieneBarrio "EL PILAR" ;
+	ontology:tieneDistrito "FUENCARRAL-EL PARDO" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                                 
+""" .
+
+_:node1b4902iplx8 a schema:GeoCoordinates ;
+	schema:latitude "40.478526343687925" ;
+	schema:longitude "-3.709841173334448" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=bcfe0a47f441f010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx8 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=732f0a47f441f010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Hortaleza" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte " Bus: 9 ,72 ,73 " ;
+	rdfs:comment " Consulte la localizaci�n y el horario de las  Oficinas de L�nea Madrid de Hortaleza , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "CANILLAS" ;
+	ontology:tipoVia "CARRETERA" ;
+	ontology:numero "2" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28043" ;
+	ontology:tieneBarrio "CANILLAS" ;
+	ontology:tieneDistrito "HORTALEZA" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                     
+""" ;
+	schema:email "jmhortaleza@madrid.es" .
+
+_:node1b4902iplx9 a schema:GeoCoordinates ;
+	schema:latitude "40.46299114016909" ;
+	schema:longitude "-3.6571542769919407" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=732f0a47f441f010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx9 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3a4f0a47f441f010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Latina" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: Aluche (l�nea 5) 
+ Bus: 17 , 31 , 117 , 121 , 131 , 138 , 139, 155  
+ Renfe: Aluche, Fanjul """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Latina , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "GENERAL FANJUL" ;
+	ontology:tipoVia "AVENIDA" ;
+	ontology:numero "2" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28044" ;
+	ontology:tieneBarrio "LAS AGUILAS" ;
+	ontology:tieneDistrito "LATINA" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                                                    
+""" .
+
+_:node1b4902iplx10 a schema:GeoCoordinates ;
+	schema:latitude "40.38493634769686" ;
+	schema:longitude "-3.764230286224537" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3a4f0a47f441f010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx10 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=925a6fdb2541f010VgnVCM1000000b205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Moncloa - Aravaca" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: Moncloa (l�neas 3, 6) 
+ Bus: 1, 16, 44, 46, 61, 82, 83, 132, 133, 160, 161, 162, 768, 769, A, G, C """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de las  Oficinas de L�nea Madrid de Moncloa - Aravaca  , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "MONCLOA" ;
+	ontology:tipoVia "PLAZA" ;
+	ontology:numero "1" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28008" ;
+	ontology:tieneBarrio "ARGÜELLES" ;
+	ontology:tieneDistrito "MONCLOA-ARAVACA" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                       
+""" .
+
+_:node1b4902iplx11 a schema:GeoCoordinates ;
+	schema:latitude "40.43519137700088" ;
+	schema:longitude "-3.718876324432256" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=925a6fdb2541f010VgnVCM1000000b205a0aRCRD> schema:geocoordinates _:node1b4902iplx11 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f08a6fdb2541f010VgnVCM1000000b205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Moratalaz" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: Pavones (l�nea 9) 
+ Bus: 8, 20, 30, 32, 71, 100, 142, 144 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Moratalaz , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "FUENTE CARRANTONA" ;
+	ontology:tipoVia "CALLE" ;
+	ontology:numero "8" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28030" ;
+	ontology:tieneBarrio "PAVONES" ;
+	ontology:tieneDistrito "MORATALAZ" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                                                          
+""" .
+
+_:node1b4902iplx12 a schema:GeoCoordinates ;
+	schema:latitude "40.39859980911487" ;
+	schema:longitude "-3.6368959356337216" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f08a6fdb2541f010VgnVCM1000000b205a0aRCRD> schema:geocoordinates _:node1b4902iplx12 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=b4ca6fdb2541f010VgnVCM1000000b205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Puente de Vallecas" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: Puente de Vallecas (l�nea 1), Nueva Numancia (l�nea 1) 
+ Bus: 10, 24, 54, 57, 58, 111, 136, 310 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de las  Oficinas de L�nea Madrid de Puente de Vallecas , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "ALBUFERA" ;
+	ontology:tipoVia "AVENIDA" ;
+	ontology:numero "42" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28038" ;
+	ontology:tieneBarrio "SAN DIEGO" ;
+	ontology:tieneDistrito "PUENTE DE VALLECAS" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                                                                                                    
+""" .
+
+_:node1b4902iplx13 a schema:GeoCoordinates ;
+	schema:latitude "40.39664109245883" ;
+	schema:longitude "-3.6663361506752064" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=b4ca6fdb2541f010VgnVCM1000000b205a0aRCRD> schema:geocoordinates _:node1b4902iplx13 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=27098aa6bd91f010VgnVCM1000000b205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Retiro (Sala distrito Retiro)" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: Pac�fico (l�neas 1, 6) 
+ Bus: 24, 37, 54, 57, 141 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Retiro , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "CIUDAD DE BARCELONA" ;
+	ontology:tipoVia "AVENIDA" ;
+	ontology:numero "162" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28007" ;
+	ontology:tieneBarrio "PACIFICO" ;
+	ontology:tieneDistrito "RETIRO" ;
+	schema:telephone """Consulte la pesta�a &quot;M�s informaci�n&quot;.                                                                                   
+""" .
+
+_:node1b4902iplx14 a schema:GeoCoordinates ;
+	schema:latitude "40.40236125879463" ;
+	schema:longitude "-3.6772931748500297" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=27098aa6bd91f010VgnVCM1000000b205a0aRCRD> schema:geocoordinates _:node1b4902iplx14 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f37f0a47f441f010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Salamanca" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: Vel�zquez (l�nea 4), Serrano (l�nea 4) 
+ Bus: 1, 9, 19, 21, 51, 53, 74 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Salamanca , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "VELAZQUEZ" ;
+	ontology:tipoVia "CALLE" ;
+	ontology:numero "52" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28001" ;
+	ontology:tieneBarrio "RECOLETOS" ;
+	ontology:tieneDistrito "SALAMANCA" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                                                    
+""" .
+
+_:node1b4902iplx15 a schema:GeoCoordinates ;
+	schema:latitude "40.42732326877904" ;
+	schema:longitude "-3.683768008487216" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f37f0a47f441f010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx15 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ba9f0a47f441f010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de San Blas - Canillejas" ;
+	ontology:horario " De lunes a viernes de 8,30 a 14 horas.   Los horarios especiales se especifican en cada una de las dependencias. " ;
+	ontology:tieneTransporte " Metro: Las Musas (l�nea 7)  Bus: 38 ,48 ,140 " ;
+	rdfs:comment "Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de San Blas - Canillejas , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "ARCENTALES" ;
+	ontology:tipoVia "AVENIDA" ;
+	ontology:numero "28" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28022" ;
+	ontology:tieneBarrio "ROSAS" ;
+	ontology:tieneDistrito "SAN BLAS-CANILLEJAS" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                          
+""" .
+
+_:node1b4902iplx16 a schema:GeoCoordinates ;
+	schema:latitude "40.43448586473581" ;
+	schema:longitude "-3.6096102461466093" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ba9f0a47f441f010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx16 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=71cf0a47f441f010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Tetu�n" ;
+	ontology:horario " De lunes a viernes de 9 a 14 horas.  Los horarios especiales se especifican en cada una de las dependencias. " ;
+	ontology:tieneTransporte " Metro: Valdeacederas (l�nea 1), Plaza Castilla (l�neas 1, 9, 10)  Bus: 49, 66, 124, 149 " ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Tetu�n , donde se prestan los servicios de registro, padr�n e informaci�n " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "BRAVO MURILLO" ;
+	ontology:tipoVia "CALLE" ;
+	ontology:numero "357" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28020" ;
+	ontology:tieneBarrio "ALMENARA" ;
+	ontology:tieneDistrito "TETUAN" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                                                                    
+""" ;
+	schema:email "jmtetuan@madrid.es" .
+
+_:node1b4902iplx17 a schema:GeoCoordinates ;
+	schema:latitude "40.465101515878985" ;
+	schema:longitude "-3.693764227321566" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=71cf0a47f441f010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx17 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=38ef0a47f441f010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Usera" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. 
+ Los servicios de registro, padr�n e informaci�n se prestan en la  Oficina de L�nea Madrid de Usera . L�nea Madrid: de lunes a jueves de 9 a 17 y viernes de 9 a 14 horas. """ ;
+	ontology:tieneTransporte """ Metro: Plaza El�ptica  (l�neas 6, 11) 
+ Bus: 6, 60, 81,78 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Usera , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "RAFAELA YBARRA" ;
+	ontology:tipoVia "AVENIDA" ;
+	ontology:numero "41" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28026" ;
+	ontology:tieneBarrio "PRADOLONGO" ;
+	ontology:tieneDistrito "USERA" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                                              
+""" .
+
+_:node1b4902iplx18 a schema:GeoCoordinates ;
+	schema:latitude "40.38241253009179" ;
+	schema:longitude "-3.7107515747822353" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=38ef0a47f441f010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx18 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=fe000a47f441f010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Vic�lvaro" ;
+	ontology:horario """ De 9 a 10:30 lunes, mi�rcoles y viernes  
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: San Cipriano (l�nea 9), Vic�lvaro (l�nea 9) 
+ Bus: 4 , E3 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Vic�lvaro , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "DON ANTONIO DE ANDRES" ;
+	ontology:tipoVia "PLAZA" ;
+	ontology:numero "18" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28032" ;
+	ontology:tieneBarrio "CASCO H.VICALVARO" ;
+	ontology:tieneDistrito "VICALVARO" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                                         
+""" ;
+	schema:email "omvicalvaro@madrid.es" .
+
+_:node1b4902iplx19 a schema:GeoCoordinates ;
+	schema:latitude "40.402270479784896" ;
+	schema:longitude "-3.6059845330840714" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=fe000a47f441f010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx19 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=b5300a47f441f010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Villa de Vallecas" ;
+	ontology:horario """ De lunes a viernes de 9 a 14 horas. 
+ Los horarios especiales se especifican en cada una de las dependencias. """ ;
+	ontology:tieneTransporte """ Metro: Villa de Vallecas (l�nea 1) 
+ Bus: 54, 58, 103, 142 """ ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Villa de Vallecas , donde se prestan los servicios de registro, padr�n e informaci�n. " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "FEDERICO GARCIA LORCA" ;
+	ontology:tipoVia "PASEO" ;
+	ontology:numero "12" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28031" ;
+	ontology:tieneBarrio "CASCO H.VALLECAS" ;
+	ontology:tieneDistrito "VILLA DE VALLECAS" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                                   
+""" .
+
+_:node1b4902iplx20 a schema:GeoCoordinates ;
+	schema:latitude "40.3788998244401" ;
+	schema:longitude "-3.621454785869909" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=b5300a47f441f010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx20 .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=7c500a47f441f010VgnVCM2000000c205a0aRCRD> rdfs:label "Junta Municipal del Distrito de Villaverde" ;
+	ontology:horario " De lunes a viernes de 9 a 14 horas.  Los horarios especiales se especifican en cada una de las dependencias. " ;
+	ontology:tieneTransporte " Bus: 22, 76, 86, 130, 131  Renfe: Puente Alcocer " ;
+	rdfs:comment " Consulte la localizaci�n y el horario de la  Oficina de L�nea Madrid de Villaverde , donde se prestan los servicios de registro, padr�n e informaci�n.  " ;
+	ontology:esAccesible "1" ;
+	schema:addressLocality "ARROYO BUENO" ;
+	ontology:tipoVia "CALLE" ;
+	ontology:numero "53" ;
+	schema:addressLocality "MADRID" ;
+	schema:addressRegion "MADRID" ;
+	schema:postalCode "28021" ;
+	ontology:tieneBarrio "SAN ANDRES" ;
+	ontology:tieneDistrito "VILLAVERDE" ;
+	schema:telephone """consulte la pesta�a &quot;M�s informaci�n&quot;.                                                                      
+""" .
+
+_:node1b4902iplx21 a schema:GeoCoordinates ;
+	schema:latitude "40.348895848554626" ;
+	schema:longitude "-3.71120030905872" .
+
+<http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=7c500a47f441f010VgnVCM2000000c205a0aRCRD> schema:geocoordinates _:node1b4902iplx21 .
