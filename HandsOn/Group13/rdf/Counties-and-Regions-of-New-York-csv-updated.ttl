@@ -1,0 +1,225 @@
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix livingPlaces: <http://www.linkedData_Group13.com/ontology/livingPlaces#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix osadm: <http://data.ordnancesurvey.co.uk/ontology/admingeo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://www.linkedData_Group13.com/resource/Niagara> a osadm:County ;
+	rdfs:label "Niagara"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Western+New+York> a osadm:Region ;
+	rdfs:label "Western New York"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Erie> a osadm:County ;
+	rdfs:label "Erie"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Chautauqua> a osadm:County ;
+	rdfs:label "Chautauqua"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Cattaraugus> a osadm:County ;
+	rdfs:label "Cattaraugus"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Allegany> a osadm:County ;
+	rdfs:label "Allegany"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Orleans> a osadm:County ;
+	rdfs:label "Orleans"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Finger+Lakes> a osadm:Region ;
+	rdfs:label "Finger Lakes"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Genesee> a osadm:County ;
+	rdfs:label "Genesee"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Wyoming> a osadm:County ;
+	rdfs:label "Wyoming"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Monroe> a osadm:County ;
+	rdfs:label "Monroe"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Livingston> a osadm:County ;
+	rdfs:label "Livingston"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Wayne> a osadm:County ;
+	rdfs:label "Wayne"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Ontario> a osadm:County ;
+	rdfs:label "Ontario"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Yates> a osadm:County ;
+	rdfs:label "Yates"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Seneca> a osadm:County ;
+	rdfs:label "Seneca"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Steuben> a osadm:County ;
+	rdfs:label "Steuben"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Southern+Tier> a osadm:Region ;
+	rdfs:label "Southern Tier"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Schuyler> a osadm:County ;
+	rdfs:label "Schuyler"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Chemung> a osadm:County ;
+	rdfs:label "Chemung"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Tompkins> a osadm:County ;
+	rdfs:label "Tompkins"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Tioga> a osadm:County ;
+	rdfs:label "Tioga"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Chenango> a osadm:County ;
+	rdfs:label "Chenango"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Broome> a osadm:County ;
+	rdfs:label "Broome"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Delaware> a osadm:County ;
+	rdfs:label "Delaware"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Cortland> a osadm:County ;
+	rdfs:label "Cortland"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Central+New+York> a osadm:Region ;
+	rdfs:label "Central New York"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Cayuga> a osadm:County ;
+	rdfs:label "Cayuga"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Onondaga> a osadm:County ;
+	rdfs:label "Onondaga"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Oswego> a osadm:County ;
+	rdfs:label "Oswego"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Madison> a osadm:County ;
+	rdfs:label "Madison"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/St.+Lawrence> a osadm:County ;
+	rdfs:label "St. Lawrence"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/North+Country> a osadm:Region ;
+	rdfs:label "North Country"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Lewis> a osadm:County ;
+	rdfs:label "Lewis"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Jefferson> a osadm:County ;
+	rdfs:label "Jefferson"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Hamilton> a osadm:County ;
+	rdfs:label "Hamilton"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Essex> a osadm:County ;
+	rdfs:label "Essex"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Clinton> a osadm:County ;
+	rdfs:label "Clinton"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Franklin> a osadm:County ;
+	rdfs:label "Franklin"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Oneida> a osadm:County ;
+	rdfs:label "Oneida"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Mohawk+Valley> a osadm:Region ;
+	rdfs:label "Mohawk Valley"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Herkimer> a osadm:County ;
+	rdfs:label "Herkimer"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Fulton> a osadm:County ;
+	rdfs:label "Fulton"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Montgomery> a osadm:County ;
+	rdfs:label "Montgomery"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Otsego> a osadm:County ;
+	rdfs:label "Otsego"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Schoharie> a osadm:County ;
+	rdfs:label "Schoharie"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Albany> a osadm:County ;
+	rdfs:label "Albany"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Capital+District> a osadm:Region ;
+	rdfs:label "Capital District"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Columbia> a osadm:County ;
+	rdfs:label "Columbia"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Greene> a osadm:County ;
+	rdfs:label "Greene"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Warren> a osadm:County ;
+	rdfs:label "Warren"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Washington> a osadm:County ;
+	rdfs:label "Washington"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Saratoga> a osadm:County ;
+	rdfs:label "Saratoga"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Schenectady> a osadm:County ;
+	rdfs:label "Schenectady"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Rensselaer> a osadm:County ;
+	rdfs:label "Rensselaer"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Sullivan> a osadm:County ;
+	rdfs:label "Sullivan"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Hudson+Valley> a osadm:Region ;
+	rdfs:label "Hudson Valley"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Ulster> a osadm:County ;
+	rdfs:label "Ulster"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Dutchess> a osadm:County ;
+	rdfs:label "Dutchess"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Orange> a osadm:County ;
+	rdfs:label "Orange"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Rockland> a osadm:County ;
+	rdfs:label "Rockland"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Westchester> a osadm:County ;
+	rdfs:label "Westchester"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Putnam> a osadm:County ;
+	rdfs:label "Putnam"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/New+York> a osadm:County ;
+	rdfs:label "New York"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/New+York+City> a osadm:Region ;
+	rdfs:label "New York City"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Bronx> a osadm:County ;
+	rdfs:label "Bronx"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Queens> a osadm:County ;
+	rdfs:label "Queens"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Kings> a osadm:County ;
+	rdfs:label "Kings"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Richmond> a osadm:County ;
+	rdfs:label "Richmond"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Nassau> a osadm:County ;
+	rdfs:label "Nassau"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Long+Island> a osadm:Region ;
+	rdfs:label "Long Island"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Suffolk> a osadm:County ;
+	rdfs:label "Suffolk"^^rdfs:Literal .

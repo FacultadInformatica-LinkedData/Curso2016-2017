@@ -1,0 +1,18 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix my_vocabulary: <http://websemantica.example.org/vocab# > .
+@prefix my_instances: <http://websemantica.example.org/resources/ > .
+@base <http://websemantica.example.org/> .
+
+<TriplesMapCity> a rr:TriplesMap;
+
+rr:logicalTable [ rr:tableName "city" ];
+
+rr:subjectMap [ rr:termType rr:IRI;
+ rr:template "http://example.linkeddata.es/instances/city/{ID}";
+ rr:class my_vocabulary:City
+];
+
+rr:predicateObjectMap [
+ rr:predicateMap [ rr:constant my_vocabulary:hasPopulation ];
+ rr:objectMap [ rr:termType rr:Literal; rr:column "population"; ];
+] .

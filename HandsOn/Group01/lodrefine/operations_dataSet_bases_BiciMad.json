@@ -1,0 +1,48 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Gis_X",
+    "columnName": "Gis_X"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Gis_Y",
+    "columnName": "Gis_Y"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Fecha de Alta",
+    "columnName": "Fecha de Alta"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Nº Finca",
+    "columnName": "Nº Finca"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Número using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Número",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Número using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Número",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  }
+]

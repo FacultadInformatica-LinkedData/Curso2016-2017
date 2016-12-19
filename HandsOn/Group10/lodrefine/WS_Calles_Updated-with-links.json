@@ -1,0 +1,512 @@
+[
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column name to type http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "columnName": "name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia-es",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+        "name": "geo:SpatialThing"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Campana \" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "similarValue": "Campana "
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Menendez Pelayo \" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "similarValue": "Menendez Pelayo "
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Plaza del Duque (Sevilla) (http://es.dbpedia.org/resource/Plaza_del_Duque_(Sevilla)) for cells containing \"Plaza del Duque \" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "similarValue": "Plaza del Duque ",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Plaza_del_Duque_(Sevilla)",
+      "name": "Plaza del Duque (Sevilla)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Calatrava \" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "similarValue": "Calatrava "
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Plaza Ponce de Leon\" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "similarValue": "Plaza Ponce de Leon"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"San Jorge \" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "similarValue": "San Jorge "
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Castilla \" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "similarValue": "Castilla "
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Torneo \" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "similarValue": "Torneo "
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Madreselva\" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "similarValue": "Madreselva"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Arosa \" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "name",
+    "similarValue": "Arosa "
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Antioquia \" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "name: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": false,
+          "name": "name: best candidate's score",
+          "from": 0.42,
+          "to": 0.506,
+          "type": "range",
+          "columnName": "name"
+        }
+      ]
+    },
+    "columnName": "name",
+    "similarValue": "Antioquia "
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Felipe Ii \" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "name: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": false,
+          "name": "name: best candidate's score",
+          "from": 0.42,
+          "to": 0.506,
+          "type": "range",
+          "columnName": "name"
+        }
+      ]
+    },
+    "columnName": "name",
+    "similarValue": "Felipe Ii "
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Calle Zaragoza (http://es.dbpedia.org/resource/Calle_Zaragoza) for cells containing \"Zaragoza \" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "name: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": false,
+          "name": "name: best candidate's score",
+          "from": 0.42,
+          "to": 0.506,
+          "type": "range",
+          "columnName": "name"
+        }
+      ]
+    },
+    "columnName": "name",
+    "similarValue": "Zaragoza ",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Calle_Zaragoza",
+      "name": "Calle Zaragoza",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Blas Infante \" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "name: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": false,
+          "name": "name: best candidate's score",
+          "from": 0.42,
+          "to": 0.506,
+          "type": "range",
+          "columnName": "name"
+        }
+      ]
+    },
+    "columnName": "name",
+    "similarValue": "Blas Infante "
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"Damasco \" in column name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "name: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "name"
+        },
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": false,
+          "name": "name: best candidate's score",
+          "from": 0.778,
+          "to": 0.89,
+          "type": "range",
+          "columnName": "name"
+        }
+      ]
+    },
+    "columnName": "name",
+    "similarValue": "Damasco "
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/calles/",
+      "prefixes": [
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(value, \" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "name",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/ontology/Street",
+              "curie": "dbo:Street"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://dbpedia.org/property/name",
+              "curie": "dbp:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "name"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column lat",
+    "columnName": "lat"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column lon",
+    "columnName": "lon"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column calle_id",
+    "columnName": "calle_id"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column street's URI from DBpedia at index 1 based on column name using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "street's URI from DBpedia",
+    "columnInsertIndex": 1,
+    "baseColumnName": "name",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/calles/",
+      "prefixes": [
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(value, \" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "name",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/ontology/Street",
+              "curie": "dbo:Street"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://dbpedia.org/property/name",
+              "curie": "dbp:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "name"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "street's URI from DBpedia",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

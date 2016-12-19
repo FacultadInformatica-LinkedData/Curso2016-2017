@@ -1,0 +1,10 @@
+@base <http://www.oeg-upm.net/exercise1b>
+@prefix alias: <http://www.ontologies.org/ontologies/exercise1b#>
+:Class01        alias:includes :Sensor029 ;
+                alias:includes :Computer101.
+:Sensor029      alias:hasMeasurement :Measurement8401.
+:Computer101    alias:hasOwner  :User10A.
+:User10A        alias:hasName "Pedro".
+:Measurement8401 alias:hasTemperatura "29";
+                 alias:atTime "2010-06-12T12:00:12".
+

@@ -1,0 +1,606 @@
+@prefix ont: <http://www.linked-data-deportemadrid.org/group08/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://www.linked-data-deportemadrid.org/group08/resource/5%C3%82%C2%AA+Carrera+y+Caminata+por+la+Diabetes> a ont:Actividad ;
+	ont:hasNombre "5ª Carrera y Caminata por la Diabetes" ;
+	ont:hasPrecio "10 Km : con chip propio 17, con chip alquilado 25" ;
+	ont:hasFechaInicio "2016-11-20 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-20 23:59:00.0" ;
+	ont:startsHora "09:30" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ccf080aab37d7510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Parque+Juan+Carlos+I> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/5%C3%82%C2%AA+Carrera+y+Caminata+por+la+Diabetes> ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Parque+Juan+Carlos+I> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%83%C2%A9tico+de+Madrid+-+FC+Rostov> a ont:Actividad ;
+	ont:hasNombre "Atlético de Madrid - FC Rostov" ;
+	ont:hasPrecio """Socios: 20 a 50 euros
+General: 40 a 100 euros
+VIP Socios: 40 a 400 euros
+VIP General: 40 a 400 euros""" ;
+	ont:hasFechaInicio "2016-11-01 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-01 23:59:00.0" ;
+	ont:startsHora "20:45" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=23a87bbeaf8f6510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Vicente+Calder%C3%83%C2%B3n> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%83%C2%A9tico+de+Madrid+-+FC+Rostov> ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Vicente+Calder%C3%83%C2%B3n> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%83%C2%A9tico+de+Madrid+-+M%C3%83%C2%A1laga+CF> a ont:Actividad ;
+	ont:hasNombre "Atlético de Madrid - Málaga CF" ;
+	ont:hasPrecio """Socios 30 a 80 euros; General 40 a 100 euros. 
+VIP Socios 40 a 400 euros; VIP General 40 a 400 euros.
+""" ;
+	ont:hasFechaInicio "2016-10-29 00:00:00.0" ;
+	ont:hasFechaFin "2016-10-29 23:59:00.0" ;
+	ont:startsHora "18:30" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e83a0c7326706510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Vicente+Calder%C3%83%C2%B3n> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%83%C2%A9tico+de+Madrid+-+PSV+Eindhoven> a ont:Actividad ;
+	ont:hasNombre "Atlético de Madrid - PSV Eindhoven" ;
+	ont:hasPrecio """Socios: 35 a 125 euros
+General: 50 a 180 euros
+VIP Socios: 60 a 450 euros
+VIP General: 60 a 450 euros""" ;
+	ont:hasFechaInicio "2016-11-23 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-23 23:59:00.0" ;
+	ont:startsHora "20:45" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=23a87bbeaf8f6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Vicente+Calder%C3%83%C2%B3n> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%83%C2%A9tico+de+Madrid+-+RCD+Espanyol> a ont:Actividad ;
+	ont:hasNombre "Atlético de Madrid - RCD Espanyol" ;
+	ont:hasPrecio "Socios 30 a 80 euros; General 40 a 100 euros. VIP Socios 40 a 400 euros; VIP General 40 a 400 euros." ;
+	ont:hasFechaInicio "2016-12-04 00:00:00.0" ;
+	ont:hasFechaFin "2016-12-04 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e83a0c7326706510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Vicente+Calder%C3%83%C2%B3n> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%83%C2%A9tico+de+Madrid+-+Real+Betis> a ont:Actividad ;
+	ont:hasNombre "Atlético de Madrid - Real Betis" ;
+	ont:hasPrecio "Socios 30 a 80 euros; General 40 a 100 euros. VIP Socios 40 a 400 euros; VIP General 40 a 400 euros." ;
+	ont:hasFechaInicio "2017-01-15 00:00:00.0" ;
+	ont:hasFechaFin "2017-01-15 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e83a0c7326706510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Vicente+Calder%C3%83%C2%B3n> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%83%C2%A9tico+de+Madrid+-+Real+Madrid> a ont:Actividad ;
+	ont:hasNombre "Atlético de Madrid - Real Madrid" ;
+	ont:hasPrecio """Socios: 70 a 210 euros. General: de 90 a 260 euros. VIP Socios: de  300 a 700 euros. VIP General: de 300 a 700 euros.
+""" ;
+	ont:hasFechaInicio "2016-11-19 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-19 23:59:00.0" ;
+	ont:startsHora "20:45" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e83a0c7326706510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Vicente+Calder%C3%83%C2%B3n> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atl%C3%83%C2%A9tico+de+Madrid+-+UD+Las+Palmas> a ont:Actividad ;
+	ont:hasNombre "Atlético de Madrid - UD Las Palmas" ;
+	ont:hasPrecio "Socios 30 a 80 euros; General 40 a 100 euros. VIP Socios 40 a 400 euros; VIP General 40 a 400 euros." ;
+	ont:hasFechaInicio "2016-12-18 00:00:00.0" ;
+	ont:hasFechaFin "2016-12-18 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e83a0c7326706510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Vicente+Calder%C3%83%C2%B3n> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletismo.+I+Medio+Marat%C3%83%C2%B3n+de+la+Mujer+de+Madrid> a ont:Actividad ;
+	ont:hasNombre "Atletismo. I Medio Maratón de la Mujer de Madrid" ;
+	ont:hasPrecio """precio 29,50.
+10 Km 19.50.""" ;
+	ont:hasFechaInicio "2016-10-23 00:00:00.0" ;
+	ont:hasFechaFin "2016-10-23 23:59:00.0" ;
+	ont:startsHora "08:30" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4654fa765cef6510VgnVCM2000001f4a900aRCRD" ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletismo.+XXX+100+kil%C3%83%C2%B3metros+pedestres+Villa+de+Madrid> a ont:Actividad ;
+	ont:hasNombre "Atletismo. XXX 100 kilómetros pedestres Villa de Madrid" ;
+	ont:hasPrecio "40 € prueba 100 km / 10 € prueba 10 km" ;
+	ont:hasFechaInicio "2016-10-30 00:00:00.0" ;
+	ont:hasFechaFin "2016-10-30 23:59:00.0" ;
+	ont:startsHora "07:30" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c741de9875944410VgnVCM1000000b205a0aRCRD" ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Caminar+por+Madrid+2016-2017> a ont:Actividad ;
+	ont:hasNombre "Caminar por Madrid 2016-2017" ;
+	ont:hasPrecio "0 Euros" ;
+	ont:hasFechaInicio "2016-09-12 00:00:00.0" ;
+	ont:hasFechaFin "2017-06-30 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=265829cc0b9f8410VgnVCM1000000b205a0aRCRD" ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Correr+por+Madrid+2016-2017> a ont:Actividad ;
+	ont:hasNombre "Correr por Madrid 2016-2017" ;
+	ont:hasPrecio "11 euros al adquirir la Tarjeta Deporte Madrid" ;
+	ont:hasFechaInicio "2016-11-02 00:00:00.0" ;
+	ont:hasFechaFin "2017-06-30 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=9def21a074077510VgnVCM2000001f4a900aRCRD" ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid+%3F+Baskonia> a ont:Actividad ;
+	ont:hasNombre "Euroleague. Partido de Baloncesto. Real Madrid ? Baskonia" ;
+	ont:hasPrecio "Desde 15 hasta 60. Entradas VIP desde 100." ;
+	ont:hasFechaInicio "2016-10-25 00:00:00.0" ;
+	ont:hasFechaFin "2016-10-25 23:59:00.0" ;
+	ont:startsHora "21:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=383588d2fe2b7510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid+%3F+Baskonia> ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid+%3F+Galatasaray> a ont:Actividad ;
+	ont:hasNombre "Euroleague. Partido de Baloncesto. Real Madrid ? Galatasaray" ;
+	ont:hasPrecio "Desde 20 hasta 70. Entradas VIP desde 120." ;
+	ont:hasFechaInicio "2016-11-03 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-03 23:59:00.0" ;
+	ont:startsHora "21:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=7b0ece726d0e7510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid-+Panathinaikos> a ont:Actividad ;
+	ont:hasNombre "Euroleague. Partido de Baloncesto. Real Madrid- Panathinaikos" ;
+	ont:hasPrecio "Desde 15 hasta 60. Entradas VIP desde 100." ;
+	ont:hasFechaInicio "2016-11-16 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-16 23:59:00.0" ;
+	ont:startsHora "21:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=fe6fce726d0e7510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid-+Unics+Kazan> a ont:Actividad ;
+	ont:hasNombre "Euroleague. Partido de Baloncesto. Real Madrid- Unics Kazan" ;
+	ont:hasPrecio "Desde 15 hasta 60. Entradas VIP desde 100." ;
+	ont:hasFechaInicio "2016-11-24 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-24 23:59:00.0" ;
+	ont:startsHora "21:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=28fb19ad241e7510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Gimnasia+de+mantenimiento.+Parque+Juan+Carlos+I> a ont:Actividad ;
+	ont:hasNombre "Gimnasia de mantenimiento. Parque Juan Carlos I" ;
+	ont:hasPrecio "0 euros." ;
+	ont:hasFechaInicio "2016-10-03 00:00:00.0" ;
+	ont:hasFechaFin "2016-12-30 23:59:00.0" ;
+	ont:startsHora "13:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=cc9f71ad3d2f0410VgnVCM2000000c205a0aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Parque+Juan+Carlos+I> ;
+	ont:hasTipo "/contenido/actividades/ItinerariosOtrasActividadesAmbientales" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/I+Carrera+Go+Fit+Madrid+2016> a ont:Actividad ;
+	ont:hasNombre "I Carrera Go Fit Madrid 2016" ;
+	ont:hasPrecio "5 euros (campeonato de Madrid 10km veteranos), 10 euros (abonados Go fit 8 euros)" ;
+	ont:hasFechaInicio "2016-11-09 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-09 23:59:00.0" ;
+	ont:startsHora "09:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=97b488d2fe2b7510VgnVCM1000001d4a900aRCRD" ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/I+Carrera+Popular+%27Corre+con+las+Personas+Mayores%27> a ont:Actividad ;
+	ont:hasNombre "I Carrera Popular 'Corre con las Personas Mayores'" ;
+	ont:hasPrecio "Precio de entrada 10 euros." ;
+	ont:hasFechaInicio "2016-11-06 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-06 23:59:00.0" ;
+	ont:startsHora "09:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=57bbf47a7e397510VgnVCM2000001f4a900aRCRD" ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/I+Trail+C4+Caser+Club+de+Campo+Villa+de+Madrid> a ont:Actividad ;
+	ont:hasNombre "I Trail C4 Caser Club de Campo Villa de Madrid" ;
+	ont:hasPrecio "Desde 8€ se puede participar en esta prueba pionera" ;
+	ont:hasFechaInicio "2016-11-27 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-27 23:59:00.0" ;
+	ont:startsHora "09:30" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e1a7557585077510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Club+de+Campo+Villa+de+Madrid> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/I+Trail+C4+Caser+Club+de+Campo+Villa+de+Madrid> ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Club+de+Campo+Villa+de+Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/III+Trail+Madrid+City+%3F+Ecotrail> a ont:Actividad ;
+	ont:hasNombre "III Trail Madrid City ? Ecotrail" ;
+	ont:hasPrecio "Desde 19 euros" ;
+	ont:hasFechaInicio "2016-11-12 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-12 23:59:00.0" ;
+	ont:startsHora "08:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e869100db93b7510VgnVCM2000001f4a900aRCRD" ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/IV+Sanitas+Marca+Running+Series.+Derbi+de+las+aficiones+Madrid+2016> a ont:Actividad ;
+	ont:hasNombre "IV Sanitas Marca Running Series. Derbi de las aficiones Madrid 2016" ;
+	ont:hasPrecio """Desde 12 euros
+
+Carreras infantiles 2 euros""" ;
+	ont:hasFechaInicio "2016-11-13 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-13 23:59:00.0" ;
+	ont:startsHora "09:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4408681327b40510VgnVCM2000000c205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Santiago+Bernab%C3%83%C2%A9u> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/IV+Sanitas+Marca+Running+Series.+Derbi+de+las+aficiones+Madrid+2016> ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Santiago+Bernab%C3%83%C2%A9u> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Madrid+Horse+Week> a ont:Actividad ;
+	ont:hasNombre "Madrid Horse Week" ;
+	ont:hasPrecio "Entre 5 euros la entrada al Salón del Caballo y 80 euros  el abono de grada para los 4 días del evento" ;
+	ont:hasFechaInicio "2016-11-24 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-27 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6bd403b3a4497510VgnVCM1000001d4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Consorcio+Instituci%C3%83%C2%B3n+Ferial+de+Madrid+%28IFEMA%29> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Madrid+Horse+Week> ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Consorcio+Instituci%C3%83%C2%B3n+Ferial+de+Madrid+%28IFEMA%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Hipica" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+CAI+Zaragoza> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - CAI Zaragoza" ;
+	ont:hasPrecio "Desde 10€ grada alta, hasta 50€." ;
+	ont:hasFechaInicio "2017-01-08 00:00:00.0" ;
+	ont:hasFechaFin "2017-01-08 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=eacc7e2bb8ad6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Divina+Seguros+Joventut> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - Divina Seguros Joventut" ;
+	ont:hasPrecio "Desde 10€ grada alta, hasta 50€." ;
+	ont:hasFechaInicio "2016-11-13 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-13 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=eacc7e2bb8ad6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Dominion+Bilbao+Basket> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - Dominion Bilbao Basket" ;
+	ont:hasPrecio "Desde 10€ grada alta, hasta 50€." ;
+	ont:hasFechaInicio "2017-01-22 00:00:00.0" ;
+	ont:hasFechaFin "2017-01-22 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=eacc7e2bb8ad6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Herbalife+Gran+Canaria> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - Herbalife Gran Canaria" ;
+	ont:hasPrecio "Desde 10€ grada alta, hasta 50€." ;
+	ont:hasFechaInicio "2016-11-27 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-27 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=eacc7e2bb8ad6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+MoraBanc+Andorra> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - MoraBanc Andorra" ;
+	ont:hasPrecio "Desde 10€ grada alta, hasta 50€." ;
+	ont:hasFechaInicio "2016-12-04 00:00:00.0" ;
+	ont:hasFechaFin "2016-12-04 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=eacc7e2bb8ad6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Real+Madrid> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - Real Madrid" ;
+	ont:hasPrecio "Desde 25€ grada alta, hasta 80€." ;
+	ont:hasFechaInicio "2016-10-23 00:00:00.0" ;
+	ont:hasFechaFin "2016-10-23 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=eacc7e2bb8ad6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Rio+Natura+Monbus+Obradoiro> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - Rio Natura Monbus Obradoiro" ;
+	ont:hasPrecio "Desde 10€ grada alta, hasta 50€." ;
+	ont:hasFechaInicio "2017-01-29 00:00:00.0" ;
+	ont:hasFechaFin "2017-01-29 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=eacc7e2bb8ad6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Unicaja> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - Unicaja" ;
+	ont:hasPrecio "Desde 20€ grada alta, hasta 70€." ;
+	ont:hasFechaInicio "2016-12-18 00:00:00.0" ;
+	ont:hasFechaFin "2016-12-18 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=eacc7e2bb8ad6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes-+Real+Madrid+CF.> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes- Real Madrid CF." ;
+	ont:hasPrecio "Entre 20 y 60 euros" ;
+	ont:hasFechaInicio "2016-10-23 00:00:00.0" ;
+	ont:hasFechaFin "2016-10-23 23:59:00.0" ;
+	ont:startsHora "18:30" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1cdfd8d5756d6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+AD+Alcorc%C3%83%C2%B3n> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - AD Alcorcón" ;
+	ont:hasPrecio "Fondo: 15 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 25 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 35 euros. Tribuna central: 40 euros." ;
+	ont:hasFechaInicio "2016-12-04 00:00:00.0" ;
+	ont:hasFechaFin "2016-12-04 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3f9b0c7326706510VgnVCM2000001f4a900aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Estadio+de+Vallecas> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+AD+Alcorc%C3%83%C2%B3n> ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+de+Vallecas> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+Elche+CF> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - Elche CF" ;
+	ont:hasPrecio "Fondo: 15 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 20 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 30 euros. Tribuna central: 35 euros." ;
+	ont:hasFechaInicio "2017-01-22 00:00:00.0" ;
+	ont:hasFechaFin "2017-01-22 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3f9b0c7326706510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+de+Vallecas> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+Girona+FC> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - Girona FC" ;
+	ont:hasPrecio "Fondo: 15 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 20 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 30 euros. Tribuna central: 35 euros. " ;
+	ont:hasFechaInicio "2016-10-22 00:00:00.0" ;
+	ont:hasFechaFin "2016-10-22 23:59:00.0" ;
+	ont:startsHora "20:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3f9b0c7326706510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+de+Vallecas> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+R.+Zaragoza> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - R. Zaragoza" ;
+	ont:hasPrecio "Fondo: 15 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 20 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 30 euros. Tribuna central: 35 euros." ;
+	ont:hasFechaInicio "2016-12-18 00:00:00.0" ;
+	ont:hasFechaFin "2016-12-18 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3f9b0c7326706510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+de+Vallecas> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+SD+Huesca> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - SD Huesca" ;
+	ont:hasPrecio "Fondo: 20 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 25 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 30 euros. Tribuna central: 35 euros." ;
+	ont:hasFechaInicio "2016-11-20 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-20 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3f9b0c7326706510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+de+Vallecas> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+Sevilla+Atl%C3%83%C2%A9tico> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - Sevilla Atlético" ;
+	ont:hasPrecio "Fondo: 20 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 25 euros. Tribuna alta de preferencia: 25 euros. Lateral baja: 30 euros. Grada de preferencia: 30 euros. Lateral cubierta: 35 euros. Tribuna central: 40 euros." ;
+	ont:hasFechaInicio "2017-01-15 00:00:00.0" ;
+	ont:hasFechaFin "2017-01-15 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3f9b0c7326706510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+de+Vallecas> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+UCAM+Murcia+CF> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - UCAM Murcia CF" ;
+	ont:hasPrecio "Fondo: 15 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 20 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 30 euros. Tribuna central: 35 euros." ;
+	ont:hasFechaInicio "2016-11-06 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-06 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3f9b0c7326706510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+de+Vallecas> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Athletic+Club> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - Athletic Club" ;
+	ont:hasPrecio """Público 35 a 140 euros. 
+Socios 28 a 112 euros.
+VIP 250 a 425 euros.""" ;
+	ont:hasFechaInicio "2016-10-23 00:00:00.0" ;
+	ont:hasFechaFin "2016-10-23 23:59:00.0" ;
+	ont:startsHora "20:45" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2cd674408f206510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Santiago+Bernab%C3%83%C2%A9u> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+CD+Legan%C3%83%C2%A9s> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - CD Leganés" ;
+	ont:hasPrecio """Entrega general: 35 a 140 euros. Entradas de socios: de 28 a 112 euros. Entradas VIP: de 250 a 425 euros. 
+
+""" ;
+	ont:hasFechaInicio "2016-11-06 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-06 23:59:00.0" ;
+	ont:startsHora "12:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2cd674408f206510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Santiago+Bernab%C3%83%C2%A9u> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Granada+CF> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - Granada CF" ;
+	ont:hasPrecio "Desde 35 grada alta, desde 80 lateral. VIP desde 200€." ;
+	ont:hasFechaInicio "2017-01-08 00:00:00.0" ;
+	ont:hasFechaFin "2017-01-08 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2cd674408f206510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Santiago+Bernab%C3%83%C2%A9u> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Iberostar+Tenerife> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - Iberostar Tenerife" ;
+	ont:hasPrecio """Público en General: 10 a 50 euros. Tarjeta Club Madridista: 9 a 43 euros. Socios: 7 a 35 euros. Entradas VIP: 100 euros. 
+""" ;
+	ont:hasFechaInicio "2016-11-13 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-13 23:59:00.0" ;
+	ont:startsHora "12:30" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1cdfd8d5756d6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+ICL+Manresa> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - ICL Manresa" ;
+	ont:hasPrecio """Público en General: 10 a 50 euros. Tarjeta Club Madridista: 9 a 43 euros. Socios: 7 a 35 euros. Entradas VIP: 100 euros.  
+""" ;
+	ont:hasFechaInicio "2016-11-27 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-27 23:59:00.0" ;
+	ont:startsHora "12:30" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1cdfd8d5756d6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+M%C3%83%C2%A1laga+CF> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - Málaga CF" ;
+	ont:hasPrecio "Desde 30 grada alta, desde 70 lateral. VIP desde 200€." ;
+	ont:hasFechaInicio "2017-01-22 00:00:00.0" ;
+	ont:hasFechaFin "2017-01-22 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2cd674408f206510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Santiago+Bernab%C3%83%C2%A9u> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+MoraBanc+Andorra> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - MoraBanc Andorra" ;
+	ont:hasPrecio "Público en General: 10 a 50 euros. Tarjeta Club Madridista: 9 a 43 euros. Socios: 7 a 35 euros. Entradas VIP: 100 euros." ;
+	ont:hasFechaInicio "2017-01-08 00:00:00.0" ;
+	ont:hasFechaFin "2017-01-08 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1cdfd8d5756d6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+RC+Deportivo> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - RC Deportivo" ;
+	ont:hasPrecio "Desde 30 grada alta, desde 70 lateral. VIP desde 200€." ;
+	ont:hasFechaInicio "2016-12-11 00:00:00.0" ;
+	ont:hasFechaFin "2016-12-11 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2cd674408f206510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Santiago+Bernab%C3%83%C2%A9u> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Real+Sociedad> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - Real Sociedad" ;
+	ont:hasPrecio "Desde 35 grada alta, desde 75 lateral. VIP desde 200€." ;
+	ont:hasFechaInicio "2017-01-29 00:00:00.0" ;
+	ont:hasFechaFin "2017-01-29 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2cd674408f206510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Santiago+Bernab%C3%83%C2%A9u> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+R%C3%83%C2%ADo+Natura+Monbus+Obradoiro> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - Río Natura Monbus Obradoiro" ;
+	ont:hasPrecio "Entradas: - Público en General: 15 a 50 euros. - Tarjeta Club Madridista: 13 a 43 euros. - Socios: 11 a 35 euros - ENTRADAS VIP: 100 euros." ;
+	ont:hasFechaInicio "2016-12-18 00:00:00.0" ;
+	ont:hasFechaFin "2016-12-18 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1cdfd8d5756d6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+R.+Sporting> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - R. Sporting" ;
+	ont:hasPrecio "Desde 30 grada alta, desde 70 lateral. VIP desde 200€." ;
+	ont:hasFechaInicio "2016-11-27 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-27 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2cd674408f206510VgnVCM2000001f4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Estadio+Santiago+Bernab%C3%83%C2%A9u> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+%3F+Tecnyconta+Zaragoza.> a ont:Actividad ;
+	ont:hasNombre "Real Madrid ? Tecnyconta Zaragoza." ;
+	ont:hasPrecio """Entradas:
+ - Público en General: 15 a 50 euros.
+ - Tarjeta Club Madridista: 13 a 43 euros. 
+ - Socios: 11 a 35 euros
+ - ENTRADAS VIP: 100 euros. 
+""" ;
+	ont:hasFechaInicio "2016-10-30 00:00:00.0" ;
+	ont:hasFechaFin "2016-10-30 23:59:00.0" ;
+	ont:startsHora "12:30" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1cdfd8d5756d6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid.+Valencia+Basket+Club> a ont:Actividad ;
+	ont:hasNombre "Real Madrid. Valencia Basket Club" ;
+	ont:hasPrecio "Entradas: - Público en General: 15 a 50 euros. - Tarjeta Club Madridista: 13 a 43 euros. - Socios: 11 a 35 euros - ENTRADAS VIP: 100 euros." ;
+	ont:hasFechaInicio "2017-01-22 00:00:00.0" ;
+	ont:hasFechaFin "2017-01-22 23:59:00.0" ;
+	ont:startsHora "00:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1cdfd8d5756d6510VgnVCM1000001d4a900aRCRD" ;
+	ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Barclaycard+Center+%28antiguo+Palacio+de+Deportes+de+la+Comunidad+de+Madrid%29> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Ruta+en+bici+%27Bici-ate+conectando+verde%27%3A+Dehesa+de+la+Villa-El+Pardo> a ont:Actividad ;
+	ont:hasNombre "Ruta en bici 'Bici-ate conectando verde': Dehesa de la Villa-El Pardo" ;
+	ont:hasPrecio "0 euros." ;
+	ont:hasFechaInicio "2016-12-04 00:00:00.0" ;
+	ont:hasFechaFin "2016-12-04 23:59:00.0" ;
+	ont:startsHora "10:30" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=35904e7ec15c9310VgnVCM2000000c205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+de+Educaci%C3%83%C2%B3n+Ambiental+de+Dehesa+de+la+Villa> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Ruta+en+bici+%27Bici-ate+conectando+verde%27%3A+Dehesa+de+la+Villa-El+Pardo> ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Centro+de+Educaci%C3%83%C2%B3n+Ambiental+de+Dehesa+de+la+Villa> ;
+	ont:hasTipo "/contenido/actividades/ItinerariosOtrasActividadesAmbientales" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/San+Silvestre+Vallecana+2016> a ont:Actividad ;
+	ont:hasNombre "San Silvestre Vallecana 2016" ;
+	ont:hasPrecio "El precio de la inscripción será de 23 euros con chip propio y 21 euros con chip de la organización." ;
+	ont:hasFechaInicio "2016-12-31 00:00:00.0" ;
+	ont:hasFechaFin "2016-12-31 23:59:00.0" ;
+	ont:startsHora "17:30" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a343cebc33383310VgnVCM2000000c205a0aRCRD" ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/VI+Carrera+Popular+%27Corre+por+el+Ni%C3%83%C2%B1o%27> a ont:Actividad ;
+	ont:hasNombre "VI Carrera Popular 'Corre por el Niño'" ;
+	ont:hasPrecio "Desde 10 euros" ;
+	ont:hasFechaInicio "2016-11-06 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-06 23:59:00.0" ;
+	ont:startsHora "09:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2dffc3f4d5d91410VgnVCM1000000b205a0aRCRD" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Jardines+de+El+Buen+Retiro> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/VI+Carrera+Popular+%27Corre+por+el+Ni%C3%83%C2%B1o%27> ont:celebratesIn <http://www.linked-data-deportemadrid.org/group08/resource/Jardines+de+El+Buen+Retiro> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones" .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/VIII+Carrera+Ponle+Freno+Madrid+2016> a ont:Actividad ;
+	ont:hasNombre "VIII Carrera Ponle Freno Madrid 2016" ;
+	ont:hasPrecio "10 euros." ;
+	ont:hasFechaInicio "2016-11-27 00:00:00.0" ;
+	ont:hasFechaFin "2016-11-27 23:59:00.0" ;
+	ont:startsHora "09:00" ;
+	ont:hasWeb "http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=1ccd566813946010VgnVCM100000dc0ca8c0RCRD&vgnextoid=452915e9099f8410VgnVCM1000000b205a0aRCRD" ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones" .

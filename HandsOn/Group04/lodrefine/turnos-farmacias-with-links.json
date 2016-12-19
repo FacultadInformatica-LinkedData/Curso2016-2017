@@ -1,0 +1,1814 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Localidad to locality",
+    "oldColumnName": "Localidad",
+    "newColumnName": "locality"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Barrio to district",
+    "oldColumnName": "Barrio",
+    "newColumnName": "district"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Fecha to date",
+    "oldColumnName": "Fecha",
+    "newColumnName": "date"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Farmacia to pharmacy",
+    "oldColumnName": "Farmacia",
+    "newColumnName": "pharmacy"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Direccion to direction",
+    "oldColumnName": "Direccion",
+    "newColumnName": "direction"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Duraci�n to length",
+    "oldColumnName": "Duraci�n",
+    "newColumnName": "length"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Tel�fono to telephone",
+    "oldColumnName": "Tel�fono",
+    "newColumnName": "telephone"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://semanticweb.es/group04/ontology/pharmacies/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "phar",
+          "uri": "http://semanticweb.es/group04/ontology/pharmacies#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "pharmacy",
+          "rdfTypes": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#pharmacy",
+              "curie": "phar:pharmacy"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#belongsTo",
+              "curie": "phar:belongsTo",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "locality",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#locality",
+                    "curie": "phar:locality"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "locality"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#isInDistrict",
+              "curie": "phar:isInDistrict",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "district",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#district",
+                    "curie": "phar:district"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "district"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#day",
+              "curie": "phar:day",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "date"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column date by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "date",
+    "guessCellType": false,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "/",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column date at index 3 based on column date 1 using expression grel:cells[\"date 3\"].value + \"-\" + cells[\"date 2\"].value + \"-\" + cells[\"date 1\"].value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "date",
+    "columnInsertIndex": 3,
+    "baseColumnName": "date 1",
+    "expression": "grel:cells[\"date 3\"].value + \"-\" + cells[\"date 2\"].value + \"-\" + cells[\"date 1\"].value",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column date 1",
+    "columnName": "date 1"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column date 2",
+    "columnName": "date 2"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column date 3",
+    "columnName": "date 3"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://semanticweb.es/group04/ontology/pharmacies/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "phar",
+          "uri": "http://semanticweb.es/group04/ontology/pharmacies#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "pharmacy",
+          "rdfTypes": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#pharmacy",
+              "curie": "phar:pharmacy"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#belongsTo",
+              "curie": "phar:belongsTo",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "locality",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#locality",
+                    "curie": "phar:locality"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "locality"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#isInDistrict",
+              "curie": "phar:isInDistrict",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "district",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#district",
+                    "curie": "phar:district"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "district"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#day",
+              "curie": "phar:day",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "date"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#hasCode",
+              "curie": "phar:hasCode",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "pharmacy",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#pharmacy",
+                    "curie": "phar:pharmacy"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "pharmacy"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#locateIn",
+              "curie": "phar:locateIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "direction",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#direction",
+                    "curie": "phar:direction"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "direction"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#schedule",
+              "curie": "phar:schedule",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "length"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#hasTelephone",
+              "curie": "phar:hasTelephone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "telephone"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://semanticweb.es/group04/ontology/pharmacies/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "phar",
+          "uri": "http://semanticweb.es/group04/ontology/pharmacies#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "pharmacy",
+          "rdfTypes": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#pharmacy",
+              "curie": "phar:pharmacy"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#belongsTo",
+              "curie": "phar:belongsTo",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "locality",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#locality",
+                    "curie": "phar:locality"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "locality"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#isInDistrict",
+              "curie": "phar:isInDistrict",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "district",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#district",
+                    "curie": "phar:district"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "district"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#day",
+              "curie": "phar:day",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "date"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#hasCode",
+              "curie": "phar:hasCode",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "pharmacy",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#pharmacy",
+                    "curie": "phar:pharmacy"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "pharmacy"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#locateIn",
+              "curie": "phar:locateIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "direction",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#direction",
+                    "curie": "phar:direction"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "direction"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#schedule",
+              "curie": "phar:schedule",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "length"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#hasTelephone",
+              "curie": "phar:hasTelephone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "telephone"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column locality to type http://schema.org/Place",
+    "columnName": "locality",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://schema.org/Place",
+        "name": "http://schema.org/Place"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column locality to type http://schema.org/Place",
+    "columnName": "locality",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia-2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://schema.org/Place",
+        "name": "http://schema.org/Place"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Comunidad de Madrid (http://es.dbpedia.org/resource/Categoría:Comunidad_de_Madrid) for cells containing \"Madrid\" in column locality",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "locality",
+    "similarValue": "Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Categoría:Comunidad_de_Madrid",
+      "name": "Comunidad de Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column locality-URI at index 1 based on column locality using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "locality-URI",
+    "columnInsertIndex": 1,
+    "baseColumnName": "locality",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://semanticweb.es/group04/ontology/pharmacies/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "phar",
+          "uri": "http://semanticweb.es/group04/ontology/pharmacies#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "pharmacy",
+          "rdfTypes": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#pharmacy",
+              "curie": "phar:pharmacy"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#belongsTo",
+              "curie": "phar:belongsTo",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "locality",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#locality",
+                    "curie": "phar:locality"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "locality"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#isInDistrict",
+              "curie": "phar:isInDistrict",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "district",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#district",
+                    "curie": "phar:district"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "district"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#day",
+              "curie": "phar:day",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "date"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#hasCode",
+              "curie": "phar:hasCode",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "pharmacy",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#pharmacy",
+                    "curie": "phar:pharmacy"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "pharmacy"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#locateIn",
+              "curie": "phar:locateIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "direction",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#direction",
+                    "curie": "phar:direction"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "direction"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#schedule",
+              "curie": "phar:schedule",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "length"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#hasTelephone",
+              "curie": "phar:hasTelephone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "telephone"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "locality",
+          "rdfTypes": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#locality",
+              "curie": "phar:locality"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "locality-URI",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column district to type http://schema.org/Place",
+    "columnName": "district",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia-2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://schema.org/Place",
+        "name": "schema:Place"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Aravaca (http://dbpedia.org/resource/Aravaca) for cells containing \"ARAVACA\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "ARAVACA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Aravaca",
+      "name": "Aravaca",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Alameda de Osuna (http://es.dbpedia.org/resource/Alameda_de_Osuna) for cells containing \"BARAJAS-ALAMEDA DE OSUNA\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "BARAJAS-ALAMEDA DE OSUNA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Alameda_de_Osuna",
+      "name": "Alameda de Osuna",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Carabanchel (http://es.dbpedia.org/resource/Carabanchel) for cells containing \"CARABANCHEL-LATINA\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "CARABANCHEL-LATINA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Carabanchel",
+      "name": "Carabanchel",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Distrito Centro (Madrid) (http://es.dbpedia.org/resource/Categoría:Distrito_Centro_(Madrid)) for cells containing \"CENTRO\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "CENTRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Categoría:Distrito_Centro_(Madrid)",
+      "name": "Distrito Centro (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Chamartin (Madrid) (http://es.dbpedia.org/resource/Chamartin_(Madrid)) for cells containing \"CHAMARTIN-HORTALEZA\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "CHAMARTIN-HORTALEZA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Chamartin_(Madrid)",
+      "name": "Chamartin (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Chamberi (Madrid) (http://es.dbpedia.org/resource/Chamberi_(Madrid)) for cells containing \"CHAMBERI-MONCLOA\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "CHAMBERI-MONCLOA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Chamberi_(Madrid)",
+      "name": "Chamberi (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ciudad Lineal (http://es.dbpedia.org/resource/Categoría:Ciudad_Lineal) for cells containing \"CIUDAD LINEAL-SAN BLAS\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "CIUDAD LINEAL-SAN BLAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Categoría:Ciudad_Lineal",
+      "name": "Ciudad Lineal",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Barrio del Pilar (Fuencarral El Pardo) (http://es.dbpedia.org/resource/Barrio_del_Pilar_(Fuencarral_El_Pardo)) for cells containing \"FUENCARRAL-BARRIO DEL PILAR\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "FUENCARRAL-BARRIO DEL PILAR",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Barrio_del_Pilar_(Fuencarral_El_Pardo)",
+      "name": "Barrio del Pilar (Fuencarral El Pardo)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Vallecas (http://es.dbpedia.org/resource/Vallecas) for cells containing \"PUEBLO DE VALLECAS\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "PUEBLO DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Vallecas",
+      "name": "Vallecas",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Puente de Vallecas (http://es.dbpedia.org/resource/Puente_de_Vallecas) for cells containing \"PUENTE DE VALLECAS-ENTREVIAS\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "PUENTE DE VALLECAS-ENTREVIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Puente_de_Vallecas",
+      "name": "Puente de Vallecas",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Retiro (http://es.dbpedia.org/resource/Retiro) for cells containing \"RETIRO-ARGANZUELA\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "RETIRO-ARGANZUELA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Retiro",
+      "name": "Retiro",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ventas (Madrid) (http://es.dbpedia.org/resource/Ventas_(Madrid)) for cells containing \"SALAMANCA-VENTAS\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "SALAMANCA-VENTAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Ventas_(Madrid)",
+      "name": "Ventas (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Tetuan (Madrid) (http://es.dbpedia.org/resource/Tetuan_(Madrid)) for cells containing \"TETUAN-CUATRO CAMINOS\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "TETUAN-CUATRO CAMINOS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Tetuan_(Madrid)",
+      "name": "Tetuan (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Usera (Madrid) (http://es.dbpedia.org/resource/Usera_(Madrid)) for cells containing \"USERA-VILLAVERDE\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "USERA-VILLAVERDE",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Usera_(Madrid)",
+      "name": "Usera (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Vicalvaro (http://es.dbpedia.org/resource/Vicalvaro) for cells containing \"VICALVARO\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "VICALVARO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Vicalvaro",
+      "name": "Vicalvaro",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Moratalaz (Madrid) (http://es.dbpedia.org/resource/Moratalaz_(Madrid)) for cells containing \"MORATALAZ\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "MORATALAZ",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Moratalaz_(Madrid)",
+      "name": "Moratalaz (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column district-URI at index 3 based on column district using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "district-URI",
+    "columnInsertIndex": 3,
+    "baseColumnName": "district",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Distrito Centro (Madrid) (http://es.dbpedia.org/resource/Distrito_Centro_(Madrid)) for cells containing \"CENTRO\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "CENTRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Distrito_Centro_(Madrid)",
+      "name": "Distrito Centro (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column district-URI",
+    "columnName": "district-URI"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ciudad Lineal (http://es.dbpedia.org/resource/Ciudad_Lineal) for cells containing \"CIUDAD LINEAL-SAN BLAS\" in column district",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "district",
+    "similarValue": "CIUDAD LINEAL-SAN BLAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Ciudad_Lineal",
+      "name": "Ciudad Lineal",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column district-URI at index 3 based on column district using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "district-URI",
+    "columnInsertIndex": 3,
+    "baseColumnName": "district",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://semanticweb.es/group04/ontology/pharmacies/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "phar",
+          "uri": "http://semanticweb.es/group04/ontology/pharmacies#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "pharmacy",
+          "rdfTypes": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#pharmacy",
+              "curie": "phar:pharmacy"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#belongsTo",
+              "curie": "phar:belongsTo",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "locality",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#locality",
+                    "curie": "phar:locality"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "locality"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#isInDistrict",
+              "curie": "phar:isInDistrict",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "district",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#district",
+                    "curie": "phar:district"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "district"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#day",
+              "curie": "phar:day",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "date"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#hasCode",
+              "curie": "phar:hasCode",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "pharmacy",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#pharmacy",
+                    "curie": "phar:pharmacy"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "pharmacy"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#locateIn",
+              "curie": "phar:locateIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "direction",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#direction",
+                    "curie": "phar:direction"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "direction"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#schedule",
+              "curie": "phar:schedule",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "length"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#hasTelephone",
+              "curie": "phar:hasTelephone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "telephone"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "locality",
+          "rdfTypes": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#locality",
+              "curie": "phar:locality"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "locality-URI",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "district",
+          "rdfTypes": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#district",
+              "curie": "phar:district"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "district-URI",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Madrid, Madrid (http://es.dbpedia.org/resource/Madrid,_Madrid) for cells containing \"Madrid\" in column locality",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "locality",
+    "similarValue": "Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Madrid,_Madrid",
+      "name": "Madrid, Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column locality-URI",
+    "columnName": "locality-URI"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Madrid Madrid (http://es.dbpedia.org/resource/Madrid_Madrid) for cells containing \"Madrid\" in column locality",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "locality",
+    "similarValue": "Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Madrid_Madrid",
+      "name": "Madrid Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Madrid (http://es.dbpedia.org/resource/Categoría:Madrid) for cells containing \"Madrid\" in column locality",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "locality",
+    "similarValue": "Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Categoría:Madrid",
+      "name": "Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Madrid (http://es.dbpedia.org/resource/Madrid) for cells containing \"Madrid\" in column locality",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "locality",
+    "similarValue": "Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Madrid",
+      "name": "Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column locality-URI at index 1 based on column locality using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "locality-URI",
+    "columnInsertIndex": 1,
+    "baseColumnName": "locality",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://semanticweb.es/group04/ontology/pharmacies/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "phar",
+          "uri": "http://semanticweb.es/group04/ontology/pharmacies#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "pharmacy",
+          "rdfTypes": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#pharmacy",
+              "curie": "phar:pharmacy"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#belongsTo",
+              "curie": "phar:belongsTo",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "locality",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#locality",
+                    "curie": "phar:locality"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "locality"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#isInDistrict",
+              "curie": "phar:isInDistrict",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "district",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#district",
+                    "curie": "phar:district"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "district"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#day",
+              "curie": "phar:day",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "date"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#hasCode",
+              "curie": "phar:hasCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "pharmacy"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#locateIn",
+              "curie": "phar:locateIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "direction",
+                "rdfTypes": [
+                  {
+                    "uri": "http://semanticweb.es/group04/ontology/pharmacies#direction",
+                    "curie": "phar:direction"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "direction"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#schedule",
+              "curie": "phar:schedule",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "length"
+              }
+            },
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#hasTelephone",
+              "curie": "phar:hasTelephone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "telephone"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "locality",
+          "rdfTypes": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#locality",
+              "curie": "phar:locality"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "locality-URI",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "district",
+          "rdfTypes": [
+            {
+              "uri": "http://semanticweb.es/group04/ontology/pharmacies#district",
+              "curie": "phar:district"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "district-URI",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

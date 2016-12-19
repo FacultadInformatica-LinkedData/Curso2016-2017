@@ -1,0 +1,292 @@
+FLORES GUARNEROS AXEL, ASSIGNMENT 4, SPARQL, 160508
+
+-----------------------------------------------------------
+			1. Obtener todas las clases
+-----------------------------------------------------------
+SELECT DISTINCT ?class
+WHERE{ 
+	?class a rdfs:Class
+}
+LIMIT 100
+
+class
+http://www.w3.org/2002/07/owl#Class
+http://www.w3.org/2002/07/owl#Ontology
+http://www.w3.org/2002/07/owl#OntologyProperty
+http://www.w3.org/2002/07/owl#AnnotationProperty
+http://www.w3.org/2002/07/owl#AllDifferent
+http://www.w3.org/2002/07/owl#Restriction
+http://www.w3.org/2002/07/owl#ObjectProperty
+http://www.w3.org/2002/07/owl#DatatypeProperty
+http://www.w3.org/2002/07/owl#TransitiveProperty
+http://www.w3.org/2002/07/owl#SymmetricProperty
+http://www.w3.org/2002/07/owl#FunctionalProperty
+http://www.w3.org/2002/07/owl#InverseFunctionalProperty
+http://www.w3.org/2002/07/owl#DeprecatedClass
+http://www.w3.org/2002/07/owl#DeprecatedProperty
+http://www.w3.org/2002/07/owl#DataRange
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+http://www.w3.org/2000/01/rdf-schema#Class
+http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+http://energy.linkeddata.es/PQube.owl#PropertySummaryValue
+http://energy.linkeddata.es/PQube.owl#ObservationValue
+http://energy.linkeddata.es/PQube.owl#PQubePropertySummary
+http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval
+http://energy.linkeddata.es/PQube.owl#PQubeProperty
+http://www.w3.org/2000/01/rdf-schema#Resource
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
+http://energy.linkeddata.es/PQube.owl#DailyObservationCollection
+http://energy.linkeddata.es/PQube.owl#PQubeDevice
+http://www.w3.org/2000/01/rdf-schema#Container
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag
+http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty
+http://energy.linkeddata.es/PQube.owl#Building
+http://www.w3.org/2000/01/rdf-schema#Datatype
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt
+http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral
+http://energy.linkeddata.es/PQube.owl#PQubeConfiguration
+http://www.w3.org/2000/01/rdf-schema#Literal
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq
+http://datos.localidata.com/def/CityStats/code#Nacionalidad
+http://GP-onto.fi.upm.es/exercise2#OnFoot
+http://GP-onto.fi.upm.es/exercise2#TransportMedium
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#Establishment
+http://GP-onto.fi.upm.es/exercise2#PhysicalPoint
+http://GP-onto.fi.upm.es/exercise2#Stage
+http://GP-onto.fi.upm.es/exercise2#TransportInfrastructure
+http://GP-onto.fi.upm.es/exercise2#Bus
+http://GP-onto.fi.upm.es/exercise2#Car
+http://GP-onto.fi.upm.es/exercise2#BankService
+http://GP-onto.fi.upm.es/exercise2#Service
+http://GP-onto.fi.upm.es/exercise2#Bicycle
+http://GP-onto.fi.upm.es/exercise2#PostalAddress
+http://GP-onto.fi.upm.es/exercise2#Path
+http://GP-onto.fi.upm.es/exercise2#Road
+http://GP-onto.fi.upm.es/exercise2#Cathedral
+http://GP-onto.fi.upm.es/exercise2#TouristicLocation
+http://GP-onto.fi.upm.es/exercise2#City
+http://GP-onto.fi.upm.es/exercise2#Locality
+http://GP-onto.fi.upm.es/exercise2#Route
+http://GP-onto.fi.upm.es/exercise2#SpacialThing
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest
+http://GP-onto.fi.upm.es/exercise2#Stretch
+http://GP-onto.fi.upm.es/exercise2#Chapel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+http://GP-onto.fi.upm.es/exercise2#Church
+http://GP-onto.fi.upm.es/exercise2#Location
+http://GP-onto.fi.upm.es/exercise2#Palace
+http://GP-onto.fi.upm.es/exercise2#PostalService
+http://GP-onto.fi.upm.es/exercise2#Town
+http://GP-onto.fi.upm.es/exercise2#RestaurationService
+http://GP-onto.fi.upm.es/exercise2#HealthService
+http://GP-onto.fi.upm.es/exercise2#SecurityService
+http://GP-onto.fi.upm.es/exercise2#Track
+http://GP-onto.fi.upm.es/exercise2#Train
+http://GP-onto.fi.upm.es/exercise2#Railway
+http://GP-onto.fi.upm.es/exercise2#Village
+http://www.opengis.net/ont/sf#MultiPolygon
+http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#AmplitudTermicaAbsoluta
+
+----------------------------------------------------------------
+			2. Obtener las subclases de la clase Establishment
+----------------------------------------------------------------
+PREFIX est:<http://GP-onto.fi.upm.es/exercise2#> 
+SELECT DISTINCT ?Subclass
+WHERE{
+  ?Subclass rdfs:subClassOf est:Establishment 
+}
+LIMIT 100
+
+Subclass
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+
+----------------------------------------------------------------
+			3. Obtener las instancias de la clase City
+----------------------------------------------------------------
+SELECT DISTINCT ?instancia
+WHERE{
+  ?instancia a <http://GP-onto.fi.upm.es/exercise2#City> 
+}
+LIMIT 100 
+
+instancia
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+http://GP-onto.fi.upm.es/exercise2#Madrid
+
+-------------------------------------------------------------------------
+			4. Obtener el número de habitantes de Santiago de Compostela
+-------------------------------------------------------------------------
+SELECT DISTINCT ?habitantes
+WHERE{
+   <http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?habitantes
+}
+LIMIT 100 
+
+habitantes
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+-----------------------------------------------------------------------------------
+			5. Obtener el número de habitantes de Santiago de Compostela y de Arzua
+-----------------------------------------------------------------------------------
+SELECT DISTINCT ?habSantiago ?habArzua
+WHERE{
+   <http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?habSantiago.
+   <http://GP-onto.fi.upm.es/exercise2#Arzua> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?habArzua
+}
+LIMIT 100 
+
+habSantiago	
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>	
+habArzua
+" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+-----------------------------------------------------------------------------------
+			6. Obtener distintos lugares con número de habitantes, ordenar los
+			   resultados por el nombre del lugar (ascendente)
+-----------------------------------------------------------------------------------
+SELECT DISTINCT ?place ?habitantes
+WHERE{
+   ?place <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?habitantes
+} ORDER BY ASC(?place)
+
+					place															habitantes
+http://GP-onto.fi.upm.es/exercise2#Arzua					" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+-----------------------------------------------------------------------------------
+			7. Obtener todas las instancias de Locality con su número de habitantes 
+			(si existe)
+-----------------------------------------------------------------------------------
+SELECT DISTINCT ?instancia ?habitantes
+WHERE{
+   ?instancia a ?local.
+   ?local rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Locality>.
+   OPTIONAL{
+       ?inst <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?habitantes
+   }
+}
+LIMIT 100
+
+				instancia														habitantes
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a					" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Madrid					" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Arzua					" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a					" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Madrid					" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Arzua					" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+-----------------------------------------------------------------------------------
+			8. Obtener todos los lugares con más de 200.000 habitantes
+-----------------------------------------------------------------------------------
+SELECT DISTINCT ?place ?habitantes
+WHERE{
+   ?place <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?habitantes.
+   FILTER(xsd:integer(?habitantes)>200000)
+}
+LIMIT 100
+
+		place																		habitantes
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+-----------------------------------------------------------------------------------
+			9. Obtener los datos postales de Pazo_Breogan (calle, número, localidad,
+			   provincia)
+-----------------------------------------------------------------------------------
+SELECT DISTINCT ?calle ?numero ?localidad ?provincia
+WHERE{
+    <http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan> <http://GP-onto.fi.upm.es/exercise2#hasAddress> ?datos.
+    ?addr <http://GP-onto.fi.upm.es/exercise2#hasStreet> ?calle.
+    ?adddr <http://GP-onto.fi.upm.es/exercise2#hasNumber> ?numero.
+    <http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan> <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> ?localidad.
+    ?local <http://GP-onto.fi.upm.es/exercise2#inProvince> ?provincia
+}
+LIMIT 100
+
+calle		numero					localidad					provincia
+Pza Obradoiro	1	http://GP-onto.fi.upm.es/exercise2#Arzua	A Coruña
+Pza Obradoiro	1	http://GP-onto.fi.upm.es/exercise2#Arzua	Pontevedra
+Pza Obradoiro	1	http://GP-onto.fi.upm.es/exercise2#Arzua	Madrid
+C/Mayor			1	http://GP-onto.fi.upm.es/exercise2#Arzua	A Coruña
+C/Mayor			1	http://GP-onto.fi.upm.es/exercise2#Arzua	Pontevedra
+C/Mayor			1	http://GP-onto.fi.upm.es/exercise2#Arzua	Madrid
+Pza Obradoiro	5	http://GP-onto.fi.upm.es/exercise2#Arzua	A Coruña
+Pza Obradoiro	5	http://GP-onto.fi.upm.es/exercise2#Arzua	Pontevedra
+Pza Obradoiro	5	http://GP-onto.fi.upm.es/exercise2#Arzua	Madrid
+C/Mayor			5	http://GP-onto.fi.upm.es/exercise2#Arzua	A Coruña
+C/Mayor			5	http://GP-onto.fi.upm.es/exercise2#Arzua	Pontevedra
+C/Mayor			5	http://GP-onto.fi.upm.es/exercise2#Arzua	Madrid
+
+-----------------------------------------------------------------------------------
+			10. Obtener las subclases de la clase Location
+-----------------------------------------------------------------------------------
+SELECT DISTINCT ?Subclase
+WHERE{
+      ?Subclase rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Location>
+}LIMIT 100
+
+Subclase
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest
+
+-----------------------------------------------------------------------------------
+			11. Obtener las instancias de la clase Locality
+-----------------------------------------------------------------------------------
+SELECT DISTINCT ?instancia
+WHERE{
+    ?instancia a <http://GP-onto.fi.upm.es/exercise2#Location>
+}
+LIMIT 100
+
+instancia
+http://GP-onto.fi.upm.es/exercise2#Fuente_Talaverana
+http://GP-onto.fi.upm.es/exercise2#Monte_Do_Gozo
+
+-----------------------------------------------------------------------------------
+			12. Describir el recurso con rdfs:label "Madrid”
+-----------------------------------------------------------------------------------
+DESCRIBE ?recurso
+WHERE{
+    ?recurso rdfs:label "Madrid"
+}
+LIMIT 100
+
+@prefix ns0:	<http://GP-onto.fi.upm.es/exercise2#> .
+ns0:GP_Santiago_Instance_72	ns0:hasEnd	ns0:Madrid .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ns0:Madrid	rdf:type	ns0:City .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+ns0:Madrid	rdfs:label	"Madrid" ;
+ns0:isLocatedAtPoint	ns0:GP_Santiago_Instance_74 ;
+ns0:inProvince	"Madrid" .
+
+-----------------------------------------------------------------------------------
+			13. Construir el grafo RDF(S) que relaciona directamente todos los 
+			lugares turísticos con sus respectivas provincias, usando una nueva 
+			propiedad llamada ”isIn”
+-----------------------------------------------------------------------------------
+CONSTRUCT {?turistico <http://GP-onto.fi.upm.es/exercise2#isIn> ?provincia}
+WHERE{
+    ?turistico <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> ?place.
+    ?place <http://GP-onto.fi.upm.es/exercise2#inProvince> ?provincia
+}
+LIMIT 100
+
+@prefix ns0:	<http://GP-onto.fi.upm.es/exercise2#> .
+ns0:Fuente_Talaverana	ns0:isIn	"Pontevedra" .
+ns0:Monte_Do_Gozo	ns0:isIn	"Pontevedra" .
+ns0:Cathedral_Santiago_Compostela	ns0:isIn	"Pontevedra" .
+ns0:Pazo_Breogan	ns0:isIn	"Pontevedra" .
+
+-----------------------------------------------------------------------------------
+			14. Preguntar si hay alguna instancia de Town
+-----------------------------------------------------------------------------------
+ASK{
+    ?town a <http://GP-onto.fi.upm.es/exercise2#Town>
+}
+true

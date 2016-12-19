@@ -1,0 +1,103 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g10: <http://smartsevilla.es/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://smartsevilla.es/resources/monuments/ConventodeSantaAna> a dbo:Monument ;
+	dbp:fullname "Convento de Santa Ana (Sevilla)"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Convento_de_Santa_Ana_%28Sevilla%29> .
+
+<http://smartsevilla.es/resources/monuments/ConventodeSantaPaula> a dbo:Monument ;
+	dbp:fullname "Convento de Santa Paula (Sevilla)"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Convento_de_Santa_Paula_%28Sevilla%29> .
+
+<http://smartsevilla.es/resources/monuments/IglesiadelDivinoSalvador> a dbo:Monument ;
+	dbp:fullname "Iglesia del Divino Salvador (Sevilla)"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Iglesia_del_Divino_Salvador_%28Sevilla%29> .
+
+<http://smartsevilla.es/resources/monuments/IglesiadelaMagdalena> a dbo:Monument ;
+	dbp:fullname "Iglesia de la Magdalena (Sevilla)"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Iglesia_de_la_Magdalena_%28Sevilla%29> .
+
+<http://smartsevilla.es/resources/monuments/IglesiadeSanEsteban> a dbo:Monument ;
+	dbp:fullname "Iglesia de San Esteban (Sevilla)"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Iglesia_de_San_Esteban_%28Sevilla%29> .
+
+<http://smartsevilla.es/resources/monuments/IglesiadeSanAndres> a dbo:Monument ;
+	dbp:fullname "Iglesia de San Andres (Sevilla)"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Iglesia_de_San_Andres_%28Sevilla%29> .
+
+<http://smartsevilla.es/resources/monuments/IglesiadeSanGil> a dbo:Monument ;
+	dbp:fullname "Iglesia de San Gil (Sevilla)"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Iglesia_de_San_Gil_%28Sevilla%29> .
+
+<http://smartsevilla.es/resources/monuments/IglesiadeSanIsidoro> a dbo:Monument ;
+	dbp:fullname "Iglesia de San Isidoro (Sevilla)"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Iglesia_de_San_Isidoro_%28Sevilla%29> .
+
+<http://smartsevilla.es/resources/monuments/JardinAmericano> a dbo:Monument ;
+	dbp:fullname "Jardin Americano"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Jardin_Americano> .
+
+<http://smartsevilla.es/resources/monuments/CentroAndaluzdeArteContemporaneo> a dbo:Monument ;
+	dbp:fullname "Centro Andaluz de Arte Contemporaneo"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Centro_Andaluz_de_Arte_Contemporaneo> .
+
+<http://smartsevilla.es/resources/monuments/Realalcazar> a dbo:Monument ;
+	dbp:fullname "Real alcazar"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Real_alcazar> .
+
+<http://smartsevilla.es/resources/monuments/MercadodeTriana> a dbo:Monument ;
+	dbp:fullname "Mercado de Triana"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Mercado_de_Triana> .
+
+<http://smartsevilla.es/resources/monuments/LaGiralda> a dbo:Monument ;
+	dbp:fullname "La Giralda"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/La_Giralda> .
+
+<http://smartsevilla.es/resources/monuments/ArchivodeIndiasdeSevilla> a dbo:Monument ;
+	dbp:fullname "Archivo de Indias de Sevilla"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Archivo_de_Indias_de_Sevilla> .
+
+<http://smartsevilla.es/resources/monuments/AyuntamientodeSevilla> a dbo:Monument ;
+	dbp:fullname "Ayuntamiento de Sevilla"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Ayuntamiento_de_Sevilla> .
+
+<http://smartsevilla.es/resources/monuments/PlazaNueva> a dbo:Monument ;
+	dbp:fullname "Plaza Nueva (Sevilla)"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Plaza_Nueva_%28Sevilla%29> .
+
+<http://smartsevilla.es/resources/monuments/PalaciodeSanTelmo> a dbo:Monument ;
+	dbp:fullname "Palacio de San Telmo (Sevilla)"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Palacio_de_San_Telmo_%28Sevilla%29> .
+
+<http://smartsevilla.es/resources/monuments/PalacioarzobispaldeSevilla> a dbo:Monument ;
+	dbp:fullname "Palacio arzobispal de Sevilla"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Palacio_arzobispal_de_Sevilla> .
+
+<http://smartsevilla.es/resources/monuments/Pabellondelanavegacion> a dbo:Monument ;
+	dbp:fullname "Pabellon de la navegacion"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Pabellon_de_la_navegacion> .
+
+<http://smartsevilla.es/resources/monuments/CasadelaCienciadeSevilla> a dbo:Monument ;
+	dbp:fullname "Casa de la Ciencia de Sevilla"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Casa_de_la_Ciencia_de_Sevilla> .
+
+<http://smartsevilla.es/resources/monuments/MuelledelasDelicias> a dbo:Monument ;
+	dbp:fullname "Muelle de las Delicias"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Muelle_de_las_Delicias> .
+
+<http://smartsevilla.es/resources/monuments/ParquedeMariaLuisa> a dbo:Monument ;
+	dbp:fullname "Parque de Maria Luisa (Sevilla)"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Parque_de_Maria_Luisa_%28Sevilla%29> .
+
+<http://smartsevilla.es/resources/monuments/ConventodelasMinimas> a dbo:Monument ;
+	dbp:fullname "Convento de las Minimas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/monuments/CapilladelCarmen> a dbo:Monument ;
+	dbp:fullname "Capilla del Carmen (Sevilla)"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Capilla_del_Carmen_%28Sevilla%29> .

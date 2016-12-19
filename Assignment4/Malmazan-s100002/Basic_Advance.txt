@@ -1,0 +1,341 @@
+1-Get all the classes
+
+select distinct ?Classes where {?Classes a rdfs:Class} LIMIT 100
+
+Classes
+http://www.w3.org/2002/07/owl#Class
+http://www.w3.org/2002/07/owl#Ontology
+http://www.w3.org/2002/07/owl#OntologyProperty
+http://www.w3.org/2002/07/owl#AnnotationProperty
+http://www.w3.org/2002/07/owl#AllDifferent
+http://www.w3.org/2002/07/owl#Restriction
+http://www.w3.org/2002/07/owl#ObjectProperty
+http://www.w3.org/2002/07/owl#DatatypeProperty
+http://www.w3.org/2002/07/owl#TransitiveProperty
+http://www.w3.org/2002/07/owl#SymmetricProperty
+http://www.w3.org/2002/07/owl#FunctionalProperty
+http://www.w3.org/2002/07/owl#InverseFunctionalProperty
+http://www.w3.org/2002/07/owl#DeprecatedClass
+http://www.w3.org/2002/07/owl#DeprecatedProperty
+http://www.w3.org/2002/07/owl#DataRange
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+http://www.w3.org/2000/01/rdf-schema#Class
+http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+http://energy.linkeddata.es/PQube.owl#PropertySummaryValue
+http://energy.linkeddata.es/PQube.owl#ObservationValue
+http://energy.linkeddata.es/PQube.owl#PQubePropertySummary
+http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval
+http://energy.linkeddata.es/PQube.owl#PQubeProperty
+http://www.w3.org/2000/01/rdf-schema#Resource
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
+http://energy.linkeddata.es/PQube.owl#DailyObservationCollection
+http://energy.linkeddata.es/PQube.owl#PQubeDevice
+http://www.w3.org/2000/01/rdf-schema#Container
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag
+http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty
+http://energy.linkeddata.es/PQube.owl#Building
+http://www.w3.org/2000/01/rdf-schema#Datatype
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt
+http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral
+http://energy.linkeddata.es/PQube.owl#PQubeConfiguration
+http://www.w3.org/2000/01/rdf-schema#Literal
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq
+http://datos.localidata.com/def/CityStats/code#Nacionalidad
+http://GP-onto.fi.upm.es/exercise2#OnFoot
+http://GP-onto.fi.upm.es/exercise2#TransportMedium
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#Establishment
+http://GP-onto.fi.upm.es/exercise2#PhysicalPoint
+http://GP-onto.fi.upm.es/exercise2#Stage
+http://GP-onto.fi.upm.es/exercise2#TransportInfrastructure
+http://GP-onto.fi.upm.es/exercise2#Bus
+http://GP-onto.fi.upm.es/exercise2#Car
+http://GP-onto.fi.upm.es/exercise2#BankService
+http://GP-onto.fi.upm.es/exercise2#Service
+http://GP-onto.fi.upm.es/exercise2#Bicycle
+http://GP-onto.fi.upm.es/exercise2#PostalAddress
+http://GP-onto.fi.upm.es/exercise2#Path
+http://GP-onto.fi.upm.es/exercise2#Road
+http://GP-onto.fi.upm.es/exercise2#Cathedral
+http://GP-onto.fi.upm.es/exercise2#TouristicLocation
+http://GP-onto.fi.upm.es/exercise2#City
+http://GP-onto.fi.upm.es/exercise2#Locality
+http://GP-onto.fi.upm.es/exercise2#Route
+http://GP-onto.fi.upm.es/exercise2#SpacialThing
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest
+http://GP-onto.fi.upm.es/exercise2#Stretch
+http://GP-onto.fi.upm.es/exercise2#Chapel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+http://GP-onto.fi.upm.es/exercise2#Church
+http://GP-onto.fi.upm.es/exercise2#Location
+http://GP-onto.fi.upm.es/exercise2#Palace
+http://GP-onto.fi.upm.es/exercise2#PostalService
+http://GP-onto.fi.upm.es/exercise2#Town
+http://GP-onto.fi.upm.es/exercise2#RestaurationService
+http://GP-onto.fi.upm.es/exercise2#HealthService
+http://GP-onto.fi.upm.es/exercise2#SecurityService
+http://GP-onto.fi.upm.es/exercise2#Track
+http://GP-onto.fi.upm.es/exercise2#Train
+http://GP-onto.fi.upm.es/exercise2#Railway
+http://GP-onto.fi.upm.es/exercise2#Village
+http://www.opengis.net/ont/sf#MultiPolygon
+http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#AmplitudTermicaAbsoluta
+
+
+2-Get all the subclasses of the class Establishment
+
+
+prefix est:<http://GP-onto.fi.upm.es/exercise2#> 
+select distinct ?SubClasses
+where
+{
+?SubClasses rdfs:subClassOf est:Establishment 
+}LIMIT 100
+
+SubClasses
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+
+3-Get all instances of the class City
+
+select distinct ?InstanceCity
+where
+{
+?InstanceCity a <http://GP-onto.fi.upm.es/exercise2#City> 
+}LIMIT 100
+
+InstanceCity
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+http://GP-onto.fi.upm.es/exercise2#Madrid
+
+
+4-Get the number of inhabitants of Santiago de Compostela
+
+select distinct ?InhabitSantiago
+where
+{
+<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> 
+<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> 
+ ?InhabitSantiago
+}LIMIT 100
+
+InhabitSantiago
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+5-Get the number of inhabitants of Santiago de Compostela and Arzua
+
+select distinct ?InhabitSantiago ?InhabitArzua
+where
+{
+<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> 
+<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> 
+?InhabitSantiago.
+
+<http://GP-onto.fi.upm.es/exercise2#Arzua> 
+<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> 
+?InhabitArzua
+}LIMIT 100 
+
+InhabitSantiago	InhabitArzua
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+
+6-Get all places, together with the number of inhabitants, ordered by the place name (ascending)
+
+select distinct ?Places ?Inhabitant
+where
+{
+?Places <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?Inhabitant
+}order by asc(?Places) LIMIT 100
+
+Places	Inhabitant
+http://GP-onto.fi.upm.es/exercise2#Arzua	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+
+7-Get all instances of  Locality together with their number of inhabitants (if this information exists)
+
+select distinct ?Instances ?Inhabitants
+where
+{
+?Instances a ?Local.
+?Local rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Locality>.
+optional{?Instances <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?Inhabitants}
+}LIMIT 100
+
+Instances	Inhabitants
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a	
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Madrid	
+http://GP-onto.fi.upm.es/exercise2#Arzua	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+
+8-Get all places with more than 200.000 inhabitants
+
+select distinct ?Places ?Inhabitant
+where
+{
+?Places <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?Inhabitant.
+filter(xsd:integer(?Inhabitant)>200000)
+}LIMIT 100
+
+Places	Inhabitant
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+
+9-Get postal address data for Pazo_Breogan (street, number, locality, province)
+
+select distinct ?Street ?Number ?Local ?Province
+where
+{
+<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan> <http://GP-onto.fi.upm.es/exercise2#hasAddress> ?Addres.
+?Addres <http://GP-onto.fi.upm.es/exercise2#hasStreet> ?Street.
+?adddr <http://GP-onto.fi.upm.es/exercise2#hasNumber> ?Number.
+<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan> <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> ?Local.
+?Local <http://GP-onto.fi.upm.es/exercise2#inProvince> ?Province
+}LIMIT 100
+
+Street	Number	Local	Province
+C/Mayor	1	http://GP-onto.fi.upm.es/exercise2#Arzua	Pontevedra
+C/Mayor	5	http://GP-onto.fi.upm.es/exercise2#Arzua	Pontevedra
+
+
+10-Get all subclasses of class Location
+
+select distinct ?SubClass
+where
+{
+?SubClass rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Location>
+}LIMIT 100
+
+
+SubClass
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest
+
+
+11-Get all instances of class Locality
+
+select distinct ?Instances
+where
+{
+?Instances a <http://GP-onto.fi.upm.es/exercise2#Location>
+}LIMIT 100
+
+Instances
+http://GP-onto.fi.upm.es/exercise2#Fuente_Talaverana
+http://GP-onto.fi.upm.es/exercise2#Monte_Do_Gozo
+	
+
+12-Describe the resource with rdfs:label "Madrid”
+
+describe ?resource
+where
+{
+?resource rdfs:label "Madrid"
+}LIMIT 100
+
+
+@prefix ns0:	<http://GP-onto.fi.upm.es/exercise2#> .
+ns0:GP_Santiago_Instance_72	ns0:hasEnd	ns0:Madrid .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ns0:Madrid	rdf:type	ns0:City .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+ns0:Madrid	rdfs:label	"Madrid" ;
+	ns0:isLocatedAtPoint	ns0:GP_Santiago_Instance_74 ;
+	ns0:inProvince	"Madrid" .
+
+13-Construct a graph that relates directly all touristic places with their provinces, using a new property called ”isIn”
+
+No funciona el enlace http://sandbox.linkeddata.es/Grado_20122013
+
+construct {?Tour <http://GP-onto.fi.upm.es/exercise2#isIn> ?Provincie}
+where
+{
+?Tour <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> ?Places.
+?Places <http://GP-onto.fi.upm.es/exercise2#inProvince> ?Provincie
+}LIMIT 100
+
+@prefix ns0:	<http://GP-onto.fi.upm.es/exercise2#> .
+ns0:Fuente_Talaverana	ns0:isIn	"Pontevedra" .
+ns0:Monte_Do_Gozo	ns0:isIn	"Pontevedra" .
+ns0:Cathedral_Santiago_Compostela	ns0:isIn	"Pontevedra" .
+ns0:Pazo_Breogan	ns0:isIn	"Pontevedra" .
+
+14-Check whether there is any instance of Town
+
+ask{
+?Town a <http://GP-onto.fi.upm.es/exercise2#Town>
+}
+
+true
+
+
+---------------------------------------
+
+A1. Dame todas las propiedades aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician)
+
+select distinct ?Propiedades
+where
+{
+?Instancias a <http://dbpedia.org/ontology/Politician>.
+?Instancias ?Propiedades ?Valor
+}LIMIT 100
+
+A2. Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician)
+
+select distinct ?Propiedades
+where
+{
+?Instancias a <http://dbpedia.org/ontology/Politician>.
+?Instancias ?Propiedades ?Valor.
+filter(?Propiedades != rdf:type)
+}LIMIT 100
+
+A3. ¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician (http://dbpedia.org/ontology/Politician)?
+
+select count(distinct ?Valor)
+where
+{
+?Instancias a <http://dbpedia.org/ontology/Politician>.
+?Instancias ?Propiedades ?Valor.
+filter(?Propiedades != rdf:type)
+}LIMIT 100
+
+A4. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime cuántos valores distintos toman en dichas instancias
+
+select ?Propiedades count(distinct ?Valor)
+where
+{
+?Instancias a <http://dbpedia.org/ontology/Politician>.
+?Instancias ?Propiedades ?Valor.
+filter(?Propiedades != rdf:type)
+}LIMIT 100
+
+A5. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime la media de valores distintos que toman en dichas instancias.
+
+select avg(distinct ?Valor) as ?Media
+where
+{
+select ?Propiedades count(distinct ?Value) as ?Valor
+where{
+?Instancias a <http://dbpedia.org/ontology/Politician>.
+?Instancias ?Propiedades ?Value.
+filter(?Propiedades != rdf:type)
+}
+}
+
+A6. Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (http://dbpedia.org/ontology/Politician), dime el máximo número de valores distintos que toman entre todas sus instancias, ordenado de mayor a menor
+
+select ?Propiedades max(?Valor) as ?Max
+where
+{
+select ?Propiedades count(distinct ?Value) as ?Valor
+where{
+?Instancias a <http://dbpedia.org/ontology/Politician>.
+?Instancias ?Propiedades ?Value.
+filter(?Propiedades != rdf:type)
+}
+}ORDER BY DESC(?Max)
