@@ -1,0 +1,153 @@
+NOMBRE Y APELLIDO: Raul Ruben Leon Cardenas
+SPARQL Questionnaire (Basic)
+===========================
+
+1. Get all the classes
+
+SELECT DISTINCT ?Clase
+WHERE 
+{
+?a ?b ?Clase
+} 
+LIMIT 100
+
+
+2. Get all the subclasses of the class Establishment
+
+PREFIX pre: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT DISTINCT ?subclass
+WHERE
+{
+?subclass rdfs:subClassOf pre:Establishment
+} 
+
+3. Get all instances of the class City
+
+PREFIX pre: <http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?Ins
+WHERE
+{
+?Ins a pre:City
+} 
+
+
+4. Get the number of inhabitants of Santiago de Compostela
+
+PREFIX pre: <http://GP-onto.fi.upm.es/exercise2#> 
+
+SELECT ?Inhab
+WHERE {
+        pre:Santiago_de_Compostela pre:hasInhabitantNumber ?Inhab
+}
+
+
+5. Get the number of inhabitants of Santiago de Compostela and Arzua
+
+PREFIX pre: <http://GP-onto.fi.upm.es/exercise2#> 
+
+SELECT distinct ?Inhab_Santiago ?Inhab_Arzua
+WHERE {
+        pre:Santiago_de_Compostela pre:hasInhabitantNumber ?Inhab_Santiago .
+        pre:Arzua pre:hasInhabitantNumber ?Inhab_Arzua
+}
+
+
+6. Get all places, together with the number of inhabitants, ordered by the place name (ascending)
+
+PREFIX pre: <http://GP-onto.fi.upm.es/exercise2#> 
+
+SELECT ?Lugar ?Inhab
+WHERE {
+        ?Lugar pre:hasInhabitantNumber ?Inhab
+}
+
+ORDER BY ASC(?Lugar)
+
+
+7. Get all instances of Locality together with their number of inhabitants (if this information exists)
+
+PREFIX pre: <http://GP-onto.fi.upm.es/exercise2#> 
+
+SELECT ?localidad ?NumeroHabitantes
+WHERE {
+        ?T_localidad rdfs:subClassOf pre:Locality .
+        ?localidad a ?T_localidad
+        OPTIONAL { ?localidad pre:hasInhabitantNumber ?NumeroHabitantes}
+        
+}
+
+8. Get all places with more than 200.000 inhabitants
+
+PREFIX pre: <http://GP-onto.fi.upm.es/exercise2#> 
+
+select ?lugares ?habitantes
+where{
+	?lugares pre:hasInhabitantNumber ?habitantes .
+	FILTER (xsd:integer(?habitantes) > 200000)
+}
+
+
+9. Get postal address data for Pazo_Breogan (street, number, locality, province)
+
+PREFIX pre: <http://GP-onto.fi.upm.es/exercise2#> 
+
+SELECT ?Street ?Number ?Locality ?Province
+WHERE {
+        pre:Pazo_Breogan pre:hasAddress ?Address .
+        ?Address pre:hasStreet ?Street .
+        ?Address pre:hasNumber ?Number . 
+        pre:Pazo_Breogan pre:isPlacedIn ?Locality .
+        ?Locality pre:inProvince ?Province          
+}
+
+10. Get all subclasses of class Location
+
+PREFIX pre: <http://GP-onto.fi.upm.es/exercise2#> 
+
+SELECT ?subclases
+WHERE {
+	?subclases rdfs:subClassOf pre:Location
+}
+
+
+11. Get all instances of class Locality
+
+PREFIX pre: <http://GP-onto.fi.upm.es/exercise2#> 
+
+SELECT ?localidad 
+WHERE {
+        ?T_localidad rdfs:subClassOf pre:Locality .
+        ?localidad a ?T_localidad  
+}
+
+
+12. Describe the resource with rdfs:label "Madrid”
+
+SELECT ?Resource
+WHERE {
+       ?Resource rdfs:label "Madrid"
+          
+}
+
+
+13. Construct a graph that relates directly all touristic places with their provinces, using a new property called ”isIn”
+
+PREFIX pre: <http://GP-onto.fi.upm.es/exercise2#> 
+
+CONSTRUCT {?touristP pre:isIn ?Provincia}
+WHERE {
+       ?touristP pre:isPlacedIn ?Ciudad .
+       ?Ciudad pre:inProvince ?Provincia
+          
+}
+
+14. Check whether there is any instance of Town
+
+PREFIX pre: <http://GP-onto.fi.upm.es/exercise2#> 
+
+ASK {?x a pre:Town}
+
+
+
+
+
