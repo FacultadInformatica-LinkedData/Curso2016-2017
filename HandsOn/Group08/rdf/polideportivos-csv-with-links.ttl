@@ -1,0 +1,1309 @@
+@prefix ont: <http://www.linked-data-deportemadrid.org/group08/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Alberto+Garc%C3%ADa+%28Pozo+T%C3%ADo+Raimundo%29> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Alberto García (Pozo Tío Raimundo)"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2b7ee7510551c010VgnVCM2000000c205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+REGUERA+DE+TOMATEROS> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Alberto+Garc%C3%ADa+%28Pozo+T%C3%ADo+Raimundo%29> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+REGUERA+DE+TOMATEROS> .
+
+<http://dbpedia.org/resource/Madrid,_Madrid> a ont:Localidad .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Alberto+Garc%C3%ADa+%28Pozo+T%C3%ADo+Raimundo%29> ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Madrid,_Madrid> a ont:Provincia .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Alberto+Garc%C3%ADa+%28Pozo+T%C3%ADo+Raimundo%29> ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Entrevias> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Alberto+Garc%C3%ADa+%28Pozo+T%C3%ADo+Raimundo%29> ont:isInBarrio <http://dbpedia.org/resource/Entrevias> .
+
+<http://dbpedia.org/resource/Puente_de_Vallecas> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Alberto+Garc%C3%ADa+%28Pozo+T%C3%ADo+Raimundo%29> ont:isInDistrito <http://dbpedia.org/resource/Puente_de_Vallecas> ;
+	ont:hasCoordenadaX "444296"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4469509"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.372421418063425"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6574515621755173"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Alfredo+Goyeneche> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Alfredo Goyeneche"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=789fe8ae8d81c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ARROYO+DE+POZUELO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Alfredo+Goyeneche> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ARROYO+DE+POZUELO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Moncloa-Aravaca> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Alfredo+Goyeneche> ont:isInBarrio <http://dbpedia.org/resource/Moncloa-Aravaca> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Moncloa-Aravaca> ;
+	ont:hasCoordenadaX "433691"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4478442"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.45211512813871"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.7832937390386396"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Aluche> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Aluche"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4506b0c40971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+GENERAL+FANJUL> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Aluche> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+GENERAL+FANJUL> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Latina_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Aluche> ont:isInDistrito <http://dbpedia.org/resource/Latina_(Madrid)> ;
+	ont:hasCoordenadaX "434441"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4470732"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.382720517194784"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.773653600881568"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Antiguo+Can%C3%B3dromo> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Antiguo Canódromo"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=dd6426521e7f3110VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+VIA+CARPETANA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Antiguo+Can%C3%B3dromo> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+VIA+CARPETANA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Category:San_Isidro> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Antiguo+Can%C3%B3dromo> ont:isInBarrio <http://dbpedia.org/resource/Category:San_Isidro> .
+
+<http://dbpedia.org/resource/Carabanchel> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Antiguo+Can%C3%B3dromo> ont:isInDistrito <http://dbpedia.org/resource/Carabanchel> ;
+	ont:hasCoordenadaX "437713"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4472402"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.39801608457685"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.7352725040539525"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Antonio+D%C3%ADaz+Miguel> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Antonio Díaz Miguel"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c90342b9fda34110VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+JOAQUIN+DICENTA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Antonio+D%C3%ADaz+Miguel> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+JOAQUIN+DICENTA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Almenara_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Antonio+D%C3%ADaz+Miguel> ont:isInBarrio <http://dbpedia.org/resource/Almenara_(Madrid)> .
+
+<http://dbpedia.org/resource/Tetuan_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Antonio+D%C3%ADaz+Miguel> ont:isInDistrito <http://dbpedia.org/resource/Tetuan_(Madrid)> ;
+	ont:hasCoordenadaX "441167"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4480504"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.471254265861454"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6953256978963807"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Arganzuela> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Arganzuela"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=9b26b0c40971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ALICANTE> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Arganzuela> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ALICANTE> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Las_Delicias_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Arganzuela> ont:isInBarrio <http://dbpedia.org/resource/Las_Delicias_(Madrid)> .
+
+<http://dbpedia.org/resource/Arganzuela> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Arganzuela> ont:isInDistrito <http://dbpedia.org/resource/Arganzuela> ;
+	ont:hasCoordenadaX "441438"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4471968"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.39437715885103"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.691341060146108"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Barajas> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Barajas"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=b86c79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+LOGRO%C3%91O> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Barajas> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+LOGRO%C3%91O> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Alameda_de_Osuna> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Barajas> ont:isInBarrio <http://dbpedia.org/resource/Alameda_de_Osuna> .
+
+<http://dbpedia.org/resource/Barajas_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Barajas> ont:isInDistrito <http://dbpedia.org/resource/Barajas_(Madrid)> ;
+	ont:hasCoordenadaX "450285"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4479523"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.46301382809657"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.587693324074623"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Casa+de+Campo> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Casa de Campo"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=3876b0c40971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/PASEO+PUERTA+DEL+ANGEL> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Casa+de+Campo> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/PASEO+PUERTA+DEL+ANGEL> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Casa_de_Campo_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Casa+de+Campo> ont:isInBarrio <http://dbpedia.org/resource/Casa_de_Campo_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Moncloa-Aravaca> ;
+	ont:hasCoordenadaX "437877"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4474411"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.41612628789201"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.733536573641621"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Centro+Integrado+Arganzuela> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Centro Integrado Arganzuela"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=0fd38ed67151c010VgnVCM2000000c205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+CANARIAS> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Centro+Integrado+Arganzuela> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+CANARIAS> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Palos_de_Moguer_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Centro+Integrado+Arganzuela> ont:isInBarrio <http://dbpedia.org/resource/Palos_de_Moguer_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Arganzuela> ;
+	ont:hasCoordenadaX "441089"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4472825"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.40207279862862"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6955325387824014"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Cerro+Almod%C3%B3var> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Cerro Almodóvar"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=8e96b0c40971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+CERRO+DE+ALMODOVAR> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Cerro+Almod%C3%B3var> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+CERRO+DE+ALMODOVAR> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Santa_Eugenia_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Cerro+Almod%C3%B3var> ont:isInBarrio <http://dbpedia.org/resource/Santa_Eugenia_(Madrid)> .
+
+<http://dbpedia.org/resource/Villa_de_Vallecas> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Cerro+Almod%C3%B3var> ont:isInDistrito <http://dbpedia.org/resource/Villa_de_Vallecas> ;
+	ont:hasCoordenadaX "448982"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4470504"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.38168570611539"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.602336460953483"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Chamart%C3%ADn> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Chamartín"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=5f8c79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+PIO+XII> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Chamart%C3%ADn> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+PIO+XII> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Nueva_España_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Chamart%C3%ADn> ont:isInBarrio <http://dbpedia.org/resource/Nueva_España_(Madrid)> .
+
+<http://dbpedia.org/resource/Chamartin> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Chamart%C3%ADn> ont:isInDistrito <http://dbpedia.org/resource/Chamartin> ;
+	ont:hasCoordenadaX "442779"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4479368"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.46113349830694"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.676208246061129"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Circuito+BMX> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Circuito BMX"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=48fbf0c99a833310VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+EMBAJADORES> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Circuito+BMX> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+EMBAJADORES> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Legazpi> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Circuito+BMX> ont:isInBarrio <http://dbpedia.org/resource/Legazpi> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Arganzuela> ;
+	ont:hasCoordenadaX "441555"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4470986"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.385539006771225"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6898722494765366"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Ciudad+de+Los+Poetas> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Ciudad de Los Poetas"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2be6b0c40971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ANTONIO+MACHADO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Ciudad+de+Los+Poetas> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ANTONIO+MACHADO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Valdezarza> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Ciudad+de+Los+Poetas> ont:isInBarrio <http://dbpedia.org/resource/Valdezarza> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Moncloa-Aravaca> ;
+	ont:hasCoordenadaX "439161"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4479928"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.465920678080856"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.7189325594658573"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Concepci%C3%B3n> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Concepción"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f5bc79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+JOSE+DEL+HIERRO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Concepci%C3%B3n> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+JOSE+DEL+HIERRO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Ciudad_Lineal> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Concepci%C3%B3n> ont:isInDistrito <http://dbpedia.org/resource/Ciudad_Lineal> ;
+	ont:hasCoordenadaX "445113"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4476700"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.43725652047252"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6484498132292025"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Dao%C3%ADz+y+Velarde+1> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Daoíz y Velarde 1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=380d5f463b81c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/PLAZA+DAOIZ+Y+VELARDE> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Dao%C3%ADz+y+Velarde+1> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/PLAZA+DAOIZ+Y+VELARDE> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Pacifico_(Madrid_Metro)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Dao%C3%ADz+y+Velarde+1> ont:isInBarrio <http://dbpedia.org/resource/Pacifico_(Madrid_Metro)> .
+
+<http://dbpedia.org/resource/Retiro_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Dao%C3%ADz+y+Velarde+1> ont:isInDistrito <http://dbpedia.org/resource/Retiro_(Madrid)> ;
+	ont:hasCoordenadaX "442592"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4472731"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.4013311774335"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.677813143476423"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Dao%C3%ADz+y+Velarde+2> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Daoíz y Velarde 2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c737b0c40971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ALBERCHE> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Dao%C3%ADz+y+Velarde+2> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ALBERCHE> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInBarrio <http://dbpedia.org/resource/Pacifico_(Madrid_Metro)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Retiro_(Madrid)> ;
+	ont:hasCoordenadaX "442585"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4472672"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.400799189712316"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6778902970366896"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+El+Espinillo> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal El Espinillo"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=9cdc79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CARRETERA+VILLAVERDE+A+VALLECAS> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+El+Espinillo> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CARRETERA+VILLAVERDE+A+VALLECAS> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Los_Rosales_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+El+Espinillo> ont:isInBarrio <http://dbpedia.org/resource/Los_Rosales_(Madrid)> .
+
+<http://dbpedia.org/resource/Villaverde_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+El+Espinillo> ont:isInDistrito <http://dbpedia.org/resource/Villaverde_(Madrid)> ;
+	ont:hasCoordenadaX "441808"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4467743"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.35634193991933"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.686595141820635"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+El+Olivillo> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal El Olivillo"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=61ff5c2cdc41c010VgnVCM2000000c205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+OLIVILLO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+El+Olivillo> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+OLIVILLO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Lucero_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+El+Olivillo> ont:isInBarrio <http://dbpedia.org/resource/Lucero_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Latina_(Madrid)> ;
+	ont:hasCoordenadaX "436820"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4473354"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.40652470221465"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.745889233801086"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Entrev%C3%ADas> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Entrevías"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1e57b0c40971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/RONDA+SUR> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Entrev%C3%ADas> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/RONDA+SUR> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInBarrio <http://dbpedia.org/resource/Entrevias> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Puente_de_Vallecas> ;
+	ont:hasCoordenadaX "442851"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4470185"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.378413212706285"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.674532317137481"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Escuelas+de+San+Ant%C3%B3n> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Escuelas de San Antón"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4f9aad5078828310VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+FARMACIA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Escuelas+de+San+Ant%C3%B3n> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+FARMACIA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Centro_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Escuelas+de+San+Ant%C3%B3n> ont:isInDistrito <http://dbpedia.org/resource/Centro_(Madrid)> ;
+	ont:hasCoordenadaX "440813"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4475243"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.42382670120857"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.699010103263697"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Estanque+del+Retiro> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Estanque del Retiro"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6487b0c40971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/PASEO+COLOMBIA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Estanque+del+Retiro> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/PASEO+COLOMBIA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Retiro_(Madrid)> ;
+	ont:hasCoordenadaX "442039"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4474634"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.418436005960814"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6845031319515718"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Fabi%C3%A1n+Roncero> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Fabián Roncero"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=887e306502624110VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+SEPTIMA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Fabi%C3%A1n+Roncero> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+SEPTIMA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Rejas_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Fabi%C3%A1n+Roncero> ont:isInBarrio <http://dbpedia.org/resource/Rejas_(Madrid)> .
+
+<http://dbpedia.org/resource/San_Blas-Canillejas> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Fabi%C3%A1n+Roncero> ont:isInDistrito <http://dbpedia.org/resource/San_Blas-Canillejas> ;
+	ont:hasCoordenadaX "449437"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4478046"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.44965684114441"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.597577201182505"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Fernando+Mart%C3%ADn> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Fernando Martín"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=baa7b0c40971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+SANTO+ANGEL+DE+LA+GUARDA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Fernando+Mart%C3%ADn> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+SANTO+ANGEL+DE+LA+GUARDA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInBarrio <http://dbpedia.org/resource/Valdezarza> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Moncloa-Aravaca> ;
+	ont:hasCoordenadaX "439728"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4479370"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.460935404623164"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.7121918299288628"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Francisco+Fern%C3%A1ndez+Ochoa> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Francisco Fernández Ochoa"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=aea1249dbda24110VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+CATORCE+OLIVAS> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Francisco+Fern%C3%A1ndez+Ochoa> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+CATORCE+OLIVAS> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Carabanchel> ;
+	ont:hasCoordenadaX "437206"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4468832"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.36581776978113"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.740893980533789"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Francos+Rodr%C3%ADguez> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Francos Rodríguez"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=01d7b0c40971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+NUMANCIA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Francos+Rodr%C3%ADguez> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+NUMANCIA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/College_town> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Francos+Rodr%C3%ADguez> ont:isInBarrio <http://dbpedia.org/resource/College_town> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Moncloa-Aravaca> ;
+	ont:hasCoordenadaX "439645"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4478555"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.45358753138912"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.713093094582233"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Fuente+del+Berro> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Fuente del Berro"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f4a2318c05b24110VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ELVIRA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Fuente+del+Berro> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ELVIRA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Fuente_del_Berro> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Fuente+del+Berro> ont:isInBarrio <http://dbpedia.org/resource/Fuente_del_Berro> .
+
+<http://dbpedia.org/resource/Salamanca_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Fuente+del+Berro> ont:isInDistrito <http://dbpedia.org/resource/Salamanca_(Madrid)> ;
+	ont:hasCoordenadaX "443675"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4474986"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.42171956854877"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6652515154670167"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+F%C3%A9lix+Rubio> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Félix Rubio"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=330d79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ALIANZA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+F%C3%A9lix+Rubio> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ALIANZA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInBarrio <http://dbpedia.org/resource/Los_Rosales_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Villaverde_(Madrid)> ;
+	ont:hasCoordenadaX "441390"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4467867"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.357429678675295"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.691528804696943"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Gallur> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Gallur"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=d92d79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+GALLUR> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Gallur> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+GALLUR> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Latina_(Madrid)> ;
+	ont:hasCoordenadaX "437704"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4472452"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.398465832065"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.7353834506869217"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Gimnasio+Moscard%C3%B3> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Gimnasio Moscardó"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c7cee7510551c010VgnVCM2000000c205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+PILAR+DE+ZARAGOZA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Gimnasio+Moscard%C3%B3> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+PILAR+DE+ZARAGOZA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Guindalera> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Gimnasio+Moscard%C3%B3> ont:isInBarrio <http://dbpedia.org/resource/Guindalera> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Salamanca_(Madrid)> ;
+	ont:hasCoordenadaX "442904"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4476793"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.437945289676996"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.674502029997267"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Hortaleza> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Hortaleza"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=705d79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CARRETERA+ESTACION+DE+HORTALEZA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Hortaleza> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CARRETERA+ESTACION+DE+HORTALEZA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Hortaleza> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Hortaleza> ont:isInDistrito <http://dbpedia.org/resource/Hortaleza> ;
+	ont:hasCoordenadaX "444784"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4481305"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.47871885134567"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.652730062470741"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Jos%C3%A9+Mar%C3%ADa+Cagigal> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal José María Cagigal"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=177d79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+SANTA+POLA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Jos%C3%A9+Mar%C3%ADa+Cagigal> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+SANTA+POLA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInBarrio <http://dbpedia.org/resource/Casa_de_Campo_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Moncloa-Aravaca> ;
+	ont:hasCoordenadaX "437601"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4476192"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.43214955342785"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.7369645992831364"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Almudena> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal La Almudena"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ff13318c05b24110VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+NICOLAS+SALMER%C3%93N> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Almudena> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+NICOLAS+SALMER%C3%93N> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Pueblo_Nuevo_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Almudena> ont:isInBarrio <http://dbpedia.org/resource/Pueblo_Nuevo_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Ciudad_Lineal> ;
+	ont:hasCoordenadaX "446459"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4474842"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.42060649869604"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6324237307227616"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Bombilla> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal La Bombilla"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=5a6842be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+SENDA+DEL+REY> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Bombilla> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+SENDA+DEL+REY> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInBarrio <http://dbpedia.org/resource/Casa_de_Campo_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Moncloa-Aravaca> ;
+	ont:hasCoordenadaX "438027"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4476246"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.43266791217288"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.731947836490648"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Chopera> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal La Chopera"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a09842be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/PASEO+FERNAN+NU%26Ntilde%3BEZ> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Chopera> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/PASEO+FERNAN+NU%26Ntilde%3BEZ> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Retiro_(Madrid)> ;
+	ont:hasCoordenadaX "441933"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4473883"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.41166321237764"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6856838249046104"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Elipa> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal La Elipa"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f6b842be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ALCALDE+GARRIDO+JUARISTI> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Elipa> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ALCALDE+GARRIDO+JUARISTI> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Media_Legua_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Elipa> ont:isInBarrio <http://dbpedia.org/resource/Media_Legua_(Madrid)> .
+
+<http://dbpedia.org/resource/Moratalaz> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Elipa> ont:isInDistrito <http://dbpedia.org/resource/Moratalaz> ;
+	ont:hasCoordenadaX "444458"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4474160"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.41433123768487"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6559498758522833"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Mas%C3%B3> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal La Masó"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=15efe8ae8d81c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+MASO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Mas%C3%B3> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+MASO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Mirasierra> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Mas%C3%B3> ont:isInBarrio <http://dbpedia.org/resource/Mirasierra> .
+
+<http://dbpedia.org/resource/Fuencarral-El_Pardo> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Mas%C3%B3> ont:isInDistrito <http://dbpedia.org/resource/Fuencarral-El_Pardo> ;
+	ont:hasCoordenadaX "439561"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4481979"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.48442599932086"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.7144222564719858"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Mina> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal La Mina"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=930942be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+MONSE%C3%91OR+OSCAR+ROMERO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Mina> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+MONSE%C3%91OR+OSCAR+ROMERO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Vista_Alegre_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Mina> ont:isInBarrio <http://dbpedia.org/resource/Vista_Alegre_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Carabanchel> ;
+	ont:hasCoordenadaX "436747"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4470671"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.38234955664604"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.746482524823702"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Vaguada> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal La Vaguada"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e92942be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+MONFORTE+DE+LEMOS> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Vaguada> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+MONFORTE+DE+LEMOS> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Barrio_El_Pilar> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+La+Vaguada> ont:isInBarrio <http://dbpedia.org/resource/Barrio_El_Pilar> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Fuencarral-El_Pardo> ;
+	ont:hasCoordenadaX "440040"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4481347"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.47876758357458"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.7086993281311904"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Lago+Casa+de+Campo> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Lago Casa de Campo"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=cd9d79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/PASEO+EMBARCADERO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Lago+Casa+de+Campo> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/PASEO+EMBARCADERO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInBarrio <http://dbpedia.org/resource/Casa_de_Campo_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Moncloa-Aravaca> ;
+	ont:hasCoordenadaX "438051"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4474508"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.417013097503705"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.7314952685679943"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Las+Cruces> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Las Cruces"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6a6952ff55b41110VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+POBLADOS> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Las+Cruces> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+POBLADOS> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Latina_(Madrid)> ;
+	ont:hasCoordenadaX "435889"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4470323"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.379148937377394"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.756554762411969"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Los+Prunos> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Los Prunos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e705dfa167204110VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+PETUNIAS> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Los+Prunos> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+PETUNIAS> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Palomas_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Los+Prunos> ont:isInBarrio <http://dbpedia.org/resource/Palomas_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Hortaleza> ;
+	ont:hasCoordenadaX "447649"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4478458"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.453257453448046"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6186956428199863"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Luis+Aragon%C3%A9s> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Luis Aragonés"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=64cd79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+EL+PROVENCIO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Luis+Aragon%C3%A9s> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+EL+PROVENCIO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Canillas_(Madrid_Metro)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Luis+Aragon%C3%A9s> ont:isInBarrio <http://dbpedia.org/resource/Canillas_(Madrid_Metro)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Hortaleza> ;
+	ont:hasCoordenadaX "446904"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4479728"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.464650948053816"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6275877145025817"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Marqu%C3%A9s+de+Samaranch> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Marqués de Samaranch"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6b00e8ae8d81c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/PASEO+IMPERIAL> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Marqu%C3%A9s+de+Samaranch> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/PASEO+IMPERIAL> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Arganzuela> ;
+	ont:hasCoordenadaX "439240"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4473455"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.40761501410649"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.7173807221939192"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Miguel+Guill%C3%A9n+Prim> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Miguel Guillén Prim"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ecd237c71d4a6110VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+FUENTIDUE%C3%91A> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Miguel+Guill%C3%A9n+Prim> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+FUENTIDUE%C3%91A> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Vallecas> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Miguel+Guill%C3%A9n+Prim> ont:isInBarrio <http://dbpedia.org/resource/Vallecas> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Villa_de_Vallecas> ;
+	ont:hasCoordenadaX "447209"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4469643"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.37381855452167"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.623151468598157"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Moratalaz> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Moratalaz"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=dc9942be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+VALDEBERNARDO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Moratalaz> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+VALDEBERNARDO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Pavones> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Moratalaz> ont:isInBarrio <http://dbpedia.org/resource/Pavones> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Moratalaz> ;
+	ont:hasCoordenadaX "446441"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4472428"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.39885854572339"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.632432290214539"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Moscard%C3%B3> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Moscardó"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=23c942be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ANDRES+ARTEAGA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Moscard%C3%B3> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ANDRES+ARTEAGA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Usera> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Moscard%C3%B3> ont:isInDistrito <http://dbpedia.org/resource/Usera> ;
+	ont:hasCoordenadaX "440196"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4471428"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.38942414641932"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.7059238918122555"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Orcasitas> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Orcasitas"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a11e79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+RAFAELA+YBARRA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Orcasitas> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+RAFAELA+YBARRA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://www.wikidata.org/entity/Q71751> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Orcasitas> ont:isInBarrio <http://www.wikidata.org/entity/Q71751> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Usera> ;
+	ont:hasCoordenadaX "439629"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4469896"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.37558213858424"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.71245854352948"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Orcasur> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Orcasur"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=483e79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+MOREJA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Orcasur> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+MOREJA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Orcasur> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Orcasur> ont:isInBarrio <http://dbpedia.org/resource/Orcasur> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Usera> ;
+	ont:hasCoordenadaX "440727"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4469292"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.37021993373859"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6994689006077444"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Palomeras> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Palomeras"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ee5e79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+TRANVIA+DE+ARGANDA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Palomeras> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+TRANVIA+DE+ARGANDA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Palomeras_Sureste> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Palomeras> ont:isInBarrio <http://dbpedia.org/resource/Palomeras_Sureste> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Puente_de_Vallecas> ;
+	ont:hasCoordenadaX "446318"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4470624"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.382599021651856"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6337292699561834"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Pepu+Hern%C3%A1ndez> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Pepu Hernández"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=f86186e9a3624110VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+NIZA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Pepu+Hern%C3%A1ndez> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+NIZA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Rosas_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Pepu+Hern%C3%A1ndez> ont:isInBarrio <http://dbpedia.org/resource/Rosas_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/San_Blas-Canillejas> ;
+	ont:hasCoordenadaX "448679"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4475606"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.427629273303175"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6063181769844794"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Pe%C3%B1uelas> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Peñuelas"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=6c5a42be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ARGANDA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Pe%C3%B1uelas> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ARGANDA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Las_Acacias_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Pe%C3%B1uelas> ont:isInBarrio <http://dbpedia.org/resource/Las_Acacias_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Arganzuela> ;
+	ont:hasCoordenadaX "440286"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4472452"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.39865532340664"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.704959759845779"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Plata+y+Casta%C3%B1ar> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Plata y Castañar"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=858e79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/PASEO+PLATA+Y+CASTA%C3%91AR> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Plata+y+Casta%C3%B1ar> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/PASEO+PLATA+Y+CASTA%C3%91AR> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/San_Andres> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Plata+y+Casta%C3%B1ar> ont:isInBarrio <http://dbpedia.org/resource/San_Andres> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Villaverde_(Madrid)> ;
+	ont:hasCoordenadaX "439149"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4467059"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.34998997348078"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.7178413073202856"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Playa+Victoria> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Playa Victoria"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c77e0a47f441f010VgnVCM2000000c205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+HIERBABUENA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Playa+Victoria> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+HIERBABUENA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Berruguete_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Playa+Victoria> ont:isInBarrio <http://dbpedia.org/resource/Berruguete_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Tetuan_(Madrid)> ;
+	ont:hasCoordenadaX "440581"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4479179"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.4592763472204"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.7021136988422567"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Pradillo> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Pradillo"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=2cae79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+PRADILLO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Pradillo> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+PRADILLO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Ciudad_Jardin> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Pradillo> ont:isInBarrio <http://dbpedia.org/resource/Ciudad_Jardin> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Chamartin> ;
+	ont:hasCoordenadaX "443158"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4478030"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.44910622626739"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.671618277009419"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Pueblo+Nuevo> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Pueblo Nuevo"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a5fa42be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+FRANCISCO+RIOJA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Pueblo+Nuevo> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+FRANCISCO+RIOJA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInBarrio <http://dbpedia.org/resource/Pueblo_Nuevo_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Ciudad_Lineal> ;
+	ont:hasCoordenadaX "445948"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4475892"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.43003240158625"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.638536354805483"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Puente+de+Vallecas> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Puente de Vallecas"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=fb1b42be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+PAYASO+FOFO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Puente+de+Vallecas> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+PAYASO+FOFO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Palomeras_Bajas> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Puente+de+Vallecas> ont:isInBarrio <http://dbpedia.org/resource/Palomeras_Bajas> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Puente_de_Vallecas> ;
+	ont:hasCoordenadaX "444107"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4471624"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.39146194707861"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6598636029775866"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Ra%C3%BAl+Gonz%C3%A1lez> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Raúl González"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=c2de79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+BENIMAMET> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Ra%C3%BAl+Gonz%C3%A1lez> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+BENIMAMET> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/San_Cristobal> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Ra%C3%BAl+Gonz%C3%A1lez> ont:isInBarrio <http://dbpedia.org/resource/San_Cristobal> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Villaverde_(Madrid)> ;
+	ont:hasCoordenadaX "441991"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4466618"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.346220026067044"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.684337728806363"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+San+Blas> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal San Blas"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=424b42be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ARCOS+DE+JALON> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+San+Blas> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ARCOS+DE+JALON> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Hellin> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+San+Blas> ont:isInBarrio <http://dbpedia.org/resource/Hellin> ;
+	ont:isInDistrito <http://dbpedia.org/resource/San_Blas-Canillejas> ;
+	ont:hasCoordenadaX "448255"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4475740"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.428810107016545"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6113273589762334"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+San+Crist%C3%B3bal> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal San Cristóbal"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=69fe79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/PLAZA+PINAZO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+San+Crist%C3%B3bal> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/PLAZA+PINAZO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInBarrio <http://dbpedia.org/resource/San_Cristobal> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Villaverde_(Madrid)> ;
+	ont:hasCoordenadaX "441384"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4466229"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.34267317099495"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6914487380508842"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+San+Ferm%C3%ADn> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal San Fermín"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ee8b42be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+SAN+MARIO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+San+Ferm%C3%ADn> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+SAN+MARIO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/San_Fermin> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+San+Ferm%C3%ADn> ont:isInBarrio <http://dbpedia.org/resource/San_Fermin> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Usera> ;
+	ont:hasCoordenadaX "441306"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4469852"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.37530577421291"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6927010241442946"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+San+Juan+Bautista> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal San Juan Bautista"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=35bb42be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+TREVIANA> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+San+Juan+Bautista> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+TREVIANA> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/San_Juan_Bautista> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+San+Juan+Bautista> ont:isInBarrio <http://dbpedia.org/resource/San_Juan_Bautista> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Ciudad_Lineal> ;
+	ont:hasCoordenadaX "444264"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4477970"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.44864976316054"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6585711797466836"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Santa+Ana> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Santa Ana"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=8bdb42be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/PASEO+ALAMEDILLAS> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Santa+Ana> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/PASEO+ALAMEDILLAS> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Valverde> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Santa+Ana> ont:isInBarrio <http://dbpedia.org/resource/Valverde> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Fuencarral-El_Pardo> ;
+	ont:hasCoordenadaX "441103"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4483484"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.49809469315447"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.696358010199944"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Tenis+Casa+de+Campo> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Tenis Casa de Campo"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=1ac06f065851c010VgnVCM2000000c205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CAMINO+PRINCIPE> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Tenis+Casa+de+Campo> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CAMINO+PRINCIPE> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInBarrio <http://dbpedia.org/resource/Casa_de_Campo_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Moncloa-Aravaca> ;
+	ont:hasCoordenadaX "437695"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4475002"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.421436625700565"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.735739625664774"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Tri%C3%A1ngulo+de+Oro> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Triángulo de Oro"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=002f79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+BRAVO+MURILLO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Tri%C3%A1ngulo+de+Oro> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+BRAVO+MURILLO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Castillejos_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Tri%C3%A1ngulo+de+Oro> ont:isInBarrio <http://dbpedia.org/resource/Castillejos_(Madrid)> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Tetuan_(Madrid)> ;
+	ont:hasCoordenadaX "441374"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4479823"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.46512519238624"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.6928208378255807"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Valdebernardo> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Valdebernardo"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=a64f79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+LADERA+DE+LOS+ALMENDROS> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Valdebernardo> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+LADERA+DE+LOS+ALMENDROS> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Vicalvaro> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Valdebernardo> ont:isInBarrio <http://dbpedia.org/resource/Vicalvaro> ;
+	ont:hasCoordenadaX "447254"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4473014"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.40418961057298"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.622901144863193"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Vallecas> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Vallecas"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=282c42be9971c010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ARROYO+DEL+OLIVAR> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Vallecas> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CALLE+ARROYO+DEL+OLIVAR> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInBarrio <http://dbpedia.org/resource/Palomeras_Bajas> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Puente_de_Vallecas> ;
+	ont:hasCoordenadaX "444331"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4471501"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.390368919782446"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.657213682860775"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Vallehermoso> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Vallehermoso"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=28906e8a84805410VgnVCM2000000c205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+FILIPINAS> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Vallehermoso> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+FILIPINAS> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Vallehermoso_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Vallehermoso> ont:isInBarrio <http://dbpedia.org/resource/Vallehermoso_(Madrid)> ;
+	ont:hasCoordenadaX "439976"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4477116"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.44064843863945"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.709053489027435"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Vicente+del+Bosque> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Vicente del Bosque"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=e156b0c40971c010VgnVCM1000000b205a0aRCRD> ;
+	ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/AVENIDA+MONFORTE+DE+LEMOS> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Category:La_Paz> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Vicente+del+Bosque> ont:isInBarrio <http://dbpedia.org/resource/Category:La_Paz> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Fuencarral-El_Pardo> ;
+	ont:hasCoordenadaX "441325"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4481353"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.4789135943213"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.693540659747283"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Vic%C3%A1lvaro> a ont:Instalacion ;
+	ont:hasNombre "Centro Deportivo Municipal Vicálvaro"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=4d6f79262ef5d010VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/PASEO+POLIDEPORTIVO> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Vic%C3%A1lvaro> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/PASEO+POLIDEPORTIVO> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> .
+
+<http://dbpedia.org/resource/Ambroz_(Madrid)> a ont:Barrio .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Centro+Deportivo+Municipal+Vic%C3%A1lvaro> ont:isInBarrio <http://dbpedia.org/resource/Ambroz_(Madrid)> ;
+	ont:hasCoordenadaX "448924"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4473552"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.40914061858403"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.603264732850392"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Madrid+Caja+M%C3%A1gica> a ont:Instalacion ;
+	ont:hasNombre "Madrid Caja Mágica"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasWeb <http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=9e4c43db40317010VgnVCM100000dc0ca8c0RCRD&vgnextoid=b7c3a201600ff110VgnVCM1000000b205a0aRCRD> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/CAMINO+PERALES> a ont:Calle .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Madrid+Caja+M%C3%A1gica> ont:isInCalle <http://www.linked-data-deportemadrid.org/group08/resource/CAMINO+PERALES> ;
+	ont:isInLocalidad <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInProvincia <http://dbpedia.org/resource/Madrid,_Madrid> ;
+	ont:isInBarrio <http://dbpedia.org/resource/San_Fermin> ;
+	ont:isInDistrito <http://dbpedia.org/resource/Usera> ;
+	ont:hasCoordenadaX "441933"^^<http://www.linked-data-deportemadrid.org/group08/resource/string> ;
+	ont:hasCoordenadaY "4469156"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLatitud "40.369079808434435"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasLongitud "-3.685252060454517"^^<http://www.w3.org/2001/XMLSchema#string> .
