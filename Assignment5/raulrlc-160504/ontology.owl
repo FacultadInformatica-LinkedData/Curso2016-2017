@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#"
+     xml:base="http://www.semanticweb.org/raul/ontologies/2016/11/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#isPartOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#isSpokenIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#isSpokenIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Countrylanguage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#IsOfficial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#IsOfficial">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Countrylanguage"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasCapital -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasCapital">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasCityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasCityName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasCode2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasCode2">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasContinent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasContinent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasCountryName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasCountryName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasDistrict -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasDistrict">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasGNP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasGNP">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasGNPOld -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasGNPOld">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasGovernmentForm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasGovernmentForm">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasHeadOfState -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasHeadOfState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasIndepYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasIndepYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasLanguage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasLanguage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Countrylanguage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasLifeExpectancy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasLifeExpectancy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasLocalName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasLocalName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasPercentage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasPercentage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Countrylanguage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasPopulation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasPopulation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasRegion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasRegion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasSurfaceArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#hasSurfaceArea">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#City"/>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Countrylanguage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/raul/ontologies/2016/11/ontology#Countrylanguage"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
