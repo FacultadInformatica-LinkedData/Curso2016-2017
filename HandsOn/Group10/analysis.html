@@ -34,8 +34,8 @@
 			</thead>
 			<tr>
 				<td>stop_id</td>
-				<td>Integer Unique</td>
-				<td>Identifica de forma exclusiva a una parada o estación.<br> Rango: [0 - numParadas]</td>
+				<td>String Unique</td>
+				<td>Identifica de forma exclusiva a una parada o estación.<br> Range: ["" - Total of Memory]</td>
 				<td>Es posible que varias rutas utilicen una misma parada.</td>
 			</tr>		
 			<tr>
@@ -58,7 +58,7 @@
 			</tr>
 		</table>
 		
-		<h2> Dataset StopTimes.csv</h2>
+		<h2> Dataset museos.csv</h2>
 	
 		<table>
 		  <thead>
@@ -70,36 +70,48 @@
 				</tr>
 			</thead>
 			<tr>
-				<td>trip_id</td>
-				<td>String Not Unique</td>
-				<td>Identifica a una parada.<br> Rango: [" "- Total of Memory]</td>
-				<td>-</td>
+				<td>lon</td>
+				<td>Decimal not Unique</td>
+				<td>Longitud del museo.<br> Rango de WGS 84 y [-180º to 180º]</td>
+				<td>Valores negativos</td>
 			</tr>		
 			<tr>
-				<td>arrival_time</td>
-				<td>Date Not Unique</td>
-				<td>Hora de llegada a la parada. Expresado en HH:MM:SS <br> Rango: [00:00:00 --- 23:59:59]</td>
+				<td>lat</td>
+				<td>Decimal not Unique</td>
+				<td>Latitud del museo. <br> Rango de WGS 84</td>
 				<td>-</td>
 
 			</tr>		
 			<tr>
-				<td>departure_time</td>
-				<td>Date Not Unique</td>
-				<td>Hora de salida de la parada. Expresado en HH:MM:SS <br> Rango: [00:00:00 --- 23:59:59]</td>
+				<td>Nombre</td>
+				<td>String not Unique</td>
+				<td>Nombre del museo <br> Rango: ["" - Total of Memory]</td>
 				<td>-</td>
 			</tr>		
 			<tr>
-				<td>stop_id</td>
-				<td>Integer Unique</td>
-				<td>Identificador de parada <br> Rango: [0 - numParadas]</td>
+				<td>Direccion</td>
+				<td>String not Unique</td>
+				<td>Direccion del museo <br> Rango: ["" - Total of Memory]</td>
 				<td>-</td>
 			</tr>
 			<tr>
-				<td>stop_sequence</td>
-				<td>Integer Not Unique</td>
-				<td>Identifica el orden de las paradas durante el viaje (se va incrementando) <br> Rango de Naturales</td>
+				<td>Telefono</td>
+				<td>String not Unique</td>
+				<td>Direccion del museo <br> Rango: ["" - Total of Memory]</td>
 				<td>-</td>
-			</tr>			 
+			</tr>
+			<tr>
+				<td>Web</td>
+				<td>URI</td>
+				<td>Direccion web del museo <br></td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>Foto</td>
+				<td>URI</td>
+				<td>Foto del museo <br></td>
+				<td>-</td>
+			</tr>			
 		</table>
 		
 		<h2> Dataset Routes.csv</h2>
@@ -115,8 +127,8 @@
 			</thead>
 			<tr>
 				<td>route_id</td>
-				<td>Integer Unique</td>
-				<td>Identifica una ruta de forma exclusiva.<br> Rango: [0 - numRoutes]</td>
+				<td>String Unique</td>
+				<td>Identifica una ruta de forma exclusiva.<br> Range: ["" - Total of Memory]</td>
 				<td>-</td>
 			</tr>		
 			<tr>
@@ -140,7 +152,7 @@
 			</tr>	 
 		</table>
 
-		<h2> Dataset CalendarDates.csv</h2>
+		<h2> Dataset Calles.csv</h2>
 
 		<table>
 		  <thead>
@@ -152,25 +164,11 @@
 				</tr>
 			</thead>
 			<tr>
-				<td>service_id</td>
-				<td>Integer Unique</td>
-				<td>ID que identifica de forma exclusiva que el servicio estará disponible en un conjunto de fechas
-				<br>en una o mas rutas. Cada par (service_id,date) solo puede aparecer una vez en calendar_dates<br> Rango: [0 - numServices]</td>
+				<td>Name</td>
+				<td>String Unique</td>
+				<td>Nombre de la calle </td><br> Rango: ["" - Total of Memory]</td>
 				<td>-</td>
-			</tr>		
-			<tr>
-				<td>date</td>
-				<td>Date Not Unique</td>
-				<td>Especifica una fecha concreta en la que la disponibilidad del servicio sea diferente a la de la norma. <br> Formato AAAAMMDD</td>
-				<td>-</td>
-
-			</tr>		
-			<tr>
-				<td>exception_type</td>
-				<td>Integer Not Unique</td>
-				<td>ndica si el servicio está disponible en la fecha especificada en el campo date.  <br> Rango: [1-2]</td>
-				<td>-</td>
-			</tr>		 
+			</tr>			 
 		</table>
 		
 		<h2> Dataset Calendar.csv</h2>
@@ -186,8 +184,8 @@
 			</thead>
 			<tr>
 				<td>service_id</td>
-				<td>Integer Unique</td>
-				<td>Identifica de forma exclusiva a una parada o estación.<br> Rango: [0 - numServices]</td>
+				<td>String Unique</td>
+				<td>Identifica de forma exclusiva a una parada o estación.<br> Range: ["" - Total of Memory]</td>
 				<td>-</td>
 			</tr>		
 			<tr>
@@ -235,16 +233,136 @@
 			<tr>
 				<td>Start_date</td>
 				<td>Date Not Unique</td>
-				<td>DESCRIPCION FALTA <br> Formato AAAAMMDD</td>
+				<td>DESCRIPCION FALTA <br> Formato AAAA-MM-DD</td>
 				<td>-</td>
 			</tr>	
 			<tr>
 				<td>End_date</td>
 				<td>Date Not Unique</td>
-				<td>DESCRIPCION FALTA <br> Formato AAAAMMDD</td>
+				<td>DESCRIPCION FALTA <br> Formato AAAA-MM-DD</td>
 				<td>-</td>
 			</tr>				
 		</table>
+		
+		
+		<h2> Dataset Agency.csv</h2>
+	
+		<table>
+		  <thead>
+			<tr>
+				<th><strong>COLUMN</strong></th>
+				<th><strong>TYPE</strong></th>
+				<th><strong>COMMENTS/RANGE(rounded)</strong></th>
+				<th><strong>PROBLEMS</strong></th>
+				</tr>
+			</thead>
+			<tr>
+				<td>agency_id</td>
+				<td>String Unique</td>
+				<td>Identifica de forma exclusiva a una agencia de transporte<br> Range: ["" - Total of Memory]</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>agency_name</td>
+				<td>String not Unique</td>
+				<td>Nombre de la empresa <br>Range: ["" - Total of Memory]</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>agency_url</td>
+				<td>URI</td>
+				<td>Web de la agencia <br></td>
+				<td>-</td>
+			</tr>			
+			<tr>
+				<td>agency_timezone</td>
+				<td>String not Unique</td>
+				<td>zona horaria de la agencia <br></td>
+				<td>-</td>
+			</tr>	
+			<tr>
+				<td>agency_lang</td>
+				<td>String not Unique</td>
+				<td>Indica el lenguaje en el que trabaja la agencia <br>Sigue el estandar de abreviaturas para lenguajes</td>
+				<td>-</td>
+			</tr>	
+			<tr>
+				<td>agency_phone</td>
+				<td>String not Unique</td>
+				<td>Numero de telefono de la agencia <br>Range: ["" - Total of Memory]</td>
+				<td>-</td>
+			</tr>			
+		</table>
+
+
+		<h2> Dataset Lineas.csv</h2>
+	
+		<table>
+		  <thead>
+			<tr>
+				<th><strong>COLUMN</strong></th>
+				<th><strong>TYPE</strong></th>
+				<th><strong>COMMENTS/RANGE(rounded)</strong></th>
+				<th><strong>PROBLEMS</strong></th>
+				</tr>
+			</thead>
+			<tr>
+				<td>Linea</td>
+				<td>String not Unique</td>
+				<td>Identifica la linea a la que corresponde la parada<br>Range: ["" - Total of Memory]</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>Nombre_linea</td>
+				<td>String not Unique</td>
+				<td>Nombre de la linea <br>Range: ["" - Total of Memory]</td>
+				<td>-</td>
+			</tr>		
+			<tr>
+				<td>stop_id</td>
+				<td>String Unique</td>
+				<td>Identifica de forma exclusiva una parada<br> Range: ["" - Total of Memory]</td>
+				<td>-</td>
+			</tr>			
+			<tr>
+				<td>nombre_parada</td>
+				<td>String Unique</td>
+				<td>Nombre de la parada <br>Range: ["" - Total of Memory]</td>
+				<td>-</td>
+			</tr>	
+			<tr>
+				<td>lat</td>
+				<td>Decimal not Unique</td>
+				<td>Indica la latitud de la parada <br>Rango de WGS 84</td>
+				<td>-</td>
+			</tr>	
+			<tr>
+				<td>lon</td>
+				<td>Decimal not Unique</td>
+				<td>Indica la longitud de la parada <br>Rango de WGS 84 Y [-180º to 180º]</td>
+				<td>valores negativos</td>
+			</tr>			
+		</table>
+
+		<h2> Dataset lugares-interes.csv</h2>
+	
+		<table>
+		  <thead>
+			<tr>
+				<th><strong>COLUMN</strong></th>
+				<th><strong>TYPE</strong></th>
+				<th><strong>COMMENTS/RANGE(rounded)</strong></th>
+				<th><strong>PROBLEMS</strong></th>
+				</tr>
+			</thead>
+			<tr>
+				<td>Nombre</td>
+				<td>String Unique</td>
+				<td>Nombre del sitio de interes turistico.<br> Range: ["" - Total of Memory] </td>
+				<td>Valores negativos</td>
+			</tr>		
+		</table>
+		
 		
 		<h1> 3.- Estrategia de Nombrado </h1>
 		<p> La estrategia de nombrado que se seguirá será la siguiente </p>
@@ -261,11 +379,11 @@
 			</tr>		
 			<tr>
 				<td>Ontological terms Path</td>
-				<td>http://smartsevilla.es/ontology/lookAround# <br> Example:http://smartsevilla.es/ontology/Parada#</td>
+				<td>http://smartsevilla.es/ontology# <br> Example:http://smartsevilla.es/ontology#latitude</td>
 			</tr>		
 			<tr>
 				<td>Individuals Path</td>
-				<td>http://smartsevilla.es/resources/<br> Example:http://smartsevilla.es/resources/buses/Linea1</td>
+				<td>http://smartsevilla.es/resources/term/term-name  <br> Example:http://smartsevilla.es/resources/monuments/ConventoDeSantaAna</td>
 			</tr>
 		</table>
 

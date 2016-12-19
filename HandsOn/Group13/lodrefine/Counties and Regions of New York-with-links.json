@@ -1,0 +1,697 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "County",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#County",
+              "curie": "livingPlaces:County"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "County"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToRegion",
+              "curie": "livingPlaces:pertainToRegion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#Region",
+                "columnName": "Region"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "County"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Region",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#Region",
+              "curie": "livingPlaces:Region"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Region"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Region"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasNumberRegion",
+              "curie": "livingPlaces:hasNumberRegion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                "columnName": "NumberRegion"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "County",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#County",
+              "curie": "livingPlaces:County"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "County"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "County",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#County",
+              "curie": "livingPlaces:County"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "County"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "County",
+          "rdfTypes": [
+            {
+              "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/County",
+              "curie": "osadm:County"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "County"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column County to type http://dbpedia.org/ontology/Place",
+    "columnName": "County",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/Place",
+        "name": "dbo:Place"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Region to type http://dbpedia.org/ontology/Region",
+    "columnName": "Region",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/Region",
+        "name": "dbo:Region"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "County",
+          "rdfTypes": [
+            {
+              "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/County",
+              "curie": "osadm:County"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "County"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column County to type http://dbpedia.org/class/yago/County108546183",
+    "columnName": "County",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/County108546183",
+        "name": "yago:County108546183"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-match-best-candidates",
+    "description": "Match each cell to its best recon candidate in column County",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "County"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Finger Lakes\" in column Region",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Region",
+    "similarValue": "Finger Lakes",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Central New York\" in column Region",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Region",
+    "similarValue": "Central New York",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"North Country\" in column Region",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Region",
+    "similarValue": "North Country",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"New York City\" in column Region",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Region",
+    "similarValue": "New York City",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Mohawk Valley\" in column Region",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Region",
+    "similarValue": "Mohawk Valley",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Long Island Recreation Park (http://dbpedia.org/resource/Long_Island_Recreation_Park) for cells containing \"Long Island\" in column Region",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Region",
+    "similarValue": "Long Island",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Long_Island_Recreation_Park",
+      "name": "Long Island Recreation Park",
+      "score": 0.40740740299224854,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column yago:County at index 1 based on column County using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "yago:County",
+    "columnInsertIndex": 1,
+    "baseColumnName": "County",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column dbo:Region at index 3 based on column Region using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "dbo:Region",
+    "columnInsertIndex": 3,
+    "baseColumnName": "Region",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "County",
+          "rdfTypes": [
+            {
+              "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/County",
+              "curie": "osadm:County"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "County"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "yago:County",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  }
+]

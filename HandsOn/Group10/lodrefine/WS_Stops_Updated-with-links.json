@@ -1,0 +1,216 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/stops/",
+      "prefixes": [
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(value, \" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "ï»¿stop_id",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/page/Bus_stop",
+              "curie": "http://dbpedia.org/page/Bus_stop"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smartsevilla.es/ontology#stop_id",
+              "curie": "g10:stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "ï»¿stop_id"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/fullname",
+              "curie": "dbp:fullname",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "stop_name"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/latitude",
+              "curie": "dbp:latitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "stop_lat"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/longitude",
+              "curie": "dbp:longitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "stop_lon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column stop_name to type schema:Place",
+    "columnName": "stop_name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia-es",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "schema:Place",
+        "name": "schema:Place"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/stops/",
+      "prefixes": [
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(value, \" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "ï»¿stop_id",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/page/Bus_stop",
+              "curie": "http://dbpedia.org/page/Bus_stop"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smartsevilla.es/ontology#stop_id",
+              "curie": "g10:stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "ï»¿stop_id"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/fullname",
+              "curie": "dbp:fullname",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "stop_name"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/latitude",
+              "curie": "dbp:latitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "stop_lat"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/longitude",
+              "curie": "dbp:longitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "stop_lon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

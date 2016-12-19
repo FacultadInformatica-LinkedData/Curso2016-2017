@@ -1,0 +1,43 @@
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX cb: <http://purl.org/linked-data/cube#>
+
+# Query 1
+SELECT DISTINCT (SUM(?accidents) AS ?Accidents)
+where {
+	?objects a cb:Observation;
+	mv:numberOfAccidents ?accidents .
+} LIMIT 100
+
+# Query 2
+SELECT DISTINCT ?type ?accidents WHERE {
+    	?objects a cb:Observation;
+	mv:relatedDistrict  "USERA";
+	mv:hasAccidentType ?type ;
+	mv:numberOfAccidents ?accidents .
+} LIMIT 100 
+
+# Query 3
+SELECT DISTINCT ?district ?accidents WHERE {
+    	?objects a cb:Observation;
+	mv:relatedDistrict ?district;
+	mv:hasAccidentType mv:MultipleCollision ;
+	mv:numberOfAccidents ?accidents . 
+} LIMIT 100
+
+# Query 4
+SELECT DISTINCT ?district WHERE {
+	?objects a cb:Observation ;
+   	mv:relatedDistrict ?district ;
+   	mv:hasAccidentType mv:BicycleFall ;
+   	mv:numberOfAccidents ?num . 
+} ORDER BY DESC(?num) LIMIT 1
+
+# Query 5
+SELECT DISTINCT ?district WHERE {
+    	?objects a cb:Observation ;
+	mv:relatedDistrict ?district;
+	mv:hasAccidentType ?type ;
+	mv:numberOfAccidents ?accidents .
+FILTER (?accidents > 500) 
+} LIMIT 100
+

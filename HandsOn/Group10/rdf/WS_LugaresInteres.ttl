@@ -1,0 +1,121 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g10: <http://smartsevilla.es/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://smartsevilla.es/resources/monuments/ConventodeSantaAna> a g10:SitioDeInteres ;
+	g10:long_name "Convento de Santa Ana (Sevilla)"^^<xsd:string> ;
+	g10:latitud "37.375371"^^<xsd:float> ;
+	g10:longitud "-5.955058"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/ConventodeSantaPaula> a g10:SitioDeInteres ;
+	g10:long_name "Convento de Santa Paula (Sevilla)"^^<xsd:string> ;
+	g10:latitud "37.396197"^^<xsd:float> ;
+	g10:longitud "-5.985838"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/IglesiadelaMagdalena> a g10:SitioDeInteres ;
+	g10:long_name "Iglesia de la Magdalena (Sevilla)"^^<xsd:string> ;
+	g10:latitud "37.390371"^^<xsd:float> ;
+	g10:longitud "-5.998803"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/IglesiadeSanEsteban> a g10:SitioDeInteres ;
+	g10:long_name "Iglesia de San Esteban (Sevilla)"^^<xsd:string> ;
+	g10:latitud "37.389778"^^<xsd:float> ;
+	g10:longitud "-5.986235"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/IglesiadeSanAndres> a g10:SitioDeInteres ;
+	g10:long_name "Iglesia de San Andres (Sevilla)"^^<xsd:string> ;
+	g10:latitud "37.394279"^^<xsd:float> ;
+	g10:longitud "-5.993868"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/IglesiadeSanGil> a g10:SitioDeInteres ;
+	g10:long_name "Iglesia de San Gil (Sevilla)"^^<xsd:string> ;
+	g10:latitud "37.401997"^^<xsd:float> ;
+	g10:longitud "-5.989319"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/IglesiadeSanIsidoro> a g10:SitioDeInteres ;
+	g10:long_name "Iglesia de San Isidoro (Sevilla)"^^<xsd:string> ;
+	g10:latitud "37.389604"^^<xsd:float> ;
+	g10:longitud "-5.990714"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/JardinAmericano> a g10:SitioDeInteres ;
+	g10:long_name "Jardin Americano"^^<xsd:string> ;
+	g10:latitud "37.4035462"^^<xsd:float> ;
+	g10:longitud "-6.0027634"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/CentroAndaluzdeArteContemporaneo> a g10:SitioDeInteres ;
+	g10:long_name "Centro Andaluz de Arte Contemporaneo"^^<xsd:string> ;
+	g10:latitud "37.398446"^^<xsd:float> ;
+	g10:longitud "-6.008875"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/Realalcazar> a g10:SitioDeInteres ;
+	g10:long_name "Real alcazar"^^<xsd:string> ;
+	g10:latitud "37.383802"^^<xsd:float> ;
+	g10:longitud "-5.991044"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/MercadodeTriana> a g10:SitioDeInteres ;
+	g10:long_name "Mercado de Triana"^^<xsd:string> ;
+	g10:latitud "37.385716"^^<xsd:float> ;
+	g10:longitud "-6.00369"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/LaGiralda> a g10:SitioDeInteres ;
+	g10:long_name "La Giralda"^^<xsd:string> ;
+	g10:latitud "37.386151"^^<xsd:float> ;
+	g10:longitud "-5.992495"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/ArchivodeIndiasdeSevilla> a g10:SitioDeInteres ;
+	g10:long_name "Archivo de Indias de Sevilla"^^<xsd:string> ;
+	g10:latitud "37.384634"^^<xsd:float> ;
+	g10:longitud "-5.993407"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/AyuntamientodeSevilla> a g10:SitioDeInteres ;
+	g10:long_name "Ayuntamiento de Sevilla"^^<xsd:string> ;
+	g10:latitud "37.388683"^^<xsd:float> ;
+	g10:longitud "-5.994759"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/PlazaNueva> a g10:SitioDeInteres ;
+	g10:long_name "Plaza Nueva (Sevilla)"^^<xsd:string> ;
+	g10:latitud "37.388619"^^<xsd:float> ;
+	g10:longitud "-5.995494"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/PalaciodeSanTelmo> a g10:SitioDeInteres ;
+	g10:long_name "Palacio de San Telmo (Sevilla)"^^<xsd:string> ;
+	g10:latitud "37.380303"^^<xsd:float> ;
+	g10:longitud "-5.993814"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/PalacioarzobispaldeSevilla> a g10:SitioDeInteres ;
+	g10:long_name "Palacio arzobispal de Sevilla"^^<xsd:string> ;
+	g10:latitud "37.386352"^^<xsd:float> ;
+	g10:longitud "-5.992168"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/Pabellondelanavegacion> a g10:SitioDeInteres ;
+	g10:long_name "Pabellon de la navegacion"^^<xsd:string> ;
+	g10:latitud "37.393687"^^<xsd:float> ;
+	g10:longitud "-6.007547"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/CasadelaCienciadeSevilla> a g10:SitioDeInteres ;
+	g10:long_name "Casa de la Ciencia de Sevilla"^^<xsd:string> ;
+	g10:latitud "37.3775185"^^<xsd:float> ;
+	g10:longitud "-5.9934524"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/MuelledelasDelicias> a g10:SitioDeInteres ;
+	g10:long_name "Muelle de las Delicias"^^<xsd:string> ;
+	g10:latitud "37.376859"^^<xsd:float> ;
+	g10:longitud "-5.992699"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/ParquedeMariaLuisa> a g10:SitioDeInteres ;
+	g10:long_name "Parque de Maria Luisa (Sevilla)"^^<xsd:string> ;
+	g10:latitud "37.374728"^^<xsd:float> ;
+	g10:longitud "-5.988212"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/ConventodelasMinimas> a g10:SitioDeInteres ;
+	g10:long_name "Convento de las Minimas"^^<xsd:string> ;
+	g10:latitud "37.382119"^^<xsd:float> ;
+	g10:longitud "-6.001765"^^<xsd:float> .
+
+<http://smartsevilla.es/resources/monuments/CapilladelCarmen> a g10:SitioDeInteres ;
+	g10:long_name "Capilla del Carmen (Sevilla)"^^<xsd:string> ;
+	g10:latitud "37.385721"^^<xsd:float> ;
+	g10:longitud "-6.003025"^^<xsd:float> .

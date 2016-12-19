@@ -440,5 +440,278 @@
     "description": "Rename column price to price1",
     "oldColumnName": "price",
     "newColumnName": "price1"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column quarter",
+    "columnName": "quarter"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column price1 to price",
+    "oldColumnName": "price1",
+    "newColumnName": "price"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column room_type1 to room_type",
+    "oldColumnName": "room_type1",
+    "newColumnName": "room_type"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column price using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "price",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group03/ontologies/handson#",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "group03",
+          "uri": "http://www.semanticweb.org/group03/ontologies/handson#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#year",
+              "curie": "group03:year",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "year"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#town",
+              "curie": "group03:town",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "town"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#room_type",
+              "curie": "group03:room_type",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "room_type"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#price",
+              "curie": "group03:price",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "columnName": "price"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group03/ontologies/handson/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "group03",
+          "uri": "http://www.semanticweb.org/group03/ontologies/handson#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#year",
+              "curie": "group03:year",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "year"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#town",
+              "curie": "group03:town",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "town"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#room_type",
+              "curie": "group03:room_type",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "room_type"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#price",
+              "curie": "group03:price",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "columnName": "price"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group03/ontologies/handson/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "group03",
+          "uri": "http://www.semanticweb.org/group03/ontologies/handson#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#year",
+              "curie": "group03:year",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "year"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#town",
+              "curie": "group03:town",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "town"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#room_type",
+              "curie": "group03:room_type",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "room_type"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#price",
+              "curie": "group03:price",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "columnName": "price"
+              }
+            }
+          ]
+        }
+      ]
+    }
   }
 ]

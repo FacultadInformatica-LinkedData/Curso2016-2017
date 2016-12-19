@@ -1,0 +1,522 @@
+[
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column route_long_name to type ",
+    "columnName": "route_long_name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia-es",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "",
+        "name": ""
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Línea T1 (TUSSAM) (http://es.dbpedia.org/resource/Línea_T1_(TUSSAM)) for cells containing \"Plaza Nueva-San Bernardo\" in column route_long_name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "route_long_name",
+    "similarValue": "Plaza Nueva-San Bernardo",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Línea_T1_(TUSSAM)",
+      "name": "Línea T1 (TUSSAM)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Línea T1 (TUSSAM) (http://es.dbpedia.org/resource/Línea_T1_(TUSSAM)) for cells containing \"Plaza Nueva-San Bernardo\" in column route_long_name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "route_long_name",
+    "similarValue": "Plaza Nueva-San Bernardo",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Línea_T1_(TUSSAM)",
+      "name": "Línea T1 (TUSSAM)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Linea T1 (TUSSAM) (http://es.dbpedia.org/resource/Linea_T1_(TUSSAM)) for cells containing \"Plaza Nueva-San Bernardo\" in column route_long_name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "route_long_name",
+    "similarValue": "Plaza Nueva-San Bernardo",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Linea_T1_(TUSSAM)",
+      "name": "Linea T1 (TUSSAM)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Linea A6 (http://es.dbpedia.org/resource/Linea_A6) for cells containing \"Prado - Parque Alcosa\" in column route_long_name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "route_long_name",
+    "similarValue": "Prado - Parque Alcosa",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Linea_A6",
+      "name": "Linea A6",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column route_type to type http://schema.org/CreativeWork",
+    "columnName": "route_type",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia-es",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://schema.org/CreativeWork",
+        "name": "schema:CreativeWork"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"3\" in column route_type",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "route_type",
+    "similarValue": "3"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/travels/",
+      "prefixes": [
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "route_short_name",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/page/Travel",
+              "curie": "http://dbpedia.org/page/Travel"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smartsevilla.es/ontology#route_id",
+              "curie": "g10:route_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "﻿route_id"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/name",
+              "curie": "dbp:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "route_short_name"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/fullname",
+              "curie": "dbp:fullname",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "route_long_name"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/type",
+              "curie": "dbp:type",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "route_type"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column route's URI from DBpedia at index 3 based on column route_long_name using expression grel:cell.match.recon.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "route_type: best candidate's score",
+          "from": 0.1428571343421936,
+          "to": 0.16670000000000001,
+          "type": "range",
+          "columnName": "route_type"
+        }
+      ]
+    },
+    "newColumnName": "route's URI from DBpedia",
+    "columnInsertIndex": 3,
+    "baseColumnName": "route_long_name",
+    "expression": "grel:cell.match.recon.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column route's URI from DBpedia",
+    "columnName": "route's URI from DBpedia"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column route's URI from DBpedia at index 3 based on column route_long_name using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "route_type: best candidate's score",
+          "from": 0.1428571343421936,
+          "to": 0.16670000000000001,
+          "type": "range",
+          "columnName": "route_type"
+        }
+      ]
+    },
+    "newColumnName": "route's URI from DBpedia",
+    "columnInsertIndex": 3,
+    "baseColumnName": "route_long_name",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column route_type to type http://schema.org/CreativeWork",
+    "columnName": "route_type",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia-es",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://schema.org/CreativeWork",
+        "name": "schema:CreativeWork"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "route_type: best candidate's score",
+          "from": 0.1428571343421936,
+          "to": 0.16670000000000001,
+          "type": "range",
+          "columnName": "route_type"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Autobus (http://es.dbpedia.org/resource/Autobus) for cells containing \"3\" in column route_type",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "route_type: best candidate's score",
+          "from": 0.1428571343421936,
+          "to": 0.16670000000000001,
+          "type": "range",
+          "columnName": "route_type"
+        }
+      ]
+    },
+    "columnName": "route_type",
+    "similarValue": "3",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Autobus",
+      "name": "Autobus",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Tranvia (http://es.dbpedia.org/resource/Tranvia) for cells containing \"0\" in column route_type",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "route_type: best candidate's score",
+          "from": 0.1428571343421936,
+          "to": 0.16670000000000001,
+          "type": "range",
+          "columnName": "route_type"
+        }
+      ]
+    },
+    "columnName": "route_type",
+    "similarValue": "0",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Tranvia",
+      "name": "Tranvia",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column type's URI from DBpedia at index 5 based on column route_type using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "route_type: best candidate's score",
+          "from": 0.1428571343421936,
+          "to": 0.16670000000000001,
+          "type": "range",
+          "columnName": "route_type"
+        }
+      ]
+    },
+    "newColumnName": "type's URI from DBpedia",
+    "columnInsertIndex": 5,
+    "baseColumnName": "route_type",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/travels/",
+      "prefixes": [
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "route_short_name",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/page/Travel",
+              "curie": "http://dbpedia.org/page/Travel"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smartsevilla.es/ontology#route_id",
+              "curie": "g10:route_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "﻿route_id"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/name",
+              "curie": "dbp:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "route_short_name"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/fullname",
+              "curie": "dbp:fullname",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "route_long_name"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/type",
+              "curie": "dbp:type",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "route_type"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/type",
+              "curie": "dbp:type",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "type's URI from DBpedia",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "route's URI from DBpedia",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
