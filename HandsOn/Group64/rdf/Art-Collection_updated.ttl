@@ -1,0 +1,1439 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g64: <> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+<http://grupo64.es/artist> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "artist" ;
+	<http://grupo64.es/hasTitle> "title" ;
+	owl:sameAs "http://dbpedia.org/resource/Jacob_Artist" .
+
+<http://grupo64.es/Saitowitz+and+Soloman+Acconci> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Saitowitz and Soloman Acconci" ;
+	<http://grupo64.es/hasTitle> "Promenade Ribbon" .
+
+<http://grupo64.es/+Vito+Acconci> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Vito Acconci" ;
+	<http://grupo64.es/hasTitle> "Two Wings for Wall and Person" , "Light Beams for the Sky of Transfer Cooridor" .
+
+<http://grupo64.es/Gloria+Cozzo+Adams> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Gloria Cozzo Adams" ;
+	<http://grupo64.es/hasTitle> "Cityscape #33" .
+
+<http://grupo64.es/+Mark+Adams> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Mark Adams" ;
+	<http://grupo64.es/hasTitle> "Garden Outside the Gate (The Garden Tapestries)" , "Garden in San Andreas Valley (The Garden Tapestries)" , "Pond in Golden Gate Park (The Garden Tapestries)" .
+
+<http://grupo64.es/+Robert+Ingersoll+Aitken> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Robert Ingersoll Aitken" ;
+	<http://grupo64.es/hasTitle> "The Dewey Monument (Admiral George Dewey, 1837-1917)" , "Spandrels on Spreckles Temple of Music" , "William McKinley" , "Hall McAllister (1829-1888)" .
+
+<http://grupo64.es/Seyed+Alavi> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Seyed Alavi" ;
+	<http://grupo64.es/hasTitle> "Speaking Stones" .
+
+<http://grupo64.es/Maxine+Albro> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Maxine Albro" ;
+	<http://grupo64.es/hasTitle> "California" .
+
+<http://grupo64.es/Juana%2FEmmanuel+Alicia%2FMontoya> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Juana/Emmanuel Alicia/Montoya" ;
+	<http://grupo64.es/hasTitle> "Sanctuario" .
+
+<http://grupo64.es/Spero+Anargyros> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Spero Anargyros" ;
+	<http://grupo64.es/hasTitle> "George Moscone" .
+
+<http://grupo64.es/Lois+Anderson> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Lois Anderson" ;
+	<http://grupo64.es/hasTitle> "Outdoor Wall Mosaic" .
+
+<http://grupo64.es/Anonymous> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Anonymous" ;
+	<http://grupo64.es/hasTitle> "Ludwig Van Beethoven (1770-1827)" ;
+	owl:sameAs "http://dbpedia.org/resource/Jennifer_Serrano" ;
+	<http://grupo64.es/hasTitle> "Kanrin Maru Monument" , "Lotta's Fountain" , "Fountain of the Tortoises" , "Untitled (Stone Lantern)" , "Amazarasti-no Hotoke (the Buddha that sits throughout the sunny and rainy weathe" , "Benjamin Franklin (1706-1790)" .
+
+<http://grupo64.es/Michael+Arcega> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Michael Arcega" ;
+	<http://grupo64.es/hasTitle> "Mission Post" .
+
+<http://grupo64.es/Victor+Arnautoff> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Victor Arnautoff" ;
+	<http://grupo64.es/hasTitle> "The Life of George Washington" .
+
+<http://grupo64.es/Victor+Mikhail+Arnautoff> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Victor Mikhail Arnautoff" ;
+	<http://grupo64.es/hasTitle> "Edison (1847-1931) Washington (1732-1799) and Shakespeare (1564-1616)" , "City Life" .
+
+<http://grupo64.es/Robert+Arneson> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Robert Arneson" ;
+	<http://grupo64.es/hasTitle> "Yin Yang" .
+
+<http://grupo64.es/+David+Arnold> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " David Arnold" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/+Ruth+Asawa> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Ruth Asawa" ;
+	<http://grupo64.es/hasTitle> "Redding School, Self-Portrait" , "Origami Fountains" , "Hagiwara Family Plaque" .
+
+<http://grupo64.es/Alice+Aycock> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Alice Aycock" ;
+	<http://grupo64.es/hasTitle> "Cyclone Fragment" , "Functional and Fantasy Stair" .
+
+<http://grupo64.es/Carroll+Barnes> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Carroll Barnes" ;
+	<http://grupo64.es/hasTitle> "Transverse and Column" .
+
+<http://grupo64.es/Aileen+Barr> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Aileen Barr" ;
+	<http://grupo64.es/hasTitle> "Secret Garden" .
+
+<http://grupo64.es/Roger+Barr> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Roger Barr" ;
+	<http://grupo64.es/hasTitle> "Skygate" .
+
+<http://grupo64.es/Anders+Barth> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Anders Barth" ;
+	<http://grupo64.es/hasTitle> "Phoenix" , "First Person Plural" .
+
+<http://grupo64.es/Diana+Pompelly+Bates> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Diana Pompelly Bates" ;
+	<http://grupo64.es/hasTitle> "Reflection" .
+
+<http://grupo64.es/Bruce+Beasley> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Bruce Beasley" ;
+	<http://grupo64.es/hasTitle> "The Hesperides" .
+
+<http://grupo64.es/Micheline+Beauchemin> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Micheline Beauchemin" ;
+	<http://grupo64.es/hasTitle> "                                                      " .
+
+<http://grupo64.es/Robert+Bechtle> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Robert Bechtle" ;
+	<http://grupo64.es/hasTitle> "San Francisco Nova" .
+
+<http://grupo64.es/Jonathan+Beery> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jonathan Beery" ;
+	<http://grupo64.es/hasTitle> "Leatherback Sea Turtle" , "The Pink Short-spined Starfish" .
+
+<http://grupo64.es/Ray+Beldner> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ray Beldner" ;
+	<http://grupo64.es/hasTitle> "Playland Revisited" .
+
+<http://grupo64.es/Jane+Berlandina> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jane Berlandina" ;
+	<http://grupo64.es/hasTitle> "Home Life" .
+
+<http://grupo64.es/Tony+Berlant> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Tony Berlant" ;
+	<http://grupo64.es/hasTitle> "Dancing on the Brink of the World" .
+
+<http://grupo64.es/Raymond+Bertrand> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Raymond Bertrand" ;
+	<http://grupo64.es/hasTitle> "Meat Industry" .
+
+<http://grupo64.es/Suzanne+Biaggi> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Suzanne Biaggi" ;
+	<http://grupo64.es/hasTitle> "Patterns of Time and Place [stone sculpture]" .
+
+<http://grupo64.es/Amy+Blackstone> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Amy Blackstone" ;
+	<http://grupo64.es/hasTitle> "Untitled" , "Earth, Fire, and Water" .
+
+<http://grupo64.es/Nayland+W.+Blake> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Nayland W. Blake" ;
+	<http://grupo64.es/hasTitle> "Constellation" .
+
+<http://grupo64.es/Jaap+%28Jacob%29+Bongers> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jaap (Jacob) Bongers" ;
+	<http://grupo64.es/hasTitle> "Untitled #2" , "Untitled #1" , "Fire" .
+
+<http://grupo64.es/Jonathan+Bonner> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jonathan Bonner" ;
+	<http://grupo64.es/hasTitle> "Bloom" .
+
+<http://grupo64.es/Patti+Bowler> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Patti Bowler" ;
+	<http://grupo64.es/hasTitle> "Dragon Relief" .
+
+<http://grupo64.es/Roger+Boyce> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Roger Boyce" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Raymond+Boynton> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Raymond Boynton" ;
+	<http://grupo64.es/hasTitle> "Animal Force and Machine Force" .
+
+<http://grupo64.es/Frank+Brangwyn> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Frank Brangwyn" ;
+	<http://grupo64.es/hasTitle> "Water: The Net" , "Fire: Industrial Fire" , "Fire: Primitive Fire" , "Air: The Windmill" , "Earth: The Fruit Pickers" , "Earth: Dancing the Grapes" , "Water: The Fountain" , "Air: The Hunters" .
+
+<http://grupo64.es/Beliz+Brothers> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Beliz Brothers" ;
+	<http://grupo64.es/hasTitle> "Untitled [light boxes and glass panels]" .
+
+<http://grupo64.es/Arthur+Page+Brown> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Arthur Page Brown" ;
+	<http://grupo64.es/hasTitle> "Portals of the Past" .
+
+<http://grupo64.es/Joan+Brown> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Joan Brown" ;
+	<http://grupo64.es/hasTitle> "The Dancing Musicians" , "The Journey #2" .
+
+<http://grupo64.es/Beniamino+Bufano> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Beniamino Bufano" ;
+	<http://grupo64.es/hasTitle> "Bear and Cubs" , "Sun Yat-Sen" , "Rabbit" , "Mouse" , "Small Fish--Big Fish" , "St. Francis of the Guns" , "Torso" , "Peace" , "Frog" , "Two Sea Lions" , "Horse and Rider (St. Francis on Horseback)" , "Head of St.Francis" , "Cat" , "Seal" , "Madonna" , "Butterfly" , "Cat and Mouse" .
+
+<http://grupo64.es/George+Bullock> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "George Bullock" ;
+	<http://grupo64.es/hasTitle> "William Shakespeare" .
+
+<http://grupo64.es/Kendall+Buster> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Kendall Buster" ;
+	<http://grupo64.es/hasTitle> "Topograph" .
+
+<http://grupo64.es/Deborah+Butterfield> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Deborah Butterfield" ;
+	<http://grupo64.es/hasTitle> "Pohina" .
+
+<http://grupo64.es/Michael+Carey> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Michael Carey" ;
+	<http://grupo64.es/hasTitle> "Woman with Birds" .
+
+<http://grupo64.es/Squeak+Carnwath> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Squeak Carnwath" ;
+	<http://grupo64.es/hasTitle> "Fly, Flight, Fugit" .
+
+<http://grupo64.es/James+Carpenter> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "James Carpenter" ;
+	<http://grupo64.es/hasTitle> "Sculptural Light Reflectors" .
+
+<http://grupo64.es/Dudley+C.+Carter> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Dudley C. Carter" ;
+	<http://grupo64.es/hasTitle> "Goddess of the Forest" .
+
+<http://grupo64.es/Robert+Catalusci> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Robert Catalusci" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Morales+and+Poethig+Cervantes> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Morales and Poethig Cervantes" ;
+	<http://grupo64.es/hasTitle> "Roots and Branches" .
+
+<http://grupo64.es/Enrique+Chagoya> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Enrique Chagoya" ;
+	<http://grupo64.es/hasTitle> "Authors of Latin American Roots" , "Love Letters" .
+
+<http://grupo64.es/Ann+Chamberlain> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ann Chamberlain" ;
+	<http://grupo64.es/hasTitle> "Untitled Photographic Images" .
+
+<http://grupo64.es/Ann+and+Hamilton+Chamberlain> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ann and Hamilton Chamberlain" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Ann+and+Ho0d+Chamberlain> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ann and Ho0d Chamberlain" ;
+	<http://grupo64.es/hasTitle> "Abraham Lincoln Brigade National Monument" .
+
+<http://grupo64.es/Ann+and+Lubell+Chamberlain> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ann and Lubell Chamberlain" ;
+	<http://grupo64.es/hasTitle> "Earth" , "Untitled" , "Water" , "Earth, Air, Fire, Water" , "Air" , "Fire" .
+
+<http://grupo64.es/Lee+Roy+Champagne> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Lee Roy Champagne" ;
+	<http://grupo64.es/hasTitle> "The Grail" .
+
+<http://grupo64.es/Carl+Cheng> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Carl Cheng" ;
+	<http://grupo64.es/hasTitle> "Heliostats" .
+
+<http://grupo64.es/Ralph+A.+Chesse> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ralph A. Chesse" ;
+	<http://grupo64.es/hasTitle> "Children at Play" .
+
+<http://grupo64.es/Man+Lin+Choi> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Man Lin Choi" ;
+	<http://grupo64.es/hasTitle> "Movement: The First 100 Years" .
+
+<http://grupo64.es/Mary+Chomenko> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Mary Chomenko" ;
+	<http://grupo64.es/hasTitle> "Ocean Beach Fossil" .
+
+<http://grupo64.es/Goto+Collins> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Goto Collins" ;
+	<http://grupo64.es/hasTitle> "Aqua Pura" .
+
+<http://grupo64.es/Jerry+Concha> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jerry Concha" ;
+	<http://grupo64.es/hasTitle> "Roof Mural" .
+
+<http://grupo64.es/Gerome+Connor> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Gerome Connor" ;
+	<http://grupo64.es/hasTitle> "Robert Emmet (1778-1803)" .
+
+<http://grupo64.es/Carl+H.+Conrads> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Carl H. Conrads" ;
+	<http://grupo64.es/hasTitle> "General Henry W. Halleck (1815-1872)" .
+
+<http://grupo64.es/Troy+Corliss> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Troy Corliss" ;
+	<http://grupo64.es/hasTitle> "Noe Valley Natives" .
+
+<http://grupo64.es/Frederico+Coullaut-Valera> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Frederico Coullaut-Valera" ;
+	<http://grupo64.es/hasTitle> "Statue of King Carlos III" .
+
+<http://grupo64.es/Dorothy+and+Forbes+Cravath> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Dorothy and Forbes Cravath" ;
+	<http://grupo64.es/hasTitle> "Noah's Ark" .
+
+<http://grupo64.es/Ruth+Wakefield+Cravath> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ruth Wakefield Cravath" ;
+	<http://grupo64.es/hasTitle> "Mayor Alioto" , "Saint Francis" , "Angelo J. Rossi (1878-1948)" .
+
+<http://grupo64.es/Don+Cronin> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Don Cronin" ;
+	<http://grupo64.es/hasTitle> "Bust of Michael M. O'Shaugnessy" .
+
+<http://grupo64.es/Dewey+Crumpler> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Dewey Crumpler" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Colette+and+Barr+Crutcher> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Colette and Barr Crutcher" ;
+	<http://grupo64.es/hasTitle> "16th Avenue Tiled Steps Project" .
+
+<http://grupo64.es/Crutcher/Roller> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Crutcher/Roller" ;
+	<http://grupo64.es/hasTitle> "Art Panel" , "Art Panels" .
+
+<http://grupo64.es/M.+Earl+Cummings> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "M. Earl Cummings" ;
+	<http://grupo64.es/hasTitle> "Carl G. Larsen" , "Rideout Fountain" , "Doughboy" , "Pool of Enchantment" , "Bear and Lion" , "Robert Burns (1759-1796)" , "Dennis T. Sullivan (1852-1906) Plaque" , "Sun Dial" , "Man Drinking Water" , "John McLaren (1846-1943)" .
+
+<http://grupo64.es/Rinaldo+Cuneo> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Rinaldo Cuneo" ;
+	<http://grupo64.es/hasTitle> "Bay Area Hills" .
+
+<http://grupo64.es/Ben+F.+Cunningham> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ben F. Cunningham" ;
+	<http://grupo64.es/hasTitle> "Outdoor Life" .
+
+<http://grupo64.es/Firmin+Daub> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Firmin Daub" ;
+	<http://grupo64.es/hasTitle> "Harvey Milk Commemorative Bust" .
+
+<http://grupo64.es/Michael+and+Schwartzenberg+Davis> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Michael and Schwartzenberg Davis" ;
+	<http://grupo64.es/hasTitle> "Homage to the Amateur; The American Dream, A Tribute to Harvey Milk; Bio/Obscura" .
+
+<http://grupo64.es/+Ron+Davis> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Ron Davis" ;
+	<http://grupo64.es/hasTitle> "Twin Wave" , "Wide Wave" .
+
+<http://grupo64.es/Mallette+%28Harold%29+Dean> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Mallette (Harold) Dean" ;
+	<http://grupo64.es/hasTitle> "Stockbroker and Scientist-Inventor" .
+
+<http://grupo64.es/Jay+Defeo> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jay Defeo" ;
+	<http://grupo64.es/hasTitle> "Loop Series 4: Masquerade in Black" .
+
+<http://grupo64.es/Roy+DeForest> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Roy DeForest" ;
+	<http://grupo64.es/hasTitle> "Homage to Zane Grey" .
+
+<http://grupo64.es/Aristedes+Demetrios> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Aristedes Demetrios" ;
+	<http://grupo64.es/hasTitle> "Red Gothic" , "Sentinels" .
+
+<http://grupo64.es/Lewis+deSoto> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Lewis deSoto" ;
+	<http://grupo64.es/hasTitle> "1994: Staff and Residentes Celebrate the Rededication of the Bell Tower" , "1974-1977: Gerald Simon Theater Entertains the Community" , "On The Air" , "1949-1958: Community Activities at Laguna Honda" , "1999: Proposition A for the Laguna Honda Project Gets 73% Voter Approval" , "1947-1954: University of California . . ." , "1990-2000: Volunteers Contribute to Life at Laguna Honda" , "Shining Paths,San Francisco Sister Cities" , "Jury Assembly Room" , "Woven" , "1929-1941: Patient Care During the Great Depression" , "1909: President Theodore Roosevelt Visits the Relief Home at Laguna Honda" , "1908: The Construction of Clarendon Hall" , "1926: Mayor James Rolf, Jr. Dedicates the Laguna Honda Main Hospital Building" , "1947-1954: University of California, San Francisco . . ." , "1865-1906: The Foundation of the Almshouse and Relief Home at Laguna Honda" , "1934-1954-1982: Glen Wessel's Murals are Created, Lost and Rediscovered" , "1954-1997: Virginia Leishman, Nursing Director" .
+
+<http://grupo64.es/Stephen+DeStaebler> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Stephen DeStaebler" ;
+	<http://grupo64.es/hasTitle> "Fireplace and Hood" , "Man with Flame" .
+
+<http://grupo64.es/Richard+Deutsch> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Richard Deutsch" ;
+	<http://grupo64.es/hasTitle> "Propeller" .
+
+<http://grupo64.es/Vittorio+Di+Colbertaldo> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Vittorio Di Colbertaldo" ;
+	<http://grupo64.es/hasTitle> "Christopher Columbus" .
+
+<http://grupo64.es/+Mark+Di+Suvero> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Mark Di Suvero" ;
+	<http://grupo64.es/hasTitle> "Sea Change" .
+
+<http://grupo64.es/Richard+Diebenkorn> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Richard Diebenkorn" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Laddie+John+Dill> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Laddie John Dill" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Jim+Dine> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jim Dine" ;
+	<http://grupo64.es/hasTitle> "Venus with Rope" .
+
+<http://grupo64.es/Maynard+Dixon> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Maynard Dixon" ;
+	<http://grupo64.es/hasTitle> "Landscape" .
+
+<http://grupo64.es/Willard+Dixon> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Willard Dixon" ;
+	<http://grupo64.es/hasTitle> "Above Bolinas" , "Death Valley II" .
+
+<http://grupo64.es/Marcia+Donahue> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Marcia Donahue" ;
+	<http://grupo64.es/hasTitle> "Five Carved Stones" .
+
+<http://grupo64.es/Scott+Donahue> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Scott Donahue" ;
+	<http://grupo64.es/hasTitle> "Kate, Allan, Javier, Ting, Sloanie" , "Untitled [Richmond Library]" , "To This Place" .
+
+<http://grupo64.es/Paul+Gustave+Dore> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Paul Gustave Dore" ;
+	<http://grupo64.es/hasTitle> "La poeme de la vigne" .
+
+<http://grupo64.es/Romana+Anzi+Downie> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Romana Anzi Downie" ;
+	<http://grupo64.es/hasTitle> "Bust of George Moscone" .
+
+<http://grupo64.es/Michael+Dvortcsak> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Michael Dvortcsak" ;
+	<http://grupo64.es/hasTitle> "Sublimens" .
+
+<http://grupo64.es/Gary+Dwyer> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Gary Dwyer" ;
+	<http://grupo64.es/hasTitle> "Seven Dancing Stones and Seven Dancing Stars Stories" .
+
+<http://grupo64.es/Janet+Echelman> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Janet Echelman" ;
+	<http://grupo64.es/hasTitle> "Untitled [T-2 interior]" .
+
+<http://grupo64.es/David+Edstrom> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "David Edstrom" ;
+	<http://grupo64.es/hasTitle> "Florence Nightingale (1820-1910)" .
+
+<http://grupo64.es/Lillian+Elliott> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Lillian Elliott" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Mary+E.+Erckenbrack> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Mary E. Erckenbrack" ;
+	<http://grupo64.es/hasTitle> "Ceramic Mural on Athletics" .
+
+<http://grupo64.es/Frederick+Eversley> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Frederick Eversley" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Rudy+Fernandez> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Rudy Fernandez" ;
+	<http://grupo64.es/hasTitle> "Mission Triptych #3" , "Mission Triptych #2" .
+
+<http://grupo64.es/Fine+and+McCarren> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Fine and McCarren" ;
+	<http://grupo64.es/hasTitle> "Split Mound" .
+
+<http://grupo64.es/Bean+Finneran> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Bean Finneran" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/R.+M.+Fischer> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "R. M. Fischer" ;
+	<http://grupo64.es/hasTitle> "Union Square Colomnade" .
+
+<http://grupo64.es/Alan+Fleming> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Alan Fleming" ;
+	<http://grupo64.es/hasTitle> "Kezar Stadium Gates" .
+
+<http://grupo64.es/Harrell+and+Rubin+Fletcher> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Harrell and Rubin Fletcher" ;
+	<http://grupo64.es/hasTitle> "Photos of People from the Neighborhood Enlarged and Attached to the Building, an" , "\"Stenciled Fortunes\" within \"Photos of People from the Neighborhood enlarged and" , "Photos of People From the Neighborhood Enlarged and Attached to the Building, an" .
+
+<http://grupo64.es/Sam+Francis> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Sam Francis" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/+Daniel+Chester+French> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Daniel Chester French" ;
+	<http://grupo64.es/hasTitle> "Thomas Starr King (1824-1864)" .
+
+<http://grupo64.es/Viola+Frey> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Viola Frey" ;
+	<http://grupo64.es/hasTitle> "World Civilization" , "Exterior/Interior (Studio View)" .
+
+<http://grupo64.es/Mary+Fuller+%28Mcchesney%29> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Mary Fuller (Mcchesney)" ;
+	<http://grupo64.es/hasTitle> "Lion" , "Serpent" , "Untitled" , "Dragon" , "Benches" , "Monkey" , "Rabbit" , "Serpent Wall" , "Ram" , "Tiger, Ram, Serpent, Monkey, Rabbit, Dragon" .
+
+<http://grupo64.es/Mary+Fuller> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Mary Fuller" ;
+	<http://grupo64.es/hasTitle> "Earth, Air, Sea" , "Dos Liones" .
+
+<http://grupo64.es/Rupert+Garcia> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Rupert Garcia" ;
+	<http://grupo64.es/hasTitle> "Bird Technology" .
+
+<http://grupo64.es/Cliff+Garten> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Cliff Garten" ;
+	<http://grupo64.es/hasTitle> "Laguna Line (The Possibility of the Everyday)" .
+
+<http://grupo64.es/Carmen+Lomas+Garza> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Carmen Lomas Garza" ;
+	<http://grupo64.es/hasTitle> "The History of Northern California Water" , "Baile!" .
+
+<http://grupo64.es/Guillaume+Geefs> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Guillaume Geefs" ;
+	<http://grupo64.es/hasTitle> "Leonitus (Roman Gladiator)" .
+
+<http://grupo64.es/Nancy+Genn> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Nancy Genn" ;
+	<http://grupo64.es/hasTitle> "Evora 16" .
+
+<http://grupo64.es/Sam+Gilliam> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Sam Gilliam" ;
+	<http://grupo64.es/hasTitle> "Tholos Across" .
+
+<http://grupo64.es/Steve+Gillman> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Steve Gillman" ;
+	<http://grupo64.es/hasTitle> "Bay Bench" .
+
+<http://grupo64.es/Steve+and+Keefer+Gillman> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Steve and Keefer Gillman" ;
+	<http://grupo64.es/hasTitle> "The Swimmers" .
+
+<http://grupo64.es/Linnea+Glatt> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Linnea Glatt" ;
+	<http://grupo64.es/hasTitle> "Re-connection/Re-cognition" .
+
+<http://grupo64.es/Brian+Goggin> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Brian Goggin" ;
+	<http://grupo64.es/hasTitle> "Bed" , "Grow" , "Eat" , "Feed" , "Ballast" , "Switch" , "Pavers" , "Road" , "Others" , "Hunt" .
+
+<http://grupo64.es/Brian+and+Keehn+Goggin> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Brian and Keehn Goggin" ;
+	<http://grupo64.es/hasTitle> "Language of the Birds" .
+
+<http://grupo64.es/Jim+and+Rubin+Goldberg> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jim and Rubin Goldberg" ;
+	<http://grupo64.es/hasTitle> "Imagine Even More" .
+
+<http://grupo64.es/George+Gonzales> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "George Gonzales" ;
+	<http://grupo64.es/hasTitle> "Wu Xing Pavilion" .
+
+<http://grupo64.es/Arthur+Gonzalez> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Arthur Gonzalez" ;
+	<http://grupo64.es/hasTitle> "Peaceable Kingdom" .
+
+<http://grupo64.es/Sidney+Gordin> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Sidney Gordin" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/David+and+Shum+Gordon> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "David and Shum Gordon" ;
+	<http://grupo64.es/hasTitle> "Column Vistas" .
+
+<http://grupo64.es/Charles+Grafly> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Charles Grafly" ;
+	<http://grupo64.es/hasTitle> "Pioneer Mother" .
+
+<http://grupo64.es/Cecelia+Graham> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Cecelia Graham" ;
+	<http://grupo64.es/hasTitle> "The Dolphins" .
+
+<http://grupo64.es/Gary+W.+Graham> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Gary W. Graham" ;
+	<http://grupo64.es/hasTitle> "Police Shield" .
+
+<http://grupo64.es/Henri+Leon+Greber> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Henri Leon Greber" ;
+	<http://grupo64.es/hasTitle> "Dancing Sprites" .
+
+<http://grupo64.es/Mark+and+Spector+Grieve> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Mark and Spector Grieve" ;
+	<http://grupo64.es/hasTitle> "Untitled " .
+
+<http://grupo64.es/Orazio+Grossoni> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Orazio Grossoni" ;
+	<http://grupo64.es/hasTitle> "Giuseppe Verdi" .
+
+<http://grupo64.es/Diane+Andrews+Hall> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Diane Andrews Hall" ;
+	<http://grupo64.es/hasTitle> "Untitled [tapestries]" , "Rollers" , "Goldfinch with Zinnia 2" , "Goldfinch 5" , "Bird and Poem" , "Swelling Cumulus" .
+
+<http://grupo64.es/Terry+Hoff> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Terry Hoff" ;
+	<http://grupo64.es/hasTitle> "Untitled (Chalkboards)" .
+
+<http://grupo64.es/Diane+Andrews+Hall> <http://grupo64.es/hasTitle> "Morning Light 2" , "Hermit Thrush 2" .
+
+<http://grupo64.es/Parker+Hall> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Parker Hall" ;
+	<http://grupo64.es/hasTitle> "Collegiate Sports" .
+
+<http://grupo64.es/Lawrence+Halprin> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Lawrence Halprin" ;
+	<http://grupo64.es/hasTitle> "United Nations Plaza Fountain" .
+
+<http://grupo64.es/Edith+Hamlin> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Edith Hamlin" ;
+	<http://grupo64.es/hasTitle> "Map for the Pacific and Orient Steamship Lines" , "Hunting in California" .
+
+<http://grupo64.es/Frank+Happersberger> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Frank Happersberger" ;
+	<http://grupo64.es/hasTitle> "James A. Garfield (1831-1881)" , "Pioneer Monument  (James Lick Monument)" .
+
+<http://grupo64.es/+Keith+Haring> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Keith Haring" ;
+	<http://grupo64.es/hasTitle> "Untitled (Three Dancing Figures)" .
+
+<http://grupo64.es/+George+Harris> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " George Harris" ;
+	<http://grupo64.es/hasTitle> "Banking and the Law" .
+
+<http://grupo64.es/Bruce+Hasson> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Bruce Hasson" ;
+	<http://grupo64.es/hasTitle> "Ark (or Ark San Francisco)" , "Trolleys" .
+
+<http://grupo64.es/Martha+Heavenston> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Martha Heavenston" ;
+	<http://grupo64.es/hasTitle> "a) Dancing in the Sea of Milk (woman); and b) African King with Animal Power (ma" , "A World View" .
+
+<http://grupo64.es/Wally+Hedrick> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Wally Hedrick" ;
+	<http://grupo64.es/hasTitle> "17th December, 1903" .
+
+<http://grupo64.es/Gerald+Heffernon> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Gerald Heffernon" ;
+	<http://grupo64.es/hasTitle> "Rabbinoid on Cell Phone" .
+
+<http://grupo64.es/William+Hesthal> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "William Hesthal" ;
+	<http://grupo64.es/hasTitle> "Railroad and Shipping" , "Untitled" .
+
+<http://grupo64.es/Judy+Hiramoto> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Judy Hiramoto" ;
+	<http://grupo64.es/hasTitle> "Animal Hopscotch" .
+
+<http://grupo64.es/Wade+Hoefer> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Wade Hoefer" ;
+	<http://grupo64.es/hasTitle> "The Peasant's Parade" .
+
+<http://grupo64.es/Terry+Hoff> <http://grupo64.es/hasTitle> "Untitled" , "It's Always Time for Flowers" , "Untitled (Chalkboard)" .
+
+<http://grupo64.es/+Tom+Holland> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Tom Holland" ;
+	<http://grupo64.es/hasTitle> "Morengo" .
+
+<http://grupo64.es/Douglas+Hollis> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Douglas Hollis" ;
+	<http://grupo64.es/hasTitle> "Ceramic Frit Windows and Mechanical Screens" .
+
+<http://grupo64.es/+Jean+Antoine+Houdon> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Jean Antoine Houdon" ;
+	<http://grupo64.es/hasTitle> "George Washington" .
+
+<http://grupo64.es/John+Langley+Howard> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "John Langley Howard" ;
+	<http://grupo64.es/hasTitle> "California Industrial Scenes" .
+
+<http://grupo64.es/Mildred+Howard> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Mildred Howard" ;
+	<http://grupo64.es/hasTitle> "Salt Peanuts" .
+
+<http://grupo64.es/Robert+B.+Howard> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Robert B. Howard" ;
+	<http://grupo64.es/hasTitle> "Whales" .
+
+<http://grupo64.es/Joyce+Hsu> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Joyce Hsu" ;
+	<http://grupo64.es/hasTitle> "Namoo House" , "Incomplete Metamorphosis" .
+
+<http://grupo64.es/Arlan+Huang> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Arlan Huang" ;
+	<http://grupo64.es/hasTitle> "Untitled [glass panels]" , "Untitled" , "Untitled [glass block windows]" .
+
+<http://grupo64.es/Robert+Hudson> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Robert Hudson" ;
+	<http://grupo64.es/hasTitle> "A Horse of Another Color" .
+
+<http://grupo64.es/Su-Chen+Hung> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Su-Chen Hung" ;
+	<http://grupo64.es/hasTitle> "Welcome" .
+
+<http://grupo64.es/Hunter+and+Ghidini> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Hunter and Ghidini" ;
+	<http://grupo64.es/hasTitle> "19th Avenue Shelter at Winston Drive" , "19th Avenue Shelter at Holloway Avenue" .
+
+<http://grupo64.es/Clara+Huntington> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Clara Huntington" ;
+	<http://grupo64.es/hasTitle> "St. Francis of Assisi (Feeding the Birds)" .
+
+<http://grupo64.es/Takenobu+Igarashi> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Takenobu Igarashi" ;
+	<http://grupo64.es/hasTitle> "Landscape" , "Untitled [ceramic relief]" , "Untitled [wood relief]" , "Horizontal Feeling" , "Sky Dancing" .
+
+<http://grupo64.es/Peter+Ilyin> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Peter Ilyin" ;
+	<http://grupo64.es/hasTitle> "Untitled Mural" .
+
+<http://grupo64.es/Hans+Jauchen> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Hans Jauchen" ;
+	<http://grupo64.es/hasTitle> "Roald Amundsen (1872-1928)" .
+
+<http://grupo64.es/Joesam.> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Joesam." ;
+	<http://grupo64.es/hasTitle> "Folks in the 'Hood" , "Wade in Water" , "Hope Flight" .
+
+<http://grupo64.es/Patricia+Johanson> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Patricia Johanson" ;
+	<http://grupo64.es/hasTitle> "Endangered Garden" .
+
+<http://grupo64.es/Amana+Johnson> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Amana Johnson" ;
+	<http://grupo64.es/hasTitle> "Time to Dream" .
+
+<http://grupo64.es/Shelley+Jurs> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Shelley Jurs" ;
+	<http://grupo64.es/hasTitle> "Good Luck Piece" .
+
+<http://grupo64.es/Ruben+Kadish> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ruben Kadish" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Ned+Kahn> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ned Kahn" ;
+	<http://grupo64.es/hasTitle> "Wind Portal" , "The Greenhouse Project" .
+
+<http://grupo64.es/Ik-Joong+Kang> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ik-Joong Kang" ;
+	<http://grupo64.es/hasTitle> "Gateway" .
+
+<http://grupo64.es/Marc+Katano> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Marc Katano" ;
+	<http://grupo64.es/hasTitle> "Greeting a Totem" , "Torso" .
+
+<http://grupo64.es/Lee+Kelly> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Lee Kelly" ;
+	<http://grupo64.es/hasTitle> "Gate F Sculpture" .
+
+<http://grupo64.es/+Deborah+Kennedy> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Deborah Kennedy" ;
+	<http://grupo64.es/hasTitle> "Solar Sight" .
+
+<http://grupo64.es/Cheonae+Kim> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Cheonae Kim" ;
+	<http://grupo64.es/hasTitle> "somewhere" .
+
+<http://grupo64.es/Larry+Kirkland> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Larry Kirkland" ;
+	<http://grupo64.es/hasTitle> "Flight Patterns" .
+
+<http://grupo64.es/Walter+Kitundu> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Walter Kitundu" ;
+	<http://grupo64.es/hasTitle> "San Francisco Bay Area Bird Encounters" .
+
+<http://grupo64.es/Werner+Klotz> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Werner Klotz" ;
+	<http://grupo64.es/hasTitle> "Anemone" .
+
+<http://grupo64.es/Kimiko+Kogure> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Kimiko Kogure" ;
+	<http://grupo64.es/hasTitle> "Miraloma Fieldhouse Bathrooms" , "Stern Grove Trocadero Clubhouse" .
+
+<http://grupo64.es/Vince+Koloski> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Vince Koloski" ;
+	<http://grupo64.es/hasTitle> "A Library Book" .
+
+<http://grupo64.es/Vera+Kopecek> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Vera Kopecek" ;
+	<http://grupo64.es/hasTitle> "Flight Thrills" .
+
+<http://grupo64.es/Joyce+Kozloff> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Joyce Kozloff" ;
+	<http://grupo64.es/hasTitle> "Bay Area Victorian, Bay Area Deco, Bay Area Funk" .
+
+<http://grupo64.es/John+and+Rolph+Kricken> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "John and Rolph Kricken" ;
+	<http://grupo64.es/hasTitle> "Amundsen Historical Plaque" .
+
+<http://grupo64.es/Seiji+Kunishima> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Seiji Kunishima" ;
+	<http://grupo64.es/hasTitle> "Stacking Stones" .
+
+<http://grupo64.es/Lucien+Labaudt> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Lucien Labaudt" ;
+	<http://grupo64.es/hasTitle> "People and Places of San Francisco" , "Advancement of Learning through the Printing Press" , "Powell Street" .
+
+<http://grupo64.es/Christine+Marie+Lands> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Christine Marie Lands" ;
+	<http://grupo64.es/hasTitle> "Before the Revolution" .
+
+<http://grupo64.es/Christopher+Lane> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Christopher Lane" ;
+	<http://grupo64.es/hasTitle> "Night Passage" .
+
+<http://grupo64.es/Gordon+Langdon> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Gordon Langdon" ;
+	<http://grupo64.es/hasTitle> "California Agricultural Industry" .
+
+<http://grupo64.es/James+Leong> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "James Leong" ;
+	<http://grupo64.es/hasTitle> "100 Years of Progress of Chinese in America" .
+
+<http://grupo64.es/Lampo+Leong> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Lampo Leong" ;
+	<http://grupo64.es/hasTitle> "Tectonic Melange" .
+
+<http://grupo64.es/Leslie+Lerner> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Leslie Lerner" ;
+	<http://grupo64.es/hasTitle> "The Smile of Reason" .
+
+<http://grupo64.es/Reddy+and+Raynsford+Lieb> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Reddy and Raynsford Lieb" ;
+	<http://grupo64.es/hasTitle> "Six Degrees" .
+
+<http://grupo64.es/+Maya+Lin> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Maya Lin" ;
+	<http://grupo64.es/hasTitle> "What's Missing" , "Where the Land Meets the Sea" .
+
+<http://grupo64.es/Hung+Liu> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Hung Liu" ;
+	<http://grupo64.es/hasTitle> "Take Off" , "Map No. 33" .
+
+<http://grupo64.es/Living+Lenses+%28Po+Shu+Wang+%26+Loui> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Living Lenses (Po Shu Wang & Loui" ;
+	<http://grupo64.es/hasTitle> "NEVERODDOREVEN" .
+
+<http://grupo64.es/Carlos+Loarca> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Carlos Loarca" ;
+	<http://grupo64.es/hasTitle> "Angulos en Todas Direciones" , "Connecting Mural Bands" .
+
+<http://grupo64.es/Helen+Ludwig> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Helen Ludwig" ;
+	<http://grupo64.es/hasTitle> "Untitled" , "One Step at a Time" .
+
+<http://grupo64.es/Robert+MacDonald> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Robert MacDonald" ;
+	<http://grupo64.es/hasTitle> "Willie L Brown Bust" .
+
+<http://grupo64.es/Mandel+and+Sultan> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Mandel and Sultan" ;
+	<http://grupo64.es/hasTitle> "Waiting" .
+
+<http://grupo64.es/Joe+Mangrum> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Joe Mangrum" ;
+	<http://grupo64.es/hasTitle> "Layla" , "Swing Daddy" .
+
+<http://grupo64.es/Michael+Manwaring> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Michael Manwaring" ;
+	<http://grupo64.es/hasTitle> "Historic Signage Project" .
+
+<http://grupo64.es/Anita+and+Nagasawa+Margrill> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Anita and Nagasawa Margrill" ;
+	<http://grupo64.es/hasTitle> "Blueprints" .
+
+<http://grupo64.es/Henri+Marie-Rose> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Henri Marie-Rose" ;
+	<http://grupo64.es/hasTitle> "Sailor and Mermaid" , "Untitled" .
+
+<http://grupo64.es/Marino+Marini> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Marino Marini" ;
+	<http://grupo64.es/hasTitle> "Bronze Horse" .
+
+<http://grupo64.es/Mark%2FCharlie+Evans%2FBrown> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Mark/Charlie Evans/Brown" ;
+	<http://grupo64.es/hasTitle> "Into the Light" .
+
+<http://grupo64.es/Thomas+Marsh> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Thomas Marsh" ;
+	<http://grupo64.es/hasTitle> "Goddess of Democracy" .
+
+<http://grupo64.es/Fran+Martin> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Fran Martin" ;
+	<http://grupo64.es/hasTitle> "Petanque et St-Savin IV" , "Ndebele" .
+
+<http://grupo64.es/Vance+Martin> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Vance Martin" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Julian+Martinez> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Julian Martinez" ;
+	<http://grupo64.es/hasTitle> "Juan Bautista de Anza" .
+
+<http://grupo64.es/Mark+McDonnell> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Mark McDonnell" ;
+	<http://grupo64.es/hasTitle> "Glass Rondella" .
+
+<http://grupo64.es/J.+McQuarrie> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "J. McQuarrie" ;
+	<http://grupo64.es/hasTitle> "Father William D. McKinnon ( -1902)" .
+
+<http://grupo64.es/METAL> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "METAL" ;
+	<http://grupo64.es/hasTitle> "International Longshoremen's & Warehousemen's Union Memorial (ILWU)" ;
+	owl:sameAs "http://dbpedia.org/resource/Heavy_Metal_Kids" .
+
+<http://grupo64.es/Emmanuel+C.+Montoya> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Emmanuel C. Montoya" ;
+	<http://grupo64.es/hasTitle> "Deities of Knowledge, Culture and Literature" .
+
+<http://grupo64.es/+Henry+Moore> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Henry Moore" ;
+	<http://grupo64.es/hasTitle> "Standing Figure Knife Edged- Winged Figure" , "Large Four Piece Reclining Figure" .
+
+<http://grupo64.es/Joseph+Jacinto+Mora> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Joseph Jacinto Mora" ;
+	<http://grupo64.es/hasTitle> "Miguel Cervantes (1547-1616)" .
+
+<http://grupo64.es/Jack+Moxom> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jack Moxom" ;
+	<http://grupo64.es/hasTitle> "Sarah B. Cooper Memorial" .
+
+<http://grupo64.es/Jose+Moya+Del+Pino> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jose Moya Del Pino" ;
+	<http://grupo64.es/hasTitle> "Murals for Acme Beer Company" , "San Francisco Bay, North" .
+
+<http://grupo64.es/Lee+Mullican> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Lee Mullican" ;
+	<http://grupo64.es/hasTitle> "The Great Transparents" .
+
+<http://grupo64.es/Gwyn+Murrill> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Gwyn Murrill" ;
+	<http://grupo64.es/hasTitle> "Tiger II" , "Cougar III" , "Hawk V" .
+
+<http://grupo64.es/Manuel+Neri> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Manuel Neri" ;
+	<http://grupo64.es/hasTitle> "Untitled Proposal" , "Mujer Pagada No.4" .
+
+<http://grupo64.es/Ruby+Newman> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ruby Newman" ;
+	<http://grupo64.es/hasTitle> "Children's Mural" .
+
+<http://grupo64.es/Isamu+Noguchi> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Isamu Noguchi" ;
+	<http://grupo64.es/hasTitle> "Figure" .
+
+<http://grupo64.es/Stephen+Novak> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Stephen Novak" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Nance+O%27banion> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Nance O'banion" ;
+	<http://grupo64.es/hasTitle> "Billboard Series: Exploded Transverse with no Nuggies" .
+
+<http://grupo64.es/Ruth+O%27Day> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ruth O'Day" ;
+	<http://grupo64.es/hasTitle> "Guardian Serpent" .
+
+<http://grupo64.es/Juan+Olaguibel> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Juan Olaguibel" ;
+	<http://grupo64.es/hasTitle> "Miguel Hidalgo Y Costilla" .
+
+<http://grupo64.es/Otis+Oldfield> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Otis Oldfield" ;
+	<http://grupo64.es/hasTitle> "San Francisco Bay" , "Seabirds and Bay Area Map" .
+
+<http://grupo64.es/+Frederick+Law+Olmsted> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Frederick Law Olmsted" ;
+	<http://grupo64.es/hasTitle> "Leonardo da Vinci" .
+
+<http://grupo64.es/Jr.+Olmsted> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jr. Olmsted" ;
+	<http://grupo64.es/hasTitle> "Edison" , "Power" , "Education (Theory and Science)" .
+
+<http://grupo64.es/Deborah+Oropallo> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Deborah Oropallo" ;
+	<http://grupo64.es/hasTitle> "Love + Marriage" .
+
+<http://grupo64.es/Jacques+Overhoff> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jacques Overhoff" ;
+	<http://grupo64.es/hasTitle> "Untitled" , "Sculpture Garden" .
+
+<http://grupo64.es/Pepe+Ozan> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Pepe Ozan" ;
+	<http://grupo64.es/hasTitle> "Invocation" .
+
+<http://grupo64.es/Haig+Paitigan> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Haig Paitigan" ;
+	<http://grupo64.es/hasTitle> "Edward Robeson Taylor (1838-1923)" .
+
+<http://grupo64.es/Albert+Paley> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Albert Paley" ;
+	<http://grupo64.es/hasTitle> "Courthouse Entry Doors" .
+
+<http://grupo64.es/Fred+Parhad> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Fred Parhad" ;
+	<http://grupo64.es/hasTitle> "Ashurbanipal" .
+
+<http://grupo64.es/Haig+Patigian> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Haig Patigian" ;
+	<http://grupo64.es/hasTitle> "Luisa Tetrazzini (1874-1940) Plaque" , "Volunteer Fireman Memorial" , "Raphael Weill (1837-1920) Plaque" , "James D. Phelan (1861-1930)" , "General John J. Pershing (1860-1948)" , "William C. Ralston (1826-1875) Monument" , "Abraham Lincoln (1809-1865)" , "James Rolph, Jr. (1869-1934)" , "Frederick Funston (1865-1917)" .
+
+<http://grupo64.es/Eduardo+and+Pineda+Patlan> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Eduardo and Pineda Patlan" ;
+	<http://grupo64.es/hasTitle> "Raizes/Roots" .
+
+<http://grupo64.es/Zlatko+Paunov> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Zlatko Paunov" ;
+	<http://grupo64.es/hasTitle> "Mohandas K. Gandhi" .
+
+<http://grupo64.es/Charles+O.+Perry> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Charles O. Perry" ;
+	<http://grupo64.es/hasTitle> "Bronze Icosahedron" .
+
+<http://grupo64.es/R.+Hinton+Perry> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "R. Hinton Perry" ;
+	<http://grupo64.es/hasTitle> "Lion" .
+
+<http://grupo64.es/Gottardo+Fidele+Ponziano+Piazzoni> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Gottardo Fidele Ponziano Piazzoni" ;
+	<http://grupo64.es/hasTitle> "The Land" , "The Sea" , "Night" , "The Mountains" , "The Forests" .
+
+<http://grupo64.es/Irene+Pijoan> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Irene Pijoan" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Po+Shu+Wang> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Po Shu Wang" ;
+	<http://grupo64.es/hasTitle> "Scaling Harmonics" , "Ghinlon/Transcope" .
+
+<http://grupo64.es/Johanna+Poethig> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Johanna Poethig" ;
+	<http://grupo64.es/hasTitle> "Epic; Prediction; Gameboard; and H20" , "Flying Dragon-Snake-Monkey-Bird" .
+
+<http://grupo64.es/James+Polk> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "James Polk" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Arnaldo+Pomodoro> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Arnaldo Pomodoro" ;
+	<http://grupo64.es/hasTitle> "Cilindro Costruito" .
+
+<http://grupo64.es/Bruce+Porter> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Bruce Porter" ;
+	<http://grupo64.es/hasTitle> "Robert Louis Stevenson (1850-1894) Memorial" .
+
+<http://grupo64.es/Don+Potts> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Don Potts" ;
+	<http://grupo64.es/hasTitle> "Hallidie Building" , "Pylon of the Golden Gate Bridge" , "City Hall Dome" , "San Francisco Victorian, Italianate Style" .
+
+<http://grupo64.es/Eric+Powell> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Eric Powell" ;
+	<http://grupo64.es/hasTitle> "Ocean Current" .
+
+<http://grupo64.es/Precitia+Eyes+muralists> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Precitia Eyes muralists" ;
+	<http://grupo64.es/hasTitle> "The Flower Inside Us Grows" .
+
+<http://grupo64.es/Anne+Preston> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Anne Preston" ;
+	<http://grupo64.es/hasTitle> "You Were in Heaven" , "Family Court Waiting Area" .
+
+<http://grupo64.es/Raymond+Puccienlli> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Raymond Puccienlli" ;
+	<http://grupo64.es/hasTitle> "Guglielmo Marconi (1874-1937) Memorial Plaque" .
+
+<http://grupo64.es/Raimondo%28Raymond%29+Puccinelli> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Raimondo(Raymond) Puccinelli" ;
+	<http://grupo64.es/hasTitle> "American Bison--Buffalo" .
+
+<http://grupo64.es/Arthur+Putnam> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Arthur Putnam" ;
+	<http://grupo64.es/hasTitle> "Sphinx" , "The Winning of the West" .
+
+<http://grupo64.es/Zhu+Qizhan> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Zhu Qizhan" ;
+	<http://grupo64.es/hasTitle> "Grapevine" .
+
+<http://grupo64.es/Narcissus+Quagliata> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Narcissus Quagliata" ;
+	<http://grupo64.es/hasTitle> "Untitled" , "Oracle" .
+
+<http://grupo64.es/Gladys+Nevada+Quilici> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Gladys Nevada Quilici" ;
+	<http://grupo64.es/hasTitle> "Frank Marini (1862-1952)" .
+
+<http://grupo64.es/Robert+Ramirez> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Robert Ramirez" ;
+	<http://grupo64.es/hasTitle> "Urns" .
+
+<http://grupo64.es/Rebar+Group> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Rebar Group" ;
+	<http://grupo64.es/hasTitle> "Street Life" .
+
+<http://grupo64.es/Michael+John+Reed> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Michael John Reed" ;
+	<http://grupo64.es/hasTitle> "Mayor George Christopher" .
+
+<http://grupo64.es/+Robert+Reid> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Robert Reid" ;
+	<http://grupo64.es/hasTitle> "The Golden Fruit" , "Ideals in Art" , "The Golden Grain" , "The Birth of European Art" , "The Golden Metal" , "The Golden Poppy" , "Oriental Art" .
+
+<http://grupo64.es/Lisa+Reinerston> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Lisa Reinerston" ;
+	<http://grupo64.es/hasTitle> "Bust of Dianne Feinstein" .
+
+<http://grupo64.es/Lisa+Reinertson> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Lisa Reinertson" ;
+	<http://grupo64.es/hasTitle> "John F. Shelley" .
+
+<http://grupo64.es/Ernst+Reitschel> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ernst Reitschel" ;
+	<http://grupo64.es/hasTitle> "Goethe and Schiller" .
+
+<http://grupo64.es/Gregg+Renfrow> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Gregg Renfrow" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Peter+Richards> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Peter Richards" ;
+	<http://grupo64.es/hasTitle> "Companion Place, a Complement to the Comfort Garden" .
+
+<http://grupo64.es/Peter+and+Schwartzenberg+Richards> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Peter and Schwartzenberg Richards" ;
+	<http://grupo64.es/hasTitle> "Philosopher's Walk" .
+
+<http://grupo64.es/George+Warren+Rickey> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "George Warren Rickey" ;
+	<http://grupo64.es/hasTitle> "Double L Eccentric Gyratory" .
+
+<http://grupo64.es/rigo+99> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "rigo 99" ;
+	<http://grupo64.es/hasTitle> "Thinking of Balmy Alley" .
+
+<http://grupo64.es/Cheryl+Riley> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Cheryl Riley" ;
+	<http://grupo64.es/hasTitle> "Angels of Mercy" , "On Target Podium" , "Indian Spoon Sconces" , "Maasai Warrior Shield Light Sconces" , "Akamba Inlay Floor" , "Granary Bobo Bench" .
+
+<http://grupo64.es/Michael+Rios> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Michael Rios" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/+Diego+Rivera> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Diego Rivera" ;
+	<http://grupo64.es/hasTitle> "Marriage of the Artistic Expression of the North and South of this Continent" .
+
+<http://grupo64.es/+Gustavo+Rivera> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Gustavo Rivera" ;
+	<http://grupo64.es/hasTitle> "Azul, Azul Y Hacer" , "Untitled" .
+
+<http://grupo64.es/Kent+Roberts> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Kent Roberts" ;
+	<http://grupo64.es/hasTitle> "Passage" .
+
+<http://grupo64.es/+Auguste+Rodin> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Auguste Rodin" ;
+	<http://grupo64.es/hasTitle> "The Three Shades" , "The Thinker" .
+
+<http://grupo64.es/Isis+Rodriguez> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Isis Rodriguez" ;
+	<http://grupo64.es/hasTitle> "Untitled [Rolph Playground]" , "Los Ninos del Sol" , "Untitled [Potrero Del Sol Park]" .
+
+<http://grupo64.es/Clare+Rojas> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Clare Rojas" ;
+	<http://grupo64.es/hasTitle> "Blue Deer" .
+
+<http://grupo64.es/Charles+Ross> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Charles Ross" ;
+	<http://grupo64.es/hasTitle> "Light Lines" .
+
+<http://grupo64.es/Hal+Bayard+Runyon> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Hal Bayard Runyon" ;
+	<http://grupo64.es/hasTitle> "Andrew Furuseth (1854-1938)" .
+
+<http://grupo64.es/Elizabeth+Saltos> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Elizabeth Saltos" ;
+	<http://grupo64.es/hasTitle> "Diagonal Relief" .
+
+<http://grupo64.es/Joshua+Sarantitis> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Joshua Sarantitis" ;
+	<http://grupo64.es/hasTitle> "The Child Sees: Big Snail Fish" .
+
+<http://grupo64.es/Norie+Sato> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Norie Sato" ;
+	<http://grupo64.es/hasTitle> "Air Over Under " .
+
+<http://grupo64.es/Vicki+Saulls> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Vicki Saulls" ;
+	<http://grupo64.es/hasTitle> "Locus" , "Nuotatori" .
+
+<http://grupo64.es/Vicki+Ann+Saulls> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Vicki Ann Saulls" ;
+	<http://grupo64.es/hasTitle> "Welcome Hands" , "From the Heart Outwards" .
+
+<http://grupo64.es/Vicki+Saulls> <http://grupo64.es/hasTitle> "Untitled [group of animals]" .
+
+<http://grupo64.es/Raymond+Saunders> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Raymond Saunders" ;
+	<http://grupo64.es/hasTitle> "Letter's Missing" .
+
+<http://grupo64.es/Suzanne+Scheuer> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Suzanne Scheuer" ;
+	<http://grupo64.es/hasTitle> "Newsgathering" .
+
+<http://grupo64.es/Rupert+Schmid> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Rupert Schmid" ;
+	<http://grupo64.es/hasTitle> "General Ulysses Simpson Grant (1822-1885)" .
+
+<http://grupo64.es/Jacques+Schnier> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jacques Schnier" ;
+	<http://grupo64.es/hasTitle> "California Theater Plaque" .
+
+<http://grupo64.es/Frederick+W.+Schweigardt> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Frederick W. Schweigardt" ;
+	<http://grupo64.es/hasTitle> "Joseph B. Strauss (1870-1938) Memorial" .
+
+<http://grupo64.es/Vicki+Scuri> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Vicki Scuri" ;
+	<http://grupo64.es/hasTitle> "Sheriff Star Plaza" .
+
+<http://grupo64.es/+George+Segal> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " George Segal" ;
+	<http://grupo64.es/hasTitle> "The Holocaust" .
+
+<http://grupo64.es/Paul+Selinger> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Paul Selinger" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Raymond+Sells> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Raymond Sells" ;
+	<http://grupo64.es/hasTitle> "Untitled (Planter)" .
+
+<http://grupo64.es/Merle+Axelrad+Serlin> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Merle Axelrad Serlin" ;
+	<http://grupo64.es/hasTitle> "Bay Area Foothills" , "Cliffs at Land's End" , "Marin Headlands" .
+
+<http://grupo64.es/Richard+Shaw> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Richard Shaw" ;
+	<http://grupo64.es/hasTitle> "Martha H." .
+
+<http://grupo64.es/Thomas+Shields-Clarke> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Thomas Shields-Clarke" ;
+	<http://grupo64.es/hasTitle> "The Cider Press" .
+
+<http://grupo64.es/Evan+Shively> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Evan Shively" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Dustin+Shuler> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Dustin Shuler" ;
+	<http://grupo64.es/hasTitle> "Spider Pelt" .
+
+<http://grupo64.es/Hilda+Shum> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Hilda Shum" ;
+	<http://grupo64.es/hasTitle> "Fish Tale" .
+
+<http://grupo64.es/Bundo+Shunkai> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Bundo Shunkai" ;
+	<http://grupo64.es/hasTitle> "Peace Monument" .
+
+<http://grupo64.es/Joseph+Slusky> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Joseph Slusky" ;
+	<http://grupo64.es/hasTitle> "Calypso" .
+
+<http://grupo64.es/+Anthony+Smith> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Anthony Smith" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Horace+Washington> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Horace Washington" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Hassel+Smith> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Hassel Smith" ;
+	<http://grupo64.es/hasTitle> "Metamorphosis" .
+
+<http://grupo64.es/Owen+Smith> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Owen Smith" ;
+	<http://grupo64.es/hasTitle> "Building the Iron Horse" , "Untitled [mosaics]" , "Untitled [Sculpture Reliefs]" .
+
+<http://grupo64.es/Dan+Snyder> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Dan Snyder" ;
+	<http://grupo64.es/hasTitle> "Welcome North, Welcome South, Welcome East, Welcome West" .
+
+<http://grupo64.es/Keith+Sonnier> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Keith Sonnier" ;
+	<http://grupo64.es/hasTitle> "Ceiling Flood" .
+
+<http://grupo64.es/Charles+Sowers> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Charles Sowers" ;
+	<http://grupo64.es/hasTitle> "Butterfly Wall" .
+
+<http://grupo64.es/Christopher+Townsend+Sproat> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Christopher Townsend Sproat" ;
+	<http://grupo64.es/hasTitle> "Spine" .
+
+<http://grupo64.es/Ralph+Stackpole> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Ralph Stackpole" ;
+	<http://grupo64.es/hasTitle> "James M. Seawell (1836-1917)" , "Industries of California" , "Edmund Godchaux (1849-1939)" , "Contemporary Education" .
+
+<http://grupo64.es/Anthony+Stellon> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Anthony Stellon" ;
+	<http://grupo64.es/hasTitle> "The Brotherhood of Man" .
+
+<http://grupo64.es/Jan+Peter+Stern> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jan Peter Stern" ;
+	<http://grupo64.es/hasTitle> "Limits of Horizon II" .
+
+<http://grupo64.es/+William+Wetmore+Story> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " William Wetmore Story" ;
+	<http://grupo64.es/hasTitle> "Francis Scott Key (1780-1843)" .
+
+<http://grupo64.es/Michael+Stutz> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Michael Stutz" ;
+	<http://grupo64.es/hasTitle> "Cardboard Kore" .
+
+<http://grupo64.es/+Rufino+Tamayo> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> " Rufino Tamayo" ;
+	<http://grupo64.es/hasTitle> "Conquest of Space, 1983" .
+
+<http://grupo64.es/Sam+Tchakalian> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Sam Tchakalian" ;
+	<http://grupo64.es/hasTitle> "Hitwood" .
+
+<http://grupo64.es/Gina+Telcocci> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Gina Telcocci" ;
+	<http://grupo64.es/hasTitle> "here and past here" .
+
+<http://grupo64.es/Mark+Templeton> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Mark Templeton" ;
+	<http://grupo64.es/hasTitle> "85194" .
+
+<http://grupo64.es/Edward+Takeo+Terada> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Edward Takeo Terada" ;
+	<http://grupo64.es/hasTitle> "Sports" .
+
+<http://grupo64.es/Wayne+Thiebaud> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Wayne Thiebaud" ;
+	<http://grupo64.es/hasTitle> "18th Street Downgrade" .
+
+<http://grupo64.es/Douglas+Tilden> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Douglas Tilden" ;
+	<http://grupo64.es/hasTitle> "Mechanics Monument (Peter Donahue-1829-1885)" , "Native Sons Monument (Admission Day Monument)" , "Ball Thrower" , "Padre Junipero Serra (1713-1784)" , "California Volunteers, Spanish American War, 1898" .
+
+<http://grupo64.es/James+Torlakson> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "James Torlakson" ;
+	<http://grupo64.es/hasTitle> "Behind Ted McCann's Garage" .
+
+<http://grupo64.es/Laurel+True> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Laurel True" ;
+	<http://grupo64.es/hasTitle> "Sun Spheres" .
+
+<http://grupo64.es/Kinji+Uehara> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Kinji Uehara" ;
+	<http://grupo64.es/hasTitle> "The Red Horizon" .
+
+<http://grupo64.es/Vaea> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Vaea" ;
+	<http://grupo64.es/hasTitle> "Untitled" ;
+	owl:sameAs "http://dbpedia.org/resource/Nanasipau%CA%BBu_Tuku%CA%BBaho" .
+
+<http://grupo64.es/Armand+Vaillancourt> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Armand Vaillancourt" ;
+	<http://grupo64.es/hasTitle> "The Embarcadero Fountain" .
+
+<http://grupo64.es/VanDenberge> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "VanDenberge" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Peter+VanDenberge> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Peter VanDenberge" ;
+	<http://grupo64.es/hasTitle> "Garden of Alice" , "Jungle Scenes" .
+
+<http://grupo64.es/Frede+Vidar> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Frede Vidar" ;
+	<http://grupo64.es/hasTitle> "Department Store" .
+
+<http://grupo64.es/Manuel+Villamor> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Manuel Villamor" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Victor+Hugo+Barranechea+Villegas> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Victor Hugo Barranechea Villegas" ;
+	<http://grupo64.es/hasTitle> "Simon Bolivar" .
+
+<http://grupo64.es/Herman+Volz> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Herman Volz" ;
+	<http://grupo64.es/hasTitle> "Education (Organic and Inorganic Science)" .
+
+<http://grupo64.es/Michael+VonMeyer> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Michael VonMeyer" ;
+	<http://grupo64.es/hasTitle> "The Child" .
+
+<http://grupo64.es/Peter+Voulkos> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Peter Voulkos" ;
+	<http://grupo64.es/hasTitle> "Untitled" .
+
+<http://grupo64.es/Catherine+Wagner> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Catherine Wagner" ;
+	<http://grupo64.es/hasTitle> "Swimmer's Waves" .
+
+<http://grupo64.es/Gerald+Walburg> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Gerald Walburg" ;
+	<http://grupo64.es/hasTitle> "Stiff Loops (Loop IV)" .
+
+<http://grupo64.es/Edgar+Walter> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Edgar Walter" ;
+	<http://grupo64.es/hasTitle> "Ignatz and Sigmund Steinhart (1840-1917)" .
+
+<http://grupo64.es/John+Wehrle> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "John Wehrle" ;
+	<http://grupo64.es/hasTitle> "Words Fly Away" .
+
+<http://grupo64.es/Glenn+Wessels> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Glenn Wessels" ;
+	<http://grupo64.es/hasTitle> "Fire, Earth, Water, Air, The Professions" .
+
+<http://grupo64.es/Clifford+Wight> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Clifford Wight" ;
+	<http://grupo64.es/hasTitle> "Farmer and Cowboy" , "Surveyor and Steelworker" .
+
+<http://grupo64.es/William+Wiley> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "William Wiley" ;
+	<http://grupo64.es/hasTitle> "Void" .
+
+<http://grupo64.es/Al+Wong> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Al Wong" ;
+	<http://grupo64.es/hasTitle> "Light Clouds" .
+
+<http://grupo64.es/Paul+Wonner> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Paul Wonner" ;
+	<http://grupo64.es/hasTitle> "Souvenir of San Francisco" .
+
+<http://grupo64.es/Wowhaus> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Wowhaus" ;
+	<http://grupo64.es/hasTitle> "Sunnyside Menagerie" .
+
+<http://grupo64.es/Rene+Yung> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Rene Yung" ;
+	<http://grupo64.es/hasTitle> "Take Root" .
+
+<http://grupo64.es/Jack+Zajac> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Jack Zajac" ;
+	<http://grupo64.es/hasTitle> "Falling Water Santa Cruz II" .
+
+<http://grupo64.es/Bernard+Baruch+Zakheim> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Bernard Baruch Zakheim" ;
+	<http://grupo64.es/hasTitle> "Library" .
+
+<http://grupo64.es/Dana+Zed> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Dana Zed" ;
+	<http://grupo64.es/hasTitle> "California Wildflowers" .
+
+<http://grupo64.es/Bob+Zoell> a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> ;
+	<http://grupo64.es/hasAuthor> "Bob Zoell" ;
+	<http://grupo64.es/hasTitle> "Untitled [frosted glass panels]" .
+
+<http://grupo64.es/Beniamino+Bufano> <http://grupo64.es/hasTitle> "Penguins" .

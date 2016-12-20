@@ -1,0 +1,1073 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/Group07/ontology/JobSearch#",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Identificador",
+          "rdfTypes": [
+            {
+              "uri": "Empleo",
+              "curie": ":Empleo"
+            }
+          ],
+          "links": [
+            {
+              "uri": "clasificador",
+              "curie": ":clasificador",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Clasificador"
+              }
+            },
+            {
+              "uri": "titulo",
+              "curie": ":titulo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Título"
+              }
+            },
+            {
+              "uri": "tipo",
+              "curie": ":tipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Tipo"
+              }
+            },
+            {
+              "uri": "tematica",
+              "curie": ":tematica",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Tematica"
+              }
+            },
+            {
+              "uri": "gestionadoPor",
+              "curie": ":gestionadoPor",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "toLowercase(replace(substring(value,0,indexOf(value,\"(\")),\" \",\"\"))",
+                "isRowNumberCell": false,
+                "columnName": "Organismo gestor",
+                "rdfTypes": [
+                  {
+                    "uri": "OrganismoGestor",
+                    "curie": ":OrganismoGestor"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "numeroPlazas",
+              "curie": ":numeroPlazas",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "NumeroPlazas"
+              }
+            },
+            {
+              "uri": "ingresoLibre",
+              "curie": ":ingresoLibre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "Ingreso libre (acceso general)"
+              }
+            },
+            {
+              "uri": "minusvalia",
+              "curie": ":minusvalia",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "Minusvalía"
+              }
+            },
+            {
+              "uri": "promocionInterna",
+              "curie": ":promocionInterna",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "Promoción interna (acceso general)"
+              }
+            },
+            {
+              "uri": "tasas",
+              "curie": ":tasas",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Tasas"
+              }
+            },
+            {
+              "uri": "nombreBanco",
+              "curie": ":nombreBanco",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NombreBancoCtaCorriente"
+              }
+            },
+            {
+              "uri": "numeroCuenta",
+              "curie": ":numeroCuenta",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NumeroCuentaCorriente 2"
+              }
+            },
+            {
+              "uri": "devolucionExencion",
+              "curie": ":devolucionExencion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Devolución/Exención Tasas"
+              }
+            },
+            {
+              "uri": "solicitud",
+              "curie": ":solicitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Solicitud"
+              }
+            },
+            {
+              "uri": "lugarPresentacion",
+              "curie": ":lugarPresentacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LugarDePresentacion"
+              }
+            },
+            {
+              "uri": "enMunicipio",
+              "curie": ":enMunicipio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Municipio",
+                "rdfTypes": [
+                  {
+                    "uri": "Municipio",
+                    "curie": ":Municipio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "fechaInicio",
+              "curie": ":fechaInicio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "datePart(value,\"years\")+\"-\"+datePart(value,\"month\")+\"-\"+datePart(value,\"days\")",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "Fecha de inicio"
+              }
+            },
+            {
+              "uri": "plazoPresentacion",
+              "curie": ":plazoPresentacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Plazo de presentación"
+              }
+            },
+            {
+              "uri": "fechaFinalizacion",
+              "curie": ":fechaFinalizacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "datePart(value,\"years\")+\"-\"+datePart(value,\"month\")+\"-\"+datePart(value,\"days\")",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "FechaFinalizacion"
+              }
+            },
+            {
+              "uri": "requisitos",
+              "curie": ":requisitos",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Requisitos necesarios"
+              }
+            },
+            {
+              "uri": "procedimiento",
+              "curie": ":procedimiento",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "PROCEDIMIENTO DE SELECCIÓN"
+              }
+            },
+            {
+              "uri": "derivaBolsa",
+              "curie": ":derivaBolsa",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DerivaBolsa"
+              }
+            },
+            {
+              "uri": "informacionAdicional",
+              "curie": ":informacionAdicional",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Información adicional"
+              }
+            },
+            {
+              "uri": "ultimaActualizacion",
+              "curie": ":ultimaActualizacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "datePart(value,\"years\")+\"-\"+datePart(value,\"month\")+\"-\"+datePart(value,\"days\")",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "ultimaActualizacion"
+              }
+            },
+            {
+              "uri": "enlaceContenido",
+              "curie": ":enlaceContenido",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Enlace al contenido"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Organismo gestor to type ",
+    "columnName": "Organismo gestor",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/organismosgestores10",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "",
+        "name": ""
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Consejerï¿½a de Familia e Igualdad de Oportunidades (http://websemantica.org/organismos/1142233492745) for cells containing \"Consejería de Familia e Igualdad de Oportunidades\" in column Organismo gestor",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Organismo gestor",
+    "similarValue": "Consejería de Familia e Igualdad de Oportunidades",
+    "judgment": "matched",
+    "match": {
+      "id": "http://websemantica.org/organismos/1142233492745",
+      "name": "Consejerï¿½a de Familia e Igualdad de Oportunidades",
+      "score": 0.9411764740943909,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Delegaciï¿½n Territorial de ï¿½vila (http://websemantica.org/organismos/1142233496227) for cells containing \"Delegación Territorial de Ávila\" in column Organismo gestor",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Organismo gestor",
+    "similarValue": "Delegación Territorial de Ávila",
+    "judgment": "matched",
+    "match": {
+      "id": "http://websemantica.org/organismos/1142233496227",
+      "name": "Delegaciï¿½n Territorial de ï¿½vila",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Delegaciï¿½n Territorial de Leï¿½n (http://websemantica.org/organismos/1142233516131) for cells containing \"Delegación Territorial de León\" in column Organismo gestor",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Organismo gestor: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Organismo gestor"
+        }
+      ]
+    },
+    "columnName": "Organismo gestor",
+    "similarValue": "Delegación Territorial de León",
+    "judgment": "matched",
+    "match": {
+      "id": "http://websemantica.org/organismos/1142233516131",
+      "name": "Delegaciï¿½n Territorial de Leï¿½n",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Delegaciï¿½n Territorial de Salamanca (http://websemantica.org/organismos/1142233537711) for cells containing \"Delegación Territorial de Salamanca\" in column Organismo gestor",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Organismo gestor: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Organismo gestor"
+        }
+      ]
+    },
+    "columnName": "Organismo gestor",
+    "similarValue": "Delegación Territorial de Salamanca",
+    "judgment": "matched",
+    "match": {
+      "id": "http://websemantica.org/organismos/1142233537711",
+      "name": "Delegaciï¿½n Territorial de Salamanca",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Delegaciï¿½n Territorial de Soria (http://websemantica.org/organismos/1142233555045) for cells containing \"Delegación Territorial de Soria\" in column Organismo gestor",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Organismo gestor: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Organismo gestor"
+        }
+      ]
+    },
+    "columnName": "Organismo gestor",
+    "similarValue": "Delegación Territorial de Soria",
+    "judgment": "matched",
+    "match": {
+      "id": "http://websemantica.org/organismos/1142233555045",
+      "name": "Delegaciï¿½n Territorial de Soria",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Viceconsejerï¿½a de Funciï¿½n Pï¿½blica y Gobierno Abierto (http://websemantica.org/organismos/1142233482442) for cells containing \"Viceconsejería de Función Pública y Gobierno Abierto, Delegación Territorial de Ávila\" in column Organismo gestor",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Organismo gestor: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Organismo gestor"
+        }
+      ]
+    },
+    "columnName": "Organismo gestor",
+    "similarValue": "Viceconsejería de Función Pública y Gobierno Abierto, Delegación Territorial de Ávila",
+    "judgment": "matched",
+    "match": {
+      "id": "http://websemantica.org/organismos/1142233482442",
+      "name": "Viceconsejerï¿½a de Funciï¿½n Pï¿½blica y Gobierno Abierto",
+      "score": 0.5058823823928833,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Viceconsejerï¿½a de Funciï¿½n Pï¿½blica y Gobierno Abierto (http://websemantica.org/organismos/1142233482442) for cells containing \"Viceconsejería de Función Pública y Gobierno Abierto, Delegación Territorial de Burgos\" in column Organismo gestor",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Organismo gestor: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Organismo gestor"
+        }
+      ]
+    },
+    "columnName": "Organismo gestor",
+    "similarValue": "Viceconsejería de Función Pública y Gobierno Abierto, Delegación Territorial de Burgos",
+    "judgment": "matched",
+    "match": {
+      "id": "http://websemantica.org/organismos/1142233482442",
+      "name": "Viceconsejerï¿½a de Funciï¿½n Pï¿½blica y Gobierno Abierto",
+      "score": 0.5,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Viceconsejerï¿½a de Funciï¿½n Pï¿½blica y Gobierno Abierto (http://websemantica.org/organismos/1142233482442) for cells containing \"Viceconsejería de Función Pública y Gobierno Abierto, Delegación Territorial de Salamanca\" in column Organismo gestor",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Organismo gestor: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Organismo gestor"
+        }
+      ]
+    },
+    "columnName": "Organismo gestor",
+    "similarValue": "Viceconsejería de Función Pública y Gobierno Abierto, Delegación Territorial de Salamanca",
+    "judgment": "matched",
+    "match": {
+      "id": "http://websemantica.org/organismos/1142233482442",
+      "name": "Viceconsejerï¿½a de Funciï¿½n Pï¿½blica y Gobierno Abierto",
+      "score": 0.483146071434021,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Viceconsejerï¿½a de Funciï¿½n Pï¿½blica y Gobierno Abierto (http://websemantica.org/organismos/1142233482442) for cells containing \"Viceconsejería de Función Pública y Gobierno Abierto, Delegación Territorial de Valladolid\" in column Organismo gestor",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Organismo gestor: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Organismo gestor"
+        }
+      ]
+    },
+    "columnName": "Organismo gestor",
+    "similarValue": "Viceconsejería de Función Pública y Gobierno Abierto, Delegación Territorial de Valladolid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://websemantica.org/organismos/1142233482442",
+      "name": "Viceconsejerï¿½a de Funciï¿½n Pï¿½blica y Gobierno Abierto",
+      "score": 0.47777777910232544,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column empleo:organismo at index 5 based on column Organismo gestor using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Organismo gestor: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Organismo gestor"
+        }
+      ]
+    },
+    "newColumnName": "empleo:organismo",
+    "columnInsertIndex": 5,
+    "baseColumnName": "Organismo gestor",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column empleo:organismo",
+    "columnName": "empleo:organismo"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column empleo:organismos at index 5 based on column Organismo gestor using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Organismo gestor: judgment",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Organismo gestor"
+        }
+      ]
+    },
+    "newColumnName": "empleo:organismos",
+    "columnInsertIndex": 5,
+    "baseColumnName": "Organismo gestor",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/Group07/ontology/JobSearch#",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Identificador",
+          "rdfTypes": [
+            {
+              "uri": "Empleo",
+              "curie": ":Empleo"
+            }
+          ],
+          "links": [
+            {
+              "uri": "clasificador",
+              "curie": ":clasificador",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Clasificador"
+              }
+            },
+            {
+              "uri": "titulo",
+              "curie": ":titulo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Título"
+              }
+            },
+            {
+              "uri": "tipo",
+              "curie": ":tipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Tipo"
+              }
+            },
+            {
+              "uri": "tematica",
+              "curie": ":tematica",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Tematica"
+              }
+            },
+            {
+              "uri": "gestionadoPor",
+              "curie": ":gestionadoPor",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "toLowercase(replace(substring(value,0,indexOf(value,\"(\")),\" \",\"\"))",
+                "isRowNumberCell": false,
+                "columnName": "Organismo gestor",
+                "rdfTypes": [
+                  {
+                    "uri": "OrganismoGestor",
+                    "curie": ":OrganismoGestor"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                    "curie": "rdfs:label",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "Organismo gestor"
+                    }
+                  },
+                  {
+                    "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                    "curie": "owl:sameAs",
+                    "target": {
+                      "nodeType": "cell-as-literal",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "empleo:organismos"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "numeroPlazas",
+              "curie": ":numeroPlazas",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "NumeroPlazas"
+              }
+            },
+            {
+              "uri": "ingresoLibre",
+              "curie": ":ingresoLibre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "Ingreso libre (acceso general)"
+              }
+            },
+            {
+              "uri": "minusvalia",
+              "curie": ":minusvalia",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "Minusvalía"
+              }
+            },
+            {
+              "uri": "promocionInterna",
+              "curie": ":promocionInterna",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "Promoción interna (acceso general)"
+              }
+            },
+            {
+              "uri": "tasas",
+              "curie": ":tasas",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Tasas"
+              }
+            },
+            {
+              "uri": "nombreBanco",
+              "curie": ":nombreBanco",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NombreBancoCtaCorriente"
+              }
+            },
+            {
+              "uri": "numeroCuenta",
+              "curie": ":numeroCuenta",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NumeroCuentaCorriente 2"
+              }
+            },
+            {
+              "uri": "devolucionExencion",
+              "curie": ":devolucionExencion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Devolución/Exención Tasas"
+              }
+            },
+            {
+              "uri": "solicitud",
+              "curie": ":solicitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Solicitud"
+              }
+            },
+            {
+              "uri": "lugarPresentacion",
+              "curie": ":lugarPresentacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LugarDePresentacion"
+              }
+            },
+            {
+              "uri": "enMunicipio",
+              "curie": ":enMunicipio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Municipio",
+                "rdfTypes": [
+                  {
+                    "uri": "Municipio",
+                    "curie": ":Municipio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "fechaInicio",
+              "curie": ":fechaInicio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "datePart(value,\"years\")+\"-\"+datePart(value,\"month\")+\"-\"+datePart(value,\"days\")",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "Fecha de inicio"
+              }
+            },
+            {
+              "uri": "plazoPresentacion",
+              "curie": ":plazoPresentacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Plazo de presentación"
+              }
+            },
+            {
+              "uri": "fechaFinalizacion",
+              "curie": ":fechaFinalizacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "datePart(value,\"years\")+\"-\"+datePart(value,\"month\")+\"-\"+datePart(value,\"days\")",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "FechaFinalizacion"
+              }
+            },
+            {
+              "uri": "requisitos",
+              "curie": ":requisitos",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Requisitos necesarios"
+              }
+            },
+            {
+              "uri": "procedimiento",
+              "curie": ":procedimiento",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "PROCEDIMIENTO DE SELECCIÓN"
+              }
+            },
+            {
+              "uri": "derivaBolsa",
+              "curie": ":derivaBolsa",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DerivaBolsa"
+              }
+            },
+            {
+              "uri": "informacionAdicional",
+              "curie": ":informacionAdicional",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Información adicional"
+              }
+            },
+            {
+              "uri": "ultimaActualizacion",
+              "curie": ":ultimaActualizacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "datePart(value,\"years\")+\"-\"+datePart(value,\"month\")+\"-\"+datePart(value,\"days\")",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "ultimaActualizacion"
+              }
+            },
+            {
+              "uri": "enlaceContenido",
+              "curie": ":enlaceContenido",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Enlace al contenido"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  }
+]

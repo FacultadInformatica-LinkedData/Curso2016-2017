@@ -1,0 +1,697 @@
+@prefix area: <http://dbpedia.org/ontology/floorArea> .
+@prefix tipo: <http://dbpedia.org/ontology/type> .
+@prefix precio: <http://dbpedia.org/ontology/price> .
+@prefix town: <http://dbpedia.org/ontology/Town> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix year: <http://dbpedia.org/ontology/Year> .
+@prefix tipoEdificio: <http://dbpedia.org/ontology/buildingType> .
+@prefix calle: <http://dbpedia.org/ontology/Street> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix group03: <http://www.semanticweb.org/group03/ontologies/handson#> .
+
+
+<http://www.semanticweb.org/group03/ontologies/handson/0> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "82000"^^<http://www.w3.org/2001/XMLSchema#double> , "107000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/1> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "135000"^^<http://www.w3.org/2001/XMLSchema#double> , "211000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/2> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "223000"^^<http://www.w3.org/2001/XMLSchema#double> , "327000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/3> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "305000"^^<http://www.w3.org/2001/XMLSchema#double> , "428000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/4> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Jurong West" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "142000"^^<http://www.w3.org/2001/XMLSchema#double> , "160000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/5> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Jurong West" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "211000"^^<http://www.w3.org/2001/XMLSchema#double> , "253000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/6> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Jurong West" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "229000"^^<http://www.w3.org/2001/XMLSchema#double> , "319000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/7> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Panjang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "82000"^^<http://www.w3.org/2001/XMLSchema#double> , "106000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/8> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Panjang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "138000"^^<http://www.w3.org/2001/XMLSchema#double> , "170000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/9> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Panjang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "211000"^^<http://www.w3.org/2001/XMLSchema#double> , "270000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/10> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "116000"^^<http://www.w3.org/2001/XMLSchema#double> , "164000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/11> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "184000"^^<http://www.w3.org/2001/XMLSchema#double> , "257000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/12> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "247000"^^<http://www.w3.org/2001/XMLSchema#double> , "296000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/13> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "73000"^^<http://www.w3.org/2001/XMLSchema#double> , "95000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/14> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "120000"^^<http://www.w3.org/2001/XMLSchema#double> , "162000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/15> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "190000"^^<http://www.w3.org/2001/XMLSchema#double> , "275000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/16> <http://dbpedia.org/ontology/Year> "2008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "290000"^^<http://www.w3.org/2001/XMLSchema#double> , "367000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/17> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "89000"^^<http://www.w3.org/2001/XMLSchema#double> , "114000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/18> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "151000"^^<http://www.w3.org/2001/XMLSchema#double> , "188000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/19> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "234000"^^<http://www.w3.org/2001/XMLSchema#double> , "322000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/20> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "332000"^^<http://www.w3.org/2001/XMLSchema#double> , "409000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/21> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Jurong West" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "86000"^^<http://www.w3.org/2001/XMLSchema#double> , "103000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/22> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Jurong West" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "138000"^^<http://www.w3.org/2001/XMLSchema#double> , "173000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/23> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Jurong West" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "223000"^^<http://www.w3.org/2001/XMLSchema#double> , "266000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/24> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Choa Chu Kang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "83000"^^<http://www.w3.org/2001/XMLSchema#double> , "104000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/25> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Choa Chu Kang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "128000"^^<http://www.w3.org/2001/XMLSchema#double> , "172000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/26> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Choa Chu Kang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "212000"^^<http://www.w3.org/2001/XMLSchema#double> , "275000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/27> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Panjang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "72000"^^<http://www.w3.org/2001/XMLSchema#double> , "94000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/28> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Panjang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "125000"^^<http://www.w3.org/2001/XMLSchema#double> , "157000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/29> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Panjang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "210000"^^<http://www.w3.org/2001/XMLSchema#double> , "250000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/30> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "141000"^^<http://www.w3.org/2001/XMLSchema#double> , "175000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/31> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "228000"^^<http://www.w3.org/2001/XMLSchema#double> , "288000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/32> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "74000"^^<http://www.w3.org/2001/XMLSchema#double> , "98000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/33> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "116000"^^<http://www.w3.org/2001/XMLSchema#double> , "171000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/34> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "203000"^^<http://www.w3.org/2001/XMLSchema#double> , "271000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/35> <http://dbpedia.org/ontology/Year> "2009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "281000"^^<http://www.w3.org/2001/XMLSchema#double> , "352000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/36> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "150000"^^<http://www.w3.org/2001/XMLSchema#double> , "237000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/37> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "243000"^^<http://www.w3.org/2001/XMLSchema#double> , "376000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/38> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "330000"^^<http://www.w3.org/2001/XMLSchema#double> , "458000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/39> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Jurong West" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "168000"^^<http://www.w3.org/2001/XMLSchema#double> , "199000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/40> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Jurong West" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "239000"^^<http://www.w3.org/2001/XMLSchema#double> , "325000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/41> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Jurong West" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "298000"^^<http://www.w3.org/2001/XMLSchema#double> , "391000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/42> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Panjang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "83000"^^<http://www.w3.org/2001/XMLSchema#double> , "119000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/43> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Panjang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "143000"^^<http://www.w3.org/2001/XMLSchema#double> , "191000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/44> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Panjang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "226000"^^<http://www.w3.org/2001/XMLSchema#double> , "312000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/45> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Panjang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "298000"^^<http://www.w3.org/2001/XMLSchema#double> , "398000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/46> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "78000"^^<http://www.w3.org/2001/XMLSchema#double> , "105000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/47> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "136000"^^<http://www.w3.org/2001/XMLSchema#double> , "168000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/48> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "224000"^^<http://www.w3.org/2001/XMLSchema#double> , "280000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/49> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "270000"^^<http://www.w3.org/2001/XMLSchema#double> , "328000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/50> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "68000"^^<http://www.w3.org/2001/XMLSchema#double> , "120000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/51> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "122000"^^<http://www.w3.org/2001/XMLSchema#double> , "232000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/52> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "201000"^^<http://www.w3.org/2001/XMLSchema#double> , "359000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/53> <http://dbpedia.org/ontology/Year> "2010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "279000"^^<http://www.w3.org/2001/XMLSchema#double> , "444000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/54> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "85000"^^<http://www.w3.org/2001/XMLSchema#double> , "111000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/55> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "150000"^^<http://www.w3.org/2001/XMLSchema#double> , "242000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/56> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "257000"^^<http://www.w3.org/2001/XMLSchema#double> , "390000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/57> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "335000"^^<http://www.w3.org/2001/XMLSchema#double> , "484000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/58> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Choa Chu Kang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "146000"^^<http://www.w3.org/2001/XMLSchema#double> , "172000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/59> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Choa Chu Kang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "229000"^^<http://www.w3.org/2001/XMLSchema#double> , "284000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/60> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Choa Chu Kang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "295000"^^<http://www.w3.org/2001/XMLSchema#double> , "364000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/61> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Panjang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "137000"^^<http://www.w3.org/2001/XMLSchema#double> , "189000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/62> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Panjang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "217000"^^<http://www.w3.org/2001/XMLSchema#double> , "298000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/63> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Panjang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "274000"^^<http://www.w3.org/2001/XMLSchema#double> , "386000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/64> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sembawang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "92000"^^<http://www.w3.org/2001/XMLSchema#double> , "116000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/65> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sembawang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "158000"^^<http://www.w3.org/2001/XMLSchema#double> , "191000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/66> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sembawang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "255000"^^<http://www.w3.org/2001/XMLSchema#double> , "310000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/67> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "83000"^^<http://www.w3.org/2001/XMLSchema#double> , "112000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/68> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "134000"^^<http://www.w3.org/2001/XMLSchema#double> , "220000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/69> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "225000"^^<http://www.w3.org/2001/XMLSchema#double> , "370000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/70> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "283000"^^<http://www.w3.org/2001/XMLSchema#double> , "456000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/71> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "156000"^^<http://www.w3.org/2001/XMLSchema#double> , "193000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/72> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "234000"^^<http://www.w3.org/2001/XMLSchema#double> , "296000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/73> <http://dbpedia.org/ontology/Year> "2011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "277000"^^<http://www.w3.org/2001/XMLSchema#double> , "381000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/74> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "104000"^^<http://www.w3.org/2001/XMLSchema#double> , "130000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/75> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "163000"^^<http://www.w3.org/2001/XMLSchema#double> , "247000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/76> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "260000"^^<http://www.w3.org/2001/XMLSchema#double> , "379000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/77> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "326000"^^<http://www.w3.org/2001/XMLSchema#double> , "485000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/78> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Choa Chu Kang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "99000"^^<http://www.w3.org/2001/XMLSchema#double> , "121000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/79> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Choa Chu Kang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "138000"^^<http://www.w3.org/2001/XMLSchema#double> , "182000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/80> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Choa Chu Kang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "223000"^^<http://www.w3.org/2001/XMLSchema#double> , "309000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/81> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Choa Chu Kang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "284000"^^<http://www.w3.org/2001/XMLSchema#double> , "385000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/82> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "248000"^^<http://www.w3.org/2001/XMLSchema#double> , "312000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/83> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "308000"^^<http://www.w3.org/2001/XMLSchema#double> , "381000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/84> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "151000"^^<http://www.w3.org/2001/XMLSchema#double> , "264000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/85> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "251000"^^<http://www.w3.org/2001/XMLSchema#double> , "403000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/86> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "304000"^^<http://www.w3.org/2001/XMLSchema#double> , "499000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/87> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "170000"^^<http://www.w3.org/2001/XMLSchema#double> , "197000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/88> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "264000"^^<http://www.w3.org/2001/XMLSchema#double> , "320000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/89> <http://dbpedia.org/ontology/Year> "2012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "331000"^^<http://www.w3.org/2001/XMLSchema#double> , "388000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/90> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "81000"^^<http://www.w3.org/2001/XMLSchema#double> , "141000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/91> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "176000"^^<http://www.w3.org/2001/XMLSchema#double> , "232000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/92> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "279000"^^<http://www.w3.org/2001/XMLSchema#double> , "377000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/93> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "365000"^^<http://www.w3.org/2001/XMLSchema#double> , "495000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/94> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Choa Chu Kang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "140000"^^<http://www.w3.org/2001/XMLSchema#double> , "172000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/95> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Choa Chu Kang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "240000"^^<http://www.w3.org/2001/XMLSchema#double> , "288000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/96> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Choa Chu Kang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "308000"^^<http://www.w3.org/2001/XMLSchema#double> , "372000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/97> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "73000"^^<http://www.w3.org/2001/XMLSchema#double> , "118000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/98> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "133000"^^<http://www.w3.org/2001/XMLSchema#double> , "183000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/99> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "223000"^^<http://www.w3.org/2001/XMLSchema#double> , "298000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/100> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "276000"^^<http://www.w3.org/2001/XMLSchema#double> , "369000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/101> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sembawang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "70000"^^<http://www.w3.org/2001/XMLSchema#double> , "109000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/102> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sembawang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "138000"^^<http://www.w3.org/2001/XMLSchema#double> , "177000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/103> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sembawang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "225000"^^<http://www.w3.org/2001/XMLSchema#double> , "304000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/104> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sembawang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "313000"^^<http://www.w3.org/2001/XMLSchema#double> , "381000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/105> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "76000"^^<http://www.w3.org/2001/XMLSchema#double> , "124000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/106> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "150000"^^<http://www.w3.org/2001/XMLSchema#double> , "189000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/107> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "251000"^^<http://www.w3.org/2001/XMLSchema#double> , "329000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/108> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "358000"^^<http://www.w3.org/2001/XMLSchema#double> , "425000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/109> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "75000"^^<http://www.w3.org/2001/XMLSchema#double> , "118000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/110> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "150000"^^<http://www.w3.org/2001/XMLSchema#double> , "234000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/111> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "252000"^^<http://www.w3.org/2001/XMLSchema#double> , "320000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/112> <http://dbpedia.org/ontology/Year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "316000"^^<http://www.w3.org/2001/XMLSchema#double> , "393000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/113> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Batok" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "80000"^^<http://www.w3.org/2001/XMLSchema#double> , "142000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/114> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Batok" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "160000"^^<http://www.w3.org/2001/XMLSchema#double> , "211000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/115> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Batok" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "259000"^^<http://www.w3.org/2001/XMLSchema#double> , "344000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/116> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Bukit Batok" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "350000"^^<http://www.w3.org/2001/XMLSchema#double> , "457000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/117> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "82000"^^<http://www.w3.org/2001/XMLSchema#double> , "139000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/118> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "166000"^^<http://www.w3.org/2001/XMLSchema#double> , "212000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/119> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "278000"^^<http://www.w3.org/2001/XMLSchema#double> , "341000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/120> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Punggol" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "334000"^^<http://www.w3.org/2001/XMLSchema#double> , "429000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/121> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "72000"^^<http://www.w3.org/2001/XMLSchema#double> , "131000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/122> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "144000"^^<http://www.w3.org/2001/XMLSchema#double> , "197000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/123> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "229000"^^<http://www.w3.org/2001/XMLSchema#double> , "312000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/124> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Woodlands" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "308000"^^<http://www.w3.org/2001/XMLSchema#double> , "396000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/125> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sembawang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "73000"^^<http://www.w3.org/2001/XMLSchema#double> , "119000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/126> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sembawang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "148000"^^<http://www.w3.org/2001/XMLSchema#double> , "185000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/127> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sembawang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "236000"^^<http://www.w3.org/2001/XMLSchema#double> , "301000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/128> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sembawang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "na"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/129> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "90000"^^<http://www.w3.org/2001/XMLSchema#double> , "135000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/130> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "164000"^^<http://www.w3.org/2001/XMLSchema#double> , "208000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/131> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "267000"^^<http://www.w3.org/2001/XMLSchema#double> , "335000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/132> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Sengkang" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "na"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/133> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "2-room" ;
+	<http://dbpedia.org/ontology/price> "73000"^^<http://www.w3.org/2001/XMLSchema#double> , "123000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/134> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "3-room" ;
+	<http://dbpedia.org/ontology/price> "149000"^^<http://www.w3.org/2001/XMLSchema#double> , "177000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/135> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "4-room" ;
+	<http://dbpedia.org/ontology/price> "240000"^^<http://www.w3.org/2001/XMLSchema#double> , "318000"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/group03/ontologies/handson/136> <http://dbpedia.org/ontology/Year> "2014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	<http://dbpedia.org/ontology/Town> "Yishun" ;
+	<http://dbpedia.org/ontology/type> "5-room" ;
+	<http://dbpedia.org/ontology/price> "339000"^^<http://www.w3.org/2001/XMLSchema#double> , "409000"^^<http://www.w3.org/2001/XMLSchema#double> .
