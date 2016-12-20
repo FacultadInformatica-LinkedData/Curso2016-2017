@@ -1043,5 +1043,362 @@
     "description": "Rename column URL-ACTIVIDAD to WEB",
     "oldColumnName": "URL-ACTIVIDAD",
     "newColumnName": "WEB"
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column NOMBRE-INSTALACION to type http://dbpedia.org/ontology/ArchitecturalStructure",
+    "columnName": "NOMBRE-INSTALACION",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/ArchitecturalStructure",
+        "name": "dbo:ArchitecturalStructure"
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Estadio Vicente Calderon (http://dbpedia.org/resource/Estadio_Vicente_Calderon) for cells containing \"Estadio Vicente Calderon\" in column NOMBRE-INSTALACION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE-INSTALACION",
+    "similarValue": "Estadio Vicente Calderon",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Estadio_Vicente_Calderon",
+      "name": "Estadio Vicente Calderon",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Parque Juan Carlos I (http://dbpedia.org/resource/Juan_Carlos_I_Park) for cells containing \"Parque Juan Carlos I\" in column NOMBRE-INSTALACION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE-INSTALACION",
+    "similarValue": "Parque Juan Carlos I",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Juan_Carlos_I_Park",
+      "name": "Parque Juan Carlos I",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Barclaycard Center (http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid) for cells containing \"Barclaycard Center (antiguo Palacio de Deportes de la Comunidad de Madrid)\" in column NOMBRE-INSTALACION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE-INSTALACION",
+    "similarValue": "Barclaycard Center (antiguo Palacio de Deportes de la Comunidad de Madrid)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid",
+      "name": "Barclaycard Center",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Estadio de Vallecas (http://www.wikidata.org/entity/Q983806) for cells containing \"Estadio de Vallecas\" in column NOMBRE-INSTALACION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE-INSTALACION",
+    "similarValue": "Estadio de Vallecas",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q983806",
+      "name": "Estadio de Vallecas",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Estadio Santiago Bernabeu (http://dbpedia.org/resource/Estadio_Santiago_Bernabeu) for cells containing \"Estadio Santiago Bernabeu\" in column NOMBRE-INSTALACION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE-INSTALACION",
+    "similarValue": "Estadio Santiago Bernabeu",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Estadio_Santiago_Bernabeu",
+      "name": "Estadio Santiago Bernabeu",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Retiro (Madrid) (http://dbpedia.org/resource/Retiro_(Madrid)) for cells containing \"Jardines de El Buen Retiro\" in column NOMBRE-INSTALACION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE-INSTALACION",
+    "similarValue": "Jardines de El Buen Retiro",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Retiro_(Madrid)",
+      "name": "Retiro (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Estadio Santiago Bernabeu (http://dbpedia.org/resource/Estadio_Santiago_Bernabeu) for cells containing \"Estadio Santiago Bernabeu\" in column NOMBRE-INSTALACION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE-INSTALACION",
+    "similarValue": "Estadio Santiago Bernabeu",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Estadio_Santiago_Bernabeu",
+      "name": "Estadio Santiago Bernabeu",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ifema (http://dbpedia.org/resource/Hyphema) for cells containing \"Consorcio Institucion Ferial de Madrid (IFEMA)\" in column NOMBRE-INSTALACION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE-INSTALACION",
+    "similarValue": "Consorcio Institucion Ferial de Madrid (IFEMA)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Hyphema",
+      "name": "Ifema",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Dehesa de la Villa (http://www.wikidata.org/entity/Q4887686) for cells containing \"Centro de Educacion Ambiental de Dehesa de la Villa\" in column NOMBRE-INSTALACION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE-INSTALACION",
+    "similarValue": "Centro de Educacion Ambiental de Dehesa de la Villa",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q4887686",
+      "name": "Dehesa de la Villa",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Estadio Santiago Bernabeu (http://dbpedia.org/resource/Estadio_Santiago_Bernabeu) for cells containing \"Estadio Santiago Bernabeu\" in column NOMBRE-INSTALACION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE-INSTALACION",
+    "similarValue": "Estadio Santiago Bernabeu",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Estadio_Santiago_Bernabeu",
+      "name": "Estadio Santiago Bernabeu",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Actividad",
+              "curie": "ont:Actividad"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasPrecio",
+              "curie": "ont:hasPrecio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "PRECIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaInicio",
+              "curie": "ont:hasFechaInicio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "FECHA-INICIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaFin",
+              "curie": "ont:hasFechaFin",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "FECHA-FIN"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#startsHora",
+              "curie": "ont:startsHora",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#time",
+                "columnName": "HORA"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "URL-ACTIVIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#celebratesIn",
+              "curie": "ont:celebratesIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "cell.recon.match.id",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-INSTALACION",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+                    "curie": "ont:Instalacion"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasTipo",
+              "curie": "ont:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "TIPO"
+              }
+            }
+          ]
+        }
+      ]
+    }
   }
 ]
