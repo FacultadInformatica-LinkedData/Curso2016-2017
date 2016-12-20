@@ -1,0 +1,97 @@
+[
+  {
+    "op": "core/column-addition",
+    "description": "Create column Linea at index 1 based on column Station using expression grel:forEach(cell.cross(\"London TubeLines\",\"From Station\"),r,r.cells[\"Tube Line\"].value).join(\"|\")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Linea",
+    "columnInsertIndex": 1,
+    "baseColumnName": "Station",
+    "expression": "grel:forEach(cell.cross(\"London TubeLines\",\"From Station\"),r,r.cells[\"Tube Line\"].value).join(\"|\")",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Station to Nombre",
+    "oldColumnName": "Station",
+    "newColumnName": "Nombre"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column OS X to Coordenada-X",
+    "oldColumnName": "OS X",
+    "newColumnName": "Coordenada-X"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column OS Y to Coordenada-Y",
+    "oldColumnName": "OS Y",
+    "newColumnName": "Coordenada-Y"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Latitude to Latitud",
+    "oldColumnName": "Latitude",
+    "newColumnName": "Latitud"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Longitude to Longitud",
+    "oldColumnName": "Longitude",
+    "newColumnName": "Longitud"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Zone to Zona",
+    "oldColumnName": "Zone",
+    "newColumnName": "Zona"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Postcode to Codigo Postal",
+    "oldColumnName": "Postcode",
+    "newColumnName": "Codigo Postal"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Estaciones Adyacentes at index 1 based on column Nombre using expression grel:forEach(cell.cross(\"London TubeLines\",\"From Station\"),r,r.cells[\"To Station\"].value).join(\" | \") + \" | \" + \n    forEach(cell.cross(\"London TubeLines\",\"To Station\"),r,r.cells[\"From Station\"].value).join(\" | \")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Estaciones Adyacentes",
+    "columnInsertIndex": 1,
+    "baseColumnName": "Nombre",
+    "expression": "grel:forEach(cell.cross(\"London TubeLines\",\"From Station\"),r,r.cells[\"To Station\"].value).join(\" | \") + \" | \" + \n    forEach(cell.cross(\"London TubeLines\",\"To Station\"),r,r.cells[\"From Station\"].value).join(\" | \")",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Estaciones Adyacentes to Paradas Adyacentes",
+    "oldColumnName": "Estaciones Adyacentes",
+    "newColumnName": "Paradas Adyacentes"
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "value",
+          "selectBlank": true,
+          "selection": [],
+          "selectError": false,
+          "invert": false,
+          "name": "Linea",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "Linea"
+        }
+      ]
+    }
+  }
+]

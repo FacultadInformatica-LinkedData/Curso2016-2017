@@ -1,0 +1,3105 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 3",
+    "columnName": "Column 3"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 4",
+    "columnName": "Column 4"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 5",
+    "columnName": "Column 5"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 6",
+    "columnName": "Column 6"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 7",
+    "columnName": "Column 7"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 8",
+    "columnName": "Column 8"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 12",
+    "columnName": "Column 12"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 13",
+    "columnName": "Column 13"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 14",
+    "columnName": "Column 14"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 15",
+    "columnName": "Column 15"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 16",
+    "columnName": "Column 16"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 17",
+    "columnName": "Column 17"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 20",
+    "columnName": "Column 20"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 27",
+    "columnName": "Column 27"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 28",
+    "columnName": "Column 28"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 29",
+    "columnName": "Column 29"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 30",
+    "columnName": "Column 30"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 31",
+    "columnName": "Column 31"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 2 to Nombre",
+    "oldColumnName": "Column 2",
+    "newColumnName": "Nombre"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 9 to Url",
+    "oldColumnName": "Column 9",
+    "newColumnName": "Url"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 10 to Nombre via",
+    "oldColumnName": "Column 10",
+    "newColumnName": "Nombre via"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column",
+    "columnName": "Column"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 11 to Tipo via",
+    "oldColumnName": "Column 11",
+    "newColumnName": "Tipo via"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 18 to Localidad",
+    "oldColumnName": "Column 18",
+    "newColumnName": "Localidad"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Nombre to NOMBRE",
+    "oldColumnName": "Nombre",
+    "newColumnName": "NOMBRE"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Url to CONTENT-URL",
+    "oldColumnName": "Url",
+    "newColumnName": "CONTENT-URL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Nombre via to NOMBRE-VIA",
+    "oldColumnName": "Nombre via",
+    "newColumnName": "NOMBRE-VIA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Tipo via to CLASE-VIAL",
+    "oldColumnName": "Tipo via",
+    "newColumnName": "CLASE-VIAL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Localidad to LOCALIDAD",
+    "oldColumnName": "Localidad",
+    "newColumnName": "LOCALIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 19 to PROVINCIA",
+    "oldColumnName": "Column 19",
+    "newColumnName": "PROVINCIA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 21 to BARRIO",
+    "oldColumnName": "Column 21",
+    "newColumnName": "BARRIO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 22 to DISTRITO",
+    "oldColumnName": "Column 22",
+    "newColumnName": "DISTRITO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 23 to COORDENADA-X",
+    "oldColumnName": "Column 23",
+    "newColumnName": "COORDENADA-X"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 24 to COORDENADA-Y",
+    "oldColumnName": "Column 24",
+    "newColumnName": "COORDENADA-Y"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 25 to LATITUD",
+    "oldColumnName": "Column 25",
+    "newColumnName": "LATITUD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 26 to LONGITUD",
+    "oldColumnName": "Column 26",
+    "newColumnName": "LONGITUD"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column NOMBRE-VIA using expression grel:cells[\"CLASE-VIAL\"].value+\" \"+value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE-VIA",
+    "expression": "grel:cells[\"CLASE-VIAL\"].value+\" \"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column CLASE-VIAL",
+    "columnName": "CLASE-VIAL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column NOMBRE-VIA to CALLE",
+    "oldColumnName": "NOMBRE-VIA",
+    "newColumnName": "CALLE"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CONTENT-URL"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInCalle",
+              "curie": "ont:isInCalle",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CALLE",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInLocalidad",
+              "curie": "ont:isInLocalidad",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInProvincia",
+              "curie": "ont:isInProvincia",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "PROVINCIA"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInBarrio",
+              "curie": "ont:isInBarrio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInDistrito",
+              "curie": "ont:isInDistrito",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaX",
+              "curie": "ont:hasCoordenadaX",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "COORDENADA-X"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaY",
+              "curie": "ont:hasCoordenadaY",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "COORDENADA-Y"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLatitud",
+              "curie": "ont:hasLatitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LATITUD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLongitud",
+              "curie": "ont:hasLongitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LONGITUD"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CONTENT-URL"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInCalle",
+              "curie": "ont:isInCalle",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CALLE",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Calle",
+                    "curie": "ont:Calle"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInLocalidad",
+              "curie": "ont:isInLocalidad",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Localidad",
+                    "curie": "ont:Localidad"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInProvincia",
+              "curie": "ont:isInProvincia",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "PROVINCIA",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Provincia",
+                    "curie": "ont:Provincia"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInBarrio",
+              "curie": "ont:isInBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInDistrito",
+              "curie": "ont:isInDistrito",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaX",
+              "curie": "ont:hasCoordenadaX",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "COORDENADA-X"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaY",
+              "curie": "ont:hasCoordenadaY",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "COORDENADA-Y"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLatitud",
+              "curie": "ont:hasLatitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LATITUD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLongitud",
+              "curie": "ont:hasLongitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LONGITUD"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+              "curie": "ont:Instalacion"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CONTENT-URL"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInCalle",
+              "curie": "ont:isInCalle",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CALLE",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Calle",
+                    "curie": "ont:Calle"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInLocalidad",
+              "curie": "ont:isInLocalidad",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Localidad",
+                    "curie": "ont:Localidad"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInProvincia",
+              "curie": "ont:isInProvincia",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "PROVINCIA",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Provincia",
+                    "curie": "ont:Provincia"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInBarrio",
+              "curie": "ont:isInBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInDistrito",
+              "curie": "ont:isInDistrito",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaX",
+              "curie": "ont:hasCoordenadaX",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "COORDENADA-X"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaY",
+              "curie": "ont:hasCoordenadaY",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "COORDENADA-Y"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLatitud",
+              "curie": "ont:hasLatitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LATITUD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLongitud",
+              "curie": "ont:hasLongitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LONGITUD"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+              "curie": "ont:Instalacion"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "CONTENT-URL"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInCalle",
+              "curie": "ont:isInCalle",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CALLE",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Calle",
+                    "curie": "ont:Calle"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInLocalidad",
+              "curie": "ont:isInLocalidad",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Localidad",
+                    "curie": "ont:Localidad"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInProvincia",
+              "curie": "ont:isInProvincia",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "PROVINCIA",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Provincia",
+                    "curie": "ont:Provincia"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInBarrio",
+              "curie": "ont:isInBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInDistrito",
+              "curie": "ont:isInDistrito",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaX",
+              "curie": "ont:hasCoordenadaX",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linked-data-deportemadrid.org/group08/resource/string",
+                "columnName": "COORDENADA-X"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaY",
+              "curie": "ont:hasCoordenadaY",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "COORDENADA-Y"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLatitud",
+              "curie": "ont:hasLatitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "LATITUD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLongitud",
+              "curie": "ont:hasLongitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "LONGITUD"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+              "curie": "ont:Instalacion"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CONTENT-URL",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInCalle",
+              "curie": "ont:isInCalle",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CALLE",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Calle",
+                    "curie": "ont:Calle"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInLocalidad",
+              "curie": "ont:isInLocalidad",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Localidad",
+                    "curie": "ont:Localidad"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInProvincia",
+              "curie": "ont:isInProvincia",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "PROVINCIA",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Provincia",
+                    "curie": "ont:Provincia"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInBarrio",
+              "curie": "ont:isInBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInDistrito",
+              "curie": "ont:isInDistrito",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaX",
+              "curie": "ont:hasCoordenadaX",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linked-data-deportemadrid.org/group08/resource/string",
+                "columnName": "COORDENADA-X"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaY",
+              "curie": "ont:hasCoordenadaY",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "COORDENADA-Y"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLatitud",
+              "curie": "ont:hasLatitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "LATITUD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLongitud",
+              "curie": "ont:hasLongitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "LONGITUD"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column DISTRITO to type http://dbpedia.org/class/yago/WikicatDistrictsOfMadrid",
+    "columnName": "DISTRITO",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/WikicatDistrictsOfMadrid",
+        "name": "yago:WikicatDistrictsOfMadrid"
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Villaverde (Madrid) (http://dbpedia.org/resource/Villaverde_(Madrid)) for cells containing \"VILLAVERDE\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "VILLAVERDE",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Villaverde_(Madrid)",
+      "name": "Villaverde (Madrid)",
+      "score": 0.5263158082962036,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Chamartin (http://dbpedia.org/resource/Chamartin) for cells containing \"CHAMARTIN\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "CHAMARTIN",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Chamartin",
+      "name": "Chamartin",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Tetuan (Madrid) (http://dbpedia.org/resource/Tetuan_(Madrid)) for cells containing \"TETUAN\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "TETUAN",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Tetuan_(Madrid)",
+      "name": "Tetuan (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Latina (Madrid) (http://dbpedia.org/resource/Latina_(Madrid)) for cells containing \"LATINA\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "LATINA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Latina_(Madrid)",
+      "name": "Latina (Madrid)",
+      "score": 0.3999999761581421,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Retiro (Madrid) (http://dbpedia.org/resource/Retiro_(Madrid)) for cells containing \"RETIRO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "RETIRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Retiro_(Madrid)",
+      "name": "Retiro (Madrid)",
+      "score": 0.3999999761581421,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Centro (Madrid) (http://dbpedia.org/resource/Centro_(Madrid)) for cells containing \"CENTRO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "CENTRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Centro_(Madrid)",
+      "name": "Centro (Madrid)",
+      "score": 0.3999999761581421,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Salamanca (Madrid) (http://dbpedia.org/resource/Salamanca_(Madrid)) for cells containing \"SALAMANCA\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "SALAMANCA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Salamanca_(Madrid)",
+      "name": "Salamanca (Madrid)",
+      "score": 0.5,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"VICALVARO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "VICALVARO",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column LOCALIDAD to type ",
+    "columnName": "LOCALIDAD",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "",
+        "name": ""
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Madrid, Madrid (http://dbpedia.org/resource/Madrid,_Madrid) for cells containing \"MADRID\" in column LOCALIDAD",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LOCALIDAD",
+    "similarValue": "MADRID",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Madrid,_Madrid",
+      "name": "Madrid, Madrid",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column PROVINCIA to type ",
+    "columnName": "PROVINCIA",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "",
+        "name": ""
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Madrid, Madrid (http://dbpedia.org/resource/Madrid,_Madrid) for cells containing \"MADRID\" in column PROVINCIA",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "PROVINCIA",
+    "similarValue": "MADRID",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Madrid,_Madrid",
+      "name": "Madrid, Madrid",
+      "score": 0.4285714030265808,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column CALLE to type ",
+    "columnName": "CALLE",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "",
+        "name": ""
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column BARRIO to type http://dbpedia.org/class/yago/AdministrativeDistrict108491826",
+    "columnName": "BARRIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/AdministrativeDistrict108491826",
+        "name": "yago:AdministrativeDistrict108491826"
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Entrevias (http://dbpedia.org/resource/Entrevias) for cells containing \"ENTREVIAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ENTREVIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Entrevias",
+      "name": "Entrevias",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Moncloa-Aravaca (http://dbpedia.org/resource/Moncloa-Aravaca) for cells containing \"ARAVACA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ARAVACA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Moncloa-Aravaca",
+      "name": "Moncloa-Aravaca",
+      "score": 0.46666663885116577,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic San Isidro (http://www.wikidata.org/entity/Q155876) for cells containing \"SAN ISIDRO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SAN ISIDRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q155876",
+      "name": "San Isidro",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic San Isidro (http://dbpedia.org/resource/Category:San_Isidro) for cells containing \"SAN ISIDRO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SAN ISIDRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Category:San_Isidro",
+      "name": "San Isidro",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Casa de Campo (Madrid) (http://dbpedia.org/resource/Casa_de_Campo_(Madrid)) for cells containing \"CASA DE CAMPO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CASA DE CAMPO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Casa_de_Campo_(Madrid)",
+      "name": "Casa de Campo (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Almenara (Madrid) (http://dbpedia.org/resource/Almenara_(Madrid)) for cells containing \"ALMENARA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ALMENARA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Almenara_(Madrid)",
+      "name": "Almenara (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Delicias (Madrid) (http://dbpedia.org/resource/Las_Delicias_(Madrid)) for cells containing \"DELICIAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "DELICIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Las_Delicias_(Madrid)",
+      "name": "Delicias (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"LAS AGUILAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "LAS AGUILAS"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Alameda de Osuna (http://dbpedia.org/resource/Alameda_de_Osuna) for cells containing \"ALAMEDA DE OSUNA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ALAMEDA DE OSUNA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Alameda_de_Osuna",
+      "name": "Alameda de Osuna",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Palos de Moguer (Madrid) (http://dbpedia.org/resource/Palos_de_Moguer_(Madrid)) for cells containing \"PALOS DE MOGUER\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PALOS DE MOGUER",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Palos_de_Moguer_(Madrid)",
+      "name": "Palos de Moguer (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Legazpi, Spain (http://dbpedia.org/resource/Legazpi,_Spain) for cells containing \"LEGAZPI\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "LEGAZPI",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Legazpi,_Spain",
+      "name": "Legazpi, Spain",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Legazpi (http://dbpedia.org/resource/Legazpi) for cells containing \"LEGAZPI\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "LEGAZPI",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Legazpi",
+      "name": "Legazpi",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Nueva España (Madrid) (http://dbpedia.org/resource/Nueva_España_(Madrid)) for cells containing \"NUEVA ESPAÑA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "NUEVA ESPAÑA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Nueva_España_(Madrid)",
+      "name": "Nueva España (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Santa Eugenia (Madrid) (http://dbpedia.org/resource/Santa_Eugenia_(Madrid)) for cells containing \"SANTA EUGENIA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SANTA EUGENIA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Santa_Eugenia_(Madrid)",
+      "name": "Santa Eugenia (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Pacifico (http://dbpedia.org/resource/Pacifico) for cells containing \"PACIFICO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PACIFICO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Pacifico",
+      "name": "Pacifico",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Pacifico (Madrid Metro) (http://dbpedia.org/resource/Pacifico_(Madrid_Metro)) for cells containing \"PACIFICO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PACIFICO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Pacifico_(Madrid_Metro)",
+      "name": "Pacifico (Madrid Metro)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Concepcion (http://dbpedia.org/resource/Concepcion) for cells containing \"CONCEPCION\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CONCEPCION",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Concepcion",
+      "name": "Concepcion",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"CONCEPCION\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CONCEPCION"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Valdezarza (http://dbpedia.org/resource/Valdezarza) for cells containing \"VALDEZARZA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "VALDEZARZA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Valdezarza",
+      "name": "Valdezarza",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Los Rosales (Madrid) (http://dbpedia.org/resource/Los_Rosales_(Madrid)) for cells containing \"LOS ROSALES\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "LOS ROSALES",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Los_Rosales_(Madrid)",
+      "name": "Los Rosales (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Lucero (Madrid) (http://dbpedia.org/resource/Lucero_(Madrid)) for cells containing \"LUCERO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "LUCERO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Lucero_(Madrid)",
+      "name": "Lucero (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Rejas (Madrid) (http://dbpedia.org/resource/Rejas_(Madrid)) for cells containing \"REJAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "REJAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Rejas_(Madrid)",
+      "name": "Rejas (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"JUSTICIA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "JUSTICIA"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"LOS JERONIMOS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "LOS JERONIMOS"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Buenavista (http://www.wikidata.org/entity/Q103815) for cells containing \"BUENAVISTA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "BUENAVISTA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q103815",
+      "name": "Buenavista",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Fuente del Berro (http://dbpedia.org/resource/Fuente_del_Berro) for cells containing \"FUENTE DEL BERRO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "FUENTE DEL BERRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Fuente_del_Berro",
+      "name": "Fuente del Berro",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"BUENAVISTA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "BUENAVISTA"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"LOS CARMENES\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "LOS CARMENES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Pueblo Nuevo (Madrid) (http://dbpedia.org/resource/Pueblo_Nuevo_(Madrid)) for cells containing \"PUEBLO NUEVO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PUEBLO NUEVO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Pueblo_Nuevo_(Madrid)",
+      "name": "Pueblo Nuevo (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"APOSTOL SANTIAGO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "APOSTOL SANTIAGO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Barrio El Pilar (http://dbpedia.org/resource/Barrio_El_Pilar) for cells containing \"EL PILAR\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "EL PILAR",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Barrio_El_Pilar",
+      "name": "Barrio El Pilar",
+      "score": 0.503672186297134,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Guindalera (http://dbpedia.org/resource/Guindalera) for cells containing \"GUINDALERA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "GUINDALERA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Guindalera",
+      "name": "Guindalera",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Media Legua (Madrid) (http://dbpedia.org/resource/Media_Legua_(Madrid)) for cells containing \"MEDIA LEGUA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "MEDIA LEGUA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Media_Legua_(Madrid)",
+      "name": "Media Legua (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Mirasierra (http://dbpedia.org/resource/Mirasierra) for cells containing \"MIRASIERRA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "MIRASIERRA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Mirasierra",
+      "name": "Mirasierra",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Vista Alegre (Madrid) (http://dbpedia.org/resource/Vista_Alegre_(Madrid)) for cells containing \"VISTA ALEGRE\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "VISTA ALEGRE",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Vista_Alegre_(Madrid)",
+      "name": "Vista Alegre (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"MOSCARDO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "MOSCARDO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Pavones (http://dbpedia.org/resource/Pavones) for cells containing \"PAVONES\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PAVONES",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Pavones",
+      "name": "Pavones",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"IMPERIAL\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "IMPERIAL"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Vallecas (http://dbpedia.org/resource/Vallecas) for cells containing \"CASCO H.VALLECAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CASCO H.VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Vallecas",
+      "name": "Vallecas",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Canillas (metropolitana di Madrid) (http://dbpedia.org/resource/Canillas_(Madrid_Metro)) for cells containing \"CANILLAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CANILLAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Canillas_(Madrid_Metro)",
+      "name": "Canillas (metropolitana di Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Palomas (Madrid) (http://dbpedia.org/resource/Palomas_(Madrid)) for cells containing \"PALOMAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PALOMAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Palomas_(Madrid)",
+      "name": "Palomas (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic San Fermin (http://dbpedia.org/resource/San_Fermin) for cells containing \"SAN FERMIN\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SAN FERMIN",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/San_Fermin",
+      "name": "San Fermin",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Zofio (http://www.wikidata.org/entity/Q71751) for cells containing \"ZOFIO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ZOFIO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q71751",
+      "name": "Zofio",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic San Fermin-Orcasur (Madrid Metro) (http://dbpedia.org/resource/San_Fermin-Orcasur_(Madrid_Metro)) for cells containing \"ORCASUR\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ORCASUR",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/San_Fermin-Orcasur_(Madrid_Metro)",
+      "name": "San Fermin-Orcasur (Madrid Metro)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Orcasur (http://dbpedia.org/resource/Orcasur) for cells containing \"ORCASUR\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ORCASUR",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Orcasur",
+      "name": "Orcasur",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Acacias (Madrid) (http://dbpedia.org/resource/Las_Acacias_(Madrid)) for cells containing \"ACACIAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ACACIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Las_Acacias_(Madrid)",
+      "name": "Acacias (Madrid)",
+      "score": 0.4375,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic San Juan Bautista (http://www.wikidata.org/entity/Q165609) for cells containing \"SAN JUAN BAUTISTA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SAN JUAN BAUTISTA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q165609",
+      "name": "San Juan Bautista",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic San Juan Bautista (http://dbpedia.org/resource/San_Juan_Bautista) for cells containing \"SAN JUAN BAUTISTA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SAN JUAN BAUTISTA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/San_Juan_Bautista",
+      "name": "San Juan Bautista",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Valverde (http://dbpedia.org/resource/Valverde) for cells containing \"VALVERDE\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "VALVERDE",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Valverde",
+      "name": "Valverde",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Palomeras Sureste (http://dbpedia.org/resource/Palomeras_Sureste) for cells containing \"PALOMERAS SURESTE\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PALOMERAS SURESTE",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Palomeras_Sureste",
+      "name": "Palomeras Sureste",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Rosas (Madrid) (http://dbpedia.org/resource/Rosas_(Madrid)) for cells containing \"ROSAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ROSAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Rosas_(Madrid)",
+      "name": "Rosas (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic San Cristobal (http://dbpedia.org/resource/San_Cristobal) for cells containing \"SAN CRISTOBAL\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SAN CRISTOBAL",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/San_Cristobal",
+      "name": "San Cristobal",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic La Paz (http://dbpedia.org/resource/Category:La_Paz) for cells containing \"LA PAZ\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "LA PAZ",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Category:La_Paz",
+      "name": "La Paz",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Vallehermoso (Madrid) (http://dbpedia.org/resource/Vallehermoso_(Madrid)) for cells containing \"VALLEHERMOSO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "VALLEHERMOSO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Vallehermoso_(Madrid)",
+      "name": "Vallehermoso (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Palomeras Bajas (http://dbpedia.org/resource/Palomeras_Bajas) for cells containing \"PALOMERAS BAJAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PALOMERAS BAJAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Palomeras_Bajas",
+      "name": "Palomeras Bajas",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Vicalvaro (http://dbpedia.org/resource/Vicalvaro) for cells containing \"CASCO H.VICALVARO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CASCO H.VICALVARO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Vicalvaro",
+      "name": "Vicalvaro",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Castillejos (Madrid) (http://dbpedia.org/resource/Castillejos_(Madrid)) for cells containing \"CASTILLEJOS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CASTILLEJOS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Castillejos_(Madrid)",
+      "name": "Castillejos (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic San Andres (http://dbpedia.org/resource/San_Andres) for cells containing \"SAN ANDRES\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SAN ANDRES",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/San_Andres",
+      "name": "San Andres",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ciudad Jardin (http://dbpedia.org/resource/Ciudad_Jardin) for cells containing \"CIUDAD JARDIN\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CIUDAD JARDIN",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Ciudad_Jardin",
+      "name": "Ciudad Jardin",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ambroz (Madrid) (http://dbpedia.org/resource/Ambroz_(Madrid)) for cells containing \"AMBROZ\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "AMBROZ",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Ambroz_(Madrid)",
+      "name": "Ambroz (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Berruguete (Madrid) (http://dbpedia.org/resource/Berruguete_(Madrid)) for cells containing \"BERRUGUETE\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "BERRUGUETE",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Berruguete_(Madrid)",
+      "name": "Berruguete (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Hellin (http://dbpedia.org/resource/Hellin) for cells containing \"HELLIN\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "HELLIN",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Hellin",
+      "name": "Hellin",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column NOMBRE to type ",
+    "columnName": "NOMBRE",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "",
+        "name": ""
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-match-best-candidates",
+    "description": "Match each cell to its best recon candidate in column NOMBRE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "NOMBRE"
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column NOMBRE to type ",
+    "columnName": "NOMBRE",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia-esp",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "",
+        "name": ""
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+              "curie": "ont:Instalacion"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CONTENT-URL",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInCalle",
+              "curie": "ont:isInCalle",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CALLE",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Calle",
+                    "curie": "ont:Calle"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInLocalidad",
+              "curie": "ont:isInLocalidad",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Localidad",
+                    "curie": "ont:Localidad"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInProvincia",
+              "curie": "ont:isInProvincia",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "PROVINCIA",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Provincia",
+                    "curie": "ont:Provincia"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInBarrio",
+              "curie": "ont:isInBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInDistrito",
+              "curie": "ont:isInDistrito",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaX",
+              "curie": "ont:hasCoordenadaX",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linked-data-deportemadrid.org/group08/resource/string",
+                "columnName": "COORDENADA-X"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaY",
+              "curie": "ont:hasCoordenadaY",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "COORDENADA-Y"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLatitud",
+              "curie": "ont:hasLatitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "LATITUD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLongitud",
+              "curie": "ont:hasLongitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "LONGITUD"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+              "curie": "ont:Instalacion"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CONTENT-URL",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInCalle",
+              "curie": "ont:isInCalle",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CALLE",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Calle",
+                    "curie": "ont:Calle"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInLocalidad",
+              "curie": "ont:isInLocalidad",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "cell.recon.match.id",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Localidad",
+                    "curie": "ont:Localidad"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInProvincia",
+              "curie": "ont:isInProvincia",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "cell.recon.match.id",
+                "isRowNumberCell": false,
+                "columnName": "PROVINCIA",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Provincia",
+                    "curie": "ont:Provincia"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInBarrio",
+              "curie": "ont:isInBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "cell.recon.match.id",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInDistrito",
+              "curie": "ont:isInDistrito",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "cell.recon.match.id",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaX",
+              "curie": "ont:hasCoordenadaX",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linked-data-deportemadrid.org/group08/resource/string",
+                "columnName": "COORDENADA-X"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaY",
+              "curie": "ont:hasCoordenadaY",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "COORDENADA-Y"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLatitud",
+              "curie": "ont:hasLatitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "LATITUD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLongitud",
+              "curie": "ont:hasLongitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "LONGITUD"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  }
+]

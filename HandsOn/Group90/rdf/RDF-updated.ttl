@@ -1,0 +1,392 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix Camara: <> .
+
+
+<http://localhost:3333/724> <http://www.semanticweb.org/g90/ontology#idElem> "724" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "ALBERTO AGUILERA - BALTASAR GRACIÁN" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "CHAMBERÍ" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "439802.0477" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4475938.238" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/CHAMBERÍ> owl:sameAs <http://es.dbpedia.org/resource/Chamberí> .
+
+<http://localhost:3333/Comunidad+de+Madrid> owl:sameAs "http://dbpedia.org/resource/Community_of_Madrid" .
+
+<http://localhost:3333/1466> <http://www.semanticweb.org/g90/ontology#idElem> "1466" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "ALCALA - SAN ROMUALDO" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "SAN BLAS" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "447181.7825" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4477169.36" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/SAN+BLAS> owl:sameAs <http://es.dbpedia.org/resource/San_Blas_-_Canillejas> .
+
+<http://localhost:3333/438> <http://www.semanticweb.org/g90/ontology#idElem> "438" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "ARROYO DE POZUELO 99" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "0" ;
+	<https://schema.org/Place> "ARAVACA" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "433729.4745" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4478469.921" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/ARAVACA> owl:sameAs <http://dbpedia.org/resource/Moncloa-Aravaca> .
+
+<http://localhost:3333/1467> <http://www.semanticweb.org/g90/ontology#idElem> "1467" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "ASCAO - EMILIO FERRARI" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "PUEBLO NUEVO" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "445817.4959" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4475949.878" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/PUEBLO+NUEVO> owl:sameAs <http://es.dbpedia.org/resource/Pueblo_Nuevo_(Madrid)> .
+
+<http://localhost:3333/1471> <http://www.semanticweb.org/g90/ontology#idElem> "1471" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. AMERICA - CARTAGENA" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "CANILLEJAS" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "443037.8757" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4476937.063" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/CANILLEJAS> owl:sameAs <http://dbpedia.org/resource/San_Blas_(Madrid)> .
+
+<http://localhost:3333/832> <http://www.semanticweb.org/g90/ontology#idElem> "832" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. ANDALUCÍA - ALCOCER" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "VILLAVERDE" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "441255.4423" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4467117.416" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/VILLAVERDE> owl:sameAs <http://dbpedia.org/resource/Villaverde_(Madrid)> .
+
+<http://localhost:3333/542> <http://www.semanticweb.org/g90/ontology#idElem> "542" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. ANDALUCÍA - METRO SAN CRISTOBAL" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "VILLAVERDE" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "441266.4744" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4466126.885" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/833> <http://www.semanticweb.org/g90/ontology#idElem> "833" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. ANDALUCÍA - UNANIMIDAD" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "0" ;
+	<https://schema.org/Place> "VILLAVERDE" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "441230.8686" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4468206.487" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/109> <http://www.semanticweb.org/g90/ontology#idElem> "109" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. CARDENAL HERRERA ORIA, 83" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "EL PILAR" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "440699.5103" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4482498.001" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/EL+PILAR> owl:sameAs <http://es.dbpedia.org/resource/El_Pilar_(Madrid)> .
+
+<http://localhost:3333/1469> <http://www.semanticweb.org/g90/ontology#idElem> "1469" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. CIUDAD BARCELONA - MENÉNDEZ PELAYO" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "ATOCHA" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "442375.6922" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4473043.022" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/ATOCHA> owl:sameAs <http://es.dbpedia.org/resource/Atocha_(Madrid)> .
+
+<http://localhost:3333/834> <http://www.semanticweb.org/g90/ontology#idElem> "834" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. DE CORDOBA - GTA CADIZ" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "0" ;
+	<https://schema.org/Place> "USERA" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "440779.672" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4471187.907" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/USERA> owl:sameAs <http://es.dbpedia.org/resource/Usera> .
+
+<http://localhost:3333/1474> <http://www.semanticweb.org/g90/ontology#idElem> "1474" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. DE LA PESETA - CTRA  BARRIO FORTUNA" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "CARABANCHEL" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "435089.9552" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4469256.882" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/CARABANCHEL> owl:sameAs <http://es.dbpedia.org/resource/Carabanchel> .
+
+<http://localhost:3333/1546> <http://www.semanticweb.org/g90/ontology#idElem> "1546" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. DE LA PESETA - LUIS DE ORO" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "0" ;
+	<https://schema.org/Place> "CARABANCHEL" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "436811.8099" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4468572.934" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/1545> <http://www.semanticweb.org/g90/ontology#idElem> "1545" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. DE LA PESETA, 105" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "0" ;
+	<https://schema.org/Place> "CARABANCHEL" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "436759.9991" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4468528.967" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/1544> <http://www.semanticweb.org/g90/ontology#idElem> "1544" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. DE LA PESETA, 91 - CL DINERO" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "0" ;
+	<https://schema.org/Place> "CARABANCHEL" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "436464.8234" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4468476.974" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/1543> <http://www.semanticweb.org/g90/ontology#idElem> "1543" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. DE LA PESETA, 92" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "0" ;
+	<https://schema.org/Place> "CARABANCHEL" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "436419.3977" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4468435.562" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/436> <http://www.semanticweb.org/g90/ontology#idElem> "436" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. DE LOS POBLADOS, 45" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "CARABANCHEL" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "435625.1432" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4470868.75" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/539> <http://www.semanticweb.org/g90/ontology#idElem> "539" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. FILIPINAS, 18" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "VALLEHERMOSO" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "439884.1688" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4477054.816" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/VALLEHERMOSO> owl:sameAs <http://es.dbpedia.org/resource/Vallehermoso_(Madrid)> .
+
+<http://localhost:3333/541> <http://www.semanticweb.org/g90/ontology#idElem> "541" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. ILUSTRACIîN - BETANZOS" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "EL PILAR" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "439754.0676" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4481542.65" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/536> <http://www.semanticweb.org/g90/ontology#idElem> "536" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. LOGROÑO, 44" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "BARAJAS" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "449773.1894" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4479216.155" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/BARAJAS> owl:sameAs <http://dbpedia.org/resource/Barajas_(district)> .
+
+<http://localhost:3333/1465> <http://www.semanticweb.org/g90/ontology#idElem> "1465" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. MARQUƒS CORBERA - RICARDO ORTIZ" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "PUEBLO NUEVO" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "444464.9538" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4475106.018" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/769> <http://www.semanticweb.org/g90/ontology#idElem> "769" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. MEDITERRÁNEO, 32" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "ATOCHA" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "442995.1915" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4473348.817" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/437> <http://www.semanticweb.org/g90/ontology#idElem> "437" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "AVDA. POBLADOS ESQ ABRANTES F 134" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "0" ;
+	<https://schema.org/Place> "CARABANCHEL" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "437645.4342" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4469730.357" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/535> <http://www.semanticweb.org/g90/ontology#idElem> "535" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "CAMINO DE LOS VINATEROS, 47" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "MORATALAZ" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "444553.4825" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4473759.003" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/MORATALAZ> owl:sameAs <http://es.dbpedia.org/resource/Moratalaz> .
+
+<http://localhost:3333/718> <http://www.semanticweb.org/g90/ontology#idElem> "718" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "CARDENAL HERRERA ORIA - LA MASÓ" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "EL PILAR" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "439610.2398" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4481850.247" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/1547> <http://www.semanticweb.org/g90/ontology#idElem> "1547" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "CEA BERMÚDEZ - VALLEHERMOSO" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "VALLEHERMOSO" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "440005.0527" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4476917.274" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/1472> <http://www.semanticweb.org/g90/ontology#idElem> "1472" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "CNO BARRIAL - FDO LAZARO CARRETER" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "ARAVACA" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "432850.3669" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4479575.82" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/1473> <http://www.semanticweb.org/g90/ontology#idElem> "1473" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "CTRA. CARABANCHEL ARAVACA - VILLAVICIOSA" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "CARABANCHEL" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "434397.3029" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4472312.577" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/722> <http://www.semanticweb.org/g90/ontology#idElem> "722" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "FRANCISCO PI Y MARGALL ESQ. ANA DE AUSTRIA" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "SANCHINARRO" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "444201.4523" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4482672.029" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/SANCHINARRO> owl:sameAs <http://es.dbpedia.org/resource/Sanchinarro> .
+
+<http://localhost:3333/770> <http://www.semanticweb.org/g90/ontology#idElem> "770" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "FRANCISCO SILVELA, 62" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "SALAMANCA" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "442856.036" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4476488.386" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/SALAMANCA> owl:sameAs <http://es.dbpedia.org/resource/Salamanca_(Madrid)> .
+
+<http://localhost:3333/720> <http://www.semanticweb.org/g90/ontology#idElem> "720" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "FUENTE CARRANTONA - HACIENDA PAVONES" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "MORATALAZ" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "446104.0126" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4472612.569" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/1475> <http://www.semanticweb.org/g90/ontology#idElem> "1475" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "GRAL RICARDOS - PSO QUINCE DE MAYO" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "CARABANCHEL" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "439232.87" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4472262.784" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/220> <http://www.semanticweb.org/g90/ontology#idElem> "220" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "HERMANOS GARCÍA NOBLEJAS, 123" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "SAN BLAS" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "447068.5387" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4474806.6" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/728> <http://www.semanticweb.org/g90/ontology#idElem> "728" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "JOAQUIN COSTA - VELAZQUEZ" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "CANILLEJAS" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "442175.511" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4477326" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/1468> <http://www.semanticweb.org/g90/ontology#idElem> "1468" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "JOSE ABASCAL - SANTA ENGRACIA" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "VALLEHERMOSO" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "440641.2019" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4476871.768" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/768> <http://www.semanticweb.org/g90/ontology#idElem> "768" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "MENÉNDEZ PELAYO - NIÑO JESÚS" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "ATOCHA" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "442623.9475" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4474210.599" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/1470> <http://www.semanticweb.org/g90/ontology#idElem> "1470" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "MONFORTE DE LEMOS - FINISTERRE" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "EL PILAR" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "440583.8452" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4481460.377" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/618> <http://www.semanticweb.org/g90/ontology#idElem> "618" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "O'DONNELL CARRIL CENTRAL" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "SALAMANCA" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "443425.2624" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4474912.937" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/439> <http://www.semanticweb.org/g90/ontology#idElem> "439" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "PO CASTELLANA, 105" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "CHAMARTÍN" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "441555.6718" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4478658.033" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/CHAMARTÍN> owl:sameAs <http://es.dbpedia.org/resource/Chamartín> .
+
+<http://localhost:3333/545> <http://www.semanticweb.org/g90/ontology#idElem> "545" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "PO CASTELLANA, 167" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "CHAMARTÍN" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "441624.3683" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4479491.712" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/746> <http://www.semanticweb.org/g90/ontology#idElem> "746" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "SINESIO DELGADO GTA P. CEBRERO" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "EL PILAR" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "439824.6063" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4480513.914" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/538> <http://www.semanticweb.org/g90/ontology#idElem> "538" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "VENTISQUERO DE LA CONDESA, 42" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "EL PILAR" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "439312.0246" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4483051.503" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/727> <http://www.semanticweb.org/g90/ontology#idElem> "727" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "VIA LUSITANA - AGUACATE" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "0" ;
+	<https://schema.org/Place> "CARABANCHEL" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "437153.7204" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4468958.764" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .
+
+<http://localhost:3333/734> <http://www.semanticweb.org/g90/ontology#idElem> "734" ;
+	<http://www.semanticweb.org/g90/ontology#nombre> "VIA LUSITANA - PL FERNANDEZ LADREDA" ;
+	<http://www.semanticweb.org/g90/ontology#activo> "1" ;
+	<https://schema.org/Place> "CARABANCHEL" ;
+	<http://www.semanticweb.org/g90/ontology#utm_x> "439132.5335" ;
+	<http://www.semanticweb.org/g90/ontology#utm_y> "4470910.903" ;
+	<https://schema.org/AdministrativeArea> "Comunidad de Madrid" .

@@ -17,3 +17,46 @@ License.
 "If the City claims or seeks to protect any patent, copyright, or other intellectual property rights in any Data, the website will so indicate in the file containing such Data or on the page from which such Data is accessed".
 
 The datasets are under the CreativeCommons criteria and the information below is provided by the Department of Public Health.
+
+<h2 style=" text-align:center">Naming Strategy</h2>
+
+<p>URI:</p>
+<ul>
+<li>Use HTTP URIs</li>
+<li>A URI structure will not contain anything that could change(URIs should be stable and reliable)</li>
+<li>Don&rsquo;t put too much semantics in the URI (Berners-Lee, 1998)</li>
+<li>Don&acute;t bind URIs to some classification or topic (you may change your point of view) (Berners-Lee, 1998)</li>
+<li>Use short URIs as much as possible (Th&eacute;reaux, 2003)</li>
+<li>Choose a case policy (all lowercase or first letter uppercase) (Th&eacute;reaux, 2003)</li>
+<li>Use lower case and the singular form (Cabinet Office, 2009)</li>
+<li>Separate words by hyphens (Cabinet Office, 2009)</li>
+<li>Where the reference local name may change, or becomes overly verbose, a code may be more appropriate (Cabinet Office, 2009)</li>
+</ul>
+
+<p>Label:</p>
+<ul>
+<li>Use the singular form for nouns</li>
+<li>Use space as word delimiters, or follow your own language</li>
+</ul>
+<p><strong>Example</strong>:&nbsp; <em>skos:prefLabel "financial asset"@en conventions</em></p>
+<ul>
+<li>Use upper or lower case according to your own language conventions</li>
+</ul>
+<p><strong>Examples</strong>: <em>rdfs:label "autor"@es</em></p>
+<p><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rdfs:label "Miguel de Cervantes"@es</em></p>
+<ul>
+<li>Add as many labels as needed for classes and properties:</li>
+</ul>
+<p><strong>Examples</strong>: <em>ex:FAOlabel1 rdf:type skosxl:Label; </em></p>
+<p><em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;skosxl:literalForm "Food and Agriculture Organization"@en. </em></p>
+<p><em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ex:FAOlabel2 rdf:type skosxl:Label; </em></p>
+<p><em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;skosxl:literalForm "FAO"@en</em></p>
+
+<p>Raiz del proyecto: http://semanticweb.es/group14/</p>
+
+<p>La estrategia seguida para nombrar los recursos se basa en
+	http://www.semanticweb.org/group14/ontologies/handson#resource para clases
+	http://www.semanticweb.org/group14/ontologies/handson/individual para individuos
+	</p>
+	<p>Ejemplo de clase: http://www.semanticweb.org/group14/ontologies/handson#Business</p>
+	<p>Ejemplo de individuo: http://www.semanticweb.org/group14/ontologies/handson/hadInspection</p>

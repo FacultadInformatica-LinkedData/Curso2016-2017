@@ -1,0 +1,206 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g10: <http://smartsevilla.es/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://smartsevilla.es/resources/museos/MuseodeArtesyCostumbresPopulares> a g10:Museo ;
+	g10:longitud "-5.987839"^^<xsd:float> ;
+	g10:latitud "37.372076"^^<xsd:float> ;
+	g10:long_name "Museo de Artes y Costumbres Populares"^^<xsd:string> ;
+	g10:direccion "Plaza de Amtrica, 3 - Pabellon Mudejar, Parque de Maria Luisa"^^<xsd:string> ;
+	g10:telefono "954712391"^^<xsd:string> ;
+	g10:url <http://www.museosdeandalucia.es/culturaydeporte/museos/MACSE/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FMuseo+de+las+Artes+y+Costumbres+Populares.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseoCasadeMurillo> a g10:Museo ;
+	g10:longitud "-5.988946"^^<xsd:float> ;
+	g10:latitud "37.385693"^^<xsd:float> ;
+	g10:long_name "Museo Casa de Murillo"^^<xsd:string> ;
+	g10:direccion "C/ Santa Teresa, 8"^^<xsd:string> ;
+	g10:telefono "955037263"^^<xsd:string> ;
+	g10:url <http://es.wikipedia.org/wiki/Museo_Casa_de_Murillo> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2Fmuseo+casa+murillo.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseodeBaileFlamenco> a g10:Museo ;
+	g10:longitud "-5.99116"^^<xsd:float> ;
+	g10:latitud "37.389135"^^<xsd:float> ;
+	g10:long_name "Museo de Baile Flamenco"^^<xsd:string> ;
+	g10:direccion "C/ Manuel Rojas Marcos, 3"^^<xsd:string> ;
+	g10:telefono "954340311"^^<xsd:string> ;
+	g10:url <http://www.museoflamenco.com/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FMuseo+de+Baile+Flamenco.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseodeBellasArtes> a g10:Museo ;
+	g10:longitud "-5.999737"^^<xsd:float> ;
+	g10:latitud "37.392623"^^<xsd:float> ;
+	g10:long_name "Museo de Bellas Artes"^^<xsd:string> ;
+	g10:direccion "Plaza del Museo, 9"^^<xsd:string> ;
+	g10:telefono "954786502"^^<xsd:string> ;
+	g10:url <http://www.juntadeandalucia.es/cultura/museobellasartessevilla> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FMuseo+de+Bellas+Artes.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseodeCarruajes> a g10:Museo ;
+	g10:longitud "-5.996786"^^<xsd:float> ;
+	g10:latitud "37.379431"^^<xsd:float> ;
+	g10:long_name "Museo de Carruajes"^^<xsd:string> ;
+	g10:direccion "Antiguo Instituto Hispano-Cubano - Plaza de Cuba, s/n"^^<xsd:string> ;
+	g10:telefono "954272604"^^<xsd:string> ;
+	g10:url <http://www.museodecarruajes.com/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FMuseo+de+Carruajes.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseodelaCiudad,ConventoSta.Clara,TorreD.Fadrique> a g10:Museo ;
+	g10:longitud "-5.996373"^^<xsd:float> ;
+	g10:latitud "37.400236"^^<xsd:float> ;
+	g10:long_name "Museo de la Ciudad, Convento Sta. Clara, Torre D. Fadrique"^^<xsd:string> ;
+	g10:direccion "C/ Santa Clara, 40"^^<xsd:string> ;
+	g10:telefono "954379905"^^<xsd:string> ;
+	g10:url <http://espaciosantaclara.org/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FMuseo+de+la+Ciudad+Convento+de+Santa+Clara.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseodelaCongregaciondeTerciariasFranciscanas> a g10:Museo ;
+	g10:longitud "-5.992611"^^<xsd:float> ;
+	g10:latitud "37.394413"^^<xsd:float> ;
+	g10:long_name "Museo de la Congregacion de Terciarias Franciscanas"^^<xsd:string> ;
+	g10:direccion "Hospital del Santisimo Cristo de los Dolores / Plaza del Pozon Santo, 1"^^<xsd:string> ;
+	g10:telefono "954219430"^^<xsd:string> ;
+	g10:url <http://smartsevilla.es/resources/museos/+> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FMuseo+de+la+Congregacion+de+Terciarias+Franciscanas.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseodelaRealesAtarazanas> a g10:Museo ;
+	g10:longitud "-5.995907"^^<xsd:float> ;
+	g10:latitud "37.384523"^^<xsd:float> ;
+	g10:long_name "Museo de la Reales Atarazanas"^^<xsd:string> ;
+	g10:direccion "C/ Temprado, 1 esquina C/ Dos de Mayo"^^<xsd:string> ;
+	g10:telefono "954901957"^^<xsd:string> ;
+	g10:url <https://es.wikipedia.org/wiki/Atarazanas_Reales_de_Sevilla> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2Fmuseo+reales+atarazanas.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseodeMunecasyJuguetesAntiguos> a g10:Museo ;
+	g10:longitud "-5.990020771826719"^^<xsd:float> ;
+	g10:latitud "37.396310246251169"^^<xsd:float> ;
+	g10:long_name "Museo de Munecas y Juguetes Antiguos"^^<xsd:string> ;
+	g10:direccion "C/ Castellar, 43"^^<xsd:string> ;
+	g10:telefono "954387555"^^<xsd:string> ;
+	g10:url <http://smartsevilla.es/resources/museos/+> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FMuseo+de+Munecas+y+Juguetes+Antiguos.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseoMilitarRegional> a g10:Museo ;
+	g10:longitud "-5.986618"^^<xsd:float> ;
+	g10:latitud "37.378248"^^<xsd:float> ;
+	g10:long_name "Museo Militar Regional"^^<xsd:string> ;
+	g10:direccion "Plaza de Espana, Puerta de Aragon, Parque de Maria Luisa"^^<xsd:string> ;
+	g10:telefono "954938283"^^<xsd:string> ;
+	g10:url <http://www.ejercito.mde.es/unidades/Madrid/ihycm/Museos/sevilla.html> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FMuseo+Historico+Militar.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseoPalaciodelaCondesadeLebrija> a g10:Museo ;
+	g10:longitud "-5.993680699405634"^^<xsd:float> ;
+	g10:latitud "37.392284082963499"^^<xsd:float> ;
+	g10:long_name "Museo Palacio de la Condesa de Lebrija"^^<xsd:string> ;
+	g10:direccion "C/ Cuna, 8"^^<xsd:string> ;
+	g10:telefono "954227802"^^<xsd:string> ;
+	g10:url <http://www.palaciodelebrija.com/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FMuseo+Palacio+de+la+Condesa+de+Lebrija.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseoTaurinoyPza.TorosRealMaestranza> a g10:Museo ;
+	g10:longitud "-5.999038"^^<xsd:float> ;
+	g10:latitud "37.385866"^^<xsd:float> ;
+	g10:long_name "Museo Taurino y Pza. Toros Real Maestranza"^^<xsd:string> ;
+	g10:direccion "Paseo de Cristobal Colon, 12"^^<xsd:string> ;
+	g10:telefono "954224577"^^<xsd:string> ;
+	g10:url <http://www.realmaestranza.com/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2Fmuseo+taurino+y+plaza+de+toros+de+real+maestranza.jpg> .
+
+<http://smartsevilla.es/resources/museos/TesorodelaMacarena> a g10:Museo ;
+	g10:longitud "-5.989589"^^<xsd:float> ;
+	g10:latitud "37.402728"^^<xsd:float> ;
+	g10:long_name "Tesoro de la Macarena"^^<xsd:string> ;
+	g10:direccion "C/ Becquer, 1"^^<xsd:string> ;
+	g10:telefono "954901800"^^<xsd:string> ;
+	g10:url <http://www.hermandaddelamacarena.es/tesoro-de-la-macarena/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FTesoro+de+La+Macarena.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseoTesorodelTemploGranPoder> a g10:Museo ;
+	g10:longitud "-5.996442105487888"^^<xsd:float> ;
+	g10:latitud "37.397305140721699"^^<xsd:float> ;
+	g10:long_name "Museo Tesoro del Templo Gran Poder"^^<xsd:string> ;
+	g10:direccion "Plaza de San Lorenzo, 13"^^<xsd:string> ;
+	g10:telefono "954915686"^^<xsd:string> ;
+	g10:url <http://www.gran-poder.es/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FMuseo+Tesoro+del+Templo+del+Gran+Poder.jpg> .
+
+<http://smartsevilla.es/resources/museos/TorredelOro/MuseoNaval> a g10:Museo ;
+	g10:longitud "-5.996317"^^<xsd:float> ;
+	g10:latitud "37.382402"^^<xsd:float> ;
+	g10:long_name "Torre del Oro / Museo Naval"^^<xsd:string> ;
+	g10:direccion "Paseo de Crist/bal ColNn, s/n"^^<xsd:string> ;
+	g10:telefono "954222419"^^<xsd:string> ;
+	g10:url <http://www.armada.mde.es/ArmadaPortal/page/Portal/ArmadaEspannola/ciencia_museo/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FMuseo+Naval+Torre+del+Oro.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseodelaCeramicadeTriana> a g10:Museo ;
+	g10:longitud "-6.004654672374063"^^<xsd:float> ;
+	g10:latitud "37.385541769599378"^^<xsd:float> ;
+	g10:long_name "Museo de la Ceramica de Triana"^^<xsd:string> ;
+	g10:direccion "C/ San Jorge, 31"^^<xsd:string> ;
+	g10:telefono "955471422"^^<xsd:string> ;
+	g10:url <http://www.icas-sevilla.org/visita-el-centro-ceramica-triana/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2Fmuseo+de+la+ceramica+de+triana.jpg> .
+
+<http://smartsevilla.es/resources/museos/MuseodelcastillodeSanJorge> a g10:Museo ;
+	g10:longitud "-6.003353801003373"^^<xsd:float> ;
+	g10:latitud "37.385799644004024"^^<xsd:float> ;
+	g10:long_name "Museo del castillo de San Jorge"^^<xsd:string> ;
+	g10:direccion "Plaza del Altozano, s/n"^^<xsd:string> ;
+	g10:telefono "954332240"^^<xsd:string> ;
+	g10:url <http://www.icas-sevilla.org/visita-el-centro-ceramica-triana/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2Fmuseo+castillo+de+san+jorge.jpg> .
+
+<http://smartsevilla.es/resources/museos/Antiquarium> a g10:Museo ;
+	g10:longitud "-5.991908815134942"^^<xsd:float> ;
+	g10:latitud "37.39317959088519"^^<xsd:float> ;
+	g10:long_name "Antiquarium"^^<xsd:string> ;
+	g10:direccion "Plaza de la Encarnacion, s/n"^^<xsd:string> ;
+	g10:telefono "955471580"^^<xsd:string> ;
+	g10:url <http://antiquarium.icas-sevilla.org/antiquarium/el-espacio/> ;
+	g10:foto <http://sig.urbanismosevilla.org/sevilla.art/images/Museos/Antiquarium.jpg> .
+
+<http://smartsevilla.es/resources/museos/AcuariodeSevilla> a g10:Museo ;
+	g10:longitud "-5.991061237086621"^^<xsd:float> ;
+	g10:latitud "37.370575010264133"^^<xsd:float> ;
+	g10:long_name "Acuario de Sevilla"^^<xsd:string> ;
+	g10:direccion "Avda. Santiago Montoto s/n. Muelle de las Delicias"^^<xsd:string> ;
+	g10:telefono "955441541"^^<xsd:string> ;
+	g10:url <http://www.acuariosevilla.es/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FAcuario+de+Sevilla.JPG> .
+
+<http://smartsevilla.es/resources/museos/MuseoCasadelaCiencia> a g10:Museo ;
+	g10:longitud "-5.99118193649223"^^<xsd:float> ;
+	g10:latitud "37.377440651897643"^^<xsd:float> ;
+	g10:long_name "Museo Casa de la Ciencia"^^<xsd:string> ;
+	g10:direccion "Avenida de Chile, 2"^^<xsd:string> ;
+	g10:telefono "954232349"^^<xsd:string> ;
+	g10:url <http://www.casadelaciencia.csic.es/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FMuseo+Casa+de+las+Ciencias.jpg> .
+
+<http://smartsevilla.es/resources/museos/CentroAndaluzdeArteContemporaneo> a g10:Museo ;
+	g10:longitud "-6.009058859577123"^^<xsd:float> ;
+	g10:latitud "37.398499393584565"^^<xsd:float> ;
+	g10:long_name "Centro Andaluz de Arte Contemporaneo"^^<xsd:string> ;
+	g10:direccion "C/ Americo Vespucio, 2"^^<xsd:string> ;
+	g10:telefono "955037070"^^<xsd:string> ;
+	g10:url <http://www.caac.es/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FCentro+Andaluz+de+Arte+Contemporaneo.jpg> .
+
+<http://smartsevilla.es/resources/museos/PabellondelaNavegacion> a g10:Museo ;
+	g10:longitud "-6.007835772266362"^^<xsd:float> ;
+	g10:latitud "37.394275972059042"^^<xsd:float> ;
+	g10:long_name "Pabellon de la Navegacion"^^<xsd:string> ;
+	g10:direccion "Camino de los Descubrimientos, 2"^^<xsd:string> ;
+	g10:telefono "954043111"^^<xsd:string> ;
+	g10:url <http://www.pabellondelanavegacion.es/> ;
+	g10:foto <http://smartsevilla.es/resources/museos/http%3A%2F%2Fsig.urbanismosevilla.org%2Fsevilla.art%2Fimages%2FMuseos%2FPabellon+de+la+navegacion.jpg> .
