@@ -1,0 +1,558 @@
+@prefix ont: <http://www.linked-data-deportemadrid.org/group08/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://www.linked-data-deportemadrid.org/group08/resource/5+Carrera+y+Caminata+por+la+Diabetes> a ont:Actividad ;
+	ont:hasNombre "5 Carrera y Caminata por la Diabetes"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "10 Km : con chip propio 17, con chip alquilado 25"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-20 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-20 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "09:30"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://dbpedia.org/resource/Juan_Carlos_I_Park> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/5+Carrera+y+Caminata+por+la+Diabetes> ont:celebratesIn <http://dbpedia.org/resource/Juan_Carlos_I_Park> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletico+de+Madrid+-+FC+Rostov> a ont:Actividad ;
+	ont:hasNombre "Atletico de Madrid - FC Rostov"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio """Socios: 20 a 50 euros
+General: 40 a 100 euros
+VIP Socios: 40 a 400 euros
+VIP General: 40 a 400 euros"""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-01 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-01 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "20:45"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://dbpedia.org/resource/Estadio_Vicente_Calderon> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletico+de+Madrid+-+FC+Rostov> ont:celebratesIn <http://dbpedia.org/resource/Estadio_Vicente_Calderon> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletico+de+Madrid+-+Malaga+CF> a ont:Actividad ;
+	ont:hasNombre "Atletico de Madrid - Malaga CF"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio """Socios 30 a 80 euros; General 40 a 100 euros.
+VIP Socios 40 a 400 euros; VIP General 40 a 400 euros.
+"""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-10-29 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-10-29 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "18:30"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Estadio_Vicente_Calderon> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletico+de+Madrid+-+PSV+Eindhoven> a ont:Actividad ;
+	ont:hasNombre "Atletico de Madrid - PSV Eindhoven"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio """Socios: 35 a 125 euros
+General: 50 a 180 euros
+VIP Socios: 60 a 450 euros
+VIP General: 60 a 450 euros"""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-23 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-23 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "20:45"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Estadio_Vicente_Calderon> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletico+de+Madrid+-+RCD+Espanyol> a ont:Actividad ;
+	ont:hasNombre "Atletico de Madrid - RCD Espanyol"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Socios 30 a 80 euros; General 40 a 100 euros. VIP Socios 40 a 400 euros; VIP General 40 a 400 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-12-04 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-12-04 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Estadio_Vicente_Calderon> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletico+de+Madrid+-+Real+Betis> a ont:Actividad ;
+	ont:hasNombre "Atletico de Madrid - Real Betis"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Socios 30 a 80 euros; General 40 a 100 euros. VIP Socios 40 a 400 euros; VIP General 40 a 400 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2017-01-15 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2017-01-15 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Estadio_Vicente_Calderon> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletico+de+Madrid+-+Real+Madrid> a ont:Actividad ;
+	ont:hasNombre "Atletico de Madrid - Real Madrid"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio """Socios: 70 a 210 euros. General: de 90 a 260 euros. VIP Socios: de  300 a 700 euros. VIP General: de 300 a 700 euros.
+"""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-19 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-19 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "20:45"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Estadio_Vicente_Calderon> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletico+de+Madrid+-+UD+Las+Palmas> a ont:Actividad ;
+	ont:hasNombre "Atletico de Madrid - UD Las Palmas"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Socios 30 a 80 euros; General 40 a 100 euros. VIP Socios 40 a 400 euros; VIP General 40 a 400 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-12-18 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-12-18 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Estadio_Vicente_Calderon> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletismo.+I+Medio+Maraton+de+la+Mujer+de+Madrid> a ont:Actividad ;
+	ont:hasNombre "Atletismo. I Medio Maraton de la Mujer de Madrid"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio """precio 29,50.
+10 Km 19.50."""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-10-23 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-10-23 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "08:30"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Juan_Carlos_I_Park> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Atletismo.+XXX+100+kilometros+pedestres+Villa+de+Madrid> a ont:Actividad ;
+	ont:hasNombre "Atletismo. XXX 100 kilometros pedestres Villa de Madrid"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "40 â‚¬ prueba 100 km / 10 â‚¬ prueba 10 km"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-10-30 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-10-30 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "07:30"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Juan_Carlos_I_Park> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Caminar+por+Madrid+2016-2017> a ont:Actividad ;
+	ont:hasNombre "Caminar por Madrid 2016-2017"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "0 Euros"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-09-12 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2017-06-30 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Juan_Carlos_I_Park> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Correr+por+Madrid+2016-2017> a ont:Actividad ;
+	ont:hasNombre "Correr por Madrid 2016-2017"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "11 euros al adquirir la Tarjeta Deporte Madrid"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-02 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2017-06-30 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Juan_Carlos_I_Park> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid+-+Baskonia> a ont:Actividad ;
+	ont:hasNombre "Euroleague. Partido de Baloncesto. Real Madrid - Baskonia"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 15 hasta 60. Entradas VIP desde 100."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-10-25 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-10-25 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "21:00"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid+-+Baskonia> ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid+-+Galatasaray> a ont:Actividad ;
+	ont:hasNombre "Euroleague. Partido de Baloncesto. Real Madrid - Galatasaray"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 20 hasta 70. Entradas VIP desde 120."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-03 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-03 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "21:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid-+Panathinaikos> a ont:Actividad ;
+	ont:hasNombre "Euroleague. Partido de Baloncesto. Real Madrid- Panathinaikos"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 15 hasta 60. Entradas VIP desde 100."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-16 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-16 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "21:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Euroleague.+Partido+de+Baloncesto.+Real+Madrid-+Unics+Kazan> a ont:Actividad ;
+	ont:hasNombre "Euroleague. Partido de Baloncesto. Real Madrid- Unics Kazan"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 15 hasta 60. Entradas VIP desde 100."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-24 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-24 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "21:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Gimnasia+de+mantenimiento.+Parque+Juan+Carlos+I> a ont:Actividad ;
+	ont:hasNombre "Gimnasia de mantenimiento. Parque Juan Carlos I"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "0 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-10-03 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-12-30 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "13:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Juan_Carlos_I_Park> ;
+	ont:hasTipo "/contenido/actividades/ItinerariosOtrasActividadesAmbientales"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/I+Carrera+Go+Fit+Madrid+2016> a ont:Actividad ;
+	ont:hasNombre "I Carrera Go Fit Madrid 2016"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "5 euros (campeonato de Madrid 10km veteranos), 10 euros (abonados Go fit 8 euros)"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-09 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-09 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "09:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Juan_Carlos_I_Park> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/I+Carrera+Popular+%27Corre+con+las+Personas+Mayores%27> a ont:Actividad ;
+	ont:hasNombre "I Carrera Popular 'Corre con las Personas Mayores'"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Precio de entrada 10 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-06 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-06 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "09:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Juan_Carlos_I_Park> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/I+Trail+C4+Caser+Club+de+Campo+Villa+de+Madrid> a ont:Actividad ;
+	ont:hasNombre "I Trail C4 Caser Club de Campo Villa de Madrid"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 8 euros se puede participar en esta prueba pionera"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-27 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-27 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "09:30"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://dbpedia.org/resource/Club_de_Campo_Villa_de_Madrid> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/I+Trail+C4+Caser+Club+de+Campo+Villa+de+Madrid> ont:celebratesIn <http://dbpedia.org/resource/Club_de_Campo_Villa_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/III+Trail+Madrid+City+-+Ecotrail> a ont:Actividad ;
+	ont:hasNombre "III Trail Madrid City - Ecotrail"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 19 euros"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-12 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-12 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "08:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/IV+Sanitas+Marca+Running+Series.+Derbi+de+las+aficiones+Madrid+2016> a ont:Actividad ;
+	ont:hasNombre "IV Sanitas Marca Running Series. Derbi de las aficiones Madrid 2016"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio """Desde 12 euros
+
+Carreras infantiles 2 euros"""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-13 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-13 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "09:00"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://dbpedia.org/resource/Estadio_Santiago_Bernabeu> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/IV+Sanitas+Marca+Running+Series.+Derbi+de+las+aficiones+Madrid+2016> ont:celebratesIn <http://dbpedia.org/resource/Estadio_Santiago_Bernabeu> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Madrid+Horse+Week> a ont:Actividad ;
+	ont:hasNombre "Madrid Horse Week"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Entre 5 euros la entrada al Salon del Caballo y 80 euros  el abono de grada para los 4 dias del evento"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-24 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-27 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://dbpedia.org/resource/Hyphema> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Madrid+Horse+Week> ont:celebratesIn <http://dbpedia.org/resource/Hyphema> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Hipica"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+CAI+Zaragoza> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - CAI Zaragoza"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 10 euros‚grada alta, hasta 50 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2017-01-08 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2017-01-08 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Divina+Seguros+Joventut> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - Divina Seguros Joventut"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 10 euros‚grada alta, hasta 50 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-13 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-13 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Dominion+Bilbao+Basket> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - Dominion Bilbao Basket"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 10 euros‚grada alta, hasta 50 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2017-01-22 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2017-01-22 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Herbalife+Gran+Canaria> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - Herbalife Gran Canaria"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 10 euros grada alta, hasta 50 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-27 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-27 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+MoraBanc+Andorra> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - MoraBanc Andorra"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 10 euros‚grada alta, hasta 50 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-12-04 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-12-04 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Real+Madrid> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - Real Madrid"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 25 euros‚ grada alta, hasta 80 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-10-23 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-10-23 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Rio+Natura+Monbus+Obradoiro> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - Rio Natura Monbus Obradoiro"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 10 euros‚ grada alta, hasta 50 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2017-01-29 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2017-01-29 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes+-+Unicaja> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes - Unicaja"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 20 euros‚ grada alta, hasta 70euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-12-18 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-12-18 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Movistar+Estudiantes-+Real+Madrid+CF.> a ont:Actividad ;
+	ont:hasNombre "Movistar Estudiantes- Real Madrid CF."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Entre 20 y 60 euros"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-10-23 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-10-23 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "18:30"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+AD+Alcorcon> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - AD Alcorcon"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Fondo: 15 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 25 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 35 euros. Tribuna central: 40 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-12-04 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-12-04 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://www.wikidata.org/entity/Q983806> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+AD+Alcorcon> ont:celebratesIn <http://www.wikidata.org/entity/Q983806> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+Elche+CF> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - Elche CF"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Fondo: 15 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 20 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 30 euros. Tribuna central: 35 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2017-01-22 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2017-01-22 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://www.wikidata.org/entity/Q983806> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+Girona+FC> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - Girona FC"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Fondo: 15 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 20 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 30 euros. Tribuna central: 35 euros. "^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-10-22 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-10-22 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "20:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://www.wikidata.org/entity/Q983806> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+R.+Zaragoza> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - R. Zaragoza"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Fondo: 15 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 20 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 30 euros. Tribuna central: 35 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-12-18 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-12-18 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://www.wikidata.org/entity/Q983806> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+SD+Huesca> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - SD Huesca"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Fondo: 20 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 25 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 30 euros. Tribuna central: 35 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-20 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-20 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://www.wikidata.org/entity/Q983806> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+Sevilla+Atletico> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - Sevilla Atletico"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Fondo: 20 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 25 euros. Tribuna alta de preferencia: 25 euros. Lateral baja: 30 euros. Grada de preferencia: 30 euros. Lateral cubierta: 35 euros. Tribuna central: 40 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2017-01-15 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2017-01-15 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://www.wikidata.org/entity/Q983806> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Rayo+Vallecano+-+UCAM+Murcia+CF> a ont:Actividad ;
+	ont:hasNombre "Rayo Vallecano - UCAM Murcia CF"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Fondo: 15 euros. Tribuna alta de latera /Tribuna alta lateral visitante: 20 euros. Tribuna alta de preferencia: 20 euros. Lateral baja: 25 euros. Grada de preferencia: 25 euros. Lateral cubierta: 30 euros. Tribuna central: 35 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-06 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-06 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://www.wikidata.org/entity/Q983806> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Athletic+Club> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - Athletic Club"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio """Publico 35 a 140 euros.
+Socios 28 a 112 euros.
+VIP 250 a 425 euros."""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-10-23 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-10-23 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "20:45"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Estadio_Santiago_Bernabeu> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+CD+Leganes> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - CD Leganes"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio """Entrega general: 35 a 140 euros. Entradas de socios: de 28 a 112 euros. Entradas VIP: de 250 a 425 euros.
+
+"""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-06 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-06 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "12:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Estadio_Santiago_Bernabeu> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Granada+CF> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - Granada CF"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 35 grada alta, desde 80 lateral. VIP desde 200 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2017-01-08 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2017-01-08 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Estadio_Santiago_Bernabeu> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Iberostar+Tenerife> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - Iberostar Tenerife"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio """Publico en General: 10 a 50 euros. Tarjeta Club Madridista: 9 a 43 euros. Socios: 7 a 35 euros. Entradas VIP: 100 euros.
+"""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-13 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-13 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "12:30"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+ICL+Manresa> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - ICL Manresa"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio """Publico en General: 10 a 50 euros. Tarjeta Club Madridista: 9 a 43 euros. Socios: 7 a 35 euros. Entradas VIP: 100 euros.
+"""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-27 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-27 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "12:30"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Malaga+CF> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - Malaga CF"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 30 grada alta, desde 70 lateral. VIP desde 200euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2017-01-22 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2017-01-22 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Estadio_Santiago_Bernabeu> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+MoraBanc+Andorra> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - MoraBanc Andorra"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Publico en General: 10 a 50 euros. Tarjeta Club Madridista: 9 a 43 euros. Socios: 7 a 35 euros. Entradas VIP: 100 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2017-01-08 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2017-01-08 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+RC+Deportivo> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - RC Deportivo"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 30 grada alta, desde 70 lateral. VIP desde 200euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-12-11 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-12-11 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Estadio_Santiago_Bernabeu> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Real+Sociedad> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - Real Sociedad"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 35 grada alta, desde 75 lateral. VIP desde 200euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2017-01-29 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2017-01-29 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Estadio_Santiago_Bernabeu> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Ri%C2%ADo+Natura+Monbus+Obradoiro> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - Ri­o Natura Monbus Obradoiro"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Entradas: - Publico en General: 15 a 50 euros. - Tarjeta Club Madridista: 13 a 43 euros. - Socios: 11 a 35 euros - ENTRADAS VIP: 100 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-12-18 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-12-18 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+R.+Sporting> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - R. Sporting"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 30 grada alta, desde 70 lateral. VIP desde 200euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-27 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-27 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Estadio_Santiago_Bernabeu> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Futbol"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid+-+Tecnyconta+Zaragoza.> a ont:Actividad ;
+	ont:hasNombre "Real Madrid - Tecnyconta Zaragoza."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio """Entradas:
+ - Publico en General: 15 a 50 euros.
+ - Tarjeta Club Madridista: 13 a 43 euros.
+ - Socios: 11 a 35 euros
+ - ENTRADAS VIP: 100 euros.
+"""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-10-30 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-10-30 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "12:30"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Real+Madrid.+-+Valencia+Basket+Club> a ont:Actividad ;
+	ont:hasNombre "Real Madrid. - Valencia Basket Club"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Entradas: - Publico en General: 15 a 50 euros. - Tarjeta Club Madridista: 13 a 43 euros. - Socios: 11 a 35 euros - ENTRADAS VIP: 100 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2017-01-22 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2017-01-22 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "00:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Palacio_de_Deportes_de_la_Comunidad_de_Madrid> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/Baloncesto"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Ruta+en+bici+%27Bici-ate+conectando+verde%27%3A+Dehesa+de+la+Villa-El+Pardo> a ont:Actividad ;
+	ont:hasNombre "Ruta en bici 'Bici-ate conectando verde': Dehesa de la Villa-El Pardo"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "0 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-12-04 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-12-04 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "10:30"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://www.wikidata.org/entity/Q4887686> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/Ruta+en+bici+%27Bici-ate+conectando+verde%27%3A+Dehesa+de+la+Villa-El+Pardo> ont:celebratesIn <http://www.wikidata.org/entity/Q4887686> ;
+	ont:hasTipo "/contenido/actividades/ItinerariosOtrasActividadesAmbientales"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/San+Silvestre+Vallecana+2016> a ont:Actividad ;
+	ont:hasNombre "San Silvestre Vallecana 2016"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "El precio de la inscripcion sera de 23 euros con chip propio y 21 euros con chip de la organizacion."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-12-31 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-12-31 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "17:30"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Juan_Carlos_I_Park> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/VI+Carrera+Popular+%27Corre+por+el+Ni%C3%B1o%27> a ont:Actividad ;
+	ont:hasNombre "VI Carrera Popular 'Corre por el Niño'"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "Desde 10 euros"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-06 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-06 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "09:00"^^<http://www.w3.org/2001/XMLSchema#time> .
+
+<http://dbpedia.org/resource/Retiro_(Madrid)> a ont:Instalacion .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/VI+Carrera+Popular+%27Corre+por+el+Ni%C3%B1o%27> ont:celebratesIn <http://dbpedia.org/resource/Retiro_(Madrid)> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.linked-data-deportemadrid.org/group08/resource/VIII+Carrera+Ponle+Freno+Madrid+2016> a ont:Actividad ;
+	ont:hasNombre "VIII Carrera Ponle Freno Madrid 2016"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasPrecio "10 euros."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	ont:hasFechaInicio "2016-11-27 00:00:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:hasFechaFin "2016-11-27 23:59:00.0"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	ont:startsHora "09:00"^^<http://www.w3.org/2001/XMLSchema#time> ;
+	ont:celebratesIn <http://dbpedia.org/resource/Juan_Carlos_I_Park> ;
+	ont:hasTipo "/contenido/actividades/ActividadesDeportivas/CarrerasMaratones"^^<http://www.w3.org/2001/XMLSchema#string> .

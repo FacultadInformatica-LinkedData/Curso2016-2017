@@ -1,0 +1,58 @@
+PREFIX mv: <http://example.org/myVocabulary#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX qb: <http://purl.org/linked-data/cube#> 
+
+#Query 1
+
+select sum(?acc) where {
+?obs a qb:Observation;
+mv:numberOfAccidents ?acc .
+}
+
+#Query 2
+
+select ?acc_type xsd:integer(?cant) where {
+?obs a qb:Observation;
+mv:relatedDistrict "USERA" ;
+mv:hasAccidentType ?acc_type ;
+mv:numberOfAccidents ?cant .
+}
+
+#Query 3
+
+select ?district xsd:integer(?cant) where {
+?obs a qb:Observation;
+mv:relatedDistrict ?district ;
+mv:hasAccidentType mv:MultipleCollision ;
+mv:numberOfAccidents ?cant .
+}
+
+#Query 4
+
+select ?district where {
+{ 
+	select MAX(?cant) as ?cantidad where {
+		?obs a qb:Observation;
+		mv:hasAccidentType mv:BicycleFall ;
+		mv:numberOfAccidents ?cant .
+	}
+}
+?obs a qb:Observation;
+mv:relatedDistrict ?district ;
+mv:hasAccidentType mv:BicycleFall ;
+mv:numberOfAccidents ?cantidad .
+}
+
+#Query 5
+
+select ?district,?numAccidentes where{
+{
+	select ?district, sum(xsd:int(?cantidad)) as ?numAccidentes where {
+		?obs a qb:Observation;
+		mv:relatedDistrict ?district ;
+		mv:numberOfAccidents ?cantidad .
+	} 
+	GROUP BY ?district
+}
+filter(?numAccidentes>500)
+}

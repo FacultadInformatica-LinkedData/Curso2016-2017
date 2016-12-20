@@ -1,0 +1,553 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix group5: <http://madridOcio.linkeddata.com/ontologyGroup5#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1881> a schema:Library ;
+	owl:sameAs <http://www.wikidata.org/entity/Q18924959> ;
+	vcard:street-address "CONDE DUQUE" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28015" ;
+	vcard:email "bibliotecah@madrid.es" ;
+	vcard:tel "Secretaría: 915885737. Información y Referencia: 915885756, 914800557 y 915885744 " ;
+	vcard:given-name "Biblioteca Histórica Municipal" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6779450> a schema:Library ;
+	owl:sameAs <http://www.wikidata.org/entity/Q19517348> ;
+	vcard:street-address "CONDE DUQUE" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28015" ;
+	vcard:email "bibliomusical@madrid.es" ;
+	vcard:tel """91 588 57 53 / 91 588 57 39 / 91 588 57 55                                                         
+91 588 57 60""" ;
+	vcard:given-name "Biblioteca Musical Víctor Espinós" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1771> a schema:Library ;
+	vcard:street-address "QUINTANA" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ARGUELLES" ;
+	vcard:postal-code "28008" ;
+	vcard:email "bib.acuna@madrid.org" ;
+	vcard:tel """915 413 619                                                                       
+""" ;
+	vcard:given-name "Biblioteca Pública Acuña" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1767> a schema:Library ;
+	vcard:street-address "MUSAS" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CANILLEJAS" ;
+	vcard:postal-code "28022" ;
+	vcard:email "bib.canillejas@madrid.org" ;
+	vcard:tel "917 424 499" ;
+	vcard:given-name "Biblioteca Pública Canillejas" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/5765642> a schema:Library ;
+	vcard:street-address "ANTONIA RODRIGUEZ SACRISTAN" ;
+	vcard:note "7" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PUERTA BONITA" ;
+	vcard:postal-code "28044" ;
+	vcard:email "bib.carabanchel@madrid.org" ;
+	vcard:tel """912 760 233                                                                                                          
+""" ;
+	vcard:given-name "Biblioteca Pública Carabanchel Luis Rosales" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1764> a schema:Library ;
+	owl:sameAs <http://www.wikidata.org/entity/Q5061722> ;
+	vcard:street-address "FELIPE EL HERMOSO" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "TRAFALGAR" ;
+	vcard:postal-code "28010" ;
+	vcard:email "bib.central@madrid.org" ;
+	vcard:tel "914 459 782" ;
+	vcard:given-name "Biblioteca Pública Central" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1798> a schema:Library ;
+	vcard:street-address "PUERTA DE TOLEDO" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EMBAJADORES" ;
+	vcard:postal-code "28005" ;
+	vcard:email "bib.centro@madrid.org" ;
+	vcard:tel "913 665 407" ;
+	vcard:given-name "Biblioteca Pública Centro Pedro Salinas" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/66904> a schema:Library ;
+	vcard:street-address "SANGENJO" ;
+	vcard:note "38" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LA PAZ" ;
+	vcard:postal-code "28034" ;
+	vcard:email "bib.fuencarral@madrid.org" ;
+	vcard:tel "917 319 552 / 917 319 553" ;
+	vcard:given-name "Biblioteca Pública Fuencarral - El Pardo. Rafael Alberti" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1770> a schema:Library ;
+	vcard:street-address "ABERTURA" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PINAR DEL REY" ;
+	vcard:postal-code "28033" ;
+	vcard:email "bib.hortaleza@madrid.org" ;
+	vcard:tel "917 633 284" ;
+	vcard:given-name "Biblioteca Pública Hortaleza" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/25526> a schema:Library ;
+	vcard:street-address "RAFAEL FINAT" ;
+	vcard:note "51" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LAS AGUILAS" ;
+	vcard:postal-code "28044" ;
+	vcard:email "bib.latina@madrid.org" ;
+	vcard:tel "915 093 625" ;
+	vcard:given-name "Biblioteca Pública Latina - Antonio Mingote" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1773> a schema:Library ;
+	vcard:street-address "CORREGIDOR ALONSO DE TOBAR" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "FONTARRON" ;
+	vcard:postal-code "28030" ;
+	vcard:email "bib.moratalaz@madrid.org" ;
+	vcard:tel "914 394 688" ;
+	vcard:given-name "Biblioteca Pública Moratalaz" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1757> a schema:Library ;
+	vcard:street-address "CAMARENA" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALUCHE" ;
+	vcard:postal-code "28047" ;
+	vcard:email "bpaluche@madrid.es" ;
+	vcard:tel "91 719 89 96" ;
+	vcard:given-name "Biblioteca Pública Municipal Aluche" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1755> a schema:Library ;
+	vcard:street-address "DE LOS COMUNEROS DE CASTILLA" ;
+	vcard:note "30" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN ISIDRO" ;
+	vcard:postal-code "28019" ;
+	vcard:email "bpanammatute@madrid.es" ;
+	vcard:tel """91 588 08 30                                                                                                                                                      
+""" ;
+	vcard:given-name "Biblioteca Pública Municipal Ana María Matute" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1762> a schema:Library ;
+	vcard:street-address "TOREROS" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "GUINDALERA" ;
+	vcard:postal-code "28028" ;
+	vcard:email "bpbuenavista@madrid.es" ;
+	vcard:tel "91 724 08 04" ;
+	vcard:given-name "Biblioteca Pública Municipal Buenavista" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1745> a schema:Library ;
+	vcard:street-address "BOLTAÑA" ;
+	vcard:note "23" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CANILLEJAS" ;
+	vcard:postal-code "28022" ;
+	vcard:email "bpcanillejas@madrid.es" ;
+	vcard:tel "91 741 11 34" ;
+	vcard:given-name "Biblioteca Pública Municipal Canillejas" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1794> a schema:Library ;
+	vcard:street-address "HERMANOS GARCIA NOBLEJAS" ;
+	vcard:note "14" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PUEBLO NUEVO" ;
+	vcard:postal-code "28037" ;
+	vcard:email "bpciudadlineal@madrid.es" ;
+	vcard:tel "915 887 566" ;
+	vcard:given-name "Biblioteca Pública Municipal Ciudad Lineal (Ciudad Lineal)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1882> a schema:Library ;
+	vcard:street-address "CONDE DUQUE" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28015" ;
+	vcard:email "bpcondeduque@madrid.es" ;
+	vcard:tel "91 588 59 10" ;
+	vcard:given-name "Biblioteca Pública Municipal Conde Duque (Centro)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/51188> a schema:Library ;
+	vcard:street-address "MANUEL FERRERO" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASTILLA" ;
+	vcard:postal-code "28036" ;
+	vcard:email "bpdamasoalonso@madrid.es" ;
+	vcard:tel "91 350 31 50" ;
+	vcard:given-name "Biblioteca Pública Municipal Dámaso Alonso (Chamartín)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6893633> a schema:Library ;
+	vcard:street-address "FERNAN NUÑEZ" ;
+	vcard:note "24" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS JERONIMOS" ;
+	vcard:postal-code "28009" ;
+	vcard:email "bpeugeniotrias@madrid.es" ;
+	vcard:tel "91 480 48 38" ;
+	vcard:given-name "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/167128> a schema:Library ;
+	vcard:street-address "INDALECIO PRIETO" ;
+	vcard:note "21" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VALDEBERNARDO" ;
+	vcard:postal-code "28032" ;
+	vcard:email "bpfranciscoayala@madrid.es" ;
+	vcard:tel "91 301 64 66" ;
+	vcard:given-name "Biblioteca Pública Municipal Francisco Ayala (Vicálvaro)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1760> a schema:Library ;
+	vcard:street-address "MANTUANO" ;
+	vcard:note "51" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CIUDAD JARDIN" ;
+	vcard:postal-code "28002" ;
+	vcard:email "bpfranciscoibanez@madrid.es" ;
+	vcard:tel "91 510 37 56" ;
+	vcard:given-name "Biblioteca Pública Municipal Francisco Ibáñez (Chamartín)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1754> a schema:Library ;
+	vcard:street-address "PUEBLO" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ORCASUR" ;
+	vcard:postal-code "28041" ;
+	vcard:email "bpgarciamarquez@madrid.es" ;
+	vcard:tel """91 318 86 91                                                  
+""" ;
+	vcard:given-name "Biblioteca Pública Municipal Gabriel García Márquez (Usera)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1748> a schema:Library ;
+	vcard:street-address "MONTE AYA" ;
+	vcard:note "12" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASCO HISTORICO VALLECAS" ;
+	vcard:postal-code "28031" ;
+	vcard:email "bpgerardodiego@madrid.es" ;
+	vcard:tel "91 380 66 33" ;
+	vcard:given-name "Biblioteca Pública Municipal Gerardo Diego (Villa de Vallecas)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/79941> a schema:Library ;
+	vcard:street-address "LOGROÑO" ;
+	vcard:note "179" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CORRALEJOS" ;
+	vcard:postal-code "28042" ;
+	vcard:email "bpgloriafuertes@madrid.es" ;
+	vcard:tel "91 312 02 58" ;
+	vcard:given-name "Biblioteca Pública Municipal Gloria Fuertes (Barajas)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1750> a schema:Library ;
+	vcard:street-address "MAR DE LAS ANTILLAS" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PINAR DEL REY" ;
+	vcard:postal-code "28033" ;
+	vcard:email "bphuertasalud@madrid.es" ;
+	vcard:tel "91 764 52 43" ;
+	vcard:given-name "Biblioteca Pública Municipal Huerta de la Salud (Hortaleza)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/51849> a schema:Library ;
+	vcard:street-address "NUESTRA SEÑORA DEL VILLAR" ;
+	vcard:note "6" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VENTAS" ;
+	vcard:postal-code "28017" ;
+	vcard:email "bpislasfilipinas@madrid.es" ;
+	vcard:tel "91 403 63 22" ;
+	vcard:given-name "Biblioteca Pública Municipal Islas Filipinas (Ciudad Lineal)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/5975465> a schema:Library ;
+	vcard:street-address "SAN JUSTO" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALACIO" ;
+	vcard:postal-code "28005" ;
+	vcard:email "bpivandevargas@madrid.es" ;
+	vcard:tel "917 586 211" ;
+	vcard:given-name "Biblioteca Pública Municipal Iván de Vargas (Centro)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/115056> a schema:Library ;
+	vcard:street-address "MARIA SEVILLA DIAGO" ;
+	vcard:note "15" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ROSAS" ;
+	vcard:postal-code "28022" ;
+	vcard:email "bpjosehierro@madrid.es" ;
+	vcard:tel "91 313 55 28" ;
+	vcard:given-name "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1790> a schema:Library ;
+	vcard:street-address "MONFORTE DE LEMOS" ;
+	vcard:note "38" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EL PILAR" ;
+	vcard:postal-code "28029" ;
+	vcard:email "bpjosesaramago@madrid.es" ;
+	vcard:tel "91 588 68 91" ;
+	vcard:given-name "Biblioteca Pública Municipal José Saramago (Fuencarral-El Pardo)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1756> a schema:Library ;
+	vcard:street-address "GENERAL RICARDOS" ;
+	vcard:note "252" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VISTA ALEGRE" ;
+	vcard:postal-code "28025" ;
+	vcard:email "bplachata@madrid.es" ;
+	vcard:tel "91 422 05 33" ;
+	vcard:given-name "Biblioteca Pública Municipal La Chata (Carabanchel)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/185595> a schema:Library ;
+	vcard:street-address "FRANCOS RODRIGUEZ" ;
+	vcard:note "67" ;
+	vcard:region "MADRID" ;
+	vcard:locality "BELLAS VISTAS" ;
+	vcard:postal-code "28039" ;
+	vcard:email "bpvazquezmontalban@madrid.es" ;
+	vcard:tel """91 398 07 23                                                                                                                                     
+91 398 07 26""" ;
+	vcard:given-name "Biblioteca Pública Municipal Manuel Vázquez Montalbán (Tetuán)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/7697128> a schema:Library ;
+	vcard:street-address "BARCELO" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "JUSTICIA" ;
+	vcard:postal-code "28004" ;
+	vcard:email "bpvargasllosa@madrid.es" ;
+	vcard:tel """914 802 433                                                                                                                                                   
+""" ;
+	vcard:given-name "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1759> a schema:Library ;
+	vcard:street-address "DONOSO" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALMENARA" ;
+	vcard:postal-code "28029" ;
+	vcard:email "bpmariazambrano@madrid.es" ;
+	vcard:tel "91 733 90 43" ;
+	vcard:given-name "Biblioteca Pública Municipal María Zambrano (Tetuán)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1752> a schema:Library ;
+	vcard:street-address "ARROYO BELINCOSO" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "MEDIA LEGUA" ;
+	vcard:postal-code "28030" ;
+	vcard:email "bpmigueldelibes@madrid.es" ;
+	vcard:tel "91 328 73 00" ;
+	vcard:given-name "Biblioteca Pública Municipal Miguel Delibes (Moratalaz)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/186714> a schema:Library ;
+	vcard:street-address "ASCAO" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PUEBLO NUEVO" ;
+	vcard:postal-code "28017" ;
+	vcard:email "bppabloneruda@madrid.es" ;
+	vcard:tel "91 406 14 72" ;
+	vcard:given-name "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1753> a schema:Library ;
+	vcard:street-address "CANTALAPIEDRA" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "NUMANCIA" ;
+	vcard:postal-code "28038" ;
+	vcard:email "bpportazgo@madrid.es" ;
+	vcard:tel "91 757 03 23" ;
+	vcard:given-name "Biblioteca Pública Municipal Portazgo (Puente de Vallecas)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1792> a schema:Library ;
+	vcard:street-address "GLORIETAS" ;
+	vcard:note "19" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ENTREVIAS" ;
+	vcard:postal-code "28053" ;
+	vcard:email "bppozotr@madrid.es" ;
+	vcard:tel "91 507 07 34" ;
+	vcard:given-name "Biblioteca Pública Municipal Pozo del Tío Raimundo (Puente de Vallecas)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1763> a schema:Library ;
+	vcard:street-address "ARGANDA" ;
+	vcard:note "12" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ACACIAS" ;
+	vcard:postal-code "28005" ;
+	vcard:email "bppiobaroja@madrid.es" ;
+	vcard:tel "91 474 16 03" ;
+	vcard:given-name "Biblioteca Pública Municipal Pío Baroja (Arganzuela)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1746> a schema:Library ;
+	vcard:street-address "SAN ROMAN DEL VALLE" ;
+	vcard:note "8" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ARCOS" ;
+	vcard:postal-code "28037" ;
+	vcard:email "bpsanblas@madrid.es" ;
+	vcard:tel "91 313 52 97" ;
+	vcard:given-name "Biblioteca Pública Municipal San Blas (San Blas-Canillejas)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1761> a schema:Library ;
+	vcard:street-address "PUERTO DEL MONASTERIO" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN DIEGO" ;
+	vcard:postal-code "28053" ;
+	vcard:email "bpvallecas@madrid.es" ;
+	vcard:tel "91 588 60 51" ;
+	vcard:given-name "Biblioteca Pública Municipal Vallecas (Puente de Vallecas)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1747> a schema:Library ;
+	vcard:street-address "VILLARDONDIEGO" ;
+	vcard:note "36" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASCO HISTORICO VICALVARO" ;
+	vcard:postal-code "28032" ;
+	vcard:email "bpvicalvaro@madrid.es" ;
+	vcard:tel "91 775 31 43" ;
+	vcard:given-name "Biblioteca Pública Municipal Vicálvaro" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/5768564> a schema:Library ;
+	vcard:street-address "GRANJA DE TORREHERMOSA" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALUCHE" ;
+	vcard:postal-code "28024" ;
+	vcard:email "bpangelgonzalez@madrid.es" ;
+	vcard:tel "91 512 35 42" ;
+	vcard:given-name "Biblioteca Pública Municipal Ángel González (Latina)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1774> a schema:Library ;
+	vcard:street-address "DOCTOR ESQUERDO" ;
+	vcard:note "189" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ADELFAS" ;
+	vcard:postal-code "28007" ;
+	vcard:email "bib.retiro@madrid.org" ;
+	vcard:tel "915 019 146 " ;
+	vcard:given-name "Biblioteca Pública Retiro" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1777> a schema:Library ;
+	vcard:street-address "RAIMUNDO FERNANDEZ VILLAVERDE" ;
+	vcard:note "6" ;
+	vcard:region "MADRID" ;
+	vcard:locality "RIOS ROSAS" ;
+	vcard:postal-code "28003" ;
+	vcard:email "bib.ruizegea@madrid.org" ;
+	vcard:tel "915 349 029" ;
+	vcard:given-name "Biblioteca Pública Ruiz Egea" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1765> a schema:Library ;
+	vcard:street-address "AZCONA" ;
+	vcard:note "42" ;
+	vcard:region "MADRID" ;
+	vcard:locality "GUINDALERA" ;
+	vcard:postal-code "28028" ;
+	vcard:email "bib.salamanca@madrid.org" ;
+	vcard:tel "917 263 701 " ;
+	vcard:given-name "Biblioteca Pública Salamanca - Manuel Alvar" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/123303> a schema:Library ;
+	vcard:street-address "RAFAELA YBARRA" ;
+	vcard:note "43" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PRADOLONGO" ;
+	vcard:postal-code "28026" ;
+	vcard:email "bib.usera@madrid.org" ;
+	vcard:tel "914 229 501" ;
+	vcard:given-name "Biblioteca Pública Usera - José Hierro" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1800> a schema:Library ;
+	vcard:street-address "RAFAEL ALBERTI" ;
+	vcard:note "36" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALOMERAS SURESTE" ;
+	vcard:postal-code "28018" ;
+	vcard:email "bib.vallecas@madrid.org" ;
+	vcard:tel """913 033 195                                       
+""" ;
+	vcard:given-name "Biblioteca Pública Vallecas" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/181101> a schema:Library ;
+	vcard:street-address "ANTONIO MARIA SEGOVIA" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SANTA EUGENIA" ;
+	vcard:postal-code "28031" ;
+	vcard:email "bib.villavallecas@madrid.org" ;
+	vcard:tel "912 760 231" ;
+	vcard:given-name "Biblioteca Pública Villa de Vallecas - Luis Martín Santos" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/86719> a schema:Library ;
+	vcard:street-address "VILLALONSO" ;
+	vcard:note "16" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN ANDRES" ;
+	vcard:postal-code "28021" ;
+	vcard:email "bib.villaverde@madrid.org" ;
+	vcard:tel "917 230 194  " ;
+	vcard:given-name "Biblioteca Pública Villaverde - María Moliner" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/108154> a schema:Library ;
+	vcard:street-address "RAMIREZ DE PRADO" ;
+	vcard:note "3" ;
+	vcard:region "MADRID" ;
+	vcard:locality "DELICIAS" ;
+	vcard:postal-code "28045" ;
+	vcard:email "biblio.regional@madrid.org" ;
+	vcard:tel "917 208 850 / 917 208 860 " ;
+	vcard:given-name "Biblioteca Regional de Madrid Joaquín Leguina" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1788> a schema:Library ;
+	vcard:street-address "ROCAFORT" ;
+	vcard:note "101" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN CRISTOBAL" ;
+	vcard:postal-code "28021" ;
+	vcard:email "bsancristobal@montemadrid.es" ;
+	vcard:tel "917 966 048" ;
+	vcard:given-name "Casa San Cristobal" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/103331> a schema:Library ;
+	owl:sameAs <http://dbpedia.org/resource/La_Casa_Encendida_(Madrid)> ;
+	vcard:street-address "VALENCIA" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EMBAJADORES" ;
+	vcard:postal-code "28012" ;
+	vcard:email "lacasaencendida@montemadrid.es" ;
+	vcard:tel """902 430 322                                                                 
+""" ;
+	vcard:given-name "Centro Social y Cultural la Casa Encendida" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/2047> a schema:Library ;
+	owl:sameAs <http://www.wikidata.org/entity/Q5893994> ;
+	vcard:street-address "CONDE DUQUE" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28015" ;
+	vcard:email "hemeroteca@madrid.es" ;
+	vcard:tel """91 588 57 71, 91 513 31 64 (Información general)                                                                  
+91 588 57 73 (Reprografía)""" ;
+	vcard:given-name "Hemeroteca Municipal" .

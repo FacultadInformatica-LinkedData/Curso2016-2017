@@ -1,0 +1,831 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix group5: <http://madridOcio.linkeddata.com/ontologyGroup5#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6430067> vcard:given-name "Bibliobús número 10. Recorrido semanal" ;
+	vcard:region "MADRID" ;
+	vcard:tel "917 951 761 / Móvil: 639 624 276" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6431159> vcard:given-name "Bibliobús número 11. Recorrido semanal" ;
+	vcard:region "MADRID" ;
+	vcard:tel "917 951 761 / Móvil: 619 247 322" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6432104> vcard:given-name "Bibliobús número 12. Recorrido semanal" ;
+	vcard:region "MADRID" ;
+	vcard:tel "917 951 761 / Móvil: 639 624 280" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6435986> vcard:given-name "Bibliobús número 13. Recorrido semanal" ;
+	vcard:region "MADRID" ;
+	vcard:tel "917 951 761 / Móvil: 619 252 842" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/7110421> vcard:given-name "Bibliobús número 2. Recorrido quincenal" ;
+	vcard:region "MADRID" ;
+	vcard:tel "917 951 761 / 639 623 967" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6427915> vcard:given-name "Bibliobús número 6. Recorrido semanal" ;
+	vcard:region "MADRID" ;
+	vcard:tel "917 951 761 / 639 623 978" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6429143> vcard:given-name "Bibliobús número 9. Recorrido semanal" ;
+	vcard:region "MADRID" ;
+	vcard:tel "917 951 761 / Móvil: 639 623 973" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/7902770> vcard:given-name "Bibliometro" ;
+	vcard:street-address "PRINCIPE DE VERGARA" ;
+	vcard:note "140" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CIUDAD JARDIN" ;
+	vcard:postal-code "28002" ;
+	vcard:tel """
+91 588 57 24
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/8053214> vcard:given-name "Bibliored" ;
+	vcard:street-address "PRINCIPE DE VERGARA" ;
+	vcard:note "140" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CIUDAD JARDIN" ;
+	vcard:postal-code "28002" ;
+	vcard:tel """
+91 588 57 24
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1881> vcard:given-name "Biblioteca Histórica Municipal" ;
+	vcard:note """   Directorio:
+
+  Dirección  Ilda María del Rosario Pérez García Teléfono: 91 588 57 44 Correo electrónico  bibliotecah@madrid.es
+  Negociado Administrativo / Secretaría   Teléfono: 91 5885723; 91 5885737
+  Sección de Información y Referencia  Teléfono: 91 4800557 Correo electrónico  bibliotecah@madrid.es
+  Sección de Colecciones Especiales  Correo electrónico:  bibliotecah@madrid.es
+  Sección de Fondos Generales  Correo electrónico  bibliotecah@madrid.es
+ """ ;
+	vcard:street-address "CONDE DUQUE" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28015" ;
+	vcard:email "bibliotecah@madrid.es" ;
+	vcard:tel "Secretaría: 915885737. Información y Referencia: 915885756, 914800557 y 915885744 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6779450> vcard:given-name "Biblioteca Musical Víctor Espinós" ;
+	vcard:note """   Directorio:
+
+  Dirección:   Inmaculada Seldas Fernández Tfno: 91 513 36 81
+  Adjunto:
+ María José Paredes Fernández Teléfono: 91 480 14 17
+  Préstamo de Instrumentos  Teléfono: 91 588 57 55
+  Información bibliográfica  Teléfono: 91 588 57 51
+  Gestión económica y administrativa  Teléfono: 91 588 57 53 Teléfono: 91 480 13 44
+  Mostrador de préstamo / Cabinas de ensayo  Teléfonos: 91 588 57 60 / 91 588 57 39
+ """ ;
+	vcard:street-address "CONDE DUQUE" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28015" ;
+	vcard:email "bibliomusical@madrid.es" ;
+	vcard:tel """91 588 57 53 / 91 588 57 39 / 91 588 57 55
+91 588 57 60""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1771> vcard:given-name "Biblioteca Pública Acuña" ;
+	vcard:note """  Préstamo domiciliario:  carné gratuito presentando el  DNI,  u otro documento que acredite legalmente la identidad personal y para los menores de 14 años, con autorización del padre, la madre o tutor legal
+  Días de cierre de la Biblioteca 2016:
+
+ Sábados: 26 de marzo; sábados de julio y agosto; 3 y 10 de septiembre
+ Domingos: todos
+ Festivos: 1 y 6 de enero; 24 y 25 de marzo; 2 y 16  de mayo; 25 de julio; 15 de agosto; 12 de octubre; 1 y 9 de noviembre; 6, 8 y 26 de diciembre.
+ Otros: 24 y 31 de diciembre
+ """ ;
+	vcard:street-address "QUINTANA" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ARGUELLES" ;
+	vcard:postal-code "28008" ;
+	vcard:email "bib.acuna@madrid.org" ;
+	vcard:tel """915 413 619
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1767> vcard:given-name "Biblioteca Pública Canillejas" ;
+	vcard:note "  Préstamo domiciliario: c arné gratuito presentando el  DNI  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal " ;
+	vcard:street-address "MUSAS" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CANILLEJAS" ;
+	vcard:postal-code "28022" ;
+	vcard:email "bib.canillejas@madrid.org" ;
+	vcard:tel "917 424 499" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/5765642> vcard:given-name "Biblioteca Pública Carabanchel Luis Rosales" ;
+	vcard:note """  Préstamo domiciliario:  Carné gratuito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores 14 años de edad, con autorización del padre, la madre o tutor legal.
+  Información adicional sobre horarios:  los fines de semana y festivos de 14:30 a 15:30 horas no se asignarán préstamos de libros ni acceso a Internet pero sí continuará abierta la sala de lectura. Todos los días los servicios de préstamo y acceso a Internet finalizarán 15 minutos antes del cierre. """ ;
+	vcard:street-address "ANTONIA RODRIGUEZ SACRISTAN" ;
+	vcard:note "7" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PUERTA BONITA" ;
+	vcard:postal-code "28044" ;
+	vcard:email "bib.carabanchel@madrid.org" ;
+	vcard:tel """912 760 233
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1764> vcard:given-name "Biblioteca Pública Central" ;
+	vcard:note """  Días de cierre en 2016  :
+
+  Sábados : 26 marzo; sábados de julio y agosto; 3 y 10 septiembre; 24 y 31 diciembre.
+  Domingos
+  Festivos : 1 y 6 enero; 24 y 25 marzo; 2 y 16 mayo; 25 julio; 15 agosto; 12 octubre; 1 y 9 noviembre; 6, 8 y 26 diciembre
+ """ ;
+	vcard:street-address "FELIPE EL HERMOSO" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "TRAFALGAR" ;
+	vcard:postal-code "28010" ;
+	vcard:email "bib.central@madrid.org" ;
+	vcard:tel "914 459 782" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1798> vcard:given-name "Biblioteca Pública Centro Pedro Salinas" ;
+	vcard:note "  Préstamo domiciliario:  Carné gratuito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores 14 años de edad, con autorización del padre, la madre o tutor legal. " ;
+	vcard:street-address "PUERTA DE TOLEDO" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EMBAJADORES" ;
+	vcard:postal-code "28005" ;
+	vcard:email "bib.centro@madrid.org" ;
+	vcard:tel "913 665 407" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/66904> vcard:given-name "Biblioteca Pública Fuencarral - El Pardo. Rafael Alberti" ;
+	vcard:note """  Préstamo domiciliario:  carné gratuito presentando el  DNI  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización de padre, la madre o tutor legal.
+  Días cierre biblioteca año 2016:
+
+  Sábados:  2 de enero; 26 de marzo; sábados de julio y agosto; 3 y 10 de septiembre; 24 y 31 de diciembre.
+  Domingos : Todos
+  Festivos:  1 y 6 de enero; 24 y 25 de marzo; 2 y 16 de mayo; 25 de julio; 15 de agosto; 12 de octubre; 1 y 9 de noviembre; 6, 8 y 26 de diciembre.
+
+     """ ;
+	vcard:street-address "SANGENJO" ;
+	vcard:note "38" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LA PAZ" ;
+	vcard:postal-code "28034" ;
+	vcard:email "bib.fuencarral@madrid.org" ;
+	vcard:tel "917 319 552 / 917 319 553" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1770> vcard:given-name "Biblioteca Pública Hortaleza" ;
+	vcard:note """  Préstamo domiciliario:  carné gratuito presentando el  DNI  u otro documento que acredite legalmente la identidad personal y, para los menores de edad, con autorización del padre, la madre o tutor legal
+  Días de cierre de la bibliioteca (2016 ): Fines de semana y festivos; del 1 al 7 de enero; 8 de febrero; del 18 al 29 de marzo; 2 y 16 de mayo; 10 de junio; los meses de julio y agosto; 12 de octubre; 1 y 9 de noviembre; 6 y 8 de diciembre; del 23 al 31 de diciembre; además, los días no lectivos regidos por el  calendario escolar 2016-2017   """ ;
+	vcard:street-address "ABERTURA" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PINAR DEL REY" ;
+	vcard:postal-code "28033" ;
+	vcard:email "bib.hortaleza@madrid.org" ;
+	vcard:tel "917 633 284" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/25526> vcard:given-name "Biblioteca Pública Latina - Antonio Mingote" ;
+	vcard:note """  Préstamos domiciliarios:  carné gratuito para todas las edades rellenando ficha de inscripción y presentando  DNI , pasaporte o autorización de padres o tutor para menores de 14 años.
+  Días de cierre de la Biblioteca 2016:
+
+ Sábados: 26 de marzo; sábados de julio y agosto; 3 y 10 de septiembre
+ Domingos: todos
+ Festivos: 1 y 6 de enero; 24 y 25 de marzo; 2 y 16  de mayo; 25 de julio; 15 de agosto; 12 de octubre; 1 y 9 de noviembre; 6, 8 y 26 de diciembre.
+ Otros: 24 y 31 de diciembre
+ """ ;
+	vcard:street-address "RAFAEL FINAT" ;
+	vcard:note "51" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LAS AGUILAS" ;
+	vcard:postal-code "28044" ;
+	vcard:email "bib.latina@madrid.org" ;
+	vcard:tel "915 093 625" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1773> vcard:given-name "Biblioteca Pública Moratalaz" ;
+	vcard:note """  Préstamo domiciliario:  carné gratutito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal.
+  Días de cierre de la Biblioteca 2016:
+
+ Sábados: 26 de marzo; sábados de julio y agosto; 3 y 10 de septiembre
+ Domingos: todos
+ Festivos: 1 y 6 de enero; 24 y 25 de marzo; 2 y 16  de mayo; 25 de julio; 15 de agosto; 12 de octubre; 1 y 9 de noviembre; 6, 8 y 26 de diciembre.
+ Otros: 24 y 31 de diciembre
+
+     """ ;
+	vcard:street-address "CORREGIDOR ALONSO DE TOBAR" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "FONTARRON" ;
+	vcard:postal-code "28030" ;
+	vcard:email "bib.moratalaz@madrid.org" ;
+	vcard:tel "914 394 688" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1757> vcard:given-name "Biblioteca Pública Municipal Aluche (Latina)" ;
+	vcard:note """
+  Superficie:  712 metros cuadrados
+  Puestos de lectura:  130
+  Puestos de Internet:  18
+ """ ;
+	vcard:street-address "CAMARENA" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALUCHE" ;
+	vcard:postal-code "28047" ;
+	vcard:email "bpaluche@madrid.es" ;
+	vcard:tel "91 719 89 96" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1755> vcard:given-name "Biblioteca Pública Municipal Ana María Matute (Carabanchel)" ;
+	vcard:note """
+  Superficie:  3.369 metros cuadrados
+  Puestos de lectura:  244
+  Puestos de Internet:  44
+  Sala polivalente:  74
+  Salas de trabajo en grupo:  3 (20 personas en total)
+ """ ;
+	vcard:street-address "DE LOS COMUNEROS DE CASTILLA" ;
+	vcard:note "30" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN ISIDRO" ;
+	vcard:postal-code "28019" ;
+	vcard:email "bpanammatute@madrid.es" ;
+	vcard:tel """91 588 08 30
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1762> vcard:given-name "Biblioteca Pública Municipal Buenavista (Salamanca)" ;
+	vcard:note """
+  Superficie:  371 metros cuadrados
+  Puestos de lectura:  76
+  Puestos de Internet:  15
+ """ ;
+	vcard:street-address "TOREROS" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "GUINDALERA" ;
+	vcard:postal-code "28028" ;
+	vcard:email "bpbuenavista@madrid.es" ;
+	vcard:tel "91 724 08 04" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1745> vcard:given-name "Biblioteca Pública Municipal Canillejas (San Blas-Canillejas)" ;
+	vcard:note """
+  Superficie:  466 metros cuadrados
+  Puestos de lectura:  98
+  Puestos de Internet:  6
+ """ ;
+	vcard:street-address "BOLTAÑA" ;
+	vcard:note "23" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CANILLEJAS" ;
+	vcard:postal-code "28022" ;
+	vcard:email "bpcanillejas@madrid.es" ;
+	vcard:tel "91 741 11 34" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1794> vcard:given-name "Biblioteca Pública Municipal Ciudad Lineal (Ciudad Lineal)" ;
+	vcard:note """
+  Superficie:  483 metros cuadrados
+  Puestos de lectura:  114
+  Puestos de Internet:  10
+ """ ;
+	vcard:street-address "HERMANOS GARCIA NOBLEJAS" ;
+	vcard:note "14" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PUEBLO NUEVO" ;
+	vcard:postal-code "28037" ;
+	vcard:email "bpciudadlineal@madrid.es" ;
+	vcard:tel "915 887 566" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1882> vcard:given-name "Biblioteca Pública Municipal Conde Duque (Centro)" ;
+	vcard:note """
+  Superficie:  5.870 metros cuadrados
+  Puestos de lectura:  227
+  Puestos de Internet:  26
+   Página en Facebook
+ """ ;
+	vcard:street-address "CONDE DUQUE" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28015" ;
+	vcard:email "bpcondeduque@madrid.es" ;
+	vcard:tel "91 588 59 10" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/51188> vcard:given-name "Biblioteca Pública Municipal Dámaso Alonso (Chamartín)" ;
+	vcard:note """
+  Superficie:  808 metros cuadrados
+  Puestos de lectura:  129
+  Puestos de Internet:  8
+ """ ;
+	vcard:street-address "MANUEL FERRERO" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASTILLA" ;
+	vcard:postal-code "28036" ;
+	vcard:email "bpdamasoalonso@madrid.es" ;
+	vcard:tel "91 350 31 50" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/6893633> vcard:given-name "Biblioteca Pública Municipal Eugenio Trías. Casa de Fieras de El Retiro" ;
+	vcard:note """
+  Superficie:  3.794 metros cuadrados
+  Puestos de lectura:  185
+  Puestos de Internet:  39
+  Sala polivalente:  90
+  Salas de trabajo en grupo:  3 (6-8 personas en cada una)
+ """ ;
+	vcard:street-address "FERNAN NUÑEZ" ;
+	vcard:note "24" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS JERONIMOS" ;
+	vcard:postal-code "28009" ;
+	vcard:email "bpeugeniotrias@madrid.es" ;
+	vcard:tel "91 480 48 38" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/167128> vcard:given-name "Biblioteca Pública Municipal Francisco Ayala (Vicálvaro)" ;
+	vcard:note """
+  Superficie:  1.600 metros cuadrados
+  Puestos de lectura:  205
+  Puestos de Internet:  11
+  Sala polivalente:  55
+ """ ;
+	vcard:street-address "INDALECIO PRIETO" ;
+	vcard:note "21" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VALDEBERNARDO" ;
+	vcard:postal-code "28032" ;
+	vcard:email "bpfranciscoayala@madrid.es" ;
+	vcard:tel "91 301 64 66" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1760> vcard:given-name "Biblioteca Pública Municipal Francisco Ibáñez (Chamartín)" ;
+	vcard:note """
+  Superficie:  543 metros cuadrados
+  Puestos de lectura:  94
+  Puestos de Internet:  24
+ """ ;
+	vcard:street-address "MANTUANO" ;
+	vcard:note "51" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CIUDAD JARDIN" ;
+	vcard:postal-code "28002" ;
+	vcard:email "bpfranciscoibanez@madrid.es" ;
+	vcard:tel "91 510 37 56" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1754> vcard:given-name "Biblioteca Pública Municipal Gabriel García Márquez (Usera)" ;
+	vcard:note """
+  Superficie:  1395 metros cuadrados
+  Puestos de lectura:  142
+  Puestos de Internet:  27
+  Sala polivalente:  55
+  Salas de trabajo en grupo:  2 (6 y 10 plazas)
+ """ ;
+	vcard:street-address "PUEBLO" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ORCASUR" ;
+	vcard:postal-code "28041" ;
+	vcard:email "bpgarciamarquez@madrid.es" ;
+	vcard:tel """91 318 86 91
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1748> vcard:given-name "Biblioteca Pública Municipal Gerardo Diego (Villa de Vallecas)" ;
+	vcard:note """
+  Superficie:  1.601 metros cuadrados
+  Puestos de lectura:  196
+  Puestos de Internet:  16
+  Sala polivalente : 59
+   Página en Facebook
+ """ ;
+	vcard:street-address "MONTE AYA" ;
+	vcard:note "12" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASCO HISTORICO VALLECAS" ;
+	vcard:postal-code "28031" ;
+	vcard:email "bpgerardodiego@madrid.es" ;
+	vcard:tel "91 380 66 33" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/79941> vcard:given-name "Biblioteca Pública Municipal Gloria Fuertes (Barajas)" ;
+	vcard:note """
+  Superficie:  672 metros cuadrados
+  Puestos de lectura:  119
+  Puestos de Internet:  9
+  Sala polivalente:  30
+ """ ;
+	vcard:street-address "LOGROÑO" ;
+	vcard:note "179" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CORRALEJOS" ;
+	vcard:postal-code "28042" ;
+	vcard:email "bpgloriafuertes@madrid.es" ;
+	vcard:tel "91 312 02 58" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1750> vcard:given-name "Biblioteca Pública Municipal Huerta de la Salud (Hortaleza)" ;
+	vcard:note """
+  Superficie : 450 metros cuadrados
+  Puestos de lectura : 77
+  Puestos de Internet:  7
+ """ ;
+	vcard:street-address "MAR DE LAS ANTILLAS" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PINAR DEL REY" ;
+	vcard:postal-code "28033" ;
+	vcard:email "bphuertasalud@madrid.es" ;
+	vcard:tel "91 764 52 43" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/51849> vcard:given-name "Biblioteca Pública Municipal Islas Filipinas (Ciudad Lineal)" ;
+	vcard:note """
+  Superficie:  880 metros cuadrados
+  Puestos de lectura:  102
+  Puestos de Internet:  10
+ """ ;
+	vcard:street-address "NUESTRA SEÑORA DEL VILLAR" ;
+	vcard:note "6" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VENTAS" ;
+	vcard:postal-code "28017" ;
+	vcard:email "bpislasfilipinas@madrid.es" ;
+	vcard:tel "91 403 63 22" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/5975465> vcard:given-name "Biblioteca Pública Municipal Iván de Vargas (Centro)" ;
+	vcard:note """
+  Superficie:    2.884 metros cuadrados
+  Puestos de lectura:    164
+  Puestos de Internet:    18
+  Puestos de la sala polivalente:  45
+  Puestos de la sala de trabajo en grupo:
+   Página en Facebook
+ """ ;
+	vcard:street-address "SAN JUSTO" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALACIO" ;
+	vcard:postal-code "28005" ;
+	vcard:email "bpivandevargas@madrid.es" ;
+	vcard:tel "917 586 211" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/115056> vcard:given-name "Biblioteca Pública Municipal José Hierro (San Blas-Canillejas)" ;
+	vcard:note """
+  Superficie:  1.866 metros cuadrados
+  Puestos de lectura:  227
+  Puestos de Internet:  13
+  Sala polivalente:  50
+   Página en Facebook
+ """ ;
+	vcard:street-address "MARIA SEVILLA DIAGO" ;
+	vcard:note "15" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ROSAS" ;
+	vcard:postal-code "28022" ;
+	vcard:email "bpjosehierro@madrid.es" ;
+	vcard:tel "91 313 55 28" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1790> vcard:given-name "Biblioteca Pública Municipal José Saramago (Fuencarral-El Pardo)" ;
+	vcard:note """
+  Superficie:  1.276 metros cuadrados
+  Puestos de lectura:  204
+  Puestos de Internet:  17
+  Sala polivalente : 30
+   Página en Facebook
+ """ ;
+	vcard:street-address "MONFORTE DE LEMOS" ;
+	vcard:note "38" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EL PILAR" ;
+	vcard:postal-code "28029" ;
+	vcard:email "bpjosesaramago@madrid.es" ;
+	vcard:tel "91 588 68 91" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1756> vcard:given-name "Biblioteca Pública Municipal La Chata (Carabanchel)" ;
+	vcard:note """
+  Superficie:  1.600 metros cuadrados
+  Puestos de lectura:  223
+  Puestos de Internet:  17
+ """ ;
+	vcard:street-address "GENERAL RICARDOS" ;
+	vcard:note "252" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VISTA ALEGRE" ;
+	vcard:postal-code "28025" ;
+	vcard:email "bplachata@madrid.es" ;
+	vcard:tel "91 422 05 33" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/185595> vcard:given-name "Biblioteca Pública Municipal Manuel Vázquez Montalbán (Tetuán)" ;
+	vcard:note """
+  Superficie:  1.372 metros cuadrados
+  Puestos de lectura:  151
+  Puestos de Internet:  11
+  Sala polivalente:  40
+ """ ;
+	vcard:street-address "FRANCOS RODRIGUEZ" ;
+	vcard:note "67" ;
+	vcard:region "MADRID" ;
+	vcard:locality "BELLAS VISTAS" ;
+	vcard:postal-code "28039" ;
+	vcard:email "bpvazquezmontalban@madrid.es" ;
+	vcard:tel """91 398 07 23
+91 398 07 26""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/7697128> vcard:given-name "Biblioteca Pública Municipal Mario Vargas Llosa (Centro)" ;
+	vcard:note """
+  Superficie:  1.860,70 metros cuadrados
+  Puestos de lectura:  122
+  Puestos de Internet:  41
+  Sala polivalente:  16
+  Sala de trabajo en grupo : 16
+ """ ;
+	vcard:street-address "BARCELO" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "JUSTICIA" ;
+	vcard:postal-code "28004" ;
+	vcard:email "bpvargasllosa@madrid.es" ;
+	vcard:tel """914 802 433
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1759> vcard:given-name "Biblioteca Pública Municipal María Zambrano (Tetuán)" ;
+	vcard:note """
+  Superficie:  1.551 metros cuadrados
+  Puestos de lectura:  123
+  Puestos de Internet:  21
+   Página en Facebook
+ """ ;
+	vcard:street-address "DONOSO" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALMENARA" ;
+	vcard:postal-code "28029" ;
+	vcard:email "bpmariazambrano@madrid.es" ;
+	vcard:tel "91 733 90 43" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1752> vcard:given-name "Biblioteca Pública Municipal Miguel Delibes (Moratalaz)" ;
+	vcard:note """
+  Superficie:  2.012 metros cuadrados
+  Puestos de lectura:  258
+  Puestos de Internet:  14
+ """ ;
+	vcard:street-address "ARROYO BELINCOSO" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "MEDIA LEGUA" ;
+	vcard:postal-code "28030" ;
+	vcard:email "bpmigueldelibes@madrid.es" ;
+	vcard:tel "91 328 73 00" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/186714> vcard:given-name "Biblioteca Pública Municipal Pablo Neruda (Ciudad Lineal)" ;
+	vcard:note """
+  Superficie:  1.500 metros cuadrados
+  Puestos de lectura:  192
+  Puestos de Internet:  14
+  Sala polivalente:  30
+   Página en Facebook
+ """ ;
+	vcard:street-address "ASCAO" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PUEBLO NUEVO" ;
+	vcard:postal-code "28017" ;
+	vcard:email "bppabloneruda@madrid.es" ;
+	vcard:tel "91 406 14 72" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1753> vcard:given-name "Biblioteca Pública Municipal Portazgo (Puente de Vallecas)" ;
+	vcard:note """
+  Superficie:  550 metros cuadrados
+  Puestos de lectura:  116
+  Puestos de Internet:
+ """ ;
+	vcard:street-address "CANTALAPIEDRA" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "NUMANCIA" ;
+	vcard:postal-code "28038" ;
+	vcard:email "bpportazgo@madrid.es" ;
+	vcard:tel "91 757 03 23" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1792> vcard:given-name "Biblioteca Pública Municipal Pozo del Tío Raimundo (Puente de Vallecas)" ;
+	vcard:note """
+  Superficie:  269 metros cuadrados
+  Puestos de lectura:  146
+  Puestos de Internet:  7
+   Página en Facebook
+ """ ;
+	vcard:street-address "GLORIETAS" ;
+	vcard:note "19" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ENTREVIAS" ;
+	vcard:postal-code "28053" ;
+	vcard:email "bppozotr@madrid.es" ;
+	vcard:tel "91 507 07 34" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1763> vcard:given-name "Biblioteca Pública Municipal Pío Baroja (Arganzuela)" ;
+	vcard:note """
+  Superficie:  1.454 metros cuadrados
+  Puestos de lectura:  162
+  Puestos de Internet:  10
+ """ ;
+	vcard:street-address "ARGANDA" ;
+	vcard:note "12" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ACACIAS" ;
+	vcard:postal-code "28005" ;
+	vcard:email "bppiobaroja@madrid.es" ;
+	vcard:tel "91 474 16 03" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1746> vcard:given-name "Biblioteca Pública Municipal San Blas (San Blas-Canillejas)" ;
+	vcard:note """
+  Superficie:  312 metros cuadrados
+  Puestos de lectura:  125
+  Puestos de Internet:  8
+ """ ;
+	vcard:street-address "SAN ROMAN DEL VALLE" ;
+	vcard:note "8" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ARCOS" ;
+	vcard:postal-code "28037" ;
+	vcard:email "bpsanblas@madrid.es" ;
+	vcard:tel "91 313 52 97" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1761> vcard:given-name "Biblioteca Pública Municipal Vallecas (Puente de Vallecas)" ;
+	vcard:note """
+  Superficie:  367 metros cuadrados
+  Puestos de lectura:  133
+  Puestos de Internet:  6
+ """ ;
+	vcard:street-address "PUERTO DEL MONASTERIO" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN DIEGO" ;
+	vcard:postal-code "28053" ;
+	vcard:email "bpvallecas@madrid.es" ;
+	vcard:tel "91 588 60 51" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1747> vcard:given-name "Biblioteca Pública Municipal Vicálvaro" ;
+	vcard:note """
+  Superficie:  547 metros cuadrados
+  Puestos de lectura:  94
+  Puestos de Internet:  10
+ """ ;
+	vcard:street-address "VILLARDONDIEGO" ;
+	vcard:note "36" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASCO HISTORICO VICALVARO" ;
+	vcard:postal-code "28032" ;
+	vcard:email "bpvicalvaro@madrid.es" ;
+	vcard:tel "91 775 31 43" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/5768564> vcard:given-name "Biblioteca Pública Municipal Ángel González (Latina)" ;
+	vcard:note """
+  Superficie:  2.811 metros cuadrados
+  Puestos de lectura:  309
+  Puestos de Internet:  34
+  Puestos de la sala polivalente:  60
+  Puestos de la sala de actividades:  18
+  Puestos de la sala de trabajo en grupo:  24
+   Página en Facebook
+ """ ;
+	vcard:street-address "GRANJA DE TORREHERMOSA" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALUCHE" ;
+	vcard:postal-code "28024" ;
+	vcard:email "bpangelgonzalez@madrid.es" ;
+	vcard:tel "91 512 35 42" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1774> vcard:given-name "Biblioteca Pública Retiro" ;
+	vcard:street-address "DOCTOR ESQUERDO" ;
+	vcard:note "189" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ADELFAS" ;
+	vcard:postal-code "28007" ;
+	vcard:email "bib.retiro@madrid.org" ;
+	vcard:tel "915 019 146 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1777> vcard:given-name "Biblioteca Pública Ruiz Egea" ;
+	vcard:note "  Préstamo domiciliario:  carné gratuito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal " ;
+	vcard:street-address "RAIMUNDO FERNANDEZ VILLAVERDE" ;
+	vcard:note "6" ;
+	vcard:region "MADRID" ;
+	vcard:locality "RIOS ROSAS" ;
+	vcard:postal-code "28003" ;
+	vcard:email "bib.ruizegea@madrid.org" ;
+	vcard:tel "915 349 029" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1765> vcard:given-name "Biblioteca Pública Salamanca - Manuel Alvar" ;
+	vcard:note "  Préstamo domiciliario:  carné gratuito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal " ;
+	vcard:street-address "AZCONA" ;
+	vcard:note "42" ;
+	vcard:region "MADRID" ;
+	vcard:locality "GUINDALERA" ;
+	vcard:postal-code "28028" ;
+	vcard:email "bib.salamanca@madrid.org" ;
+	vcard:tel "917 263 701 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/123303> vcard:given-name "Biblioteca Pública Usera - José Hierro" ;
+	vcard:note "  Préstamo domiciliario:  carné gratuito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal " ;
+	vcard:street-address "RAFAELA YBARRA" ;
+	vcard:note "43" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PRADOLONGO" ;
+	vcard:postal-code "28026" ;
+	vcard:email "bib.usera@madrid.org" ;
+	vcard:tel "914 229 501" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1800> vcard:given-name "Biblioteca Pública Vallecas" ;
+	vcard:note """  Préstamo domiciliario:  Carné gratuito presentando el  D.N.I  u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal
+  Días de cierre de la Biblioteca 2016:
+
+ Sábados: 26 marzo; 2, 9, 16, 23 y 30 julio; 6, 13, 20 y 27 agosto; 3 y 10 septiembre; 24 y 31 diciembre
+ Domingos: todos
+ Festivos: 1 y 6 enero; 24 y 25 marzo; 2 y 16 mayo; 25 julio; 15 agosto; 12 octubre; 1 y 9 noviembre; 6, 8 y 26 diciembre.
+ """ ;
+	vcard:street-address "RAFAEL ALBERTI" ;
+	vcard:note "36" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALOMERAS SURESTE" ;
+	vcard:postal-code "28018" ;
+	vcard:email "bib.vallecas@madrid.org" ;
+	vcard:tel """913 033 195
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/181101> vcard:given-name "Biblioteca Pública Villa de Vallecas - Luis Martín Santos" ;
+	vcard:note "  Préstamo domiciliario:  carné gratuito presentando el  D.N.I   u otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal " ;
+	vcard:street-address "ANTONIO MARIA SEGOVIA" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SANTA EUGENIA" ;
+	vcard:postal-code "28031" ;
+	vcard:email "bib.villavallecas@madrid.org" ;
+	vcard:tel "912 760 231" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/86719> vcard:given-name "Biblioteca Pública Villaverde - María Moliner" ;
+	vcard:note """  Préstamo domiciliario:  carné gratuito presentando el  D.N.I  y otro documento que acredite legalmente la identidad personal y, para los menores de 14 años, con autorización del padre, la madre o tutor legal
+  Días de cierre de la Biblioteca en 2016:
+
+  Sábados:  2 de enero; 26 de marzo; sábados de julio y agosto; 3 y 10 de septiembre; 24 y 31 de diciembre
+  Domingos:  todos
+  Festivos:  1 y 6 de enero; 24 y 25 de marzo; 2 y 16 de mayo; 25 de julio; 15 de agosto; 12 de octubre; 1 y 9 de noviembre; 6, 8 y 26 de diciembre
+
+     """ ;
+	vcard:street-address "VILLALONSO" ;
+	vcard:note "16" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN ANDRES" ;
+	vcard:postal-code "28021" ;
+	vcard:email "bib.villaverde@madrid.org" ;
+	vcard:tel "917 230 194  " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/108154> vcard:given-name "Biblioteca Regional de Madrid Joaquín Leguina" ;
+	vcard:note " Unicamente préstamo en sala " ;
+	vcard:street-address "RAMIREZ DE PRADO" ;
+	vcard:note "3" ;
+	vcard:region "MADRID" ;
+	vcard:locality "DELICIAS" ;
+	vcard:postal-code "28045" ;
+	vcard:email "biblio.regional@madrid.org" ;
+	vcard:tel "917 208 850 / 917 208 860 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/1788> vcard:given-name "Casa San Cristobal" ;
+	vcard:note "  Requisitos de acceso    Carné del centro. Es gratuito y se obtiene de manera instantánea presentado  DNI  o equivalente  Los menores de 8 años acompañados deben ir acompañados.  Los menores de más de 8 años requieren autorización del padre / madre o tutor para obtener el carné del centro    Puestos de lectura    160 para adultos  40 infantiles  " ;
+	vcard:street-address "ROCAFORT" ;
+	vcard:note "101" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN CRISTOBAL" ;
+	vcard:postal-code "28021" ;
+	vcard:email "bsancristobal@montemadrid.es" ;
+	vcard:tel "917 966 048" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/103331> vcard:given-name "Centro Social y Cultural la Casa Encendida" ;
+	vcard:street-address "VALENCIA" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EMBAJADORES" ;
+	vcard:postal-code "28012" ;
+	vcard:email "lacasaencendida@montemadrid.es" ;
+	vcard:tel """902 430 322
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/2047> vcard:given-name "Hemeroteca Municipal" ;
+	vcard:note """  Directorio:
+
+  Dirección  Inmaculada Zaragoza García Teléfono: 91 588 57 74 Correo:  zaragozagi@madrid.es
+  Secretaría  Teléfono: 91 588 57 77 o 91 588 57 74 Correo:  hemeroteca@madrid.es
+  Gestión económica y administrativa  Teléfono: 91 588 57 76 Correo:  gonzalezbj@madrid.es
+  Sección Contemporánea (Publicaciones en curso)  Teléfono: 91 588 57 56 y 91 513 33 65  Correo:  contemporanea@madrid.es
+  Sección Histórica  Teléfono: 91 480 06 52 y 91 480 06 05 Correo:  antonbmc@madrid.es
+  Sección Información  Teléfono: 91 588 57 72, 91 588 57 75 y  91 513 31 64 Correo:  infohemeroteca@madrid.es
+  Difusión  Teléfono: 91 480 05 79 Correo:  concejoml@madrid.es
+  Negociado de Microfilm  Teléfono: 91 588 57 73 Correo: nmicrofilm@madrid.es
+
+  Recepción  Teléfono: 91 588 57 71 y 91 588 57 64
+
+ """ ;
+	vcard:street-address "CONDE DUQUE" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28015" ;
+	vcard:email "hemeroteca@madrid.es" ;
+	vcard:tel """91 588 57 71, 91 513 31 64 (Información general)
+91 588 57 73 (Reprografía)""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Bibliotecas/10091056> vcard:given-name "Salas de estudio" ;
+	vcard:street-address "PRINCIPE DE VERGARA" ;
+	vcard:note "140" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CIUDAD JARDIN" ;
+	vcard:postal-code "28002" .

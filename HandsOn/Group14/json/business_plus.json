@@ -1,0 +1,202 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column name",
+    "columnName": "name"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column address",
+    "columnName": "address"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column city",
+    "columnName": "city"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column postal_code",
+    "columnName": "postal_code"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column latitude",
+    "columnName": "latitude"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column longitude",
+    "columnName": "longitude"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column phone_number",
+    "columnName": "phone_number"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TaxCode",
+    "columnName": "TaxCode"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column business_certificate",
+    "columnName": "business_certificate"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column application_date",
+    "columnName": "application_date"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column owner_address",
+    "columnName": "owner_address"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column owner_city",
+    "columnName": "owner_city"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column owner_state",
+    "columnName": "owner_state"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column owner_zip",
+    "columnName": "owner_zip"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#Business",
+              "curie": "ont:Business"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasBusinessID",
+              "curie": "ont:hasBusinessID",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "business_id"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14hasOwner",
+              "curie": "ont:hasOwner",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "owner_name"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#Business",
+              "curie": "ont:Business"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasBusinessID",
+              "curie": "ont:hasBusinessID",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "business_id",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14hasOwner",
+              "curie": "ont:hasOwner",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "owner_name"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
