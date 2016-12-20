@@ -1,0 +1,371 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DIA_INICIO",
+    "columnName": "DIA_INICIO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DIA_FINAL",
+    "columnName": "DIA_FINAL"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column RECEPCIONADAS",
+    "columnName": "RECEPCIONADAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ABIERTAS",
+    "columnName": "ABIERTAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column CERRADAS",
+    "columnName": "CERRADAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ABIERTAS_SIN_ACTUAR",
+    "columnName": "ABIERTAS_SIN_ACTUAR"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ACTUADAS_NO_CERRADAS",
+    "columnName": "ACTUADAS_NO_CERRADAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ACTUADAS_Y_CERRADAS",
+    "columnName": "ACTUADAS_Y_CERRADAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column VISADAS_NO_ACTUADAS",
+    "columnName": "VISADAS_NO_ACTUADAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column CERRADAS_POR_CANCELACION",
+    "columnName": "CERRADAS_POR_CANCELACION"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TRASLADOS_INTERNOS",
+    "columnName": "TRASLADOS_INTERNOS"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Id at index 1 based on column SECCION_ANOMALIA using expression null",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Id",
+    "columnInsertIndex": 1,
+    "baseColumnName": "SECCION_ANOMALIA",
+    "expression": "null",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Id",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          ""
+        ],
+        "to": "1++"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Id",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          ""
+        ],
+        "to": "1"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Id",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1"
+        ],
+        "to": 1
+      }
+    ]
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Id",
+    "columnName": "Id"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Id at index 1 based on column SECCION_ANOMALIA using expression grel:value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Id",
+    "columnInsertIndex": 1,
+    "baseColumnName": "SECCION_ANOMALIA",
+    "expression": "grel:value",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Id",
+    "columnName": "Id"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Id at index 1 based on column SECCION_ANOMALIA using expression grel:'a' : 1;\na = a+1;",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Id",
+    "columnInsertIndex": 1,
+    "baseColumnName": "SECCION_ANOMALIA",
+    "expression": "grel:'a' : 1;\na = a+1;",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Id",
+    "columnName": "Id"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01/"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "SECCION_ANOMALIA"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01/"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "\"resource/\"+replaceChars(value, \" -'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "SECCION_ANOMALIA"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01/"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \" -'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "SECCION_ANOMALIA",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01/"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \" -'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "SECCION_ANOMALIA",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
