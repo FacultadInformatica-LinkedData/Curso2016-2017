@@ -1,0 +1,190 @@
+@prefix : <http://www.semanticweb.org/group01> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/group01> .
+
+<http://www.semanticweb.org/group01> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/group01#esIncidenciaDe
+:esIncidenciaDe rdf:type owl:ObjectProperty ;
+                rdfs:domain :Incidencias ;
+                rdfs:range :Bici_Mad .
+
+
+###  http://www.semanticweb.org/group01#estaAparcadaEn
+:estaAparcadaEn rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :Bici_Mad ;
+                rdfs:range <http://linkedgeodata.org/ontology/BicycleParking> .
+
+
+###  http://www.semanticweb.org/group01#estaEnParking
+:estaEnParking rdf:type owl:ObjectProperty ;
+               rdfs:domain :Bici_Mad ;
+               rdfs:range <http://linkedgeodata.org/ontology/BicycleParking> .
+
+
+###  http://www.semanticweb.org/group01#tieneDireccion
+:tieneDireccion rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://linkedgeodata.org/ontology/BicycleParking> ;
+                rdfs:range <http://www.w3.org/2006/vcard/ns#street-address> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://dbpedia.org/ontology/building
+<http://dbpedia.org/ontology/building> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain :Aparcamiento_privado ;
+                                       rdfs:range xsd:string .
+
+
+###  http://dbpedia.org/ontology/capacity
+<http://dbpedia.org/ontology/capacity> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain :Aparcamiento_privado ;
+                                       rdfs:range [ rdf:type rdfs:Datatype ;
+                                                    owl:onDatatype xsd:int ;
+                                                    owl:withRestrictions ( [ xsd:minInclusive "0"^^xsd:int
+                                                                           ]
+                                                                           [ xsd:maxInclusive "140"^^xsd:int
+                                                                           ]
+                                                                         )
+                                                  ] ;
+                                       rdfs:comment "Esta propiedad vale tanto como para la capacidad de los aparcamientos privados, como del número de plazas de los aparcamientos de BiciMad." .
+
+
+###  http://dbpedia.org/ontology/causedBy
+<http://dbpedia.org/ontology/causedBy> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain :Incidencias ;
+                                       rdfs:range xsd:string .
+
+
+###  http://dbpedia.org/ontology/district
+<http://dbpedia.org/ontology/district> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain :Aparcamiento_BiciMad ;
+                                       rdfs:range xsd:string .
+
+
+###  http://dbpedia.org/ontology/neighbourhood
+<http://dbpedia.org/ontology/neighbourhood> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain :Aparcamiento_BiciMad ;
+                                            rdfs:range xsd:string .
+
+
+###  http://linked.earth/ontology#hasID
+<http://linked.earth/ontology#hasID> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/group01#tieneIDAparBiciMad
+:tieneIDAparBiciMad rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf <http://linked.earth/ontology#hasID> ;
+                    rdfs:domain :Aparcamiento_BiciMad ;
+                    rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group01#tieneIDAparcPriv
+:tieneIDAparcPriv rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf <http://linked.earth/ontology#hasID> ;
+                  rdfs:domain :Aparcamiento_privado ;
+                  rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group01#tieneIDBici
+:tieneIDBici rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://linked.earth/ontology#hasID> ;
+             rdfs:domain :Bici_Mad ;
+             rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group01#tieneIDIncidencias
+:tieneIDIncidencias rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf <http://linked.earth/ontology#hasID> ;
+                    rdfs:domain :Incidencias ;
+                    rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/group01#tienePlazas
+:tienePlazas rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://dbpedia.org/ontology/capacity> ;
+             rdfs:domain :Aparcamiento_BiciMad ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:onDatatype xsd:int ;
+                          owl:withRestrictions ( [ xsd:minInclusive "18"^^xsd:int
+                                                 ]
+                                                 [ xsd:maxInclusive "36"^^xsd:int
+                                                 ]
+                                               )
+                        ] .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasAddress
+<http://www.w3.org/2006/vcard/ns#hasAddress> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain :Aparcamiento_privado ;
+                                             rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasPhoto
+<http://www.w3.org/2006/vcard/ns#hasPhoto> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain :Aparcamiento_privado .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://linkedgeodata.org/ontology/BicycleParking
+<http://linkedgeodata.org/ontology/BicycleParking> rdf:type owl:Class .
+
+
+###  http://purl.org/vso/ns#Bicycle
+<http://purl.org/vso/ns#Bicycle> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group01#Aparcamiento_BiciMad
+:Aparcamiento_BiciMad rdf:type owl:Class ;
+                      rdfs:subClassOf <http://linkedgeodata.org/ontology/BicycleParking> .
+
+
+###  http://www.semanticweb.org/group01#Aparcamiento_privado
+:Aparcamiento_privado rdf:type owl:Class ;
+                      rdfs:subClassOf <http://linkedgeodata.org/ontology/BicycleParking> .
+
+
+###  http://www.semanticweb.org/group01#Bici_Mad
+:Bici_Mad rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.org/vso/ns#Bicycle> ;
+          rdfs:comment "This class will represent the rental bicicles." .
+
+
+###  http://www.semanticweb.org/group01#Incidencias
+:Incidencias rdf:type owl:Class ;
+             rdfs:comment "" .
+
+
+###  http://www.w3.org/2006/vcard/ns#street-address
+<http://www.w3.org/2006/vcard/ns#street-address> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/group01Aparcamiento1
+:Aparcamiento1 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/group01Bici1
+:Bici1 rdf:type owl:NamedIndividual ,
+                :Bici_Mad ;
+       :estaAparcadaEn :Aparcamiento1 .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

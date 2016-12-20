@@ -19,7 +19,18 @@
 
 :contieneEdificio a owl:ObjectProperty ;
 	rdfs:domain <http://dbpedia.org/ontology/Street> ;
-	rdfs:range <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> .
+	rdfs:range _:genid1 .
+
+_:genid1 a owl:Class ;
+	owl:unionOf _:genid3 .
+
+_:genid3 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Monument> ;
+	rdf:rest _:genid2 .
+
+_:genid2 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Museum> ;
+	rdf:rest rdf:nil .
 # 
 # http://smartsevilla.es/ontology#estaEnCalle
 
@@ -57,14 +68,50 @@
 # http://dbpedia.org/property/address
 
 <http://dbpedia.org/property/address> a owl:DatatypeProperty ;
-	rdfs:domain <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> ;
-	rdfs:range xsd:string .
+	rdfs:domain _:genid4 .
+
+_:genid4 a owl:Class ;
+	owl:unionOf _:genid6 .
+
+_:genid6 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Monument> ;
+	rdf:rest _:genid5 .
+
+_:genid5 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Museum> ;
+	rdf:rest rdf:nil .
+
+<http://dbpedia.org/property/address> rdfs:range xsd:string .
 # 
 # http://dbpedia.org/property/fullname
 
 <http://dbpedia.org/property/fullname> a owl:DatatypeProperty ;
-	rdfs:domain <http://dbpedia.org/ontology/BusCompany> , <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> , <http://dbpedia.org/page/Bus_stop> , <http://dbpedia.org/page/Travel> ;
-	rdfs:range xsd:string .
+	rdfs:domain _:genid7 .
+
+_:genid7 a owl:Class ;
+	owl:unionOf _:genid12 .
+
+_:genid12 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/BusCompany> ;
+	rdf:rest _:genid11 .
+
+_:genid11 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Monument> ;
+	rdf:rest _:genid10 .
+
+_:genid10 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Museum> ;
+	rdf:rest _:genid9 .
+
+_:genid9 a rdf:List ;
+	rdf:first <http://dbpedia.org/page/Bus_stop> ;
+	rdf:rest _:genid8 .
+
+_:genid8 a rdf:List ;
+	rdf:first <http://dbpedia.org/page/Travel> ;
+	rdf:rest rdf:nil .
+
+<http://dbpedia.org/property/fullname> rdfs:range xsd:string .
 # 
 # http://dbpedia.org/property/language
 
@@ -75,32 +122,112 @@
 # http://dbpedia.org/property/latitude
 
 <http://dbpedia.org/property/latitude> a owl:DatatypeProperty ;
-	rdfs:domain <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> , <http://dbpedia.org/page/Bus_stop> ;
-	rdfs:range xsd:double .
+	rdfs:domain _:genid13 .
+
+_:genid13 a owl:Class ;
+	owl:unionOf _:genid16 .
+
+_:genid16 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Monument> ;
+	rdf:rest _:genid15 .
+
+_:genid15 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Museum> ;
+	rdf:rest _:genid14 .
+
+_:genid14 a rdf:List ;
+	rdf:first <http://dbpedia.org/page/Bus_stop> ;
+	rdf:rest rdf:nil .
+
+<http://dbpedia.org/property/latitude> rdfs:range xsd:float .
 # 
 # http://dbpedia.org/property/longitude
 
 <http://dbpedia.org/property/longitude> a owl:DatatypeProperty ;
-	rdfs:domain <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> , <http://dbpedia.org/page/Bus_stop> ;
-	rdfs:range xsd:double .
+	rdfs:domain _:genid17 .
+
+_:genid17 a owl:Class ;
+	owl:unionOf _:genid20 .
+
+_:genid20 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Monument> ;
+	rdf:rest _:genid19 .
+
+_:genid19 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Museum> ;
+	rdf:rest _:genid18 .
+
+_:genid18 a rdf:List ;
+	rdf:first <http://dbpedia.org/page/Bus_stop> ;
+	rdf:rest rdf:nil .
+
+<http://dbpedia.org/property/longitude> rdfs:range xsd:float .
 # 
 # http://dbpedia.org/property/name
 
 <http://dbpedia.org/property/name> a owl:DatatypeProperty ;
-	rdfs:domain <http://dbpedia.org/ontology/BusCompany> , <http://dbpedia.org/ontology/Street> , <http://dbpedia.org/ontology/service> , <http://dbpedia.org/page/Travel> ;
-	rdfs:range xsd:string .
+	rdfs:domain _:genid21 .
+
+_:genid21 a owl:Class ;
+	owl:unionOf _:genid25 .
+
+_:genid25 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/BusCompany> ;
+	rdf:rest _:genid24 .
+
+_:genid24 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Street> ;
+	rdf:rest _:genid23 .
+
+_:genid23 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/service> ;
+	rdf:rest _:genid22 .
+
+_:genid22 a rdf:List ;
+	rdf:first <http://dbpedia.org/page/Travel> ;
+	rdf:rest rdf:nil .
+
+<http://dbpedia.org/property/name> rdfs:range xsd:string .
 # 
 # http://dbpedia.org/property/phoneNumber
 
 <http://dbpedia.org/property/phoneNumber> a owl:DatatypeProperty ;
-	rdfs:domain <http://dbpedia.org/ontology/BusCompany> , <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> ;
-	rdfs:range xsd:string .
+	rdfs:domain _:genid26 .
+
+_:genid26 a owl:Class ;
+	owl:unionOf _:genid29 .
+
+_:genid29 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/BusCompany> ;
+	rdf:rest _:genid28 .
+
+_:genid28 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Monument> ;
+	rdf:rest _:genid27 .
+
+_:genid27 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Museum> ;
+	rdf:rest rdf:nil .
+
+<http://dbpedia.org/property/phoneNumber> rdfs:range xsd:string .
 # 
 # http://dbpedia.org/property/photo
 
 <http://dbpedia.org/property/photo> a owl:DatatypeProperty ;
-	rdfs:domain <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> ;
-	rdfs:range xsd:anyURI .
+	rdfs:domain _:genid30 .
+
+_:genid30 a owl:Class ;
+	owl:unionOf _:genid32 .
+
+_:genid32 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Monument> ;
+	rdf:rest _:genid31 .
+
+_:genid31 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Museum> ;
+	rdf:rest rdf:nil .
+
+<http://dbpedia.org/property/photo> rdfs:range xsd:anyURI .
 # 
 # http://dbpedia.org/property/timeZone
 
@@ -112,13 +239,29 @@
 
 <http://dbpedia.org/property/type> a owl:DatatypeProperty ;
 	rdfs:domain <http://dbpedia.org/page/Travel> ;
-	rdfs:range xsd:integer .
+	rdfs:range xsd:string .
 # 
 # http://dbpedia.org/property/url
 
 <http://dbpedia.org/property/url> a owl:DatatypeProperty ;
-	rdfs:domain <http://dbpedia.org/ontology/BusCompany> , <http://dbpedia.org/ontology/Monument> , <http://dbpedia.org/ontology/Museum> ;
-	rdfs:range xsd:anyURI .
+	rdfs:domain _:genid33 .
+
+_:genid33 a owl:Class ;
+	owl:unionOf _:genid36 .
+
+_:genid36 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/BusCompany> ;
+	rdf:rest _:genid35 .
+
+_:genid35 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Monument> ;
+	rdf:rest _:genid34 .
+
+_:genid34 a rdf:List ;
+	rdf:first <http://dbpedia.org/ontology/Museum> ;
+	rdf:rest rdf:nil .
+
+<http://dbpedia.org/property/url> rdfs:range xsd:anyURI .
 # 
 # http://smartsevilla.es/ontology#end_date
 
@@ -130,7 +273,7 @@
 
 :route_id a owl:DatatypeProperty ;
 	rdfs:domain <http://dbpedia.org/page/Travel> ;
-	rdfs:range xsd:integer .
+	rdfs:range xsd:string .
 # 
 # http://smartsevilla.es/ontology#service_id
 
@@ -148,7 +291,7 @@
 
 :stop_id a owl:DatatypeProperty ;
 	rdfs:domain <http://dbpedia.org/page/Bus_stop> ;
-	rdfs:range xsd:integer .
+	rdfs:range xsd:string .
 # 
 # 
 # 

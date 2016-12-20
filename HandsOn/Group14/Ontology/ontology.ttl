@@ -5,130 +5,156 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14> .
-
+   
 <http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hadInspection
+:hadInspection rdf:type owl:ObjectProperty ;
+               rdfs:domain :Business ;
+               rdfs:range :Inspection .
+
+
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hadViolation
+:hadViolation rdf:type owl:ObjectProperty ;
+              rdfs:domain :Business ;
+              rdfs:range :Violation .
+
+
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#isInCity
+:isInCity rdf:type owl:ObjectProperty ;
+          rdfs:domain :Business ;
+          rdfs:range :City .
+
+
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#isInState
+:isInState rdf:type owl:ObjectProperty ;
+           rdfs:domain :Business ,
+                       :City ;
+           rdfs:range :State .
+
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#adress
-:adress rdf:type owl:DatatypeProperty ;
-        rdfs:domain :business ;
-        rdfs:range xsd:string .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasBusinessAddress
+:hasBusinessAddress rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Business ;
+                    rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#business_id
-:business_id rdf:type owl:DatatypeProperty ;
-             rdfs:domain :business ,
-                         :business_plus ,
-                         :inspection ,
-                         :violation ,
-                         :violation_plus ;
-             rdfs:range xsd:int .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasBusinessID
+:hasBusinessID rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Business ;
+               rdfs:range xsd:int .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#city
-:city rdf:type owl:DatatypeProperty ;
-      rdfs:domain :business ;
-      rdfs:range xsd:string .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasBusinessName
+:hasBusinessName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Business ;
+                 rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#date
-:date rdf:type owl:DatatypeProperty ;
-      rdfs:domain :inspection ,
-                  :violation ;
-      rdfs:range xsd:dateTime .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasInspectionDate
+:hasInspectionDate rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Inspection ;
+                   rdfs:range xsd:dateTime .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#description
-:description rdf:type owl:DatatypeProperty ;
-             rdfs:domain :violation ;
-             rdfs:range xsd:string .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasInspectionType
+:hasInspectionType rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Inspection ;
+                   rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#latitude
-:latitude rdf:type owl:DatatypeProperty ;
-          rdfs:domain :business ;
-          rdfs:range xsd:double .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasLatitude
+:hasLatitude rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Business ;
+             rdfs:range xsd:double .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#longitude
-:longitude rdf:type owl:DatatypeProperty ;
-           rdfs:domain :business ;
-           rdfs:range xsd:double .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasLongitude
+:hasLongitude rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Business ;
+              rdfs:range xsd:double .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#name
-:name rdf:type owl:DatatypeProperty ;
-      rdfs:domain :business ;
-      rdfs:range xsd:string .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasNumberOfBusinessOfTheInspection
+:hasNumberOfBusinessOfTheInspection rdf:type owl:DatatypeProperty .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#owner_name
-:owner_name rdf:type owl:DatatypeProperty ;
-            rdfs:domain :business_plus ;
-            rdfs:range xsd:string .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasNumberOfBusinessOfTheViolation
+:hasNumberOfBusinessOfTheViolation rdf:type owl:DatatypeProperty .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#phone_number
-:phone_number rdf:type owl:DatatypeProperty ;
-              rdfs:domain :business ;
-              rdfs:range xsd:int .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasOwner
+:hasOwner rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Business ;
+          rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#postal_code
-:postal_code rdf:type owl:DatatypeProperty ;
-             rdfs:domain :business ;
-             rdfs:range xsd:int .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasPhoneNumber
+:hasPhoneNumber rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Business ;
+                rdfs:range xsd:int .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#risk_category
-:risk_category rdf:type owl:DatatypeProperty ;
-               rdfs:domain :violation_plus ;
-               rdfs:range xsd:string .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasPostalCodeBusiness
+:hasPostalCodeBusiness rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Business ;
+                       rdfs:range xsd:int .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#score
-:score rdf:type owl:DatatypeProperty ;
-       rdfs:domain :inspection ;
-       rdfs:range xsd:int .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasRiskCategory
+:hasRiskCategory rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Violation ;
+                 rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#state
-:state rdf:type owl:DatatypeProperty ;
-       rdfs:domain :business ;
-       rdfs:range xsd:string .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasScore
+:hasScore rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Inspection ;
+          rdfs:range xsd:int .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#type
-:type rdf:type owl:DatatypeProperty ;
-      rdfs:domain :inspection ;
-      rdfs:range xsd:string .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasViolationDate
+:hasViolationDate rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Violation ;
+                  rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasViolationDescription
+:hasViolationDescription rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Violation ;
+                         rdfs:range xsd:string .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#business
-:business rdf:type owl:Class .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#Business
+:Business rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#business_plus
-:business_plus rdf:type owl:Class .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#City
+:City rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#inspection
-:inspection rdf:type owl:Class .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#Inspection
+:Inspection rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#violation
-:violation rdf:type owl:Class .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#State
+:State rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#violation_plus
-:violation_plus rdf:type owl:Class .
+###  http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#Violation
+:Violation rdf:type owl:Class .
 
 
 ###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

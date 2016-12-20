@@ -1,0 +1,147 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix world: <http://www.semanticweb.org/raul/ontologies/2016/11/ontology/world#> .
+@prefix my_instances: <http://www.semanticweb.org/raul/ontologies/2016/11/ontology/resources/> .
+@base <http://www.semanticweb.org/raul/ontologies/2016/11/ontology> .
+
+<TriplesMapCity>
+	a rr:TriplesMap;
+	
+	rr:logicalTable [ rr:tableName "city" ];
+	
+	rr:subjectMap[ 
+		rr:termType rr:IRI;
+		rr:template "http://www.semanticweb.org/raul/ontologies/2016/11/ontology/resources/City/{ID}";
+		rr:class world:City
+	];
+		
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasCityName ];
+		rr:objectMap[ rr:column "Name"];
+	]	
+
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasDistrict];
+		rr:objectMap[ rr:column "District"];
+	]	
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:isPartOf];
+		rr:objectMap[ rr:template "http://www.semanticweb.org/raul/ontologies/2016/11/ontology/resources/Country/{CountryCode}" ];
+	]
+	
+.
+
+
+<TriplesMapCountrylanguage>
+	a rr:TriplesMap;
+	
+	rr:logicalTable [ rr:tableName "countrylanguage" ];
+	
+	rr:subjectMap[ 
+		rr:termType rr:IRI;
+		rr:template "http://www.semanticweb.org/raul/ontologies/2016/11/ontology/resources/CountryLanguage/{Language}";
+		rr:class world:Countrylanguage
+	];
+		
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:isOfficial ];
+		rr:objectMap[ rr:column "IsOfficial"];
+	]	
+
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasPercentage];
+		rr:objectMap[ rr:column "Percentage"];
+	]	
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:isSpokenIn];
+		rr:objectMap[ rr:template "http://www.semanticweb.org/raul/ontologies/2016/11/ontology/resources/Country/{CountryCode}"];
+	]
+	
+.
+
+
+<TriplesMapCountry>
+	a rr:TriplesMap;
+	
+	rr:logicalTable [ rr:tableName "country" ];
+	
+	rr:subjectMap[ 
+		rr:termType rr:IRI;
+		rr:template "http://www.semanticweb.org/raul/ontologies/2016/11/ontology/resources/Country/{Code}";
+		rr:class world:Country
+	];
+		
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasCountryName];
+		rr:objectMap[ rr:column "Name"];
+	]	
+
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasContinent];
+		rr:objectMap[ rr:column "Continent"];
+	]	
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasRegion];
+		rr:objectMap[ rr:column "Region"];
+	]	
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasSurfaceArea];
+		rr:objectMap[ rr:column "SurfaceArea"];
+	]	
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasIndepYear];
+		rr:objectMap[ rr:column "IndepYear"];
+	]	
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasCountryPopulation];
+		rr:objectMap[ rr:column "Population"];
+	]	
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasLifeExpectancy];
+		rr:objectMap[ rr:column "LifeExpectancy"];
+	]
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasGNP];
+		rr:objectMap[ rr:column "GNP"];
+	]
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasGNPOld];
+		rr:objectMap[ rr:column "GNPOld"];
+	]
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasLocalName];
+		rr:objectMap[ rr:column "LocalName"];
+	]
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasGovernmentForm];
+		rr:objectMap[ rr:column "GovernmentForm"];
+	]
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasHeadOfState];
+		rr:objectMap[ rr:column "HeadOfState"];
+	]
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasCapital];
+		rr:objectMap[ rr:column "Capital"];
+	]
+	
+	rr:predicateObjectMap[
+		rr:predicateMap[ rr:predicate world:hasCode2];
+		rr:objectMap[ rr:column "Code2"];
+	]
+.
+
+

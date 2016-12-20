@@ -1,0 +1,80 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/monuments/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(chomp(value,\"(Sevilla)\"), \" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "Nombre",
+          "rdfTypes": [
+            {
+              "uri": "http://smartsevilla.es/ontology#SitioDeInteres",
+              "curie": "g10:SitioDeInteres"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smartsevilla.es/ontology#long_name",
+              "curie": "g10:long_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "Nombre"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#latitud",
+              "curie": "g10:latitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:float",
+                "columnName": "Column 2"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#longitud",
+              "curie": "g10:longitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:float",
+                "columnName": "Column 3"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

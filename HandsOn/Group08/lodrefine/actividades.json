@@ -230,5 +230,818 @@
         }
       ]
     }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Actividad",
+              "curie": "ont:Actividad"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasPrecio",
+              "curie": "ont:hasPrecio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "PRECIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaInicio",
+              "curie": "ont:hasFechaInicio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "FECHA-INICIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaFin",
+              "curie": "ont:hasFechaFin",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "FECHA-FIN"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#startsHora",
+              "curie": "ont:startsHora",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "HORA"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "URL-ACTIVIDAD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#celebratesIn",
+              "curie": "ont:celebratesIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-INSTALACION",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+                    "curie": "ont:Instalacion"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasTipo",
+              "curie": "ont:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TIPO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Actividad",
+              "curie": "ont:Actividad"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasPrecio",
+              "curie": "ont:hasPrecio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "PRECIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaInicio",
+              "curie": "ont:hasFechaInicio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "FECHA-INICIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaFin",
+              "curie": "ont:hasFechaFin",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "FECHA-FIN"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#startsHora",
+              "curie": "ont:startsHora",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#time",
+                "columnName": "HORA"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "URL-ACTIVIDAD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#celebratesIn",
+              "curie": "ont:celebratesIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-INSTALACION",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+                    "curie": "ont:Instalacion"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasTipo",
+              "curie": "ont:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "TIPO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Actividad",
+              "curie": "ont:Actividad"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasPrecio",
+              "curie": "ont:hasPrecio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "PRECIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaInicio",
+              "curie": "ont:hasFechaInicio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "FECHA-INICIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaFin",
+              "curie": "ont:hasFechaFin",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "FECHA-FIN"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#startsHora",
+              "curie": "ont:startsHora",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#time",
+                "columnName": "HORA"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "URL-ACTIVIDAD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#celebratesIn",
+              "curie": "ont:celebratesIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-INSTALACION",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+                    "curie": "ont:Instalacion"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasTipo",
+              "curie": "ont:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "TIPO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Actividad",
+              "curie": "ont:Actividad"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasPrecio",
+              "curie": "ont:hasPrecio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "PRECIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaInicio",
+              "curie": "ont:hasFechaInicio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "FECHA-INICIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaFin",
+              "curie": "ont:hasFechaFin",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "FECHA-FIN"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#startsHora",
+              "curie": "ont:startsHora",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#time",
+                "columnName": "HORA"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "URL-ACTIVIDAD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#celebratesIn",
+              "curie": "ont:celebratesIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-INSTALACION",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+                    "curie": "ont:Instalacion"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasTipo",
+              "curie": "ont:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "TIPO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Actividad",
+              "curie": "ont:Actividad"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasPrecio",
+              "curie": "ont:hasPrecio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "PRECIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaInicio",
+              "curie": "ont:hasFechaInicio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "FECHA-INICIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaFin",
+              "curie": "ont:hasFechaFin",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "FECHA-FIN"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#startsHora",
+              "curie": "ont:startsHora",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#time",
+                "columnName": "HORA"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "URL-ACTIVIDAD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#celebratesIn",
+              "curie": "ont:celebratesIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-INSTALACION",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+                    "curie": "ont:Instalacion"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasTipo",
+              "curie": "ont:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "TIPO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Actividad",
+              "curie": "ont:Actividad"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasPrecio",
+              "curie": "ont:hasPrecio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "PRECIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaInicio",
+              "curie": "ont:hasFechaInicio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "FECHA-INICIO"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasFechaFin",
+              "curie": "ont:hasFechaFin",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "FECHA-FIN"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#startsHora",
+              "curie": "ont:startsHora",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#time",
+                "columnName": "HORA"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "URL-ACTIVIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#celebratesIn",
+              "curie": "ont:celebratesIn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-INSTALACION",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+                    "curie": "ont:Instalacion"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasTipo",
+              "curie": "ont:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "TIPO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column URL-ACTIVIDAD to WEB",
+    "oldColumnName": "URL-ACTIVIDAD",
+    "newColumnName": "WEB"
   }
 ]

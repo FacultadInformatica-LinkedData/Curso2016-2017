@@ -1,0 +1,481 @@
+[
+  {
+    "op": "core/column-addition",
+    "description": "Create column Averange at index 6 based on column P3A using expression grel:sum(filter(\n[\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value\n],\nv,\nv<8\n))/length(filter(\n[\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value\n],\nv,\nv<8\n))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Averange",
+    "columnInsertIndex": 6,
+    "baseColumnName": "P3A",
+    "expression": "grel:sum(filter(\n[\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value\n],\nv,\nv<8\n))/length(filter(\n[\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value\n],\nv,\nv<8\n))",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-move",
+    "description": "Move column Averange to position 69",
+    "columnName": "Averange",
+    "index": 69
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "P2A",
+      "P2B",
+      "P3A",
+      "P3B",
+      "P3C",
+      "P3D",
+      "P3E",
+      "P3F",
+      "P3G",
+      "P3H",
+      "P3I",
+      "P3J",
+      "P3K",
+      "P3L",
+      "P3M",
+      "P4A",
+      "P4B",
+      "SECCION",
+      "BARRIO",
+      "CODBARRIO",
+      "DISTRITO",
+      "Averange"
+    ]
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Averange",
+    "columnName": "Averange"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Average at index 1 based on column P2A using expression grel:sum(filter(\n[\ncells[\"P2A\"].value,\ncells[\"P2B\"].value,\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3E\"].value,\ncells[\"P3F\"].value,\ncells[\"P3G\"].value,\ncells[\"P3H\"].value,\ncells[\"P3I\"].value,\ncells[\"P3J\"].value,\ncells[\"P3K\"].value,\ncells[\"P3L\"].value,\ncells[\"P3M\"].value,\ncells[\"P4A\"].value,\ncells[\"P4B\"].value\n],\nv,\nv<8))/length(filter([\ncells[\"P2A\"].value,\ncells[\"P2B\"].value,\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3E\"].value,\ncells[\"P3F\"].value,\ncells[\"P3G\"].value,\ncells[\"P3H\"].value,\ncells[\"P3I\"].value,\ncells[\"P3J\"].value,\ncells[\"P3K\"].value,\ncells[\"P3L\"].value,\ncells[\"P3M\"].value,\ncells[\"P4A\"].value,\ncells[\"P4B\"].value],\nv,v<8))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Average",
+    "columnInsertIndex": 1,
+    "baseColumnName": "P2A",
+    "expression": "grel:sum(filter(\n[\ncells[\"P2A\"].value,\ncells[\"P2B\"].value,\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3E\"].value,\ncells[\"P3F\"].value,\ncells[\"P3G\"].value,\ncells[\"P3H\"].value,\ncells[\"P3I\"].value,\ncells[\"P3J\"].value,\ncells[\"P3K\"].value,\ncells[\"P3L\"].value,\ncells[\"P3M\"].value,\ncells[\"P4A\"].value,\ncells[\"P4B\"].value\n],\nv,\nv<8))/length(filter([\ncells[\"P2A\"].value,\ncells[\"P2B\"].value,\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3E\"].value,\ncells[\"P3F\"].value,\ncells[\"P3G\"].value,\ncells[\"P3H\"].value,\ncells[\"P3I\"].value,\ncells[\"P3J\"].value,\ncells[\"P3K\"].value,\ncells[\"P3L\"].value,\ncells[\"P3M\"].value,\ncells[\"P4A\"].value,\ncells[\"P4B\"].value],\nv,v<8))",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Averange at index 6 based on column P3A using expression grel:sum(filter(\n[\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value\n],\nv,\nv<8\n))/length(filter(\n[\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value\n],\nv,\nv<8\n))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Averange",
+    "columnInsertIndex": 6,
+    "baseColumnName": "P3A",
+    "expression": "grel:sum(filter(\n[\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value\n],\nv,\nv<8\n))/length(filter(\n[\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value,\ncells[\"P3D\"].value\n],\nv,\nv<8\n))",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "P2A",
+      "P2B",
+      "P3A",
+      "P3B",
+      "P3C",
+      "P3D",
+      "P3E",
+      "P3F",
+      "P3G",
+      "P3H",
+      "P3I",
+      "P3J",
+      "P3K",
+      "P3L",
+      "P3M",
+      "P4A",
+      "P4B",
+      "SECCION",
+      "BARRIO",
+      "CODBARRIO",
+      "DISTRITO",
+      "Averange"
+    ]
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Averange",
+    "columnName": "Averange"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Average at index 1 based on column P2A using expression grel:sum(filter(\n[\ncells[\"P2A\"].value,\ncells[\"P2B\"].value,\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3E\"].value,\ncells[\"P3F\"].value,\ncells[\"P3G\"].value,\ncells[\"P3H\"].value,\ncells[\"P3I\"].value,\ncells[\"P3J\"].value,\ncells[\"P3K\"].value,\ncells[\"P3L\"].value,\ncells[\"P3M\"].value,\ncells[\"P4A\"].value,\ncells[\"P4B\"].value\n],\nv,\nv<8))/length(filter([\ncells[\"P2A\"].value,\ncells[\"P2B\"].value,\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3E\"].value,\ncells[\"P3F\"].value,\ncells[\"P3G\"].value,\ncells[\"P3H\"].value,\ncells[\"P3I\"].value,\ncells[\"P3J\"].value,\ncells[\"P3K\"].value,\ncells[\"P3L\"].value,\ncells[\"P3M\"].value,\ncells[\"P4A\"].value,\ncells[\"P4B\"].value],\nv,v<8))",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Average",
+    "columnInsertIndex": 1,
+    "baseColumnName": "P2A",
+    "expression": "grel:sum(filter(\n[\ncells[\"P2A\"].value,\ncells[\"P2B\"].value,\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3E\"].value,\ncells[\"P3F\"].value,\ncells[\"P3G\"].value,\ncells[\"P3H\"].value,\ncells[\"P3I\"].value,\ncells[\"P3J\"].value,\ncells[\"P3K\"].value,\ncells[\"P3L\"].value,\ncells[\"P3M\"].value,\ncells[\"P4A\"].value,\ncells[\"P4B\"].value\n],\nv,\nv<8))/length(filter([\ncells[\"P2A\"].value,\ncells[\"P2B\"].value,\ncells[\"P3A\"].value,\ncells[\"P3B\"].value,\ncells[\"P3C\"].value,\ncells[\"P3D\"].value,\ncells[\"P3E\"].value,\ncells[\"P3F\"].value,\ncells[\"P3G\"].value,\ncells[\"P3H\"].value,\ncells[\"P3I\"].value,\ncells[\"P3J\"].value,\ncells[\"P3K\"].value,\ncells[\"P3L\"].value,\ncells[\"P3M\"].value,\ncells[\"P4A\"].value,\ncells[\"P4B\"].value],\nv,v<8))",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-move",
+    "description": "Move column Average to position 21",
+    "columnName": "Average",
+    "index": 21
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P2A",
+    "columnName": "P2A"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P2B",
+    "columnName": "P2B"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P3A",
+    "columnName": "P3A"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P3B",
+    "columnName": "P3B"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P3C",
+    "columnName": "P3C"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P3D",
+    "columnName": "P3D"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P3E",
+    "columnName": "P3E"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P3F",
+    "columnName": "P3F"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P3G",
+    "columnName": "P3G"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P3H",
+    "columnName": "P3H"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P3I",
+    "columnName": "P3I"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P3J",
+    "columnName": "P3J"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P3K",
+    "columnName": "P3K"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P3L",
+    "columnName": "P3L"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P3M",
+    "columnName": "P3M"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P4A",
+    "columnName": "P4A"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column P4B",
+    "columnName": "P4B"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Average to AVERAGE",
+    "oldColumnName": "Average",
+    "newColumnName": "AVERAGE"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://localhost:3333/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://localhost:3333/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://127.0.0.1:3333/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://127.0.0.1:3333/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "SECCION",
+              "curie": ":SECCION",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "SECCION"
+              }
+            },
+            {
+              "uri": "BARRIO",
+              "curie": ":BARRIO",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "CODBARRIO",
+              "curie": ":CODBARRIO",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODBARRIO"
+              }
+            },
+            {
+              "uri": "DISTRITO",
+              "curie": ":DISTRITO",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO"
+              }
+            },
+            {
+              "uri": "AVERAGE",
+              "curie": ":AVERAGE",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "AVERAGE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-move",
+    "description": "Move column BARRIO to position 0",
+    "columnName": "BARRIO",
+    "index": 0
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://127.0.0.1:3333/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "BARRIO",
+              "curie": ":BARRIO",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "SECCION",
+              "curie": ":SECCION",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "SECCION"
+              }
+            },
+            {
+              "uri": "CODBARRIO",
+              "curie": ":CODBARRIO",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODBARRIO"
+              }
+            },
+            {
+              "uri": "DISTRITO",
+              "curie": ":DISTRITO",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO"
+              }
+            },
+            {
+              "uri": "AVERAGE",
+              "curie": ":AVERAGE",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "AVERAGE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
