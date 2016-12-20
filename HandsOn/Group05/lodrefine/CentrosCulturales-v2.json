@@ -1,0 +1,1424 @@
+[
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "?",
+          "name": "Column",
+          "type": "text",
+          "columnName": "Column"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column to PK",
+    "oldColumnName": "Column",
+    "newColumnName": "PK"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 2 to NOMBRE",
+    "oldColumnName": "Column 2",
+    "newColumnName": "NOMBRE"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 3 to DESCRIPCION-ENTIDAD",
+    "oldColumnName": "Column 3",
+    "newColumnName": "DESCRIPCION-ENTIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 4 to HORARIO",
+    "oldColumnName": "Column 4",
+    "newColumnName": "HORARIO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 5 to EQUIPAMIENTO",
+    "oldColumnName": "Column 5",
+    "newColumnName": "EQUIPAMIENTO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 6 to TRANSPORTE",
+    "oldColumnName": "Column 6",
+    "newColumnName": "TRANSPORTE"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 7 to DESCRIPCION",
+    "oldColumnName": "Column 7",
+    "newColumnName": "DESCRIPCION"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 8 to ACCESIBILIDAD",
+    "oldColumnName": "Column 8",
+    "newColumnName": "ACCESIBILIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 9 to CONTENT-URL",
+    "oldColumnName": "Column 9",
+    "newColumnName": "CONTENT-URL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 10 to NOMBRE-VIA",
+    "oldColumnName": "Column 10",
+    "newColumnName": "NOMBRE-VIA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 11 to CLASE-VIAL",
+    "oldColumnName": "Column 11",
+    "newColumnName": "CLASE-VIAL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 12 to TIPO-NUM",
+    "oldColumnName": "Column 12",
+    "newColumnName": "TIPO-NUM"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 13 to NUM",
+    "oldColumnName": "Column 13",
+    "newColumnName": "NUM"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 14 to PLANTA",
+    "oldColumnName": "Column 14",
+    "newColumnName": "PLANTA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 15 to PUERTA",
+    "oldColumnName": "Column 15",
+    "newColumnName": "PUERTA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 16 to ESCALERAS",
+    "oldColumnName": "Column 16",
+    "newColumnName": "ESCALERAS"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 17 to ORIENTACION",
+    "oldColumnName": "Column 17",
+    "newColumnName": "ORIENTACION"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 18 to LOCALIDAD",
+    "oldColumnName": "Column 18",
+    "newColumnName": "LOCALIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 19 to PROVINCIA",
+    "oldColumnName": "Column 19",
+    "newColumnName": "PROVINCIA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 20 to CODIGO-POSTAL",
+    "oldColumnName": "Column 20",
+    "newColumnName": "CODIGO-POSTAL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 21 to BARRIO",
+    "oldColumnName": "Column 21",
+    "newColumnName": "BARRIO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 22 to DISTRITO",
+    "oldColumnName": "Column 22",
+    "newColumnName": "DISTRITO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 23 to COORDENADA-X",
+    "oldColumnName": "Column 23",
+    "newColumnName": "COORDENADA-X"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 24 to COORDENADA-Y",
+    "oldColumnName": "Column 24",
+    "newColumnName": "COORDENADA-Y"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 25 to LATITUD",
+    "oldColumnName": "Column 25",
+    "newColumnName": "LATITUD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 26 to LONGITUD",
+    "oldColumnName": "Column 26",
+    "newColumnName": "LONGITUD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 27 to TELEFONO",
+    "oldColumnName": "Column 27",
+    "newColumnName": "TELEFONO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 28 to FAX",
+    "oldColumnName": "Column 28",
+    "newColumnName": "FAX"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 29 to EMAIL",
+    "oldColumnName": "Column 29",
+    "newColumnName": "EMAIL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 30 to TIPO",
+    "oldColumnName": "Column 30",
+    "newColumnName": "TIPO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 31",
+    "columnName": "Column 31"
+  },
+  {
+    "op": "core/row-star",
+    "description": "Star rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "starred": true
+  },
+  {
+    "op": "core/row-star",
+    "description": "Unstar rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "starred": false
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int",
+          "columnName": "PK"
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int",
+          "columnName": "PK"
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int",
+          "columnName": "PK"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FAX",
+    "columnName": "FAX"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ORIENTACION",
+    "columnName": "ORIENTACION"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ESCALERAS",
+    "columnName": "ESCALERAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column PUERTA",
+    "columnName": "PUERTA"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column PLANTA",
+    "columnName": "PLANTA"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"CentrosCulturales/\"+value",
+          "isRowNumberCell": false,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int",
+          "columnName": "PK"
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"CentrosCulturales/\"+value",
+          "isRowNumberCell": false,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int",
+          "columnName": "PK"
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"CentrosCulturales/\"+value",
+          "isRowNumberCell": false,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int",
+          "columnName": "PK"
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"CentrosCulturales/\"+value",
+          "isRowNumberCell": false,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int",
+          "columnName": "PK"
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"CentrosCulturales/\"+value",
+          "isRowNumberCell": true,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int"
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"CentrosCulturales/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#name",
+              "curie": "group5:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#nombreCalle",
+              "curie": "group5:nombreCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#numeroCalle",
+              "curie": "group5:numeroCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#localidad",
+              "curie": "group5:localidad",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#barrio",
+              "curie": "group5:barrio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#codigoPostal",
+              "curie": "group5:codigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#email",
+              "curie": "group5:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#telefono",
+              "curie": "group5:telefono",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"CentrosCulturales/\"+value",
+          "isRowNumberCell": true,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int"
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"CentrosCulturales/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#name",
+              "curie": "group5:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#nombreCalle",
+              "curie": "group5:nombreCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#numeroCalle",
+              "curie": "group5:numeroCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#localidad",
+              "curie": "group5:localidad",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#barrio",
+              "curie": "group5:barrio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#codigoPostal",
+              "curie": "group5:codigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#email",
+              "curie": "group5:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#telefono",
+              "curie": "group5:telefono",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"CentrosCulturales/\"+value",
+          "isRowNumberCell": true,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int"
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"CentrosCulturales/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#given-name",
+              "curie": "vcard:given-name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#street-address",
+              "curie": "vcard:street-address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#note",
+              "curie": "vcard:note",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#region",
+              "curie": "vcard:region",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#locality",
+              "curie": "vcard:locality",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#postal-code",
+              "curie": "vcard:postal-code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#email",
+              "curie": "vcard:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column NOMBRE to library name",
+    "oldColumnName": "NOMBRE",
+    "newColumnName": "library name"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column library name to Library",
+    "oldColumnName": "library name",
+    "newColumnName": "Library"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Library to Biblioteca",
+    "oldColumnName": "Library",
+    "newColumnName": "Biblioteca"
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Biblioteca to type http://www.wikidata.org/ontology#Item",
+    "columnName": "Biblioteca",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://www.wikidata.org/ontology#Item",
+        "name": "http://www.wikidata.org/ontology#Item"
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Paco de Lucía (metropolitana di Madrid) (http://dbpedia.org/resource/Paco_de_Lucía_(Madrid_Metro)) for cells containing \"Auditorio y sala de exposiciones Paco de Lucía (antigua Sala Latinarte)\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Auditorio y sala de exposiciones Paco de Lucía (antigua Sala Latinarte)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Paco_de_Lucía_(Madrid_Metro)",
+      "name": "Paco de Lucía (metropolitana di Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Casa Asia (http://www.wikidata.org/entity/Q11680571) for cells containing \"Centro Casa Asia - Madrid\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Centro Casa Asia - Madrid",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q11680571",
+      "name": "Casa Asia",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Cuartel del Conde-Duque (http://dbpedia.org/resource/Cuartel_del_Conde-Duque) for cells containing \"Centro Conde Duque\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Centro Conde Duque",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Cuartel_del_Conde-Duque",
+      "name": "Cuartel del Conde-Duque",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Concierto de Aranjuez (Paco de Lucia album) (http://dbpedia.org/resource/Concierto_de_Aranjuez_(Paco_de_Lucia_album)) for cells containing \"Auditorio y sala de exposiciones Paco de Lucía (antigua Sala Latinarte)\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Auditorio y sala de exposiciones Paco de Lucía (antigua Sala Latinarte)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Concierto_de_Aranjuez_(Paco_de_Lucia_album)",
+      "name": "Concierto de Aranjuez (Paco de Lucia album)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Paco de Lucía (metropolitana di Madrid) (http://dbpedia.org/resource/Paco_de_Lucía_(Madrid_Metro)) for cells containing \"Auditorio y sala de exposiciones Paco de Lucía (antigua Sala Latinarte)\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Auditorio y sala de exposiciones Paco de Lucía (antigua Sala Latinarte)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Paco_de_Lucía_(Madrid_Metro)",
+      "name": "Paco de Lucía (metropolitana di Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Palacio del Conde-Duque en Olivares (http://www.wikidata.org/entity/Q6058529) for cells containing \"Centro Conde Duque\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Centro Conde Duque",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q6058529",
+      "name": "Palacio del Conde-Duque en Olivares",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Moncloa-Aravaca (http://dbpedia.org/resource/Category:Moncloa-Aravaca) for cells containing \"Centro Cultural Agustín Díaz (Moncloa - Aravaca)\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Centro Cultural Agustín Díaz (Moncloa - Aravaca)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Category:Moncloa-Aravaca",
+      "name": "Moncloa-Aravaca",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Fuencarral-El Pardo (http://dbpedia.org/resource/Fuencarral-El_Pardo) for cells containing \"Centro Cultural Alfredo Kraus (Fuencarral - El Pardo)\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Centro Cultural Alfredo Kraus (Fuencarral - El Pardo)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Fuencarral-El_Pardo",
+      "name": "Fuencarral-El Pardo",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Mark to create one single new topic for all cells containing \"Centro Cultural Antonio Machado (San Blas - Canillejas)\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Centro Cultural Antonio Machado (San Blas - Canillejas)",
+    "judgment": "new",
+    "shareNewTopics": true
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Buero Vallejo Theatre (http://www.wikidata.org/entity/Q9082124) for cells containing \"Centro Cultural Buero Vallejo (San Blas - Canillejas)\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Centro Cultural Buero Vallejo (San Blas - Canillejas)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q9082124",
+      "name": "Buero Vallejo Theatre",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Casa de Vacas (http://www.wikidata.org/entity/Q21155850) for cells containing \"Centro Cultural Casa de Vacas (Retiro)\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Centro Cultural Casa de Vacas (Retiro)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q21155850",
+      "name": "Casa de Vacas",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Casa del Reloj (http://www.wikidata.org/entity/Q2486887) for cells containing \"Centro Cultural Casa del Reloj (Arganzuela)\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Centro Cultural Casa del Reloj (Arganzuela)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q2486887",
+      "name": "Casa del Reloj",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Casa del Reloj (http://www.wikidata.org/entity/Q5755556) for cells containing \"Centro Cultural Casa del Reloj (Arganzuela)\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Centro Cultural Casa del Reloj (Arganzuela)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q5755556",
+      "name": "Casa del Reloj",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ciudad Pegaso (http://www.wikidata.org/entity/Q5770693) for cells containing \"Centro Cultural Ciudad Pegaso (San Blas - Canillejas)\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Centro Cultural Ciudad Pegaso (San Blas - Canillejas)",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q5770693",
+      "name": "Ciudad Pegaso",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Centro Dotacional Integrado Arganzuela (http://www.wikidata.org/entity/Q16545668) for cells containing \"Centro Cultural Dotacional Integrado Arganzuela\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Centro Cultural Dotacional Integrado Arganzuela",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q16545668",
+      "name": "Centro Dotacional Integrado Arganzuela",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Teatro Fernán Gómez (http://www.wikidata.org/entity/Q6139714) for cells containing \"Fernán Gómez. Centro Cultural de la Villa\" in column Biblioteca",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Biblioteca",
+    "similarValue": "Fernán Gómez. Centro Cultural de la Villa",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q6139714",
+      "name": "Teatro Fernán Gómez",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Biblioteca to Centros Culturales",
+    "oldColumnName": "Biblioteca",
+    "newColumnName": "Centros Culturales"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Centros Culturales de DBpedia at index 2 based on column Centros Culturales using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Centros Culturales de DBpedia",
+    "columnInsertIndex": 2,
+    "baseColumnName": "Centros Culturales",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-literal",
+          "expression": "\"CentrosCulturales/\"+value",
+          "isRowNumberCell": true,
+          "valueType": "http://www.w3.org/2001/XMLSchema#int"
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"CentrosCulturales/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/CivicStructure",
+              "curie": "schema:CivicStructure"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#given-name",
+              "curie": "vcard:given-name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Centros Culturales"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#street-address",
+              "curie": "vcard:street-address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#note",
+              "curie": "vcard:note",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#region",
+              "curie": "vcard:region",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#locality",
+              "curie": "vcard:locality",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#postal-code",
+              "curie": "vcard:postal-code",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#email",
+              "curie": "vcard:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Centros Culturales de DBpedia",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,327 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g10: <http://smartsevilla.es/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://smartsevilla.es/resources/travels/01> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "1"^^<xsd:string> ;
+	dbp:name "01"^^<xsd:string> ;
+	dbp:fullname "Pgno.Norte-Glorieta Plus Ultra"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/02> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "2"^^<xsd:string> ;
+	dbp:name "02"^^<xsd:string> ;
+	dbp:fullname "Barqueta-Glorieta Heliopolis"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/03> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "3"^^<xsd:string> ;
+	dbp:name "03"^^<xsd:string> ;
+	dbp:fullname "Bellavista - Pino Montano"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/05> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "5"^^<xsd:string> ;
+	dbp:name "05"^^<xsd:string> ;
+	dbp:fullname "Puerta Triana-Santa Aurelia"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/06> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "6"^^<xsd:string> ;
+	dbp:name "06"^^<xsd:string> ;
+	dbp:fullname "San Lazaro-Glorieta Heliopolis"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/10> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "10"^^<xsd:string> ;
+	dbp:name "10"^^<xsd:string> ;
+	dbp:fullname "Ponce de Leon -San Jeronimo"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/11> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "11"^^<xsd:string> ;
+	dbp:name "11"^^<xsd:string> ;
+	dbp:fullname "Pz.Ponce de Leon-Los Principes"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/12> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "12"^^<xsd:string> ;
+	dbp:name "12"^^<xsd:string> ;
+	dbp:fullname "Ponce de  Leon-Pino Montano"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/13> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "13"^^<xsd:string> ;
+	dbp:name "13"^^<xsd:string> ;
+	dbp:fullname "Plaza Duque-Pino Montano"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/14> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "14"^^<xsd:string> ;
+	dbp:name "14"^^<xsd:string> ;
+	dbp:fullname "Plaza Duque-Poligono Norte"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/15> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "15"^^<xsd:string> ;
+	dbp:name "15"^^<xsd:string> ;
+	dbp:fullname "Ponce de Leon-San Diego"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/16> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "16"^^<xsd:string> ;
+	dbp:name "16"^^<xsd:string> ;
+	dbp:fullname "Pza.Jeron. Cordoba-Valdezorras"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/20> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "20"^^<xsd:string> ;
+	dbp:name "20"^^<xsd:string> ;
+	dbp:fullname "Ponce de Leon-Pgno.San Pablo"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/21> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "21"^^<xsd:string> ;
+	dbp:name "21"^^<xsd:string> ;
+	dbp:fullname "Plaza Armas-Poligono S. Pablo"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/22> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "22"^^<xsd:string> ;
+	dbp:name "22"^^<xsd:string> ;
+	dbp:fullname "Prado-Sevilla Este"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/24> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "24"^^<xsd:string> ;
+	dbp:name "24"^^<xsd:string> ;
+	dbp:fullname "Ponce de Leon-Palmete"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/25> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "25"^^<xsd:string> ;
+	dbp:name "25"^^<xsd:string> ;
+	dbp:fullname "Prado-Rochelambert"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/26> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "26"^^<xsd:string> ;
+	dbp:name "26"^^<xsd:string> ;
+	dbp:fullname "Prado-Cerro del Aguila"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/27> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "27"^^<xsd:string> ;
+	dbp:name "27"^^<xsd:string> ;
+	dbp:fullname "Plaza del - Duque-Sevilla Este"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/28> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "28"^^<xsd:string> ;
+	dbp:name "28"^^<xsd:string> ;
+	dbp:fullname "Prado-Parque Alcosa"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/29> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "29"^^<xsd:string> ;
+	dbp:name "29"^^<xsd:string> ;
+	dbp:fullname "Prado-Torreblanca"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/30> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "30"^^<xsd:string> ;
+	dbp:name "30"^^<xsd:string> ;
+	dbp:fullname "Prado-La Paz"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/31> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "31"^^<xsd:string> ;
+	dbp:name "31"^^<xsd:string> ;
+	dbp:fullname "Prado-Poligono Sur"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/32> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "32"^^<xsd:string> ;
+	dbp:name "32"^^<xsd:string> ;
+	dbp:fullname "Plaza del - Duque-Poligono Sur"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/34> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "34"^^<xsd:string> ;
+	dbp:name "34"^^<xsd:string> ;
+	dbp:fullname "Prado-Los Bermejales"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/37> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "37"^^<xsd:string> ;
+	dbp:name "37"^^<xsd:string> ;
+	dbp:fullname "Pta.Jerez - Bellavista"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/38> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "38"^^<xsd:string> ;
+	dbp:name "38"^^<xsd:string> ;
+	dbp:fullname "Prado - Univ.Pablo Olavide"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/39> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "39"^^<xsd:string> ;
+	dbp:name "39"^^<xsd:string> ;
+	dbp:fullname "Los Arcos-Hacienda San Antonio"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/40> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "40"^^<xsd:string> ;
+	dbp:name "40"^^<xsd:string> ;
+	dbp:fullname "Plaza Magdalena-Triana"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/41> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "41"^^<xsd:string> ;
+	dbp:name "41"^^<xsd:string> ;
+	dbp:fullname "Plz. Magdalena-Los Remedios"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/43> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "43"^^<xsd:string> ;
+	dbp:name "43"^^<xsd:string> ;
+	dbp:fullname "Plaza Magdalena- El Turruñuelo"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/52> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "52"^^<xsd:string> ;
+	dbp:name "52"^^<xsd:string> ;
+	dbp:fullname "San Bernardo-Palmete"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/53> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "53"^^<xsd:string> ;
+	dbp:name "53"^^<xsd:string> ;
+	dbp:fullname "Los Arcos - C.Penitenciario"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/T1> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "60"^^<xsd:string> ;
+	dbp:name "T1"^^<xsd:string> ;
+	dbp:fullname "Plaza Nueva-San Bernardo"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Tranvia> ;
+	owl:sameAs <http://es.dbpedia.org/resource/Linea_T1_(TUSSAM)> .
+
+<http://smartsevilla.es/resources/travels/C1> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "81"^^<xsd:string> ;
+	dbp:name "C1"^^<xsd:string> ;
+	dbp:fullname "Isla de La Cartuja-Prado"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/C2> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "82"^^<xsd:string> ;
+	dbp:name "C2"^^<xsd:string> ;
+	dbp:fullname "Isla de La Cartuja-Prado"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/C3> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "83"^^<xsd:string> ;
+	dbp:name "C3"^^<xsd:string> ;
+	dbp:fullname "Barqueta-Prado"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/C4> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "84"^^<xsd:string> ;
+	dbp:name "C4"^^<xsd:string> ;
+	dbp:fullname "Barqueta-Prado"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/B3> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "87"^^<xsd:string> ;
+	dbp:name "B3"^^<xsd:string> ;
+	dbp:fullname "Gran Plaza-Santa Clara"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/EA> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "100"^^<xsd:string> ;
+	dbp:name "EA"^^<xsd:string> ;
+	dbp:fullname "Especial -  Aeropuerto"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/A1> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "101"^^<xsd:string> ;
+	dbp:name "A1"^^<xsd:string> ;
+	dbp:fullname "Prado- Pino Montano"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/A2> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "102"^^<xsd:string> ;
+	dbp:name "A2"^^<xsd:string> ;
+	dbp:fullname "Prado - San Jeronimo"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/A3> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "103"^^<xsd:string> ;
+	dbp:name "A3"^^<xsd:string> ;
+	dbp:fullname "Prado - Sevilla Este"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/A4> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "104"^^<xsd:string> ;
+	dbp:name "A4"^^<xsd:string> ;
+	dbp:fullname "Prado - Santa Aurelia"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/A5> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "105"^^<xsd:string> ;
+	dbp:name "A5"^^<xsd:string> ;
+	dbp:fullname "Prado - Poligono Sur"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/A6> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "106"^^<xsd:string> ;
+	dbp:name "A6"^^<xsd:string> ;
+	dbp:fullname "Prado - Bellavista"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/A7> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "107"^^<xsd:string> ;
+	dbp:name "A7"^^<xsd:string> ;
+	dbp:fullname "Circular Nocturno"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/C6A> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "108"^^<xsd:string> ;
+	dbp:name "C6A"^^<xsd:string> ;
+	dbp:fullname "Circular Macarena Norte"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/C6B> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "109"^^<xsd:string> ;
+	dbp:name "C6B"^^<xsd:string> ;
+	dbp:fullname "Circular Macarena Norte"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/A8> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "110"^^<xsd:string> ;
+	dbp:name "A8"^^<xsd:string> ;
+	dbp:fullname "Prado - Parque Alcosa"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/B4> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "119"^^<xsd:string> ;
+	dbp:name "B4"^^<xsd:string> ;
+	dbp:fullname "San Bernardo-Torreblanca"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/C5> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "121"^^<xsd:string> ;
+	dbp:name "C5"^^<xsd:string> ;
+	dbp:fullname "Plaza Duque-Puerta Jerez"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
+
+<http://smartsevilla.es/resources/travels/38A> a <http://dbpedia.org/page/Travel> ;
+	g10:route_id "125"^^<xsd:string> ;
+	dbp:name "38A"^^<xsd:string> ;
+	dbp:fullname "Prado - Pitamo - Upo"^^<xsd:string> ;
+	dbp:type <http://es.dbpedia.org/resource/Autobus> .
