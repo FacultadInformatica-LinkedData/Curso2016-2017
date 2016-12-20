@@ -1,0 +1,660 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix onto: <http://www.semanticweb.org/grupo09#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+onto:Estacion1 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=101" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Doctor+Iranzo+-++C%2F+Escultor+Benlliure> a onto:Direccion .
+
+onto:Zaragoza a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#C%2F+Doctor+Iranzo+-++C%2F+Escultor+Benlliure> onto:enCiudad onto:Zaragoza .
+
+onto:Estacion1 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Doctor+Iranzo+-++C%2F+Escultor+Benlliure> ;
+	onto:bicisDisponibles "13"^^xsd:int ;
+	onto:anclajesDisponibles "7"^^xsd:int ;
+	onto:longitud "678017.9803453928"^^xsd:double ;
+	onto:latitud "4613320.634481554"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 13</li><li>Anclajes disponibles: 7</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion2 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=102" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Pedro+Joaqu%C3%ADn+Soler+-+Coso> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion2 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Pedro+Joaqu%C3%ADn+Soler+-+Coso> ;
+	onto:bicisDisponibles "9"^^xsd:int ;
+	onto:anclajesDisponibles "12"^^xsd:int ;
+	onto:longitud "676822.7225656463"^^xsd:double ;
+	onto:latitud "4613438.861592172"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 12</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion3 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=103" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Lacarra+de+Miguel+-+C%2F+San+Vicente+Martir> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion3 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Lacarra+de+Miguel+-+C%2F+San+Vicente+Martir> ;
+	onto:bicisDisponibles "10"^^xsd:int ;
+	onto:anclajesDisponibles "11"^^xsd:int ;
+	onto:longitud "676517.3458413489"^^xsd:double ;
+	onto:latitud "4612706.090795129"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 10</li><li>Anclajes disponibles: 11</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion4 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=104" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Madre+Rafols+-+Esquina+D.G.A.> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion4 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Madre+Rafols+-+Esquina+D.G.A.> ;
+	onto:bicisDisponibles "9"^^xsd:int ;
+	onto:anclajesDisponibles "11"^^xsd:int ;
+	onto:longitud "675841.2652424083"^^xsd:double ;
+	onto:latitud "4613665.173932331"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 11</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion5 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=108" .
+
+<http://www.semanticweb.org/grupo09#Plaza+Emperador+Carlos+V> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion5 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+Emperador+Carlos+V> ;
+	onto:bicisDisponibles "6"^^xsd:int ;
+	onto:anclajesDisponibles "15"^^xsd:int ;
+	onto:longitud "675140.5935417247"^^xsd:double ;
+	onto:latitud "4611902.584283835"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 15</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion6 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=113" .
+
+<http://www.semanticweb.org/grupo09#V%C3%ADa+Hispanidad+-+Avda.+G%C3%B3mez+Laguna> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion6 onto:estaEn <http://www.semanticweb.org/grupo09#V%C3%ADa+Hispanidad+-+Avda.+G%C3%B3mez+Laguna> ;
+	onto:bicisDisponibles "4"^^xsd:int ;
+	onto:anclajesDisponibles "17"^^xsd:int ;
+	onto:longitud "673818.3928125117"^^xsd:double ;
+	onto:latitud "4612194.426397253"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 4</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion7 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=115" .
+
+<http://www.semanticweb.org/grupo09#V%C3%ADa+Hispanidad+-+C%2F+Oc%C3%A9ano+Atl%C3%A1ntico> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion7 onto:estaEn <http://www.semanticweb.org/grupo09#V%C3%ADa+Hispanidad+-+C%2F+Oc%C3%A9ano+Atl%C3%A1ntico> ;
+	onto:bicisDisponibles "11"^^xsd:int ;
+	onto:anclajesDisponibles "10"^^xsd:int ;
+	onto:longitud "673535.126796119"^^xsd:double ;
+	onto:latitud "4612856.6010818435"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 11</li><li>Anclajes disponibles: 10</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion8 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=118" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Juan+Pablo+II+-+Avda.+G%C3%B3mez+Laguna> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion8 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Juan+Pablo+II+-+Avda.+G%C3%B3mez+Laguna> ;
+	onto:bicisDisponibles "12"^^xsd:int ;
+	onto:anclajesDisponibles "9"^^xsd:int ;
+	onto:longitud "674126.8415899678"^^xsd:double ;
+	onto:latitud "4612286.664687123"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 12</li><li>Anclajes disponibles: 9</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion9 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=119" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Juan+Carlos+I+-+C%2F+Ram%C3%B3n+Sainz+de+Varanda> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion9 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Juan+Carlos+I+-+C%2F+Ram%C3%B3n+Sainz+de+Varanda> ;
+	onto:bicisDisponibles "11"^^xsd:int ;
+	onto:anclajesDisponibles "10"^^xsd:int ;
+	onto:longitud "674353.1383456963"^^xsd:double ;
+	onto:latitud "4611979.637886653"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 11</li><li>Anclajes disponibles: 10</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion10 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=120" .
+
+<http://www.semanticweb.org/grupo09#C%2F+As%C3%ADn+y+Palacios+-+C%2F+Pedro+IV+El+Ceremonioso> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion10 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+As%C3%ADn+y+Palacios+-+C%2F+Pedro+IV+El+Ceremonioso> ;
+	onto:bicisDisponibles "13"^^xsd:int ;
+	onto:anclajesDisponibles "8"^^xsd:int ;
+	onto:longitud "674454.0980053664"^^xsd:double ;
+	onto:latitud "4611556.142109903"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 13</li><li>Anclajes disponibles: 8</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion11 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=121" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Eduardo+Ibarra+-+C%2F+Violante+de+Hungr%C3%ADa> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion11 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Eduardo+Ibarra+-+C%2F+Violante+de+Hungr%C3%ADa> ;
+	onto:bicisDisponibles "3"^^xsd:int ;
+	onto:anclajesDisponibles "18"^^xsd:int ;
+	onto:longitud "674849.903485189"^^xsd:double ;
+	onto:latitud "4612042.595863729"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 3</li><li>Anclajes disponibles: 18</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion12 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=125" .
+
+<http://www.semanticweb.org/grupo09#Via+Univ%C3%A9rsitas+-+C%2F+Hermanos+Gambra> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion12 onto:estaEn <http://www.semanticweb.org/grupo09#Via+Univ%C3%A9rsitas+-+C%2F+Hermanos+Gambra> ;
+	onto:bicisDisponibles "8"^^xsd:int ;
+	onto:anclajesDisponibles "12"^^xsd:int ;
+	onto:longitud "674209.1338063633"^^xsd:double ;
+	onto:latitud "4613140.443152811"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 8</li><li>Anclajes disponibles: 12</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion13 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=127" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Navarra+-+C%2F+Rioja> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion13 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Navarra+-+C%2F+Rioja> ;
+	onto:bicisDisponibles "6"^^xsd:int ;
+	onto:anclajesDisponibles "15"^^xsd:int ;
+	onto:longitud "674246.1387059671"^^xsd:double ;
+	onto:latitud "4613850.8095116075"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 15</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion14 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=129" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Graus+-+C%2F+Unceta> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion14 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Graus+-+C%2F+Unceta> ;
+	onto:bicisDisponibles "11"^^xsd:int ;
+	onto:anclajesDisponibles "10"^^xsd:int ;
+	onto:longitud "674776.6682624074"^^xsd:double ;
+	onto:latitud "4613537.967226235"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 11</li><li>Anclajes disponibles: 10</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion15 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=130" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Corona+de+Arag%C3%B3n+-+C%2F+Lorente> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion15 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Corona+de+Arag%C3%B3n+-+C%2F+Lorente> ;
+	onto:bicisDisponibles "9"^^xsd:int ;
+	onto:anclajesDisponibles "12"^^xsd:int ;
+	onto:longitud "675169.6621584316"^^xsd:double ;
+	onto:latitud "4612596.989091256"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 12</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion16 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=1" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Pablo+Ruiz+Picasso+-+Torre+del+Agua> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion16 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Pablo+Ruiz+Picasso+-+Torre+del+Agua> ;
+	onto:bicisDisponibles "6"^^xsd:int ;
+	onto:anclajesDisponibles "18"^^xsd:int ;
+	onto:longitud "674531.7776761394"^^xsd:double ;
+	onto:latitud "4615518.329386774"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 18</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion17 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=2" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Ranillas+-+Avda.+Pablo+Ruiz+Picasso> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion17 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Ranillas+-+Avda.+Pablo+Ruiz+Picasso> ;
+	onto:bicisDisponibles "6"^^xsd:int ;
+	onto:anclajesDisponibles "14"^^xsd:int ;
+	onto:longitud "675082.8512086545"^^xsd:double ;
+	onto:latitud "4615741.954081438"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 14</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion18 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=3" .
+
+<http://www.semanticweb.org/grupo09#Pasarela+del+Voluntariado+-+Avda.+Ranillas> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion18 onto:estaEn <http://www.semanticweb.org/grupo09#Pasarela+del+Voluntariado+-+Avda.+Ranillas> ;
+	onto:bicisDisponibles "7"^^xsd:int ;
+	onto:anclajesDisponibles "17"^^xsd:int ;
+	onto:longitud "675469.635585876"^^xsd:double ;
+	onto:latitud "4615158.24649585"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 7</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion19 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=4" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Ranillas+-+Puente+de+La+Almozara> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion19 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Ranillas+-+Puente+de+La+Almozara> ;
+	onto:bicisDisponibles "10"^^xsd:int ;
+	onto:anclajesDisponibles "11"^^xsd:int ;
+	onto:longitud "675887.9946791041"^^xsd:double ;
+	onto:latitud "4614631.435627686"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 10</li><li>Anclajes disponibles: 11</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion20 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=5" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Ribera+-+Puente+de+Santiago> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion20 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Ribera+-+Puente+de+Santiago> ;
+	onto:bicisDisponibles "0"^^xsd:int ;
+	onto:anclajesDisponibles "17"^^xsd:int ;
+	onto:longitud "676521.483524982"^^xsd:double ;
+	onto:latitud "4614439.010262394"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 0</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion21 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=6" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Ribera+-+Puente+del+Pilar> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion21 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Ribera+-+Puente+del+Pilar> ;
+	onto:bicisDisponibles "13"^^xsd:int ;
+	onto:anclajesDisponibles "8"^^xsd:int ;
+	onto:longitud "677458.6056386359"^^xsd:double ;
+	onto:latitud "4614044.937332258"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 13</li><li>Anclajes disponibles: 8</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion22 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=7" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Pasarela+del+Huerva> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion22 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Pasarela+del+Huerva> ;
+	onto:bicisDisponibles "6"^^xsd:int ;
+	onto:anclajesDisponibles "13"^^xsd:int ;
+	onto:longitud "677769.8830778005"^^xsd:double ;
+	onto:latitud "4613631.346063166"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 13</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion23 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=8" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+del+Pilar> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion23 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+del+Pilar> ;
+	onto:bicisDisponibles "7"^^xsd:int ;
+	onto:anclajesDisponibles "14"^^xsd:int ;
+	onto:longitud "677403.1636507643"^^xsd:double ;
+	onto:latitud "4613776.593027227"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 7</li><li>Anclajes disponibles: 14</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion24 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=9" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+de+Piedra> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion24 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+de+Piedra> ;
+	onto:bicisDisponibles "9"^^xsd:int ;
+	onto:anclajesDisponibles "20"^^xsd:int ;
+	onto:longitud "676982.2461119632"^^xsd:double ;
+	onto:latitud "4613971.405242417"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 20</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion25 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=10" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+de+Santiago> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion25 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+de+Santiago> ;
+	onto:bicisDisponibles "4"^^xsd:int ;
+	onto:anclajesDisponibles "17"^^xsd:int ;
+	onto:longitud "676504.2527290656"^^xsd:double ;
+	onto:latitud "4614170.725479681"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 4</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion26 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=11" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+de+La+Almozara> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion26 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+de+La+Almozara> ;
+	onto:bicisDisponibles "14"^^xsd:int ;
+	onto:anclajesDisponibles "7"^^xsd:int ;
+	onto:longitud "675643.0073561185"^^xsd:double ;
+	onto:latitud "4614306.693232718"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 14</li><li>Anclajes disponibles: 7</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion27 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=12" .
+
+<http://www.semanticweb.org/grupo09#Pasarela+del+Voluntariado+-+Avda.+Almozara> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion27 onto:estaEn <http://www.semanticweb.org/grupo09#Pasarela+del+Voluntariado+-+Avda.+Almozara> ;
+	onto:bicisDisponibles "9"^^xsd:int ;
+	onto:anclajesDisponibles "12"^^xsd:int ;
+	onto:longitud "675258.2438197444"^^xsd:double ;
+	onto:latitud "4614764.45746837"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 12</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion28 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=13" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Francia+-+Pabell%C3%B3n+Puente> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion28 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Francia+-+Pabell%C3%B3n+Puente> ;
+	onto:bicisDisponibles "0"^^xsd:int ;
+	onto:anclajesDisponibles "24"^^xsd:int ;
+	onto:longitud "674353.7498153094"^^xsd:double ;
+	onto:latitud "4614541.783660298"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 0</li><li>Anclajes disponibles: 24</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion29 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=14" .
+
+<http://www.semanticweb.org/grupo09#Estaci%C3%B3n+Intermodal+Delicias+%28Salidas%29> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion29 onto:estaEn <http://www.semanticweb.org/grupo09#Estaci%C3%B3n+Intermodal+Delicias+%28Salidas%29> ;
+	onto:bicisDisponibles "7"^^xsd:int ;
+	onto:anclajesDisponibles "23"^^xsd:int ;
+	onto:longitud "674227.3492706296"^^xsd:double ;
+	onto:latitud "4614154.64966946"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 7</li><li>Anclajes disponibles: 23</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion30 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=15" .
+
+<http://www.semanticweb.org/grupo09#Estaci%C3%B3n+de+Cercan%C3%ADas+El+Portillo+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion30 onto:estaEn <http://www.semanticweb.org/grupo09#Estaci%C3%B3n+de+Cercan%C3%ADas+El+Portillo+> ;
+	onto:bicisDisponibles "16"^^xsd:int ;
+	onto:anclajesDisponibles "5"^^xsd:int ;
+	onto:longitud "675329.9923329047"^^xsd:double ;
+	onto:latitud "4613409.474988687"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 16</li><li>Anclajes disponibles: 5</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion31 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=16" .
+
+<http://www.semanticweb.org/grupo09#Plaza+Espa%C3%B1a> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion31 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+Espa%C3%B1a> ;
+	onto:bicisDisponibles "9"^^xsd:int ;
+	onto:anclajesDisponibles "17"^^xsd:int ;
+	onto:longitud "676582.2035544008"^^xsd:double ;
+	onto:latitud "4613504.823403645"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion32 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=17" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Constituci%C3%B3n+-+Plaza+Arag%C3%B3n+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion32 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Constituci%C3%B3n+-+Plaza+Arag%C3%B3n+> ;
+	onto:bicisDisponibles "14"^^xsd:int ;
+	onto:anclajesDisponibles "15"^^xsd:int ;
+	onto:longitud "676293.4849388119"^^xsd:double ;
+	onto:latitud "4613036.333235371"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 14</li><li>Anclajes disponibles: 15</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion33 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=18" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Asalto+-+Edificio+Trovador> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion33 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Asalto+-+Edificio+Trovador> ;
+	onto:bicisDisponibles "6"^^xsd:int ;
+	onto:anclajesDisponibles "15"^^xsd:int ;
+	onto:longitud "677485.1699573445"^^xsd:double ;
+	onto:latitud "4613408.545050463"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 15</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion34 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=19" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Asalto+-+C%2F+Miguel+Servet+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion34 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Asalto+-+C%2F+Miguel+Servet+> ;
+	onto:bicisDisponibles "5"^^xsd:int ;
+	onto:anclajesDisponibles "16"^^xsd:int ;
+	onto:longitud "677009.1305011907"^^xsd:double ;
+	onto:latitud "4613188.480893311"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 5</li><li>Anclajes disponibles: 16</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion35 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=20" .
+
+<http://www.semanticweb.org/grupo09#Plaza+Salamero%2C+14> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion35 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+Salamero%2C+14> ;
+	onto:bicisDisponibles "13"^^xsd:int ;
+	onto:anclajesDisponibles "8"^^xsd:int ;
+	onto:longitud "676280.2924439493"^^xsd:double ;
+	onto:latitud "4613553.287068226"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 13</li><li>Anclajes disponibles: 8</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion36 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=21" .
+
+<http://www.semanticweb.org/grupo09#Avda.+C%C3%A9sar+Augusto+-+Avda.+Conde+Aranda> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion36 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+C%C3%A9sar+Augusto+-+Avda.+Conde+Aranda> ;
+	onto:bicisDisponibles "6"^^xsd:int ;
+	onto:anclajesDisponibles "15"^^xsd:int ;
+	onto:longitud "676275.2698373196"^^xsd:double ;
+	onto:latitud "4613774.806717717"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 6</li><li>Anclajes disponibles: 15</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion37 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=22" .
+
+<http://www.semanticweb.org/grupo09#Estaci%C3%B3n+Intermodal+Delicias+%28Llegadas%29> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion37 onto:estaEn <http://www.semanticweb.org/grupo09#Estaci%C3%B3n+Intermodal+Delicias+%28Llegadas%29> ;
+	onto:bicisDisponibles "10"^^xsd:int ;
+	onto:anclajesDisponibles "20"^^xsd:int ;
+	onto:longitud "673760.3177675647"^^xsd:double ;
+	onto:latitud "4614266.757959997"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 10</li><li>Anclajes disponibles: 20</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion38 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=23" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+de+La+Ribera+-+Pasarela+Azud> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion38 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+La+Ribera+-+Pasarela+Azud> ;
+	onto:bicisDisponibles "8"^^xsd:int ;
+	onto:anclajesDisponibles "13"^^xsd:int ;
+	onto:longitud "678460.7452327413"^^xsd:double ;
+	onto:latitud "4613654.374655051"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 8</li><li>Anclajes disponibles: 13</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion39 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=24" .
+
+<http://www.semanticweb.org/grupo09#Plaza+San+Pedro+Nolasco> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion39 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+San+Pedro+Nolasco> ;
+	onto:bicisDisponibles "10"^^xsd:int ;
+	onto:anclajesDisponibles "11"^^xsd:int ;
+	onto:longitud "676875.6737743317"^^xsd:double ;
+	onto:latitud "4613589.483909276"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 10</li><li>Anclajes disponibles: 11</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion40 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=25" .
+
+<http://www.semanticweb.org/grupo09#Plaza+de+los+Sitios+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion40 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+de+los+Sitios+> ;
+	onto:bicisDisponibles "7"^^xsd:int ;
+	onto:anclajesDisponibles "14"^^xsd:int ;
+	onto:longitud "676648.6412621725"^^xsd:double ;
+	onto:latitud "4613117.609568934"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 7</li><li>Anclajes disponibles: 14</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion41 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=26" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Pamplona+-+Puerta+del+Carmen> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion41 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Pamplona+-+Puerta+del+Carmen> ;
+	onto:bicisDisponibles "14"^^xsd:int ;
+	onto:anclajesDisponibles "7"^^xsd:int ;
+	onto:longitud "676049.8715700008"^^xsd:double ;
+	onto:latitud "4613211.22537717"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 14</li><li>Anclajes disponibles: 7</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion42 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=27" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+M%C2%AA+Agust%C3%ADn+-+Colegio+Joaqu%C3%ADn+Costa> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion42 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+M%C2%AA+Agust%C3%ADn+-+Colegio+Joaqu%C3%ADn+Costa> ;
+	onto:bicisDisponibles "12"^^xsd:int ;
+	onto:anclajesDisponibles "9"^^xsd:int ;
+	onto:longitud "675682.3195447342"^^xsd:double ;
+	onto:latitud "4613483.302453537"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 12</li><li>Anclajes disponibles: 9</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion43 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=28" .
+
+<http://www.semanticweb.org/grupo09#Plaza+del+Portillo+-+Plaza+de+Toros> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion43 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+del+Portillo+-+Plaza+de+Toros> ;
+	onto:bicisDisponibles "5"^^xsd:int ;
+	onto:anclajesDisponibles "16"^^xsd:int ;
+	onto:longitud "675620.8765705475"^^xsd:double ;
+	onto:latitud "4613838.870355027"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 5</li><li>Anclajes disponibles: 16</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion44 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=29" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Madrid+-+Aljafer%C3%ADa> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion44 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Madrid+-+Aljafer%C3%ADa> ;
+	onto:bicisDisponibles "9"^^xsd:int ;
+	onto:anclajesDisponibles "12"^^xsd:int ;
+	onto:longitud "675242.2729886677"^^xsd:double ;
+	onto:latitud "4613893.277580566"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 12</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion45 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=30" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Pablo+Gargallo+-+Avda.+Puerta+Sancho> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion45 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Pablo+Gargallo+-+Avda.+Puerta+Sancho> ;
+	onto:bicisDisponibles "8"^^xsd:int ;
+	onto:anclajesDisponibles "13"^^xsd:int ;
+	onto:longitud "674828.098925371"^^xsd:double ;
+	onto:latitud "4614498.440154144"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 8</li><li>Anclajes disponibles: 13</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion46 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=31" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Pablo+Gargallo+-+C%2F+Ignacio+Menaya> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion46 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Pablo+Gargallo+-+C%2F+Ignacio+Menaya> ;
+	onto:bicisDisponibles "9"^^xsd:int ;
+	onto:anclajesDisponibles "12"^^xsd:int ;
+	onto:longitud "675300.9241561615"^^xsd:double ;
+	onto:latitud "4614364.322915688"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 9</li><li>Anclajes disponibles: 12</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion47 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=32" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Ram%C3%B3n+y+Cajal+-+C%2F+Madre+Rafols> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion47 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Ram%C3%B3n+y+Cajal+-+C%2F+Madre+Rafols> ;
+	onto:bicisDisponibles "15"^^xsd:int ;
+	onto:anclajesDisponibles "6"^^xsd:int ;
+	onto:longitud "676094.9231835532"^^xsd:double ;
+	onto:latitud "4613477.412387599"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 15</li><li>Anclajes disponibles: 6</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion48 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=33" .
+
+<http://www.semanticweb.org/grupo09#Plaza+del+Pilar+-+Edificio+Turismo+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion48 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+del+Pilar+-+Edificio+Turismo+> ;
+	onto:bicisDisponibles "4"^^xsd:int ;
+	onto:anclajesDisponibles "17"^^xsd:int ;
+	onto:longitud "676787.9508470903"^^xsd:double ;
+	onto:latitud "4613916.956013001"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 4</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion49 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=34" .
+
+<http://www.semanticweb.org/grupo09#Plaza+Magdalena> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion49 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+Magdalena> ;
+	onto:bicisDisponibles "3"^^xsd:int ;
+	onto:anclajesDisponibles "17"^^xsd:int ;
+	onto:longitud "677195.2331748571"^^xsd:double ;
+	onto:latitud "4613545.258063194"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 3</li><li>Anclajes disponibles: 17</li></ul><p>Actualizado: 15:01</p>" .
+
+onto:Estacion50 a onto:EstacionBicicleta ;
+	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=35" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+C%2F+Salvador+Minguij%C3%B3n> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:Estacion50 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+C%2F+Salvador+Minguij%C3%B3n> ;
+	onto:bicisDisponibles "10"^^xsd:int ;
+	onto:anclajesDisponibles "11"^^xsd:int ;
+	onto:longitud "678253.8887429056"^^xsd:double ;
+	onto:latitud "4613481.584281914"^^xsd:double ;
+	onto:descripcion "<ul><li>Estado: Operativa</li><li>Bicis disponibles: 10</li><li>Anclajes disponibles: 11</li></ul><p>Actualizado: 15:01</p>" .
