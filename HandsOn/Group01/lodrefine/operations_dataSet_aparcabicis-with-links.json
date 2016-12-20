@@ -1,0 +1,1620 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DISTRITO",
+    "columnName": "DISTRITO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TX_DISTRIT",
+    "columnName": "TX_DISTRIT"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ARCOS",
+    "columnName": "ARCOS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TITULAR",
+    "columnName": "TITULAR"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ESTADO",
+    "columnName": "ESTADO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FECHA_FOTO",
+    "columnName": "FECHA_FOTO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FUENTE_FOT",
+    "columnName": "FUENTE_FOT"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FUENTE",
+    "columnName": "FUENTE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ID_OBRAS",
+    "columnName": "ID_OBRAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ID_INFORMO",
+    "columnName": "ID_INFORMO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column CODIGO_GEN",
+    "columnName": "CODIGO_GEN"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ELIMINADO",
+    "columnName": "ELIMINADO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column enplanos",
+    "columnName": "enplanos"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column OBSERVACIO",
+    "columnName": "OBSERVACIO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column MODELO",
+    "columnName": "MODELO"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column CAPACIDAD using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CAPACIDAD",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column OBJECTID using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "OBJECTID",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "OBJECTID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CENTRO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CAPACIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "FOTO",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "OBJECTID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CENTRO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CAPACIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "FOTO",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "OBJECTID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CENTRO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CAPACIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "FOTO",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column CENTRO to type http://www.w3.org/2002/07/owl#Thing",
+    "columnName": "CENTRO",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://www.w3.org/2002/07/owl#Thing",
+        "name": "owl:Thing"
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Claudio Coello (http://dbpedia.org/resource/Claudio_Coello) for cells containing \"Claudio Coello\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "Claudio Coello",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Claudio_Coello",
+      "name": "Claudio Coello",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Mariano Lagasca (http://dbpedia.org/resource/Mariano_Lagasca) for cells containing \"Lagasca\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "Lagasca",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Mariano_Lagasca",
+      "name": "Mariano Lagasca",
+      "score": 0.46666663885116577,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Parque Arauco (http://es.dbpedia.org/resource/Parque_Arauco) for cells containing \"Parque\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "Parque",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Parque_Arauco",
+      "name": "Parque Arauco",
+      "score": 0.4615384340286255,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Asociación Internacional para Instalaciones Deportivas y Recreativas (http://dbpedia.org/resource/International_Association_for_Sports_and_Leisure_Facilities) for cells containing \"Instalaciones Deportivas\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "Instalaciones Deportivas",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/International_Association_for_Sports_and_Leisure_Facilities",
+      "name": "Asociación Internacional para Instalaciones Deportivas y Recreativas",
+      "score": 0.3529411554336548,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Patricia Castell (http://dbpedia.org/resource/Patricia_Castell) for cells containing \"Castell¾\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "Castell¾",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Patricia_Castell",
+      "name": "Patricia Castell",
+      "score": 0.375,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column centroURI at index 3 based on column CENTRO using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "centroURI",
+    "columnInsertIndex": 3,
+    "baseColumnName": "CENTRO",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column CODIGO",
+    "columnName": "CODIGO"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/group01#esIDde",
+              "curie": "group01:esIDde",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "OBJECTID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCentroDe",
+              "curie": "group01:esCentroDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CENTRO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esDireccionDe",
+              "curie": "group01:esDireccionDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCapacidadDe",
+              "curie": "group01:esCapacidadDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CAPACIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esFotoDe",
+              "curie": "group01:esFotoDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "FOTO",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/group01#esIDde",
+              "curie": "group01:esIDde",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "OBJECTID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCentroDe",
+              "curie": "group01:esCentroDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CENTRO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esDireccionDe",
+              "curie": "group01:esDireccionDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCapacidadDe",
+              "curie": "group01:esCapacidadDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CAPACIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esFotoDe",
+              "curie": "group01:esFotoDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "FOTO",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/group01#esIDde",
+              "curie": "group01:esIDde",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "OBJECTID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCentroDe",
+              "curie": "group01:esCentroDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CENTRO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esDireccionDe",
+              "curie": "group01:esDireccionDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCapacidadDe",
+              "curie": "group01:esCapacidadDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CAPACIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esFotoDe",
+              "curie": "group01:esFotoDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "FOTO",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/group01#esIDde",
+              "curie": "group01:esIDde",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "OBJECTID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCentroDe",
+              "curie": "group01:esCentroDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CENTRO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esDireccionDe",
+              "curie": "group01:esDireccionDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCapacidadDe",
+              "curie": "group01:esCapacidadDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CAPACIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esFotoDe",
+              "curie": "group01:esFotoDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "FOTO",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/group01#esIDde",
+              "curie": "group01:esIDde",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "OBJECTID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCentroDe",
+              "curie": "group01:esCentroDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CENTRO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esDireccionDe",
+              "curie": "group01:esDireccionDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCapacidadDe",
+              "curie": "group01:esCapacidadDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CAPACIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esFotoDe",
+              "curie": "group01:esFotoDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "FOTO",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Universidad Rey Juan Carlos (http://es.dbpedia.org/resource/Universidad_Rey_Juan_Carlos) for cells containing \"Universidad Rey Juan Carlos\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "Universidad Rey Juan Carlos",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Universidad_Rey_Juan_Carlos",
+      "name": "Universidad Rey Juan Carlos",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Francisco Santos Arreola (http://es.dbpedia.org/resource/Francisco_Santos_Arreola) for cells containing \"Francisco Santos\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "Francisco Santos",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Francisco_Santos_Arreola",
+      "name": "Francisco Santos Arreola",
+      "score": 0.6666666269302368,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Santa Clara de Asís (http://dbpedia.org/resource/Clare_of_Assisi) for cells containing \"Santa Clara\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "Santa Clara",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Clare_of_Assisi",
+      "name": "Santa Clara de Asís",
+      "score": 0.5789473652839661,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic ABB (http://dbpedia.org/resource/Academia_de_Balompi%C3%A9_Boliviano) for cells containing \"ABB\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "ABB",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Academia_de_Balompi%C3%A9_Boliviano",
+      "name": "ABB",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic San Bruno de Segni (http://dbpedia.org/resource/Bruno_(bishop_of_Segni)) for cells containing \"San Bruno\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "San Bruno",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Bruno_(bishop_of_Segni)",
+      "name": "San Bruno de Segni",
+      "score": 0.5,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Fernando Villaamil (http://dbpedia.org/resource/Fernando_Villaamil) for cells containing \"Villaamil\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "Villaamil",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Fernando_Villaamil",
+      "name": "Fernando Villaamil",
+      "score": 0.5,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Conde de Aranda (http://dbpedia.org/resource/Pedro_Pablo_Abarca_de_Bolea,_10th_Count_of_Aranda) for cells containing \"Conde de Aranda\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "Conde de Aranda",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Pedro_Pablo_Abarca_de_Bolea,_10th_Count_of_Aranda",
+      "name": "Conde de Aranda",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Los Arapiles (http://dbpedia.org/resource/Battle_of_Salamanca) for cells containing \"Arapiles\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "Arapiles",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Battle_of_Salamanca",
+      "name": "Los Arapiles",
+      "score": 0.6666666269302368,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic PricewaterhouseCoopers (http://dbpedia.org/resource/PricewaterhouseCoopers) for cells containing \"Pricewaterhousecoopers\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "Pricewaterhousecoopers",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/PricewaterhouseCoopers",
+      "name": "PricewaterhouseCoopers",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic McDonald's (http://dbpedia.org/resource/McDonald's) for cells containing \"McDonald's\" in column CENTRO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CENTRO",
+    "similarValue": "McDonald's",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/McDonald's",
+      "name": "McDonald's",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/group01#esIDde",
+              "curie": "group01:esIDde",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "OBJECTID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCentroDe",
+              "curie": "group01:esCentroDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CENTRO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esDireccionDe",
+              "curie": "group01:esDireccionDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCapacidadDe",
+              "curie": "group01:esCapacidadDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CAPACIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esFotoDe",
+              "curie": "group01:esFotoDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "FOTO",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/group01#esIDde",
+              "curie": "group01:esIDde",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "OBJECTID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCentroDe",
+              "curie": "group01:esCentroDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CENTRO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esDireccionDe",
+              "curie": "group01:esDireccionDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esCapacidadDe",
+              "curie": "group01:esCapacidadDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CAPACIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group01#esFotoDe",
+              "curie": "group01:esFotoDe",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "FOTO",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1690,5 +1690,582 @@
         }
       ]
     }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+              "curie": "ont:Instalacion"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "WEB"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInCalle",
+              "curie": "ont:isInCalle",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CALLE",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Calle",
+                    "curie": "ont:Calle"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInLocalidad",
+              "curie": "ont:isInLocalidad",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Localidad",
+                    "curie": "ont:Localidad"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInProvincia",
+              "curie": "ont:isInProvincia",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "PROVINCIA",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Provincia",
+                    "curie": "ont:Provincia"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInBarrio",
+              "curie": "ont:isInBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInDistrito",
+              "curie": "ont:isInDistrito",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Distrito",
+                    "curie": "ont:Distrito"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaX",
+              "curie": "ont:hasCoordenadaX",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "COORDENADA-X"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaY",
+              "curie": "ont:hasCoordenadaY",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "COORDENADA-Y"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLatitud",
+              "curie": "ont:hasLatitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "LATITUD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLongitud",
+              "curie": "ont:hasLongitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "LONGITUD"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "CONTENT-URL",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE-VIA",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "CLASE-VIAL",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "LOCALIDAD",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "PROVINCIA",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "BARRIO",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "DISTRITO",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "COORDENADA-X",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "COORDENADA-Y",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "LATITUD",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "LONGITUD",
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linked-data-deportemadrid.org/group08/resource/",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion",
+              "curie": "ont:Instalacion"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasNombre",
+              "curie": "ont:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb",
+              "curie": "ont:hasWeb",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "WEB",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInCalle",
+              "curie": "ont:isInCalle",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CALLE",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Calle",
+                    "curie": "ont:Calle"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInLocalidad",
+              "curie": "ont:isInLocalidad",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Localidad",
+                    "curie": "ont:Localidad"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInProvincia",
+              "curie": "ont:isInProvincia",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "PROVINCIA",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Provincia",
+                    "curie": "ont:Provincia"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInBarrio",
+              "curie": "ont:isInBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Barrio",
+                    "curie": "ont:Barrio"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#isInDistrito",
+              "curie": "ont:isInDistrito",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO",
+                "rdfTypes": [
+                  {
+                    "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#Distrito",
+                    "curie": "ont:Distrito"
+                  }
+                ],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaX",
+              "curie": "ont:hasCoordenadaX",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "COORDENADA-X"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasCoordenadaY",
+              "curie": "ont:hasCoordenadaY",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "COORDENADA-Y"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLatitud",
+              "curie": "ont:hasLatitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "LATITUD"
+              }
+            },
+            {
+              "uri": "http://www.linked-data-deportemadrid.org/group08/ontology#hasLongitud",
+              "curie": "ont:hasLongitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "LONGITUD"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "CONTENT-URL",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE-VIA",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "CLASE-VIAL",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "LOCALIDAD",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "PROVINCIA",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "BARRIO",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "DISTRITO",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "COORDENADA-X",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "COORDENADA-Y",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "LATITUD",
+          "rdfTypes": [],
+          "links": []
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "LONGITUD",
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
   }
 ]

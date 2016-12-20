@@ -4,165 +4,330 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://smartsevilla.es/ontology/> .
 
-<http://smartsevilla.es/ontology/> rdf:type owl:Ontology .
+<http://smartsevilla.es/ontology#> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://smartsevilla.es/ontology#contieneEdificio
 
-#################################################################
-#    Object Properties
-#################################################################
+<http://smartsevilla.es/ontology#contieneEdificio> a owl:ObjectProperty ;
+	rdfs:domain <http://smartsevilla.es/ontology#Calle> ;
+	rdfs:range _:genid1 .
 
-###  http://smartsevilla.es/ontology/belongsToLine
-:belongsToLine rdf:type owl:ObjectProperty ;
-               rdfs:domain :Stop ;
-               rdfs:range :Line .
+_:genid1 a owl:Class ;
+	owl:unionOf _:genid3 .
 
+_:genid3 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Museo> ;
+	rdf:rest _:genid2 .
 
-###  http://smartsevilla.es/ontology/isInStreet
-:isInStreet rdf:type owl:ObjectProperty ;
-            rdfs:domain :Stop ;
-            rdfs:range :Street .
+_:genid2 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#SitioDeInteres> ;
+	rdf:rest rdf:nil .
+# 
+# http://smartsevilla.es/ontology#estaEnCalle
 
+<http://smartsevilla.es/ontology#estaEnCalle> a owl:ObjectProperty ;
+	rdfs:domain <http://smartsevilla.es/ontology#Parada_bus> ;
+	rdfs:range <http://smartsevilla.es/ontology#Calle> .
+# 
+# http://smartsevilla.es/ontology#establece
 
-###  http://smartsevilla.es/ontology/passesBy
-:passesBy rdf:type owl:ObjectProperty ;
-          rdfs:domain :Bus ,
-                      :Line ;
-          rdfs:range :Street .
+<http://smartsevilla.es/ontology#establece> a owl:ObjectProperty ;
+	rdfs:domain <http://smartsevilla.es/ontology#Agencia> ;
+	rdfs:range <http://smartsevilla.es/ontology#Ruta> .
+# 
+# http://smartsevilla.es/ontology#provee
 
+<http://smartsevilla.es/ontology#provee> a owl:ObjectProperty ;
+	rdfs:domain <http://smartsevilla.es/ontology#Agencia> ;
+	rdfs:range <http://smartsevilla.es/ontology#Servicio> .
+# 
+# http://smartsevilla.es/ontology#tieneParadaEn
 
-###  http://smartsevilla.es/ontology/stopsAt
-:stopsAt rdf:type owl:ObjectProperty ;
-         rdfs:domain :Bus ;
-         rdfs:range :Stop .
+<http://smartsevilla.es/ontology#tieneParadaEn> a owl:ObjectProperty ;
+	rdfs:domain <http://smartsevilla.es/ontology#Ruta> ;
+	rdfs:range <http://smartsevilla.es/ontology#Parada_bus> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://smartsevilla.es/ontology#direccion
 
+<http://smartsevilla.es/ontology#direccion> a owl:DatatypeProperty ;
+	rdfs:domain _:genid4 .
 
-#################################################################
-#    Data properties
-#################################################################
+_:genid4 a owl:Class ;
+	owl:unionOf _:genid6 .
 
-###  http://smartsevilla.es/ontology/arrival_time
-:arrival_time rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Stop ;
-              rdfs:range xsd:dateTime .
+_:genid6 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Museo> ;
+	rdf:rest _:genid5 .
 
+_:genid5 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#SitioDeInteres> ;
+	rdf:rest rdf:nil .
 
-###  http://smartsevilla.es/ontology/departure_time
-:departure_time rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Stop ;
-                rdfs:range xsd:dateTime .
+<http://smartsevilla.es/ontology#direccion> rdfs:range xsd:string .
+# 
+# http://smartsevilla.es/ontology#end_date
 
+<http://smartsevilla.es/ontology#end_date> a owl:DatatypeProperty ;
+	rdfs:domain <http://smartsevilla.es/ontology#Servicio> ;
+	rdfs:range xsd:dateTime .
+# 
+# http://smartsevilla.es/ontology#foto
 
-###  http://smartsevilla.es/ontology/end_date
-:end_date rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Service ;
-          rdfs:range xsd:dateTime .
+<http://smartsevilla.es/ontology#foto> a owl:DatatypeProperty ;
+	rdfs:domain _:genid7 .
 
+_:genid7 a owl:Class ;
+	owl:unionOf _:genid9 .
 
-###  http://smartsevilla.es/ontology/exception_type
-:exception_type rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Service ;
-                rdfs:range xsd:integer .
+_:genid9 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Museo> ;
+	rdf:rest _:genid8 .
 
+_:genid8 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#SitioDeInteres> ;
+	rdf:rest rdf:nil .
 
-###  http://smartsevilla.es/ontology/route_id
-:route_id rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Route ;
-          rdfs:range xsd:integer .
+<http://smartsevilla.es/ontology#foto> rdfs:range xsd:anyURI .
+# 
+# http://smartsevilla.es/ontology#idioma
 
+<http://smartsevilla.es/ontology#idioma> a owl:DatatypeProperty ;
+	rdfs:domain <http://smartsevilla.es/ontology#Agencia> ;
+	rdfs:range xsd:language .
+# 
+# http://smartsevilla.es/ontology#latitud
 
-###  http://smartsevilla.es/ontology/route_long_name
-:route_long_name rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :Route ;
-                 rdfs:range xsd:string .
+<http://smartsevilla.es/ontology#latitud> a owl:DatatypeProperty ;
+	rdfs:domain _:genid10 .
 
+_:genid10 a owl:Class ;
+	owl:unionOf _:genid13 .
 
-###  http://smartsevilla.es/ontology/route_short_name
-:route_short_name rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Route ;
-                  rdfs:range xsd:string .
+_:genid13 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Museo> ;
+	rdf:rest _:genid12 .
 
+_:genid12 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Parada_bus> ;
+	rdf:rest _:genid11 .
 
-###  http://smartsevilla.es/ontology/route_type
-:route_type rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Route ;
-            rdfs:range xsd:integer .
+_:genid11 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#SitioDeInteres> ;
+	rdf:rest rdf:nil .
 
+<http://smartsevilla.es/ontology#latitud> rdfs:range xsd:float .
+# 
+# http://smartsevilla.es/ontology#long_name
 
-###  http://smartsevilla.es/ontology/service_id
-:service_id rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Service ;
-            rdfs:range xsd:integer .
+<http://smartsevilla.es/ontology#long_name> a owl:DatatypeProperty ;
+	rdfs:domain _:genid14 .
 
+_:genid14 a owl:Class ;
+	owl:unionOf _:genid19 .
 
-###  http://smartsevilla.es/ontology/start_date
-:start_date rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Service ;
-            rdfs:range xsd:dateTime .
+_:genid19 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Agencia> ;
+	rdf:rest _:genid18 .
 
+_:genid18 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Museo> ;
+	rdf:rest _:genid17 .
 
-###  http://smartsevilla.es/ontology/stop_id
-:stop_id rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Stop ;
-         rdfs:range xsd:integer .
+_:genid17 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Parada_bus> ;
+	rdf:rest _:genid16 .
 
+_:genid16 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Ruta> ;
+	rdf:rest _:genid15 .
 
-###  http://smartsevilla.es/ontology/stop_lat
-:stop_lat rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Stop ;
-          rdfs:range xsd:decimal .
+_:genid15 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#SitioDeInteres> ;
+	rdf:rest rdf:nil .
 
+<http://smartsevilla.es/ontology#long_name> rdfs:range xsd:string .
+# 
+# http://smartsevilla.es/ontology#longitud
 
-###  http://smartsevilla.es/ontology/stop_long
-:stop_long rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Stop ;
-           rdfs:range xsd:decimal .
+<http://smartsevilla.es/ontology#longitud> a owl:DatatypeProperty ;
+	rdfs:domain _:genid20 .
 
+_:genid20 a owl:Class ;
+	owl:unionOf _:genid23 .
 
-###  http://smartsevilla.es/ontology/stop_name
-:stop_name rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Stop ;
-           rdfs:range xsd:string .
+_:genid23 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Museo> ;
+	rdf:rest _:genid22 .
 
+_:genid22 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Parada_bus> ;
+	rdf:rest _:genid21 .
 
-###  http://smartsevilla.es/ontology/stop_sequence
-:stop_sequence rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Stop ;
-               rdfs:range xsd:integer .
+_:genid21 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#SitioDeInteres> ;
+	rdf:rest rdf:nil .
 
+<http://smartsevilla.es/ontology#longitud> rdfs:range xsd:float .
+# 
+# http://smartsevilla.es/ontology#route_id
 
-###  http://smartsevilla.es/ontology/trip_id
-:trip_id rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Route ;
-         rdfs:range xsd:string .
+<http://smartsevilla.es/ontology#route_id> a owl:DatatypeProperty ;
+	rdfs:domain <http://smartsevilla.es/ontology#Ruta> ;
+	rdfs:range xsd:string .
+# 
+# http://smartsevilla.es/ontology#route_type
 
+<http://smartsevilla.es/ontology#route_type> a owl:DatatypeProperty ;
+	rdfs:domain <http://smartsevilla.es/ontology#Ruta> ;
+	rdfs:range xsd:string .
+# 
+# http://smartsevilla.es/ontology#service_id
 
-#################################################################
-#    Classes
-#################################################################
+<http://smartsevilla.es/ontology#service_id> a owl:DatatypeProperty ;
+	rdfs:domain <http://smartsevilla.es/ontology#Servicio> ;
+	rdfs:range xsd:string .
+# 
+# http://smartsevilla.es/ontology#short_name
 
-###  http://smartsevilla.es/ontology/Bus
-:Bus rdf:type owl:Class .
+<http://smartsevilla.es/ontology#short_name> a owl:DatatypeProperty ;
+	rdfs:domain _:genid24 .
 
+_:genid24 a owl:Class ;
+	owl:unionOf _:genid28 .
 
-###  http://smartsevilla.es/ontology/Line
-:Line rdf:type owl:Class .
+_:genid28 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Agencia> ;
+	rdf:rest _:genid27 .
 
+_:genid27 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Calle> ;
+	rdf:rest _:genid26 .
 
-###  http://smartsevilla.es/ontology/Route
-:Route rdf:type owl:Class .
+_:genid26 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Ruta> ;
+	rdf:rest _:genid25 .
 
+_:genid25 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Servicio> ;
+	rdf:rest rdf:nil .
 
-###  http://smartsevilla.es/ontology/Service
-:Service rdf:type owl:Class .
+<http://smartsevilla.es/ontology#short_name> rdfs:range xsd:string .
+# 
+# http://smartsevilla.es/ontology#start_date
 
+<http://smartsevilla.es/ontology#start_date> a owl:DatatypeProperty ;
+	rdfs:domain <http://smartsevilla.es/ontology#Servicio> ;
+	rdfs:range xsd:dateTime .
+# 
+# http://smartsevilla.es/ontology#stop_id
 
-###  http://smartsevilla.es/ontology/Stop
-:Stop rdf:type owl:Class .
+<http://smartsevilla.es/ontology#stop_id> a owl:DatatypeProperty ;
+	rdfs:domain <http://smartsevilla.es/ontology#Parada_bus> ;
+	rdfs:range xsd:string .
+# 
+# http://smartsevilla.es/ontology#telefono
 
+<http://smartsevilla.es/ontology#telefono> a owl:DatatypeProperty ;
+	rdfs:domain _:genid29 .
 
-###  http://smartsevilla.es/ontology/Street
-:Street rdf:type owl:Class .
+_:genid29 a owl:Class ;
+	owl:unionOf _:genid32 .
 
+_:genid32 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Agencia> ;
+	rdf:rest _:genid31 .
 
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
+_:genid31 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Museo> ;
+	rdf:rest _:genid30 .
+
+_:genid30 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#SitioDeInteres> ;
+	rdf:rest rdf:nil .
+
+<http://smartsevilla.es/ontology#telefono> rdfs:range xsd:string .
+# 
+# http://smartsevilla.es/ontology#url
+
+<http://smartsevilla.es/ontology#url> a owl:DatatypeProperty ;
+	rdfs:domain _:genid33 .
+
+_:genid33 a owl:Class ;
+	owl:unionOf _:genid36 .
+
+_:genid36 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Agencia> ;
+	rdf:rest _:genid35 .
+
+_:genid35 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#Museo> ;
+	rdf:rest _:genid34 .
+
+_:genid34 a rdf:List ;
+	rdf:first <http://smartsevilla.es/ontology#SitioDeInteres> ;
+	rdf:rest rdf:nil .
+
+<http://smartsevilla.es/ontology#url> rdfs:range xsd:anyURI .
+# 
+# http://smartsevilla.es/ontology#zonaHoraria
+
+<http://smartsevilla.es/ontology#zonaHoraria> a owl:DatatypeProperty ;
+	rdfs:domain <http://smartsevilla.es/ontology#Agencia> ;
+	rdfs:range xsd:string .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://smartsevilla.es/ontology#Agencia
+
+<http://smartsevilla.es/ontology#Agencia> a owl:Class .
+# 
+# http://smartsevilla.es/ontology#Calle
+
+<http://smartsevilla.es/ontology#Calle> a owl:Class .
+# 
+# http://smartsevilla.es/ontology#Museo
+
+<http://smartsevilla.es/ontology#Museo> a owl:Class .
+# 
+# http://smartsevilla.es/ontology#Parada_bus
+
+<http://smartsevilla.es/ontology#Parada_bus> a owl:Class .
+# 
+# http://smartsevilla.es/ontology#Ruta
+
+<http://smartsevilla.es/ontology#Ruta> a owl:Class .
+# 
+# http://smartsevilla.es/ontology#Servicio
+
+<http://smartsevilla.es/ontology#Servicio> a owl:Class .
+# 
+# http://smartsevilla.es/ontology#SitioDeInteres
+
+<http://smartsevilla.es/ontology#SitioDeInteres> a owl:Class .
+# 
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
