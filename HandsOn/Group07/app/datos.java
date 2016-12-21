@@ -71,7 +71,6 @@ public class datos
 
                 }
                 if (org_Gestor != ""){
-                	System.out.println(org_Gestor);
                     String queryString = 
                         "PREFIX JobSearch: <http://www.semanticweb.org/Group07/ontology/JobSearch#>"+
                         "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"+
@@ -87,7 +86,6 @@ public class datos
             		results = qexec.execSelect() ;
             		while (results.hasNext())
             		{
-            			System.out.println("no");
                         QuerySolution binding = results.nextSolution();
                         
                         Literal given = binding.getLiteral("Given");
@@ -145,7 +143,6 @@ public class datos
             	FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
         		Model model = FileManager.get().loadModel(ofertas_Empleo);
                 if (provincia != ""){
-                	System.out.println("hola");
                     String queryString = 
                         "PREFIX JobSearch: <http://www.semanticweb.org/Group07/ontology/JobSearch#>"+
                         "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"+
@@ -205,7 +202,6 @@ public class datos
                     }
                 }
                 if ( localidad == "" && provincia == ""){
-                	System.out.println("hola");
                     String queryString = 
                         "PREFIX JobSearch: <http://www.semanticweb.org/Group07/ontology/JobSearch#>"+
                         "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"+
