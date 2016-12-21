@@ -1,0 +1,131 @@
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix schema: <http://schema.org/> .
+@prefix livingPlaces: <http://www.linkedData_Group13.com/ontology/livingPlaces#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix osadm: <http://data.ordnancesurvey.co.uk/ontology/admingeo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://www.linkedData_Group13.com/resource/Bayswater> a livingPlaces:StatePark ;
+	rdfs:label "Bayswater"^^rdfs:Literal ;
+	dbo:borough <http://www.linkedData_Group13.com/resource/Queens> ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	schema:url <http://nysparks.com/parks/86/details.aspx> ;
+	geo:long "-73.7725529333"^^xsd:float ;
+	geo:lat "40.6128179007"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Bayswater_(Dubai)> .
+
+<http://www.linkedData_Group13.com/resource/Queens> a osadm:Borough ;
+	rdfs:label "Queens"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Queens> .
+
+<http://www.linkedData_Group13.com/resource/State+Island> a osadm:Borough ;
+	rdfs:label "State Island"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/Richmond_County,_New_South_Wales> .
+
+<http://www.linkedData_Group13.com/resource/Clay+Pit+Ponds> a livingPlaces:StateNaturalPreserve ;
+	rdfs:label "Clay Pit Ponds"^^<rdfs:Literal> ;
+	dbo:borough <http://www.linkedData_Group13.com/resource/State+Island> ;
+	livingPlaces:hasBeach "N"^^<xsd:boolean> ;
+	livingPlaces:hasCampZone "N"^^<xsd:boolean> ;
+	livingPlaces:hasGolfCourse "N"^^<xsd:boolean> ;
+	livingPlaces:hasPlayGround "N"^^<xsd:boolean> ;
+	livingPlaces:isNatureCenter "Y"^^<xsd:boolean> ;
+	schema:url <http://nysparks.com/parks/166/details.aspx> , <http://www.nysparks.com/environment/nature-centers/14/details.aspx> ;
+	geo:long "-74.2290460884"^^<xsd:float> ;
+	geo:lat "40.5405635456"^^<xsd:float> ;
+	owl:sameAs <http://dbpedia.org/resource/Clay_Pit_Ponds_State_Park_Preserve> .
+
+<http://www.linkedData_Group13.com/resource/East+River> a livingPlaces:StatePark ;
+	rdfs:label "East River"^^rdfs:Literal ;
+	dbo:borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	schema:url <http://nysparks.com/parks/155/details.aspx> ;
+	geo:long "-73.962057535"^^xsd:float ;
+	geo:lat "40.7214246134"^^xsd:float .
+
+<http://www.linkedData_Group13.com/resource/Brooklyn> a osadm:Borough ;
+	rdfs:label "Brooklyn"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Franklin+D.+Roosevelt+Four+Freedoms> a livingPlaces:StatePark ;
+	rdfs:label "Franklin D. Roosevelt Four Freedoms"^^rdfs:Literal ;
+	dbo:borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	schema:url <http://nysparks.com/parks/186/details.aspx> ;
+	geo:long "-73.9603793708"^^xsd:float ;
+	geo:lat "40.7506765522"^^xsd:float .
+
+<http://www.linkedData_Group13.com/resource/Manhattan> a osadm:Borough ;
+	rdfs:label "Manhattan"^^rdfs:Literal .
+
+<http://www.linkedData_Group13.com/resource/Gantry+Plaza> a livingPlaces:StatePark ;
+	rdfs:label "Gantry Plaza"^^rdfs:Literal ;
+	dbo:borough <http://www.linkedData_Group13.com/resource/Queens> ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	schema:url <http://nysparks.com/parks/149/details.aspx> ;
+	geo:long "-73.959045245"^^xsd:float ;
+	geo:lat "40.7443521446"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Gantry_Plaza_State_Park> .
+
+<http://www.linkedData_Group13.com/resource/Hudson+River+Park> a livingPlaces:StatePark ;
+	rdfs:label "Hudson River Park"^^rdfs:Literal ;
+	dbo:borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "N"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	geo:long "-74.0117431827"^^xsd:float ;
+	geo:lat "40.7354989295"^^xsd:float .
+
+<http://www.linkedData_Group13.com/resource/Riverbank> a livingPlaces:StatePark ;
+	rdfs:label "Riverbank"^^rdfs:Literal ;
+	dbo:borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	schema:url <http://nysparks.com/parks/93/details.aspx> ;
+	geo:long "-73.9568541697"^^xsd:float ;
+	geo:lat "40.8255348249"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Riverbank_Park> .
+
+<http://www.linkedData_Group13.com/resource/Manhattan> owl:sameAs <http://dbpedia.org/resource/Manhattan> .
+
+<http://www.linkedData_Group13.com/resource/Roberto+Clemente> a livingPlaces:StatePark ;
+	rdfs:label "Roberto Clemente"^^rdfs:Literal ;
+	dbo:borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	livingPlaces:hasGolfCourse "N"^^xsd:boolean ;
+	livingPlaces:hasCampZone "N"^^xsd:booelan ;
+	livingPlaces:hasPlayGround "Y"^^xsd:boolean ;
+	livingPlaces:isNatureCenter "N"^^xsd:booelan ;
+	livingPlaces:hasBeach "N"^^xsd:boolean ;
+	schema:url <http://nysparks.com/parks/140/details.aspx> ;
+	geo:long "-73.9200427364"^^xsd:float ;
+	geo:lat "40.8553636655"^^xsd:float ;
+	owl:sameAs <http://dbpedia.org/resource/Roberto_Clemente_Bridge> .
+
+<http://www.linkedData_Group13.com/resource/Bronx> a osadm:Borough ;
+	rdfs:label "Bronx"^^rdfs:Literal ;
+	owl:sameAs <http://dbpedia.org/resource/The_Bronx> .
