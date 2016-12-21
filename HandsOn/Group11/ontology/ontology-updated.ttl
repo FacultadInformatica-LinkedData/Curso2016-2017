@@ -7,128 +7,179 @@
 @prefix schema: <http://schema.org/> .
 
 <http://www.madridcultural.es/ontology.owl#> a owl:Ontology .
-#
-#
+# 
+# 
 # #################################################################
 # #
 # #    Object Properties
 # #
 # #################################################################
-#
-#
-# http://purl.org/dc/terms/type
+# 
+# 
+# http://schema.org/GeoCoordinates
 
-<http://purl.org/dc/terms/type> a owl:ObjectProperty .
-#
+schema:GeoCoordinates a owl:ObjectProperty .
+# 
 # http://schema.org/address
 
-schema:address a owl:ObjectProperty .
-#
+schema:address a owl:ObjectProperty ;
+	rdfs:range schema:PostalAddress .
+# 
 # http://schema.org/addressLocality
 
 schema:addressLocality a owl:ObjectProperty ;
 	rdfs:subPropertyOf schema:address .
-#
-# http://schema.org/email
+# 
+# http://schema.org/addressRegion
 
-schema:email a owl:ObjectProperty .
-#
-# http://schema.org/event
-
-schema:event a owl:ObjectProperty ;
-	rdfs:subPropertyOf owl:topObjectProperty .
-#
-# http://schema.org/postalCode
-
-schema:postalCode a owl:ObjectProperty ;
+schema:addressRegion a owl:ObjectProperty ;
 	rdfs:subPropertyOf schema:address .
-#
-# http://schema.org/streetAdress
+# 
+# http://www.madridcultural.es/ontology.owl#seRealizaEn
 
-schema:streetAdress a owl:ObjectProperty ;
-	rdfs:subPropertyOf schema:address .
-#
-# http://schema.org/telephone
-
-schema:telephone a owl:ObjectProperty ;
-	rdfs:subPropertyOf owl:topObjectProperty .
-#
-# http://www.madridcultural.es/ontology.owl#es_realizado
-
-:es_realizado a owl:ObjectProperty ;
-	rdfs:subPropertyOf owl:topObjectProperty .
-#
-# http://www.madridcultural.es/ontology.owl#pertenece_a
-
-:pertenece_a a owl:ObjectProperty ;
-	rdfs:subPropertyOf owl:topObjectProperty ;
-	rdfs:domain :Tipo .
-#
-# http://www.madridcultural.es/ontology.owl#se_realiza_en
-
-:se_realiza_en a owl:ObjectProperty ;
-	rdfs:subPropertyOf owl:topObjectProperty .
-#
+:seRealizaEn a owl:ObjectProperty .
+# 
 # http://www.madridcultural.es/ontology.owl#tieneBarrio
 
 :tieneBarrio a owl:ObjectProperty ;
-	rdfs:subPropertyOf :tieneDistrito .
-#
+	rdfs:subPropertyOf schema:address .
+# 
 # http://www.madridcultural.es/ontology.owl#tieneDistrito
 
 :tieneDistrito a owl:ObjectProperty ;
 	rdfs:subPropertyOf schema:address .
-#
+# 
+# http://www.madridcultural.es/ontology.owl#tipoVia
+
+:tipoVia a owl:ObjectProperty ;
+	rdfs:subPropertyOf schema:address .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/type
+
+<http://purl.org/dc/terms/type> a owl:DatatypeProperty .
+# 
+# http://schema.org/email
+
+schema:email a owl:DatatypeProperty .
+# 
+# http://schema.org/latitude
+
+schema:latitude a owl:DatatypeProperty ;
+	rdfs:range xsd:double .
+# 
+# http://schema.org/longitude
+
+schema:longitude a owl:DatatypeProperty ;
+	rdfs:range xsd:double .
+# 
+# http://schema.org/postalCode
+
+schema:postalCode a owl:DatatypeProperty ;
+	rdfs:range xsd:string .
+# 
+# http://schema.org/startDate
+
+schema:startDate a owl:DatatypeProperty ;
+	rdfs:range xsd:dateTime .
+# 
+# http://schema.org/streetAddress
+
+schema:streetAddress a owl:DatatypeProperty .
+# 
+# http://schema.org/telephone
+
+schema:telephone a owl:DatatypeProperty .
+# 
+# http://www.madridcultural.es/ontology.owl#esAccesible
+
+:esAccesible a owl:DatatypeProperty ;
+	rdfs:range xsd:integer .
+# 
+# http://www.madridcultural.es/ontology.owl#horario
+
+:horario a owl:DatatypeProperty ;
+	rdfs:range xsd:string .
+# 
+# http://www.madridcultural.es/ontology.owl#numero
+
+:numero a owl:DatatypeProperty ;
+	rdfs:range xsd:integer ;
+	rdfs:comment "Se refiere al número de la calle"@es .
+# 
+# http://www.madridcultural.es/ontology.owl#tieneHora
+
+:tieneHora a owl:DatatypeProperty .
+# 
 # http://www.madridcultural.es/ontology.owl#tieneTransporte
 
-:tieneTransporte a owl:ObjectProperty .
-#
+:tieneTransporte a owl:DatatypeProperty .
+# 
 # http://www.w3.org/2000/01/rdf-schema#comment
 
-rdfs:comment a owl:ObjectProperty .
-#
+rdfs:comment a owl:DatatypeProperty .
+# 
 # http://www.w3.org/2000/01/rdf-schema#label
 
-rdfs:label a owl:ObjectProperty ;
-	rdfs:subPropertyOf owl:topObjectProperty .
-#
-#
-#
+rdfs:label a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# 
+# 
 # #################################################################
 # #
 # #    Classes
 # #
 # #################################################################
-#
-#
+# 
+# 
+# http://dbpedia.org/ontology/City
+
+<http://dbpedia.org/ontology/City> a owl:Class ;
+	rdfs:subClassOf schema:PostalAddress .
+# 
 # http://schema.org/Event
 
 schema:Event a owl:Class .
-#
+# 
+# http://schema.org/GeoCoordinates
+
+schema:GeoCoordinates a owl:Class .
+# 
 # http://schema.org/Place
 
 schema:Place a owl:Class .
-#
-# http://schema.org/PostalAdress
+# 
+# http://schema.org/PostalAddress
 
-schema:PostalAdress a owl:Class .
-#
-# http://www.madridcultural.es/ontology.owl#Barrios
+schema:PostalAddress a owl:Class .
+# 
+# http://www.madridcultural.es/ontology.owl#Barrio
 
-:Barrios a owl:Class ;
-	rdfs:subClassOf :Distritos .
-#
-# http://www.madridcultural.es/ontology.owl#Distritos
+:Barrio a owl:Class ;
+	rdfs:subClassOf schema:PostalAddress .
+# 
+# http://www.madridcultural.es/ontology.owl#Distrito
 
-:Distritos a owl:Class .
-#
-# http://www.madridcultural.es/ontology.owl#Tipo
+:Distrito a owl:Class ;
+	rdfs:subClassOf schema:PostalAddress .
+# 
+# http://www.madridcultural.es/ontology.owl#Provincia
 
-:Tipo a owl:Class .
-#
-# http://www.madridcultural.es/ontology.owl#TiposCentros
+:Provincia a owl:Class ;
+	rdfs:subClassOf schema:PostalAddress .
+# 
+# http://www.madridcultural.es/ontology.owl#Via
 
-:TiposCentros a owl:Class ;
-	rdfs:subClassOf schema:Place .
-#
+:Via a owl:Class ;
+	rdfs:subClassOf schema:PostalAddress .
+# 
 # Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
