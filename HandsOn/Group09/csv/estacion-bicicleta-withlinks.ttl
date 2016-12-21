@@ -15,6 +15,10 @@ onto:Zaragoza a onto:Ciudad .
 
 <http://www.semanticweb.org/grupo09#C%2F+Doctor+Iranzo+-++C%2F+Escultor+Benlliure> onto:enCiudad onto:Zaragoza .
 
+<http://dbpedia.org/resource/Zaragoza> a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#C%2F+Doctor+Iranzo+-++C%2F+Escultor+Benlliure> onto:enCiudad <http://dbpedia.org/resource/Zaragoza> .
+
 onto:Estacion1 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Doctor+Iranzo+-++C%2F+Escultor+Benlliure> ;
 	onto:bicisDisponibles "13"^^xsd:int ;
 	onto:anclajesDisponibles "7"^^xsd:int ;
@@ -26,7 +30,7 @@ onto:Estacion2 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=102" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Pedro+Joaqu%C3%ADn+Soler+-+Coso> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion2 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Pedro+Joaqu%C3%ADn+Soler+-+Coso> ;
 	onto:bicisDisponibles "9"^^xsd:int ;
@@ -39,7 +43,7 @@ onto:Estacion3 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=103" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Lacarra+de+Miguel+-+C%2F+San+Vicente+Martir> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion3 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Lacarra+de+Miguel+-+C%2F+San+Vicente+Martir> ;
 	onto:bicisDisponibles "10"^^xsd:int ;
@@ -52,7 +56,7 @@ onto:Estacion4 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=104" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Madre+Rafols+-+Esquina+D.G.A.> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion4 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Madre+Rafols+-+Esquina+D.G.A.> ;
 	onto:bicisDisponibles "9"^^xsd:int ;
@@ -65,7 +69,7 @@ onto:Estacion5 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=108" .
 
 <http://www.semanticweb.org/grupo09#Plaza+Emperador+Carlos+V> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion5 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+Emperador+Carlos+V> ;
 	onto:bicisDisponibles "6"^^xsd:int ;
@@ -78,7 +82,7 @@ onto:Estacion6 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=113" .
 
 <http://www.semanticweb.org/grupo09#V%C3%ADa+Hispanidad+-+Avda.+G%C3%B3mez+Laguna> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion6 onto:estaEn <http://www.semanticweb.org/grupo09#V%C3%ADa+Hispanidad+-+Avda.+G%C3%B3mez+Laguna> ;
 	onto:bicisDisponibles "4"^^xsd:int ;
@@ -91,7 +95,7 @@ onto:Estacion7 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=115" .
 
 <http://www.semanticweb.org/grupo09#V%C3%ADa+Hispanidad+-+C%2F+Oc%C3%A9ano+Atl%C3%A1ntico> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion7 onto:estaEn <http://www.semanticweb.org/grupo09#V%C3%ADa+Hispanidad+-+C%2F+Oc%C3%A9ano+Atl%C3%A1ntico> ;
 	onto:bicisDisponibles "11"^^xsd:int ;
@@ -104,7 +108,7 @@ onto:Estacion8 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=118" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Juan+Pablo+II+-+Avda.+G%C3%B3mez+Laguna> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion8 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Juan+Pablo+II+-+Avda.+G%C3%B3mez+Laguna> ;
 	onto:bicisDisponibles "12"^^xsd:int ;
@@ -117,7 +121,7 @@ onto:Estacion9 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=119" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Juan+Carlos+I+-+C%2F+Ram%C3%B3n+Sainz+de+Varanda> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion9 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Juan+Carlos+I+-+C%2F+Ram%C3%B3n+Sainz+de+Varanda> ;
 	onto:bicisDisponibles "11"^^xsd:int ;
@@ -130,7 +134,7 @@ onto:Estacion10 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=120" .
 
 <http://www.semanticweb.org/grupo09#C%2F+As%C3%ADn+y+Palacios+-+C%2F+Pedro+IV+El+Ceremonioso> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion10 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+As%C3%ADn+y+Palacios+-+C%2F+Pedro+IV+El+Ceremonioso> ;
 	onto:bicisDisponibles "13"^^xsd:int ;
@@ -143,7 +147,7 @@ onto:Estacion11 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=121" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Eduardo+Ibarra+-+C%2F+Violante+de+Hungr%C3%ADa> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion11 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Eduardo+Ibarra+-+C%2F+Violante+de+Hungr%C3%ADa> ;
 	onto:bicisDisponibles "3"^^xsd:int ;
@@ -156,7 +160,7 @@ onto:Estacion12 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=125" .
 
 <http://www.semanticweb.org/grupo09#Via+Univ%C3%A9rsitas+-+C%2F+Hermanos+Gambra> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion12 onto:estaEn <http://www.semanticweb.org/grupo09#Via+Univ%C3%A9rsitas+-+C%2F+Hermanos+Gambra> ;
 	onto:bicisDisponibles "8"^^xsd:int ;
@@ -169,7 +173,7 @@ onto:Estacion13 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=127" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Navarra+-+C%2F+Rioja> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion13 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Navarra+-+C%2F+Rioja> ;
 	onto:bicisDisponibles "6"^^xsd:int ;
@@ -182,7 +186,7 @@ onto:Estacion14 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=129" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Graus+-+C%2F+Unceta> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion14 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Graus+-+C%2F+Unceta> ;
 	onto:bicisDisponibles "11"^^xsd:int ;
@@ -195,7 +199,7 @@ onto:Estacion15 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=130" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Corona+de+Arag%C3%B3n+-+C%2F+Lorente> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion15 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Corona+de+Arag%C3%B3n+-+C%2F+Lorente> ;
 	onto:bicisDisponibles "9"^^xsd:int ;
@@ -208,7 +212,7 @@ onto:Estacion16 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=1" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Pablo+Ruiz+Picasso+-+Torre+del+Agua> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion16 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Pablo+Ruiz+Picasso+-+Torre+del+Agua> ;
 	onto:bicisDisponibles "6"^^xsd:int ;
@@ -221,7 +225,7 @@ onto:Estacion17 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=2" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Ranillas+-+Avda.+Pablo+Ruiz+Picasso> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion17 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Ranillas+-+Avda.+Pablo+Ruiz+Picasso> ;
 	onto:bicisDisponibles "6"^^xsd:int ;
@@ -234,7 +238,7 @@ onto:Estacion18 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=3" .
 
 <http://www.semanticweb.org/grupo09#Pasarela+del+Voluntariado+-+Avda.+Ranillas> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion18 onto:estaEn <http://www.semanticweb.org/grupo09#Pasarela+del+Voluntariado+-+Avda.+Ranillas> ;
 	onto:bicisDisponibles "7"^^xsd:int ;
@@ -247,7 +251,7 @@ onto:Estacion19 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=4" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Ranillas+-+Puente+de+La+Almozara> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion19 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Ranillas+-+Puente+de+La+Almozara> ;
 	onto:bicisDisponibles "10"^^xsd:int ;
@@ -260,7 +264,7 @@ onto:Estacion20 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=5" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Ribera+-+Puente+de+Santiago> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion20 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Ribera+-+Puente+de+Santiago> ;
 	onto:bicisDisponibles "0"^^xsd:int ;
@@ -273,7 +277,7 @@ onto:Estacion21 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=6" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Ribera+-+Puente+del+Pilar> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion21 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+la+Ribera+-+Puente+del+Pilar> ;
 	onto:bicisDisponibles "13"^^xsd:int ;
@@ -286,7 +290,7 @@ onto:Estacion22 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=7" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Pasarela+del+Huerva> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion22 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Pasarela+del+Huerva> ;
 	onto:bicisDisponibles "6"^^xsd:int ;
@@ -299,7 +303,7 @@ onto:Estacion23 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=8" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+del+Pilar> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion23 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+del+Pilar> ;
 	onto:bicisDisponibles "7"^^xsd:int ;
@@ -312,7 +316,7 @@ onto:Estacion24 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=9" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+de+Piedra> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion24 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+de+Piedra> ;
 	onto:bicisDisponibles "9"^^xsd:int ;
@@ -325,7 +329,7 @@ onto:Estacion25 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=10" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+de+Santiago> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion25 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+de+Santiago> ;
 	onto:bicisDisponibles "4"^^xsd:int ;
@@ -338,7 +342,7 @@ onto:Estacion26 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=11" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+de+La+Almozara> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion26 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+Puente+de+La+Almozara> ;
 	onto:bicisDisponibles "14"^^xsd:int ;
@@ -351,7 +355,7 @@ onto:Estacion27 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=12" .
 
 <http://www.semanticweb.org/grupo09#Pasarela+del+Voluntariado+-+Avda.+Almozara> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion27 onto:estaEn <http://www.semanticweb.org/grupo09#Pasarela+del+Voluntariado+-+Avda.+Almozara> ;
 	onto:bicisDisponibles "9"^^xsd:int ;
@@ -364,7 +368,7 @@ onto:Estacion28 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=13" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Francia+-+Pabell%C3%B3n+Puente> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion28 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Francia+-+Pabell%C3%B3n+Puente> ;
 	onto:bicisDisponibles "0"^^xsd:int ;
@@ -377,7 +381,7 @@ onto:Estacion29 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=14" .
 
 <http://www.semanticweb.org/grupo09#Estaci%C3%B3n+Intermodal+Delicias+%28Salidas%29> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion29 onto:estaEn <http://www.semanticweb.org/grupo09#Estaci%C3%B3n+Intermodal+Delicias+%28Salidas%29> ;
 	onto:bicisDisponibles "7"^^xsd:int ;
@@ -390,7 +394,7 @@ onto:Estacion30 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=15" .
 
 <http://www.semanticweb.org/grupo09#Estaci%C3%B3n+de+Cercan%C3%ADas+El+Portillo+> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion30 onto:estaEn <http://www.semanticweb.org/grupo09#Estaci%C3%B3n+de+Cercan%C3%ADas+El+Portillo+> ;
 	onto:bicisDisponibles "16"^^xsd:int ;
@@ -403,7 +407,7 @@ onto:Estacion31 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=16" .
 
 <http://www.semanticweb.org/grupo09#Plaza+Espa%C3%B1a> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion31 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+Espa%C3%B1a> ;
 	onto:bicisDisponibles "9"^^xsd:int ;
@@ -416,7 +420,7 @@ onto:Estacion32 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=17" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+Constituci%C3%B3n+-+Plaza+Arag%C3%B3n+> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion32 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Constituci%C3%B3n+-+Plaza+Arag%C3%B3n+> ;
 	onto:bicisDisponibles "14"^^xsd:int ;
@@ -429,7 +433,7 @@ onto:Estacion33 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=18" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Asalto+-+Edificio+Trovador> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion33 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Asalto+-+Edificio+Trovador> ;
 	onto:bicisDisponibles "6"^^xsd:int ;
@@ -442,7 +446,7 @@ onto:Estacion34 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=19" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Asalto+-+C%2F+Miguel+Servet+> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion34 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Asalto+-+C%2F+Miguel+Servet+> ;
 	onto:bicisDisponibles "5"^^xsd:int ;
@@ -455,7 +459,7 @@ onto:Estacion35 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=20" .
 
 <http://www.semanticweb.org/grupo09#Plaza+Salamero%2C+14> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion35 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+Salamero%2C+14> ;
 	onto:bicisDisponibles "13"^^xsd:int ;
@@ -468,7 +472,7 @@ onto:Estacion36 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=21" .
 
 <http://www.semanticweb.org/grupo09#Avda.+C%C3%A9sar+Augusto+-+Avda.+Conde+Aranda> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion36 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+C%C3%A9sar+Augusto+-+Avda.+Conde+Aranda> ;
 	onto:bicisDisponibles "6"^^xsd:int ;
@@ -481,7 +485,7 @@ onto:Estacion37 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=22" .
 
 <http://www.semanticweb.org/grupo09#Estaci%C3%B3n+Intermodal+Delicias+%28Llegadas%29> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion37 onto:estaEn <http://www.semanticweb.org/grupo09#Estaci%C3%B3n+Intermodal+Delicias+%28Llegadas%29> ;
 	onto:bicisDisponibles "10"^^xsd:int ;
@@ -494,7 +498,7 @@ onto:Estacion38 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=23" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+de+La+Ribera+-+Pasarela+Azud> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion38 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+de+La+Ribera+-+Pasarela+Azud> ;
 	onto:bicisDisponibles "8"^^xsd:int ;
@@ -507,7 +511,7 @@ onto:Estacion39 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=24" .
 
 <http://www.semanticweb.org/grupo09#Plaza+San+Pedro+Nolasco> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion39 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+San+Pedro+Nolasco> ;
 	onto:bicisDisponibles "10"^^xsd:int ;
@@ -520,7 +524,7 @@ onto:Estacion40 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=25" .
 
 <http://www.semanticweb.org/grupo09#Plaza+de+los+Sitios+> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion40 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+de+los+Sitios+> ;
 	onto:bicisDisponibles "7"^^xsd:int ;
@@ -533,7 +537,7 @@ onto:Estacion41 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=26" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+Pamplona+-+Puerta+del+Carmen> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion41 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Pamplona+-+Puerta+del+Carmen> ;
 	onto:bicisDisponibles "14"^^xsd:int ;
@@ -546,7 +550,7 @@ onto:Estacion42 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=27" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+M%C2%AA+Agust%C3%ADn+-+Colegio+Joaqu%C3%ADn+Costa> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion42 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+M%C2%AA+Agust%C3%ADn+-+Colegio+Joaqu%C3%ADn+Costa> ;
 	onto:bicisDisponibles "12"^^xsd:int ;
@@ -559,7 +563,7 @@ onto:Estacion43 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=28" .
 
 <http://www.semanticweb.org/grupo09#Plaza+del+Portillo+-+Plaza+de+Toros> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion43 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+del+Portillo+-+Plaza+de+Toros> ;
 	onto:bicisDisponibles "5"^^xsd:int ;
@@ -572,7 +576,7 @@ onto:Estacion44 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=29" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Madrid+-+Aljafer%C3%ADa> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion44 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Madrid+-+Aljafer%C3%ADa> ;
 	onto:bicisDisponibles "9"^^xsd:int ;
@@ -585,7 +589,7 @@ onto:Estacion45 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=30" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Pablo+Gargallo+-+Avda.+Puerta+Sancho> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion45 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Pablo+Gargallo+-+Avda.+Puerta+Sancho> ;
 	onto:bicisDisponibles "8"^^xsd:int ;
@@ -598,7 +602,7 @@ onto:Estacion46 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=31" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Pablo+Gargallo+-+C%2F+Ignacio+Menaya> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion46 onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Pablo+Gargallo+-+C%2F+Ignacio+Menaya> ;
 	onto:bicisDisponibles "9"^^xsd:int ;
@@ -611,7 +615,7 @@ onto:Estacion47 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=32" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Ram%C3%B3n+y+Cajal+-+C%2F+Madre+Rafols> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion47 onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Ram%C3%B3n+y+Cajal+-+C%2F+Madre+Rafols> ;
 	onto:bicisDisponibles "15"^^xsd:int ;
@@ -624,7 +628,7 @@ onto:Estacion48 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=33" .
 
 <http://www.semanticweb.org/grupo09#Plaza+del+Pilar+-+Edificio+Turismo+> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion48 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+del+Pilar+-+Edificio+Turismo+> ;
 	onto:bicisDisponibles "4"^^xsd:int ;
@@ -637,7 +641,7 @@ onto:Estacion49 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=34" .
 
 <http://www.semanticweb.org/grupo09#Plaza+Magdalena> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion49 onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+Magdalena> ;
 	onto:bicisDisponibles "3"^^xsd:int ;
@@ -650,7 +654,7 @@ onto:Estacion50 a onto:EstacionBicicleta ;
 	onto:url "http://www.zaragoza.es/ciudad/viapublica/movilidad/bici/detalle_Bizi?oid=35" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+C%2F+Salvador+Minguij%C3%B3n> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:Estacion50 onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Echegaray+y+Caballero+-+C%2F+Salvador+Minguij%C3%B3n> ;
 	onto:bicisDisponibles "10"^^xsd:int ;

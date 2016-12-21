@@ -16,6 +16,10 @@ onto:Zaragoza a onto:Ciudad .
 
 <http://www.semanticweb.org/grupo09#Plaza+de+la+Seo> onto:enCiudad onto:Zaragoza .
 
+<http://dbpedia.org/resource/Zaragoza> a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#Plaza+de+la+Seo> onto:enCiudad <http://dbpedia.org/resource/Zaragoza> .
+
 <http://www.semanticweb.org/grupo09#Museo+del+Foro+de+Caesaraugusta> onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+de+la+Seo> ;
 	onto:horario """Cerrado hasta el 6 de noviembre.
 Martes a sábado de 10 a 14h y 17 a 21h
@@ -51,7 +55,7 @@ En 1978, y como consecuencia de la denominada Operación Cuarteles, el recinto p
 	onto:estilo "barroco" .
 
 <http://www.semanticweb.org/grupo09#Plaza+San+Agust%C3%ADn> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Centro+de+Historias+de+Zaragoza.+Antiguo+Convento+de+San+Agust%C3%ADn> onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+San+Agust%C3%ADn> ;
 	onto:horario """Martes a sábado de 10 a 14h y 17 a 21h
@@ -77,7 +81,7 @@ De la estructura inicial sólo se conserva parte de la fachada, en ladrillo, pue
 	onto:estilo "Renacentista" .
 
 <http://www.semanticweb.org/grupo09#Plaza+de+San+Carlos> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Casa+de+los+Morlanes> onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+de+San+Carlos> ;
 	onto:telefono "976 72 18 00" ;
@@ -103,7 +107,7 @@ Al nuevo azud del Ebro se le ha impuesto el nombre de Manuel Lorenzo Pardo, en h
 	onto:estilo "entorno" .
 
 <http://www.semanticweb.org/grupo09#entre+los+barrios+de+Vadorrey+y+Las+Fuentes> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Azud+del+R%C3%ADo+Ebro> onto:estaEn <http://www.semanticweb.org/grupo09#entre+los+barrios+de+Vadorrey+y+Las+Fuentes> ;
 	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/azudp.jpg" ;
@@ -115,7 +119,7 @@ Al nuevo azud del Ebro se le ha impuesto el nombre de Manuel Lorenzo Pardo, en h
 	onto:estilo "gotico, mudejar, renacentista" .
 
 <http://www.semanticweb.org/grupo09#C%2F+del+De%C3%A1n> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Arco+y+casa+del+De%C3%A1n> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+del+De%C3%A1n> ;
 	onto:telefono "976 76 76 76 (Ibercaja)" ;
@@ -134,7 +138,7 @@ Este monasterio, cuya fundación se remonta al siglo XIII, es el único ejemplo 
 	onto:estilo "mudejar" .
 
 <http://www.semanticweb.org/grupo09#Don+Teobaldo> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Monasterio+de+la+Resurrecci%C3%B3n+de+canonesas+del+Santo+Sepulcro> onto:estaEn <http://www.semanticweb.org/grupo09#Don+Teobaldo> ;
 	onto:horario """Todos lunes a las 11 de la mañana, las canonesas ofrecen la posibilidad de visitar la zona medieval del monasterio para conocer mejor su historia, contemplar su arte mudéjar y acercarse a la vida de la comunidad.
@@ -163,7 +167,7 @@ Su mejor sala de conciertos, la Sala Mozart, está creada para ofrecer una acús
 	onto:estilo "contemporaneo" .
 
 <http://www.semanticweb.org/grupo09#Eduardo+Ibarra> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Auditorio+-+Palacio+de+Congresos> onto:estaEn <http://www.semanticweb.org/grupo09#Eduardo+Ibarra> ;
 	onto:telefono "976 72 13 00" ;
@@ -187,7 +191,7 @@ Desde 2005 hasta el 2015 fue la Oficina de Naciones Unidas de apoyo al Decenio d
 	onto:estilo "contemporaneo" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Catalu%C3%B1a> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Casa+Solans> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Catalu%C3%B1a> ;
 	onto:datacion "1918 - 1921" ;
@@ -207,7 +211,7 @@ Es la primera plaza de toros de España que contó con cubierta, fija sobre los 
 	onto:estilo "contemporaneo" .
 
 <http://www.semanticweb.org/grupo09#Glorieta+de+Azn%C3%A1rez> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Plaza+de+Toros+de+la+Misericordia> onto:estaEn <http://www.semanticweb.org/grupo09#Glorieta+de+Azn%C3%A1rez> ;
 	onto:horario "Ferias Taurinas" ;
@@ -227,7 +231,7 @@ El patio de operaciones interior mantiene también el mismo estilo de inspiraci�
 	onto:estilo "contemporaneo: historicismo Neomudéjar" .
 
 <http://www.semanticweb.org/grupo09#Paseo+de+la+Independencia> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Edificio+de+Correos+y+Tel%C3%A9grafos> onto:estaEn <http://www.semanticweb.org/grupo09#Paseo+de+la+Independencia> ;
 	onto:datacion "1926" ;
@@ -243,7 +247,7 @@ Situadas en el ángulo nordeste del foro, las instalaciones portuarias se extend
 	onto:estilo "romano" .
 
 <http://www.semanticweb.org/grupo09#Plaza+de+San+Bruno> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Museo+del+Puerto+Fluvial+de+Caesaraugusta> onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+de+San+Bruno> ;
 	onto:horario """Martes a sábado de 10 a 14h y 17 a 21h
@@ -276,7 +280,7 @@ En el interior sobresale el conjunto escultórico del Retablo Mayor y las imáge
 	onto:estilo "mudejar" .
 
 <http://www.semanticweb.org/grupo09#Plaza+de+la+Magdalena.> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Iglesia+Parroquial+de+Santa+Maria+Magdalena> onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+de+la+Magdalena.> ;
 	onto:telefono "976 39 97 45" ;
@@ -296,7 +300,7 @@ Se considera obra mudéjar, con elementos formales cistercienses y siguiendo la 
 	onto:estilo "mudejar" .
 
 onto:Coso a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Ba%C3%B1os+Jud%C3%ADos> onto:estaEn onto:Coso ;
 	onto:horario "Actualmente no se pueden visitar" ;
@@ -345,7 +349,7 @@ De construcción tradicional, se ha utilizado en ellos el aparejo que combina el
 	onto:estilo "contemporaneo: regionalista" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Salduba+> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Barrio+de+la+Cartuja.+Antiguas+Escuelas> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Salduba+> ;
 	onto:datacion "Siglo XX" ;
@@ -365,7 +369,7 @@ Debido a la construcción de la Línea 1 del Tranvía, en 2012 se propuso su tra
 	onto:estilo "romano" .
 
 <http://www.semanticweb.org/grupo09#Avda.+de+C%C3%A9sar+Augusto> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Estatua+del+Emperador+Augusto> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+de+C%C3%A9sar+Augusto> ;
 	onto:sitiosDeInteres "Torreones, murallas, estatua de César Augusto." ;
@@ -382,7 +386,7 @@ La imagen del dios de los mares se inspira en la Fuente de Neptuno del Paseo del
 	onto:estilo "contemporaneo" .
 
 <http://www.semanticweb.org/grupo09#Parque+Grande+J.A.+Labordeta> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Fuente+de+Neptuno+o+Fuente+de+la+Princesa> onto:estaEn <http://www.semanticweb.org/grupo09#Parque+Grande+J.A.+Labordeta> ;
 	onto:datacion "1845" ;
@@ -396,7 +400,7 @@ La imagen del dios de los mares se inspira en la Fuente de Neptuno del Paseo del
 	onto:estilo "entorno" .
 
 <http://www.semanticweb.org/grupo09#V%C3%ADa+Pignatelli> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Canal+Imperial+de+Arag%C3%B3n> onto:estaEn <http://www.semanticweb.org/grupo09#V%C3%ADa+Pignatelli> ;
 	onto:datacion "Finales del siglo XVIII" ;
@@ -410,7 +414,7 @@ La imagen del dios de los mares se inspira en la Fuente de Neptuno del Paseo del
 	onto:estilo "contemporaneo" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Miguel+Servet> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Antiguo+Matadero+Municipal> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Miguel+Servet> ;
 	onto:datacion "1880-1884" ;
@@ -425,7 +429,7 @@ La imagen del dios de los mares se inspira en la Fuente de Neptuno del Paseo del
 	onto:estilo "contemporaneo" .
 
 <http://www.semanticweb.org/grupo09#Paseo+de+la+Constituci%C3%B3n> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Monumento+a+la+Constituci%C3%B3n+Espa%C3%B1ola+de+1978> onto:estaEn <http://www.semanticweb.org/grupo09#Paseo+de+la+Constituci%C3%B3n> ;
 	onto:datacion "1989" ;
@@ -438,7 +442,7 @@ La imagen del dios de los mares se inspira en la Fuente de Neptuno del Paseo del
 	onto:estilo "barroco" .
 
 <http://www.semanticweb.org/grupo09#Pza.+de+Espa%C3%B1a+50193.+Barrio+de+La+Cartuja> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Barrio+de+la+Cartuja.+Iglesia+de+la+Cartuja+Inmaculada+Concepci%C3%B3n> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+Espa%C3%B1a+50193.+Barrio+de+La+Cartuja> ;
 	onto:datacion "1703-1731" ;
@@ -452,7 +456,7 @@ Esta edificada en ladrillo visto y zaboyado en sus fachadas (excepto la que da a
 	onto:estilo "barroco, neoclasico" .
 
 <http://www.semanticweb.org/grupo09#Carretera+de+Movera+-+Pastriz+> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Barrio+de+Movera.+Torre+Santa+Engracia> onto:estaEn <http://www.semanticweb.org/grupo09#Carretera+de+Movera+-+Pastriz+> ;
 	onto:datacion "Siglo XVII y Siglo XIX" ;
@@ -470,7 +474,7 @@ La sacristía fue construida entre 1776 y 1779, decorada la bóveda con un fresc
 	onto:estilo "mudejar" .
 
 <http://www.semanticweb.org/grupo09#D.+Jaime+I> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Iglesia+Parroquial+de+San+Gil+Abad> onto:estaEn <http://www.semanticweb.org/grupo09#D.+Jaime+I> ;
 	onto:horario "En horario de culto" ;
@@ -505,7 +509,7 @@ La figura se sitúa ante tres altos dinteles y un arco de medio punto que evoca 
 	onto:estilo "entorno" .
 
 <http://www.semanticweb.org/grupo09#Paseo+de+la+Ribera> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Arboleda+de+Macanaz> onto:estaEn <http://www.semanticweb.org/grupo09#Paseo+de+la+Ribera> ;
 	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/macanazp.jpg" ;
@@ -517,7 +521,7 @@ La figura se sitúa ante tres altos dinteles y un arco de medio punto que evoca 
 	onto:estilo "entorno" .
 
 <http://www.semanticweb.org/grupo09#Barrio+de+las+Fuentes+%28%C3%BAltima+parada+del++autob%C3%BAs+22%29> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Soto+de+Cantalobos> onto:estaEn <http://www.semanticweb.org/grupo09#Barrio+de+las+Fuentes+%28%C3%BAltima+parada+del++autob%C3%BAs+22%29> ;
 	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/lobosp.jpg" ;
@@ -533,7 +537,7 @@ En el interior, las tres salas, con pavimentos de época, están ricamente decor
 	onto:estilo "contemporaneo: historicismo" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Alfonso+I> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Antigua+Joyer%C3%ADa+Aladr%C3%A9n++ahora+Gran+Caf%C3%A9+de+Zaragoza> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Alfonso+I> ;
 	onto:datacion "1885" ;
@@ -547,7 +551,7 @@ En el interior, las tres salas, con pavimentos de época, están ricamente decor
 	onto:estilo "contemporaneo: historicismo" .
 
 <http://www.semanticweb.org/grupo09#Pza.+de+San+Lorenzo+> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Barrio+de+Garrapinillos.+Iglesia+de+San+Lorenzo> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+San+Lorenzo+> ;
 	onto:datos "<a class=\"pdf\" href=\"http://www.zaragoza.es/pgou/edih/garrapinillos-sanlorenzo.pdf\">Interés Arquitectónico (A)<span class=\"oculto\">Documento pdf</span></a>" ;
@@ -562,7 +566,7 @@ Cierto interés presentan: una talla de San Blas, procesional, del último terci
 	onto:estilo "mudejar" .
 
 <http://www.semanticweb.org/grupo09#Pza.+de+Espa%C3%B1a+> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Barrio+de+Monzalbarba.+Torre+de+la+Antigua+Iglesia> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+Espa%C3%B1a+> ;
 	onto:datacion "1545" ;
@@ -577,7 +581,7 @@ En el exterior, destaca la fachada muy reformada y revocada, en su origen de lad
 	onto:estilo "neoclasico" .
 
 <http://www.semanticweb.org/grupo09#Pza.+Mayor+> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Barrio+de+Juslibol.+Iglesia+de+Nuestra+Se%C3%B1ora+de+la+Asunci%C3%B3n> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+Mayor+> ;
 	onto:datacion "Siglo XVIII" ;
@@ -594,7 +598,7 @@ En la actualidad es Oficina Municipal de Turismo y se puede visitar El Mirador d
 	onto:estilo "mudejar" .
 
 <http://www.semanticweb.org/grupo09#Glorieta+de+P%C3%ADo+XII> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Torre%C3%B3n+de+la+Zuda> onto:estaEn <http://www.semanticweb.org/grupo09#Glorieta+de+P%C3%ADo+XII> ;
 	onto:horario """De lunes a sábado de 10 a 14 horas y de 16.30 a 20 horas
@@ -614,7 +618,7 @@ Sobre uno de los cuerpos laterales de la fachada, se sitúa la torre, de dos cue
 	onto:estilo "barroco" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Iglesia+> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Barrio+de+Alfocea.+Iglesia+Inmaculada+Concepci%C3%B3n> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Iglesia+> ;
 	onto:datacion "1683" ;
@@ -629,7 +633,7 @@ Al interior, tres techumbres de comienzos del siglo XVI: en el Salón de Sesione
 	onto:estilo "contemporaneo, mudejar" .
 
 <http://www.semanticweb.org/grupo09#Pza.+del+Pilar> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Ayuntamiento+o+Casa+Consistorial+de+Zaragoza> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+del+Pilar> ;
 	onto:horario """<li>Horario administrativo de 8.00 a 15.00h.</li>
@@ -654,7 +658,7 @@ Félix Navarro proyecta una construcción de dos pisos (sótano y mercado) siend
 	onto:estilo "contemporaneo" .
 
 <http://www.semanticweb.org/grupo09#Avda+C%C3%A9sar+Augusto> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Mercado+Central> onto:estaEn <http://www.semanticweb.org/grupo09#Avda+C%C3%A9sar+Augusto> ;
 	onto:datacion "1903" ;
@@ -669,7 +673,7 @@ Las termas públicas se localizaban en el centro de Caesaraugusta, en el espacio
 	onto:estilo "romano" .
 
 <http://www.semanticweb.org/grupo09#C%2F+San+Juan+y+San+Pedro> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Museo+de+las+Termas+P%C3%BAblicas+de+Caesaraugusta> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Juan+y+San+Pedro> ;
 	onto:horario """Martes a sábado de 10 a 14h y 17 a 21h
@@ -697,7 +701,7 @@ Entrada incluida en la Zaragoza Card""" ;
 	onto:estilo "contemporaneo" .
 
 <http://www.semanticweb.org/grupo09#Pso.+Echegaray+y+Caballero%2F+Avda+Puente+del+Pilar> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Puente+de+Hierro++o+Puente+del+Pilar> onto:estaEn <http://www.semanticweb.org/grupo09#Pso.+Echegaray+y+Caballero%2F+Avda+Puente+del+Pilar> ;
 	onto:datacion "Siglos XIX (1895)  y  XX (5 de mayo de 1991)" ;
@@ -735,7 +739,7 @@ El memorial fue costeado por la Diputación Provincial, el Ayuntamiento de la ci
 	onto:estilo "contemporaneo" .
 
 <http://www.semanticweb.org/grupo09#Plaza+de+Arag%C3%B3n> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Monumento+al+Justiciazgo> onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+de+Arag%C3%B3n> ;
 	onto:datacion "22 de octubre de 1904" ;
@@ -749,7 +753,7 @@ En 1990, según proyecto del arquitecto Ricardo Usón, se dispusieron los surtid
 	onto:estilo "actual" .
 
 <http://www.semanticweb.org/grupo09#Plaza+del+Pilar> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Monumento+a+Goya> onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+del+Pilar> ;
 	onto:datacion "8 de octubre de 1960" ;
@@ -764,7 +768,7 @@ Está construido con fachadas de ladrillo visto, utilizando juegos compositivos 
 	onto:estilo "racionalista" .
 
 <http://www.semanticweb.org/grupo09#C%C2%BA+de+San+Gregorio.+Barrio+de+San+Gregorio> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Barrio+de+San+Gregorio.+Hospital+de+Enfermos+del+t%C3%B3rax> onto:estaEn <http://www.semanticweb.org/grupo09#C%C2%BA+de+San+Gregorio.+Barrio+de+San+Gregorio> ;
 	onto:datacion "1945-1954" ;
@@ -777,7 +781,7 @@ Está construido con fachadas de ladrillo visto, utilizando juegos compositivos 
 	onto:estilo "contemporaneo" .
 
 <http://www.semanticweb.org/grupo09#Plaza+del+Justicia> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Fuente+de+la+Samaritana> onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+del+Justicia> ;
 	onto:datacion "1866" ;
@@ -790,7 +794,7 @@ Está construido con fachadas de ladrillo visto, utilizando juegos compositivos 
 	onto:estilo "entorno" .
 
 <http://www.semanticweb.org/grupo09#Barrio+de+Juslibol> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Galacho+de+Juslibol> onto:estaEn <http://www.semanticweb.org/grupo09#Barrio+de+Juslibol> ;
 	onto:imagen "http://www.zaragoza.es/azar/img/monumentos/galacho.jpg" ;
@@ -804,7 +808,7 @@ El proyecto del monumento había sido promovido en 1857 por la Diputación de Za
 	onto:estilo "contemporaneo" .
 
 <http://www.semanticweb.org/grupo09#Parque+Pignatelli> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Monumento+a+Don+Ram%C3%B3n+Pignatelli> onto:estaEn <http://www.semanticweb.org/grupo09#Parque+Pignatelli> ;
 	onto:datacion "1858-1859" ;
@@ -847,7 +851,7 @@ Tras la expulsión de los jesuitas (1767) pasa a denominarse Real Seminario de S
 	onto:estilo "mudejar, renacentista, barroco, neoclasico" .
 
 <http://www.semanticweb.org/grupo09#Pza+de+la+Seo> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Palacio+Arzobispal> onto:estaEn <http://www.semanticweb.org/grupo09#Pza+de+la+Seo> ;
 	onto:datacion "1787" ;
@@ -863,7 +867,7 @@ Actualmente, es sede del Colegio de Notarios de Zaragoza.""" ;
 	onto:estilo "neoclasico" .
 
 <http://www.semanticweb.org/grupo09#Pza+del+Justicia> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Palacio+de+los+Condes+de+Sobradiel+o+de+Gabarda> onto:estaEn <http://www.semanticweb.org/grupo09#Pza+del+Justicia> ;
 	onto:datacion "Ultimo cuarto del siglo XVIII y reformado a mediados del XIX" ;
@@ -881,7 +885,7 @@ El interior mantiene todavía el repertorio decorativo original, sobre todo en l
 	onto:estilo "modernista" .
 
 <http://www.semanticweb.org/grupo09#Paseo+de+Sagasta++11> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Casa+Juncosa> onto:estaEn <http://www.semanticweb.org/grupo09#Paseo+de+Sagasta++11> ;
 	onto:datacion "Siglo XX" ;
@@ -900,7 +904,7 @@ Fue declarado Monumento Nacional en 1983.
 	onto:estilo "modernista" .
 
 <http://www.semanticweb.org/grupo09#Paseo+de+Sagasta> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#Casa+Retuerta> onto:estaEn <http://www.semanticweb.org/grupo09#Paseo+de+Sagasta> ;
 	onto:datacion "1904" ;
