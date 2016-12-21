@@ -1,0 +1,1225 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns> .
+@prefix group01: <http://www.semanticweb.org/group01#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://www.semanticweb.org/group01#1a> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "1a" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:SOL ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "PUERTA DEL SOL, PLAZA, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#1b> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "1b" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:SOL ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ALCALA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#2> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "2" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:UNIVERSIDAD ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MIGUEL MOYA, CALLE, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#3> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "3" .
+
+group01:CHAMBERÍ owl:sameAs <http://es.dbpedia.org/resource/Chamberí> .
+
+<http://www.semanticweb.org/group01#3> group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio group01:ARAPILES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CONDE DEL VALLE DE SUCHIL, PLAZA, DEL" ;
+	group01:tienePlazas "18"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#4> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "4" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:UNIVERSIDAD ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MANUELA MALASAÑA, CALLE, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#5> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "5" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:JUSTICIA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "FUENCARRAL, CALLE, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#6> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "6" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:JUSTICIA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "HORTALEZA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#7> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "7" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:JUSTICIA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "HORTALEZA, CALLE, DE" ;
+	group01:tienePlazas "21"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#8> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "8" ;
+	group01:estaEnDistrito group01:CHAMBERÍ .
+
+group01:ALMAGRO owl:sameAs <http://dbpedia.org/resource/Club_Almagro> .
+
+<http://www.semanticweb.org/group01#8> group01:perteneceAUnBarrio group01:ALMAGRO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ALONSO MARTINEZ, PLAZA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#9> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "9" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:PALACIO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SAN MIGUEL, PLAZA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#10> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "10" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:JUSTICIA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MARQUES DE LA ENSENADA, CALLE, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#11> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "11" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:UNIVERSIDAD ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SAN ANDRES, CALLE, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#12> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "12" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:UNIVERSIDAD ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SAN BERNARDO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#13> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "13" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:UNIVERSIDAD ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CONDE DUQUE, CALLE, DEL" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#14> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "14" .
+
+group01:MONCLOA-ARAVACA owl:sameAs <http://dbpedia.org/resource/Moncloa-Aravaca> .
+
+<http://www.semanticweb.org/group01#14> group01:estaEnDistrito group01:MONCLOA-ARAVACA ;
+	group01:perteneceAUnBarrio group01:ARGÜELLES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "VENTURA RODRIGUEZ, CALLE, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#15> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "15" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:UNIVERSIDAD ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SAN VICENTE FERRER, CALLE, DE" ;
+	group01:tienePlazas "21"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#16> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "16" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:UNIVERSIDAD ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SAN BERNARDO, CALLE, DE" ;
+	group01:tienePlazas "21"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#17> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "17" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:UNIVERSIDAD ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CARLOS CAMBRONERO, PLAZA, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#18> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "18" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:JUSTICIA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "VAZQUEZ DE MELLA, PLAZA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#19> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "19" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:JUSTICIA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "PRIM, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#20a> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "20a" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:JUSTICIA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ALCALA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#20b> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "20b" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:JUSTICIA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ALCALA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#21a> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "21a" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:SOL ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "RED DE SAN LUIS, PLAZA, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#21b> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "21b" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:SOL ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "RED DE SAN LUIS, PLAZA, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#22> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "22" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:SOL ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "JACOMETREZO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#23> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "23" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:PALACIO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SANTO DOMINGO, CUESTA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#24> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "24" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:PALACIO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CARLOS III, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#25a> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "25a" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:SOL ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CELENQUE, PLAZA, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#25b> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "25b" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:SOL ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CELENQUE, PLAZA, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#26> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "26" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:JUSTICIA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SALESAS, PLAZA, DE LAS" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#27> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "27" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:CORTES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "JESUS, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#28> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "28" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:CORTES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ALCALA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#29> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "29" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:CORTES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MARQUES DE CUBAS, CALLE, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#30> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "30" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:PALACIO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "PAVIA, CALLE, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#31> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "31" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:SOL ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MAYOR, CALLE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#32> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "32" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:SOL ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "PROVINCIA, PLAZA, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#33> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "33" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:SOL ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CARRETAS, CALLE, DE LAS" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#34> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "34" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:CORTES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "JACINTO BENAVENTE, PLAZA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#35> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "35" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:PALACIO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CORDON, CALLE, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#36> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "36" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:PALACIO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "RAMALES, PLAZA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#37> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "37" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:PALACIO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "VISTILLAS, TRAVESIA, DE LAS" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#38> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "38" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:PALACIO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SAN FRANCISCO, CARRERA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#39> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "39" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:PALACIO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CEBADA, PLAZA, DE LA" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#40> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "40" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:EMBAJADORES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CONDE DE ROMANONES, CALLE, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#41> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "41" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:EMBAJADORES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ATOCHA, CALLE, DE" ;
+	group01:tienePlazas "21"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#42> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "42" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:EMBAJADORES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SANTA ISABEL, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#43> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "43" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:EMBAJADORES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "LAVAPIES, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#44> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "44" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:EMBAJADORES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MESON DE PAREDES, CALLE, DEL" ;
+	group01:tienePlazas "21"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#45> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "45" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:EMBAJADORES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "PUERTA DE TOLEDO, GLORIETA, DE LA" ;
+	group01:tienePlazas "21"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#46> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "46" .
+
+group01:ARGANZUELA owl:sameAs <http://es.dbpedia.org/resource/Arganzuela> .
+
+<http://www.semanticweb.org/group01#46> group01:estaEnDistrito group01:ARGANZUELA ;
+	group01:perteneceAUnBarrio group01:ACACIAS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "RIBERA DE CURTIDORES, CALLE, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#47> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "47" ;
+	group01:estaEnDistrito group01:ARGANZUELA ;
+	group01:perteneceAUnBarrio group01:ACACIAS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "EMBAJADORES, GLORIETA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#48> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "48" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:EMBAJADORES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MIGUEL SERVET, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#49> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "49" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:EMBAJADORES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ATOCHA, RONDA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#50> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "50" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:EMBAJADORES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SANTA ISABEL, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#51> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "51" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:EMBAJADORES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "EMPERADOR CARLOS V, PLAZA, DEL" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#52> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "52" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:CORTES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SANTA ANA, PLAZA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#53> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "53" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:EMBAJADORES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "VALENCIA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#54> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "54" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:JUSTICIA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "BARCELO, CALLE, DE" ;
+	group01:tienePlazas "21"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#55> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "55" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:UNIVERSIDAD ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SAN ILDEFONSO, PLAZA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#56> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "56" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:SOL ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CARMEN, PLAZA, DEL" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#57> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "57" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:UNIVERSIDAD ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SANTA CRUZ DE MARCENADO, CALLE, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#58> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "58" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:JUSTICIA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "AUGUSTO FIGUEROA, CALLE, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#59> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "59" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:UNIVERSIDAD ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ESPIRITU SANTO, CALLE, DEL" ;
+	group01:tienePlazas "21"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#60> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "60" .
+
+group01:RETIRO owl:sameAs <http://dbpedia.org/resource/Retiro_(Madrid)> .
+
+<http://www.semanticweb.org/group01#60> group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:JERÓNIMOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ALFONSO XII, CALLE, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#61> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "61" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:IBIZA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "O'DONNELL, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#62> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "62" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:IBIZA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "O'DONNELL, CALLE, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#63> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "63" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:IBIZA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "IBIZA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#65> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "65" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:JERÓNIMOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ANTONIO MAURA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#67> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "67" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:CORTES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ALMADEN, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#68> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "68" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:JERÓNIMOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ESPALTER, CALLE, DE" ;
+	group01:tienePlazas "21"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#69> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "69" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:JERÓNIMOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ALFONSO XII, CALLE, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#70> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "70" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:JERÓNIMOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MENENDEZ PELAYO, AVENIDA, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#71> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "71" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#NI%C3%91O+JES%C3%9AS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "DOCE DE OCTUBRE, CALLE, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#72> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "72" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:ESTRELLA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "DOCTOR ESQUERDO, CALLE, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#73> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "73" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:ESTRELLA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ASTROS, PLAZA, DE LOS" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#74> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "74" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#NI%C3%91O+JES%C3%9AS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MENENDEZ PELAYO, AVENIDA, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#75> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "75" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:JERÓNIMOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MENENDEZ PELAYO, AVENIDA, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#76> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "76" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#NI%C3%91O+JES%C3%9AS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "JUAN DE URBIETA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#77> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "77" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:PACÍFICO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CONDE DE CASAL, PLAZA, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#78> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "78" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:ADELFAS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CERRO DE LA PLATA, CALLE, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#79> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "79" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:PACÍFICO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MENENDEZ PELAYO, AVENIDA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#80a> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "80a" ;
+	group01:estaEnDistrito group01:ARGANZUELA ;
+	group01:perteneceAUnBarrio group01:ATOCHA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CIUDAD DE BARCELONA, AVENIDA, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#80b> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "80b" ;
+	group01:estaEnDistrito group01:ARGANZUELA ;
+	group01:perteneceAUnBarrio group01:ATOCHA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CIUDAD DE BARCELONA, AVENIDA, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#81> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "81" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:JERÓNIMOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "PRADO, PASEO, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#82> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "82" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:ESTRELLA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "LIRA, CALLE, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#83> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "83" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#NI%C3%91O+JES%C3%9AS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "PIO BAROJA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#84> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "84" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:ADELFAS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "DOCTOR ESQUERDO, CALLE, DEL" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#85> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "85" ;
+	group01:estaEnDistrito group01:RETIRO ;
+	group01:perteneceAUnBarrio group01:JERÓNIMOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MENENDEZ PELAYO, AVENIDA, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#86> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "86" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:CORTES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "PRADO, PASEO, DEL" ;
+	group01:tienePlazas "21"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#87> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "87" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:RECOLETOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "AYALA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#88> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "88" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:CASTELLANA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "VELAZQUEZ, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#89> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "89" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:GOYA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "AYALA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#90> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "90" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:RECOLETOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "GOYA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#91> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "91" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:GOYA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "HERMOSILLA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#92> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "92" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:RECOLETOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CLAUDIO COELLO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#93> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "93" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:RECOLETOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "GOYA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#94> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "94" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:RECOLETOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "RECOLETOS, PASEO, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#95> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "95" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:RECOLETOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CLAUDIO COELLO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#96> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "96" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:RECOLETOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ALCALA, CALLE, DE" ;
+	group01:tienePlazas "27"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#97> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "97" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:GOYA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MENENDEZ PELAYO, AVENIDA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#98> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "98" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:GOYA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "FELIPE II, AVENIDA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#99> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "99" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:GOYA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ALCANTARA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#100> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "100" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:GOYA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "GOYA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#101> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "101" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:GOYA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "JORGE JUAN, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#102> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "102" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:RECOLETOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ALCALA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#103> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "103" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:CASTELLANA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "JOSE ORTEGA Y GASSET, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#104> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "104" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:RECOLETOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CASTELLANA, PASEO, DE LA" ;
+	group01:tienePlazas "21"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#105> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "105" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:RECOLETOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SERRANO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#106> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "106" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:RECOLETOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SERRANO, CALLE, DE" ;
+	group01:tienePlazas "36"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#107> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "107" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:RECOLETOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SERRANO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#108> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "108" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:GOYA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MARTIRES CONCEPCIONISTAS, CALLE, DE LOS" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#109> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "109" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:CASTELLANA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "JOSE ORTEGA Y GASSET, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#110> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "110" ;
+	group01:estaEnDistrito group01:MONCLOA-ARAVACA ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#CASA+DE+CAMPO> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MORET, PASEO, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#111a> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "111a" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio group01:GAZTAMBIDE ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ARCIPRESTE DE HITA, CALLE, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#111b> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "111b" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio group01:GAZTAMBIDE ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ARCIPRESTE DE HITA, CALLE, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#112> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "112" ;
+	group01:estaEnDistrito group01:MONCLOA-ARAVACA ;
+	group01:perteneceAUnBarrio group01:ARGÜELLES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MORET, PASEO, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#113> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "113" ;
+	group01:estaEnDistrito group01:MONCLOA-ARAVACA ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#CASA+DE+CAMPO> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "PINTOR ROSALES, PASEO, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#114> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "114" ;
+	group01:estaEnDistrito group01:MONCLOA-ARAVACA ;
+	group01:perteneceAUnBarrio group01:ARGÜELLES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "QUINTANA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#115> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "115" ;
+	group01:estaEnDistrito group01:MONCLOA-ARAVACA ;
+	group01:perteneceAUnBarrio group01:ARGÜELLES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MARQUES DE CERRALBO, PLAZA, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#116a> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "116a" ;
+	group01:estaEnDistrito group01:MONCLOA-ARAVACA ;
+	group01:perteneceAUnBarrio group01:ARGÜELLES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ESPAÑA, PLAZA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#116b> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "116b" ;
+	group01:estaEnDistrito group01:MONCLOA-ARAVACA ;
+	group01:perteneceAUnBarrio group01:ARGÜELLES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ESPAÑA, PLAZA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#117> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "117" ;
+	group01:estaEnDistrito group01:MONCLOA-ARAVACA ;
+	group01:perteneceAUnBarrio group01:ARGÜELLES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ALTAMIRANO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#118> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "118" ;
+	group01:estaEnDistrito group01:ARGANZUELA ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#PALOS+DE+MOGUER> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "JUAN MARTIN EL EMPECINADO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#119> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "119" ;
+	group01:estaEnDistrito group01:ARGANZUELA ;
+	group01:perteneceAUnBarrio group01:ATOCHA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MENDEZ ALVARO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#120> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "120" ;
+	group01:estaEnDistrito group01:ARGANZUELA ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#PALOS+DE+MOGUER> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "PALOS DE LA FRONTERA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#121> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "121" ;
+	group01:estaEnDistrito group01:ARGANZUELA ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#PALOS+DE+MOGUER> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SANTA MARIA DE LA CABEZA, PASEO, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#122> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "122" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio group01:ALMAGRO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SANTA ENGRACIA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#123> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "123" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio group01:GAZTAMBIDE ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "GUZMAN EL BUENO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#124> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "124" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio group01:TRAFALGAR ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MANUEL SILVELA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#125> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "125" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio group01:ALMAGRO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "FERNANDEZ DE LA HOZ, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#126> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "126" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio group01:TRAFALGAR ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "GENERAL ALVAREZ DE CASTRO, CALLE, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#127> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "127" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio group01:ARAPILES ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "FERNANDO EL CATOLICO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#128> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "128" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio group01:GAZTAMBIDE ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CEA BERMUDEZ, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#129> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "129" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#R%C3%8DOS+ROSAS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "JOSE ABASCAL, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#130> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "130" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#R%C3%8DOS+ROSAS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SANTA ENGRACIA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#131> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "131" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#R%C3%8DOS+ROSAS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "BRAVO MURILLO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#132> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "132" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#R%C3%8DOS+ROSAS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SANTA ENGRACIA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#133> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "133" .
+
+group01:TETUÁN owl:sameAs <http://dbpedia.org/resource/T%C3%A9touan> .
+
+<http://www.semanticweb.org/group01#133> group01:estaEnDistrito group01:TETUÁN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#CUATRO+CAMINOS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "DULCINEA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#134> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "134" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#R%C3%8DOS+ROSAS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MARIA DE GUZMAN, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#135> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "135" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#R%C3%8DOS+ROSAS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SAN JUAN DE LA CRUZ, PLAZA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#136> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "136" .
+
+group01:CHAMARTÍN owl:sameAs <http://es.dbpedia.org/resource/Chamartín> .
+
+<http://www.semanticweb.org/group01#136> group01:estaEnDistrito group01:CHAMARTÍN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#EL+VISO> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CASTELLANA, PASEO, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#137> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "137" ;
+	group01:estaEnDistrito group01:CHAMARTÍN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#EL+VISO> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "REPUBLICA ARGENTINA, PLAZA, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#138> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "138" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#R%C3%8DOS+ROSAS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CASTELLANA, PASEO, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#139> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "139" ;
+	group01:estaEnDistrito group01:CHAMARTÍN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#EL+VISO> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "JOSE GUTIERREZ ABASCAL, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#140> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "140" ;
+	group01:estaEnDistrito group01:CHAMARTÍN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#EL+VISO> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "VELAZQUEZ, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#141> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "141" ;
+	group01:estaEnDistrito group01:CHAMBERÍ ;
+	group01:perteneceAUnBarrio group01:ALMAGRO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CASTELLANA, PASEO, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#142> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "142" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:CASTELLANA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CASTELLANA, PASEO, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#143> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "143" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:LISTA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "DIEGO DE LEON, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#144> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "144" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:LISTA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "JUAN BRAVO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#145> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "145" ;
+	group01:estaEnDistrito group01:SALAMANCA ;
+	group01:perteneceAUnBarrio group01:LISTA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "JOSE ORTEGA Y GASSET, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#146> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "146" ;
+	group01:estaEnDistrito group01:CHAMARTÍN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#EL+VISO> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "MARIA FRANCISCA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#147> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "147" ;
+	group01:estaEnDistrito group01:CHAMARTÍN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#EL+VISO> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "DOCTOR ARCE, AVENIDA, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#148> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "148" ;
+	group01:estaEnDistrito group01:CHAMARTÍN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#EL+VISO> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SERRANO, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#149> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "149" ;
+	group01:estaEnDistrito group01:CHAMARTÍN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#EL+VISO> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "LA HABANA, PASEO, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#150> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "150" ;
+	group01:estaEnDistrito group01:CHAMARTÍN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#EL+VISO> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CASTELLANA, PASEO, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#151> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "151" ;
+	group01:estaEnDistrito group01:TETUÁN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#CUATRO+CAMINOS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ORENSE, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#152> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "152" ;
+	group01:estaEnDistrito group01:TETUÁN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#CUATRO+CAMINOS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "GENERAL PERON, AVENIDA, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#153> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "153" ;
+	group01:estaEnDistrito group01:TETUÁN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#CUATRO+CAMINOS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "GENERAL PERON, AVENIDA, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#154> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "154" ;
+	group01:estaEnDistrito group01:TETUÁN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#CUATRO+CAMINOS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ORENSE, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#155> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "155" ;
+	group01:estaEnDistrito group01:TETUÁN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#CUATRO+CAMINOS> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "GENERAL YAGÜE, CALLE, DEL" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#156> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "156" ;
+	group01:estaEnDistrito group01:TETUÁN ;
+	group01:perteneceAUnBarrio group01:CASTILLEJOS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SOR ANGELA DE LA CRUZ, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#157> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "157" ;
+	group01:estaEnDistrito group01:CHAMARTÍN ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#NUEVA+ESPA%C3%91A> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CASTELLANA, PASEO, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#158> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "158" ;
+	group01:estaEnDistrito group01:CHAMARTÍN ;
+	group01:perteneceAUnBarrio group01:HISPANOAMÉRICA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ALBERTO ALCOCER, AVENIDA, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#159> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "159" ;
+	group01:estaEnDistrito group01:CHAMARTÍN ;
+	group01:perteneceAUnBarrio group01:HISPANOAMÉRICA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "LA HABANA, PASEO, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#160> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "160" ;
+	group01:estaEnDistrito group01:CHAMARTÍN ;
+	group01:perteneceAUnBarrio group01:HISPANOAMÉRICA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "COLOMBIA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#161> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "161" ;
+	group01:estaEnDistrito group01:MONCLOA-ARAVACA ;
+	group01:perteneceAUnBarrio <http://www.semanticweb.org/group01#CASA+DE+CAMPO> ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "FLORIDA, PASEO, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#162> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "162" ;
+	group01:estaEnDistrito group01:ARGANZUELA ;
+	group01:perteneceAUnBarrio group01:ACACIAS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "OLMOS, PASEO, DE LOS" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#163> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "163" ;
+	group01:estaEnDistrito group01:ARGANZUELA ;
+	group01:perteneceAUnBarrio group01:ACACIAS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "ESPERANZA, PASEO, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#164> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "164" ;
+	group01:estaEnDistrito group01:ARGANZUELA ;
+	group01:perteneceAUnBarrio group01:DELICIAS ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "DELICIAS, PASEO, DE LAS" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#165> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "165" ;
+	group01:estaEnDistrito group01:ARGANZUELA ;
+	group01:perteneceAUnBarrio group01:CHOPERA ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "CHOPERA, PASEO, DE LA" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/group01#166> a group01:Aparcamiento_BiciMad ;
+	group01:tieneIDAparBiciMad "166" ;
+	group01:estaEnDistrito group01:CENTRO ;
+	group01:perteneceAUnBarrio group01:PALACIO ;
+	<http://www.w3.org/2006/vcard/ns#hasAddress> "SEGOVIA, CALLE, DE" ;
+	group01:tienePlazas "24"^^<http://www.w3.org/2001/XMLSchema#int> .

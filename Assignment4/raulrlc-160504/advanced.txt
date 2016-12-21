@@ -1,0 +1,60 @@
+1.
+
+SELECT DISTINCT ?Propiedades
+WHERE {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x ?Propiedades ?y
+} LIMIT 30
+
+
+2.
+
+SELECT DISTINCT ?Propiedades
+WHERE {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x ?Propiedades ?y .
+	FILTER (?Propiedades != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) .
+} LIMIT 30
+
+
+
+3.
+
+SELECT COUNT (distinct ?Valores)
+where {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x ?Propiedades ?Valores .
+	FILTER (?Propiedades != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) .
+} 
+
+
+4.
+
+SELECT ?Propiedad count(distinct ?Valores)
+WHERE {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x ?Propiedad ?Valores
+	FILTER (?Propiedad != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) .
+}LIMIT 30
+
+5.
+
+SELECT ?Propiedad avg(distinct ?Valores)
+WHERE {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x ?Propiedad ?Valores
+	FILTER (?Propiedad != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) .
+	FILTER (datatype(?Valores) = xsd:integer || datatype(?Valores) = xsd:float) .
+}LIMIT 30
+
+
+6.
+
+
+SELECT ?Propiedad max(distinct ?Valores) as ?Max
+WHERE {
+	?x a <http://dbpedia.org/ontology/Politician> .
+	?x ?Propiedad ?Valores
+	FILTER (?Propiedad != <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) .
+	FILTER (datatype(?Valores) = xsd:integer || datatype(?Valores) = xsd:float) .
+}ORDER BY DESC (?Max) LIMIT 30
