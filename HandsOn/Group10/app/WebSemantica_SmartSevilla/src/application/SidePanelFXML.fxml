@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="829.0" prefWidth="180.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SidePanelContentController">
+   <children>
+      <ImageView fitHeight="127.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/logo-nodo-sevilla.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="75.0" prefWidth="200.0">
+         <children>
+            <JFXButton fx:id="b2" alignment="CENTER" layoutX="10.0" layoutY="14.0" onAction="#transportPanel" prefHeight="44.0" prefWidth="176.0" ripplerFill="#4f94c2" style="-fx-background-color: #ffffffff;" text="Museos" textAlignment="RIGHT" />
+            <ImageView fitHeight="44.0" fitWidth="48.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/museum.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane prefHeight="75.0" prefWidth="200.0">
+         <children>
+            <JFXButton fx:id="b3" alignment="CENTER" layoutX="15.0" layoutY="14.0" onAction="#transportPanel" prefHeight="44.0" prefWidth="176.0" ripplerFill="#4f94c2" style="-fx-background-color: #ffffffff;" text="              Lugares de Interes" textAlignment="RIGHT" />
+            <ImageView fitHeight="44.0" fitWidth="48.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/giralda.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane prefHeight="74.0" prefWidth="200.0">
+         <children>
+            <JFXButton alignment="CENTER" layoutX="10.0" layoutY="14.0" onAction="#transportPanel" prefHeight="44.0" prefWidth="176.0" ripplerFill="#4f94c2" style="-fx-background-color: #ffffffff;" text="       Conocenos" />
+            <ImageView fitHeight="44.0" fitWidth="48.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/conocenos.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="128.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="294.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="1.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane prefHeight="75.0" prefWidth="200.0">
+         <children>
+            <JFXButton fx:id="exit" alignment="CENTER" layoutX="10.0" layoutY="14.0" onAction="#transportPanel" prefHeight="44.0" prefWidth="162.0" ripplerFill="#4f94c2" style="-fx-background-color: #ffffffff;" text="Salir" textAlignment="RIGHT" />
+            <ImageView fitHeight="44.0" fitWidth="48.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/exit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</VBox>
