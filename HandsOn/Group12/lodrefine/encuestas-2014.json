@@ -224,8 +224,12 @@
     "op": "rdf-extension/save-rdf-schema",
     "description": "Save RDF schema skeleton",
     "schema": {
-      "baseUri": "http://localhost:3333/",
+      "baseUri": "http://semanticweb.org/grupo12/resources/",
       "prefixes": [
+        {
+          "name": "",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        },
         {
           "name": "rdf",
           "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -235,241 +239,49 @@
           "uri": "http://www.w3.org/2002/07/owl#"
         },
         {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "g12",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        },
+        {
           "name": "rdfs",
           "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
         }
       ],
       "rootNodes": [
         {
           "nodeType": "cell-as-resource",
-          "expression": "value",
-          "isRowNumberCell": true,
-          "rdfTypes": [],
-          "links": []
-        }
-      ]
-    }
-  },
-  {
-    "op": "rdf-extension/save-rdf-schema",
-    "description": "Save RDF schema skeleton",
-    "schema": {
-      "baseUri": "http://localhost:3333/",
-      "prefixes": [
-        {
-          "name": "rdf",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        },
-        {
-          "name": "owl",
-          "uri": "http://www.w3.org/2002/07/owl#"
-        },
-        {
-          "name": "rdfs",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#"
-        }
-      ],
-      "rootNodes": [
-        {
-          "nodeType": "cell-as-resource",
-          "expression": "value",
-          "isRowNumberCell": true,
-          "rdfTypes": [],
-          "links": []
-        }
-      ]
-    }
-  },
-  {
-    "op": "rdf-extension/save-rdf-schema",
-    "description": "Save RDF schema skeleton",
-    "schema": {
-      "baseUri": "http://127.0.0.1:3333/",
-      "prefixes": [
-        {
-          "name": "rdf",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        },
-        {
-          "name": "owl",
-          "uri": "http://www.w3.org/2002/07/owl#"
-        },
-        {
-          "name": "rdfs",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#"
-        }
-      ],
-      "rootNodes": [
-        {
-          "nodeType": "cell-as-resource",
-          "expression": "value",
-          "isRowNumberCell": true,
-          "rdfTypes": [],
-          "links": []
-        }
-      ]
-    }
-  },
-  {
-    "op": "rdf-extension/save-rdf-schema",
-    "description": "Save RDF schema skeleton",
-    "schema": {
-      "baseUri": "http://127.0.0.1:3333/",
-      "prefixes": [
-        {
-          "name": "rdf",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        },
-        {
-          "name": "owl",
-          "uri": "http://www.w3.org/2002/07/owl#"
-        },
-        {
-          "name": "rdfs",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#"
-        }
-      ],
-      "rootNodes": [
-        {
-          "nodeType": "cell-as-resource",
-          "expression": "value",
+          "expression": "\"Valoracion/\" + value",
           "isRowNumberCell": true,
           "rdfTypes": [],
           "links": [
             {
-              "uri": "SECCION",
-              "curie": ":SECCION",
+              "uri": "http://semanticweb.org/grupo12/ontology#hasBarrio",
+              "curie": "g12:hasBarrio",
               "target": {
-                "nodeType": "cell-as-literal",
-                "expression": "value",
+                "nodeType": "cell-as-resource",
+                "expression": "\"Barrio/\" + value",
                 "isRowNumberCell": false,
-                "columnName": "SECCION"
+                "columnName": "CODBARRIO",
+                "rdfTypes": [],
+                "links": []
               }
             },
             {
-              "uri": "BARRIO",
-              "curie": ":BARRIO",
+              "uri": "http://semanticweb.org/grupo12/ontology#hasPuntuacion",
+              "curie": "g12:hasPuntuacion",
               "target": {
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "BARRIO"
-              }
-            },
-            {
-              "uri": "CODBARRIO",
-              "curie": ":CODBARRIO",
-              "target": {
-                "nodeType": "cell-as-literal",
-                "expression": "value",
-                "isRowNumberCell": false,
-                "columnName": "CODBARRIO"
-              }
-            },
-            {
-              "uri": "DISTRITO",
-              "curie": ":DISTRITO",
-              "target": {
-                "nodeType": "cell-as-literal",
-                "expression": "value",
-                "isRowNumberCell": false,
-                "columnName": "DISTRITO"
-              }
-            },
-            {
-              "uri": "AVERAGE",
-              "curie": ":AVERAGE",
-              "target": {
-                "nodeType": "cell-as-literal",
-                "expression": "value",
-                "isRowNumberCell": false,
-                "columnName": "AVERAGE"
-              }
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "op": "core/column-move",
-    "description": "Move column BARRIO to position 0",
-    "columnName": "BARRIO",
-    "index": 0
-  },
-  {
-    "op": "rdf-extension/save-rdf-schema",
-    "description": "Save RDF schema skeleton",
-    "schema": {
-      "baseUri": "http://127.0.0.1:3333/",
-      "prefixes": [
-        {
-          "name": "rdf",
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        },
-        {
-          "name": "owl",
-          "uri": "http://www.w3.org/2002/07/owl#"
-        },
-        {
-          "name": "rdfs",
-          "uri": "http://www.w3.org/2000/01/rdf-schema#"
-        }
-      ],
-      "rootNodes": [
-        {
-          "nodeType": "cell-as-resource",
-          "expression": "value",
-          "isRowNumberCell": true,
-          "rdfTypes": [],
-          "links": [
-            {
-              "uri": "BARRIO",
-              "curie": ":BARRIO",
-              "target": {
-                "nodeType": "cell-as-literal",
-                "expression": "value",
-                "isRowNumberCell": false,
-                "columnName": "BARRIO"
-              }
-            },
-            {
-              "uri": "SECCION",
-              "curie": ":SECCION",
-              "target": {
-                "nodeType": "cell-as-literal",
-                "expression": "value",
-                "isRowNumberCell": false,
-                "columnName": "SECCION"
-              }
-            },
-            {
-              "uri": "CODBARRIO",
-              "curie": ":CODBARRIO",
-              "target": {
-                "nodeType": "cell-as-literal",
-                "expression": "value",
-                "isRowNumberCell": false,
-                "columnName": "CODBARRIO"
-              }
-            },
-            {
-              "uri": "DISTRITO",
-              "curie": ":DISTRITO",
-              "target": {
-                "nodeType": "cell-as-literal",
-                "expression": "value",
-                "isRowNumberCell": false,
-                "columnName": "DISTRITO"
-              }
-            },
-            {
-              "uri": "AVERAGE",
-              "curie": ":AVERAGE",
-              "target": {
-                "nodeType": "cell-as-literal",
-                "expression": "value",
-                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
                 "columnName": "AVERAGE"
               }
             }
