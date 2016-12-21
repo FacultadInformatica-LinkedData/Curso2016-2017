@@ -1,0 +1,48 @@
+En este fichero se procede a explicar los cambios y decisiones finales sobre la ontología:
+
+	Debido a que al inicio de curso el conocimiento acerca de linked data y su funcionamiento, así como de desarrollo de ontologías, es limitado, la ontología arrastraba fallos que no han sido vislumbrados hasta prácticamente el final de curso, una vez que se han unido y puesto en común todos los conocimientos aprendidos.
+
+	Así mismo, debido al cambio de requisitos de la aplicación se ha tenido que modificar la ontología de manera consecuente, eliminando entidades que no resultan útiles desde este nuevo punto de vista y añadiendo otras que aportan un mayor valor y enriquecen el modelo.
+
+	En comparación con las ontologías realizadas durante el curso (tanto la inicial como la *-updated) en esta ontología final (nomenclada ontology group13-updated-final.ttl y la cual es una actualización de la group13-updated.ttl) se han eliminado las entidades:
+
+				+ County: Ya que si la aplicación está orientada a la ciudad de Nueva York, no tiene sentido la introducción de una entidad (recurso) que hace referencia a una entidad administrativa de caracter estatal como son los condados. Debido a esto la Object property dbo:county tampoco tendría sentido y ha sido eliminada.
+
+				+ Neighbourhood: Se ha decidido eliminar dicha entidad de la ontología ya que nuestros datasets, no hacen referencia alguna a posibles instancias de diche entidad, así como por el caracter de la aplicación, el cual está enfocado a los puntos de interés de los distintos municipios (Boroughs) de la ciudad de Nueva York.
+
+	También ha sido eliminada la propiedad "hasHealthFacilityType" ya que finalmente se vislumbra que esa propiedad hace referencia a datos que pueden ser modelizados como entidades subclases de la entidad HealthFacility. Es por ello que se han añadido las siguientes entidades a la ontología, relaciónadas ademas con HealthFacility como subclases de (rdfs:subClassOf):
+
+				+ AcuteCareHospital: La cual hace referencia a los hospitales de cuidados intensivos.
+
+				+ ChildHealthCenter: La cual hace referencia a los centros especializados en pediatría.
+
+				+ DiagnosticTreatmentCenter: La cual hace referencia a los centros y hospitales de tratamiento y diagnostico de enfermedades (independientemente de la disciplina en la que se englobe la enfermedad, es decir hospitales generales).
+
+				+ NursingHome: Hace referencia a las residencias de ancianos. La cual es una entidad reutilizada del vocabulario "linkedgeodata.org"
+
+				Las tres primeras entidades no han podido ser enlazadas o reutilizadas de otros vocabularios ya que hacen referencia a tipos mas especificos de entidad mientras que los vocabularios investigados y las busquedas realizadas ofracían, en su mayoría, resultados de entidades como Hospital o MedicalCenter.
+
+	Con respecto a la entidad (reutilizada) schema:School se han añadido las siguientes subclases:
+
+				+ CTTechnicalHighSchool
+				+ EndowedSchool: Hace referencia a escuelas subvencionadas por consejos de administración.
+				+ CharterSchool: Hace referencia a escuelas con regulaciones distintas del resto.
+				+ PublicSchool: Hace referencia a las escuelas públicas.
+				+ RegionalSchool: Hace referencia a las escuelas claseificadas como Tier 4.
+				+ RegionalEducationServiceCenter
+
+				No se han encontrado entidades de ontologias externas que pder reutilizar para las anteriores entidades.
+
+				Debido a las anteriores actualizaciones la DataProperty hasOrganizationType ya no tiene sentido en nuestra ontología, por lo tanto es eliminada.
+
+	Con respecto a la entidad StateParkFacility se ha sutituido por StateFacility y agregadole las subclases StatePark y StateNaturalPreserve, ya que revisando el CSV, las instalaciones estatales que pertenecen a la ciudad de Nueva York son parques y reservas naturales. La mayoría de los datos del CSV "State Park Facility Points.csv" no se tendrán en cuenta ya que son parques, reservas, playas,etc. que no pertenecen a la ciudad de Nueva York, sino al estado. Estas acciones también implican la eliminación de la propiedad hasParkFacilityType, ya que realmente los tipos a los que referenciaba se podian modelizar como clases jerárquicas.
+
+
+	Con respecto al resto de entidades y propiedades no mencionadas no se han realizado actualizaciones.
+
+
+
+
+
+
+
