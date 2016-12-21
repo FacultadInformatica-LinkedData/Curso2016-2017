@@ -4,7 +4,7 @@
 
 Estos archivos contienen los datos en formato Turtle (TTL) de los datos una vez ha concluido el proceso de busqueda 
 para tratar de enlazarlos con otros ya existentes. **Es posible que algunos de esos archivos TTL no presenten demasiados 
-cambios respecto a su version anterior. Esto es debido a que no se ha podido encontrar informacion existente adecuada o 
+cambios respecto a su version anterior, o incluso NINGUNO. Esto es debido a que no se ha podido encontrar informacion existente adecuada o 
 el archivo es demasiado grande como para buscarla 1 a 1.**
 
 ## *updated

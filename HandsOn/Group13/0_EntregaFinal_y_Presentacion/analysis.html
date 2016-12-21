@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Hands-on_Assignment2</title>
+  </head>
+  <body style="text-align: justify;">
+    	<h2>Datasets Analysis</h2>
+
+	<h3>Educational Denters Directory</h3>
+	<ul>
+	<li><b>CSV Name:</b> Education_Directory.csv</li>
+	<li><b>Description:</b> It contains all educational centers of New York categorised by school district and organization type. Also it specifies the location by latitude and longitude.</li>
+	<li><b>Origin of the data: <a href="https://nycopendata.socrata.com/">NYC Open Data</a></b></li>
+	</ul>
+	<table border="10" style="width:100%;text-align: left;" >
+        <tr>
+                <th>Column</th>
+                <th>Type</th>
+				<th>Range</th>
+                <th>Comments</th>
+                <th>Problems</th>
+        </tr>
+	    <tr>
+                <td>District Name</td>
+                <td>rdfs:Literal: Ya que esta columna nos servira como predicado en la relación de la instancia con su rdfs:label</td>
+				<td>--</td>
+                <td>Esta columna hace referencia al nombre del distrito escolar donde se encuentra el dicho colegio.</td>
+                <td>Posible dificultad para enlazarlo con dbpedia debido a que algunos no están indexados en ella</td>
+        </tr>
+	    <tr>
+                <td>School Name</td>
+                <td>rdfs:Literal: Ya que estos datos serán el predicado de una relación cuyo sujeto son las instancias de School y la DataProperty rdfs:label, que implica que el tipo de dato del predicado sea rdfs:Literal</td>
+				<td>--</td>
+                <td>Nombre de la escuela</td>
+                <td>Posible dificultad para enlazarlo con dbpedia debido a que algunos no están indexados en ella</td>
+        </tr>
+	    <tr>
+                <td>Organization Type</td>
+                <td>rdfs:Literal: Esta columna será el predicado de la relación entre la entidades derivadas de esta columna (subclases de School) y la DataProperty rdfs:label</td>
+				<td>--</td>
+                <td>Carácter de la escuela (Pública, Academia, Perteneciente a un distrito escolar,etc)</td>
+                <td>--</td>
+        </tr>
+        <tr>
+                <td>Organization Code</td>
+                <td>xsd:string</td>
+				<td>1-9036122</td>
+                <td>Código que identifica a la organización</td>
+                <td>No demasiado útil, ni enlazable con dbpedia</td>
+		</tr>
+	    <tr>
+                <td>Location 1</td>
+                <td>xsd:string</td>
+				<td>--</td>
+                <td>Nombre de la calle donde se sitúa la escuela</td>
+                <td>No simepre enlazable con dbpedia</td>
+        </tr>
+	    <tr>
+                <td>Latitude</td>
+                <td>xsd:float</td>
+				<td>--</td>
+                <td>--</td>
+                <td>No enlazable con dbpedia</td>
+        </tr>
+	    <tr>
+                <td>Longitude</td>
+                <td>xsd:float</td>
+				<td>--</td>
+                <td>--</td>
+                <td>No enlazable con dbpedia</td>
+        </tr>
+	    <tr>
+                <td>ZipCode</td>
+                <td>xsd:float</td>
+				<td>6001-3490015</td>
+                <td>--</td>
+                <td>--</td>
+        </tr>
+	    <tr>
+                <td>Phone</td>
+                <td>xsd:string</td>
+				<td>--</td>
+                <td>Número de teléfono de la entidad</td>
+                <td>--</td>
+        </tr>
+        </table> 
+
+	<h3>NYC Health and Hospitals Corporation Facilities</h3>
+	<ul>
+	<li><b>CSV Name:</b> NYC_Health_and_Hospitals_Corporation_Facilities.csv</li>
+	<li><b>Description:</b> It contains the New York City health and hospitals corporation facilities categorised by speciality and borough. Also it contains their locations by latitude and longitude</li>
+	<li><b>Origin of the data: <a href="https://nycopendata.socrata.com/">NYC Open Data</a></b></li>
+	</ul>
+
+	<table border="10" style="width:100%;text-align: left;">
+
+        <tr>
+                <th>Column</th>
+                <th>Type</th>
+				<th>Range</th>
+                <th>Comments</th>
+                <th>Problems</th>
+        </tr>
+	    <tr>
+				<td>Facility Type</td>
+                <td>rdfs:Literal: Ya que los valores de esta columna seran el predicado de la relación que se estabecerá con las entidades derivadas de esta columna y la Datatype rdfs:label</td>
+				<td>--</td>                
+				<td>Determina los distintos tipos de Health Facility.</td>
+                <td>--</td>
+        </tr>
+	    <tr>
+				<td>Borough</td>
+                <td>rdfs:Literal: Ya que los valores de esta columna seran el predicado de la relación que se estabecerá con las entidades derivadas de esta columna (Borough) y la Datatype rdfs:label</td>
+				<td>--</td>                
+				<td>Identifica el municipio al que pertenece cada facility. Lincable con dbpedia.</td>
+                <td>--</td>
+        </tr>
+        <tr>
+				<td>Facility Name</td>
+                <td>rdfs:Literal: Ya que los valores de esta columna seran el predicado de la relación que se tendra como sujeto la entidad HealthFacility y como propiedad la Datatype rdfs:label</td>
+				<td>--</td>                
+				<td>Nombre del establecimiento clínico u hospitalario</td>
+                <td>No siempre lincable con dbpedia</td>
+        </tr>
+        <tr>
+				<td>Phone</td>
+                <td>xsd:string</td>
+				<td>--</td>                
+				<td>Número de teléfono del establecimiento clínico u hospitalario</td>
+                <td>No lincable con dbpedia</td>
+        </tr>
+        <tr>
+				<td>Location 1</td>
+                <td>xsd:string</td>
+				<td>--</td>                
+				<td>Calle donde del establecimiento clínico u hospitalario</td>
+                <td>No siempre lincable con dbpedia</td>
+        </tr>
+	    <tr>
+                <td>Latitude</td>
+                <td>xsd:float</td>
+				<td>--</td>
+                <td>--</td>
+                <td>No enlazable con dbpedia</td>
+        </tr>
+	    <tr>
+                <td>Longitude</td>
+                <td>xsd:float</td>
+				<td>--</td>
+                <td>--</td>
+                <td>No enlazable con dbpedia</td>
+        </tr>
+
+
+
+    </table> 
+
+	<h3>New York City Subway Entrances</h3>
+	<ul>
+	<li><b>CSV Name:</b> DOITT_SUBWAY_ENTRANCE_01_13SEPT2010.csv</li>
+	<li><b>Description:</b> It contains the all the New York City subway entrances categorised by line. Also it contains the latitude and longitude coordinates</li>
+	<li><b>Origin of the data: <a href="https://nycopendata.socrata.com/">NYC Open Data</a></b></li>
+	</ul>
+
+	<table border="10" style="width:100%;text-align: left;">
+	    <tr>
+                <th>Column</th>
+                <th>Type</th>
+				<th>Range</th>
+                <th>Comments</th>
+                <th>Problems</th>
+
+	    </tr>
+	    <tr>
+                <td>Name</td>
+                <td>rdfs:Literal: Ya que será el predicado de la relación que tiene como sujeto la entidad SubwayEntrance y como propiedad la Datatype rdfs:label</td>
+				<td>--</td>
+                <td>Nombre de las entradas de metro</td>
+                <td>Algunas entradas de metro no enlazan con dbpedia</td>
+        </tr>
+        <tr>
+                <td>Longitude</td>
+                <td>xsd:float</td>
+				<td>--</td>
+                <td>--</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+	    <tr>
+                <td>Latitude</td>
+                <td>xsd:float</td>
+				<td>--</td>
+                <td>--</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+	    <tr>
+                <td>URL</td>
+                <td>schema:URL</td>
+				<td>--</td>
+                <td>Hace referencia a webs oficiales del metro de la ciudad de Nueva York</td>
+                <td>Algunas URL no están disponibles</td>
+            </tr>
+	    <tr>
+                <td>Line</td>
+                <td>xsd:string</td>
+				<td>--</td>
+                <td>Representa la linea o lineas a la que la entrada de metro y por tanto la parada asociada pertenecen</td>
+                <td>Hay algunas estaciones que están cerradas y no conectan con ninguna línea</td>
+            </tr>
+
+
+        </table>
+	<h3>New York City Libraries</h3>
+	<ul>
+	<li><b>CSV Name:</b> Library.csv</li>
+	<li><b>Description:</b> It contains the all the New York City libraries with their locations in latitude and longitude coordinates</li>
+	<li><b>Origin of the data: <a href="https://nycopendata.socrata.com/">NYC Open Data</a></b>
+	</ul>
+
+	<table border="10" style="width:100%;text-align: left;">
+	    <tr>
+                <th>Column</th>
+                <th>Type</th>
+				<th>Range</th>
+                <th>Comments</th>
+                <th>Problems</th>
+
+	    </tr>
+            <tr>
+                <td>Name</td>
+                <td>rdfs:Literal: Ya que será el predicado de la relación que tiene como sujeto la entidad Library y como propiedad la Datatype rdfs:label</td>
+				<td>--</td>
+                <td>Atributo que proporciona el nombre de la biblioteca</td>
+                <td>--</td>
+            </tr>
+		 <tr>
+                <td>Latitude</td>
+                <td>xsd:float</td>
+				<td>--</td>
+                <td>--</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+            <tr>
+                <td>Longitude</td>
+                <td>xsd:float</td>
+				<td>--</td>
+                <td>--</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+		<tr>
+                <td>Housenum</td>
+                <td>xsd:decimal</td>
+				<td>--</td>
+                <td>Representa el número asociado al edificio en el que la biblioteca se encuentra</td>
+                <td>Algunas bibliotecas ocupan mas de un numero (edificio) o están en centro comerciales</td>
+            </tr>
+			
+		<tr>
+                <td>City</td>
+                <td>xsd:string</td>
+				<td>--</td>
+                <td>Nos sirve para localizar la ciudad en la que se encuentra la biblioteca. Nos servirá para enlazarla con dbpedia a traves de la ciudad</td>
+                <td>--</td>
+        </tr>
+		<tr>
+                <td>ZIP</td>
+                <td>xsd:decimal</td>
+				<td>10002-11694</td>
+                <td>Codigo ZIP</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+		<tr>
+                <td>URL</td>
+                <td>schema:URL</td>
+				<td>--</td>
+                <td>Nos enlaza con una web con información varia de la biblioteca como horarios o servicios</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+
+        </table>
+
+	<h3>New York City State Park Facilities</h3>
+	<ul>
+	<li><b>CSV Name:</b> State_Park_Facility.csv</li>
+	<li><b>Description:</b> It contains the all the New York City parks including beaches, golf course, nature parks, playgrounds,etc. with their locations in latitude and longitude coordinates</li>
+	<li><b>Origin of the data: <a href="https://nycopendata.socrata.com/">NYC Open Data</a></b></li>
+	</ul>
+	<table border="10" style="width:100%;text-align: left;">
+
+	    <tr>
+                <th>Column</th>
+                <th>Type</th>
+				<th>Range</th>
+                <th>Comments</th>
+                <th>Problems</th>
+
+	    </tr>
+	    <tr>
+                <td>Name</td>
+                <td>rdfs:Literal: Ya que será el predicado de la relación que tiene como sujeto la entidad StateParkFacility y como propiedad la Datatype rdfs:label</td>
+				<td>--</td>
+                <td>Atributo que proporciona el nombre del lugar natural</td>
+                <td>Dificultad al encontrarlos todos en dbpedia</td>
+            </tr>
+	    <tr>
+                <td>Category</td>
+                <td>rdfs:Literal: Ya que será el predicado de la relación que tiene como sujeto las entidades derivadas de esta columna y como propiedad la Datatype rdfs:label</td>
+				<td>--</td>
+                <td>Representa el tipo de lugar natural </td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Región</td>
+                <td>xsd:float</td>
+				<td>0-12</td>
+                <td>Representa el nombre de la región en la que se ubica</td>
+                <td>No enlazable con dbpedia</td>
+            </tr>
+		<tr>
+                <td>County</td>
+                <td>rdfs:Literal: Ya que será el predicado de la relación que tiene como sujeto las entidades derivadas de esta columna y como propiedad la Datatype rdfs:label</td>
+				<td>--</td>
+                <td>Representa el nombre del condado en la que se ubica</td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Golf</td>
+                <td>xsd:boolean</td>
+				<td>[True,False]</td>
+                <td>Indica si ese lugar natural tiene campo de golf o no</td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Camp</td>
+                <td>xsd:boolean</td>
+				<td>[True,False]</td>
+                <td>Indica si en ese lugar natural se puede acampar </td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Playground</td>
+                <td>xsd:boolean</td>
+				<td>[True,False]</td>
+                <td>Indica si en ese lugar natural hay zona de juegos </td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Playground</td>
+                <td>xsd:boolean</td>
+				<td>[True,False]</td>
+                <td>Indica si en ese lugar natural hay zona de juegos </td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Nature Center</td>
+                <td>xsd:boolean</td>
+				<td>[True,False]</td>
+                <td>Indica si es una reserva natural </td>
+                <td>--</td>
+            </tr>
+		<tr>
+                <td>Nature Center</td>
+                <<td>xsd:boolean</td>
+				<td>[True,False]</td>
+                <td>Indica si tiene playa o no </td>
+                <td>--</td>
+            </tr>
+        <tr>
+		 		<td>Facility URL</td>
+                <td>schema:URL</td>
+				<td>--</td>
+                <td>Representa la direccion de la pagina web que contiene información acerca del lugar</td>
+                <td>--</td>
+        </tr>
+        <tr>
+				<td>URL GOLF</td>
+                <td>schema:URL</td>
+				<td>--</td>
+                <td>Representa la direccion de la pagina web que contiene información acerca del campo del golf ubicado dentro del lugar</td>
+                <td>--</td>
+        </tr>
+        <tr>
+				<td>Nature Center URL</td>
+                <td>schema:URL</td>
+				<td>--</td>
+                <td>Representa la direccion de la pagina web que contiene información acerca de la reserva natural ubicada en dicho lugar</td>
+                <td>--</td>
+        </tr>
+        <tr>
+                <td>Longitude</td>
+                <td>xsd:float</td>
+				<td>--</td>
+                <td>--</td>
+                <td>No enlazable con dbpedia</td>
+        </tr>
+	    <tr>
+                <td>Latitude</td>
+                <td>xsd:float</td>
+				<td>--</td>
+                <td>--</td>
+                <td>No enlazable con dbpedia</td>
+        </tr>
+         </table>
+
+
+
+        <h2>Analysis of the Licensing of the Data</h2>
+
+	<p>&nbsp&nbsp&nbspLa información almacenada en los dataset que provienen de <a href="https://nycopendata.socrata.com/">NYC Open Data</a> no tienen asociada explícitamente ninguna licencia de datos abiertos ni tampoco una que restringa su uso. En la sección about (<a href="http://www.nyc.gov/html/data/about.html">About NYC OpenData.</a>) de la página oficial gubernamental de la ciudad de Nueva York, se deja constancia de manera escrita que los datos son abiertos y de uso público bien para investigaciones o aplicaciones o cualquier otro uso que contribuya a mejorar la ciudad de Nueva York. Es dicho también que ciertos dataset pueden tener licencias restrictivas de copyright, como la DMCA, pero que en tal caso debe ser indicado en la descripción así como en la ficha del dataset.</p>
+	
+	<p>&nbsp&nbsp&nbspDebido a que los dataset que se utilizarán en el desarrollo de la aplicación no especifican licencia restrictiva alguna, se entiende que su carácter es abierto y de uso público. Es por ello que se utilizará la licencia <a href="https://creativecommons.org/licenses/by/4.0/legalcode"> Creative Commons Attribution 4.0 International License</a> (<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />) de manera que tambien los datos derivados de los originales así como nuesta aplicación y todo el material creado pueda ser distribuido, copiado, adaptado, exhibido y/o usado comercialmente por terceros siempre y cuando se muestre en los créditos los autores originales, que en este caso seríamos nosotros.</p>
+        
+        <h2>Definition of the Resource Naming Strategy</h2>
+	&nbsp&nbsp&nbspSe muestra a continuación el patrón que se seguirá para la construcción de las URIs tanto de los recursos como de las properties asociadas:
+	
+	<ul>
+	<li><b>Dominio</b>: http://www.linkedData_Group13.com/</li>
+	<li><b>Ontology terms</b>: http://www.linkedData_Group13.com/ontology/livingPlaces#&lt;termName&gt;</li>
+	<li><b>Individuals</b>: http://www.linkedData_Group13.com/resource/&lt;resource_type&gt;/&lt;resource_name&gt;</li>
+	</ul>
+	
+	
+</body>
+</html>
