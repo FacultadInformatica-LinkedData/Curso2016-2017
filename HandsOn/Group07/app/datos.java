@@ -36,7 +36,7 @@ public class datos
             QueryExecution qexec;
             ResultSet results;
             if (emp_publico){
-
+            	
             	FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
         		Model model = FileManager.get().loadModel("Empleo-Publico-with-links.rdf");
         		
@@ -78,8 +78,8 @@ public class datos
                         "SELECT ?Subject ?Given ?Provincia "+
                         "WHERE { "
                         + "?Subject JobSearch:Titulo ?Given . "
-                        + "?Subject JobSearch:OrganismoGestor resc:"+org_Gestor+" . "
                         + "?Subject JobSearch:Provincia ?Provincia . "
+                        + "?Subject JobSearch:OrganismoGestor resc:"+org_Gestor+" . "
                         + "}";
                     query = QueryFactory.create(queryString);
             		qexec = QueryExecutionFactory.create(query, model) ;
@@ -131,13 +131,17 @@ public class datos
                         org_gestorstr= org_gestorstr.replace('+', ' ');
                         
                         res = given+", "+" "+org_gestorstr+", "+provstr;
+                        if(!resultado.contains(res)){
+                            resultado.add(res);
+                        }
                     }
                     
                 }
             }
             else {
+            	
             	FileManager.get().addLocatorClassLoader(Main.class.getClassLoader());
-        		Model model = FileManager.get().loadModel("ofertas_Empleo");
+        		Model model = FileManager.get().loadModel(ofertas_Empleo);
                 if (provincia != ""){
                     String queryString = 
                         "PREFIX JobSearch: <http://www.semanticweb.org/Group07/ontology/JobSearch#>"+
@@ -198,7 +202,6 @@ public class datos
                     }
                 }
                 if ( localidad == "" && provincia == ""){
-                	
                     String queryString = 
                         "PREFIX JobSearch: <http://www.semanticweb.org/Group07/ontology/JobSearch#>"+
                         "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"+
@@ -371,11 +374,11 @@ public class datos
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method st
-		ArrayList<String> resp = mostrarNombres(true, "","","");
-		//for(String x:resp){
-		//	System.out.println(x);
-		//}
-		System.out.println(info(true, "Enfermero"));
+		ArrayList<String> resp = mostrarNombres(true,"","","");
+		for(String x:resp){
+			System.out.println(x);
+		}
+		//System.out.println(info(true, "Enfermero"));
 	}
 
 }
