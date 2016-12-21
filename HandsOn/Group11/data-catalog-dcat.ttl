@@ -1,0 +1,93 @@
+@base <http://http://www.madridcultural.es/ontology.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix rdflicense:	<http://purl.org/NET/rdflicense/> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+
+
+:catalog
+	a dcat:Catalog ;
+	dct:title "Dataset of cultural events in Madrid"@en , "Dataset de los eventos culturales de Madrid"@es ;
+	rdfs:label "Eventos Culturales"@es , "Cultural events"@es ;
+	foaf:homepage <https://github.com/albertcp/Curso2016-2017> ;
+	dct:creator <https://github.com/albertcp/Curso2016-2017> ;
+	dct:creator <https://github.com/urieljavier/Curso2016-2017> ;
+	dct:creator <https://github.com/eduman13/Curso2016-2017> ;
+	dct:creator <https://github.com/olgasalas/Curso2016-2017> ;
+	dct:creator <https://github.com/vfrico/Curso2016-2017> ;				
+	dct:source <http://datos.madrid.es/> ;
+	dct:publisher vfrico ;
+	dct:publisher urieljavier ;
+	dct:publisher eduman13 ;
+	dct:publisher olgasalas ;
+	dct:publisher albertcp ;
+	dct:license rdflicense:cc-by-sa3.0es ;
+	dct:language <http://lexvo.org/id/iso639-3/spa> ;
+	dcat:dataset :JuntasDistrito, :CentrosCulturales, :AgendaEventosCulturales ;
+	.
+
+
+:JuntasDistrito
+	a dcat:Dataset ;
+	dct:title "Juntas de distritos de la ciudad de Madrid"@es  ;
+	dcat:keyword "Juntas Distritos"@es ;
+	dct:issued "2016-12-20"^^xsd:date ;
+    dct:modified "2016-12-20"^^xsd:date ;
+    dcat:description "Juntas de distritos de la ciudad de Madrid"@es ;
+    dcat:distribution :JuntasDistrito-ttl ;
+	dct:license rdflicense:cc-by-sa3.0es;
+    .
+	
+:JuntasDistrito-ttl
+	a dcat:Distribution ;
+	dcat:downloadURL <https://github.com/albertcp/Curso2016-2017/blob/master/HandsOn/Group11/rdf/juntas-distrito.ttl> ;
+	dct:title "Juntas de distritos de la ciudad de Madrid"@es ;
+    dcat:mediaType "application/x-turtle" ;
+    dct:license rdflicense:cc-by-sa3.0es;
+    .
+    
+
+:CentrosCulturales
+	a dcat:Dataset ;
+	dct:title "Centros culturales de la ciudad de Madrid"@es  ;
+	rdfs:label "Centros Culturales"@es ;
+	dcat:keyword "Centros, Culturales"@es;
+	dct:issued "2016-12-20"^^xsd:date ;
+    dct:modified "2016-12-20"^^xsd:date ;
+    dcat:description "Centros culturales de la ciudad de Madrid"@es ;
+    dcat:distribution :CentrosCulturales-ttl;
+	dct:license rdflicense:cc-by-sa3.0es;
+    .
+	
+:CentrosCulturales-ttl
+	a dcat:Distribution ;
+	dcat:downloadURL <https://github.com/albertcp/Curso2016-2017/blob/master/HandsOn/Group11/rdf/centros-culturales-csv.ttl> ;
+	dct:title "Centros culturales de la ciudad de Madrid"@es ;
+    dcat:mediaType "application/x-turtle" ;
+    dct:license rdflicense:cc-by-sa3.0es;
+    .
+	    
+	    
+:AgendaEventosCulturales
+	a dcat:Dataset ;
+	dct:title "Próximos eventos culturales en Madrid"@es  ;
+	dcat:keyword "Evento"@es ;
+	rdfs:label "Eventos Culturales"@es ;
+	dct:issued "2016-12-20"^^xsd:date ;
+    dct:modified "2016-12-20"^^xsd:date ;
+    dcat:description "Próximos eventos culturales en Madrid"@es  ;
+    dcat:distribution :AgendaEventosCulturales-ttl;
+	dct:license rdflicense:cc-by-sa3.0es;
+    .
+	
+:AgendaEventosCulturales-ttl
+	a dcat:Distribution ;
+	dcat:downloadURL <https://github.com/albertcp/Curso2016-2017/blob/master/HandsOn/Group11/rdf/agenda-eventos.ttl> ;
+	dct:title "Próximos eventos culturales en Madrid"@es  ;
+    dcat:mediaType "application/x-turtle" ;
+    dct:license rdflicense:cc-by-sa3.0es;
+    .
+	  	    
+	
