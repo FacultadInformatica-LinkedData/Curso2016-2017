@@ -1,0 +1,148 @@
+@prefix : <http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15> .
+
+<http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasAddress
+:hasAddress rdf:type owl:ObjectProperty ;
+            rdfs:domain :COMM_NAME ,
+                        :STREET_NAME ,
+                        :Station ;
+            rdfs:range :Address .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasAdressType
+:hasAdressType rdf:type owl:ObjectProperty ;
+               rdfs:domain :Address ;
+               rdfs:range :ADDRESS_TYPE .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasAmountHouses
+:hasAmountHouses rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Address ;
+                 rdfs:range :HOUSE_NUMBER .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasCode
+:hasCode rdf:type owl:ObjectProperty ;
+         rdfs:domain :Class ;
+         rdfs:range :ClassCode .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasName
+:hasName rdf:type owl:ObjectProperty ;
+         rdfs:domain :Station ;
+         rdfs:range :Name .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasNumber
+:hasNumber rdf:type owl:ObjectProperty ;
+           rdfs:domain :Station ;
+           rdfs:range :Number .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasSector
+:hasSector rdf:type owl:ObjectProperty ;
+           rdfs:domain :Class ;
+           rdfs:range :Sector .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasStatus
+:hasStatus rdf:type owl:ObjectProperty ;
+           rdfs:domain :Class ;
+           rdfs:range :COMM_STRUC .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasType
+:hasType rdf:type owl:ObjectProperty ;
+         rdfs:domain :Class ;
+         rdfs:range :TYPE .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#ADDRESS_TYPE
+:ADDRESS_TYPE rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#Address
+:Address rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#CNSS_YR
+:CNSS_YR rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#COMM_CODE
+:COMM_CODE rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#COMM_NAME
+:COMM_NAME rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#COMM_STRUC
+:COMM_STRUC rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#CP
+:CP rdf:type owl:Class ;
+    rdfs:comment "El código postal del distrito." .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#Class
+:Class rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#ClassCode
+:ClassCode rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#HOUSE_NUMBER
+:HOUSE_NUMBER rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#Name
+:Name rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#Number
+:Number rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#SECTOR
+:SECTOR rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#SRG
+:SRG rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#STREET_NAME
+:STREET_NAME rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#Sector
+:Sector rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#Station
+:Station rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#TYPE
+:TYPE rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
