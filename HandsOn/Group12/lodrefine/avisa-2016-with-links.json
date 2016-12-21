@@ -1,0 +1,2477 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ANOMALIA to tipo",
+    "oldColumnName": "ANOMALIA",
+    "newColumnName": "tipo"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column calle at index 8 based on column TIPO_DE_VIAL using expression grel:cells[\"TIPO_DE_VIAL\"].value + \" \" + cells[\"NOMBRE_DE_VIAL\"].value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "calle",
+    "columnInsertIndex": 8,
+    "baseColumnName": "TIPO_DE_VIAL",
+    "expression": "grel:cells[\"TIPO_DE_VIAL\"].value + \" \" + cells[\"NOMBRE_DE_VIAL\"].value",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TIPO_DE_VIAL",
+    "columnName": "TIPO_DE_VIAL"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TIPO_DE_VIAL_ID",
+    "columnName": "TIPO_DE_VIAL_ID"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column NUMERO",
+    "columnName": "NUMERO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ANOMALIA_ID",
+    "columnName": "ANOMALIA_ID"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SECCION",
+    "columnName": "SECCION"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SECCION_ID",
+    "columnName": "SECCION_ID"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column date at index 1 based on column FECHA_DE_RECEPCION using expression grel:toDate(value + \" \" + cells[\"HORA_DE_RECEPCION\"].value)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "date",
+    "columnInsertIndex": 1,
+    "baseColumnName": "FECHA_DE_RECEPCION",
+    "expression": "grel:toDate(value + \" \" + cells[\"HORA_DE_RECEPCION\"].value)",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column HORA_DE_RECEPCION",
+    "columnName": "HORA_DE_RECEPCION"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FECHA_DE_RECEPCION",
+    "columnName": "FECHA_DE_RECEPCION"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column NOMBRE_DE_VIAL",
+    "columnName": "NOMBRE_DE_VIAL"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column barrio at index 6 based on column BARRIO_ID using expression grel:value.substring(0, -2) + \"\" + value.substring(-1)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "barrio",
+    "columnInsertIndex": 6,
+    "baseColumnName": "BARRIO_ID",
+    "expression": "grel:value.substring(0, -2) + \"\" + value.substring(-1)",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column BARRIO_ID",
+    "columnName": "BARRIO_ID"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column date using expression grel:value.toString(\"YYYY-mm-dd H:m:s\")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "date",
+    "expression": "grel:value.toString(\"YYYY-mm-dd H:m:s\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://semanticweb.org/grupo12/resources/",
+      "prefixes": [
+        {
+          "name": "",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "g12",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Aviso/\" + value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasFecha",
+              "curie": "g12:hasFecha",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "date"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasTipo",
+              "curie": "g12:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "tipo"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasCalle",
+              "curie": "g12:hasCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "calle"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasBarrio",
+              "curie": "g12:hasBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"Barrio/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "barrio",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasCodigoPostal",
+              "curie": "g12:hasCodigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO_POSTAL"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Barrio/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "barrio",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasNombre",
+              "curie": "g12:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://semanticweb.org/grupo12/resources/",
+      "prefixes": [
+        {
+          "name": "",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "ojasdo",
+          "uri": "http://es.dbpedia.org/sparql"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "g12",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Aviso/\" + value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasFecha",
+              "curie": "g12:hasFecha",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "date"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasTipo",
+              "curie": "g12:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "tipo"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasCalle",
+              "curie": "g12:hasCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "calle"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasBarrio",
+              "curie": "g12:hasBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"Barrio/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "barrio",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasCodigoPostal",
+              "curie": "g12:hasCodigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO_POSTAL"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Barrio/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "barrio",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasNombre",
+              "curie": "g12:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasDistrito",
+              "curie": "g12:hasDistrito",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"Distrito/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO_ID",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Distrito/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "DISTRITO_ID",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasNombre",
+              "curie": "g12:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column DISTRITO to type http://dbpedia.org/ontology/Place",
+    "columnName": "DISTRITO",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/Place",
+        "name": "dbo:Place"
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Fuencarral-El Pardo (http://es.dbpedia.org/resource/Fuencarral-El_Pardo) for cells containing \"FUENCARRAL-EL PARDO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "FUENCARRAL-EL PARDO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Fuencarral-El_Pardo",
+      "name": "Fuencarral-El Pardo",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Retiro (Madrid) (http://es.dbpedia.org/resource/Categoría:Retiro_(Madrid)) for cells containing \"RETIRO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "RETIRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Categoría:Retiro_(Madrid)",
+      "name": "Retiro (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Retiro (Madrid) (http://es.dbpedia.org/resource/Categoría:Retiro_(Madrid)) for cells containing \"RETIRO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "RETIRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Categoría:Retiro_(Madrid)",
+      "name": "Retiro (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic retiro (http://es.dbpedia.org/property/retiro) for cells containing \"RETIRO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "RETIRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/property/retiro",
+      "name": "retiro",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Retiro (http://dbpedia.org/resource/Retiro) for cells containing \"RETIRO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "RETIRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Retiro",
+      "name": "Retiro",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Retiro (Madrid) (http://es.dbpedia.org/resource/Categoría:Retiro_(Madrid)) for cells containing \"RETIRO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "RETIRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Categoría:Retiro_(Madrid)",
+      "name": "Retiro (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Retiro (Madrid) (http://es.dbpedia.org/resource/Retiro_(Madrid)) for cells containing \"RETIRO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "RETIRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Retiro_(Madrid)",
+      "name": "Retiro (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Moncloa-Aravaca (http://dbpedia.org/resource/Moncloa-Aravaca) for cells containing \"MONCLOA-ARAVACA\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "MONCLOA-ARAVACA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Moncloa-Aravaca",
+      "name": "Moncloa-Aravaca",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Tetuan (Madrid) (http://es.dbpedia.org/resource/Tetuan_(Madrid)) for cells containing \"TETUAN\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "TETUAN",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Tetuan_(Madrid)",
+      "name": "Tetuan (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Distrito de Tetuan (http://es.dbpedia.org/resource/Distrito_de_Tetuan) for cells containing \"TETUAN\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "TETUAN",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Distrito_de_Tetuan",
+      "name": "Distrito de Tetuan",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic San Blas - Canillejas (http://es.dbpedia.org/resource/San_Blas_-_Canillejas) for cells containing \"SAN BLAS\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "SAN BLAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/San_Blas_-_Canillejas",
+      "name": "San Blas - Canillejas",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"SAN BLAS\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "SAN BLAS"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Villa de Vallecas (http://es.dbpedia.org/resource/Villa_de_Vallecas) for cells containing \"VILLA DE VALLECAS\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "VILLA DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Villa_de_Vallecas",
+      "name": "Villa de Vallecas",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Chamberi (Madrid) (http://es.dbpedia.org/resource/Chamberi_(Madrid)) for cells containing \"CHAMBERI\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "CHAMBERI",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Chamberi_(Madrid)",
+      "name": "Chamberi (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Distrito Centro (Madrid) (http://es.dbpedia.org/resource/Categoría:Distrito_Centro_(Madrid)) for cells containing \"CENTRO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "CENTRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Categoría:Distrito_Centro_(Madrid)",
+      "name": "Distrito Centro (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Centro (Madrid) (http://dbpedia.org/resource/Centro_(Madrid)) for cells containing \"CENTRO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "CENTRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Centro_(Madrid)",
+      "name": "Centro (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Centro (Madrid) (http://dbpedia.org/resource/Centro_(Madrid)) for cells containing \"CENTRO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "CENTRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Centro_(Madrid)",
+      "name": "Centro (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Arganzuela (http://es.dbpedia.org/resource/Arganzuela) for cells containing \"ARGANZUELA\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "ARGANZUELA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Arganzuela",
+      "name": "Arganzuela",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Salamanca (Madrid) (http://es.dbpedia.org/resource/Categoría:Salamanca_(Madrid)) for cells containing \"SALAMANCA\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "SALAMANCA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Categoría:Salamanca_(Madrid)",
+      "name": "Salamanca (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Salamanca (Madrid) (http://es.dbpedia.org/resource/Categoría:Salamanca_(Madrid)) for cells containing \"SALAMANCA\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "SALAMANCA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Categoría:Salamanca_(Madrid)",
+      "name": "Salamanca (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Carabanchel (http://es.dbpedia.org/resource/Carabanchel) for cells containing \"CARABANCHEL\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "CARABANCHEL",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Carabanchel",
+      "name": "Carabanchel",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Usera (http://es.dbpedia.org/resource/Usera) for cells containing \"USERA\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "USERA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Usera",
+      "name": "Usera",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Latina (Madrid) (http://dbpedia.org/resource/Latina_(Madrid)) for cells containing \"LATINA\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "LATINA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Latina_(Madrid)",
+      "name": "Latina (Madrid)",
+      "score": 0.3999999761581421,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Salamanca (Madrid) (http://es.dbpedia.org/resource/Salamanca_(Madrid)) for cells containing \"SALAMANCA\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "SALAMANCA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Salamanca_(Madrid)",
+      "name": "Salamanca (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Chamartin (Madrid) (http://es.dbpedia.org/resource/Chamartin_(Madrid)) for cells containing \"CHAMARTIN\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "CHAMARTIN",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Chamartin_(Madrid)",
+      "name": "Chamartin (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Puente de Vallecas (http://es.dbpedia.org/resource/Puente_de_Vallecas) for cells containing \"PUENTE DE VALLECAS\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "PUENTE DE VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Puente_de_Vallecas",
+      "name": "Puente de Vallecas",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ciudad Lineal (http://es.dbpedia.org/resource/Ciudad_Lineal) for cells containing \"CIUDAD LINEAL\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "CIUDAD LINEAL",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Ciudad_Lineal",
+      "name": "Ciudad Lineal",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Villaverde (Madrid) (http://es.dbpedia.org/resource/Villaverde_(Madrid)) for cells containing \"VILLAVERDE\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "VILLAVERDE",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Villaverde_(Madrid)",
+      "name": "Villaverde (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Distrito de Vicalvaro (Madrid) (http://es.dbpedia.org/resource/Distrito_de_Vicalvaro_(Madrid)) for cells containing \"VICALVARO\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "VICALVARO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Distrito_de_Vicalvaro_(Madrid)",
+      "name": "Distrito de Vicalvaro (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Moratalaz (http://es.dbpedia.org/resource/Moratalaz) for cells containing \"MORATALAZ\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "MORATALAZ",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Moratalaz",
+      "name": "Moratalaz",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Hortaleza (http://dbpedia.org/resource/Hortaleza) for cells containing \"HORTALEZA\" in column DISTRITO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISTRITO",
+    "similarValue": "HORTALEZA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Hortaleza",
+      "name": "Hortaleza",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Distritos DBpedia at index 5 based on column DISTRITO using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Distritos DBpedia",
+    "columnInsertIndex": 5,
+    "baseColumnName": "DISTRITO",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column BARRIO to type http://dbpedia.org/ontology/Place",
+    "columnName": "BARRIO",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/Place",
+        "name": "dbo:Place"
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Valverde (Madrid) (http://es.dbpedia.org/resource/Valverde_(Madrid)) for cells containing \"VALVERDE\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "VALVERDE",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Valverde_(Madrid)",
+      "name": "Valverde (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ibiza (Madrid) (http://es.dbpedia.org/resource/Ibiza_(Madrid)) for cells containing \"IBIZA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "IBIZA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Ibiza_(Madrid)",
+      "name": "Ibiza (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Casa de Campo (Madrid) (http://es.dbpedia.org/resource/Casa_de_Campo_(Madrid)) for cells containing \"CASA DE CAMPO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CASA DE CAMPO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Casa_de_Campo_(Madrid)",
+      "name": "Casa de Campo (Madrid)",
+      "score": 0.5909091234207153,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Almenara (Madrid) (http://dbpedia.org/resource/Almenara_(Madrid)) for cells containing \"ALMENARA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ALMENARA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Almenara_(Madrid)",
+      "name": "Almenara (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"HELLIN\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "HELLIN"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Vallecas (Madrid) (http://es.dbpedia.org/resource/Vallecas_(Madrid)) for cells containing \"CASCO H.VALLECAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CASCO H.VALLECAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Vallecas_(Madrid)",
+      "name": "Vallecas (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Almagro (Madrid) (http://es.dbpedia.org/resource/Almagro_(Madrid)) for cells containing \"ALMAGRO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ALMAGRO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Almagro_(Madrid)",
+      "name": "Almagro (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Cuatro Caminos (Madrid) (http://es.dbpedia.org/resource/Cuatro_Caminos_(Madrid)) for cells containing \"CUATRO CAMINOS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CUATRO CAMINOS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Cuatro_Caminos_(Madrid)",
+      "name": "Cuatro Caminos (Madrid)",
+      "score": 0.6086956262588501,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Universidad (Madrid) (http://es.dbpedia.org/resource/Universidad_(Madrid)) for cells containing \"UNIVERSIDAD\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "UNIVERSIDAD",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Universidad_(Madrid)",
+      "name": "Universidad (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Palos de Moguer (Madrid) (http://es.dbpedia.org/resource/Palos_de_Moguer_(Madrid)) for cells containing \"PALOS DE MOGUER\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PALOS DE MOGUER",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Palos_de_Moguer_(Madrid)",
+      "name": "Palos de Moguer (Madrid)",
+      "score": 0.625,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Niño Jesus (Retiro) (http://es.dbpedia.org/resource/Niño_Jesus_(Retiro)) for cells containing \"NIÃ‘O JESUS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "NIÃ‘O JESUS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Niño_Jesus_(Retiro)",
+      "name": "Niño Jesus (Retiro)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"NIÃ‘O JESUS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "NIÃ‘O JESUS"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Justicia (Madrid) (http://es.dbpedia.org/resource/Justicia_(Madrid)) for cells containing \"JUSTICIA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "JUSTICIA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Justicia_(Madrid)",
+      "name": "Justicia (Madrid)",
+      "score": 0.47058820724487305,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic La Guindalera (http://es.dbpedia.org/resource/La_Guindalera) for cells containing \"GUINDALERA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "GUINDALERA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/La_Guindalera",
+      "name": "La Guindalera",
+      "score": 0.7692307829856873,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Nueva España (Madrid) (http://es.dbpedia.org/resource/Nueva_España_(Madrid)) for cells containing \"NUEVA ESPAÃ‘A\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "NUEVA ESPAÃ‘A",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Nueva_España_(Madrid)",
+      "name": "Nueva España (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Abrantes (Madrid) (http://es.dbpedia.org/resource/Abrantes_(Madrid)) for cells containing \"ABRANTES\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ABRANTES",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Abrantes_(Madrid)",
+      "name": "Abrantes (Madrid)",
+      "score": 0.47058820724487305,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"ALMENDRALES\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ALMENDRALES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Rios Rosas (http://es.dbpedia.org/resource/Rios_Rosas) for cells containing \"RIOS ROSAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "RIOS ROSAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Rios_Rosas",
+      "name": "Rios Rosas",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Palacio (Madrid) (http://es.dbpedia.org/resource/Palacio_(Madrid)) for cells containing \"PALACIO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PALACIO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Palacio_(Madrid)",
+      "name": "Palacio (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Barrio de Puerta Bonita (http://es.dbpedia.org/resource/Barrio_de_Puerta_Bonita) for cells containing \"PUERTA BONITA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PUERTA BONITA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Barrio_de_Puerta_Bonita",
+      "name": "Barrio de Puerta Bonita",
+      "score": 0.5652173757553101,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Cortes (Madrid) (http://es.dbpedia.org/resource/Cortes_(Madrid)) for cells containing \"CORTES\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CORTES",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Cortes_(Madrid)",
+      "name": "Cortes (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Goya (Madrid) (http://es.dbpedia.org/resource/Goya_(Madrid)) for cells containing \"GOYA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "GOYA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Goya_(Madrid)",
+      "name": "Goya (Madrid)",
+      "score": 0.307692289352417,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Castillejos (Madrid) (http://es.dbpedia.org/resource/Castillejos_(Madrid)) for cells containing \"CASTILLEJOS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CASTILLEJOS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Castillejos_(Madrid)",
+      "name": "Castillejos (Madrid)",
+      "score": 0.550000011920929,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Sol (Madrid) (http://es.dbpedia.org/resource/Sol_(Madrid)) for cells containing \"SOL\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SOL",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Sol_(Madrid)",
+      "name": "Sol (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Buenavista (Madrid) (http://es.dbpedia.org/resource/Buenavista_(Madrid)) for cells containing \"BUENAVISTA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "BUENAVISTA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Buenavista_(Madrid)",
+      "name": "Buenavista (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Barrio de Puerta del Angel (http://es.dbpedia.org/resource/Barrio_de_Puerta_del_Angel) for cells containing \"PUERTA DEL ANGEL\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PUERTA DEL ANGEL",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Barrio_de_Puerta_del_Angel",
+      "name": "Barrio de Puerta del Angel",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Estrella (Madrid) (http://es.dbpedia.org/resource/Estrella_(Madrid)) for cells containing \"ESTRELLA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ESTRELLA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Estrella_(Madrid)",
+      "name": "Estrella (Madrid)",
+      "score": 0.47058820724487305,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Embajadores (Madrid) (http://es.dbpedia.org/resource/Embajadores_(Madrid)) for cells containing \"EMBAJADORES\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "EMBAJADORES",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Embajadores_(Madrid)",
+      "name": "Embajadores (Madrid)",
+      "score": 0.550000011920929,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Arapiles (Madrid) (http://es.dbpedia.org/resource/Arapiles_(Madrid)) for cells containing \"ARAPILES\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ARAPILES",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Arapiles_(Madrid)",
+      "name": "Arapiles (Madrid)",
+      "score": 0.47058820724487305,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic El Pardo (Madrid) (http://dbpedia.org/resource/El_Pardo) for cells containing \"EL PARDO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "EL PARDO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/El_Pardo",
+      "name": "El Pardo (Madrid)",
+      "score": 0.47058820724487305,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Vallehermoso (Madrid) (http://es.dbpedia.org/resource/Vallehermoso_(Madrid)) for cells containing \"VALLEHERMOSO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "VALLEHERMOSO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Vallehermoso_(Madrid)",
+      "name": "Vallehermoso (Madrid)",
+      "score": 0.5714285373687744,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Moncloa-Aravaca (http://dbpedia.org/resource/Moncloa-Aravaca) for cells containing \"ARAVACA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ARAVACA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Moncloa-Aravaca",
+      "name": "Moncloa-Aravaca",
+      "score": 0.4355555295944214,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"EL VISO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "EL VISO"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"PORTAZGO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PORTAZGO"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"CONCEPCION\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CONCEPCION"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"MOSCARDO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "MOSCARDO"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"AMPOSTA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "AMPOSTA"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Campamento (Madrid) (http://es.dbpedia.org/resource/Campamento_(Madrid)) for cells containing \"CAMPAMENTO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CAMPAMENTO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Campamento_(Madrid)",
+      "name": "Campamento (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Pueblo Nuevo (Madrid) (http://es.dbpedia.org/resource/Pueblo_Nuevo_(Madrid)) for cells containing \"PUEBLO NUEVO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PUEBLO NUEVO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Pueblo_Nuevo_(Madrid)",
+      "name": "Pueblo Nuevo (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Castellana (Madrid) (http://es.dbpedia.org/resource/Castellana_(Madrid)) for cells containing \"CASTELLANA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CASTELLANA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Castellana_(Madrid)",
+      "name": "Castellana (Madrid)",
+      "score": 0.5263158082962036,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Lista (Madrid) (http://es.dbpedia.org/resource/Lista_(Madrid)) for cells containing \"LISTA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "LISTA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Lista_(Madrid)",
+      "name": "Lista (Madrid)",
+      "score": 0.3571428656578064,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"CASCO H.VICALVARO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CASCO H.VICALVARO"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic San Juan Bautista (Madrid) (http://es.dbpedia.org/resource/San_Juan_Bautista_(Madrid)) for cells containing \"SAN JUAN BAUTISTA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SAN JUAN BAUTISTA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/San_Juan_Bautista_(Madrid)",
+      "name": "San Juan Bautista (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Santa Eugenia (Madrid) (http://es.dbpedia.org/resource/Santa_Eugenia_(Madrid)) for cells containing \"SANTA EUGENIA\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "SANTA EUGENIA",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Santa_Eugenia_(Madrid)",
+      "name": "Santa Eugenia (Madrid)",
+      "score": 0.5909091234207153,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Delicias (Madrid) (http://es.dbpedia.org/resource/Delicias_(Madrid)) for cells containing \"DELICIAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "DELICIAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Delicias_(Madrid)",
+      "name": "Delicias (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"PALOMERAS BAJAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PALOMERAS BAJAS"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ventas (Madrid) (http://es.dbpedia.org/resource/Ventas_(Madrid)) for cells containing \"VENTAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "VENTAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Ventas_(Madrid)",
+      "name": "Ventas (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"ORCASUR\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ORCASUR"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Recoletos (Madrid) (http://es.dbpedia.org/resource/Recoletos_(Madrid)) for cells containing \"RECOLETOS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "RECOLETOS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Recoletos_(Madrid)",
+      "name": "Recoletos (Madrid)",
+      "score": 0.5,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ambroz (Madrid) (http://es.dbpedia.org/resource/Ambroz_(Madrid)) for cells containing \"AMBROZ\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "AMBROZ",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Ambroz_(Madrid)",
+      "name": "Ambroz (Madrid)",
+      "score": 0.3999999761581421,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Prosperidad (Madrid) (http://es.dbpedia.org/resource/Prosperidad_(Madrid)) for cells containing \"PROSPERIDAD\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PROSPERIDAD",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Prosperidad_(Madrid)",
+      "name": "Prosperidad (Madrid)",
+      "score": 0.550000011920929,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Trafalgar (Madrid) (http://es.dbpedia.org/resource/Trafalgar_(Madrid)) for cells containing \"TRAFALGAR\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "TRAFALGAR",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Trafalgar_(Madrid)",
+      "name": "Trafalgar (Madrid)",
+      "score": 0.5,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Aluche (http://es.dbpedia.org/resource/Aluche) for cells containing \"ALUCHE\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ALUCHE",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Aluche",
+      "name": "Aluche",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Gaztambide (Madrid) (http://es.dbpedia.org/resource/Gaztambide_(Madrid)) for cells containing \"GAZTAMBIDE\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "GAZTAMBIDE",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Gaztambide_(Madrid)",
+      "name": "Gaztambide (Madrid)",
+      "score": 0.5263158082962036,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Ríos Rosas (Madrid) (http://es.dbpedia.org/resource/Ríos_Rosas_(Madrid)) for cells containing \"ROSAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "ROSAS",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Ríos_Rosas_(Madrid)",
+      "name": "Ríos Rosas (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"CIUDAD JARDIN\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "CIUDAD JARDIN"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"OPAÃ‘EL\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "OPAÃ‘EL"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"LAS AGUILAS\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "LAS AGUILAS"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Pacifico (Madrid) (http://es.dbpedia.org/resource/Pacifico_(Madrid)) for cells containing \"PACIFICO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "PACIFICO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Pacifico_(Madrid)",
+      "name": "Pacifico (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"VALDEFUENTES\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "VALDEFUENTES"
+  },
+  {
+    "op": "core/recon-clear-similar-cells",
+    "description": "Clear recon data for cells containing \"LOS CARMENES\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "LOS CARMENES"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Berruguete (Madrid) (http://es.dbpedia.org/resource/Berruguete_(Madrid)) for cells containing \"BERRUGUETE\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "BERRUGUETE",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Berruguete_(Madrid)",
+      "name": "Berruguete (Madrid)",
+      "score": 0.5263158082962036,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Lucero (Madrid) (http://es.dbpedia.org/resource/Lucero_(Madrid)) for cells containing \"LUCERO\" in column BARRIO",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BARRIO",
+    "similarValue": "LUCERO",
+    "judgment": "matched",
+    "match": {
+      "id": "http://es.dbpedia.org/resource/Lucero_(Madrid)",
+      "name": "Lucero (Madrid)",
+      "score": 100,
+      "types": [
+        "null"
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Barrios DBpedia at index 8 based on column BARRIO using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Barrios DBpedia",
+    "columnInsertIndex": 8,
+    "baseColumnName": "BARRIO",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://semanticweb.org/grupo12/resources/",
+      "prefixes": [
+        {
+          "name": "",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "ojasdo",
+          "uri": "http://es.dbpedia.org/sparql"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "g12",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Aviso/\" + value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasFecha",
+              "curie": "g12:hasFecha",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "date"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasTipo",
+              "curie": "g12:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "tipo"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasCalle",
+              "curie": "g12:hasCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "calle"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasBarrio",
+              "curie": "g12:hasBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"Barrio/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "barrio",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasCodigoPostal",
+              "curie": "g12:hasCodigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO_POSTAL"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Barrio/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "barrio",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasNombre",
+              "curie": "g12:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasDistrito",
+              "curie": "g12:hasDistrito",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"Distrito/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO_ID",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Distrito/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "DISTRITO_ID",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasNombre",
+              "curie": "g12:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://semanticweb.org/grupo12/resources/",
+      "prefixes": [
+        {
+          "name": "",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "ojasdo",
+          "uri": "http://es.dbpedia.org/sparql"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "g12",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Aviso/\" + value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasFecha",
+              "curie": "g12:hasFecha",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "date"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasTipo",
+              "curie": "g12:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "tipo"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasCalle",
+              "curie": "g12:hasCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "calle"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasBarrio",
+              "curie": "g12:hasBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"Barrio/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "barrio",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasCodigoPostal",
+              "curie": "g12:hasCodigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO_POSTAL"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Barrio/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "barrio",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasNombre",
+              "curie": "g12:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasDistrito",
+              "curie": "g12:hasDistrito",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"Distrito/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO_ID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Barrios DBpedia",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Distrito/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "DISTRITO_ID",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasNombre",
+              "curie": "g12:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Distritos DBpedia",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

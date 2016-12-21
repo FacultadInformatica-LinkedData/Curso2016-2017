@@ -1,0 +1,269 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasBusinessID",
+              "curie": "ont:hasBusinessID",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "business_id",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasBusinessName",
+              "curie": "ont:hasBusinessName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "name"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasBusinessAddress",
+              "curie": "ont:hasBusinessAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "address"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#isInCity",
+              "curie": "ont:isInCity",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "city"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#isInState",
+              "curie": "ont:isInState",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "state"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasPostalCodeBusiness",
+              "curie": "ont:hasPostalCodeBusiness",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "postal_code"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasLatitude",
+              "curie": "ont:hasLatitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "latitude"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasLongitude",
+              "curie": "ont:hasLongitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "longitude"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasPhoneNumber",
+              "curie": "ont:hasPhoneNumber",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "phone_number"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14",
+      "prefixes": [
+        {
+          "name": "ont",
+          "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#Business",
+              "curie": "ont:Business"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasBusinessID",
+              "curie": "ont:hasBusinessID",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "business_id",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasBusinessName",
+              "curie": "ont:hasBusinessName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "name"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasBusinessAddress",
+              "curie": "ont:hasBusinessAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "address"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#isInCity",
+              "curie": "ont:isInCity",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "city"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#isInState",
+              "curie": "ont:isInState",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "state"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasPostalCodeBusiness",
+              "curie": "ont:hasPostalCodeBusiness",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "postal_code"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasLatitude",
+              "curie": "ont:hasLatitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "latitude"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasLongitude",
+              "curie": "ont:hasLongitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "longitude"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#hasPhoneNumber",
+              "curie": "ont:hasPhoneNumber",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "phone_number"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

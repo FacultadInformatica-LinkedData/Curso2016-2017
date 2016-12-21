@@ -1,0 +1,214 @@
+[
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column ciudad to type http://schema.org/Place",
+    "columnName": "ciudad",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia-es",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://schema.org/Place",
+        "name": "schema:Place"
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/grupo09#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "onto",
+          "uri": "http://www.semanticweb.org/grupo09#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "uni",
+          "uri": "http://purl.org/weso/uni/uni.html#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "nombre",
+          "rdfTypes": [
+            {
+              "uri": "Restaurante",
+              "curie": ":Restaurante"
+            }
+          ],
+          "links": [
+            {
+              "uri": "estaEn",
+              "curie": ":estaEn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "direccion",
+                "rdfTypes": [
+                  {
+                    "uri": "Direccion",
+                    "curie": ":Direccion"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "enCiudad",
+                    "curie": ":enCiudad",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "ciudad",
+                      "rdfTypes": [
+                        {
+                          "uri": "Ciudad",
+                          "curie": ":Ciudad"
+                        }
+                      ],
+                      "links": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "codigoPostal",
+              "curie": ":codigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "codigoPostal"
+              }
+            },
+            {
+              "uri": "email",
+              "curie": ":email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "email"
+              }
+            },
+            {
+              "uri": "url",
+              "curie": ":url",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "url"
+              }
+            },
+            {
+              "uri": "imagen",
+              "curie": ":imagen",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "imagen"
+              }
+            },
+            {
+              "uri": "logo",
+              "curie": ":logo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "logo"
+              }
+            },
+            {
+              "uri": "accesibilidad",
+              "curie": ":accesibilidad",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "accesibilidad"
+              }
+            },
+            {
+              "uri": "comentarios",
+              "curie": ":comentarios",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "comentarios"
+              }
+            },
+            {
+              "uri": "longitud",
+              "curie": ":longitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "columnName": "longitud"
+              }
+            },
+            {
+              "uri": "latitud",
+              "curie": ":latitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "columnName": "latitud"
+              }
+            },
+            {
+              "uri": "descripcion",
+              "curie": ":descripcion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "descripcion"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
