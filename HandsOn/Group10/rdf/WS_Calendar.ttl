@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g10: <http://smartsevilla.es/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://smartsevilla.es/resources/servicios/INVFES85> a g10:Servicio ;
+	g10:service_id "INVFES85"^^<xsd:string> ;
+	g10:start_date "2016-01-10"^^xsd:date ;
+	g10:end_date "2016-06-30"^^xsd:date .
+
+<http://smartsevilla.es/resources/servicios/INVLAB85> a g10:Servicio ;
+	g10:service_id "INVLAB85"^^<xsd:string> ;
+	g10:start_date "2016-01-07"^^xsd:date ;
+	g10:end_date "2016-06-30"^^xsd:date .
+
+<http://smartsevilla.es/resources/servicios/INVSAB85> a g10:Servicio ;
+	g10:service_id "INVSAB85"^^<xsd:string> ;
+	g10:start_date "2016-01-09"^^xsd:date ;
+	g10:end_date "2016-06-30"^^xsd:date .
+
+<http://smartsevilla.es/resources/servicios/INVVIE85> a g10:Servicio ;
+	g10:service_id "INVVIE85"^^<xsd:string> ;
+	g10:start_date "2016-01-08"^^xsd:date ;
+	g10:end_date "2016-06-30"^^xsd:date .

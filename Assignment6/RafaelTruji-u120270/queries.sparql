@@ -1,0 +1,58 @@
+# http://sandbox.linkeddata.es/sparql
+# Graph: http://sandbox.linkeddata.es/graph/accidentes
+
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX mv: <http://example.org/myVocabulary#>
+
+# How many accidents were there in Madrid in 2013?
+
+SELECT DISTINCT SUM(?n) as ?nTotal
+ WHERE{
+ ?obs a qb:Observation ;
+ mv:numberOfAccidents ?n
+ }
+
+
+# Give me the number of accidents in Usera for each type of accident
+
+SELECT DISTINCT ?type xsd:integer(?n) as ?nAccidents
+ WHERE{
+ ?obs a qb:Observation ;
+ mv:hasAccidentType ?type ;
+ mv:relatedDistrict "USERA";
+ mv:numberOfAccidents ?n.
+ }
+
+
+# Give me the number of multiple collisions for each district
+
+SELECT DISTINCT ?district xsd:integer(?n) as ?nAccidents
+ WHERE{
+ ?obs a qb:Observation ;
+ mv:relatedDistrict ?district;
+ mv:hasAccidentType mv:MultipleCollision;
+ mv:numberOfAccidents ?n.
+ }
+
+
+# Which is the district were the number of bicycle falls was higher in 2013?
+
+SELECT DISTINCT MAX(?district) xsd:integer(?n) as ?nAccidents
+ WHERE{
+ ?obs a qb:Observation ;
+ mv:relatedDistrict ?district;
+ mv:hasAccidentType mv:BicycleFall;
+ mv:numberOfAccidents ?n.
+ }
+ ORDER BY DESC(?n) LIMIT 1
+
+
+# Give me the districts with more than 500 accidents in 2013
+
+SELECT DISTINCT (?district) xsd:integer(?n) as ?nAccidents
+ WHERE{
+ ?obs a qb:Observation ;
+ mv:relatedDistrict ?district;
+ mv:numberOfAccidents ?n.
+ FILTER(?n > 500).
+ }

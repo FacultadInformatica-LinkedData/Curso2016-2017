@@ -1,0 +1,273 @@
+[
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column nombre to type http://schema.org/Place",
+    "columnName": "nombre",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia-es",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://schema.org/Place",
+        "name": "schema:Place"
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    }
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column NombreDBPedia at index 1 based on column nombre using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "NombreDBPedia",
+    "columnInsertIndex": 1,
+    "baseColumnName": "nombre",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column ciudad to type http://dbpedia.org/ontology/Region",
+    "columnName": "ciudad",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia-es",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/Region",
+        "name": "dbo:Region"
+      },
+      "autoMatch": true,
+      "columnDetails": []
+    },
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Zaragoza (http://dbpedia.org/resource/Zaragoza) for cells containing \"Zaragoza\" in column ciudad",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ciudad",
+    "similarValue": "Zaragoza",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Zaragoza",
+      "name": "Zaragoza",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/grupo09#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "onto",
+          "uri": "http://www.semanticweb.org/grupo09#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "nombre",
+          "rdfTypes": [
+            {
+              "uri": "Monumento",
+              "curie": ":Monumento"
+            }
+          ],
+          "links": [
+            {
+              "uri": "descripcion",
+              "curie": ":descripcion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "descripcion"
+              }
+            },
+            {
+              "uri": "estilo",
+              "curie": ":estilo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "estilo"
+              }
+            },
+            {
+              "uri": "estaEn",
+              "curie": ":estaEn",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "direccion",
+                "rdfTypes": [
+                  {
+                    "uri": "Direccion",
+                    "curie": ":Direccion"
+                  }
+                ],
+                "links": [
+                  {
+                    "uri": "enCiudad",
+                    "curie": ":enCiudad",
+                    "target": {
+                      "nodeType": "cell-as-resource",
+                      "expression": "value",
+                      "isRowNumberCell": false,
+                      "columnName": "ciudad",
+                      "rdfTypes": [
+                        {
+                          "uri": "Ciudad",
+                          "curie": ":Ciudad"
+                        }
+                      ],
+                      "links": []
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "uri": "horario",
+              "curie": ":horario",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "horario"
+              }
+            },
+            {
+              "uri": "telefono",
+              "curie": ":telefono",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "telefono"
+              }
+            },
+            {
+              "uri": "datacion",
+              "curie": ":datacion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "datacion"
+              }
+            },
+            {
+              "uri": "sitiosDeInteres",
+              "curie": ":sitiosDeInteres",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "sitiosDeInteres"
+              }
+            },
+            {
+              "uri": "datos",
+              "curie": ":datos",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "datos"
+              }
+            },
+            {
+              "uri": "precio",
+              "curie": ":precio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "precio"
+              }
+            },
+            {
+              "uri": "imagen",
+              "curie": ":imagen",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "imagen"
+              }
+            },
+            {
+              "uri": "longitud",
+              "curie": ":longitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "columnName": "longitud"
+              }
+            },
+            {
+              "uri": "latitud",
+              "curie": ":latitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "columnName": "latitud"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,1016 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix onto: <http://www.semanticweb.org/grupo09#> .
+
+
+<http://www.semanticweb.org/grupo09#HOTEL+DELICIAS> a onto:Alojamiento ;
+	onto:descripcion "C/ Sangenis, 13 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 876 28 02 25" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Sangenis> a onto:Direccion .
+
+onto:Zaragoza a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#C%2F+Sangenis> onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+DELICIAS> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Sangenis> ;
+	onto:codigoPostal "50010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "876 28 02 25" ;
+	onto:email "reservas@hoteldeliciaszaragoza.com" ;
+	onto:url "http://www.zaragozahoteldelicias.com" ;
+	onto:accesibilidad "<div><img src=\"/cont/paginas/sinbarreras/img/icono_silla1.jpg\" alt=\"\"/> Accesible</div><ul><li><strong>Aparcamiento</strong>: No tiene plazas reservadas</li><li><strong>Acceso</strong>:Entrada adaptada por Pº. Calanda, 28, (hay que salvar un escalón de unos 4 cm.). Puertas no automáticas. Mostrador de información no adaptado</li><li><strong>Movilidad en el interior del edificio:</strong><ul><li><strong>Zonas comunes:</strong><ul><li> Servicio de cafetería: con barra sin adaptar en altura, pero ofrecen servicio de mesas, espacios amplios para la movilidad.</li><li>Espacios Amplios: Sí. Pavimento antideslizante.</li><li>Ascensor Adaptado:Sí. adaptado, botonera en relieve, barra de apoyo</li></ul></li><li><strong>Habitaciones:</strong><ul><li> Habitaciones Adaptadas: Una.</li><li>Espacios Amplios: Sí, no hay dificultad de giro</li><li>Aseos Adaptados: Sí. Baño con ducha a ras de suelo. Asiento abatible, inodoro con barras de apoyo, lavabo sin pedestal, y espejo inclinado</li></ul></li></ul></li></ul><p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:comentarios "Parking concertado." ;
+	onto:categoria "Hotel 2 estrellas" ;
+	onto:habitaciones "40"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "68"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "674618.38"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613507.74"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+EL+PR%C3%8DNCIPE> a onto:Alojamiento ;
+	onto:descripcion "C/ Santiago, 12 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 41 01" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Santiago> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+EL+PR%C3%8DNCIPE> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santiago> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 29 41 01" ;
+	onto:email "reservas@hotel-elprincipe.com" ;
+	onto:url "http://www.hotelelprincipezaragoza.es" ;
+	onto:comentarios """Hotel Restaurante situado en el Centro Histórico y Comercial de Zaragoza, junto a la Basílica del Pilar y la Catedral de la Seo. Dispone de salas para reuniones, internet inalámbrico WI-FI gratuito, habitaciones para no fumadores y parking concertado a 50 metros.
+
+Todas las habitaciones cuentan con baño completo con secador de pelo, TV vía satélite, teléfono, minibar, climatización y conexión a internet sin cargo.
+HABITACIONES DOBLES: 39
+HABITACIONES INDIVIDUALES: 6
+
+
+This Hotel-Restaurant is found in the historical-commercial centre of Zaragoza, next to the Basílica del Pilar and the la Seo cathedral. There are function rooms, free WiFi internet access, rooms for non-smokers and parking within 50 meters of the hotel.
+
+All the rooms have en suite bathroom, hairdryer, satellite TV, telephone, minibar, air conditioning and free internet access.
+DOUBLE ROOMS: 39
+SINGLE ROOMS: 6""" ;
+	onto:categoria "Hotel 3 estrellas" ;
+	onto:habitaciones "45"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "81"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676719.04"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613905.13"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+DON+JAIME+54> a onto:Alojamiento ;
+	onto:descripcion "C/ Don Jaime I, 54-56 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 294 322" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Don+Jaime+I> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+DON+JAIME+54> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Don+Jaime+I> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 294 322" ;
+	onto:email "info@hoteldonjaime54.es" ;
+	onto:url "http://http://www.hoteldonjaime54.es" ;
+	onto:comentarios """APERTURA SEPTIEMBRE 2015
+
+Hotel situado junto a la Basílica de Nuestra Señora del Pilar y la Catedral de San Salvador «La Seo», de fácil acceso a las principales vías de comunicación, se encuentra ubicado en el centro neurálgico del sector comercial, cultural y de ocio de la ciudad.
+
+- Cuenta con 78 confortables habitaciones con: - Baño completo. - TV. - Aire acondicionado. - Teléfono directo. - Caja fuerte.
+- Parking próximo.
+- Restaurante y cafetería.
+- Así como salones de distinta capacidad para reuniones, convenciones, bodas y banquetes.
+
+<ul><li>Parking concertado.</li><li>Admiten perros.</li></ul>
+
+The Hotel is set in the very centre of Zaragoza, next to the Basílica de Nuestra Señora del Pilar and the La Seo, San Salvador Cathedral. It has direct access to all the main roads and is at the commercial, cultural and recreational heart of the city.
+- There are 78 comfortable rooms with: En suite bathroom,  TV,  Air conditioning,  Direct dialling telephone,  Safe deposit box
+- Parking nearby
+- Restaurant and cafeteria.
+- There are also function rooms for meetings, conferences, weddings and banquets.""" ;
+	onto:categoria "Hotel 3 estrellas" ;
+	onto:habitaciones "66"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "117"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676899.05"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613866.15"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+JUANA> a onto:Alojamiento ;
+	onto:descripcion "Avda. Navarra, 36, 1ºA <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 53 29 53" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Navarra> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+JUANA> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Navarra> ;
+	onto:codigoPostal "50017"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 53 29 53" ;
+	onto:comentarios "Habitación sin lavabo." ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "674547.85"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613846.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+CASTILLA> a onto:Alojamiento ;
+	onto:descripcion "C/ López Allue, 2, 2º E y 3º F <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 55 86 26" .
+
+<http://www.semanticweb.org/grupo09#C%2F+L%C3%B3pez+Allue> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+CASTILLA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+L%C3%B3pez+Allue> ;
+	onto:codigoPostal "50005"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 55 86 26" ;
+	onto:email "maginyalicia@yahoo.es" ;
+	onto:comentarios "También dispone de habitaciones con ducha" ;
+	onto:categoria "Hostal" ;
+	onto:habitaciones "14"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "19"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675527.83"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612649.85"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+AYBAR> a onto:Alojamiento ;
+	onto:descripcion "C/ Conde Aranda, 142 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 66 01" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Conde+Aranda> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+AYBAR> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Conde+Aranda> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 43 66 01" ;
+	onto:email "info@hostalaybar.es" ;
+	onto:url "http://www.hostalaybar.es" ;
+	onto:comentarios "Habitación con baño o lavabo" ;
+	onto:categoria "Hostal" ;
+	onto:habitaciones "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "17"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675515.78"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613967.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+NAVARRA> a onto:Alojamiento ;
+	onto:descripcion "C/ San Vicente de Paúl, 30, ppal. izda. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 16 84" .
+
+<http://www.semanticweb.org/grupo09#C%2F+San+Vicente+de+Pa%C3%BAl> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+NAVARRA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Vicente+de+Pa%C3%BAl> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 29 16 84" ;
+	onto:email "hostalnavarra@hotmail.es" ;
+	onto:url "http://hnavarra.com" ;
+	onto:comentarios "Habitaciones con baño, ducha o lavabo" ;
+	onto:categoria "Hostal" ;
+	onto:habitaciones "13"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "22"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "677057.71"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613664.97"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+SANTIAGO> a onto:Alojamiento ;
+	onto:descripcion "C/ Santiago, 3 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 39 45 50" ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santiago> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 39 45 50" ;
+	onto:comentarios "Habitación con baño, ducha." ;
+	onto:categoria "Hostal" ;
+	onto:habitaciones "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "17"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676716.71"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613912.02"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+AISA+OCHOA> a onto:Alojamiento ;
+	onto:descripcion "C/ Boggiero, 166, 2ºA y B <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 432 465" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Boggiero> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+AISA+OCHOA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Boggiero> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 432 465" ;
+	onto:url "http://www.hostalaisaochoa.es" ;
+	onto:comentarios "Habitaciones con baño" ;
+	onto:categoria "Hostal" ;
+	onto:habitaciones "21"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "39"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675643.78"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614008.58"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+EL+DESCANSO> a onto:Alojamiento ;
+	onto:descripcion "C/ San Lorenzo, 2 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 17 41" .
+
+<http://www.semanticweb.org/grupo09#C%2F+San+Lorenzo> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+EL+DESCANSO> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Lorenzo> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 29 17 41" ;
+	onto:email "hostaleldescansozgz@gmail.com" ;
+	onto:url "http://hostaleldescanso.wix.com/hostaleldescanso" ;
+	onto:comentarios "Habitación con lavabo" ;
+	onto:categoria "Hostal" ;
+	onto:habitaciones "22"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "31"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676927.08"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613607.54"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+PILAR+PLAZA+%28ANTIGUO+HOTEL+LAS+TORRES%29> a onto:Alojamiento ;
+	onto:descripcion "Plaza del Pilar, 11 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 39 42 50" .
+
+<http://www.semanticweb.org/grupo09#Pza.+del+Pilar> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+PILAR+PLAZA+%28ANTIGUO+HOTEL+LAS+TORRES%29> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+del+Pilar> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 39 42 50" ;
+	onto:email "administracion@hotelpilarplaza.es" ;
+	onto:url "http://www.hotelpilarplaza.com" ;
+	onto:comentarios """El Hotel Pilar Plaza está ubicado en un edificio del siglo XIX protegido en pleno centro histórico de Zaragoza y tiene vistas a la basílica del Pilar, situada junto al hotel.
+
+Sus habitaciones presentan una decoración elegante y contemporánea en tonos blancos y disponen de aire acondicionado, cama extragrande, conexión Wi-Fi gratuita, TV de pantalla plana y baño privado con ducha de hidromasaje. Algunas tienen vistas al Pilar.
+(Texto facilitado por el propio establecimiento en dic 2014)""" ;
+	onto:categoria "Hotel 3 estrellas" ;
+	onto:habitaciones "51"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "94"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676755.56"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613928.27"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+EL+CARMEN> a onto:Alojamiento ;
+	onto:descripcion "Pº María Agustín, 13, 1º <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 21 11 00" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Mar%C3%ADa+Agust%C3%ADn> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+EL+CARMEN> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Mar%C3%ADa+Agust%C3%ADn> ;
+	onto:codigoPostal "50004"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 21 11 00" ;
+	onto:email "info@hostalelcarmen.com" ;
+	onto:url "http://www.hostalelcarmen.com" ;
+	onto:comentarios "Habitaciones con lavabo" ;
+	onto:categoria "Hostal" ;
+	onto:habitaciones "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "15"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675879.65"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613313.37"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+RAUS%C3%81N+ALFAJAR%C3%8DN> a onto:Alojamiento ;
+	onto:descripcion "Ctra.Madrid-Barcelona, km.341 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 10 00 02" .
+
+<http://www.semanticweb.org/grupo09#Ctra.Madrid-Barcelona> a onto:Direccion .
+
+<http://www.semanticweb.org/grupo09#Alfajar%C3%ADn+%28Zaragoza%29> a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#Ctra.Madrid-Barcelona> onto:enCiudad <http://www.semanticweb.org/grupo09#Alfajar%C3%ADn+%28Zaragoza%29> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+RAUS%C3%81N+ALFAJAR%C3%8DN> onto:estaEn <http://www.semanticweb.org/grupo09#Ctra.Madrid-Barcelona> ;
+	onto:codigoPostal "50172"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 10 00 02" ;
+	onto:email "hotelrausan@hotelrausan.com" ;
+	onto:url "http://www.hotelrausan.com" ;
+	onto:categoria "Hotel 2 estrellas" ;
+	onto:habitaciones "42"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "78"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/grupo09#ILUNION+HOTELS+ROMAREDA+S.A.> a onto:Alojamiento ;
+	onto:descripcion "C/ Asín y Palacios, 11 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 35 11 00" .
+
+<http://www.semanticweb.org/grupo09#C%2F+As%C3%ADn+y+Palacios> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#ILUNION+HOTELS+ROMAREDA+S.A.> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+As%C3%ADn+y+Palacios> ;
+	onto:codigoPostal "50009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 35 11 00" ;
+	onto:email "reservasromareda@ilunionhotels.com" ;
+	onto:url "http://http://www.ilunionromareda.com/" ;
+	onto:accesibilidad """<p>Hotel certificado en Accesibilidad Universal por AENOR, Norma UNE 170.001-2</p>
+
+<strong>Acceso: </strong>
+<ul>
+<li>Entrada adaptada con rampa (con pendiente) y elevador salva escaleras. (pendiente de colocar)</li>
+<li>Puertas automáticas.</li></ul>
+<strong>Movilidad en el interior del edificio: o Zonas comunes</strong>: 
+<ul><li>Recepción con mostrador  adaptado en altura y con  bucles magnéticos para la comunicación. (discapacidad auditiva)</li>
+<li>Internet point accesible</li>
+<li>Espacios Amplios: Sí</li>
+<li>Ascensor Adaptado: con señalización en braille y números luminosos, espejo y barras de apoyo, sintetizador de voz.</li>
+<li>Puertas de 80 cm.. </li>
+<li>Mecanismos manuales adaptados en altura</li>
+<li>Cafetería: acceso y mesas adaptadas en altura con servicio personalizado. Menús para celíacos, diabéticos o con algún tipo de alergia alimentaria.</li>
+<li>Restaurante: con autoservicio adaptado a personas con movilidad reducida.</li>
+<li>Salones, accesos adaptados con rampa y barandillas, para diferentes eventos. </li>
+<li>Aseos: adaptado en la planta -1, acceso con ascensor,  puerta corredera, el inodoro dispone de espacio para la transferencia lateral, dos barras de apoyo móviles, lavabo regulable en altura, grifo monomando con palanca, sistema de llamada de auxilio. </li>
+</ul>
+<strong>Habitaciones:</strong> 
+<ul><li>Habitaciones Adaptadas: para personas con movilidad reducida y otras discapacidades sensoriales.</li>
+<li>Puertas: Adaptadas en anchura.</li>
+<li>Armario-Vestidor: Adaptados en altura, con espacios y perchas de palo. </li>
+<li>Teléfono adaptado a discapacidad visual y auditiva</li>
+<li>Espacios Amplios. Sí, no hay dificultad de giro.</li>
+<li>Cama articulada para facilitar la movilidad.</li>
+<li>Señales de aviso luminosas conectadas con el timbre.</li>
+<li>Comunicador personalizado permanente con recepción para casos de emergencia (en habitaciones adaptadas). </li>
+<li>Despertador adaptado a discapacidades auditivas.</li>
+<li>Aseos Adaptados: Sí, ducha adaptada a cota cero con asiento abatible, grifos monomando . El inodoro adaptado con barras de apoyo  abatibles. Lavabo regulable con espejo inclinado y adaptado en altura.</li>
+</ul>
+<p>Más información en: <a href=\"http://www.confortelhoteles.com/es/confortel/hoteles-accesibles-confortel/\">http://www.confortelhoteles.com/es/confortel/hoteles-accesibles-confortel/</a></p>""" ;
+	onto:comentarios """El HOTEL CONFORTEL  ROMAREDA**** cuenta con una ubicación excelente, ubicado en una zona tranquila próxima al centro de la ciudad, enfrente del estadio de fútbol de la Romareda y el Auditorio Palacio de Congresos. Además, está a pocos metros de la Universidad de Zaragoza, el Conservatorio Superior de Música de Aragón y los principales hospitales de la ciudad (Miguel Servet, clínico Lozano Biesa, clínica Quirón, clínica Montpellier).
+
+- 90 habitaciones con terraza exterior.
+- Wifi gratuito
+- Minibar gratuito
+- TV.
+- Secador
+- Amenities
+- Servicio de lavandería
+- Room service
+- Internet point
+- Cafetería
+- Restaurante
+- Salones para banquetes, convenciones, exposiciones, eventos familiares, etc
+- Garaje
+
+
+The HOTEL CONFORTEL ROMAREDA is located in a quiet area near the city centre, just in front of La Romareda football stadium and the Zaragoza Auditórium. It is very closed to Zaragoza University, High Music Conservatoire of Aragon and the main city Hospitals such as Miguel Servet, clínico Lozano Biesa, clínica Quirón and clínica Montpellier.
+
+- 90 rooms with balcony
+
+- Free Wifi
+
+- Free water in minibar
+
+- TV
+
+- Hair dryer
+
+- Amenities
+
+- Laundry service
+
+- Room service
+
+- Internet point
+
+- Cafeteria
+
+- Restaurant
+
+- Meeting rooms
+
+- Parking""" ;
+	onto:categoria "Hotel 4 estrellas" ;
+	onto:habitaciones "90"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "145"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "674718.63"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4611906"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSION+LA+PALMA> a onto:Alojamiento ;
+	onto:descripcion "C/ Boggiero, 166, 3ºB. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 24 65" ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Boggiero> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 43 24 65" ;
+	onto:comentarios "Habitaciones con baño" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675640.69"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613999.29"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+SAUCE> a onto:Alojamiento ;
+	onto:descripcion "C/ Espoz y Mina, 33 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 20 50 50" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Espoz+y+Mina> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+SAUCE> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Espoz+y+Mina> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 20 50 50" ;
+	onto:email "hotelsauce@hotelsauce.com" ;
+	onto:url "http://www.hotelsauce.com" ;
+	onto:comentarios """HOTEL SAUCE es un hotel pequeño y familiar. Con una ubicación inmejorable ya que se encuentra situado a tan sólo 50 metros de la Basílica del Pilar y en el corazón histórico y comercial de nuestra Zaragoza. Nuestro trato es amable: transmitimos alegría. 
+Disponemos de los siguientes servicios: - Cafetería abierta las 24 horas del día y donde por las mañanas nuestros clientes pueden disfrutar de un delicioso desayuno buffet. - Un pequeño salón social donde nuestros clientes pueden ver canales de pago en la televisión , navegar sin coste alguno por Internet en nuestros dos ordenadores con conexión ADSL, o bien mantener reuniones de trabajo. - Lavandería. - Parking cerrado para nuestros clientes enfrente del hotel.
+40 acogedoras habitaciones (29 dobles, 10 individuales, 1 suite). Todas las habitaciones disponen de baño completo con secador de pelo, teléfono, televisión con canal +, aire acondicionado y caja fuerte.
+
+
+
+HOTEL SAUCE is a small, friendly establishment with an unbeatable location, just 50 metres from the Basílica del Pilar in the historic and commercial centre of Zaragoza. 
+We offer a welcoming service: we spread happiness. 
+Services: Cafeteria open 24 hours a day, where our clients can enjoy a delicious breakfast buffet.  A small lounge that can be used for meetings or social activities, with satellite TV and free broad band internet and computer access.  Laundry service. Private parking.
+40 comfortable rooms (29 doubles, 10 singles, 1 suite); all rooms have en suite bathroom, hairdryer, telephone, TV with Canal +, air conditioning and safe deposit box.""" ;
+	onto:categoria "Hotel 2 estrellas" ;
+	onto:habitaciones "20"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "36"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676821.69"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613788.36"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+LAS+VENTAS> a onto:Alojamiento ;
+	onto:descripcion "Autovia de Logroño, km.10,5 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 77 04 82" .
+
+<http://www.semanticweb.org/grupo09#Autovia+de+Logro%C3%B1o> a onto:Direccion .
+
+onto:Utebo a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#Autovia+de+Logro%C3%B1o> onto:enCiudad onto:Utebo .
+
+<http://www.semanticweb.org/grupo09#HOTEL+LAS+VENTAS> onto:estaEn <http://www.semanticweb.org/grupo09#Autovia+de+Logro%C3%B1o> ;
+	onto:codigoPostal "50180"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 77 04 82" ;
+	onto:email "recepcion.lasventas@srhoteles.es" ;
+	onto:url "http://www.hotellasventas.com" ;
+	onto:comentarios """El hotel  Las Ventas está situado estratégicamente ya que está próximo al Aeropuerto de Zaragoza, al Parque empresarial PLAZA y a la Feria de Muestras y a tan sólo 10 km del Centro de la ciudad de Zaragoza y de la Estación Intermodal Delicias.
+
+Luminoso, amplio y abierto a una zona ajardinada que cuenta con piscina exterior, pista de tenis y zona recreativa infantil es la mejor opción para quienes vienen buscando la tranquilidad y descanso sin renunciar al confort y servicios de un auténtico complejo hotelero. Además disponemos de un amplio parking exterior gratuito para todo tipo de vehículos y de muy fácil acceso.
+
+El hotel Las Ventas tiene 58 habitaciones con wifi gratuito, aire acondicionado y calefacción, TV , mesa escritorio, teléfono y baño completo. Además dispone de una cafetería con una amplia variedad de tapas y bocadillos y con un menú semanal  . También podrás encontrar en su interior amplios salones con luz natural para celebrar cualquier tipo de reunión o comida en Utebo. Dentro del hotel ponemos a tu disposición wifi gratuito.
+Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que tu estancia sea especial por el trato personalizado que ofrecemos, por nuestras amplias instalaciones, por la tranquilidad del entorno y por nuestra buena comunicación con Zaragoza""" ;
+	onto:categoria "Hotel 3 estrellas" ;
+	onto:habitaciones "58"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "100"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "667425.86"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4618158.81"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+TIBUR> a onto:Alojamiento ;
+	onto:descripcion "Pza. de la Seo, 2 y 3 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 20 20 00" .
+
+<http://www.semanticweb.org/grupo09#Pza.+de+la+Seo> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+TIBUR> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+la+Seo> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 20 20 00" ;
+	onto:email "reservas@hoteltibur.com" ;
+	onto:url "http://www.hoteltibur.com" ;
+	onto:comentarios "Parking concertado." ;
+	onto:categoria "Hotel 3 estrellas" ;
+	onto:habitaciones "66"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "125"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676923.44"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613872"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+IGLESIAS> a onto:Alojamiento ;
+	onto:descripcion "C/ Verónica, 14 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 31 61" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Ver%C3%B3nica> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+IGLESIAS> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Ver%C3%B3nica> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 29 31 61" ;
+	onto:url "http://www.pensioniglesias.es" ;
+	onto:comentarios "Habitación con Medio-Baño, sin lavabo" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676809.91"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613495.16"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+TORRIJO> a onto:Alojamiento ;
+	onto:descripcion "Avda. Tenor Fleta, 68, 3º B <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 38 55 40" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Tenor+Fleta> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+TORRIJO> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Tenor+Fleta> ;
+	onto:codigoPostal "50007"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 38 55 40" ;
+	onto:email "pensiontorrijo@gmail.com" ;
+	onto:url "http://pensiontorrijo.com" ;
+	onto:comentarios "Habitaciones sin lavabo" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "14"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676769.75"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612004.98"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+ALOTUR> a onto:Alojamiento ;
+	onto:descripcion "C/ Conde Aranda, 126, 4º dcha <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 20 74" ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Conde+Aranda> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 43 20 74" ;
+	onto:comentarios "Habitaciones con baño" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675623.15"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613948.33"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+LACASTA> a onto:Alojamiento ;
+	onto:descripcion "C/ Fuenterrabía, 5, 7ºA <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 58 03" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Fuenterrab%C3%ADa> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+LACASTA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Fuenterrab%C3%ADa> ;
+	onto:codigoPostal "50004"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 43 58 03" ;
+	onto:comentarios "Habitaciones sin lavabo" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675271.19"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613785.97"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+PALUD> a onto:Alojamiento ;
+	onto:descripcion "C/ Calatorao, 2, 4º izq <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 73 23" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Calatorao> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+PALUD> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Calatorao> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 43 73 23" ;
+	onto:comentarios "Habitaciones con lavabo" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "15"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675627.93"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614014.96"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+FUENTERRAB%C3%8DA> a onto:Alojamiento ;
+	onto:descripcion "C/ Fuenterrabía, 5, 2º A <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 57 35" ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Fuenterrab%C3%ADa> ;
+	onto:codigoPostal "50004"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 43 57 35" ;
+	onto:comentarios "Habitaciones con lavabo" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "6"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675278.87"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613795.01"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+MIRAFLORES> a onto:Alojamiento ;
+	onto:descripcion "C/ María Lostal, 25, 1-3. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 21 74 72" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Mar%C3%ADa+Lostal> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+MIRAFLORES> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mar%C3%ADa+Lostal> ;
+	onto:codigoPostal "50008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 21 74 72" ;
+	onto:email "info@hostalcumbre.com" ;
+	onto:url "http://www.hostalcumbre.com" ;
+	onto:comentarios "Habitación con lavabo" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676682.2"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612708.72"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+IRENE> a onto:Alojamiento ;
+	onto:descripcion "Avda. Navarra, 36, 1ºD <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 53 29 53" ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Navarra> ;
+	onto:codigoPostal "50010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 53 29 53" ;
+	onto:comentarios "Habitación sin lavabo." ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "674547.16"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613842.19"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+SANTA+GEMA> a onto:Alojamiento ;
+	onto:descripcion "C/ Santander, 3 7ª planta. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 35 30 90" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Santander> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+SANTA+GEMA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santander> ;
+	onto:codigoPostal "50010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 35 30 90" ;
+	onto:url "http://www.pensionsantagema.com/es/pension_zaragoza" ;
+	onto:comentarios "Habitaciones con baño o lavabo." ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "16"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "23"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675426.57"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613122.86"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+PARA%C3%8DSO> a onto:Alojamiento ;
+	onto:descripcion "Pº Pamplona, 23, 3º D <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 21 76 08" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Pamplona> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+PARA%C3%8DSO> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Pamplona> ;
+	onto:codigoPostal "50004"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 21 76 08" ;
+	onto:email "info@hostal-paraiso.com" ;
+	onto:url "http://www.hostal-paraiso.com" ;
+	onto:comentarios "Habitación con medio baño" ;
+	onto:categoria "Hostal" ;
+	onto:habitaciones "39"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "64"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676011.25"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613205.27"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+HOLGADO> a onto:Alojamiento ;
+	onto:descripcion "C/ Conde Aranda, 126, 2º izda. y 5º izda. y dcha. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 20 74" ;
+	onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Conde+Aranda> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 43 20 74" ;
+	onto:url "http://www.pensionholgado.com" ;
+	onto:comentarios "Habitaciones con baño o lavabo." ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "14"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "20"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675624.87"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613941.79"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+HOLGADO++II> a onto:Alojamiento ;
+	onto:descripcion "C/ Conde Aranda 126, 3º Izda. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 20 74" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Conde+Aranda+> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+HOLGADO++II> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Conde+Aranda+> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 43 20 74" ;
+	onto:url "http://www.pensionholgado.com" ;
+	onto:comentarios "Habitaciones con lavabo" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675630.72"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613945.57"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+TORRERO> a onto:Alojamiento ;
+	onto:descripcion "C/ Fray Julián Garcés, 18, 1º y 2º planta. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 27 23 21" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Fray+Juli%C3%A1n+Garc%C3%A9s> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+TORRERO> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Fray+Juli%C3%A1n+Garc%C3%A9s> ;
+	onto:codigoPostal "50007"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 27 23 21" ;
+	onto:email "pensiontorrero@hotmail.com" ;
+	onto:url "http://www.pensiontorrero.es" ;
+	onto:comentarios "Habitaciones con lavabo" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "10"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676135.99"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4611167.56"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+FORTEA> a onto:Alojamiento ;
+	onto:descripcion "C/ Madre Sacramento, 45, pral. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 28 22 29" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Madre+Sacramento> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+FORTEA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Madre+Sacramento> ;
+	onto:codigoPostal "50004"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 28 22 29" ;
+	onto:url "http://www.pensionfortea.com" ;
+	onto:comentarios "Habitaciones con baño o con ducha." ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "14"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "18"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675631.29"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613264.88"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+SAN+JORGE> a onto:Alojamiento ;
+	onto:descripcion "C/ Mayor, 4-6 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 39 74 62" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Mayor> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+SAN+JORGE> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mayor> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 39 74 62" ;
+	onto:email "jose@elpequenocatalan.com" ;
+	onto:url "http://www.zaragoza-ciudad.com/hotelsanjorge" ;
+	onto:comentarios "<ul><li>Parking propio.</li><li>Admiten perros pequeños.</li></ul>" ;
+	onto:categoria "Hotel 1 estrella" ;
+	onto:habitaciones "29"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "53"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676856.65"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613751.24"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+ESTRELLA> a onto:Alojamiento ;
+	onto:descripcion "Avda. Anselmo Clavé, 27, 1º <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 09 04 78" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Anselmo+Clav%C3%A9> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+ESTRELLA> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Anselmo+Clav%C3%A9> ;
+	onto:codigoPostal "50004"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 09 04 78" ;
+	onto:email "aestrella-hostal@gmail.com" ;
+	onto:url "http://www.hostalestrellazaragoza.com" ;
+	onto:comentarios "Habitaciones con ducha - lavabo" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "19"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675518.23"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613316.45"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+LUIS+CANDELAS> a onto:Alojamiento ;
+	onto:descripcion "C/ Maestro Mingote, 3, pral. izqda. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 42 30 25" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Maestro+Mingote> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+LUIS+CANDELAS> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Maestro+Mingote> ;
+	onto:codigoPostal "50002"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 42 30 25" ;
+	onto:comentarios "Habitaciones con lavabo" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "5"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "678153.97"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613155.9"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+YOLI> a onto:Alojamiento ;
+	onto:descripcion "C/ La Parra, 5 - Barrio de Casetas <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 77 27 35" .
+
+<http://www.semanticweb.org/grupo09#C%2F+La+Parra> a onto:Direccion .
+
+onto:Casetas a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#C%2F+La+Parra> onto:enCiudad onto:Casetas .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+YOLI> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+La+Parra> .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+Casetas> a onto:Direccion ;
+	onto:enCiudad onto:Casetas .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+YOLI> onto:estaEn <http://www.semanticweb.org/grupo09#Barrio+de+Casetas> ;
+	onto:codigoPostal "50620"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 77 27 35" ;
+	onto:email "info@mesonyoli.com" ;
+	onto:url "http://www.mesonyoli.com" ;
+	onto:comentarios "Habitaciones con lavabo" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "9"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "664117.96"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4620693.41"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+IBIS+STYLES+ZARAGOZA+RAMIRO+I> a onto:Alojamiento ;
+	onto:descripcion "C/ Coso, 123 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 82 00" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Coso> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+IBIS+STYLES+ZARAGOZA+RAMIRO+I> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Coso> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 29 82 00" ;
+	onto:email "H8521@accor.com" ;
+	onto:url "http://www.ibis.com/es/hotel-8521-ibis-styles-zaragoza-ramiro-i/index.shtml" ;
+	onto:accesibilidad "<div><img alt=\"\" src=\"/cont/paginas/sinbarreras/img/icono_acomp1.jpg\"/> Accesible con Acompañante</div><ul><li><strong>Aparcamiento</strong>: No dispone</li><li><strong>Acceso</strong>: Entrada adaptada. Puertas automáticas</li><li><strong>Movilidad en el interior del edificio:</strong><ul><li><strong>Zonas comunes:</strong><ul><li> Las estancias de hotel, restaurante y cafetería son accesibles</li><li>Espacios Amplios: Sí</li><li>Ascensor Adaptado:Sí</li></ul></li><li><strong>Habitaciones:</strong><ul><li> Habitaciones Adaptadas: Dispone de 2</li><li>Puertas: Ancho 80 cm</li><li>Espacios Amplios. Sí, no hay dificultad de giro </li><li>Aseos Adaptados: Sí. Ducha a cota cero con banqueta. El wc tiene alza elevadora y cuenta con barra fija y abatible. El lavabo está suspendido en la pared. Espejo con suficiente inclinación</li></ul></li></ul></li></ul><p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:comentarios "69 habitaciones, renovadas en el 2002, con conexión a ordenador, tv interactiva, vía satélite, baño completo, secador de pelo, antena parabólica, minibar, servicio de lavandería y de habitaciones, aire acondicionado, calefacción, teléfono. Entre sus instalaciones se encuentran salones de convenciones, cafetería y garaje en el propio edificio. Establecimiento preparado para minusválidos. Admite animales" ;
+	onto:categoria "Hotel 3 estrellas" ;
+	onto:habitaciones "69"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "131"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "677093"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613461.71"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+ARENAL> a onto:Alojamiento ;
+	onto:descripcion "C/ Concepción Arenal, 5 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 97 48 86" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Concepci%C3%B3n+Arenal> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOSTAL+ARENAL> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Concepci%C3%B3n+Arenal> ;
+	onto:codigoPostal "50005"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 97 48 86" ;
+	onto:url "http://www.hostalarenal.com" ;
+	onto:categoria "Hostal" ;
+	onto:habitaciones "20"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "25"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+COGULLADA> a onto:Alojamiento ;
+	onto:descripcion "C/ Alberto Einstein, 3 - Polígono Cogullada <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 47 02 50" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Alberto+Einstein> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+COGULLADA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Alberto+Einstein> .
+
+<http://www.semanticweb.org/grupo09#Pol%C3%ADgono+Cogullada> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+COGULLADA> onto:estaEn <http://www.semanticweb.org/grupo09#Pol%C3%ADgono+Cogullada> ;
+	onto:codigoPostal "50014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 47 02 50" ;
+	onto:email "reservas@hotelcogullada.com" ;
+	onto:url "http://www.hotelcogullada.com" ;
+	onto:comentarios "Parking propio y aparcamiento para camiones y trailer." ;
+	onto:categoria "Hotel 1 estrella" ;
+	onto:habitaciones "95"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "111"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "678094.12"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4615620.66"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+EL+CISNE> a onto:Alojamiento ;
+	onto:descripcion "Ctra. de Madrid - Barcelona N-II, Km.309. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 33 20 00" .
+
+<http://www.semanticweb.org/grupo09#Ctra.+de+Madrid+-+Barcelona+N-II> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+EL+CISNE> onto:estaEn <http://www.semanticweb.org/grupo09#Ctra.+de+Madrid+-+Barcelona+N-II> ;
+	onto:codigoPostal "50012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 33 20 00" ;
+	onto:email "info@hotelcisne.com" ;
+	onto:url "http://www.hotelcisne.com" ;
+	onto:accesibilidad "<p><strong>Accesibilidad: </strong></p><ul><li>Dispone de 1 habitación adaptada para personas con movilidad reducida. </li></ul><p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:comentarios """El Hotel El Cisne se ha convertido en un moderno establecimiento, estratégicamente situado a 1 km de la Feria de Muestras y de la Plataforma Logística Plaza, así como a diez minutos del centro comercial de la ciudad, por lo que se encuentra en una localización ideal para sus reuniones, convenciones, 
+Disponemos, a parte de amplios salones para reuniones y convenciones, de 68 confortables habitaciones, completamente equipadas.
+- Amplios salones con capacidad de 10 a 400 personas. 
+- Espaciosa zona de aparcamiento. 
+- Acogedor entorno que ofrece amplias posibilidades.
+
+
+The Hotel El Cisne is a modern establishment just 1 km from the Zaragoza Trade Fair and Exhibition Centre, the PLAZA logistics centre and ten minutes from the commercial centre of the city. It is an excellent location for meetings, conferences and similar events.
+As well as the events and function rooms, there are 68 fully equipped bedrooms:
+
+- Function rooms for 10 - 400 people 
+- Large car park 
+- A welcoming environment with many possibilities""" ;
+	onto:categoria "Hotel 3 estrellas" ;
+	onto:habitaciones "69"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "118"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "665793.55"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4610176.36"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSION+ROMA> a onto:Alojamiento ;
+	onto:descripcion "C/ Duquesa Villahermosa, 4, esc. izda., 5º A-B-C, 6º B-C <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 33 81 31" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Duquesa+Villahermosa> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSION+ROMA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Duquesa+Villahermosa> ;
+	onto:codigoPostal "50010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 33 81 31" ;
+	onto:email "mlj@shm.es" ;
+	onto:url "http://www.shm.es/pensionroma" ;
+	onto:comentarios "Habitaciones con baño, ducha o lavabo." ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "20"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "30"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675001.37"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613172.78"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#ALBERGUE+JUVENIL+BALTASAR+GRACI%C3%81N> a onto:Alojamiento ;
+	onto:descripcion "C/ Franco y López, 4 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 30 66 92" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Franco+y+L%C3%B3pez> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#ALBERGUE+JUVENIL+BALTASAR+GRACI%C3%81N> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Franco+y+L%C3%B3pez> ;
+	onto:codigoPostal "50005"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 30 66 92" ;
+	onto:email "balta@aragon.es" ;
+	onto:url "http://www.alberguesdearagon.com" ;
+	onto:comentarios "Teléfono de reservas: 902 08 89 05" ;
+	onto:categoria "Albergue" ;
+	onto:habitaciones "12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "46"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "674954.44"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612845.73"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+AVENIDA> a onto:Alojamiento ;
+	onto:descripcion "Avda. César Augusto, 55 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 93 00" .
+
+<http://www.semanticweb.org/grupo09#Avda.+C%C3%A9sar+Augusto> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+AVENIDA> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+C%C3%A9sar+Augusto> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 43 93 00" ;
+	onto:email "info@hotelavenida-zaragoza.com" ;
+	onto:url "http://www.hotelavenida-zaragoza.com" ;
+	onto:accesibilidad "<div><img src=\"/cont/paginas/sinbarreras/img/icono_silla1.jpg\" alt=\"Accesible\"/> Accesible </div><ul><li><strong>Aparcamiento</strong>: Plazas concertadas con el Parking Cesaraugusta </li><li><strong>Acceso</strong>:  A Cota cero. Puerta automática adaptada en anchura </li><li><strong>Movilidad en el interior del edificio:</strong><ul><li><strong>Zonas comunes:</strong><ul><li> Recepción con mostrador adaptado en altura</li><li>Espacios Amplios: Sí</li><li>Espacios Amplios: Pavimento antideslizante</li><li>Ascensor Adaptado: Sí. Con barras. Botonera adaptada en altura y numeración en  braille. Bien iluminado.</li><li>Cafetería/Restaurante: Acceso adaptado. Mesas adaptadas en altura.     </li></ul></li><li><strong>Habitaciones:</strong><ul><li>Habitaciones Adaptadas: Dispone de 1.</li><li>Puertas: Adaptadas en anchura.</li><li>Espacios Amplios. Sí, no hay dificultad de giro </li><li>Aseos Adaptados: Sí.  Ducha a cota cero con barras y silla auxiliar. El wc con barras abatibles y espacio para transferencia lateral. Lavabo suspendido y espejo inclinado</li></ul></li></ul></li></ul><p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:categoria "Hotel 2 estrellas" ;
+	onto:habitaciones "91"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "155"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676284.39"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613869.81"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+GRAN+V%C3%8DA> a onto:Alojamiento ;
+	onto:descripcion "Pº Gran Vía, 38 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 22 92 13" .
+
+<http://www.semanticweb.org/grupo09#P%C2%BA+Gran+V%C3%ADa> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+GRAN+V%C3%8DA> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Gran+V%C3%ADa> ;
+	onto:codigoPostal "50005"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 22 92 13" ;
+	onto:email "info@granviahotel.com" ;
+	onto:url "http://www.granviahotel.com" ;
+	onto:accesibilidad "<div><img src=\"/cont/paginas/sinbarreras/img/icono_silla1.jpg\" alt=\"Accesible\"/> Accesible </div><ul><li><strong>Aparcamiento</strong>: Concertado con el parking de Hernán Cortés. Con plazas reservadas.</li><li><strong>Acceso</strong>: Rampa a ras del suelo. Doble Puerta abatible.  </li><li><strong>Movilidad en el interior del edificio:</strong><ul><li><strong>Zonas comunes:</strong><ul><li> Recepción con mostrador no adaptado en altura</li><li>Espacios Amplios: Sí</li><li>Ascensor Adaptado: Sí</li><li>Pasillo con moqueta  </li><li>Cafetería/Restaurante: Acceso al ras sin puertas. Buffet desayuno adaptado en altura</li><li>Aseo adaptado unisex en planta -1</li></ul></li><li><strong>Habitaciones:</strong><ul><li>Habitaciones Adaptadas: Dispone de 1.</li><li>Puertas: Adaptadas en anchura.</li><li>Armarios: Adaptados</li><li>Espacios Amplios. Sí, no hay dificultad de giro </li><li>Aseos Adaptados: Sí. Ducha de hidromasaje cota cero con barras y&nbsp; banqueta regulable en altura . El wc con adaptado con barra fija y abatible. Lavabo suspendido y espejo inclinado</li></ul></li></ul></li></ul><p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:comentarios "Ofrece desayunos sin gluten" ;
+	onto:categoria "Hotel 3 estrellas" ;
+	onto:habitaciones "44"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "68"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675730.71"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612763.97"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+CATALONIA+EL+PILAR> a onto:Alojamiento ;
+	onto:descripcion "C/ Manifestación, 16 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 20 58 58" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Manifestaci%C3%B3n> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+CATALONIA+EL+PILAR> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Manifestaci%C3%B3n> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 20 58 58" ;
+	onto:email "elpilar@hoteles-catalonia.es" ;
+	onto:url "http://www.hoteles-catalonia.es" ;
+	onto:accesibilidad "<div><img src=\"/cont/paginas/sinbarreras/img/icono_acomp1.jpg\" alt=\"Accesible con Acompañante\"/> Accesible con Acompañante</div><ul><li><strong>Aparcamiento</strong>: No     </li><li><strong>Acceso</strong>: Rampa con escalón salvable con acompañante. Puerta principal giratoria con escalón. Puerta accesible por la cafetería, se abre por dentro.</li><li><strong>Movilidad en el interior del edificio:</strong><ul><li><strong>Zonas comunes:</strong><ul><li> Recepción con mostrador  adaptado: Sí</li><li>Espacios Amplios: Sí</li><li>Ascensor Adaptado: Sí. Buena iluminación y marcador visual</li><li>Cafetería/Restaurante:  Acceso mediante ascensor planta ¿1 al restaurante y buffet. Acceso cafetería planta calle rampa con escalón que se abre desde dentro</li></ul></li>        <li><strong>Habitaciones:</strong>  <ul>            <li> Habitaciones Adaptadas: Dispone de 1.</li>            <li>Puertas: Adaptadas en anchura.</li>       <li>Armario-Vestidor: Adaptados en altura pero algo estrechos para realizar el giro</li>          <li>Espacios Amplios. Sí, no hay dificultad de giro </li><li>Aseos Adaptados: Sí. Ducha con pequeño bordillo salvable sin barras con banqueta . El wc adaptado con barra fija y abatible. Lavabo suspendido con espejo adaptado en altura</li>        </ul></li></ul></li></ul><p><em>Información   facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:categoria "Hotel 4 estrellas" ;
+	onto:habitaciones "65"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "125"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676536.11"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613962.16"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+TRYP+ZARAGOZA> a onto:Alojamiento ;
+	onto:descripcion "Avda. Francia, s/n <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 28 79 50" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Francia> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+TRYP+ZARAGOZA> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Francia> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 28 79 50" ;
+	onto:email "tryp.zaragoza@solmelia.com" ;
+	onto:url "http://http://www.tryphotels.com/es/hotel-tryp-zaragoza-espana.html" ;
+	onto:accesibilidad """<p><strong>Accesibilidad Física: </strong></p><div><img alt=\"Icono de accesible\" src=\"/cont/paginas/sinbarreras/img/icono_silla1.jpg\"/> Accesible</div><ul><li><strong>Aparcamiento</strong>: 2 plazas reservadas (falta la señalización vertical). Acceso directo al hotel mediante ascensor adaptado.</li><li><strong> Acceso</strong>:  Entrada con rampa y un poco de pendiente. Doble puertas automáticas. Mostrador no adaptado (altura).</li><li><strong>Movilidad en el interior del edificio</strong><ul><li><strong> Zonas Comunes</strong><ul><li>Espacios amplios: Sí</li><li>Cafetería: Adaptada</li><li> Zona de desayunos: Adaptada.</li><li>Restaurante: Adaptado.</li><li>Salones: Adaptados.</li><li>Aseo Adaptado: Sí, para ambos sexos.</li><li> Ascensor Adaptado: Sí. Con barras.</li><li>Otros: Pavimento de Parquet y alguna alfombra incrustada. Pasillos amplios y libres de obstáculos.</li></ul></li><li><strong>Habitaciones </strong>:<ul><li>Habitaciones Adaptadas: 7. </li><li>Espacios amplios: Sí, no hay dificultad de giro (1.50 cm.). Espacio libre de paso de 80 cm.</li><li>  Armarios: No adaptados. Cajones y baldas (altura 50 y 120 cm.)</li><li>  Aseo Adaptado: Sí. Espacio libre de giro (1,50 cm.). Inodoro a la altura (dificultad en la transferencia lateral). Lavabo sin pedestal y ducha a cota cero.</li></ul></li></ul></li></ul><p><strong>Accesibilidad Sensorial</strong></p><ul><li><strong>Movilidad en el interior del edificio</strong><ul><li><strong> Zonas Comunes</strong><ul><li> Ascensor Adaptado: Sí, botonera  en braille, buena iluminación.</li></ul></li></ul></li></ul>
+<p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>""" ;
+	onto:comentarios "Inaugurado en octubre de 2007" ;
+	onto:categoria "Hotel 4 estrellas" ;
+	onto:habitaciones "162"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "321"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "674344.55"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614495"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#ALBERGUE+DEL+CAMPING+CIUDAD+DE+ZARAGOZA> a onto:Alojamiento ;
+	onto:descripcion "Calle San Juan Bautista de la Salle, s/n <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 876 24 14 95" .
+
+<http://www.semanticweb.org/grupo09#C%2F+San+Juan+Bautista+de+la+Salle> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#ALBERGUE+DEL+CAMPING+CIUDAD+DE+ZARAGOZA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Juan+Bautista+de+la+Salle> ;
+	onto:codigoPostal "50012"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "876 24 14 95" ;
+	onto:email "info@campingzaragoza.com" ;
+	onto:url "http://www.campingzaragoza.com" ;
+	onto:comentarios "El albegue se encuentra situado dentro del Camping Ciudad de Zaragoza y se puede disfrutar de todos los servicios del camping." ;
+	onto:categoria "Albergue" ;
+	onto:habitaciones "11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "54"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "666871.25"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4607702.06"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#HOTEL+ZARAGOZA+ROYAL> a onto:Alojamiento ;
+	onto:descripcion "C/ Arzobispo Domenech, 4 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 21 46 00" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Arzobispo+Domenech> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#HOTEL+ZARAGOZA+ROYAL> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Arzobispo+Domenech> ;
+	onto:codigoPostal "50006"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 21 46 00" ;
+	onto:email "recepción.royal@aa-hoteles.com" ;
+	onto:url "http://www.aa-hoteles.com/hoteles/landing-hotel-zaragoza-royal/" ;
+	onto:comentarios """El Hotel HUSA Zaragoza Royal está situado en el centro de la ciudad a sólo 10 minutos del aeropuerto, dispone de un espacioso garaje con 77 plazas. El Hotel ofrece a sus clientes un bar-cafetería muy acogedor, un restaurante con excelente cocina regional e internacional y espaciosas salas donde celebrar banquetes conferencias y reuniones.
+Dispone de 92 habitaciones (84 doble y 8 individuales) con baño completo, aire acondicionado, teléfono directo, TV con antena parabólica, canal plus, mini-bar, caja de seguridad, secador de pelo.
+
+<ul><li>Parking Propio.</li></ul>
+
+
+The Hotel HUSA Zaragoza Royal is situated in the city centre, ten minutes from the airport. It has private parking for 77 cars. The Hotel has a comfortable bar-cafeteria, an excellent restaurant serving regional and international cuisine and spacious function rooms for banquets, conferences and meetings.
+There are 92 rooms (84 double and 8 single) with en suite bathroom, air conditioning, direct dialling telephone, satellite TV, Canal +, mini-bar, safe deposit box and hair dryer.""" ;
+	onto:categoria "Hotel 3 estrellas" ;
+	onto:habitaciones "92"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "168"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675998.54"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612781.6"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+CASA+PITA> a onto:Alojamiento ;
+	onto:descripcion "C/ San Miguel, 30 - Barrio de Casetas <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 771 578" .
+
+<http://www.semanticweb.org/grupo09#C%2F+San+Miguel> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+CASA+PITA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Miguel> .
+
+<http://www.semanticweb.org/grupo09#Barrio+de+Casetas> onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#PENSI%C3%93N+CASA+PITA> onto:estaEn <http://www.semanticweb.org/grupo09#Barrio+de+Casetas> ;
+	onto:codigoPostal "50620"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:telefono "976 771 578" ;
+	onto:email "info@casapita.es" ;
+	onto:url "http://www.casapita.es" ;
+	onto:categoria "Pensión" ;
+	onto:habitaciones "4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.semanticweb.org/grupo09#CAMPING+SAVI%C3%91%C3%81N+PARK> a onto:Alojamiento ;
+	onto:descripcion "Ctra El Frasno - Morés km 7 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 82 54 23" .
+
+<http://www.semanticweb.org/grupo09#Ctra+El+Frasno+-+Mor%C3%A9s+km+7> a onto:Direccion .
+
+onto:Saviñán a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#Ctra+El+Frasno+-+Mor%C3%A9s+km+7> onto:enCiudad onto:Saviñán .
+
+<http://www.semanticweb.org/grupo09#CAMPING+SAVI%C3%91%C3%81N+PARK> onto:estaEn <http://www.semanticweb.org/grupo09#Ctra+El+Frasno+-+Mor%C3%A9s+km+7> ;
+	onto:telefono "976 82 54 23" ;
+	onto:email "info@campingsavinan.com" ;
+	onto:url "http://www.campingsavinan.com" ;
+	onto:comentarios """Categoría 2ª
+Abierto todo el año""" ;
+	onto:categoria "Camping" ;
+	onto:habitaciones "0"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:camas "400"^^<http://www.w3.org/2001/XMLSchema#int> .

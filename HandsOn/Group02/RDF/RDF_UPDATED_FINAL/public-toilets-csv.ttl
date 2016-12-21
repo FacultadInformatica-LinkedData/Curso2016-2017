@@ -1,0 +1,422 @@
+@prefix : <> .
+@prefix ont: <http://www.semanticweb.org/webSemantica/grupo02/vocabulary#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets1> a ont:Banio ;
+	ont:tieneDireccion-Banio "Ballards Lane, Finchley Central, London" ;
+	ont:tieneCoordenada-X "525239"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "190735"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=24/7" ;
+	ont:administradoPor "jc decaux" ;
+	ont:tieneEmailDeContacto "highways.correspondence@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083592000"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Situated near Finchley Central Tube Station" ;
+	ont:tieneCodigoPostal "N3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets1" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets2> a ont:Banio ;
+	ont:tieneDireccion-Banio "Bell Lane, Hendon, London" ;
+	ont:tieneCoordenada-X "523426"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "189016"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=24/7" ;
+	ont:administradoPor "jc decaux" ;
+	ont:tieneEmailDeContacto "highways.correspondence@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083592000"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Situated at junction with Brent Street" ;
+	ont:tieneCodigoPostal "NW4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets2" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets3> a ont:Banio ;
+	ont:tieneDireccion-Banio "Watling Avenue, Edgeware, London" ;
+	ont:tieneCoordenada-X "520357"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "190939"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "female and male" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=Mo,Tu,We,Fr,Sa 09:00-17:00; Th 09:00-20:00; Su off" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "burnt.oak.library@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083593880"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Library Toilets" ;
+	ont:tieneCodigoPostal "HA08 OUB"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets3" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets4> a ont:Banio ;
+	ont:tieneDireccion-Banio "Cat Hill, East Barnet, Hertfordshire" ;
+	ont:tieneCoordenada-X "527200"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "195407"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=24/7" ;
+	ont:administradoPor "jc decaux" ;
+	ont:tieneEmailDeContacto "highways.correspondence@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083592000"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Situated near junction with Brookside" ;
+	ont:tieneCodigoPostal "EN4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets4" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets5> a ont:Banio ;
+	ont:tieneDireccion-Banio "3 Stapylton Road, Barnet" ;
+	ont:tieneCoordenada-X "524331"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "196747"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "female and male" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=Mo 10:00-20:00; Tu,Th,Sa 09:30-17:00; We,Fr 09:30-20:00; Su 14:00-17:00" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "chipping.barnet.library@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083594040"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Library Toilets" ;
+	ont:tieneCodigoPostal "EN5 4QT"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets5" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets6> a ont:Banio ;
+	ont:tieneDireccion-Banio "24 Hendon Lane, Finchley" ;
+	ont:tieneCoordenada-X "524942"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "190563"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=Mo 09:30-20:00; Tu,Th-Sa 09:30-17:00; We 10:00-20:00; Su off" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "church.end.library@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083593800"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Library Toilets" ;
+	ont:tieneCodigoPostal "N3 1TR"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets6" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets7> a ont:Banio ;
+	ont:tieneDireccion-Banio "85 Brookhill Road, East Barnet" ;
+	ont:tieneCoordenada-X "527317"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "195571"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=Mo,We,Fr,Sa 09:30-17:00; Tu 09:30-20:00; Th 10:00-20:00; Su off" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "east.barnet.library@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083593860"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Library Toilets" ;
+	ont:tieneCodigoPostal "EN4 8SG"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets7" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets8> a ont:Banio ;
+	ont:tieneDireccion-Banio "226 High Road" ;
+	ont:tieneCoordenada-X "527035"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "190045"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=Mo,Th,Sa 09:30-17:00; We 09:30-20:00; Fr 10:00-17:00; Tu,Su off" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "east.finchley.library@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083593815"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Library Toilets" ;
+	ont:tieneCodigoPostal "N2 9BB"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets8" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets9> a ont:Banio ;
+	ont:tieneDireccion-Banio "Hale Lane, Edgware, London" ;
+	ont:tieneCoordenada-X "519534"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "192232"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=Mo,We,Fr,Sa 09:30-17:00; Tu 09:30-20:00; Th 10:00-20:00; Su 14:00-17:00" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "edgware.library@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083592626"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Library Toilets" ;
+	ont:tieneCodigoPostal "HA8 8NN"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets9" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets10> a ont:Banio ;
+	ont:tieneDireccion-Banio "Friary Road, Friern Barnet" ;
+	ont:tieneCoordenada-X "527321"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "192742"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=08:00-(sunset)" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "parks@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083594600"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Park Toilets" ;
+	ont:tieneCodigoPostal "N12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets10" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets11> a ont:Banio ;
+	ont:tieneDireccion-Banio "Friern Barnet Road, Friern Barnet, London," ;
+	ont:tieneCoordenada-X "523133"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "188603"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=24/7" ;
+	ont:administradoPor "jc decaux" ;
+	ont:tieneEmailDeContacto "highways.correspondence@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083592000"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Situated at Friern Barnet Road junction with Friern Barnet Lane" ;
+	ont:tieneCodigoPostal "N11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets11" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets12> a ont:Banio ;
+	ont:tieneDireccion-Banio "The Burroughs" ;
+	ont:tieneCoordenada-X "526408"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "188824"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=Mo,We 09:30-20:00; Tu,Fr-Sa 09:30-17:00; Th 10:00-20:00; Su 14:00-17:00" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "hendon.library@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083592628"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Library Toilets" ;
+	ont:tieneCodigoPostal "NW4 4BQ"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets12" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets13> a ont:Banio ;
+	ont:tieneDireccion-Banio "Queens Road, West Hendon" ;
+	ont:tieneCoordenada-X "523133"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "188603"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=08:00-(sunset)" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "parks@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083594600"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Park Toilets" ;
+	ont:tieneCodigoPostal "NW4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets13" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets14> a ont:Banio ;
+	ont:tieneDireccion-Banio "High Road, Totteridge, London," ;
+	ont:tieneCoordenada-X "527940"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "194488"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=24/7" ;
+	ont:administradoPor "jc decaux" ;
+	ont:tieneEmailDeContacto "highways.correspondence@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083592000"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Situated near Waitrose" ;
+	ont:tieneCodigoPostal "N20"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets14" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets15> a ont:Banio ;
+	ont:tieneDireccion-Banio "Kingsley Way, Hampstead Garden Suburb" ;
+	ont:tieneCoordenada-X "526408"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "188824"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=08:00-(sunset)" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "parks@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083594600"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Park Toilets" ;
+	ont:tieneCodigoPostal "N2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets15" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets16> a ont:Banio ;
+	ont:tieneDireccion-Banio "Hartley Avenue" ;
+	ont:tieneCoordenada-X "525803"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "191190"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours= Tu 09:30-20:00;  Mo,Fr-Sa 09:30-17:00; Th 10:00-20:00; We,Su off" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "mill.hill.library@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083593830"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Library Toilets" ;
+	ont:tieneCodigoPostal "NW7 2HX"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets16" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets17> a ont:Banio ;
+	ont:tieneDireccion-Banio "Daws Lane, Mill Hill" ;
+	ont:tieneCoordenada-X "527321"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "192742"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=08:00-(sunset)" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "parks@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083594600"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Park Toilets" ;
+	ont:tieneCodigoPostal "NW7"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets17" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets18> a ont:Banio ;
+	ont:tieneDireccion-Banio "Ravensdale Avenue" ;
+	ont:tieneCoordenada-X "523133"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "188603"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours= Tu,Fr 09:30-20:00;  Mo,Sa 09:30-17:00; Th 10:00-17:00; We,Su off" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "north.finchley.library@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083593845"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Library Toilets" ;
+	ont:tieneCodigoPostal "N12 9HP"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets18" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets19> a ont:Banio ;
+	ont:tieneDireccion-Banio "Parkside Gardens, East Barnet" ;
+	ont:tieneCoordenada-X "527940"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "194488"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=08:00-(sunset)" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "parks@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083594600"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Park Toilets" ;
+	ont:tieneCodigoPostal "EN4"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets19" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets20> a ont:Banio ;
+	ont:tieneDireccion-Banio "Brunswick Park Road" ;
+	ont:tieneCoordenada-X "523133"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "188603"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours= Tu 09:30-20:00;  Mo,Fr 09:30-17:00; We 10:00-17:00; Th,Su off; Sa 09:30-13:00, 14:00-15:00" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "osidge.library@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083593920"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Library Toilets" ;
+	ont:tieneCodigoPostal "N11 1EY"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets20" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets21> a ont:Banio ;
+	ont:tieneDireccion-Banio "Oakfield Road, Golders Green" ;
+	ont:tieneCoordenada-X "524409"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "188483"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCambiadorDeBebe "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=08:00-(sunset)" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "parks@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083594600"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Park Toilets" ;
+	ont:tieneCodigoPostal "NW11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets21" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets22> a ont:Banio ;
+	ont:tieneDireccion-Banio "Colney Hatch Lane" ;
+	ont:tieneCoordenada-X "525803"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "191190"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=Mo,Tu,Th,Sa 09:30-13:00, 14:00-17:00; We 10:00-13:00, 14:00-20:00; Fr,Su off" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "south.friern.library@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083593946"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Library Toilets" ;
+	ont:tieneCodigoPostal "N10 1HD"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets22" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets23> a ont:Banio ;
+	ont:tieneDireccion-Banio "Stanhope Road, London," ;
+	ont:tieneCoordenada-X "526408"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "188824"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=24/7" ;
+	ont:administradoPor "jc decaux" ;
+	ont:tieneEmailDeContacto "highways.correspondence@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083592000"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Situated near junction with High Road" ;
+	ont:tieneCodigoPostal "N12"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets23" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets24> a ont:Banio ;
+	ont:tieneDireccion-Banio "Ballards Lane, Finchley Central" ;
+	ont:tieneCoordenada-X "525803"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "191190"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=08:00-(sunset)" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "parks@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083594600"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Park Toilets" ;
+	ont:tieneCodigoPostal "N3"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets24" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets25> a ont:Banio ;
+	ont:tieneDireccion-Banio "Watling Avenue, Burnt Oak, Edgeware, Middlesex" ;
+	ont:tieneCoordenada-X "523133"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "188603"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=24/7" ;
+	ont:administradoPor "jc decaux" ;
+	ont:tieneEmailDeContacto "highways.correspondence@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083592000"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Situated outside Burnt Oak Library near junction with Orange Hill Road" ;
+	ont:tieneCodigoPostal "HA8"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets25" .
+
+<http://www.semanticweb.org/webSemantica/grupo02/resource/Banio#Public+toilets26> a ont:Banio ;
+	ont:tieneDireccion-Banio "Brompton Grove" ;
+	ont:tieneCoordenada-X "527439"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCoordenada-Y "189122"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	ont:tieneCategoriaAccesible "unisex" ;
+	ont:tieneCambiadorDeBebe "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneBaniosFamiliares "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneCambiador "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	ont:tieneHoraDeApertura "opening_hours=08:00-(sunset)" ;
+	ont:administradoPor "Servest Contract Cleaning" ;
+	ont:tieneEmailDeContacto "parks@barnet.gov.uk" ;
+	ont:tieneTelefonoDeContacto "2083594600"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneNotas "Park Toilets" ;
+	ont:tieneCodigoPostal "NW11"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	ont:tieneServicio "Public toilets26" .

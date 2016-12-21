@@ -1,0 +1,18 @@
+@atBase	<http://www.oeg-upm.net/ontologies/Assignment2>
+@prefix	class:<http://www.ontologies.org/ontologies/class#>
+@prefix sensor:<http://www.ontologies.org/ontologies/sensor#>
+@prefix mesaurement:<http://www.ontologies.org/ontologies/mesaurement#>
+@prefix	computer:<http://www.ontologies.org/ontologies/computer#>
+@prefix user:<http://www.ontologies.org/ontologies/user#>
+
+:User10A			user:hasName :"Pedro".
+
+:Computer101		computer:hasOwner :User10A.
+
+:Mesaurement8401	mesaurement:hasTemperature :"29";
+					mesaurement:atTime :"2010-06-12T12:00:12".
+
+:Sensor029			sensor:hasMesaurement :Mesaurement8401.
+
+:Class01			class:includes :Sensor029;
+					class:includes :Computer101.

@@ -1,0 +1,1294 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g10: <http://smartsevilla.es/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://smartsevilla.es/resources/calles/Campana> a g10:Calle ;
+	g10:short_name "Campana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MenendezPelayo> a g10:Calle ;
+	g10:short_name "Menendez Pelayo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.MariaLuisa> a g10:Calle ;
+	g10:short_name "Avda. Maria Luisa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Parsi> a g10:Calle ;
+	g10:short_name "Avda. Parsi"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazadelDuque> a g10:Calle ;
+	g10:short_name "Plaza del Duque"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Calatrava> a g10:Calle ;
+	g10:short_name "Calatrava"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaPoncedeLeon> a g10:Calle ;
+	g10:short_name "Plaza Ponce de Leon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PagesdelCorro> a g10:Calle ;
+	g10:short_name "Pages del Corro"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JoseGalanMerino> a g10:Calle ;
+	g10:short_name "Jose Galan Merino"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJorge> a g10:Calle ;
+	g10:short_name "San Jorge"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Castilla> a g10:Calle ;
+	g10:short_name "Castilla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Navarra> a g10:Calle ;
+	g10:short_name "Navarra"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Torneo> a g10:Calle ;
+	g10:short_name "Torneo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Blanquillo> a g10:Calle ;
+	g10:short_name "Blanquillo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Resolana> a g10:Calle ;
+	g10:short_name "Resolana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ParlamentodeAndalucia> a g10:Calle ;
+	g10:short_name "Parlamento de Andalucia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondadeCapuchinos> a g10:Calle ;
+	g10:short_name "Ronda de Capuchinos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MariaAuxiliadora> a g10:Calle ;
+	g10:short_name "Maria Auxiliadora"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MunozLeon> a g10:Calle ;
+	g10:short_name "Munoz Leon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Santiago> a g10:Calle ;
+	g10:short_name "Santiago"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/TenienteBorges> a g10:Calle ;
+	g10:short_name "Teniente Borges"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ClaradeJesusMontero> a g10:Calle ;
+	g10:short_name "Clara de Jesus Montero"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Genova> a g10:Calle ;
+	g10:short_name "Genova"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SebastianElcano> a g10:Calle ;
+	g10:short_name "Sebastian Elcano"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/VirgendeLujan> a g10:Calle ;
+	g10:short_name "Virgen de Lujan"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaMarinerosVoluntarios> a g10:Calle ;
+	g10:short_name "Glorieta Marineros Voluntarios"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaMariaLuisa> a g10:Calle ;
+	g10:short_name "Avenida Maria Luisa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaEncarnacion> a g10:Calle ;
+	g10:short_name "Plaza Encarnacion"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ComunidadExtremena> a g10:Calle ;
+	g10:short_name "Comunidad Extremena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaLaBarzola> a g10:Calle ;
+	g10:short_name "Avenida La Barzola"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.LaBarzola> a g10:Calle ;
+	g10:short_name "Av. La Barzola"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Madreselva> a g10:Calle ;
+	g10:short_name "Madreselva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/DoctorJimenezDiaz> a g10:Calle ;
+	g10:short_name "Doctor Jimenez Diaz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaLaCruzRoja> a g10:Calle ;
+	g10:short_name "Avenida La Cruz Roja"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Chipre> a g10:Calle ;
+	g10:short_name "Chipre"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJuandeLaSalle> a g10:Calle ;
+	g10:short_name "San Juan de La Salle"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaLaBorbolla> a g10:Calle ;
+	g10:short_name "Avenida La Borbolla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ManuelSiurot> a g10:Calle ;
+	g10:short_name "Manuel Siurot"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PadreG.Tejero> a g10:Calle ;
+	g10:short_name "Padre G. Tejero"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ReinaMercedes> a g10:Calle ;
+	g10:short_name "Reina Mercedes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.LaBorbolla> a g10:Calle ;
+	g10:short_name "Avda. La Borbolla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PradoSanSebastian(CarlosV> a g10:Calle ;
+	g10:short_name "Prado San Sebastian (Carlos V"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaMiraflores> a g10:Calle ;
+	g10:short_name "Avenida Miraflores"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.Miraflores> a g10:Calle ;
+	g10:short_name "Av. Miraflores"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.SanJuandeLaSalle> a g10:Calle ;
+	g10:short_name "Av. San Juan de La Salle"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Parsi6(Parsi2> a g10:Calle ;
+	g10:short_name "Parsi 6 (Parsi 2"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaSanchezPizjuan> a g10:Calle ;
+	g10:short_name "Avenida Sanchez Pizjuan"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/DoctorLealCastanos> a g10:Calle ;
+	g10:short_name "Doctor Leal Castanos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SorFranciscaDorotea> a g10:Calle ;
+	g10:short_name "Sor Francisca Dorotea"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondadePioXII> a g10:Calle ;
+	g10:short_name "Ronda de Pio XII"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Arosa> a g10:Calle ;
+	g10:short_name "Arosa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CarreteraCarmona> a g10:Calle ;
+	g10:short_name "Carretera Carmona"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.CarlosV> a g10:Calle ;
+	g10:short_name "Avda. Carlos V"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PedroRomero> a g10:Calle ;
+	g10:short_name "Pedro Romero"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaSolea> a g10:Calle ;
+	g10:short_name "Avenida Solea"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Cataluna> a g10:Calle ;
+	g10:short_name "Cataluna"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Villegas> a g10:Calle ;
+	g10:short_name "Villegas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MarquesdePickman> a g10:Calle ;
+	g10:short_name "Marques de Pickman"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaSanFrancisco> a g10:Calle ;
+	g10:short_name "Plaza San Francisco"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/OrfebreCay.Gonzale> a g10:Calle ;
+	g10:short_name "Orfebre Cay. Gonzale"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Portugal> a g10:Calle ;
+	g10:short_name "Avda. Portugal"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.ElGreco> a g10:Calle ;
+	g10:short_name "Avda. El Greco"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanEsteban> a g10:Calle ;
+	g10:short_name "San Esteban"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MedinayGalnares> a g10:Calle ;
+	g10:short_name "Medina y Galnares"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AuxiliarKansasCity> a g10:Calle ;
+	g10:short_name "Auxiliar Kansas City"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Aguilas> a g10:Calle ;
+	g10:short_name "Aguilas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JesusdeLasTresCaidas> a g10:Calle ;
+	g10:short_name "Jesus de Las Tres Caidas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/FranciscoBruna> a g10:Calle ;
+	g10:short_name "Francisco Bruna"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJuandeRibera> a g10:Calle ;
+	g10:short_name "San Juan de Ribera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Antioquia> a g10:Calle ;
+	g10:short_name "Antioquia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Damasco> a g10:Calle ;
+	g10:short_name "Damasco"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Jerusalen> a g10:Calle ;
+	g10:short_name "Jerusalen"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.CruzdelCampo> a g10:Calle ;
+	g10:short_name "Avda. Cruz del Campo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.CruzdelCampo> a g10:Calle ;
+	g10:short_name "Av. Cruz del Campo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaCiudadJardin> a g10:Calle ;
+	g10:short_name "Avenida Ciudad Jardin"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlcaldeJuanFernandez> a g10:Calle ;
+	g10:short_name "Alcalde Juan Fernandez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ntra.Sra.Mercedes> a g10:Calle ;
+	g10:short_name "Ntra. Sra. Mercedes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/FelipeIi> a g10:Calle ;
+	g10:short_name "Felipe Ii"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.CiudadJardin> a g10:Calle ;
+	g10:short_name "Av. Ciudad Jardin"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/TomasMurube> a g10:Calle ;
+	g10:short_name "Tomas Murube"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LuisdeMorales> a g10:Calle ;
+	g10:short_name "Luis de Morales"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GarciadeVinuesa> a g10:Calle ;
+	g10:short_name "Garcia de Vinuesa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaJuanXXIII> a g10:Calle ;
+	g10:short_name "Avenida Juan XXIII"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LosGavilanes> a g10:Calle ;
+	g10:short_name "Los Gavilanes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/FranciscoBuendia> a g10:Calle ;
+	g10:short_name "Francisco Buendia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidadeLaPaz> a g10:Calle ;
+	g10:short_name "Avenida de La Paz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondaLaOliva> a g10:Calle ;
+	g10:short_name "Ronda La Oliva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MadredeCristo> a g10:Calle ;
+	g10:short_name "Madre de Cristo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LuisOrtizMunoz> a g10:Calle ;
+	g10:short_name "Luis Ortiz Munoz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.LasLetanias> a g10:Calle ;
+	g10:short_name "Avda. Las Letanias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJosedeCalasanz> a g10:Calle ;
+	g10:short_name "San Jose de Calasanz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Adriano> a g10:Calle ;
+	g10:short_name "Adriano"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaAlcaldePariasMerry> a g10:Calle ;
+	g10:short_name "Glorieta Alcalde Parias Merry"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.KansasCity> a g10:Calle ;
+	g10:short_name "Avda. Kansas City"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Zaragoza> a g10:Calle ;
+	g10:short_name "Zaragoza"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaNueva> a g10:Calle ;
+	g10:short_name "Plaza Nueva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlmiranteApodaca> a g10:Calle ;
+	g10:short_name "Almirante Apodaca"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.LaPaz> a g10:Calle ;
+	g10:short_name "Avda. La Paz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PauloOrosio> a g10:Calle ;
+	g10:short_name "Paulo Orosio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AutoviaMadrid> a g10:Calle ;
+	g10:short_name "Autovia Madrid"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EsperanzadeTriana> a g10:Calle ;
+	g10:short_name "Esperanza de Triana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlvarNunez> a g10:Calle ;
+	g10:short_name "Alvar Nunez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.PinoMontano> a g10:Calle ;
+	g10:short_name "Ctra. Pino Montano"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LopezdeGomara> a g10:Calle ;
+	g10:short_name "Lopez de Gomara"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RepublicaArgentina> a g10:Calle ;
+	g10:short_name "Republica Argentina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.RepublicaArgentina> a g10:Calle ;
+	g10:short_name "Avda. Republica Argentina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PuertaJerez> a g10:Calle ;
+	g10:short_name "Puerta Jerez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RamonyCajal> a g10:Calle ;
+	g10:short_name "Ramon y Cajal"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.SanFco.Javier> a g10:Calle ;
+	g10:short_name "Av. San Fco. Javier"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.SanFco.Javier(Edif.Sevilla2> a g10:Calle ;
+	g10:short_name "Av. San Fco. Javier (Edif. Sevilla 2"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EduardoDato> a g10:Calle ;
+	g10:short_name "Eduardo Dato"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PalosdeLaFrontera> a g10:Calle ;
+	g10:short_name "Palos de La Frontera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Rep.Argentina> a g10:Calle ;
+	g10:short_name "Rep. Argentina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JuanDiazdeSolis> a g10:Calle ;
+	g10:short_name "Juan Diaz de Solis"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Guadalupe> a g10:Calle ;
+	g10:short_name "Guadalupe"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PaseoLasdelicias> a g10:Calle ;
+	g10:short_name "Paseo Las delicias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SorGregoriaSantaTeresa> a g10:Calle ;
+	g10:short_name "Sor Gregoria Santa Teresa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlcaldeLuisUrunuela> a g10:Calle ;
+	g10:short_name "Alcalde Luis Urunuela"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.SanchezPizjuan> a g10:Calle ;
+	g10:short_name "Avda. Sanchez Pizjuan"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Trabaj.Inmigrantes> a g10:Calle ;
+	g10:short_name "Trabaj. Inmigrantes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LosRomeros> a g10:Calle ;
+	g10:short_name "Los Romeros"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Dr.JaimeMarcos> a g10:Calle ;
+	g10:short_name "Dr. Jaime Marcos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaEmilioLemos> a g10:Calle ;
+	g10:short_name "Avenida Emilio Lemos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Canalejas> a g10:Calle ;
+	g10:short_name "Canalejas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanVicentedePaul> a g10:Calle ;
+	g10:short_name "San Vicente de Paul"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Hytasa> a g10:Calle ;
+	g10:short_name "Hytasa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Rda.Tamarguillo> a g10:Calle ;
+	g10:short_name "Rda. Tamarguillo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Concej.JimenezBecerril> a g10:Calle ;
+	g10:short_name "Concej. Jimenez Becerril"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaCoria> a g10:Calle ;
+	g10:short_name "Avenida Coria"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJacinto> a g10:Calle ;
+	g10:short_name "San Jacinto"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/DoctorFedriani> a g10:Calle ;
+	g10:short_name "Doctor Fedriani"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AmordeDios> a g10:Calle ;
+	g10:short_name "Amor de Dios"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Feria> a g10:Calle ;
+	g10:short_name "Feria"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PoncedeLeon> a g10:Calle ;
+	g10:short_name "Ponce de Leon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/DonFadrique> a g10:Calle ;
+	g10:short_name "Don Fadrique"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/NiculosoPisano> a g10:Calle ;
+	g10:short_name "Niculoso Pisano"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondadeLosTejares> a g10:Calle ;
+	g10:short_name "Ronda de Los Tejares"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaSanLazaro> a g10:Calle ;
+	g10:short_name "Avenida San Lazaro"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Esparteros> a g10:Calle ;
+	g10:short_name "Esparteros"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Sembradores> a g10:Calle ;
+	g10:short_name "Sembradores"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Agricultores> a g10:Calle ;
+	g10:short_name "Agricultores"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CaminodeLosToros> a g10:Calle ;
+	g10:short_name "Camino de Los Toros"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CortijoLasCasillas> a g10:Calle ;
+	g10:short_name "Cortijo Las Casillas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaPinoMontano> a g10:Calle ;
+	g10:short_name "Avenida Pino Montano"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.PinoMontano> a g10:Calle ;
+	g10:short_name "Avda. Pino Montano"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PeriodistaJoseCouso> a g10:Calle ;
+	g10:short_name "Periodista Jose Couso"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlcaldeManueldelValle> a g10:Calle ;
+	g10:short_name "Alcalde Manuel del Valle"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Dr.LealCastanos> a g10:Calle ;
+	g10:short_name "Dr. Leal Castanos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.A3108> a g10:Calle ;
+	g10:short_name "Ctra.A-3108"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Arroyo> a g10:Calle ;
+	g10:short_name "Arroyo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GonzaloBilbao> a g10:Calle ;
+	g10:short_name "Gonzalo Bilbao"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanLuis> a g10:Calle ;
+	g10:short_name "San Luis"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Aux.AutoviaMadrid> a g10:Calle ;
+	g10:short_name "Aux. Autovia Madrid"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Garrochistas> a g10:Calle ;
+	g10:short_name "Garrochistas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LuisMontoto> a g10:Calle ;
+	g10:short_name "Luis Montoto"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/KansasCity> a g10:Calle ;
+	g10:short_name "Kansas City"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CortijodeLasCasillas> a g10:Calle ;
+	g10:short_name "Cortijo de Las Casillas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EmiliaBarral> a g10:Calle ;
+	g10:short_name "Emilia Barral"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Acc.ParqueAlcosa> a g10:Calle ;
+	g10:short_name "Acc. Parque Alcosa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CiudaddeLiria> a g10:Calle ;
+	g10:short_name "Ciudad de Liria"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LasO.N.G.> a g10:Calle ;
+	g10:short_name "Las O.N.G."^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CiudaddePaterna> a g10:Calle ;
+	g10:short_name "Ciudad de Paterna"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EscritorAlfonsoGrosso> a g10:Calle ;
+	g10:short_name "Escritor Alfonso Grosso"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Amor> a g10:Calle ;
+	g10:short_name "Amor"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CarlosMarx> a g10:Calle ;
+	g10:short_name "Carlos Marx"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/FedericoMayoGayarre> a g10:Calle ;
+	g10:short_name "Federico Mayo Gayarre"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AguilaPerdicera> a g10:Calle ;
+	g10:short_name "Aguila Perdicera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LosClaveles> a g10:Calle ;
+	g10:short_name "Los Claveles"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/DonaFrancisquita> a g10:Calle ;
+	g10:short_name "Dona Francisquita"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LaCalesera> a g10:Calle ;
+	g10:short_name "La Calesera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LaMonteria> a g10:Calle ;
+	g10:short_name "La Monteria"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CiudaddeChiva> a g10:Calle ;
+	g10:short_name "Ciudad de Chiva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Bailen> a g10:Calle ;
+	g10:short_name "Bailen"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Monsalves> a g10:Calle ;
+	g10:short_name "Monsalves"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AmadordeLosRios> a g10:Calle ;
+	g10:short_name "Amador de Los Rios"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Recaredo> a g10:Calle ;
+	g10:short_name "Recaredo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlfonsodeOrleans> a g10:Calle ;
+	g10:short_name "Alfonso de Orleans"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SantaVicentaMaria> a g10:Calle ;
+	g10:short_name "Santa Vicenta Maria"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.CiudaddeAlfafar> a g10:Calle ;
+	g10:short_name "Avda. Ciudad de Alfafar"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.EmilioLemos> a g10:Calle ;
+	g10:short_name "Av. Emilio Lemos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LasLeandras> a g10:Calle ;
+	g10:short_name "Las Leandras"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidadeHytasa> a g10:Calle ;
+	g10:short_name "Avenida de Hytasa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Canal> a g10:Calle ;
+	g10:short_name "Canal"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AfandeRibera> a g10:Calle ;
+	g10:short_name "Afan de Ribera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Monsalve> a g10:Calle ;
+	g10:short_name "Monsalve"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.ReinoUnido> a g10:Calle ;
+	g10:short_name "Avda. Reino Unido"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaForjaXXI> a g10:Calle ;
+	g10:short_name "Glorieta Forja XXI"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ElSilencio> a g10:Calle ;
+	g10:short_name "El Silencio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PoetaManuelBenitez> a g10:Calle ;
+	g10:short_name "Poeta Manuel Benitez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GarciaMoratoAv.> a g10:Calle ;
+	g10:short_name "Garcia Morato Av."^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/OrfebreCayetanoGonzalez> a g10:Calle ;
+	g10:short_name "Orfebre Cayetano Gonzalez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Rda.LaOliva> a g10:Calle ;
+	g10:short_name "Rda. La Oliva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PoetaBenitezCarrasco> a g10:Calle ;
+	g10:short_name "Poeta Benitez Carrasco"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Valdelarco> a g10:Calle ;
+	g10:short_name "Valdelarco"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidadeAndalucia> a g10:Calle ;
+	g10:short_name "Avenida de Andalucia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PuebladelRio> a g10:Calle ;
+	g10:short_name "Puebla del Rio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJosedePalmete> a g10:Calle ;
+	g10:short_name "San Jose de Palmete"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Baena> a g10:Calle ;
+	g10:short_name "Baena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JoseSebast.Bandaran> a g10:Calle ;
+	g10:short_name "Jose Sebast. Bandaran"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CentroPenitenciario> a g10:Calle ;
+	g10:short_name "Centro Penitenciario"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Andalucia> a g10:Calle ;
+	g10:short_name "Avda. Andalucia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Dra.NavarroRodriguez> a g10:Calle ;
+	g10:short_name "Dra. Navarro Rodriguez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Coruna> a g10:Calle ;
+	g10:short_name "Coruna"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.deBrenes> a g10:Calle ;
+	g10:short_name "Ctra. de Brenes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Evangelista> a g10:Calle ;
+	g10:short_name "Evangelista"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.ElPitamo> a g10:Calle ;
+	g10:short_name "Ctra. El Pitamo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PeriodistaEduardoC> a g10:Calle ;
+	g10:short_name "Periodista Eduardo C"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Taiwan> a g10:Calle ;
+	g10:short_name "Taiwan"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CarabelaSantaMaria> a g10:Calle ;
+	g10:short_name "Carabela Santa Maria"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JuanPoncedeLeon> a g10:Calle ;
+	g10:short_name "Juan Ponce de Leon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RodrigodeEscobedo> a g10:Calle ;
+	g10:short_name "Rodrigo de Escobedo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/OperaCarmen> a g10:Calle ;
+	g10:short_name "Opera Carmen"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Fidelio> a g10:Calle ;
+	g10:short_name "Fidelio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Aux.A92> a g10:Calle ;
+	g10:short_name "Aux. A-92"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Seneca> a g10:Calle ;
+	g10:short_name "Avda. Seneca"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidadeLaPlata> a g10:Calle ;
+	g10:short_name "Avenida de La Plata"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondaPadrePio> a g10:Calle ;
+	g10:short_name "Ronda Padre Pio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Salobrena> a g10:Calle ;
+	g10:short_name "Salobrena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondaDoctoraEste> a g10:Calle ;
+	g10:short_name "Ronda Doctora Este"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Afecto> a g10:Calle ;
+	g10:short_name "Afecto"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Indulgencia> a g10:Calle ;
+	g10:short_name "Indulgencia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Honestidad> a g10:Calle ;
+	g10:short_name "Honestidad"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Chucena> a g10:Calle ;
+	g10:short_name "Chucena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondaDoctoraOeste> a g10:Calle ;
+	g10:short_name "Ronda Doctora Oeste"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Guadalbullon> a g10:Calle ;
+	g10:short_name "Guadalbullon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Torbizcon> a g10:Calle ;
+	g10:short_name "Torbizcon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaPlusUltra> a g10:Calle ;
+	g10:short_name "Glorieta Plus Ultra"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Alc.LuisUrunuela> a g10:Calle ;
+	g10:short_name "Alc. Luis Urunuela"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Afan> a g10:Calle ;
+	g10:short_name "Afan"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GarciaMorato> a g10:Calle ;
+	g10:short_name "Garcia Morato"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AliAlGomari> a g10:Calle ;
+	g10:short_name "Ali Al-Gomari"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Gta.Oceanografica> a g10:Calle ;
+	g10:short_name "Gta. Oceanografica"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.MujerTrabajadora> a g10:Calle ;
+	g10:short_name "Avda. Mujer Trabajadora"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/FlordeGitanilla> a g10:Calle ;
+	g10:short_name "Flor de Gitanilla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaUtreraMolina> a g10:Calle ;
+	g10:short_name "Avenida Utrera Molina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MontesSierra> a g10:Calle ;
+	g10:short_name "Montes Sierra"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaLaRevoltosa> a g10:Calle ;
+	g10:short_name "Avenida La Revoltosa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.LaAeronautica> a g10:Calle ;
+	g10:short_name "Av. La Aeronautica"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AndaluciaResidencial> a g10:Calle ;
+	g10:short_name "Andalucia Residencial"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.ParqueAmate> a g10:Calle ;
+	g10:short_name "Av. Parque Amate"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.EmilioLemos> a g10:Calle ;
+	g10:short_name "Avda. Emilio Lemos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidadeLasCiencias> a g10:Calle ;
+	g10:short_name "Avenida de Las Ciencias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.LasCiencias> a g10:Calle ;
+	g10:short_name "Avda. Las Ciencias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PaseodeEuropa> a g10:Calle ;
+	g10:short_name "Paseo de Europa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlemaniaAvda.> a g10:Calle ;
+	g10:short_name "Alemania  Avda."^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JoseLaguillo> a g10:Calle ;
+	g10:short_name "Jose Laguillo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PaseoColon> a g10:Calle ;
+	g10:short_name "Paseo Colon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AutoviadeMalaga> a g10:Calle ;
+	g10:short_name "Autovia de Malaga"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Aux.AutoviaMalaga> a g10:Calle ;
+	g10:short_name "Aux. Autovia Malaga"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaTorreblanca> a g10:Calle ;
+	g10:short_name "Glorieta Torreblanca"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstacadeVares> a g10:Calle ;
+	g10:short_name "Estaca de Vares"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaLasAcacias> a g10:Calle ;
+	g10:short_name "Plaza Las Acacias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PradodeSanSebastian> a g10:Calle ;
+	g10:short_name "Prado de San Sebastian"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Torrelaguna> a g10:Calle ;
+	g10:short_name "Torrelaguna"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PeroMingo> a g10:Calle ;
+	g10:short_name "Pero Mingo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidadelCid> a g10:Calle ;
+	g10:short_name "Avenida del Cid"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/UlpianoBlanco> a g10:Calle ;
+	g10:short_name "Ulpiano Blanco"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Jerez> a g10:Calle ;
+	g10:short_name "Avda. Jerez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.ReinoUnido> a g10:Calle ;
+	g10:short_name "Av. Reino Unido"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MariaGaliana> a g10:Calle ;
+	g10:short_name "Maria Galiana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Bellavista> a g10:Calle ;
+	g10:short_name "Avda. Bellavista"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AmericoVespucio> a g10:Calle ;
+	g10:short_name "Americo Vespucio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaBellavista> a g10:Calle ;
+	g10:short_name "Avenida Bellavista"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Astronomia> a g10:Calle ;
+	g10:short_name "Astronomia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.Jerez> a g10:Calle ;
+	g10:short_name "Av. Jerez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GranPlaza> a g10:Calle ;
+	g10:short_name "Gran Plaza"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PaseodeColon> a g10:Calle ;
+	g10:short_name "Paseo de Colon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PaseodeLasdelicias> a g10:Calle ;
+	g10:short_name "Paseo de Las delicias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PoligonoStore> a g10:Calle ;
+	g10:short_name "Poligono Store"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Traviesa> a g10:Calle ;
+	g10:short_name "Traviesa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.SanJeronimo> a g10:Calle ;
+	g10:short_name "Avda. San Jeronimo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Torremegia> a g10:Calle ;
+	g10:short_name "Torremegia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Biologia> a g10:Calle ;
+	g10:short_name "Biologia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/M.RomeroMartinez> a g10:Calle ;
+	g10:short_name "M. Romero Martinez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CarreteraSuEminencia> a g10:Calle ;
+	g10:short_name "Carretera Su Eminencia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaCarlosV> a g10:Calle ;
+	g10:short_name "Avenida Carlos V"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlcaladelRio> a g10:Calle ;
+	g10:short_name "Alcala del Rio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazadeLaMagdalena> a g10:Calle ;
+	g10:short_name "Plaza de La Magdalena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MarquesdeParadas> a g10:Calle ;
+	g10:short_name "Marques de Paradas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JimenezdeQuesada> a g10:Calle ;
+	g10:short_name "Jimenez de Quesada"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanPablo> a g10:Calle ;
+	g10:short_name "San Pablo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlamedadeHercules> a g10:Calle ;
+	g10:short_name "Alameda de Hercules"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Efeso> a g10:Calle ;
+	g10:short_name "Efeso"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ada> a g10:Calle ;
+	g10:short_name "Ada"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JoseBermejo> a g10:Calle ;
+	g10:short_name "Jose Bermejo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/FraySerafinMadrid> a g10:Calle ;
+	g10:short_name "Fray Serafin Madrid"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Tesalonica> a g10:Calle ;
+	g10:short_name "Tesalonica"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanDiego> a g10:Calle ;
+	g10:short_name "San Diego"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Termodinamica> a g10:Calle ;
+	g10:short_name "Termodinamica"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/DoctorLaffonSoto> a g10:Calle ;
+	g10:short_name "Doctor Laffon Soto"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CayetanoGonzalez> a g10:Calle ;
+	g10:short_name "Cayetano Gonzalez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Rda.deLaOliva> a g10:Calle ;
+	g10:short_name "Rda. de La Oliva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.Andalucia> a g10:Calle ;
+	g10:short_name "Av. Andalucia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJuandeLaCruz> a g10:Calle ;
+	g10:short_name "San Juan de La Cruz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Secoya> a g10:Calle ;
+	g10:short_name "Secoya"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MedicosSinFronteras> a g10:Calle ;
+	g10:short_name "Medicos Sin Fronteras"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Cies> a g10:Calle ;
+	g10:short_name "Cies"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlmiranteTopete> a g10:Calle ;
+	g10:short_name "Almirante Topete"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/UniversidadPabloOlavide> a g10:Calle ;
+	g10:short_name "Universidad Pablo Olavide"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JoseSebas.Bandaran> a g10:Calle ;
+	g10:short_name "Jose Sebas. Bandaran"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/NavioArgos> a g10:Calle ;
+	g10:short_name "Navio Argos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaAlemania> a g10:Calle ;
+	g10:short_name "Avenida Alemania"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Dinamarca> a g10:Calle ;
+	g10:short_name "Avda. Dinamarca"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondadeTriana> a g10:Calle ;
+	g10:short_name "Ronda de Triana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Galaxia> a g10:Calle ;
+	g10:short_name "Galaxia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.Mairena> a g10:Calle ;
+	g10:short_name "Ctra.Mairena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/BlasInfante> a g10:Calle ;
+	g10:short_name "Blas Infante"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlfredoKraus> a g10:Calle ;
+	g10:short_name "Alfredo Kraus"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Parsi6> a g10:Calle ;
+	g10:short_name "Parsi 6"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaMagdalena> a g10:Calle ;
+	g10:short_name "Plaza Magdalena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JuanBautistaMunoz> a g10:Calle ;
+	g10:short_name "Juan Bautista Munoz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CarabelaLaNina> a g10:Calle ;
+	g10:short_name "Carabela La Nina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.VillasdeCuba> a g10:Calle ;
+	g10:short_name "Avda. Villas de Cuba"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlvarNunezCab.Vaca> a g10:Calle ;
+	g10:short_name "Alvar Nunez Cab. Vaca"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstrellaCanopus> a g10:Calle ;
+	g10:short_name "Estrella Canopus"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstrellaHaris> a g10:Calle ;
+	g10:short_name "Estrella Haris"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlvarNunezCabezadeVaca> a g10:Calle ;
+	g10:short_name "Alvar Nunez Cabeza de Vaca"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AeropuertodeSevilla> a g10:Calle ;
+	g10:short_name "Aeropuerto de Sevilla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PadreSebastianBandaran> a g10:Calle ;
+	g10:short_name "Padre Sebastian Bandaran"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Estrelladeneb> a g10:Calle ;
+	g10:short_name "Estrella deneb"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MarquesLucadeTena> a g10:Calle ;
+	g10:short_name "Marques Luca de Tena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RealdeLaJara> a g10:Calle ;
+	g10:short_name "Real de La Jara"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Paseodedelicias> a g10:Calle ;
+	g10:short_name "Paseo de delicias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PuertodelEscudo> a g10:Calle ;
+	g10:short_name "Puerto del Escudo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Candelilla> a g10:Calle ;
+	g10:short_name "Candelilla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Zorzal> a g10:Calle ;
+	g10:short_name "Zorzal"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Polonia> a g10:Calle ;
+	g10:short_name "Polonia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JeronimodeCordoba> a g10:Calle ;
+	g10:short_name "Jeronimo de Cordoba"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.Valdezorras> a g10:Calle ;
+	g10:short_name "Ctra. Valdezorras"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/VeredaPocoAceite> a g10:Calle ;
+	g10:short_name "Vereda Poco Aceite"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Halcon> a g10:Calle ;
+	g10:short_name "Halcon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/BarriadaElGordillo> a g10:Calle ;
+	g10:short_name "Barriada El Gordillo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.ElGordillo> a g10:Calle ;
+	g10:short_name "Ctra. El Gordillo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CentroMiraflores> a g10:Calle ;
+	g10:short_name "Centro Miraflores"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Aux.RondaNorte> a g10:Calle ;
+	g10:short_name "Aux. Ronda Norte"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondadelTamarguillo> a g10:Calle ;
+	g10:short_name "Ronda del Tamarguillo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.Carmona> a g10:Calle ;
+	g10:short_name "Ctra. Carmona"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.Asoc.deVecinos> a g10:Calle ;
+	g10:short_name "Av. Asoc. de Vecinos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.ManueldelValle> a g10:Calle ;
+	g10:short_name "Av. Manuel del Valle"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.AsociaciondeVecinos> a g10:Calle ;
+	g10:short_name "Avda. Asociacion de Vecinos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Tharsis> a g10:Calle ;
+	g10:short_name "Tharsis"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/IncaGarcilaso> a g10:Calle ;
+	g10:short_name "Inca Garcilaso"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Alc.M.delValle> a g10:Calle ;
+	g10:short_name "Alc. M.  del Valle"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaP.JeronimodeCordoba> a g10:Calle ;
+	g10:short_name "Plaza P. Jeronimo de Cordoba"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LasCienciasAv.> a g10:Calle ;
+	g10:short_name "Las Ciencias Av."^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Turia> a g10:Calle ;
+	g10:short_name "Avda. Turia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PuenteLaBarqueta> a g10:Calle ;
+	g10:short_name "Puente La Barqueta"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Hesperides> a g10:Calle ;
+	g10:short_name "Hesperides"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CristodeLaExpiracion> a g10:Calle ;
+	g10:short_name "Cristo de La Expiracion"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PaseoCristobalColon> a g10:Calle ;
+	g10:short_name "Paseo Cristobal Colon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Dr.Fleming> a g10:Calle ;
+	g10:short_name "Dr. Fleming"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ApeaderoSanBernardo> a g10:Calle ;
+	g10:short_name "Apeadero San Bernardo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Enramadilla> a g10:Calle ;
+	g10:short_name "Enramadilla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/VictoriaDominguez> a g10:Calle ;
+	g10:short_name "Victoria Dominguez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaSanRoman> a g10:Calle ;
+	g10:short_name "Plaza San Roman"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaPresosdeLosMerinales> a g10:Calle ;
+	g10:short_name "Glorieta Presos de Los Merinales"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.JimenezBecerril> a g10:Calle ;
+	g10:short_name "Avda. Jimenez Becerril"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondaTriana> a g10:Calle ;
+	g10:short_name "Ronda Triana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Corvina> a g10:Calle ;
+	g10:short_name "Corvina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ConcejalJimenezBecerril> a g10:Calle ;
+	g10:short_name "Concejal Jimenez Becerril"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Arjona> a g10:Calle ;
+	g10:short_name "Arjona"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaSanLazaro> a g10:Calle ;
+	g10:short_name "Glorieta San Lazaro"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JoseDiaz> a g10:Calle ;
+	g10:short_name "Jose Diaz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CorraldeLosOlmos> a g10:Calle ;
+	g10:short_name "Corral de Los Olmos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MardeAlboran> a g10:Calle ;
+	g10:short_name "Mar de Alboran"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.A3108> g10:short_name "Ctra. A-3108"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EscritorA.Grosso> a g10:Calle ;
+	g10:short_name "Escritor A. Grosso"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaHolanda> a g10:Calle ;
+	g10:short_name "Avenida Holanda"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaItalia> a g10:Calle ;
+	g10:short_name "Avenida Italia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EmilioLemosAvda> a g10:Calle ;
+	g10:short_name "Emilio Lemos  Avda"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Bergantin> a g10:Calle ;
+	g10:short_name "Bergantin"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LaFlorida> a g10:Calle ;
+	g10:short_name "La Florida"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Glta.Letonia> a g10:Calle ;
+	g10:short_name "Glta. Letonia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Alemania> a g10:Calle ;
+	g10:short_name "Avda. Alemania"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.KansasCity> a g10:Calle ;
+	g10:short_name "Av. Kansas City"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.FernandoCorral> a g10:Calle ;
+	g10:short_name "Avda. Fernando Corral"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.CiudaddeChiva> a g10:Calle ;
+	g10:short_name "Av. Ciudad de Chiva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AutoviaUtrera> a g10:Calle ;
+	g10:short_name "Autovia Utrera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/IngenieroLaCierva> a g10:Calle ;
+	g10:short_name "Ingeniero La Cierva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaLlanes> a g10:Calle ;
+	g10:short_name "Avenida Llanes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/8deMarzo> a g10:Calle ;
+	g10:short_name "8 de Marzo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaFrancia> a g10:Calle ;
+	g10:short_name "Avenida Francia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.LasLetanias> a g10:Calle ;
+	g10:short_name "Av. Las Letanias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EscultorSebastianSantos> a g10:Calle ;
+	g10:short_name "Escultor Sebastian Santos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaFinlandia> a g10:Calle ;
+	g10:short_name "Avenida Finlandia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/BuenoMonreal> a g10:Calle ;
+	g10:short_name "Bueno Monreal"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LaPalmera> a g10:Calle ;
+	g10:short_name "La Palmera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazadeLaContratacion> a g10:Calle ;
+	g10:short_name "Plaza de La Contratacion"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ReyesCatolicos> a g10:Calle ;
+	g10:short_name "Reyes Catolicos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Telegrafistas> a g10:Calle ;
+	g10:short_name "Telegrafistas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JosedeGalvez> a g10:Calle ;
+	g10:short_name "Jose de Galvez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RamondeCarranza> a g10:Calle ;
+	g10:short_name "Ramon de Carranza"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Estonia> a g10:Calle ;
+	g10:short_name "Estonia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaChapina> a g10:Calle ;
+	g10:short_name "Plaza Chapina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/BaltasardeAlcazar> a g10:Calle ;
+	g10:short_name "Baltasar de Alcazar"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstrellaVega> a g10:Calle ;
+	g10:short_name "Estrella Vega"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PradoSanSebastian> a g10:Calle ;
+	g10:short_name "Prado San Sebastian"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EscultorSeb.Santos> a g10:Calle ;
+	g10:short_name "Escultor Seb. Santos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PinoPinonero> a g10:Calle ;
+	g10:short_name "Pino Pinonero"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PinoSilvestre> a g10:Calle ;
+	g10:short_name "Pino Silvestre"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanBernardo> a g10:Calle ;
+	g10:short_name "San Bernardo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstrellaBetelgueuse> a g10:Calle ;
+	g10:short_name "Estrella Betelgueuse"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Finlandia> a g10:Calle ;
+	g10:short_name "Avda. Finlandia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Dna.MariaCoronel> a g10:Calle ;
+	g10:short_name "Dna. Maria Coronel"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/VictoriaKent> a g10:Calle ;
+	g10:short_name "Victoria Kent"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ParquedeDonana> a g10:Calle ;
+	g10:short_name "Parque de Donana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.LaBarzola> a g10:Calle ;
+	g10:short_name "Avda. La Barzola"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SantaFe> a g10:Calle ;
+	g10:short_name "Santa Fe"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstrellaBetelgeuse> a g10:Calle ;
+	g10:short_name "Estrella Betelgeuse"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Alf.LassodeLaVega> a g10:Calle ;
+	g10:short_name "Alf. Lasso de La Vega"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RamonCarande> a g10:Calle ;
+	g10:short_name "Ramon Carande"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CardenalBuenoMonreal> a g10:Calle ;
+	g10:short_name "Cardenal Bueno Monreal"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.LasCiencias> a g10:Calle ;
+	g10:short_name "Av. Las Ciencias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/VillanuevadelPitamo> a g10:Calle ;
+	g10:short_name "Villanueva del Pitamo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.IslaMenor> a g10:Calle ;
+	g10:short_name "Ctra. Isla Menor"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PalmasAltas> a g10:Calle ;
+	g10:short_name "Palmas Altas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Dr.Fedriani> a g10:Calle ;
+	g10:short_name "Dr. Fedriani"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Alondra> a g10:Calle ;
+	g10:short_name "Alondra"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Santander> a g10:Calle ;
+	g10:short_name "Santander"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JesusdelGranPoder> a g10:Calle ;
+	g10:short_name "Jesus del Gran Poder"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Luna> a g10:Calle ;
+	g10:short_name "Luna"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Crta.LaEsclusa> a g10:Calle ;
+	g10:short_name "Crta. La Esclusa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.SuEminencia(CastillodeMarcheni> a g10:Calle ;
+	g10:short_name "Ctra. Su Eminencia (Castillo de Marcheni"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Roma> a g10:Calle ;
+	g10:short_name "Avda.Roma"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstrechodeMagallanes> a g10:Calle ;
+	g10:short_name "Estrecho de Magallanes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.Jerez> g10:short_name "Av.Jerez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/J.A.Cavestany> a g10:Calle ;
+	g10:short_name "J.A. Cavestany"^^<xsd:string> , "J.A.Cavestany"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Prado> a g10:Calle ;
+	g10:short_name "Prado"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaDuque> a g10:Calle ;
+	g10:short_name "Plaza Duque"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ArchivodeIndias> a g10:Calle ;
+	g10:short_name "Archivo de Indias"^^<xsd:string> .

@@ -1,0 +1,370 @@
+@prefix : <http://www.semanticweb.org/webSemantica/grupo02/vocabulary#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/webSemantica/grupo02/vocabulary> .
+
+<http://www.semanticweb.org/webSemantica/grupo02/vocabulary> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneDireccion-Banio
+
+:tieneDireccion-Banio rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:domain :Banio ;
+                      
+                      rdfs:range :Direccion .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneDireccion-Restaurante
+
+:tieneDireccion-Restaurante rdf:type owl:ObjectProperty ;
+                            
+                            rdfs:domain :Restaurante ;
+                            
+                            rdfs:range :Restaurante .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneLinea
+
+:tieneLinea rdf:type owl:ObjectProperty ;
+            
+            rdfs:range :Linea ;
+            
+            rdfs:domain :Parada_metro .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#administradoPor
+
+:administradoPor rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:domain :Banio ;
+                 
+                 rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneAreaParada
+
+:tieneAreaParada rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:domain :Parada_bus ;
+                 
+                 rdfs:range xsd:Name .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneBaniosFamiliares
+
+:tieneBaniosFamiliares rdf:type owl:DatatypeProperty ;
+                       
+                       rdfs:domain :Banio ;
+                       
+                       rdfs:range xsd:boolean .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneCambiador
+
+:tieneCambiador rdf:type owl:DatatypeProperty ;
+                
+                rdfs:domain :Banio ;
+                
+                rdfs:range xsd:boolean .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneCambiadorDeBebe
+
+:tieneCambiadorDeBebe rdf:type owl:DatatypeProperty ;
+                      
+                      rdfs:domain :Banio ;
+                      
+                      rdfs:range xsd:boolean .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneCategoria
+
+:tieneCategoria rdf:type owl:DatatypeProperty ;
+                
+                rdfs:domain :Restaurante ;
+                
+                rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneCategoriaAccesible
+
+:tieneCategoriaAccesible rdf:type owl:DatatypeProperty ;
+                         
+                         rdfs:domain :Banio ;
+                         
+                         rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneCodigoDeParada
+
+:tieneCodigoDeParada rdf:type owl:DatatypeProperty ;
+                     
+                     rdfs:domain :Parada_bus ;
+                     
+                     rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneCodigoPostal
+
+:tieneCodigoPostal rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:domain :Banio ,
+                               :Parada_metro ;
+                   
+                   rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneCoordenada-X
+
+:tieneCoordenada-X rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:domain :Banio ,
+                               :Parada ;
+                   
+                   rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneCoordenada-Y
+
+:tieneCoordenada-Y rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:domain :Banio ,
+                               :Parada ;
+                   
+                   rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneCritica
+
+:tieneCritica rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :Restaurante ;
+              
+              rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneDetalles
+
+:tieneDetalles rdf:type owl:DatatypeProperty ;
+               
+               rdfs:domain :Restaurante ;
+               
+               rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneEmailDeContacto
+
+:tieneEmailDeContacto rdf:type owl:DatatypeProperty ;
+                      
+                      rdfs:domain :Banio ;
+                      
+                      rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneHoraDeApertura
+
+:tieneHoraDeApertura rdf:type owl:DatatypeProperty ;
+                     
+                     rdfs:domain :Banio ;
+                     
+                     rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneLatitud
+
+:tieneLatitud rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :Parada_metro ,
+                          :Restaurante ;
+              
+              rdfs:range xsd:double .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneLocalizacion
+
+:tieneLocalizacion rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:domain :Restaurante ;
+                   
+                   rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneLongitud
+
+:tieneLongitud rdf:type owl:DatatypeProperty ;
+               
+               rdfs:domain :Parada_metro ,
+                           :Restaurante ;
+               
+               rdfs:range xsd:double .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneNombre
+
+:tieneNombre rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :Parada ,
+                         :Restaurante ;
+             
+             rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneNotas
+
+:tieneNotas rdf:type owl:DatatypeProperty ;
+            
+            rdfs:domain :Banio ;
+            
+            rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneParadasAdyacentes
+
+:tieneParadasAdyacentes rdf:type owl:DatatypeProperty ;
+                        
+                        rdfs:domain :Parada_metro ;
+                        
+                        rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneSentido
+
+:tieneSentido rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :Parada_bus ;
+              
+              rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneServicio
+
+:tieneServicio rdf:type owl:DatatypeProperty ;
+               
+               rdfs:domain :Banio ;
+               
+               rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneTelefonoDeContacto
+
+:tieneTelefonoDeContacto rdf:type owl:DatatypeProperty ;
+                         
+                         rdfs:domain :Banio ;
+                         
+                         rdfs:range xsd:integer .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#tieneZona
+
+:tieneZona rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :Parada_metro ;
+           
+           rdfs:range xsd:integer .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#Banio
+
+:Banio rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#Direccion
+
+:Direccion rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#Linea
+
+:Linea rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#Parada
+
+:Parada rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#Parada_bus
+
+:Parada_bus rdf:type owl:Class ;
+            
+            rdfs:subClassOf :Parada .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#Parada_metro
+
+:Parada_metro rdf:type owl:Class ;
+              
+              rdfs:subClassOf :Parada .
+
+
+
+###  http://www.semanticweb.org/webSemantica/grupo02/vocabulary#Restaurante
+
+:Restaurante rdf:type owl:Class .
+
+
+
+
+###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net

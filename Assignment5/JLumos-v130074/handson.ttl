@@ -1,0 +1,20 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix my_vocabulary: <http://assignment5.linkeddata.es/my_vocabulary#> .
+@prefix my_instances: <http://assignment5.linkeddata.es/instances/> .
+@base <http://assignment5.linkeddata.es> .
+
+
+<TriplesMapCity>
+	a rr:TriplesMap;
+
+	rr:logicalTable [ rr:tableName "city"];
+
+	rr:subjectMap [ rr:termType rr:IRI;
+		rr:template "http://assignment5.linkeddata.es/city/ontology#Instances/{ID}";
+		rr:class myVocabulary:City
+	];
+
+	rr:predicateObjectMap [
+		rr:predicateMap [ rr:constant my_vocabulary:hasPopulation ] ;
+		rr:objectMap 	[rr:termType rr:Literal; rr:column "population"; ];
+	] .

@@ -1,0 +1,2280 @@
+@prefix db: <> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+<http://grupo64.es/film_locations/Coit_Tower> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "After the Thin Man" ;
+	<http://grupo64.es/hasFilmingLocation> "Coit Tower" ;
+	<http://grupo64.es/hasDirector> "W.S. Van Dyke" ;
+	<http://grupo64.es/hasWriter> "Frances Goodrich" ;
+	owl:sameAs "http://dbpedia.org/resource/W._S._Van_Dyke" .
+
+<http://grupo64.es/film_locations/Cliff_House> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Alexander's Ragtime Band" ;
+	<http://grupo64.es/hasFilmingLocation> "Cliff House" ;
+	<http://grupo64.es/hasDirector> "Henry King" ;
+	<http://grupo64.es/hasWriter> "Kathryn Scola" ;
+	owl:sameAs "http://dbpedia.org/resource/Henry_King_(director)" .
+
+<http://grupo64.es/film_locations/San_Francisco_Bay> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Alexander's Ragtime Band" ;
+	<http://grupo64.es/hasFilmingLocation> "San Francisco Bay" ;
+	<http://grupo64.es/hasDirector> "Henry King" ;
+	<http://grupo64.es/hasWriter> "Kathryn Scola" ;
+	owl:sameAs "http://dbpedia.org/resource/Henry_King_(director)" .
+
+<http://grupo64.es/film_locations/Fairmont_Hotel> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Alexander's Ragtime Band" ;
+	<http://grupo64.es/hasFilmingLocation> "Fairmont Hotel" ;
+	<http://grupo64.es/hasDirector> "Henry King" ;
+	<http://grupo64.es/hasWriter> "Kathryn Scola" ;
+	owl:sameAs "http://dbpedia.org/resource/Henry_King_(director)" .
+
+<http://grupo64.es/film_locations/City_Hall> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Bicentennial Man" ;
+	<http://grupo64.es/hasFilmingLocation> "City Hall" ;
+	<http://grupo64.es/hasDirector> "Chris Columbus" ;
+	<http://grupo64.es/hasWriter> "Nicholas Kazan" ;
+	owl:sameAs "http://dbpedia.org/resource/Chris_Columbus_(filmmaker)" .
+
+<http://grupo64.es/film_locations/Golden_Gate_Bridge> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Bicentennial Man" ;
+	<http://grupo64.es/hasFilmingLocation> "Golden Gate Bridge" ;
+	<http://grupo64.es/hasDirector> "Chris Columbus" ;
+	<http://grupo64.es/hasWriter> "Nicholas Kazan" ;
+	owl:sameAs "http://dbpedia.org/resource/Chris_Columbus_(filmmaker)" .
+
+<http://grupo64.es/film_locations/Treasure_Island> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Bicentennial Man" ;
+	<http://grupo64.es/hasFilmingLocation> "Treasure Island" ;
+	<http://grupo64.es/hasDirector> "Chris Columbus" ;
+	<http://grupo64.es/hasWriter> "Nicholas Kazan" ;
+	owl:sameAs "http://dbpedia.org/resource/Chris_Columbus_(filmmaker)" .
+
+<http://grupo64.es/film_locations/Postcard_Row> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Bicentennial Man" ;
+	<http://grupo64.es/hasFilmingLocation> "Postcard Row" ;
+	<http://grupo64.es/hasDirector> "Chris Columbus" ;
+	<http://grupo64.es/hasWriter> "Nicholas Kazan" ;
+	owl:sameAs "http://dbpedia.org/resource/Chris_Columbus_(filmmaker)" .
+
+<http://grupo64.es/film_locations/Grace_Cathedral_Episcopal_Church> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Bicentennial Man" ;
+	<http://grupo64.es/hasFilmingLocation> "Grace Cathedral Episcopal Church" ;
+	<http://grupo64.es/hasDirector> "Chris Columbus" ;
+	<http://grupo64.es/hasWriter> "Nicholas Kazan" ;
+	owl:sameAs "http://dbpedia.org/resource/Chris_Columbus_(filmmaker)" .
+
+<http://grupo64.es/film_locations/Nobles_Alley> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Big Eyes" ;
+	<http://grupo64.es/hasFilmingLocation> "Nobles Alley" ;
+	<http://grupo64.es/hasDirector> "Tim Burton" ;
+	<http://grupo64.es/hasWriter> "Scott Alexander" ;
+	owl:sameAs "http://dbpedia.org/resource/Tim_Burton" .
+
+<http://grupo64.es/film_locations/Caffe_Trieste> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Big Eyes" ;
+	<http://grupo64.es/hasFilmingLocation> "Caffe Trieste" ;
+	<http://grupo64.es/hasDirector> "Tim Burton" ;
+	<http://grupo64.es/hasWriter> "Scott Alexander" ;
+	owl:sameAs "http://dbpedia.org/resource/Tim_Burton" .
+
+<http://grupo64.es/film_locations/Palace_of_Fine_Arts> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Big Eyes" ;
+	<http://grupo64.es/hasFilmingLocation> "Palace of Fine Arts" ;
+	<http://grupo64.es/hasDirector> "Tim Burton" ;
+	<http://grupo64.es/hasWriter> "Scott Alexander" ;
+	owl:sameAs "http://dbpedia.org/resource/Tim_Burton" .
+
+<http://grupo64.es/film_locations/1101_Filbert_St.> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Big Eyes" ;
+	<http://grupo64.es/hasFilmingLocation> "1101 Filbert St." ;
+	<http://grupo64.es/hasDirector> "Tim Burton" ;
+	<http://grupo64.es/hasWriter> "Scott Alexander" ;
+	owl:sameAs "http://dbpedia.org/resource/Tim_Burton" .
+
+<http://grupo64.es/film_locations/Saints_Peter_&_Paul_Church> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Big Eyes" ;
+	<http://grupo64.es/hasFilmingLocation> "Saints Peter & Paul Church" ;
+	<http://grupo64.es/hasDirector> "Tim Burton" ;
+	<http://grupo64.es/hasWriter> "Scott Alexander" ;
+	owl:sameAs "http://dbpedia.org/resource/Tim_Burton" .
+
+<http://grupo64.es/film_locations/Green_St._&_Grant_Ave.> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Big Eyes" ;
+	<http://grupo64.es/hasFilmingLocation> "Green St. & Grant Ave." ;
+	<http://grupo64.es/hasDirector> "Tim Burton" ;
+	<http://grupo64.es/hasWriter> "Scott Alexander" ;
+	owl:sameAs "http://dbpedia.org/resource/Tim_Burton" .
+
+<http://grupo64.es/film_locations/Filbert_St._&_Leavenworth> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Big Eyes" ;
+	<http://grupo64.es/hasFilmingLocation> "Filbert St. & Leavenworth" ;
+	<http://grupo64.es/hasDirector> "Tim Burton" ;
+	<http://grupo64.es/hasWriter> "Scott Alexander" ;
+	owl:sameAs "http://dbpedia.org/resource/Tim_Burton" .
+
+<http://grupo64.es/film_locations/Pine_St._&_Grant> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Big Eyes" ;
+	<http://grupo64.es/hasFilmingLocation> "Pine St. & Grant" ;
+	<http://grupo64.es/hasDirector> "Tim Burton" ;
+	<http://grupo64.es/hasWriter> "Scott Alexander" ;
+	owl:sameAs "http://dbpedia.org/resource/Tim_Burton" .
+
+<http://grupo64.es/film_locations/Way_Faire_Inn_on_Leidesdorff> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Big Eyes" ;
+	<http://grupo64.es/hasFilmingLocation> "Way Faire Inn on Leidesdorff" ;
+	<http://grupo64.es/hasDirector> "Tim Burton" ;
+	<http://grupo64.es/hasWriter> "Scott Alexander" ;
+	owl:sameAs "http://dbpedia.org/resource/Tim_Burton" .
+
+<http://grupo64.es/film_locations/Harry's_Bar_on_Fillmore> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Big Eyes" ;
+	<http://grupo64.es/hasFilmingLocation> "Harry's Bar on Fillmore" ;
+	<http://grupo64.es/hasDirector> "Tim Burton" ;
+	<http://grupo64.es/hasWriter> "Scott Alexander" ;
+	owl:sameAs "http://dbpedia.org/resource/Tim_Burton" .
+
+<http://grupo64.es/film_locations/Alcatraz_Island> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Birdman of Alcatraz" ;
+	<http://grupo64.es/hasFilmingLocation> "Alcatraz Island" ;
+	<http://grupo64.es/hasDirector> "John Frankenheimer" ;
+	<http://grupo64.es/hasWriter> "Guy Trosper" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Frankenheimer" .
+
+<http://grupo64.es/film_locations/Pier_43_1/2> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Birdman of Alcatraz" ;
+	<http://grupo64.es/hasFilmingLocation> "Pier 43 1/2" ;
+	<http://grupo64.es/hasDirector> "John Frankenheimer" ;
+	<http://grupo64.es/hasWriter> "Guy Trosper" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Frankenheimer" .
+
+<http://grupo64.es/film_locations/101_Henry_Adams_Place> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Can't Stop the Music" ;
+	<http://grupo64.es/hasFilmingLocation> "101 Henry Adams Place" ;
+	<http://grupo64.es/hasDirector> "Nancy Walker" ;
+	<http://grupo64.es/hasWriter> "Allan Carr" ;
+	owl:sameAs "http://dbpedia.org/resource/Nancy_Walker" .
+
+<http://grupo64.es/film_locations/San_Francisco_Public_Library_Main_Branch> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "City of Angels" ;
+	<http://grupo64.es/hasFilmingLocation> "San Francisco Public Library Main Branch" ;
+	<http://grupo64.es/hasDirector> "Brad Silberling" ;
+	<http://grupo64.es/hasWriter> "Dana Stevens" ;
+	owl:sameAs "http://dbpedia.org/resource/Brad_Silberling" .
+
+<http://grupo64.es/film_locations/The_Castro> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Common Threads: Stories From the Quilt" ;
+	<http://grupo64.es/hasFilmingLocation> "The Castro" ;
+	<http://grupo64.es/hasDirector> "Rob Epstein" ;
+	<http://grupo64.es/hasWriter> "Jeffrey Friedman" ;
+	owl:sameAs "http://dbpedia.org/resource/Rob_Epstein" .
+
+<http://grupo64.es/film_locations/University_Club> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dawn of the Planet of the Apes" ;
+	<http://grupo64.es/hasFilmingLocation> "University Club" ;
+	<http://grupo64.es/hasDirector> "Matt Reeves" ;
+	<http://grupo64.es/hasWriter> "Rick Jaffa" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Matt_Reeves" .
+
+<http://grupo64.es/film_locations/Filbert_St._from_Hyde_to_Leavenworth> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dawn of the Planet of the Apes" ;
+	<http://grupo64.es/hasFilmingLocation> "Filbert St. from Hyde to Leavenworth" ;
+	<http://grupo64.es/hasDirector> "Matt Reeves" ;
+	<http://grupo64.es/hasWriter> "Rick Jaffa" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Matt_Reeves" .
+
+<http://grupo64.es/film_locations/California_St_from_Mason_to_Kearny> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dawn of the Planet of the Apes" ;
+	<http://grupo64.es/hasFilmingLocation> "California St from Mason to Kearny" ;
+	<http://grupo64.es/hasDirector> "Matt Reeves" ;
+	<http://grupo64.es/hasWriter> "Rick Jaffa" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Matt_Reeves" .
+
+<http://grupo64.es/film_locations/City_Hall> <http://grupo64.es/hasOriginalTitle> "Dawn of the Planet of the Apes" ;
+	<http://grupo64.es/hasDirector> "Matt Reeves" ;
+	<http://grupo64.es/hasWriter> "Rick Jaffa" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Matt_Reeves" .
+
+<http://grupo64.es/film_locations/Alioto_Park> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dawn of the Planet of the Apes" ;
+	<http://grupo64.es/hasFilmingLocation> "Alioto Park" ;
+	<http://grupo64.es/hasDirector> "Matt Reeves" ;
+	<http://grupo64.es/hasWriter> "Rick Jaffa" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Matt_Reeves" .
+
+<http://grupo64.es/film_locations/California_&_Powell> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dawn of the Planet of the Apes" ;
+	<http://grupo64.es/hasFilmingLocation> "California & Powell" ;
+	<http://grupo64.es/hasDirector> "Matt Reeves" ;
+	<http://grupo64.es/hasWriter> "Rick Jaffa" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Matt_Reeves" .
+
+<http://grupo64.es/film_locations/Columbus_&_Pacific_Ave> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dawn of the Planet of the Apes" ;
+	<http://grupo64.es/hasFilmingLocation> "Columbus & Pacific Ave" ;
+	<http://grupo64.es/hasDirector> "Matt Reeves" ;
+	<http://grupo64.es/hasWriter> "Rick Jaffa" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Matt_Reeves" .
+
+<http://grupo64.es/film_locations/Marina_Green> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "Marina Green" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Washington_Square> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "Washington Square" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/The_Embarcadero> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "The Embarcadero" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/St._Peter_&_Paul's_Church> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "St. Peter & Paul's Church" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/San_Francisco_Drydock> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "San Francisco Drydock" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Portsmouth_Square> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "Portsmouth Square" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Mt._Davidson_Cross,_Mt._Davidson> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "Mt. Davidson Cross, Mt. Davidson" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Mission_Dolores_Park> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "Mission Dolores Park" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Kezar_Stadium,_Golden_Gate_Park> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "Kezar Stadium, Golden Gate Park" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Holiday_Inn_Select_Downtown_Hotel> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "Holiday Inn Select Downtown Hotel" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Hall_of_Justice> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "Hall of Justice" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Forest_Hill_Station-_MUNI> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "Forest Hill Station- MUNI" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Dante_Building> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "Dante Building" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/California_Hall> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "California Hall" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Bank_of_America_Building> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Dirty Harry" ;
+	<http://grupo64.es/hasFilmingLocation> "Bank of America Building" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Webster_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Doctor Dolittle" ;
+	<http://grupo64.es/hasFilmingLocation> "Webster Street" ;
+	<http://grupo64.es/hasDirector> "Betty Thomas" ;
+	<http://grupo64.es/hasWriter> "Nat Mauldin" ;
+	owl:sameAs "http://dbpedia.org/resource/Betty_Thomas" .
+
+<http://grupo64.es/film_locations/Telegraph_Hill_Blvd> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Doctor Dolittle" ;
+	<http://grupo64.es/hasFilmingLocation> "Telegraph Hill Blvd" ;
+	<http://grupo64.es/hasDirector> "Betty Thomas" ;
+	<http://grupo64.es/hasWriter> "Nat Mauldin" ;
+	owl:sameAs "http://dbpedia.org/resource/Betty_Thomas" .
+
+<http://grupo64.es/film_locations/Larkin_&_Hyde_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Doctor Dolittle" ;
+	<http://grupo64.es/hasFilmingLocation> "Larkin & Hyde Streets" ;
+	<http://grupo64.es/hasDirector> "Betty Thomas" ;
+	<http://grupo64.es/hasWriter> "Nat Mauldin" ;
+	owl:sameAs "http://dbpedia.org/resource/Betty_Thomas" .
+
+<http://grupo64.es/film_locations/Gabbiano's_Restaurant> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Doctor Dolittle" ;
+	<http://grupo64.es/hasFilmingLocation> "Gabbiano's Restaurant" ;
+	<http://grupo64.es/hasDirector> "Betty Thomas" ;
+	<http://grupo64.es/hasWriter> "Nat Mauldin" ;
+	owl:sameAs "http://dbpedia.org/resource/Betty_Thomas" .
+
+<http://grupo64.es/film_locations/Coit_Tower> <http://grupo64.es/hasOriginalTitle> "Doctor Dolittle" ;
+	<http://grupo64.es/hasDirector> "Betty Thomas" ;
+	<http://grupo64.es/hasWriter> "Nat Mauldin" ;
+	owl:sameAs "http://dbpedia.org/resource/Betty_Thomas" .
+
+<http://grupo64.es/film_locations/2107_Union_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Doctor Dolittle" ;
+	<http://grupo64.es/hasFilmingLocation> "2107 Union Street" ;
+	<http://grupo64.es/hasDirector> "Betty Thomas" ;
+	<http://grupo64.es/hasWriter> "Nat Mauldin" ;
+	owl:sameAs "http://dbpedia.org/resource/Betty_Thomas" .
+
+<http://grupo64.es/film_locations/2100_Green_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Doctor Dolittle" ;
+	<http://grupo64.es/hasFilmingLocation> "2100 Green Street" ;
+	<http://grupo64.es/hasDirector> "Betty Thomas" ;
+	<http://grupo64.es/hasWriter> "Nat Mauldin" ;
+	owl:sameAs "http://dbpedia.org/resource/Betty_Thomas" .
+
+<http://grupo64.es/film_locations/Roaring_Twenties_Nightclub> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Experiment in Terror" ;
+	<http://grupo64.es/hasFilmingLocation> "Roaring Twenties Nightclub" ;
+	<http://grupo64.es/hasDirector> "Blake Edwards" ;
+	<http://grupo64.es/hasWriter> "The Gordons" ;
+	owl:sameAs "http://dbpedia.org/resource/Blake_Edwards" .
+
+<http://grupo64.es/film_locations/Palace_of_Fine_Arts> <http://grupo64.es/hasOriginalTitle> "Edtv" ;
+	<http://grupo64.es/hasDirector> "Ron Howard" ;
+	<http://grupo64.es/hasWriter> "Lowell Ganz" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Ron_Howard" .
+
+<http://grupo64.es/film_locations/Moose's_Restaurant> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Edtv" ;
+	<http://grupo64.es/hasFilmingLocation> "Moose's Restaurant" ;
+	<http://grupo64.es/hasDirector> "Ron Howard" ;
+	<http://grupo64.es/hasWriter> "Lowell Ganz" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Ron_Howard" .
+
+<http://grupo64.es/film_locations/Mario's_Bohemian_Cigar_Store> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Edtv" ;
+	<http://grupo64.es/hasFilmingLocation> "Mario's Bohemian Cigar Store" ;
+	<http://grupo64.es/hasDirector> "Ron Howard" ;
+	<http://grupo64.es/hasWriter> "Lowell Ganz" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Ron_Howard" .
+
+<http://grupo64.es/film_locations/Center_for_the_Arts,_Yerba_Buena_Gardens> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Edtv" ;
+	<http://grupo64.es/hasFilmingLocation> "Center for the Arts, Yerba Buena Gardens" ;
+	<http://grupo64.es/hasDirector> "Ron Howard" ;
+	<http://grupo64.es/hasWriter> "Lowell Ganz" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Ron_Howard" .
+
+<http://grupo64.es/film_locations/Castro_Theatre> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Edtv" ;
+	<http://grupo64.es/hasFilmingLocation> "Castro Theatre" ;
+	<http://grupo64.es/hasDirector> "Ron Howard" ;
+	<http://grupo64.es/hasWriter> "Lowell Ganz" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Ron_Howard" .
+
+<http://grupo64.es/film_locations/20th_&_Connecticut_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Edtv" ;
+	<http://grupo64.es/hasFilmingLocation> "20th & Connecticut Streets" ;
+	<http://grupo64.es/hasDirector> "Ron Howard" ;
+	<http://grupo64.es/hasWriter> "Lowell Ganz" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Ron_Howard" .
+
+<http://grupo64.es/film_locations/19_Green_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Edtv" ;
+	<http://grupo64.es/hasFilmingLocation> "19 Green Street" ;
+	<http://grupo64.es/hasDirector> "Ron Howard" ;
+	<http://grupo64.es/hasWriter> "Lowell Ganz" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Ron_Howard" .
+
+<http://grupo64.es/film_locations/1138_Filbert_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Edtv" ;
+	<http://grupo64.es/hasFilmingLocation> "1138 Filbert Street" ;
+	<http://grupo64.es/hasDirector> "Ron Howard" ;
+	<http://grupo64.es/hasWriter> "Lowell Ganz" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Ron_Howard" .
+
+<http://grupo64.es/film_locations/North_Beach_Video> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Edtv" ;
+	<http://grupo64.es/hasFilmingLocation> "North Beach Video" ;
+	<http://grupo64.es/hasDirector> "Ron Howard" ;
+	<http://grupo64.es/hasWriter> "Lowell Ganz" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Ron_Howard" .
+
+<http://grupo64.es/film_locations/George_Washington_High_School> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Experiment in Terror" ;
+	<http://grupo64.es/hasFilmingLocation> "George Washington High School" ;
+	<http://grupo64.es/hasDirector> "Blake Edwards" ;
+	<http://grupo64.es/hasWriter> "The Gordons" ;
+	owl:sameAs "http://dbpedia.org/resource/Blake_Edwards" .
+
+<http://grupo64.es/film_locations/Wells_Fargo_Bank> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Experiment in Terror" ;
+	<http://grupo64.es/hasFilmingLocation> "Wells Fargo Bank" ;
+	<http://grupo64.es/hasDirector> "Blake Edwards" ;
+	<http://grupo64.es/hasWriter> "The Gordons" ;
+	owl:sameAs "http://dbpedia.org/resource/Blake_Edwards" .
+
+<http://grupo64.es/film_locations/The_Sea_Captain's_Chest> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Experiment in Terror" ;
+	<http://grupo64.es/hasFilmingLocation> "The Sea Captain's Chest" ;
+	<http://grupo64.es/hasDirector> "Blake Edwards" ;
+	<http://grupo64.es/hasWriter> "The Gordons" ;
+	owl:sameAs "http://dbpedia.org/resource/Blake_Edwards" .
+
+<http://grupo64.es/film_locations/Sheraton_Palace_Hotel> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Experiment in Terror" ;
+	<http://grupo64.es/hasFilmingLocation> "Sheraton Palace Hotel" ;
+	<http://grupo64.es/hasDirector> "Blake Edwards" ;
+	<http://grupo64.es/hasWriter> "The Gordons" ;
+	owl:sameAs "http://dbpedia.org/resource/Blake_Edwards" .
+
+<http://grupo64.es/film_locations/Candlestick_Park> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Experiment in Terror" ;
+	<http://grupo64.es/hasFilmingLocation> "Candlestick Park" ;
+	<http://grupo64.es/hasDirector> "Blake Edwards" ;
+	<http://grupo64.es/hasWriter> "The Gordons" ;
+	owl:sameAs "http://dbpedia.org/resource/Blake_Edwards" .
+
+<http://grupo64.es/film_locations/2632_Larkin_Street_at_Lombard> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Experiment in Terror" ;
+	<http://grupo64.es/hasFilmingLocation> "2632 Larkin Street at Lombard" ;
+	<http://grupo64.es/hasDirector> "Blake Edwards" ;
+	<http://grupo64.es/hasWriter> "The Gordons" ;
+	owl:sameAs "http://dbpedia.org/resource/Blake_Edwards" .
+
+<http://grupo64.es/film_locations/100_St._Germain_Avenue> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Experiment in Terror" ;
+	<http://grupo64.es/hasFilmingLocation> "100 St. Germain Avenue" ;
+	<http://grupo64.es/hasDirector> "Blake Edwards" ;
+	<http://grupo64.es/hasWriter> "The Gordons" ;
+	owl:sameAs "http://dbpedia.org/resource/Blake_Edwards" .
+
+<http://grupo64.es/film_locations/1_Montgomery_Street_at_Post> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Experiment in Terror" ;
+	<http://grupo64.es/hasFilmingLocation> "1 Montgomery Street at Post" ;
+	<http://grupo64.es/hasDirector> "Blake Edwards" ;
+	<http://grupo64.es/hasWriter> "The Gordons" ;
+	owl:sameAs "http://dbpedia.org/resource/Blake_Edwards" .
+
+<http://grupo64.es/film_locations/Grace_Cathedral_Episcopal_Church> <http://grupo64.es/hasOriginalTitle> "Family Plot" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Ernest Lehman" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/Fairmont_Hotel> <http://grupo64.es/hasOriginalTitle> "Family Plot" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Ernest Lehman" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/2230_Sacramento_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Family Plot" ;
+	<http://grupo64.es/hasFilmingLocation> "2230 Sacramento Street" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Ernest Lehman" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/Nob_Hill> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Family Plot" ;
+	<http://grupo64.es/hasFilmingLocation> "Nob Hill" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Ernest Lehman" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/Golden_Gate_Bridge> <http://grupo64.es/hasOriginalTitle> "Flower Drum Song" ;
+	<http://grupo64.es/hasDirector> "Henry Koster" ;
+	<http://grupo64.es/hasWriter> "Joseph Fields" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Henry_Koster_(botánico)" .
+
+<http://grupo64.es/film_locations/Chinatown> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Flower Drum Song" ;
+	<http://grupo64.es/hasFilmingLocation> "Chinatown" ;
+	<http://grupo64.es/hasDirector> "Henry Koster" ;
+	<http://grupo64.es/hasWriter> "Joseph Fields" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Henry_Koster_(botánico)" .
+
+<http://grupo64.es/film_locations/Treasure_Island> <http://grupo64.es/hasOriginalTitle> "Flubber" ;
+	<http://grupo64.es/hasDirector> "Les Mayfield" ;
+	<http://grupo64.es/hasWriter> "Samuel W. Taylor" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Les_Mayfield" .
+
+<http://grupo64.es/film_locations/Palace_of_Fine_Arts> <http://grupo64.es/hasOriginalTitle> "Forrest Gump" ;
+	<http://grupo64.es/hasDirector> "Robert Zemeckis" ;
+	<http://grupo64.es/hasWriter> "Eric Roth" ;
+	owl:sameAs "http://dbpedia.org/resource/Robert_Zemeckis" .
+
+<http://grupo64.es/film_locations/The_Walden_House,_Buena_Vista_Park> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "40 Days and 40 Nights" ;
+	<http://grupo64.es/hasFilmingLocation> "The Walden House, Buena Vista Park" ;
+	<http://grupo64.es/hasDirector> "Michael Lehmann" ;
+	<http://grupo64.es/hasWriter> "Robert Perez" ;
+	owl:sameAs "http://dbpedia.org/resource/Michael_Lehmann" .
+
+<http://grupo64.es/film_locations/Caf��_Trieste> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "40 Days and 40 Nights" ;
+	<http://grupo64.es/hasFilmingLocation> "Caf�� Trieste" ;
+	<http://grupo64.es/hasDirector> "Michael Lehmann" ;
+	<http://grupo64.es/hasWriter> "Robert Perez" ;
+	owl:sameAs "http://dbpedia.org/resource/Michael_Lehmann" .
+
+<http://grupo64.es/film_locations/The_Barbary_Coast> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Gentleman Jim" ;
+	<http://grupo64.es/hasFilmingLocation> "The Barbary Coast" ;
+	<http://grupo64.es/hasDirector> "Raoul Walsh" ;
+	<http://grupo64.es/hasWriter> "Vincent Lawrence" ;
+	owl:sameAs "http://dbpedia.org/resource/Raoul_Walsh" .
+
+<http://grupo64.es/film_locations/755_Vallejo_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "George of the Jungle" ;
+	<http://grupo64.es/hasFilmingLocation> "755 Vallejo Street" ;
+	<http://grupo64.es/hasDirector> "Sam Weisman" ;
+	<http://grupo64.es/hasWriter> "Jay Ward" ;
+	owl:sameAs "http://dbpedia.org/resource/Sam_Weisman" .
+
+<http://grupo64.es/film_locations/The_Tamalpais_Building> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "George of the Jungle" ;
+	<http://grupo64.es/hasFilmingLocation> "The Tamalpais Building" ;
+	<http://grupo64.es/hasDirector> "Sam Weisman" ;
+	<http://grupo64.es/hasWriter> "Jay Ward" ;
+	owl:sameAs "http://dbpedia.org/resource/Sam_Weisman" .
+
+<http://grupo64.es/film_locations/Neiman_Marcus> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "George of the Jungle" ;
+	<http://grupo64.es/hasFilmingLocation> "Neiman Marcus" ;
+	<http://grupo64.es/hasDirector> "Sam Weisman" ;
+	<http://grupo64.es/hasWriter> "Jay Ward" ;
+	owl:sameAs "http://dbpedia.org/resource/Sam_Weisman" .
+
+<http://grupo64.es/film_locations/First_Bank> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "George of the Jungle" ;
+	<http://grupo64.es/hasFilmingLocation> "First Bank" ;
+	<http://grupo64.es/hasDirector> "Sam Weisman" ;
+	<http://grupo64.es/hasWriter> "Jay Ward" ;
+	owl:sameAs "http://dbpedia.org/resource/Sam_Weisman" .
+
+<http://grupo64.es/film_locations/Bay_Bridge> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "George of the Jungle" ;
+	<http://grupo64.es/hasFilmingLocation> "Bay Bridge" ;
+	<http://grupo64.es/hasDirector> "Sam Weisman" ;
+	<http://grupo64.es/hasWriter> "Jay Ward" ;
+	owl:sameAs "http://dbpedia.org/resource/Sam_Weisman" .
+
+<http://grupo64.es/film_locations/War_Memorial_Building> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Getting Even with Dad" ;
+	<http://grupo64.es/hasFilmingLocation> "War Memorial Building" ;
+	<http://grupo64.es/hasDirector> "Howard Deutch" ;
+	<http://grupo64.es/hasWriter> "Tom S. Parker" ;
+	owl:sameAs "http://dbpedia.org/resource/Howard_Deutch" .
+
+<http://grupo64.es/film_locations/Transbay_Terminal> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Getting Even with Dad" ;
+	<http://grupo64.es/hasFilmingLocation> "Transbay Terminal" ;
+	<http://grupo64.es/hasDirector> "Howard Deutch" ;
+	<http://grupo64.es/hasWriter> "Tom S. Parker" ;
+	owl:sameAs "http://dbpedia.org/resource/Howard_Deutch" .
+
+<http://grupo64.es/film_locations/140_Maiden_Lane> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Getting Even with Dad" ;
+	<http://grupo64.es/hasFilmingLocation> "140 Maiden Lane" ;
+	<http://grupo64.es/hasDirector> "Howard Deutch" ;
+	<http://grupo64.es/hasWriter> "Tom S. Parker" ;
+	owl:sameAs "http://dbpedia.org/resource/Howard_Deutch" .
+
+<http://grupo64.es/film_locations/St._Peter_&_Paul's_Church> <http://grupo64.es/hasOriginalTitle> "Getting Even with Dad" ;
+	<http://grupo64.es/hasDirector> "Howard Deutch" ;
+	<http://grupo64.es/hasWriter> "Tom S. Parker" ;
+	owl:sameAs "http://dbpedia.org/resource/Howard_Deutch" .
+
+<http://grupo64.es/film_locations/Neiman_Marcus> <http://grupo64.es/hasOriginalTitle> "Getting Even with Dad" ;
+	<http://grupo64.es/hasDirector> "Howard Deutch" ;
+	<http://grupo64.es/hasWriter> "Tom S. Parker" ;
+	owl:sameAs "http://dbpedia.org/resource/Howard_Deutch" .
+
+<http://grupo64.es/film_locations/Mason_Street_at_Jackson> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Getting Even with Dad" ;
+	<http://grupo64.es/hasFilmingLocation> "Mason Street at Jackson" ;
+	<http://grupo64.es/hasDirector> "Howard Deutch" ;
+	<http://grupo64.es/hasWriter> "Tom S. Parker" ;
+	owl:sameAs "http://dbpedia.org/resource/Howard_Deutch" .
+
+<http://grupo64.es/film_locations/M.H._de_Young_Memorial_Museum> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Getting Even with Dad" ;
+	<http://grupo64.es/hasFilmingLocation> "M.H. de Young Memorial Museum" ;
+	<http://grupo64.es/hasDirector> "Howard Deutch" ;
+	<http://grupo64.es/hasWriter> "Tom S. Parker" ;
+	owl:sameAs "http://dbpedia.org/resource/Howard_Deutch" .
+
+<http://grupo64.es/film_locations/Embarcadero_Street_Station-_BART> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Getting Even with Dad" ;
+	<http://grupo64.es/hasFilmingLocation> "Embarcadero Street Station- BART" ;
+	<http://grupo64.es/hasDirector> "Howard Deutch" ;
+	<http://grupo64.es/hasWriter> "Tom S. Parker" ;
+	owl:sameAs "http://dbpedia.org/resource/Howard_Deutch" .
+
+<http://grupo64.es/film_locations/Candlestick_Park> <http://grupo64.es/hasOriginalTitle> "Getting Even with Dad" ;
+	<http://grupo64.es/hasDirector> "Howard Deutch" ;
+	<http://grupo64.es/hasWriter> "Tom S. Parker" ;
+	owl:sameAs "http://dbpedia.org/resource/Howard_Deutch" .
+
+<http://grupo64.es/film_locations/Kearney_&_Pine_St.> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Kearney & Pine St." ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/California_&_Davis_St> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "California & Davis St" ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Pine_St._&_Davis_St> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Pine St. & Davis St" ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Sacramento_&_Front_St.> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Sacramento & Front St." ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Broadway_&_Sansome> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Broadway & Sansome" ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Broadway_&_Columbus> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Broadway & Columbus" ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Post_&_Jones_St.> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Post & Jones St." ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Stockton_&_Clay_St> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Stockton & Clay St" ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Bush_&_Kearny> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Bush & Kearny" ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Mission_&_Fremont_St> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Mission & Fremont St" ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Eddy_&_Taylor_St.> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Eddy & Taylor St." ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Pier_7> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Pier 7" ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Pier_1> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Pier 1" ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Embarcadero_&_Washington> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Embarcadero & Washington" ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Mission_&_Beal> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Mission & Beal" ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Potrero_&San_Bruno> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Godzilla" ;
+	<http://grupo64.es/hasFilmingLocation> "Potrero &San Bruno" ;
+	<http://grupo64.es/hasDirector> "Gareth Edwards" ;
+	<http://grupo64.es/hasWriter> "Max Borenstein" ;
+	owl:sameAs "http://es.dbpedia.org/resource/NEWI_Cefn_Druids_Association_Football_Club__Gareth_Edwards__1" .
+
+<http://grupo64.es/film_locations/Ross_Alley> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Golden Gate" ;
+	<http://grupo64.es/hasFilmingLocation> "Ross Alley" ;
+	<http://grupo64.es/hasDirector> "John Madden" ;
+	<http://grupo64.es/hasWriter> "David Henry Wang" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Madden_(director)" .
+
+<http://grupo64.es/film_locations/University_of_California_Hastings_College_of_the_Law> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Golden Gate" ;
+	<http://grupo64.es/hasFilmingLocation> "University of California Hastings College of the Law" ;
+	<http://grupo64.es/hasDirector> "Howard Deutch" ;
+	<http://grupo64.es/hasWriter> "Tom S. Parker" ;
+	owl:sameAs "http://dbpedia.org/resource/Howard_Deutch" .
+
+<http://grupo64.es/film_locations/Bush_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Golden Gate" ;
+	<http://grupo64.es/hasFilmingLocation> "Bush Street" ;
+	<http://grupo64.es/hasDirector> "John Madden" ;
+	<http://grupo64.es/hasWriter> "David Henry Wang" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Madden_(director)" .
+
+<http://grupo64.es/film_locations/Buena_Vista_Park> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Golden Gate" ;
+	<http://grupo64.es/hasFilmingLocation> "Buena Vista Park" ;
+	<http://grupo64.es/hasDirector> "John Madden" ;
+	<http://grupo64.es/hasWriter> "David Henry Wang" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Madden_(director)" .
+
+<http://grupo64.es/film_locations/Golden_Gate_Bridge> <http://grupo64.es/hasOriginalTitle> "Golden Gate" ;
+	<http://grupo64.es/hasDirector> "John Madden" ;
+	<http://grupo64.es/hasWriter> "David Henry Wang" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Madden_(director)" .
+
+<http://grupo64.es/film_locations/Mark_Hopkins_Intercontinental_Hotel> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Innerspace" ;
+	<http://grupo64.es/hasFilmingLocation> "Mark Hopkins Intercontinental Hotel" ;
+	<http://grupo64.es/hasDirector> "Joe Dante" ;
+	<http://grupo64.es/hasWriter> "Chip Proser" ;
+	owl:sameAs "http://dbpedia.org/resource/Joe_Dante" .
+
+<http://grupo64.es/film_locations/Castagnola's_Restaurant> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Herbie Rides Again" ;
+	<http://grupo64.es/hasFilmingLocation> "Castagnola's Restaurant" ;
+	<http://grupo64.es/hasDirector> "Robert Stevenson" ;
+	<http://grupo64.es/hasWriter> "Bill Walsh" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Robert_Stevenson" .
+
+<http://grupo64.es/film_locations/Sheraton_Palace_Hotel> <http://grupo64.es/hasOriginalTitle> "Herbie Rides Again" ;
+	<http://grupo64.es/hasDirector> "Robert Stevenson" ;
+	<http://grupo64.es/hasWriter> "Bill Walsh" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Robert_Stevenson" .
+
+<http://grupo64.es/film_locations/Golden_Gate_Bridge> <http://grupo64.es/hasOriginalTitle> "Herbie Rides Again" ;
+	<http://grupo64.es/hasDirector> "Robert Stevenson" ;
+	<http://grupo64.es/hasWriter> "Bill Walsh" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Robert_Stevenson" .
+
+<http://grupo64.es/film_locations/Hobart_Building> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Hereafter" ;
+	<http://grupo64.es/hasFilmingLocation> "Hobart Building" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	<http://grupo64.es/hasWriter> "Peter Morgan" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/The_Final_Final> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Hereafter" ;
+	<http://grupo64.es/hasFilmingLocation> "The Final Final" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	<http://grupo64.es/hasWriter> "Peter Morgan" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/1160_Taylor_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Hereafter" ;
+	<http://grupo64.es/hasFilmingLocation> "1160 Taylor Street" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	<http://grupo64.es/hasWriter> "Peter Morgan" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/Telegraph_Hill> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Innerspace" ;
+	<http://grupo64.es/hasFilmingLocation> "Telegraph Hill" ;
+	<http://grupo64.es/hasDirector> "Joe Dante" ;
+	<http://grupo64.es/hasWriter> "Chip Proser" ;
+	owl:sameAs "http://dbpedia.org/resource/Joe_Dante" .
+
+<http://grupo64.es/film_locations/Pier_39> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Homeward Bound II: Lost in San Francisco" ;
+	<http://grupo64.es/hasFilmingLocation> "Pier 39" ;
+	<http://grupo64.es/hasDirector> "David R. Ellis" ;
+	<http://grupo64.es/hasWriter> "Sheila Burnford" ;
+	owl:sameAs "http://dbpedia.org/resource/David_R._Ellis" .
+
+<http://grupo64.es/film_locations/Fairmont_Hotel> <http://grupo64.es/hasOriginalTitle> "I Remember Mama" ;
+	<http://grupo64.es/hasDirector> "George Stevens" ;
+	<http://grupo64.es/hasWriter> "DeWitt Bodeen" ;
+	owl:sameAs "http://es.dbpedia.org/resource/George_Stevens" .
+
+<http://grupo64.es/film_locations/The_Ferry_Building> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "I Remember Mama" ;
+	<http://grupo64.es/hasFilmingLocation> "The Ferry Building" ;
+	<http://grupo64.es/hasDirector> "George Stevens" ;
+	<http://grupo64.es/hasWriter> "DeWitt Bodeen" ;
+	owl:sameAs "http://es.dbpedia.org/resource/George_Stevens" .
+
+<http://grupo64.es/film_locations/Grant_Avenue> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "I Remember Mama" ;
+	<http://grupo64.es/hasFilmingLocation> "Grant Avenue" ;
+	<http://grupo64.es/hasDirector> "George Stevens" ;
+	<http://grupo64.es/hasWriter> "DeWitt Bodeen" ;
+	owl:sameAs "http://es.dbpedia.org/resource/George_Stevens" .
+
+<http://grupo64.es/film_locations/Golden_Gate_Bridge> <http://grupo64.es/hasOriginalTitle> "Innerspace" ;
+	<http://grupo64.es/hasDirector> "Joe Dante" ;
+	<http://grupo64.es/hasWriter> "Chip Proser" ;
+	owl:sameAs "http://dbpedia.org/resource/Joe_Dante" .
+
+<http://grupo64.es/film_locations/Hunters_Point> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "It Came From Beneath the Sea" ;
+	<http://grupo64.es/hasFilmingLocation> "Hunters Point" ;
+	<http://grupo64.es/hasDirector> "Robert Gordon" ;
+	<http://grupo64.es/hasWriter> "George Worthing Yates" ;
+	owl:sameAs "http://dbpedia.org/resource/R._Gordon_Wasson" .
+
+<http://grupo64.es/film_locations/Chrissy_Field> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "It Came From Beneath the Sea" ;
+	<http://grupo64.es/hasFilmingLocation> "Chrissy Field" ;
+	<http://grupo64.es/hasDirector> "Robert Gordon" ;
+	<http://grupo64.es/hasWriter> "George Worthing Yates" ;
+	owl:sameAs "http://dbpedia.org/resource/R._Gordon_Wasson" .
+
+<http://grupo64.es/film_locations/Golden_Gate_Bridge> <http://grupo64.es/hasOriginalTitle> "It Came From Beneath the Sea" ;
+	<http://grupo64.es/hasDirector> "Robert Gordon" ;
+	<http://grupo64.es/hasWriter> "George Worthing Yates" ;
+	owl:sameAs "http://dbpedia.org/resource/R._Gordon_Wasson" .
+
+<http://grupo64.es/film_locations/2552_Hyde_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Junior" ;
+	<http://grupo64.es/hasFilmingLocation> "2552 Hyde Street" ;
+	<http://grupo64.es/hasDirector> "Ivan Reitman" ;
+	<http://grupo64.es/hasWriter> "Kevin Wade" ;
+	owl:sameAs "http://dbpedia.org/resource/Ivan_Reitman" .
+
+<http://grupo64.es/film_locations/United_Nations_Plaza> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Junior" ;
+	<http://grupo64.es/hasFilmingLocation> "United Nations Plaza" ;
+	<http://grupo64.es/hasDirector> "Ivan Reitman" ;
+	<http://grupo64.es/hasWriter> "Kevin Wade" ;
+	owl:sameAs "http://dbpedia.org/resource/Ivan_Reitman" .
+
+<http://grupo64.es/film_locations/Postcard_Row> <http://grupo64.es/hasOriginalTitle> "Junior" ;
+	<http://grupo64.es/hasDirector> "Ivan Reitman" ;
+	<http://grupo64.es/hasWriter> "Kevin Wade" ;
+	owl:sameAs "http://dbpedia.org/resource/Ivan_Reitman" .
+
+<http://grupo64.es/film_locations/Hyatt_Fisherman's_Wharf> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Junior" ;
+	<http://grupo64.es/hasFilmingLocation> "Hyatt Fisherman's Wharf" ;
+	<http://grupo64.es/hasDirector> "Ivan Reitman" ;
+	<http://grupo64.es/hasWriter> "Kevin Wade" ;
+	owl:sameAs "http://dbpedia.org/resource/Ivan_Reitman" .
+
+<http://grupo64.es/film_locations/Fairmont_Hotel> <http://grupo64.es/hasOriginalTitle> "Junior" ;
+	<http://grupo64.es/hasDirector> "Ivan Reitman" ;
+	<http://grupo64.es/hasWriter> "Kevin Wade" ;
+	owl:sameAs "http://dbpedia.org/resource/Ivan_Reitman" .
+
+<http://grupo64.es/film_locations/Chinatown_Gate> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Junior" ;
+	<http://grupo64.es/hasFilmingLocation> "Chinatown Gate" ;
+	<http://grupo64.es/hasDirector> "Ivan Reitman" ;
+	<http://grupo64.es/hasWriter> "Kevin Wade" ;
+	owl:sameAs "http://dbpedia.org/resource/Ivan_Reitman" .
+
+<http://grupo64.es/film_locations/722_Steiner_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Junior" ;
+	<http://grupo64.es/hasFilmingLocation> "722 Steiner Street" ;
+	<http://grupo64.es/hasDirector> "Ivan Reitman" ;
+	<http://grupo64.es/hasWriter> "Kevin Wade" ;
+	owl:sameAs "http://dbpedia.org/resource/Ivan_Reitman" .
+
+<http://grupo64.es/film_locations/Cost_Plus_World_Market> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasFilmingLocation> "Cost Plus World Market" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/Vermont_Street_between_20th_and_22nd_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasFilmingLocation> "Vermont Street between 20th and 22nd Streets" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/San_Francisco_International_Airport> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasFilmingLocation> "San Francisco International Airport" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/San_Francisco_Drydock> <http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/Pacific_Heights_Towers> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasFilmingLocation> "Pacific Heights Towers" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/Lefty_O'_Doul_Drawbridge/_3rd_Street_Bridge> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasFilmingLocation> "Lefty O' Doul Drawbridge/ 3rd Street Bridge" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/Hall_of_Justice> <http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/Golden_Gate_Bridge> <http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/Fairmont_Hotel> <http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/Embarcadero_Freeway> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasFilmingLocation> "Embarcadero Freeway" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/City_Hall> <http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/Broadway_Tunnel> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasFilmingLocation> "Broadway Tunnel" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/280_Freeway_at_Pennsylvania_and_Mariposa_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasFilmingLocation> "280 Freeway at Pennsylvania and Mariposa Streets" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/2190_Washington_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasFilmingLocation> "2190 Washington Street" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/18th_Street_Overpass> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Magnum Force" ;
+	<http://grupo64.es/hasFilmingLocation> "18th Street Overpass" ;
+	<http://grupo64.es/hasDirector> "Ted Post" ;
+	<http://grupo64.es/hasWriter> "John Milius" ;
+	owl:sameAs "http://dbpedia.org/resource/Ted_Post" .
+
+<http://grupo64.es/film_locations/On_Board_the_SS_President_Cleveland,_docked_at_Pier_50> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Marnie" ;
+	<http://grupo64.es/hasFilmingLocation> "On Board the SS President Cleveland, docked at Pier 50" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Jay Presson Allen" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/Asian_Art_Museum> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Maxie" ;
+	<http://grupo64.es/hasFilmingLocation> "Asian Art Museum" ;
+	<http://grupo64.es/hasDirector> "Paul Aaron" ;
+	<http://grupo64.es/hasWriter> "Patricia Resnick" ;
+	owl:sameAs "http://dbpedia.org/resource/Paul_Scholes" .
+
+<http://grupo64.es/film_locations/Grace_Cathedral_Episcopal_Church> <http://grupo64.es/hasOriginalTitle> "Maxie" ;
+	<http://grupo64.es/hasDirector> "Paul Aaron" ;
+	<http://grupo64.es/hasWriter> "Patricia Resnick" ;
+	owl:sameAs "http://dbpedia.org/resource/Paul_Scholes" .
+
+<http://grupo64.es/film_locations/722_Steiner_Street> <http://grupo64.es/hasOriginalTitle> "Maxie" ;
+	<http://grupo64.es/hasDirector> "Paul Aaron" ;
+	<http://grupo64.es/hasWriter> "Patricia Resnick" ;
+	owl:sameAs "http://dbpedia.org/resource/Paul_Scholes" .
+
+<http://grupo64.es/film_locations/St._Elizabeth_Apartment_House> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Memoirs of an Invisible Man" ;
+	<http://grupo64.es/hasFilmingLocation> "St. Elizabeth Apartment House" ;
+	<http://grupo64.es/hasDirector> "John Carpenter" ;
+	<http://grupo64.es/hasWriter> "Robert Collector" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Carpenter" .
+
+<http://grupo64.es/film_locations/Fairmont_Hotel> <http://grupo64.es/hasOriginalTitle> "Midnight Lace" ;
+	<http://grupo64.es/hasDirector> "David Miller" ;
+	<http://grupo64.es/hasWriter> "Ivan Geoff" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Miller_(tenor)" .
+
+<http://grupo64.es/film_locations/Duboce_Park> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Milk" ;
+	<http://grupo64.es/hasFilmingLocation> "Duboce Park" ;
+	<http://grupo64.es/hasDirector> "Gus Van Sant" ;
+	<http://grupo64.es/hasWriter> "Dustin Lance Black" ;
+	owl:sameAs "http://dbpedia.org/resource/Gus_Van_Sant" .
+
+<http://grupo64.es/film_locations/City_Hall> <http://grupo64.es/hasOriginalTitle> "Milk" ;
+	<http://grupo64.es/hasDirector> "Gus Van Sant" ;
+	<http://grupo64.es/hasWriter> "Dustin Lance Black" ;
+	owl:sameAs "http://dbpedia.org/resource/Gus_Van_Sant" .
+
+<http://grupo64.es/film_locations/Chinatown> <http://grupo64.es/hasOriginalTitle> "Milk" ;
+	<http://grupo64.es/hasDirector> "Gus Van Sant" ;
+	<http://grupo64.es/hasWriter> "Dustin Lance Black" ;
+	owl:sameAs "http://dbpedia.org/resource/Gus_Van_Sant" .
+
+<http://grupo64.es/film_locations/424_Sansome_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Milk" ;
+	<http://grupo64.es/hasFilmingLocation> "424 Sansome Street" ;
+	<http://grupo64.es/hasDirector> "Gus Van Sant" ;
+	<http://grupo64.es/hasWriter> "Dustin Lance Black" ;
+	owl:sameAs "http://dbpedia.org/resource/Gus_Van_Sant" .
+
+<http://grupo64.es/film_locations/29th_and_Dolores_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Milk" ;
+	<http://grupo64.es/hasFilmingLocation> "29th and Dolores Street" ;
+	<http://grupo64.es/hasDirector> "Gus Van Sant" ;
+	<http://grupo64.es/hasWriter> "Dustin Lance Black" ;
+	owl:sameAs "http://dbpedia.org/resource/Gus_Van_Sant" .
+
+<http://grupo64.es/film_locations/El_Camino_Del_Mar> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Milk" ;
+	<http://grupo64.es/hasFilmingLocation> "El Camino Del Mar" ;
+	<http://grupo64.es/hasDirector> "Gus Van Sant" ;
+	<http://grupo64.es/hasWriter> "Dustin Lance Black" ;
+	owl:sameAs "http://dbpedia.org/resource/Gus_Van_Sant" .
+
+<http://grupo64.es/film_locations/Treasure_Island> <http://grupo64.es/hasOriginalTitle> "Milk" ;
+	<http://grupo64.es/hasDirector> "Gus Van Sant" ;
+	<http://grupo64.es/hasWriter> "Dustin Lance Black" ;
+	owl:sameAs "http://dbpedia.org/resource/Gus_Van_Sant" .
+
+<http://grupo64.es/film_locations/Market_&_Castro_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Milk" ;
+	<http://grupo64.es/hasFilmingLocation> "Market & Castro Street" ;
+	<http://grupo64.es/hasDirector> "Gus Van Sant" ;
+	<http://grupo64.es/hasWriter> "Dustin Lance Black" ;
+	owl:sameAs "http://dbpedia.org/resource/Gus_Van_Sant" .
+
+<http://grupo64.es/film_locations/Marine_Fireman's_Union_Headquarters> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Milk" ;
+	<http://grupo64.es/hasFilmingLocation> "Marine Fireman's Union Headquarters" ;
+	<http://grupo64.es/hasDirector> "Gus Van Sant" ;
+	<http://grupo64.es/hasWriter> "Dustin Lance Black" ;
+	owl:sameAs "http://dbpedia.org/resource/Gus_Van_Sant" .
+
+<http://grupo64.es/film_locations/Lower_Haight_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Milk" ;
+	<http://grupo64.es/hasFilmingLocation> "Lower Haight Street" ;
+	<http://grupo64.es/hasDirector> "Gus Van Sant" ;
+	<http://grupo64.es/hasWriter> "Dustin Lance Black" ;
+	owl:sameAs "http://dbpedia.org/resource/Gus_Van_Sant" .
+
+<http://grupo64.es/film_locations/Grace_Cathedral_Episcopal_Church> <http://grupo64.es/hasOriginalTitle> "Milk" ;
+	<http://grupo64.es/hasDirector> "Gus Van Sant" ;
+	<http://grupo64.es/hasWriter> "Dustin Lance Black" ;
+	owl:sameAs "http://dbpedia.org/resource/Gus_Van_Sant" .
+
+<http://grupo64.es/film_locations/Golden_Gate_Bridge> <http://grupo64.es/hasOriginalTitle> "Milk" ;
+	<http://grupo64.es/hasDirector> "Gus Van Sant" ;
+	<http://grupo64.es/hasWriter> "Dustin Lance Black" ;
+	owl:sameAs "http://dbpedia.org/resource/Gus_Van_Sant" .
+
+<http://grupo64.es/film_locations/1200_Washington_Street_at_Taylor_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Mrs. Doubtfire" ;
+	<http://grupo64.es/hasFilmingLocation> "1200 Washington Street at Taylor Street" ;
+	<http://grupo64.es/hasDirector> "Chris Columbus" ;
+	<http://grupo64.es/hasWriter> "Randi Mayem Singer" ;
+	owl:sameAs "http://dbpedia.org/resource/Chris_Columbus_(filmmaker)" .
+
+<http://grupo64.es/film_locations/Hancock_School> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Mrs. Doubtfire" ;
+	<http://grupo64.es/hasFilmingLocation> "Hancock School" ;
+	<http://grupo64.es/hasDirector> "Chris Columbus" ;
+	<http://grupo64.es/hasWriter> "Randi Mayem Singer" ;
+	owl:sameAs "http://dbpedia.org/resource/Chris_Columbus_(filmmaker)" .
+
+<http://grupo64.es/film_locations/Danilo's_Bakery> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Mrs. Doubtfire" ;
+	<http://grupo64.es/hasFilmingLocation> "Danilo's Bakery" ;
+	<http://grupo64.es/hasDirector> "Chris Columbus" ;
+	<http://grupo64.es/hasWriter> "Randi Mayem Singer" ;
+	owl:sameAs "http://dbpedia.org/resource/Chris_Columbus_(filmmaker)" .
+
+<http://grupo64.es/film_locations/Chrissy_Field> <http://grupo64.es/hasOriginalTitle> "Mrs. Doubtfire" ;
+	<http://grupo64.es/hasDirector> "Chris Columbus" ;
+	<http://grupo64.es/hasWriter> "Randi Mayem Singer" ;
+	owl:sameAs "http://dbpedia.org/resource/Chris_Columbus_(filmmaker)" .
+
+<http://grupo64.es/film_locations/520-522A_Green_Street_at_Grant_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Mrs. Doubtfire" ;
+	<http://grupo64.es/hasFilmingLocation> "520-522A Green Street at Grant Street" ;
+	<http://grupo64.es/hasDirector> "Chris Columbus" ;
+	<http://grupo64.es/hasWriter> "Randi Mayem Singer" ;
+	owl:sameAs "http://dbpedia.org/resource/Chris_Columbus_(filmmaker)" .
+
+<http://grupo64.es/film_locations/516_Green_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Mrs. Doubtfire" ;
+	<http://grupo64.es/hasFilmingLocation> "516 Green Street" ;
+	<http://grupo64.es/hasDirector> "Chris Columbus" ;
+	<http://grupo64.es/hasWriter> "Randi Mayem Singer" ;
+	owl:sameAs "http://dbpedia.org/resource/Chris_Columbus_(filmmaker)" .
+
+<http://grupo64.es/film_locations/100_Embarcadero_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Mrs. Doubtfire" ;
+	<http://grupo64.es/hasFilmingLocation> "100 Embarcadero Street" ;
+	<http://grupo64.es/hasDirector> "Chris Columbus" ;
+	<http://grupo64.es/hasWriter> "Randi Mayem Singer" ;
+	owl:sameAs "http://dbpedia.org/resource/Chris_Columbus_(filmmaker)" .
+
+<http://grupo64.es/film_locations/Belgravia_Apartments> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Nora Prentiss" ;
+	<http://grupo64.es/hasFilmingLocation> "Belgravia Apartments" ;
+	<http://grupo64.es/hasDirector> "Vincent Sherman" ;
+	<http://grupo64.es/hasWriter> "N. Richard Nash" ;
+	owl:sameAs "http://dbpedia.org/resource/Vincent_Sherman" .
+
+<http://grupo64.es/film_locations/Bay_Bridge> <http://grupo64.es/hasOriginalTitle> "On the Road" ;
+	<http://grupo64.es/hasDirector> "Walter Salles" ;
+	<http://grupo64.es/hasWriter> "Jack Kerouac & Jose Rivera" ;
+	owl:sameAs "http://dbpedia.org/resource/Walter_Salles" .
+
+<http://grupo64.es/film_locations/Sacramento_&_Montgomery_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "On the Road" ;
+	<http://grupo64.es/hasFilmingLocation> "Sacramento & Montgomery Streets" ;
+	<http://grupo64.es/hasDirector> "Walter Salles" ;
+	<http://grupo64.es/hasWriter> "Jack Kerouac & Jose Rivera" ;
+	owl:sameAs "http://dbpedia.org/resource/Walter_Salles" .
+
+<http://grupo64.es/film_locations/2017_23rd_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "On the Road" ;
+	<http://grupo64.es/hasFilmingLocation> "2017 23rd Street" ;
+	<http://grupo64.es/hasDirector> "Walter Salles" ;
+	<http://grupo64.es/hasWriter> "Jack Kerouac & Jose Rivera" ;
+	owl:sameAs "http://dbpedia.org/resource/Walter_Salles" .
+
+<http://grupo64.es/film_locations/Filbert_&_Leavenworth_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "On the Road" ;
+	<http://grupo64.es/hasFilmingLocation> "Filbert & Leavenworth Streets" ;
+	<http://grupo64.es/hasDirector> "Walter Salles" ;
+	<http://grupo64.es/hasWriter> "Jack Kerouac & Jose Rivera" ;
+	owl:sameAs "http://dbpedia.org/resource/Walter_Salles" .
+
+<http://grupo64.es/film_locations/Texas_&_19th_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Pacific Heights" ;
+	<http://grupo64.es/hasFilmingLocation> "Texas & 19th Streets" ;
+	<http://grupo64.es/hasDirector> "John Schlesinger" ;
+	<http://grupo64.es/hasWriter> "Daniel Pyne" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Schlesinger" .
+
+<http://grupo64.es/film_locations/Financial_District> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Pacific Heights" ;
+	<http://grupo64.es/hasFilmingLocation> "Financial District" ;
+	<http://grupo64.es/hasDirector> "John Schlesinger" ;
+	<http://grupo64.es/hasWriter> "Daniel Pyne" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Schlesinger" .
+
+<http://grupo64.es/film_locations/Chinatown> <http://grupo64.es/hasOriginalTitle> "Pacific Heights" ;
+	<http://grupo64.es/hasDirector> "John Schlesinger" ;
+	<http://grupo64.es/hasWriter> "Daniel Pyne" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Schlesinger" .
+
+<http://grupo64.es/film_locations/Spreckels_Mansion> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Pal Joey" ;
+	<http://grupo64.es/hasFilmingLocation> "Spreckels Mansion" ;
+	<http://grupo64.es/hasDirector> "George Sidney" ;
+	<http://grupo64.es/hasWriter> "Dorothy Kingsley" ;
+	owl:sameAs "http://es.dbpedia.org/resource/George_Sidney" .
+
+<http://grupo64.es/film_locations/Coit_Tower> <http://grupo64.es/hasOriginalTitle> "Pal Joey" ;
+	<http://grupo64.es/hasDirector> "George Sidney" ;
+	<http://grupo64.es/hasWriter> "Dorothy Kingsley" ;
+	owl:sameAs "http://es.dbpedia.org/resource/George_Sidney" .
+
+<http://grupo64.es/film_locations/Barbary_Coast> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Pal Joey" ;
+	<http://grupo64.es/hasFilmingLocation> "Barbary Coast" ;
+	<http://grupo64.es/hasDirector> "George Sidney" ;
+	<http://grupo64.es/hasWriter> "Dorothy Kingsley" ;
+	owl:sameAs "http://es.dbpedia.org/resource/George_Sidney" .
+
+<http://grupo64.es/film_locations/Bank_of_America> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Patty Hearst" ;
+	<http://grupo64.es/hasFilmingLocation> "Bank of America" ;
+	<http://grupo64.es/hasDirector> "Paul Schrader" ;
+	<http://grupo64.es/hasWriter> "Nicholas Kazan" ;
+	owl:sameAs "http://dbpedia.org/resource/Paul_Schrader" .
+
+<http://grupo64.es/film_locations/Postcard_Row> <http://grupo64.es/hasOriginalTitle> "Patty Hearst" ;
+	<http://grupo64.es/hasDirector> "Paul Schrader" ;
+	owl:sameAs "http://dbpedia.org/resource/Paul_Schrader" .
+
+<http://grupo64.es/film_locations/Japanese_Tea_Garden> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Petulia" ;
+	<http://grupo64.es/hasFilmingLocation> "Japanese Tea Garden" ;
+	<http://grupo64.es/hasDirector> "Richard Lester" ;
+	<http://grupo64.es/hasWriter> "Lawrence B. Marcus" ;
+	owl:sameAs "http://dbpedia.org/resource/Richard_Lester" .
+
+<http://grupo64.es/film_locations/Fairmont_Hotel> <http://grupo64.es/hasOriginalTitle> "Petulia" ;
+	<http://grupo64.es/hasDirector> "Richard Lester" ;
+	<http://grupo64.es/hasWriter> "Lawrence B. Marcus" ;
+	owl:sameAs "http://dbpedia.org/resource/Richard_Lester" .
+
+<http://grupo64.es/film_locations/Pier_43_1/2> <http://grupo64.es/hasOriginalTitle> "Petulia" ;
+	<http://grupo64.es/hasDirector> "Richard Lester" ;
+	<http://grupo64.es/hasWriter> "Lawrence B. Marcus" ;
+	owl:sameAs "http://dbpedia.org/resource/Richard_Lester" .
+
+<http://grupo64.es/film_locations/Cala_Foods> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Petulia" ;
+	<http://grupo64.es/hasFilmingLocation> "Cala Foods" ;
+	<http://grupo64.es/hasDirector> "Richard Lester" ;
+	<http://grupo64.es/hasWriter> "Lawrence B. Marcus" ;
+	owl:sameAs "http://dbpedia.org/resource/Richard_Lester" .
+
+<http://grupo64.es/film_locations/307_Filbert_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Petulia" ;
+	<http://grupo64.es/hasFilmingLocation> "307 Filbert Street" ;
+	<http://grupo64.es/hasDirector> "Richard Lester" ;
+	<http://grupo64.es/hasWriter> "Lawrence B. Marcus" ;
+	owl:sameAs "http://dbpedia.org/resource/Richard_Lester" .
+
+<http://grupo64.es/film_locations/2417_Franklin_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Petulia" ;
+	<http://grupo64.es/hasFilmingLocation> "2417 Franklin Street" ;
+	<http://grupo64.es/hasDirector> "Richard Lester" ;
+	<http://grupo64.es/hasWriter> "Lawrence B. Marcus" ;
+	owl:sameAs "http://dbpedia.org/resource/Richard_Lester" .
+
+<http://grupo64.es/film_locations/Fort_Point> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Petulia" ;
+	<http://grupo64.es/hasFilmingLocation> "Fort Point" ;
+	<http://grupo64.es/hasDirector> "Richard Lester" ;
+	<http://grupo64.es/hasWriter> "Lawrence B. Marcus" ;
+	owl:sameAs "http://dbpedia.org/resource/Richard_Lester" .
+
+<http://grupo64.es/film_locations/Treasure_Island> <http://grupo64.es/hasOriginalTitle> "Phenomenon" ;
+	<http://grupo64.es/hasDirector> "Jon Turteltaub" ;
+	<http://grupo64.es/hasWriter> "Gerald Dipego" ;
+	owl:sameAs "http://dbpedia.org/resource/Jon_Turteltaub" .
+
+<http://grupo64.es/film_locations/Bay_Bridge> <http://grupo64.es/hasOriginalTitle> "Shadow of the Thin Man" ;
+	<http://grupo64.es/hasDirector> "W.S. Van Dyke" ;
+	<http://grupo64.es/hasWriter> "Harry Kurnitz" ;
+	owl:sameAs "http://dbpedia.org/resource/W._S._Van_Dyke" .
+
+<http://grupo64.es/film_locations/Fairmont_Hotel> <http://grupo64.es/hasOriginalTitle> "Shoot the Moon" ;
+	<http://grupo64.es/hasDirector> "Alan Parker" ;
+	<http://grupo64.es/hasWriter> "Bo Goldman" ;
+	owl:sameAs "http://dbpedia.org/resource/Alan_Parker" .
+
+<http://grupo64.es/film_locations/Vesuvio_Caf��> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasFilmingLocation> "Vesuvio Caf��" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/Swedenborgian_Church> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasFilmingLocation> "Swedenborgian Church" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/St._John's_Presbyterian_Church> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasFilmingLocation> "St. John's Presbyterian Church" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/San_Francisco_Chronicle> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasFilmingLocation> "San Francisco Chronicle" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/Rocco's_Corner> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasFilmingLocation> "Rocco's Corner" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/Prudente's_Italian_Deli> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasFilmingLocation> "Prudente's Italian Deli" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/Fog_City_Diner> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasFilmingLocation> "Fog City Diner" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/Edinburgh_Castle> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasFilmingLocation> "Edinburgh Castle" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/City_Light_Bookstore> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasFilmingLocation> "City Light Bookstore" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/Caf��_Picaro_3120_16th_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasFilmingLocation> "Caf�� Picaro 3120 16th Street" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/Alcatraz_Island> <http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/Aladdin_Terrace> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasFilmingLocation> "Aladdin Terrace" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/305_Hugo_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasFilmingLocation> "305 Hugo Street" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/1462_Grant_Avenue,_at_Union_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "So I Married an Axe Murderer" ;
+	<http://grupo64.es/hasFilmingLocation> "1462 Grant Avenue, at Union Street" ;
+	<http://grupo64.es/hasDirector> "Thomas Schlamme" ;
+	<http://grupo64.es/hasWriter> "Robbie Fox" ;
+	owl:sameAs "http://dbpedia.org/resource/Thomas_Schlamme" .
+
+<http://grupo64.es/film_locations/West_Harbor,_Marina_District> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Star Trek IV: The Voyage Home" ;
+	<http://grupo64.es/hasFilmingLocation> "West Harbor, Marina District" ;
+	<http://grupo64.es/hasDirector> "Leonard Nimoy" ;
+	<http://grupo64.es/hasWriter> "Steve Meerson" ;
+	owl:sameAs "http://dbpedia.org/resource/Spock" .
+
+<http://grupo64.es/film_locations/North_Beach> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Star Trek IV: The Voyage Home" ;
+	<http://grupo64.es/hasFilmingLocation> "North Beach" ;
+	<http://grupo64.es/hasDirector> "Leonard Nimoy" ;
+	<http://grupo64.es/hasWriter> "Steve Meerson" ;
+	owl:sameAs "http://dbpedia.org/resource/Spock" .
+
+<http://grupo64.es/film_locations/Marina_Green> <http://grupo64.es/hasOriginalTitle> "Star Trek IV: The Voyage Home" ;
+	<http://grupo64.es/hasDirector> "Leonard Nimoy" ;
+	<http://grupo64.es/hasWriter> "Steve Meerson" ;
+	owl:sameAs "http://dbpedia.org/resource/Spock" .
+
+<http://grupo64.es/film_locations/Kearny_&_Pacific_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Star Trek IV: The Voyage Home" ;
+	<http://grupo64.es/hasFilmingLocation> "Kearny & Pacific Streets" ;
+	<http://grupo64.es/hasDirector> "Leonard Nimoy" ;
+	<http://grupo64.es/hasWriter> "Steve Meerson" ;
+	owl:sameAs "http://dbpedia.org/resource/Spock" .
+
+<http://grupo64.es/film_locations/Intersection_of_Grant_&_Fresno_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Star Trek IV: The Voyage Home" ;
+	<http://grupo64.es/hasFilmingLocation> "Intersection of Grant & Fresno Streets" ;
+	<http://grupo64.es/hasDirector> "Leonard Nimoy" ;
+	<http://grupo64.es/hasWriter> "Steve Meerson" ;
+	owl:sameAs "http://dbpedia.org/resource/Spock" .
+
+<http://grupo64.es/film_locations/Intersection_of_Columbus_&_Mason_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Star Trek IV: The Voyage Home" ;
+	<http://grupo64.es/hasFilmingLocation> "Intersection of Columbus & Mason Streets" ;
+	<http://grupo64.es/hasDirector> "Leonard Nimoy" ;
+	<http://grupo64.es/hasWriter> "Steve Meerson" ;
+	owl:sameAs "http://dbpedia.org/resource/Spock" .
+
+<http://grupo64.es/film_locations/Intersection_of_Columbus_&_Kearney_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Star Trek IV: The Voyage Home" ;
+	<http://grupo64.es/hasFilmingLocation> "Intersection of Columbus & Kearney Streets" ;
+	<http://grupo64.es/hasDirector> "Leonard Nimoy" ;
+	<http://grupo64.es/hasWriter> "Steve Meerson" ;
+	owl:sameAs "http://dbpedia.org/resource/Spock" .
+
+<http://grupo64.es/film_locations/Golden_Gate_Park> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Star Trek IV: The Voyage Home" ;
+	<http://grupo64.es/hasFilmingLocation> "Golden Gate Park" ;
+	<http://grupo64.es/hasDirector> "Leonard Nimoy" ;
+	<http://grupo64.es/hasWriter> "Steve Meerson" ;
+	owl:sameAs "http://dbpedia.org/resource/Spock" .
+
+<http://grupo64.es/film_locations/Golden_Gate_Bridge> <http://grupo64.es/hasOriginalTitle> "Star Trek IV: The Voyage Home" ;
+	<http://grupo64.es/hasDirector> "Leonard Nimoy" ;
+	<http://grupo64.es/hasWriter> "Steve Meerson" ;
+	owl:sameAs "http://dbpedia.org/resource/Spock" .
+
+<http://grupo64.es/film_locations/Bessie_Charmichael_Elementary_School> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Star Trek IV: The Voyage Home" ;
+	<http://grupo64.es/hasFilmingLocation> "Bessie Charmichael Elementary School" ;
+	<http://grupo64.es/hasDirector> "Leonard Nimoy" ;
+	<http://grupo64.es/hasWriter> "Steve Meerson" ;
+	owl:sameAs "http://dbpedia.org/resource/Spock" .
+
+<http://grupo64.es/film_locations/500_Block_of_Pacific_Avenue> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Star Trek IV: The Voyage Home" ;
+	<http://grupo64.es/hasFilmingLocation> "500 Block of Pacific Avenue" ;
+	<http://grupo64.es/hasDirector> "Leonard Nimoy" ;
+	<http://grupo64.es/hasWriter> "Steve Meerson" ;
+	owl:sameAs "http://dbpedia.org/resource/Spock" .
+
+<http://grupo64.es/film_locations/Lombard_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sudden Fear" ;
+	<http://grupo64.es/hasFilmingLocation> "Lombard Street" ;
+	<http://grupo64.es/hasDirector> "David Miller" ;
+	<http://grupo64.es/hasWriter> "Lenore J. Coffee" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Miller_(tenor)" .
+
+<http://grupo64.es/film_locations/The_Tamalpais_Building> <http://grupo64.es/hasOriginalTitle> "Sudden Fear" ;
+	<http://grupo64.es/hasDirector> "David Miller" ;
+	<http://grupo64.es/hasWriter> "Lenore J. Coffee" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Miller_(tenor)" .
+
+<http://grupo64.es/film_locations/Brocklebank_Apartments> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sudden Fear" ;
+	<http://grupo64.es/hasFilmingLocation> "Brocklebank Apartments" ;
+	<http://grupo64.es/hasDirector> "David Miller" ;
+	<http://grupo64.es/hasWriter> "Lenore J. Coffee" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Miller_(tenor)" .
+
+<http://grupo64.es/film_locations/2800_Scott_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sudden Fear" ;
+	<http://grupo64.es/hasFilmingLocation> "2800 Scott Street" ;
+	<http://grupo64.es/hasDirector> "David Miller" ;
+	<http://grupo64.es/hasWriter> "Lenore J. Coffee" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Miller_(tenor)" .
+
+<http://grupo64.es/film_locations/Near_Point_Lobos,_El_Camino_Del_Mar> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sudden Impact" ;
+	<http://grupo64.es/hasFilmingLocation> "Near Point Lobos, El Camino Del Mar" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/Mt._Davidson> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sudden Impact" ;
+	<http://grupo64.es/hasFilmingLocation> "Mt. Davidson" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/McDonald's_Restaurant> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sudden Impact" ;
+	<http://grupo64.es/hasFilmingLocation> "McDonald's Restaurant" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/Mark_Hopkins_Intercontinental_Hotel> <http://grupo64.es/hasOriginalTitle> "Sudden Impact" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/Hall_of_Justice> <http://grupo64.es/hasOriginalTitle> "Sudden Impact" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/Ferry_Plaza> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sudden Impact" ;
+	<http://grupo64.es/hasFilmingLocation> "Ferry Plaza" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/Fairmont_Hotel> <http://grupo64.es/hasOriginalTitle> "Sudden Impact" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/Civic_Center_Plaza> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sudden Impact" ;
+	<http://grupo64.es/hasFilmingLocation> "Civic Center Plaza" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/The_Embarcadero/Ferry_Building> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sudden Impact" ;
+	<http://grupo64.es/hasFilmingLocation> "The Embarcadero/Ferry Building" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/Bowles_Franklin_Galleries> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sudden Impact" ;
+	<http://grupo64.es/hasFilmingLocation> "Bowles Franklin Galleries" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/Pier_38-40,_The_Embarcadero> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sudden Impact" ;
+	<http://grupo64.es/hasFilmingLocation> "Pier 38-40, The Embarcadero" ;
+	<http://grupo64.es/hasDirector> "Clint Eastwood" ;
+	<http://grupo64.es/hasWriter> "Harry Julian Fink" ;
+	owl:sameAs "http://dbpedia.org/resource/Clint_Eastwood" .
+
+<http://grupo64.es/film_locations/Marquee_Lofts> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sweet November" ;
+	<http://grupo64.es/hasFilmingLocation> "Marquee Lofts" ;
+	<http://grupo64.es/hasDirector> "Pat O'Connor" ;
+	<http://grupo64.es/hasWriter> "Paul Yurick" ;
+	owl:sameAs "http://dbpedia.org/resource/Pat_O'Connor_(racing_driver)" .
+
+<http://grupo64.es/film_locations/Hotel_Majestic> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sweet November" ;
+	<http://grupo64.es/hasFilmingLocation> "Hotel Majestic" ;
+	<http://grupo64.es/hasDirector> "Pat O'Connor" ;
+	<http://grupo64.es/hasWriter> "Paul Yurick" ;
+	owl:sameAs "http://dbpedia.org/resource/Pat_O'Connor_(racing_driver)" .
+
+<http://grupo64.es/film_locations/Foote,_Cone_&_Belding> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sweet November" ;
+	<http://grupo64.es/hasFilmingLocation> "Foote, Cone & Belding" ;
+	<http://grupo64.es/hasDirector> "Pat O'Connor" ;
+	<http://grupo64.es/hasWriter> "Paul Yurick" ;
+	owl:sameAs "http://dbpedia.org/resource/Pat_O'Connor_(racing_driver)" .
+
+<http://grupo64.es/film_locations/Farley's_Caf��> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sweet November" ;
+	<http://grupo64.es/hasFilmingLocation> "Farley's Caf��" ;
+	<http://grupo64.es/hasDirector> "Pat O'Connor" ;
+	<http://grupo64.es/hasWriter> "Paul Yurick" ;
+	owl:sameAs "http://dbpedia.org/resource/Pat_O'Connor_(racing_driver)" .
+
+<http://grupo64.es/film_locations/Citicorp_Center> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sweet November" ;
+	<http://grupo64.es/hasFilmingLocation> "Citicorp Center" ;
+	<http://grupo64.es/hasDirector> "Pat O'Connor" ;
+	<http://grupo64.es/hasWriter> "Paul Yurick" ;
+	owl:sameAs "http://dbpedia.org/resource/Pat_O'Connor_(racing_driver)" .
+
+<http://grupo64.es/film_locations/Christopher's_Books> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sweet November" ;
+	<http://grupo64.es/hasFilmingLocation> "Christopher's Books" ;
+	<http://grupo64.es/hasDirector> "Pat O'Connor" ;
+	<http://grupo64.es/hasWriter> "Paul Yurick" ;
+	owl:sameAs "http://dbpedia.org/resource/Pat_O'Connor_(racing_driver)" .
+
+<http://grupo64.es/film_locations/Chrissy_Field> <http://grupo64.es/hasOriginalTitle> "Sweet November" ;
+	<http://grupo64.es/hasDirector> "Pat O'Connor" ;
+	<http://grupo64.es/hasWriter> "Paul Yurick" ;
+	owl:sameAs "http://dbpedia.org/resource/Pat_O'Connor_(racing_driver)" .
+
+<http://grupo64.es/film_locations/Blooms_Saloon> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Sweet November" ;
+	<http://grupo64.es/hasFilmingLocation> "Blooms Saloon" ;
+	<http://grupo64.es/hasDirector> "Pat O'Connor" ;
+	<http://grupo64.es/hasWriter> "Paul Yurick" ;
+	owl:sameAs "http://dbpedia.org/resource/Pat_O'Connor_(racing_driver)" .
+
+<http://grupo64.es/film_locations/Mission_Dolores_Park> <http://grupo64.es/hasOriginalTitle> "Sweet November" ;
+	<http://grupo64.es/hasDirector> "Pat O'Connor" ;
+	<http://grupo64.es/hasWriter> "Paul Yurick" ;
+	owl:sameAs "http://dbpedia.org/resource/Pat_O'Connor_(racing_driver)" .
+
+<http://grupo64.es/film_locations/Powell_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Swingin' Along" ;
+	<http://grupo64.es/hasFilmingLocation> "Powell Street" ;
+	<http://grupo64.es/hasDirector> "Charles Barton" ;
+	<http://grupo64.es/hasWriter> "Jameson Brewer" ;
+	owl:sameAs "http://dbpedia.org/resource/Charles_Barton_(director)" .
+
+<http://grupo64.es/film_locations/Candlestick_Park> <http://grupo64.es/hasOriginalTitle> "The Fan" ;
+	<http://grupo64.es/hasDirector> "Tony Scott" ;
+	<http://grupo64.es/hasWriter> "Phoef Sutton" ;
+	owl:sameAs "http://dbpedia.org/resource/Tony_Scott" .
+
+<http://grupo64.es/film_locations/Merchant_Exchange_Building> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Game" ;
+	<http://grupo64.es/hasFilmingLocation> "Merchant Exchange Building" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
+
+<http://grupo64.es/film_locations/Washington_Street_&_Waverly_Place> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Game" ;
+	<http://grupo64.es/hasFilmingLocation> "Washington Street & Waverly Place" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
+
+<http://grupo64.es/film_locations/Stockton_Tunnel_Southern_Approach_Overhang> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Game" ;
+	<http://grupo64.es/hasFilmingLocation> "Stockton Tunnel Southern Approach Overhang" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
+
+<http://grupo64.es/film_locations/Sheraton_Palace_Hotel> <http://grupo64.es/hasOriginalTitle> "The Game" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
+
+<http://grupo64.es/film_locations/Ritz-Carlton_Hotel> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Game" ;
+	<http://grupo64.es/hasFilmingLocation> "Ritz-Carlton Hotel" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
+
+<http://grupo64.es/film_locations/Presidio> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Game" ;
+	<http://grupo64.es/hasFilmingLocation> "Presidio" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
+
+<http://grupo64.es/film_locations/Mason_&_California_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Game" ;
+	<http://grupo64.es/hasFilmingLocation> "Mason & California Streets" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
+
+<http://grupo64.es/film_locations/Harrison_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Game" ;
+	<http://grupo64.es/hasFilmingLocation> "Harrison Street" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
+
+<http://grupo64.es/film_locations/City_Club> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Game" ;
+	<http://grupo64.es/hasFilmingLocation> "City Club" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
+
+<http://grupo64.es/film_locations/Bay_Bridge> <http://grupo64.es/hasOriginalTitle> "The Game" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
+
+<http://grupo64.es/film_locations/Bank_of_America_Building> <http://grupo64.es/hasOriginalTitle> "The Game" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
+
+<http://grupo64.es/film_locations/301_Howard_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Game" ;
+	<http://grupo64.es/hasFilmingLocation> "301 Howard Street" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
+
+<http://grupo64.es/film_locations/1_Bush_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Game" ;
+	<http://grupo64.es/hasFilmingLocation> "1 Bush Street" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
+
+<http://grupo64.es/film_locations/San_Francisco_Zoo> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Graduate" ;
+	<http://grupo64.es/hasFilmingLocation> "San Francisco Zoo" ;
+	<http://grupo64.es/hasDirector> "Mike Nichols" ;
+	<http://grupo64.es/hasWriter> "Calder Willingham" ;
+	owl:sameAs "http://dbpedia.org/resource/Mike_Nichols" .
+
+<http://grupo64.es/film_locations/Bay_Bridge> <http://grupo64.es/hasOriginalTitle> "The Graduate" ;
+	<http://grupo64.es/hasDirector> "Mike Nichols" ;
+	<http://grupo64.es/hasWriter> "Calder Willingham" ;
+	owl:sameAs "http://dbpedia.org/resource/Mike_Nichols" .
+
+<http://grupo64.es/film_locations/Telegraph_Hill> <http://grupo64.es/hasOriginalTitle> "The House on Telegraph Hill" ;
+	<http://grupo64.es/hasDirector> "Robert Wise" ;
+	<http://grupo64.es/hasWriter> "Elick Moll" ;
+	owl:sameAs "http://dbpedia.org/resource/Robert_Wise" .
+
+<http://grupo64.es/film_locations/Market_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The House on Telegraph Hill" ;
+	<http://grupo64.es/hasFilmingLocation> "Market Street" ;
+	<http://grupo64.es/hasDirector> "Robert Wise" ;
+	<http://grupo64.es/hasWriter> "Elick Moll" ;
+	owl:sameAs "http://dbpedia.org/resource/Robert_Wise" .
+
+<http://grupo64.es/film_locations/Coit_Tower> <http://grupo64.es/hasOriginalTitle> "The House on Telegraph Hill" ;
+	<http://grupo64.es/hasDirector> "Robert Wise" ;
+	<http://grupo64.es/hasWriter> "Elick Moll" ;
+	owl:sameAs "http://dbpedia.org/resource/Robert_Wise" .
+
+<http://grupo64.es/film_locations/1227_Montgomery_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The House on Telegraph Hill" ;
+	<http://grupo64.es/hasFilmingLocation> "1227 Montgomery Street" ;
+	<http://grupo64.es/hasDirector> "Robert Wise" ;
+	<http://grupo64.es/hasWriter> "Elick Moll" ;
+	owl:sameAs "http://dbpedia.org/resource/Robert_Wise" .
+
+<http://grupo64.es/film_locations/War_Memorial_Opera_House> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Lineup" ;
+	<http://grupo64.es/hasFilmingLocation> "War Memorial Opera House" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/The_Embarcadero> <http://grupo64.es/hasOriginalTitle> "The Lineup" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" .
+
+<http://grupo64.es/film_locations/Sutro_Baths> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Lineup" ;
+	<http://grupo64.es/hasFilmingLocation> "Sutro Baths" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Steinhart_Aquarium> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Lineup" ;
+	<http://grupo64.es/hasFilmingLocation> "Steinhart Aquarium" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Pier_41> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Lineup" ;
+	<http://grupo64.es/hasFilmingLocation> "Pier 41" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Mark_Hopkins_Intercontinental_Hotel> <http://grupo64.es/hasOriginalTitle> "The Lineup" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/2090_Jackson_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Lineup" ;
+	<http://grupo64.es/hasFilmingLocation> "2090 Jackson Street" ;
+	<http://grupo64.es/hasDirector> "Don Siegel" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Don_Siegel" .
+
+<http://grupo64.es/film_locations/Golden_Gate_Bridge> <http://grupo64.es/hasOriginalTitle> "The Love Bug" .
+
+<http://grupo64.es/film_locations/100_Block_of_Lombard_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Love Bug" ;
+	<http://grupo64.es/hasFilmingLocation> "100 Block of Lombard Street" ;
+	<http://grupo64.es/hasDirector> "Robert Stevenson" ;
+	<http://grupo64.es/hasWriter> "Bill Walsh" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Robert_Stevenson" .
+
+<http://grupo64.es/film_locations/Moscone_Convention_Center> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Net" ;
+	<http://grupo64.es/hasFilmingLocation> "Moscone Convention Center" ;
+	<http://grupo64.es/hasDirector> "Irwin Winkler" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/Irwin_Winkler" .
+
+<http://grupo64.es/film_locations/Montgomery_&_Market_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Net" ;
+	<http://grupo64.es/hasFilmingLocation> "Montgomery & Market Streets" ;
+	<http://grupo64.es/hasDirector> "Irwin Winkler" ;
+	<http://grupo64.es/hasWriter> "John Brancato" ;
+	owl:sameAs "http://dbpedia.org/resource/Irwin_Winkler" .
+
+<http://grupo64.es/film_locations/724_Brazil_Avenue> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Princess Diaries" ;
+	<http://grupo64.es/hasFilmingLocation> "724 Brazil Avenue" ;
+	<http://grupo64.es/hasDirector> "Garry Marshall" ;
+	<http://grupo64.es/hasWriter> "Gina Wendkos" ;
+	owl:sameAs "http://dbpedia.org/resource/Garry_Marshall" .
+
+<http://grupo64.es/film_locations/Fisherman's_Wharf> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Princess Diaries" ;
+	<http://grupo64.es/hasFilmingLocation> "Fisherman's Wharf" ;
+	<http://grupo64.es/hasDirector> "Garry Marshall" ;
+	<http://grupo64.es/hasWriter> "Gina Wendkos" ;
+	owl:sameAs "http://dbpedia.org/resource/Garry_Marshall" .
+
+<http://grupo64.es/film_locations/Firestation_#3> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Princess Diaries" ;
+	<http://grupo64.es/hasFilmingLocation> "Firestation #3" ;
+	<http://grupo64.es/hasDirector> "Garry Marshall" ;
+	<http://grupo64.es/hasWriter> "Gina Wendkos" ;
+	owl:sameAs "http://dbpedia.org/resource/Garry_Marshall" .
+
+<http://grupo64.es/film_locations/Cliff_House> <http://grupo64.es/hasOriginalTitle> "The Princess Diaries" ;
+	<http://grupo64.es/hasDirector> "Garry Marshall" ;
+	<http://grupo64.es/hasWriter> "Gina Wendkos" ;
+	owl:sameAs "http://dbpedia.org/resource/Garry_Marshall" .
+
+<http://grupo64.es/film_locations/Broadway_Tunnel> <http://grupo64.es/hasOriginalTitle> "The Princess Diaries" ;
+	<http://grupo64.es/hasDirector> "Garry Marshall" ;
+	<http://grupo64.es/hasWriter> "Gina Wendkos" ;
+	owl:sameAs "http://dbpedia.org/resource/Garry_Marshall" .
+
+<http://grupo64.es/film_locations/Baker_Beach> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Princess Diaries" ;
+	<http://grupo64.es/hasFilmingLocation> "Baker Beach" ;
+	<http://grupo64.es/hasDirector> "Garry Marshall" ;
+	<http://grupo64.es/hasWriter> "Gina Wendkos" ;
+	owl:sameAs "http://dbpedia.org/resource/Garry_Marshall" .
+
+<http://grupo64.es/film_locations/2601_Lyon_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Princess Diaries" ;
+	<http://grupo64.es/hasFilmingLocation> "2601 Lyon Street" ;
+	<http://grupo64.es/hasDirector> "Garry Marshall" ;
+	<http://grupo64.es/hasWriter> "Gina Wendkos" ;
+	owl:sameAs "http://dbpedia.org/resource/Garry_Marshall" .
+
+<http://grupo64.es/film_locations/Palace_of_Fine_Arts> <http://grupo64.es/hasOriginalTitle> "The Rock" ;
+	<http://grupo64.es/hasDirector> "Michael Bay" ;
+	<http://grupo64.es/hasWriter> "David Weisberg" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Michael_Bay" .
+
+<http://grupo64.es/film_locations/The_San_Francisco_Bay> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Rock" ;
+	<http://grupo64.es/hasFilmingLocation> "The San Francisco Bay" ;
+	<http://grupo64.es/hasDirector> "Michael Bay" ;
+	<http://grupo64.es/hasWriter> "David Weisberg" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Michael_Bay" .
+
+<http://grupo64.es/film_locations/New_Russian_Hill_Market> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Rock" ;
+	<http://grupo64.es/hasFilmingLocation> "New Russian Hill Market" ;
+	<http://grupo64.es/hasDirector> "Michael Bay" ;
+	<http://grupo64.es/hasWriter> "David Weisberg" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Michael_Bay" .
+
+<http://grupo64.es/film_locations/Fairmont_Hotel> <http://grupo64.es/hasOriginalTitle> "The Rock" ;
+	<http://grupo64.es/hasDirector> "Michael Bay" ;
+	<http://grupo64.es/hasWriter> "David Weisberg" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Michael_Bay" .
+
+<http://grupo64.es/film_locations/Coit_Tower> <http://grupo64.es/hasOriginalTitle> "The Rock" ;
+	<http://grupo64.es/hasDirector> "Michael Bay" ;
+	<http://grupo64.es/hasWriter> "David Weisberg" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Michael_Bay" .
+
+<http://grupo64.es/film_locations/City_Hall> <http://grupo64.es/hasOriginalTitle> "The Rock" ;
+	<http://grupo64.es/hasDirector> "Michael Bay" ;
+	<http://grupo64.es/hasWriter> "David Weisberg" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Michael_Bay" .
+
+<http://grupo64.es/film_locations/Alcatraz_Island> <http://grupo64.es/hasOriginalTitle> "The Rock" ;
+	<http://grupo64.es/hasDirector> "Michael Bay" ;
+	<http://grupo64.es/hasWriter> "David Weisberg" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Michael_Bay" .
+
+<http://grupo64.es/film_locations/Bank_of_America_Building> <http://grupo64.es/hasOriginalTitle> "The Towering Inferno" ;
+	<http://grupo64.es/hasDirector> "John Guillermin" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Guillermin" .
+
+<http://grupo64.es/film_locations/San_Francisco_Fire_Station_38> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Towering Inferno" ;
+	<http://grupo64.es/hasFilmingLocation> "San Francisco Fire Station 38" ;
+	<http://grupo64.es/hasDirector> "John Guillermin" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Guillermin" .
+
+<http://grupo64.es/film_locations/Hyatt_Regency_Hotel> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Towering Inferno" ;
+	<http://grupo64.es/hasFilmingLocation> "Hyatt Regency Hotel" ;
+	<http://grupo64.es/hasDirector> "John Guillermin" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Guillermin" .
+
+<http://grupo64.es/film_locations/Grace_Cathedral_Episcopal_Church> <http://grupo64.es/hasOriginalTitle> "The Towering Inferno" ;
+	<http://grupo64.es/hasDirector> "John Guillermin" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Guillermin" .
+
+<http://grupo64.es/film_locations/Firestation_#38> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Towering Inferno" ;
+	<http://grupo64.es/hasFilmingLocation> "Firestation #38" ;
+	<http://grupo64.es/hasDirector> "John Guillermin" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Guillermin" .
+
+<http://grupo64.es/film_locations/Fairmont_Hotel> <http://grupo64.es/hasOriginalTitle> "The Towering Inferno" ;
+	<http://grupo64.es/hasDirector> "John Guillermin" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Guillermin" .
+
+<http://grupo64.es/film_locations/2898_Vallejo_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Towering Inferno" ;
+	<http://grupo64.es/hasFilmingLocation> "2898 Vallejo Street" ;
+	<http://grupo64.es/hasDirector> "John Guillermin" ;
+	<http://grupo64.es/hasWriter> "Stirling Silliphant" ;
+	owl:sameAs "http://dbpedia.org/resource/John_Guillermin" .
+
+<http://grupo64.es/film_locations/Grace_Cathedral_Episcopal_Church> <http://grupo64.es/hasOriginalTitle> "The Wedding Planner" ;
+	<http://grupo64.es/hasDirector> "Adam Shankman" ;
+	<http://grupo64.es/hasWriter> "Pamela Falk" ;
+	owl:sameAs "http://dbpedia.org/resource/Adam_Shankman" .
+
+<http://grupo64.es/film_locations/The_Music_Concourse> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Wedding Planner" ;
+	<http://grupo64.es/hasFilmingLocation> "The Music Concourse" ;
+	<http://grupo64.es/hasDirector> "Adam Shankman" ;
+	<http://grupo64.es/hasWriter> "Pamela Falk" ;
+	owl:sameAs "http://dbpedia.org/resource/Adam_Shankman" .
+
+<http://grupo64.es/film_locations/Pleasant_Street_at_Taylor> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Wedding Planner" ;
+	<http://grupo64.es/hasFilmingLocation> "Pleasant Street at Taylor" ;
+	<http://grupo64.es/hasDirector> "Adam Shankman" ;
+	<http://grupo64.es/hasWriter> "Pamela Falk" ;
+	owl:sameAs "http://dbpedia.org/resource/Adam_Shankman" .
+
+<http://grupo64.es/film_locations/Pier_7> <http://grupo64.es/hasOriginalTitle> "The Wedding Planner" ;
+	<http://grupo64.es/hasDirector> "Adam Shankman" ;
+	<http://grupo64.es/hasWriter> "Pamela Falk" ;
+	owl:sameAs "http://dbpedia.org/resource/Adam_Shankman" .
+
+<http://grupo64.es/film_locations/Montgomery_Street_at_Union_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Wedding Planner" ;
+	<http://grupo64.es/hasFilmingLocation> "Montgomery Street at Union Street" ;
+	<http://grupo64.es/hasDirector> "Adam Shankman" ;
+	<http://grupo64.es/hasWriter> "Pamela Falk" ;
+	owl:sameAs "http://dbpedia.org/resource/Adam_Shankman" .
+
+<http://grupo64.es/film_locations/Lincoln_Park> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "The Wedding Planner" ;
+	<http://grupo64.es/hasFilmingLocation> "Lincoln Park" ;
+	<http://grupo64.es/hasDirector> "Adam Shankman" ;
+	<http://grupo64.es/hasWriter> "Pamela Falk" ;
+	owl:sameAs "http://dbpedia.org/resource/Adam_Shankman" .
+
+<http://grupo64.es/film_locations/Japanese_Tea_Garden> <http://grupo64.es/hasOriginalTitle> "The Wedding Planner" ;
+	<http://grupo64.es/hasDirector> "Adam Shankman" ;
+	<http://grupo64.es/hasWriter> "Pamela Falk" ;
+	owl:sameAs "http://dbpedia.org/resource/Adam_Shankman" .
+
+<http://grupo64.es/film_locations/City_Hall> <http://grupo64.es/hasOriginalTitle> "The Wedding Planner" ;
+	<http://grupo64.es/hasDirector> "Adam Shankman" ;
+	<http://grupo64.es/hasWriter> "Pamela Falk" ;
+	owl:sameAs "http://dbpedia.org/resource/Adam_Shankman" .
+
+<http://grupo64.es/film_locations/Postcard_Row> <http://grupo64.es/hasOriginalTitle> "The Woman In Red" ;
+	<http://grupo64.es/hasDirector> "Gene Wilder" ;
+	<http://grupo64.es/hasWriter> "Jean Loup Dabadie & Yves Robert" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Gene_Wilder" .
+
+<http://grupo64.es/film_locations/Brocklebank_Apartments> <http://grupo64.es/hasOriginalTitle> "The Woman In Red" ;
+	<http://grupo64.es/hasDirector> "Gene Wilder" ;
+	<http://grupo64.es/hasWriter> "Jean Loup Dabadie & Yves Robert" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Gene_Wilder" .
+
+<http://grupo64.es/film_locations/Palace_of_Fine_Arts> <http://grupo64.es/hasOriginalTitle> "The Woman In Red" ;
+	<http://grupo64.es/hasDirector> "Gene Wilder" ;
+	<http://grupo64.es/hasWriter> "Jean Loup Dabadie & Yves Robert" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Gene_Wilder" .
+
+<http://grupo64.es/film_locations/Montgomery_Street_at_Union_Street> <http://grupo64.es/hasOriginalTitle> "The Woman In Red" ;
+	<http://grupo64.es/hasDirector> "Gene Wilder" ;
+	<http://grupo64.es/hasWriter> "Jean Loup Dabadie & Yves Robert" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Gene_Wilder" .
+
+<http://grupo64.es/film_locations/City_Hall> <http://grupo64.es/hasOriginalTitle> "Tucker: The Man and His Dream" ;
+	<http://grupo64.es/hasDirector> "Francis Ford Coppola" ;
+	<http://grupo64.es/hasWriter> "Arnold Schulman" ;
+	owl:sameAs "http://dbpedia.org/resource/Francis_Ford_Coppola" .
+
+<http://grupo64.es/film_locations/Palace_of_Fine_Arts> <http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/York_Hotel> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasFilmingLocation> "York Hotel" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/San_Francisco_Drydock> <http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/Park_Hill_Sanatorium> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasFilmingLocation> "Park Hill Sanatorium" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/Mission_San_Juan_Bautista> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasFilmingLocation> "Mission San Juan Bautista" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/Mission_Dolores> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasFilmingLocation> "Mission Dolores" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/Gough_&_Eddy_Streets> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasFilmingLocation> "Gough & Eddy Streets" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/Fort_Point> <http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/Fairmont_Hotel> <http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" .
+
+<http://grupo64.es/film_locations/Ernie's_Restaurant> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasFilmingLocation> "Ernie's Restaurant" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/Conservatory_of_Flowers> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasFilmingLocation> "Conservatory of Flowers" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/Claude_Lane_at_Bush_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasFilmingLocation> "Claude Lane at Bush Street" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/California_Palace_of_the_Legion_of_Honor> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasFilmingLocation> "California Palace of the Legion of Honor" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/Brocklebank_Apartments> <http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/900_Lombard_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasFilmingLocation> "900 Lombard Street" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/1007_Gough_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Vertigo" ;
+	<http://grupo64.es/hasFilmingLocation> "1007 Gough Street" ;
+	<http://grupo64.es/hasDirector> "Alfred Hitchcock" ;
+	<http://grupo64.es/hasWriter> "Alec Coppel" ;
+	owl:sameAs "http://dbpedia.org/resource/Alfred_Hitchcock" .
+
+<http://grupo64.es/film_locations/St._Peter_&_Paul's_Church> <http://grupo64.es/hasOriginalTitle> "What's Up Doc?" ;
+	<http://grupo64.es/hasDirector> "Peter Bogdanovich" ;
+	<http://grupo64.es/hasWriter> "Peter Bogdanovich & Buck Henry" ;
+	owl:sameAs "http://dbpedia.org/resource/Peter_Bogdanovich" .
+
+<http://grupo64.es/film_locations/San_Francisco_Hilton> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "What's Up Doc?" ;
+	<http://grupo64.es/hasFilmingLocation> "San Francisco Hilton" ;
+	<http://grupo64.es/hasDirector> "Peter Bogdanovich" ;
+	<http://grupo64.es/hasWriter> "Peter Bogdanovich & Buck Henry" ;
+	owl:sameAs "http://dbpedia.org/resource/Peter_Bogdanovich" .
+
+<http://grupo64.es/film_locations/Lombard_Street_between_Hyde_and_Leavenworth> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "What's Up Doc?" ;
+	<http://grupo64.es/hasFilmingLocation> "Lombard Street between Hyde and Leavenworth" ;
+	<http://grupo64.es/hasDirector> "Peter Bogdanovich" ;
+	<http://grupo64.es/hasWriter> "Peter Bogdanovich & Buck Henry" ;
+	owl:sameAs "http://dbpedia.org/resource/Peter_Bogdanovich" .
+
+<http://grupo64.es/film_locations/Hyde_Street_Pier> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "What's Up Doc?" ;
+	<http://grupo64.es/hasFilmingLocation> "Hyde Street Pier" ;
+	<http://grupo64.es/hasDirector> "Peter Bogdanovich" ;
+	<http://grupo64.es/hasWriter> "Peter Bogdanovich & Buck Henry" ;
+	owl:sameAs "http://dbpedia.org/resource/Peter_Bogdanovich" .
+
+<http://grupo64.es/film_locations/Chinatown> <http://grupo64.es/hasOriginalTitle> "What's Up Doc?" ;
+	<http://grupo64.es/hasDirector> "Peter Bogdanovich" ;
+	<http://grupo64.es/hasWriter> "Peter Bogdanovich & Buck Henry" ;
+	owl:sameAs "http://dbpedia.org/resource/Peter_Bogdanovich" .
+
+<http://grupo64.es/film_locations/Alta_Plaza_Park> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "What's Up Doc?" ;
+	<http://grupo64.es/hasFilmingLocation> "Alta Plaza Park" ;
+	<http://grupo64.es/hasDirector> "Peter Bogdanovich" ;
+	<http://grupo64.es/hasWriter> "Peter Bogdanovich & Buck Henry" ;
+	owl:sameAs "http://dbpedia.org/resource/Peter_Bogdanovich" .
+
+<http://grupo64.es/film_locations/22nd_Avenue_&_Balboa_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "What's Up Doc?" ;
+	<http://grupo64.es/hasFilmingLocation> "22nd Avenue & Balboa Street" ;
+	<http://grupo64.es/hasDirector> "Peter Bogdanovich" ;
+	<http://grupo64.es/hasWriter> "Peter Bogdanovich & Buck Henry" ;
+	owl:sameAs "http://dbpedia.org/resource/Peter_Bogdanovich" .
+
+<http://grupo64.es/film_locations/Buena_Vista_Caf��> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "When a Man Loves a Woman" ;
+	<http://grupo64.es/hasFilmingLocation> "Buena Vista Caf��" ;
+	<http://grupo64.es/hasDirector> "Luis Mandoki" ;
+	<http://grupo64.es/hasWriter> "Ronald Bass" ;
+	owl:sameAs "http://dbpedia.org/resource/Luis_Mandoki" .
+
+<http://grupo64.es/film_locations/Victor's_Restaurant,_The_Westin_St._Francis_Hotel> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "When a Man Loves a Woman" ;
+	<http://grupo64.es/hasFilmingLocation> "Victor's Restaurant, The Westin St. Francis Hotel" ;
+	<http://grupo64.es/hasDirector> "Luis Mandoki" ;
+	<http://grupo64.es/hasWriter> "Ronald Bass" ;
+	owl:sameAs "http://dbpedia.org/resource/Luis_Mandoki" .
+
+<http://grupo64.es/film_locations/Spring_Valley_School> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "When a Man Loves a Woman" ;
+	<http://grupo64.es/hasFilmingLocation> "Spring Valley School" ;
+	<http://grupo64.es/hasDirector> "Luis Mandoki" ;
+	<http://grupo64.es/hasWriter> "Ronald Bass" ;
+	owl:sameAs "http://dbpedia.org/resource/Luis_Mandoki" .
+
+<http://grupo64.es/film_locations/International_Studies_Academy> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "When a Man Loves a Woman" ;
+	<http://grupo64.es/hasFilmingLocation> "International Studies Academy" ;
+	<http://grupo64.es/hasDirector> "Luis Mandoki" ;
+	<http://grupo64.es/hasWriter> "Ronald Bass" ;
+	owl:sameAs "http://dbpedia.org/resource/Luis_Mandoki" .
+
+<http://grupo64.es/film_locations/Grant_Street_at_Pacific_Avenue> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "When a Man Loves a Woman" ;
+	<http://grupo64.es/hasFilmingLocation> "Grant Street at Pacific Avenue" ;
+	<http://grupo64.es/hasDirector> "Luis Mandoki" ;
+	<http://grupo64.es/hasWriter> "Ronald Bass" ;
+	owl:sameAs "http://dbpedia.org/resource/Luis_Mandoki" .
+
+<http://grupo64.es/film_locations/Cybelle's_Pizza> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "When a Man Loves a Woman" ;
+	<http://grupo64.es/hasFilmingLocation> "Cybelle's Pizza" ;
+	<http://grupo64.es/hasDirector> "Luis Mandoki" ;
+	<http://grupo64.es/hasWriter> "Ronald Bass" ;
+	owl:sameAs "http://dbpedia.org/resource/Luis_Mandoki" .
+
+<http://grupo64.es/film_locations/766_Vallejo_Street_at_Stockton_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "When a Man Loves a Woman" ;
+	<http://grupo64.es/hasFilmingLocation> "766 Vallejo Street at Stockton Street" ;
+	<http://grupo64.es/hasDirector> "Luis Mandoki" ;
+	<http://grupo64.es/hasWriter> "Ronald Bass" ;
+	owl:sameAs "http://dbpedia.org/resource/Luis_Mandoki" .
+
+<http://grupo64.es/film_locations/1521_Masonic_Avenue_at_Piedmont_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "When a Man Loves a Woman" ;
+	<http://grupo64.es/hasFilmingLocation> "1521 Masonic Avenue at Piedmont Street" ;
+	<http://grupo64.es/hasDirector> "Luis Mandoki" ;
+	<http://grupo64.es/hasWriter> "Ronald Bass" ;
+	owl:sameAs "http://dbpedia.org/resource/Luis_Mandoki" .
+
+<http://grupo64.es/film_locations/312_Fillmore_Street> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Woman on Top" ;
+	<http://grupo64.es/hasFilmingLocation> "312 Fillmore Street" ;
+	<http://grupo64.es/hasDirector> "Fina Torres" ;
+	<http://grupo64.es/hasWriter> "Vera Blasi" ;
+	owl:sameAs "http://es.dbpedia.org/resource/Fina_Torres" .
+
+<http://grupo64.es/film_locations/SF_Chronicle_Building> a <http://mappings.dbpedia.org/server/ontology/classes/Film> ;
+	<http://grupo64.es/hasOriginalTitle> "Zodiac" ;
+	<http://grupo64.es/hasFilmingLocation> "SF Chronicle Building" ;
+	<http://grupo64.es/hasDirector> "David Fincher" ;
+	<http://grupo64.es/hasWriter> "James Vanderbilt" ;
+	owl:sameAs "http://dbpedia.org/resource/David_Fincher" .
