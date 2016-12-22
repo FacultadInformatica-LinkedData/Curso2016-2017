@@ -15,6 +15,10 @@ onto:Zaragoza a onto:Ciudad .
 
 <http://www.semanticweb.org/grupo09#Ctra.+de+Logro%C3%B1o+> onto:enCiudad onto:Zaragoza .
 
+<http://dbpedia.org/resource/Zaragoza> a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#Ctra.+de+Logro%C3%B1o+> onto:enCiudad <http://dbpedia.org/resource/Zaragoza> .
+
 <http://www.semanticweb.org/grupo09#RESTAURANTE+EL+CACHIRULO> onto:estaEn <http://www.semanticweb.org/grupo09#Ctra.+de+Logro%C3%B1o+> ;
 	onto:codigoPostal "50011"^^xsd:int ;
 	onto:email "congresos@elcachirulo.es" ;
@@ -50,7 +54,7 @@ onto:Zaragoza a onto:Ciudad .
 onto:GUETARIA a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Madre+Vedruna> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:GUETARIA onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Madre+Vedruna> ;
 	onto:codigoPostal "50008"^^xsd:int ;
@@ -62,7 +66,7 @@ onto:GUETARIA onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Madre+Vedruna
 onto:GARDEN a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+San+Juan+Bosco> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:GARDEN onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Juan+Bosco> ;
 	onto:codigoPostal "50009"^^xsd:int ;
@@ -78,7 +82,7 @@ onto:GARDEN onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Juan+Bosco>
 <http://www.semanticweb.org/grupo09#RESTAURANTE+PARRILLA+DE+ALBARRAC%C3%8DN> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#Pza.+del+Carmen> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#RESTAURANTE+PARRILLA+DE+ALBARRAC%C3%8DN> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+del+Carmen> ;
 	onto:codigoPostal "50004"^^xsd:int ;
@@ -94,7 +98,7 @@ onto:GARDEN onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Juan+Bosco>
 <http://www.semanticweb.org/grupo09#RESTAURANTE+LA+MATILDE> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Predicadores> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#RESTAURANTE+LA+MATILDE> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Predicadores> ;
 	onto:codigoPostal "50003"^^xsd:int ;
@@ -110,7 +114,7 @@ onto:GARDEN onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Juan+Bosco>
 <http://www.semanticweb.org/grupo09#EL+FORO> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Eduardo+Ibarra> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#EL+FORO> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Eduardo+Ibarra> ;
 	onto:codigoPostal "50009"^^xsd:int ;
@@ -140,7 +144,7 @@ onto:ROGELIOS a onto:Restaurante ;
 <http://www.semanticweb.org/grupo09#LOS+DELFINES> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Santander> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#LOS+DELFINES> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santander> ;
 	onto:codigoPostal "50010"^^xsd:int ;
@@ -152,7 +156,7 @@ onto:ROGELIOS a onto:Restaurante ;
 onto:GOYESCO a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Manuel+Lasala> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:GOYESCO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Manuel+Lasala> ;
 	onto:codigoPostal "50006"^^xsd:int ;
@@ -165,7 +169,7 @@ onto:GOYESCO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Manuel+Lasala>
 <http://www.semanticweb.org/grupo09#RESTAURANTE+LA+BASTILLA> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Coso> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#RESTAURANTE+LA+BASTILLA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Coso> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -182,7 +186,7 @@ onto:GOYESCO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Manuel+Lasala>
 <http://www.semanticweb.org/grupo09#RESTAURANTE+LA+BODEGA+DE+CHEMA> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Latassa> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#RESTAURANTE+LA+BODEGA+DE+CHEMA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Latassa> ;
 	onto:codigoPostal "50006"^^xsd:int ;
@@ -198,7 +202,7 @@ onto:GOYESCO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Manuel+Lasala>
 <http://www.semanticweb.org/grupo09#RESTAURANTE+LA+GRANADA> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+San+Ignacio+de+Loyola> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#RESTAURANTE+LA+GRANADA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Ignacio+de+Loyola> ;
 	onto:codigoPostal "50008"^^xsd:int ;
@@ -214,7 +218,7 @@ onto:GOYESCO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Manuel+Lasala>
 <http://www.semanticweb.org/grupo09#LA+RINCONADA+DE+LORENZO> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+La+Salle> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#LA+RINCONADA+DE+LORENZO> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+La+Salle> ;
 	onto:codigoPostal "50006"^^xsd:int ;
@@ -230,7 +234,7 @@ onto:GOYESCO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Manuel+Lasala>
 <http://www.semanticweb.org/grupo09#EL+CHALET> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Sta.+Teresa+de+Jes%C3%BAs> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#EL+CHALET> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Sta.+Teresa+de+Jes%C3%BAs> ;
 	onto:codigoPostal "50006"^^xsd:int ;
@@ -246,7 +250,7 @@ onto:GOYESCO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Manuel+Lasala>
 <http://www.semanticweb.org/grupo09#FINCA+LA+ALQUERIA> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#Autov%C3%ADa+de+Logro%C3%B1o+km+10> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#FINCA+LA+ALQUERIA> onto:estaEn <http://www.semanticweb.org/grupo09#Autov%C3%ADa+de+Logro%C3%B1o+km+10> ;
 	onto:codigoPostal "50180"^^xsd:int ;
@@ -261,7 +265,7 @@ onto:GOYESCO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Manuel+Lasala>
 <http://www.semanticweb.org/grupo09#FINCA+TORRE++DEL+PINO> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#c%2F+Zurita+n%C2%BA+15> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#FINCA+TORRE++DEL+PINO> onto:estaEn <http://www.semanticweb.org/grupo09#c%2F+Zurita+n%C2%BA+15> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -276,7 +280,7 @@ onto:GOYESCO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Manuel+Lasala>
 <http://www.semanticweb.org/grupo09#RESTAURANTE+BOLE> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Francisco+Vitoria> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#RESTAURANTE+BOLE> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Francisco+Vitoria> ;
 	onto:codigoPostal "50008"^^xsd:int ;
@@ -297,7 +301,7 @@ Jamón Ibérico de bellota, quesos aragones y las mejores anchoas del cantábric
 <http://www.semanticweb.org/grupo09#RESTAURANTE+LA+JAMONER%C3%8DA+EL+CORTADOR+DE+JAMON> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Bruno+Solano> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#RESTAURANTE+LA+JAMONER%C3%8DA+EL+CORTADOR+DE+JAMON> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Bruno+Solano> ;
 	onto:codigoPostal "50006"^^xsd:int ;
@@ -334,7 +338,7 @@ Jamón Ibérico de bellota, quesos aragones y las mejores anchoas del cantábric
 
 onto:ZARAGOZA a onto:Ciudad .
 
-<http://www.semanticweb.org/grupo09#C%2F+Berenguer+Bardaji> onto:enCiudad onto:ZARAGOZA .
+<http://www.semanticweb.org/grupo09#C%2F+Berenguer+Bardaji> onto:enCiudad onto:ZARAGOZA , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#DON+FON> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Berenguer+Bardaji> ;
 	onto:codigoPostal "50017"^^xsd:int ;
@@ -347,7 +351,7 @@ onto:ZARAGOZA a onto:Ciudad .
 onto:ESPEJO a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Santiago> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:ESPEJO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santiago> ;
 	onto:codigoPostal "50003"^^xsd:int ;
@@ -358,7 +362,7 @@ onto:ESPEJO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santiago> ;
 <http://www.semanticweb.org/grupo09#FARTALLA%2C+LA> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Reconquista> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#FARTALLA%2C+LA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Reconquista> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -369,7 +373,7 @@ onto:ESPEJO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santiago> ;
 <http://www.semanticweb.org/grupo09#EL+FERIAL> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Sixto+Celorrio> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#EL+FERIAL> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Sixto+Celorrio> ;
 	onto:codigoPostal "50015"^^xsd:int ;
@@ -380,7 +384,7 @@ onto:ESPEJO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santiago> ;
 <http://www.semanticweb.org/grupo09#NUEVO+SIGLO> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Jos%C3%A9+Pellicer> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#NUEVO+SIGLO> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Jos%C3%A9+Pellicer> ;
 	onto:codigoPostal "50007"^^xsd:int ;
@@ -392,7 +396,7 @@ onto:ESPEJO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santiago> ;
 <http://www.semanticweb.org/grupo09#FLANDES+Y+FABIOLA> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#Parque+Primo+de+Rivera> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#FLANDES+Y+FABIOLA> onto:estaEn <http://www.semanticweb.org/grupo09#Parque+Primo+de+Rivera> ;
 	onto:codigoPostal "50006"^^xsd:int ;
@@ -403,7 +407,7 @@ onto:ESPEJO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santiago> ;
 <http://www.semanticweb.org/grupo09#LA+FORJA> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Mayor> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#LA+FORJA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mayor> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -417,7 +421,7 @@ onto:ESPEJO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santiago> ;
 <http://www.semanticweb.org/grupo09#FORO+ROMANO+-+TREVI> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#Pza.+de+la+Seo> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#FORO+ROMANO+-+TREVI> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+la+Seo> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -432,7 +436,7 @@ onto:ESPEJO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santiago> ;
 onto:GERARDO a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Italia> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:GERARDO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Italia> ;
 	onto:codigoPostal "50010"^^xsd:int ;
@@ -451,7 +455,7 @@ onto:GERARDO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Italia> ;
 <http://www.semanticweb.org/grupo09#ITZIAR+2> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Juan+Jos%C3%A9+Rivas> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#ITZIAR+2> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Juan+Jos%C3%A9+Rivas> ;
 	onto:codigoPostal "50006"^^xsd:int ;
@@ -462,7 +466,7 @@ onto:GERARDO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Italia> ;
 <http://www.semanticweb.org/grupo09#JABATO%2C+EL> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#Crta.+Logro%C3%B1o> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#JABATO%2C+EL> onto:estaEn <http://www.semanticweb.org/grupo09#Crta.+Logro%C3%B1o> ;
 	onto:codigoPostal "50011"^^xsd:int ;
@@ -480,7 +484,7 @@ onto:GERARDO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Italia> ;
 onto:JAUJA a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Embarcadero> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:JAUJA onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Embarcadero> ;
 	onto:codigoPostal "50009"^^xsd:int ;
@@ -500,7 +504,7 @@ onto:JAUJA onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Embarcadero> ;
 <http://www.semanticweb.org/grupo09#LONJA%2C+LA> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%C2%BA+de+Cogullada> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#LONJA%2C+LA> onto:estaEn <http://www.semanticweb.org/grupo09#C%C2%BA+de+Cogullada> ;
 	onto:codigoPostal "50014"^^xsd:int ;
@@ -511,7 +515,7 @@ onto:JAUJA onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Embarcadero> ;
 <http://www.semanticweb.org/grupo09#MALLOS%2C+LOS> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Alicante> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#MALLOS%2C+LOS> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Alicante> ;
 	onto:codigoPostal "50007"^^xsd:int ;
@@ -523,7 +527,7 @@ onto:JAUJA onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Embarcadero> ;
 <http://www.semanticweb.org/grupo09#MAMMA+MIA> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#Pza.+San+Miguel> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#MAMMA+MIA> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+San+Miguel> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -549,7 +553,7 @@ onto:MAMBLAS onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mamblas> ;
 <http://www.semanticweb.org/grupo09#TABERNA+BILBILIS> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Juan+Moneva> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#TABERNA+BILBILIS> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Juan+Moneva> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -561,7 +565,7 @@ onto:MAMBLAS onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mamblas> ;
 <http://www.semanticweb.org/grupo09#LA+TAGLIATELLA> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Don+Jaime+I> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#LA+TAGLIATELLA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Don+Jaime+I> ;
 	onto:codigoPostal "50003"^^xsd:int ;
@@ -575,7 +579,7 @@ onto:MAMBLAS onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mamblas> ;
 <http://www.semanticweb.org/grupo09#MEI+MEI+II> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Reina+Fabiola> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#MEI+MEI+II> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Reina+Fabiola> ;
 	onto:codigoPostal "50008"^^xsd:int ;
@@ -587,7 +591,7 @@ onto:MAMBLAS onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mamblas> ;
 <http://www.semanticweb.org/grupo09#MERCADO+DE+PESCADOS> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#Avda.+Navarra> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#MERCADO+DE+PESCADOS> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Navarra> ;
 	onto:codigoPostal "50010"^^xsd:int ;
@@ -601,7 +605,7 @@ onto:MAMBLAS onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mamblas> ;
 <http://www.semanticweb.org/grupo09#MES%C3%93N+LOS+CANT%C3%81ROS> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Jose+Mar%C3%ADa+Lacarra+de+Miguel> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#MES%C3%93N+LOS+CANT%C3%81ROS> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Jose+Mar%C3%ADa+Lacarra+de+Miguel> ;
 	onto:codigoPostal "50008"^^xsd:int ;
@@ -612,7 +616,7 @@ onto:MAMBLAS onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mamblas> ;
 <http://www.semanticweb.org/grupo09#MESON+LA+CAZUELA> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Daroca> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#MESON+LA+CAZUELA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Daroca> ;
 	onto:codigoPostal "50017"^^xsd:int ;
@@ -624,7 +628,7 @@ onto:MAMBLAS onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mamblas> ;
 <http://www.semanticweb.org/grupo09#MESON+DEL+CARMEN> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Hern%C3%A1n+Cort%C3%A9s> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#MESON+DEL+CARMEN> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Hern%C3%A1n+Cort%C3%A9s> ;
 	onto:codigoPostal "50004"^^xsd:int ;
@@ -636,7 +640,7 @@ onto:MAMBLAS onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mamblas> ;
 onto:CASAFRAN a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#Carretera+de+Cogullada> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 onto:CASAFRAN onto:estaEn <http://www.semanticweb.org/grupo09#Carretera+de+Cogullada> ;
 	onto:codigoPostal "50014"^^xsd:int ;
@@ -651,7 +655,7 @@ onto:CASAFRAN onto:estaEn <http://www.semanticweb.org/grupo09#Carretera+de+Cogul
 <http://www.semanticweb.org/grupo09#MES%C3%93N+MARTIN> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2F+Mar%C3%ADa+Guerrero> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#MES%C3%93N+MARTIN> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mar%C3%ADa+Guerrero> ;
 	onto:codigoPostal "50009"^^xsd:int ;
@@ -662,7 +666,7 @@ onto:CASAFRAN onto:estaEn <http://www.semanticweb.org/grupo09#Carretera+de+Cogul
 <http://www.semanticweb.org/grupo09#MESON+EL+ROMERAL> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#C%2FArzobispo+Apaolaza> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#MESON+EL+ROMERAL> onto:estaEn <http://www.semanticweb.org/grupo09#C%2FArzobispo+Apaolaza> ;
 	onto:codigoPostal "50009"^^xsd:int ;
@@ -673,7 +677,7 @@ onto:CASAFRAN onto:estaEn <http://www.semanticweb.org/grupo09#Carretera+de+Cogul
 <http://www.semanticweb.org/grupo09#MES%C3%93N+DE+TOM%C3%81S> a onto:Restaurante .
 
 <http://www.semanticweb.org/grupo09#Avda.+Las+Torres> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#MES%C3%93N+DE+TOM%C3%81S> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Las+Torres> ;
 	onto:codigoPostal "50008"^^xsd:int ;
