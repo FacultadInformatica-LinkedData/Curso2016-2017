@@ -1,0 +1,118 @@
+@base <http://www.semanticweb.org/Group07/ontology/JobSearch#/> .
+@prefix datosbne: <http://datos.bne.es/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dctype:	<http://purl.org/dc/dcmitype/> .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard:	<http://www.w3.org/2006/vcard/ns#> .
+@prefix rdflicense:	<http://purl.org/NET/rdflicense/> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+
+:catalog
+	a dcat:Catalog ;
+	dct:title "El catálogo RDF para la búsqueda de empleo en Castilla y León"@es ;
+	dct:source: <http://www.datosabiertos.jcyl.es/> ;
+	dct:publisher :  <http://github.com/Axelflg> ,
+					 <http://github.com/ricardomena> ,
+					 <http://github.com/ValeriaPE28> ,
+					 <http://github.com/raulrlc> ,
+				     <http://github.com/cecilia21> ;
+	dct:license Creative Commons Reconocimiento 3.0 ;
+	dct:language <http://lexvo.org/id/iso639-3/spa> 
+	dcat:dataset :Ofertas-de-Empleo, :Empleo-Publico , :Organismos-Gestor, :provincias, :Localidades ;
+	.
+
+#Empleo Publico
+:EmpleoPublico
+	a dcat:Dataset ;
+	dct:title "Empleos públicos de Castilla y León"@es ;
+	dcat:keyword "Empleo Publico"@es, "Castilla y Leon"@es;
+	dct:issued "2012-03-27"^^xsd:date ;
+    dct:modified "2016-12-17"^^xsd:date ;
+    dcat:contactPoint <mailto:informacion012@jcyl.es?subject='Empleo%20Publico%20dataset'> ;
+	void:uriSpace "http://www.semanticweb.org/Group07/resources/" ;
+	dcat:distribution :EmpleoPublico-bulk ;
+	.
+:EmpleoPublico-bulk
+	a dcat:Distribution ;
+	dct:title "Distribución del dataset de Empleo Publico en Castilla y León"@es ;
+	void:downloadURL <https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2016-2017/master/HandsOn/Group07/rdf/Empleo-Publico.ttl> ;
+	dcat:mediaType "text/turtle" ;
+	dct:license Creative Commons Reconocimiento 3.0 .
+
+#Ofertas de Empleo
+:OfertasdeEmpleo
+	a dcat:Dataset ;
+	dct:title "Ofertas de empleo de Castilla y León"@es ;
+	dcat:keyword "Ofertas empleo"@es, "Castilla y Leon"@es;
+	dct:issued "2013-03-20"^^xsd:date ;
+    dct:modified "2016-12-17"^^xsd:date ;
+    dcat:contactPoint <mailto:informacion012@jcyl.es?subject='Ofertas%20de%20Empleo%20dataset'> ;
+	void:uriSpace "http://www.semanticweb.org/Group07/resources/" ;
+	dcat:distribution :OfertasdeEmpleo-bulk ;
+	.
+:OfertasdeEmpleo-bulk
+	a dcat:Distribution ;
+	dct:title "Distribución del dataset de Ofertas de Empleo en Castilla y León"@es ;
+	void:downloadURL <https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2016-2017/master/HandsOn/Group07/rdf/Ofertas-de-Empleo.ttl> ;
+	dcat:mediaType "text/turtle" ;
+	dct:license Creative Commons Reconocimiento 3.0 .
+	
+#Provincias
+:Provincias
+	a dcat:Dataset ;
+	dct:title "Provincias de Castilla y León"@es ;
+	dcat:keyword "Provincias"@es, "Castilla y Leon"@es;
+	dct:issued "2011-02-20"^^xsd:date ;
+    dct:modified "2015-12-17"^^xsd:date ;
+    dcat:contactPoint <mailto:informacion012@jcyl.es?subject='Provincias%20dataset'> ;
+	void:uriSpace "http://www.semanticweb.org/Group07/resources/" ;
+	dcat:distribution :Provincias-bulk ;
+	.
+:Provincias-bulk
+	a dcat:Distribution ;
+	dct:title "Distribución del dataset de Provincias en Castilla y León"@es ;
+	void:downloadURL <https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2016-2017/master/HandsOn/Group07/rdf/provincias.ttl> ;
+	dcat:mediaType "text/turtle" ;
+	dct:license Creative Commons Reconocimiento 3.0 .
+	
+#Localidades 
+:Localidades
+	a dcat:Dataset ;
+	dct:title "Localidades de Castilla y León"@es ;
+	dcat:keyword "Localidades"@es, "Castilla y Leon"@es;
+	dct:issued "2011-02-20"^^xsd:date ;
+    dct:modified "2015-12-17"^^xsd:date ;
+    dcat:contactPoint <mailto:informacion012@jcyl.es?subject='Localidades%20dataset'> ;
+	void:uriSpace "http://www.semanticweb.org/Group07/resources/" ;
+	dcat:distribution :Localidades-bulk ;
+	.
+:Localidades-bulk
+	a dcat:Distribution ;
+	dct:title "Distribución del dataset de Localidades en Castilla y León"@es ;
+	void:downloadURL <https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2016-2017/master/HandsOn/Group07/rdf/Localidades.ttl> ;
+	dcat:mediaType "text/turtle" ;
+	dct:license Creative Commons Reconocimiento 3.0 .
+
+#Organismos Gestor
+:OrganismosGestor
+	a dcat:Dataset ;
+	dct:title "Organismos Gestor en Castilla y León"@es ;
+	dcat:keyword "Organismos Gestor"@es, "Castilla y Leon"@es;
+	dct:issued "2012-04-12"^^xsd:date ;
+    dct:modified "2016-12-17"^^xsd:date ;
+    dcat:contactPoint <mailto:informacion012@jcyl.es?subject='Organismo%20Gestor%20dataset'> ;
+	void:uriSpace "http://www.semanticweb.org/Group07/resources/" ;
+	dcat:distribution :OrganismosGestor-bulk ;
+	.
+:OrganismosGestor-bulk
+	a dcat:Distribution ;
+	dct:title "Distribución del dataset de Organismos Gestor en Castilla y León"@es ;
+	void:downloadURL <https://raw.githubusercontent.com/FacultadInformatica-LinkedData/Curso2016-2017/master/HandsOn/Group07/rdf/Organismos-Gestor.ttl> ;
+	dcat:mediaType "text/turtle" ;
+	dct:license Creative Commons Reconocimiento 3.0 .

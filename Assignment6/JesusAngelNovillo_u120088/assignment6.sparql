@@ -1,0 +1,55 @@
+PREFIX mn: <http://example.org/resources/> 
+PREFIX mv: <http://example.org/myVocabulary#> 
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+#1
+SELECT (SUM(?x) AS ?numero) WHERE {
+	?obs a qb:Observation ;
+	mv:relatedDistrict ?z ;
+	mv:hasAccidentType ?y ;
+	mv:numberOfAccidents ?x ;
+	qb:dataSet mn:MyDataset .
+}
+
+
+
+#2
+SELECT ?y ?x WHERE {
+	?obs a qb:Observation ;
+	mv:relatedDistrict "USERA" ;
+	mv:hasAccidentType ?y ;
+	mv:numberOfAccidents ?x ;
+	qb:dataSet mn:MyDataset .
+}
+
+
+
+#3:
+SELECT ?z ?x WHERE {
+	?obs a qb:Observation ;
+	mv:relatedDistrict ?z ;
+	mv:hasAccidentType mv:MultipleCollision ;
+	mv:numberOfAccidents ?x ;
+	qb:dataSet mn:MyDataset .
+}
+
+
+
+#4
+SELECT ?distrito (MAX(?x) AS ?numero) WHERE {
+    ?obs a qb:Observation ;
+   	mv:relatedDistrict ?distrito ;
+   	mv:hasAccidentType mv:BicycleFall ;
+	mv:numberOfAccidents ?x ;
+	qb:dataSet mn:MyDataset .
+} 
+
+
+#5
+SELECT ?z WHERE {
+	?obs a qb:Observation ;
+	mv:relatedDistrict  ?z ;
+	mv:hasAccidentType  ?y ;
+	qb:dataSet mn:MyDataset ;
+	mv:numberOfAccidents ?x . FILTER (?x > 500)
+}

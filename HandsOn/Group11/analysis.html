@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE htm  <h4>Dataset: agenda eventos culturales</h4>
+        <table>
+l>
 <html>
     <head>
         <meta <charset="utf-8">
@@ -320,7 +322,7 @@
              <tr>
                  <td>Distrito</td>
                  <td>String</td>
-                 <td>Nombre del drisrito donde se desarrolla la actividad</td>
+                 <td>Nombre del distrito donde se desarrolla la actividad</td>
 		 <td>Cualquier cadena de carácteres</td>
              </tr>
              <tr>
@@ -330,6 +332,125 @@
 		 <td>Cualquier cadena de carácteres</td>
              </tr>
         </table>
+	  <h4>Dataset: juntas distrito</h4>
+	<table>
+	  <tr>
+                 <td>Nombre</td>
+                 <td>String</td>
+                 <td>Descripción de quien organiza la actividad</td> 
+                 <td>Cualquier cadena de carácteres</td>
+             </tr>
+	 <tr> 
+		 
+                 <td>PK</td>
+                 <td>Integer</td>
+                 <td>Es un campo clave, dentro de la web municipal, para uso interno</td>
+                 <td>Cualquier cadena de carácteres</td>
+             </tr>
+	  <tr>
+                 <td>Horario</td>
+                 <td>Date</td>
+                 <td>Campo donde se describe el horario de la actividad</td>
+                 <td>Cualquier cadena de carácteres</td>
+             </tr>
+	  <tr>
+                 <td>Transporte</td>
+                 <td>String</td>
+                 <td>Descripción de como llegar a la ubicación mediante el transporte público </td>
+                 <td>Cualquier cadena de carácteres</td>
+             </tr>
+	  <tr>
+                 <td>Descripción</td>
+                 <td>String</td>
+                 <td>Pequeña descripción de la actividad</td>
+                 <td>Cualquier cadena de carácteres</td>
+             </tr>
+	  <tr>
+                 <td>Accesibilidad</td>
+                 <td>Integer</td>
+                 <td>Nivel de acceso para personas descapacitadas</td>
+                 <td>[0-9]</td>
+             </tr>
+	  <tr>
+                 <td>Content-URL</td>
+                 <td>URL</td>
+                 <td>Nombre del recurso en internet del evento en concreto</td>
+                 <td>"http://www.madrid.es/vgn-ext-templating/v/index.jsp?vgnextchannel=*" donde asterisco es cualquier identificador de carácteres</td>
+             </tr>
+	  <tr>
+                 <td>Localidad</td>
+                 <td>String</td>
+                 <td>Municipio de la localidad</td>
+                 <td>[a-z][A-Z]</td>
+             </tr>
+    	 <tr>
+                 <td>Provincia</td>
+                 <td>String</td>
+                 <td>Provincia a la que pertenece la localidad</td>
+                 <td>[a-z][A-Z]</td>
+             </tr>
+	  <tr>
+                 <td>Disrito</td>
+                 <td>String</td>
+                 <td>Distrito donde se encuentra la junta del distrito</td>
+                 <td>[a-z][A-Z]</td>
+             </tr>
+          <tr>
+                <td>Coordenada X</td>
+                <td>Integer</td>
+                <td>Coordenada de 6 caracteres sobre el plano de la ciudad</td>
+                <td>[0-9]{1,6}</td>
+            </tr>
+            <tr>
+                <td>Coordenada Y</td>
+                <td>Integer</td>
+                <td>Coordenada de 7 caracteres sobre el plano de la ciudad</td>
+                <td>[0-9]{1,6}</td>
+             </tr>
+             <tr>
+                 <td>Latitud</td>
+                 <td>float</td>
+                 <td>Coordenada latitud en el sistema de referencia WGS84</td>
+                 <td>[-+]?[0-9].[0-9]</td>
+             </tr>
+             <tr>
+                 <td>Longitud</td>
+                 <td>float</td>
+                 <td>Coordenada longitud en el sistema de referencia WGS84. <b>NOTA:</b> si se abre $
+                 <td>[-+]?[0-9]*\.?[0-9]*</td>
+             <tr>
+                <td>Teléfono</td>
+                <td>Entero</td>
+                <td>Teléfono del centro cultural</td>
+                <td>[0-9]</td>
+            </tr>
+            <tr>
+                <td>Fax</td>
+                <td>Entero</td>
+                <td>Fax del centro cultural</td>
+                <td>[0-9]</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>Cadena</td>
+                <td>Correo electrónico del centro cultural</td>
+                <td>[a-z][A-Z][0-9]</td>
+            </tr>
+            <tr>
+                <td>Tipo</td>
+                <td>Cadena</td>
+                <td>Descripción de la tipología de la instalación</td>
+                <td>[a-z][A-Z][0-9]</td>
+            </tr>
+
+
+
+
+
+
+
+        <table>
+
 
         <h1>Analyse licensing of the data source</h1>
         <!--Analyse who is the publisher of the dataset and its rightsholder,
@@ -353,5 +474,6 @@
             <li><u>Distrito</u>: http://www.madridcultura.es/recursos/distrito</li>
             <li><u>Tipo</u>: http://www.madridcultura.es/recursos/tipo</li>
         </ul>
+
     </body>
 </html>
