@@ -15,6 +15,10 @@ onto:Zaragoza a onto:Ciudad .
 
 <http://www.semanticweb.org/grupo09#C%2F+Sangenis> onto:enCiudad onto:Zaragoza .
 
+<http://dbpedia.org/resource/Zaragoza> a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#C%2F+Sangenis> onto:enCiudad <http://dbpedia.org/resource/Zaragoza> .
+
 <http://www.semanticweb.org/grupo09#HOTEL+DELICIAS> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Sangenis> ;
 	onto:codigoPostal "50010"^^xsd:int ;
 	onto:telefono "876 28 02 25" ;
@@ -32,7 +36,7 @@ onto:Zaragoza a onto:Ciudad .
 	onto:descripcion "C/ Santiago, 12 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 41 01" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Santiago> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+EL+PR%C3%8DNCIPE> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santiago> ;
 	onto:codigoPostal "50003"^^xsd:int ;
@@ -61,7 +65,7 @@ SINGLE ROOMS: 6""" ;
 	onto:descripcion "C/ Don Jaime I, 54-56 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 294 322" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Don+Jaime+I> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+DON+JAIME+54> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Don+Jaime+I> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -94,7 +98,7 @@ The Hotel is set in the very centre of Zaragoza, next to the Basílica de Nuestr
 	onto:descripcion "Avda. Navarra, 36, 1ºA <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 53 29 53" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Navarra> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSI%C3%93N+JUANA> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Navarra> ;
 	onto:codigoPostal "50017"^^xsd:int ;
@@ -110,7 +114,7 @@ The Hotel is set in the very centre of Zaragoza, next to the Basílica de Nuestr
 	onto:descripcion "C/ López Allue, 2, 2º E y 3º F <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 55 86 26" .
 
 <http://www.semanticweb.org/grupo09#C%2F+L%C3%B3pez+Allue> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOSTAL+CASTILLA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+L%C3%B3pez+Allue> ;
 	onto:codigoPostal "50005"^^xsd:int ;
@@ -127,7 +131,7 @@ The Hotel is set in the very centre of Zaragoza, next to the Basílica de Nuestr
 	onto:descripcion "C/ Conde Aranda, 142 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 66 01" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Conde+Aranda> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOSTAL+AYBAR> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Conde+Aranda> ;
 	onto:codigoPostal "50003"^^xsd:int ;
@@ -145,7 +149,7 @@ The Hotel is set in the very centre of Zaragoza, next to the Basílica de Nuestr
 	onto:descripcion "C/ San Vicente de Paúl, 30, ppal. izda. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 16 84" .
 
 <http://www.semanticweb.org/grupo09#C%2F+San+Vicente+de+Pa%C3%BAl> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOSTAL+NAVARRA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Vicente+de+Pa%C3%BAl> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -175,7 +179,7 @@ The Hotel is set in the very centre of Zaragoza, next to the Basílica de Nuestr
 	onto:descripcion "C/ Boggiero, 166, 2ºA y B <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 432 465" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Boggiero> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOSTAL+AISA+OCHOA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Boggiero> ;
 	onto:codigoPostal "50003"^^xsd:int ;
@@ -192,7 +196,7 @@ The Hotel is set in the very centre of Zaragoza, next to the Basílica de Nuestr
 	onto:descripcion "C/ San Lorenzo, 2 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 17 41" .
 
 <http://www.semanticweb.org/grupo09#C%2F+San+Lorenzo> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOSTAL+EL+DESCANSO> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Lorenzo> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -210,7 +214,7 @@ The Hotel is set in the very centre of Zaragoza, next to the Basílica de Nuestr
 	onto:descripcion "Plaza del Pilar, 11 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 39 42 50" .
 
 <http://www.semanticweb.org/grupo09#Plaza+del+Pilar> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+PILAR+PLAZA+%28ANTIGUO+HOTEL+LAS+TORRES%29> onto:estaEn <http://www.semanticweb.org/grupo09#Plaza+del+Pilar> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -231,7 +235,7 @@ Sus habitaciones presentan una decoración elegante y contemporánea en tonos bl
 	onto:descripcion "Pº María Agustín, 13, 1º <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 21 11 00" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+Mar%C3%ADa+Agust%C3%ADn> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOSTAL+EL+CARMEN> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Mar%C3%ADa+Agust%C3%ADn> ;
 	onto:codigoPostal "50004"^^xsd:int ;
@@ -267,7 +271,7 @@ Sus habitaciones presentan una decoración elegante y contemporánea en tonos bl
 	onto:descripcion "C/ Asín y Palacios, 11 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 35 11 00" .
 
 <http://www.semanticweb.org/grupo09#C%2F+As%C3%ADn+y+Palacios> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#ILUNION+HOTELS+ROMAREDA+S.A.> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+As%C3%ADn+y+Palacios> ;
 	onto:codigoPostal "50009"^^xsd:int ;
@@ -371,7 +375,7 @@ The HOTEL CONFORTEL ROMAREDA is located in a quiet area near the city centre, ju
 	onto:descripcion "C/ Espoz y Mina, 33 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 20 50 50" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Espoz+y+Mina> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+SAUCE> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Espoz+y+Mina> ;
 	onto:codigoPostal "50003"^^xsd:int ;
@@ -424,7 +428,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "Pza. de la Seo, 2 y 3 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 20 20 00" .
 
 <http://www.semanticweb.org/grupo09#Pza.+de+la+Seo> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+TIBUR> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+la+Seo> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -442,7 +446,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "C/ Verónica, 14 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 31 61" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Ver%C3%B3nica> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSI%C3%93N+IGLESIAS> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Ver%C3%B3nica> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -459,7 +463,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "Avda. Tenor Fleta, 68, 3º B <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 38 55 40" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Tenor+Fleta> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSI%C3%93N+TORRIJO> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Tenor+Fleta> ;
 	onto:codigoPostal "50007"^^xsd:int ;
@@ -489,7 +493,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "C/ Fuenterrabía, 5, 7ºA <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 58 03" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Fuenterrab%C3%ADa> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSI%C3%93N+LACASTA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Fuenterrab%C3%ADa> ;
 	onto:codigoPostal "50004"^^xsd:int ;
@@ -505,7 +509,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "C/ Calatorao, 2, 4º izq <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 73 23" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Calatorao> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSI%C3%93N+PALUD> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Calatorao> ;
 	onto:codigoPostal "50003"^^xsd:int ;
@@ -533,7 +537,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "C/ María Lostal, 25, 1-3. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 21 74 72" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Mar%C3%ADa+Lostal> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSI%C3%93N+MIRAFLORES> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mar%C3%ADa+Lostal> ;
 	onto:codigoPostal "50008"^^xsd:int ;
@@ -563,7 +567,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "C/ Santander, 3 7ª planta. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 35 30 90" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Santander> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSI%C3%93N+SANTA+GEMA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santander> ;
 	onto:codigoPostal "50010"^^xsd:int ;
@@ -580,7 +584,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "Pº Pamplona, 23, 3º D <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 21 76 08" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+Pamplona> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOSTAL+PARA%C3%8DSO> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Pamplona> ;
 	onto:codigoPostal "50004"^^xsd:int ;
@@ -611,7 +615,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "C/ Conde Aranda 126, 3º Izda. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 20 74" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Conde+Aranda+126> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSI%C3%93N+HOLGADO++II> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Conde+Aranda+126> ;
 	onto:codigoPostal "50003"^^xsd:int ;
@@ -628,7 +632,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "C/ Fray Julián Garcés, 18, 1º y 2º planta. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 27 23 21" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Fray+Juli%C3%A1n+Garc%C3%A9s> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSI%C3%93N+TORRERO> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Fray+Juli%C3%A1n+Garc%C3%A9s> ;
 	onto:codigoPostal "50007"^^xsd:int ;
@@ -646,7 +650,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "C/ Madre Sacramento, 45, pral. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 28 22 29" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Madre+Sacramento> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSI%C3%93N+FORTEA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Madre+Sacramento> ;
 	onto:codigoPostal "50004"^^xsd:int ;
@@ -663,7 +667,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "C/ Mayor, 4-6 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 39 74 62" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Mayor> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+SAN+JORGE> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mayor> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -681,7 +685,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "Avda. Anselmo Clavé, 27, 1º <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 09 04 78" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Anselmo+Clav%C3%A9> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSI%C3%93N+ESTRELLA> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Anselmo+Clav%C3%A9> ;
 	onto:codigoPostal "50004"^^xsd:int ;
@@ -699,7 +703,7 @@ Tanto si vienes por trabajo como si estás de paso el Hotel Las Ventas hará que
 	onto:descripcion "C/ Maestro Mingote, 3, pral. izqda. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 42 30 25" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Maestro+Mingote> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSI%C3%93N+LUIS+CANDELAS> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Maestro+Mingote> ;
 	onto:codigoPostal "50002"^^xsd:int ;
@@ -736,7 +740,7 @@ onto:Casetas a onto:Ciudad .
 	onto:descripcion "C/ Coso, 123 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 82 00" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Coso> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+IBIS+STYLES+ZARAGOZA+RAMIRO+I> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Coso> ;
 	onto:codigoPostal "50001"^^xsd:int ;
@@ -755,7 +759,7 @@ onto:Casetas a onto:Ciudad .
 	onto:descripcion "C/ Concepción Arenal, 5 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 97 48 86" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Concepci%C3%B3n+Arenal> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOSTAL+ARENAL> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Concepci%C3%B3n+Arenal> ;
 	onto:codigoPostal "50005"^^xsd:int ;
@@ -769,7 +773,7 @@ onto:Casetas a onto:Ciudad .
 	onto:descripcion "C/ Alberto Einstein, 3 - Polígono Cogullada <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 47 02 50" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Alberto+Einstein> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+COGULLADA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Alberto+Einstein> ;
 	onto:codigoPostal "50014"^^xsd:int ;
@@ -787,7 +791,7 @@ onto:Casetas a onto:Ciudad .
 	onto:descripcion "Ctra. de Madrid - Barcelona N-II, Km.309. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 33 20 00" .
 
 <http://www.semanticweb.org/grupo09#Ctra.+de+Madrid+-+Barcelona+N-II> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+EL+CISNE> onto:estaEn <http://www.semanticweb.org/grupo09#Ctra.+de+Madrid+-+Barcelona+N-II> ;
 	onto:codigoPostal "50012"^^xsd:int ;
@@ -818,7 +822,7 @@ As well as the events and function rooms, there are 68 fully equipped bedrooms:
 	onto:descripcion "C/ Duquesa Villahermosa, 4, esc. izda., 5º A-B-C, 6º B-C <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 33 81 31" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Duquesa+Villahermosa> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSION+ROMA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Duquesa+Villahermosa> ;
 	onto:codigoPostal "50010"^^xsd:int ;
@@ -836,7 +840,7 @@ As well as the events and function rooms, there are 68 fully equipped bedrooms:
 	onto:descripcion "C/ Franco y López, 4 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 30 66 92" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Franco+y+L%C3%B3pez> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#ALBERGUE+JUVENIL+BALTASAR+GRACI%C3%81N> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Franco+y+L%C3%B3pez> ;
 	onto:codigoPostal "50005"^^xsd:int ;
@@ -854,7 +858,7 @@ As well as the events and function rooms, there are 68 fully equipped bedrooms:
 	onto:descripcion "Avda. César Augusto, 55 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 93 00" .
 
 <http://www.semanticweb.org/grupo09#Avda.+C%C3%A9sar+Augusto> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+AVENIDA> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+C%C3%A9sar+Augusto> ;
 	onto:codigoPostal "50003"^^xsd:int ;
@@ -872,7 +876,7 @@ As well as the events and function rooms, there are 68 fully equipped bedrooms:
 	onto:descripcion "Pº Gran Vía, 38 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 22 92 13" .
 
 <http://www.semanticweb.org/grupo09#P%C2%BA+Gran+V%C3%ADa> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+GRAN+V%C3%8DA> onto:estaEn <http://www.semanticweb.org/grupo09#P%C2%BA+Gran+V%C3%ADa> ;
 	onto:codigoPostal "50005"^^xsd:int ;
@@ -891,7 +895,7 @@ As well as the events and function rooms, there are 68 fully equipped bedrooms:
 	onto:descripcion "C/ Manifestación, 16 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 20 58 58" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Manifestaci%C3%B3n> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+CATALONIA+EL+PILAR> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Manifestaci%C3%B3n> ;
 	onto:codigoPostal "50003"^^xsd:int ;
@@ -909,7 +913,7 @@ As well as the events and function rooms, there are 68 fully equipped bedrooms:
 	onto:descripcion "Avda. Francia, s/n <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 28 79 50" .
 
 <http://www.semanticweb.org/grupo09#Avda.+Francia> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+TRYP+ZARAGOZA> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Francia> ;
 	onto:codigoPostal "50003"^^xsd:int ;
@@ -929,7 +933,7 @@ As well as the events and function rooms, there are 68 fully equipped bedrooms:
 	onto:descripcion "Calle San Juan Bautista de la Salle, s/n <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 876 24 14 95" .
 
 <http://www.semanticweb.org/grupo09#Calle+San+Juan+Bautista+de+la+Salle> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#ALBERGUE+DEL+CAMPING+CIUDAD+DE+ZARAGOZA> onto:estaEn <http://www.semanticweb.org/grupo09#Calle+San+Juan+Bautista+de+la+Salle> ;
 	onto:codigoPostal "50012"^^xsd:int ;
@@ -947,7 +951,7 @@ As well as the events and function rooms, there are 68 fully equipped bedrooms:
 	onto:descripcion "C/ Arzobispo Domenech, 4 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 21 46 00" .
 
 <http://www.semanticweb.org/grupo09#C%2F+Arzobispo+Domenech> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#HOTEL+ZARAGOZA+ROYAL> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Arzobispo+Domenech> ;
 	onto:codigoPostal "50006"^^xsd:int ;
@@ -972,7 +976,7 @@ There are 92 rooms (84 double and 8 single) with en suite bathroom, air conditio
 	onto:descripcion "C/ San Miguel, 30 - Barrio de Casetas <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 771 578" .
 
 <http://www.semanticweb.org/grupo09#C%2F+San+Miguel> a onto:Direccion ;
-	onto:enCiudad onto:Zaragoza .
+	onto:enCiudad onto:Zaragoza , <http://dbpedia.org/resource/Zaragoza> .
 
 <http://www.semanticweb.org/grupo09#PENSI%C3%93N+CASA+PITA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Miguel> ;
 	onto:codigoPostal "50620"^^xsd:int ;
