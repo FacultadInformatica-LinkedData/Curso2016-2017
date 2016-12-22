@@ -6,6 +6,8 @@ Para poder ejecutar la aplicacion (Proyecto de Eclipse) puede seguir los siguien
 - Importar dicha carpeta como proyecto existente en Eclipse
 - Incluir las librerias de Apache Jena y jfoenix al classpath, en caso de que dieran error (jfoenix se incluye en la carpeta de la aplicacion)
 
+- Es opcional instalar las fuentes de la carpeta fonts. Si no se instalan probablemente no se visualize la app correctamente.
+
 En este momento ya debería tener el proyecto sin fallos ni referencias sin resolver en su workspace de Eclipse.
 Ejecute el archivo Launch.java en el paquete application.
 
