@@ -1,0 +1,1295 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g10: <http://smartsevilla.es/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://smartsevilla.es/resources/calles/Campana> a dbo:Street ;
+	dbp:name "Campana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MenendezPelayo> a dbo:Street ;
+	dbp:name "Menendez Pelayo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.MariaLuisa> a dbo:Street ;
+	dbp:name "Avda. Maria Luisa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Parsi> a dbo:Street ;
+	dbp:name "Avda. Parsi"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazadelDuque> a dbo:Street ;
+	dbp:name "Plaza del Duque"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Calatrava> a dbo:Street ;
+	dbp:name "Calatrava"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaPoncedeLeon> a dbo:Street ;
+	dbp:name "Plaza Ponce de Leon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PagesdelCorro> a dbo:Street ;
+	dbp:name "Pages del Corro"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JoseGalanMerino> a dbo:Street ;
+	dbp:name "Jose Galan Merino"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJorge> a dbo:Street ;
+	dbp:name "San Jorge"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Castilla> a dbo:Street ;
+	dbp:name "Castilla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Navarra> a dbo:Street ;
+	dbp:name "Navarra"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Torneo> a dbo:Street ;
+	dbp:name "Torneo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Blanquillo> a dbo:Street ;
+	dbp:name "Blanquillo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Resolana> a dbo:Street ;
+	dbp:name "Resolana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ParlamentodeAndalucia> a dbo:Street ;
+	dbp:name "Parlamento de Andalucia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondadeCapuchinos> a dbo:Street ;
+	dbp:name "Ronda de Capuchinos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MariaAuxiliadora> a dbo:Street ;
+	dbp:name "Maria Auxiliadora"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MunozLeon> a dbo:Street ;
+	dbp:name "Munoz Leon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Santiago> a dbo:Street ;
+	dbp:name "Santiago"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/TenienteBorges> a dbo:Street ;
+	dbp:name "Teniente Borges"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ClaradeJesusMontero> a dbo:Street ;
+	dbp:name "Clara de Jesus Montero"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Genova> a dbo:Street ;
+	dbp:name "Genova"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SebastianElcano> a dbo:Street ;
+	dbp:name "Sebastian Elcano"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/VirgendeLujan> a dbo:Street ;
+	dbp:name "Virgen de Lujan"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaMarinerosVoluntarios> a dbo:Street ;
+	dbp:name "Glorieta Marineros Voluntarios"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaMariaLuisa> a dbo:Street ;
+	dbp:name "Avenida Maria Luisa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaEncarnacion> a dbo:Street ;
+	dbp:name "Plaza Encarnacion"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ComunidadExtremena> a dbo:Street ;
+	dbp:name "Comunidad Extremena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaLaBarzola> a dbo:Street ;
+	dbp:name "Avenida La Barzola"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.LaBarzola> a dbo:Street ;
+	dbp:name "Av. La Barzola"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Madreselva> a dbo:Street ;
+	dbp:name "Madreselva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/DoctorJimenezDiaz> a dbo:Street ;
+	dbp:name "Doctor Jimenez Diaz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaLaCruzRoja> a dbo:Street ;
+	dbp:name "Avenida La Cruz Roja"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Chipre> a dbo:Street ;
+	dbp:name "Chipre"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJuandeLaSalle> a dbo:Street ;
+	dbp:name "San Juan de La Salle"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaLaBorbolla> a dbo:Street ;
+	dbp:name "Avenida La Borbolla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ManuelSiurot> a dbo:Street ;
+	dbp:name "Manuel Siurot"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PadreG.Tejero> a dbo:Street ;
+	dbp:name "Padre G. Tejero"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ReinaMercedes> a dbo:Street ;
+	dbp:name "Reina Mercedes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.LaBorbolla> a dbo:Street ;
+	dbp:name "Avda. La Borbolla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PradoSanSebastian(CarlosV> a dbo:Street ;
+	dbp:name "Prado San Sebastian (Carlos V"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaMiraflores> a dbo:Street ;
+	dbp:name "Avenida Miraflores"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.Miraflores> a dbo:Street ;
+	dbp:name "Av. Miraflores"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.SanJuandeLaSalle> a dbo:Street ;
+	dbp:name "Av. San Juan de La Salle"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Parsi6(Parsi2> a dbo:Street ;
+	dbp:name "Parsi 6 (Parsi 2"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaSanchezPizjuan> a dbo:Street ;
+	dbp:name "Avenida Sanchez Pizjuan"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/DoctorLealCastanos> a dbo:Street ;
+	dbp:name "Doctor Leal Castanos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SorFranciscaDorotea> a dbo:Street ;
+	dbp:name "Sor Francisca Dorotea"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondadePioXII> a dbo:Street ;
+	dbp:name "Ronda de Pio XII"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Arosa> a dbo:Street ;
+	dbp:name "Arosa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CarreteraCarmona> a dbo:Street ;
+	dbp:name "Carretera Carmona"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.CarlosV> a dbo:Street ;
+	dbp:name "Avda. Carlos V"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PedroRomero> a dbo:Street ;
+	dbp:name "Pedro Romero"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaSolea> a dbo:Street ;
+	dbp:name "Avenida Solea"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Cataluna> a dbo:Street ;
+	dbp:name "Cataluna"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Villegas> a dbo:Street ;
+	dbp:name "Villegas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MarquesdePickman> a dbo:Street ;
+	dbp:name "Marques de Pickman"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaSanFrancisco> a dbo:Street ;
+	dbp:name "Plaza San Francisco"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/OrfebreCay.Gonzale> a dbo:Street ;
+	dbp:name "Orfebre Cay. Gonzale"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Portugal> a dbo:Street ;
+	dbp:name "Avda. Portugal"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.ElGreco> a dbo:Street ;
+	dbp:name "Avda. El Greco"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanEsteban> a dbo:Street ;
+	dbp:name "San Esteban"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MedinayGalnares> a dbo:Street ;
+	dbp:name "Medina y Galnares"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AuxiliarKansasCity> a dbo:Street ;
+	dbp:name "Auxiliar Kansas City"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Aguilas> a dbo:Street ;
+	dbp:name "Aguilas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JesusdeLasTresCaidas> a dbo:Street ;
+	dbp:name "Jesus de Las Tres Caidas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/FranciscoBruna> a dbo:Street ;
+	dbp:name "Francisco Bruna"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJuandeRibera> a dbo:Street ;
+	dbp:name "San Juan de Ribera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Antioquia> a dbo:Street ;
+	dbp:name "Antioquia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Damasco> a dbo:Street ;
+	dbp:name "Damasco"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Jerusalen> a dbo:Street ;
+	dbp:name "Jerusalen"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.CruzdelCampo> a dbo:Street ;
+	dbp:name "Avda. Cruz del Campo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.CruzdelCampo> a dbo:Street ;
+	dbp:name "Av. Cruz del Campo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaCiudadJardin> a dbo:Street ;
+	dbp:name "Avenida Ciudad Jardin"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlcaldeJuanFernandez> a dbo:Street ;
+	dbp:name "Alcalde Juan Fernandez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ntra.Sra.Mercedes> a dbo:Street ;
+	dbp:name "Ntra. Sra. Mercedes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/FelipeIi> a dbo:Street ;
+	dbp:name "Felipe Ii"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.CiudadJardin> a dbo:Street ;
+	dbp:name "Av. Ciudad Jardin"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/TomasMurube> a dbo:Street ;
+	dbp:name "Tomas Murube"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LuisdeMorales> a dbo:Street ;
+	dbp:name "Luis de Morales"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GarciadeVinuesa> a dbo:Street ;
+	dbp:name "Garcia de Vinuesa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaJuanXXIII> a dbo:Street ;
+	dbp:name "Avenida Juan XXIII"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LosGavilanes> a dbo:Street ;
+	dbp:name "Los Gavilanes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/FranciscoBuendia> a dbo:Street ;
+	dbp:name "Francisco Buendia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidadeLaPaz> a dbo:Street ;
+	dbp:name "Avenida de La Paz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondaLaOliva> a dbo:Street ;
+	dbp:name "Ronda La Oliva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MadredeCristo> a dbo:Street ;
+	dbp:name "Madre de Cristo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LuisOrtizMunoz> a dbo:Street ;
+	dbp:name "Luis Ortiz Munoz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.LasLetanias> a dbo:Street ;
+	dbp:name "Avda. Las Letanias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJosedeCalasanz> a dbo:Street ;
+	dbp:name "San Jose de Calasanz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Adriano> a dbo:Street ;
+	dbp:name "Adriano"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaAlcaldePariasMerry> a dbo:Street ;
+	dbp:name "Glorieta Alcalde Parias Merry"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.KansasCity> a dbo:Street ;
+	dbp:name "Avda. Kansas City"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Zaragoza> a dbo:Street ;
+	dbp:name "Zaragoza"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaNueva> a dbo:Street ;
+	dbp:name "Plaza Nueva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlmiranteApodaca> a dbo:Street ;
+	dbp:name "Almirante Apodaca"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.LaPaz> a dbo:Street ;
+	dbp:name "Avda. La Paz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PauloOrosio> a dbo:Street ;
+	dbp:name "Paulo Orosio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AutoviaMadrid> a dbo:Street ;
+	dbp:name "Autovia Madrid"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EsperanzadeTriana> a dbo:Street ;
+	dbp:name "Esperanza de Triana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlvarNunez> a dbo:Street ;
+	dbp:name "Alvar Nunez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.PinoMontano> a dbo:Street ;
+	dbp:name "Ctra. Pino Montano"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LopezdeGomara> a dbo:Street ;
+	dbp:name "Lopez de Gomara"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RepublicaArgentina> a dbo:Street ;
+	dbp:name "Republica Argentina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.RepublicaArgentina> a dbo:Street ;
+	dbp:name "Avda. Republica Argentina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PuertaJerez> a dbo:Street ;
+	dbp:name "Puerta Jerez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RamonyCajal> a dbo:Street ;
+	dbp:name "Ramon y Cajal"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.SanFco.Javier> a dbo:Street ;
+	dbp:name "Av. San Fco. Javier"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.SanFco.Javier(Edif.Sevilla2> a dbo:Street ;
+	dbp:name "Av. San Fco. Javier (Edif. Sevilla 2"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EduardoDato> a dbo:Street ;
+	dbp:name "Eduardo Dato"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PalosdeLaFrontera> a dbo:Street ;
+	dbp:name "Palos de La Frontera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Rep.Argentina> a dbo:Street ;
+	dbp:name "Rep. Argentina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JuanDiazdeSolis> a dbo:Street ;
+	dbp:name "Juan Diaz de Solis"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Guadalupe> a dbo:Street ;
+	dbp:name "Guadalupe"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PaseoLasdelicias> a dbo:Street ;
+	dbp:name "Paseo Las delicias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SorGregoriaSantaTeresa> a dbo:Street ;
+	dbp:name "Sor Gregoria Santa Teresa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlcaldeLuisUrunuela> a dbo:Street ;
+	dbp:name "Alcalde Luis Urunuela"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.SanchezPizjuan> a dbo:Street ;
+	dbp:name "Avda. Sanchez Pizjuan"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Trabaj.Inmigrantes> a dbo:Street ;
+	dbp:name "Trabaj. Inmigrantes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LosRomeros> a dbo:Street ;
+	dbp:name "Los Romeros"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Dr.JaimeMarcos> a dbo:Street ;
+	dbp:name "Dr. Jaime Marcos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaEmilioLemos> a dbo:Street ;
+	dbp:name "Avenida Emilio Lemos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Canalejas> a dbo:Street ;
+	dbp:name "Canalejas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanVicentedePaul> a dbo:Street ;
+	dbp:name "San Vicente de Paul"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Hytasa> a dbo:Street ;
+	dbp:name "Hytasa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Rda.Tamarguillo> a dbo:Street ;
+	dbp:name "Rda. Tamarguillo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Concej.JimenezBecerril> a dbo:Street ;
+	dbp:name "Concej. Jimenez Becerril"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaCoria> a dbo:Street ;
+	dbp:name "Avenida Coria"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJacinto> a dbo:Street ;
+	dbp:name "San Jacinto"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/DoctorFedriani> a dbo:Street ;
+	dbp:name "Doctor Fedriani"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AmordeDios> a dbo:Street ;
+	dbp:name "Amor de Dios"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Feria> a dbo:Street ;
+	dbp:name "Feria"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PoncedeLeon> a dbo:Street ;
+	dbp:name "Ponce de Leon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/DonFadrique> a dbo:Street ;
+	dbp:name "Don Fadrique"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/NiculosoPisano> a dbo:Street ;
+	dbp:name "Niculoso Pisano"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondadeLosTejares> a dbo:Street ;
+	dbp:name "Ronda de Los Tejares"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaSanLazaro> a dbo:Street ;
+	dbp:name "Avenida San Lazaro"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Esparteros> a dbo:Street ;
+	dbp:name "Esparteros"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Sembradores> a dbo:Street ;
+	dbp:name "Sembradores"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Agricultores> a dbo:Street ;
+	dbp:name "Agricultores"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CaminodeLosToros> a dbo:Street ;
+	dbp:name "Camino de Los Toros"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CortijoLasCasillas> a dbo:Street ;
+	dbp:name "Cortijo Las Casillas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaPinoMontano> a dbo:Street ;
+	dbp:name "Avenida Pino Montano"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.PinoMontano> a dbo:Street ;
+	dbp:name "Avda. Pino Montano"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PeriodistaJoseCouso> a dbo:Street ;
+	dbp:name "Periodista Jose Couso"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlcaldeManueldelValle> a dbo:Street ;
+	dbp:name "Alcalde Manuel del Valle"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Dr.LealCastanos> a dbo:Street ;
+	dbp:name "Dr. Leal Castanos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.A3108> a dbo:Street ;
+	dbp:name "Ctra.A-3108"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Arroyo> a dbo:Street ;
+	dbp:name "Arroyo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GonzaloBilbao> a dbo:Street ;
+	dbp:name "Gonzalo Bilbao"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanLuis> a dbo:Street ;
+	dbp:name "San Luis"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Aux.AutoviaMadrid> a dbo:Street ;
+	dbp:name "Aux. Autovia Madrid"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Garrochistas> a dbo:Street ;
+	dbp:name "Garrochistas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LuisMontoto> a dbo:Street ;
+	dbp:name "Luis Montoto"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/KansasCity> a dbo:Street ;
+	dbp:name "Kansas City"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CortijodeLasCasillas> a dbo:Street ;
+	dbp:name "Cortijo de Las Casillas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EmiliaBarral> a dbo:Street ;
+	dbp:name "Emilia Barral"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Acc.ParqueAlcosa> a dbo:Street ;
+	dbp:name "Acc. Parque Alcosa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CiudaddeLiria> a dbo:Street ;
+	dbp:name "Ciudad de Liria"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LasO.N.G.> a dbo:Street ;
+	dbp:name "Las O.N.G."^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CiudaddePaterna> a dbo:Street ;
+	dbp:name "Ciudad de Paterna"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EscritorAlfonsoGrosso> a dbo:Street ;
+	dbp:name "Escritor Alfonso Grosso"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Amor> a dbo:Street ;
+	dbp:name "Amor"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CarlosMarx> a dbo:Street ;
+	dbp:name "Carlos Marx"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/FedericoMayoGayarre> a dbo:Street ;
+	dbp:name "Federico Mayo Gayarre"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AguilaPerdicera> a dbo:Street ;
+	dbp:name "Aguila Perdicera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LosClaveles> a dbo:Street ;
+	dbp:name "Los Claveles"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/DonaFrancisquita> a dbo:Street ;
+	dbp:name "Dona Francisquita"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LaCalesera> a dbo:Street ;
+	dbp:name "La Calesera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LaMonteria> a dbo:Street ;
+	dbp:name "La Monteria"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CiudaddeChiva> a dbo:Street ;
+	dbp:name "Ciudad de Chiva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Bailen> a dbo:Street ;
+	dbp:name "Bailen"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Monsalves> a dbo:Street ;
+	dbp:name "Monsalves"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AmadordeLosRios> a dbo:Street ;
+	dbp:name "Amador de Los Rios"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Recaredo> a dbo:Street ;
+	dbp:name "Recaredo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlfonsodeOrleans> a dbo:Street ;
+	dbp:name "Alfonso de Orleans"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SantaVicentaMaria> a dbo:Street ;
+	dbp:name "Santa Vicenta Maria"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.CiudaddeAlfafar> a dbo:Street ;
+	dbp:name "Avda. Ciudad de Alfafar"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.EmilioLemos> a dbo:Street ;
+	dbp:name "Av. Emilio Lemos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LasLeandras> a dbo:Street ;
+	dbp:name "Las Leandras"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidadeHytasa> a dbo:Street ;
+	dbp:name "Avenida de Hytasa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Canal> a dbo:Street ;
+	dbp:name "Canal"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AfandeRibera> a dbo:Street ;
+	dbp:name "Afan de Ribera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Monsalve> a dbo:Street ;
+	dbp:name "Monsalve"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.ReinoUnido> a dbo:Street ;
+	dbp:name "Avda. Reino Unido"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaForjaXXI> a dbo:Street ;
+	dbp:name "Glorieta Forja XXI"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ElSilencio> a dbo:Street ;
+	dbp:name "El Silencio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PoetaManuelBenitez> a dbo:Street ;
+	dbp:name "Poeta Manuel Benitez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GarciaMoratoAv.> a dbo:Street ;
+	dbp:name "Garcia Morato Av."^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/OrfebreCayetanoGonzalez> a dbo:Street ;
+	dbp:name "Orfebre Cayetano Gonzalez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Rda.LaOliva> a dbo:Street ;
+	dbp:name "Rda. La Oliva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PoetaBenitezCarrasco> a dbo:Street ;
+	dbp:name "Poeta Benitez Carrasco"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Valdelarco> a dbo:Street ;
+	dbp:name "Valdelarco"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidadeAndalucia> a dbo:Street ;
+	dbp:name "Avenida de Andalucia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PuebladelRio> a dbo:Street ;
+	dbp:name "Puebla del Rio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJosedePalmete> a dbo:Street ;
+	dbp:name "San Jose de Palmete"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Baena> a dbo:Street ;
+	dbp:name "Baena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JoseSebast.Bandaran> a dbo:Street ;
+	dbp:name "Jose Sebast. Bandaran"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CentroPenitenciario> a dbo:Street ;
+	dbp:name "Centro Penitenciario"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Andalucia> a dbo:Street ;
+	dbp:name "Avda. Andalucia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Dra.NavarroRodriguez> a dbo:Street ;
+	dbp:name "Dra. Navarro Rodriguez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Coruna> a dbo:Street ;
+	dbp:name "Coruna"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.deBrenes> a dbo:Street ;
+	dbp:name "Ctra. de Brenes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Evangelista> a dbo:Street ;
+	dbp:name "Evangelista"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.ElPitamo> a dbo:Street ;
+	dbp:name "Ctra. El Pitamo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PeriodistaEduardoC> a dbo:Street ;
+	dbp:name "Periodista Eduardo C"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Taiwan> a dbo:Street ;
+	dbp:name "Taiwan"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CarabelaSantaMaria> a dbo:Street ;
+	dbp:name "Carabela Santa Maria"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JuanPoncedeLeon> a dbo:Street ;
+	dbp:name "Juan Ponce de Leon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RodrigodeEscobedo> a dbo:Street ;
+	dbp:name "Rodrigo de Escobedo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/OperaCarmen> a dbo:Street ;
+	dbp:name "Opera Carmen"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Fidelio> a dbo:Street ;
+	dbp:name "Fidelio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Aux.A92> a dbo:Street ;
+	dbp:name "Aux. A-92"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Seneca> a dbo:Street ;
+	dbp:name "Avda. Seneca"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidadeLaPlata> a dbo:Street ;
+	dbp:name "Avenida de La Plata"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondaPadrePio> a dbo:Street ;
+	dbp:name "Ronda Padre Pio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Salobrena> a dbo:Street ;
+	dbp:name "Salobrena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondaDoctoraEste> a dbo:Street ;
+	dbp:name "Ronda Doctora Este"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Afecto> a dbo:Street ;
+	dbp:name "Afecto"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Indulgencia> a dbo:Street ;
+	dbp:name "Indulgencia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Honestidad> a dbo:Street ;
+	dbp:name "Honestidad"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Chucena> a dbo:Street ;
+	dbp:name "Chucena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondaDoctoraOeste> a dbo:Street ;
+	dbp:name "Ronda Doctora Oeste"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Guadalbullon> a dbo:Street ;
+	dbp:name "Guadalbullon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Torbizcon> a dbo:Street ;
+	dbp:name "Torbizcon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaPlusUltra> a dbo:Street ;
+	dbp:name "Glorieta Plus Ultra"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Alc.LuisUrunuela> a dbo:Street ;
+	dbp:name "Alc. Luis Urunuela"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Afan> a dbo:Street ;
+	dbp:name "Afan"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GarciaMorato> a dbo:Street ;
+	dbp:name "Garcia Morato"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AliAlGomari> a dbo:Street ;
+	dbp:name "Ali Al-Gomari"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Gta.Oceanografica> a dbo:Street ;
+	dbp:name "Gta. Oceanografica"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.MujerTrabajadora> a dbo:Street ;
+	dbp:name "Avda. Mujer Trabajadora"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/FlordeGitanilla> a dbo:Street ;
+	dbp:name "Flor de Gitanilla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaUtreraMolina> a dbo:Street ;
+	dbp:name "Avenida Utrera Molina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MontesSierra> a dbo:Street ;
+	dbp:name "Montes Sierra"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaLaRevoltosa> a dbo:Street ;
+	dbp:name "Avenida La Revoltosa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.LaAeronautica> a dbo:Street ;
+	dbp:name "Av. La Aeronautica"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AndaluciaResidencial> a dbo:Street ;
+	dbp:name "Andalucia Residencial"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.ParqueAmate> a dbo:Street ;
+	dbp:name "Av. Parque Amate"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.EmilioLemos> a dbo:Street ;
+	dbp:name "Avda. Emilio Lemos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidadeLasCiencias> a dbo:Street ;
+	dbp:name "Avenida de Las Ciencias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.LasCiencias> a dbo:Street ;
+	dbp:name "Avda. Las Ciencias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PaseodeEuropa> a dbo:Street ;
+	dbp:name "Paseo de Europa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlemaniaAvda.> a dbo:Street ;
+	dbp:name "Alemania  Avda."^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JoseLaguillo> a dbo:Street ;
+	dbp:name "Jose Laguillo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PaseoColon> a dbo:Street ;
+	dbp:name "Paseo Colon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AutoviadeMalaga> a dbo:Street ;
+	dbp:name "Autovia de Malaga"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Aux.AutoviaMalaga> a dbo:Street ;
+	dbp:name "Aux. Autovia Malaga"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaTorreblanca> a dbo:Street ;
+	dbp:name "Glorieta Torreblanca"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstacadeVares> a dbo:Street ;
+	dbp:name "Estaca de Vares"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaLasAcacias> a dbo:Street ;
+	dbp:name "Plaza Las Acacias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PradodeSanSebastian> a dbo:Street ;
+	dbp:name "Prado de San Sebastian"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Torrelaguna> a dbo:Street ;
+	dbp:name "Torrelaguna"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PeroMingo> a dbo:Street ;
+	dbp:name "Pero Mingo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidadelCid> a dbo:Street ;
+	dbp:name "Avenida del Cid"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/UlpianoBlanco> a dbo:Street ;
+	dbp:name "Ulpiano Blanco"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Jerez> a dbo:Street ;
+	dbp:name "Avda. Jerez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.ReinoUnido> a dbo:Street ;
+	dbp:name "Av. Reino Unido"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MariaGaliana> a dbo:Street ;
+	dbp:name "Maria Galiana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Bellavista> a dbo:Street ;
+	dbp:name "Avda. Bellavista"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AmericoVespucio> a dbo:Street ;
+	dbp:name "Americo Vespucio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaBellavista> a dbo:Street ;
+	dbp:name "Avenida Bellavista"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Astronomia> a dbo:Street ;
+	dbp:name "Astronomia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.Jerez> a dbo:Street ;
+	dbp:name "Av. Jerez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GranPlaza> a dbo:Street ;
+	dbp:name "Gran Plaza"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PaseodeColon> a dbo:Street ;
+	dbp:name "Paseo de Colon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PaseodeLasdelicias> a dbo:Street ;
+	dbp:name "Paseo de Las delicias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PoligonoStore> a dbo:Street ;
+	dbp:name "Poligono Store"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Traviesa> a dbo:Street ;
+	dbp:name "Traviesa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.SanJeronimo> a dbo:Street ;
+	dbp:name "Avda. San Jeronimo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Torremegia> a dbo:Street ;
+	dbp:name "Torremegia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Biologia> a dbo:Street ;
+	dbp:name "Biologia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/M.RomeroMartinez> a dbo:Street ;
+	dbp:name "M. Romero Martinez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CarreteraSuEminencia> a dbo:Street ;
+	dbp:name "Carretera Su Eminencia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaCarlosV> a dbo:Street ;
+	dbp:name "Avenida Carlos V"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlcaladelRio> a dbo:Street ;
+	dbp:name "Alcala del Rio"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazadeLaMagdalena> a dbo:Street ;
+	dbp:name "Plaza de La Magdalena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MarquesdeParadas> a dbo:Street ;
+	dbp:name "Marques de Paradas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JimenezdeQuesada> a dbo:Street ;
+	dbp:name "Jimenez de Quesada"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanPablo> a dbo:Street ;
+	dbp:name "San Pablo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlamedadeHercules> a dbo:Street ;
+	dbp:name "Alameda de Hercules"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Efeso> a dbo:Street ;
+	dbp:name "Efeso"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ada> a dbo:Street ;
+	dbp:name "Ada"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JoseBermejo> a dbo:Street ;
+	dbp:name "Jose Bermejo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/FraySerafinMadrid> a dbo:Street ;
+	dbp:name "Fray Serafin Madrid"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Tesalonica> a dbo:Street ;
+	dbp:name "Tesalonica"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanDiego> a dbo:Street ;
+	dbp:name "San Diego"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Termodinamica> a dbo:Street ;
+	dbp:name "Termodinamica"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/DoctorLaffonSoto> a dbo:Street ;
+	dbp:name "Doctor Laffon Soto"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CayetanoGonzalez> a dbo:Street ;
+	dbp:name "Cayetano Gonzalez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Rda.deLaOliva> a dbo:Street ;
+	dbp:name "Rda. de La Oliva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.Andalucia> a dbo:Street ;
+	dbp:name "Av. Andalucia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanJuandeLaCruz> a dbo:Street ;
+	dbp:name "San Juan de La Cruz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Secoya> a dbo:Street ;
+	dbp:name "Secoya"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MedicosSinFronteras> a dbo:Street ;
+	dbp:name "Medicos Sin Fronteras"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Cies> a dbo:Street ;
+	dbp:name "Cies"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlmiranteTopete> a dbo:Street ;
+	dbp:name "Almirante Topete"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/UniversidadPabloOlavide> a dbo:Street ;
+	dbp:name "Universidad Pablo Olavide"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JoseSebas.Bandaran> a dbo:Street ;
+	dbp:name "Jose Sebas. Bandaran"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/NavioArgos> a dbo:Street ;
+	dbp:name "Navio Argos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaAlemania> a dbo:Street ;
+	dbp:name "Avenida Alemania"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Dinamarca> a dbo:Street ;
+	dbp:name "Avda. Dinamarca"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondadeTriana> a dbo:Street ;
+	dbp:name "Ronda de Triana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Galaxia> a dbo:Street ;
+	dbp:name "Galaxia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.Mairena> a dbo:Street ;
+	dbp:name "Ctra.Mairena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/BlasInfante> a dbo:Street ;
+	dbp:name "Blas Infante"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlfredoKraus> a dbo:Street ;
+	dbp:name "Alfredo Kraus"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Parsi6> a dbo:Street ;
+	dbp:name "Parsi 6"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaMagdalena> a dbo:Street ;
+	dbp:name "Plaza Magdalena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JuanBautistaMunoz> a dbo:Street ;
+	dbp:name "Juan Bautista Munoz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CarabelaLaNina> a dbo:Street ;
+	dbp:name "Carabela La Nina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.VillasdeCuba> a dbo:Street ;
+	dbp:name "Avda. Villas de Cuba"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlvarNunezCab.Vaca> a dbo:Street ;
+	dbp:name "Alvar Nunez Cab. Vaca"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstrellaCanopus> a dbo:Street ;
+	dbp:name "Estrella Canopus"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstrellaHaris> a dbo:Street ;
+	dbp:name "Estrella Haris"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AlvarNunezCabezadeVaca> a dbo:Street ;
+	dbp:name "Alvar Nunez Cabeza de Vaca"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AeropuertodeSevilla> a dbo:Street ;
+	dbp:name "Aeropuerto de Sevilla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PadreSebastianBandaran> a dbo:Street ;
+	dbp:name "Padre Sebastian Bandaran"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Estrelladeneb> a dbo:Street ;
+	dbp:name "Estrella deneb"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MarquesLucadeTena> a dbo:Street ;
+	dbp:name "Marques Luca de Tena"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RealdeLaJara> a dbo:Street ;
+	dbp:name "Real de La Jara"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Paseodedelicias> a dbo:Street ;
+	dbp:name "Paseo de delicias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PuertodelEscudo> a dbo:Street ;
+	dbp:name "Puerto del Escudo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Candelilla> a dbo:Street ;
+	dbp:name "Candelilla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Zorzal> a dbo:Street ;
+	dbp:name "Zorzal"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Polonia> a dbo:Street ;
+	dbp:name "Polonia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JeronimodeCordoba> a dbo:Street ;
+	dbp:name "Jeronimo de Cordoba"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.Valdezorras> a dbo:Street ;
+	dbp:name "Ctra. Valdezorras"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/VeredaPocoAceite> a dbo:Street ;
+	dbp:name "Vereda Poco Aceite"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Halcon> a dbo:Street ;
+	dbp:name "Halcon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/BarriadaElGordillo> a dbo:Street ;
+	dbp:name "Barriada El Gordillo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.ElGordillo> a dbo:Street ;
+	dbp:name "Ctra. El Gordillo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CentroMiraflores> a dbo:Street ;
+	dbp:name "Centro Miraflores"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Aux.RondaNorte> a dbo:Street ;
+	dbp:name "Aux. Ronda Norte"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondadelTamarguillo> a dbo:Street ;
+	dbp:name "Ronda del Tamarguillo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.Carmona> a dbo:Street ;
+	dbp:name "Ctra. Carmona"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.Asoc.deVecinos> a dbo:Street ;
+	dbp:name "Av. Asoc. de Vecinos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.ManueldelValle> a dbo:Street ;
+	dbp:name "Av. Manuel del Valle"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.AsociaciondeVecinos> a dbo:Street ;
+	dbp:name "Avda. Asociacion de Vecinos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Tharsis> a dbo:Street ;
+	dbp:name "Tharsis"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/IncaGarcilaso> a dbo:Street ;
+	dbp:name "Inca Garcilaso"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Alc.M.delValle> a dbo:Street ;
+	dbp:name "Alc. M.  del Valle"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaP.JeronimodeCordoba> a dbo:Street ;
+	dbp:name "Plaza P. Jeronimo de Cordoba"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LasCienciasAv.> a dbo:Street ;
+	dbp:name "Las Ciencias Av."^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Turia> a dbo:Street ;
+	dbp:name "Avda. Turia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PuenteLaBarqueta> a dbo:Street ;
+	dbp:name "Puente La Barqueta"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Hesperides> a dbo:Street ;
+	dbp:name "Hesperides"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CristodeLaExpiracion> a dbo:Street ;
+	dbp:name "Cristo de La Expiracion"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PaseoCristobalColon> a dbo:Street ;
+	dbp:name "Paseo Cristobal Colon"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Dr.Fleming> a dbo:Street ;
+	dbp:name "Dr. Fleming"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ApeaderoSanBernardo> a dbo:Street ;
+	dbp:name "Apeadero San Bernardo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Enramadilla> a dbo:Street ;
+	dbp:name "Enramadilla"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/VictoriaDominguez> a dbo:Street ;
+	dbp:name "Victoria Dominguez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaSanRoman> a dbo:Street ;
+	dbp:name "Plaza San Roman"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaPresosdeLosMerinales> a dbo:Street ;
+	dbp:name "Glorieta Presos de Los Merinales"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.JimenezBecerril> a dbo:Street ;
+	dbp:name "Avda. Jimenez Becerril"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RondaTriana> a dbo:Street ;
+	dbp:name "Ronda Triana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Corvina> a dbo:Street ;
+	dbp:name "Corvina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ConcejalJimenezBecerril> a dbo:Street ;
+	dbp:name "Concejal Jimenez Becerril"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Arjona> a dbo:Street ;
+	dbp:name "Arjona"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/GlorietaSanLazaro> a dbo:Street ;
+	dbp:name "Glorieta San Lazaro"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JoseDiaz> a dbo:Street ;
+	dbp:name "Jose Diaz"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CorraldeLosOlmos> a dbo:Street ;
+	dbp:name "Corral de Los Olmos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/MardeAlboran> a dbo:Street ;
+	dbp:name "Mar de Alboran"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.A3108> dbp:name "Ctra. A-3108"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EscritorA.Grosso> a dbo:Street ;
+	dbp:name "Escritor A. Grosso"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaHolanda> a dbo:Street ;
+	dbp:name "Avenida Holanda"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaItalia> a dbo:Street ;
+	dbp:name "Avenida Italia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EmilioLemosAvda> a dbo:Street ;
+	dbp:name "Emilio Lemos  Avda"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Bergantin> a dbo:Street ;
+	dbp:name "Bergantin"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LaFlorida> a dbo:Street ;
+	dbp:name "La Florida"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Glta.Letonia> a dbo:Street ;
+	dbp:name "Glta. Letonia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Alemania> a dbo:Street ;
+	dbp:name "Avda. Alemania"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.KansasCity> a dbo:Street ;
+	dbp:name "Av. Kansas City"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.FernandoCorral> a dbo:Street ;
+	dbp:name "Avda. Fernando Corral"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.CiudaddeChiva> a dbo:Street ;
+	dbp:name "Av. Ciudad de Chiva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AutoviaUtrera> a dbo:Street ;
+	dbp:name "Autovia Utrera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/IngenieroLaCierva> a dbo:Street ;
+	dbp:name "Ingeniero La Cierva"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaLlanes> a dbo:Street ;
+	dbp:name "Avenida Llanes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/8deMarzo> a dbo:Street ;
+	dbp:name "8 de Marzo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaFrancia> a dbo:Street ;
+	dbp:name "Avenida Francia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.LasLetanias> a dbo:Street ;
+	dbp:name "Av. Las Letanias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EscultorSebastianSantos> a dbo:Street ;
+	dbp:name "Escultor Sebastian Santos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/AvenidaFinlandia> a dbo:Street ;
+	dbp:name "Avenida Finlandia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/BuenoMonreal> a dbo:Street ;
+	dbp:name "Bueno Monreal"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/LaPalmera> a dbo:Street ;
+	dbp:name "La Palmera"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazadeLaContratacion> a dbo:Street ;
+	dbp:name "Plaza de La Contratacion"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ReyesCatolicos> a dbo:Street ;
+	dbp:name "Reyes Catolicos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Telegrafistas> a dbo:Street ;
+	dbp:name "Telegrafistas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JosedeGalvez> a dbo:Street ;
+	dbp:name "Jose de Galvez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RamondeCarranza> a dbo:Street ;
+	dbp:name "Ramon de Carranza"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Estonia> a dbo:Street ;
+	dbp:name "Estonia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaChapina> a dbo:Street ;
+	dbp:name "Plaza Chapina"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/BaltasardeAlcazar> a dbo:Street ;
+	dbp:name "Baltasar de Alcazar"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstrellaVega> a dbo:Street ;
+	dbp:name "Estrella Vega"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PradoSanSebastian> a dbo:Street ;
+	dbp:name "Prado San Sebastian"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EscultorSeb.Santos> a dbo:Street ;
+	dbp:name "Escultor Seb. Santos"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PinoPinonero> a dbo:Street ;
+	dbp:name "Pino Pinonero"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PinoSilvestre> a dbo:Street ;
+	dbp:name "Pino Silvestre"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SanBernardo> a dbo:Street ;
+	dbp:name "San Bernardo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstrellaBetelgueuse> a dbo:Street ;
+	dbp:name "Estrella Betelgueuse"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Finlandia> a dbo:Street ;
+	dbp:name "Avda. Finlandia"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Dna.MariaCoronel> a dbo:Street ;
+	dbp:name "Dna. Maria Coronel"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/VictoriaKent> a dbo:Street ;
+	dbp:name "Victoria Kent"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ParquedeDonana> a dbo:Street ;
+	dbp:name "Parque de Donana"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.LaBarzola> a dbo:Street ;
+	dbp:name "Avda. La Barzola"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/SantaFe> a dbo:Street ;
+	dbp:name "Santa Fe"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstrellaBetelgeuse> a dbo:Street ;
+	dbp:name "Estrella Betelgeuse"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Alf.LassodeLaVega> a dbo:Street ;
+	dbp:name "Alf. Lasso de La Vega"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/RamonCarande> a dbo:Street ;
+	dbp:name "Ramon Carande"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/CardenalBuenoMonreal> a dbo:Street ;
+	dbp:name "Cardenal Bueno Monreal"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.LasCiencias> a dbo:Street ;
+	dbp:name "Av. Las Ciencias"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/VillanuevadelPitamo> a dbo:Street ;
+	dbp:name "Villanueva del Pitamo"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.IslaMenor> a dbo:Street ;
+	dbp:name "Ctra. Isla Menor"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PalmasAltas> a dbo:Street ;
+	dbp:name "Palmas Altas"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Dr.Fedriani> a dbo:Street ;
+	dbp:name "Dr. Fedriani"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Alondra> a dbo:Street ;
+	dbp:name "Alondra"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Santander> a dbo:Street ;
+	dbp:name "Santander"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/JesusdelGranPoder> a dbo:Street ;
+	dbp:name "Jesus del Gran Poder"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Luna> a dbo:Street ;
+	dbp:name "Luna"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Crta.LaEsclusa> a dbo:Street ;
+	dbp:name "Crta. La Esclusa"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Ctra.SuEminencia(CastillodeMarcheni> a dbo:Street ;
+	dbp:name "Ctra. Su Eminencia (Castillo de Marcheni"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Avda.Roma> a dbo:Street ;
+	dbp:name "Avda.Roma"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/EstrechodeMagallanes> a dbo:Street ;
+	dbp:name "Estrecho de Magallanes"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Av.Jerez> dbp:name "Av.Jerez"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/J.A.Cavestany> a dbo:Street ;
+	dbp:name "J.A. Cavestany"^^<xsd:string> , "J.A.Cavestany"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/Prado> a dbo:Street ;
+	dbp:name "Prado"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/PlazaDuque> a dbo:Street ;
+	dbp:name "Plaza Duque"^^<xsd:string> .
+
+<http://smartsevilla.es/resources/calles/ArchivodeIndias> a dbo:Street ;
+	dbp:name "Archivo de Indias"^^<xsd:string> .

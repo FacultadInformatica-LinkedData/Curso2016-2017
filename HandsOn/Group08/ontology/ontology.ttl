@@ -106,7 +106,7 @@ xsd:time rdf:type rdfs:Datatype .
 ###  http://www.linked-data-deportemadrid.org/group08/ontology#hasPrecio
 <http://www.linked-data-deportemadrid.org/group08/ontology#hasPrecio> rdf:type owl:DatatypeProperty ;
                                                                       rdfs:domain <http://www.linked-data-deportemadrid.org/group08/ontology#Actividad> ;
-                                                                      rdfs:range xsd:decimal .
+                                                                      rdfs:range xsd:string .
 
 
 ###  http://www.linked-data-deportemadrid.org/group08/ontology#hasTipo
@@ -119,7 +119,7 @@ xsd:time rdf:type rdfs:Datatype .
 <http://www.linked-data-deportemadrid.org/group08/ontology#hasWeb> rdf:type owl:DatatypeProperty ;
                                                                    rdfs:domain <http://www.linked-data-deportemadrid.org/group08/ontology#Actividad> ,
                                                                                <http://www.linked-data-deportemadrid.org/group08/ontology#Instalacion> ;
-                                                                   rdfs:range xsd:string .
+                                                                   rdfs:range xsd:anyURI .
 
 
 ###  http://www.linked-data-deportemadrid.org/group08/ontology#startsHora
