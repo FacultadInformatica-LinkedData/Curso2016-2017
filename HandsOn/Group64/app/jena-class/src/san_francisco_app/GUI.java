@@ -1,4 +1,5 @@
 package san_francisco_app;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -17,7 +18,8 @@ public class GUI {
     private JComboBox<String> comboBoxPark;
     private JTextArea textArea;
     private JTable tableResult;
-    JFrame frame;
+    private JFrame frame;
+    private JScrollPane scrollPaneResult;
 
     private GUI() {
         frame = new JFrame();
@@ -84,19 +86,21 @@ public class GUI {
         comboBoxPark = new JComboBox<>();
 
         comboBoxArt.addItem("-- Select a Query --");
+        comboBoxArt.addItem("All Arts Collections!");
         comboBoxFilm.addItem("-- Select a Query --");
         comboBoxFilm.addItem("All Films!");
         comboBoxFilm.addItem("Get filming location");
+        comboBoxFilm.addItem("Get director");
         comboBoxPark.addItem("-- Select a Query --");
 
-        comboBoxArt.addActionListener(e -> calculate(0, (String) comboBoxArt.getSelectedItem()));
-        comboBoxFilm.addActionListener(e -> calculate(1, (String) comboBoxFilm.getSelectedItem()));
-        comboBoxPark.addActionListener(e -> calculate(2, (String) comboBoxPark.getSelectedItem()));
+        comboBoxArt.addActionListener(e -> calculate(0));
+        comboBoxFilm.addActionListener(e -> calculate(1));
+        comboBoxPark.addActionListener(e -> calculate(2));
 
         JPanel panelCombo = new JPanel();
         panelCombo.setBackground(Color.decode("#D3D3D3"));
         panelCombo.setLayout(new GridLayout(12, 0));
-        panelCombo.setBorder(new EmptyBorder(5,5,5,5));
+        panelCombo.setBorder(new EmptyBorder(5, 5, 5, 5));
 
         panelCombo.add(labelArt, 0);
         panelCombo.add(comboBoxArt, 1);
@@ -109,6 +113,7 @@ public class GUI {
     }
 
     private void createGeneralPanel() {
+        // Creating JTable
         modelParks = new GenericDomainTableModel<Park>(Arrays.asList(new String[]{"Name", "Location", "Zip Code"})) {
             @Override
             public Class<?> getColumnClass(int columnIndex) {
@@ -137,8 +142,7 @@ public class GUI {
             public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
             }
         };
-
-        modelArts = new GenericDomainTableModel<ArtCollection>(Arrays.asList(new String[]{"Title", "Artist", "Location"})) {
+        modelArts = new GenericDomainTableModel<ArtCollection>(Arrays.asList(new String[]{"Title", "Artist"})) {
             @Override
             public Class<?> getColumnClass(int columnIndex) {
                 if (columnIndex >= 0 && columnIndex <= 2)
@@ -167,7 +171,6 @@ public class GUI {
 
             }
         };
-
         modelFilms = new GenericDomainTableModel<Film>(Arrays.asList(new String[]{"Title", "Location", "Director", "Writer"})) {
             @Override
             public Class<?> getColumnClass(int columnIndex) {
@@ -198,54 +201,85 @@ public class GUI {
 
             }
         };
-
         tableResult = new JTable();
-        tableResult.getTableHeader().setFont(new Font("Roboto",0,18));
+        tableResult.getTableHeader().setFont(new Font("Roboto", 0, 18));
         tableResult.setRowHeight(40);
         tableResult.setFont(new Font("Roboto Light", 0, 14));
-        JScrollPane scrollPaneResult = new JScrollPane(tableResult);
+        scrollPaneResult = new JScrollPane(tableResult);
+        // Creating JTextArea
+        textArea = new JTextArea("Select a query from the ComboBoxes at the left panel");
         splitPanel.setRightComponent(scrollPaneResult);
     }
 
-    private void calculate(int i, String selectedItem) {
-        if (selectedItem.charAt(0) != '-')
-            switch (i) {
-                case 0:
-                    System.out.println("Art " + comboBoxArt.getSelectedItem());
+    private void calculate(int i) {
+        switch (i) {
+            case 0:
+                if (comboBoxArt.getSelectedIndex() == 0)
+                    return;
+                else if (comboBoxArt.getSelectedIndex() == 1) {
                     modelArts.clearTableModelData();
                     tableResult.setModel(modelArts);
-                    comboBoxPark.setSelectedIndex(0);
-                    comboBoxFilm.setSelectedIndex(0);
-                    break;
-                case 1:
-                    if (comboBoxFilm.getSelectedIndex() == 1) {
-                        modelFilms.clearTableModelData();
-                        tableResult.setModel(modelFilms);
+                    modelArts.addRows(Sparql.allArtsCollection());
+                    splitPanel.setRightComponent(scrollPaneResult);
+                }
+                comboBoxPark.setSelectedIndex(0);
+                comboBoxFilm.setSelectedIndex(0);
+                break;
+            case 1:
+                if (comboBoxFilm.getSelectedIndex() == 0)
+                    return;
+                else if (comboBoxFilm.getSelectedIndex() == 1) {
+                    modelFilms.clearTableModelData();
+                    tableResult.setModel(modelFilms);
+                    modelFilms.addRows(Sparql.allFilm());
+                    splitPanel.setRightComponent(scrollPaneResult);
+                } else if (comboBoxFilm.getSelectedIndex() == 2) {
+                    String result = newDialog(0);
+                    splitPanel.setRightComponent(textArea);
+                    if (result != null) {
+                        textArea.setText(result + " was filmed in:\n");
+                        for (String location : Sparql.getLocations(result))
+                            textArea.setText(textArea.getText() + "\t" + location + "\n");
                     }
-                    if (comboBoxFilm.getSelectedIndex() >= 2) {
-                        panelGeneral.getRootPane().getGlassPane().setVisible(true);
-                        DialogSelectFrom dialog = new DialogSelectFrom(Arrays.asList("Guerra Mundial Z", "Azcaban", "JAJAJ", "hUM"));
-                        dialog.pack();
-                        dialog.setLocationRelativeTo(panelGeneral);
-                        dialog.setVisible(true);
-                        panelGeneral.getRootPane().getGlassPane().setVisible(false);
-                        for (String result : Sparql.getLocations(dialog.getResult()))
-                            textArea.setText(result);
-                        splitPanel.setRightComponent(textArea);
+                } else if (comboBoxFilm.getSelectedIndex() >= 3) {
+                    String result = newDialog(0);
+                    splitPanel.setRightComponent(textArea);
+                    if (result != null) {
+                        textArea.setText("The director(s) of " + result + " is/are:\n");
+                        for (String director : Sparql.getDirector("\"" + result + "\""))
+                            textArea.setText(textArea.getText() + "\t" + director + "\n");
                     }
-                    comboBoxPark.setSelectedIndex(0);
-                    comboBoxArt.setSelectedIndex(0);
-                    break;
-                case 2:
-                    System.out.println("Park " + comboBoxPark.getSelectedItem());
-                    modelParks.clearTableModelData();
-                    tableResult.setModel(modelParks);
-                    comboBoxFilm.setSelectedIndex(0);
-                    comboBoxArt.setSelectedIndex(0);
-                    break;
-                default:
-                    break;
-            }
+                }
+                comboBoxPark.setSelectedIndex(0);
+                comboBoxArt.setSelectedIndex(0);
+                break;
+            case 2:
+                if (comboBoxPark.getSelectedIndex() == 0)
+                    return;
+                System.out.println("Park " + comboBoxPark.getSelectedItem());
+                modelParks.clearTableModelData();
+                tableResult.setModel(modelParks);
+                comboBoxFilm.setSelectedIndex(0);
+                comboBoxArt.setSelectedIndex(0);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public String newDialog(int type) {
+        panelGeneral.getRootPane().getGlassPane().setVisible(true);
+        DialogSelectFrom dialog = new DialogSelectFrom();
+        switch (type) {
+            case 0: // film titles
+                dialog.setComboContent(Sparql.getAllTitle());
+                break;
+        }
+        dialog.pack();
+        dialog.setLocationRelativeTo(panelGeneral);
+        dialog.setVisible(true);
+        panelGeneral.getRootPane().getGlassPane().setVisible(false);
+        return dialog.getResult();
     }
 
     public static void main(String[] args) {

@@ -10,7 +10,7 @@ public class DialogSelectFrom extends JDialog {
     private JComboBox<String> comboBox1;
     private String result;
 
-    DialogSelectFrom(List<String> titles) {
+    DialogSelectFrom() {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
@@ -32,11 +32,6 @@ public class DialogSelectFrom extends JDialog {
                 JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
         result = null;
-        comboBox1.removeAllItems();
-        comboBox1.addItem("-- Select one --");
-        for (String title : titles) {
-            comboBox1.addItem(title);
-        }
     }
 
     private void onOK() {
@@ -51,6 +46,14 @@ public class DialogSelectFrom extends JDialog {
     private void onCancel() {
         // add your code here if necessary
         dispose();
+    }
+
+    void setComboContent(List<String> content) {
+        comboBox1.removeAllItems();
+        comboBox1.addItem("-- Select one --");
+        for (String title : content) {
+            comboBox1.addItem(title);
+        }
     }
 
     String getResult() {

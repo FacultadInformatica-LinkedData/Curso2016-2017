@@ -49,7 +49,7 @@ public class Sparql {
         model.read(file_parks, "TURTLE");
     }
 
-    public static List<Film> allFilm() {
+    public static List<Film> allFilm(){
         List<Film> result = new ArrayList<Film>();
         String queryString = "PREFIX owl:<http://www.w3.org/2002/07/owl#> \n" +
                 "PREFIX foaf:<http://xmlns.com/foaf/spec>" +
@@ -60,15 +60,12 @@ public class Sparql {
                 "       ?x mydbp:hasOriginalTitle ?a . \n" +
                 "       ?x mydbp:hasFilmingLocation ?b . \n" +
                 "       ?x mydbp:hasDirector ?c . \n" +
-                "       ?x mydbp:hasWriter ?d . " +
-                "       ?sub " +
-                "       SERVICE <http://es.dbpedia.org/sparql> {" +
-                "       }}";
+                "       ?x mydbp:hasWriter ?d . }";
 
         Query query = QueryFactory.create(queryString);
-        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+        QueryExecution qexec = QueryExecutionFactory.create(query, model) ;
         ResultSet results = qexec.execSelect();
-        System.out.println("HOLITA " + results.getRowNumber());
+
         while (results.hasNext()) {
             Film newFilm = new Film();
             QuerySolution res = results.nextSolution();
@@ -82,28 +79,38 @@ public class Sparql {
             newFilm.setLocation(b.asLiteral().getString());
             newFilm.setDirector(c.asLiteral().getString());
             newFilm.setWriter(d.asLiteral().getString());
-            newFilm.setDirectorURI(e.asResource().getURI());
-            System.out.println("[NAME]: " + newFilm.getDirector());
-            System.out.println("[DIRECTOR]: " + newFilm.getDirectorURI());
             result.add(newFilm);
         }
+
         return result;
     }
 
-    public static List<String> allPark() {
-        List<String> result = new ArrayList<String>();
-        String queryString = "SELECT DISTINCT *" +
-                "where {?x a <http://mappings.dbpedia.org/server/ontology/classes/Artwork>}";
+    public static List<ArtCollection> allArtsCollection(){
+        List<ArtCollection> result = new ArrayList<ArtCollection>();
+        String queryString = "PREFIX owl:<http://www.w3.org/2002/07/owl#> \n" +
+                "PREFIX foaf:<http://xmlns.com/foaf/spec>" +
+                "PREFIX mydbp:<http://grupo64.es/>" +
+                "SELECT DISTINCT *\n" +
+                "where {\n" +
+                "       ?x a <http://mappings.dbpedia.org/server/ontology/classes/Artwork> . \n" +
+                "       ?x mydbp:hasAuthor ?a . \n" +
+                "       ?x mydbp:hasTitle ?b . }";
 
         Query query = QueryFactory.create(queryString);
-        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+        QueryExecution qexec = QueryExecutionFactory.create(query, model) ;
         ResultSet results = qexec.execSelect();
+
         while (results.hasNext()) {
-            String park = results.next().toString();
-            park = park.substring(7, park.length() - 2);
-            //System.out.println("Park: " + park);
-            result.add(park);
+            ArtCollection newArtCollection = new ArtCollection();
+            QuerySolution res = results.nextSolution();
+            RDFNode a = res.getLiteral("a");
+            RDFNode b = res.getLiteral("b");
+
+            newArtCollection.setArtist(a.asLiteral().getString());
+            newArtCollection.setTitle(b.asLiteral().getString());
+            result.add(newArtCollection);
         }
+
         return result;
     }
 
@@ -114,34 +121,29 @@ public class Sparql {
                 "where { ?x <http://grupo64.es/hasOriginalTitle> " + filmName + " . \n" +
                 "        ?x <http://grupo64.es/hasFilmingLocation> ?z}";
         Query query = QueryFactory.create(queryString);
-        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+        QueryExecution qexec = QueryExecutionFactory.create(query, model) ;
         ResultSet results = qexec.execSelect();
         while (results.hasNext()) {
             QuerySolution res = results.nextSolution();
             RDFNode z = res.getLiteral("z");
-            System.out.println("[LOCATION] " + z.asLiteral().getString());
             result.add(z.asLiteral().getString());
         }
         return result;
     }
 
-    public static ArrayList<String> getAllTitle() {
-        ArrayList<String> result = new ArrayList<String>();
+    public static List<String> getAllTitle() {
+        List<String> result = new ArrayList<>();
         String queryString = "SELECT DISTINCT *" +
                 "where {    ?x a <http://mappings.dbpedia.org/server/ontology/classes/Film> . " +
                 "           ?x <http://grupo64.es/hasOriginalTitle> ?z}";
 
         Query query = QueryFactory.create(queryString);
-        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+        QueryExecution qexec = QueryExecutionFactory.create(query, model) ;
         ResultSet results = qexec.execSelect();
         while (results.hasNext()) {
             QuerySolution res = results.nextSolution();
             RDFNode z = res.getLiteral("z");
-            System.out.println("[TITLE]: " + z.asLiteral().getString());
             result.add(z.asLiteral().getString());
-        }
-        if (result == null) {
-            System.out.println("WRONG!!!!!!!");
         }
         return result;
     }
@@ -149,17 +151,17 @@ public class Sparql {
     public static List<String> getDirector(String filmName) {
         List<String> result = new ArrayList<String>();
         String queryString = "SELECT DISTINCT *" +
-                "where {    ?x  <http://grupo64.es/hasOriginalTitle> " + filmName + " . " +
+                "where {    ?x <http://grupo64.es/hasOriginalTitle> " + filmName + " . \n" +
                 "           ?x <http://grupo64.es/hasDirector> ?z}";
 
         Query query = QueryFactory.create(queryString);
-        QueryExecution qexec = QueryExecutionFactory.create(query, model);
+        QueryExecution qexec = QueryExecutionFactory.create(query, model) ;
         ResultSet results = qexec.execSelect();
         while (results.hasNext()) {
             QuerySolution res = results.nextSolution();
             RDFNode z = res.getLiteral("z");
-            System.out.println("[DIRECTOR]: " + z.asLiteral().getString());
-            result.add(z.asLiteral().getString());
+            if(!result.contains(z.asLiteral().getString()))
+                result.add(z.asLiteral().getString());
         }
         return result;
     }
@@ -176,7 +178,6 @@ public class Sparql {
         while (resultset.hasNext()) {
             QuerySolution res1 = resultset.nextSolution();
             String birthplace = res1.get("z").toString();
-            System.out.println("[BIRTH PLACE]: " + birthplace);
         }
         return result;
     }
@@ -197,7 +198,6 @@ public class Sparql {
             QuerySolution res = results.nextSolution();
             String x = res.get("v").toString();
             String v = res.get("x").toString();
-            System.out.println("[X]: " + x);
 
             getBirthPlace(x);
 
