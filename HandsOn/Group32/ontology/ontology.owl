@@ -4,145 +4,151 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15> .
 
-<http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15> rdf:type owl:Ontology .
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontology> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasAddress
 
-#################################################################
-#    Object Properties
-#################################################################
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasAddress> a owl:ObjectProperty ;
+	rdfs:domain <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyCOMM_NAME> , <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologySTREET_NAME> , <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyStation> ;
+	rdfs:range <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyAddress> .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasAdressType
 
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasAddress
-:hasAddress rdf:type owl:ObjectProperty ;
-            rdfs:domain :COMM_NAME ,
-                        :STREET_NAME ,
-                        :Station ;
-            rdfs:range :Address .
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasAdressType> a owl:ObjectProperty ;
+	rdfs:domain <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyAddress> ;
+	rdfs:range <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyADDRESS_TYPE> .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasAmountHouses
 
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasAmountHouses> a owl:ObjectProperty ;
+	rdfs:domain <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyAddress> ;
+	rdfs:range <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyHOUSE_NUMBER> .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasCode
 
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasAdressType
-:hasAdressType rdf:type owl:ObjectProperty ;
-               rdfs:domain :Address ;
-               rdfs:range :ADDRESS_TYPE .
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasCode> a owl:ObjectProperty ;
+	rdfs:domain <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyClass> ;
+	rdfs:range <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyClassCode> .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasName
 
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasName> a owl:ObjectProperty ;
+	rdfs:domain <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyStation> ;
+	rdfs:range <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyName> .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasNumber
 
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasAmountHouses
-:hasAmountHouses rdf:type owl:ObjectProperty ;
-                 rdfs:domain :Address ;
-                 rdfs:range :HOUSE_NUMBER .
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasNumber> a owl:ObjectProperty ;
+	rdfs:domain <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyStation> ;
+	rdfs:range <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyNumber> .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasSector
 
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasSector> a owl:ObjectProperty ;
+	rdfs:domain <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyClass> ;
+	rdfs:range <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologySector> .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasStatus
 
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasCode
-:hasCode rdf:type owl:ObjectProperty ;
-         rdfs:domain :Class ;
-         rdfs:range :ClassCode .
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasStatus> a owl:ObjectProperty ;
+	rdfs:domain <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyClass> ;
+	rdfs:range <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyCOMM_STRUC> .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasType
 
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyhasType> a owl:ObjectProperty ;
+	rdfs:domain <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyClass> ;
+	rdfs:range <http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyTYPE> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyADDRESS_TYPE
 
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasName
-:hasName rdf:type owl:ObjectProperty ;
-         rdfs:domain :Station ;
-         rdfs:range :Name .
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyADDRESS_TYPE> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyAddress
 
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyAddress> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyCNSS_YR
 
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasNumber
-:hasNumber rdf:type owl:ObjectProperty ;
-           rdfs:domain :Station ;
-           rdfs:range :Number .
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyCNSS_YR> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyCOMM_CODE
 
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyCOMM_CODE> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyCOMM_NAME
 
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasSector
-:hasSector rdf:type owl:ObjectProperty ;
-           rdfs:domain :Class ;
-           rdfs:range :Sector .
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyCOMM_NAME> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyCOMM_STRUC
 
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyCOMM_STRUC> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyCP
 
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasStatus
-:hasStatus rdf:type owl:ObjectProperty ;
-           rdfs:domain :Class ;
-           rdfs:range :COMM_STRUC .
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyCP> a owl:Class ;
+	rdfs:comment "El código postal del distrito." .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyClass
 
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyClass> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyClassCode
 
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#hasType
-:hasType rdf:type owl:ObjectProperty ;
-         rdfs:domain :Class ;
-         rdfs:range :TYPE .
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyClassCode> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyHOUSE_NUMBER
 
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyHOUSE_NUMBER> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyName
 
-#################################################################
-#    Classes
-#################################################################
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyName> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyNumber
 
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#ADDRESS_TYPE
-:ADDRESS_TYPE rdf:type owl:Class .
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyNumber> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologySECTOR
 
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologySECTOR> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologySRG
 
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#Address
-:Address rdf:type owl:Class .
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologySRG> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologySTREET_NAME
 
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologySTREET_NAME> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologySector
 
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#CNSS_YR
-:CNSS_YR rdf:type owl:Class .
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologySector> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyStation
 
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyStation> a owl:Class .
+# 
+# http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyTYPE
 
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#COMM_CODE
-:COMM_CODE rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#COMM_NAME
-:COMM_NAME rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#COMM_STRUC
-:COMM_STRUC rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#CP
-:CP rdf:type owl:Class ;
-    rdfs:comment "El código postal del distrito." .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#Class
-:Class rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#ClassCode
-:ClassCode rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#HOUSE_NUMBER
-:HOUSE_NUMBER rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#Name
-:Name rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#Number
-:Number rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#SECTOR
-:SECTOR rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#SRG
-:SRG rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#STREET_NAME
-:STREET_NAME rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#Sector
-:Sector rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#Station
-:Station rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/pablito/ontologies/2016/9/untitled-ontology-15#TYPE
-:TYPE rdf:type owl:Class .
-
-
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
+<http://www.semanticweb.org/group32/ontologies/2016/9/calgary-ontologyTYPE> a owl:Class .
+# 
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
