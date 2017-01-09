@@ -1,0 +1,421 @@
+[
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column town",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "town",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BUKIT BATOK",
+          "Bukit Batok"
+        ],
+        "to": "Bukit Batok"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "KALLANG/WHAMPOA",
+          "Kallang/Whampoa"
+        ],
+        "to": "Kallang/Whampoa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TAMPINES",
+          "Tampines"
+        ],
+        "to": "Tampines"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "QUEENSTOWN",
+          "Queenstown"
+        ],
+        "to": "Queenstown"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BEDOK",
+          "Bedok"
+        ],
+        "to": "Bedok"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "YISHUN",
+          "Yishun"
+        ],
+        "to": "Yishun"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SERANGOON",
+          "Serangoon"
+        ],
+        "to": "Serangoon"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CLEMENTI",
+          "Clementi"
+        ],
+        "to": "Clementi"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "WOODLANDS",
+          "Woodlands"
+        ],
+        "to": "Woodlands"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CHOA CHU KANG",
+          "Choa Chu Kang"
+        ],
+        "to": "Choa Chu Kang"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SENGKANG",
+          "Sengkang"
+        ],
+        "to": "Sengkang"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bukit Timah",
+          "BUKIT TIMAH"
+        ],
+        "to": "BUKIT TIMAH"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PUNGGOL",
+          "Punggol"
+        ],
+        "to": "Punggol"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GEYLANG",
+          "Geylang"
+        ],
+        "to": "Geylang"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BUKIT PANJANG",
+          "Bukit Panjang"
+        ],
+        "to": "Bukit Panjang"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "JURONG EAST",
+          "Jurong East"
+        ],
+        "to": "Jurong East"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "JURONG WEST",
+          "Jurong West"
+        ],
+        "to": "Jurong West"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "TOA PAYOH",
+          "Toa Payoh"
+        ],
+        "to": "Toa Payoh"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BISHAN",
+          "Bishan"
+        ],
+        "to": "Bishan"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HOUGANG",
+          "Hougang"
+        ],
+        "to": "Hougang"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "BUKIT MERAH",
+          "Bukit Merah"
+        ],
+        "to": "Bukit Merah"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PASIR RIS",
+          "Pasir Ris"
+        ],
+        "to": "Pasir Ris"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SEMBAWANG",
+          "Sembawang"
+        ],
+        "to": "Sembawang"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ANG MO KIO",
+          "Ang Mo Kio"
+        ],
+        "to": "Ang Mo Kio"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MARINE PARADE",
+          "Marine Parade"
+        ],
+        "to": "Marine Parade"
+      }
+    ]
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column financial_year to year2",
+    "oldColumnName": "financial_year",
+    "newColumnName": "year2"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column min_selling_price_less_ahg_shg",
+    "columnName": "min_selling_price_less_ahg_shg"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column max_selling_price_less_ahg_shg",
+    "columnName": "max_selling_price_less_ahg_shg"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://localhost:3333/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://localhost:3333/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column year2 to year",
+    "oldColumnName": "year2",
+    "newColumnName": "year"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group03/ontologies/handson/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "group03",
+          "uri": "http://www.semanticweb.org/group03/ontologies/handson#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#year",
+              "curie": "group03:year",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#int",
+                "columnName": "year"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#town",
+              "curie": "group03:town",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "town"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#room_type",
+              "curie": "group03:room_type",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "room_type"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#min_selling_price",
+              "curie": "group03:min_selling_price",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "columnName": "min_selling_price"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/group03/ontologies/handson#max_selling_price",
+              "curie": "group03:max_selling_price",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "columnName": "max_selling_price"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

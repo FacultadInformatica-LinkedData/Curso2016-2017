@@ -1,0 +1,73 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/calles/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(trim(value),\" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "name",
+          "rdfTypes": [
+            {
+              "uri": "http://smartsevilla.es/ontology#Calle",
+              "curie": "g10:Calle"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smartsevilla.es/ontology#short_name",
+              "curie": "g10:short_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "name"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column lat",
+    "columnName": "lat"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column lon",
+    "columnName": "lon"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column calle_id",
+    "columnName": "calle_id"
+  }
+]

@@ -1,0 +1,26 @@
+#Assigment 4 - SPARQL Advanced
+#Alejandro de Bona Moliz t110055
+
+######## 1.Dame todas las propiedades aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+SELECT DISTINCT ?Propiedades 
+WHERE { ?Instancia ?p <http://dbpedia.org/ontology/Politician> . ?Instancia ?Propiedades ?Valor} LIMIT 100
+
+
+######## 2.Dame todas las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>)
+
+SELECT DISTINCT ?propiedades 
+WHERE {?Instancia a <http://dbpedia.org/ontology/Politician> . ?Instancia ?propiedades FILTER(?propiedades != rdf:type)}LIMIT 100
+
+
+######## 3.¿Cuántos valores distintos se pueden encontrar para las propiedades, exceptuando rdf:type, de las instancias de la clase Politician 
+(<http://dbpedia.org/ontology/Politician>)?
+
+SELECT COUNT (DISTINCT ?valores) as ?Nvalores 
+WHERE { ?instancias a <http://dbpedia.org/ontology/Politician> . ?instancias ?propiedades ?valores FILTER(?propiedades != rdf:type)}
+
+		
+######## 4.Para cada una de las propiedades, exceptuando rdf:type, aplicables a las instancias de la clase Politician (<http://dbpedia.org/ontology/Politician>), dime cuántos valores distintos toman en dichas instancias
+
+SELECT ?propiedades COUNT (DISTINCT ?valores) as ?Nvalores
+WHERE { ?instancias a <http://dbpedia.org/ontology/Politician> . ?instancias ?propiedades ?valores. FILTER(?propiedades != rdf:type) }

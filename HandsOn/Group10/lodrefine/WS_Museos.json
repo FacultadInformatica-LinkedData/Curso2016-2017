@@ -1,0 +1,140 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FID",
+    "columnName": "FID"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column HORARIO",
+    "columnName": "HORARIO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Texto",
+    "columnName": "Texto"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/museos/",
+      "prefixes": [
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(value, \" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "NOMBRE",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/ontology/museum",
+              "curie": "dbo:museum"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://dbpedia.org/property/longitude",
+              "curie": "dbp:longitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "lon"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/latitude",
+              "curie": "dbp:latitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "lat"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/fullname",
+              "curie": "dbp:fullname",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/address",
+              "curie": "dbp:address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/phoneNumber",
+              "curie": "dbp:phoneNumber",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/url",
+              "curie": "dbp:url",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "WEB",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/photo",
+              "curie": "dbp:photo",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Foto",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

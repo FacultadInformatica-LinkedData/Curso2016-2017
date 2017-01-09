@@ -1,0 +1,2294 @@
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix livingPlaces: <http://www.linkedData_Group13.com/ontology/livingPlaces#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix osadm: <http://data.ordnancesurvey.co.uk/ontology/admingeo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://www.linkedData_Group13.com/resource/115th+Street+Library> a schema:Library ;
+	geo:long "-73.95353074430393"^^xsd:float ;
+	geo:lat "40.80297988196676"^^xsd:float ;
+	rdfs:label "115th Street Library"^^rdfs:Literal ;
+	schema:streetAddress "West 115th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "203"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10026"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/115th-street> .
+
+<http://www.linkedData_Group13.com/resource/Manhattan> a osadm:Borough ;
+	rdfs:label "Manhattan"^^<rdfs:Literal> ;
+	owl:sameAs <http://dbpedia.org/resource/Manhattan> .
+
+<http://www.linkedData_Group13.com/resource/125th+Street+Library> a schema:Library ;
+	geo:long "-73.9348475633247"^^xsd:float ;
+	geo:lat "40.80301816141575"^^xsd:float ;
+	rdfs:label "125th Street Library"^^rdfs:Literal ;
+	schema:streetAddress "East 125th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "224"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10035"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/125th-street> .
+
+<http://www.linkedData_Group13.com/resource/53rd+Street+Library> a schema:Library ;
+	geo:long "-73.97736329270697"^^xsd:float ;
+	geo:lat "40.76080689474172"^^xsd:float ;
+	rdfs:label "53rd Street Library"^^rdfs:Literal ;
+	schema:streetAddress "West 53rd Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "18"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10019"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/53rd-street> .
+
+<http://www.linkedData_Group13.com/resource/58th+Street+Library> a schema:Library ;
+	geo:long "-73.9693817046576"^^xsd:float ;
+	geo:lat "40.7621860177235"^^xsd:float ;
+	rdfs:label "58th Street Library"^^rdfs:Literal ;
+	schema:streetAddress "East 58th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "127"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10022"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/58th-street> .
+
+<http://www.linkedData_Group13.com/resource/67th+Street+Library> a schema:Library ;
+	geo:long "-73.95954994584243"^^xsd:float ;
+	geo:lat "40.764915006253425"^^xsd:float ;
+	rdfs:label "67th Street Library"^^rdfs:Literal ;
+	schema:streetAddress "East 67th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "328"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10065"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/67th-street> .
+
+<http://www.linkedData_Group13.com/resource/96th+Street+Library> a schema:Library ;
+	geo:long "-73.9518056716208"^^xsd:float ;
+	geo:lat "40.785959798621555"^^xsd:float ;
+	rdfs:label "96th Street Library"^^rdfs:Literal ;
+	schema:streetAddress "East 96th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "112"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10128"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/96th-street> .
+
+<http://www.linkedData_Group13.com/resource/Aguilar> a schema:Library ;
+	geo:long "-73.94345827853815"^^xsd:float ;
+	geo:lat "40.79421476546373"^^xsd:float ;
+	rdfs:label "Aguilar"^^rdfs:Literal ;
+	schema:streetAddress "East 110th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "174"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10029"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/aguilar> .
+
+<http://www.linkedData_Group13.com/resource/Allerton> a schema:Library ;
+	geo:long "-73.86322248483968"^^xsd:float ;
+	geo:lat "40.866804429026935"^^xsd:float ;
+	rdfs:label "Allerton"^^rdfs:Literal ;
+	schema:streetAddress "Barnes Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2740"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10467"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/allerton> .
+
+<http://www.linkedData_Group13.com/resource/Bronx> a osadm:Borough ;
+	rdfs:label "Bronx"^^<rdfs:Literal> ;
+	owl:sameAs <http://dbpedia.org/resource/The_Bronx> .
+
+<http://www.linkedData_Group13.com/resource/Andrew+Heiskell+Braille+and+Talking+Book> a schema:Library ;
+	geo:long "-73.99335691118674"^^xsd:float ;
+	geo:lat "40.74046545561088"^^xsd:float ;
+	rdfs:label "Andrew Heiskell Braille and Talking Book"^^rdfs:Literal ;
+	schema:streetAddress "West 20th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "40"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10011"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/heiskell> .
+
+<http://www.linkedData_Group13.com/resource/Battery+Park+City+Library> a schema:Library ;
+	geo:long "-74.0157487123272"^^xsd:float ;
+	geo:lat "40.715690873439094"^^xsd:float ;
+	rdfs:label "Battery Park City Library"^^rdfs:Literal ;
+	schema:streetAddress "North End Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "175"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10282"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/battery-park-city> .
+
+<http://www.linkedData_Group13.com/resource/Baychester> a schema:Library ;
+	geo:long "-73.82931594567218"^^xsd:float ;
+	geo:lat "40.87075330808789"^^xsd:float ;
+	rdfs:label "Baychester"^^rdfs:Literal ;
+	schema:streetAddress "Asch Loop North"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2049"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10475"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/baychester> .
+
+<http://www.linkedData_Group13.com/resource/Belmont+Library+and+Enrico+Fermi+Cultural+Center> a schema:Library ;
+	geo:long "-73.88788268526544"^^xsd:float ;
+	geo:lat "40.85434421451861"^^xsd:float ;
+	rdfs:label "Belmont Library and Enrico Fermi Cultural Center"^^rdfs:Literal ;
+	schema:streetAddress "East 186th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "610"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10458"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/belmont> .
+
+<http://www.linkedData_Group13.com/resource/Bloomingdale> a schema:Library ;
+	geo:long "-73.96760677135273"^^xsd:float ;
+	geo:lat "40.79587354648015"^^xsd:float ;
+	rdfs:label "Bloomingdale"^^rdfs:Literal ;
+	schema:streetAddress "West 100th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "150"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10025"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/bloomingdale> .
+
+<http://www.linkedData_Group13.com/resource/Bronx+Library+Center> a schema:Library ;
+	geo:long "-73.89450288645044"^^xsd:float ;
+	geo:lat "40.86298060519321"^^xsd:float ;
+	rdfs:label "Bronx Library Center"^^rdfs:Literal ;
+	schema:streetAddress "East Kingsbridge Road"^^schema:Text ;
+	livingPlaces:hasHouseNumber "310"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10458"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/bronx-library-center> .
+
+<http://www.linkedData_Group13.com/resource/Castle+Hill> a schema:Library ;
+	geo:long "-73.85017019717382"^^xsd:float ;
+	geo:lat "40.82662920810023"^^xsd:float ;
+	rdfs:label "Castle Hill"^^rdfs:Literal ;
+	schema:streetAddress "Castle Hill Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "947"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10473"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/castle-hill> .
+
+<http://www.linkedData_Group13.com/resource/Chatham+Square> a schema:Library ;
+	geo:long "-73.99648986636721"^^xsd:float ;
+	geo:lat "40.71333307050747"^^xsd:float ;
+	rdfs:label "Chatham Square"^^rdfs:Literal ;
+	schema:streetAddress "East Broadway"^^schema:Text ;
+	livingPlaces:hasHouseNumber "33"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10002"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/chatham-square> ;
+	owl:sameAs <http://dbpedia.org/resource/Chatham_Square> .
+
+<http://www.linkedData_Group13.com/resource/City+Island> a schema:Library ;
+	geo:long "-73.78636658900808"^^xsd:float ;
+	geo:lat "40.8476919036199"^^xsd:float ;
+	rdfs:label "City Island"^^rdfs:Literal ;
+	schema:streetAddress "City Island Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "320"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10464"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/city-island> .
+
+<http://www.linkedData_Group13.com/resource/Clason%27s+Point> a schema:Library ;
+	geo:long "-73.87502060024048"^^xsd:float ;
+	geo:lat "40.82999287527917"^^xsd:float ;
+	rdfs:label "Clason's Point"^^rdfs:Literal ;
+	schema:streetAddress "Morrison Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1215"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10472"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/clasons-point> .
+
+<http://www.linkedData_Group13.com/resource/Columbus> a schema:Library ;
+	geo:long "-73.99122081783712"^^xsd:float ;
+	geo:lat "40.764934618394804"^^xsd:float ;
+	rdfs:label "Columbus"^^rdfs:Literal ;
+	schema:streetAddress "10th Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "742"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10019"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/columbus> .
+
+<http://www.linkedData_Group13.com/resource/Countee+Cullen> a schema:Library ;
+	geo:long "-73.94116092350963"^^xsd:float ;
+	geo:lat "40.81483582138157"^^xsd:float ;
+	rdfs:label "Countee Cullen"^^rdfs:Literal ;
+	schema:streetAddress "West 136th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "104"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10030"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/countee-cullen> .
+
+<http://www.linkedData_Group13.com/resource/Dongan+Hills> a schema:Library ;
+	geo:long "-74.1011372893581"^^xsd:float ;
+	geo:lat "40.59039133599787"^^xsd:float ;
+	rdfs:label "Dongan Hills"^^rdfs:Literal ;
+	schema:streetAddress "Richmond Road"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1617"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
+	dbo:zipCode "10304"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/dongan-hills> .
+
+<http://www.linkedData_Group13.com/resource/Staten+Island> a osadm:Borough ;
+	rdfs:label "Staten Island"^^<rdfs:Literal> ;
+	owl:sameAs <http://dbpedia.org/resource/Staten_Island> .
+
+<http://www.linkedData_Group13.com/resource/Eastchester> a schema:Library ;
+	geo:long "-73.84506427532864"^^xsd:float ;
+	geo:lat "40.87013970297055"^^xsd:float ;
+	rdfs:label "Eastchester"^^rdfs:Literal ;
+	schema:streetAddress "East Gun Hill Road"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1385"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10469"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/eastchester> .
+
+<http://www.linkedData_Group13.com/resource/Edenwald> a schema:Library ;
+	geo:long "-73.84083712785493"^^xsd:float ;
+	geo:lat "40.88889489584642"^^xsd:float ;
+	rdfs:label "Edenwald"^^rdfs:Literal ;
+	schema:streetAddress "East 233rd Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1255"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10466"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/edenwald> .
+
+<http://www.linkedData_Group13.com/resource/Epiphany> a schema:Library ;
+	geo:long "-73.98204888964264"^^xsd:float ;
+	geo:lat "40.738087120390595"^^xsd:float ;
+	rdfs:label "Epiphany"^^rdfs:Literal ;
+	schema:streetAddress "East 23rd Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "228"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10010"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/epiphany> .
+
+<http://www.linkedData_Group13.com/resource/Fort+Washington> a schema:Library ;
+	geo:long "-73.93386591312449"^^xsd:float ;
+	geo:lat "40.847870041168214"^^xsd:float ;
+	rdfs:label "Fort Washington"^^rdfs:Literal ;
+	schema:streetAddress "West 179th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "535"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10033"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/fort-washington> .
+
+<http://www.linkedData_Group13.com/resource/Francis+Martin> a schema:Library ;
+	geo:long "-73.90931635032427"^^xsd:float ;
+	geo:lat "40.85742189422779"^^xsd:float ;
+	rdfs:label "Francis Martin"^^rdfs:Literal ;
+	schema:streetAddress "University Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2150"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10453"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/francis-martin> .
+
+<http://www.linkedData_Group13.com/resource/George+Bruce> a schema:Library ;
+	geo:long "-73.95705320654999"^^xsd:float ;
+	geo:lat "40.813768964572695"^^xsd:float ;
+	rdfs:label "George Bruce"^^rdfs:Literal ;
+	schema:streetAddress "West 125th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "518"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10027"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/george-bruce> .
+
+<http://www.linkedData_Group13.com/resource/Grand+Central> a schema:Library ;
+	geo:long "-73.97356771683344"^^xsd:float ;
+	geo:lat "40.754067875550625"^^xsd:float ;
+	rdfs:label "Grand Central"^^rdfs:Literal ;
+	schema:streetAddress "East 46th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "135"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10017"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/grand-central> .
+
+<http://www.linkedData_Group13.com/resource/Grand+Concourse> a schema:Library ;
+	geo:long "-73.91008714449384"^^xsd:float ;
+	geo:lat "40.844001911750446"^^xsd:float ;
+	rdfs:label "Grand Concourse"^^rdfs:Literal ;
+	schema:streetAddress "East 173rd Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "155"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10457"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/grand-concourse> .
+
+<http://www.linkedData_Group13.com/resource/Great+Kills> a schema:Library ;
+	geo:long "-74.15111164313684"^^xsd:float ;
+	geo:lat "40.55242326280796"^^xsd:float ;
+	rdfs:label "Great Kills"^^rdfs:Literal ;
+	schema:streetAddress "Giffords Lane"^^schema:Text ;
+	livingPlaces:hasHouseNumber "56"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
+	dbo:zipCode "10308"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/great-kills> .
+
+<http://www.linkedData_Group13.com/resource/Hamilton+Fish+Park> a schema:Library ;
+	geo:long "-73.97942314417445"^^xsd:float ;
+	geo:lat "40.71978015438276"^^xsd:float ;
+	rdfs:label "Hamilton Fish Park"^^rdfs:Literal ;
+	schema:streetAddress "East Houston Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "415"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10002"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/hamilton-fish-park> .
+
+<http://www.linkedData_Group13.com/resource/Hamilton+Grange> a schema:Library ;
+	geo:long "-73.94803241890192"^^xsd:float ;
+	geo:lat "40.82567237379984"^^xsd:float ;
+	rdfs:label "Hamilton Grange"^^rdfs:Literal ;
+	schema:streetAddress "West 145th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "503"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10031"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/hamilton-grange> .
+
+<http://www.linkedData_Group13.com/resource/Harlem> a schema:Library ;
+	geo:long "-73.94331559838257"^^xsd:float ;
+	geo:lat "40.80616044207548"^^xsd:float ;
+	rdfs:label "Harlem"^^rdfs:Literal ;
+	schema:streetAddress "West 124th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "9"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10027"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/harlem> .
+
+<http://www.linkedData_Group13.com/resource/High+Bridge> a schema:Library ;
+	geo:long "-73.92355090156951"^^xsd:float ;
+	geo:lat "40.837960016855035"^^xsd:float ;
+	rdfs:label "High Bridge"^^rdfs:Literal ;
+	schema:streetAddress "West 168th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "78"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10452"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/high-bridge> .
+
+<http://www.linkedData_Group13.com/resource/Hudson+Park> a schema:Library ;
+	geo:long "-74.00533101445356"^^xsd:float ;
+	geo:lat "40.72998291458653"^^xsd:float ;
+	rdfs:label "Hudson Park"^^rdfs:Literal ;
+	schema:streetAddress "Leroy Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "66"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10014"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/hudson-park> .
+
+<http://www.linkedData_Group13.com/resource/Huguenot+Park> a schema:Library ;
+	geo:long "-74.19322900650182"^^xsd:float ;
+	geo:lat "40.534078493080344"^^xsd:float ;
+	rdfs:label "Huguenot Park"^^rdfs:Literal ;
+	schema:streetAddress "Huguenot Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "830"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
+	dbo:zipCode "10312"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/huguenot-park> .
+
+<http://www.linkedData_Group13.com/resource/Hunts+Point> a schema:Library ;
+	geo:long "-73.89413216580388"^^xsd:float ;
+	geo:lat "40.818670087188615"^^xsd:float ;
+	rdfs:label "Hunts Point"^^rdfs:Literal ;
+	schema:streetAddress "Southern Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "877"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10459"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/hunts-point> .
+
+<http://www.linkedData_Group13.com/resource/Inwood> a schema:Library ;
+	geo:long "-73.92586290917251"^^xsd:float ;
+	geo:lat "40.865748720737024"^^xsd:float ;
+	rdfs:label "Inwood"^^rdfs:Literal ;
+	schema:streetAddress "Broadway"^^schema:Text ;
+	livingPlaces:hasHouseNumber "4790"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10034"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/inwood> .
+
+<http://www.linkedData_Group13.com/resource/Jefferson+Market> a schema:Library ;
+	geo:long "-73.99916928513315"^^xsd:float ;
+	geo:lat "40.73463470830847"^^xsd:float ;
+	rdfs:label "Jefferson Market"^^rdfs:Literal ;
+	schema:streetAddress "Avenue of the Americas"^^schema:Text ;
+	livingPlaces:hasHouseNumber "425"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10011"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/jefferson-market> .
+
+<http://www.linkedData_Group13.com/resource/Jerome+Park> a schema:Library ;
+	geo:long "-73.90119235962918"^^xsd:float ;
+	geo:lat "40.86906986689302"^^xsd:float ;
+	rdfs:label "Jerome Park"^^rdfs:Literal ;
+	schema:streetAddress "Eames Place"^^schema:Text ;
+	livingPlaces:hasHouseNumber "118"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10468"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/jerome-park> .
+
+<http://www.linkedData_Group13.com/resource/Kingsbridge> a schema:Library ;
+	geo:long "-73.90770595199646"^^xsd:float ;
+	geo:lat "40.88069989038004"^^xsd:float ;
+	rdfs:label "Kingsbridge"^^rdfs:Literal ;
+	schema:streetAddress "West 231st Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "291"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10463"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/kingsbridge> .
+
+<http://www.linkedData_Group13.com/resource/Kips+Bay> a schema:Library ;
+	geo:long "-73.97990195853163"^^xsd:float ;
+	geo:lat "40.74380962013242"^^xsd:float ;
+	rdfs:label "Kips Bay"^^rdfs:Literal ;
+	schema:streetAddress "Third Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "446"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10016"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/kips-bay> .
+
+<http://www.linkedData_Group13.com/resource/Macomb%27s+Bridge> a schema:Library ;
+	geo:long "-73.93586246250698"^^xsd:float ;
+	geo:lat "40.82653201339423"^^xsd:float ;
+	rdfs:label "Macomb's Bridge"^^rdfs:Literal ;
+	schema:streetAddress "Adam Clayton Powell Jr. Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2650"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10039"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/macombs-bridge> .
+
+<http://www.linkedData_Group13.com/resource/Mariners+Harbor> a schema:Library ;
+	geo:long "-74.16658190502365"^^xsd:float ;
+	geo:lat "40.63469343184469"^^xsd:float ;
+	rdfs:label "Mariners Harbor"^^rdfs:Literal ;
+	schema:streetAddress "South Ave"^^schema:Text ;
+	livingPlaces:hasHouseNumber "206"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
+	dbo:zipCode "10303"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/mariners-harbor> .
+
+<http://www.linkedData_Group13.com/resource/Melrose> a schema:Library ;
+	geo:long "-73.91758393603561"^^xsd:float ;
+	geo:lat "40.826584558970666"^^xsd:float ;
+	rdfs:label "Melrose"^^rdfs:Literal ;
+	schema:streetAddress "Morris Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "910"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10451"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/melrose> .
+
+<http://www.linkedData_Group13.com/resource/Mid-Manhattan> a schema:Library ;
+	geo:long "-73.98169851078917"^^xsd:float ;
+	geo:lat "40.75189156171031"^^xsd:float ;
+	rdfs:label "Mid-Manhattan"^^rdfs:Literal ;
+	schema:streetAddress "Fifth Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "455"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10016"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/mid-manhattan-library> .
+
+<http://www.linkedData_Group13.com/resource/Morningside+Heights> a schema:Library ;
+	geo:long "-73.96477561597041"^^xsd:float ;
+	geo:lat "40.80613025800837"^^xsd:float ;
+	rdfs:label "Morningside Heights"^^rdfs:Literal ;
+	schema:streetAddress "Broadway"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2900"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10025"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/morningside-heights> ;
+	owl:sameAs <http://dbpedia.org/resource/Morningside_Heights,_Manhattan> .
+
+<http://www.linkedData_Group13.com/resource/Morris+Park> a schema:Library ;
+	geo:long "-73.85695785375374"^^xsd:float ;
+	geo:lat "40.84802911005552"^^xsd:float ;
+	rdfs:label "Morris Park"^^rdfs:Literal ;
+	schema:streetAddress "Morris Park Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "985"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10462"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/morris-park> .
+
+<http://www.linkedData_Group13.com/resource/Morrisania> a schema:Library ;
+	geo:long "-73.90179407206183"^^xsd:float ;
+	geo:lat "40.83126291201479"^^xsd:float ;
+	rdfs:label "Morrisania"^^rdfs:Literal ;
+	schema:streetAddress "East 169th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "610"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10456"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/morrisania> .
+
+<http://www.linkedData_Group13.com/resource/Mosholu> a schema:Library ;
+	geo:long "-73.87838435032448"^^xsd:float ;
+	geo:lat "40.87437981398938"^^xsd:float ;
+	rdfs:label "Mosholu"^^rdfs:Literal ;
+	schema:streetAddress "East 205th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "285"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10467"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/mosholu> .
+
+<http://www.linkedData_Group13.com/resource/Mott+Haven> a schema:Library ;
+	geo:long "-73.92438195200242"^^xsd:float ;
+	geo:lat "40.81158963775246"^^xsd:float ;
+	rdfs:label "Mott Haven"^^rdfs:Literal ;
+	schema:streetAddress "East 140th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "321"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10454"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/mott-haven> .
+
+<http://www.linkedData_Group13.com/resource/Muhlenberg> a schema:Library ;
+	geo:long "-73.9959685690698"^^xsd:float ;
+	geo:lat "40.74448733065495"^^xsd:float ;
+	rdfs:label "Muhlenberg"^^rdfs:Literal ;
+	schema:streetAddress "West 23rd Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "209"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10011"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/muhlenberg> .
+
+<http://www.linkedData_Group13.com/resource/Mulberry+Street+Library> a schema:Library ;
+	geo:long "-73.99568416859454"^^xsd:float ;
+	geo:lat "40.72413926605543"^^xsd:float ;
+	rdfs:label "Mulberry Street Library"^^rdfs:Literal ;
+	schema:streetAddress "Jersey Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "10"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10012"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/mulberry-street> .
+
+<http://www.linkedData_Group13.com/resource/New+Amsterdam> a schema:Library ;
+	geo:long "-74.00786921340098"^^xsd:float ;
+	geo:lat "40.71357685109021"^^xsd:float ;
+	rdfs:label "New Amsterdam"^^rdfs:Literal ;
+	schema:streetAddress "Murray Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "9"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10007"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/new-amsterdam> .
+
+<http://www.linkedData_Group13.com/resource/New+Dorp> a schema:Library ;
+	geo:long "-74.11195814748115"^^xsd:float ;
+	geo:lat "40.57193184836513"^^xsd:float ;
+	rdfs:label "New Dorp"^^rdfs:Literal ;
+	schema:streetAddress "New Dorp Lane"^^schema:Text ;
+	livingPlaces:hasHouseNumber "309"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
+	dbo:zipCode "10306"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/new-dorp> .
+
+<http://www.linkedData_Group13.com/resource/Library+for+the+Performing+Arts%2C+Dorothy+and+Lewis+B.+Cullman+Center> a schema:Library ;
+	geo:long "-73.98454684522841"^^xsd:float ;
+	geo:lat "40.7735069911927"^^xsd:float ;
+	rdfs:label "Library for the Performing Arts, Dorothy and Lewis B. Cullman Center"^^rdfs:Literal ;
+	schema:streetAddress "Lincoln Center Plaza"^^schema:Text ;
+	livingPlaces:hasHouseNumber "40"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10023"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/lpa> .
+
+<http://www.linkedData_Group13.com/resource/Ottendorfer> a schema:Library ;
+	geo:long "-73.98774284104663"^^xsd:float ;
+	geo:lat "40.72890664078863"^^xsd:float ;
+	rdfs:label "Ottendorfer"^^rdfs:Literal ;
+	schema:streetAddress "Second Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "135"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10003"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/ottendorfer> .
+
+<http://www.linkedData_Group13.com/resource/Parkchester> a schema:Library ;
+	geo:long "-73.85835004816082"^^xsd:float ;
+	geo:lat "40.83378098529545"^^xsd:float ;
+	rdfs:label "Parkchester"^^rdfs:Literal ;
+	schema:streetAddress "Westchester Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1985"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10462"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/parkchester> .
+
+<http://www.linkedData_Group13.com/resource/Pelham+Bay> a schema:Library ;
+	geo:long "-73.82790017237492"^^xsd:float ;
+	geo:lat "40.844317529931516"^^xsd:float ;
+	rdfs:label "Pelham Bay"^^rdfs:Literal ;
+	schema:streetAddress "Middletown Road"^^schema:Text ;
+	livingPlaces:hasHouseNumber "3060"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10461"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/pelham-bay> .
+
+<http://www.linkedData_Group13.com/resource/Pelham+Parkway-Van+Nest> a schema:Library ;
+	geo:long "-73.8641466616336"^^xsd:float ;
+	geo:lat "40.85487588027384"^^xsd:float ;
+	rdfs:label "Pelham Parkway-Van Nest"^^rdfs:Literal ;
+	schema:streetAddress "Barnes Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2147"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10462"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/pelham-parkway-van-nest> .
+
+<http://www.linkedData_Group13.com/resource/Port+Richmond> a schema:Library ;
+	geo:long "-74.13110461508398"^^xsd:float ;
+	geo:lat "40.63758561600359"^^xsd:float ;
+	rdfs:label "Port Richmond"^^rdfs:Literal ;
+	schema:streetAddress "Bennett Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "75"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
+	dbo:zipCode "10302"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/port-richmond> ;
+	owl:sameAs <http://dbpedia.org/resource/Port_Richmond,_Virginia> .
+
+<http://www.linkedData_Group13.com/resource/Richmondtown> a schema:Library ;
+	geo:long "-74.13853387646311"^^xsd:float ;
+	geo:lat "40.566530146210184"^^xsd:float ;
+	rdfs:label "Richmondtown"^^rdfs:Literal ;
+	schema:streetAddress "Clarke Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "200"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
+	dbo:zipCode "10306"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/richmondtown> .
+
+<http://www.linkedData_Group13.com/resource/Riverdale> a schema:Library ;
+	geo:long "-73.90277254280693"^^xsd:float ;
+	geo:lat "40.90372277707978"^^xsd:float ;
+	rdfs:label "Riverdale"^^rdfs:Literal ;
+	schema:streetAddress "Mosholu Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "5540"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10471"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/riverdale> .
+
+<http://www.linkedData_Group13.com/resource/Riverside> a schema:Library ;
+	geo:long "-73.98451216196563"^^xsd:float ;
+	geo:lat "40.77423207861022"^^xsd:float ;
+	rdfs:label "Riverside"^^rdfs:Literal ;
+	schema:streetAddress "Amsterdam Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "127"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10023"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/riverside> .
+
+<http://www.linkedData_Group13.com/resource/Roosevelt+Island> a schema:Library ;
+	geo:long "-73.95020567413508"^^xsd:float ;
+	geo:lat "40.76123275727826"^^xsd:float ;
+	rdfs:label "Roosevelt Island"^^rdfs:Literal ;
+	schema:streetAddress "Main Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "524"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10044"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/roosevelt-island> ;
+	owl:sameAs <http://dbpedia.org/resource/Roosevelt_Island> .
+
+<http://www.linkedData_Group13.com/resource/Schomburg+Center+for+Research+in+Black+Culture> a schema:Library ;
+	geo:long "-73.94094393837611"^^xsd:float ;
+	geo:lat "40.81464862404033"^^xsd:float ;
+	rdfs:label "Schomburg Center for Research in Black Culture"^^rdfs:Literal ;
+	schema:streetAddress "Malcolm X Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "515"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10037"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/schomburg> ;
+	owl:sameAs <http://dbpedia.org/resource/Schomburg_Center_for_Research_in_Black_Culture> .
+
+<http://www.linkedData_Group13.com/resource/Science%2C+Industry+and+Business+Library+%28SIBL%29> a schema:Library ;
+	geo:long "-73.98300921762814"^^xsd:float ;
+	geo:lat "40.74811515837409"^^xsd:float ;
+	rdfs:label "Science, Industry and Business Library (SIBL)"^^rdfs:Literal ;
+	schema:streetAddress "Madison Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "188"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10016"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/sibl> .
+
+<http://www.linkedData_Group13.com/resource/Sedgwick> a schema:Library ;
+	geo:long "-73.9174950173068"^^xsd:float ;
+	geo:lat "40.849444506294475"^^xsd:float ;
+	rdfs:label "Sedgwick"^^rdfs:Literal ;
+	schema:streetAddress "Martin Luther King Jr. Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1701"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10453"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/sedgwick> .
+
+<http://www.linkedData_Group13.com/resource/Seward+Park> a schema:Library ;
+	geo:long "-73.98850101814436"^^xsd:float ;
+	geo:lat "40.71440955033492"^^xsd:float ;
+	rdfs:label "Seward Park"^^rdfs:Literal ;
+	schema:streetAddress "East Broadway"^^schema:Text ;
+	livingPlaces:hasHouseNumber "192"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10002"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/seward-park> .
+
+<http://www.linkedData_Group13.com/resource/Soundview> a schema:Library ;
+	geo:long "-73.86288995608042"^^xsd:float ;
+	geo:lat "40.818709352248625"^^xsd:float ;
+	rdfs:label "Soundview"^^rdfs:Literal ;
+	schema:streetAddress "Soundview Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "660"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10473"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/soundview> .
+
+<http://www.linkedData_Group13.com/resource/South+Beach> a schema:Library ;
+	geo:long "-74.06298045409709"^^xsd:float ;
+	geo:lat "40.59580257046463"^^xsd:float ;
+	rdfs:label "South Beach"^^rdfs:Literal ;
+	schema:streetAddress "Robin Road"^^schema:Text ;
+	livingPlaces:hasHouseNumber "21-25"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
+	dbo:zipCode "10305"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/south-beach> .
+
+<http://www.linkedData_Group13.com/resource/Spuyten+Duyvil> a schema:Library ;
+	geo:long "-73.9146501854584"^^xsd:float ;
+	geo:lat "40.88628523559925"^^xsd:float ;
+	rdfs:label "Spuyten Duyvil"^^rdfs:Literal ;
+	schema:streetAddress "West 235th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "650"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10463"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/spuyten-duyvil> .
+
+<http://www.linkedData_Group13.com/resource/St.+Agnes> a schema:Library ;
+	geo:long "-73.97745211592564"^^xsd:float ;
+	geo:lat "40.784834636708375"^^xsd:float ;
+	rdfs:label "St. Agnes"^^rdfs:Literal ;
+	schema:streetAddress "Amsterdam Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "444"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10024"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/st-agnes> .
+
+<http://www.linkedData_Group13.com/resource/St.+George+Library+Center> a schema:Library ;
+	geo:long "-74.07667836343802"^^xsd:float ;
+	geo:lat "40.64179934831384"^^xsd:float ;
+	rdfs:label "St. George Library Center"^^rdfs:Literal ;
+	schema:streetAddress "Central Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "5"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
+	dbo:zipCode "10301"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/st-george-library-center> .
+
+<http://www.linkedData_Group13.com/resource/Stapleton> a schema:Library ;
+	geo:long "-74.07786385638836"^^xsd:float ;
+	geo:lat "40.626256522293644"^^xsd:float ;
+	rdfs:label "Stapleton"^^rdfs:Literal ;
+	schema:streetAddress "Canal Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "132"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
+	dbo:zipCode "10304"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/stapleton> .
+
+<http://www.linkedData_Group13.com/resource/Stephen+A.+Schwarzman+Building> a schema:Library ;
+	geo:long "-73.98223080385785"^^xsd:float ;
+	geo:lat "40.75320442290988"^^xsd:float ;
+	rdfs:label "Stephen A. Schwarzman Building"^^rdfs:Literal ;
+	schema:streetAddress "Fifth Avenue at 42nd Street"^^schema:Text ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10018"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/schwarzman> .
+
+<http://www.linkedData_Group13.com/resource/Terence+Cardinal+Cooke-Cathedral> a schema:Library ;
+	geo:long "-73.97254082689402"^^xsd:float ;
+	geo:lat "40.75680235018433"^^xsd:float ;
+	rdfs:label "Terence Cardinal Cooke-Cathedral"^^rdfs:Literal ;
+	schema:streetAddress "Lexington Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "560"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10022"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/cathedral> .
+
+<http://www.linkedData_Group13.com/resource/Throg%27s+Neck> a schema:Library ;
+	geo:long "-73.8190949368255"^^xsd:float ;
+	geo:lat "40.82287218481685"^^xsd:float ;
+	rdfs:label "Throg's Neck"^^rdfs:Literal ;
+	schema:streetAddress "Cross Bronx Expressway Extension"^^schema:Text ;
+	livingPlaces:hasHouseNumber "3025"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10465"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/throgs-neck> .
+
+<http://www.linkedData_Group13.com/resource/Todt+Hill-Westerleigh> a schema:Library ;
+	geo:long "-74.14852127833858"^^xsd:float ;
+	geo:lat "40.60960200172146"^^xsd:float ;
+	rdfs:label "Todt Hill-Westerleigh"^^rdfs:Literal ;
+	schema:streetAddress "Victory Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2550"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
+	dbo:zipCode "10314"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/todt-hill-westerleigh> .
+
+<http://www.linkedData_Group13.com/resource/Tompkins+Square> a schema:Library ;
+	geo:long "-73.98042071146763"^^xsd:float ;
+	geo:lat "40.72728802667872"^^xsd:float ;
+	rdfs:label "Tompkins Square"^^rdfs:Literal ;
+	schema:streetAddress "East 10th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "331"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10009"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/tompkins-square> .
+
+<http://www.linkedData_Group13.com/resource/Tottenville> a schema:Library ;
+	geo:long "-74.24410670826178"^^xsd:float ;
+	geo:lat "40.509531123859375"^^xsd:float ;
+	rdfs:label "Tottenville"^^rdfs:Literal ;
+	schema:streetAddress "Amboy Road"^^schema:Text ;
+	livingPlaces:hasHouseNumber "7430"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
+	dbo:zipCode "10307"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/tottenville> .
+
+<http://www.linkedData_Group13.com/resource/Tremont> a schema:Library ;
+	geo:long "-73.89834943816875"^^xsd:float ;
+	geo:lat "40.84604568736388"^^xsd:float ;
+	rdfs:label "Tremont"^^rdfs:Literal ;
+	schema:streetAddress "Washington Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1866"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10457"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/tremont> .
+
+<http://www.linkedData_Group13.com/resource/Van+Cortlandt> a schema:Library ;
+	geo:long "-73.8939211860628"^^xsd:float ;
+	geo:lat "40.88277969546436"^^xsd:float ;
+	rdfs:label "Van Cortlandt"^^rdfs:Literal ;
+	schema:streetAddress "Sedgwick Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "3874"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10463"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/van-cortlandt> .
+
+<http://www.linkedData_Group13.com/resource/Wakefield> a schema:Library ;
+	geo:long "-73.85958124409599"^^xsd:float ;
+	geo:lat "40.891085065406706"^^xsd:float ;
+	rdfs:label "Wakefield"^^rdfs:Literal ;
+	schema:streetAddress "Lowerre Place"^^schema:Text ;
+	livingPlaces:hasHouseNumber "4100"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10466"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/wakefield> .
+
+<http://www.linkedData_Group13.com/resource/Washington+Heights> a schema:Library ;
+	geo:long "-73.93971034945567"^^xsd:float ;
+	geo:lat "40.834548887305765"^^xsd:float ;
+	rdfs:label "Washington Heights"^^rdfs:Literal ;
+	schema:streetAddress "St. Nicholas Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1000"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10032"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/washington-heights> .
+
+<http://www.linkedData_Group13.com/resource/Webster> a schema:Library ;
+	geo:long "-73.95134169404905"^^xsd:float ;
+	geo:lat "40.770652543462646"^^xsd:float ;
+	rdfs:label "Webster"^^rdfs:Literal ;
+	schema:streetAddress "York Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1465"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10021"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/webster> .
+
+<http://www.linkedData_Group13.com/resource/West+Farms> a schema:Library ;
+	geo:long "-73.88301210482436"^^xsd:float ;
+	geo:lat "40.844644453005635"^^xsd:float ;
+	rdfs:label "West Farms"^^rdfs:Literal ;
+	schema:streetAddress "Honeywell Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2085"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10460"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/west-farms> .
+
+<http://www.linkedData_Group13.com/resource/West+New+Brighton> a schema:Library ;
+	geo:long "-74.11482187344863"^^xsd:float ;
+	geo:lat "40.63450894226954"^^xsd:float ;
+	rdfs:label "West New Brighton"^^rdfs:Literal ;
+	schema:streetAddress "Castleton Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "976"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Staten+Island> ;
+	dbo:zipCode "10310"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/west-new-brighton> .
+
+<http://www.linkedData_Group13.com/resource/Westchester+Square> a schema:Library ;
+	geo:long "-73.84673061822738"^^xsd:float ;
+	geo:lat "40.84086754432402"^^xsd:float ;
+	rdfs:label "Westchester Square"^^rdfs:Literal ;
+	schema:streetAddress "Glebe Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2521"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10461"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/westchester-square> .
+
+<http://www.linkedData_Group13.com/resource/Woodlawn+Heights> a schema:Library ;
+	geo:long "-73.86794200000536"^^xsd:float ;
+	geo:lat "40.90043990975718"^^xsd:float ;
+	rdfs:label "Woodlawn Heights"^^rdfs:Literal ;
+	schema:streetAddress "Katonah Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "4355"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10470"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/woodlawn-heights> .
+
+<http://www.linkedData_Group13.com/resource/Woodstock> a schema:Library ;
+	geo:long "-73.90464799347694"^^xsd:float ;
+	geo:lat "40.82061890603643"^^xsd:float ;
+	rdfs:label "Woodstock"^^rdfs:Literal ;
+	schema:streetAddress "East 160th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "761"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bronx> ;
+	dbo:zipCode "10456"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/woodstock> .
+
+<http://www.linkedData_Group13.com/resource/Yorkville> a schema:Library ;
+	geo:long "-73.95637252319334"^^xsd:float ;
+	geo:lat "40.77365564161395"^^xsd:float ;
+	rdfs:label "Yorkville"^^rdfs:Literal ;
+	schema:streetAddress "East 79th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "222"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Manhattan> ;
+	dbo:zipCode "10021"^^xsd:string ;
+	schema:url <http://www.nypl.org/locations/yorkville> .
+
+<http://www.linkedData_Group13.com/resource/Arlington> a schema:Library ;
+	geo:long "-73.88723723774561"^^xsd:float ;
+	geo:lat "40.68068925695902"^^xsd:float ;
+	rdfs:label "Arlington"^^rdfs:Literal ;
+	schema:streetAddress "Arlington Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "203"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11207"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/arlington> .
+
+<http://www.linkedData_Group13.com/resource/Brooklyn> a osadm:Borough ;
+	rdfs:label "Brooklyn"^^<rdfs:Literal> ;
+	owl:sameAs <http://dbpedia.org/resource/Brooklyn> .
+
+<http://www.linkedData_Group13.com/resource/Bay+Ridge> a schema:Library ;
+	geo:long "-74.02953835191357"^^xsd:float ;
+	geo:lat "40.633625713382486"^^xsd:float ;
+	rdfs:label "Bay Ridge"^^rdfs:Literal ;
+	schema:streetAddress "Ridge Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "7223"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11209"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/bay-ridge> .
+
+<http://www.linkedData_Group13.com/resource/Bedford> a schema:Library ;
+	geo:long "-73.95616471363496"^^xsd:float ;
+	geo:lat "40.68181211172472"^^xsd:float ;
+	rdfs:label "Bedford"^^rdfs:Literal ;
+	schema:streetAddress "Franklin Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "496"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11238"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/bedford> .
+
+<http://www.linkedData_Group13.com/resource/Borough+Park> a schema:Library ;
+	geo:long "-73.98900318822345"^^xsd:float ;
+	geo:lat "40.638888838712376"^^xsd:float ;
+	rdfs:label "Borough Park"^^rdfs:Literal ;
+	schema:streetAddress "43rd Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1265"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11219"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/borough-park> ;
+	owl:sameAs <http://dbpedia.org/resource/Borough_Park,_Brooklyn> .
+
+<http://www.linkedData_Group13.com/resource/Brighton+Beach+> a schema:Library ;
+	geo:long "-73.9667748761715"^^xsd:float ;
+	geo:lat "40.57610774698186"^^xsd:float ;
+	rdfs:label "Brighton Beach "^^rdfs:Literal ;
+	schema:streetAddress "Brighton First Road"^^schema:Text ;
+	livingPlaces:hasHouseNumber "16"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11235"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/brighton-beach> ;
+	owl:sameAs <http://dbpedia.org/resource/Brighton_Beach> .
+
+<http://www.linkedData_Group13.com/resource/Brooklyn+Heights> a schema:Library ;
+	geo:long "-73.99134798814833"^^xsd:float ;
+	geo:lat "40.69568255523745"^^xsd:float ;
+	rdfs:label "Brooklyn Heights"^^rdfs:Literal ;
+	schema:streetAddress "Cadman Plaza West"^^schema:Text ;
+	livingPlaces:hasHouseNumber "280"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11201"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/brooklyn-heights> .
+
+<http://www.linkedData_Group13.com/resource/Brower+Park> a schema:Library ;
+	geo:long "-73.94856613670774"^^xsd:float ;
+	geo:lat "40.675370851852314"^^xsd:float ;
+	rdfs:label "Brower Park"^^rdfs:Literal ;
+	schema:streetAddress "St. Marks Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "725"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11216"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/brower-park> .
+
+<http://www.linkedData_Group13.com/resource/Brownsville> a schema:Library ;
+	geo:long "-73.90860343294449"^^xsd:float ;
+	geo:lat "40.671526655858436"^^xsd:float ;
+	rdfs:label "Brownsville"^^rdfs:Literal ;
+	schema:streetAddress "Glenmore Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "61"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11212"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/brownsville> .
+
+<http://www.linkedData_Group13.com/resource/Bushwick> a schema:Library ;
+	geo:long "-73.93961842135727"^^xsd:float ;
+	geo:lat "40.704559063938675"^^xsd:float ;
+	rdfs:label "Bushwick"^^rdfs:Literal ;
+	schema:streetAddress "Bushwick Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "340"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11206"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/bushwick> .
+
+<http://www.linkedData_Group13.com/resource/Canarsie> a schema:Library ;
+	geo:long "-73.89952442124468"^^xsd:float ;
+	geo:lat "40.64220845315574"^^xsd:float ;
+	rdfs:label "Canarsie"^^rdfs:Literal ;
+	schema:streetAddress "Rockaway Parkway"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1580"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11236"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/canarsie> .
+
+<http://www.linkedData_Group13.com/resource/Carroll+Gardens> a schema:Library ;
+	geo:long "-73.99801906031493"^^xsd:float ;
+	geo:lat "40.683213515337584"^^xsd:float ;
+	rdfs:label "Carroll Gardens"^^rdfs:Literal ;
+	schema:streetAddress "Clinton Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "396"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11231"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/carroll-gardens> .
+
+<http://www.linkedData_Group13.com/resource/Brooklyn+Central+Library> a schema:Library ;
+	geo:long "-73.9682243828713"^^xsd:float ;
+	geo:lat "40.672343526336505"^^xsd:float ;
+	rdfs:label "Brooklyn Central Library"^^rdfs:Literal ;
+	schema:streetAddress "Grand Army Plaza"^^schema:Text ;
+	livingPlaces:hasHouseNumber "10"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11238"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/central> .
+
+<http://www.linkedData_Group13.com/resource/Clarendon> a schema:Library ;
+	geo:long "-73.94763429707129"^^xsd:float ;
+	geo:lat "40.63574014928098"^^xsd:float ;
+	rdfs:label "Clarendon"^^rdfs:Literal ;
+	schema:streetAddress "Nostrand Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2035"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11210"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/clarendon> .
+
+<http://www.linkedData_Group13.com/resource/Clinton+Hill> a schema:Library ;
+	geo:long "-73.96603066603613"^^xsd:float ;
+	geo:lat "40.68737909411427"^^xsd:float ;
+	rdfs:label "Clinton Hill"^^rdfs:Literal ;
+	schema:streetAddress "Washington Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "380"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11238"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/clinton-hill> .
+
+<http://www.linkedData_Group13.com/resource/Coney+Island> a schema:Library ;
+	geo:long "-73.9860619926265"^^xsd:float ;
+	geo:lat "40.57663777607667"^^xsd:float ;
+	rdfs:label "Coney Island"^^rdfs:Literal ;
+	schema:streetAddress "Mermaid Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1901"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11224"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/coney-island> .
+
+<http://www.linkedData_Group13.com/resource/Cortelyou> a schema:Library ;
+	geo:long "-73.96596507806375"^^xsd:float ;
+	geo:lat "40.640803547205046"^^xsd:float ;
+	rdfs:label "Cortelyou"^^rdfs:Literal ;
+	schema:streetAddress "Cortelyou Road"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1305"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11226"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/cortelyou> .
+
+<http://www.linkedData_Group13.com/resource/Crown+Heights> a schema:Library ;
+	geo:long "-73.9481022990789"^^xsd:float ;
+	geo:lat "40.661189307734446"^^xsd:float ;
+	rdfs:label "Crown Heights"^^rdfs:Literal ;
+	schema:streetAddress "New York Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "560"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11225"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/crown-heights> .
+
+<http://www.linkedData_Group13.com/resource/Cypress+Hills> a schema:Library ;
+	geo:long "-73.8740348780572"^^xsd:float ;
+	geo:lat "40.67270747286009"^^xsd:float ;
+	rdfs:label "Cypress Hills"^^rdfs:Literal ;
+	schema:streetAddress "Sutter Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1197"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11208"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/cypress-hills> .
+
+<http://www.linkedData_Group13.com/resource/DeKalb> a schema:Library ;
+	geo:long "-73.92839866742115"^^xsd:float ;
+	geo:lat "40.694816700021924"^^xsd:float ;
+	rdfs:label "DeKalb"^^rdfs:Literal ;
+	schema:streetAddress "Bushwick Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "790"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11221"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/dekalb> .
+
+<http://www.linkedData_Group13.com/resource/Dyker> a schema:Library ;
+	geo:long "-74.0119885202191"^^xsd:float ;
+	geo:lat "40.616308136970446"^^xsd:float ;
+	rdfs:label "Dyker"^^rdfs:Literal ;
+	schema:streetAddress "13th Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "8202"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11228"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/dyker> .
+
+<http://www.linkedData_Group13.com/resource/East+Flatbush> a schema:Library ;
+	geo:long "-73.91494061956683"^^xsd:float ;
+	geo:lat "40.655710884739364"^^xsd:float ;
+	rdfs:label "East Flatbush"^^rdfs:Literal ;
+	schema:streetAddress "Church Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "9612"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11212"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/east-flatbush> .
+
+<http://www.linkedData_Group13.com/resource/Eastern+Parkway> a schema:Library ;
+	geo:long "-73.93365084956477"^^xsd:float ;
+	geo:lat "40.66848651013449"^^xsd:float ;
+	rdfs:label "Eastern Parkway"^^rdfs:Literal ;
+	schema:streetAddress "Eastern Parkway"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1044"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11213"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/eastern-parkway> ;
+	owl:sameAs <http://dbpedia.org/resource/Eastern_Parkway> .
+
+<http://www.linkedData_Group13.com/resource/Flatbush> a schema:Library ;
+	geo:long "-73.95824218248399"^^xsd:float ;
+	geo:lat "40.651925081044595"^^xsd:float ;
+	rdfs:label "Flatbush"^^rdfs:Literal ;
+	schema:streetAddress "Linden Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "22"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11226"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/flatbush> .
+
+<http://www.linkedData_Group13.com/resource/Flatlands> a schema:Library ;
+	geo:long "-73.93321325624171"^^xsd:float ;
+	geo:lat "40.61976819625962"^^xsd:float ;
+	rdfs:label "Flatlands"^^rdfs:Literal ;
+	schema:streetAddress "Flatbush Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2065"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11234"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/flatlands> .
+
+<http://www.linkedData_Group13.com/resource/Fort+Hamilton> a schema:Library ;
+	geo:long "-74.0313694054087"^^xsd:float ;
+	geo:lat "40.61637311059178"^^xsd:float ;
+	rdfs:label "Fort Hamilton"^^rdfs:Literal ;
+	schema:streetAddress "Fourth Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "9424"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11209"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/fort-hamilton> .
+
+<http://www.linkedData_Group13.com/resource/Gerritsen+Beach> a schema:Library ;
+	geo:long "-73.9239376273276"^^xsd:float ;
+	geo:lat "40.59137103427607"^^xsd:float ;
+	rdfs:label "Gerritsen Beach"^^rdfs:Literal ;
+	schema:streetAddress "Gerritsen Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2808"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11229"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/gerritsen-beach> .
+
+<http://www.linkedData_Group13.com/resource/Gravesend> a schema:Library ;
+	geo:long "-73.9718084463328"^^xsd:float ;
+	geo:lat "40.590544390004084"^^xsd:float ;
+	rdfs:label "Gravesend"^^rdfs:Literal ;
+	schema:streetAddress "Avenue X"^^schema:Text ;
+	livingPlaces:hasHouseNumber "303"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11223"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/gravesend> ;
+	owl:sameAs <http://dbpedia.org/resource/Gravesend> .
+
+<http://www.linkedData_Group13.com/resource/Greenpoint> a schema:Library ;
+	geo:long "-73.95069497514092"^^xsd:float ;
+	geo:lat "40.72602806688718"^^xsd:float ;
+	rdfs:label "Greenpoint"^^rdfs:Literal ;
+	schema:streetAddress "Norman Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "107"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11222"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/greenpoint> .
+
+<http://www.linkedData_Group13.com/resource/Highlawn> a schema:Library ;
+	geo:long "-73.98624641554409"^^xsd:float ;
+	geo:lat "40.605693037370436"^^xsd:float ;
+	rdfs:label "Highlawn"^^rdfs:Literal ;
+	schema:streetAddress "West 13th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1664"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11223"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/highlawn> .
+
+<http://www.linkedData_Group13.com/resource/Homecrest> a schema:Library ;
+	geo:long "-73.96059936964683"^^xsd:float ;
+	geo:lat "40.5952368631223"^^xsd:float ;
+	rdfs:label "Homecrest"^^rdfs:Literal ;
+	schema:streetAddress "Coney Island Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2525"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11223"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/homecrest> .
+
+<http://www.linkedData_Group13.com/resource/Jamaica+Bay> a schema:Library ;
+	geo:long "-73.88924363004107"^^xsd:float ;
+	geo:lat "40.63446013901777"^^xsd:float ;
+	rdfs:label "Jamaica Bay"^^rdfs:Literal ;
+	schema:streetAddress "Seaview Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "9727"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11236"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/jamaica-bay> ;
+	owl:sameAs <http://dbpedia.org/resource/Jamaica_Bay> .
+
+<http://www.linkedData_Group13.com/resource/Kensington> a schema:Library ;
+	geo:long "-73.97543590517284"^^xsd:float ;
+	geo:lat "40.63129183260273"^^xsd:float ;
+	rdfs:label "Kensington"^^rdfs:Literal ;
+	schema:streetAddress "18th Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "4207"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11218"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/kensington> .
+
+<http://www.linkedData_Group13.com/resource/Kings+Bay> a schema:Library ;
+	geo:long "-73.94112492296973"^^xsd:float ;
+	geo:lat "40.594861515121615"^^xsd:float ;
+	rdfs:label "Kings Bay"^^rdfs:Literal ;
+	schema:streetAddress "Nostrand Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "3650"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11229"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/kings-bay> .
+
+<http://www.linkedData_Group13.com/resource/Kings+Highway> a schema:Library ;
+	geo:long "-73.95310584865699"^^xsd:float ;
+	geo:lat "40.610256667276076"^^xsd:float ;
+	rdfs:label "Kings Highway"^^rdfs:Literal ;
+	schema:streetAddress "Ocean Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2115"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11229"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/kings-highway> .
+
+<http://www.linkedData_Group13.com/resource/Leonard> a schema:Library ;
+	geo:long "-73.94793571283621"^^xsd:float ;
+	geo:lat "40.71364488802169"^^xsd:float ;
+	rdfs:label "Leonard"^^rdfs:Literal ;
+	schema:streetAddress "Devoe Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "81"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11211"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/leonard> .
+
+<http://www.linkedData_Group13.com/resource/Macon> a schema:Library ;
+	geo:long "-73.93480547027619"^^xsd:float ;
+	geo:lat "40.68300490204431"^^xsd:float ;
+	rdfs:label "Macon"^^rdfs:Literal ;
+	schema:streetAddress "Lewis Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "361"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11233"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/macon> .
+
+<http://www.linkedData_Group13.com/resource/Mapleton> a schema:Library ;
+	geo:long "-73.989440154021"^^xsd:float ;
+	geo:lat "40.62309139633207"^^xsd:float ;
+	rdfs:label "Mapleton"^^rdfs:Literal ;
+	schema:streetAddress "60th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1702"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11204"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/mapleton> .
+
+<http://www.linkedData_Group13.com/resource/Marcy> a schema:Library ;
+	geo:long "-73.95128349802154"^^xsd:float ;
+	geo:lat "40.69162308733465"^^xsd:float ;
+	rdfs:label "Marcy"^^rdfs:Literal ;
+	schema:streetAddress "DeKalb Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "617"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11216"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/marcy> .
+
+<http://www.linkedData_Group13.com/resource/McKinley+Park> a schema:Library ;
+	geo:long "-74.01183730763366"^^xsd:float ;
+	geo:lat "40.62918753393924"^^xsd:float ;
+	rdfs:label "McKinley Park"^^rdfs:Literal ;
+	schema:streetAddress "Fort Hamilton Parkway"^^schema:Text ;
+	livingPlaces:hasHouseNumber "6802"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11219"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/mckinley-park> .
+
+<http://www.linkedData_Group13.com/resource/Midwood> a schema:Library ;
+	geo:long "-73.96031449280875"^^xsd:float ;
+	geo:lat "40.62589330718781"^^xsd:float ;
+	rdfs:label "Midwood"^^rdfs:Literal ;
+	schema:streetAddress "East 16th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "975"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11230"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/midwood> .
+
+<http://www.linkedData_Group13.com/resource/Mill+Basin> a schema:Library ;
+	geo:long "-73.91702120710569"^^xsd:float ;
+	geo:lat "40.61986842104019"^^xsd:float ;
+	rdfs:label "Mill Basin"^^rdfs:Literal ;
+	schema:streetAddress "Ralph Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2385"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11234"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/mill-basin> .
+
+<http://www.linkedData_Group13.com/resource/New+Lots> a schema:Library ;
+	geo:long "-73.88607053682676"^^xsd:float ;
+	geo:lat "40.665159369730134"^^xsd:float ;
+	rdfs:label "New Lots"^^rdfs:Literal ;
+	schema:streetAddress "New Lots Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "665"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11207"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/new-lots> .
+
+<http://www.linkedData_Group13.com/resource/New+Utrecht+> a schema:Library ;
+	geo:long "-74.00337654508532"^^xsd:float ;
+	geo:lat "40.608009349952326"^^xsd:float ;
+	rdfs:label "New Utrecht "^^rdfs:Literal ;
+	schema:streetAddress "86th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1743"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11214"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/new-utrecht> .
+
+<http://www.linkedData_Group13.com/resource/Pacific> a schema:Library ;
+	geo:long "-73.97858353651877"^^xsd:float ;
+	geo:lat "40.68346662977525"^^xsd:float ;
+	rdfs:label "Pacific"^^rdfs:Literal ;
+	schema:streetAddress "Fourth Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "25"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11217"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/pacific> .
+
+<http://www.linkedData_Group13.com/resource/Paerdegat> a schema:Library ;
+	geo:long "-73.91998488083019"^^xsd:float ;
+	geo:lat "40.63263699303789"^^xsd:float ;
+	rdfs:label "Paerdegat"^^rdfs:Literal ;
+	schema:streetAddress "East 59th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "850"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11234"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/paerdegat> .
+
+<http://www.linkedData_Group13.com/resource/Park+Slope> a schema:Library ;
+	geo:long "-73.98345536969875"^^xsd:float ;
+	geo:lat "40.66823507229803"^^xsd:float ;
+	rdfs:label "Park Slope"^^rdfs:Literal ;
+	schema:streetAddress "6th Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "431"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11215"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/park-slope> ;
+	owl:sameAs <http://dbpedia.org/resource/Park_Slope> .
+
+<http://www.linkedData_Group13.com/resource/Red+Hook> a schema:Library ;
+	geo:long "-74.0103430690854"^^xsd:float ;
+	geo:lat "40.6752407736475"^^xsd:float ;
+	rdfs:label "Red Hook"^^rdfs:Literal ;
+	schema:streetAddress "Wolcott Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "7"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11231"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/red-hook> .
+
+<http://www.linkedData_Group13.com/resource/Rugby> a schema:Library ;
+	geo:long "-73.93035653080916"^^xsd:float ;
+	geo:lat "40.64861929304924"^^xsd:float ;
+	rdfs:label "Rugby"^^rdfs:Literal ;
+	schema:streetAddress "Utica Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1000"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11203"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/rugby> .
+
+<http://www.linkedData_Group13.com/resource/Ryder> a schema:Library ;
+	geo:long "-73.97596652755537"^^xsd:float ;
+	geo:lat "40.61587982519312"^^xsd:float ;
+	rdfs:label "Ryder"^^rdfs:Literal ;
+	schema:streetAddress "23rd Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "5902"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11204"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/ryder> .
+
+<http://www.linkedData_Group13.com/resource/Saratoga> a schema:Library ;
+	geo:long "-73.91513241598248"^^xsd:float ;
+	geo:lat "40.68481004767251"^^xsd:float ;
+	rdfs:label "Saratoga"^^rdfs:Literal ;
+	schema:streetAddress "Thomas S. Boyland Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "8"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11233"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/saratoga> .
+
+<http://www.linkedData_Group13.com/resource/Sheepshead+Bay> a schema:Library ;
+	geo:long "-73.95537377987904"^^xsd:float ;
+	geo:lat "40.58701342922593"^^xsd:float ;
+	rdfs:label "Sheepshead Bay"^^rdfs:Literal ;
+	schema:streetAddress "East 14th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2636"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11235"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/sheepshead-bay> .
+
+<http://www.linkedData_Group13.com/resource/Spring+Creek> a schema:Library ;
+	geo:long "-73.88586614058737"^^xsd:float ;
+	geo:lat "40.653209761333976"^^xsd:float ;
+	rdfs:label "Spring Creek"^^rdfs:Literal ;
+	schema:streetAddress "Flatlands Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "12143"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11207"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/spring-creek> .
+
+<http://www.linkedData_Group13.com/resource/Stone+Avenue> a schema:Library ;
+	geo:long "-73.90524945420668"^^xsd:float ;
+	geo:lat "40.66449962821875"^^xsd:float ;
+	rdfs:label "Stone Avenue"^^rdfs:Literal ;
+	schema:streetAddress "Mother Gaston Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "581"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11212"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/stone-avenue> .
+
+<http://www.linkedData_Group13.com/resource/Sunset+Park> a schema:Library ;
+	geo:long "-74.013630001215"^^xsd:float ;
+	geo:lat "40.64591212398883"^^xsd:float ;
+	rdfs:label "Sunset Park"^^rdfs:Literal ;
+	schema:streetAddress "4th Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "5108"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11220"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/sunset-park> .
+
+<http://www.linkedData_Group13.com/resource/Ulmer+Park> a schema:Library ;
+	geo:long "-73.98862740604375"^^xsd:float ;
+	geo:lat "40.59268511632151"^^xsd:float ;
+	rdfs:label "Ulmer Park"^^rdfs:Literal ;
+	schema:streetAddress "Bath Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2602"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11214"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/ulmer-park> .
+
+<http://www.linkedData_Group13.com/resource/Walt+Whitman> a schema:Library ;
+	geo:long "-73.97773263286963"^^xsd:float ;
+	geo:lat "40.69448969834957"^^xsd:float ;
+	rdfs:label "Walt Whitman"^^rdfs:Literal ;
+	schema:streetAddress "Saint Edwards Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "93"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11205"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/walt-whitman> .
+
+<http://www.linkedData_Group13.com/resource/Washington+Irving> a schema:Library ;
+	geo:long "-73.91220085369726"^^xsd:float ;
+	geo:lat "40.697495053029975"^^xsd:float ;
+	rdfs:label "Washington Irving"^^rdfs:Literal ;
+	schema:streetAddress "Irving Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "360"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11237"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/washington-irving> .
+
+<http://www.linkedData_Group13.com/resource/Williamsburgh> a schema:Library ;
+	geo:long "-73.9575546134494"^^xsd:float ;
+	geo:lat "40.70693042467486"^^xsd:float ;
+	rdfs:label "Williamsburgh"^^rdfs:Literal ;
+	schema:streetAddress "Division Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "240"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11211"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/williamsburgh> .
+
+<http://www.linkedData_Group13.com/resource/Windsor+Terrace> a schema:Library ;
+	geo:long "-73.9767587688368"^^xsd:float ;
+	geo:lat "40.64875019151304"^^xsd:float ;
+	rdfs:label "Windsor Terrace"^^rdfs:Literal ;
+	schema:streetAddress "East 5th Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "160"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Brooklyn> ;
+	dbo:zipCode "11218"^^xsd:string ;
+	schema:url <http://www.bklynlibrary.org/locations/windsor-terrace> .
+
+<http://www.linkedData_Group13.com/resource/Arverne> a schema:Library ;
+	geo:long "-73.78404002857111"^^xsd:float ;
+	geo:lat "40.59314678303443"^^xsd:float ;
+	rdfs:label "Arverne"^^rdfs:Literal ;
+	schema:streetAddress "Beach 54 Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "312"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Arverne> ;
+	dbo:zipCode "11692"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Arverne?filters=ev_loc:92300000> ;
+	a osadm:Borough ;
+	rdfs:label "Arverne"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Astoria> a schema:Library ;
+	geo:long "-73.92874209024014"^^xsd:float ;
+	geo:lat "40.77237538146876"^^xsd:float ;
+	rdfs:label "Astoria"^^rdfs:Literal ;
+	schema:streetAddress "Astoria Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "14-01"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Long+Island+City> ;
+	dbo:zipCode "11102"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Astoria?filters=ev_loc:92400000> .
+
+<http://www.linkedData_Group13.com/resource/Long+Island+City> a osadm:Borough ;
+	rdfs:label "Long Island City"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Auburndale> a schema:Library ;
+	geo:long "-73.79634178839724"^^xsd:float ;
+	geo:lat "40.773746255710755"^^xsd:float ;
+	rdfs:label "Auburndale"^^rdfs:Literal ;
+	schema:streetAddress "Francis Lewis Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "25-55"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Flushing> ;
+	dbo:zipCode "11358"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Auburndale?filters=ev_loc:92500000> .
+
+<http://www.linkedData_Group13.com/resource/Flushing> a osadm:Borough ;
+	rdfs:label "Flushing"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Baisley+Park> a schema:Library ;
+	geo:long "-73.79167861112357"^^xsd:float ;
+	geo:lat "40.68031131164878"^^xsd:float ;
+	rdfs:label "Baisley Park"^^rdfs:Literal ;
+	schema:streetAddress "Sutphin Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "117-11"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Jamaica> ;
+	dbo:zipCode "11436"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Baisley-Park?filters=ev_loc:92600000> .
+
+<http://www.linkedData_Group13.com/resource/Jamaica> a osadm:Borough ;
+	rdfs:label "Jamaica"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Bay+Terrace> a schema:Library ;
+	geo:long "-73.77701089642582"^^xsd:float ;
+	geo:lat "40.78252384357715"^^xsd:float ;
+	rdfs:label "Bay Terrace"^^rdfs:Literal ;
+	schema:streetAddress "Bell Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "18-36"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bayside> ;
+	dbo:zipCode "11360"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Bay-Terrace?filters=ev_loc:96600000> .
+
+<http://www.linkedData_Group13.com/resource/Bayside> a osadm:Borough ;
+	rdfs:label "Bayside"^^<rdfs:Literal> ;
+	a schema:Library ;
+	geo:long "-73.76836198066813"^^xsd:float ;
+	geo:lat "40.76012558120687"^^xsd:float ;
+	rdfs:label "Bayside"^^rdfs:Literal ;
+	schema:streetAddress "Northern Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "214-20"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bayside> ;
+	dbo:zipCode "11361"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Bayside?filters=ev_loc:91100000> .
+
+<http://www.linkedData_Group13.com/resource/Bellerose> a schema:Library ;
+	geo:long "-73.71710447116403"^^xsd:float ;
+	geo:lat "40.7351605518022"^^xsd:float ;
+	rdfs:label "Bellerose"^^rdfs:Literal ;
+	schema:streetAddress "Hillside Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "250-06"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bellerose> ;
+	dbo:zipCode "11426"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Bellerose?filters=ev_loc:96400000> ;
+	a osadm:Borough ;
+	rdfs:label "Bellerose"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Briarwood> a schema:Library ;
+	geo:long "-73.81945312008847"^^xsd:float ;
+	geo:lat "40.71003455781208"^^xsd:float ;
+	rdfs:label "Briarwood"^^rdfs:Literal ;
+	schema:streetAddress "Main Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "85-12"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Briarwood> ;
+	dbo:zipCode "11435"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Briarwood?filters=ev_loc:92700000> ;
+	a osadm:Borough ;
+	rdfs:label "Briarwood"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Broad+Channel> a schema:Library ;
+	geo:long "-73.82005265821793"^^xsd:float ;
+	geo:lat "40.600732105185145"^^xsd:float ;
+	rdfs:label "Broad Channel"^^rdfs:Literal ;
+	schema:streetAddress "Cross Bay Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "16-26"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Broad+Channel> ;
+	dbo:zipCode "11693"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Broad-Channel?filters=ev_loc:97200000> ;
+	a osadm:Borough ;
+	rdfs:label "Broad Channel"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Broadway> a schema:Library ;
+	geo:long "-73.91862332039818"^^xsd:float ;
+	geo:lat "40.75852926696433"^^xsd:float ;
+	rdfs:label "Broadway"^^rdfs:Literal ;
+	schema:streetAddress "Broadway"^^schema:Text ;
+	livingPlaces:hasHouseNumber "40-20"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Long+Island+City> ;
+	dbo:zipCode "11103"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Broadway?filters=ev_loc:91200000> .
+
+<http://www.linkedData_Group13.com/resource/Cambria+Heights> a schema:Library ;
+	geo:long "-73.741163136486"^^xsd:float ;
+	geo:lat "40.695722605950635"^^xsd:float ;
+	rdfs:label "Cambria Heights"^^rdfs:Literal ;
+	schema:streetAddress "Linden Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "218-13"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Cambria+Heights> ;
+	dbo:zipCode "11411"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Cambria-Heights?filters=ev_loc:92800000> ;
+	a osadm:Borough ;
+	rdfs:label "Cambria Heights"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Queens+Central+Library> a schema:Library ;
+	geo:long "-73.7946780399278"^^xsd:float ;
+	geo:lat "40.70787313178586"^^xsd:float ;
+	rdfs:label "Queens Central Library"^^rdfs:Literal ;
+	schema:streetAddress "Merrick Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "89-11"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Jamaica> ;
+	dbo:zipCode "11432"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Central-Library?filters=ev_loc:11000000> .
+
+<http://www.linkedData_Group13.com/resource/Corona> a schema:Library ;
+	geo:long "-73.86197684397808"^^xsd:float ;
+	geo:lat "40.7508940803989"^^xsd:float ;
+	rdfs:label "Corona"^^rdfs:Literal ;
+	schema:streetAddress "104 Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "38-23"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Corona> ;
+	dbo:zipCode "11368"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Corona?filters=ev_loc:92900000> ;
+	a osadm:Borough ;
+	rdfs:label "Corona"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Court+Square> a schema:Library ;
+	geo:long "-73.94442138618983"^^xsd:float ;
+	geo:lat "40.74689957448345"^^xsd:float ;
+	rdfs:label "Court Square"^^rdfs:Literal ;
+	schema:streetAddress "Jackson Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "25-01"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Long+Island+City> ;
+	dbo:zipCode "11101"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Court-Square?filters=ev_loc:97100000> ;
+	owl:sameAs <http://dbpedia.org/resource/Court_Square> .
+
+<http://www.linkedData_Group13.com/resource/Douglaston%2FLittle+Neck> a schema:Library ;
+	geo:long "-73.73822944076473"^^xsd:float ;
+	geo:lat "40.768225432005"^^xsd:float ;
+	rdfs:label "Douglaston/Little Neck"^^rdfs:Literal ;
+	schema:streetAddress "Northern Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "249-01"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Little+Neck> ;
+	dbo:zipCode "11363"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Douglaston/Little-Neck?filters=ev_loc:93000000> .
+
+<http://www.linkedData_Group13.com/resource/Little+Neck> a osadm:Borough ;
+	rdfs:label "Little Neck"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/East+Elmhurst> a schema:Library ;
+	geo:long "-73.87386662995279"^^xsd:float ;
+	geo:lat "40.76242212968529"^^xsd:float ;
+	rdfs:label "East Elmhurst"^^rdfs:Literal ;
+	schema:streetAddress "Astoria Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "95-06"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/East+Elmhurst> ;
+	dbo:zipCode "11369"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/East-Elmhurst?filters=ev_loc:93100000> ;
+	a osadm:Borough ;
+	rdfs:label "East Elmhurst"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/East+Flushing> a schema:Library ;
+	geo:long "-73.78430296366649"^^xsd:float ;
+	geo:lat "40.757545679612846"^^xsd:float ;
+	rdfs:label "East Flushing"^^rdfs:Literal ;
+	schema:streetAddress "Northern Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "196-36"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Flushing> ;
+	dbo:zipCode "11358"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/East-Flushing?filters=ev_loc:96200000> .
+
+<http://www.linkedData_Group13.com/resource/Elmhurst> a schema:Library ;
+	geo:long "-73.87797365739723"^^xsd:float ;
+	geo:lat "40.738303240536474"^^xsd:float ;
+	rdfs:label "Elmhurst"^^rdfs:Literal ;
+	schema:streetAddress "51 Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "85-08"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Elmhurst> ;
+	dbo:zipCode "11373"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Elmhurst?filters=ev_loc:93200000> ;
+	a osadm:Borough ;
+	rdfs:label "Elmhurst"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Far+Rockaway> a schema:Library ;
+	geo:long "-73.75247942402618"^^xsd:float ;
+	geo:lat "40.60431350914963"^^xsd:float ;
+	rdfs:label "Far Rockaway"^^rdfs:Literal ;
+	schema:streetAddress "Central Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "1637"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Far+Rockaway> ;
+	dbo:zipCode "11691"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Far-Rockaway?filters=ev_loc:91300000> ;
+	a osadm:Borough ;
+	rdfs:label "Far Rockaway"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Flushing> a schema:Library ;
+	geo:long "-73.82888468513289"^^xsd:float ;
+	geo:lat "40.75777406826378"^^xsd:float ;
+	rdfs:label "Flushing"^^rdfs:Literal ;
+	schema:streetAddress "Main Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "41-17"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Flushing> ;
+	dbo:zipCode "11355"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Flushing?filters=ev_loc:91400000> .
+
+<http://www.linkedData_Group13.com/resource/Forest+Hills> a schema:Library ;
+	geo:long "-73.84301499681045"^^xsd:float ;
+	geo:lat "40.722146953166686"^^xsd:float ;
+	rdfs:label "Forest Hills"^^rdfs:Literal ;
+	schema:streetAddress "71 Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "108-19"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Forest+Hills> ;
+	dbo:zipCode "11375"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Forest-Hills?filters=ev_loc:91500000> ;
+	a osadm:Borough ;
+	rdfs:label "Forest Hills"^^<rdfs:Literal> ;
+	owl:sameAs <http://dbpedia.org/resource/Forest_Hills,_Pennsylvania> .
+
+<http://www.linkedData_Group13.com/resource/Fresh+Meadows> a schema:Library ;
+	geo:long "-73.78228143761608"^^xsd:float ;
+	geo:lat "40.74158266352509"^^xsd:float ;
+	rdfs:label "Fresh Meadows"^^rdfs:Literal ;
+	schema:streetAddress "Horace Harding Expressway"^^schema:Text ;
+	livingPlaces:hasHouseNumber "193-20"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Fresh+Meadows> ;
+	dbo:zipCode "11365"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Fresh-Meadows?filters=ev_loc:91600000> ;
+	a osadm:Borough ;
+	rdfs:label "Fresh Meadows"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Glen+Oaks> a schema:Library ;
+	geo:long "-73.71484580101803"^^xsd:float ;
+	geo:lat "40.745172198133105"^^xsd:float ;
+	rdfs:label "Glen Oaks"^^rdfs:Literal ;
+	schema:streetAddress "Union Turnpike"^^schema:Text ;
+	livingPlaces:hasHouseNumber "256-04"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Glen+Oaks> ;
+	dbo:zipCode "11004"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Glen-Oaks?filters=ev_loc:93300000> ;
+	owl:sameAs <http://dbpedia.org/resource/Glen_Oaks,_Baltimore> ;
+	a osadm:Borough ;
+	rdfs:label "Glen Oaks"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Glendale> a schema:Library ;
+	geo:long "-73.87574434777649"^^xsd:float ;
+	geo:lat "40.702585245598996"^^xsd:float ;
+	rdfs:label "Glendale"^^rdfs:Literal ;
+	schema:streetAddress "73 Place"^^schema:Text ;
+	livingPlaces:hasHouseNumber "78-60"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Glendale> ;
+	dbo:zipCode "11385"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Glendale?filters=ev_loc:93400000> ;
+	a osadm:Borough ;
+	rdfs:label "Glendale"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Hillcrest> a schema:Library ;
+	geo:long "-73.78191929899681"^^xsd:float ;
+	geo:lat "40.72925482196691"^^xsd:float ;
+	rdfs:label "Hillcrest"^^rdfs:Literal ;
+	schema:streetAddress "Union Turnpike"^^schema:Text ;
+	livingPlaces:hasHouseNumber "187-05"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Flushing> ;
+	dbo:zipCode "11366"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Hillcrest?filters=ev_loc:96500000> .
+
+<http://www.linkedData_Group13.com/resource/Hollis> a schema:Library ;
+	geo:long "-73.76232032699329"^^xsd:float ;
+	geo:lat "40.720166536917226"^^xsd:float ;
+	rdfs:label "Hollis"^^rdfs:Literal ;
+	schema:streetAddress "Hillside Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "202-05"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Hollis> ;
+	dbo:zipCode "11423"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Hollis?filters=ev_loc:93500000> ;
+	a osadm:Borough ;
+	rdfs:label "Hollis"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Howard+Beach> a schema:Library ;
+	geo:long "-73.84180221655218"^^xsd:float ;
+	geo:lat "40.66381025649444"^^xsd:float ;
+	rdfs:label "Howard Beach"^^rdfs:Literal ;
+	schema:streetAddress "156 Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "92-06"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Howard+Beach> ;
+	dbo:zipCode "11414"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Howard-Beach?filters=ev_loc:93600000> ;
+	a osadm:Borough ;
+	rdfs:label "Howard Beach"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Jackson+Heights> a schema:Library ;
+	geo:long "-73.88506932468307"^^xsd:float ;
+	geo:lat "40.75019608559315"^^xsd:float ;
+	rdfs:label "Jackson Heights"^^rdfs:Literal ;
+	schema:streetAddress "81 Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "35-51"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Jackson+Heights> ;
+	dbo:zipCode "11372"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Jackson-Heights?filters=ev_loc:91700000> ;
+	a osadm:Borough ;
+	rdfs:label "Jackson Heights"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Kew+Gardens+Hills> a schema:Library ;
+	geo:long "-73.82226966032037"^^xsd:float ;
+	geo:lat "40.72693697185495"^^xsd:float ;
+	rdfs:label "Kew Gardens Hills"^^rdfs:Literal ;
+	schema:streetAddress "Main Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "71-34"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Flushing> ;
+	dbo:zipCode "11367"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Kew-Gardens-Hills?filters=ev_loc:92200000> .
+
+<http://www.linkedData_Group13.com/resource/Langston+Hughes> a schema:Library ;
+	geo:long "-73.86819939085701"^^xsd:float ;
+	geo:lat "40.757577301854525"^^xsd:float ;
+	rdfs:label "Langston Hughes"^^rdfs:Literal ;
+	schema:streetAddress "Northern Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "100-01"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Corona> ;
+	dbo:zipCode "11368"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Langston-Hughes?filters=ev_loc:98200000> .
+
+<http://www.linkedData_Group13.com/resource/Laurelton> a schema:Library ;
+	geo:long "-73.74567356126445"^^xsd:float ;
+	geo:lat "40.67695272804687"^^xsd:float ;
+	rdfs:label "Laurelton"^^rdfs:Literal ;
+	schema:streetAddress "225 Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "134-26"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Laurelton> ;
+	dbo:zipCode "11413"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Laurelton?filters=ev_loc:91800000> ;
+	owl:sameAs <http://dbpedia.org/resource/Laurelton,_Pennsylvania> ;
+	a osadm:Borough ;
+	rdfs:label "Laurelton"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Lefferts> a schema:Library ;
+	geo:long "-73.82482969850855"^^xsd:float ;
+	geo:lat "40.68690728824833"^^xsd:float ;
+	rdfs:label "Lefferts"^^rdfs:Literal ;
+	schema:streetAddress "Lefferts Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "103-34"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Richmond+Hill> ;
+	dbo:zipCode "11419"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Lefferts?filters=ev_loc:91000000> .
+
+<http://www.linkedData_Group13.com/resource/Richmond+Hill> a osadm:Borough ;
+	rdfs:label "Richmond Hill"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Lefrak+City> a schema:Library ;
+	geo:long "-73.86165592933878"^^xsd:float ;
+	geo:lat "40.737434137948505"^^xsd:float ;
+	rdfs:label "Lefrak City"^^rdfs:Literal ;
+	schema:streetAddress "57 Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "98-30"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Corona> ;
+	dbo:zipCode "11368"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Lefrak-City?filters=ev_loc:93700000> .
+
+<http://www.linkedData_Group13.com/resource/Long+Island+City> a schema:Library ;
+	geo:long "-73.93930930198185"^^xsd:float ;
+	geo:lat "40.75780342796006"^^xsd:float ;
+	rdfs:label "Long Island City"^^rdfs:Literal ;
+	schema:streetAddress "21 Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "37-44"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Long+Island+City> ;
+	dbo:zipCode "11101"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Long-Island-City?filters=ev_loc:97300000> ;
+	owl:sameAs <http://dbpedia.org/resource/Long_Island_City> .
+
+<http://www.linkedData_Group13.com/resource/Maspeth> a schema:Library ;
+	geo:long "-73.89310456490118"^^xsd:float ;
+	geo:lat "40.72699537010918"^^xsd:float ;
+	rdfs:label "Maspeth"^^rdfs:Literal ;
+	schema:streetAddress "Grand Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "69-70"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Maspeth> ;
+	dbo:zipCode "11378"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Maspeth?filters=ev_loc:93900000> ;
+	a osadm:Borough ;
+	rdfs:label "Maspeth"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/McGoldrick> a schema:Library ;
+	geo:long "-73.8098334843409"^^xsd:float ;
+	geo:lat "40.76375031625646"^^xsd:float ;
+	rdfs:label "McGoldrick"^^rdfs:Literal ;
+	schema:streetAddress "Roosevelt Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "155-06"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Flushing> ;
+	dbo:zipCode "11354"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/McGoldrick?filters=ev_loc:93800000> .
+
+<http://www.linkedData_Group13.com/resource/Middle+Village> a schema:Library ;
+	geo:long "-73.88085934625774"^^xsd:float ;
+	geo:lat "40.71293387617611"^^xsd:float ;
+	rdfs:label "Middle Village"^^rdfs:Literal ;
+	schema:streetAddress "Metropolitan Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "72-31"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Middle+Village> ;
+	dbo:zipCode "11379"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Middle-Village?filters=ev_loc:94000000> ;
+	a osadm:Borough ;
+	rdfs:label "Middle Village"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Mitchell-Linden> a schema:Library ;
+	geo:long "-73.82694112165963"^^xsd:float ;
+	geo:lat "40.76914153216748"^^xsd:float ;
+	rdfs:label "Mitchell-Linden"^^rdfs:Literal ;
+	schema:streetAddress "Union Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "31-32"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Flushing> ;
+	dbo:zipCode "11354"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Mitchell-Linden?filters=ev_loc:94100000> .
+
+<http://www.linkedData_Group13.com/resource/North+Forest+Park> a schema:Library ;
+	geo:long "-73.85367250555949"^^xsd:float ;
+	geo:lat "40.711156858305394"^^xsd:float ;
+	rdfs:label "North Forest Park"^^rdfs:Literal ;
+	schema:streetAddress "Metropolitan Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "98-27"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Forest+Hills> ;
+	dbo:zipCode "11375"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/North-Forest-Park?filters=ev_loc:96800000> .
+
+<http://www.linkedData_Group13.com/resource/North+Hills> a schema:Library ;
+	geo:long "-73.73183792044951"^^xsd:float ;
+	geo:lat "40.75925363922453"^^xsd:float ;
+	rdfs:label "North Hills"^^rdfs:Literal ;
+	schema:streetAddress "Marathon Parkway"^^schema:Text ;
+	livingPlaces:hasHouseNumber "57-04"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Little+Neck> ;
+	dbo:zipCode "11362"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/North-Hills?filters=ev_loc:94200000> .
+
+<http://www.linkedData_Group13.com/resource/Ozone+Park> a schema:Library ;
+	geo:long "-73.84648846296761"^^xsd:float ;
+	geo:lat "40.680867178856886"^^xsd:float ;
+	rdfs:label "Ozone Park"^^rdfs:Literal ;
+	schema:streetAddress "Rockaway Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "92-24"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Ozone+Park> ;
+	dbo:zipCode "11417"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Ozone-Park?filters=ev_loc:94300000> ;
+	a osadm:Borough ;
+	rdfs:label "Ozone Park"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Peninsula> a schema:Library ;
+	geo:long "-73.81606502823946"^^xsd:float ;
+	geo:lat "40.58586414713836"^^xsd:float ;
+	rdfs:label "Peninsula"^^rdfs:Literal ;
+	schema:streetAddress "Rockaway Beach Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "92-25"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Rockaway+Beach> ;
+	dbo:zipCode "11693"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Peninsula?filters=ev_loc:94400000> .
+
+<http://www.linkedData_Group13.com/resource/Rockaway+Beach> a osadm:Borough ;
+	rdfs:label "Rockaway Beach"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Pomonok> a schema:Library ;
+	geo:long "-73.81009488691065"^^xsd:float ;
+	geo:lat "40.732925077255004"^^xsd:float ;
+	rdfs:label "Pomonok"^^rdfs:Literal ;
+	schema:streetAddress "Jewel Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "158-21"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Flushing> ;
+	dbo:zipCode "11365"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Pomonok?filters=ev_loc:94500000> .
+
+<http://www.linkedData_Group13.com/resource/Poppenhusen> a schema:Library ;
+	geo:long "-73.84601807353184"^^xsd:float ;
+	geo:lat "40.786213103407846"^^xsd:float ;
+	rdfs:label "Poppenhusen"^^rdfs:Literal ;
+	schema:streetAddress "14 Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "121-23"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/College+Point> ;
+	dbo:zipCode "11356"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Poppenhusen?filters=ev_loc:94600000> .
+
+<http://www.linkedData_Group13.com/resource/College+Point> a osadm:Borough ;
+	rdfs:label "College Point"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Queens+Library+for+Teens> a schema:Library ;
+	geo:long "-73.75351240691268"^^xsd:float ;
+	geo:lat "40.60239019036059"^^xsd:float ;
+	rdfs:label "Queens Library for Teens"^^rdfs:Literal ;
+	schema:streetAddress "Cornaga Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "2002"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Far+Rockaway> ;
+	dbo:zipCode "11691"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Queens-Library-for-Teens?filters=ev_loc:91309134> .
+
+<http://www.linkedData_Group13.com/resource/Queens+Village> a schema:Library ;
+	geo:long "-73.73904906070274"^^xsd:float ;
+	geo:lat "40.7198883271777"^^xsd:float ;
+	rdfs:label "Queens Village"^^rdfs:Literal ;
+	schema:streetAddress "217 Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "94-11"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Queens+Village> ;
+	dbo:zipCode "11428"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Queens-Village?filters=ev_loc:91900000> ;
+	owl:sameAs <http://dbpedia.org/resource/Queens_Village_(LIRR_station)> ;
+	a osadm:Borough ;
+	rdfs:label "Queens Village"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Queensboro+Hill> a schema:Library ;
+	geo:long "-73.82516996389201"^^xsd:float ;
+	geo:lat "40.74293094649011"^^xsd:float ;
+	rdfs:label "Queensboro Hill"^^rdfs:Literal ;
+	schema:streetAddress "Main Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "60-05"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Flushing> ;
+	dbo:zipCode "11355"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Queensboro-Hill?filters=ev_loc:96900000> .
+
+<http://www.linkedData_Group13.com/resource/Queensbridge+%3Cbr%3E+Now+a+Family+Literacy+Center> a schema:Library ;
+	geo:long "-73.94424078652605"^^xsd:float ;
+	geo:lat "40.755073718041466"^^xsd:float ;
+	rdfs:label "Queensbridge <br> Now a Family Literacy Center"^^rdfs:Literal ;
+	schema:streetAddress "41 Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "10-43"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/LIC> ;
+	dbo:zipCode "11101"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Queensbridge?filters=ev_loc:94700000> .
+
+<http://www.linkedData_Group13.com/resource/LIC> a osadm:Borough ;
+	rdfs:label "LIC"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Ravenswood+%3Cbr%3E+Now+a+Family+Literacy+Center> a schema:Library ;
+	geo:long "-73.93640396909242"^^xsd:float ;
+	geo:lat "40.76067995120377"^^xsd:float ;
+	rdfs:label "Ravenswood <br> Now a Family Literacy Center"^^rdfs:Literal ;
+	schema:streetAddress "21 Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "35-32"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/LIC> ;
+	dbo:zipCode "11106"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Ravenswood?filters=ev_loc:94800000> .
+
+<http://www.linkedData_Group13.com/resource/Rego+Park> a schema:Library ;
+	geo:long "-73.86450282598912"^^xsd:float ;
+	geo:lat "40.72731656026829"^^xsd:float ;
+	rdfs:label "Rego Park"^^rdfs:Literal ;
+	schema:streetAddress "63 Drive"^^schema:Text ;
+	livingPlaces:hasHouseNumber "91-41"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Rego+Park> ;
+	dbo:zipCode "11374"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Rego-Park?filters=ev_loc:92000000> ;
+	a osadm:Borough ;
+	rdfs:label "Rego Park"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Richmond+Hill> a schema:Library ;
+	geo:long "-73.83164233461157"^^xsd:float ;
+	geo:lat "40.70079720332697"^^xsd:float ;
+	rdfs:label "Richmond Hill"^^rdfs:Literal ;
+	schema:streetAddress "Hillside Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "118-14"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Richmond+Hill> ;
+	dbo:zipCode "11418"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Richmond-Hill?filters=ev_loc:94900000> .
+
+<http://www.linkedData_Group13.com/resource/Ridgewood> a schema:Library ;
+	geo:long "-73.90258827579805"^^xsd:float ;
+	geo:lat "40.70522689472795"^^xsd:float ;
+	rdfs:label "Ridgewood"^^rdfs:Literal ;
+	schema:streetAddress "Madison Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "20-12"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Ridgewood> ;
+	dbo:zipCode "11385"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Ridgewood?filters=ev_loc:92100000> ;
+	a osadm:Borough ;
+	rdfs:label "Ridgewood"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Rochdale+Village> a schema:Library ;
+	geo:long "-73.7705902160538"^^xsd:float ;
+	geo:lat "40.67287520439724"^^xsd:float ;
+	rdfs:label "Rochdale Village"^^rdfs:Literal ;
+	schema:streetAddress "137 Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "169-09"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Jamaica> ;
+	dbo:zipCode "11434"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Rochdale-Village?filters=ev_loc:95000000> .
+
+<http://www.linkedData_Group13.com/resource/Rosedale> a schema:Library ;
+	geo:long "-73.73991101315558"^^xsd:float ;
+	geo:lat "40.659963623126"^^xsd:float ;
+	rdfs:label "Rosedale"^^rdfs:Literal ;
+	schema:streetAddress "243 Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "144-20"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Rosedale> ;
+	dbo:zipCode "11422"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Rosedale?filters=ev_loc:95100000> ;
+	a osadm:Borough ;
+	rdfs:label "Rosedale"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Seaside> a schema:Library ;
+	geo:long "-73.83774700520225"^^xsd:float ;
+	geo:lat "40.57940488152449"^^xsd:float ;
+	rdfs:label "Seaside"^^rdfs:Literal ;
+	schema:streetAddress "Rockaway Beach Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "116-15"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Rockaway+Park> ;
+	dbo:zipCode "11694"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Seaside?filters=ev_loc:96300000> .
+
+<http://www.linkedData_Group13.com/resource/Rockaway+Park> a osadm:Borough ;
+	rdfs:label "Rockaway Park"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/South+Hollis> a schema:Library ;
+	geo:long "-73.75379739629261"^^xsd:float ;
+	geo:lat "40.707003911354256"^^xsd:float ;
+	rdfs:label "South Hollis"^^rdfs:Literal ;
+	schema:streetAddress "Hollis Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "204-01"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/South+Hollis> ;
+	dbo:zipCode "11412"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/South-Hollis?filters=ev_loc:95300000> ;
+	a osadm:Borough ;
+	rdfs:label "South Hollis"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/South+Jamaica> a schema:Library ;
+	geo:long "-73.79021187041809"^^xsd:float ;
+	geo:lat "40.695611117576654"^^xsd:float ;
+	rdfs:label "South Jamaica"^^rdfs:Literal ;
+	schema:streetAddress "Guy R. Brewer Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "108-41"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Jamaica> ;
+	dbo:zipCode "11433"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/South-Jamaica?filters=ev_loc:95400000> .
+
+<http://www.linkedData_Group13.com/resource/South+Ozone+Park> a schema:Library ;
+	geo:long "-73.80926182925428"^^xsd:float ;
+	geo:lat "40.674783953734696"^^xsd:float ;
+	rdfs:label "South Ozone Park"^^rdfs:Literal ;
+	schema:streetAddress "Rockaway Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "128-16"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/South+Ozone+Park> ;
+	dbo:zipCode "11420"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/South-Ozone-Park?filters=ev_loc:95500000> ;
+	a osadm:Borough ;
+	rdfs:label "South Ozone Park"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/St.Albans> a schema:Library ;
+	geo:long "-73.76007289358745"^^xsd:float ;
+	geo:lat "40.69249997141939"^^xsd:float ;
+	rdfs:label "St.Albans"^^rdfs:Literal ;
+	schema:streetAddress "Linden Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "191-05"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/St.+Albans> ;
+	dbo:zipCode "11412"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/St.Albans?filters=ev_loc:95200000> .
+
+<http://www.linkedData_Group13.com/resource/St.+Albans> a osadm:Borough ;
+	rdfs:label "St. Albans"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Steinway> a schema:Library ;
+	geo:long "-73.90945659290355"^^xsd:float ;
+	geo:lat "40.77682707405275"^^xsd:float ;
+	rdfs:label "Steinway"^^rdfs:Literal ;
+	schema:streetAddress "31 Street"^^schema:Text ;
+	livingPlaces:hasHouseNumber "21-45"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Long+Island+City> ;
+	dbo:zipCode "11105"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Steinway?filters=ev_loc:95600000> .
+
+<http://www.linkedData_Group13.com/resource/Sunnyside> a schema:Library ;
+	geo:long "-73.9216680312544"^^xsd:float ;
+	geo:lat "40.7408466968306"^^xsd:float ;
+	rdfs:label "Sunnyside"^^rdfs:Literal ;
+	schema:streetAddress "Greenpoint Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "43-06"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Long+Island+City> ;
+	dbo:zipCode "11104"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Sunnyside?filters=ev_loc:95700000> .
+
+<http://www.linkedData_Group13.com/resource/Whitestone> a schema:Library ;
+	geo:long "-73.81070183926587"^^xsd:float ;
+	geo:lat "40.78854019464647"^^xsd:float ;
+	rdfs:label "Whitestone"^^rdfs:Literal ;
+	schema:streetAddress "14 Road"^^schema:Text ;
+	livingPlaces:hasHouseNumber "151-10"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Whitestone> ;
+	dbo:zipCode "11357"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Whitestone?filters=ev_loc:95800000> ;
+	a osadm:Borough ;
+	rdfs:label "Whitestone"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Windsor+Park> a schema:Library ;
+	geo:long "-73.7556194209342"^^xsd:float ;
+	geo:lat "40.73450483347836"^^xsd:float ;
+	rdfs:label "Windsor Park"^^rdfs:Literal ;
+	schema:streetAddress "Bell Boulevard"^^schema:Text ;
+	livingPlaces:hasHouseNumber "79-50"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Bayside> ;
+	dbo:zipCode "11364"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Windsor-Park?filters=ev_loc:95900000> ;
+	owl:sameAs <http://dbpedia.org/resource/Windsor_Park> .
+
+<http://www.linkedData_Group13.com/resource/Woodhaven> a schema:Library ;
+	geo:long "-73.86145741517984"^^xsd:float ;
+	geo:lat "40.69453115325741"^^xsd:float ;
+	rdfs:label "Woodhaven"^^rdfs:Literal ;
+	schema:streetAddress "Forest Parkway"^^schema:Text ;
+	livingPlaces:hasHouseNumber "85-41"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Woodhaven> ;
+	dbo:zipCode "11421"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Woodhaven?filters=ev_loc:96000000> ;
+	a osadm:Borough ;
+	rdfs:label "Woodhaven"^^<rdfs:Literal> .
+
+<http://www.linkedData_Group13.com/resource/Woodside> a schema:Library ;
+	geo:long "-73.9097937387323"^^xsd:float ;
+	geo:lat "40.745341712986715"^^xsd:float ;
+	rdfs:label "Woodside"^^rdfs:Literal ;
+	schema:streetAddress "Skillman Avenue"^^schema:Text ;
+	livingPlaces:hasHouseNumber "54-22"^^xsd:decimal ;
+	dbo:Borough <http://www.linkedData_Group13.com/resource/Woodside> ;
+	dbo:zipCode "11377"^^xsd:string ;
+	schema:url <http://www.queenslibrary.org/branch/Woodside?filters=ev_loc:96100000> ;
+	a osadm:Borough ;
+	rdfs:label "Woodside"^^<rdfs:Literal> .

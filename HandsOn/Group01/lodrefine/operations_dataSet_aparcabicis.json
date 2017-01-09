@@ -1,0 +1,588 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DISTRITO",
+    "columnName": "DISTRITO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TX_DISTRIT",
+    "columnName": "TX_DISTRIT"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ARCOS",
+    "columnName": "ARCOS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TITULAR",
+    "columnName": "TITULAR"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ESTADO",
+    "columnName": "ESTADO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FECHA_FOTO",
+    "columnName": "FECHA_FOTO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FUENTE_FOT",
+    "columnName": "FUENTE_FOT"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FUENTE",
+    "columnName": "FUENTE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ID_OBRAS",
+    "columnName": "ID_OBRAS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ID_INFORMO",
+    "columnName": "ID_INFORMO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column CODIGO_GEN",
+    "columnName": "CODIGO_GEN"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ELIMINADO",
+    "columnName": "ELIMINADO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column enplanos",
+    "columnName": "enplanos"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column OBSERVACIO",
+    "columnName": "OBSERVACIO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column MODELO",
+    "columnName": "MODELO"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column CAPACIDAD using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CAPACIDAD",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column OBJECTID using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "OBJECTID",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": []
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "OBJECTID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CENTRO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CAPACIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "FOTO",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "OBJECTID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CENTRO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CAPACIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "FOTO",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.semanticweb.org/group01/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group01",
+          "uri": "http://www.semanticweb.org/group01"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "OBJECTID",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CENTRO",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "DIRECCION",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "CAPACIDAD",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"resource/\"+replaceChars(value, \"-'\", \"\")",
+                "isRowNumberCell": false,
+                "columnName": "FOTO",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

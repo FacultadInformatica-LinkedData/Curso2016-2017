@@ -1,0 +1,83 @@
+######## How many accidents were there in Madrid in 2013?
+
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+Select (SUM(?x) AS ?TotalAccidentes)
+Where {
+    ?obs a qb:Observation;
+    mv:numberOfAccidents ?x
+}
+
+######## Give me the number of accidents in Usera for each type of accident
+
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+Select ?AccidentType xsd:integer(?NumberOfAccidents) AS ?NumberOfAccidents
+Where {
+    ?obs a qb:Observation;
+    mv:relatedDistrict "USERA";
+    mv:numberOfAccidents ?NumberOfAccidents;
+    mv:hasAccidentType ?AccidentType
+}
+
+
+######## Give me the number of multiple collisions for each district
+
+
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+Select ?relatedDistric xsd:integer(?NumberOfAccidents) AS ?NumberOfAccidents
+Where {
+    ?obs a qb:Observation;
+    mv:relatedDistrict ?relatedDistric;
+    mv:numberOfAccidents ?NumberOfAccidents;
+    mv:hasAccidentType mv:MultipleCollision
+}
+
+
+
+######## Which is the district were the number of bicycle falls was higher in 2013?
+
+
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+Select  ?relatedDistric xsd:integer(?num) AS ?NumberOfAccidents
+Where {
+    
+  {
+    Select MAX(?NumberOfA) AS ?num
+    Where {
+        ?obs a qb:Observation;
+        mv:relatedDistrict ?relatedDistric;
+        mv:numberOfAccidents ?NumberOfA;
+        mv:hasAccidentType mv:BicycleFall .
+    }
+  }
+
+    ?obs a qb:Observation;
+    mv:relatedDistrict ?relatedDistric;
+    mv:hasAccidentType mv:BicycleFall;
+    mv:numberOfAccidents ?num.
+}
+
+
+######## Give me the districts with more than 500 accidents in 2013
+
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+Select ?relatedDistric xsd:integer(?NumberOfAccidents) AS ?NumberOfAccidents
+Where {
+    ?obs a qb:Observation;
+    mv:relatedDistrict ?relatedDistric;
+    mv:numberOfAccidents ?NumberOfAccidents
+    Filter(?NumberOfAccidents> 500)
+}
+
+
+
+

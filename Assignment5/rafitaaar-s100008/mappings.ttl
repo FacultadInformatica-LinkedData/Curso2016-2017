@@ -1,0 +1,157 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix my_vocabulary: <http://example.linkeddata.es/my_vocabulary#> .
+@prefix my_instances: <http://example.linkeddata.es/instances/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://example.linkeddata.es/> .
+
+<TriplesMapCity>
+		a rr:TriplesMap;
+		
+		rr:logicalTable [ rr:tableName "City" ];
+		
+		rr:subjectMap [ rr:termType rr:IRI; 
+				rr:template "http://example.linkeddata.es/instances/City/{ID}";
+				rr:class my_vocabulary:City
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasID ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "ID"; rr:datatype xsd:int;];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasName ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "Name"; rr:datatype xsd:string; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasCountryCode ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "CountryCode"; rr:datatype xsd:string; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasDistrict ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "District"; rr:datatype xsd:string; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasPopulation ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "Population"; rr:datatype xsd:int; ];
+		].
+		
+<TriplesMapCountry>
+		a rr:TriplesMap;
+		
+		rr:logicalTable [ rr:tableName "Country" ];
+		
+		rr:subjectMap [ rr:termType rr:IRI; 
+				rr:template "http://example.linkeddata.es/instances/Country/{Code}";
+				rr:class my_vocabulary:Country
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasCode ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "Code"; rr:datatype xsd:string; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasName ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "Name"; rr:datatype xsd:string; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:belongstoContinent ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "Continent"; rr:datatype xsd:string; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasRegion ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "Region"; rr:datatype xsd:string; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasSurfaceArea ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "SurfaceArea"; rr:datatype xsd:float; ];
+		
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasIndepYear ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "IndepYear"; rr:datatype xsd:int; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasPopulation ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "Population"; rr:datatype xsd:int; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasLifeExpectancy ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "LifeExpectancy"; rr:datatype xsd:float; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasGNP ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "GNP"; rr:datatype xsd:float; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasGNPOld ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "GNPOld"; rr:datatype xsd:float; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasLocalName ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "LocalName"; rr:datatype xsd:string; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasGovernmentForm ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "GovernmentForm"; rr:datatype xsd:string; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasHeadOfState ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "HeadOfState"; rr:datatype xsd:string; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasCapital ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "Capital"; rr:datatype xsd:int; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasCode2 ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "Code2"; rr:datatype xsd:string; ];
+		].
+		
+<TriplesMapCountryLanguage>
+		a rr:TriplesMap;
+		
+		rr:logicalTable [ rr:tableName "CountryLanguage" ];
+		
+		rr:subjectMap [ rr:termType rr:IRI; 
+				rr:template "http://example.linkeddata.es/instances/CountryLanguage/{CountryCode}";
+				rr:class my_vocabulary:CountryLanguage
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasCountryCode ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "CountryCode"; rr:datatype xsd:string; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasLanguage ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "Language"; rr:datatype xsd:string; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasIsOfficial ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "IsOfficial"; rr:datatype xsd:string; ];
+		];
+		
+		rr:predicateObjectMap [ 
+				rr:predicateMap [ rr:constant my_vocabulary:hasPercentage ]; 
+				rr:objectMap [ rr:termType rr:Literal; rr:column "Percentage"; rr:datatype xsd:float; ];
+		].

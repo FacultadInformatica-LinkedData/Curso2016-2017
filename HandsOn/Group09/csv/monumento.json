@@ -1,0 +1,110 @@
+[
+  {
+    "op": "core/column-split",
+    "description": "Split column coordenadas by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "coordenadas",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename coordenadas 1 to X",
+    "oldColumnName": "coordenadas 1",
+    "newColumnName": "X"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename coordenadas 2 to Y",
+    "oldColumnName": "coordenadas 2",
+    "newColumnName": "Y"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column X to Longitud",
+    "oldColumnName": "X",
+    "newColumnName": "Longitud"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Y to Latitud",
+    "oldColumnName": "Y",
+    "newColumnName": "Latitud"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column id",
+    "columnName": "id"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Longitud to longitud",
+    "oldColumnName": "Longitud",
+    "newColumnName": "longitud"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Latitud to latitud",
+    "oldColumnName": "Latitud",
+    "newColumnName": "latitud"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column price to precio",
+    "oldColumnName": "price",
+    "newColumnName": "precio"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column pois to sitiosDeInteres",
+    "oldColumnName": "pois",
+    "newColumnName": "sitiosDeInteres"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column phone to telefono",
+    "oldColumnName": "phone",
+    "newColumnName": "telefono"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column address to direccion",
+    "oldColumnName": "address",
+    "newColumnName": "direccion"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column description to descripcion",
+    "oldColumnName": "description",
+    "newColumnName": "descripcion"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column title to nombre",
+    "oldColumnName": "title",
+    "newColumnName": "nombre"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column uso",
+    "columnName": "uso"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column image to imagen",
+    "oldColumnName": "image",
+    "newColumnName": "imagen"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column visita",
+    "columnName": "visita"
+  }
+]

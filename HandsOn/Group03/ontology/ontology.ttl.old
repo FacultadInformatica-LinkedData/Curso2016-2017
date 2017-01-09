@@ -1,0 +1,337 @@
+@prefix : <http://www.semanticweb.org/group03/ontologies/handson#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/group03/ontologies/handson> .
+
+<http://www.semanticweb.org/group03/ontologies/handson> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_amount_of_space
+:has_amount_of_space rdf:type owl:ObjectProperty ;
+                     rdfs:domain :flat ;
+                     rdfs:range :amount_of_space .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_area
+:has_area rdf:type owl:ObjectProperty ;
+          rdfs:domain :flat ;
+          rdfs:range :floor_area_sqm .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_date
+:has_date rdf:type owl:ObjectProperty ;
+          rdfs:domain :price_index ;
+          rdfs:range :date .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_demand
+:has_demand rdf:type owl:ObjectProperty ;
+            rdfs:domain :town ;
+            rdfs:range :demand_for_flats .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_max_selling_price
+:has_max_selling_price rdf:type owl:ObjectProperty ;
+                       rdfs:domain :town ;
+                       rdfs:range :max_selling_price .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_max_selling_price_less_ahg_shg
+:has_max_selling_price_less_ahg_shg rdf:type owl:ObjectProperty ;
+                                    rdfs:domain :town ;
+                                    rdfs:range :max_selling_price_less_ahg_shg .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_min_selling_price
+:has_min_selling_price rdf:type owl:ObjectProperty ;
+                       rdfs:domain :town ;
+                       rdfs:range :min_selling_price .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_min_selling_price_less_ahg_shg
+:has_min_selling_price_less_ahg_shg rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_number_of_bookings
+:has_number_of_bookings rdf:type owl:ObjectProperty ;
+                        rdfs:domain :town ;
+                        rdfs:range :number_of_bookings .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_number_of_private_residential_properties
+:has_number_of_private_residential_properties rdf:type owl:ObjectProperty ;
+                                              rdfs:domain :town ;
+                                              rdfs:range :number_of_private_residential_properties .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_number_of_resale_application
+:has_number_of_resale_application rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :town ;
+                                  rdfs:range :number_of_resale_applications .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_number_of_state_properties_launched
+:has_number_of_state_properties_launched rdf:type owl:ObjectProperty ;
+                                         rdfs:domain :town ;
+                                         rdfs:range :number_of_state_properties_launched .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_number_of_units
+:has_number_of_units rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain :town ;
+                     rdfs:range :number_of_units .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_occupancy_rate
+:has_occupancy_rate rdf:type owl:ObjectProperty ;
+                    rdfs:domain :flat ;
+                    rdfs:range :occupancy_rate .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_price_index
+:has_price_index rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :town ;
+                 rdfs:range :price_index .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_street
+:has_street rdf:type owl:ObjectProperty ;
+            rdfs:domain :flat ;
+            rdfs:range :street_name .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#has_type_of_property
+:has_type_of_property rdf:type owl:ObjectProperty ;
+                      rdfs:domain :flat ;
+                      rdfs:range :type_of_property .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#is_located_in
+:is_located_in rdf:type owl:ObjectProperty ;
+               rdfs:domain :flat ;
+               rdfs:range :town .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#is_model
+:is_model rdf:type owl:ObjectProperty ;
+          rdfs:domain :flat ;
+          rdfs:range :flat_model .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain :town ;
+                      rdfs:range :min_selling_price_less_ahg_shg .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/group03/ontologies/handson#amount_of_space
+:amount_of_space rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#applications_registered
+:applications_registered rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#availability
+:availability rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#block
+:block rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#date
+:date rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#demand
+:demand rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#demand_for_flats
+:demand_for_flats rdf:type owl:Class ;
+                  rdfs:subClassOf :demand .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#end_year
+:end_year rdf:type owl:Class ;
+          rdfs:subClassOf :year .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#financial_year
+:financial_year rdf:type owl:Class ;
+                rdfs:subClassOf :year .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#flat
+:flat rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#flat_model
+:flat_model rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#flat_type
+:flat_type rdf:type owl:Class ;
+           rdfs:subClassOf :type .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#floor_area_sqm
+:floor_area_sqm rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#index
+:index rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#lease_commence_date
+:lease_commence_date rdf:type owl:Class ;
+                     rdfs:subClassOf :date .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#market_segment
+:market_segment rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#max_selling_price
+:max_selling_price rdf:type owl:Class ;
+                   rdfs:subClassOf :price .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#max_selling_price_less_ahg_shg
+:max_selling_price_less_ahg_shg rdf:type owl:Class ;
+                                rdfs:subClassOf :price .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#min_selling_price
+:min_selling_price rdf:type owl:Class ;
+                   rdfs:subClassOf :price .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#min_selling_price_less_ahg_shg
+:min_selling_price_less_ahg_shg rdf:type owl:Class ;
+                                rdfs:subClassOf :price .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#mode
+:mode rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#month
+:month rdf:type owl:Class ;
+       rdfs:subClassOf :date .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#number
+:number rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#number_of_bookings
+:number_of_bookings rdf:type owl:Class ;
+                    rdfs:subClassOf :number .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#number_of_private_residential_properties
+:number_of_private_residential_properties rdf:type owl:Class ;
+                                          rdfs:subClassOf :number .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#number_of_resale_applications
+:number_of_resale_applications rdf:type owl:Class ;
+                               rdfs:subClassOf :number .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#number_of_state_properties_launched
+:number_of_state_properties_launched rdf:type owl:Class ;
+                                     rdfs:subClassOf :number .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#number_of_units
+:number_of_units rdf:type owl:Class ;
+                 rdfs:subClassOf :number .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#occupancy_rate
+:occupancy_rate rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#price
+:price rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#price_index
+:price_index rdf:type owl:Class ;
+             rdfs:subClassOf :index .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#product_segment
+:product_segment rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#resale_price
+:resale_price rdf:type owl:Class ;
+              rdfs:subClassOf :price .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#room_type
+:room_type rdf:type owl:Class ;
+           rdfs:subClassOf :type .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#sector
+:sector rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#start_year
+:start_year rdf:type owl:Class ;
+            rdfs:subClassOf :year .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#storey_range
+:storey_range rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#street_name
+:street_name rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#town
+:town rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#type
+:type rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#type_of_booking
+:type_of_booking rdf:type owl:Class ;
+                 rdfs:subClassOf :type .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#type_of_property
+:type_of_property rdf:type owl:Class ;
+                  rdfs:subClassOf :type .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#type_of_space
+:type_of_space rdf:type owl:Class ;
+               rdfs:subClassOf :type .
+
+
+###  http://www.semanticweb.org/group03/ontologies/handson#year
+:year rdf:type owl:Class ;
+      rdfs:subClassOf :date .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

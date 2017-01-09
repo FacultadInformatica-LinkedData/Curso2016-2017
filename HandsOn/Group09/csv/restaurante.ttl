@@ -1,0 +1,585 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix onto: <http://www.semanticweb.org/grupo09#> .
+
+
+<http://www.semanticweb.org/grupo09#Ctra.+de+Logro%C3%B1o+Km.+1%2C500> a onto:Direccion .
+
+onto:Zaragoza a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#Ctra.+de+Logro%C3%B1o+Km.+1%2C500> onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#RESTAURANTE+EL+CACHIRULO> onto:estaEn <http://www.semanticweb.org/grupo09#Ctra.+de+Logro%C3%B1o+Km.+1%2C500> ;
+	onto:codigoPostal "50011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "congresos@elcachirulo.es" ;
+	onto:url "http://www.elcachirulo.es" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/062.-RTeCachiruloAP.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/059-el-cachirulo.gif" ;
+	onto:accesibilidad "<div><img src=\"http://www.zaragoza.es/cont/paginas/sinbarreras/img/icono_acomp1.jpg\" alt=\"Accesible con Acompañante\"/>Accesible con Acompañante</div><ul><li> Acceso:  Adaptado. Rampa de acceso por un lateral del restaurante a los jardines</li><li>Ascensor en zona interior</li><li>Aseos Adaptados: No</li></ul><p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:comentarios "Ubicado en un grandioso y elegante edificio de corte aragonés, El Cachirulo tiene varios salones con capacidad de entre 30 y 600 personas. Está rodeado de amplios jardines y ofrece platos como la ensalada de hortalizas asadas sobre salmorejo de tomare, albahaca, láminas de bacalao y aderezadas con aceite de gorbinas." ;
+	onto:longitud "671271.45"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4615302.48"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Ctra. de Logroño Km. 1,500 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976796323" .
+
+<http://www.semanticweb.org/grupo09#Ctra.+Aeropuerto> a onto:Direccion .
+
+<http://www.semanticweb.org/grupo09#Garrapinillos+%28Zaragoza%29> a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#Ctra.+Aeropuerto> onto:enCiudad <http://www.semanticweb.org/grupo09#Garrapinillos+%28Zaragoza%29> .
+
+<http://www.semanticweb.org/grupo09#RESTAURANTE+GAYARRE> onto:estaEn <http://www.semanticweb.org/grupo09#Ctra.+Aeropuerto> ;
+	onto:codigoPostal "50190"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "gayarre@restaurantegayarre.com" ;
+	onto:url "http://www.restaurantegayarre.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/gayarre2.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/73-gayarre.gif" ;
+	onto:accesibilidad "<div><img src=\"http://www.zaragoza.es/cont/paginas/sinbarreras/img/icono_silla1.jpg\" alt=\" Accesible\"/>  Accesible</div><ul><li> Acceso:  Acceso a uno de los salones a cota cero y los demás con pequeño escalón salvable con cuña</li><li>Aseos Adaptados: Sí</li></ul><p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:comentarios "Chalet con amplios y cuidados jardines, bodega amplia y surtida, parking propio." ;
+	onto:longitud "669278.71"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614633.81"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Ctra. Aeropuerto, 370 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976344386" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Madre+Vedruna> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:GUETARIA onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Madre+Vedruna> ;
+	onto:codigoPostal "50008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:comentarios "N:56" ;
+	onto:longitud "676456.11"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612895.14"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Madre Vedruna, 10 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 21 53 16" .
+
+<http://www.semanticweb.org/grupo09#C%2F+San+Juan+Bosco> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:GARDEN onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Juan+Bosco> ;
+	onto:codigoPostal "50009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "restaurante@restaurantegarden.com" ;
+	onto:url "http://www.restaurantegarden.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/garden2.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/72-garden.gif" ;
+	onto:comentarios "Restaurante especializado en banquetes que ahora ofrece también menús del día a precios asequibles. Elabora ensaldas y pescados de gran calidad. Con capacidad de 450 personas, Garden consta de dos plantas y ofrece la posibilidad de dividirse en salones para menos capacidad." ;
+	onto:longitud "674990.66"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612671.41"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ San Juan Bosco, 3 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 55 16 25" .
+
+<http://www.semanticweb.org/grupo09#Pza.+del+Carmen> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#RESTAURANTE+PARRILLA+DE+ALBARRAC%C3%8DN> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+del+Carmen> ;
+	onto:codigoPostal "50004"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "info@parrillaalbarracin.com" ;
+	onto:url "http://www.parrillaalbarracin.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/parrilla2.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/87-parrilla-albarracin.gif" ;
+	onto:comentarios "Bombones de patata de cordero deshuesada con setas, migas siglo XXI, jarrete de ternasco sobre puré de berza en guiso de vino tinto y rebozuelos y un \"postre de leche\" son algunas de las especialidades de este establecimiento situado en pleno centro, muy cerca de un aparcamiento público. Su cocins se basa en la actualización del recetario aragonés y posee una amplia bodega." ;
+	onto:longitud "676226.31"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613390.45"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Pza. del Carmen, 1-2-3 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 15 81 00" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Predicadores> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#RESTAURANTE+LA+MATILDE> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Predicadores> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "luispuyuelo@gmail.com" ;
+	onto:url "http://www.lamatilde.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/la%20matilde_1.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/80-la-matilde.gif" ;
+	onto:comentarios "Veterano restautante con cocina de calidad en la que destacan especialidades como la lasagna de morcilla de Burgos y hortalizas con emulsión de piquillos o el arroz negro gratinado con alioli de reineta. Cuentan con una de las mejores bodegas de España y con una decoración repleta de antigüedades y objetos de coleccionista, como placas de cava o anillas de puros. Hay un menú degustación por 43.50 euros." ;
+	onto:longitud "676360.98"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614064.15"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Predicadores, 7 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 43 34 43" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Eduardo+Ibarra> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#EL+FORO> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Eduardo+Ibarra> ;
+	onto:codigoPostal "50009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "elforo@elforo98.com" ;
+	onto:url "http://www.elforo98.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/espumosos_2.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/069-el-foro.gif" ;
+	onto:accesibilidad "<div><img src=\"http://www.zaragoza.es/cont/paginas/sinbarreras/img/icono_acomp1.jpg\" alt=\"Icono de Accesible con Acompañante\"/>Accesible con Acompañante</div><ul><li> Acceso: Adaptado.  Comunica el restaurante por un acceso con rampa a través de la Residencia de ancianos MAZA</li><li>Aseos Adaptados: No</li></ul><p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:comentarios "Restaurante El Foro, se encuentra en una ubicación estratégica; frente al Auditorio - Palacio de Congresos y al campo de fútbl La Romareda. Está a 10 minutos de la estación de tren Delicias y a 20 minutos del aueropuerto de Zaragoza. Contamos con un espacio único e ideal para cada ocasión; el restaurante, la terraza - cenador cubierta, el salón de banquetes y 3 comedores privados. Bodas, comuniones, bautizos, comidas y reuniones de empresa. Al lado de un amplio aparcamiento." ;
+	onto:longitud "674800.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4611970.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Eduardo Ibarra, 4. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 35 11 04" .
+
+onto:ROGELIOS onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Eduardo+Ibarra> ;
+	onto:codigoPostal "50009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "correo@rogelios.es" ;
+	onto:url "http://www.rogelios.es" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/restrogelios.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/060-rogelios.gif" ;
+	onto:accesibilidad "<div><img src=\"http://www.zaragoza.es/cont/paginas/sinbarreras/img/icono_silla1.jpg\" alt=\"Accesible\"/>Accesible </div><ul><li> Acceso:  Adaptado con Rampa</li><li>Aseos Adaptados: Sí</li></ul><p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:comentarios "Restaurante decorado con antigüedades del seglo XV. Preparan platos como la parrillada de verduras naturales con aceite del Bajo Aragón, solomillo de ternera asturiana al foie y pescados de temporada. Está situado junto a un gran aparcamiento público." ;
+	onto:longitud "674708.55"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4611839.55"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Eduardo Ibarra, 10 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 35 89 50" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Santander> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#LOS+DELFINES> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santander> ;
+	onto:codigoPostal "50010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:url "http://www.restaurantelosdelfines.com" ;
+	onto:longitud "675173.12"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613157.54"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Santander, 31 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 56 43 96" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Manuel+Lasala> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:GOYESCO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Manuel+Lasala> ;
+	onto:codigoPostal "50006"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "goyesco@restaurantegoyesco.com" ;
+	onto:accesibilidad "<div><img src=\"http://www.zaragoza.es/cont/paginas/sinbarreras/img/icono_acomp1.jpg\" alt=\"Icono de Accesible con Acompañante\"/>Accesible con Acompañante</div><ul><li> Acceso: Pequeño escalón</li><li>Aseos Adaptados: No</li></ul><p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:longitud "675276.99"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4611897.42"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Manuel Lasala, 44 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 35 68 70" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Coso> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#RESTAURANTE+LA+BASTILLA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Coso> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "labastilla@labastilla.com" ;
+	onto:url "http://www.labastilla.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/bastilla.JPG" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/75-la-bastilla.gif" ;
+	onto:accesibilidad "<div><img src=\"http://www.zaragoza.es/cont/paginas/sinbarreras/img/icono_noacces1.jpg\" alt=\"No Accesible\"/> No Accesible  </div><ul><li> Acceso:  No adaptado, tiene escaleras en la entrada</li></ul><p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:comentarios "Ubicado en los antiguos graneros del Santo Sepulcro. Monumento histórico artístico situado junto a la muralla romana. Cocina creativa con sólidas raíces aragonesas. Dispone de servicio de catering. Salones de banquetes y finca para eventos y celebraciones." ;
+	onto:longitud "675670.57"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613489.75"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Coso, 177 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 84 49" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Latassa> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#RESTAURANTE+LA+BODEGA+DE+CHEMA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Latassa> ;
+	onto:codigoPostal "50006"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "contacto@labodegadechema.com" ;
+	onto:url "http://www.labodegadechema.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/bodegachema2.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/76-bodega-chema.gif" ;
+	onto:comentarios "La especialidad de la casa es el cabrito asado con patatas. Amplia carta de entrantes, carnes y pescados.Menús para grupos y celebraciones. Tienen una buena bodega y esta cercano al aparcamiento público de Pza. San Francisco. Preparan comida para celiacos bajo petición." ;
+	onto:longitud "675531.51"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612293.43"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Latassa, 34 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 55 50 14" .
+
+<http://www.semanticweb.org/grupo09#C%2F+San+Ignacio+de+Loyola> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#RESTAURANTE+LA+GRANADA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+San+Ignacio+de+Loyola> ;
+	onto:codigoPostal "50008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "info@restaurantelagranada.com" ;
+	onto:url "http://www.restaurantelagranada.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/I_Granada.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/L_Granada.jpg" ;
+	onto:comentarios "Ambiente acogedor e íntimo en este moderno restauramte que destaca por su cocina de autor y sus plator innovadores. Especializado en pescados. Situado en el centro de la ciudad, está muy cerca de un aparcamiento público." ;
+	onto:longitud "676467.41"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613050.44"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ San Ignacio de Loyola, 14 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 22 39 03" .
+
+<http://www.semanticweb.org/grupo09#C%2F+La+Salle> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#LA+RINCONADA+DE+LORENZO> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+La+Salle> ;
+	onto:codigoPostal "50006"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "oscar@larinconadadelorenzo.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/larinconadadelorenzo.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/81-la-rinconada.gif" ;
+	onto:accesibilidad "<div><img src=\"http://www.zaragoza.es/cont/paginas/sinbarreras/img/icono_acomp1.jpg\" alt=\" Accesible con Acompañante \"/>  Accesible con Acompañante </div><ul><li> Acceso: Pequeño escalón salvable con una cuña auxiliar. </li><li>Aseos Adaptados: No</li></ul><p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:comentarios "Restaurante de cocina aragonesa con dos salones para 70 y 100 personas respectivamente. Decorado con cerámica de Muel, entre sus platos destacan las migas con jamón y uva, el foie de oca, el ternasco lechal al horno, los pescados frescos y los postres caseros. Zona WiFi de libre acceso, carta en cinco idiomas y en Braille, y carta de puros." ;
+	onto:longitud "675531.45"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612208.8"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ La Salle, 3 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 55 51 08" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Sta.+Teresa+de+Jes%C3%BAs> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#EL+CHALET> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Sta.+Teresa+de+Jes%C3%BAs> ;
+	onto:codigoPostal "50006"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "angel.conde@elchaletrestaurante.es" ;
+	onto:url "http://www.elchaletrestaurante.es" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/chalet_4.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/068-el-chalet.gif" ;
+	onto:comentarios "Coqueto chalet de ambiente elegante, cálido y acogedor, con jardin-cenador en el interior (primavera-verano).ideal para parejas, aniversarios, negocios, familiares, amigos y pequeños banquetes. Salones privados de 10 a 40 personas. Cocina de mercado y creativa, reflejada en una carta sugerente, con productos de gran calidad. Jornadas de tapas y trufas(febrero),bacalao y la cuaresma (marzo) o del cazador y algunas setas(noviembre) A destacar uno de los mejores steak tartar de la ciudad. Extensa carta de vinos. Servicio atento avalado por una larga profesionalidad. Parking publico muy cercano en plaza san francisco." ;
+	onto:longitud "675529.37"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612148.82"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Sta. Teresa de Jesús, 25 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 56 91 04" .
+
+<http://www.semanticweb.org/grupo09#Autov%C3%ADa+de+Logro%C3%B1o+km+10%2C5> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#FINCA+LA+ALQUERIA> onto:estaEn <http://www.semanticweb.org/grupo09#Autov%C3%ADa+de+Logro%C3%B1o+km+10%2C5> ;
+	onto:codigoPostal "50180"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "laalqueria@laalqueria.es" ;
+	onto:url "http://www.laalqueria.es" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/101%20la%20alqueria.JPG" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/95-la-alqueria.gif" ;
+	onto:longitud "668163.13"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4619028.12"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Autovía de Logroño km 10,5 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 79 26 11" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Zurita> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#FINCA+TORRE++DEL+PINO> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Zurita> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "martabas@torredelpino.com" ;
+	onto:url "http://www.torredelpino.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/103.-Torre-PinoAP.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/97-torre-del-pino.gif" ;
+	onto:longitud "676629.74"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613296.32"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "c/ Zurita nº 15, 1º Izda <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 239 283 / 976 150 61" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Francisco+Vitoria> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#RESTAURANTE+BOLE> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Francisco+Vitoria> ;
+	onto:codigoPostal "50008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "info@vinosbole.com" ;
+	onto:url "http://www.vinosbole.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/bole.jpg" ;
+	onto:comentarios """Dirigido por José Luis Borlán, conocido sumiller aragonés.
+Selecto restaurante a la carta.
+
+Es a su vez, el mejor bar de vinos de Aragón. En su barra, sus tapas aúnan moderniad y tradición, y para acompañar, una cuidada selección de vinos por copas.
+Selecta carta de vinos con más de 300 referencias, para consumir en el local o para llevar.
+
+Jamón Ibérico de bellota, quesos aragones y las mejores anchoas del cantábrico completan su oferta.""" ;
+	onto:longitud "676469.46"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612978.93"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Francisco Vitoria, 3 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 22 30 16" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Bruno+Solano> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#RESTAURANTE+LA+JAMONER%C3%8DA+EL+CORTADOR+DE+JAMON> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Bruno+Solano> ;
+	onto:codigoPostal "50006"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "felix@lajamoneria.es" ;
+	onto:url "http://www.elcortadordejamon.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/jamoneria2.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/79-la-jamoneria.gif" ;
+	onto:comentarios "En este restaurante todo el jamón se corta a cuchillo. También destacan sus platos de cuchara, las pochas con perdiz escabechada, el rabo de toro, ls alcachofas y las manitas de ministro. Muy cerca de un aparcamiento público. Tiene menús de distintos precios." ;
+	onto:longitud "675515.76"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612022.11"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Bruno Solano, 16 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 56 62 68" .
+
+<http://www.semanticweb.org/grupo09#Autov%C3%ADa+A-23+Pirineos+%28Crta+Huesca%29+Km+9%2C6+direcc.+Zaragoza> a onto:Direccion .
+
+<http://www.semanticweb.org/grupo09#Villanueva+de+G%C3%A9llego+%28Zaragoza%29> a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#Autov%C3%ADa+A-23+Pirineos+%28Crta+Huesca%29+Km+9%2C6+direcc.+Zaragoza> onto:enCiudad <http://www.semanticweb.org/grupo09#Villanueva+de+G%C3%A9llego+%28Zaragoza%29> .
+
+<http://www.semanticweb.org/grupo09#FINCA+SANSUI+-+El+Jard%C3%ADn+del+Agua> onto:estaEn <http://www.semanticweb.org/grupo09#Autov%C3%ADa+A-23+Pirineos+%28Crta+Huesca%29+Km+9%2C6+direcc.+Zaragoza> ;
+	onto:codigoPostal "50830"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "congresos@elcachirulo.es" ;
+	onto:url "http://www.sansui.es" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/sansui1.jpg" ;
+	onto:logo "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/96-sansui.gif" ;
+	onto:longitud "679165.57"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4623075.64"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Autovía A-23 Pirineos (Crta Huesca) Km 9,6 direcc. Zaragoza <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976796323" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Berenguer+Bardaji> a onto:Direccion .
+
+onto:ZARAGOZA a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#C%2F+Berenguer+Bardaji> onto:enCiudad onto:ZARAGOZA .
+
+<http://www.semanticweb.org/grupo09#DON+FON> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Berenguer+Bardaji> ;
+	onto:codigoPostal "50017"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "donfon@eresmas.com" ;
+	onto:comentarios "Contacto. Sr. D. Shudi Pan" ;
+	onto:longitud "674283.61"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613119.49"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Berenguer Bardaji, 68 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 34 76 71" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Santiago> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:ESPEJO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santiago> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676814.74"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613848.77"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Santiago, 30-32 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 34 32" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Reconquista> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#FARTALLA%2C+LA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Reconquista> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676998.59"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613261.85"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Reconquista, 8 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 47 65" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Sixto+Celorrio> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#EL+FERIAL> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Sixto+Celorrio> ;
+	onto:codigoPostal "50015"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676978.58"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614632.52"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Sixto Celorrio, 72 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 51 11 65" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Jos%C3%A9+Pellicer> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#NUEVO+SIGLO> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Jos%C3%A9+Pellicer> ;
+	onto:codigoPostal "50007"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:comentarios "Contacto: Sr. D. Yiguan Xia" ;
+	onto:longitud "676836.83"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4611893.39"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ José Pellicer, 7 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 278 731" .
+
+<http://www.semanticweb.org/grupo09#Parque+Primo+de+Rivera> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#FLANDES+Y+FABIOLA> onto:estaEn <http://www.semanticweb.org/grupo09#Parque+Primo+de+Rivera> ;
+	onto:codigoPostal "50006"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675371.39"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4611436.24"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Parque Primo de Rivera <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 38 72 38" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Mayor> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#LA+FORJA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mayor> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "virueles@hotmail.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/laforja.jpg" ;
+	onto:comentarios "Restaurante tipico aragones donde comer auntentica carne a la brasa en el mismo centro de Zaragoza. Cocina Aragonesa. Genuina Brasa de Carbón Vegetal donde cocinamos su carne al momento. Trato amable y familiar. Especialidad en Migas a la Pastora, Caracoles a la Brasa y Pimientos del Piquillo Rellenos de Ternasco. Seleccionada carta de Vinos Aragoneses y Españoles." ;
+	onto:longitud "676970.77"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613686.47"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Mayor, 43 dpdo. <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 29 12 84" .
+
+<http://www.semanticweb.org/grupo09#Pza.+de+la+Seo> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#FORO+ROMANO+-+TREVI> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+de+la+Seo> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "reservas@hoteltibur.com" ;
+	onto:url "http://www.avilhoteles.com" ;
+	onto:accesibilidad "<div><img src=\"/cont/paginas/sinbarreras/img/icono_acomp1.jpg\" alt=\"Accesible con acompañante\"/> Accesible con Acompañante</div><ul><li><strong>Acceso</strong>:  Acceso por rampa desde el Hotel Tibur</li><li>Aseos adaptados: No</li></ul><p><em>Información facilitada por Disminuidos Físicos de Aragón</em></p>" ;
+	onto:comentarios "Restaurante Foro Romano. Restaurante del Hotel Tibur. Abierto todos los días." ;
+	onto:longitud "676929.52"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613869.03"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Pza. de la Seo, 2-3 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 20 20 00" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Italia> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:GERARDO onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Italia> ;
+	onto:codigoPostal "50010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:comentarios "Contacto: Gerardo Luis Biurrun Lacuey" ;
+	onto:longitud "675019.58"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613261.46"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Italia, 57 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 35 51 18" .
+
+<http://www.semanticweb.org/grupo09#BURGER+KING> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Coso> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676662.06"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613478.68"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Coso, 62 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 22 71 14" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Juan+Jos%C3%A9+Rivas> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#ITZIAR+2> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Juan+Jos%C3%A9+Rivas> ;
+	onto:codigoPostal "50006"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675715.91"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612318.94"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Juan José Rivas, 9 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 35 57 77" .
+
+<http://www.semanticweb.org/grupo09#Crta.+Logro%C3%B1o> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#JABATO%2C+EL> onto:estaEn <http://www.semanticweb.org/grupo09#Crta.+Logro%C3%B1o> ;
+	onto:codigoPostal "50011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "661822.79"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4614958.34"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Crta. Logroño, km.2-4, Polígono Portazgo, Nave 29 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 68 10 54" .
+
+<http://www.semanticweb.org/grupo09#JARDINCILLO%2C+EL> onto:estaEn <http://www.semanticweb.org/grupo09#Crta.+Logro%C3%B1o> ;
+	onto:codigoPostal "50011"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "664932.52"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4616996.94"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Crta. Logroño, km.3,700 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 33 57 98" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Embarcadero> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:JAUJA onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Embarcadero> ;
+	onto:codigoPostal "50009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:comentarios "Contacto: Oscar Serrano Pujol" ;
+	onto:longitud "674403.56"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4610981.7"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Embarcadero, 2 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 52 12 00" .
+
+<http://www.semanticweb.org/grupo09#KUPELA%2C+LA+SIDRERIA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Santiago> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:comentarios "Asador de ambiente tranquilo especializado en cocina vasco-aragonesa, con platos como chuletón de buey gallego, tortilla de bacalao, ensalada de pimientos asados con cebolla de Fuentes y bonito, lubina al orio de frutos secos y miel, ternasco a la brasa y chorizo a la sidra. Sala con capacidad para 80 comensales, ideal para banquetes y reuniones." ;
+	onto:longitud "676823.83"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613858.61"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Santiago, 23 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 39 02 58" .
+
+<http://www.semanticweb.org/grupo09#C%C2%BA+de+Cogullada> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#LONJA%2C+LA> onto:estaEn <http://www.semanticweb.org/grupo09#C%C2%BA+de+Cogullada> ;
+	onto:codigoPostal "50014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "678667.08"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4617144.66"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Cº de Cogullada, s/n (Mercazaragoza) <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 39 77 38" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Alicante> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#MALLOS%2C+LOS> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Alicante> ;
+	onto:codigoPostal "50007"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:comentarios "Nº Plazas 90" ;
+	onto:longitud "676153.52"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4611244.64"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Alicante, 16 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 38 89 47" .
+
+<http://www.semanticweb.org/grupo09#Pza.+San+Miguel> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#MAMMA+MIA> onto:estaEn <http://www.semanticweb.org/grupo09#Pza.+San+Miguel> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676584.28"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613413.37"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Pza. San Miguel, 7 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 39 14 13" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Mamblas> a onto:Direccion .
+
+<http://www.semanticweb.org/grupo09#Zaragoza+%28Santa+Isabel%29> a onto:Ciudad .
+
+<http://www.semanticweb.org/grupo09#C%2F+Mamblas> onto:enCiudad <http://www.semanticweb.org/grupo09#Zaragoza+%28Santa+Isabel%29> .
+
+onto:MAMBLAS onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mamblas> ;
+	onto:codigoPostal "50058"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:comentarios "Contacto: Francisca Puy Falceto" ;
+	onto:longitud "681501.17"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4615104.43"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Mamblas, 22 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 57 47 67" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Juan+Moneva> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#TABERNA+BILBILIS> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Juan+Moneva> ;
+	onto:codigoPostal "50001"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:comentarios "Titular: Falcón Lasheras, sc" ;
+	onto:longitud "676487.46"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613281.24"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Juan Moneva, 6 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 22 91 62" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Don+Jaime+I> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#LA+TAGLIATELLA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Don+Jaime+I> ;
+	onto:codigoPostal "50003"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "tagliatella@yvanos.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/latagliatella.jpg" ;
+	onto:comentarios "Restaurante italiano situado junto a la plaza del Pilar, cerca de un aparcamiento público. Dispone de terraza de verano. Decorado al estilo de la antigua Italia. Preparan una deliciosa pasta fresca." ;
+	onto:longitud "676873.13"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613847.68"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Don Jaime I, 43 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 44 66 66" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Reina+Fabiola> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#MEI+MEI+II> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Reina+Fabiola> ;
+	onto:codigoPostal "50008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:comentarios "Contacto: Sr. D. Leping Bai Xiang" ;
+	onto:longitud "676955.83"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612677.1"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Reina Fabiola, 37 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 49 89 33" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Navarra> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#MERCADO+DE+PESCADOS> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Navarra> ;
+	onto:codigoPostal "50010"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "www.rest-lalonja.com" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/mercadodepescados.jpg" ;
+	onto:comentarios "Situado en el antiguo Mercado de Pescados, está cerca de la Estación Intermodal y de un aparcamiento público. Se dedica en exclusiva al pescado y marisco fresco desde 1960, destacando sus parrilladas, mariscadas y paellas de marisco." ;
+	onto:longitud "674428.89"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613860.7"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Avda. Navarra, s/n <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 33 30 77" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Jose+Mar%C3%ADa+Lacarra+de+Miguel> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#MES%C3%93N+LOS+CANT%C3%81ROS> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Jose+Mar%C3%ADa+Lacarra+de+Miguel> ;
+	onto:codigoPostal "50008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "676546.69"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612643.72"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Jose María Lacarra de Miguel,38 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 23 89 53" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Daroca> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#MESON+LA+CAZUELA> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Daroca> ;
+	onto:codigoPostal "50017"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:comentarios "Contacto: Carlos Fidel Agustin Remacha" ;
+	onto:longitud "674574.88"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613171.37"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Daroca, 5 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 53 26 53" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Hern%C3%A1n+Cort%C3%A9s> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#MESON+DEL+CARMEN> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Hern%C3%A1n+Cort%C3%A9s> ;
+	onto:codigoPostal "50004"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:comentarios "Contacto: Rafael Luna Cantín" ;
+	onto:longitud "675959.68"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4613227.82"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ Hernán Cortés, 4 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 23 23 73" .
+
+<http://www.semanticweb.org/grupo09#Carretera+de+Cogullada> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+onto:CASAFRAN onto:estaEn <http://www.semanticweb.org/grupo09#Carretera+de+Cogullada> ;
+	onto:codigoPostal "50014"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:email "restaurantecasafran@movistar.es" ;
+	onto:url "http://www.restaurantecasafran-zaragoza.es" ;
+	onto:imagen "www.zaragoza.es/cont/paginas/turismo/oficina/rsc/img/empresa/casafran.jpg" ;
+	onto:comentarios "Ambiente familiar. Después de 60 años y gracias a nuestros clientes, seguimos siendo una familia cada día más grande." ;
+	onto:longitud "678381.69"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4615646.13"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Carretera de Cogullada, 22 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 47 21 57" .
+
+<http://www.semanticweb.org/grupo09#C%2F+Mar%C3%ADa+Guerrero> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#MES%C3%93N+MARTIN> onto:estaEn <http://www.semanticweb.org/grupo09#C%2F+Mar%C3%ADa+Guerrero> ;
+	onto:codigoPostal "50009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "674108.36"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612545.48"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/ María Guerrero, 26 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 75 03 93" .
+
+<http://www.semanticweb.org/grupo09#C%2FArzobispo+Apaolaza> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#MESON+EL+ROMERAL> onto:estaEn <http://www.semanticweb.org/grupo09#C%2FArzobispo+Apaolaza> ;
+	onto:codigoPostal "50009"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:longitud "675160.77"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4611984.32"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "C/Arzobispo Apaolaza, 37-39 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 35 05 16" .
+
+<http://www.semanticweb.org/grupo09#Avda.+Las+Torres> a onto:Direccion ;
+	onto:enCiudad onto:Zaragoza .
+
+<http://www.semanticweb.org/grupo09#MES%C3%93N+DE+TOM%C3%81S> onto:estaEn <http://www.semanticweb.org/grupo09#Avda.+Las+Torres> ;
+	onto:codigoPostal "50008"^^<http://www.w3.org/2001/XMLSchema#int> ;
+	onto:comentarios "Contacto: Tomás Herraiz Lasheras" ;
+	onto:longitud "676404.87"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:latitud "4612380.42"^^<http://www.w3.org/2001/XMLSchema#double> ;
+	onto:descripcion "Avda. Las Torres, 92 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 23 13 02" .

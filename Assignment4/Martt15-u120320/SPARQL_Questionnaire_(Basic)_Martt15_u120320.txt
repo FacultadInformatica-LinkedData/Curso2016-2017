@@ -1,0 +1,229 @@
+SPARQL Questionnaire (Basic) Provide the SPARQL query and the result for the following queries expressed in natural language.
+
+Marta Villar Martin u120320
+
+1. Get all the classes
+
+SELECT distinct ?Concept WHERE {[] a ?Concept} LIMIT 100
+
+
+------------Solution
+
+http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat
+http://www.openlinksw.com/schemas/virtrdf#QuadStorage
+http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapFormat
+http://www.openlinksw.com/schemas/virtrdf#QuadMap
+http://www.openlinksw.com/schemas/virtrdf#QuadMapValue
+http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapColumn
+http://www.openlinksw.com/schemas/virtrdf#QuadMapColumn
+http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMapATable
+http://www.openlinksw.com/schemas/virtrdf#QuadMapATable
+http://www.openlinksw.com/schemas/virtrdf#QuadMapFText
+http://www.openlinksw.com/schemas/virtrdf#array-of-string
+http://www.openlinksw.com/schemas/virtrdf#array-of-QuadMap
+http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+http://www.w3.org/2002/07/owl#Class
+http://www.w3.org/2002/07/owl#Ontology
+http://www.w3.org/2000/01/rdf-schema#Class
+http://www.w3.org/2002/07/owl#OntologyProperty
+http://www.w3.org/2002/07/owl#AnnotationProperty
+http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+http://www.w3.org/2002/07/owl#ObjectProperty
+http://www.w3.org/2002/07/owl#DatatypeProperty
+http://purl.org/NET/scovo#Item
+http://www.opengis.net/ont/sf#Point
+http://www.w3.org/2003/01/geo/wgs84_pos#Point
+http://datos.localidata.com/def/CNAE#Seccion
+http://datos.localidata.com/def/CNAE#Division
+http://datos.localidata.com/def/City#ActividadEconomica
+http://datos.localidata.com/def/City#Distrito
+http://datos.localidata.com/def/City#Barrio
+http://datos.localidata.com/def/City#Portal
+http://www.w3.org/2006/vcard/ns#Work
+http://datos.localidata.com/def/City#AgrupacionComercial
+http://datos.localidata.com/def/City#PC
+http://datos.localidata.com/def/City#LocalComercialEnPC
+http://datos.localidata.com/def/City#CC
+http://datos.localidata.com/def/City#LocalComercialEnCC
+http://datos.localidata.com/def/City#MM
+http://datos.localidata.com/def/City#LocalComercialEnMM
+http://purl.org/linked-data/sdmx#Concept
+http://purl.org/linked-data/cube#DimensionProperty
+http://datos.localidata.com/def/City#SeccionCensal
+http://purl.org/linked-data/cube#CodedProperty
+http://purl.org/linked-data/cube#MeasureProperty
+http://purl.org/linked-data/cube#DataStructureDefinition
+http://energy.linkeddata.es/PQube.owl#PropertySummaryValue
+http://energy.linkeddata.es/PQube.owl#ObservationValue
+http://energy.linkeddata.es/PQube.owl#PQubePropertySummary
+http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval
+http://energy.linkeddata.es/PQube.owl#PQubeProperty
+http://www.w3.org/2000/01/rdf-schema#Resource
+http://energy.linkeddata.es/PQube.owl#DailyObservationCollection
+http://energy.linkeddata.es/PQube.owl#PQubeDevice
+http://sandbox.linkeddata.es/Residuos/resource/Anyo
+http://sandbox.linkeddata.es/Residuos/resource/Municipio
+http://sandbox.linkeddata.es/Residuos/resource/RangoEdad
+http://www.w3.org/2004/02/skos/core#ConceptScheme
+http://purl.org/linked-data/sdmx#CodeList
+http://datos.localidata.com/def/CityStats/code#Nacionalidad
+http://www.w3.org/2004/02/skos/core#Concept
+http://purl.org/linked-data/cube#DataSet
+http://purl.org/linked-data/cube#Observation
+http://www.w3.org/ns/prov#Person
+http://www.w3.org/ns/prov#Agent
+http://www.w3.org/ns/prov#Entity
+http://www.w3.org/ns/prov#Activity
+http://www.w3.org/ns/prov#Association
+http://www.w3.org/ns/prov#Organization
+http://GP-onto.fi.upm.es/exercise2#PhysicalPoint
+http://GP-onto.fi.upm.es/exercise2#Stage
+http://GP-onto.fi.upm.es/exercise2#Bicycle
+http://GP-onto.fi.upm.es/exercise2#PostalAddress
+http://GP-onto.fi.upm.es/exercise2#Road
+http://GP-onto.fi.upm.es/exercise2#Cathedral
+http://GP-onto.fi.upm.es/exercise2#City
+http://GP-onto.fi.upm.es/exercise2#Route
+http://GP-onto.fi.upm.es/exercise2#Stretch
+http://GP-onto.fi.upm.es/exercise2#Location
+http://GP-onto.fi.upm.es/exercise2#Palace
+http://GP-onto.fi.upm.es/exercise2#Town
+http://GP-onto.fi.upm.es/exercise2#RestaurationService
+http://datos.localidata.com/def/City#CodigoIAE
+http://datos.localidata.com/def/City#DivisionTerritorial
+http://datos.localidata.com/def/City#Sección
+http://datos.localidata.com/def/City#Provincia
+http://datos.localidata.com/def/Catastro#DireccionFinca
+http://data.semanticweb.org/ns/swc/ontology#Chair
+http://xmlns.com/foaf/0.1/Person
+http://xmlns.com/foaf/0.1/Organization
+http://swrc.ontoware.org/ontology#InProceedings
+http://data-gov.tw.rpi.edu/2009/data-gov-twc.rdf#Dataset
+http://data.semanticweb.org/ns/swc/ontology#WorkshopEvent
+http://data.semanticweb.org/ns/swc/ontology#MeetingRoomPlace
+http://data.semanticweb.org/ns/swc/ontology#ProgrammeCommitteeMember
+http://data.semanticweb.org/ns/swc/ontology#TutorialEvent
+http://data.semanticweb.org/ns/swc/ontology#Mediator
+http://data.semanticweb.org/ns/swc/ontology#TalkEvent
+http://data.semanticweb.org/ns/swc/ontology#SpecialEvent
+http://data.semanticweb.org/ns/swc/ontology#TrackEvent
+http://data.semanticweb.org/ns/swc/ontology#PanelEvent
+http://data.semanticweb.org/ns/swc/ontology#BreakEvent
+
+2. Get all the subclasses of the class Establishment
+
+SELECT distinct ?subclasses WHERE {?subclasses rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Establishment>} LIMIT 100
+
+
+------------Solution
+
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+
+3. Get all instances of the class City
+
+SELECT distinct ?Ciudades WHERE {?Ciudades rdf:type <http://GP-onto.fi.upm.es/exercise2#City>} LIMIT 100
+
+------------Solution
+
+
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+http://GP-onto.fi.upm.es/exercise2#Madrid
+
+
+4. Get the number of inhabitants of Santiago de Compostela
+
+SELECT ?Habitants WHERE {<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?Habitants.}
+LIMIT 100
+
+------------Solution
+
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+
+5. Get the number of inhabitants of Santiago de Compostela and Arzua
+
+SELECT ?Habitants WHERE {{<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?Habitants.} 
+UNION {<http://GP-onto.fi.upm.es/exercise2#Arzua> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?Habitants.}} LIMIT 100
+
+------------Solution
+
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer
+
+
+6. Get all places, together with the number of inhabitants, ordered by the place name (ascending)
+
+SELECT distinct ?x ?value WHERE {?value <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?x} 
+ORDER BY ?value ASC(?value)
+LIMIT 100
+
+
+------------Solution
+
+" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer> 	http://GP-onto.fi.upm.es/exercise2#Arzua
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer> 	http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+
+
+7. Get all instances of Locality together with their number of inhabitants (if this information exists)
+
+
+
+8. Get all places with more than 200.000 inhabitants
+
+
+
+9. Get postal address data for Pazo_Breogan (street, number, locality, province)
+
+SELECT distinct ?Pazo ?Breogan WHERE {<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan> ?Pazo  ?Breogan } 
+LIMIT 100
+
+------------Solution
+
+http://www.w3.org/1999/02/22-rdf-syntax-ns#type 	http://GP-onto.fi.upm.es/exercise2#Palace
+http://www.w3.org/2000/01/rdf-schema#label 	Pazo_Breogan
+http://GP-onto.fi.upm.es/exercise2#hasAddress 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_85
+http://GP-onto.fi.upm.es/exercise2#isLocatedAtPoint 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_86
+http://GP-onto.fi.upm.es/exercise2#providesService 	http://GP-onto.fi.upm.es/exercise2#GP_Santiago_Instance_83
+http://GP-onto.fi.upm.es/exercise2#isPlacedIn 	http://GP-onto.fi.upm.es/exercise2#Arzua
+
+
+10. Get all subclasses of class Location
+
+SELECT distinct ?Location WHERE {?Location rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Location>.} LIMIT 100
+
+------------Solution
+
+http://GP-onto.fi.upm.es/exercise2#LocationOfInteres
+
+11. Get all instances of class Locality
+
+SELECT distinct ?Locality WHERE {?Locality rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Locality>} LIMIT 100
+
+------------Solution
+
+http://GP-onto.fi.upm.es/exercise2#City
+http://GP-onto.fi.upm.es/exercise2#Town
+http://GP-onto.fi.upm.es/exercise2#Village
+
+12. Describe the resource with rdfs:label "Madrid”
+
+SELECT distinct ?resource WHERE {?resource rdfs:label "Madrid"} LIMIT 100
+
+------------Solution
+
+http://GP-onto.fi.upm.es/exercise2#Madrid
+http://bnb.data.bl.uk/id/concept/place/lcsh/Madrid
+
+13. Construct a graph that relates directly all touristic places with their provinces, using a new property called ”isIn”
+
+CONSTRUCT {?sitio <http://GP-onto.fi.upm.es/exercise2#isIn> ?provincia}
+WHERE {?sitio <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> ?localidad.
+    ?localidad <http://GP-onto.fi.upm.es/exercise2#inProvince> ?provincia.}
+
+14. Check whether there is any instance of Town
+
+ASK {?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://GP-onto.fi.upm.es/exercise2#Town>}
+

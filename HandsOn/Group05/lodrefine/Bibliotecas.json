@@ -1,0 +1,470 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column to PK",
+    "oldColumnName": "Column",
+    "newColumnName": "PK"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 2 to NOMBRE",
+    "oldColumnName": "Column 2",
+    "newColumnName": "NOMBRE"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 3 to DESCRIPCION-ENTIDAD",
+    "oldColumnName": "Column 3",
+    "newColumnName": "DESCRIPCION-ENTIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 4 to HORARIO",
+    "oldColumnName": "Column 4",
+    "newColumnName": "HORARIO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 5 to EQUIPAMIENTO",
+    "oldColumnName": "Column 5",
+    "newColumnName": "EQUIPAMIENTO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 6 to TRANSPORTE",
+    "oldColumnName": "Column 6",
+    "newColumnName": "TRANSPORTE"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 7 to DESCRIPCION",
+    "oldColumnName": "Column 7",
+    "newColumnName": "DESCRIPCION"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 8 to ACCESIBILIDAD",
+    "oldColumnName": "Column 8",
+    "newColumnName": "ACCESIBILIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 9 to CONTENT-URL",
+    "oldColumnName": "Column 9",
+    "newColumnName": "CONTENT-URL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 10 to NOMBRE-VIA",
+    "oldColumnName": "Column 10",
+    "newColumnName": "NOMBRE-VIA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 11 to CLASE-VIAL",
+    "oldColumnName": "Column 11",
+    "newColumnName": "CLASE-VIAL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 12 to TIPO-NUM",
+    "oldColumnName": "Column 12",
+    "newColumnName": "TIPO-NUM"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 13 to NUM",
+    "oldColumnName": "Column 13",
+    "newColumnName": "NUM"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 14",
+    "columnName": "Column 14"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 15",
+    "columnName": "Column 15"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 16",
+    "columnName": "Column 16"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 17",
+    "columnName": "Column 17"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 18 to LOCALIDAD",
+    "oldColumnName": "Column 18",
+    "newColumnName": "LOCALIDAD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 19 to PROVINCIA",
+    "oldColumnName": "Column 19",
+    "newColumnName": "PROVINCIA"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 20 to CODIGO-POSTAL",
+    "oldColumnName": "Column 20",
+    "newColumnName": "CODIGO-POSTAL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 21 to BARRIO",
+    "oldColumnName": "Column 21",
+    "newColumnName": "BARRIO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 22 to DISTRITO",
+    "oldColumnName": "Column 22",
+    "newColumnName": "DISTRITO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 23 to COORDENADA-X",
+    "oldColumnName": "Column 23",
+    "newColumnName": "COORDENADA-X"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 24 to COORDENADA-Y",
+    "oldColumnName": "Column 24",
+    "newColumnName": "COORDENADA-Y"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 25 to LATITUD",
+    "oldColumnName": "Column 25",
+    "newColumnName": "LATITUD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 26 to LONGITUD",
+    "oldColumnName": "Column 26",
+    "newColumnName": "LONGITUD"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 27 to TELEFONO",
+    "oldColumnName": "Column 27",
+    "newColumnName": "TELEFONO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 28",
+    "columnName": "Column 28"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 29 to EMAIL",
+    "oldColumnName": "Column 29",
+    "newColumnName": "EMAIL"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Column 30 to TIPO",
+    "oldColumnName": "Column 30",
+    "newColumnName": "TIPO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 31",
+    "columnName": "Column 31"
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Bibliotecas/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#name",
+              "curie": "group5:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#descripcion",
+              "curie": "group5:descripcion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DESCRIPCION"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#nombreCalle",
+              "curie": "group5:nombreCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#numeroCalle",
+              "curie": "group5:numeroCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#localidad",
+              "curie": "group5:localidad",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#barrio",
+              "curie": "group5:barrio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#codigoPostal",
+              "curie": "group5:codigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#email",
+              "curie": "group5:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#telefono",
+              "curie": "group5:telefono",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://madridOcio.linkeddata.com/ontologyGroup5/resources/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "group5",
+          "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Bibliotecas/\"+value",
+          "isRowNumberCell": false,
+          "columnName": "PK",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#name",
+              "curie": "group5:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#descripcion",
+              "curie": "group5:descripcion",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DESCRIPCION"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#nombreCalle",
+              "curie": "group5:nombreCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NOMBRE-VIA"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#numeroCalle",
+              "curie": "group5:numeroCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "NUM"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#localidad",
+              "curie": "group5:localidad",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "LOCALIDAD"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#barrio",
+              "curie": "group5:barrio",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#codigoPostal",
+              "curie": "group5:codigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO-POSTAL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#email",
+              "curie": "group5:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "EMAIL"
+              }
+            },
+            {
+              "uri": "http://madridOcio.linkeddata.com/ontologyGroup5#telefono",
+              "curie": "group5:telefono",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "TELEFONO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
