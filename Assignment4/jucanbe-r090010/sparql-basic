@@ -1,14 +1,12 @@
 -Get all the classes
 
-SELECT distinct ?class 
-WHERE {
+SELECT distinct ?class WHERE {
 	?x a ?class
 }
 
 -Get all the subclasses of the class Establishment
 
-select distinct ?subclase
-where {
+SELECT distinct ?subclase WHERE {
 	?subclase 
 	<http://www.w3.org/2000/01/rdf-schema#subClassOf> 
 	<http://GP-onto.fi.upm.es/exercise2#Establishment>
@@ -16,8 +14,7 @@ where {
 
 -Get all instances of the class City
 
-select ?ciudades
-where {
+SELECT ?ciudades WHERE {
 	?ciudades
 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 
 	<http://GP-onto.fi.upm.es/exercise2#City>
@@ -25,84 +22,77 @@ where {
 
 -Get the number of inhabitants of Santiago de Compostela
 
-select distinct ?habitantes
-where {
+SELECT distinct ?habitantes WHERE {
 	<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela>
 	<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>
-    ?habitantes
+	?habitantes
 } LIMIT 100
 
 -Get the number of inhabitants of Santiago de Compostela and Arzua
 
-select distinct ?habitantesSantiago ?habitantesArzua
-where {
+SELECT distinct ?habitantesSantiago ?habitantesArzua WHERE {
 	<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela>
 	<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>
-    ?habitantesSantiago.
+    	?habitantesSantiago.
 	<http://GP-onto.fi.upm.es/exercise2#Arzua>
 	<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>
-    ?habitantesArzua
+    	?habitantesArzua
 } LIMIT 100
 
 -Get all places, together with the number of inhabitants, ordered by the place name (ascending)
 
-select distinct ?lugar ?habitantes
-where {
-    ?lugar
+SELECT distinct ?lugar ?habitantes WHERE {
+    	?lugar
 	<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>
-    ?habitantes
+    	?habitantes
 } ORDER BY ASC(?lugar) LIMIT 100
 
 -Get all instances of Locality together with their number of inhabitants (if this information exists)
 
-select distinct ?localidad ?habitantes
-where {
-  ?lugar
-  <http://www.w3.org/2000/01/rdf-schema#subClassOf>
-   <http://GP-onto.fi.upm.es/exercise2#Locality> .
-  ?localidad
-  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 
-  ?lugar
-  OPTIONAL{
-    ?localidad
-   <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>
-    ?habitantes
-}
+SELECT distinct ?localidad ?habitantes WHERE {
+  	?lugar
+ 	<http://www.w3.org/2000/01/rdf-schema#subClassOf>
+  	<http://GP-onto.fi.upm.es/exercise2#Locality> .
+  	?localidad
+ 	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 
+ 	?lugar
+ 	OPTIONAL{
+		?localidad
+   		<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>
+   	 	?habitantes
+	}
 } LIMIT 100
 
 -Get all places with more than 200.000 inhabitants
 
-select distinct ?lugar ?habitantes
-where {
-    ?lugar
+SELECT distinct ?lugar ?habitantes WHERE {
+  	?lugar
 	<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>
-    ?habitantes
+	?habitantes
 	FILTER (xsd:integer(?habitantes) > 200000)
 } ORDER BY ASC(?lugar) LIMIT 100
 
 -Get postal address data for Pazo_Breogan (street, number, locality, province)
 
-select ?calle ?numero ?localidad ?provincia
-where {
+SELECT ?calle ?numero ?localidad ?provincia WHERE {
 	<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan>
 	<http://GP-onto.fi.upm.es/exercise2#hasAddress>
-    ?direccion;
+  	?direccion;
 	<http://GP-onto.fi.upm.es/exercise2#isPlacedIn>
-    ?localidad.
-    ?localidad
+  	?localidad.
+	?localidad
 	<http://GP-onto.fi.upm.es/exercise2#inProvince>
-    ?provincia.
-    ?direccion
+ 	?provincia.
+ 	?direccion
 	<http://GP-onto.fi.upm.es/exercise2#hasStreet>
-    ?calle;
+ 	?calle;
 	<http://GP-onto.fi.upm.es/exercise2#hasNumber>
-    ?numero
+   	?numero
 }LIMIT 100
 
 -Get all subclasses of class Location
 
-select ?subclases
-where{
+SELECT ?subclases WHERE {
 	?subclases
 	<http://www.w3.org/2000/01/rdf-schema#subClassOf> 
 	<http://GP-onto.fi.upm.es/exercise2#Location>
@@ -110,20 +100,18 @@ where{
 
 -Get all instances of class Locality
 
-select ?instancias
-where{
+SELECT ?instancias WHERE {
 	?subclases 
-    <http://www.w3.org/2000/01/rdf-schema#subClassOf>  
-    <http://GP-onto.fi.upm.es/exercise2#Locality> .
+    	<http://www.w3.org/2000/01/rdf-schema#subClassOf>  
+    	<http://GP-onto.fi.upm.es/exercise2#Locality> .
 	?instancias 
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 
-    ?subclases
+    	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 
+    	?subclases
 } LIMIT 100
 
 -Describe the resource with rdfs:label "Madrid”
 
-DESCRIBE ?resource
-where { 
+DESCRIBE ?resource WHERE { 
 	?resource 
 	rdfs:label "Madrid" 
 }
@@ -136,7 +124,7 @@ CONSTRUCT {
 	?tipo <http://www.w3.org/2000/01/rdf-schema#subClassOf>
 	<http://GP-onto.fi.upm.es/exercise2#TouristicLocation> .
 	?lugar_turistico 
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 
+    	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 
 	?tipo .
 	?lugar_turistico 
 	<http://GP-onto.fi.upm.es/exercise2#isPlacedIn> 
@@ -151,7 +139,6 @@ CONSTRUCT {
 ASK WHERE
 {
 	?Instance
-    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 
+    	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 
 	<http://GP-onto.fi.upm.es/exercise2#Town>
 }
-
