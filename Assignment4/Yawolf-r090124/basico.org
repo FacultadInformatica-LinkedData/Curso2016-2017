@@ -1,0 +1,223 @@
+#+AUTHOR:Santiago Cervantes
+#+TITLE:Conslutas SPARQL
+
+
+* Nivel basico
+
+** Obtener todas las clases:
+
+#+BEGIN_SRC sparql
+select distinct ?Class
+where {
+    ?Class rdf:type rdfs:Class.
+}
+#+END_SRC
+
+** Subclases de la clase Establishment
+
+#+BEGIN_SRC sparql
+SELECT distinct ?subClass
+WHERE {
+   ?subClass rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Establishment>
+}
+
+#+END_SRC
+
+** Todas las instancias de la clase Ciudad
+
+#+BEGIN_SRC sparql
+SELECT distinct ?city
+WHERE {
+   ?city rdf:type <http://GP-onto.fi.upm.es/exercise2#City>
+}
+#+END_SRC
+
+** Numero de Habitantes de Santiago de Compostela
+
+#+BEGIN_SRC sparql
+PREFIX pre:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT distinct ?in
+WHERE {
+   pre:Santiago_de_Compostela pre:hasInhabitantNumber ?in
+}
+#+END_SRC
+
+** Numero de habitantes en SAntiago de Compostela y Arzua
+
+#+BEGIN_SRC sparql
+PREFIX pre:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT distinct ?in
+WHERE { 
+  {
+   pre:Santiago_de_Compostela pre:hasInhabitantNumber ?in.
+  }
+UNION {
+   pre:Arzua pre:hasInhabitantNumber ?in.
+  }
+}
+#+END_SRC
+
+** Lugares con nombre y ordenados por poblacion ascendente
+
+#+BEGIN_SRC sparql
+PREFIX pre:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT distinct ?place ?in
+WHERE {
+    ?place pre:hasInhabitantNumber ?in 
+}
+ORDER BY ?place ASC(?in)
+#+END_SRC
+
+** Ciudades con mas de 200.000 habitantes
+
+#+BEGIN_SRC sparql
+PREFIX pre:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT distinct ?place ?in
+WHERE {
+    ?place pre:hasInhabitantNumber ?in.
+    FILTER (xsd:integer(?in)>200000) 
+}
+#+END_SRC
+
+** Direccion del Pazo Beogan
+#+BEGIN_SRC sparql
+PREFIX pre:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?str ?num ?place
+WHERE {
+    pre:Pazo_Breogan pre:hasAddress ?add.
+    pre:Pazo_Breogan pre:isPlacedIn ?place_.
+    ?place_ rdfs:label ?place.
+    ?add pre:hasStreet ?str.
+    ?add pre:hasNumber ?num.
+ }
+#+END_SRC
+
+** Subclases de la clase Location
+
+#+BEGIN_SRC sparql
+PREFIX pre:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?sc
+WHERE {
+ ?sc rdfs:subClassOf pre:Location
+}
+#+END_SRC
+
+** Subclases de la clase Locality
+
+#+BEGIN_SRC sparql
+PREFIX pre:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?sc
+WHERE {
+ ?sc rdfs:subClassOf pre:Locality
+}
+#+END_SRC
+
+** Describir el recurso con rdfs:label Madrid
+
+#+BEGIN_SRC sparql
+PREFIX pre:<http://GP-onto.fi.upm.es/exercise2#>
+SELECT ?res
+WHERE {
+ ?res rdfs:label "Madrid"
+}
+#+END_SRC
+
+** Crear grafo Lugar -> Provincia
+
+#+BEGIN_SRC sparql
+PREFIX pre:<http://GP-onto.fi.upm.es/exercise2#>
+CONSTRUCT {
+    ?place pre:isIN ?prov
+}
+WHERE {
+    ?place pre:isPlacedIn ?loc.
+    ?loc pre:inProvince ?prov
+}
+#+END_SRC
+Dudo del resultado...
+
+** Comprobar si hay alguna instancia de Town
+#+BEGIN_SRC sparql
+PREFIX pre:<http://GP-onto.fi.upm.es/exercise2#>
+ASK {
+    ?x a pre:Town
+}
+#+END_SRC
+
+* Nivel Avanzado
+
+** Todas las propiedades aplicables a Politician
+
+#+BEGIN_SRC sparql
+SELECT DISTINCT ?prop
+WHERE {
+    ?res a <http://dbpedia.org/ontology/Politician>.
+    ?res ?propNS ?value.
+    ?propNS rdfs:label ?prop.
+}
+#+END_SRC
+
+** Todas las propiedades de Politician exceptuando rdf:type
+
+#+BEGIN_SRC sparql
+SELECT DISTINCT ?prop
+WHERE {
+    ?res a <http://dbpedia.org/ontology/Politician>.
+    ?res ?propNS ?value.
+    ?propNS rdfs:label ?prop.
+    FILTER (?prop != rdf:type).
+}
+#+END_SRC
+
+** Cantidad de propiedades para Politician exceptuando rdf:type
+
+#+BEGIN_SRC sparql
+SELECT COUNT(DISTINCT ?prop)
+WHERE {
+    ?res a <http://dbpedia.org/ontology/Politician>.
+    ?res ?propNS ?value.
+    ?propNS rdfs:label ?prop.
+    FILTER (?prop != rdf:type).
+}
+#+END_SRC
+
+** Cantidad de Valores que toma cada propiedad exceptuando rdf:type
+
+#+BEGIN_SRC sparql
+SELECT ?prop COUNT(DISTINCT ?value)
+WHERE {
+    ?res a <http://dbpedia.org/ontology/Politician>.
+    ?res ?propNS ?value.
+    ?propNS rdfs:label ?prop.
+    FILTER (?prop != rdf:type).
+}
+#+END_SRC
+
+** Media de los valores distintos
+#+BEGIN_SRC sparql
+SELECT avg(?value_) as ?mean
+WHERE {
+    SELECT ?prop COUNT(DISTINCT ?value) as ?value_
+  WHERE {
+      ?res a <http://dbpedia.org/ontology/Politician>.
+      ?res ?propNS ?value.
+      ?propNS rdfs:label ?prop.
+      FILTER (?prop != rdf:type).
+  }
+}
+#+END_SRC
+
+** Ordenado de Menor a mayor
+
+#+BEGIN_SRC sparql
+SELECT ?prop COUNT(DISTINCT ?value)
+WHERE {
+    ?res a <http://dbpedia.org/ontology/Politician>.
+    ?res ?propNS ?value.
+    ?propNS rdfs:label ?prop.
+    FILTER (?prop != rdf:type).
+}
+ORDER BY ?prop DESC(?value)
+#+END_SRC
+
+Esto no me cuadra.
