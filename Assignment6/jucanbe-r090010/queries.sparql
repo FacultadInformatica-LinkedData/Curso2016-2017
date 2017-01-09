@@ -1,0 +1,30 @@
+PREFIX voc: <http://example.org/myVocabulary#>
+PREFIX cub: <http://purl.org/linked-data/cube#>
+
+- How many accidents were there in Madrid in 2013?
+
+select (sum(?accidents)AS ?numberOfAccidents) 
+where {
+	?obs a cub:Observation ;
+	voc:numberOfAccidents ?accidents.
+}
+
+- Give me the number of accidents in Usera for each type of accident
+
+select ?type ?accidents
+where {
+	?obs a cub:Observation ;
+	voc:numberOfAccidents ?accidents;
+	voc:relatedDistrict "USERA";
+	voc:hasAccidentType ?type.
+}
+
+- Give me the number of multiple collisions for each district
+
+select ?district ?number 
+where {
+  ?obs a cub:Observation ;
+  voc:relatedDistrict ?district;
+  voc:hasAccidentType voc:MultipleCollision;
+  voc:numberOfAccidents ?number.
+}
