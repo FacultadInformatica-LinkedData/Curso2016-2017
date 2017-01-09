@@ -1,0 +1,31 @@
+#+TITLE:Assignment 6
+#+AUTHOR: Santiago Cervantes
+
+
+* Accidentes
+
+** Accidentes en Madrid
+
+#+BEGIN_SRC sparql
+PREFIX prop: <http://example.org/myVocabulary#>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+
+SELECT COUNT(?Acc)
+WHERE {
+    ?x prop:numberOfAccidents ?Acc.
+}
+#+END_SRC
+
+** Accidentes en Usera por cada tipo
+#+BEGIN_SRC sparql
+PREFIX prop: <http://example.org/myVocabulary#>
+PREFIX cube: <http://purl.org/linked-data/cube#>
+
+SELECT ?Type ?num 
+WHERE {
+        ?obs a cube:Observation;
+  	prop:relatedDistrict "USERA";
+  	prop:hasAccidentType ?Type;
+	prop:numberOfAccidents ?num.
+}
+#+END_SRC

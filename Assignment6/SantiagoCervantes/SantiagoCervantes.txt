@@ -1,0 +1,51 @@
+                          ____________________
+
+                              ASSIGNMENT 6
+
+                           Santiago Cervantes
+                          ____________________
+
+
+Table of Contents
+_________________
+
+1 Accidentes
+.. 1.1 Accidentes en Madrid
+.. 1.2 Accidentes en Usera por cada tipo
+
+
+
+
+
+1 Accidentes
+============
+
+1.1 Accidentes en Madrid
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+  ,----
+  | PREFIX prop: <http://example.org/myVocabulary#>
+  | PREFIX cube: <http://purl.org/linked-data/cube#>
+  | 
+  | SELECT COUNT(?Acc)
+  | WHERE {
+  |     ?x prop:numberOfAccidents ?Acc.
+  | }
+  `----
+
+
+1.2 Accidentes en Usera por cada tipo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  ,----
+  | PREFIX prop: <http://example.org/myVocabulary#>
+  | PREFIX cube: <http://purl.org/linked-data/cube#>
+  | 
+  | SELECT ?Type ?num 
+  | WHERE {
+  |         ?obs a cube:Observation;
+  |         prop:relatedDistrict "USERA";
+  |         prop:hasAccidentType ?Type;
+  |         prop:numberOfAccidents ?num.
+  | }
+  `----
