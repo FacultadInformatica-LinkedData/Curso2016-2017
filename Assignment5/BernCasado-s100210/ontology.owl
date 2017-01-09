@@ -1,0 +1,414 @@
+@prefix : <http://www.linkedData_Assigment5.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.linkedData_Assigment5.com/> a owl:Ontology ;
+	rdfs:comment """Ontología de la base de datos World de MySQL
+
+Realizada por Bernard Casado Fernández"""@es .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#esHabladoEn
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#esHabladoEn> a owl:ObjectProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#CountryLanguage> ;
+	rdfs:range <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:comment "Propiedad que relaciona una lengua (recurso CountryLanguage) con el pais/es (recurso Country) donde es hablada"@es .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#pertainTo
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#pertainTo> a owl:ObjectProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#City> ;
+	rdfs:range <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasCapital
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasCapital> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:int .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasCode
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasCode> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:string .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasCode2
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasCode2> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:string .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasCountryCode
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasCountryCode> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#City> ;
+	rdfs:range xsd:string .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasDistrict
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasDistrict> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#City> ;
+	rdfs:range xsd:string .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasGNP
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasGNP> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:float .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasGNPOld
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasGNPOld> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:float .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasGovernmentForm
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasGovernmentForm> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:string .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasHeadOfState
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasHeadOfState> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:string .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasID
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasID> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#City> ;
+	rdfs:range xsd:int .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasIndepYear
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasIndepYear> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:int .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasLanguageName
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasLanguageName> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#CountryLanguage> ;
+	rdfs:range xsd:string .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasLifeExpectancy
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasLifeExpectancy> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:float .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasLocalName
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasLocalName> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:string .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasName
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasName> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#City> , <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:string .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasPercentageOfUse
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasPercentageOfUse> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#CountryLanguage> ;
+	rdfs:range xsd:float .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasPopulationSize
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasPopulationSize> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:int .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#hasSurfaceArea
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#hasSurfaceArea> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:float .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#isOfficial
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#isOfficial> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#CountryLanguage> ;
+	rdfs:range _:genid1 .
+
+_:genid1 a rdfs:Datatype ;
+	owl:oneOf _:genid3 .
+
+_:genid3 a rdf:List ;
+	rdf:first "F"^^xsd:string ;
+	rdf:rest _:genid2 .
+
+_:genid2 a rdf:List ;
+	rdf:first "T"^^xsd:string ;
+	rdf:rest rdf:nil .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#pertainToContinent
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#pertainToContinent> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range _:genid4 .
+
+_:genid4 a rdfs:Datatype ;
+	owl:oneOf _:genid11 .
+
+_:genid11 a rdf:List ;
+	rdf:first "Africa"^^xsd:string ;
+	rdf:rest _:genid10 .
+
+_:genid10 a rdf:List ;
+	rdf:first "Antarctica"^^xsd:string ;
+	rdf:rest _:genid9 .
+
+_:genid9 a rdf:List ;
+	rdf:first "Asia"^^xsd:string ;
+	rdf:rest _:genid8 .
+
+_:genid8 a rdf:List ;
+	rdf:first "Europe"^^xsd:string ;
+	rdf:rest _:genid7 .
+
+_:genid7 a rdf:List ;
+	rdf:first "North America"^^xsd:string ;
+	rdf:rest _:genid6 .
+
+_:genid6 a rdf:List ;
+	rdf:first "Oceania"^^xsd:string ;
+	rdf:rest _:genid5 .
+
+_:genid5 a rdf:List ;
+	rdf:first "South America"^^xsd:string ;
+	rdf:rest rdf:nil .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#pertainToRegion
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#pertainToRegion> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> ;
+	rdfs:range xsd:string .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#City
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#City> a owl:Class ;
+	rdfs:subClassOf _:genid12 .
+
+_:genid12 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#pertainTo> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#City> rdfs:subClassOf _:genid13 .
+
+_:genid13 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasCountryCode> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#City> rdfs:subClassOf _:genid14 .
+
+_:genid14 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasDistrict> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#City> rdfs:subClassOf _:genid15 .
+
+_:genid15 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasID> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:int .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#City> rdfs:subClassOf _:genid16 .
+
+_:genid16 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasName> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#City> rdfs:subClassOf _:genid17 .
+
+_:genid17 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasPopulationSize> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:int .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#City> rdfs:comment "Recurso que representa la entidad City"@es .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#Country
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> a owl:Class ;
+	rdfs:subClassOf _:genid18 .
+
+_:genid18 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasCapital> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:int .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid19 .
+
+_:genid19 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasCode> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid20 .
+
+_:genid20 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasCode2> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid21 .
+
+_:genid21 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasGNP> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:float .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid22 .
+
+_:genid22 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasGNPOld> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:float .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid23 .
+
+_:genid23 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasGovernmentForm> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid24 .
+
+_:genid24 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasHeadOfState> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid25 .
+
+_:genid25 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasIndepYear> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:int .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid26 .
+
+_:genid26 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasLifeExpectancy> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:float .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid27 .
+
+_:genid27 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasLocalName> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid28 .
+
+_:genid28 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasName> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid29 .
+
+_:genid29 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasPopulationSize> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:int .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid30 .
+
+_:genid30 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasSurfaceArea> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:float .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid31 .
+
+_:genid31 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#pertainToContinent> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:subClassOf _:genid32 .
+
+_:genid32 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#pertainToRegion> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#Country> rdfs:comment "Recurso que representa la entidad Country"@es .
+# 
+# http://www.linkedData_Assigment5.com/ontology/myWorld#CountryLanguage
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#CountryLanguage> a owl:Class ;
+	rdfs:subClassOf _:genid33 .
+
+_:genid33 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#esHabladoEn> ;
+	owl:someValuesFrom <http://www.linkedData_Assigment5.com/ontology/myWorld#Country> .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#CountryLanguage> rdfs:subClassOf _:genid34 .
+
+_:genid34 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasCountryCode> ;
+	owl:someValuesFrom xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#CountryLanguage> rdfs:subClassOf _:genid35 .
+
+_:genid35 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasPercentageOfUse> ;
+	owl:someValuesFrom xsd:float .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#CountryLanguage> rdfs:subClassOf _:genid36 .
+
+_:genid36 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#hasLanguageName> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#CountryLanguage> rdfs:subClassOf _:genid37 .
+
+_:genid37 a owl:Restriction ;
+	owl:onProperty <http://www.linkedData_Assigment5.com/ontology/myWorld#isOfficial> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://www.linkedData_Assigment5.com/ontology/myWorld#CountryLanguage> rdfs:comment "Recurso que representa la entidad CountryLanguage"@es .
+# 
+# Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

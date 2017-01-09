@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Grupo90"/>
+		<title> Web Semantica and Linked Data: Análisis del Data Set </title>
+	</head>
+	<body>
+		<h2>Análisis de la fuente y licencia de los datos:</h2>
+		
+			<li> El data set recoge información sobre los semáforos con cámara para la sanción de conductores cuando cruzan en rojo.</li>
+			<li> Las columnas se organizan en: IdElem, Nombre, Activo, Barrio, Icruce, UTM_x , UTM_y y Comunidad.</li>
+			<li> En total hay 44 entradas en el Data Set. </li>	
+			<br>
+			
+
+				 <table>
+				 <TABLE BORDER="3" CELLSPACING="3" WIDTH="70%"> 
+ 					<tr><TH BGCOLOR="#CEE3F6">Nombre</th><TH BGCOLOR="#CEE3F6">Tipo</th><TH BGCOLOR="#CEE3F6">Información</th>
+ 					</tr>
+ 					<tr> <td>IdElem</td><td>Entero</td><td>Identificación única del elemento en el Ayuntamiento de Madrid</td></tr>
+ 					<tr> <td>Nombre</td><td>String</td><td>Nombre del equipo</td></tr>
+ 					<tr> <td>Activo</td><td>Entero</td><td>Indicador del estado del equipo: 1 = Activo y sancionando. 0 = Previsto o en pruebas pero sin sancionar.</td></tr>
+ 					<tr> <td>Barrio</td><td>String</td><td>Número del distrito donde está ubicado el equipo</td></tr>
+ 					<tr> <td>UTM_x</td><td>Double</td><td>Coordenada UTM X de la ubicación del equipo</td></tr>
+ 					<tr> <td>UTM_y</td><td>Double</td><td>Coordenada UTM Y de la ubicación del equipo</td></tr>
+ 					<tr> <td>Comunidad</td><td>String</td><td>Comunidad autonómica donde está ubicado el equipo</td></tr>
+ 				</table>
+
+ 		<h2>Análisis de la licencia sobre los datos:</h2>
+
+ 	 	<body>
+ 	 		Las condiciones generales permiten la reutilización de los documentos para fines comerciales y no comerciales. Se entiende por reutilización el uso de documentos que obran en poder del Ayuntamiento de Madrid, siempre que dicho uso no constituya una actividad administrativa pública.<br> 
+
+ 	 		Esta licencia nos permite:<br> 
+ 	 		
+ 	 		<li>Copiar, publicar, distribuir y transmitir la informacion.</li> 
+ 	 		<li>Adaptar la información.</li> 
+ 	 		<li>Aprovechar comercialmente o no la información.</li> 
+ 	 		
+ 	 		Se debe:<br> 
+
+ 	 		<li>Indicar la fuente de la información.</li> 
+ 	 
+ 	
+ 	 		</body>
+		<h2>Análisis de la estrategia de nombrado:</h2>
+		
+		<body>
+			El nivel superior en nuestra estretegia de nombrado de recursos es: www.semanticweb.org/g90/ontology<BR> <br>
+
+<table>
+ <TABLE BORDER="3" CELLSPACING="3" WIDTH="70%"> 
+<tr> <TH BGCOLOR="#CEE3F6">Entidad</th><TH BGCOLOR="#CEE3F6">URI</th></tr>
+<tr> <th>Camara</th><th>www.semanticweb.org/g90/ontology#Camara</th></tr>
+</table>
+<br>
+<br>
+<table>
+ <TABLE BORDER="3" CELLSPACING="3" WIDTH="70%"> 
+<tr> <TH BGCOLOR="#CEE3F6">Data Properties</th><TH BGCOLOR="#CEE3F6">URI</th></tr>
+<tr> <th>IdElem</th><th>www.semanticweb.org/g90/ontology#idElem</th></tr>
+<tr> <th>Nombre</th><th>www.semanticweb.org/g90/ontology#nomEquipo</th></tr>
+<tr> <th>Activo</th><th>www.semanticweb.org/g90/ontology#activo</th></tr>
+<tr> <th>Barrio</th><th>www.semanticweb.org/g90/ontology#barrio</th></tr>
+<tr> <th>UTM_x</th><th>www.semanticweb.org/g90/ontology#utm_x</th></tr>
+<tr> <th>UTM_y</th><th>www.semanticweb.org/g90/ontology#utm_y</th></tr>
+<tr> <th>Comunidad</th><th>www.semanticweb.org/g90/ontology#comunidad</th></tr>
+</table>
+		</body>
+
+	</body>
+</HTML>

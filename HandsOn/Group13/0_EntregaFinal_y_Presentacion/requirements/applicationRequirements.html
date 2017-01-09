@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<html>
+<head>
+<title>Application Requirements</title>
+</head>
+<body style="text-align: justify;">
+<h2>Requisitos de la aplicación</h2>
+<h3>Descripción General</h3>
+<p>&nbsp&nbsp&nbspLa aplicación utilizará los datos presentes en los datasets recogidos, así como también los datos de los dataset con los que se lincarán. Dicha aplicación estará orientada a proporcionar información de los distintos puntos de interés de la ciudad de Nueva York, como librerías, zonas verdes, escuelas, transporte público y hospitales. La aplicación en su inicio pretendía ayudar a encontrar el lugar ideal para vivir y comprar una casa en función de las preferencias del cliente, así como de ciertos análisis realizados por la aplicación, pero ya que finalmente se comunicó que debía estar basada en la explotación de datos mediante queries SPARQL, el análisis que pretendiamos realizar acerca de puntos de interés cercanos a un lugar determinado se ha visto mermado, puesto que nuestra intención inicial era explotar los datos pero montados éstos sobre bases de datos relaciónales, lo cual realmente nos impedía explotar los datos linkados. Finalmente se ha decdido que la aplicación será una aplicaciń informativa de las distintas carácteristicas de los puntos de interés de la ciudad de Nueva York.</p>
+
+<h3>Requisitos</h3>
+<ul>
+<li>La aplicación debe poder permitir la elección de los puntos de interés a mostrar</li>
+<br>
+<li>La aplicación debe poder permitir mostrar la distinta información de los puntos de interés mediante el clickado de éstos, los cuales se mostrarán en una lista</li>
+<br>
+<li>La aplicación debe mostrar resaltados (en color verde) aquellos puntos de interés de los que se pueda obtener información adicional a través de otras ontologías como dbpedia.org, YAGO, etc.</li>
+<br>
+<li>La aplicación debe mostrar y permitir elegir el tipo de información adicional que se quiera obtener de los recursos también representados en dichas ontotologías externas</li>
+<br>
+<li>La aplicación debe poder permitir mostrar una ventana con información ampliada de aquellos recursos indexados en dichas ontologías externas</li>
+</ul>
+
+<p>En función de los puntos de interés seleccionados por el cliente se mostrará la información consecuente a la selección.</p>
+<h3>Mock-ups</h3>
+<p><h4>Mock-up de la pantalla principal de la aplicación:</h4></p>
+<img src="./Mock-ups/MockUp_PantallaPrincipal.jpg">
+<p><h4>Mock-up de la pantalla secundaria de la aplicación:</h4>&nbsp&nbsp&nbspEn la cual se mostrará la lista de puntos de interés, en funcion del ambito seleccionado, de los cuales se podrá obtener la información clicando en ellos.</p>
+<img src="./Mock-ups/MockUp_PantallaSeleccion.jpg">
+
+<p><h4>Mock-up del Pop-up de selección de propiedades adicionales:</h4>&nbsp&nbsp&nbspPara aquellos puntos de interés resaltados en verde, se podrá acceder a un panel especial para seleccionar características adicionales, las cuales son extraídas de ontologías externas.</p>
+<img src="./Mock-ups/MockUp_SelecInfoAdicional.jpg">
+
+<p><h4>Mock-up del Pop-up de información adicional:</h4>&nbsp&nbsp&nbspEn esta ventana se mostrará la información correspondiente a las características adicionales seleccionadas en el anterior Pop-up.</p>
+<img src="./Mock-ups/MockUp_InfoAdicional.jpg">
+
+</body>
+
+</html> 
+

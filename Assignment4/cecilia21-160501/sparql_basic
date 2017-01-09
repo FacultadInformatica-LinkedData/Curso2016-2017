@@ -1,0 +1,225 @@
+PREGUNTA 1
+
+select ?clase 
+where {
+	?clase a <http://www.w3.org/2000/01/rdf-schema#Class>
+	} 
+	
+http://GP-onto.fi.upm.es/exercise2#OnFoot
+http://GP-onto.fi.upm.es/exercise2#TransportMedium
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#Establishment
+http://GP-onto.fi.upm.es/exercise2#PhysicalPoint
+http://GP-onto.fi.upm.es/exercise2#Stage
+http://GP-onto.fi.upm.es/exercise2#TransportInfrastructure
+http://GP-onto.fi.upm.es/exercise2#Bus
+http://GP-onto.fi.upm.es/exercise2#Car
+http://GP-onto.fi.upm.es/exercise2#BankService
+http://GP-onto.fi.upm.es/exercise2#Service
+http://GP-onto.fi.upm.es/exercise2#Bicycle
+http://GP-onto.fi.upm.es/exercise2#PostalAddress
+http://GP-onto.fi.upm.es/exercise2#Path
+http://GP-onto.fi.upm.es/exercise2#Road
+http://GP-onto.fi.upm.es/exercise2#Cathedral
+http://GP-onto.fi.upm.es/exercise2#TouristicLocation
+http://GP-onto.fi.upm.es/exercise2#City
+http://GP-onto.fi.upm.es/exercise2#Locality
+http://GP-onto.fi.upm.es/exercise2#Route
+http://GP-onto.fi.upm.es/exercise2#SpacialThing
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest
+http://GP-onto.fi.upm.es/exercise2#Stretch
+http://GP-onto.fi.upm.es/exercise2#Chapel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+http://GP-onto.fi.upm.es/exercise2#Church
+http://GP-onto.fi.upm.es/exercise2#Location
+http://GP-onto.fi.upm.es/exercise2#Palace
+http://GP-onto.fi.upm.es/exercise2#PostalService
+http://GP-onto.fi.upm.es/exercise2#Town
+http://GP-onto.fi.upm.es/exercise2#RestaurationService
+http://GP-onto.fi.upm.es/exercise2#HealthService
+http://GP-onto.fi.upm.es/exercise2#SecurityService
+http://GP-onto.fi.upm.es/exercise2#Track
+http://GP-onto.fi.upm.es/exercise2#Train
+http://GP-onto.fi.upm.es/exercise2#Railway
+http://GP-onto.fi.upm.es/exercise2#Village
+
+PREGUNTA 2
+
+select distinct ?subclase
+where {
+	?subclase 
+	<http://www.w3.org/2000/01/rdf-schema#subClassOf> 
+	<http://GP-onto.fi.upm.es/exercise2#Establishment>
+}
+
+http://GP-onto.fi.upm.es/exercise2#Hostel
+http://GP-onto.fi.upm.es/exercise2#GuestHouse
+http://GP-onto.fi.upm.es/exercise2#Hotel
+
+PREGUNTA 3
+
+select ?ciudad
+where{
+	?ciudad 
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 
+	<http://GP-onto.fi.upm.es/exercise2#City>
+}
+
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+http://GP-onto.fi.upm.es/exercise2#Madrid
+
+PREGUNTA 4
+
+select ?habitantes
+where{
+	<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela>
+	<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>
+	?habitantes
+}
+
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+PREGUNTA 5
+
+select ?habitantes
+where{
+	?lugar
+	<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>
+	?habitantes .
+	FILTER(?lugar = <http://GP-onto.fi.upm.es/exercise2#Arzua> || 
+	?lugar = <http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> )
+}
+
+" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+PREGUNTA 6
+
+select ?lugar ?habitantes
+where{
+	?lugar 
+	<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>
+	?habitantes
+}
+ORDER BY ASC(?lugar)
+
+lugar	habitantes
+http://GP-onto.fi.upm.es/exercise2#Arzua	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+PREGUNTA 7
+
+select ?localidad ?habitantes
+where{
+	?tipos_localidad
+	<http://www.w3.org/2000/01/rdf-schema#subClassOf> 
+	<http://GP-onto.fi.upm.es/exercise2#Locality> .
+	?localidad a ?tipos_localidad
+	OPTIONAL {
+		?localidad 
+		<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>
+		?habitantes
+	}
+}
+
+localidad	habitantes
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a	
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+http://GP-onto.fi.upm.es/exercise2#Madrid	
+http://GP-onto.fi.upm.es/exercise2#Arzua	" 38900 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+PREGUNTA 8
+
+select ?lugares ?habitantes
+where{
+	?lugares
+	<http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber>
+	?habitantes .
+	FILTER (xsd:integer(?habitantes) > 200000)
+}
+
+lugares	habitantes
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela	" 300000 "^^<http://www.w3.org/2001/XMLSchema#integer>
+
+PREGUNTA 9
+
+select ?street ?num ?locality ?province
+where{
+	<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan>
+	<http://GP-onto.fi.upm.es/exercise2#hasAddress>
+	?direccion . 
+	?direccion
+	<http://GP-onto.fi.upm.es/exercise2#hasStreet>
+	?street .
+	?direccion
+	<http://GP-onto.fi.upm.es/exercise2#hasNumber>
+	?num .
+	<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan>
+	<http://GP-onto.fi.upm.es/exercise2#isPlacedIn>
+	?locality .
+	?locality
+	<http://GP-onto.fi.upm.es/exercise2#inProvince>
+	?province
+}
+
+street	num	locality	province
+C/Mayor	5	http://GP-onto.fi.upm.es/exercise2#Arzua	Pontevedra
+
+PREGUNTA 10
+
+select ?subclases
+where{
+	?subclases
+	<http://www.w3.org/2000/01/rdf-schema#subClassOf> 
+	<http://GP-onto.fi.upm.es/exercise2#Location>
+}
+
+http://GP-onto.fi.upm.es/exercise2#LocationOfInterest
+
+PREGUNTA 11
+
+select ?instancias
+where{
+	?subclases <http://www.w3.org/2000/01/rdf-schema#subClassOf>  <http://GP-onto.fi.upm.es/exercise2#Locality> .
+	?instancias a 	?subclases
+}
+
+http://GP-onto.fi.upm.es/exercise2#ACoruC1a
+http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela
+http://GP-onto.fi.upm.es/exercise2#Madrid
+http://GP-onto.fi.upm.es/exercise2#Arzua
+
+PREGUNTA 12
+
+DESCRIBE ?resource
+where { ?resource rdfs:label "Madrid" }
+
+@prefix ns0:	<http://GP-onto.fi.upm.es/exercise2#> .
+ns0:GP_Santiago_Instance_72	ns0:hasEnd	ns0:Madrid .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+ns0:Madrid	rdf:type	ns0:City .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+ns0:Madrid	rdfs:label	"Madrid" ;
+	ns0:isLocatedAtPoint	ns0:GP_Santiago_Instance_74 ;
+	ns0:inProvince	"Madrid" .
+	
+PREGUNTA 13
+
+CONSTRUCT {
+	?lugar_turistico rdfs:isIn ?provincia
+} WHERE {
+	?tipo rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#TouristicLocation> .
+	?lugar_turistico a ?tipo .
+	?lugar_turistico <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> ?localidad .
+	?localidad <http://GP-onto.fi.upm.es/exercise2#inProvince> ?provincia .
+}
+
+PREGUNTA 14
+
+ASK {
+	?x <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://GP-onto.fi.upm.es/exercise2#Town>
+	}
+	
+true

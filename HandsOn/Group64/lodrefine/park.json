@@ -1,0 +1,695 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ParkType",
+    "columnName": "ParkType"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ParkServiceArea",
+    "columnName": "ParkServiceArea"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column PSAManager",
+    "columnName": "PSAManager"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column email",
+    "columnName": "email"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Number",
+    "columnName": "Number"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Acreage",
+    "columnName": "Acreage"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SupDist",
+    "columnName": "SupDist"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ParkID",
+    "columnName": "ParkID"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Park#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "historicalName ",
+              "curie": ":historicalName ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "ParkName"
+              }
+            },
+            {
+              "uri": "areaCode",
+              "curie": ":areaCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "address",
+              "curie": ":address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Location 1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Park#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "historicalName ",
+              "curie": ":historicalName ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "ParkName"
+              }
+            },
+            {
+              "uri": "areaCode",
+              "curie": ":areaCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "address",
+              "curie": ":address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Location 1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Park#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "historicalName ",
+              "curie": ":historicalName ",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "ParkName"
+              }
+            },
+            {
+              "uri": "areaCode",
+              "curie": ":areaCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "address",
+              "curie": ":address",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Location 1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Park#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "curie": "rdf:langString",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "ParkName"
+              }
+            },
+            {
+              "uri": "string",
+              "curie": ":string",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "curie": "rdf:langString",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Location 1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Park#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "curie": "rdf:langString",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "ParkName"
+              }
+            },
+            {
+              "uri": "string",
+              "curie": ":string",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "curie": "rdf:langString",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Location 1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Location 1 by separator",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Location 1",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "(",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Location 1 2",
+    "columnName": "Location 1 2"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Location 1 3",
+    "columnName": "Location 1 3"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column ParkName using expression value.toTitlecase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ParkName",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://mappings.dbpedia.org/server/ontology/classes/Park#",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "curie": "rdf:langString",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "ParkName"
+              }
+            },
+            {
+              "uri": "string",
+              "curie": ":string",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+              "curie": "rdf:langString",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Location 1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://grupo64.es/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "g64",
+          "uri": ""
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"park/\" + replaceChars(value, \" -\",\"\")",
+          "isRowNumberCell": false,
+          "columnName": "ParkName",
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-14#Park",
+              "curie": "g64:Park"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-14#hasParkName",
+              "curie": "g64:hasParkName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "ParkName"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-14#hasZipCode",
+              "curie": "g64:hasZipCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-14#hasLocation",
+              "curie": "g64:hasLocation",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Location 1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://grupo64.es/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "g64",
+          "uri": ""
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"park/\" + replaceChars(value, \" -\",\"\")",
+          "isRowNumberCell": false,
+          "columnName": "ParkName",
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-14#Park",
+              "curie": "g64:Park"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-14#hasParkName",
+              "curie": "g64:hasParkName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "ParkName"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-14#hasZipCode",
+              "curie": "g64:hasZipCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-14#hasLocation",
+              "curie": "g64:hasLocation",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Location 1 1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://grupo64.es/",
+      "prefixes": [
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "g64",
+          "uri": ""
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"park/\" + replaceChars(value, \" -\",\"\")",
+          "isRowNumberCell": false,
+          "columnName": "ParkName",
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-14#Park",
+              "curie": "g64:Park"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-14#hasParkName",
+              "curie": "g64:hasParkName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "ParkName"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-14#hasZipCode",
+              "curie": "g64:hasZipCode",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Zipcode"
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/jruiz/ontologies/2016/11/untitled-ontology-14#hasLocation",
+              "curie": "g64:hasLocation",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Location 1 1"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

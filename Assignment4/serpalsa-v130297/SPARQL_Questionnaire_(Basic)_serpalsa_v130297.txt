@@ -1,0 +1,98 @@
+QUERYS
+
+
+1.
+select distinct ?Concept where {[] a ?Concept} LIMIT 100
+
+
+
+2.
+Get all the subclasses of the class Establishment
+select distinct ?x
+where {?x rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Establishment>} LIMIT 100
+
+
+
+3. 
+select distinct ?x
+where 
+{?x ?a <http://GP-onto.fi.upm.es/exercise2#City>} 
+LIMIT 100
+
+
+
+4.
+Get the number of inhabitants of Santiago de Compostela
+select distinct ?c
+where {<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?c} LIMIT 100
+
+
+
+5.
+select distinct ?x ?y
+where
+{
+<http://GP-onto.fi.upm.es/exercise2#Santiago_de_Compostela> <http://GP-onto.fi.upm.es/ exercise2#hasInhabitantNumber> ?x .
+<http://GP-onto.fi.upm.es/exercise2#Arzua> <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?y 
+}
+LIMIT 100
+
+
+6.
+select distinct ?x ?y ?z
+where
+{
+?x <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?y.
+?x rdfs:label ?z
+}
+ORDER BY ?z
+LIMIT 100
+
+
+
+7. 
+select distinct ?a ?v
+where {?x rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Locality> . ?a rdf:type ?x. OPTIONAL{?a <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?v }}
+
+
+
+
+8.
+Get all places with more than 200.000 inhabitants
+select distinct ?x  ?n ?a
+where {?x rdfs:subClassOf <http://GP-onto.fi.upm.es/exercise2#Locality> .
+      ?a a ?x .
+      OPTIONAL{?a <http://GP-onto.fi.upm.es/exercise2#hasInhabitantNumber> ?n}
+      FILTER(xsd:integer(?n)> 200000)} 
+LIMIT 100
+
+9.
+select distinct ?street,?number,?locality,?province where{<http://GP-onto.fi.upm.es/exercise2#Pazo_Breogan> <http://GP-onto.fi.upm.es/exercise2#isPlacedIn> $placed;
+<http://GP-onto.fi.upm.es/exercise2#hasAddress> $address. $placed <http://www.w3.org/2000/01/rdf-schema#label> ?locality; <http://GP-onto.fi.upm.es/exercise2#inProvince> ?province. $address <http://GP-onto.fi.upm.es/exercise2#hasStreet> ?street;
+<http://GP-onto.fi.upm.es/exercise2#hasNumber> ?number}
+
+
+
+10 .
+select distinct ?subClass where{?subClass <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://GP-onto.fi.upm.es/exercise2#Location>}
+
+
+
+12. 
+select distinct ?x
+where 
+{?x rdfs:label "Madrid"} 
+LIMIT 100
+
+
+13?
+
+
+
+14.
+select distinct ?x 
+where
+{
+?x rdf:type <http://GP-onto.fi.upm.es/exercise2#Town>
+}
+LIMIT 100

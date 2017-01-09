@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="829.0" maxWidth="1127.0" minHeight="829.0" minWidth="1127.0" prefHeight="829.0" prefWidth="1127.0" style="-fx-background-color: #ffffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+    <children>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="200.0" layoutY="-6.0" prefHeight="829.0" prefWidth="180.0" />
+      <Text layoutX="511.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MART   EVILLA" textAlignment="CENTER" wrappingWidth="320.13671875">
+         <font>
+            <Font name="Roboto Condensed Bold" size="50.0" />
+         </font>
+      </Text>
+      <Line endY="-732.0" layoutX="196.0" layoutY="828.0" startY="100.0" />
+      <Pane fx:id="home" layoutX="196.0" layoutY="95.0" prefHeight="732.0" prefWidth="928.0">
+         <children>
+            <Text layoutX="53.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hecho con:" wrappingWidth="416.0">
+               <font>
+                  <Font name="Roboto Condensed Light" size="31.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="73.0" fitWidth="74.0" layoutX="53.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/refine.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="196.0" layoutX="150.0" layoutY="561.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/protege.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="96.0" fitWidth="160.0" layoutX="513.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/jena.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="106.0" fitWidth="124.0" layoutX="346.0" layoutY="548.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/logoesdbpedia.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="96.0" fitWidth="160.0" layoutX="707.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/fx.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="256.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Que es SmartSevilla?" textAlignment="CENTER" wrappingWidth="416.0">
+               <font>
+                  <Font name="Roboto Condensed Light" size="41.0" />
+               </font>
+            </Text>
+            <Text layoutX="179.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SmartSevilla es una aplicación desarrollada por alumnos de la Universidad Politecnica de Madrid (UPM) que se sirve de los datos enlazados para proporcionar información acerca de los monumentos y museos emblematicos de la ciudad de Sevilla.  " textAlignment="JUSTIFY" wrappingWidth="580.0">
+               <font>
+                  <Font name="Roboto Slab Regular" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="179.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La aplicación se sirve de esDBpedia para mostrar la informacion. así como las imagenes." textAlignment="JUSTIFY" wrappingWidth="593.0">
+               <font>
+                  <Font name="Roboto Slab Regular" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="359.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="paneMuseos" layoutX="196.0" layoutY="95.0" prefHeight="732.0" prefWidth="928.0" visible="false">
+         <children>
+            <JFXTextField fx:id="buscaMuseos" layoutX="4.0" layoutY="122.0" maxWidth="266.0" minWidth="227.0" onKeyReleased="#filtrarMuseos" prefHeight="31.0" prefWidth="266.0" promptText="Buscar..." />
+            <ListView fx:id="viewMuseos" layoutX="4.0" layoutY="151.0" prefHeight="387.0" prefWidth="266.0" />
+            <Text fx:id="noImgMuseo" layoutX="547.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagen no disponible" textAlignment="CENTER" visible="false" wrappingWidth="196.0">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="imgZoneMuseo" fitHeight="488.0" fitWidth="533.0" layoutX="372.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="museoTitle" layoutX="436.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="462.13671875">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtLabelMuseo" layoutX="372.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="533.0" />
+            <Text fx:id="museo_tlf" layoutX="435.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="484.0" />
+            <Text fx:id="museo_tlf_i" layoutX="372.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono" visible="false" wrappingWidth="65.353515625">
+               <font>
+                  <Font name="Roboto Condensed" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="museo_dir_i" layoutX="372.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección" visible="false" wrappingWidth="73.58203125">
+               <font>
+                  <Font name="Roboto Condensed" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="museo_dir" layoutX="435.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="484.0" />
+            <Text fx:id="museo_web_i" layoutX="372.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Web" visible="false" wrappingWidth="73.58203125" />
+            <Text fx:id="museo_web" layoutX="435.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="484.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e64fe" height="35.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="928.0" />
+            <Pane layoutX="41.0" prefHeight="32.0" prefWidth="928.0">
+               <children>
+                  <JFXButton layoutX="412.0" onAction="#rutaMilitares" prefHeight="32.0" prefWidth="397.0" style="-fx-background-color: #2E64FE;" text="Museos Militares" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Condensed" size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" onAction="#rutaTodosMuseos" prefHeight="32.0" prefWidth="347.0" style="-fx-background-color: #2E64FE;" text="Todos" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Condensed" size="17.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="paneMonumentos" layoutX="196.0" layoutY="95.0" prefHeight="732.0" prefWidth="928.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e64fe" height="35.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="928.0" />
+            <Pane layoutX="41.0" prefHeight="32.0" prefWidth="928.0">
+               <children>
+                  <JFXButton fx:id="botonMudejar" layoutX="120.0" onAction="#rutaMudejar" prefHeight="32.0" prefWidth="203.0" style="-fx-background-color: #2E64FE;" text="Arte Mudejar" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Condensed" size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="320.0" onAction="#rutaBarroca" prefHeight="32.0" prefWidth="196.0" style="-fx-background-color: #2E64FE;" text="Arquitectura Barroca" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Condensed" size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="-40.0" onAction="#rutaTodosMonumentos" prefHeight="32.0" prefWidth="196.0" style="-fx-background-color: #2E64FE;" text="Todos" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Condensed" size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="660.0" onAction="#rutaOthers" prefHeight="32.0" prefWidth="210.0" style="-fx-background-color: #2E64FE;" text="Otros bienes culturales" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Condensed" size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="500.0" onAction="#ruta17" prefHeight="32.0" prefWidth="188.0" style="-fx-background-color: #2E64FE;" text="Siglo XVII" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Condensed" size="17.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <JFXTextField fx:id="buscaMonumentos" layoutX="4.0" layoutY="122.0" maxWidth="278.0" minWidth="266.0" onKeyReleased="#filtrarMonumentos" prefHeight="31.0" prefWidth="266.0" promptText="Buscar..." />
+            <ListView fx:id="viewMonumentos" layoutX="4.0" layoutY="151.0" prefHeight="387.0" prefWidth="266.0" />
+            <Text fx:id="monumentoTitle" layoutX="465.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="347.13671875">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="imgZone" fitHeight="488.0" fitWidth="533.0" layoutX="372.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="txtLabel" layoutX="372.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="533.0" />
+            <Text fx:id="noImg" layoutX="547.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagen no disponible" textAlignment="CENTER" visible="false" wrappingWidth="196.0">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <Pane fx:id="paneConocenos" layoutX="196.0" layoutY="95.0" prefHeight="732.0" prefWidth="928.0" visible="false">
+         <children>
+            <Circle fill="DODGERBLUE" layoutX="464.0" layoutY="202.0" onMouseMoved="#showImageJ" radius="53.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fill="DODGERBLUE" layoutX="270.0" layoutY="283.0" onMouseMoved="#showImageS" radius="53.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fill="DODGERBLUE" layoutX="662.0" layoutY="283.0" onMouseMoved="#showImageCb" radius="53.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fill="DODGERBLUE" layoutX="661.0" layoutY="433.0" onMouseMoved="#showImageYc" radius="53.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fill="DODGERBLUE" layoutX="268.0" layoutY="433.0" onMouseMoved="#showImageJc" radius="53.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <Text fill="WHITE" layoutX="411.0" layoutY="215.0" onMouseMoved="#showImageJ" strokeType="OUTSIDE" strokeWidth="0.0" text="JP" textAlignment="CENTER" wrappingWidth="106.0">
+               <font>
+                  <Font name="Roboto Condensed" size="45.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="216.0" layoutY="300.0" onMouseMoved="#showImageS" strokeType="OUTSIDE" strokeWidth="0.0" text="SP" textAlignment="CENTER" wrappingWidth="106.0">
+               <font>
+                  <Font name="Roboto Condensed" size="45.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="607.0" layoutY="298.0" onMouseMoved="#showImageCb" strokeType="OUTSIDE" strokeWidth="0.0" text="CB" textAlignment="CENTER" wrappingWidth="106.0">
+               <font>
+                  <Font name="Roboto Condensed" size="45.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="214.0" layoutY="448.0" onMouseMoved="#showImageJc" strokeType="OUTSIDE" strokeWidth="0.0" text="JC" textAlignment="CENTER" wrappingWidth="106.0">
+               <font>
+                  <Font name="Roboto Condensed" size="45.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="608.0" layoutY="448.0" onMouseMoved="#showImageYc" strokeType="OUTSIDE" strokeWidth="0.0" text="YC" textAlignment="CENTER" wrappingWidth="106.0">
+               <font>
+                  <Font name="Roboto Condensed" size="45.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="imgteam" fitHeight="199.0" fitWidth="231.0" layoutX="357.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="textteam" layoutX="276.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="347.13671875">
+               <font>
+                  <Font name="Roboto Condensed" size="32.0" />
+               </font></Text>
+            <Text fx:id="textteam1" layoutX="327.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuestro Equipo" textAlignment="CENTER" wrappingWidth="274.13671875">
+               <font>
+                  <Font name="Roboto Condensed Light" size="32.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ImageView fitHeight="88.0" fitWidth="118.0" layoutX="1013.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/upm.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="341.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S" textAlignment="CENTER" wrappingWidth="320.13671875">
+         <font>
+            <Font name="Roboto Condensed Bold" size="80.0" />
+         </font>
+      </Text>
+      <Text layoutX="500.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S" textAlignment="CENTER" wrappingWidth="320.13671875">
+         <font>
+            <Font name="Roboto Condensed Bold" size="80.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

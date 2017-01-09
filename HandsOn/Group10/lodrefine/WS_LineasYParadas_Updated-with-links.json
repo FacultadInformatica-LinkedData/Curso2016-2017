@@ -1,0 +1,484 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/lineas-paradas/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(trim(value), \" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "nombre_parada",
+          "rdfTypes": [
+            {
+              "uri": "http://smartsevilla.es/ontology#Parada_bus",
+              "curie": "g10:Parada_bus"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smartsevilla.es/ontology#route_id",
+              "curie": "g10:route_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "Linea"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#long_name",
+              "curie": "g10:long_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "Nombre_linea"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#stop_id",
+              "curie": "g10:stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "stop_id"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#short_name",
+              "curie": "g10:short_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "nombre_parada"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#latitud",
+              "curie": "g10:latitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:float",
+                "columnName": "lat"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#longitud",
+              "curie": "g10:longitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:float",
+                "columnName": "lon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/lineas-paradas/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(trim(value), \" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "stop_id",
+          "rdfTypes": [
+            {
+              "uri": "http://smartsevilla.es/ontology#Parada_bus",
+              "curie": "g10:Parada_bus"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smartsevilla.es/ontology#route_id",
+              "curie": "g10:route_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "Linea"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#long_name",
+              "curie": "g10:long_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "Nombre_linea"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#stop_id",
+              "curie": "g10:stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "stop_id"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#short_name",
+              "curie": "g10:short_name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "nombre_parada"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#latitud",
+              "curie": "g10:latitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:float",
+                "columnName": "lat"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#longitud",
+              "curie": "g10:longitud",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:float",
+                "columnName": "lon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/lineasYparadas/",
+      "prefixes": [
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(trim(value), \" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "stop_id",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/page/Bus_stop",
+              "curie": "http://dbpedia.org/page/Bus_stop"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smartsevilla.es/ontology#route_id",
+              "curie": "g10:route_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "Linea"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/fullname",
+              "curie": "dbp:fullname",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "Nombre_linea"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#stop_id",
+              "curie": "g10:stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "stop_id"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/name",
+              "curie": "dbp:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "nombre_parada"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/latitude",
+              "curie": "dbp:latitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:float",
+                "columnName": "lat"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/longitude",
+              "curie": "dbp:longitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:float",
+                "columnName": "lon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/lineasYparadas/",
+      "prefixes": [
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "dbp",
+          "uri": "http://dbpedia.org/property/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "replaceChars(trim(value), \" -\", \"\")",
+          "isRowNumberCell": false,
+          "columnName": "stop_id",
+          "rdfTypes": [
+            {
+              "uri": "http://dbpedia.org/page/Bus_stop",
+              "curie": "http://dbpedia.org/page/Bus_stop"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smartsevilla.es/ontology#route_id",
+              "curie": "g10:route_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "Linea"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/fullname",
+              "curie": "dbp:fullname",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "Nombre_linea"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#stop_id",
+              "curie": "g10:stop_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "stop_id"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/name",
+              "curie": "dbp:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "nombre_parada"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/latitude",
+              "curie": "dbp:latitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:float",
+                "columnName": "lat"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/property/longitude",
+              "curie": "dbp:longitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "xsd:float",
+                "columnName": "lon"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column nombre_parada to type http://dbpedia.org/ontology/RouteOfTransportation",
+    "columnName": "nombre_parada",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://127.0.0.1:3333/extension/rdf-extension/services/dbpedia-es",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/RouteOfTransportation",
+        "name": "http://dbpedia.org/ontology/RouteOfTransportation"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  }
+]

@@ -1,0 +1,53 @@
+#Assigment 6 - Queries Sparql
+#Alejandro de Bona Moliz t110055
+
+######## 1.How many accidents were there in Madrid in 2013?
+
+SELECT SUM(?accidents)
+WHERE{
+	?obs a <http://purl.org/linked-data/cube#Observation>; 
+	<http://example.org/myVocabulary#numberOfAccidents> ?accidents.
+	}
+	
+######## 2.Give me the number of accidents in Usera for each type of accident
+
+SELECT ?Type ?number
+WHERE{
+	?obs a <http://purl.org/linked-data/cube#Observation>; 
+	<http://example.org/myVocabulary#numberOfAccidents> ?number;
+	<http://example.org/myVocabulary#relatedDistrict> "USERA";
+	<http://example.org/myVocabulary#hasAccidentType> ?Type.
+}
+
+
+######## 3.Give me the number of multiple collisions for each district
+
+SELECT ?District ?number
+WHERE{
+	?obs a <http://purl.org/linked-data/cube#Observation>;
+	<http://example.org/myVocabulary#relatedDistrict> ?District;
+	<http://example.org/myVocabulary#hasAccidentType> <http://example.org/myVocabulary#MultipleCollision>;
+	<http://example.org/myVocabulary#numberOfAccidents> ?number.
+}
+
+######## 4.Which is the district were the number of bicycle falls was higher in 2013?
+
+SELECT ?district max(?accidents)
+WHERE{
+	?obs a <http://purl.org/linked-data/cube#Observation>;
+	<http://example.org/myVocabulary#relatedDistrict> ?district;
+	<http://example.org/myVocabulary#numberOfAccidents> ?accidents;
+	<http://example.org/myVocabulary#hasAccidentType> <http://example.org/myVocabulary#BicycleFall>.
+}
+ORDER BY desc(?Accidents) LIMIT 2
+
+######## 5.Give me the districts with more than 500 accidents in 2013
+
+SELECT xsd:integer(?accidents)) ?district
+WHERE{
+		?obs a <http://purl.org/linked-data/cube#Observation>;
+		<http://example.org/myVocabulary#relatedDistrict> ?District;
+		<http://example.org/myVocabulary#numberOfAccidents> ?accidents.
+		FILTER (?accidents > 500)
+	} 
+ORDER BY desc(?accidents)

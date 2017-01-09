@@ -1,0 +1,16 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix g10: <http://smartsevilla.es/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://smartsevilla.es/resources/busCompany/TUSSAM> a dbo:BusCompany ;
+	dbp:name "TUSSAM"^^<xsd:string> ;
+	dbp:fullname "Transportes Urbanos de Sevilla S.A.M."^^<xsd:string> ;
+	dbp:url <http://www.tussam.es> ;
+	dbp:language "es"@es ;
+	dbp:phoneNumber "+34 955 479 000"^^<xsd:string> ;
+	owl:sameAs <http://es.dbpedia.org/resource/TUSSAM> .
