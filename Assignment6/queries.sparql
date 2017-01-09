@@ -1,0 +1,53 @@
+PREFIX vc: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+# How many accidents were there in Madrid in 2013?
+
+SELECT SUM(?numero) as ?Accidentes
+WHERE {
+	?obs a qb:Observation;
+	vc:numberOfAccidents ?numero.
+}
+
+# Give me the number of accidents in Usera for each type of accident
+
+SELECT ?tipo ?numero
+WHERE {
+	?obs a qb:Observation;
+	vc:relatedDistrict "USERA";
+	vc:hasAccidentType ?tipo ;
+	vc:numberOfAccidents ?numero.
+}
+
+# Give me the number of multiple collisions for each district
+
+SELECT DISTINCT ?distrito xsd:integer(?num) as ?numero
+WHERE{
+	?obs a qb:Observation;
+	vc:relatedDistrict ?distrito;
+	vc:hasAccidentType vc:MultipleCollision;
+	vc:numberOfAccidents ?num.
+}
+
+# Which is the district were the number of bicycle falls was higher in 2013?
+
+SELECT ?distrito MAX(?numero)
+WHERE {
+	?obs a qb:Observation;
+	vc:relatedDistrict ?distrito;
+	vc:hasAccidentType vc:BicycleFall;
+	vc:numberOfAccidents ?numero
+}
+ORDER by desc(?numero) LIMIT 1
+
+# Give me the districts with more than 500 accidents in 2013
+
+SELECT DISTINCT (?distrito) xsd:integer(?num) as ?numero
+WHERE{
+	?obs a qb:Observation ;
+	vc:relatedDistrict ?distrito;
+	vc:numberOfAccidents ?num.
+	FILTER(?num > 500).
+}
+ORDER BY desc(?numero)
+
