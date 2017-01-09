@@ -35,6 +35,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#hasFilm">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Localitation"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#StreetAddress"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Title"/>
     </owl:ObjectProperty>
@@ -44,7 +45,7 @@
     <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#hasLocalitation -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#hasLocalitation">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCityOf"/>
     </owl:ObjectProperty>
     
 
@@ -87,6 +88,14 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#District"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#StreetAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isFilmOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isFilmOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -268,6 +277,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Film"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Business -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Business"/>
@@ -286,6 +303,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Film"/>
     </owl:Class>
     
 
@@ -373,6 +398,14 @@
     <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Title -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Title">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Writer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Writer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Film"/>
     </owl:Class>
     

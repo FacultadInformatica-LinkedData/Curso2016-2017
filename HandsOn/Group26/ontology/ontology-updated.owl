@@ -1,0 +1,420 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#hasBusiness -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#hasBusiness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#https://schema.org/LocalBusiness"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#hasFilm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#hasFilm">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Localitation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Title"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#hasLocalitation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#hasLocalitation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCityOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#hasPoliceStation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#hasPoliceStation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Station"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://linkedgeodata.org/ontology/State"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/city"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCoordinatesOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCoordinatesOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/city"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://linkedgeodata.org/ontology/State"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isDistrictOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isDistrictOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isFilmOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isFilmOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/film"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/http://xmlns.com/foaf/0.1/"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isParkOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isParkOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/Park"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Localitation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/zipCode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isStateOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isStateOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/city"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/zipCode"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://linkedgeodata.org/ontology/State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isStretOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isStretOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/city"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isZipCode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isZipCode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/zipCode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/city"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://linkedgeodata.org/ontology/State"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#ParkName"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Localitation"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Localitation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Localitation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Localitation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Locations -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Locations">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#ParkName"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Station -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Station">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#ZipZode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#ZipZode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/zipCode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/city">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/city"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://linkedgeodata.org/ontology/State -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://linkedgeodata.org/ontology/State">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://linkedgeodata.org/ontology/State"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Localitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Localitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Name">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#https://schema.org/LocalBusiness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#ParkName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#ParkName">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/Park"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#PoliceStation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#PoliceStation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Station -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Station">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#PoliceStation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Title -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Title">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/city -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/city">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/film"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/zipCode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/zipCode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://linkedgeodata.org/ontology/State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://linkedgeodata.org/ontology/State">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/Park -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/Park"/>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#https://schema.org/LocalBusiness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#https://schema.org/LocalBusiness"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/http://xmlns.com/foaf/0.1/ -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/http://xmlns.com/foaf/0.1/"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
