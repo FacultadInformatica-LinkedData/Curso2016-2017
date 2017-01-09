@@ -1,0 +1,50 @@
+PREFIX voc: <http://example.org/myVocabulary#>
+PREFIX cub: <http://purl.org/linked-data/cube#>
+
+- How many accidents were there in Madrid in 2013?
+
+select (sum(?accidents)AS ?numberOfAccidents) where {
+	?obs a cub:Observation ;
+	voc:numberOfAccidents ?accidents.
+}
+
+- Give me the number of accidents in Usera for each type of accident
+
+select ?type ?accidents where {
+	?obs a cub:Observation ;
+	voc:numberOfAccidents ?accidents;
+	voc:relatedDistrict "USERA";
+	voc:hasAccidentType ?type.
+}
+
+- Give me the number of multiple collisions for each district
+
+select ?district ?number where {
+ 	?obs a cub:Observation ;
+  	voc:relatedDistrict ?district;
+ 	voc:hasAccidentType voc:MultipleCollision;
+	voc:numberOfAccidents ?number.
+}
+
+- Which is the district were the number of bicycle falls was higher in 2013?
+
+select ?district ?falls where{
+	?obs a cub:Observation;
+	voc:relatedDistrict 
+	?district;
+	voc:hasAccidentType 
+	voc:BicycleFall;
+	voc:numberOfAccidents 
+	?falls
+}order by desc(?falls) LIMIT 1
+
+-Give me the districts with more than 500 accidents in 2013
+
+SELECT ?district ?accidentes WHERE{
+ 	?obs a cub:Observation;
+ 	voc:relatedDistrict 
+	?district;
+ 	voc:numberOfAccidents 
+	?accidentes
+ 	FILTER (?accidentes>500)
+}
