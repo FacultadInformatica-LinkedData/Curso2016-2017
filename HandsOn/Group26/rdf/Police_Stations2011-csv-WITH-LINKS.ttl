@@ -1,0 +1,95 @@
+@prefix ont: <> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<http://127.0.0.1:3333/CENTRAL+STN> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district> .
+
+<http://127.0.0.1:3333/766+VALLEJO+ST> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress> .
+
+<http://127.0.0.1:3333/CENTRAL+STN> <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isDistrictOf> <http://127.0.0.1:3333/766+VALLEJO+ST> .
+
+<http://127.0.0.1:3333/%2837.7986453192461%2C+-122.4098629092911%29> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates> ;
+	<http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCoordinatesOf> <http://127.0.0.1:3333/766+VALLEJO+ST> .
+
+<http://127.0.0.1:3333/SOUTHERN+STN> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district> .
+
+<http://127.0.0.1:3333/850+BRYANT+ST> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress> .
+
+<http://127.0.0.1:3333/SOUTHERN+STN> <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isDistrictOf> <http://127.0.0.1:3333/850+BRYANT+ST> .
+
+<http://127.0.0.1:3333/%2837.7749888994694%2C+-122.4043283015447%29> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates> ;
+	<http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCoordinatesOf> <http://127.0.0.1:3333/850+BRYANT+ST> .
+
+<http://127.0.0.1:3333/BAYVIEW+STN> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district> .
+
+<http://127.0.0.1:3333/201+WILLIAMS+ST> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress> .
+
+<http://127.0.0.1:3333/BAYVIEW+STN> <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isDistrictOf> <http://127.0.0.1:3333/201+WILLIAMS+ST> .
+
+<http://127.0.0.1:3333/%2837.7296417183220%2C+-122.3980865549364%29> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates> ;
+	<http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCoordinatesOf> <http://127.0.0.1:3333/201+WILLIAMS+ST> .
+
+<http://127.0.0.1:3333/MISSION+STN> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district> .
+
+<http://127.0.0.1:3333/630+VALLENCIA+ST> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress> .
+
+<http://127.0.0.1:3333/MISSION+STN> <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isDistrictOf> <http://127.0.0.1:3333/630+VALLENCIA+ST> .
+
+<http://127.0.0.1:3333/%2837.7626807026424%2C+-122.4219696654014%29> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates> ;
+	<http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCoordinatesOf> <http://127.0.0.1:3333/630+VALLENCIA+ST> .
+
+<http://127.0.0.1:3333/NORTHERN+STN> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district> .
+
+<http://127.0.0.1:3333/1125+FILLMORE+ST> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress> .
+
+<http://127.0.0.1:3333/NORTHERN+STN> <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isDistrictOf> <http://127.0.0.1:3333/1125+FILLMORE+ST> .
+
+<http://127.0.0.1:3333/%2837.7801611403781%2C+-122.4323904351790%29> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates> ;
+	<http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCoordinatesOf> <http://127.0.0.1:3333/1125+FILLMORE+ST> .
+
+<http://127.0.0.1:3333/PARK+STN> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district> .
+
+<http://127.0.0.1:3333/1899+WALLER+ST> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress> .
+
+<http://127.0.0.1:3333/PARK+STN> <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isDistrictOf> <http://127.0.0.1:3333/1899+WALLER+ST> .
+
+<http://127.0.0.1:3333/%2837.7678486242834%2C+-122.4552665971872%29> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates> ;
+	<http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCoordinatesOf> <http://127.0.0.1:3333/1899+WALLER+ST> .
+
+<http://127.0.0.1:3333/RICHMOND+STN> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district> .
+
+<http://127.0.0.1:3333/461+6TH+AV> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress> .
+
+<http://127.0.0.1:3333/RICHMOND+STN> <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isDistrictOf> <http://127.0.0.1:3333/461+6TH+AV> .
+
+<http://127.0.0.1:3333/%2837.7800012925707%2C+-122.4644607286463%29> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates> ;
+	<http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCoordinatesOf> <http://127.0.0.1:3333/461+6TH+AV> .
+
+<http://127.0.0.1:3333/INGLESIDE+STN> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district> .
+
+<http://127.0.0.1:3333/1+JOHN+YOUNG+LN> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress> .
+
+<http://127.0.0.1:3333/INGLESIDE+STN> <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isDistrictOf> <http://127.0.0.1:3333/1+JOHN+YOUNG+LN> .
+
+<http://127.0.0.1:3333/%2837.7247701343562%2C+-122.4462510450206%29> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates> ;
+	<http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCoordinatesOf> <http://127.0.0.1:3333/1+JOHN+YOUNG+LN> .
+
+<http://127.0.0.1:3333/TARAVAL+STN> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district> .
+
+<http://127.0.0.1:3333/2345+24TH+AV> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress> .
+
+<http://127.0.0.1:3333/TARAVAL+STN> <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isDistrictOf> <http://127.0.0.1:3333/2345+24TH+AV> .
+
+<http://127.0.0.1:3333/%2837.7437337946250%2C+-122.4814607671523%29> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates> ;
+	<http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCoordinatesOf> <http://127.0.0.1:3333/2345+24TH+AV> .
+
+<http://127.0.0.1:3333/TENDERLOIN+STN> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://dbpedia.org/ontology/district> .
+
+<http://127.0.0.1:3333/301+EDDY+ST> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#http://schema.org/streetAddress> .
+
+<http://127.0.0.1:3333/TENDERLOIN+STN> <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isDistrictOf> <http://127.0.0.1:3333/301+EDDY+ST> .
+
+<http://127.0.0.1:3333/%2837.7837040581307%2C+-122.4128957522243%29> a <http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#Coordinates> ;
+	<http://www.semanticweb.org/antonio/ontologies/2016/10/untitled-ontology-11#isCoordinatesOf> <http://127.0.0.1:3333/301+EDDY+ST> .
