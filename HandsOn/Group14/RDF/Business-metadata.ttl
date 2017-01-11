@@ -1,0 +1,32 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+:catalog
+	a dcat:Catalog ;
+	dct:title "The catalog for each business registrated in SF."@eng ;
+	dct:source <https://data.sfgov.org/> ;
+	dct:publisher <http://github.com/Profhector> ;
+	dct:publisher <http://github.com/rafasupremoyo> ;
+	dct:publisher <http://github.com/scriam> ;
+	dct:publisher <http://github.com/khaeghar>   ;
+  dct:publisher <http://github.com/Jorge-CD>   ;
+	dct:language <http://www.lexvo.org/page/iso639-3/eng> ;
+	dcat:dataset :Business ;  .
+  
+  
+  # Business
+:Business
+	a dcat:Dataset ;
+	dct:title  "Business in SF" ;
+	dcat:keyword "Business"@en ;
+	dcat:downloadURL <https://github.com/Profhector/Curso2016-2017/raw/master/HandsOn/Group14/RDF/businesses-csv(2).ttl> ;
+	dct:license rdflicense:cc-zero1.0 ;
+    .
+    
+    
+    :Business
+a void:Dataset;
+void:exampleResource <http://www.semanticweb.org/sergio/ontologies/2016/11/untitled-ontology-14#Business> .
+

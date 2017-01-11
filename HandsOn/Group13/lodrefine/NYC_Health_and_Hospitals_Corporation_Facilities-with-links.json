@@ -1,0 +1,2371 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Cross Streets",
+    "columnName": "Cross Streets"
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Location 1 by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Location 1",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "(",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Location 1 1 to Address",
+    "oldColumnName": "Location 1 1",
+    "newColumnName": "Address"
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Location 1 2 by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Location 1 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ", ",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column Location 1 2 2 by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Location 1 2 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ")",
+    "regex": false,
+    "maxColumns": 0
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Location 1 2 2 2",
+    "columnName": "Location 1 2 2 2"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Location 1 2 1 to Latitude",
+    "oldColumnName": "Location 1 2 1",
+    "newColumnName": "Latitude"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Location 1 2 2 1 to Longitude",
+    "oldColumnName": "Location 1 2 2 1",
+    "newColumnName": "Longitude"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Latitude using expression value.toString()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Latitude",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Longitude using expression value.toString()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Longitude",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Facility Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#HealthFacility",
+              "curie": "livingPlaces:HealthFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasHealthFacilityType",
+              "curie": "livingPlaces:hasHealthFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Facility Type"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#pertainToBorough",
+              "curie": "livingPlaces:pertainToBorough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#Borough",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Facility Name"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasPhone",
+              "curie": "livingPlaces:hasPhone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasAddress",
+              "curie": "livingPlaces:hasAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Address"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasLatitude",
+              "curie": "livingPlaces:hasLatitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasLongitude",
+              "curie": "livingPlaces:hasLongitude",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Facility Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Borough",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#Borough",
+              "curie": "livingPlaces:Borough"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasName",
+              "curie": "livingPlaces:hasName",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Borough"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Facility Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#HealthFacility",
+              "curie": "livingPlaces:HealthFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasHealthFacilityType",
+              "curie": "livingPlaces:hasHealthFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Facility Type"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/borough",
+              "curie": "dbo:borough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#Borough",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Facility Name"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2006/vcard/ns#text",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Address"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Facility Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Borough",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#Borough",
+              "curie": "livingPlaces:Borough"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Borough"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Facility Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#HealthFacility",
+              "curie": "livingPlaces:HealthFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasHealthFacilityType",
+              "curie": "livingPlaces:hasHealthFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Facility Type"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/borough",
+              "curie": "dbo:borough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#Borough",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Facility Name"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2006/vcard/ns#text",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Address"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Facility Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Borough",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#Borough",
+              "curie": "livingPlaces:Borough"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Borough"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Facility Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#HealthFacility",
+              "curie": "livingPlaces:HealthFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasHealthFacilityType",
+              "curie": "livingPlaces:hasHealthFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Facility Type"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/borough",
+              "curie": "dbo:borough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.linkedData_Group13.com/ontology/livingPlaces#Borough",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Facility Name"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2006/vcard/ns#text",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Address"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Facility Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Borough",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#Borough",
+              "curie": "livingPlaces:Borough"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Borough"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Facility Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#HealthFacility",
+              "curie": "livingPlaces:HealthFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasHealthFacilityType",
+              "curie": "livingPlaces:hasHealthFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Facility Type"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/borough",
+              "curie": "dbo:borough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://data.ordnancesurvey.co.uk/ontology/admingeo/Borough",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2006/vcard/ns#text",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Address"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Facility Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Borough",
+          "rdfTypes": [
+            {
+              "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/Borough",
+              "curie": "osadm:Borough"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Borough"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Facility Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#HealthFacility",
+              "curie": "livingPlaces:HealthFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasHealthFacilityType",
+              "curie": "livingPlaces:hasHealthFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Facility Type"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/borough",
+              "curie": "dbo:borough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://data.ordnancesurvey.co.uk/ontology/admingeo/Borough",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2006/vcard/ns#text",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Address"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Facility Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Borough",
+          "rdfTypes": [
+            {
+              "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/Borough",
+              "curie": "osadm:Borough"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://xmlns.com/foaf/0.1/name",
+              "curie": "foaf:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Borough"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Facility Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#HealthFacility",
+              "curie": "livingPlaces:HealthFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasHealthFacilityType",
+              "curie": "livingPlaces:hasHealthFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Facility Type"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/borough",
+              "curie": "dbo:borough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://data.ordnancesurvey.co.uk/ontology/admingeo/Borough",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2006/vcard/ns#text",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Address"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Facility Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Borough",
+          "rdfTypes": [
+            {
+              "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/Borough",
+              "curie": "osadm:Borough"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Borough"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Facility Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#HealthFacility",
+              "curie": "livingPlaces:HealthFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasHealthFacilityType",
+              "curie": "livingPlaces:hasHealthFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Facility Type"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/borough",
+              "curie": "dbo:borough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://data.ordnancesurvey.co.uk/ontology/admingeo/Borough",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2006/vcard/ns#text",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Address"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Facility Name"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Borough",
+          "rdfTypes": [
+            {
+              "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/Borough",
+              "curie": "osadm:Borough"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Borough"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Facility Name to type http://dbpedia.org/ontology/Hospital",
+    "columnName": "Facility Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/Hospital",
+        "name": "dbo:Hospital"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 2
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Facility Name to type http://dbpedia.org/ontology/Place",
+    "columnName": "Facility Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/Place",
+        "name": "dbo:Place"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Harlem Hospital Center (http://dbpedia.org/resource/Harlem_Hospital_Center) for cells containing \"Harlem Hospital Center\" in column Facility Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Facility Name",
+    "similarValue": "Harlem Hospital Center",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Harlem_Hospital_Center",
+      "name": "Harlem Hospital Center",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Facility Name to type http://dbpedia.org/class/yago/WikicatTeachingHospitalsInTheUnitedStates",
+    "columnName": "Facility Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/WikicatTeachingHospitalsInTheUnitedStates",
+        "name": "yago:WikicatTeachingHospitalsInTheUnitedStates"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Facility Name to type http://www.wikidata.org/entity/Q16917",
+    "columnName": "Facility Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://www.wikidata.org/entity/Q16917",
+        "name": "http://www.wikidata.org/entity/Q16917"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Bellevue Hospital Center (http://www.wikidata.org/entity/Q2894927) for cells containing \"Bellevue Hospital Center\" in column Facility Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Facility Name",
+    "similarValue": "Bellevue Hospital Center",
+    "judgment": "matched",
+    "match": {
+      "id": "http://www.wikidata.org/entity/Q2894927",
+      "name": "Bellevue Hospital Center",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Harlem Hospital Center (http://dbpedia.org/resource/Harlem_Hospital_Center) for cells containing \"Harlem Hospital Center\" in column Facility Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Facility Name",
+    "similarValue": "Harlem Hospital Center",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Harlem_Hospital_Center",
+      "name": "Harlem Hospital Center",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Metropolitan Hospital Center (http://dbpedia.org/resource/Metropolitan_Hospital_Center) for cells containing \"Metropolitan Hospital Center\" in column Facility Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Facility Name",
+    "similarValue": "Metropolitan Hospital Center",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Metropolitan_Hospital_Center",
+      "name": "Metropolitan Hospital Center",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Jacobi Medical Center (http://dbpedia.org/resource/Jacobi_Medical_Center) for cells containing \"Jacobi Medical Center\" in column Facility Name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Facility Name",
+    "similarValue": "Jacobi Medical Center",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Jacobi_Medical_Center",
+      "name": "Jacobi Medical Center",
+      "score": 1,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Facility Name to type http://dbpedia.org/class/yago/Hospital103540595",
+    "columnName": "Facility Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/Hospital103540595",
+        "name": "yago:Hospital103540595"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Facility Name to type http://dbpedia.org/ontology/Building",
+    "columnName": "Facility Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/Building",
+        "name": "dbo:Building"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Facility Name to type http://schema.org/Place",
+    "columnName": "Facility Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://schema.org/Place",
+        "name": "schema:Place"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Facility Name to type http://dbpedia.org/class/yago/MedicalBuilding103739518",
+    "columnName": "Facility Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/MedicalBuilding103739518",
+        "name": "yago:MedicalBuilding103739518"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Facility Name to type http://dbpedia.org/ontology/Hospital",
+    "columnName": "Facility Name",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/Hospital",
+        "name": "dbo:Hospital"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 5
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column Health Facility DBpedia at index 3 based on column Facility Name using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "Health Facility DBpedia",
+    "columnInsertIndex": 3,
+    "baseColumnName": "Facility Name",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Facility Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#HealthFacility",
+              "curie": "livingPlaces:HealthFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasHealthFacilityType",
+              "curie": "livingPlaces:hasHealthFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Facility Type"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/borough",
+              "curie": "dbo:borough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://data.ordnancesurvey.co.uk/ontology/admingeo/Borough",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2006/vcard/ns#text",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Address"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Facility Name"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Health Facility DBpedia",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Borough",
+          "rdfTypes": [
+            {
+              "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/Borough",
+              "curie": "osadm:Borough"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Borough"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Borough to type http://dbpedia.org/ontology/Place",
+    "columnName": "Borough",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/ontology/Place",
+        "name": "dbo:Place"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon",
+    "description": "Reconcile cells in column Borough to type http://dbpedia.org/class/yago/Borough108540532",
+    "columnName": "Borough",
+    "config": {
+      "mode": "standard-service",
+      "service": "http://localhost:3333/extension/rdf-extension/services/dbpedia2",
+      "identifierSpace": "http://www.ietf.org/rfc/rfc3986",
+      "schemaSpace": "http://www.ietf.org/rfc/rfc3986",
+      "type": {
+        "id": "http://dbpedia.org/class/yago/Borough108540532",
+        "name": "yago:Borough108540532"
+      },
+      "autoMatch": true,
+      "columnDetails": [],
+      "limit": 0
+    },
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    }
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic Queens County (http://dbpedia.org/resource/Queens) for cells containing \"Queens\" in column Borough",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Borough: best candidate's score",
+          "from": 0.461,
+          "to": 0.685,
+          "type": "range",
+          "columnName": "Borough"
+        }
+      ]
+    },
+    "columnName": "Borough",
+    "similarValue": "Queens",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/Queens",
+      "name": "Queens County",
+      "score": 0.4615384340286255,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "description": "Match topic The Bronx (http://dbpedia.org/resource/The_Bronx) for cells containing \"Bronx\" in column Borough",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Borough: best candidate's score",
+          "from": 0.461,
+          "to": 0.685,
+          "type": "range",
+          "columnName": "Borough"
+        }
+      ]
+    },
+    "columnName": "Borough",
+    "similarValue": "Bronx",
+    "judgment": "matched",
+    "match": {
+      "id": "http://dbpedia.org/resource/The_Bronx",
+      "name": "The Bronx",
+      "score": 0.5555555820465088,
+      "types": [
+        ""
+      ]
+    },
+    "shareNewTopics": false
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column yago:Borough at index 2 based on column Borough using expression grel:cell.recon.match.id",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "selectNumeric": true,
+          "expression": "cell.recon.best.score",
+          "selectBlank": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "name": "Borough: best candidate's score",
+          "from": 0.461,
+          "to": 0.685,
+          "type": "range",
+          "columnName": "Borough"
+        }
+      ]
+    },
+    "newColumnName": "yago:Borough",
+    "columnInsertIndex": 2,
+    "baseColumnName": "Borough",
+    "expression": "grel:cell.recon.match.id",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Health Facility DBpedia to dbo:Hospital",
+    "oldColumnName": "Health Facility DBpedia",
+    "newColumnName": "dbo:Hospital"
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://www.linkedData_Group13.com/resource/",
+      "prefixes": [
+        {
+          "name": "geo",
+          "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#"
+        },
+        {
+          "name": "dbo",
+          "uri": "http://dbpedia.org/ontology/"
+        },
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+        {
+          "name": "livingPlaces",
+          "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "osadm",
+          "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "vcard",
+          "uri": "http://www.w3.org/2006/vcard/ns#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Facility Name",
+          "rdfTypes": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#HealthFacility",
+              "curie": "livingPlaces:HealthFacility"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.linkedData_Group13.com/ontology/livingPlaces#hasHealthFacilityType",
+              "curie": "livingPlaces:hasHealthFacilityType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#string",
+                "columnName": "Facility Type"
+              }
+            },
+            {
+              "uri": "http://dbpedia.org/ontology/borough",
+              "curie": "dbo:borough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://data.ordnancesurvey.co.uk/ontology/admingeo/Borough",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2006/vcard/ns#tel",
+              "curie": "vcard:tel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2006/vcard/ns#text",
+                "columnName": "Phone"
+              }
+            },
+            {
+              "uri": "http://schema.org/streetAddress",
+              "curie": "schema:streetAddress",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://schema.org/Text",
+                "columnName": "Address"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+              "curie": "geo:lat",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Latitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+              "curie": "geo:long",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#float",
+                "columnName": "Longitude"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Facility Name"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Health Facility DBpedia",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "Borough",
+          "rdfTypes": [
+            {
+              "uri": "http://data.ordnancesurvey.co.uk/ontology/admingeo/Borough",
+              "curie": "osadm:Borough"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                "columnName": "Borough"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2002/07/owl#sameAs",
+              "curie": "owl:sameAs",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "yago:Borough",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,632 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix group5: <http://madridOcio.linkeddata.com/ontologyGroup5#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2071> vcard:given-name "Arte Público (Museo al Aire Libre de la Castellana)" ;
+	vcard:street-address "CASTELLANA" ;
+	vcard:note "40" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASTELLANA" ;
+	vcard:postal-code "28046" ;
+	vcard:email "paisajeypatrimonio@madrid.es" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4949641> vcard:given-name "Casa - Museo del Ratoncito Pérez" ;
+	vcard:street-address "ARENAL" ;
+	vcard:note "8" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SOL" ;
+	vcard:postal-code "28013" ;
+	vcard:tel "915 226 968" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4847190> vcard:given-name "Casa Museo Lope de Vega" ;
+	vcard:street-address "CERVANTES" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CORTES" ;
+	vcard:postal-code "28014" ;
+	vcard:email "casamuseolopedevega@madrid.org" ;
+	vcard:tel "914 299 216" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/5682031> vcard:given-name "Castillo de la Alameda" ;
+	vcard:street-address "ANTONIO SANCHA" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALAMEDA DE OSUNA" ;
+	vcard:postal-code "28042" ;
+	vcard:email "castilloalameda@madrid.es" ;
+	vcard:tel """913 667 415                                                                         
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2064> vcard:given-name "Casón del Buen Retiro" ;
+	vcard:street-address "ALFONSO XII" ;
+	vcard:note "28" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS JERONIMOS" ;
+	vcard:postal-code "28014" ;
+	vcard:email "biblioteca@museodelprado.es" ;
+	vcard:tel "902 107 077" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/103331> vcard:given-name "Centro Social y Cultural la Casa Encendida" ;
+	vcard:street-address "VALENCIA" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EMBAJADORES" ;
+	vcard:postal-code "28012" ;
+	vcard:email "lacasaencendida@montemadrid.es" ;
+	vcard:tel """902 430 322                                                                 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/6469186> vcard:given-name "Ermita de San Antonio de la Florida (Museo)" ;
+	vcard:street-address "SAN ANTONIO DE LA FLORIDA" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASA DE CAMPO" ;
+	vcard:postal-code "28008" ;
+	vcard:email "sanantonio@madrid.es" ;
+	vcard:tel "915 420 722" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/58353> vcard:given-name "Espacio Fundación Telefónica" ;
+	vcard:street-address "FUENCARRAL" ;
+	vcard:note "3" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28004" ;
+	vcard:tel "915 808 700 (información general)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/6017808> vcard:given-name "Fundación AMYC (Arte Moderno y Contemporáneo). Casa - Museo Fuente del Rey" ;
+	vcard:street-address "FUENTE DEL REY" ;
+	vcard:note "11" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ARAVACA" ;
+	vcard:postal-code "28023" ;
+	vcard:email "info@fundacionamyc.org" ;
+	vcard:tel "913 579 116" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/3348> vcard:given-name "Monasterio de las Descalzas Reales" ;
+	vcard:street-address "DESCALZAS" ;
+	vcard:note "3" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SOL" ;
+	vcard:postal-code "28013" ;
+	vcard:tel """914 548 700                                                             
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/5873478> vcard:given-name "Museo ABC" ;
+	vcard:street-address "AMANIEL" ;
+	vcard:note "29" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28015" ;
+	vcard:email "info_museo@abc.es" ;
+	vcard:tel "917 588 379" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2067> vcard:given-name "Museo Africano Mundo Negro" ;
+	vcard:street-address "ARTURO SORIA" ;
+	vcard:note "101" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SAN JUAN BAUTISTA" ;
+	vcard:postal-code "28043" ;
+	vcard:tel "914 152 412" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2050> vcard:given-name "Museo Arqueológico Nacional" ;
+	vcard:street-address "SERRANO" ;
+	vcard:note "13" ;
+	vcard:region "MADRID" ;
+	vcard:locality "RECOLETOS" ;
+	vcard:postal-code "28001" ;
+	vcard:email "sugerencias@man.es" ;
+	vcard:tel """915 777 912                                                                     
+                                                                                     
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2072> vcard:given-name "Museo Casa de la Moneda" ;
+	vcard:street-address "DOCTOR ESQUERDO" ;
+	vcard:note "36" ;
+	vcard:region "MADRID" ;
+	vcard:locality "GOYA" ;
+	vcard:postal-code "28028" ;
+	vcard:email "museo@fnmt.es" ;
+	vcard:tel """915 666 544                                 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4112> vcard:given-name "Museo Cerralbo" ;
+	vcard:street-address "VENTURA RODRIGUEZ" ;
+	vcard:note "17" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ARGUELLES" ;
+	vcard:postal-code "28008" ;
+	vcard:email "museo.cerralbo@mecd.es" ;
+	vcard:tel "915 473 646 / 47" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/18176> vcard:given-name "Museo Colecciones del Instituto de Crédito Oficial (ICO)" ;
+	vcard:street-address "ZORRILLA" ;
+	vcard:note "3" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CORTES" ;
+	vcard:postal-code "28014" ;
+	vcard:email "museoico@ico.es" ;
+	vcard:tel "914 201 242" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/10091450> vcard:given-name "Museo EMT" ;
+	vcard:street-address "MAURICIO LEGENDRE" ;
+	vcard:note "40" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASTILLA" ;
+	vcard:postal-code "28046" ;
+	vcard:tel "914 068 810" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2074> vcard:given-name "Museo Geominero" ;
+	vcard:street-address "RIOS ROSAS" ;
+	vcard:note "23" ;
+	vcard:region "MADRID" ;
+	vcard:locality "RIOS ROSAS" ;
+	vcard:postal-code "28003" ;
+	vcard:email "m.geominero@igme.es" ;
+	vcard:tel "913 495 759" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2075> vcard:given-name "Museo Histórico Minero Don Felipe de Borbón y Grecia" ;
+	vcard:street-address "RIOS ROSAS" ;
+	vcard:note "21" ;
+	vcard:region "MADRID" ;
+	vcard:locality "RIOS ROSAS" ;
+	vcard:postal-code "28003" ;
+	vcard:tel "913 367 026" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/6019032> vcard:given-name "Museo Los Caños del Peral. Estación de Metro Ópera" ;
+	vcard:street-address "ISABEL II" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALACIO" ;
+	vcard:postal-code "28013" ;
+	vcard:tel "902 444 403 / 917 796 399  (Información)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2053> vcard:given-name "Museo Lázaro Galdiano" ;
+	vcard:street-address "SERRANO" ;
+	vcard:note "122" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASTELLANA" ;
+	vcard:postal-code "28006" ;
+	vcard:email "secretaria.fundacion@flg.es" ;
+	vcard:tel "915 616 084" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/5349304> vcard:given-name "Museo Nacional Centro de Arte Reina Sofía (MNCARS)" ;
+	vcard:street-address "SANTA ISABEL" ;
+	vcard:note "52" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EMBAJADORES" ;
+	vcard:postal-code "28012" ;
+	vcard:email "info@museoreinasofia.es" ;
+	vcard:tel """917 741 000                                                                                         
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2057> vcard:given-name "Museo Nacional de Antropología" ;
+	vcard:street-address "ALFONSO XII" ;
+	vcard:note "68" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS JERONIMOS" ;
+	vcard:postal-code "28014" ;
+	vcard:tel "915 306 418 /915 395 995" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2055> vcard:given-name "Museo Nacional de Artes Decorativas" ;
+	vcard:street-address "MONTALBAN" ;
+	vcard:note "12" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS JERONIMOS" ;
+	vcard:postal-code "28014" ;
+	vcard:tel """915 326 499 / 915 326 845          
+Reserva actividades infantiles: 910 505 755          
+Biblioteca: 910 505 768          
+Atención a investigadores: 910 505 763          
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2056> vcard:given-name "Museo Nacional de Ciencias Naturales" ;
+	vcard:street-address "JOSE GUTIERREZ ABASCAL" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EL VISO" ;
+	vcard:postal-code "28006" ;
+	vcard:email "museo@bib.csic.es" ;
+	vcard:tel "914 111 328 (centralita)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2076> vcard:given-name "Museo Naval" ;
+	vcard:street-address "PRADO" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS JERONIMOS" ;
+	vcard:postal-code "28014" ;
+	vcard:email "ohculturanaval@fn.mde.es" ;
+	vcard:tel "915 238 516 / 609 467 117 (martes y viernes de 9 a 14 horas) " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2085> vcard:given-name "Museo Postal y Telegráfico" ;
+	vcard:street-address "TAPIA DE CASARIEGO" ;
+	vcard:note "6" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VALDEMARIN" ;
+	vcard:postal-code "28023" ;
+	vcard:email "museopostaltelegrafico@correos.com" ;
+	vcard:tel "917 400 668 / 917 400 664 (biblioteca)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4997114> vcard:given-name "Museo Sorolla" ;
+	vcard:street-address "GENERAL MARTINEZ CAMPOS" ;
+	vcard:note "37" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALMAGRO" ;
+	vcard:postal-code "28010" ;
+	vcard:email "museo.sorolla@mecd.es" ;
+	vcard:tel "913 101 584" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2077> vcard:given-name "Museo Taurino de la Plaza de las Ventas" ;
+	vcard:street-address "ALCALA" ;
+	vcard:note "237" ;
+	vcard:region "MADRID" ;
+	vcard:locality "GUINDALERA" ;
+	vcard:postal-code "28028" ;
+	vcard:email "museotaurinolasventas@madrid.org" ;
+	vcard:tel """912 761 287                 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2099> vcard:given-name "Museo Thyssen Bornemisza" ;
+	vcard:street-address "PRADO" ;
+	vcard:note "8" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CORTES" ;
+	vcard:postal-code "28014" ;
+	vcard:email "mtb@museothyssen.org" ;
+	vcard:tel """902 760 511 (Información general)                                                                                                                                                                                                                        
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2101> vcard:given-name "Museo Tiflológico" ;
+	vcard:street-address "LA CORUÑA" ;
+	vcard:note "18" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CUATRO CAMINOS" ;
+	vcard:postal-code "28020" ;
+	vcard:email "museo@once.es" ;
+	vcard:tel "915 894 219" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2068> vcard:given-name "Museo de Aeronáutica y Astronáutica" ;
+	vcard:street-address "A-5" ;
+	vcard:note "10.7" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CUATRO VIENTOS" ;
+	vcard:postal-code "28024" ;
+	vcard:email "museodelaire@ea.mde.es " ;
+	vcard:tel "915 091 690 (centralita)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2091> vcard:given-name "Museo de América" ;
+	vcard:street-address "REYES CATOLICOS" ;
+	vcard:note "6" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CIUDAD UNIVERSITARIA" ;
+	vcard:postal-code "28040" ;
+	vcard:email "museo.america@mecd.es" ;
+	vcard:tel "915 439 437 / 915 492 641" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/83922> vcard:given-name "Museo de Arte Contemporáneo de Madrid" ;
+	vcard:street-address "CONDE DUQUE" ;
+	vcard:note "9" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28015" ;
+	vcard:email "mmacmdifusion@madrid.es" ;
+	vcard:tel "915 885 928  /  915 885 861" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2069> vcard:given-name "Museo de Artes y Tradiciones Populares. Centro Cultural La Corrala" ;
+	vcard:street-address "CARLOS ARNICHES" ;
+	vcard:note "3-5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EMBAJADORES" ;
+	vcard:postal-code "28005" ;
+	vcard:email "museoatp@uam.es" ;
+	vcard:tel "914 976 500" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2092> vcard:given-name "Museo de Astronomía y Geodesia" ;
+	vcard:street-address "CIENCIAS" ;
+	vcard:note "3" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CIUDAD UNIVERSITARIA" ;
+	vcard:postal-code "28040" ;
+	vcard:email "astronomia_geodesia@mat.ucm.es" ;
+	vcard:tel "913 944 615" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/5727435> vcard:given-name "Museo de Bomberos" ;
+	vcard:street-address "BOADA" ;
+	vcard:note "4" ;
+	vcard:region "MADRID" ;
+	vcard:locality "NUMANCIA" ;
+	vcard:postal-code "28038" ;
+	vcard:email "jcbomberos@madrid.es" ;
+	vcard:tel """91 478 65 72 (Museo),                                                                                                                                           
+                                                                                                                                               
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2090> vcard:given-name "Museo de Calcografía Nacional" ;
+	vcard:street-address "ALCALA" ;
+	vcard:note "13" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SOL" ;
+	vcard:postal-code "28014" ;
+	vcard:email "calcografianacional.delegado@rabasf.org" ;
+	vcard:tel "915 240 864" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2084> vcard:given-name "Museo de Cera" ;
+	vcard:street-address "RECOLETOS" ;
+	vcard:note "41" ;
+	vcard:region "MADRID" ;
+	vcard:locality "JUSTICIA" ;
+	vcard:postal-code "28004" ;
+	vcard:email "info@museoceramadrid.com" ;
+	vcard:tel "913 199 330" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2054> vcard:given-name "Museo de Historia de Madrid" ;
+	vcard:street-address "FUENCARRAL" ;
+	vcard:note "78" ;
+	vcard:region "MADRID" ;
+	vcard:locality "JUSTICIA" ;
+	vcard:postal-code "28004" ;
+	vcard:email "smuseosm@madrid.es" ;
+	vcard:tel "917 011 863" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4545827> vcard:given-name "Museo de Historia de la Comunidad Judía de Madrid" ;
+	vcard:street-address "BALMES" ;
+	vcard:note "3" ;
+	vcard:region "MADRID" ;
+	vcard:locality "TRAFALGAR" ;
+	vcard:postal-code "28010" ;
+	vcard:email "visitas@cjmadrid.org" ;
+	vcard:tel "915 913 131 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2095> vcard:given-name "Museo de Mineralogía" ;
+	vcard:street-address "COLMENAR VIEJO" ;
+	vcard:note "19000" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EL GOLOSO" ;
+	vcard:postal-code "28049" ;
+	vcard:email "museo.mineralogia@uam.es" ;
+	vcard:tel "914 974 132 / 914 974 800" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2112> vcard:given-name "Museo de San Isidro. Los orígenes de Madrid" ;
+	vcard:street-address "SAN ANDRES" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALACIO" ;
+	vcard:postal-code "28005" ;
+	vcard:email "museosanisidro@madrid.es" ;
+	vcard:tel "913 667 415" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/85301> vcard:given-name "Museo de Sanidad e Higiene Pública" ;
+	vcard:street-address "MONFORTE DE LEMOS" ;
+	vcard:note "5" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LA PAZ" ;
+	vcard:postal-code "28029" ;
+	vcard:email "museodesanidad@iscii.es" ;
+	vcard:tel "918 222 414  (Cita previa)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4591873> vcard:given-name "Museo de la Biblioteca Nacional de España" ;
+	vcard:street-address "RECOLETOS" ;
+	vcard:note "20" ;
+	vcard:region "MADRID" ;
+	vcard:locality "RECOLETOS" ;
+	vcard:postal-code "28001" ;
+	vcard:email "museo@bne.es" ;
+	vcard:tel """915 168 967 / 915 807 759                                   
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4566286> vcard:given-name "Museo de la Catedral de la Almudena" ;
+	vcard:street-address "BAILEN" ;
+	vcard:note "10" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALACIO" ;
+	vcard:postal-code "28013" ;
+	vcard:email "museoalmudena@planalfa.es" ;
+	vcard:tel "915 592 874" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2073> vcard:given-name "Museo de la Farmacia Hispana" ;
+	vcard:street-address "RAMON Y CAJAL" ;
+	vcard:note "0" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CIUDAD UNIVERSITARIA" ;
+	vcard:postal-code "28040" ;
+	vcard:email "museofar@farm.ucm.es" ;
+	vcard:tel "913 941 797" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2107> vcard:given-name "Museo de la Guardia Civil" ;
+	vcard:street-address "GUZMAN EL BUENO" ;
+	vcard:note "110" ;
+	vcard:region "MADRID" ;
+	vcard:locality "VALLEHERMOSO" ;
+	vcard:postal-code "28003" ;
+	vcard:email "dg-estuhistoricos-registro@guardiacivil.org" ;
+	vcard:tel "915 146 000, extensiones 48495 (Oficina Museo), 48477 (Salas Museo), " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2114> vcard:given-name "Museo de la Real Academia de Bellas Artes de San Fernando" ;
+	vcard:street-address "ALCALA" ;
+	vcard:note "13" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SOL" ;
+	vcard:postal-code "28014" ;
+	vcard:email "museo@rabasf.org" ;
+	vcard:tel """915 240 864 (Centralita)                                                    
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/187029> vcard:given-name "Museo del Atlético de Madrid" ;
+	vcard:street-address "VIRGEN DEL PUERTO" ;
+	vcard:note "67" ;
+	vcard:region "MADRID" ;
+	vcard:locality "IMPERIAL" ;
+	vcard:postal-code "28005" ;
+	vcard:email "museo@clubatleticodemadrid.com" ;
+	vcard:tel "913 650 931 / 913 666 568" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2066> vcard:given-name "Museo del Ferrocarril de Madrid" ;
+	vcard:street-address "DELICIAS" ;
+	vcard:note "61" ;
+	vcard:region "MADRID" ;
+	vcard:locality "DELICIAS" ;
+	vcard:postal-code "28045" ;
+	vcard:email "museodelicias@ffe.es" ;
+	vcard:tel """902 228 822                                                                                                 
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2058> vcard:given-name "Museo del Prado" ;
+	vcard:street-address "RUIZ DE ALARCON" ;
+	vcard:note "1324" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LOS JERONIMOS" ;
+	vcard:postal-code "28014" ;
+	vcard:tel "913 302 800" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2086> vcard:given-name "Museo del Reloj Grassy" ;
+	vcard:street-address "GRAN VIA" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CORTES" ;
+	vcard:postal-code "28013" ;
+	vcard:email "marta@grassy.es" ;
+	vcard:tel "915 321 007" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/7685664> vcard:given-name "Museo del Robot" ;
+	vcard:street-address "ALBERTO AGUILERA" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28015" ;
+	vcard:email "antencionalcliente@therobotmuseum.eu" ;
+	vcard:tel "914 478 808" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2059> vcard:given-name "Museo del Romanticismo" ;
+	vcard:street-address "SAN MATEO" ;
+	vcard:note "13" ;
+	vcard:region "MADRID" ;
+	vcard:locality "JUSTICIA" ;
+	vcard:postal-code "28004" ;
+	vcard:email "informacion.romanticismo@mecd.es" ;
+	vcard:tel "914 481 045 / 914 480 163" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/6337393> vcard:given-name "Museo del Seguro. Fundación Mapfre" ;
+	vcard:street-address "BARBARA DE BRAGANZA" ;
+	vcard:note "14" ;
+	vcard:region "MADRID" ;
+	vcard:locality "JUSTICIA" ;
+	vcard:postal-code "28004" ;
+	vcard:tel """916 025 221 (para reservas)                                      
+""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2115> vcard:given-name "Museo del Traje. Centro de Investigación del Patrimonio Etnológico (CIPE)" ;
+	vcard:street-address "JUAN DE HERRERA" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CIUDAD UNIVERSITARIA" ;
+	vcard:postal-code "28040" ;
+	vcard:email "museodeltraje@mecd.es" ;
+	vcard:tel "915 504 700 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2062> vcard:given-name "Palacio Real" ;
+	vcard:street-address "BAILEN" ;
+	vcard:note "0" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALACIO" ;
+	vcard:postal-code "28013" ;
+	vcard:email "info@patrimonionacional.es" ;
+	vcard:tel "914 548 700 (Información general)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2063> vcard:given-name "Palacio de Liria" ;
+	vcard:street-address "PRINCESA" ;
+	vcard:note "20" ;
+	vcard:region "MADRID" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:postal-code "28008" ;
+	vcard:tel "91 547 53 02" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2079> vcard:given-name "Panteón de Hombres Ilustres" ;
+	vcard:street-address "JULIAN GAYARRE" ;
+	vcard:note "3" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PACIFICO" ;
+	vcard:postal-code "28014" ;
+	vcard:email "info@patrimonionacional.es" ;
+	vcard:tel "914 548 700 (Información general)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/3362> vcard:given-name "Parroquia Santa Cruz" ;
+	vcard:street-address "ATOCHA" ;
+	vcard:note "6" ;
+	vcard:region "MADRID" ;
+	vcard:locality "SOL" ;
+	vcard:postal-code "28012" ;
+	vcard:tel "913 691 239" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2213> vcard:given-name "Planetario de Madrid" ;
+	vcard:street-address "PLANETARIO" ;
+	vcard:note "16" ;
+	vcard:region "MADRID" ;
+	vcard:locality "LEGAZPI" ;
+	vcard:postal-code "28045" ;
+	vcard:email "buzon@planetmad.es" ;
+	vcard:tel """914 673 461 (reserva grupos)                                                                                                                                                                                                                                                                                                                                                                                                                                               
+914 673 898 (contestador automático de información)""" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/3359> vcard:given-name "Real Basílica San Francisco el Grande" ;
+	vcard:street-address "SAN BUENAVENTURA" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALACIO" ;
+	vcard:postal-code "28005" ;
+	vcard:tel "913 653 800 " .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2087> vcard:given-name "Real Fábrica de Tapices" ;
+	vcard:street-address "FUENTERRABIA" ;
+	vcard:note "2" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PACIFICO" ;
+	vcard:postal-code "28014" ;
+	vcard:email "info@realfabricadetapices.com" ;
+	vcard:tel "914 340 550" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/4707297> vcard:given-name "Real Monasterio de Santa Isabel" ;
+	vcard:street-address "SANTA ISABEL" ;
+	vcard:note "48" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EMBAJADORES" ;
+	vcard:postal-code "28012" ;
+	vcard:email "info@patrimonionacional.es" ;
+	vcard:tel "914 548 700 (Información general)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/3349> vcard:given-name "Real Monasterio de la Encarnación" ;
+	vcard:street-address "ENCARNACION" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "PALACIO" ;
+	vcard:postal-code "28013" ;
+	vcard:email "info@patrimonionacional.es" ;
+	vcard:tel "914 548 700 (Información general)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/2061> vcard:given-name "Real Sitio de El Pardo" ;
+	vcard:street-address "MANUEL ALONSO" ;
+	vcard:note "8" ;
+	vcard:region "MADRID" ;
+	vcard:locality "EL PARDO" ;
+	vcard:postal-code "28048" ;
+	vcard:email "info@patrimonionacional.es" ;
+	vcard:tel "914 548 700 (Información general)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/20605> vcard:given-name "Templo de Debod" ;
+	vcard:street-address "FERRAZ" ;
+	vcard:note "1" ;
+	vcard:region "MADRID" ;
+	vcard:locality "CASA DE CAMPO" ;
+	vcard:postal-code "28008" ;
+	vcard:email "templodebod@madrid.es" ;
+	vcard:tel "913 667 415 (Museo de San Isidro / Templo de Debod)" .
+
+<http://madridOcio.linkeddata.com/ontologyGroup5/resources/Turismo/7071384> vcard:given-name "Yacimiento paleontológico. Estación de Metro Carpetana" ;
+	vcard:street-address "VIA CARPETANA" ;
+	vcard:note "328" ;
+	vcard:region "MADRID" ;
+	vcard:locality "ALUCHE" ;
+	vcard:postal-code "28047" ;
+	vcard:tel "902 444 403 (Información)" .

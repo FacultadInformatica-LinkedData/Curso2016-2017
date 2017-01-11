@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/onto#"
+     xml:base="http://www.semanticweb.org/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/"/>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/onto#City"/>
+
+    <owl:Class rdf:about="http://www.semanticweb.org/onto#CountryLanguage"/>
+    
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/onto#HasLanguage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/onto#CountryLanguage"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/onto#HasPopulation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/onto#City"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty> 
+
+</rdf:RDF>

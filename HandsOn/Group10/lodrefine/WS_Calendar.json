@@ -1,0 +1,80 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://smartsevilla.es/resources/servicios/",
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "g10",
+          "uri": "http://smartsevilla.es/ontology#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "trim(value)",
+          "isRowNumberCell": false,
+          "columnName": "service_id",
+          "rdfTypes": [
+            {
+              "uri": "http://smartsevilla.es/ontology#Servicio",
+              "curie": "g10:Servicio"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://smartsevilla.es/ontology#service_id",
+              "curie": "g10:service_id",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "xsd:string",
+                "columnName": "service_id"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#start_date",
+              "curie": "g10:start_date",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "start_date"
+              }
+            },
+            {
+              "uri": "http://smartsevilla.es/ontology#end_date",
+              "curie": "g10:end_date",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "trim(value)",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#date",
+                "columnName": "end_date"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

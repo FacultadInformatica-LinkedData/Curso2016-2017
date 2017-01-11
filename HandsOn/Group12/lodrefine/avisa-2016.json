@@ -1,0 +1,371 @@
+[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ANOMALIA to tipo",
+    "oldColumnName": "ANOMALIA",
+    "newColumnName": "tipo"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column calle at index 8 based on column TIPO_DE_VIAL using expression grel:cells[\"TIPO_DE_VIAL\"].value + \" \" + cells[\"NOMBRE_DE_VIAL\"].value",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "calle",
+    "columnInsertIndex": 8,
+    "baseColumnName": "TIPO_DE_VIAL",
+    "expression": "grel:cells[\"TIPO_DE_VIAL\"].value + \" \" + cells[\"NOMBRE_DE_VIAL\"].value",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TIPO_DE_VIAL",
+    "columnName": "TIPO_DE_VIAL"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TIPO_DE_VIAL_ID",
+    "columnName": "TIPO_DE_VIAL_ID"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column NUMERO",
+    "columnName": "NUMERO"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ANOMALIA_ID",
+    "columnName": "ANOMALIA_ID"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SECCION",
+    "columnName": "SECCION"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SECCION_ID",
+    "columnName": "SECCION_ID"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column date at index 1 based on column FECHA_DE_RECEPCION using expression grel:toDate(value + \" \" + cells[\"HORA_DE_RECEPCION\"].value)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "date",
+    "columnInsertIndex": 1,
+    "baseColumnName": "FECHA_DE_RECEPCION",
+    "expression": "grel:toDate(value + \" \" + cells[\"HORA_DE_RECEPCION\"].value)",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column HORA_DE_RECEPCION",
+    "columnName": "HORA_DE_RECEPCION"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FECHA_DE_RECEPCION",
+    "columnName": "FECHA_DE_RECEPCION"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column NOMBRE_DE_VIAL",
+    "columnName": "NOMBRE_DE_VIAL"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column barrio at index 6 based on column BARRIO_ID using expression grel:value.substring(0, -2) + \"\" + value.substring(-1)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "barrio",
+    "columnInsertIndex": 6,
+    "baseColumnName": "BARRIO_ID",
+    "expression": "grel:value.substring(0, -2) + \"\" + value.substring(-1)",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column BARRIO_ID",
+    "columnName": "BARRIO_ID"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column date using expression grel:value.toString(\"YYYY-mm-dd H:m:s\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date",
+    "expression": "grel:value.toString(\"YYYY-mm-dd H:m:s\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://semanticweb.org/grupo12/resources/",
+      "prefixes": [
+        {
+          "name": "",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "g12",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Aviso/\" + value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasFecha",
+              "curie": "g12:hasFecha",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "date"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasTipo",
+              "curie": "g12:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "tipo"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasCalle",
+              "curie": "g12:hasCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "calle"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasBarrio",
+              "curie": "g12:hasBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"Barrio/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "barrio",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasCodigoPostal",
+              "curie": "g12:hasCodigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO_POSTAL"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Barrio/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "barrio",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasNombre",
+              "curie": "g12:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://semanticweb.org/grupo12/resources/",
+      "prefixes": [
+        {
+          "name": "",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "g12",
+          "uri": "http://semanticweb.org/grupo12/ontology#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Aviso/\" + value",
+          "isRowNumberCell": true,
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasFecha",
+              "curie": "g12:hasFecha",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "date"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasTipo",
+              "curie": "g12:hasTipo",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "tipo"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasCalle",
+              "curie": "g12:hasCalle",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "calle"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasBarrio",
+              "curie": "g12:hasBarrio",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"Barrio/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "barrio",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasCodigoPostal",
+              "curie": "g12:hasCodigoPostal",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "CODIGO_POSTAL"
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Barrio/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "barrio",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasNombre",
+              "curie": "g12:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "BARRIO"
+              }
+            },
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasDistrito",
+              "curie": "g12:hasDistrito",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "\"Distrito/\" + value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO_ID",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "\"Distrito/\" + value",
+          "isRowNumberCell": false,
+          "columnName": "DISTRITO_ID",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://semanticweb.org/grupo12/ontology#hasNombre",
+              "curie": "g12:hasNombre",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "DISTRITO"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

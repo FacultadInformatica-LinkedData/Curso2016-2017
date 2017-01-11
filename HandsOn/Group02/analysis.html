@@ -4,18 +4,27 @@
 <title>Group 02  Hands-on</title>
 <body>
 <style type="text/css">
-    body {
-        margin: 50px;
-    }
-    table {
-        width:100%;    
-    }
 
-    th, td {
-        border: 1px solid black;
-        text-align: left;
-        padding: 5px;
-    }
+            table {
+                border: 1px solid #bbb;
+                margin-bottom: 1em;
+                width: 100%;
+                border-collapse: collapse;
+            }
+            td, th {
+                border: 1px solid #bbb;
+                line-height: 1.7;
+                text-align: center;
+            }
+
+            th {
+                background: #f5f5f5;
+            }
+
+            tr:hover {
+                background: #eee;
+            }
+
     .tdlight{
         background: lightblue;
     }
@@ -27,7 +36,13 @@
 <div>
     <h1 class="h1_doc">Analyse data source</h1>
     <hr>
-    <h2 style="border-bottom: 2px">-Estaciones de metro de Londres</h2>
+    <h2 style="border-bottom: 2px">Paradas de metro de Londres</h2>
+    <ul>
+    <li><b>Nombre del fichero:</b>London stations.csv</li>
+    <li><b>Descripción:</b>Paradas de metro en la ciudad de Londres</li>
+    <li><b>Origen de los datos :</b><a href="https://www.doogal.co.uk/london_stations.php">Click Aqui</a></li>
+    <li><a href="https://www.doogal.co.uk/london_stations.php">Licencia</a></li>
+</ul>
     <table>
         <tbody>
             <tr class="tdlight">
@@ -37,50 +52,56 @@
                 <td><p>Problemas / Conflictos</p></td>
             </tr>
             <tr>
-                <td><p>Station</p></td>
+                <td><p>Nombre</p></td>
                 <td><p>String</p></td>
                 <td><p>not unique, not empty</p></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td><p>OS X</p></td>
+                <td><p>Coordenada-X</p></td>
                 <td><p>int</p></td>
                 <td><p>496,000,00—562,000,00</p></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td><p>OS Y</p></td>
+                <td><p>Coordenada-Y</p></td>
                 <td><p>int</p></td>
                 <td><p>155,000,00—208,000,00</p></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td><p>Latitude</p></td>
+                <td><p>Latitud</p></td>
                 <td><p>double</p></td>
                 <td><p>51,28—51,75</p></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td><p>Longitude</p></td>
+                <td><p>Longitud</p></td>
                 <td><p>double</p></td>
                 <td><p>-0,61—0,33</p></td>
                 <td><p>Negative values</p></td>
             </tr>
             <tr>
-                <td><p>Zone</p></td>
+                <td><p>Zona</p></td>
                 <td><p>int</p></td>
-                <td><p>1— 9</p></td>
+                <td><p>[1— 9]</p></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td><p>Postcode</p></td>
+                <td><p>Código Postal</p></td>
                 <td><p>String</p></td>
                 <td><p>not unique, not empty</p></td>
                 <td>&nbsp;</td>
             </tr>
         </tbody>
     </table>
-    <h2 style="border-bottom: 2px">-Paradas de autobuses en Londres</h2>
+    <h2 style="border-bottom: 2px">Líneas de metro de Londres</h2>
+    <ul>
+    <li><b>Nombre del fichero:</b>London Tube Lines.csv</li>
+    <li><b>Descripción:</b>Relación entre las paradas de metro y las lineas a las que pertece</li>
+    <li><b>Origen de los datos :</b><a href="https://www.doogal.co.uk/london_stations.php">Click Aqui</a></li>
+    <li><a href="https://www.doogal.co.uk/london_stations.php">Licencia</a></li>
+</ul>
     <table>
         <tbody>
             <tr class="tdlight">
@@ -90,26 +111,32 @@
                 <td><p>Problemas / Conflictos</p></td>
             </tr>
             <tr>
-                <td><p>Tube Line</p></td>
+                <td><p>Linea</p></td>
                 <td><p>String</p></td>
                 <td><p>not unique, not empty</p></td>
                 <td><p>Names repeated</p></td>
             </tr>
             <tr>
-                <td><p>From Station</p></td>
+                <td><p>Desde parada</p></td>
                 <td><p>String</p></td>
                 <td><p>not unique, not empty</p></td>
                 <td><p>Names repeated</p></td>
             </tr>
             <tr>
-                <td><p>To Station</p></td>
+                <td><p>Hasta parada</p></td>
                 <td><p>String</p></td>
                 <td><p>not unique, not empty</p></td>
                 <td><p>Names repeated</p></td>
             </tr>
         </tbody>
     </table>
-    <h2 style="border-bottom: 2px">-Paradas de autobuses en Londres</h2>
+    <h2 style="border-bottom: 2px">Paradas de autobuses en Londres</h2>
+       <ul>
+    <li><b>Nombre del fichero:</b>London-bus-stops.csv</li>
+    <li><b>Descripción:</b>Paradas de bus en la ciudad de Londres</li>
+    <li><b>Origen de los datos :</b><a href=" https://data.london.gov.uk/dataset/tfl-bus-stop-locations-and-routes/resource/673033eb-59a6-4903-84bc-d24495661707">Click aqui</a></li>
+    <li><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">Licencia</a></li>
+</ul>
     <table>
         <tbody>
 
@@ -119,63 +146,51 @@
             <td><p>Comentarios / Rango</p></td>
             <td><p>Problemas / Conflictos</p></td>
         </tr>
-        <tr>
-            <td><p>Stop Code LBSL</p></td>
-            <td><p>String</p></td>
-            <td><p>not empty/First and/or second characters are letters (optional) and the rest of them are numbers (variable size) </p></td>
-            <td><p>There is no standard format to identify Bus Stops.</p></td>
-        </tr>
-        <tr>
-            <td><p>Bus Stop Code</p></td>
-            <td><p>int</p></td>
-            <td><p>Each stop has a 5 numbers code/47,000.00—99,000.00 </p></td>
-            <td><p>0.18% stops don't have Bus Stop Code</p></td>
-        </tr>
-        <tr>
-            <td><p>Naptan Atco</p></td>
-            <td><p>String</p></td>
-            <td><p>not unique, not empty. This code allows to identify any transportation point inside UK</p></td>
-            <td><p>7% stops don't follow the standard format</p></td>
-        </tr>
-        <tr>
-            <td><p>Stop Name</p></td>
+               <tr>
+            <td><p>Nombre</p></td>
             <td><p>String</p></td>
             <td><p>not unique, not empty</p></td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td><p>Location Easting</p></td>
+            <td><p>Código de parada</p></td>
+            <td><p>int</p></td>
+            <td><p>Each stop has a 5 numbers code/47,000.00—99,000.00 </p></td>
+            <td><p>0.18% stops don't have Bus Stop Code</p></td>
+        </tr>
+        <tr>
+            <td><p>Coordenada-X</p></td>
             <td><p>int</p></td>
             <td><p>standard format (6 numbers)/497,000.00—562,000.00</p></td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td><p>Location Northing</p></td>
+            <td><p>Coordenada-Y</p></td>
             <td><p>int</p></td>
             <td><p>standard format (6 numbers)/148,000.00—203,000.00 </p></td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td><p>Heading</p></td>
+            <td><p>Sentido</p></td>
             <td><p>int</p></td>
             <td><p>0.00—360.00 </p></td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td><p>Stop Area</p></td>
+            <td><p>Area de parada</p></td>
             <td><p>String</p></td>
             <td><p>not unique, not empty. Some of them have letters and numbers and others only have numbers</p></td>
             <td><p>There is no standard format to identify Stop Areas</p></td>
         </tr>
-        <tr>
-            <td><p>Virtual Bus Stop</p></td>
-            <td><p>int</p></td>
-            <td><p>0—1 </p></td>
-            <td>&nbsp;</td>
-        </tr>
     </tbody>
     </table>
-    <h2 style="border-bottom: 2px">-Baños públicos</h2>
+    <h2 style="border-bottom: 2px">Baños públicos</h2>
+        <ul>
+    <li><b>Nombre del fichero:</b>public-toilets.csv</li>
+    <li><b>Descripción:</b>Baños públicos en la ciudad de Londres</li>
+    <li><b>Origen de los datos :</b><a href=" https://data.gov.uk/dataset/public-toilets-2014-15/resource/3e9934ac-492a-4042-971c-fe49bd9ca7e7">Click aqui</a></li>
+    <li><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Licencia</a></li>
+</ul>
         <table>
         <tbody>
             <tr class="tdlight">
@@ -185,125 +200,177 @@
                 <td><p>Problemas / Conflictos</p></td>
             </tr>
             <tr>
-                <td><p>ServiceTypeLabel</p></td>
+                <td><p>Servicio</p></td>
                 <td><p>String</p></td>
                 <td><p>not unique, not empty.</p></td>
                 <td><p></p></td>
             </tr>
             <tr>
-                <td><p>StreetAddress</p></td>
+                <td><p>Dirección</p></td>
                 <td><p>String</p></td>
                 <td><p>not unique, not empty. There are numbers in the String</p></td>
                 <td><p></p></td>
             </tr>
             <tr>
-                <td><p>GeoX</p></td>
-                <td><p>Number</p></td>
+                <td><p>Coordenada X</p></td>
+                <td><p>double</p></td>
                 <td><p>519,500.00 — 528,000.00</p></td>
                 <td><p></p></td>
             </tr>
             <tr>
-                <td><p>GeoY</p></td>
-                <td><p>Number</p></td>
+                <td><p>Coordenada Y</p></td>
+                <td><p>double</p></td>
                 <td><p>188,400.00 — 196,800.00</p></td>
                 <td><p></p></td>
             </tr>
             <tr>
-                <td><p>AccessibleCategory</p></td>
+                <td><p>Catagoría accesible</p></td>
                 <td><p>String</p></td>
                 <td><p>UNISEX or FEMALE AND MALE</p></td>
                 <td><p></p></td>
             </tr>
             <tr>
-                <td><p>BabyChange</p></td>
-                <td><p>String</p></td>
+                <td><p>Cambiador de bebe</p></td>
+                <td><p>Boolean</p></td>
                 <td><p>YES or NO</p></td>
                 <td><p></p></td>
             </tr>
             <tr>
-                <td><p>FamilyToilet</p></td>
-                <td><p>String</p></td>
+                <td><p>Baños familiares</p></td>
+                <td><p>Boolean</p></td>
                 <td><p>YES or NO</p></td>
                 <td><p></p></td>
             </tr>
             <tr>
-                <td><p>ChangingPlace</p></td>
-                <td><p>String</p></td>
+                <td><p>Cambiador</p></td>
+                <td><p>boolean</p></td>
                 <td><p>YES or NO</p></td>
                 <td><p></p></td>
             </tr>
             <tr>
-                <td><p>OpeningHours</p></td>
+                <td><p>Horario de apertura</p></td>
                 <td><p>String</p></td>
                 <td><p>There are also numbers</p></td>
                 <td><p></p></td>
             </tr>
             <tr>
-                <td><p>ManagedBy</p></td>
+                <td><p>Administrado por</p></td>
                 <td><p>String</p></td>
                 <td><p></p></td>
                 <td><p></p></td>
             </tr>
             <tr>
-                <td><p>ReportEmail</p></td>
+                <td><p>Email de contacto</p></td>
                 <td><p>String</p></td>
                 <td><p></p></td>
                 <td><p></p></td>
             </tr>
             <tr>
-                <td><p>ReportTel</p></td>
-                <td><p>Number</p></td>
+                <td><p>Teléfono de contacto</p></td>
+                <td><p>int</p></td>
                 <td><p></p></td>
                 <td><p>&nbsp;</p></td>
             </tr>
             <tr>
-                <td><p>Notes</p></td>
+                <td><p>Notas</p></td>
                 <td><p>String</p></td>
                 <td><p></p></td>
                 <td><p>&nbsp;</p></td>
             </tr>
             <tr>
-                <td><p>Postcode</p></td>
+                <td><p>Código Postal</p></td>
                 <td><p>String</p></td>
                 <td><p>Has letters and numbers</p></td>
                 <td><p>&nbsp;</p></td>
             </tr>
         </tbody>
     </table>
-        
+        <h2 style="border-bottom: 2px">Restaurantes</h2>
+      <ul>
+    <li><b>Nombre del fichero:</b>london-restaurant.csv</li>
+    <li><b>Descripción:</b>Restaurantes en la ciudad de Londres</li>
+    <li><b>Origen de los datos :</b><a href=" http://tour-pedia.org/about/datasets.html">Click aqui</a></li>
+    <li><a href="http://opendefinition.org/licenses/cc-zero/">Licencia</a></li>
+</ul>
+    <table>
+        <tbody>
+            <tr class="tdlight">
+                <td><p>id</p></td>
+                <td><p>Tipo</p></td>
+                <td><p>Comentarios / Rango</p></td>
+                <td><p>Problemas / Conflictos</p></td>
+            </tr>
+            <tr>
+                <td><p>Nombre</p></td>
+                <td><p>String</p></td>
+                <td><p>not unique, not empty</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Dirección</p></td>
+                <td><p>String</p></td>
+                <td><p>not empty</p></td>
+                <td><p>Names repeated</p></td>
+            </tr>
+            <tr>
+                <td><p>Categoría</p></td>
+                <td><p>String</p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Localización</p></td>
+                <td><p>String</p></td>
+                <td><p></p></td>
+                <td><p>Has letters and numbers</p></td>
+            </tr>
+            <tr>
+                <td><p>Latitud</p></td>
+                <td><p>double</p></td>
+                <td><p>53.73 — 53.93</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Longitud</p></td>
+                <td><p>double</p></td>
+                <td><p>-1.71 — -1.32</p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>detalles</p></td>
+                <td><p>String</p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td><p>Crítica</p></td>
+                <td><p>String</p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+            </tr>
+        </tbody>
+    </table>
 
-        <h1>Analyse Licensing of the Data Source</h1>
-        <h2>-Publisher and Rightholder</h2>
-
-        <p>The publisher for the bus stop CSV is Transport for London (TfL).</p>
-
-        <p>The publisher and the rightsholder for the Underground CSV is Chris Bell(The data is published in his/her personal website). </p>
-        <h2>-License</h2>
-
-        <p>The license for the bus stop CSV is UK Open Government Licence (OGL v2).</p>
-        <p>Please see link to TfL website for<a href="https://www.tfl.gov.uk/corporate/terms-and-conditions/transport-data-service">Terms and Conditions</a> related to this dataset.</p> <p>Direct <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">LINK</a> to the Terms and Conditions.</p>
-
-        <p>The license for the underground CSV is the specified by Chris Bell in the <a href="https://www.doogal.co.uk/">website</a>.</p>
-        <p>As it's said in the licensing, we can use this CSV under a public domain license because there isn't any other comment or copyright notice saying that the CSV comes from another source.</p>
-
-		<p>The license for the toilets CSV is the OGL specified in <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">license</a>.</p>
-        <h2>-License to be used for the generated Dataset</h2>
-
-        <p> Contains public sector information licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">Open Government Licence v2.0</a>.</p>
-        <p>We plain to use OGL2 because it's the most restrictive license in the datasets we use in our application.</p>
-
+	<h1>Licencia para nuestra App:</h1>
+	
+		<p> Se propone la licencia de Creative Commons CC BY-NC-SA. Es la que más se ajusta al resto de licencias.</p>
+		<p> Reconocimiento – NoComercial – CompartirIgual (by-nc-sa):</p> 
+		<p> No se permite un uso comercial de la obra original ni de las posibles obras derivadas,</p>
+		<p> la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original,</p>
+		<p> y reconociendo el uso de la obra original y sus autores.</p>
+	
         <h1>Define Resource Naming Strategy</h1>
         
         <p>Domain:</p> 
-        <p>http://www.semanticweb.org/webSemantica/gropo02/</p>
+        <p>http://www.semanticweb.org/webSemantica/grupo02/</p>
 		<p>Ontological terms path:</p> 
-		<p>http://www.semanticweb.org/webSemantica/gropo02/vocabulary#</p>
+		<p>http://www.semanticweb.org/webSemantica/grupo02/vocabulary#</p>
 		<p>Individuals path:</p>
-		<p>http://www.semanticweb.org/webSemantica/gropo02/</p>
+		<p>http://www.semanticweb.org/webSemantica/grupo02/</p>
 		<p>Ontological terms pattern:</p> 
-		<p>http://www.semanticweb.org/webSemantica/gropo02/vocabulary#<term_name></p>
+		<p>http://www.semanticweb.org/webSemantica/grupo02/vocabulary#<term_name</p>
 		<p>Individuals pattern:</p> 
-		<p>http://www.semanticweb.org/webSemantica/gropo02/&ltresource_type&gt/&ltresource_name&gt</p>
+		<p>http://www.semanticweb.org/webSemantica/grupo02/resource/&ltresource_type&gt/&ltresource_name&gt</p>
 
         
     </div>    

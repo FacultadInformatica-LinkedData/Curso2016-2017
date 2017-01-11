@@ -1,0 +1,69 @@
+1. How many accidents were there in Madrid in 2013?
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+SELECT sum(?Accidents) as ?NumberOfAccidents
+WHERE
+{ ?obs a qb:Observation;
+  mv:numberOfAccidents ?Accidents.
+}
+
+2. Give me the number of accidents in Usera for each type of accident
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+SELECT ?typeAccident (xsd:integer(?number) as ?NumberOfAccidents)
+WHERE
+{ ?obs a qb:Observation;
+  mv:relatedDistrict "USERA";
+  mv:hasAccidentType ?typeAccident;
+  mv:numberOfAccidents ?number.
+}
+
+3. Give me the number of multiple collisions for each district
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+SELECT ?District (xsd:integer(?number) as ?NumberOfMultipleCollisions)
+WHERE
+{  ?obs a qb:Observation;
+   mv:relatedDistrict ?District;
+   mv:hasAccidentType mv:MultipleCollision;
+   mv:numberOfAccidents ?number.
+}
+
+4. Which is the district were the number of bicycle falls was higher in 2013?
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+SELECT ?District (xsd:integer(?number) as ?MaxBicycleFalls) 
+WHERE 
+{ ?obs a qb:Observation;
+  mv:relatedDistrict ?District;
+  mv:hasAccidentType mv:BicycleFall;
+  mv:numberOfAccidents ?number 
+  { SELECT (MAX(?accidentes) AS ?number) 
+    WHERE 
+    { ?obs a qb:Observation;
+      mv:relatedDistrict ?District;
+      mv:hasAccidentType mv:BicycleFall;
+      mv:numberOfAccidents ?accidentes.
+    }
+  }
+}
+
+5. Give me the districts with more than 500 accidents in 2013
+PREFIX mv: <http://example.org/myVocabulary#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+SELECT ?District ?NumberOfAccidents 
+WHERE 
+{{ SELECT ?District SUM(xsd:integer(?number)) AS ?NumberOfAccidents 
+   WHERE 
+   { ?obs a qb:Observation;
+     mv:relatedDistrict ?District;
+     mv:numberOfAccidents ?number.
+   }
+  } FILTER (?NumberOfAccidents > 500)
+}
+
